@@ -1,0 +1,1027 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">J Chem Theory Comput</journal-id><journal-id journal-id-type="iso-abbrev">J Chem Theory Comput</journal-id><journal-id journal-id-type="publisher-id">ct</journal-id><journal-id journal-id-type="coden">jctcce</journal-id><journal-title-group><journal-title>Journal of Chemical Theory and Computation</journal-title></journal-title-group><issn pub-type="ppub">1549-9618</issn><issn pub-type="epub">1549-9626</issn><publisher><publisher-name>American
+Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6236472</article-id><article-id pub-id-type="doi">10.1021/acs.jctc.8b00450</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>A Comparison of the Bravyi&#x02013;Kitaev and Jordan&#x02013;Wigner
+Transformations for the Quantum Simulation of Quantum Chemistry</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Tranter</surname><given-names>Andrew</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath2"><name><surname>Love</surname><given-names>Peter J.</given-names></name><xref rid="aff3" ref-type="aff">&#x000b6;</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Mintert</surname><given-names>Florian</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath4"><name><surname>Coveney</surname><given-names>Peter V.</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><aff id="aff1"><label>&#x02020;</label>Department
+of Physics, <institution>Imperial College London</institution>, London SW7 2AZ, <country>United Kingdom</country></aff><aff id="aff2"><label>&#x02021;</label>Centre
+for Computational Science, <institution>University College
+London</institution>, London WC1H 0AJ, <country>United Kingdom</country></aff><aff id="aff3"><label>&#x000b6;</label>Department
+of Physics, <institution>Tufts University</institution>, Medford, Massachusetts 02155, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>p.v.coveney@ucl.ac.uk</email>.</corresp></author-notes><pub-date pub-type="epub"><day>06</day><month>09</month><year>2018</year></pub-date><pub-date pub-type="ppub"><day>13</day><month>11</month><year>2018</year></pub-date><volume>14</volume><issue>11</issue><fpage>5617</fpage><lpage>5630</lpage><history><date date-type="received"><day>08</day><month>05</month><year>2018</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2018 American Chemical Society</copyright-statement><copyright-year>2018</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under a Creative Commons Attribution (CC-BY) <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_ccby_termsofuse.html">License</ext-link>, which permits unrestricted use, distribution and reproduction in any medium, provided the author and source are cited.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0013" id="ab-tgr1"/></p><p>The
+ability to perform classically intractable electronic structure
+calculations is often cited as one of the principal applications of
+quantum computing. A great deal of theoretical algorithmic development
+has been performed in support of this goal. Most techniques require
+a scheme for mapping electronic states and operations to states of
+and operations upon qubits. The two most commonly used techniques
+for this are the Jordan&#x02013;Wigner transformation and the Bravyi&#x02013;Kitaev
+transformation. However, comparisons of these schemes have previously
+been limited to individual small molecules. In this paper, we discuss
+resource implications for the use of the Bravyi&#x02013;Kitaev mapping
+scheme, specifically with regard to the number of quantum gates required
+for simulation. We consider both small systems, which may be simulatable
+on near-future quantum devices, and systems sufficiently large for
+classical simulation to be intractable. We use 86 molecular systems
+to demonstrate that the use of the Bravyi&#x02013;Kitaev transformation
+is typically at least approximately as efficient as the canonical
+Jordan&#x02013;Wigner transformation and results in substantially reduced
+gate count estimates when performing limited circuit optimizations.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ct8b00450</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ct-2018-00450n</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><label>1</label><title>Introduction</title><p>Computational chemistry
+is the use of well-developed theoretical
+techniques and algorithms to solve chemical problems. These typically
+relate to the properties of molecules and chemical reactions. Such
+processes occur as a result of the rearrangement of electrons among
+atoms. Quantum chemistry is the branch of computational chemistry
+concerned with the theoretical understanding of these processes.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup></p><p>Although a vast spectrum of methods has
+been developed for this
+purpose, the field is restricted by the computational difficulty of
+the task. Many calculations of interest involve the determination
+of ground state electronic wave functions and their corresponding
+energies. To achieve this exactly (to within nonrelativistic assumptions
+and basis set limitations) requires the <italic>full configuration
+interaction</italic> approach. This scales factorially with respect
+to the number of basis functions considered, limiting application
+of the technique to small molecules.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref3">3</xref></sup></p><p>As this
+conceptually simple approach is computationally intractable,
+the difficulty of the task is often reduced by invoking various approximations,
+well-studied in computational chemistry. While these methods often
+allow high degrees of precision, some computational tasks&#x02014;for
+instance, in determining reaction kinetics or dynamics&#x02014;would
+benefit from the decreased error of a full configuration interaction approach.</p><p>Quantum simulation algorithms are expected to be capable of alleviating
+some of the difficulty associated with this through the use of a scalable
+quantum computer. A quantum computer operates on <italic>qubits</italic>&#x02014;the quantum equivalent of classical bits. Instead of a unit
+which can either have a state value of 0 or 1, qubits exist as superpositions
+of |0&#x027e9; and |1&#x027e9; states, i.e., |&#x003c8;&#x027e9; = &#x003b1;|0&#x027e9;
++ &#x003b2;|1&#x027e9;. A system of <italic>n</italic> qubits can exist
+in a superposition of 2<sup><italic>n</italic></sup> basis states.
+Similar to classical computation, operations which manipulate the
+state of qubits are described as quantum gates and are analogous to
+classical logic gates. A sequence of quantum gates, intended to perform
+a computational task, is referred to as a quantum circuit. Gates that
+perform an operation which entangle the state of two or more qubits
+are called entangling gates.</p><p>Quantum algorithms to address various
+chemical tasks have been
+developed, including the determination of energy spectra,<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> reaction rates,<sup><xref ref-type="bibr" rid="ref5">5</xref>&#x02212;<xref ref-type="bibr" rid="ref7">7</xref></sup> and reaction dynamics.<sup><xref ref-type="bibr" rid="ref8">8</xref></sup> Quantum simulation of quantum systems&#x02014;particularly
+chemistry&#x02014;is often cited as being one of the most significant
+potential uses of quantum computation.<sup><xref ref-type="bibr" rid="ref9">9</xref></sup></p><p>The development of a scalable quantum computer is an extremely
+difficult task. Demonstrations of the quantum simulation of electronic
+structure problems have mostly thus far been limited to the consideration
+of small hydrides using a minimal basis set. These have been reported
+in photonic,<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> NMR,<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> and superconducting<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> devices.
+The first fully scalable demonstration of this kind was performed
+in 2016.<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> Recently, the use of the variational
+quantum eigensolver algorithm<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> has extended
+this to the simulation of beryllium hydride.<sup><xref ref-type="bibr" rid="ref14">14</xref></sup></p><p>However, recent hardware developments have yielded devices
+that
+are rapidly increasing in size.<sup><xref ref-type="bibr" rid="ref12">12</xref>,<xref ref-type="bibr" rid="ref15">15</xref></sup> Devices of up to 50
+qubits are likely to be available in the near future.<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> It is likely that such devices will bring the field close
+to the ability to perform clasically intractable chemistry calculations.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> For this, advances in both hardware and circuit
+design are necessary.</p><p>The canonical quantum algorithm for the
+solution of the electronic
+structure problem involves several steps.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> First, the molecular orbitals forming a basis for the electronic
+states must be represented using states of qubits. The electronic
+Hamiltonian must then be mapped to an operator on the qubit Hilbert
+space.<sup><xref ref-type="bibr" rid="ref17">17</xref>&#x02212;<xref ref-type="bibr" rid="ref20">20</xref></sup> Following this, the Trotter&#x02013;Suzuki approximation<sup><xref ref-type="bibr" rid="ref21">21</xref>&#x02212;<xref ref-type="bibr" rid="ref23">23</xref></sup> is invoked to form an evolution operator which is implementable
+on the quantum device. Finally, a phase estimation algorithm is invoked
+in order to ascertain the ground state molecular energy.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup></p><p>Many algorithmic developments have been
+made to further this goal.
+In particular, hybrid quantum-classical schemes have been shown to
+yield accurate results for a fraction of the cost of canonical quantum
+simulation techniques.<sup><xref ref-type="bibr" rid="ref12">12</xref>&#x02212;<xref ref-type="bibr" rid="ref14">14</xref>,<xref ref-type="bibr" rid="ref25">25</xref></sup> However, these techniques
+still require a transformation of electronic states and operators
+to states of and operations upon qubits. The two most commonly used
+forms of this transformation are the Jordan&#x02013;Wigner transformation
+and the Bravyi&#x02013;Kitaev transformation,<sup><xref ref-type="bibr" rid="ref4">4</xref>,<xref ref-type="bibr" rid="ref17">17</xref>&#x02212;<xref ref-type="bibr" rid="ref20">20</xref></sup> although other constructions have been examined.<sup><xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref27">27</xref></sup></p><p>In the asymptotic limit and without further circuit optimization,
+the Bravyi&#x02013;Kitaev transformation is known to have logarithmically
+superior scaling with respect to circuit length.<sup><xref ref-type="bibr" rid="ref18">18</xref>,<xref ref-type="bibr" rid="ref19">19</xref></sup> An examination of the performance of this process requires generating
+descriptions of quantum circuits which would perform the simulation.
+Initial assessments of this technique demonstrated a saving associated
+with the simulation of the hydrogen molecule in a minimal basis, a
+smallest-case example.<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> This saving was
+thus expected to also be present for larger chemical examples. However,
+further investigation of methane revealed that overall gate savings
+were relatively modest, although substantial savings were yielded
+in terms of entangling gates.<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> To date,
+no large scale numerical analysis involving many systems has been
+performed.</p><p>In this paper, we use 86 molecular systems to demonstrate
+that
+the use of the Bravyi&#x02013;Kitaev transformation typically results
+in quantum circuit lengths equal to or shorter than circuits using
+the canonical Jordan&#x02013;Wigner transformation. We also consider
+the impact of Trotter ordering upon both overall gate count and the
+relative performance of the Bravyi&#x02013;Kitaev transformation. Varying
+the Trotter ordering can impact the error incurred in the use of this
+approximation, potentially resulting in increased overall gate count,
+even if within each Trotter step the gate count is reduced. As such,
+we consider the impact of Trotter ordering on the Trotter error, by
+examining a subset of our systems.</p><p>We begin by providing a brief
+overview of the theory underlying
+the Bravyi&#x02013;Kitaev mapping and of Trotterization. In <xref rid="sec3" ref-type="other">section <xref rid="sec3" ref-type="other">3</xref></xref>, we discuss circuits
+with a limited degree of optimization. Following this, we introduce
+the impact of Trotter ordering, considering its impact on single Trotter
+step circuit length in <xref rid="sec4" ref-type="other">section <xref rid="sec4" ref-type="other">4</xref></xref>, and on the Trotter error in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>.</p></sec><sec id="sec2"><label>2</label><title>Theory</title><p>The electronic
+Hamiltonian in the second quantized formalism is
+given by<disp-formula id="eq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m001" position="anchor"/><label>1</label></disp-formula>where <italic>h</italic><sub><italic>ij</italic></sub> and <italic>h</italic><sub><italic>ihkl</italic></sub> are
+Coulombic overlap and exchange integrals determined by the basis set
+chosen.<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref28">28</xref></sup></p><p>Although the number of <italic>h</italic><sub><italic>ij</italic></sub> and <italic>h</italic><sub><italic>ijkl</italic></sub> integrals
+scales quartically with respect to the number of basis orbitals, they
+are efficiently computable using conventional, classical computing
+methods. Additionally, despite this theoretical quartic scaling, the
+number of nonzero integrals is often substantially reduced through
+consideration of molecular symmetries.<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref28">28</xref></sup> Rather, the
+difficulty is due to the dimension of the Fock space on which this
+Hamiltonian acts, which scales exponentially with the number of basis
+orbitals considered. Restricting the problem to a subspace with a
+fixed number of electrons reduces this scaling to being factorial
+with respect to the number of electrons, but for practical problems
+this remains intractable. This difficulty typically prevents the use
+of full configuration interaction calculations for purposes other
+than benchmarking.</p><p>On a quantum computer, this scaling difficulty
+is not present.
+The task proceeds in four stages, illustrated in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>. First, a representation of
+the Hamiltonian and the molecular orbital spaces upon which it acts
+must be represented using states of and operations upon qubits. Following
+this, a Trotter&#x02013;Suzuki approximation<sup><xref ref-type="bibr" rid="ref21">21</xref>&#x02212;<xref ref-type="bibr" rid="ref23">23</xref>,<xref ref-type="bibr" rid="ref29">29</xref></sup> is invoked in order to find a quantum circuit to
+simulate the evolution of the system under the molecular Hamiltonian.
+The use of this approximation results in an additional error in simulation.
+However, this error can be arbitrarily reduced through increasing
+the number of Trotter steps, resulting in only an extra multiplicative
+factor in the quantum computational expense. A full consideration
+of Trotterization error is included in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>. Having developed such a circuit, a good
+approximation to the simulated ground state of the system is prepared,
+and the phase estimation algorithm is used to ascertain the ground
+state energy of the system.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>A comparison of classical and quantum algorithms for simulation
+of electronic structure. Left: classical. Right: quantum.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0002" id="gr1" position="float"/></fig><p>We initially concern ourselves with
+the first of these stages&#x02014;the
+mapping technique chosen to transform electronic states and operators
+to states and operators of qubits. We discuss the difference in resource
+implications for two options for this: the canonical Jordan&#x02013;Wigner
+transformation and the Bravyi&#x02013;Kitaev transformation. In <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>, we address the
+implications of these mappings when performing a Trotter&#x02013;Suzuki
+approximation.</p><p>Our task in establishing an appropriate mapping
+is to find qubit
+analogues of both the electronic states and the creation and annihilation
+operators in <xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref>. Traditionally,
+the simplest encoding scheme to determine these is the <italic>Jordan&#x02013;Wigner
+transformation</italic>.<sup><xref ref-type="bibr" rid="ref4">4</xref>,<xref ref-type="bibr" rid="ref17">17</xref></sup> Here, <italic>n</italic> qubits are used to store the occupation number of <italic>n</italic> electronic spin&#x02013;orbitals, forming what is known as the occupation
+basis. If the <italic>i</italic>th molecular orbital is occupied,
+then the corresponding <italic>i</italic>th qubit is in the |1&#x027e9;
+state, whereas if the molecular orbital is unoccupied, then the qubit
+is in the |0&#x027e9; state. We then require a representation of the
+electronic creation and annihilation operators that act on the qubit
+space, which perform the following set of operations:<disp-formula id="eq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m002" position="anchor"/><label>2</label></disp-formula>A naive assessment would suggest
+that the
+standard Pauli &#x003c3;<sub><italic>i</italic></sub><sup arrange="stack">+</sup> and &#x003c3;<sub><italic>i</italic></sub><sup arrange="stack">&#x02013;</sup> operators would
+suffice for this purpose; however, these do not obey the required
+anticommutation relations:<disp-formula id="eq3"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m003" position="anchor"/><label>3</label></disp-formula><disp-formula id="eq4"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m004" position="anchor"/><label>4</label></disp-formula>For these to hold, the parity of the occupation
+numbers of the orbitals with index less than <italic>i</italic> must
+be calculated, and a phase shift introduced when the parity is odd.
+This is accomplished by performing a sequence of Pauli <italic>Z</italic> operations on the preceding qubits, yielding the following:<disp-formula id="eq5"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m005" position="anchor"/><label>5</label></disp-formula>Note that this mapping requires <inline-formula id="d30e457"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m006.gif"/></inline-formula> qubit operations to simulate one electronic
+operation.</p><p>An alternative scheme was envisaged by Bravyi and
+Kitaev, whereby
+parity information is stored in the qubit states (i.e., qubit <italic>i</italic> stores the sum (modulo 2) of the occupation of all electronic
+states with index less than or equal to <italic>i</italic>). This
+basis&#x02014;the <italic>parity basis</italic>&#x02014;avoids the additional
+cost of determining the parity, as this information can be queried
+with only a single qubit operation.<sup><xref ref-type="bibr" rid="ref18">18</xref>,<xref ref-type="bibr" rid="ref19">19</xref></sup> However, this
+mapping has instead delocalized information regarding the occupation
+of each electronic orbital. Clearly, any electronic creation or annihilation
+operation on an orbital with index <italic>i</italic> requires the
+update of all qubits with index greater than or equal to <italic>i</italic>. Consequently, using this mapping the number of qubit operations
+required to simulate one electronic operation is also <inline-formula id="d30e483"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m007.gif"/></inline-formula>.</p><sec id="sec2.1"><label>2.1</label><title>Bravyi&#x02013;Kitaev Mapping</title><p>The
+Bravyi&#x02013;Kitaev<sup><xref ref-type="bibr" rid="ref18">18</xref>&#x02212;<xref ref-type="bibr" rid="ref20">20</xref></sup> mapping is an attempt to improve upon the linear
+scaling of the occupation and parity bases. In essence, it is a middle
+ground between these approaches. For a molecular orbital basis of
+size <italic>N</italic>, there are again <italic>N</italic> qubits
+used.<sup><xref ref-type="bibr" rid="ref30">30</xref></sup> However, the information stored
+within each qubit now varies dependent on the index <italic>i</italic>. Note that we begin indexing at <italic>i</italic> = 0. Where <italic>i</italic> is even, qubit <italic>i</italic> stores the occupation
+number of orbital <italic>i</italic>, as in the Jordan&#x02013;Wigner
+mapping. Where <italic>i</italic> is odd, the qubit stores the parity
+of a particular set of occupation numbers. When log<sub>2</sub> (<italic>i</italic>+1) is an integer, the qubit stores the parity of the occupation
+numbers of all orbitals with indices less than or equal to <italic>i</italic>. For other cases, the qubit stores the parity of the occupation
+numbers of orbitals in subdividing binary sets. This complex mapping
+is best understood through consideration of the matrix which transforms
+a vector of orbital occupations to qubit states. For example, in the
+eight orbital/qubit case, this is given by<disp-formula id="eq6"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0001" id="GRAPHIC-d7e979-autogenerated" position="float"/><label>6</label></disp-formula>Here, each <italic>o</italic><sub><italic>i</italic></sub> value corresponds to the
+occupation number of the
+orbital with index <italic>i</italic>, and the <italic>q</italic><sub><italic>i</italic></sub> values correspond to the state of the qubit
+with index <italic>i</italic>. Where <italic>q</italic><sub><italic>i</italic></sub> is 0, qubit <italic>i</italic> is in the |0&#x027e9;
+state and similarly where <italic>q</italic><sub><italic>i</italic></sub> is 1, qubit <italic>i</italic> is in the |1&#x027e9; state.
+All sums are performed in modulo 2. The matrix on the left is thus
+the matrix which transforms orbital occupation numbers to qubit states.</p><p>Both occupation and parity information is now stored nonlocally.
+Inspection of <xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref> shows
+that this information is stored in a number of qubits which grows
+logarithmically. Thus, any electronic creation or annihilation operation
+can be simulated in <inline-formula id="d30e586"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m008.gif"/></inline-formula> qubit operations. We omit a detailed proof
+of this here for reasons of brevity. Further details can be found
+in refs (<xref ref-type="bibr" rid="ref18">18</xref>&#x02212;<xref ref-type="bibr" rid="ref20">20</xref>).</p><p>Despite the superior asymptotic
+scaling of the Bravyi&#x02013;Kitaev
+mapping, it is important to consider the increased overhead of its
+use. Initial implementations noted that the Bravyi&#x02013;Kitaev mapping
+is more efficient than the Jordan&#x02013;Wigner mapping in the simulation
+of molecular hydrogen in a minimal basis, the smallest possible nontrivial
+example.<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> It was thus argued that the
+overhead was not a significant factor, and the superior scaling effectively
+dominated in all cases. However, further investigation on methane
+in a minimal basis revealed that this is not the case.<sup><xref ref-type="bibr" rid="ref20">20</xref></sup></p><p>One purpose of this paper is to find the
+point at which this asymptotically
+superior scaling dominates. Examination of the Bravyi&#x02013;Kitaev
+creation and annihilation operators permits a rough estimate of this.
+Note that the qubit creation and annihilation operator equivalents
+using the Bravyi&#x02013;Kitaev transformation are given by<disp-formula id="eq7"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m009" position="anchor"/><label>7</label></disp-formula><disp-formula id="eq8"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m010" position="anchor"/><label>8</label></disp-formula>where <italic>U</italic>(<italic>i</italic>) is the &#x0201c;update set&#x0201d; of qubit <italic>i</italic>,
+and <italic>P</italic>(<italic>i</italic>) is the &#x0201c;parity set&#x0201d;
+of qubit <italic>i</italic>. For brevity we do not discuss these sets
+here; however, their size is of maximum order <inline-formula id="d30e632"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m011.gif"/></inline-formula>. These expressions are valid only in the
+case of even <italic>i</italic>. However, this does not affect our
+rough estimate. Examining these equations, it is evident that at most
+4log<sub>2</sub><italic>i</italic> + 2 gates are required for the
+simulation of one Fermionic operation. This quantity is smaller than
+the simple <italic>i</italic> gates of the Jordan&#x02013;Wigner mapping
+when <italic>i</italic> &#x02265; 19. Thus, noting that the Bravyi&#x02013;Kitaev
+mapping is most efficient when <italic>N</italic> approaches a power
+of 2 (as it can take increased advantage of its binary tree structure),
+we conservatively estimate that this point should be at <italic>N</italic> &#x02248; 32. We thus would expect quantum computational cost to
+be reduced when using the Bravyi&#x02013;Kitaev transformation for
+systems with more than <italic>N</italic> &#x02248; 32 spin&#x02013;orbitals.</p></sec><sec id="sec2.2"><label>2.2</label><title>Trotterization and Simulation</title><p>In
+order to perform the phase estimation algorithm to determine the molecular
+ground-state energy, a quantum circuit simulating the unitary evolution
+operator <italic>&#x000db;</italic> = exp(&#x02212;<italic>it&#x00124;</italic>/&#x0210f;) of the molecular Hamiltonian must be found. This is similarly
+required when utilizing a variational quantum eigensolver algorithm
+using a coupled-cluster ansatz.<sup><xref ref-type="bibr" rid="ref12">12</xref>&#x02212;<xref ref-type="bibr" rid="ref14">14</xref>,<xref ref-type="bibr" rid="ref31">31</xref></sup> The qubit form of the electronic Hamiltonian determined through
+the Bravyi&#x02013;Kitaev or Jordan&#x02013;Wigner transformation consists
+of a weighted sum of strings of Pauli operations. In order to exponentiate
+this, a Trotter&#x02013;Suzuki approximation must be invoked.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> The first-order Trotter&#x02013;Suzuki expansion
+is<disp-formula id="eq9"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m012" position="anchor"/><label>9</label></disp-formula>where <italic>H</italic><sub><italic>i</italic></sub> are the Hamiltonian subterms (strings of Pauli operations,
+in our case), and <italic>n</italic> is the number of Trotter steps.
+The overall evolution time is now subdivided into <italic>n</italic> steps. Increasing the number of Trotter steps decreases the error
+invoked in this procedure. This yields the evolution operator expressed
+as a product of exponentiated strings of Pauli operations. Standard
+techniques can be used to transform these into quantum circuits, as
+shown in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>.
+The gates within this circuit can be divided into two types: gates
+that rotate the state of a single qubit and typically more expensive
+two-qubit entangling gates. These can be implemented sequentially
+to form a quantum circuit which simulates the entire evolution operator.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Canonical
+circuit for the simulation of <inline-formula id="d30e711"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m014.gif"/></inline-formula>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0003" id="gr2" position="float"/></fig><p>The use of a Trotter&#x02013;Suzuki
+approximation results in the
+introduction of error.<sup><xref ref-type="bibr" rid="ref32">32</xref>&#x02212;<xref ref-type="bibr" rid="ref34">34</xref></sup> This error can be reduced by increasing the number
+of Trotter steps considered. We consider the impact of this error
+in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>.</p></sec></sec><sec id="sec3"><label>3</label><title>Basic Circuits</title><p>Our code was used to assess the serial
+quantum circuit length corresponding
+to the simulation of 86 small molecules and atoms. Molecular structures
+were gathered from the NIST CCCBDB database<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> optimized at the Hartree&#x02013;Fock level. Most systems used a
+STO-3G basis; however, larger Pople basis sets were used in 18 trials.
+Of these, four systems (CH<sub>2</sub><sup>2&#x02022;</sup>, HF, LiH,
+H<sub>2</sub>O) using a 3-21G basis set were examined, with the remainder
+studying H<sub>2</sub> and HeH<sup>+</sup>. Clearly, this choice of
+basis is insufficient for an accurate solution of the electronic structure
+problem. When performing a simulation on a real quantum device, a
+larger basis set would be chosen as in conventional quantum chemistry
+methods. Fortunately, the error introduced by our choice of basis
+is fixed and independent of our choice of quantum methodology. As
+our benchmarking procedure is not directly concerned with the exact
+energies predicted, our choice of basis set allows for the simulation
+of a variety of systems with relatively low computational overhead.
+Details of the systems studied can be found in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref> and in the <xref rid="app1" ref-type="other">Appendices</xref>. Our systems range in size from 2 to 54 spin&#x02013;orbitals. While
+containing systems that are classically intractable to simulate, this
+number is relatively modest in contrast to simulations that would
+be performed upon a real quantum device;<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> however, it allows us to maintain relatively low computational expense
+(approximately 1 week of CPU time for the largest examples).</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>A breakdown of systems studied. Note
+that most of the systems involving a non-minimal basis set were H<sub>2</sub> and HeH<sup>+</sup> systems, as specified in the <xref rid="app1" ref-type="other">Appendices</xref>. Numbers in parentheses indicate the
+number of systems where Trotter error was considered, as discussed
+in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/></colgroup><thead><tr><th style="border:none;" align="center">qubits</th><th style="border:none;" align="center">1&#x02013;10</th><th style="border:none;" align="center">11&#x02013;20</th><th style="border:none;" align="center">21&#x02013;30</th><th style="border:none;" align="center">31&#x02013;40</th><th style="border:none;" align="center">41&#x02013;50</th><th style="border:none;" align="center">51&#x02013;60</th><th style="border:none;" align="center">total</th></tr></thead><tbody><tr><td style="border:none;" align="left">molecules&#x000a0;+&#x000a0;radicals</td><td style="border:none;" align="center">1(1)</td><td style="border:none;" align="center">3(13)</td><td style="border:none;" align="center">12(3)</td><td style="border:none;" align="center">4(0)</td><td style="border:none;" align="center">8(0)</td><td style="border:none;" align="center">3(0)</td><td style="border:none;" align="center">41(17)</td></tr><tr><td style="border:none;" align="left">atoms</td><td style="border:none;" align="center">10(4)</td><td style="border:none;" align="center">7(6)</td><td style="border:none;" align="center">1(0)</td><td style="border:none;" align="center">1(0)</td><td style="border:none;" align="center">0(0)</td><td style="border:none;" align="center">1(0)</td><td style="border:none;" align="center">20(10)</td></tr><tr><td style="border:none;" align="left">ions</td><td style="border:none;" align="center">2(2)</td><td style="border:none;" align="center">4(3)</td><td style="border:none;" align="center">0(0)</td><td style="border:none;" align="center">2(0)</td><td style="border:none;" align="center">1(0)</td><td style="border:none;" align="center">1(0)</td><td style="border:none;" align="center">10(5)</td></tr><tr><td style="border:none;" align="left">nonminimal
+basis sets</td><td style="border:none;" align="center">4(4)</td><td style="border:none;" align="center">6(5)</td><td style="border:none;" align="center">5(2)</td><td style="border:none;" align="center">0(0)</td><td style="border:none;" align="center">0(0)</td><td style="border:none;" align="center">0(0)</td><td style="border:none;" align="center">15(11)</td></tr><tr><td style="border:none;" align="left">total</td><td style="border:none;" align="center">17(11)</td><td style="border:none;" align="center">30(27)</td><td style="border:none;" align="center">18(5)</td><td style="border:none;" align="center">7(0)</td><td style="border:none;" align="center">9(0)</td><td style="border:none;" align="center">5(0)</td><td style="border:none;" align="center">86(43)</td></tr></tbody></table></table-wrap><p>Hartree&#x02013;Fock
+molecular orbitals and their <italic>h</italic><sub><italic>ij</italic></sub> and <italic>h</italic><sub><italic>ijkl</italic></sub> integrals
+were obtained using the PSI4 electronic
+structure theory package<sup><xref ref-type="bibr" rid="ref36">36</xref></sup> and the FermiLib
+PSI4 Plugin.<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> Our code was then used to
+generate Jordan&#x02013;Wigner and Bravyi&#x02013;Kitaev Hamiltonians.
+These are stored symbolically as strings of Pauli operations, as in
+previous work.<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> The Hamiltonian can be stored
+as blocks of second quantized terms, potentially grouped according
+to their character, that is, excitation operations, number operations,
+and so on. Note that due to molecular symmetries (and the symmetries
+of the integrals present in <xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref>), the terms in <xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref> do not necessarily have independent coefficients.</p><p>A
+basis of Hartree&#x02013;Fock molecular orbitals was used to describe
+the system when employing the Jordan&#x02013;Wigner or Bravyi&#x02013;Kitaev
+mapping. Much work has been performed in assessing the performance
+of other basis choices,<sup><xref ref-type="bibr" rid="ref25">25</xref>,<xref ref-type="bibr" rid="ref33">33</xref></sup> with localized basis
+orbitals showing promise in reducing the number of significant terms
+in the Hamiltonian. However, as this advantage is gained from reduction
+of the number of significant overlap integrals, there is no obvious
+reason to believe that the Jordan&#x02013;Wigner and Bravyi&#x02013;Kitaev
+mappings would perform inequivalently in a predictable manner. Preliminary
+analysis using natural and orthogonalized atomic orbital integrals
+provided by collaborators<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> did not suggest
+any consistent dependence of the performance of the Bravyi&#x02013;Kitaev
+mapping (versus the Jordan&#x02013;Wigner mapping) on the choice of
+basis considered.</p><p>As such, in order to reduce the computational
+cost of our simulations,
+this degree of freedom was not considered here. A rigorous demonstration
+of the independence of the performance of the Bravyi&#x02013;Kitaev
+mapping on the basis choice could be considered in future work.</p><p>Optimisation and Trotterization could be performed on the level
+of second quantized operators. Other works have taken this approach,
+maintaining Fermionic terms throughout optimization procedures.<sup><xref ref-type="bibr" rid="ref32">32</xref>,<xref ref-type="bibr" rid="ref38">38</xref></sup> Instead, our code does not retain the original Fermionic components
+of the electronic Hamiltonian and reduces the qubit Hamiltonian to
+a list of strings of Pauli operations, before attempting circuit-level
+optimization. While fewer assumptions can be made about the structure
+of the new Hamiltonian (a fact of relevance in <xref rid="sec6" ref-type="other">section <xref rid="sec6" ref-type="other">6</xref></xref>), this approach allows for greater flexibility
+when ordering terms for Trotterization.</p><p>From here, our code
+allows for generation of quantum circuit objects
+corresponding to the implementation of one Trotter step of the evolution
+operator of the qubit Hamiltonian (discussed below).</p><p>Neglecting
+any benefits from optimization at the interfaces of
+Trotter steps (which would save at most <inline-formula id="d30e953"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_m013.gif"/></inline-formula> gates), the number of gates necessary for
+larger numbers of Trotter steps is a simple multiple of the number
+of gates necessary for one Trotter step. Consequentially, extending
+our analysis to higher Trotter numbers was not considered necessary
+for our initial analysis, although this was performed when considering
+Trotter error in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>.</p><p>A full treatment of the entire phase estimation algorithm
+(including
+error correction) was not performed. This is in contrast to other
+work that has attempted to characterize the resource implications
+of performing the full procedure.<sup><xref ref-type="bibr" rid="ref7">7</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> For our analysis
+of the raw gate counts of Bravyi&#x02013;Kitaev circuits, this was
+not considered important for the above reasons. Note that at present,
+the largest simulations conducted have been of around 45 qubits.<sup><xref ref-type="bibr" rid="ref39">39</xref>&#x02212;<xref ref-type="bibr" rid="ref41">41</xref></sup> These required extensive specialized computing resources. Performing
+simulations at this level would have made it impossible to perform
+a large, multisystem survey. In particular, assessing the point at
+which Bravyi&#x02013;Kitaev scaling is expected to dominate (around
+32 qubits, as discussed above) would have been problematic. Despite
+this, a full consideration of the phase estimation algorithm could
+yield useful results in regard to the Trotter error of simulation.
+For simplicity, we have only considered here the canonical phase estimation
+procedure, as the expected benefits of the Bravyi&#x02013;Kitaev mapping
+will apply in any system which involved the use of such a mapping
+scheme.</p><p>It is important to note that many of the circuits discussed
+in
+this paper are substantial in terms of quantum resources required.
+For around 50 spin&#x02013;orbitals (and thus 50 logical qubits), the
+unoptimized circuits consist of around 10<sup>7</sup> gates. It is
+likely that the implementation of such circuits on a quantum device
+would require the use of some form of error correcting code. In order
+to assess resource implications of circuits within a fault tolerant
+framework, the number of Clifford and non-Clifford gates within the
+circuit are counted.<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> While Clifford gates
+are considered relatively straightforward to implement in a fault-tolerant
+manner, the resource implications of performing the non-Clifford gates
+are assessed by counting the number of T (&#x003c0;/4 phase rotation)
+gates required to implement them.</p><p>While a thorough analysis
+of the practicality of implementing these
+circuits on a quantum device would require consideration of this point,
+our focus here is on assessing the use of the Bravyi&#x02013;Kitaev
+mapping. Observing <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>, it is evident that only the central rotation gate is a non-Clifford
+gate. There is one of these gates for every term in the qubit Hamiltonian.
+As the number of terms in the Hamiltonian is the same for either mapping
+scheme, this implies that the number (and type) of non-Clifford gates
+is the same regardless of the mapping scheme chosen. This is confirmed
+by numerical analysis in the circuits discussed below. This implies
+that the choice of Bravyi&#x02013;Kitaev or Jordan&#x02013;Wigner mapping
+does not impact that T count of the circuit and thus does not impact
+the difficulty of performing error correction. As such, we do not
+consider this difficulty here.</p><p>However, previous studies have
+shown<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> that the Bravyi&#x02013;Kitaev
+mapping results in a reduction in the number of CNOT gates required,
+independent of those used in constructing a fault-tolerant representation
+of the central rotation gate. This comes at the expense of an increased
+number of single qubit Clifford gates required. In other words, these
+previous examples showed that the Bravyi&#x02013;Kitaev mapping traded
+a reduction in two qubit Clifford gates for an increase in one qubit
+Clifford gates (along with an overall decrease in the total number
+of Clifford gates). While this is not of huge impact in a fault tolerant
+framework (as the T count remains the same), experimental devices
+in the near future are still likely to benefit from the minimization
+of entangling gates so as to reduce error. As such, we have considered
+the breakdown of circuits into entangling and single qubit gates in
+this paper.</p><p>Initially, the Hamiltonians were
+ordered by the magnitude of their
+coefficients. This somewhat arbitrary ordering was chosen in order
+to assess the preoptimization efficacy of the Bravyi&#x02013;Kitaev
+mapping and is in contrast to optimized ordering schemes used in other
+work.<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref38">38</xref></sup> These are considered in detail in <xref rid="sec4" ref-type="other">sections <xref rid="sec4" ref-type="other">4</xref></xref> and <xref rid="sec5" ref-type="other">5</xref>. The systems studied involved between 2 (the hydrogen atom)
+and 56 (the iodine atom) spin&#x02013;orbitals. As to be expected,<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> the serial circuit length dramatically increases
+for larger systems, requiring of order 10<sup>7</sup> gates for the
+simulation of systems involving around 50 spin&#x02013;orbitals. While
+not as ruinous as the factorial difficulty of classical full configuration
+interaction, this large circuit length illustrates the need for compiler
+optimizations.</p><p>An initial assessment of circuits for the implementation
+of Jordan&#x02013;Wigner
+and Bravyi&#x02013;Kitaev Hamiltonians suggests that the use of the
+Bravyi&#x02013;Kitaev mapping is associated with a substantial improvement
+for the larger systems. <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> demonstrates this. From roughly 30 spin&#x02013;orbitals,
+this improvement is consistent and constitutes approximately 25% of
+the overall circuit length for the largest of the systems we have
+examined. However, many systems smaller than this see no improvement,
+or even demonstrate larger circuit lengths. This is in line with our
+earlier rough estimate that the superior scaling of the Bravyi&#x02013;Kitaev
+mapping dominates the increased overhead at around 32 spin&#x02013;orbitals.
+Classical full configuration interaction calculations have been performed
+on systems marginally larger than this (36 molecular orbitals).<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> Consequently, for simulations aiming to achieve
+results which are classically intractable, a naive approach involving
+no circuit optimizations would be substantially eased through the
+use of the Bravyi&#x02013;Kitaev mapping.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Unoptimized gate counts. Upper: Total number of gates in Jordan&#x02013;Wigner
+circuits, before optimization. Lower: Gate savings through use of
+Bravyi&#x02013;Kitaev mapping as a fraction of Jordan&#x02013;Wigner
+gate count. Squares indicate instances where the Jordan&#x02013;Wigner
+transformation outperformed the Bravyi&#x02013;Kitaev transformation.
+In this scheme, the Bravyi&#x02013;Kitaev transformation reliably results
+in shorter circuits from around 30 spin&#x02013;orbitals, with up to
+around 25% gate savings in the examples with 50 spin&#x02013;orbitals.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0004" id="gr3" position="float"/></fig><p>In addition to optimization
+performed through combination of duplicate
+Pauli strings, our code optimizes circuits by the cancellation of
+duplicate gates.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> Circuit objects can
+automatically search their gate sequence for duplicate self-inverse
+gates and remove them. Furthermore, the code tests individual gates
+for commutativity with gates that follow in sequence. If such commutativity
+is present, it tests to see if any accessible gates are accessible
+through commutation. This is performed according to a set of rules:
+gates acting on different qubits always commute, CNOT gates commute
+unless one targets the other&#x02019;s control, and so on. This avoids
+the generation of matrix representations of the gates. Optimisation
+in this form is repeated until the circuit is self-consistent and
+no further optimization could be yielded.<sup><xref ref-type="bibr" rid="ref44">44</xref></sup></p><p>Based on work by Hastings, Wecker, Bauer, and Troyer,<sup><xref ref-type="bibr" rid="ref32">32</xref>,<xref ref-type="bibr" rid="ref38">38</xref></sup> savings from this procedure arise from two factors. First, redundancy
+in parity determination is eliminated, as this information is not
+decomputed after every term in the Hamiltonian. This results in savings
+in the CNOT string used to determine parities. Additionally, basis
+changes are not decomputed when unnecessary. This saves on the single
+qubit <italic>H</italic> and <italic>Y</italic> gates necessary to
+set these bases.</p><p>When duplicate gates in the circuit are removed,
+the superiority
+of the Bravyi&#x02013;Kitaev mapping is even more pronounced while
+still using a magnitude ordering. This relative improvement appears
+to increase with larger circuits, as demonstrated by <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>. In circuits involving more
+than about 10<sup>7</sup> gates, the reduction in gate count associated
+with the use of the Bravyi&#x02013;Kitaev mapping is larger than that
+of gate cancellation. In these cases, the use of the Bravyi&#x02013;Kitaev
+mapping results in circuits that are approximately 30&#x02013;40% shorter.
+Additionally, the number of gates canceled using the Bravyi&#x02013;Kitaev
+mapping is several times greater than the number of gates canceled
+using Jordan&#x02013;Wigner mapping. In some cases the advantage associated
+with the Bravyi&#x02013;Kitaev mapping reduces the circuit length to
+that observed for systems involving fewer orbitals. For example, the
+Bravyi&#x02013;Kitaev circuit for the simulation of the iodine atom
+(54 spin&#x02013;orbitals) requires 5&#x0202f;204&#x0202f;912 gates per
+Trotter step, whereas the Jordan&#x02013;Wigner circuit for the simulation
+of acetone (52 spin&#x02013;orbitals) requires 8&#x0202f;954&#x0202f;933
+gates per Trotter step.</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Number of gates in Bravyi&#x02013;Kitaev and
+Jordan&#x02013;Wigner
+circuits, before and after gate cancellation, versus the number of
+gates in Jordan&#x02013;Wigner circuit before optimization, using a
+magnitude ordering. Upper: Total gate count. Lower: Entangling gate
+count only.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0005" id="gr4" position="float"/></fig><p>With systems requiring
+more than 10<sup>6</sup> gates to simulate,
+there are no examples where the optimized Jordan&#x02013;Wigner technique
+outperforms the optimized Bravyi&#x02013;Kitaev technique. Thus, using
+this magnitude ordering, it is clear that the Bravyi&#x02013;Kitaev
+mapping should be preferred to the Jordan&#x02013;Wigner mapping in
+the general case.</p><p>As discussed above, previous work<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> on
+the methane molecule indicated that the Bravyi&#x02013;Kitaev mapping
+may be advantageous with particular regard to the number of entangling
+gates required. Our findings here confirm that this advantage holds
+in general, as shown in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>. In addition to the general gate savings associated with
+the Bravyi&#x02013;Kitaev mapping, we observe a substantial decrease
+in the number of CNOT gates required. We consider this to be a major
+advantage of the Bravyi&#x02013;Kitaev mapping. This advantage is typically
+offset by a small increase in the number of single qubit gates required
+(as the total savings are smaller than the entangling gate savings).</p><p>While using a magnitude ordering, gate cancellation does not result
+in a great deal of entangling gate savings, which are typically far
+fewer than the advantage associated with the use of the Bravyi&#x02013;Kitaev
+transformation. Instead, the bulk of gate savings associated with
+cancellation techniques arises from maintaining the calculation basis
+between sequential terms, as opposed to continually resetting to the
+computational basis. It is likely that many CNOT strings are being
+&#x0201c;trapped&#x0201d; behind noncommuting gates earlier in their
+respective CNOT strings. This could be alleviated by further circuit
+optimization; however, this task is difficult to perform without further
+decreasing the locality of the CNOT chain.</p><p>The results of this
+scheme use a magnitude ordering for both the
+Jordan&#x02013;Wigner mapping and the Bravyi&#x02013;Kitaev mapping.
+Further analysis of the performance of the Bravyi&#x02013;Kitaev mapping
+is impossible without consideration of the Trotterization ordering
+chosen. This is considered in the following section. Manipulation
+of the Trotter ordering can also cause variation in the Trotter error,
+which could result in an increased number of Trotter steps necessary
+for constant precision. This increased difficulty could undermine
+the savings gained from the use of a particular ordering in terms
+of cancellation, and is examined in <xref rid="sec5" ref-type="other">section <xref rid="sec5" ref-type="other">5</xref></xref>.</p></sec><sec id="sec4"><label>4</label><title>Impact of Trotter Ordering</title><p>As discussed above, the overall goal is to find a minimal length
+circuit that can implement the unitary evolution operator of the quantum
+Hamiltonian. As no standard circuit for the simulation of the exponentiated
+total Hamiltonian exists, a Trotter&#x02013;Suzuki approximation must
+be invoked (<xref rid="eq9" ref-type="disp-formula">eq <xref rid="eq9" ref-type="disp-formula">9</xref></xref>).</p><p>The ordering of terms in this approximation is important. It has
+been demonstrated<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> that the error due
+to the utilization of Trotter&#x02013;Suzuki formulas strongly depends
+on the term ordering chosen. Additionally, the number of duplicate
+gates depends strongly on the ordering chosen. Both of these factors
+influence the length of the overall quantum circuit. The previous sections utilized a magnitude ordering of Trotter terms. This ordering
+is significantly physically meaningful, as terms with higher magnitude
+are likely to correspond to stronger physical interactions. However,
+it is also known to be suboptimal in terms of gate cancellation procedures.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup></p><p>As the number of potential orderings grows
+factorially, the problem
+of finding an optimal ordering scheme is a difficult one. However,
+ordering schemes that are superior for the process of gate cancellation
+can be found, as the similarity of sequential Pauli strings&#x02014;and
+thus the savings from cancellation&#x02014;can be determined when specifying
+the Hamiltonian. Our analysis compares the impact of the use of the
+Bravyi&#x02013;Kitaev mapping with a varying choice of ordering.</p><p>A lexicographic ordering is expected to maximize the gate savings
+obtained through cancellation, as the similarity of adjacent terms
+is maximized.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> As our code optimizes on
+the level of Pauli strings rather than Fermionic operators, we order
+on this level also, with no ordering performed on the Fermionic level.
+Our code stores Pauli strings as lists of base 4 integers. A lexicographic
+ordering in this scheme is then essentially a bitwise numerical ordering.</p><p>We present results based on this ordering explicitly in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>. Note first the
+dramatic gate savings associated with using this optimization and
+ordering scheme. Whereas using a magnitude ordering, the Bravyi&#x02013;Kitaev
+mapping provided the bulk of the gate savings once gate cancellation
+had been performed, now the impact of the Bravyi&#x02013;Kitaev mapping
+is relatively minor. The savings associated with the use of a lexicographic
+ordering far outweigh the savings associated with the of the Bravyi&#x02013;Kitaev
+mapping with a magnitude ordering: in the longer circuits included
+in our analysis, the former are approximately thrice that of the latter.
+In these circumstances, the Jordan&#x02013;Wigner and Bravyi&#x02013;Kitaev
+mappings appear roughly equivalent for the smaller circuits. The Jordan&#x02013;Wigner
+mapping outperforms the Bravyi&#x02013;Kitaev mapping in some of the
+longer circuits, considering both total and entangling gate counts.
+In the longest circuits considered (propanol), the use of the Jordan&#x02013;Wigner
+mapping resulted in circuits that were approximately 25% shorter.
+This is attributed to the relative complexity of the Bravyi&#x02013;Kitaev
+mapping resulting in a reduction of linearity in the CNOT chains,
+which hampers gate cancellation.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Number of gates in Bravyi&#x02013;Kitaev
+and Jordan&#x02013;Wigner
+circuits, before and after gate cancellation, versus the number of
+gates in Jordan&#x02013;Wigner circuit before optimization, using a
+lexicographic ordering. Upper: Total gate count. Lower: Entangling
+gate count only.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0006" id="gr5" position="float"/></fig><p>The error implications
+of Trotter ordering schemes are difficult
+to predict. Bounds exist on the error yielded from Trotterization,<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> although these are often loose.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> A qualitative estimate can be obtained through determination
+of the norm of the Trotter error operator; however, the quantitative
+behavior of this still often overestimates the error in real chemical
+examples.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> It is useful to compare the
+implications of the Bravyi&#x02013;Kitaev mapping when using several
+ordering schemes. To this end, we repeated our calculations using
+four ordering schemes. In addition to a single randomized ordering,
+a lexicographic ordering and an ordering of terms by magnitude, we
+include an ordering generated by regularly interspersing terms from
+the lexicographic and magnitude orderings. Note that this ordering
+is relatively arbitrary and is intended for comparison purposes. An
+exhaustive search of the ordering space is clearly intractable for
+nontrivial systems, owing to the factorial growth of the number of
+possible orderings.</p><p>Nonetheless, our findings are remarkably
+consistent, with the Bravyi&#x02013;Kitaev
+mapping outperforming the Jordan&#x02013;Wigner mapping in all cases
+apart from the lexicographic ordering. This advantage increases with
+the number of spin&#x02013;orbitals used. Beyond <italic>N</italic> = 10 in all nonlexicographic cases, the advantage associated with
+the Bravyi&#x02013;Kitaev mapping exceeds that of just using gate cancellation.
+This advantage is increased when considering CNOT count and can be
+dramatic&#x02013;when using a magnitude ordering, the savings associated
+with the Bravyi&#x02013;Kitaev mapping are approximately an order of
+magnitude greater than those obtained by using gate cancellation alone
+(<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>)</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Gate savings
+associated with the Bravyi&#x02013;Kitaev mapping normalized
+by the gate savings acquired using the same optimization with the
+Jordan&#x02013;Wigner mapping versus the number of spin&#x02013;orbitals
+simulated, for various ordering schemes. A value of 0 indicates that
+the optimized Bravyi&#x02013;Kitaev and optimized Jordan&#x02013;Wigner
+circuits have equal number of gates. A value of 1 indicates that the
+optimized Bravyi&#x02013;Kitaev mapping outperforms the optimized Jordan&#x02013;Wigner
+mapping by a number of gates equal to that saved by performing optimization
+on the raw Jordan&#x02013;Wigner circuit. Upper: total gates. Lower:
+entangling gates.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0007" id="gr6" position="float"/></fig><p>For large systems, searching
+even a statistically significant subset
+of the space of possible orderings is clearly intractable, owing to
+the factorial growth of the number of possibilities. For each system,
+our random ordering is only one of these myriad choices. Consequentially,
+it does not represent a statistically meaningful representation of
+the bulk of the possible orderings. Nonetheless, it is interesting
+that this random choice qualitatively manifests the same trend as
+our other ordering schemes to a very large extent. Quantitatively,
+the advantage associated with the Bravyi&#x02013;Kitaev mapping when
+using these random orderings is dramatic; for our largest example,
+the reduction in CNOT count using the Bravyi&#x02013;Kitaev mapping
+was 40 times the reduction using gate cancellation alone. In our results,
+the use of a tailored ordering scheme (whether it be ordering lexicographically,
+by magnitude or otherwise) results in a reduction of advantage for
+the Bravyi&#x02013;Kitaev mapping.</p><p>Although these figures suggest
+that the use of the Bravyi&#x02013;Kitaev
+mapping results in shorter circuits when using most possible orderings,
+it should be emphasized that the lexicographic ordering dramatically
+decreases gate count through cancellation irrespective of mapping
+strategy. We restate that using this strategy, <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> shows that employing the Jordan&#x02013;Wigner
+mapping results in marginally shorter circuits than the Bravyi&#x02013;Kitaev
+mapping.</p><p>The choice of Trotter ordering may be dictated by other
+factors
+- for instance, architecture constraints. In these circumstances,
+calculations will be dramatically shortened by the use of the Bravyi&#x02013;Kitaev
+mapping, as this mapping results in reduced circuit length for all
+of the nonlexicographic orderings considered.</p><p>The choice of
+ordering has previously been shown to hold significant
+impact on the Trotter error.<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> Potentially, minimization
+of Trotter error may therefore require an ordering being chosen which
+is suboptimal in terms of single Trotter step gate count, where the
+Bravyi&#x02013;Kitaev holds a significant advantage.</p><p>As such,
+consideration of the Bravyi&#x02013;Kitaev mapping within
+the context of different ordering schemes requires an estimation of
+the associated Trotter error. Previous work<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> indicates that for the hydrogen and methane molecules, the use of
+the Bravyi&#x02013;Kitaev mapping can result in a reduced Trotter error&#x02014;although,
+in the latter case, insufficiently to decrease the number of Trotter
+steps required for accurate simulation. We consider these points in
+the general case in the following section.</p><p>In general, we conclude
+here that the use of the Bravyi&#x02013;Kitaev
+mapping does not result in a predictable improvement in gate count
+when using an ordering optimized for gate cancellation, ignoring Trotter
+error implications. This is in contrast with the substantial and predictable
+improvement observed with other orderings, particularly when a random
+ordering is used.</p></sec><sec id="sec5"><label>5</label><title>Trotter Error Considerations</title><p>As discussed above, the use of Trotter&#x02013;Suzuki approximations
+cause error which decreases
+with the number of Trotter steps performed. Bounds on and estimates
+of this error have been established;<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> however,
+it has been shown<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> that these estimates
+often overestimate the actual error incurred by many orders of magnitude.
+Exact determination of the Trotter error is exponentially hard, as
+the exact ground state energy must be determined in advance to serve
+as a reference.</p><p>Having generated Jordan&#x02013;Wigner and Bravyi&#x02013;Kitaev
+Hamiltonians as symbolic lists of Pauli strings, our code can proceed
+in several ways. For smaller systems, a sparse matrix representation
+of these Hamiltonians can be generated using SciPy&#x02019;s<sup><xref ref-type="bibr" rid="ref45">45</xref></sup> sparse matrix methods. This can be diagonalized
+to find an exact ground-state eigenvalue (to compare against the estimate
+provided by further code) and a ground-state eigenvector. These can
+be compared against traditional full configuration interaction calculations
+obtained through direct diagonalization of the Hamiltonian for verification
+purposes.</p><p>Our code can also generate Trotterized Jordan&#x02013;Wigner
+and
+Bravyi&#x02013;Kitaev Hamiltonians while maintaining the symbolic representation.
+The action of these Hamiltonians on a given state can be simulated.
+Performing this on the generated ground state eigenvectors allows
+for the determination of Trotter error without the storage difficulty
+of repeatedly generating the Trotterized evolution operator in matrix
+form. Nonetheless, the initial determination of ground state eigenvectors
+remains exponentially difficult, requiring on the order of hundreds
+of gigabytes of RAM for examples with more than 20 spin&#x02013;orbitals.
+Consequently, we restricted our error analysis to these smaller systems,
+as indicated by <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref> and the <xref rid="app1" ref-type="other">Appendices</xref>.</p><p>We conducted this
+analysis for 34 of our previously discussed systems.
+The calculations were performed for a variety of choices of Trotter
+order and step number. Nonetheless, it is remarkable that limiting
+our discussion to trials of one Trotter step of first order suffices
+to yield chemical accuracy (i.e., to within 1 kcal/mol of the FCI
+energy) for a single application of the evolution operator. For simulation
+of the full-phase estimation procedure, determination of the error
+incurred in the application of higher powers of this operator would
+be necessary. However, this does not qualitatively effect our ordering
+comparison.</p><p><xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref> demonstrates
+the results of these simulations. Encouragingly, in the overwhelming
+majority of systems considered, the Trotter error is extremely small
+even with only one Trotter step: it is often less than 0.001 hartree.
+It is possible that this is an artifact of the small number of spin
+orbitals in the systems considered in our error analysis. It is also
+worth noting that these errors will be compounded when considering
+higher bits of precision in a full phase estimation procedure. Nonetheless,
+it does suggest that the number of Trotter steps required for chemically
+accurate simulation of larger systems will be relatively modest, potentially
+less than 10 Trotter steps for the first bit of precision.</p><fig id="fig7" position="float"><label>Figure 7</label><caption><p>Trotter error
+using the Bravyi&#x02013;Kitaev mapping as a function
+of Jordan&#x02013;Wigner circuit length, for different ordering schemes.
+Upper: Absolute Trotter error. Middle: Trotter error relative to error
+of lexicographic ordering. Note this excludes two instances where
+the relative Trotter error was &#x0003e;20. The red line indicates a relative
+performance of 1 (i.e., below the line, the ordering results in a
+lower Trotter error than a lexicographic ordering). Note that the
+magnitude ordering usually results in a substantially lower error;
+however, in most of these cases, the Trotter error was already around
+10<sup>&#x02013;4</sup>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0008" id="gr7" position="float"/></fig><p><xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref> additionally
+demonstrates the ordering dependence of the Trotter error. We consider
+the Trotter error of each systematic (i.e., nonrandom) ordering normalized
+by the Trotter error of the lexicographic ordering for each system.</p><p>In most cases, the magnitude ordering appears to achieve a lower
+Trotter error than the lexicographic ordering. In some cases, this
+difference exceeds an order of magnitude. However, it is important
+to note that this represents a large variance on an exceptionally
+small error. Noting that one Trotter step was sufficient for chemical
+accuracy in most of the systems studied here, we do not argue that
+this indicates that a magnitude ordering achieves a useful reduction
+in error compared to a lexicographic ordering. Future work is required
+to investigate how significant this distinction is when propagated
+through the entire phase estimation procedure, as in these circumstances
+this effect could become sufficiently significant to determine ordering
+choice.</p><p>An examination of the relative performance of the Bravyi&#x02013;Kitaev
+mapping and the Jordan&#x02013;Wigner mapping in the context of ordering
+strategies is included as <xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>. Again, the distinction between the two mappings is
+in most cases not as substantial as the differences observed for single
+Trotter step circuit length. In the majority of systems, the normalized
+difference between the two errors is between 1 and &#x02212;1&#x02013;that
+is, the error associated with one mapping is very rarely more than
+double that of the other. Several systems display substantially increased
+error associated with the Bravyi&#x02013;Kitaev mapping (including
+two not shown on <xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref> for scale clarity); however, in the general case no such pattern
+emerges. Using a lexicographic ordering, a preference for the Bravyi&#x02013;Kitaev
+mapping is observable in most systems. In some cases, the error is
+almost halved by the use of the Bravyi&#x02013;Kitaev mapping. At larger
+system sizes this could become a more substantial effect; however,
+we do not contend that our data provides concrete evidence as to whether
+this is true. For a magnitude ordering the Jordan&#x02013;Wigner and
+Bravyi&#x02013;Kitaev mappings yield nearly identical Trotter error
+in almost all cases. In a sense, this could be attributed to the more
+directly physical nature of the magnitude ordering. Important terms
+will intrinsically be simulated earlier in sequence using both mappings.
+As such, the error of both is likely to be similar in this case. As
+to be expected, the &#x0201c;lexoMag&#x0201d; ordering performs roughly
+as a combination of the magnitude and lexicographic orderings.</p><fig id="fig8" position="float"><label>Figure 8</label><caption><p>Relative Trotter
+error of Jordan&#x02013;Wigner and Bravyi&#x02013;Kitaev
+mappings as a function of gate count. The difference in error is normalized
+by the Jordan&#x02013;Wigner error, such that a value of 0 indicates
+equivalent performance, with negative values implying high Bravyi&#x02013;Kitaev
+error. Both schemes display remarkably similar errors for the magnitude
+ordering, likely due to the high degree of &#x0201c;physicality&#x0201d;
+of the ordering. For a lexicographic ordering, the Bravyi&#x02013;Kitaev
+mapping shows lower error in most of the systems studied.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0009" id="gr8" position="float"/></fig><p>As above, the impact of this variation in error
+could prove substantial
+when propagated through the entire phase estimation algorithm. Using
+a lexicographic ordering&#x02014;optimal for gate cancellation&#x02014;the
+Bravyi&#x02013;Kitaev mapping outperforms the Jordan&#x02013;Wigner
+mapping in most cases. If this superior error performance scales to
+above 30 qubit systems, this could result in a reduction of the necessary
+Trotter steps for simulation. The consequent reduction in circuit
+length could counterbalance the marginally increased individual Trotter
+step cost of using the Bravyi&#x02013;Kitaev mapping in a lexicographic
+ordering. Further work examining the entire procedure should assess
+this. Nonetheless, it should not be forgotten that an exact determination
+of the Trotterization error is equivalent to the solution of the exponentially
+hard eigenvalue problem itself. Consequentially, this approach may
+prove to be intractable. Qualitatively, an examination of the norm
+of the Trotter error operator may prove to be instructive.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup></p></sec><sec id="sec6"><label>6</label><title>Further Optimized Circuits</title><p>Our code also generates some of the optimized circuits developed
+by Hastings, Wecker, Bauer, and Troyer,<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> in order to assess the impact of these optimizations with respect
+to the Bravyi&#x02013;Kitaev mapping. Examining <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>, it is evident that many of the CNOT strings
+may be &#x0201c;blocked off&#x0201d; from cancellation by the basis
+change gates exterior to them. In this approach, these basis change
+gates are brought inside the bulk of the CNOT string, as shown in <xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>. Note that in the
+first CNOT string, the final CNOT is replaced by a CZ gate. An inspection
+of the gate sequence implemented on the final qubit in the case of
+even and odd parities of each subset of qubits demonstrates why this
+is the case, as discussed in the <xref rid="app1" ref-type="other">Appendices</xref>.</p><fig id="fig9" position="float"><label>Figure 9</label><caption><p>A circuit performing
+an equivalent operation to <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>, using a basis change shift
+optimization.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0010" id="gr9" position="float"/></fig><p>Our implementation is a slight modification of this technique.
+As discussed above, our code reduces the Hamiltonian to a symbolic
+list of exponentiated Pauli strings which does not preserve the electronic
+Hamiltonian&#x02019;s original <italic>H</italic><sub><italic>pqrs</italic></sub> components. In this scheme, it is not always the case that
+the &#x0201c;final&#x0201d; qubit&#x02014;the qubit which is acted on
+by the central single qubit rotation&#x02014;is always in the <italic>X</italic> basis. As such, the above method requires modification.
+For example, if the central qubit is to be rotated in the <italic>Z</italic> basis, the additional CZ gate could simply be commuted
+through the central rotation and canceled, leading to a phase error.</p><p>Fortuitously, in the case that the central qubit is to be rotated
+in either the <italic>Y</italic> or <italic>Z</italic> basis, a CNOT
+gate can be used in place of the CZ gate, as in <xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>. To demonstrate this, we consider the action
+on the final qubit in the case of the parity of each subset of qubits,
+as shown in the <xref rid="app1" ref-type="other">Appendices</xref>.</p><p>Additionally, circuits
+described by Hastings, Wecker, Bauer, and
+Troyer<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> involving an ancilla qubit can
+be generated. Here, all parity calculating CNOT gates are targeted
+on a single ancilla qubit. This allows for CNOTS performed in the
+same basis to be moved around arbitrarily, allowing for a greater
+level of gate cancellation.</p><p>Circuits of these forms are known
+to reduce overall gate count
+substantially.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> We focus here on the relevance
+of the Bravyi&#x02013;Kitaev mapping when using these techniques.</p><p>Using the former technique, the performance of the Bravyi&#x02013;Kitaev
+technique using a lexicographic or random ordering displays roughly
+the same trend as previous circuits. However, using a magnitude ordering
+reduces the efficacy of the Bravyi&#x02013;Kitaev mapping to the point
+of near-equivalence to the Jordan&#x02013;Wigner mapping. Any savings
+or penalties associated with the use of the Bravyi&#x02013;Kitaev mapping
+are then negligible compared to gains from the basis change shift
+optimization procedure. We do not yet have an explanation for the
+ordering dependence of this behavior. Nonetheless, the Bravyi&#x02013;Kitaev
+mapping never substantially under-performs when compared to the Jordan&#x02013;Wigner
+mapping. In essence, the observed trends are the same as for the previous
+circuits, albeit with a greatly reduced factor of improvement associated
+with the use of the Bravyi&#x02013;Kitaev mapping (<xref rid="fig10" ref-type="fig">Figure <xref rid="fig10" ref-type="fig">10</xref></xref>).</p><fig id="fig10" position="float"><label>Figure 10</label><caption><p>Gate savings associated
+with the Bravyi&#x02013;Kitaev mapping normalized
+by the gate savings acquired using the same optimization with the
+Jordan&#x02013;Wigner mapping, using the modified basis change shift
+technique. Upper: Total gate count. Lower: Entangling gate count.
+Here we see that the Bravyi&#x02013;Kitaev and Jordan&#x02013;Wigner
+mappings perform relatively equivalently when using both lexicographic
+and magnitude orderings. Using an alternative ordering, the Bravyi&#x02013;Kitaev
+mapping is superior, however these result in an overall increased
+gate count in both cases.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0011" id="gr10" position="float"/></fig><p>The use of ancilla circuits displays a markedly different
+trend.
+Here, the effect of the Bravyi&#x02013;Kitaev mapping is greatly reduced
+in all ordering schemes&#x02014;there is a maximum of around 30% reduction
+in the largest examples, when using a &#x0201c;lexoMag&#x0201d; ordering.
+It is likely that any major savings or penalties associated with the
+Bravyi&#x02013;Kitaev mapping are masked by the substantial savings
+associated with the use of ancillarised circuits. Using a lexicographic
+ordering, there is no predictable difference between the two mapping
+schemes at all.</p><p>Curiously, using a magnitude ordering reverses
+the trend observed
+for previous optimization schemes. Here, the Bravyi&#x02013;Kitaev
+mapping is consistently outperformed by the Jordan&#x02013;Wigner mapping.
+However, this distinction is relatively small, and disappears entirely
+in larger system sizes. As such, we do not conclude that a consistent
+preference for either mapping is present using these circuits. Note
+that the use of such circuits may be undesirable in certain architectures,
+due to the loss of nearest-neighbor CNOT chains, which could undermine
+the substantial savings associated with this technique (<xref rid="fig11" ref-type="fig">Figure <xref rid="fig11" ref-type="fig">11</xref></xref>).</p><fig id="fig11" position="float"><label>Figure 11</label><caption><p>Gate savings associated
+with the Bravyi&#x02013;Kitaev mapping normalized
+by the gate savings acquired using the same optimization with the
+Jordan&#x02013;Wigner mapping, using the ancilla-based technique. Upper
+left: Total gate count. Upper right: Total gate count, zoomed. Lower
+left: Entangling gate count. Lower right: Entangling gate count, zoomed.
+Here, we again see roughly equivalent performance when using either
+a magnitude or lexicographic ordering. Once again, when using a alternative
+ordering, the Bravyi&#x02013;Kitaev mapping is superior, however to
+a greatly reduced extent.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ct-2018-00450n_0012" id="gr11" position="float"/></fig><p>Finally, we note that in all optimization systems studied,
+a random
+choice of ordering resulted in the strongest performance of the Bravyi&#x02013;Kitaev
+mapping. While one ordering is clearly not a statistically meaningful
+sample of the possible orderings, it is interesting that our results
+here are extremely consistent.</p></sec><sec id="sec7"><label>7</label><title>Conclusions</title><p>In this
+paper, we have made a detailed comparison of the Jordan&#x02013;Wigner
+and Brayvi&#x02013;Kitaev mappings using a variety of advanced circuit
+optimization techniques drawn from the theory of quantum simulation.
+Using unoptimized circuits, the use of the Bravyi&#x02013;Kitaev mapping
+dramatically reduces the quantum computational expense of simulation
+in all systems involving more than 30 qubits and for systems likely
+to be classically intractable to simulate. In cases with approximately
+50 qubits, this improvement reduced the gate count by roughly 25%.</p><p>The use of an optimized Trotter ordering absorbs the advantage
+associated with the Bravyi&#x02013;Kitaev mapping. The Jordan&#x02013;Wigner
+mapping in this case results in slightly shorter circuits for an individual
+Trotter step. Nonetheless, in most cases the use of the Bravyi&#x02013;Kitaev
+mapping is at worst roughly equivalent to the use of the traditional
+Jordan&#x02013;Wigner mapping. Frequently, the gate count reduction
+is particularly large in the number of expensive entangling gates
+required. Notably, the Bravyi&#x02013;Kitaev mapping is superior in
+all cases aside from the lexicographic ordering.</p><p>While our results
+suggest a slightly reduced error associated with
+the use of a magnitude ordering, we do not conclude that this ordering
+should be favored due to the substantial overall gate count associated
+with a lexicographic ordering. Our analysis of Trotter ordering error
+suggests that the use of the Bravyi&#x02013;Kitaev mapping typically
+results in a reduced Trotter error when using any ordering studied,
+other than a magnitude ordering. This difference is almost a factor
+of 2 in many larger examples when using a lexicographic ordering.
+This encourages the use of the Bravyi&#x02013;Kitaev mapping, as it
+could outweigh the relatively small benefit from the use of the Jordan&#x02013;Wigner
+mapping in optimized lexicographic circuits.</p><p>Our results demonstrate
+that the performance of the Bravyi&#x02013;Kitaev
+mapping is dependent on a variety of factors. While it is superior
+to the Jordan&#x02013;Wigner mapping in most cases studied, several
+exceptions were observed. This emphasizes the importance of numerical
+analysis in future work. It is apparent that such studies must be
+performed across a range of molecular systems, with due consideration
+given to the region where classical full configuration interaction
+calculations are intractable.</p><p>Recent hardware developments have
+prompted the suggestion that
+quantum devices could be used for practical tasks in as little as
+five years.<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> The use of quantum computers
+to perform classically intractable quantum chemistry calculations
+is often cited as one of the principal uses of emerging quantum technology.<sup><xref ref-type="bibr" rid="ref9">9</xref></sup></p><p>We have demonstrated here that the use
+of the Bravyi&#x02013;Kitaev
+transformation frequently results in substantially reduced gate count
+estimates. In the future, we anticipate that the application of this
+mapping will assist in the performance of electronic structure calculations
+on real quantum computers, yielding results that have proven computationally
+elusive for classical devices.</p></sec></body><back><app-group><app id="app1"><title>Appendices</title><p id="app1-sec1">Details of
+the systems studied can be found in <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>. <xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref> indicates
+the operation which is performed upon a qubit having modified the
+original circuit in line with <xref rid="sec6" ref-type="other">section <xref rid="sec6" ref-type="other">6</xref></xref>. Note that the end result of each modified circuit
+is equivalent to that of the original circuit.</p><table-wrap id="tbl2" position="float"><label>Table 2</label><caption><title>All Molecules
+Considered in This Study<xref rid="tbl2-fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="center"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/><col align="center"/></colgroup><thead><tr><th style="border:none;" align="center">name</th><th style="border:none;" align="center">charge</th><th style="border:none;" align="center">mult.</th><th style="border:none;" align="center">basis</th><th style="border:none;" align="center">no. qubits</th><th style="border:none;" align="center">level</th></tr></thead><tbody><tr><td style="border:none;" align="center">methane</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">ethane</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">32</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethene</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">28</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">propene</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">42</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethyne</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">24</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">methanol</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">28</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethanol</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">42</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">isopropanol</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">56</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">1-propanol</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">56</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">propanone</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">52</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">methanal</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">24</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethanal</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">38</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethanoate ion</td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">46</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethanoic acid</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">48</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">hydrogen peroxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">24</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ethanamide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">50</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">methylamine</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">30</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">dimethylamine</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">44</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">ammonia</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">16</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">ammonium</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">nitrogen dioxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">30</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">lithium hydroxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">22</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">sodium hydroxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">30</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">4</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">lithium hydride</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">beryllium hydride</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">14</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">N<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">O<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">O<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">F<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">sodium hydride</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">magnesium hydride</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">22</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Cl<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">36</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">HCl</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HF</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">carbon dioxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">30</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">carbon monoxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">water</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">14</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">methylene</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">14</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">hydroxide</td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HNO<sub>3</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">42</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">nitrate</td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">40</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">H</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">He</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Li</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Be</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">B</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">C</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">N</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">4</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">O</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">F</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Ne</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">10</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Na</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Mg</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Si</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">P</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">4</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">S</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Cl</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">Ar</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">K</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">26</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">I</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">54</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Br</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">2</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">36</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">I<sup>&#x02013;</sup></td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">54</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Br<sup>&#x02013;</sup></td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">36</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">Cl<sup>&#x02013;</sup></td><td style="border:none;" align="center">&#x02013;1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">18</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">8</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-31G</td><td style="border:none;" align="center">8</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-31G**</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-311G*</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-311G**</td><td style="border:none;" align="center">24</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">4</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">8</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-31G</td><td style="border:none;" align="center">8</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-31G**</td><td style="border:none;" align="center">20</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-311G*</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">HeH<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">6-311G**</td><td style="border:none;" align="center">24</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">methylene</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">3</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">14</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">HF</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">22</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">lithium hydride</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">22</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub>O</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">26</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">H3<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">6</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">H3<sup>+</sup></td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">3-21G</td><td style="border:none;" align="center">12</td><td style="border:none;" align="center">Y</td></tr><tr><td style="border:none;" align="center">CO<sub>3</sub></td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">40</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">magnesium hydroxide</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">42</td><td style="border:none;" align="center">N</td></tr><tr><td style="border:none;" align="center">H<sub>2</sub>S</td><td style="border:none;" align="center">0</td><td style="border:none;" align="center">1</td><td style="border:none;" align="center">STO-3G</td><td style="border:none;" align="center">22</td><td style="border:none;" align="center">Y</td></tr></tbody></table><table-wrap-foot><fn id="tbl2-fn1"><label>a</label><p>Level corresponds
+to whether
+or not the error incurred in Trotterization was considered: N indicates
+that this analysis was not performed for this system, Y indicates
+that it was.</p></fn></table-wrap-foot></table-wrap><table-wrap id="tbl3" position="float"><label>Table 3</label><caption><title>Equivalence of CNOT-Replaced Circuits</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="center"/><col align="center"/></colgroup><thead><tr><th colspan="2" align="center">original
+circuit, central Z<hr/></th></tr><tr><th style="border:none;" align="center">parity</th><th style="border:none;" align="center">central gate sequence</th></tr></thead><tbody><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>R</italic><sub><italic>z</italic></sub></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>X&#x000a0;R</italic><sub><italic>z</italic></sub>&#x000a0;<italic>X</italic></td></tr></tbody></table><table frame="hsides" rules="groups" border="0"><colgroup><col align="center"/><col align="center"/><col align="center"/><col align="center"/></colgroup><thead><tr><th colspan="4" align="center">modified circuit, central
+Z<hr/></th></tr><tr><th style="border:none;" align="center">exterior parity</th><th style="border:none;" align="center">inferior parity</th><th style="border:none;" align="center">overall parity</th><th style="border:none;" align="center">central gate sequence</th></tr></thead><tbody><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>R</italic><sub><italic>z</italic></sub></td></tr><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>X R</italic><sub><italic>z</italic></sub><italic>X</italic></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>X R</italic><sub><italic>z</italic></sub><italic>X</italic></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>XX&#x000a0;R</italic><sub><italic>z</italic></sub><italic>XX</italic>&#x000a0;=&#x000a0;<italic>R</italic><sub><italic>z</italic></sub></td></tr></tbody></table><table frame="hsides" rules="groups" border="0"><colgroup><col align="center"/><col align="center"/></colgroup><thead><tr><th colspan="2" align="center">original circuit, central
+Y<hr/></th></tr><tr><th style="border:none;" align="center">parity</th><th style="border:none;" align="center">central gate sequence</th></tr></thead><tbody><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>YR</italic><sub><italic>z</italic></sub><italic>Y</italic><sup>&#x02020;</sup></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>Y XR</italic><sub><italic>z</italic></sub><italic>XY</italic><sup>&#x02020;</sup></td></tr></tbody></table><table frame="hsides" rules="groups" border="0"><colgroup><col align="center"/><col align="center"/><col align="center"/><col align="center"/></colgroup><thead><tr><th colspan="4" align="center">modified circuit, central
+Z<hr/></th></tr><tr><th style="border:none;" align="center">exterior parity</th><th style="border:none;" align="center">interior parity</th><th style="border:none;" align="center">overall parity</th><th style="border:none;" align="center">central gate sequence</th></tr></thead><tbody><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>YR</italic><sub><italic>z</italic></sub><italic>Y</italic><sup>&#x02020;</sup></td></tr><tr><td style="border:none;" align="center">even</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>Y XR</italic><sub><italic>z</italic></sub><italic>XY</italic><sup>&#x02020;</sup></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center"><italic>XYR</italic><sub><italic>z</italic></sub><italic>Y</italic><sup>&#x02020;</sup>X = <italic>Y XR</italic><sub><italic>z</italic></sub><italic>XY</italic><sup>&#x02020;</sup></td></tr><tr><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">odd</td><td style="border:none;" align="center">even</td><td style="border:none;" align="center"><italic>X Y XR</italic><sub><italic>z</italic></sub><italic>X Y</italic><sup>&#x02020;</sup>X = <italic>YR</italic><sub><italic>z</italic></sub><italic>Y</italic><sup>&#x02020;</sup></td></tr></tbody></table></table-wrap></app></app-group><notes id="notes-1" notes-type="funding-statement"><p>A.T. acknowledges
+EPSRC for a Ph.D. Studentship through Imperial College London&#x02019;s
+Centre for Doctoral Training in Controlled Quantum Dynamics (grant
+number EP/G037043/1). P.V.C. thanks EPSRC for funding via grant number
+EP/L00030X/1. P.J.L. acknowledges support by AFOSR award no. FA9550-12-1-0046.</p></notes><notes id="notes-2" notes-type="COI-statement"><p>The
+authors
+declare no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The authors
+thank Jarrod McClean and Ryan Babbush for providing
+molecular orbital integral data used for preliminary versions of this
+analysis.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="book" id="cit1"><person-group person-group-type="allauthors"><name><surname>Szabo</surname><given-names>A.</given-names></name>; <name><surname>Ostlund</surname><given-names>N. S.</given-names></name></person-group><source>Modern Quantum Chemistry:
+Introduction to Advanced Electronic Structure Theory</source>; <publisher-name>Dover Publications</publisher-name>: <publisher-loc>Mineola, NY</publisher-loc>, <year>1996</year>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="book" id="cit2"><person-group person-group-type="allauthors"><name><surname>Szabo</surname><given-names>A.</given-names></name>; <name><surname>Ostlund</surname><given-names>N. S.</given-names></name></person-group><source>Modern Quantum Chemistry:
+Introduction to Advanced Electronic Structure Theory</source>; <publisher-name>Dover Publications</publisher-name>: <publisher-loc>Mineola, NY</publisher-loc>, <year>1996</year>; pp <fpage>231</fpage>&#x02013;<lpage>270</lpage>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Gan</surname><given-names>Z.</given-names></name>; <name><surname>Grant</surname><given-names>D. J.</given-names></name>; <name><surname>Harrison</surname><given-names>R. J.</given-names></name>; <name><surname>Dixon</surname><given-names>D. A.</given-names></name>
+<article-title>The Lowest Energy
+States of the Group-IIIA&#x02013;Group-VA Heteronuclear Diatomics:
+BN, BP, AlN, and AlP from Full Configuration Interaction Calculations</article-title>. <source>J. Chem. Phys.</source>
+<year>2006</year>, <volume>125</volume>, <fpage>124311</fpage><pub-id pub-id-type="doi">10.1063/1.2335446</pub-id>.<pub-id pub-id-type="pmid">17014178</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Dutoi</surname><given-names>A. D.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>; <name><surname>Head-Gordon</surname><given-names>M.</given-names></name>
+<article-title>Simulated
+Quantum Computation of Molecular Energies</article-title>. <source>Science</source>
+<year>2005</year>, <volume>309</volume>, <fpage>1704</fpage>&#x02013;<lpage>1707</lpage><pub-id pub-id-type="doi">10.1126/science.1113479</pub-id>.<pub-id pub-id-type="pmid">16151006</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Lidar</surname><given-names>D. A.</given-names></name>; <name><surname>Wang</surname><given-names>H.</given-names></name>
+<article-title>Calculating the Thermal
+Rate Constant with Exponential Speedup on
+a Quantum Computer</article-title>. <source>Phys. Rev. E: Stat. Phys.,
+Plasmas, Fluids, Relat. Interdiscip. Top.</source>
+<year>1999</year>, <volume>59</volume>, <fpage>2429</fpage>&#x02013;<lpage>2438</lpage><pub-id pub-id-type="doi">10.1103/PhysRevE.59.2429</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Kassal</surname><given-names>I.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Quantum Algorithm
+for Molecular Properties and Geometry
+Optimization</article-title>. <source>J. Chem. Phys.</source>
+<year>2009</year>, <volume>131</volume>, <fpage>224102</fpage><pub-id pub-id-type="doi">10.1063/1.3266959</pub-id>.<pub-id pub-id-type="pmid">20001019</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Reiher</surname><given-names>M.</given-names></name>; <name><surname>Wiebe</surname><given-names>N.</given-names></name>; <name><surname>Svore</surname><given-names>K. M.</given-names></name>; <name><surname>Wecker</surname><given-names>D.</given-names></name>; <name><surname>Troyer</surname><given-names>M.</given-names></name>
+<article-title>Elucidating
+Reaction Mechanisms on Quantum Computers</article-title>. <source>Proc.
+Natl. Acad. Sci. U. S. A.</source>
+<year>2017</year>, <volume>114</volume>, <fpage>7555</fpage>&#x02013;<lpage>7560</lpage><pub-id pub-id-type="doi">10.1073/pnas.1619152114</pub-id>.<pub-id pub-id-type="pmid">28674011</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Kassal</surname><given-names>I.</given-names></name>; <name><surname>Jordan</surname><given-names>S. P.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>; <name><surname>Mohseni</surname><given-names>M.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Polynomial-Time
+Quantum Algorithm for the Simulation of Chemical Dynamics</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>2008</year>, <volume>105</volume>, <fpage>18681</fpage>&#x02013;<lpage>18686</lpage><pub-id pub-id-type="doi">10.1073/pnas.0808245105</pub-id>.<pub-id pub-id-type="pmid">19033207</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="weblink" id="cit9"><person-group person-group-type="allauthors"><name><surname>Olson</surname><given-names>J.</given-names></name>; <name><surname>Cao</surname><given-names>Y.</given-names></name>; <name><surname>Romero</surname><given-names>J.</given-names></name>; <name><surname>Johnson</surname><given-names>P.</given-names></name>; <name><surname>Dallaire-Demers</surname><given-names>P.-L.</given-names></name>; <name><surname>Sawaya</surname><given-names>N.</given-names></name>; <name><surname>Narang</surname><given-names>P.</given-names></name>; <name><surname>Kivlichan</surname><given-names>I.</given-names></name>; <name><surname>Wasielewski</surname><given-names>M.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name></person-group><article-title>Quantum
+Information and Computation
+for Chemistry</article-title>. <year>2017</year>, <source>arXiv:1706.05413</source>. arXiv.org e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1706.05413">https://arxiv.org/abs/1706.05413</uri>.</mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Lanyon</surname><given-names>B. P.</given-names></name>; <name><surname>Whitfield</surname><given-names>J. D.</given-names></name>; <name><surname>Gillett</surname><given-names>G. G.</given-names></name>; <name><surname>Goggin</surname><given-names>M. E.</given-names></name>; <name><surname>Almeida</surname><given-names>M. P.</given-names></name>; <name><surname>Kassal</surname><given-names>I.</given-names></name>; <name><surname>Biamonte</surname><given-names>J. D.</given-names></name>; <name><surname>Mohseni</surname><given-names>M.</given-names></name>; <name><surname>Powell</surname><given-names>B. J.</given-names></name>; <name><surname>Barbieri</surname><given-names>M.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>White</surname><given-names>A. G.</given-names></name>
+<article-title>Towards Quantum
+Chemistry on a Quantum Computer</article-title>. <source>Nat. Chem.</source>
+<year>2010</year>, <volume>2</volume>, <fpage>106</fpage>&#x02013;<lpage>111</lpage><pub-id pub-id-type="doi">10.1038/nchem.483</pub-id>.<pub-id pub-id-type="pmid">21124400</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Du</surname><given-names>J.</given-names></name>; <name><surname>Xu</surname><given-names>N.</given-names></name>; <name><surname>Peng</surname><given-names>X.</given-names></name>; <name><surname>Wang</surname><given-names>P.</given-names></name>; <name><surname>Wu</surname><given-names>S.</given-names></name>; <name><surname>Lu</surname><given-names>D.</given-names></name>
+<article-title>NMR Implementation
+of a Molecular Hydrogen Quantum Simulation with Adiabatic State Preparation</article-title>. <source>Phys. Rev. Lett.</source>
+<year>2010</year>, <volume>104</volume>, <fpage>030502</fpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.104.030502</pub-id>.<pub-id pub-id-type="pmid">20366636</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>O&#x02019;Malley</surname><given-names>P. J. J.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>Kivlichan</surname><given-names>I. D.</given-names></name>; <name><surname>Romero</surname><given-names>J.</given-names></name>; <name><surname>McClean</surname><given-names>J. R.</given-names></name>; <name><surname>Barends</surname><given-names>R.</given-names></name>; <name><surname>Kelly</surname><given-names>J.</given-names></name>; <name><surname>Roushan</surname><given-names>P.</given-names></name>; <name><surname>Tranter</surname><given-names>A.</given-names></name>; <name><surname>Ding</surname><given-names>N.</given-names></name>; <name><surname>Campbell</surname><given-names>B.</given-names></name>; <name><surname>Chen</surname><given-names>Y.</given-names></name>; <name><surname>Chen</surname><given-names>Z.</given-names></name>; <name><surname>Chiaro</surname><given-names>B.</given-names></name>; <name><surname>Dunsworth</surname><given-names>A.</given-names></name>; <name><surname>Fowler</surname><given-names>A. G.</given-names></name>; <name><surname>Jeffrey</surname><given-names>E.</given-names></name>; <name><surname>Lucero</surname><given-names>E.</given-names></name>; <name><surname>Megrant</surname><given-names>A.</given-names></name>; <name><surname>Mutus</surname><given-names>J. Y.</given-names></name>; <name><surname>Neeley</surname><given-names>M.</given-names></name>; <name><surname>Neill</surname><given-names>C.</given-names></name>; <name><surname>Quintana</surname><given-names>C.</given-names></name>; <name><surname>Sank</surname><given-names>D.</given-names></name>; <name><surname>Vainsencher</surname><given-names>A.</given-names></name>; <name><surname>Wenner</surname><given-names>J.</given-names></name>; <name><surname>White</surname><given-names>T. C.</given-names></name>; <name><surname>Coveney</surname><given-names>P. V.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>; <name><surname>Neven</surname><given-names>H.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Martinis</surname><given-names>J. M.</given-names></name>
+<article-title>Scalable Quantum
+Simulation of Molecular Energies</article-title>. <source>Phys. Rev.
+X</source>
+<year>2016</year>, <volume>6</volume>, <fpage>031007</fpage><pub-id pub-id-type="doi">10.1103/PhysRevX.6.031007</pub-id>.</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>McClean</surname><given-names>J. R.</given-names></name>; <name><surname>Romero</surname><given-names>J.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>The Theory
+of Variational Hybrid Quantum-Classical Algorithms</article-title>. <source>New J. Phys.</source>
+<year>2016</year>, <volume>18</volume>, <fpage>023023</fpage><pub-id pub-id-type="doi">10.1088/1367-2630/18/2/023023</pub-id>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Kandala</surname><given-names>A.</given-names></name>; <name><surname>Mezzacapo</surname><given-names>A.</given-names></name>; <name><surname>Temme</surname><given-names>K.</given-names></name>; <name><surname>Takita</surname><given-names>M.</given-names></name>; <name><surname>Brink</surname><given-names>M.</given-names></name>; <name><surname>Chow</surname><given-names>J. M.</given-names></name>; <name><surname>Gambetta</surname><given-names>J. M.</given-names></name>
+<article-title>Hardware-Efficient Variational Quantum
+Eigensolver for Small Molecules and Quantum Magnets</article-title>. <source>Nature</source>
+<year>2017</year>, <volume>549</volume>, <fpage>242</fpage>&#x02013;<lpage>246</lpage><pub-id pub-id-type="doi">10.1038/nature23879</pub-id>.<pub-id pub-id-type="pmid">28905916</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Sete</surname><given-names>E. A.</given-names></name>; <name><surname>Zeng</surname><given-names>W. J.</given-names></name>; <name><surname>Rigetti</surname><given-names>C. T.</given-names></name>
+<article-title>Functional Architecture for Scalable
+Quantum Computing</article-title>. <source>2016 IEEE International Conference
+on Rebooting Computing (ICRC)</source>
+<year>2016</year>, <fpage>1</fpage>&#x02013;<lpage>6</lpage><pub-id pub-id-type="doi">10.1109/ICRC.2016.7738703</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Mohseni</surname><given-names>M.</given-names></name>; <name><surname>Read</surname><given-names>P.</given-names></name>; <name><surname>Neven</surname><given-names>H.</given-names></name>; <name><surname>Boixo</surname><given-names>S.</given-names></name>; <name><surname>Denchev</surname><given-names>V.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>Fowler</surname><given-names>A.</given-names></name>; <name><surname>Smelyanskiy</surname><given-names>V.</given-names></name>; <name><surname>Martinis</surname><given-names>J.</given-names></name>
+<article-title>Commercialize Quantum Technologies in Five Years</article-title>. <source>Nature</source>
+<year>2017</year>, <volume>543</volume>, <fpage>171</fpage><pub-id pub-id-type="doi">10.1038/543171a</pub-id>.<pub-id pub-id-type="pmid">28277529</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Jordan</surname><given-names>P.</given-names></name>; <name><surname>Wigner</surname><given-names>E.</given-names></name>
+<article-title>&#x000dc;ber das Paulische
+&#x000c4;quivalenzverbot</article-title>. <source>Eur. Phys. J. A</source>
+<year>1928</year>, <volume>47</volume>, <fpage>631</fpage>&#x02013;<lpage>651</lpage><pub-id pub-id-type="doi">10.1007/BF01331938</pub-id>.</mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Bravyi</surname><given-names>S. B.</given-names></name>; <name><surname>Kitaev</surname><given-names>A. Y.</given-names></name>
+<article-title>Fermionic Quantum
+Computation</article-title>. <source>Ann. Phys.</source>
+<year>2002</year>, <volume>298</volume>, <fpage>210</fpage>&#x02013;<lpage>226</lpage><pub-id pub-id-type="doi">10.1006/aphy.2002.6254</pub-id>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Seeley</surname><given-names>J. T.</given-names></name>; <name><surname>Richard</surname><given-names>M. J.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>
+<article-title>The Bravyi-Kitaev
+Transformation
+for Quantum Computation of Electronic Structure</article-title>. <source>J. Chem. Phys.</source>
+<year>2012</year>, <volume>137</volume>, <fpage>224109</fpage><pub-id pub-id-type="doi">10.1063/1.4768229</pub-id>.<pub-id pub-id-type="pmid">23248989</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Tranter</surname><given-names>A.</given-names></name>; <name><surname>Sofia</surname><given-names>S.</given-names></name>; <name><surname>Seeley</surname><given-names>J.</given-names></name>; <name><surname>Kaicher</surname><given-names>M.</given-names></name>; <name><surname>McClean</surname><given-names>J.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>Coveney</surname><given-names>P. V.</given-names></name>; <name><surname>Mintert</surname><given-names>F.</given-names></name>; <name><surname>Wilhelm</surname><given-names>F.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>
+<article-title>The Bravyi-Kitaev
+Transformation: Properties and Applications</article-title>. <source>Int. J. Quantum Chem.</source>
+<year>2015</year>, <volume>115</volume>, <fpage>1431</fpage>&#x02013;<lpage>1441</lpage><pub-id pub-id-type="doi">10.1002/qua.24969</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Trotter</surname><given-names>H. F.</given-names></name>
+<article-title>On the
+Product of Semi-Groups of Operators</article-title>. <source>Proc. Am.
+Math. Soc.</source>
+<year>1959</year>, <volume>10</volume>, <fpage>545</fpage>&#x02013;<lpage>551</lpage><pub-id pub-id-type="doi">10.1090/S0002-9939-1959-0108732-6</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Suzuki</surname><given-names>M.</given-names></name>
+<article-title>Generalized
+Trotter&#x02019;s Formula and Systematic Approximants of Exponential
+Operators and Inner Derivations with Applications to Many-Body Problems</article-title>. <source>Commun. Math. Phys.</source>
+<year>1976</year>, <volume>51</volume>, <fpage>183</fpage>&#x02013;<lpage>190</lpage><pub-id pub-id-type="doi">10.1007/BF01609348</pub-id>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="book" id="cit23"><person-group person-group-type="allauthors"><name><surname>Hatano</surname><given-names>N.</given-names></name>; <name><surname>Suzuki</surname><given-names>M.</given-names></name></person-group> In <source>Quantum Annealing
+and Other Optimization Methods</source>; <person-group person-group-type="editor"><name><surname>Das</surname><given-names>A.</given-names></name>, <name><surname>Chakrabarti</surname><given-names>B. K.</given-names></name></person-group>, Eds.; <publisher-name>Springer</publisher-name>: <publisher-loc>Berlin, Heidelberg</publisher-loc>, <year>2005</year>; pp <fpage>37</fpage>&#x02013;<lpage>68</lpage>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="weblink" id="cit24"><person-group person-group-type="allauthors"><name><surname>Kitaev</surname><given-names>A. Y.</given-names></name></person-group><article-title>Quantum Measurements
+and the Abelian Stabilizer Problem</article-title>. <year>1995</year>, <source>arXiv:quant-ph/9511026</source>. arXiv e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/quant-ph/9511026">https://arxiv.org/abs/quant-ph/9511026</uri>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>McClean</surname><given-names>J. R.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Exploiting
+Locality in Quantum Computation for Quantum Chemistry</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2014</year>, <volume>5</volume>, <fpage>4368</fpage>&#x02013;<lpage>4380</lpage><pub-id pub-id-type="doi">10.1021/jz501649m</pub-id>.<pub-id pub-id-type="pmid">26273989</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Havl&#x000ed;&#x0010d;ek</surname><given-names>V.</given-names></name>; <name><surname>Troyer</surname><given-names>M.</given-names></name>; <name><surname>Whitfield</surname><given-names>J. D.</given-names></name>
+<article-title>Operator Locality in Quantum Simulation
+of Fermionic Models</article-title>. <source>Phys. Rev. A: At., Mol.,
+Opt. Phys.</source>
+<year>2017</year>, <volume>95</volume>, <fpage>032332</fpage><pub-id pub-id-type="doi">10.1103/PhysRevA.95.032332</pub-id>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="weblink" id="cit27"><person-group person-group-type="allauthors"><name><surname>Setia</surname><given-names>K.</given-names></name>; <name><surname>Whitfield</surname><given-names>J. D.</given-names></name></person-group><article-title>Bravyi-Kitaev
+Superfast Simulation of Fermions on a Quantum Computer</article-title>. <year>2017</year>, <source>arXiv:1712.00446</source>. arXiv e-Print
+archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1712.00446">https://arxiv.org/abs/1712.00446</uri>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="book" id="cit28"><person-group person-group-type="allauthors"><name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>J&#x000f8;rgensen</surname><given-names>P.</given-names></name>; <name><surname>Olsen</surname><given-names>J.</given-names></name></person-group><source>Molecular Electronic-Structure Theory</source>; <publisher-name>Wiley</publisher-name>: <publisher-loc>Chichester,
+New York</publisher-loc>, <year>2000</year>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Somma</surname><given-names>R.</given-names></name>; <name><surname>Ortiz</surname><given-names>G.</given-names></name>; <name><surname>Knill</surname><given-names>E.</given-names></name>; <name><surname>Gubernatis</surname><given-names>J.</given-names></name>
+<article-title>Quantum Simulations
+of Physics Problems</article-title>. <source>Int. J. Quantum Inf.</source>
+<year>2003</year>, <volume>01</volume>, <fpage>189</fpage>&#x02013;<lpage>206</lpage><pub-id pub-id-type="doi">10.1142/S0219749903000140</pub-id>.</mixed-citation></ref><ref id="ref30"><note><p>This requirement can be
+relaxed by additional
+encoding techniques;<sup><xref ref-type="bibr" rid="ref46">46</xref>,<xref ref-type="bibr" rid="ref47">47</xref></sup> however, we do not consider these
+techniques here.</p></note></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Peruzzo</surname><given-names>A.</given-names></name>; <name><surname>McClean</surname><given-names>J.</given-names></name>; <name><surname>Shadbolt</surname><given-names>P.</given-names></name>; <name><surname>Yung</surname><given-names>M.-H.</given-names></name>; <name><surname>Zhou</surname><given-names>X.-Q.</given-names></name>; <name><surname>Love</surname><given-names>P. J.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>O&#x02019;Brien</surname><given-names>J. L.</given-names></name>
+<article-title>A Variational
+Eigenvalue Solver on a Photonic Quantum Processor</article-title>. <source>Nat. Commun.</source>
+<year>2014</year>, <volume>5</volume>, <fpage>4213</fpage><pub-id pub-id-type="doi">10.1038/ncomms5213</pub-id>.<pub-id pub-id-type="pmid">25055053</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Poulin</surname><given-names>D.</given-names></name>; <name><surname>Hastings</surname><given-names>M. B.</given-names></name>; <name><surname>Wecker</surname><given-names>D.</given-names></name>; <name><surname>Wiebe</surname><given-names>N.</given-names></name>; <name><surname>Doberty</surname><given-names>A. C.</given-names></name>; <name><surname>Troyer</surname><given-names>M.</given-names></name>
+<article-title>The Trotter Step Size
+Required for Accurate Quantum
+Simulation of Quantum Chemistry</article-title>. <source>Quantum Inf
+Comput</source>
+<year>2015</year>, <volume>15</volume>, <fpage>361</fpage>&#x02013;<lpage>384</lpage>.</mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Babbush</surname><given-names>R.</given-names></name>; <name><surname>McClean</surname><given-names>J.</given-names></name>; <name><surname>Wecker</surname><given-names>D.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Wiebe</surname><given-names>N.</given-names></name>
+<article-title>Chemical Basis of Trotter-Suzuki
+Errors in Quantum Chemistry Simulation</article-title>. <source>Phys.
+Rev. A: At., Mol., Opt. Phys.</source>
+<year>2015</year>, <volume>91</volume>, <fpage>022311</fpage><pub-id pub-id-type="doi">10.1103/PhysRevA.91.022311</pub-id>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Whitfield</surname><given-names>J. D.</given-names></name>; <name><surname>Biamonte</surname><given-names>J.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Simulation of Electronic Structure
+Hamiltonians Using Quantum Computers</article-title>. <source>Mol. Phys.</source>
+<year>2011</year>, <volume>109</volume>, <fpage>735</fpage>&#x02013;<lpage>750</lpage><pub-id pub-id-type="doi">10.1080/00268976.2011.552441</pub-id>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="report" id="cit35"><person-group person-group-type="allauthors"><name><surname>Johnson</surname><given-names>R. D.</given-names><suffix>III</suffix></name></person-group><source>NIST Computational Chemistry Comparison
+and Benchmark Database NIST
+Standard Reference Database Number 101 Release 18</source>; <year>2016</year> See the following: <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</uri>.</mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Parrish</surname><given-names>R. M.</given-names></name>; <name><surname>Burns</surname><given-names>L. A.</given-names></name>; <name><surname>Smith</surname><given-names>D. G. A.</given-names></name>; <name><surname>Simmonett</surname><given-names>A. C.</given-names></name>; <name><surname>DePrince</surname><given-names>A. E.</given-names></name>; <name><surname>Hohenstein</surname><given-names>E. G.</given-names></name>; <name><surname>Bozkaya</surname><given-names>U.</given-names></name>; <name><surname>Sokolov</surname><given-names>A. Y.</given-names></name>; <name><surname>Di Remigio</surname><given-names>R.</given-names></name>; <name><surname>Richard</surname><given-names>R. M.</given-names></name>; <name><surname>Gonthier</surname><given-names>J. F.</given-names></name>; <name><surname>James</surname><given-names>A. M.</given-names></name>; <name><surname>McAlexander</surname><given-names>H. R.</given-names></name>; <name><surname>Kumar</surname><given-names>A.</given-names></name>; <name><surname>Saitow</surname><given-names>M.</given-names></name>; <name><surname>Wang</surname><given-names>X.</given-names></name>; <name><surname>Pritchard</surname><given-names>B. P.</given-names></name>; <name><surname>Verma</surname><given-names>P.</given-names></name>; <name><surname>Schaefer</surname><given-names>H. F.</given-names></name>; <name><surname>Patkowski</surname><given-names>K.</given-names></name>; <name><surname>King</surname><given-names>R. A.</given-names></name>; <name><surname>Valeev</surname><given-names>E. F.</given-names></name>; <name><surname>Evangelista</surname><given-names>F. A.</given-names></name>; <name><surname>Turney</surname><given-names>J. M.</given-names></name>; <name><surname>Crawford</surname><given-names>T. D.</given-names></name>; <name><surname>Sherrill</surname><given-names>C. D.</given-names></name>
+<article-title>Psi4 1.1: An Open-Source
+Electronic Structure Program Emphasizing Automation, Advanced Libraries,
+and Interoperability</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2017</year>, <volume>13</volume>, <fpage>3185</fpage>&#x02013;<lpage>3197</lpage><pub-id pub-id-type="doi">10.1021/acs.jctc.7b00174</pub-id>.<pub-id pub-id-type="pmid">28489372</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="weblink" id="cit37"><person-group person-group-type="allauthors"><name><surname>McClean</surname><given-names>J. R.</given-names></name>; <name><surname>Kivlichan</surname><given-names>I. D.</given-names></name>; <name><surname>Steiger</surname><given-names>D. S.</given-names></name>; <name><surname>Sung</surname><given-names>K. J.</given-names></name>; <name><surname>Cao</surname><given-names>Y.</given-names></name>; <name><surname>Dai</surname><given-names>C.</given-names></name>; <name><surname>Fried</surname><given-names>E. S.</given-names></name>; <name><surname>Gidney</surname><given-names>C.</given-names></name>; <name><surname>H&#x000e4;ner</surname><given-names>T.</given-names></name>; <name><surname>Havl&#x000ed;&#x0010d;ek</surname><given-names>V.</given-names></name>; <name><surname>Huang</surname><given-names>C.</given-names></name>; <name><surname>Jiang</surname><given-names>Z.</given-names></name>; <name><surname>Neeley</surname><given-names>M.</given-names></name>; <name><surname>Romero</surname><given-names>J.</given-names></name>; <name><surname>Rubin</surname><given-names>N.</given-names></name>; <name><surname>Sawaya</surname><given-names>N. P. D.</given-names></name>; <name><surname>Setia</surname><given-names>K.</given-names></name>; <name><surname>Sim</surname><given-names>S.</given-names></name>; <name><surname>Sun</surname><given-names>W.</given-names></name>; <name><surname>Zhang</surname><given-names>F.</given-names></name>; <name><surname>Babbush</surname><given-names>R.</given-names></name></person-group><article-title>OpenFermion:
+The
+Electronic Structure Package for Quantum Computers</article-title>. <year>2017</year>, <source>arXiv:1710.07629</source>. arXiv e-Print
+archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1710.07629">https://arxiv.org/abs/1710.07629</uri>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Hastings</surname><given-names>M. B.</given-names></name>; <name><surname>Wecker</surname><given-names>D.</given-names></name>; <name><surname>Bauer</surname><given-names>B.</given-names></name>; <name><surname>Troyer</surname><given-names>M.</given-names></name>
+<article-title>Improving Quantum Algorithms
+for Quantum Chemistry</article-title>. <source>Quantum Inf. Comput.</source>
+<year>2015</year>, <volume>15</volume>, <fpage>1</fpage>&#x02013;<lpage>21</lpage>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><person-group person-group-type="allauthors"><name><surname>H&#x000e4;ner</surname><given-names>T.</given-names></name>; <name><surname>Steiger</surname><given-names>D. S.</given-names></name></person-group><article-title>0.5 Petabyte Simulation of a 45-Qubit Quantum Circuit</article-title>. <source>Proceedings of the International Conference for High Performance
+Computing, Networking, Storage and Analysis</source><year>2017</year>, <fpage>33:1</fpage>&#x02013;<lpage>33:10</lpage>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="weblink" id="cit40"><person-group person-group-type="allauthors"><name><surname>Pednault</surname><given-names>E.</given-names></name>; <name><surname>Gunnels</surname><given-names>J. A.</given-names></name>; <name><surname>Nannicini</surname><given-names>G.</given-names></name>; <name><surname>Horesh</surname><given-names>L.</given-names></name>; <name><surname>Magerlein</surname><given-names>T.</given-names></name>; <name><surname>Solomonik</surname><given-names>E.</given-names></name>; <name><surname>Wisnieff</surname><given-names>R.</given-names></name></person-group><article-title>Breaking the 49-Qubit
+Barrier in the Simulation of Quantum Circuits</article-title>. <year>2017</year>, <source>arXiv:1710.05867</source>. arXiv e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1710.05867">https://arxiv.org/abs/1710.05867</uri>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="weblink" id="cit41"><person-group person-group-type="allauthors"><name><surname>Smelyanskiy</surname><given-names>M.</given-names></name>; <name><surname>Sawaya</surname><given-names>N. P. D.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name></person-group><article-title>qHiPSTER:
+The Quantum High Performance Software Testing Environment</article-title>. <year>2016</year>, <source>arXiv:1601.07195</source> arXiv e-Print
+archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1601.07195">https://arxiv.org/abs/1601.07195</uri>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="book" id="cit42"><person-group person-group-type="allauthors"><name><surname>Nielsen</surname><given-names>M. A.</given-names></name>, <name><surname>Chuang</surname><given-names>I. L.</given-names></name></person-group><source>Quantum Computation
+and Quantum Information: 10th Anniversary Edition</source>; <publisher-name>Cambridge University Press</publisher-name>, <year>2010</year>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Rossi</surname><given-names>E.</given-names></name>; <name><surname>Bendazzoli</surname><given-names>G. L.</given-names></name>; <name><surname>Evangelisti</surname><given-names>S.</given-names></name>; <name><surname>Maynau</surname><given-names>D.</given-names></name>
+<article-title>A Full-Configuration
+Benchmark for the N2Molecule</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1999</year>, <volume>310</volume>, <fpage>530</fpage>&#x02013;<lpage>536</lpage><pub-id pub-id-type="doi">10.1016/S0009-2614(99)00791-5</pub-id>.</mixed-citation></ref><ref id="ref44"><note><p>This iterative process
+is not optimized for
+classical computing cost, and would likely be performed more efficiently
+when generating circuits to be implemented on real quantum devices.</p></note></ref><ref id="ref45"><mixed-citation publication-type="computer-program" id="cit45"><person-group person-group-type="allauthors"><name><surname>Jones</surname><given-names>E.</given-names></name>; <name><surname>Oliphant</surname><given-names>T.</given-names></name>; <name><surname>Peterson</surname><given-names>P.</given-names></name></person-group><etal/><source>SciPy: Open Source Scientific Tools for Python</source>. <year>2001</year>, Online (accessed May 2, 2018).</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="weblink" id="cit46"><person-group person-group-type="allauthors"><name><surname>Bravyi</surname><given-names>S.</given-names></name>; <name><surname>Gambetta</surname><given-names>J. M.</given-names></name>; <name><surname>Mezzacapo</surname><given-names>A.</given-names></name>; <name><surname>Temme</surname><given-names>K.</given-names></name></person-group><article-title>Tapering off Qubits to Simulate
+Fermionic Hamiltonians</article-title>. <year>2017</year>, <source>arXiv:1701.08213</source>. arXiv e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1701.08213">https://arxiv.org/abs/1701.08213</uri>.</mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="weblink" id="cit47"><person-group person-group-type="allauthors"><name><surname>Steudtner</surname><given-names>M.</given-names></name>; <name><surname>Wehner</surname><given-names>S.</given-names></name></person-group><article-title>Lowering Qubit
+Requirements for Quantum Simulations of Fermionic Systems</article-title>. <year>2017</year>, <source>arXiv:1712.07067</source>. arXiv e-Print
+archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1712.07067">https://arxiv.org/abs/1712.07067</uri>.</mixed-citation></ref></ref-list></back></article>

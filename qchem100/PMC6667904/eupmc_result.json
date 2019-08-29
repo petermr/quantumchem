@@ -1,0 +1,479 @@
+{
+  "id": [
+    "30238477"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30238477"
+  ],
+  "pmcid": [
+    "PMC6667904"
+  ],
+  "doi": [
+    "10.1002/jcc.25364"
+  ],
+  "title": [
+    "RAQET: Large-scale two-component relativistic quantum chemistry program package."
+  ],
+  "authorString": [
+    "Hayami M, Seino J, Nakajima Y, Nakano M, Ikabata Y, Yoshikawa T, Oyama T, Hiraga K, Hirata S, Nakai H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Hayami M"
+          ],
+          "firstName": [
+            "Masao"
+          ],
+          "lastName": [
+            "Hayami"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Seino J"
+          ],
+          "firstName": [
+            "Junji"
+          ],
+          "lastName": [
+            "Seino"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Waseda Research Institute for Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nakajima Y"
+          ],
+          "firstName": [
+            "Yuya"
+          ],
+          "lastName": [
+            "Nakajima"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nakano M"
+          ],
+          "firstName": [
+            "Masahiko"
+          ],
+          "lastName": [
+            "Nakano"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Ikabata Y"
+          ],
+          "firstName": [
+            "Yasuhiro"
+          ],
+          "lastName": [
+            "Ikabata"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3811-2908",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Waseda Research Institute for Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Yoshikawa T"
+          ],
+          "firstName": [
+            "Takeshi"
+          ],
+          "lastName": [
+            "Yoshikawa"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7489-5252",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Oyama T"
+          ],
+          "firstName": [
+            "Takuro"
+          ],
+          "lastName": [
+            "Oyama"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Hiraga K"
+          ],
+          "firstName": [
+            "Kenta"
+          ],
+          "lastName": [
+            "Hiraga"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Hirata S"
+          ],
+          "firstName": [
+            "So"
+          ],
+          "lastName": [
+            "Hirata"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "CREST, Japan Science and Technology Agency, 7 Gobancho, Chiyoda-ku, Tokyo, 102-0076, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nakai H"
+          ],
+          "firstName": [
+            "Hiromi"
+          ],
+          "lastName": [
+            "Nakai"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3811-2908",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7489-5252",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "27"
+      ],
+      "volume": [
+        "39"
+      ],
+      "journalIssueId": [
+        "2743103"
+      ],
+      "dateOfPublication": [
+        "2018 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Journal of computational chemistry"
+          ],
+          "ISOAbbreviation": [
+            "J Comput Chem"
+          ],
+          "medlineAbbreviation": [
+            "J Comput Chem"
+          ],
+          "NLMid": [
+            "9878362"
+          ],
+          "ISSN": [
+            "0192-8651"
+          ],
+          "ESSN": [
+            "1096-987X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "2333-2344"
+  ],
+  "abstractText": [
+    "The Relativistic And Quantum Electronic Theory (RAQET) program is a new software package, which is designed for large-scale two-component relativistic quantum chemical (QC) calculations. The package includes several efficient schemes and algorithms for calculations involving large molecules which contain heavy elements in accurate relativistic formalisms. These calculations can be carried out in terms of the two-component relativistic Hamiltonian, wavefunction theory, density functional theory, core potential scheme, and evaluation of electron repulsion integrals. Furthermore, several techniques, which have frequently been used in non-relativistic QC calculations, have been customized for relativistic calculations. This article introduces the brief theories and capabilities of RAQET with several calculation examples. © 2018 Wiley Periodicals, Inc."
+  ],
+  "affiliation": [
+    "Department of Chemistry and Biochemistry, School of Advanced Science and Engineering, Waseda University, 3-4-1 Okubo, Shinjuku-ku, Tokyo, 169-8555, Japan."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "JP17940169"
+          ],
+          "agency": [
+            "Precursory Research for Embryonic Science and Technology"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "agency": [
+            "Core Research for Evolutional Science and Technology (CREST)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "agency": [
+            "Japan Science and Technology Agency (JST)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "agency": [
+            "The Ministry of Education Culture, Sports, Science and Technology (MEXT)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Relativistic Quantum Chemistry",
+        "Heavy Element",
+        "Generalized Hartree-fock",
+        "Spin-dependent Effect",
+        "Spin-free Effect",
+        "Two-component Relativistic Framework"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6667904?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6667904"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1002/jcc.25364"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc-nd"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2018-09-22"
+  ],
+  "firstIndexDate": [
+    "2018-09-21"
+  ],
+  "dateOfRevision": [
+    "2019-08-07"
+  ],
+  "electronicPublicationDate": [
+    "2018-09-20"
+  ],
+  "firstPublicationDate": [
+    "2018-09-20"
+  ]
+}

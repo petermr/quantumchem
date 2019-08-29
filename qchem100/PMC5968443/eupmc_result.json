@@ -1,0 +1,307 @@
+{
+  "id": [
+    "29806002"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29806002"
+  ],
+  "pmcid": [
+    "PMC5968443"
+  ],
+  "doi": [
+    "10.1021/acscentsci.7b00586"
+  ],
+  "title": [
+    "Automatic Differentiation in Quantum Chemistry with Applications to Fully Variational Hartree-Fock."
+  ],
+  "authorString": [
+    "Tamayo-Mendoza T, Kreisbeck C, Lindh R, Aspuru-Guzik A."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Tamayo-Mendoza T"
+          ],
+          "firstName": [
+            "Teresa"
+          ],
+          "lastName": [
+            "Tamayo-Mendoza"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, 12 Oxford Street, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Kreisbeck C"
+          ],
+          "firstName": [
+            "Christoph"
+          ],
+          "lastName": [
+            "Kreisbeck"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, 12 Oxford Street, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Lindh R"
+          ],
+          "firstName": [
+            "Roland"
+          ],
+          "lastName": [
+            "Lindh"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Department of Chemistry-Ångström, The Theoretical Chemistry Programme, Uppsala Center for Computational Chemistry, UC3, Uppsala University, Box 518, 751 20, Uppsala, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Aspuru-Guzik A"
+          ],
+          "firstName": [
+            "Alán"
+          ],
+          "lastName": [
+            "Aspuru-Guzik"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8277-4434",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, 12 Oxford Street, Cambridge, Massachusetts 02138, United States."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8277-4434",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "5"
+      ],
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2688453"
+      ],
+      "dateOfPublication": [
+        "2018 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "ACS central science"
+          ],
+          "ISOAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "medlineAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "NLMid": [
+            "101660035"
+          ],
+          "ISSN": [
+            "2374-7943"
+          ],
+          "ESSN": [
+            "2374-7951"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "559-566"
+  ],
+  "abstractText": [
+    "Automatic differentiation (AD) is a powerful tool that allows calculating derivatives of implemented algorithms with respect to all of their parameters up to machine precision, without the need to explicitly add any additional functions. Thus, AD has great potential in quantum chemistry, where gradients are omnipresent but also difficult to obtain, and researchers typically spend a considerable amount of time finding suitable analytical forms when implementing derivatives. Here, we demonstrate that AD can be used to compute gradients with respect to any parameter throughout a complete quantum chemistry method. We present DiffiQult, a Hartree-Fock implementation, entirely differentiated with the use of AD tools. DiffiQult is a software package written in plain Python with minimal deviation from standard code which illustrates the capability of AD to save human effort and time in implementations of exact gradients in quantum chemistry. We leverage the obtained gradients to optimize the parameters of one-particle basis sets in the context of the floating Gaussian framework."
+  ],
+  "affiliation": [
+    "Department of Chemistry and Chemical Biology, Harvard University, 12 Oxford Street, Cambridge, Massachusetts 02138, United States."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5968443?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5968443"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1021/acscentsci.7b00586"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2018-05-29"
+  ],
+  "firstIndexDate": [
+    "2018-05-28"
+  ],
+  "dateOfRevision": [
+    "2018-05-31"
+  ],
+  "electronicPublicationDate": [
+    "2018-05-09"
+  ],
+  "firstPublicationDate": [
+    "2018-05-09"
+  ]
+}

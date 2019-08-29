@@ -1,0 +1,767 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Cent Sci</journal-id><journal-id journal-id-type="iso-abbrev">ACS Cent Sci</journal-id><journal-id journal-id-type="publisher-id">oc</journal-id><journal-id journal-id-type="coden">acscii</journal-id><journal-title-group><journal-title>ACS Central Science</journal-title></journal-title-group><issn pub-type="ppub">2374-7943</issn><issn pub-type="epub">2374-7951</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6535778</article-id><article-id pub-id-type="pmid">31139726</article-id><article-id pub-id-type="doi">10.1021/acscentsci.9b00202</article-id><article-categories><subj-group><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>A New Magnetic Topological Quantum Material Candidate
+by Design</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Gui</surname><given-names>Xin</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath2"><name><surname>Pletikosic</surname><given-names>Ivo</given-names></name><xref rid="aff2" ref-type="aff">&#x02021;</xref><xref rid="aff3" ref-type="aff">&#x000a7;</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Cao</surname><given-names>Huibo</given-names></name><xref rid="aff4" ref-type="aff">&#x02225;</xref></contrib><contrib contrib-type="author" id="ath4"><name><surname>Tien</surname><given-names>Hung-Ju</given-names></name><xref rid="aff5" ref-type="aff">&#x022a5;</xref></contrib><contrib contrib-type="author" id="ath5"><name><surname>Xu</surname><given-names>Xitong</given-names></name><xref rid="aff6" ref-type="aff">#</xref></contrib><contrib contrib-type="author" id="ath6"><name><surname>Zhong</surname><given-names>Ruidan</given-names></name><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author" id="ath7"><name><surname>Wang</surname><given-names>Guangqiang</given-names></name><xref rid="aff6" ref-type="aff">#</xref></contrib><contrib contrib-type="author" id="ath8"><name><surname>Chang</surname><given-names>Tay-Rong</given-names></name><xref rid="aff5" ref-type="aff">&#x022a5;</xref><xref rid="aff9" ref-type="aff">&#x029eb;</xref></contrib><contrib contrib-type="author" id="ath9"><name><surname>Jia</surname><given-names>Shuang</given-names></name><xref rid="aff6" ref-type="aff">#</xref><xref rid="aff7" ref-type="aff">&#x02207;</xref><xref rid="aff8" ref-type="aff">&#x025cb;</xref></contrib><contrib contrib-type="author" id="ath10"><name><surname>Valla</surname><given-names>Tonica</given-names></name><xref rid="aff3" ref-type="aff">&#x000a7;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath11"><name><surname>Xie</surname><given-names>Weiwei</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath12"><name><surname>Cava</surname><given-names>Robert J.</given-names></name><xref rid="cor2" ref-type="other">*</xref><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><aff id="aff1"><label>&#x02020;</label>Department
+of Chemistry, <institution>Louisiana State University</institution>, Baton Rouge, Louisiana 70803, <country>United States</country></aff><aff id="aff2"><label>&#x02021;</label>Department
+of Chemistry, <institution>Princeton University</institution>, Princeton, New Jersey 08540, <country>United States</country></aff><aff id="aff3"><label>&#x000a7;</label>Condensed
+Matter Physics and Materials Science, <institution>Brookhaven
+National Laboratory</institution>, Upton, New York 11973, <country>United States</country></aff><aff id="aff4"><label>&#x02225;</label>Neutron
+Scattering Division, <institution>Oak Ridge National
+Laboratory</institution>, Oak Ridge, Tennessee 37831, <country>United States</country></aff><aff id="aff5"><label>&#x022a5;</label>Department
+of Physics, <institution>National Cheng Kung University</institution>, Tainan 70101, <country>Taiwan</country></aff><aff id="aff6"><label>#</label>International
+Center for Quantum Materials, School of Physics, <institution>Peking University</institution>, Beijing 100871, <country>People&#x02019;s Republic
+of China</country></aff><aff id="aff7"><label>&#x02207;</label><institution>Collaborative
+Innovation Center of Quantum Matter</institution>, Beijing 100871, <country>People&#x02019;s
+Republic of China</country></aff><aff id="aff8"><label>&#x025cb;</label>CAS
+Center for Excellence in Topological Quantum Computation, <institution>University of Chinese Academy of Sciences</institution>, Beijing 100190, <country>People&#x02019;s Republic of China</country></aff><aff id="aff9"><label>&#x029eb;</label>Center for Quantum
+Frontiers of Research &#x00026; Technology (QFort), Tainan 701, <country>Taiwan</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>weiweix@lsu.edu</email>.</corresp><corresp id="cor2"><label>*</label>E-mail: <email>rcava@princeton.edu</email>.</corresp></author-notes><pub-date pub-type="epub"><day>19</day><month>04</month><year>2019</year></pub-date><pub-date pub-type="ppub"><day>22</day><month>05</month><year>2019</year></pub-date><volume>5</volume><issue>5</issue><fpage>900</fpage><lpage>910</lpage><history><date date-type="received"><day>28</day><month>02</month><year>2019</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019 American Chemical
+Society</copyright-statement><copyright-year>2019</copyright-year><copyright-holder>American Chemical
+Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0013" id="ab-tgr1"/></p><p>Magnetism, when combined with an
+unconventional electronic band
+structure, can give rise to forefront electronic properties such as
+the quantum anomalous Hall effect, axion electrodynamics, and Majorana
+fermions. Here we report the characterization of high-quality crystals
+of EuSn<sub>2</sub>P<sub>2</sub>, a new quantum material specifically
+designed to engender unconventional electronic states plus magnetism.
+EuSn<sub>2</sub>P<sub>2</sub> has a layered, Bi<sub>2</sub>Te<sub>3</sub>-type structure. Ferromagnetic interactions dominate the Curie&#x02013;Weiss
+susceptibility, but a transition to antiferromagnetic ordering occurs
+near 30 K. Neutron diffraction reveals that this is due to two-dimensional
+ferromagnetic spin alignment within individual Eu layers and antiferromagnetic
+alignment between layers&#x02014;this magnetic state surrounds the
+Sn&#x02013;P layers at low temperatures. The bulk electrical resistivity
+is sensitive to the magnetism. Electronic structure calculations reveal
+that EuSn<sub>2</sub>P<sub>2</sub> might be a strong topological insulator,
+which can be a new magnetic topological quantum material (MTQM) candidate.
+The calculations show that surface states should be present, and they
+are indeed observed by angle-resolved photoelectron spectroscopy (ARPES)
+measurements.</p></abstract><abstract abstract-type="short"><p>The layered quantum material
+EuSn<sub>2</sub>P<sub>2</sub> is designed, synthesized, and characterized.
+This new material is
+an ideal platform for studying the interplay of magnetism with topological
+electronic states.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>oc9b00202</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>oc-2019-00202n</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>The
+design and discovery of new quantum materials with desired
+electronic and magnetic functionality, especially materials where
+quantum effects result in topological electronic properties, is a
+new challenge and one of the frontiers of research in materials chemistry
+and materials physics.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> There is a crucial
+need for the discovery of new materials that in particular harness
+the topological quantum states of matter, to increase our understanding
+of these newly recognized electronic states and to realize their potential
+in devices.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref3">3</xref></sup> In this context, topological insulators
+(TIs), which support fundamentally different surface (i.e., &#x0201c;topologically
+protected&#x0201d;) and bulk electronic states, are of particular interest.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> When additional quantum phases such as superconductivity,
+magnetism, or charge density waves are also present, new electronic
+properties can arise due to their interactions with the surface states.<sup><xref ref-type="bibr" rid="ref5">5</xref>,<xref ref-type="bibr" rid="ref6">6</xref></sup> Currently, the study of such systems in materials physics frequently
+focuses on heterostructures consisting of TI/magnetic multilayers.<sup><xref ref-type="bibr" rid="ref7">7</xref>&#x02212;<xref ref-type="bibr" rid="ref10">10</xref></sup> Unfortunately, these systems cannot be widely studied due to the
+uncommon procedures required to make them. Thus, the design of novel
+magnetic topological quantum materials that are widely synthetically
+accessible is highly sought. Theorists have scoured the ICSD for previously
+reported materials that can display topological electronic properties,
+but the design of totally new topological quantum materials remains
+rare, especially for cases where the interactions of different quantum
+states are expected.<sup><xref ref-type="bibr" rid="ref11">11</xref>&#x02212;<xref ref-type="bibr" rid="ref16">16</xref></sup></p><p>Located at the Zintl border in the periodic table, the element
+Sn has moderate electronegativity, thus allowing it to participate
+in various types of bonding interactions. This provides flexibility
+in tuning the electronic properties of materials in which the electronic
+states of tin are dominant.<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> Further,
+being a 5p-based element, it is expected to display the effects of
+spin&#x02013;orbit coupling.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Tin may be
+the critical elemental constituent in the topological crystalline
+insulator SnTe, for example, and the fabrication of Stanene thin films
+has been accomplished with the goal of establishing its topological
+electronic properties.<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> Thus, the inclusion of tin in
+quantum materials is a good chemical rule when designing quantum materials
+with potentially unconventional electronic functionality.</p><p>A
+second chemical design rule for finding novel functional materials
+is based on symmetry and crystal structure. Experience has shown that
+low-dimensional materials are ideal platforms for realizing topological
+electronic states due to the weak interlayer interactions and subsequent
+partial confinement of the electronic states that is frequently present.
+Rhombohedral Bi<sub>2</sub>Se<sub>3</sub><sup><xref ref-type="bibr" rid="ref21">21</xref></sup> and Bi<sub>2</sub>Te<sub>3</sub>,<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> and
+trigonal Mg<sub>3</sub>Bi<sub>2</sub>, are examples.<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> The presence of elements with strong spin&#x02013;orbit
+coupling in layers based on triangles is a common structural motif
+in topological quantum materials.</p><p>Finally, as a third design
+rule, the inclusion of magnetic lanthanide
+elements, if well-placed in the crystal structure, can result in the
+presence of ordered magnetic states that interact relatively weakly
+with the other electronic states present, due to the localized nature
+of 4f electrons.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> With appropriately selected
+rare earth elements at the appropriate concentration in the appropriate
+crystal structure, magnetically ordered states can be found at experimentally
+accessible temperatures. In materials with unconventional electronic
+structures, this allows for the interactions between magnetic and
+topological states to be studied.</p><p>Although nonmagnetic, the
+ternary Bi<sub>2</sub>Te<sub>3</sub>-type
+compound SrSn<sub>2</sub>As<sub>2</sub> has been theoretically predicted
+to host three-dimensional Dirac states around the Fermi level.<sup><xref ref-type="bibr" rid="ref25">25</xref>&#x02212;<xref ref-type="bibr" rid="ref27">27</xref></sup> Moreover, NaSn<sub>2</sub>As<sub>2</sub>, with the same structure,
+is reported to be a superconductor below 1.3 K.<sup><xref ref-type="bibr" rid="ref28">28</xref></sup> Consisting of buckled SnAs honeycomb networks separated
+by Sr<sup>2+</sup> or Na<sup>+</sup>, consideration of these compounds
+and the above materials design criteria inspired us to incorporate
+a magnetic rare earth element (Eu<sup>2+</sup>) between Sn-based layers
+with a geometry based on triangles to yield both an unconventional
+electronic band structure and magnetic properties in a single material.</p><p>Thus, here we report a new material by design, EuSn<sub>2</sub>P<sub>2</sub>. We report its crystallographically and magnetically
+ordered structures, determined via single crystal X-ray and neutron
+diffraction. We observe a transition to an A-type antiferromagnetic
+state (alternating-orientation ferromagnetic layers) near 30 K, and
+below that temperature significant magnetoresistance, a type-II nodal-line
+semimetal when spin&#x02013;orbit coupling is ignored. Electronic structure
+calculations reveal that EuSn<sub>2</sub>P<sub>2</sub> is an antiferromagnetic
+topological insulator when Hubbard (<italic>U</italic>) is included.
+The detailed interplay of unconventional electronic states (&#x0201c;band
+inversion&#x0201d;), spin&#x02013;orbit coupling, and the surface states
+is presented theoretically. The presence of the surface states is
+confirmed by angle-resolved photoelectron spectroscopy (ARPES) measurements.
+Our new quantum material is easily grown as bulk crystals, displays
+magnetic ordering at accessible temperatures, and displays topological
+surface states, thus allowing the interactions of ferromagnetism and
+topological surface states to be observed in a bulk material with
+a simple crystal structure.</p></sec><sec id="sec2"><title>Experimental Details</title><sec id="sec2.1"><title>Single Crystal Growth</title><p>To obtain single crystals of
+EuSn<sub>2</sub>P<sub>2</sub>, Eu chunks, red phosphorus, and Sn granules
+were placed in an alumina crucible with the molar ratio of 1.1:2:20.
+The crucible was sealed into an evacuated quartz tube which was then
+heated to 600 &#x000b0;C and held for 24 h followed by a 2 day heat treatment
+at 1050 &#x000b0;C. After that, the tube was cooled to 600 &#x000b0;C at
+a rate of 3 &#x000b0;C/h. Excess Sn was centrifuged out after reaching
+600 &#x000b0;C, and shiny hexagonal single crystals (&#x0223c;1 &#x000d7;
+1 &#x000d7; 0.1 mm<sup>3</sup>) were obtained.</p></sec><sec id="sec2.2"><title>Structure Determination</title><p>Multiple EuSn<sub>2</sub>P<sub>2</sub> crystals (&#x0223c;60 &#x000d7;
+60 &#x000d7; 5 &#x003bc;m<sup>3</sup>) were tested by single crystal X-ray
+diffraction to determine the
+crystal structure of the new material. The structure, consistent among
+all crystals, was determined using a Bruker Apex II diffractometer
+equipped with Mo radiation (&#x003bb;<sub>K&#x003b1;</sub> = 0.710&#x0202f;73
+&#x000c5;) at room temperature. Glycerol was used to protect the samples,
+which were mounted on a Kapton loop. The scan width was set to 0.5&#x000b0;
+with an exposure time of 10 s. Four different positions of the goniometer
+and detector were selected. Data acquisition was made via Bruker SMART
+software with the corrections for Lorentz and polarization effects
+included.<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> The direct method and full-matrix
+least-squares on F<sup>2</sup> procedure within the SHELXTL package
+were employed to solve the crystal structure.<sup><xref ref-type="bibr" rid="ref30">30</xref></sup></p></sec><sec id="sec2.3"><title>Physical Property Measurement</title><p>DC magnetization data
+were measured from 2 to 300 K using a Quantum Design Dynacool Physical
+Property Measurement System (PPMS), equipped with a vibrating sample
+magnetometer (VSM) option. The magnetic susceptibility was defined
+as M/H, where the applied field was 500 Oe. Field-dependent magnetization
+data were collected at 2 K with magnetic field up to &#x003bc;<sub>0</sub><italic>H</italic> = 9 T. The electronic transport measurements were
+carried out in a PPMS-9 cryostat using the four-terminal method between
+1.8 and 300 K under magnetic fields up to &#x003bc;<sub>0</sub><italic>H</italic> = 9 T. Platinum wires were attached to the samples by
+silver epoxy to ensure ohmic contact. The normal resistivity, &#x003c1;<sub><italic>xx</italic></sub>, was measured in the basal plane of a single
+crystal, simply determined by dividing the observed voltage difference
+by the applied current, suitably normalized by the sample dimensions.
+The Hall resistance, &#x003c1;<sub><italic>yx</italic></sub>, was similarly
+determined by applying the magnetic field perpendicular to a single
+crystal basal plane and measuring the voltage within the plane perpendicular
+to the direction of the applied current (again suitably normalized
+by the sample size).</p></sec><sec id="sec2.4"><title>Electron Paramagnetic Resonance (EPR)</title><p>A single crystal
+of EuSn<sub>2</sub>P<sub>2</sub> was stored in the glovebox before
+EPR measurements, and then placed in a closed sample tube. The sample
+tube was put into the EPR cavity. The experiment was carried out on
+a Bruker ER 300D spectrometer interfaced to a Bruker 1600 computer
+for data storage and manipulations. The spectrum was collected by
+sweeping the magnetic field from 0 to 5000 G.</p></sec><sec id="sec2.5"><title>Single Crystal Neutron
+Diffraction</title><p>Single crystal neutron
+diffraction was performed on the Four-Circle Diffractometer (HB-3A)
+at the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory
+(ORNL). Due to the large neutron absorption coefficient of Eu, a relatively
+small single crystal (&#x0223c;0.8 &#x000d7; 0.4 &#x000d7; 0.02 mm<sup>3</sup>) was selected and mounted on an aluminum pin. The measurement was
+carried out between 4 and 50 K with an incident neutron wavelength
+of 1.550 &#x000c5; from a bent perfect Si-220 monochromator. Absorption
+corrections were applied using the PLATON software.<sup><xref ref-type="bibr" rid="ref31">31</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> The nuclear and magnetic structure refinements were carried out
+using the FULLPROF refinement suite.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup></p></sec><sec id="sec2.6"><title>Electronic Structure Calculations</title><p>The bulk electronic
+structure calculations for EuSn<sub>2</sub>P<sub>2</sub> were performed
+by using the projector augmented wave method as implemented in the
+VASP package within the generalized gradient approximation (GGA) scheme.<sup><xref ref-type="bibr" rid="ref34">34</xref>,<xref ref-type="bibr" rid="ref35">35</xref></sup> The experimental structural parameters were employed. Spin&#x02013;orbit
+coupling was included self-consistently in some of the calculations
+for comparison to the expected electronic structure with SOC absent.
+Spin polarization using GGA+<italic>U</italic> (<italic>U</italic> = 4 eV) was employed for the magnetic models investigated.<sup><xref ref-type="bibr" rid="ref36">36</xref></sup> How f electron states are treated in DFT calculations
+is of interest because when considered as valence electrons then they
+are always found at the Fermi energy for partly filled f orbitals,
+which, except in very rare cases such as for heavy fermion materials,<sup><xref ref-type="bibr" rid="ref37">37</xref>,<xref ref-type="bibr" rid="ref38">38</xref></sup> is not a realistic picture for their relative position in energy&#x02014;in
+our calculations, the energies of the calculated Eu f electron states
+are tested to match with the experimental ARPES measurements. A Monkhorst&#x02013;Pack
+11 &#x000d7; 11 &#x000d7; 7 <italic>k</italic>-point mesh was used for the <italic>k</italic>-space integrations.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> With
+these settings, the calculated total energy converged to less than
+0.1 meV per atom. For the surface spectral weight calculations, a
+semi-infinite Green&#x02019;s function method, terminated by (001)
+surfaces, was employed. Calculations were made for Sn-, P-, and Eu-terminated
+(001) surfaces. The median line of the Sn bilayer is selected as the
+Sn-terminated surface.</p></sec><sec id="sec2.7"><title>Experimental Band Structure Characterization</title><p>Angle-resolved
+photoelectron spectroscopy (ARPES) measurements were carried out at
+a temperature of 10 K on the (001) surfaces of EuSn<sub>2</sub>P<sub>2</sub> crystals cleaved in a 10<sup>&#x02013;9</sup> Pa vacuum. Linearly
+(s and p) polarized light with photon energies in the range 50&#x02013;120
+eV was used. Experiments were performed at the Electron Spectro-Microscopy
+(ESM) beamline of the National Synchrotron Light Source (NSLS-II).
+The photoemitted electrons were collected from a &#x000b1;15&#x000b0; cone
+by a Scienta DA30 instrument and analyzed with angular and energy
+resolutions of &#x0003c;0.2&#x000b0; and 15 meV, respectively. Core level
+spectra using 300 eV photons showed presence of no elements other
+than Sn, Eu, and P in the material. Potassium adsorption, commonly
+used to fill a material&#x02019;s bands with additional electrons to
+increase the Fermi Level at the surface of a sample, resulted in surface
+deterioration in the case of EuSn<sub>2</sub>P<sub>2</sub> and no
+noticeable Fermi level shift.</p></sec><sec id="sec2.8"><title>Safety Statement</title><p>No unexpected or unusually high safety
+hazards were encountered.</p></sec></sec><sec id="sec3"><title>Results and Discussion</title><sec id="sec3.1"><title>Crystal
+Structure</title><p>The single crystals of EuSn<sub>2</sub>P<sub>2</sub> are hexagonal plates, as shown in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A, with the rhombohedral <italic>c</italic>-axis perpendicular to the plates (thus the plates are
+(001) or &#x0201c;basal&#x0201d; planes). The results from single crystal
+X-ray diffraction reveal that EuSn<sub>2</sub>P<sub>2</sub> crystallizes
+in a rhombohedral lattice with the space group <italic>R</italic>&#x00033;&#x00305;<italic>m</italic>, in analogy to Bi<sub>2</sub>Te<sub>3</sub>, which is
+a well-known topological insulator. As shown in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>B, each Eu atom, surrounded by six P atoms,
+forms a trigonal prism. The Eu layers are separated by two Sn@P<sub>3</sub> triangular pyramid layers connected by weak Sn&#x02013;Sn
+bonds. An inversion center exists in the center of the unit cell.
+The layered features of EuSn<sub>2</sub>P<sub>2</sub>, and its in-plane
+and honeycomb Sn structure viewed along <italic>c</italic>-axis are
+presented in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>C,D, respectively. The crystallographic data, including atomic positions,
+site occupancies, and equivalent isotropic thermal displacement parameters,
+are listed in <xref rid="tbl1" ref-type="other">Tables <xref rid="tbl1" ref-type="other">1</xref></xref> and <xref rid="tbl2" ref-type="other">2</xref>. The refined anisotropic displacement
+parameters are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00202/suppl_file/oc9b00202_si_001.pdf">Table S1</ext-link>.</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>Single Crystal Structure Refinement
+for EuSn<sub>2</sub>P<sub>2</sub> at 293 (2) K</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/></colgroup><tbody><tr><td style="border:none;" align="left">refined formula</td><td style="border:none;" align="left">EuSn<sub>2</sub>P<sub>2</sub></td></tr><tr><td style="border:none;" align="left">F.W. (g/mol)</td><td style="border:none;" align="left">451.28</td></tr><tr><td style="border:none;" align="left">space&#x000a0;group;&#x000a0;<italic>Z</italic></td><td style="border:none;" align="left"><italic>R</italic>&#x00033;&#x00305;<italic>m</italic>;&#x000a0;3</td></tr><tr><td style="border:none;" align="left"><italic>a</italic>&#x000a0;(&#x000c5;)</td><td style="border:none;" align="left">4.097&#x000a0;(1)</td></tr><tr><td style="border:none;" align="left"><italic>c</italic>&#x000a0;(&#x000c5;)</td><td style="border:none;" align="left">26.162&#x000a0;(5)</td></tr><tr><td style="border:none;" align="left"><italic>V</italic>&#x000a0;(&#x000c5;<sup>3</sup>)</td><td style="border:none;" align="left">380.24&#x000a0;(13)</td></tr><tr><td style="border:none;" align="left">extinction coefficient</td><td style="border:none;" align="left">0.0000&#x000a0;(1)</td></tr><tr><td style="border:none;" align="left">&#x003b8;&#x000a0;range (deg)</td><td style="border:none;" align="left">2.335&#x02013;33.171</td></tr><tr><td style="border:none;" align="left">no. reflections; <italic>R</italic><sub>int</sub></td><td style="border:none;" align="left">2229; 0.0191</td></tr><tr><td style="border:none;" align="left">no.
+independent reflections</td><td style="border:none;" align="left">227</td></tr><tr><td style="border:none;" align="left">no. parameters</td><td style="border:none;" align="left">10</td></tr><tr><td style="border:none;" align="left"><italic>R</italic><sub>1</sub>: <italic>&#x003c9;R</italic><sub>2</sub>&#x000a0;(<italic>I</italic>&#x000a0;&#x0003e;&#x000a0;2&#x003b4;(<italic>I</italic>))</td><td style="border:none;" align="left">0.0154; 0.0363</td></tr><tr><td style="border:none;" align="left">goodness of
+fit</td><td style="border:none;" align="left">1.121</td></tr><tr><td style="border:none;" align="left">diffraction peak
+and hole (e<sup>&#x02013;</sup>/&#x000c5;<sup>3</sup>)</td><td style="border:none;" align="left">2.481; &#x02212;0.617</td></tr></tbody></table></table-wrap><table-wrap id="tbl2" position="float"><label>Table 2</label><caption><title>Atomic Coordinates and Equivalent
+Isotropic Displacement Parameters for EuSn<sub>2</sub>P<sub>2</sub> at 293 K<xref rid="tbl2-fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">atom</th><th style="border:none;" align="center">Wyck.</th><th style="border:none;" align="center">occ.</th><th style="border:none;" align="center"><italic>x</italic></th><th style="border:none;" align="center"><italic>y</italic></th><th style="border:none;" align="center" char="."><italic>z</italic></th><th style="border:none;" align="center" char="."><italic>U</italic><sub>eq</sub></th></tr></thead><tbody><tr><td style="border:none;" align="left">Eu1</td><td style="border:none;" align="left">3<italic>a</italic></td><td style="border:none;" align="left">1</td><td style="border:none;" align="left">0</td><td style="border:none;" align="left">0</td><td style="border:none;" align="char" char=".">0</td><td style="border:none;" align="char" char=".">0.0088&#x000a0;(1)</td></tr><tr><td style="border:none;" align="left">Sn2</td><td style="border:none;" align="left">6<italic>c</italic></td><td style="border:none;" align="left">1</td><td style="border:none;" align="left">0</td><td style="border:none;" align="left">0</td><td style="border:none;" align="char" char=".">0.2112&#x000a0;(1)</td><td style="border:none;" align="char" char=".">0.0117&#x000a0;(1)</td></tr><tr><td style="border:none;" align="left">P3</td><td style="border:none;" align="left">6<italic>c</italic></td><td style="border:none;" align="left">1</td><td style="border:none;" align="left">0</td><td style="border:none;" align="left">0</td><td style="border:none;" align="char" char=".">0.4053&#x000a0;(1)</td><td style="border:none;" align="char" char=".">0.0087&#x000a0;(3)</td></tr></tbody></table><table-wrap-foot><fn id="tbl2-fn1"><label>a</label><p><italic>U</italic><sub>eq</sub> is
+defined as one-third of the trace of the orthogonalized <italic>U</italic><sub><italic>ij</italic></sub> tensor (&#x000c5;<sup>2</sup>).</p></fn></table-wrap-foot></table-wrap><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Crystal structure of EuSn<sub>2</sub>P<sub>2</sub> from different
+viewpoints, where the green, gray, and red balls represent Eu, Sn,
+and P atoms, respectively. (A) Single crystal picture of EuSn<sub>2</sub>P<sub>2</sub>. (B, C) Layered characteristic structure of
+EuSn<sub>2</sub>P<sub>2</sub> (looking perpendicular to the <italic>c</italic>-axis). (D) Emphasizing the honeycomb character of the
+double Sn layers in the basal plane and the triangular planes of Eu
+(looking parallel to the <italic>c</italic>-axis).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0001" id="gr1" position="float"/></fig></sec><sec id="sec3.2"><title>Magnetic Characterization</title><p>To get
+insight into the magnetic
+properties of EuSn<sub>2</sub>P<sub>2</sub>, we performed field-dependent
+magnetization measurements at 2 K with applied magnetic fields parallel
+and perpendicular to the <italic>c</italic>-axis. The results are
+shown in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A.
+The field-dependent behavior is characteristic of that of a ferromagnetic
+material&#x02014;the magnetic moment of EuSn<sub>2</sub>P<sub>2</sub> saturates at &#x0223c;2.8 T for applied fields perpendicular to the <italic>c</italic>-axis and &#x0223c;4.1 T for fields parallel to the <italic>c</italic>-axis. Accordingly, a strong anisotropy of magnetization
+is observed, with the easy axis in the basal plane, perpendicular
+to the <italic>c</italic>-axis. The saturated magnetizations are &#x0223c;6.0
+&#x003bc;<sub>B</sub>/Eu for both orientations.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Field-dependent, direction-dependent,
+and temperature-dependent
+magnetic properties of EuSn<sub>2</sub>P<sub>2</sub>. (A) Field-dependent
+magnetization for the two crystal orientations measured at 2 K where
+red balls and blue squares represent magnetic field parallel and perpendicular
+to the <italic>c</italic>-axis, respectively. (B) Magnetic susceptibility
+as a function of temperature measured in an external field of &#x003bc;<sub>0</sub><italic>H</italic> = 500 Oe, both perpendicular (blue) and
+parallel (red) to the <italic>c</italic>-axis. The inset shows the
+temperature-dependent inverse susceptibility, measured for different
+sample orientations. The green line is the Curie&#x02013;Weiss fit
+to the high-temperature data.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0002" id="gr2" position="float"/></fig><p>The temperature-dependent magnetic susceptibility was measured
+under an external field of 500 Oe from 2 to 300 K. A transition to
+an antiferromagnetic state (i.e., <italic>T</italic><sub>N</sub>)
+is seen at around 30 K. The larger magnetic susceptibility in the
+perpendicular field also indicates the anisotropic ordered magnetism
+in EuSn<sub>2</sub>P<sub>2</sub>, i.e., that ferromagnetic ordering
+is preferred within the <italic>ab</italic>-plane rather than along
+the <italic>c</italic>-axis. At temperatures higher than 30 K, classic
+Curie&#x02013;Weiss behavior is observed.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> The effective moment and Curie&#x02013;Weiss (CW) temperatures &#x00398;<sub>&#x022a5;</sub> and &#x00398;<sub>//</sub> were fitted from 150 to 300
+K by using the Curie&#x02013;Weiss formula &#x003c7; = &#x003c7;<sub>0</sub> + <inline-formula id="d30e1039"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_m001.gif"/></inline-formula> where &#x003c7;<sub>0</sub> is the temperature-independent
+part of the magnetic susceptibility, <italic>N</italic><sub>A</sub> is Avogadro&#x02019;s number, <italic>k</italic><sub>B</sub> is the
+Boltzmann constant, &#x003bc;<sub>eff</sub> is the effective moment,
+and &#x00398;<sub>CW</sub> is the Curie&#x02013;Weiss temperature. The Curie&#x02013;Weiss temperatures in perpendicular and parallel
+fields are 31.8(1) and 31.6(1) K, within error of each other, while
+the average effective moment is 7.91(3) &#x003bc;<sub>B</sub>/Eu. The
+magnetic characteristics above <italic>T</italic><sub>N</sub> are
+essentially isotropic.</p></sec><sec id="sec3.3"><title>Electron Paramagnetic Resonance (EPR)</title><p>The magnetism
+observed is consistent with the presence of magnetic Eu<sup>2+</sup> in our material, but to further confirm the electronic state of
+Eu in EuSn<sub>2</sub>P<sub>2</sub>, we performed electron paramagnetic
+resonance measurements. The obtained data are shown in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> as the first derivative of
+the absorption data. We observe a sin-function-like strong broad curve
+when the applied magnetic field is swept to 2400 G, reaching its maximum
+around 3200 G. The intensity subsequently drops to zero at 3530 G,
+which indicates the applied field of the strongest absorption, and
+continuously becomes more negative, to &#x0223c;&#x02212;6000 (in arbitrary
+units) at &#x0223c;3800 Oe, returning to zero intensity beyond 5000
+Oe. The asymmetric line shape is as is usually observed in metals
+due to the skin effect caused by the small size of the single crystal
+used compared with the skin depth. According to the principal EPR
+equation, &#x00394;<italic>E</italic> = <italic>h</italic>&#x003bd; = <italic>g</italic>&#x003bc;<sub>B</sub><italic>B</italic><sub>0</sub> where
+&#x00394;<italic>E</italic> is the splitting energy, <italic>h</italic> is Planck&#x02019;s constant, &#x003bd; is the frequency of the microwave
+used, which is 9481 MHz, <italic>g</italic> is the Land&#x000e9; <italic>g</italic>-factor, &#x003bc;<sub>B</sub> is the Bohr magneton, and <italic>B</italic><sub>0</sub> is the applied magnetic field of the strongest
+absorption, we obtain the Land&#x000e9; <italic>g</italic>-factor of
+1.9184. Based on &#x003bc;<sub>eff</sub> = <italic>g</italic><inline-formula id="d30e1136"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_m002.gif"/></inline-formula>&#x003bc;<sub>B</sub> and the <italic>g</italic>-factor obtained from the EPR data,
+we obtain &#x003bc;<sub>eff</sub> = 7.61 &#x003bc;<sub>B</sub>, which
+is within error of the effective
+moment obtained from the temperature-dependent magnetic susceptibility
+(7.91 &#x003bc;<sub>B</sub>).<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> Therefore,
+we find that, for Eu in EuSn<sub>2</sub>P<sub>2</sub>, <italic>J</italic> = 7/2 and that the Eu ground state is <sup>8</sup>S<sub>7/2</sub>, i.e., that Eu<sup>2+</sup> is the primary valence state for Eu.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Characterization
+of the Eu spin state at ambient temperature and
+pressure in EuSn<sub>2</sub>P<sub>2</sub>. Room temperature electron
+paramagnetic resonance (EPR) measurement with applied magnetic field
+from 2300 to 5200 G.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0003" id="gr3" position="float"/></fig></sec><sec id="sec3.4"><title>Magnetic Structure</title><p>To better understand the magnetic
+properties of our new quantum material, we performed single crystal
+neutron diffraction on EuSn<sub>2</sub>P<sub>2</sub>. Antiferromagnetic
+order onsets at 30 K, as indicated by observing extra Bragg peaks
+with a propagation vector of (0 0 1.5). The ordering parameter was
+measured at (0 0 4.5) in reciprocal space (see <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A) and indicates that <italic>T</italic><sub>N</sub> &#x0223c; 30 K by determination of the intersection of a linear
+fitting regime (30&#x02013;50 K) and a two-term power law fit at low
+temperatures with <inline-formula id="d30e1209"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_m003.gif"/></inline-formula> where <italic>A</italic>, pl, pu, and <italic>x</italic><sub><italic>c</italic></sub> are all constants.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> The magnetic
+structure is determined by modeling
+the magnetic reflections collected at 4.5 K. The lattice parameters
+(<italic>a</italic> = 4.069(2) &#x000c5;, <italic>c</italic> = 25.935(9)
+&#x000c5;) at 4.5 K are smaller than those determined by single crystal
+X-ray diffraction (<italic>a</italic> = 4.097(1) &#x000c5;, <italic>c</italic> = 26.162(5) &#x000c5;) at room temperature due to thermal contraction.
+Refining the nuclear reflections collected at 4.5 K yields <italic>R</italic><sub>F</sub> = 9.15% and <italic>R</italic><sub>F</sub><sup>2</sup> = 17.69%. The magnetic structure refinement reaches
+the best fit (<italic>R</italic><sub>F</sub> = 6.71% and <italic>R</italic><sub>F</sub><sup>2</sup> = 12.7%) with the magnetic moment of 5.65
+(3) &#x003bc;<sub>B</sub>/Eu oriented in the <italic>ab</italic>-plane
+at 4.5 K (see <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>B), consistent with the field-dependent magnetization measurements.
+As shown in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>B, the result is ferromagnetic Eu layers antiferromagnetically coupled
+with their nearest neighbor layers leading to A-type antiferromagnetism
+for EuSn<sub>2</sub>P<sub>2</sub>. The inset of <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A illustrates the neutron diffraction intensity
+maps at both 30 and 4.5 K, showing the magnetic peak at (0 0 4.5).</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Magnetic
+structure of EuSn<sub>2</sub>P<sub>2</sub>. (A) (main
+panel) Temperature-dependence of the magnetic scattering. The pixel
+number is for the selected region of interest (enclosed in the purple
+rectangle insets). The data indicate that <italic>T</italic><sub>N</sub> &#x0223c; 30 K, resulting from the fit of the red curves to the data.
+(insets, top right) Magnetic signal intensity map at 30.0 K for the
+reciprocal lattice plane (0 0 4.5). (insets, bottom left) Magnetic
+signal intensity map at 4.5 K for the reciprocal lattice plane (0
+0 4.5). (B) Magnetic unit cell of EuSn<sub>2</sub>P<sub>2</sub>. The
+red arrows indicate the orientation of magnetic moments for each layer
+of Eu atoms.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0004" id="gr4" position="float"/></fig></sec><sec id="sec3.5"><title>Charge Transport</title><p>The transport of electrical charge
+in materials where interactions between different states may be present
+is of interest. The temperature-dependent resistivity for a single
+crystal of EuSn<sub>2</sub>P<sub>2</sub>, measured in the (001) plane,
+is thus shown in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>A. Decreasing resistivity with decreasing temperature, i.e., metallic
+behavior, is observed. The charge transport is sensitive to the magnetic
+state of the system: &#x003c1;<sub><italic>xx</italic></sub> (the resistivity
+in the <italic>x</italic> direction with the electric field applied
+along the <italic>x</italic> direction; <italic>x</italic> and <italic>y</italic> directions are in the plane of the layers, while <italic>z</italic> is perpendicular to the layers) shows a drop below the
+Neel temperature (&#x0223c;30 K). The in-plane resistivity &#x003c1;<sub><italic>xx</italic></sub> increases slightly at temperatures above
+the magnetic ordering temperature, starting near 58 K. Also, as seen
+in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>B, a linear
+relation between the Hall resistivity &#x003c1;<sub><italic>yx</italic></sub> (field is applied along <italic>z</italic>, electric field
+along <italic>x</italic>, and resistivity measured along <italic>y</italic>) and applied magnetic field <italic>H</italic> is seen at various
+temperatures. From this data we are able to calculate the concentration
+of the dominant carriers (<italic>n</italic>), which are holes, by
+using <italic>n</italic> = 1/(<italic>eR</italic><sub>H</sub>) (where <italic>R</italic><sub>H</sub> is the Hall coefficient, obtained from the
+slopes of <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>B,
+and <italic>e</italic> is the electron charge).<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> We find that, at 2 K, <italic>n</italic> is about 2.9 &#x000d7;
+10<sup>20</sup> cm<sup>&#x02013;3</sup>, a relatively large hole concentration.
+The slope of the &#x003c1;<sub><italic>yx</italic></sub> (<italic>H</italic>) curve decreases somewhat with increasing temperature, and thus
+the carrier concentration is increasing with increasing temperature.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Charge
+transport properties of EuSn<sub>2</sub>P<sub>2</sub>. (A)
+Temperature-dependence of the (001) plane resistivity &#x003c1;<sub><italic>xx</italic></sub> between 1.8 and 300 K in the absence of
+an applied magnetic field. (B) Field-dependence of the Hall resistivity
+&#x003c1;<sub><italic>yx</italic></sub> at various temperatures (2 K,
+10 K, 25 K, 70 K, 100 and 150 K) with applied field from 0 to 9 T.
+(C) Field-dependence of &#x003c1;<sub><italic>xx</italic></sub> for
+various temperatures (2, 5, 10, 15, 25, 40, and 70 K) on sweeping
+applied field from 9 to &#x02212;9 T. (D) Magnetoresistance at the
+above temperatures normalized to the values at 0 applied magnetic
+field.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0005" id="gr5" position="float"/></fig><p>Uncommon behavior for the magnetoresistance
+is observed (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>C). At low temperatures,
+the material&#x02019;s resistivity &#x003c1;<sub><italic>xx</italic></sub> shows a domelike feature when magnetic field is applied perpendicular
+to the basal plane (i.e., along <italic>z</italic>). At 2 K, it decreases
+by about 9.4 &#x003bc;&#x003a9; cm when the field increased from 0 to
+about 4.1 T, this latter field being where <italic>M</italic> vs <italic>H</italic> saturates at the same temperature (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A). This behavior is consistent with the
+anomalous magnetoresistance seen in spin flop systems. The field-dependent
+resistivity is not quenched until temperatures above 40 K, above the
+magnetic ordering temperature&#x02014;the magnetoresistance becomes
+more normal for temperatures of 70 K and above. Measurements on a
+second sample suggest that the magnetoresistance in a direction perpendicular
+to the plane is positive and significantly larger than what is observed
+in-plane (see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00202/suppl_file/oc9b00202_si_001.pdf">Figure S1</ext-link>). Further, the
+out-of-plane resistivity does not appear to saturate by 9 T and may
+continue to rise with larger applied fields. Although the in-plane
+magnetoresistance is reminiscent of that observed for WTe<sub>2</sub>, the change of resistivity in field is orders of magnitude lower
+than is seen there, and magnetic moments (from the Eu) are actually
+present in the current case, while they are absent for WTe<sub>2</sub>.<sup><xref ref-type="bibr" rid="ref42">42</xref>,<xref ref-type="bibr" rid="ref43">43</xref></sup> Layered ferromagnetic semimetallic (see
+below) systems like EuSn<sub>2</sub>P<sub>2</sub> are relatively rare,
+and thus detailed study will be required to fully understand the magnetoresistance
+observed in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>D.</p></sec><sec id="sec3.6"><title>Calculated Bulk and Surface Electronic Structures</title><p>The
+results of first-principles electronic structure calculations for
+EuSn<sub>2</sub>P<sub>2</sub> using the generalized gradient approximation
+(GGA), GGA plus correlation parameter <italic>U</italic> (GGA+<italic>U</italic>), and GGA+<italic>U</italic> with spin&#x02013;orbit coupling
+(SOC) are compared in <xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>. The calculations reveal a semimetallic band structure for
+this material, with a continuous gap throughout the Brillouin zone,
+similar in character to what is observed for WTe<sub>2</sub>.<sup><xref ref-type="bibr" rid="ref42">42</xref>,<xref ref-type="bibr" rid="ref43">43</xref></sup> The electrons in the 4f orbitals of the Eu atoms are experimentally
+observed (see below) as localized in the range 1.0&#x02013;2.0 eV below
+the Fermi level (<italic>E</italic><sub>F</sub>), and thus the GGA+<italic>U</italic>+SOC calculations appear to be the most representative
+of the material.</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Calculated electronic structure of bulk EuSn<sub>2</sub>P<sub>2</sub>. (A&#x02013;D) First-principles electronic band structures
+for EuSn<sub>2</sub>P<sub>2</sub> in its A-type antiferromagnetic
+ordered state
+(both spin up and spin down bands are shown) with and without spin&#x02013;orbit
+coupling (SOC) and correlation parameter <italic>U</italic> included.
+(E) Deconvolution of the electronic structure to show the energy regimes
+of dominance of the Eu, P, and Sn orbitals.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0006" id="gr6" position="float"/></fig><p>The calculations show that P 3p orbitals dominate the energy
+bands
+just below <italic>E</italic><sub>F</sub>, while Sn 5p orbitals are
+found below &#x02212;5 eV and just above <italic>E</italic><sub>F</sub> (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>E). Like
+is the case for strong topological insulators, <xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>E shows that in the vicinity of the Fermi
+energy there are metal states mixed in in significant proportion at
+the top of the valence band and P states mixed in in significant proportion
+at the bottom of the conducting band; i.e., there is an inversion
+of the conventional type of band structure, where this kind of mixing
+of states above and below <italic>E</italic><sub>F</sub> is negligible.
+When the effects of spin polarization are included, the total energies
+of the ferromagnetic (FM) and antiferromagnetic (AFM) models are the
+lowest (the calculated energy difference between the AFM and FM states
+in EuSn<sub>2</sub>P<sub>2</sub> is about 13 meV per f.u.), and indicate
+that the observed antiferromagnetism is energy favored. The magnetic
+moments, calculated to be about &#x0223c;6.7 &#x003bc;<sub>B</sub>, are
+solely on the Eu atoms, consistent with what is expected in a na&#x000ef;ve
+picture for this material, where Eu is the only magnetic atom. The
+electronic structure of the material, calculated for the antiferromagnetically
+ordered system, shows that the bands near the Fermi level are hybridized
+among electrons from the p orbitals on the Sn and P atoms. The GGA
+and GGA+<italic>U</italic> calculations result in a semimetallic ground
+state, with no band gap, with Fermi surfaces around the &#x00393; and
+A points in the Brillouin zone (BZ) (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>A,C).<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> When SOC
+is included in the calculations, a very small (a few meV) band gap
+is present (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>B,D).</p><p>As was designed, EuSn<sub>2</sub>P<sub>2</sub> exhibits
+interesting
+surface states. To understand the surface states of EuSn<sub>2</sub>P<sub>2</sub>, surface spectral weight simulations consistent with
+the practice used in the topological materials field were employed.
+(The first BZ of the rhombohedral lattice is shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00202/suppl_file/oc9b00202_si_001.pdf">Figure S2</ext-link>.) The (001) surface is our material&#x02019;s
+clear cleavage plane. The (001) surface may be terminated by Eu, P,
+or Sn atomic layers; surface states are visible for all three possible
+(001) terminations in the calculations. Consistent with the full bulk
+DFT calculations, the electronic behavior near <italic>E</italic><sub>F</sub> in these calculations is predominantly determined by the
+dispersion of hybridized bands from Sn and P orbitals. For Sn-terminated
+and Eu-terminated surfaces, comparison of the bulk and surface calculations
+(<xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>) shows that
+surface states are located in the bulk energy gap around the &#x00393;
+point. The energy dispersion of these states is very similar to the
+Dirac surface states of strong Tis (inset of <xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>D&#x02013;F). The surface states are more
+well-separated in <italic>k</italic> for the P-termination case (<xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>E) than they are
+for the Sn- and Eu-termination cases. This should make them more observable
+experimentally than for the case of WTe<sub>2</sub>, where they are
+strongly confined in both energy and wavevector.</p><fig id="fig7" position="float"><label>Figure 7</label><caption><p>Comparison of the calculated
+bulk and surface band structures for
+EuSn<sub>2</sub>P<sub>2</sub>. (A&#x02013;F) Bulk (left) and surface
+(right) band spectra of a semi-infinite slab with an (001) surface
+terminated at Sn (upper), P (middle), or Eu (lower) layers. The surface
+states are the narrow extra states observed in the surface state calculations
+(right).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0007" id="gr7" position="float"/></fig><p>It is well-established in materials
+physics that time-reversal-based
+topological insulators can be described by a &#x0201c;Z<sub>2</sub> invariant&#x0201d;. Generally, Z<sub>2</sub> is undefined in a time-reversal
+symmetry (TRS) breaking system such as a ferromagnetic phase. Nonetheless,
+recent studies have proposed that the Z<sub>2</sub> invariant can
+be expanded to classify topological states in magnetic systems if
+the system possesses a specific magnetic configuration, for instance,
+an antiferromagnetic state, in which the combined symmetry <italic>S</italic> = &#x00398;<italic>T</italic><sub>1/2</sub> is preserved,
+where &#x00398; is the time-reversal operator, and <italic>T</italic><sub>1/2</sub> is the lattice translational symmetry of the crystal
+that is broken by the antiferromagnetic order.<sup><xref ref-type="bibr" rid="ref44">44</xref>,<xref ref-type="bibr" rid="ref45">45</xref></sup> This is what we have in the current case. Under this definition,
+we calculate the Z<sub>2</sub> invariant by the Wilson loop method,
+as shown in <xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>.<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> The Z<sub>2</sub> topological invariant
+can be determined by looking at the evolution of the Wannier function
+center. In this formalism, the evolution of each Wannier center pair
+encloses the representation cylinder an integer number of times, which
+can be viewed as the &#x0201c;winding number&#x0201d; of the Wannier
+center pair. The Z<sub>2</sub> topological number is related to the
+summation of the winding numbers for all the pairs. If it is odd,
+then the Z<sub>2</sub> topological number is odd. According to <xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>, the entanglement
+entropy never becomes zero in the course of any gap- and symmetry-preserving
+transformation; this demonstrates the nontriviality of the electronic
+structure of EuSn<sub>2</sub>P<sub>2</sub>, i.e., its topological
+character.</p><fig id="fig8" position="float"><label>Figure 8</label><caption><p>Topological invariant Z<sub>2</sub> of EuSn<sub>2</sub>P<sub>2</sub> (calculated with SOC + <italic>U</italic>). The Wannier charge center
+evolution (see ref (<xref ref-type="bibr" rid="ref46">46</xref>)) is shown for time-reversal invariant planes between &#x003c0; and
+&#x02212;&#x003c0;. The Wannier center crosses any reference line (hypothetical
+horizontal line in the figure) the appropriate number of times to
+indicate that EuSn<sub>2</sub>P<sub>2</sub> is a topological insulator.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0008" id="gr8" position="float"/></fig><p>Our calculation shows an open
+curve traversing the entire Brillouin
+zone in the time-reversal invariant plane <italic>k</italic><sub><italic>z</italic></sub> = 0, indicating a Z<sub>2</sub> invariant equal
+to 1, which demonstrates that EuSn<sub>2</sub>P<sub>2</sub> is indeed
+an antiferromagnetic topological insulator (AFM-TI).<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> The surface state Fermi contours, calculated by way of
+the semi-infinite Green&#x02019;s function,<sup><xref ref-type="bibr" rid="ref47">47</xref></sup> are shown in <xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>. The calculated iso-energy band contours at <italic>E</italic> =
+0, &#x02212;0.2, and &#x02212;0.3 eV (below the calculated Fermi energy)
+are shown for the three possible (001) surface terminations. (The
+energies correspond to those of the surface states on the Sn-terminated
+surface.<sup><xref ref-type="bibr" rid="ref48">48</xref></sup>) There is a prominent feature
+that is seen for the surface band contour in addition to the bulk
+states directly around the &#x00393; point in the BZ: a 6-fold symmetry
+loop. The loop is small on the Sn-terminated and Eu-terminated surfaces
+but is distinctly seen separated from the bulk states in <italic>k</italic> on the P-terminated surfaces.</p><fig id="fig9" position="float"><label>Figure 9</label><caption><p>Calculated surface Fermi surfaces of EuSn<sub>2</sub>P<sub>2</sub>. For the (001) surface (the cleavage plane),
+terminated by (A&#x02013;C)
+an Eu layer, (D&#x02013;F) a P layer, or (G, H) a Sn layer. The calculated
+iso-energy band contours are shown for <italic>E</italic> = 0 (the
+calculated Fermi Energy), &#x02212;0.2, and &#x02212;0.3 eV for Green&#x02019;s
+function surface spectral weight simulation. The depth of the color
+indicates the weight of the charge density of each state at the surface
+layer. The surface states clearly appear as the extra ringlike Fermi
+surfaces in the panels.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0009" id="gr9" position="float"/></fig></sec><sec id="sec3.7"><title>Experimentally Observed Surface Electronic Structures</title><p>The
+ARPES spectra, recorded in EuSn<sub>2</sub>P<sub>2</sub>&#x02019;s
+antiferromagnetically ordered state at 10 K, shown in <xref rid="fig10" ref-type="fig">Figures <xref rid="fig10" ref-type="fig">10</xref></xref> and <xref rid="fig11" ref-type="fig">11</xref>, reveal the energies of the occupied electronic bands around the
+center &#x00393; of the (001) surface projection of the bulk BZ. The
+outer (meaning the band with <italic>k</italic> vector furthest from
+the center of the surface BZ) band, designated as &#x003c3;, disperses
+linearly at about &#x02212;0.5 &#x000d7; 10<sup>6</sup> m/s away from
+the Fermi level (<italic>E</italic><sub>F</sub>) and appears as a
+sharp, intense spectral feature at all incident photon energies. This is in
+contrast with all of the other observed electronic bands and reflects
+the fact that this is a surface state. Due to the nonconservation
+of perpendicular-to-plane momenta of the ARPES method, a range of
+perpendicular momenta is observed in the ARPES spectra of the bulk
+bands, making them appear as filled-in regions in ARPES maps, distinct
+from the surface band where the absence of perpendicular dispersion
+results in a sharp feature. The most notable bulk band is the heart-shaped
+band, labeled as &#x003b3;, in the center of the surface BZ, which disperses
+upward in energy starting from Gamma to about 80 meV below <italic>E</italic><sub>F</sub> and turning again down. The broad bright feature
+showing little dispersion in the range of energies between &#x02212;1
+and &#x02212;2 eV (below <italic>E</italic><sub>F</sub>) is from the
+localized Eu f states.</p><fig id="fig10" position="float"><label>Figure 10</label><caption><p>Angle-resolved photoemission study of the band
+structure of EuSn<sub>2</sub>P<sub>2</sub>. (A, B) Band dispersion
+spectra along K&#x02212;&#x00393;&#x02013;K
+taken with 76 and 96 eV photons differ mostly in the relative intensities
+of the bands due to photoemission selection-rule effects. (C) Incident
+photon energy 102 eV, shows a wide energy-range band dispersion spectrum
+along M&#x02212;&#x00393;&#x02013;M.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0010" id="gr10" position="float"/></fig><fig id="fig11" position="float"><label>Figure 11</label><caption><p>ARPES study continued. (A) Two-dimensional momentum maps at several
+energies near the Fermi level obtained with two photon energies to
+enhance the visibility of different features in the band structure.
+The surface band, designated as &#x003c3;, is clearly observed. (B)
+Photon energy-dependent map to follow the band dispersion along the <italic>c</italic> crystal axis. The plot is at the energy of &#x02212;200
+meV from <italic>E</italic><sub>F</sub>. (Vo for the <italic>k</italic><sub><italic>z</italic></sub> calculation was set to &#x02212;10 eV).
+Different bands are marked with different Greek letters.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0011" id="gr11" position="float"/></fig><p>As is often the case with surface states, the surface
+band &#x003c3;
+is found relatively close in <italic>k</italic>-space to one of the
+bulk bands, labeled as &#x003b1;. Additional bulk bands below <italic>E</italic><sub>F</sub>, labeled as &#x003b2; and &#x003b4;, are also
+observed. The constant energy maps, <xref rid="fig11" ref-type="fig">Figure <xref rid="fig11" ref-type="fig">11</xref></xref>, taken at two different incident photon
+energies (hence, at different <italic>k</italic><sub><italic>z</italic></sub> momenta), show the two-dimensional momentum space surface
+Fermi surfaces: the hexagonal-loop contour of the surface band &#x003c3;
+encloses the contours formed by the bulk bands &#x003b1;, &#x003b2;, and
+&#x003b3;. These features greatly resemble the &#x02212;300 meV band
+contours calculated for the P termination of EuSn<sub>2</sub>P<sub>2</sub>, <xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>B,E,H,
+although there is less warping toward the corners of the BZ for the
+surface band than is calculated.</p><p>Momentum space mapping that
+included a few neighboring surface
+BZs revealed no bands in the vicinity of the Fermi level other than
+those shown around &#x00393; in <xref rid="fig11" ref-type="fig">Figure <xref rid="fig11" ref-type="fig">11</xref></xref>. While three other crystal terminations (Eu, Sn single
+and double layer) cannot be excluded in this material without further
+theoretical and experimental studies, all our data indicate that the
+(001) crystal surfaces are indeed P-terminated: the calculations for
+the Eu and Sn terminations show surface states much closer to the
+center of the BZ. Moreover, our core level spectra (<xref rid="fig12" ref-type="fig">Figure <xref rid="fig12" ref-type="fig">12</xref></xref>) show that the P 2s levels
+occur at two energies, indicative of two starkly different chemical
+environments (thus bulk vs surface) for the P atoms. By comparing
+the band dispersion observed in the ARPES spectra and the DFT calculations,
+we conclude that the cleaved crystals are some 220 meV hole doped.
+This is consistent with the large <italic>p</italic>-type carrier
+concentration observed in the Hall measurements.</p><fig id="fig12" position="float"><label>Figure 12</label><caption><p>Chemistry of the surface
+core level spectrum of EuSn<sub>2</sub>P<sub>2</sub> measured using
+300 eV incident photons. This shows
+that the P has two different environments (there is only one type
+of P in the bulk crystal structure) and therefore is present in both
+the bulk and the surface.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-00202n_0012" id="gr12" position="float"/></fig><p>We note that the calculations show the bottom of six elliptical
+electron pockets around the M point of the BZ, which are slightly
+above the chemical potential (about &#x02212;220 meV compared to the
+calculated <italic>E</italic><sub>F</sub>) observed in the ARPES experiments.
+This explains why no trace of those calculated bands is seen in ARPES
+(which sees only filled states) and further gives a hint for why the
+results of potassium adsorption measurements, expected to electron-dope
+the surface, resulted in no noticeable band shifts&#x02014;the flat
+bottom of an electron pocket is associated with a high density of
+states, and all the states have to be filled for the shifts in other
+bands to be observed. We also note that our ARPES measurements at
+varying incident photon energies show remarkably little difference
+in the band structure of EuSn<sub>2</sub>P<sub>2</sub> at different
+perpendicular momenta <italic>k</italic><sub><italic>z</italic></sub>. The bands, most notably the surface state &#x003c3;, <xref rid="fig10" ref-type="fig">Figures <xref rid="fig10" ref-type="fig">10</xref></xref> and <xref rid="fig11" ref-type="fig">11</xref>, show little dispersion perpendicular to the layers. The three-dimensional
+Fermi surface thus consists of hexagonally warped cylinders formed
+by extruding the contours of the bulk bands &#x003b1; and &#x003b2; along
+the crystal axis <italic>c</italic> (<xref rid="fig11" ref-type="fig">Figure <xref rid="fig11" ref-type="fig">11</xref></xref>B).</p></sec></sec><sec id="sec4"><title>Summary and Conclusions</title><p>The novel quantum material EuSn<sub>2</sub>P<sub>2</sub> was designed
+based on chemical criteria to display both magnetism and electronic
+surface states. The hypothesized material was discovered, and crystals
+were grown using the Sn-flux method. Its crystal structure and physical
+properties were characterized. Its crystal structure consists of hexagonal
+Eu, and P layers surrounding a Sn bilayer. It has a positive Curie&#x02013;Weiss
+temperature of &#x00398;<sub>CW</sub> = 31(1) K, showing the dominance
+of ferromagnetic spin correlations at high temperatures, but it orders
+antiferromagnetically near 30 K. Its ordered magnetic structure, refined
+from neutron diffraction, shows antiferromagnetically coupled in-plane-ferromagnetic
+Eu<sup>2+</sup> layers. The temperature-dependent resistance of EuSn<sub>2</sub>P<sub>2</sub> is weakly metallic in character, and an anomalous
+magnetoresistance is found below the magnetic ordering temperature
+and below applied magnetic fields of 4 T, where the magnetization
+saturates with applied magnetic field.</p><p>Electronic structure
+calculations support magnetic ordering as
+the energetically stable state of the system at low temperatures,
+and further confirm that the observed magnetic moments solely arise
+from the Eu<sup>2+</sup> present. Calculations including both SOC
+and correlation parameter <italic>U</italic> best describe the positions
+of the Eu f states between 1 and 2 eV below <italic>E</italic><sub>F</sub>, and further show that EuSn<sub>2</sub>P<sub>2</sub> is an
+antiferromagnetic topological insulator (the energies of the valence
+band and conduction bands overlap but for electrons of different wave
+vectors in the Brillouin zone). The bulk band structure is unconventional
+in that metal states contribute significantly just below the Fermi
+energy while nonmetal states contribute significantly just above the
+Fermi energy. The calculations also predict the presence of Dirac-like
+surface states within the bulk energy gap, both above and below the
+Fermi energy. The experimental ARPES study shows that surface states
+are indeed present in the antiferromagnetically ordered state at 10
+K but differ in a minor way from the calculations for a P-terminated
+(001) surface. Although we have observed much about the basic properties
+of this new quantum material, more detailed work on the properties
+from the physics perspective is required to determine whether it is
+unique in that it shows both antiferromagnetism and surface states
+at low temperatures. The accessible temperatures involved, the simple
+crystal structure, the ability to fabricate bulk crystals, and the
+combination of properties make the quantum material EuSn<sub>2</sub>P<sub>2</sub> an ideal platform for the detailed study of the interplay
+of topological electronic states with magnetism.</p></sec></body><back><notes id="notes1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information is
+available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acscentsci.9b00202">10.1021/acscentsci.9b00202</ext-link>.<list id="silist" list-type="simple"><list-item><p>Field-dependence
+of &#x003c1;<sub><italic>xx</italic></sub> for various temperatures
+for sample 2; magnetoresistance at the
+same temperatures for sample 2; first Brillouin zone of the rhombohedral
+lattice with the high symmetry momentum points marked (&#x00393;&#x02013;M&#x02013;K)
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00202/suppl_file/oc9b00202_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc9b00202_si_001.pdf"><caption><p>oc9b00202_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="notes2"><p>The authors
+declare no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The work at Princeton was supported by the ARO MURI
+on Topological Insulators, Grant W911NF1210461. W.X. at LSU was supported
+by a Beckman Young Investigator award. X.G. at LSU is supported by
+the National Science Foundation under NSF-OIA-1832967. H.B.C. acknowledges
+support of US DOE BES Early Career Award KC0402010 under Contract
+DE-AC05-00OR22725. This research used resources at the High Flux Isotope
+Reactor, a DOE Office of Science User Facility operated by the Oak
+Ridge National Laboratory. This research also used resources of the
+National Synchrotron Light Source II, a U.S. Department of Energy
+(DOE) Office of Science User Facility operated for the DOE Office
+of Science by Brookhaven National Laboratory under Contract DE-SC0012704.
+I.P. thanks J. Jiang, E. Vescovo, and K. Kaznatcheev for their help
+with setting up the experiment at the 21-ID-1 (ESM-ARPES) beamline.
+T.-R.C. was supported from Young Scholar Fellowship Program by Ministry
+of Science and Technology (MOST) in Taiwan, under MOST Grant for the
+Columbus Program MOST108-2636-M-006-002 and MOST 107-2627-E-006-001.
+W.X. and X.G. thank D. Vineyard for helping with electron paramagnetic
+resonance measurement.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Awschalom</surname><given-names>D. D.</given-names></name>; <name><surname>Bassett</surname><given-names>L. C.</given-names></name>; <name><surname>Dzurak</surname><given-names>A. S.</given-names></name>; <name><surname>Hu</surname><given-names>E. L.</given-names></name>; <name><surname>Petta</surname><given-names>J. R.</given-names></name>
+<article-title>Quantum
+Spintronics: Engineering and Manipulating Atom-Like Spins in Semiconductors</article-title>. <source>Science</source>
+<year>2013</year>, <volume>339</volume>, <fpage>1174</fpage>&#x02013;<lpage>1179</lpage><pub-id pub-id-type="doi">10.1126/science.1231364</pub-id>.<pub-id pub-id-type="pmid">23471400</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Cirac</surname><given-names>J. I.</given-names></name>; <name><surname>Zoller</surname><given-names>P.</given-names></name>
+<article-title>Goals and Opportunities in Quantum Simulation</article-title>. <source>Nat. Phys.</source>
+<year>2012</year>, <volume>8</volume>, <fpage>264</fpage>&#x02013;<lpage>266</lpage><pub-id pub-id-type="doi">10.1038/nphys2275</pub-id>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Ladd</surname><given-names>T. D.</given-names></name>; <name><surname>Jelezko</surname><given-names>F.</given-names></name>; <name><surname>Laflamme</surname><given-names>R.</given-names></name>; <name><surname>Nakamura</surname><given-names>Y.</given-names></name>; <name><surname>Monroe</surname><given-names>C.</given-names></name>; <name><surname>O&#x02019;Brien</surname><given-names>J. L.</given-names></name>
+<article-title>Quantum Computers</article-title>. <source>Nature</source>
+<year>2010</year>, <volume>464</volume>, <fpage>45</fpage>&#x02013;<lpage>53</lpage><pub-id pub-id-type="doi">10.1038/nature08812</pub-id>.<pub-id pub-id-type="pmid">20203602</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Moore</surname><given-names>J. E.</given-names></name>
+<article-title>The Birth
+of Topological Insulators</article-title>. <source>Nature</source>
+<year>2010</year>, <volume>464</volume>, <fpage>194</fpage>&#x02013;<lpage>198</lpage><pub-id pub-id-type="doi">10.1038/nature08916</pub-id>.<pub-id pub-id-type="pmid">20220837</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Sato</surname><given-names>M.</given-names></name>; <name><surname>Ando</surname><given-names>Y.</given-names></name>
+<article-title>Topological Superconductors:
+A Review</article-title>. <source>Rep.
+Prog. Phys.</source>
+<year>2017</year>, <volume>80</volume><issue>7</issue><fpage>076501</fpage><pub-id pub-id-type="doi">10.1088/1361-6633/aa6ac7</pub-id>.<pub-id pub-id-type="pmid">28367833</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Li</surname><given-names>R.</given-names></name>; <name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Qi</surname><given-names>X.-L.</given-names></name>; <name><surname>Zhang</surname><given-names>S.-C.</given-names></name>
+<article-title>Dynamical Axion
+Field in Topological Magnetic Insulators</article-title>. <source>Nat.
+Phys.</source>
+<year>2010</year>, <volume>6</volume>, <fpage>284</fpage>&#x02013;<lpage>288</lpage><pub-id pub-id-type="doi">10.1038/nphys1534</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Chang</surname><given-names>C.-Z.</given-names></name>; <name><surname>Zhao</surname><given-names>W.</given-names></name>; <name><surname>Kim</surname><given-names>D. Y.</given-names></name>; <name><surname>Zhang</surname><given-names>H.</given-names></name>; <name><surname>Assaf</surname><given-names>B. A.</given-names></name>; <name><surname>Heiman</surname><given-names>D.</given-names></name>; <name><surname>Zhang</surname><given-names>S.-C.</given-names></name>; <name><surname>Liu</surname><given-names>C.</given-names></name>; <name><surname>Chan</surname><given-names>M. H. W.</given-names></name>; <name><surname>Moodera</surname><given-names>J. S.</given-names></name>
+<article-title>High-Precision Realization of Robust
+Quantum Anomalous
+Hall State in a Hard Ferromagnetic Topological Insulator</article-title>. <source>Nat. Mater.</source>
+<year>2015</year>, <volume>14</volume>, <fpage>473</fpage>&#x02013;<lpage>477</lpage><pub-id pub-id-type="doi">10.1038/nmat4204</pub-id>.<pub-id pub-id-type="pmid">25730394</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Chang</surname><given-names>C.-Z.</given-names></name>; <name><surname>Zhang</surname><given-names>J.</given-names></name>; <name><surname>Feng</surname><given-names>X.</given-names></name>; <name><surname>Shen</surname><given-names>J.</given-names></name>; <name><surname>Zhang</surname><given-names>Z.</given-names></name>; <name><surname>Guo</surname><given-names>M.</given-names></name>; <name><surname>Li</surname><given-names>K.</given-names></name>; <name><surname>Ou</surname><given-names>Y.</given-names></name>; <name><surname>Wei</surname><given-names>P.</given-names></name>; <name><surname>Wang</surname><given-names>L.-L.</given-names></name>; et al. <article-title>Experimental Observation of the Quantum Anomalous Hall Effect in
+a Magnetic Topological Insulator</article-title>. <source>Science</source>
+<year>2013</year>, <volume>340</volume>, <fpage>167</fpage>&#x02013;<lpage>170</lpage><pub-id pub-id-type="doi">10.1126/science.1234414</pub-id>.<pub-id pub-id-type="pmid">23493424</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Katmis</surname><given-names>F.</given-names></name>; <name><surname>Lauter</surname><given-names>V.</given-names></name>; <name><surname>Nogueira</surname><given-names>F. S.</given-names></name>; <name><surname>Assaf</surname><given-names>B. A.</given-names></name>; <name><surname>Jamer</surname><given-names>M. E.</given-names></name>; <name><surname>Wei</surname><given-names>P.</given-names></name>; <name><surname>Satpati</surname><given-names>B.</given-names></name>; <name><surname>Freeland</surname><given-names>J. W.</given-names></name>; <name><surname>Eremin</surname><given-names>I.</given-names></name>; <name><surname>Heiman</surname><given-names>D.</given-names></name>; et al. <article-title>A High-Temperature
+Ferromagnetic Topological Insulating Phase by
+Proximity Coupling</article-title>. <source>Nature</source>
+<year>2016</year>, <volume>533</volume>, <fpage>513</fpage>&#x02013;<lpage>516</lpage><pub-id pub-id-type="doi">10.1038/nature17635</pub-id>.<pub-id pub-id-type="pmid">27225124</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Mogi</surname><given-names>M.</given-names></name>; <name><surname>Kawamura</surname><given-names>M.</given-names></name>; <name><surname>Yoshimi</surname><given-names>R.</given-names></name>; <name><surname>Tsukazaki</surname><given-names>A.</given-names></name>; <name><surname>Kozuka</surname><given-names>Y.</given-names></name>; <name><surname>Shirakawa</surname><given-names>N.</given-names></name>; <name><surname>Takahashi</surname><given-names>K. S.</given-names></name>; <name><surname>Kawasaki</surname><given-names>M.</given-names></name>; <name><surname>Tokura</surname><given-names>Y.</given-names></name>
+<article-title>A Magnetic Heterostructure
+of Topological
+Insulators as a Candidate for an Axion Insulator</article-title>. <source>Nat. Mater.</source>
+<year>2017</year>, <volume>16</volume>, <fpage>516</fpage>&#x02013;<lpage>521</lpage><pub-id pub-id-type="doi">10.1038/nmat4855</pub-id>.<pub-id pub-id-type="pmid">28191899</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Slager</surname><given-names>R.-J.</given-names></name>; <name><surname>Mesaros</surname><given-names>A.</given-names></name>; <name><surname>Juri&#x0010d;i&#x00107;</surname><given-names>V.</given-names></name>; <name><surname>Zaanen</surname><given-names>J.</given-names></name>
+<article-title>The Space
+Group Classification of Topological Band-Insulators</article-title>. <source>Nat. Phys.</source>
+<year>2013</year>, <volume>9</volume>, <fpage>98</fpage>&#x02013;<lpage>102</lpage><pub-id pub-id-type="doi">10.1038/nphys2513</pub-id>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Yang</surname><given-names>K.</given-names></name>; <name><surname>Setyawan</surname><given-names>W.</given-names></name>; <name><surname>Wang</surname><given-names>S.</given-names></name>; <name><surname>Buongiorno Nardelli</surname><given-names>M.</given-names></name>; <name><surname>Curtarolo</surname><given-names>S.</given-names></name>
+<article-title>A Search Model for Topological Insulators with High-Throughput
+Robustness Descriptors</article-title>. <source>Nat. Mater.</source>
+<year>2012</year>, <volume>11</volume>, <fpage>614</fpage>&#x02013;<lpage>619</lpage><pub-id pub-id-type="doi">10.1038/nmat3332</pub-id>.<pub-id pub-id-type="pmid">22581314</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="weblink" id="cit13"><person-group person-group-type="allauthors"><name><surname>Vergniory</surname><given-names>M. G.</given-names></name>; <name><surname>Elcoro</surname><given-names>L.</given-names></name>; <name><surname>Felser</surname><given-names>C.</given-names></name>; <name><surname>Bernevig</surname><given-names>B. A.</given-names></name>; <name><surname>Wang</surname><given-names>Z.</given-names></name></person-group><article-title>The (High Quality)
+Topological Materials In The World</article-title>. <year>2018</year>, arXiv:1807.10271. arXiv e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1807.10271">https://arxiv.org/abs/1807.10271</uri>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Po</surname><given-names>H. C.</given-names></name>; <name><surname>Vishwanath</surname><given-names>A.</given-names></name>; <name><surname>Watanabe</surname><given-names>H.</given-names></name>
+<article-title>Symmetry-Based Indicators of Band
+Topology in the 230 Space Groups</article-title>. <source>Nat. Commun.</source>
+<year>2017</year>, <volume>8</volume><issue>1</issue><fpage>50</fpage><pub-id pub-id-type="doi">10.1038/s41467-017-00133-2</pub-id>.<pub-id pub-id-type="pmid">28667305</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Tang</surname><given-names>F.</given-names></name>; <name><surname>Po</surname><given-names>H. C.</given-names></name>; <name><surname>Vishwanath</surname><given-names>A.</given-names></name>; <name><surname>Wan</surname><given-names>X.</given-names></name>
+<article-title>Towards Ideal Topological
+Materials: Comprehensive Database Searches Using Symmetry Indicators</article-title>. <source>Nature</source>
+<year>2019</year>, <volume>566</volume>, <fpage>486</fpage><pub-id pub-id-type="doi">10.1038/s41586-019-0937-5</pub-id>.<pub-id pub-id-type="pmid">30814709</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Bradlyn</surname><given-names>B.</given-names></name>; <name><surname>Elcoro</surname><given-names>L.</given-names></name>; <name><surname>Cano</surname><given-names>J.</given-names></name>; <name><surname>Vergniory</surname><given-names>M. G.</given-names></name>; <name><surname>Wang</surname><given-names>Z.</given-names></name>; <name><surname>Felser</surname><given-names>C.</given-names></name>; <name><surname>Aroyo</surname><given-names>M. I.</given-names></name>; <name><surname>Bernevig</surname><given-names>B. A.</given-names></name>
+<article-title>Topological
+Quantum Chemistry</article-title>. <source>Nature</source>
+<year>2017</year>, <volume>547</volume>, <fpage>298</fpage>&#x02013;<lpage>305</lpage><pub-id pub-id-type="doi">10.1038/nature23268</pub-id>.<pub-id pub-id-type="pmid">28726818</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Nesper</surname><given-names>R.</given-names></name>
+<article-title>The Zintl-Klemm
+Concept &#x02013; A Historical Survey</article-title>. <source>Z. Anorg.
+Allg. Chem.</source>
+<year>2014</year>, <volume>640</volume><issue>14</issue><fpage>2639</fpage>&#x02013;<lpage>2648</lpage><pub-id pub-id-type="doi">10.1002/zaac.201400403</pub-id>.</mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Gui</surname><given-names>X.</given-names></name>; <name><surname>Sobczak</surname><given-names>Z.</given-names></name>; <name><surname>Chang</surname><given-names>T.-R.</given-names></name>; <name><surname>Xu</surname><given-names>X.</given-names></name>; <name><surname>Huang</surname><given-names>A.</given-names></name>; <name><surname>Jia</surname><given-names>S.</given-names></name>; <name><surname>Jeng</surname><given-names>H.-T.</given-names></name>; <name><surname>Klimczuk</surname><given-names>T.</given-names></name>; <name><surname>Xie</surname><given-names>W.</given-names></name>
+<article-title>Superconducting SrSnP
+with Strong Sn&#x02013;P Antibonding Interaction: Is the Sn Atom Single
+or Mixed Valent?</article-title>. <source>Chem. Mater.</source>
+<year>2018</year>, <volume>30</volume>, <fpage>6005</fpage>&#x02013;<lpage>6013</lpage><pub-id pub-id-type="doi">10.1021/acs.chemmater.8b02258</pub-id>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Hsieh</surname><given-names>T. H.</given-names></name>; <name><surname>Lin</surname><given-names>H.</given-names></name>; <name><surname>Liu</surname><given-names>J.</given-names></name>; <name><surname>Duan</surname><given-names>W.</given-names></name>; <name><surname>Bansil</surname><given-names>A.</given-names></name>; <name><surname>Fu</surname><given-names>L.</given-names></name>
+<article-title>Topological
+Crystalline Insulators in the SnTe Material Class</article-title>. <source>Nat. Commun.</source>
+<year>2012</year>, <volume>3</volume>, <fpage>982</fpage><pub-id pub-id-type="doi">10.1038/ncomms1969</pub-id>.<pub-id pub-id-type="pmid">22864575</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Deng</surname><given-names>J.</given-names></name>; <name><surname>Xia</surname><given-names>B.</given-names></name>; <name><surname>Ma</surname><given-names>X.</given-names></name>; <name><surname>Chen</surname><given-names>H.</given-names></name>; <name><surname>Shan</surname><given-names>H.</given-names></name>; <name><surname>Zhai</surname><given-names>X.</given-names></name>; <name><surname>Li</surname><given-names>B.</given-names></name>; <name><surname>Zhao</surname><given-names>A.</given-names></name>; <name><surname>Xu</surname><given-names>Y.</given-names></name>; <name><surname>Duan</surname><given-names>W.</given-names></name>; et al. <article-title>Epitaxial
+Growth of Ultraflat Stanene with Topological Band Inversion</article-title>. <source>Nat. Mater.</source>
+<year>2018</year>, <volume>17</volume>, <fpage>1081</fpage><pub-id pub-id-type="doi">10.1038/s41563-018-0203-5</pub-id>.<pub-id pub-id-type="pmid">30397308</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Checkelsky</surname><given-names>J. G.</given-names></name>; <name><surname>Hor</surname><given-names>Y. S.</given-names></name>; <name><surname>Cava</surname><given-names>R. J.</given-names></name>; <name><surname>Ong</surname><given-names>N. P.</given-names></name>
+<article-title>Bulk Band Gap and
+Surface State Conduction Observed in Voltage-Tuned Crystals of the
+Topological Insulator Bi<sub>2</sub>Se<sub>3</sub></article-title>. <source>Phys. Rev. Lett.</source>
+<year>2011</year>, <volume>106</volume>, <fpage>196801</fpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.106.196801</pub-id>.<pub-id pub-id-type="pmid">21668185</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Zhang</surname><given-names>H.</given-names></name>; <name><surname>Liu</surname><given-names>C.-X.</given-names></name>; <name><surname>Qi</surname><given-names>X.-L.</given-names></name>; <name><surname>Dai</surname><given-names>X.</given-names></name>; <name><surname>Fang</surname><given-names>Z.</given-names></name>; <name><surname>Zhang</surname><given-names>S.-C.</given-names></name>
+<article-title>Topological Insulators in Bi<sub>2</sub>Se<sub>3</sub>Bi<sub>2</sub>Te<sub>3</sub> and Sb<sub>2</sub>Te<sub>3</sub> with
+a Single Dirac Cone on the Surface</article-title>. <source>Nat. Phys.</source>
+<year>2009</year>, <volume>5</volume>, <fpage>438</fpage>&#x02013;<lpage>442</lpage><pub-id pub-id-type="doi">10.1038/nphys1270</pub-id>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name><surname>Chang</surname><given-names>T.-R.</given-names></name>; <name><surname>Pletikosic</surname><given-names>I.</given-names></name>; <name><surname>Kong</surname><given-names>T.</given-names></name>; <name><surname>Bian</surname><given-names>G.</given-names></name>; <name><surname>Huang</surname><given-names>A.</given-names></name>; <name><surname>Denlinger</surname><given-names>J.</given-names></name>; <name><surname>Kushwaha</surname><given-names>S. K.</given-names></name>; <name><surname>Sinkovic</surname><given-names>B.</given-names></name>; <name><surname>Jeng</surname><given-names>H.-T.</given-names></name>; <name><surname>Valla</surname><given-names>T.</given-names></name>; et al. <article-title>Realization of a Type-II Nodal-Line Semimetal in Mg<sub>3</sub>Bi<sub>2</sub></article-title>. <source>Adv. Sci.</source>
+<year>2019</year>, <volume>6</volume>, <fpage>1800897</fpage><pub-id pub-id-type="doi">10.1002/advs.201800897</pub-id>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="weblink" id="cit24"><person-group person-group-type="allauthors"><name><surname>Borisenko</surname><given-names>S.</given-names></name>; <name><surname>Evtushinsky</surname><given-names>D.</given-names></name>; <name><surname>Gibson</surname><given-names>Q.</given-names></name>; <name><surname>Yaresko</surname><given-names>A.</given-names></name>; <name><surname>Kim</surname><given-names>T.</given-names></name>; <name><surname>Ali</surname><given-names>M. N.</given-names></name>; <name><surname>Buechner</surname><given-names>B.</given-names></name>; <name><surname>Hoesch</surname><given-names>M.</given-names></name>; <name><surname>Cava</surname><given-names>R. J.</given-names></name></person-group><year>2015</year>, <article-title>Time-Reversal
+Symmetry Breaking Type-II Weyl State in YbMnBi<sub>2</sub></article-title>. arXiv:1507.04847. arXiv e-Print archive. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1507.04847">https://arxiv.org/abs/1507.04847</uri>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Rong</surname><given-names>L.-Y.</given-names></name>; <name><surname>Ma</surname><given-names>J.-Z.</given-names></name>; <name><surname>Nie</surname><given-names>S.-M.</given-names></name>; <name><surname>Lin</surname><given-names>Z.-P.</given-names></name>; <name><surname>Li</surname><given-names>Z.-L.</given-names></name>; <name><surname>Fu</surname><given-names>B.-B.</given-names></name>; <name><surname>Kong</surname><given-names>L.-Y.</given-names></name>; <name><surname>Zhang</surname><given-names>X.-Z.</given-names></name>; <name><surname>Huang</surname><given-names>Y.-B.</given-names></name>; <name><surname>Weng</surname><given-names>H.-M.</given-names></name>; et al. <article-title>Electronic
+Structure of SrSn<sub>2</sub>As<sub>2</sub> near the Topological Critical
+Point</article-title>. <source>Sci.
+Rep.</source>
+<year>2017</year>, <volume>7</volume><issue>1</issue><fpage>6133</fpage><pub-id pub-id-type="doi">10.1038/s41598-017-05386-x</pub-id>.<pub-id pub-id-type="pmid">28733663</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Heremans</surname><given-names>J. P.</given-names></name>; <name><surname>Cava</surname><given-names>R. J.</given-names></name>; <name><surname>Samarth</surname><given-names>N.</given-names></name>
+<article-title>Tetradymites
+as Thermoelectrics and
+Topological Insulators</article-title>. <source>Nat. Rev. Mater.</source>
+<year>2017</year>, <volume>2</volume><issue>10</issue><fpage>17049</fpage><pub-id pub-id-type="doi">10.1038/natrevmats.2017.49</pub-id>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Cava</surname><given-names>R. J.</given-names></name>; <name><surname>Ji</surname><given-names>H.</given-names></name>; <name><surname>Fuccillo</surname><given-names>M. K.</given-names></name>; <name><surname>Gibson</surname><given-names>Q. D.</given-names></name>; <name><surname>Hor</surname><given-names>Y. S.</given-names></name>
+<article-title>Crystal Structure
+and Chemistry of Topological Insulators</article-title>. <source>J.
+Mater. Chem. C</source>
+<year>2013</year>, <volume>1</volume>, <fpage>3176</fpage>&#x02013;<lpage>3189</lpage><pub-id pub-id-type="doi">10.1039/c3tc30186a</pub-id>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Goto</surname><given-names>Y.</given-names></name>; <name><surname>Yamada</surname><given-names>A.</given-names></name>; <name><surname>Matsuda</surname><given-names>T. D.</given-names></name>; <name><surname>Aoki</surname><given-names>Y.</given-names></name>; <name><surname>Mizuguchi</surname><given-names>Y.</given-names></name>
+<article-title>SnAs-Based
+Layered Superconductor NaSn<sub>2</sub>As<sub>2</sub></article-title>. <source>J. Phys. Soc. Jpn.</source>
+<year>2017</year>, <volume>86</volume>, <fpage>123701</fpage><pub-id pub-id-type="doi">10.7566/JPSJ.86.123701</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Sheldrick</surname><given-names>G. M.</given-names></name>
+<article-title>Crystal
+Structure Refinement with SHELXL</article-title>. <source>Acta Crystallogr.,
+Sect. C: Struct. Chem.</source>
+<year>2015</year>, <volume>71</volume><issue>1</issue><fpage>3</fpage>&#x02013;<lpage>8</lpage><pub-id pub-id-type="doi">10.1107/S2053229614024218</pub-id>.<pub-id pub-id-type="pmid">25567568</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Sheldrick</surname><given-names>G. M.</given-names></name>
+<article-title>A Short
+History of SHELX</article-title>. <source>Acta Crystallogr., Sect. A:
+Found. Crystallogr.</source>
+<year>2008</year>, <volume>64</volume>, <fpage>112</fpage>&#x02013;<lpage>122</lpage><pub-id pub-id-type="doi">10.1107/S0108767307043930</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Spek</surname><given-names>A. L.</given-names></name>
+<article-title>Single-Crystal
+Structure Validation with the Program PLATON</article-title>. <source>J. Appl. Crystallogr.</source>
+<year>2003</year>, <volume>36</volume>, <fpage>7</fpage>&#x02013;<lpage>13</lpage><pub-id pub-id-type="doi">10.1107/S0021889802022112</pub-id>.</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Spek</surname><given-names>A. L.</given-names></name>
+<article-title>PLATON
+SQUEEZE: A Tool for the Calculation of the Disordered Solvent Contribution
+to the Calculated Structure Factors</article-title>. <source>Acta Crystallogr.,
+Sect. C: Struct. Chem.</source>
+<year>2015</year>, <volume>71</volume>, <fpage>9</fpage>&#x02013;<lpage>18</lpage><pub-id pub-id-type="doi">10.1107/S2053229614024929</pub-id>.<pub-id pub-id-type="pmid">25567569</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Rodr&#x000ed;guez-Carvajal</surname><given-names>J.</given-names></name>
+<article-title>Recent Advances
+in Magnetic Structure Determination by Neutron Powder Diffraction</article-title>. <source>Phys. B</source>
+<year>1993</year>, <volume>192</volume>, <fpage>55</fpage>&#x02013;<lpage>69</lpage><pub-id pub-id-type="doi">10.1016/0921-4526(93)90108-I</pub-id>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Hafner</surname><given-names>J.</given-names></name>
+<article-title>Ab-Initio
+Simulations of Materials Using VASP: Density-Functional Theory and
+Beyond</article-title>. <source>J. Comput. Chem.</source>
+<year>2008</year>, <volume>29</volume>, <fpage>2044</fpage>&#x02013;<lpage>2078</lpage><pub-id pub-id-type="doi">10.1002/jcc.21057</pub-id>.<pub-id pub-id-type="pmid">18623101</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Perdew</surname><given-names>J. P.</given-names></name>; <name><surname>Burke</surname><given-names>K.</given-names></name>; <name><surname>Ernzerhof</surname><given-names>M.</given-names></name>
+<article-title>Generalized
+Gradient Approximation
+Made Simple</article-title>. <source>Phys. Rev. Lett.</source>
+<year>1996</year>, <volume>77</volume>, <fpage>3865</fpage>&#x02013;<lpage>3868</lpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.77.3865</pub-id>.<pub-id pub-id-type="pmid">10062328</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="book" id="cit36"><person-group person-group-type="allauthors"><name><surname>Dahl</surname><given-names>J. P.</given-names></name>; <name><surname>Avery</surname><given-names>J.</given-names></name></person-group><source>Local Density Approximations
+in Quantum Chemistry and Solid State Physics</source>; <publisher-name>Springer Science &#x00026; Business Media</publisher-name>, <year>2013</year>.</mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Anisimov</surname><given-names>V. I.</given-names></name>; <name><surname>Aryasetiawan</surname><given-names>F.</given-names></name>; <name><surname>Lichtenstein</surname><given-names>A. I.</given-names></name>
+<article-title>First-Principles Calculations of
+the Electronic Structure and Spectra of Strongly Correlated Systems:
+The LDA+U method</article-title>. <source>J. Phys.: Condens. Matter</source>
+<year>1997</year>, <volume>9</volume>, <fpage>767</fpage>&#x02013;<lpage>808</lpage><pub-id pub-id-type="doi">10.1088/0953-8984/9/4/002</pub-id>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Shim</surname><given-names>J. H.</given-names></name>; <name><surname>Haule</surname><given-names>K.</given-names></name>; <name><surname>Kotliar</surname><given-names>G.</given-names></name>
+<article-title>Modeling the
+Localized-to-Itinerant
+Electronic Transition in the Heavy Fermion System CeIrIn<sub>5</sub></article-title>. <source>Science</source>
+<year>2007</year>, <volume>318</volume>, <fpage>1615</fpage>&#x02013;<lpage>1617</lpage><pub-id pub-id-type="doi">10.1126/science.1149064</pub-id>.<pub-id pub-id-type="pmid">17975033</pub-id></mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Monkhorst</surname><given-names>H. J.</given-names></name>; <name><surname>Pack</surname><given-names>J. D.</given-names></name>
+<article-title>Special Points for
+Brillouin-Zone Integrations</article-title>. <source>Phys. Rev. B</source>
+<year>1976</year>, <volume>13</volume>, <fpage>5188</fpage>&#x02013;<lpage>5192</lpage><pub-id pub-id-type="doi">10.1103/PhysRevB.13.5188</pub-id>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="book" id="cit40"><person-group person-group-type="allauthors"><name><surname>Kittel</surname><given-names>C.</given-names></name></person-group><source>Introduction to Solid
+State Physics Global ed.</source>; <publisher-name>Wiley</publisher-name>: <publisher-loc>Hoboken, NJ</publisher-loc>, <year>2018</year>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="book" id="cit41"><person-group person-group-type="allauthors"><name><surname>Ashcroft</surname><given-names>N. W.</given-names></name>; <name><surname>Mermin</surname><given-names>N. D.</given-names></name></person-group><source>Solid State Physics</source>; <publisher-name>Saunders College</publisher-name>, <year>1976</year>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Pletikosi&#x00107;</surname><given-names>I.</given-names></name>; <name><surname>Ali</surname><given-names>M. N.</given-names></name>; <name><surname>Fedorov</surname><given-names>A. V.</given-names></name>; <name><surname>Cava</surname><given-names>R. J.</given-names></name>; <name><surname>Valla</surname><given-names>T.</given-names></name>
+<article-title>Electronic
+Structure Basis for the Extraordinary Magnetoresistance in WTe<sub>2</sub></article-title>. <source>Phys. Rev. Lett.</source>
+<year>2014</year>, <volume>113</volume><issue>21</issue><fpage>216601</fpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.113.216601</pub-id>.<pub-id pub-id-type="pmid">25479512</pub-id></mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Ali</surname><given-names>M. N.</given-names></name>; <name><surname>Xiong</surname><given-names>J.</given-names></name>; <name><surname>Flynn</surname><given-names>S.</given-names></name>; <name><surname>Tao</surname><given-names>J.</given-names></name>; <name><surname>Gibson</surname><given-names>Q. D.</given-names></name>; <name><surname>Schoop</surname><given-names>L. M.</given-names></name>; <name><surname>Liang</surname><given-names>T.</given-names></name>; <name><surname>Haldolaarachchige</surname><given-names>N.</given-names></name>; <name><surname>Hirschberger</surname><given-names>M.</given-names></name>; <name><surname>Ong</surname><given-names>N. P.</given-names></name>; et al. <article-title>Large, Non-Saturating
+Magnetoresistance in WTe<sub>2</sub></article-title>. <source>Nature</source>
+<year>2014</year>, <volume>514</volume>, <fpage>205</fpage>&#x02013;<lpage>208</lpage><pub-id pub-id-type="doi">10.1038/nature13763</pub-id>.<pub-id pub-id-type="pmid">25219849</pub-id></mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Mong</surname><given-names>R. S.</given-names></name>; <name><surname>Essin</surname><given-names>A. M.</given-names></name>; <name><surname>Moore</surname><given-names>J. E.</given-names></name>
+<article-title>Antiferromagnetic
+Topological Insulators</article-title>. <source>Phys. Rev. B: Condens.
+Matter Mater. Phys.</source>
+<year>2010</year>, <volume>81</volume>, <fpage>245209</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.81.245209</pub-id>.</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Fang</surname><given-names>C.</given-names></name>; <name><surname>Gilbert</surname><given-names>M. J.</given-names></name>; <name><surname>Bernevig</surname><given-names>B. A.</given-names></name>
+<article-title>Topological Insulators with Commensurate
+Antiferromagnetism</article-title>. <source>Phys. Rev. B: Condens. Matter
+Mater. Phys.</source>
+<year>2013</year>, <volume>88</volume>, <fpage>085406</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.88.085406</pub-id>.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Yu</surname><given-names>R.</given-names></name>; <name><surname>Qi</surname><given-names>X. L.</given-names></name>; <name><surname>Bernevig</surname><given-names>A.</given-names></name>; <name><surname>Fang</surname><given-names>Z.</given-names></name>; <name><surname>Dai</surname><given-names>X.</given-names></name>
+<article-title>Equivalent
+Expression of Z<sub>2</sub> Topological Invariant for Band Insulators
+Using the Non-Abelian Berry Connection</article-title>. <source>Phys.
+Rev. B: Condens. Matter Mater. Phys.</source>
+<year>2011</year>, <volume>84</volume>, <fpage>075119</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.84.075119</pub-id>.</mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name><surname>Skriver</surname><given-names>H. L.</given-names></name>; <name><surname>Rosengaard</surname><given-names>N. M.</given-names></name>
+<article-title>Self-Consistent Green&#x02019;s-Function
+Technique for
+Surfaces and Interfaces</article-title>. <source>Phys. Rev. B: Condens.
+Matter Mater. Phys.</source>
+<year>1991</year>, <volume>43</volume>, <fpage>9538</fpage>&#x02013;<lpage>9549</lpage><pub-id pub-id-type="doi">10.1103/PhysRevB.43.9538</pub-id>.</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name><surname>King</surname><given-names>P. D. C.</given-names></name>; <name><surname>Hatch</surname><given-names>R. C.</given-names></name>; <name><surname>Bianchi</surname><given-names>M.</given-names></name>; <name><surname>Ovsyannikov</surname><given-names>R.</given-names></name>; <name><surname>Lupulescu</surname><given-names>C.</given-names></name>; <name><surname>Landolt</surname><given-names>G.</given-names></name>; <name><surname>Slomski</surname><given-names>B.</given-names></name>; <name><surname>Dil</surname><given-names>J. H.</given-names></name>; <name><surname>Guan</surname><given-names>D.</given-names></name>; <name><surname>Mi</surname><given-names>J. L.</given-names></name>; et al. <article-title>Large Tunable Rashba
+Spin Splitting of a Two-Dimensional Electron Gas in Bi<sub>2</sub>Se<sub>3</sub></article-title>. <source>Phys. Rev. Lett.</source>
+<year>2011</year>, <volume>107</volume><issue>9</issue><fpage>096802</fpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.107.096802</pub-id>.<pub-id pub-id-type="pmid">21929260</pub-id></mixed-citation></ref></ref-list></back></article>

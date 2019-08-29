@@ -1,0 +1,789 @@
+{
+  "id": [
+    "29944674"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29944674"
+  ],
+  "pmcid": [
+    "PMC6019389"
+  ],
+  "doi": [
+    "10.1371/journal.pone.0198476"
+  ],
+  "title": [
+    "Computational quantum chemistry, molecular docking, and ADMET predictions of imidazole alkaloids of Pilocarpus microphyllus with schistosomicidal properties."
+  ],
+  "authorString": [
+    "Rocha JA, Rego NCS, Carvalho BTS, Silva FI, Sousa JA, Ramos RM, Passos ING, de Moraes J, Leite JRSA, Lima FCA."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Rocha JA"
+          ],
+          "firstName": [
+            "Jefferson A"
+          ],
+          "lastName": [
+            "Rocha"
+          ],
+          "initials": [
+            "JA"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6619-2293",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "The Postgraduate Program of the Northeast Network of Biotechnology, RENORBIO, Focal Point UFPI, Teresina, Piauí, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Rego NCS"
+          ],
+          "firstName": [
+            "Nayra C S"
+          ],
+          "lastName": [
+            "Rego"
+          ],
+          "initials": [
+            "NCS"
+          ],
+          "affiliation": [
+            "The Postgraduate Program of the Northeast Network of Biotechnology, RENORBIO, Focal Point UFPI, Teresina, Piauí, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Carvalho BTS"
+          ],
+          "firstName": [
+            "Bruna T S"
+          ],
+          "lastName": [
+            "Carvalho"
+          ],
+          "initials": [
+            "BTS"
+          ],
+          "affiliation": [
+            "Research Group in Computational Quantum Chemistry & Pharmaceutical Planning, State University of Piauí, GPQQ&PF / UESPI, Teresina, PI, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Silva FI"
+          ],
+          "firstName": [
+            "Francisco I"
+          ],
+          "lastName": [
+            "Silva"
+          ],
+          "initials": [
+            "FI"
+          ],
+          "affiliation": [
+            "Research Group in Computational Quantum Chemistry & Pharmaceutical Planning, State University of Piauí, GPQQ&PF / UESPI, Teresina, PI, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Sousa JA"
+          ],
+          "firstName": [
+            "Jose A"
+          ],
+          "lastName": [
+            "Sousa"
+          ],
+          "initials": [
+            "JA"
+          ],
+          "affiliation": [
+            "Research Group in Computational Quantum Chemistry & Pharmaceutical Planning, State University of Piauí, GPQQ&PF / UESPI, Teresina, PI, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Ramos RM"
+          ],
+          "firstName": [
+            "Ricardo M"
+          ],
+          "lastName": [
+            "Ramos"
+          ],
+          "initials": [
+            "RM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2016-3344",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Research Laboratory in Information Systems, Department of Information, Environment, Health and Food Production, Federal Institute of Piauí, LAPESI / IFPI, Teresina, PI, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Passos ING"
+          ],
+          "firstName": [
+            "Ionara N G"
+          ],
+          "lastName": [
+            "Passos"
+          ],
+          "initials": [
+            "ING"
+          ],
+          "affiliation": [
+            "Research Group in Natural Sciences and Biotechnology, Federal University of Maranhão, CIENATEC / UFMA, Grajaú, MA, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "de Moraes J"
+          ],
+          "firstName": [
+            "Josué"
+          ],
+          "lastName": [
+            "de Moraes"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Research Center for Neglected Diseases, Guarulhos University, NPDN / UNG, Guarulhos, SP, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Leite JRSA"
+          ],
+          "firstName": [
+            "Jose R S A"
+          ],
+          "lastName": [
+            "Leite"
+          ],
+          "initials": [
+            "JRSA"
+          ],
+          "affiliation": [
+            "Area Morphology, Faculty of Medicine, Campus Darcy Ribeiro, University of Brasília, UnB, Brasília, DF, Brazil."
+          ]
+        },
+        {
+          "fullName": [
+            "Lima FCA"
+          ],
+          "firstName": [
+            "Francisco C A"
+          ],
+          "lastName": [
+            "Lima"
+          ],
+          "initials": [
+            "FCA"
+          ],
+          "affiliation": [
+            "The Postgraduate Program of the Northeast Network of Biotechnology, RENORBIO, Focal Point UFPI, Teresina, Piauí, Brazil."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6619-2293",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-2016-3344",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2690785"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "e0198476"
+  ],
+  "abstractText": [
+    "Schistosomiasis affects million people and its control is widely dependent on a single drug, praziquantel. Computational chemistry has led to the development of new tools that predict molecular properties related to pharmacological potential. We conducted a theoretical study of the imizadole alkaloids of Pilocarpus microphyllus (Rutaceae) with schistosomicidal properties. The molecules of epiisopiloturine, epiisopilosine, isopilosine, pilosine, and macaubine were evaluated using theory models (B3lyp/SDD, B3lyp/6-31+G(d,p), B3lyp/6-311++G(d,p)). Absorption, distribution, metabolization, excretion, and toxicity (ADMET) predictions were used to determine the pharmacokinetic and pharmacodynamic properties of the alkaloids. After optimization, the molecules were submitted to molecular docking calculations with the purine nucleoside phosphorylase, thioredoxin glutathione reductase, methylthioadenosine phosphorylase, arginase, uridine phosphorylase, Cathepsin B1 and histone deacetylase 8 enzymes, which are possible targets of Schistosoma mansoni. The results showed that B3lyp/6-311++G(d,p) was the optimal model to describe the properties studied. Thermodynamic analysis showed that epiisopiloturine and epiisopilosine were the most stable isomers; however, the epiisopilosine ligand achieved a superior interaction with the enzymes studied in the molecular docking experiments, which corroborated the results of previous experimental studies on schistosomiasis."
+  ],
+  "affiliation": [
+    "The Postgraduate Program of the Northeast Network of Biotechnology, RENORBIO, Focal Point UFPI, Teresina, Piauí, Brazil."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Schistosoma mansoni"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pilocarpus"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "4-Butyrolactone"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "AA"
+                  ],
+                  "qualifierName": [
+                    "analogs & derivatives"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Alkaloids"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Imidazoles"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Extracts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Anthelmintics"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Quantum Theory"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Thermodynamics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Docking Simulation"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Alkaloids"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Imidazoles"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Plant Extracts"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Anthelmintics"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "epiisopiloturine"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "4-Butyrolactone"
+          ],
+          "registryNumber": [
+            "OL659KIY4X"
+          ]
+        },
+        {
+          "name": [
+            "pilosine"
+          ],
+          "registryNumber": [
+            "H2K491WN88"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6019389?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6019389"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0198476"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-12-11"
+  ],
+  "dateOfCreation": [
+    "2018-06-27"
+  ],
+  "firstIndexDate": [
+    "2018-06-27"
+  ],
+  "dateOfRevision": [
+    "2019-01-11"
+  ],
+  "electronicPublicationDate": [
+    "2018-06-26"
+  ],
+  "firstPublicationDate": [
+    "2018-06-26"
+  ]
+}

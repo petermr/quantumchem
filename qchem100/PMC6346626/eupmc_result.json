@@ -1,0 +1,341 @@
+{
+  "id": [
+    "30693335"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30693335"
+  ],
+  "pmcid": [
+    "PMC6346626"
+  ],
+  "doi": [
+    "10.1021/acscentsci.8b00788"
+  ],
+  "title": [
+    "Quantum Chemistry on Quantum Computers: A Method for Preparation of Multiconfigurational Wave Functions on Quantum Computers without Performing Post-Hartree-Fock Calculations."
+  ],
+  "authorString": [
+    "Sugisaki K, Nakazawa S, Toyota K, Sato K, Shiomi D, Takui T."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Sugisaki K"
+          ],
+          "firstName": [
+            "Kenji"
+          ],
+          "lastName": [
+            "Sugisaki"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1950-5725",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nakazawa S"
+          ],
+          "firstName": [
+            "Shigeaki"
+          ],
+          "lastName": [
+            "Nakazawa"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Toyota K"
+          ],
+          "firstName": [
+            "Kazuo"
+          ],
+          "lastName": [
+            "Toyota"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Sato K"
+          ],
+          "firstName": [
+            "Kazunobu"
+          ],
+          "lastName": [
+            "Sato"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Shiomi D"
+          ],
+          "firstName": [
+            "Daisuke"
+          ],
+          "lastName": [
+            "Shiomi"
+          ],
+          "initials": [
+            "D"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Takui T"
+          ],
+          "firstName": [
+            "Takeji"
+          ],
+          "lastName": [
+            "Takui"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1950-5725",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "5"
+      ],
+      "journalIssueId": [
+        "2775111"
+      ],
+      "dateOfPublication": [
+        "2019 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "ACS central science"
+          ],
+          "ISOAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "medlineAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "NLMid": [
+            "101660035"
+          ],
+          "ISSN": [
+            "2374-7943"
+          ],
+          "ESSN": [
+            "2374-7951"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "167-175"
+  ],
+  "abstractText": [
+    "The full configuration interaction (full-CI) method is capable of providing the numerically best wave functions and energies of atoms and molecules within basis sets being used, although it is intractable for classical computers. Quantum computers can perform full-CI calculations in polynomial time against the system size by adopting a quantum phase estimation algorithm (QPEA). In the QPEA, the preparation of initial guess wave functions having sufficiently large overlap with the exact wave function is recommended. The Hartree-Fock (HF) wave function is a good initial guess only for closed shell singlet molecules and high-spin molecules carrying no spin-β unpaired electrons, around their equilibrium geometry, and thus, the construction of multiconfigurational wave functions without performing post-HF calculations on classical computers is highly desired for applying the method to a wide variety of chemistries and physics. In this work, we propose a method to construct multiconfigurational initial guess wave functions suitable for QPEA-based full-CI calculations on quantum computers, by utilizing diradical characters computed from spin-projected UHF wave functions. The proposed approach drastically improves the wave function overlap, particularly in molecules with intermediate diradical characters."
+  ],
+  "affiliation": [
+    "Department of Chemistry and Molecular Materials Science, Graduate School of Science, Osaka City University, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, Japan."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6346626?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6346626"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1021/acscentsci.8b00788"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2019-01-30"
+  ],
+  "firstIndexDate": [
+    "2019-01-30"
+  ],
+  "dateOfRevision": [
+    "2019-02-01"
+  ],
+  "electronicPublicationDate": [
+    "2018-12-31"
+  ],
+  "firstPublicationDate": [
+    "2018-12-31"
+  ]
+}

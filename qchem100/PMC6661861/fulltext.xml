@@ -1,0 +1,972 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Cent Sci</journal-id><journal-id journal-id-type="iso-abbrev">ACS Cent Sci</journal-id><journal-id journal-id-type="publisher-id">oc</journal-id><journal-id journal-id-type="coden">acscii</journal-id><journal-title-group><journal-title>ACS Central Science</journal-title></journal-title-group><issn pub-type="ppub">2374-7943</issn><issn pub-type="epub">2374-7951</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6661861</article-id><article-id pub-id-type="doi">10.1021/acscentsci.9b00297</article-id><article-categories><subj-group><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>A Mixed Quantum Chemistry/Machine Learning Approach
+for the Fast and Accurate Prediction of Biochemical Redox Potentials
+and Its Large-Scale Application to 315&#x0202f;000 Redox Reactions</article-title></title-group><contrib-group><contrib contrib-type="author" corresp="yes" id="ath1"><name><surname>Jinich</surname><given-names>Adrian</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref><xref rid="aff2" ref-type="aff">&#x02021;</xref><xref rid="notes1" ref-type="notes">#</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath2"><name><surname>Sanchez-Lengeling</surname><given-names>Benjamin</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref><xref rid="notes1" ref-type="notes">#</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Ren</surname><given-names>Haniu</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath4"><name><surname>Harman</surname><given-names>Rebecca</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath5"><name><surname>Aspuru-Guzik</surname><given-names>Al&#x000e1;n</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff3" ref-type="aff">&#x000a7;</xref><xref rid="aff4" ref-type="aff">&#x02225;</xref><xref rid="aff5" ref-type="aff">&#x022a5;</xref></contrib><aff id="aff1"><label>&#x02020;</label>Department
+of Chemistry and Chemical Biology, <institution>Harvard
+University</institution>, Cambridge, Massachusetts 02138, <country>United States</country></aff><aff id="aff2"><label>&#x02021;</label>Division
+of Infectious Diseases, Weill Department of Medicine, <institution>Weill&#x02212;Cornell Medical College</institution>, New York, New York 10065, <country>United States</country></aff><aff id="aff3"><label>&#x000a7;</label>Department
+of Chemistry and Department of Computer Science, <institution>University of Toronto</institution>, 80 St. George Street, Toronto, Ontario M5S 3H6, <country>Canada</country></aff><aff id="aff4"><label>&#x02225;</label><institution>Vector
+Institute</institution>, Toronto, Ontario M5G 1M1, <country>Canada</country></aff><aff id="aff5"><label>&#x022a5;</label>Biologically-Inspired
+Solar Energy Program, <institution>Canadian Institute
+for Advanced Research (CIFAR)</institution>, Toronto, Ontario M5S 1M1, <country>Canada</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>Phone: <phone>416-978-3564</phone>. E-mail: <email>alan@aspuru.com</email>.</corresp></author-notes><pub-date pub-type="epub"><day>07</day><month>06</month><year>2019</year></pub-date><pub-date pub-type="ppub"><day>24</day><month>07</month><year>2019</year></pub-date><volume>5</volume><issue>7</issue><fpage>1199</fpage><lpage>1210</lpage><history><date date-type="received"><day>24</day><month>03</month><year>2019</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019 American Chemical Society</copyright-statement><copyright-year>2019</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0007" id="ab-tgr1"/></p><p>A quantitative
+understanding of the thermodynamics of biochemical
+reactions is essential for accurately modeling metabolism. The group
+contribution method (GCM) is one of the most widely used approaches
+to estimate standard Gibbs energies and redox potentials of reactions
+for which no experimental measurements exist. Previous work has shown
+that quantum chemical predictions of biochemical thermodynamics are
+a promising approach to overcome the limitations of GCM. However,
+the quantum chemistry approach is significantly more expensive. Here,
+we use a combination of quantum chemistry and machine learning to
+obtain a fast and accurate method for predicting the thermodynamics
+of biochemical redox reactions. We focus on predicting the redox potentials
+of carbonyl functional group reductions to alcohols and amines, two
+of the most ubiquitous carbon redox transformations in biology. Our
+method relies on semiempirical quantum chemistry calculations calibrated
+with Gaussian process (GP) regression against available experimental
+data and results in higher predictive power than the GCM at low computational
+cost. Direct calibration of GCM and fingerprint-based predictions
+(without quantum chemistry) with GP regression also results in significant
+improvements in prediction accuracy, demonstrating the versatility
+of the approach. We design and implement a network expansion algorithm
+that iteratively reduces and oxidizes a set of natural seed metabolites
+and demonstrate the high-throughput applicability of our method by
+predicting the standard potentials of more than 315&#x0202f;000 redox
+reactions involving approximately 70&#x0202f;000 compounds. Additionally,
+we developed a novel fingerprint-based framework for detecting molecular
+environment motifs that are enriched or depleted across different
+regions of the redox potential landscape. We provide open access to
+all source code and data generated.</p></abstract><abstract abstract-type="short"><p>A combination of quantum
+chemistry and machine learning
+accurately predicts biochemical redox potentials of more than 300&#x0202f;000
+reactions, revealing structural factors contributing to energetics.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>oc9b00297</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>oc-2019-002977</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>All living systems
+are sustained by complex networks of biochemical
+reactions that extract energy from organic compounds and generate
+the building blocks that make up cells.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> Recent work<sup><xref ref-type="bibr" rid="ref2">2</xref>&#x02212;<xref ref-type="bibr" rid="ref5">5</xref></sup> has revived decades-old efforts<sup><xref ref-type="bibr" rid="ref6">6</xref>&#x02212;<xref ref-type="bibr" rid="ref8">8</xref></sup> to obtain a quantitative
+understanding of the thermodynamics of such metabolic networks. Accurately
+predicting the thermodynamic parameters, such as Gibbs reaction energies
+and redox potentials, of biochemical reactions informs both metabolic
+engineering applications<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref10">10</xref></sup> and the discovery of
+evolutionary design principles of natural pathways.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> This applies both to the prediction of the thermodynamics
+of known metabolic reactions and to non-natural reactions, which can
+be used to expand nature&#x02019;s metabolic toolkit.<sup><xref ref-type="bibr" rid="ref12">12</xref>,<xref ref-type="bibr" rid="ref13">13</xref></sup></p><p>Experimentally available reaction Gibbs energies and redox
+potentials
+provide coverage for only about &#x0223c;10% of known natural metabolic
+reactions. The metabolic modeling community relies mainly on group
+contribution method (GCM) approaches<sup><xref ref-type="bibr" rid="ref14">14</xref>&#x02212;<xref ref-type="bibr" rid="ref18">18</xref></sup> to estimate missing thermodynamic values. GCM decomposes
+metabolites into functional groups and assigns group energies by calibration
+against experimental data. The most widely used implementation of
+the GCM for biochemistry is the eQuilibrator,<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> an online thermodynamics calculator. In addition to using GCM to
+predict the formation energies of compounds, the eQuilibrator makes
+use of experimental reactant formation energies when available and
+combines them with group energies in a consistent manner in what is
+known as the component contribution method. This results in significant
+increases in accuracy.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> However, whenever
+experimental reactant formation energies are not available, estimates
+are based solely on group contribution energies. Such GCM-based estimates,
+which do not capture intramolecular functional group interactions,
+have limited prediction accuracy.<sup><xref ref-type="bibr" rid="ref21">21</xref>,<xref ref-type="bibr" rid="ref22">22</xref></sup></p><p>In this
+work, we focus on predicting the thermodynamics of redox
+biochemistry. Redox reactions, which are fundamental to living systems
+and are ubiquitous throughout metabolism, consist of electron transfers
+between two or more redox pairs or half-reactions.<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> Quantum chemistry has recently emerged as an important
+alternative modeling tool for the accurate prediction of biochemical
+thermodynamics.<sup><xref ref-type="bibr" rid="ref21">21</xref>,<xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref25">25</xref></sup> However, quantum chemical methods tend to
+have very high computational cost in comparison with the GCM or other
+cheminformatic-based alternatives.</p><p>Recent work in the intersection
+of quantum chemistry and machine
+learning has resulted in hybrid approaches that significantly lower
+computational cost without sacrificing prediction accuracy.<sup><xref ref-type="bibr" rid="ref26">26</xref>&#x02212;<xref ref-type="bibr" rid="ref29">29</xref></sup> One such hybrid quantum chemistry/machine learning approach, previously
+applied to organic photovoltaics material design,<sup><xref ref-type="bibr" rid="ref30">30</xref>,<xref ref-type="bibr" rid="ref31">31</xref></sup> relies on Gaussian process (GP) regression<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> to calibrate quantum chemical predictions against experimental data.
+GP regression is an established probabilistic framework in machine
+learning to build flexible models, which also furnishes uncertainty
+bounds on predicted data points. Gaussian process regression uses
+the &#x0201c;kernel trick&#x0201d;<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> to make
+probabilistic predictions, leveraging the distance between a data
+point of interest and a training set.</p><p>Here, we present a mixed
+quantum chemistry/machine learning approach
+for the accurate and high-throughput prediction of biochemical redox
+potentials. We focus on predicting the thermodynamics of carbonyl
+(C=O) functional group reductions to alcohols (C&#x02014;O)
+or amines (C&#x02014;N) (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A), two of the most abundant redox reaction categories in
+metabolism, for which a significant amount of experimental data is
+available. The approach relies on predicting electronic energies of
+compounds using the semiempirical PM7 method (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>B)<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> and then
+correcting for systematic errors in the predictions with GP regression
+against experimental data (<xref rid="fig1" ref-type="fig">Figures <xref rid="fig1" ref-type="fig">1</xref></xref>C and <xref rid="fig2" ref-type="fig">2</xref>). We innovate on existing
+GP regression techniques by making use of novel reaction fingerprints<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> to compute the similarity between redox reactions.
+We demonstrate that the method results in higher predictive power
+than the GCM approach. Importantly, this comes at significantly lower
+computational cost than previously developed quantum chemical methodologies
+for redox biochemical thermochemistry.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> In addition, we demonstrate the wide applicability of the GP regression
+method by directly calibrating GCM and fingerprint-based predictions
+(without quantum chemistry), also obtaining significant improvements
+in prediction accuracy. We demonstrate the high-throughput nature
+of the approach by predicting the redox potentials of what is to our
+knowledge the largest existing database of non-natural biochemical
+redox reactions, consisting of more than 315&#x0202f;000 iterative
+oxidations and reductions of &#x0201c;seed&#x0201d; metabolites from
+the KEGG database (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A).<sup><xref ref-type="bibr" rid="ref36">36</xref>&#x02212;<xref ref-type="bibr" rid="ref39">39</xref></sup> Using this vast data resource, we apply a novel molecular fingerprint-based
+analysis&#x02014;termed &#x0201c;reaction fingerprint heatmap&#x0201d;&#x02014;to
+decipher the molecular environment motifs associated with high and
+low redox potentials, thus providing insights into important structure&#x02013;energy
+relationships. We provide open access to the full source code and
+data, including metabolite geometries, electronic energies, p<italic>K</italic><sub>a</sub>&#x02019;s, and redox potentials at <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/aspuru-guzik-group/gp_redox_rxn">https://github.com/aspuru-guzik-group/gp_redox_rxn</uri>.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Schematic representation of the workflow. (A) We generate a network
+of redox reactions obtained from iterative reduction and oxidation
+of natural seed metabolites. The redox reactions considered are reductions
+of carbonyl functional groups to both alcohol and amine groups. (B)
+Starting from simplified molecular-input line-entry system (SMILES)<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> string representations of all the compounds
+in the network at pH = 0, we preoptimize molecular geometries using
+the Universal Force Field, and run semiempirical quantum chemistry
+calculations using PM7. (C) We estimate the standard (millimolar state)
+redox potentials <italic>E</italic><sup>m</sup> for the major species
+at pH = 0 from the difference in electronic energies. The transformed
+standard redox potentials <italic>E</italic>&#x02032;<sup>m</sup>(pH
+= 7) is obtained from cheminformatic p<italic>K</italic><sub>a</sub> estimates and the Alberty&#x02013;Legendre transform. We calibrated
+a training set of compounds against available experimental <italic>E</italic>&#x02032;<sup>m</sup>(pH = 7) values using Gaussian process
+(GP) regression.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0001" id="gr1" position="float"/></fig></sec><sec id="sec2"><title>Results</title><sec id="sec2.1"><title>Optimization
+of Redox Potential Prediction Strategy That Combines
+Semiempirical Quantum Chemistry with GP Regression</title><p>Our goal
+is to develop a calibrated quantum chemistry modeling framework that
+can accurately predict the reduction potentials of biochemical redox
+reactions in a high-throughput manner. Several different types of
+redox reactions that change the oxidation state of carbon atoms exist
+in biochemistry. These include the reduction of carboxylic acids to
+aldehydes, the reduction of carbonyls to alcohols or amines, and the
+reduction of alcohols to hydrocarbons.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> In this work, we focus our efforts on predicting the standard redox
+potentials (as a function of pH and ionic strength) for the reduction
+of carbonyls to alcohols or amines. This reaction category represents
+the most common type of carbon redox transformation in biochemistry.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> In addition, it is the category for which the
+largest amount of experimental data is available in the NIST database
+for the thermodynamics of enzyme-catalyzed reactions (TECRDB).<sup><xref ref-type="bibr" rid="ref40">40</xref></sup></p><p>Similar to previous implementations, our
+approach consists of running quantum chemistry calculations to obtain
+electronic structure energies of substrates and products for the redox
+reactions of interest.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> We take the difference
+in electronic energies as an estimate of the standard redox potential
+of the most abundant species (protonation states) of metabolites at
+pH = 0. We use cheminformatic p<italic>K</italic><sub>a</sub> estimates
+and the Alberty&#x02013;Legendre transform<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> to convert the redox potentials to transformed standard redox potentials <italic>E</italic>&#x02032;&#x000b0; (pH = 7) (<xref rid="sec4" ref-type="other">Methods</xref>). We then use GP regression to correct for systematic errors in
+the ab initio estimates (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>) as well as p<italic>K</italic><sub>a</sub> estimates that go into the model (<xref rid="sec4" ref-type="other">Methods</xref>). To test and optimize the accuracy of our modeling framework, we
+compared predicted potentials against a data set of 81 experimental
+redox potentials obtained from the NIST database of thermodynamics
+of enzyme-catalyzed reactions.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup></p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Schematic diagram
+of GP regression with reaction fingerprints.
+A redox reaction of interest <italic>x</italic>* is represented using
+a reaction fingerprint, which captures the molecular structure of
+both substrate (oxidized) and product (reduced). This reaction fingerprint
+is compared against the set of all redox reactions in the experimental
+data set using the covariance function of the Gaussian process <italic>k</italic>(<italic>x</italic>*, <italic>x</italic><sub><italic>i</italic></sub>) (see the <xref rid="sec4" ref-type="other">Methods</xref> section). The GP
+correction (<italic>E</italic>&#x02032;<sup>m</sup><sub>GP</sub>) to
+the quantum chemical prediction (<italic>E</italic>&#x02032;<sup>m</sup><sub>PM7</sub>) of the standard redox potential is then obtained
+from a similarity-based average of the correction terms for the experimental
+data set.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0002" id="gr2" position="float"/></fig><p>We tested several different model
+chemistries to maximize the accuracy
+and minimize the computational cost of our methodology (<xref rid="sec4" ref-type="other">Methods</xref> section, <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Table S1</ext-link>). In this context, a
+&#x0201c;model chemistry&#x0201d; consists of the combination of multiple
+modeling choices that go into running a quantum chemical simulation.
+These include the conformer generation strategy and geometry optimization
+procedure, the electronic structure method (e.g., density functional
+theory (DFT), wave function approaches, or semiempirical methods)
+as well as the water model used.</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>Summary Statistics
+of Prediction Accuracy
+for Calibration with Gaussian Process Regression of Different Modeling
+Approaches<xref rid="t1fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">&#x000a0;</th><th style="border:none;" align="center">&#x000a0;</th><th style="border:none;" align="center" char=".">&#x000a0;</th><th colspan="3" align="center" char=".">calibration/regression<hr/></th><th style="border:none;" align="center" char=".">linear fit</th></tr><tr><th style="border:none;" align="center">approach</th><th style="border:none;" align="center">geometry source</th><th style="border:none;" align="center" char=".">average
+compute time (s)</th><th style="border:none;" align="center" char=".">MAE (&#x003c3;) (mV)</th><th style="border:none;" align="center" char="."><italic>r</italic></th><th style="border:none;" align="center" char="."><italic>R</italic><sup>2</sup></th><th style="border:none;" align="center" char="."><italic>R</italic><sup>2</sup></th></tr></thead><tbody><tr><td style="border:none;" align="left">GCM</td><td style="border:none;" align="left">N/A</td><td style="border:none;" align="char" char=".">0.01</td><td style="border:none;" align="char" char=".">27.15&#x000a0;(24.04)</td><td style="border:none;" align="char" char=".">0.58</td><td style="border:none;" align="char" char=".">0.33</td><td style="border:none;" align="char" char=".">0.33</td></tr><tr><td style="border:none;" align="left">Rxn-FP + GP</td><td style="border:none;" align="left">N/A</td><td style="border:none;" align="char" char=".">0.01</td><td style="border:none;" align="char" char=".">24.35&#x000a0;(23.44)</td><td style="border:none;" align="char" char=".">0.65</td><td style="border:none;" align="char" char=".">0.42</td><td style="border:none;" align="char" char=".">N/A</td></tr><tr><td style="border:none;" align="left">GCM + GP</td><td style="border:none;" align="left">N/A</td><td style="border:none;" align="char" char=".">0.01</td><td style="border:none;" align="char" char=".">21.20&#x000a0;(20.50)</td><td style="border:none;" align="char" char=".">0.75</td><td style="border:none;" align="char" char=".">0.56</td><td style="border:none;" align="char" char=".">0.33</td></tr><tr><td style="border:none;" align="left">PM7 + GP</td><td style="border:none;" align="left">opt.</td><td style="border:none;" align="char" char=".">0.36</td><td style="border:none;" align="char" char=".">22.47&#x000a0;(19.68)</td><td style="border:none;" align="char" char=".">0.74</td><td style="border:none;" align="char" char=".">0.54</td><td style="border:none;" align="char" char=".">0.22</td></tr><tr><td style="border:none;" align="left">HF-3c + GP</td><td style="border:none;" align="left">opt.</td><td style="border:none;" align="char" char=".">588</td><td style="border:none;" align="char" char=".">21.07&#x000a0;(19.76)</td><td style="border:none;" align="char" char=".">0.76</td><td style="border:none;" align="char" char=".">0.57</td><td style="border:none;" align="char" char=".">0.28</td></tr><tr><td style="border:none;" align="left">DSD-PBEP86 + GP</td><td style="border:none;" align="left">PM7 opt.</td><td style="border:none;" align="char" char=".">1223</td><td style="border:none;" align="char" char=".">21.15&#x000a0;(17.97)</td><td style="border:none;" align="char" char=".">0.79</td><td style="border:none;" align="char" char=".">0.61</td><td style="border:none;" align="char" char=".">0.24</td></tr><tr><td style="border:none;" align="left">DLPNO&#x02013;CCSD(T)//cc-pVDZ&#x000a0;+&#x000a0;GP</td><td style="border:none;" align="left">B3LYP conf.</td><td style="border:none;" align="char" char=".">6111</td><td style="border:none;" align="char" char=".">20.45&#x000a0;(19.97)</td><td style="border:none;" align="char" char=".">0.76</td><td style="border:none;" align="char" char=".">0.57</td><td style="border:none;" align="char" char=".">0.47</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p>See the <xref rid="sec4" ref-type="other">Methods</xref> section for detailed descriptions of each modeling approach (quantum
+model chemistry). Rxn-FP = reaction fingerprints; GCM = group contribution
+method; GP = calibration with Gaussian process regression; opt. =
+geometry optimization of a single geometric conformer with the same
+level of theory; conf. = geometry optimization of multiple geometric
+conformers at a given theory level. Regression statistics correspond
+to GP calibration using Morgan fingerprints of radius 6. Additionally
+we report the <italic>R</italic><sup>2</sup> (coefficient of determination)
+obtained using calibration with linear regression to the experimental
+data. The statistics are MAE = mean absolute error; &#x003c3; = standard
+deviation of the absolute error; <italic>r</italic> = Pearson <italic>r</italic>; <italic>R</italic><sup>2</sup> = coefficient of determination;
+average compute time = estimated average computational time per electron,
+in seconds. Linear fit is without GP regression.</p></fn></table-wrap-foot></table-wrap><p>The GP regression-based calibration
+step depends on a particular
+choice of a covariance function, which in turn involves a distance
+or similarity measure between redox reactions or compounds. We found
+that the following combination of quantum model chemistry and kernel/distance
+function between reactions resulted in the most efficient (in terms
+of a trade-off between accuracy and computational cost) prediction
+strategy: the PM7<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> semiempirical method
+for both geometry optimizations and single-point electronic energies,
+with the COSMO implicit solvation model,<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> and a reaction fingerprint obtained by taking the difference between
+counted Morgan fingerprint vectors of products and substrates,<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> with a kernel function that is a mixture of
+a squared exponential kernel, and a noise kernel (<xref rid="sec4" ref-type="other">Methods</xref>). We note that the model chemistry using the double-hybrid
+functional DSD-PBEP86 (based on a double-hybrid DFT functional) gives
+the best accuracy but at a higher computational cost.</p></sec><sec id="sec2.2"><title>GP-Calibrated
+Quantum Chemistry Yields High Prediction Accuracy
+at a Low Computational Cost</title><p>Importantly, our GP-calibrated
+semiempirical quantum chemistry method results in higher predictive
+power than the most commonly used approach, the GCM (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>, <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>). Using cross-validation to test prediction
+accuracy, the GP-calibrated PM7 approach results in a higher Pearson
+correlation coefficient (<italic>r</italic>), a higher coefficient
+of determination (<italic>R</italic><sup>2</sup>), and a lower mean
+absolute error (MAE) than GCM predictions when tested against the
+set of experimental potentials (<italic>p</italic> &#x0003c; 0.05, <xref rid="sec4" ref-type="other">Methods</xref>). The GP calibration also returns a GP uncertainty
+for each predicted value, and we find that it linearly correlates
+with the absolute deviation from uncertainty (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Figure S1</ext-link>).</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Comparison of prediction accuracy for the group contribution
+method
+and quantum chemistry with GP regression. Scatter plots of experimental
+standard transformed redox potentials against predictions from several
+sources: (a) PM7, (b) linearly calibrated PM7, (c) group contribution
+method (GCM), and (d) GP-calibrated PM7. The experimental data consist
+of available standard transformed reduction potentials for carbonyl-to-alcohol
+and carbonyl-to-amine reductions. Data points in the scatter plot
+were obtained from a leave-one-out cross-validation (LOOCV) procedure,
+where the model is trained on all data points except the one point
+to be predicted. Note that we use the millimolar standard state, <italic>E</italic>&#x02032;<sup>m</sup>, where reactant concentrations are
+taken as 1 mM, since this is significantly closer to relevant physiological
+concentrations of metabolites in cells than 1 M. The legend in each
+plot contains summary statistics for the fit; MAE (mean absolute error)
+also has the associated standard deviation in parentheses.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0003" id="gr3" position="float"/></fig><p>We note that the GCM predictions, as well as fingerprint-based
+predictions (without relying on any quantum chemistry calculations),
+can also be calibrated using GP regression, resulting in significant
+improvements in their prediction accuracy. Thus, regardless of the
+underlying modeling choice, the GP calibration approach is an accurate,
+computationally efficient, and widely applicable modeling framework
+for the high-throughput prediction of biochemical redox potentials.</p><p>One of the advantages of our approach is its low computational
+cost (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Table S1</ext-link>) in comparison to other
+model chemistries. For instance, the PM7-GP-calibrated calculations
+are approximately 1000-fold faster than the DLPNO&#x02013;CCSD(T) calibrated
+model chemistry, despite both approaches yielding comparable accuracies.
+We note that the pipeline involves estimating p<italic>K</italic><sub>a</sub>&#x02019;s and major protonation states at pH = 0 for all metabolites
+at a slight additional computational cost. However, this cost is also
+incurred by the GCM approach.</p></sec><sec id="sec2.3"><title>Generation of a Large Network
+of Non-Natural Redox Reactions
+Using a Novel Network Expansion Algorithm</title><p>To demonstrate
+the high-throughput nature of our method, we implemented a redox reaction
+network expansion algorithm to generate what is, to our knowledge,
+the largest database of non-natural biochemical redox reactions (<xref rid="sec4" ref-type="other">Methods</xref>). The network expansion algorithm makes
+use of the RDKit cheminformatics software to iteratively apply simplified
+molecular-input line-entry system (SMILES)<sup><xref ref-type="bibr" rid="ref35">35</xref>,<xref ref-type="bibr" rid="ref43">43</xref></sup> reaction strings to natural metabolites in the KEGG database. We
+generate two types of redox reactions, implemented in both the reductive
+and oxidative directions. The first type is the reduction of carbonyls
+to alcohols (and the reverse oxidations); the second is the reduction
+of carbonyls to amines (and the reverse oxidations). Applying the
+cheminformatic transformation to metabolites in the KEGG database
+results in a first set of nearest-neighbor reduction or oxidation
+products. We then iteratively apply the reactions to the resulting
+set of products, until there are no more carbonyl functional groups
+to reduce (or alcohol or amine functional groups to oxidize).</p><p>Although the KEGG database of natural metabolic compounds and reactions
+contains molecules with up to 135 carbon atoms (a peptidoglycan cell
+wall component is the molecule with the highest number of carbon atoms),<sup><xref ref-type="bibr" rid="ref44">44</xref></sup> we limit our network expansion algorithm to
+molecules with 21 carbon atoms or less. This threshold is imposed
+in consideration of the size of the compounds in the training set;
+if experimental data were available for larger compounds, this methodology
+could easily be adapted.</p><p><xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref> shows the
+number and type of reactions that make up the network. It consists
+of &#x0223c;75&#x0202f;000 compounds connected by &#x0223c;315&#x0202f;000
+reactions (reductions and oxidations). Of these reactions, 83% convert
+carbonyls to alcohols (or alcohols to carbonyls), while 17% convert
+carbonyls to amines (or amines to carbonyls). The large majority of
+the reactions (more than 80%) are oxidations of alcohols to carbonyls.
+Thus, the alcohol functional group is significantly more ubiquitous
+in the set of natural metabolites than either carbonyls or amine functional
+groups. The large majority of the reactions in the network&#x02014;97%&#x02014;stem
+from the recursive <italic>oxidations</italic> of seed natural metabolites,
+while only &#x0223c;3% come from recursive reductions. This is consistent
+with the notion that carbonyl functional groups can cause damage to
+macromolecules<sup><xref ref-type="bibr" rid="ref45">45</xref>,<xref ref-type="bibr" rid="ref46">46</xref></sup> and are thus kept at check in
+the cell.</p><p>We analyzed the structure of the resulting network
+by looking at
+the distribution of compound sizes. <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A shows the number of compounds in the networks
+as a function of their number of carbon atoms. The distribution shows
+three peaks corresponding to molecules with 6<italic>n</italic> carbon
+atoms (<italic>n</italic> = 1, 2, 3). These peaks reflect a large
+number of products that result from combinatorially oxidizing all
+alcohol groups in mono-, di-, and trisaccharides (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>B).</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>The network of redox
+reactions obtained from iterative reductions
+and oxidations of natural metabolites. (A) Carbon number distribution
+for the full set of &#x0223c;70&#x0202f;000 compounds in the network.
+The peaks at multiples of 6 carbon atoms reflect the combinatorial
+oxidation of mono-, di-, and trisaccharides and their multiple alcohol
+functional groups. (B) Schematic diagram of a natural trisaccharide
+being iteratively oxidized at all possible alcohol functional groups.
+Blue circles depict sites of initial alcohol-to-carbonyl oxidation,
+and green circles depict a second oxidation site.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0004" id="gr4" position="float"/></fig></sec><sec id="sec2.4"><title>High-Throughput Prediction of Redox Potentials and Elucidation
+of Structure&#x02013;Energy Relationships</title><p>Using our GP-calibrated
+semiempirical quantum chemistry method, we predicted the standard
+transformed redox potentials for the set of &#x0223c;315&#x0202f;000
+reactions generated with the iterative network expansion algorithm.
+The resulting distribution of standard transformed redox potentials
+is shown in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>. We note the use of the millimolar standard state, <italic>E</italic>&#x02032;<sup>m</sup>, instead of the more commonly used <italic>E</italic>&#x02032;&#x000b0; (where reactant concentrations are taken as 1 M).
+This is a standard state that is commonly used in the field of biochemical
+thermodynamics since 1 mM is closer to the relevant physiological
+concentrations of metabolites in cells.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> The resulting distributions for the two reaction categories peak
+at very close but slightly different values, with &#x027e8;<italic>E</italic>&#x02032;<sup>m</sup>&#x027e9; &#x0223c; &#x02212;220 mV for
+carbonyl-to-alcohol reductions and &#x027e8;<italic>E</italic>&#x02032;<sup>m</sup>&#x027e9; &#x0223c; &#x02212;235 mV for carbonyl-to-amine reductions.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Distribution
+of predicted standard redox potentials (pH = 7) for
+a set of &#x0223c;315&#x0202f;000 non-natural redox reactions. Predicted
+potentials were obtained by running semiempirical quantum chemical
+calculations (<xref rid="sec4" ref-type="other">Methods</xref>) and correcting for
+systematic errors using Gaussian process regression. The green distribution
+shows the <italic>E</italic>&#x02032;<sup>m</sup>(pH = 7) values for
+53&#x0202f;095 reductions of carbonyls to amines. The blue distribution
+shows the <italic>E</italic>&#x02032;<sup>m</sup>(pH = 7) values for
+261&#x0202f;903 reductions of carbonyls to alcohols.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0005" id="gr5" position="float"/></fig><p>Importantly, our vast network of non-natural redox
+reactions and
+their associated redox potentials are amenable to structure&#x02013;energy
+analyses to elucidate molecular structures that are enriched or depleted
+in reactions with high or low potentials. Toward this end, we developed
+a novel molecular fingerprint-based structure&#x02013;energy analysis,
+which we term &#x0201c;reaction fingerprint heatmaps&#x0201d;, to detect
+such reaction motifs (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>). The main idea behind reaction fingerprint heatmaps is that,
+by comparing the <italic>average</italic> reaction fingerprints of
+reactions with different redox potential values, one can visually
+detect the structural patterns that correlate with energetics. More
+specifically, we first divide the distribution of predicted standard
+redox potentials into arbitrary discrete bins, in our case 100 bins.
+We then find, for each standard redox potential bin, the subset of
+reactions with potentials falling within that range and average their
+corresponding fingerprint vectors. We then extract structure&#x02013;energy
+trends by looking at the changes in average fingerprints values across
+consecutive bins. When these changes are large for a particular bit,
+it signifies that a meaningful molecular environment (motif) is enriched
+or depleted at that particular bin (range) of redox potential values.
+For any particular reaction, we can reverse engineer the reaction
+fingerprint to obtain substructures that activate the particular bit.
+For example (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>), we find that Bit-4 is enriched in reactions with standard potentials
+of &#x02212;160 mV &#x0003c; <italic>E</italic>&#x02032;<sup>m</sup> &#x0003c;
+&#x02212;100 mV. By mapping Bit-4 back to specific reactions, we find
+a molecular environment that corresponds to a dicarbonyl within a
+heterocyclic ring (see example reaction in <xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>) that is enriched in substrate molecules
+within that range of standard potentials. While, across all reactions,
+the difference between the substrate and product molecules is the
+reduction of a single carbonyl into a hydroxy carbon group, our reaction
+fingerprint heatmaps detect the molecular environments dictating the
+energetics associated with that transformation.</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Elucidating structure&#x02013;energy
+relationships using a reaction
+fingerprint heatmap. The top right panel shows the distribution of
+predicted standard redox potentials (in the millimolar standard state)
+using our GP-calibrated quantum chemical approach. The bottom right
+panel shows a reaction fingerprint heatmap, where the <italic>y</italic>-axis corresponds to the bits in the reaction fingerprint vector
+averaged across all reactions falling within a redox potential bin
+(range of values). The heatmap highlights bits that have significantly
+different values (on average) as a function of redox potential. The
+example reactions on the left correspond to each of the significant
+reaction fingerprint bits. For example, Bit-4 is a structure enriched
+in substrate molecules of reactions with high values of standard redox
+potentials.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_0006" id="gr6" position="float"/></fig></sec></sec><sec id="sec3"><title>Discussion</title><p>In
+this work, we developed a mixed quantum chemistry/machine learning
+modeling approach for the prediction of biochemical redox potentials
+of carbonyl functional groups. The method is based on calculating
+the electronic energy difference between substrates and products in
+redox reactions using the semiempirical quantum chemistry method PM7.<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> The raw quantum chemistry estimates are then
+calibrated against experiment using GP regression.</p><p>We demonstrated
+that the method has better prediction power than
+the commonly used GCM approach. Furthermore, the computational resources
+required are significantly lower than previous quantum chemistry strategies
+for biochemical thermodynamics. The GCM decomposes compounds into
+discrete functional groups and assigns energies to each group by calibrating
+via linear regression against experimentally available Gibbs energies.
+It then estimates reaction energies as the group energy difference
+between products and substrates. As <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A shows, GCM collapses a large fraction of
+the redox potentials of carbonyl compounds into a few sets of values.
+We also note that, in a recent variant of the GCM, group energies
+can be combined with experimental reactant Gibbs formation energies
+to significantly increase the accuracy of predictions, resulting in
+what is known as the CCM.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Since we seek
+to apply our modeling approach to predicting redox potentials of non-natural
+reactions, the CCM is not applicable to the vast majority of the reactions
+in our data set. However, we also found that the GP regression technique
+can be used to further calibrate both GCM and fingerprint-based predictions
+(without relying on quantum chemical calculations), resulting in significant
+improvements to the prediction accuracies of these two approaches.
+Thus, the decision on what modeling choice to use can be based on
+a balancing act between accuracy, computational cost, and the preferred
+underlying modeling baseline. For example, if one desires an accurate,
+computationally cheap approach that relies on an underlying electronic
+structure method, PM7+GP is an optimal choice. Alternatively, for
+more accurate results that rely on more expensive electronic structure
+theory, DSDPEP89 (based on a double-hybrid DFT functional) gives the
+best accuracy but at higher computational cost. Likewise, if a good
+baseline for your chemical application is GCM, at a very low cost
+and almost comparable accuracy GCM+GP will be a good modeling choice.
+GP calibration proves to be a versatile approach to improve the accuracy
+of a wide variety of prediction methods.</p><p>We considered model
+chemistries that rely on a single conformation
+per molecule and also ensembles of conformers. In our case we did
+not observe a huge difference in predicted accuracy between both approaches.
+Other chemical applications and data sets should be tested to see
+if performance is impacted by conformer diversity. A single missed
+hydrogen bond in one reacting partner, but not the other, could easily
+introduce large errors in the predicted redox potential.</p><p>Current
+work on GP calibration in computational chemistry relies
+on <italic>molecular</italic> fingerprints to compute the similarity
+between molecules of interest and compounds with experimental data.
+Our implementation is to our knowledge the first application of GP
+to reaction energy predictions using reaction fingerprints. We chose
+to use GP&#x02014;as opposed to other machine learning techniques such
+as neural networks&#x02014;on the basis of the amount of experimental
+data available. GPs are suited for this task since they grow in complexity
+according to the data; a GP is robust to overfitting since it penalizes
+complex models and is able to provide estimates of uncertainty on
+predictions.<sup><xref ref-type="bibr" rid="ref32">32</xref>,<xref ref-type="bibr" rid="ref47">47</xref>,<xref ref-type="bibr" rid="ref48">48</xref></sup> In contrast, techniques such as deep neural networks&#x02014;which
+have gained traction in recent machine learning applications to quantum
+chemistry<sup><xref ref-type="bibr" rid="ref49">49</xref>&#x02212;<xref ref-type="bibr" rid="ref51">51</xref></sup>&#x02014;are only applicable when much larger data
+sets are available.</p><p>We focused our approach to the prediction
+of the standard redox
+potentials of carbonyl functional groups (i.e., reduction to alcohols
+or amines). The application of GP regression to other redox transformations&#x02014;including
+the reduction of carboxylic acids to aldehydes and the reduction of
+alcohols to hydrocarbons&#x02014;is limited by the availability of
+experimental data. This highlights the importance of a concerted effort
+to generate more experimental data for biochemical redox potentials
+in controlled conditions (such as pH, ionic strength, temperature,
+and buffer) to increase the predictive power and scope of calibrated
+quantum chemical approaches.</p><p>We demonstrated the high-throughput
+nature of the methodology by
+generating a network of more than 315&#x0202f;000 non-natural biochemical
+reactions involving &#x0223c;70&#x0202f;000 compounds. Our algorithm
+is different from other network expansion algorithms previously applied
+to metabolic networks. By solely focusing on redox biochemistry, iterative
+application of the reactions converges to molecules that cannot be
+further reduced or oxidized. This contrasts with other network expansion
+algorithms<sup><xref ref-type="bibr" rid="ref52">52</xref>,<xref ref-type="bibr" rid="ref53">53</xref></sup> used to investigate scenarios
+related to the origins of life, where several types of chemical transformations
+are considered, including carbon-bond formation and cleavage. Other
+network expansion algorithms also start from natural seed compounds
+but only consider natural metabolites.<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> In contrast, our algorithm uses natural metabolites as seeds but
+results in the expansion to a vast network of non-natural compounds.</p><p>Despite the improvements obtained over GCM with our method, the
+variance in the prediction accuracies across individual reactions
+is still significant. In practice, this spread places a limit on the
+confidence with which one can predict the redox potential of an individual
+reaction of interest. This is true, and to a larger degree, for other
+methods currently widely used, such as GCM. However, the main value
+of developing a method with lower average prediction error lies in
+our ability to analyze large sets of compounds, where average trends
+in the energies of different molecular substructures can be captured.
+We thus developed a novel structure&#x02013;energy relationship analysis
+framework which we term reaction fingerprint heatmaps. These allow
+us to detect molecular environments that are enriched or depleted
+in reactions that fall within specific regions (bins) of the redox
+potential distribution. This could potentially be useful for future
+metabolic engineering applications: being able to pinpoint the exact
+molecular environments that correlate with redox potentials would
+allow the fine-tuning of the energetics of synthetic metabolites.
+We note that this approach captures large-scale structure&#x02013;energy
+trends. An alternative approach, which is able to associate weights
+to individual atoms or subfragments, are the similarity maps as introduced
+by Riniker et al.<sup><xref ref-type="bibr" rid="ref54">54</xref></sup></p><p>We envision several
+applications of our biochemical redox potential
+prediction methodology. One such application is studying the thermodynamic
+landscape of specific families of natural metabolic compounds that
+undergo combinatorial reductions (or oxidations) of carbonyl (or alcohol
+or amine) functional groups. One such family of compounds are the
+brassinosteroids and the oxylipins,<sup><xref ref-type="bibr" rid="ref55">55</xref>&#x02212;<xref ref-type="bibr" rid="ref57">57</xref></sup> structurally diverse
+plant metabolites that play important roles in many physiological
+processes. In addition, in the context of drug metabolism, our methodology
+could be applied to obtain quantitative insights into the thermodynamics
+of redox transformations such as those mediated by the P450 (CYP)
+superfamily of enzymes.<sup><xref ref-type="bibr" rid="ref58">58</xref></sup></p><p>To our
+knowledge, our database contains the largest set of geometric
+structures, electronic energies, p<italic>K</italic><sub>a</sub> estimates,
+and redox potentials of natural metabolites and compounds related
+to these through oxidoreductive transformations. We make all the code
+and data sets generated in this work&#x02014;including metabolite 3D
+geometries, electronic energies, p<italic>K</italic><sub>a</sub>&#x02019;s,
+and redox potential estimates&#x02014;available as an open source repository
+at <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/aspuru-guzik-group/gp_redox_rxn">https://github.com/aspuru-guzik-group/gp_redox_rxn</uri>.</p></sec><sec id="sec4"><title>Methods</title><sec id="sec4.1"><title>Generation
+of Most Abundant (Major) Protonation States at pH
+= 0</title><p>Our pipeline is based on performing electronic structure
+simulations of the most protonated species of each biochemical compound
+involved in every redox reaction of interest. We run the quantum chemistry
+simulations on the major protonation states at pH = 0 to avoid errors
+associated with the prediction of anionic compound energies.<sup><xref ref-type="bibr" rid="ref21">21</xref>,<xref ref-type="bibr" rid="ref59">59</xref>,<xref ref-type="bibr" rid="ref60">60</xref></sup> We use the ChemAxon calculator
+plugin (Marvin 17.7.0, 2017, ChemAxon) <italic>cxcalc majormicrospecies</italic> to generate, for each substrate and product involved in a biochemical
+redox reaction of interest, the major microspecies at pH = 0.</p></sec><sec id="sec4.2"><title>Geometry
+Optimization</title><p>Using the SMILES string representation<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> for each compound in the reaction network, we
+obtain the string corresponding to the most abundant (major) microspecies
+at pH = 0 using ChemAxon. This smiles string is then converted to
+an RDKit &#x0201c;mol&#x0201d; object. From here we obtain 3D structures
+based on two decisions. (1) Whenever we want a single 3D geometry,
+we generate an initial conformer with RDKit (using the EmbedMolecule
+command, which uses distance geometry to obtain initial coordinates
+for a molecule), and we optimize this conformer&#x02019;s geometry
+Universal Force Field (UFF) as implemented in RDKit.<sup><xref ref-type="bibr" rid="ref61">61</xref></sup> (2) If we want several conformers (to Boltzmann average
+their energies), we generate around 1000 random &#x0201c;smart&#x0201d;
+conformers via the ETKDG force field,<sup><xref ref-type="bibr" rid="ref62">62</xref></sup> calculate their energies, and pick between 5 and 20 conformers (based
+on size) and on clustering of energies (using the Butina clustering
+algorithm). Depending on the baseline model chemistry, either we further
+refine the geometry of the PM7<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> semiempirical
+method with the COSMO implicit solvation model<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> and then a quantum chemistry approach (PBE-3H or B3LYP),
+or we simply use the base PM7 or UFF geometry and perform single-point
+energy (SPE) calculations.</p></sec><sec id="sec4.3"><title>Single-Point Energy Estimates</title><p>We
+then compute the electronic
+energy <italic>E</italic><sub>electronic</sub> of every compound involved
+in a given redox reaction using the PM7 semiempirical method<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> with the COSMO implicit solvation model<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> (see below for other single-point energy SPE
+model chemistries tested). For both reductions of carbonyl groups
+to alcohols and amines, we add a hydrogen molecule to the substrate
+side of the redox reaction (in the direction of reduction) and compute
+its electronic energy. In addition, to balance reductions of carbonyls
+to amine functional groups, we add an ammonia molecule to the substrate
+side of the reaction and a water molecule to the product side of the
+reaction (in the direction of reduction) and compute their electronic
+energies.</p><p>We use the difference in the electronic energies of
+products and substrates, &#x00394;<italic>E</italic><sub>electronic</sub>, as an estimate of the standard redox potential <italic>E</italic>&#x000b0;(major species, MS, at pH = 0):<disp-formula id="ueq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_m001" position="anchor"/></disp-formula>where <italic>n</italic> is the number of
+electrons (2 for all reactions considered here), and <italic>F</italic> is Faraday&#x02019;s constant.</p><p>Our approach ignores the contribution
+of ro&#x02013;vibrational
+enthalpies and entropies to Gibbs reaction energies. This significantly
+reduces the computational cost associated with quantum chemical simulations,
+and we correct for the systematic errors introduced by this approximation
+through the Gaussian process regression (see below). We note that
+previous work has shown that the value of &#x00394;<italic>E</italic><sub>electronic</sub> obtained for these types of redox reactions
+strongly correlates linearly with the full &#x00394;<italic>G</italic><sub>r</sub>&#x000b0; prediction obtained from including ro&#x02013;vibrational
+enthalpic and entropic contribution (data not shown).</p></sec><sec id="sec4.4"><title>Transforming
+Chemical Potentials <italic>E</italic>&#x000b0;(Major
+Species at pH = 0) to Biochemical Potentials, <italic>E</italic>&#x02032;&#x000b0;(pH
+= 7)</title><p>Having estimated the standard redox potential <italic>E</italic>&#x000b0;(major species at pH = 0), we use cheminformatic
+p<italic>K</italic><sub>a</sub> estimates of reactants and the Alberty&#x02013;Legendre
+transform<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> (p 67, eqs 4.4&#x02013;10) to
+convert <italic>E</italic>&#x000b0;(major species at pH = 0) to the <italic>transformed</italic> standard redox potential, <italic>E</italic>&#x02032;&#x000b0;(pH = 7), which is a function of pH.<sup><xref ref-type="bibr" rid="ref63">63</xref></sup> To estimate the p<italic>K</italic><sub>a</sub>&#x02019;s
+of all reactants in every redox reaction of interest, we use the ChemAxon
+calculator plugin (Marvin 17.7.0, 2017, ChemAxon) <italic>cxcalc pka</italic>. Internally, the p<italic>K</italic><sub>a</sub> calculator plugin
+is based on the calculation of the partial charge of atoms in the
+molecule.<sup><xref ref-type="bibr" rid="ref64">64</xref>,<xref ref-type="bibr" rid="ref65">65</xref></sup></p></sec><sec id="sec4.5"><title>Gaussian Process Calibration Using Reaction
+Fingerprints</title><p>We calibrate biochemical redox potentials <italic>E</italic>&#x02032;&#x000b0;(pH
+= 7) obtained from quantum chemical simulations against available
+experimental data to correct for systematic errors in our simulations
+and the cheminformatic p<italic>K</italic><sub>a</sub> estimates.
+One simple strategy of calibration of energy values would be to use
+a two-parameter linear regression. We note that our group has successfully
+employed this in the context of compounds for redox flow battery applications.<sup><xref ref-type="bibr" rid="ref66">66</xref>&#x02212;<xref ref-type="bibr" rid="ref71">71</xref></sup> Here, we make use of the information provided by the difference
+between the structural similarity of products and substrates and utilize
+a GP regression approach with reaction fingerprints to calibrate redox
+potential energies. For our calibrations with Gaussian process regression
+we used GPMol, a Python library based on GPflow,<sup><xref ref-type="bibr" rid="ref72">72</xref></sup> which in turn is a package for building Gaussian process
+models using TensorFlow.</p><p>GP regression relies on a similarity
+or distance metric between data points. To construct the notion of
+similarity between reactions, we utilize reaction fingerprints.<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> Several possible choices of kernel function
+and distance measure between molecules and reactions exist. Generally,
+the distance measures between molecules and reactions make use of
+fingerprint representations of compounds, which encode the structure
+of a molecule in a binary vector form.<sup><xref ref-type="bibr" rid="ref73">73</xref></sup> Although several varieties of reaction fingerprints exist, we tested
+our approach on the Morgan2 and AP3 (atom pair) reaction FPs of Schneider
+et al.<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> and obtain them from the difference
+of fingerprint vectors of products and substrates. We find that in
+the context of Gaussian processes for biochemical redox potential
+predictions Morgan fingerprints outperform AP3 fingerprints by approximately
+5&#x02013;4 mV. The Gaussian processes&#x02019; predictive power comes
+from learning relationships between relative distances in feature
+space, so it might be the case that for distance-based ML algorithms
+Morgan fingerprints are better. However, we note that we did not incorporate
+the usage of any agent to the weighting scheme, so doing so might
+change the results. Additional performance metrics for comparison
+can be seen in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Table S1</ext-link>.</p><p>One key
+ability of Morgan fingerprints is that we can invert the
+bits back to a corresponding molecular substructure to perform our
+structure&#x02013;energy analysis. For each molecule, we generate a
+counted Morgan fingerprint,<sup><xref ref-type="bibr" rid="ref73">73</xref></sup> a fixed-length
+counted vector indicating the absence (zeros) or counted presence
+(positive) of a particular graph&#x02013;connectivity&#x02013;environment.
+Each environment captures the local topological information on a molecule
+by mapping the local vicinity of connected atoms, along with their
+formal charges, type of chemical bond, and its position relative to
+a cyclic structure. Our Morgan fingerprints are constructed from 2048
+length-vectors using a radius of 6 and are reduced to a lower dimension
+(&#x0223c;200) using a gradient boosted tree. We find that the prediction
+accuracy did not improve significantly upon using Morgan fingerprints
+with a larger radius. When we consider the difference of two Morgan
+fingerprints, we are looking at the subtraction and addition of molecular
+environments between two molecules. We expect that similar molecular
+transformations will have similar changes in molecular environments.
+When these vectors are normalized, the inner product between two reaction
+fingerprints <italic>x</italic><sub>1</sub> and <italic>x</italic><sub>2</sub> is the cosine distance,<sup><xref ref-type="bibr" rid="ref74">74</xref></sup> which is a measure of similarity between two vectors. This notion
+is adapted in the field of Gaussian processes to quantify the similarity
+between reactions in GP regression.</p><p>Predictions obtained from
+GPs can be interpreted as weighted averages
+of the training data, where the weights are probabilistic in nature.
+GPs are distinct because of their associated covariance functions
+(i.e., the kernel).<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> The equation below
+shows that the kernel we employ is a mixture of a squared exponential
+kernel and a noise kernel, which increases the robustness of the model.<disp-formula id="ueq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2019-002977_m002" position="anchor"/></disp-formula>Here, <italic>K</italic> is the kernel function, <italic>&#x003c3;</italic><sub>rxn</sub> is the variance of the reaction fingerprint
+kernel, <italic>l</italic> is the length scale parameter, and <italic>&#x003c3;</italic><sub>noise</sub> is the white noise variance parameter.</p></sec><sec id="sec4.6"><title>Database of Experimental Redox Potentials for Calibration with
+Gaussian Process Regression</title><p>To perform the calibration, a
+data set of available experimental transformed standard redox potentials
+is used. This data set of redox half-reactions and their associated
+transformed standard reduction potentials <italic>E</italic>&#x02032;&#x000b0;(pH
+= 7) was generated by Bar-Even et al.,<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> by compiling experimental equilibrium constants (i.e., standard
+Gibbs reaction energies) from the NIST database of Thermodynamics
+of Enzyme-Catalyzed Reactions (TECRDB)<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> and the Robert Alberty database of biochemical compound Gibbs formation
+energies.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> The data set consists of 57
+redox reactions that reduce a carbonyl functional group into an alcohol
+functional group and 24 redox reactions that reduce a carbonyl functional
+group into an amine group.</p><p>To ensure we are not overfitting
+in the process of calibrating with GP regression, we used leave-one-out
+cross-validation (LOOCV), where we train our model on all data points
+except one point and predict its value. This is done for all 81 data
+points, and reported predictions, accuracies, and resulting scatter
+plots always come from untrained data. It is also important to note
+that GPs are inherently robust to overfitting since the training procedure
+penalizes more complex models (higher-rank kernels) via an objective
+function.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup></p></sec><sec id="sec4.7"><title>Selecting a Model Chemistry
+with Low Computational Cost and
+High Prediction Accuracy</title><p>To obtain fast and accurate predictions
+of redox potentials using the GP regression calibrated quantum chemistry
+strategy described above, we tested several different quantum model
+chemistries. A model chemistry consists of a combination of a geometry
+optimization (GO) procedure, a method to calculate the single-point
+electronic energies (SPEs) of optimized molecular geometries, as well
+as other modeling considerations, such as the number of geometric
+conformations per compound, the water solvation model, and the p<italic>K</italic><sub>a</sub> estimation strategy.</p><p>We explored the
+following set of methods to obtain optimized geometric conformations:
+the Universal Force Field (UFF),<sup><xref ref-type="bibr" rid="ref61">61</xref></sup> PM7,<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> DFTB,<sup><xref ref-type="bibr" rid="ref75">75</xref></sup> HF3-c,<sup><xref ref-type="bibr" rid="ref76">76</xref></sup> and PBEh-3c.<sup><xref ref-type="bibr" rid="ref77">77</xref></sup> Additionally,
+to compute the electronic energies of the optimized structures through
+single-point energy (SPE) calculations, we considered the following
+approaches: DFTB, PM7, HF3-c, PBEh-3c, DSD-PBEP86/SVP,<sup><xref ref-type="bibr" rid="ref78">78</xref></sup> and DLPNO&#x02013;CCD(T)/SVP.<sup><xref ref-type="bibr" rid="ref79">79</xref></sup> Given computational resource constraints, only a subset
+of all possible combinations of geometry optimization and SPE procedures
+were explored.</p><p>To select a model chemistry from the exploration
+set, we compared
+their prediction accuracies&#x02014;after the GP regression calibration
+step described above&#x02014;when tested on the set of experimental
+redox potentials. We quantified prediction accuracy using three different
+metrics: Pearson correlation coefficient (<italic>r</italic>), the
+coefficient of determination (<italic>R</italic><sup>2</sup>), and
+mean absolute error (MAE, in mV). Before applying the GP regression
+calibration step, the double-hybrid functional and linear-scaling
+couple-clustered methods DSD-PBEP86 and DLPNO&#x02013;CCD(T) resulted
+in the highest accuracy. Due to the relatively small variation in
+prediction accuracy, we picked the cheapest method that still gave
+reasonable accuracy (MAE &#x0003c; 30 meV), which turned out to be the
+PM7 semiempirical method for both geometry optimizations and single-point
+electronic energies. It should be noted that our geometry is a single,
+UFF optimized conformation per molecule. For PBEh-3c and HF-3c we
+also considered utilizing multiple conformers obtained with the ETKDG
+force field<sup><xref ref-type="bibr" rid="ref62">62</xref></sup> with significant improvement
+in accuracy over a single conformer (see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Table S1</ext-link>). For other chemical applications (e.g., redox flow batteries)
+and molecular data sets, adequately accounting for multiple conformers
+might have an important influence on the accuracy of the calculations.
+A single missed hydrogen bond in one reacting partner, but not the
+other, could easily introduce large errors in the predicted redox
+potential. As such the adequacy of using just a single geometry should
+be verified.</p><p>To test for statistically significant differences
+of the prediction
+accuracy summary statistics of different model chemistries (e.g.,
+GCM versus GP-calibrated PM7), we performed a nonparametric bootstrap
+hypothesis test: we subsampled data points from the table of redox
+reactions with experimental data and computed the prediction accuracy
+summary statistics [Pearson <italic>r</italic>, <italic>R</italic><sup>2</sup>, MAE, root-mean-square error (RMSE)] for each subsample.
+We then count the fraction of subsampled GCM data sets that result
+in summary statistics that are greater than or equal in value to the
+summary statistics of the model chemistry we are comparing against
+(e.g., GP-calibrated PM7).</p></sec><sec id="sec4.8"><title>Group Contribution Method (GCM) Estimates
+of Redox Potentials</title><p>We compared the accuracies obtained using
+the GP regression calibrated
+quantum chemistry approach described above against those obtained
+with the commonly used GCM.<sup><xref ref-type="bibr" rid="ref14">14</xref>,<xref ref-type="bibr" rid="ref18">18</xref>,<xref ref-type="bibr" rid="ref80">80</xref></sup> We use the GCM implementation of Noor et al. which was adapted to
+the thermodynamics of biochemical reactions.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Briefly, group energies of all compounds in the KEGG database are
+stored in a group matrix, with rows corresponding to compounds and
+columns corresponding to groups. Associated to each group is a group
+energy corresponding to the energy for the group&#x02019;s major protonation
+state (major species) at pH = 7. To obtain a GCM-based estimate for
+a standard transformed reduction potential for the major species at
+pH = 7, we take the difference in group energy vectors for all products
+and substrate in the reaction. We then transform the resulting standard
+redox potentials <italic>E</italic>&#x000b0;(major species at pH = 7)
+to the standard <italic>transformed</italic> redox potential at pH
+= 7, <italic>E</italic>&#x02032;&#x000b0;(pH = 7), using the same p<italic>K</italic><sub>a</sub> estimates and Alberty transform approach described
+above.</p></sec><sec id="sec4.9"><title>Redox Network Expansion Algorithm with Cheminformatic Reaction
+Strings</title><p>We implemented a network expansion algorithm to iteratively
+reduce carbonyl functional groups and oxidized alcohol/amine functional
+groups for a subset of the natural metabolites of the KEGG database.
+Due to constraints in available computational resources to run electronic
+structure calculations, we used the set of all metabolic compounds
+in the KEGG database with 21 carbon atoms or fewer as seed metabolites.
+Using the RDKit open source cheminformatics software, we identify
+carbonyl functional groups (alcohol/amine functional groups) in each
+of the seed KEGG metabolites and transform them through a redox reaction
+to the corresponding reduced (oxidized) alcohol/amine (carbonyl).
+In practice, this is done using SMARTS reaction strings as implemented
+in RDKit and iteratively applying them to SMILES representations<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> of the KEGG metabolites. The SMARTS reaction
+strings for the reduction and oxidation reactions considered here
+are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">Tables S2 and S3</ext-link>.</p><p>We
+iteratively apply the reduction/oxidation reaction transformations
+to the compounds generated from KEGG seed metabolites. We terminate
+the iterations when the resulting product has, in the case of reductions,
+no more carbonyl functional groups that can be reduced (or in the
+case of oxidative transformations, no more alcohol/amine functional
+groups that can be oxidized to carbonyls). All software was written
+using the Python programming language.</p></sec></sec></body><back><notes id="notes2" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information is
+available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acscentsci.9b00297">10.1021/acscentsci.9b00297</ext-link>.<list id="silist" list-type="simple"><list-item><p>Additional data,
+including model chemistry prediction
+accuracies and cheminformatic SMARTS reaction strings used to generate
+redox network (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc9b00297_si_001.pdf"><caption><p>oc9b00297_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="" id="notes1"><title>Author Contributions</title><p><sup>#</sup> A.J. and B.S.-L. contributed equally to this work</p></notes><notes notes-type="COI-statement" id="NOTES-d7e1430-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>We thank members of the Aspuru-Guzik
+lab for comments on the manuscript.
+The authors thank Harvard Research Computing for their support on
+using the Odyssey cluster. A.A.-G., A.J., and B.S.-L. acknowledge
+support from SEAS^NVIDIA, Massively Parallel Programming and Computing
+(332986). A.A.-G. acknowledges the generous support of Anders G. Froseth
+for this program and the Canada 150 Research Chairs Program.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="book" id="cit1"><person-group person-group-type="allauthors"><name><surname>Nelson</surname><given-names>D. L.</given-names></name>; <name><surname>Lehninger</surname><given-names>A. L.</given-names></name>; <name><surname>Cox</surname><given-names>M. M.</given-names></name></person-group><source>Lehninger Principles
+of Biochemistry</source>; <publisher-name>Macmillan</publisher-name>, <year>2008</year>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Reznik</surname><given-names>E.</given-names></name>; <name><surname>Liebermeister</surname><given-names>W.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>Pathway Thermodynamics
+Highlights Kinetic Obstacles in Central Metabolism</article-title>. <source>PLoS Comput. Biol.</source>
+<year>2014</year>, <volume>10</volume><issue>2</issue><elocation-id>e1003483</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pcbi.1003483</pub-id>.<pub-id pub-id-type="pmid">24586134</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Henry</surname><given-names>C. S.</given-names></name>; <name><surname>Broadbelt</surname><given-names>L. J.</given-names></name>; <name><surname>Hatzimanikatis</surname><given-names>V.</given-names></name>
+<article-title>Thermodynamics-Based Metabolic Flux
+Analysis</article-title>. <source>Biophys. J.</source>
+<year>2007</year>, <volume>92</volume><issue>5</issue><fpage>1792</fpage>&#x02013;<lpage>1805</lpage><pub-id pub-id-type="doi">10.1529/biophysj.106.093138</pub-id>.<pub-id pub-id-type="pmid">17172310</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>Thermodynamic Constraints
+Shape the Structure of Carbon Fixation Pathways</article-title>. <source>Biochim. Biophys. Acta, Bioenerg.</source>
+<year>2012</year>, <volume>1817</volume><issue>9</issue><fpage>1646</fpage>&#x02013;<lpage>1659</lpage><pub-id pub-id-type="doi">10.1016/j.bbabio.2012.05.002</pub-id>.</mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Krumholz</surname><given-names>E. W.</given-names></name>; <name><surname>Libourel</surname><given-names>I. G. L.</given-names></name>
+<article-title>Thermodynamic
+Constraints Improve Metabolic Networks</article-title>. <source>Biophys.
+J.</source>
+<year>2017</year>, <volume>113</volume><issue>3</issue><fpage>679</fpage>&#x02013;<lpage>689</lpage><pub-id pub-id-type="doi">10.1016/j.bpj.2017.06.018</pub-id>.<pub-id pub-id-type="pmid">28793222</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Krebs</surname><given-names>H. A.</given-names></name>; <name><surname>Kornberg</surname><given-names>H. L.</given-names></name>; <name><surname>Burton</surname><given-names>K.</given-names></name>
+<article-title>A Survey of the Energy
+Transformations
+in Living Matter</article-title>. <source>Rev. Physiol., Biochem. Pharmacol.</source>
+<year>1957</year>, <volume>49</volume>, <fpage>212</fpage>&#x02013;<lpage>298</lpage><pub-id pub-id-type="doi">10.1007/BF02269485</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Alberty</surname><given-names>R. A.</given-names></name>
+<article-title>A Short
+History of the Thermodynamics of Enzyme-Catalyzed Reactions</article-title>. <source>J. Biol. Chem.</source>
+<year>2004</year>, <volume>279</volume><issue>27</issue><fpage>27831</fpage>&#x02013;<lpage>27836</lpage><pub-id pub-id-type="doi">10.1074/jbc.X400003200</pub-id>.<pub-id pub-id-type="pmid">15073189</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Burton</surname><given-names>K.</given-names></name>; <name><surname>Krebs</surname><given-names>H. A.</given-names></name>
+<article-title>The Free-Energy
+Changes Associated with the Individual
+Steps of the Tricarboxylic Acid Cycle, Glycolysis and Alcoholic Fermentation
+and with the Hydrolysis of the Pyrophosphate Groups of Adenosinetriphosphate</article-title>. <source>Biochem. J.</source>
+<year>1953</year>, <volume>54</volume><issue>1</issue><fpage>94</fpage>&#x02013;<lpage>107</lpage><pub-id pub-id-type="doi">10.1042/bj0540094</pub-id>.<pub-id pub-id-type="pmid">13058838</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Kiparissides</surname><given-names>A.</given-names></name>; <name><surname>Hatzimanikatis</surname><given-names>V.</given-names></name>
+<article-title>Thermodynamics-Based Metabolite Sensitivity Analysis
+in Metabolic Networks</article-title>. <source>Metab. Eng.</source>
+<year>2017</year>, <volume>39</volume>, <fpage>117</fpage>&#x02013;<lpage>127</lpage><pub-id pub-id-type="doi">10.1016/j.ymben.2016.11.006</pub-id>.<pub-id pub-id-type="pmid">27845184</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Lewis</surname><given-names>N. E.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>Design and Analysis
+of Synthetic Carbon Fixation Pathways</article-title>. <source>Proc.
+Natl. Acad. Sci. U. S. A.</source>
+<year>2010</year>, <volume>107</volume><issue>19</issue><fpage>8889</fpage>&#x02013;<lpage>8894</lpage><pub-id pub-id-type="doi">10.1073/pnas.0907176107</pub-id>.<pub-id pub-id-type="pmid">20410460</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Liebermeister</surname><given-names>W.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>Glycolytic Strategy as a Tradeoff
+between Energy Yield and Protein
+Cost</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>2013</year>, <volume>110</volume><issue>24</issue><fpage>10039</fpage>&#x02013;<lpage>10044</lpage><pub-id pub-id-type="doi">10.1073/pnas.1215283110</pub-id>.<pub-id pub-id-type="pmid">23630264</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Hadadi</surname><given-names>N.</given-names></name>; <name><surname>Hafner</surname><given-names>J.</given-names></name>; <name><surname>Shajkofci</surname><given-names>A.</given-names></name>; <name><surname>Zisaki</surname><given-names>A.</given-names></name>; <name><surname>Hatzimanikatis</surname><given-names>V.</given-names></name>
+<article-title>ATLAS of Biochemistry:
+A Repository of All Possible Biochemical Reactions for Synthetic Biology
+and Metabolic Engineering Studies</article-title>. <source>ACS Synth.
+Biol.</source>
+<year>2016</year>, <volume>5</volume><issue>10</issue><fpage>1155</fpage>&#x02013;<lpage>1166</lpage><pub-id pub-id-type="doi">10.1021/acssynbio.6b00054</pub-id>.<pub-id pub-id-type="pmid">27404214</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Siegel</surname><given-names>J. B.</given-names></name>; <name><surname>Smith</surname><given-names>A. L.</given-names></name>; <name><surname>Poust</surname><given-names>S.</given-names></name>; <name><surname>Wargacki</surname><given-names>A. J.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Louw</surname><given-names>C.</given-names></name>; <name><surname>Shen</surname><given-names>B. W.</given-names></name>; <name><surname>Eiben</surname><given-names>C. B.</given-names></name>; <name><surname>Tran</surname><given-names>H. M.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; et al. <article-title>Computational Protein
+Design Enables a Novel One-Carbon
+Assimilation Pathway</article-title>. <source>Proc. Natl. Acad. Sci.
+U. S. A.</source>
+<year>2015</year>, <volume>112</volume><issue>12</issue><fpage>3704</fpage>&#x02013;<lpage>3709</lpage><pub-id pub-id-type="doi">10.1073/pnas.1500545112</pub-id>.<pub-id pub-id-type="pmid">25775555</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Benson</surname><given-names>S. W.</given-names></name>; <name><surname>Buss</surname><given-names>J. H.</given-names></name>
+<article-title>Additivity Rules for the Estimation of Molecular Properties.
+Thermodynamic Properties</article-title>. <source>J. Chem. Phys.</source>
+<year>1958</year>, <volume>29</volume><issue>3</issue><fpage>546</fpage>&#x02013;<lpage>572</lpage><pub-id pub-id-type="doi">10.1063/1.1744539</pub-id>.</mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Mavrovouniotis</surname><given-names>M. L.</given-names></name>
+<article-title>Group Contributions
+for Estimating Standard Gibbs Energies of Formation of Biochemical
+Compounds in Aqueous Solution</article-title>. <source>Biotechnol. Bioeng.</source>
+<year>1990</year>, <volume>36</volume><issue>10</issue><fpage>1070</fpage>&#x02013;<lpage>1082</lpage><pub-id pub-id-type="doi">10.1002/bit.260361013</pub-id>.<pub-id pub-id-type="pmid">18595046</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Mavrovouniotis</surname><given-names>M. L.</given-names></name>
+<article-title>Estimation
+of Standard Gibbs Energy Changes of Biotransformations</article-title>. <source>J. Biol. Chem.</source>
+<year>1991</year>, <volume>266</volume><issue>22</issue><fpage>14440</fpage>&#x02013;<lpage>14445</lpage>.<pub-id pub-id-type="pmid">1860851</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Jankowski</surname><given-names>M. D.</given-names></name>; <name><surname>Henry</surname><given-names>C. S.</given-names></name>; <name><surname>Broadbelt</surname><given-names>L. J.</given-names></name>; <name><surname>Hatzimanikatis</surname><given-names>V.</given-names></name>
+<article-title>Group Contribution
+Method for Thermodynamic Analysis of Complex Metabolic Networks</article-title>. <source>Biophys. J.</source>
+<year>2008</year>, <volume>95</volume><issue>3</issue><fpage>1487</fpage>&#x02013;<lpage>1499</lpage><pub-id pub-id-type="doi">10.1529/biophysj.107.124784</pub-id>.<pub-id pub-id-type="pmid">18645197</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Haraldsd&#x000f3;ttir</surname><given-names>H. S.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>; <name><surname>Fleming</surname><given-names>R. M. T.</given-names></name>
+<article-title>Consistent
+Estimation of Gibbs Energy Using Component Contributions</article-title>. <source>PLoS Comput. Biol.</source>
+<year>2013</year>, <volume>9</volume><issue>7</issue><elocation-id>e1003098</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pcbi.1003098</pub-id>.<pub-id pub-id-type="pmid">23874165</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Lubling</surname><given-names>Y.</given-names></name>; <name><surname>Davidi</surname><given-names>D.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>An Integrated Open
+Framework for Thermodynamics of Reactions That
+Combines Accuracy and Coverage</article-title>. <source>Bioinformatics</source>
+<year>2012</year>, <volume>28</volume><issue>15</issue><fpage>2037</fpage>&#x02013;<lpage>2044</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/bts317</pub-id>.<pub-id pub-id-type="pmid">22645166</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>; <name><surname>Milo</surname><given-names>R.</given-names></name>
+<article-title>eQuilibrator--the Biochemical
+Thermodynamics Calculator</article-title>. <source>Nucleic Acids Res.</source>
+<year>2012</year>, <volume>40</volume><issue>D1</issue><fpage>D770</fpage>&#x02013;<lpage>D775</lpage><pub-id pub-id-type="doi">10.1093/nar/gkr874</pub-id>.<pub-id pub-id-type="pmid">22064852</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Jinich</surname><given-names>A.</given-names></name>; <name><surname>Rappoport</surname><given-names>D.</given-names></name>; <name><surname>Dunn</surname><given-names>I.</given-names></name>; <name><surname>Sanchez-Lengeling</surname><given-names>B.</given-names></name>; <name><surname>Olivares-Amaya</surname><given-names>R.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Even</surname><given-names>A. B.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Quantum Chemical
+Approach to Estimating the Thermodynamics of Metabolic Reactions</article-title>. <source>Sci. Rep.</source>
+<year>2015</year>, <volume>4</volume>, <fpage>7022</fpage><pub-id pub-id-type="doi">10.1038/srep07022</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Jinich</surname><given-names>A.</given-names></name>; <name><surname>Flamholz</surname><given-names>A.</given-names></name>; <name><surname>Ren</surname><given-names>H.</given-names></name>; <name><surname>Kim</surname><given-names>S.-J.</given-names></name>; <name><surname>Sanchez-Lengeling</surname><given-names>B.</given-names></name>; <name><surname>Cotton</surname><given-names>C. A. R.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Bar-Even</surname><given-names>A.</given-names></name>
+<article-title>Quantum Chemistry Reveals Thermodynamic
+Principles
+of Redox Biochemistry</article-title>. <source>PLoS Comput. Biol.</source>
+<year>2018</year>, <volume>14</volume><issue>10</issue><elocation-id>e1006471</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pcbi.1006471</pub-id>.<pub-id pub-id-type="pmid">30356318</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="book" id="cit23"><person-group person-group-type="allauthors"><name><surname>Banerjee</surname><given-names>R.</given-names></name></person-group><source>Redox Biochemistry</source>; <publisher-name>John Wiley &#x00026; Sons</publisher-name>, <year>2007</year>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>Hadadi</surname><given-names>N.</given-names></name>; <name><surname>Ataman</surname><given-names>M.</given-names></name>; <name><surname>Hatzimanikatis</surname><given-names>V.</given-names></name>; <name><surname>Panayiotou</surname><given-names>C.</given-names></name>
+<article-title>Molecular
+Thermodynamics of Metabolism: Quantum Thermochemical Calculations
+for Key Metabolites</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2015</year>, <volume>17</volume><issue>16</issue><fpage>10438</fpage>&#x02013;<lpage>10453</lpage><pub-id pub-id-type="doi">10.1039/C4CP05825A</pub-id>.<pub-id pub-id-type="pmid">25799954</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="weblink" id="cit25"><person-group><name><surname>Jinich</surname><given-names>A.</given-names></name>; <name><surname>Sanchez-Lengeling</surname><given-names>B.</given-names></name>; <name><surname>Ren</surname><given-names>H.</given-names></name>; <name><surname>Goldford</surname><given-names>J. E.</given-names></name>; <name><surname>Noor</surname><given-names>E.</given-names></name>; <name><surname>Sanders</surname><given-names>J. N.</given-names></name>; <name><surname>Segr&#x000e8;</surname><given-names>D.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name></person-group><article-title>A Thermodynamic
+Atlas of Carbon Redox Chemical Space</article-title>. <year>2019</year>, bioRxiv245811. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.1101/245811">https://doi.org/10.1101/245811</uri>.</mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Hansen</surname><given-names>K.</given-names></name>; <name><surname>Biegler</surname><given-names>F.</given-names></name>; <name><surname>Ramakrishnan</surname><given-names>R.</given-names></name>; <name><surname>Pronobis</surname><given-names>W.</given-names></name>; <name><surname>von Lilienfeld</surname><given-names>O. A.</given-names></name>; <name><surname>M&#x000fc;ller</surname><given-names>K.-R.</given-names></name>; <name><surname>Tkatchenko</surname><given-names>A.</given-names></name>
+<article-title>Machine Learning Predictions of Molecular
+Properties: Accurate Many-Body Potentials and Nonlocality in Chemical
+Space</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2015</year>, <volume>6</volume><issue>12</issue><fpage>2326</fpage>&#x02013;<lpage>2331</lpage><pub-id pub-id-type="doi">10.1021/acs.jpclett.5b00831</pub-id>.<pub-id pub-id-type="pmid">26113956</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Ramakrishnan</surname><given-names>R.</given-names></name>; <name><surname>Dral</surname><given-names>P. O.</given-names></name>; <name><surname>Rupp</surname><given-names>M.</given-names></name>; <name><surname>von Lilienfeld</surname><given-names>O. A.</given-names></name>
+<article-title>Big Data
+Meets Quantum Chemistry Approximations: The &#x00394;-Machine Learning
+Approach</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2015</year>, <volume>11</volume><issue>5</issue><fpage>2087</fpage>&#x02013;<lpage>2096</lpage><pub-id pub-id-type="doi">10.1021/acs.jctc.5b00099</pub-id>.<pub-id pub-id-type="pmid">26574412</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Rupp</surname><given-names>M.</given-names></name>; <name><surname>Tkatchenko</surname><given-names>A.</given-names></name>; <name><surname>M&#x000fc;ller</surname><given-names>K.-R.</given-names></name>; <name><surname>von Lilienfeld</surname><given-names>O. A.</given-names></name>
+<article-title>Fast and
+Accurate Modeling of Molecular Atomization Energies with Machine Learning</article-title>. <source>Phys. Rev. Lett.</source>
+<year>2012</year>, <volume>108</volume><issue>5</issue><elocation-id>058301</elocation-id><pub-id pub-id-type="doi">10.1103/PhysRevLett.108.058301</pub-id>.<pub-id pub-id-type="pmid">22400967</pub-id></mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Smith</surname><given-names>J. S.</given-names></name>; <name><surname>Isayev</surname><given-names>O.</given-names></name>; <name><surname>Roitberg</surname><given-names>A. E.</given-names></name>
+<article-title>ANI-1:
+An Extensible Neural Network
+Potential with DFT Accuracy at Force Field Computational Cost</article-title>. <source>Chem. Sci.</source>
+<year>2017</year>, <volume>8</volume><issue>4</issue><fpage>3192</fpage>&#x02013;<lpage>3203</lpage><pub-id pub-id-type="doi">10.1039/C6SC05720A</pub-id>.<pub-id pub-id-type="pmid">28507695</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Pyzer-Knapp</surname><given-names>E. O.</given-names></name>; <name><surname>Simm</surname><given-names>G. N.</given-names></name>; <name><surname>Guzik</surname><given-names>A. A.</given-names></name>
+<article-title>A Bayesian
+Approach to Calibrating
+High-Throughput Virtual Screening Results and Application to Organic
+Photovoltaic Materials</article-title>. <source>Mater. Horiz.</source>
+<year>2016</year>, <volume>3</volume><issue>3</issue><fpage>226</fpage>&#x02013;<lpage>233</lpage><pub-id pub-id-type="doi">10.1039/C5MH00282F</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Lopez</surname><given-names>S. A.</given-names></name>; <name><surname>Sanchez-Lengeling</surname><given-names>B.</given-names></name>; <name><surname>de Goes Soares</surname><given-names>J.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Design Principles
+and Top Non-Fullerene Acceptor Candidates for Organic Photovoltaics</article-title>. <source>Joule</source>
+<year>2017</year>, <volume>1</volume><issue>4</issue><fpage>857</fpage>&#x02013;<lpage>870</lpage><pub-id pub-id-type="doi">10.1016/j.joule.2017.10.006</pub-id>.</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="book" id="cit32"><person-group person-group-type="allauthors"><name><surname>Rasmussen</surname><given-names>C. E.</given-names></name>; <name><surname>Williams</surname><given-names>C. K. I.</given-names></name></person-group><source>Gaussian Processes
+for Machine Learning</source>; <publisher-name>MIT Press</publisher-name>, <year>2006</year>.</mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="book" id="cit33"><person-group person-group-type="allauthors"><name><surname>Kung</surname><given-names>S. Y.</given-names></name></person-group><source>Kernel Methods and
+Machine Learning</source>; <publisher-name>Cambridge University Press</publisher-name>, <year>2014</year>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Stewart</surname><given-names>J.
+J. P.</given-names></name>
+<article-title>Optimization
+of Parameters for Semiempirical Methods VI: More Modifications to
+the NDDO Approximations and Re-Optimization of Parameters</article-title>. <source>J. Mol. Model.</source>
+<year>2013</year>, <volume>19</volume><issue>1</issue><fpage>1</fpage>&#x02013;<lpage>32</lpage><pub-id pub-id-type="doi">10.1007/s00894-012-1667-x</pub-id>.<pub-id pub-id-type="pmid">23187683</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Schneider</surname><given-names>N.</given-names></name>; <name><surname>Lowe</surname><given-names>D. M.</given-names></name>; <name><surname>Sayle</surname><given-names>R. A.</given-names></name>; <name><surname>Landrum</surname><given-names>G. A.</given-names></name>
+<article-title>Development of a
+Novel Fingerprint for Chemical Reactions and Its Application to Large-Scale
+Reaction Classification and Similarity</article-title>. <source>J. Chem.
+Inf. Model.</source>
+<year>2015</year>, <volume>55</volume><issue>1</issue><fpage>39</fpage>&#x02013;<lpage>53</lpage><pub-id pub-id-type="doi">10.1021/ci5006614</pub-id>.<pub-id pub-id-type="pmid">25541888</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Kanehisa</surname><given-names>M.</given-names></name>; <name><surname>Goto</surname><given-names>S.</given-names></name>; <name><surname>Hattori</surname><given-names>M.</given-names></name>; <name><surname>Aoki-Kinoshita</surname><given-names>K. F.</given-names></name>; <name><surname>Itoh</surname><given-names>M.</given-names></name>; <name><surname>Kawashima</surname><given-names>S.</given-names></name>; <name><surname>Katayama</surname><given-names>T.</given-names></name>; <name><surname>Araki</surname><given-names>M.</given-names></name>; <name><surname>Hirakawa</surname><given-names>M.</given-names></name>
+<article-title>From Genomics to Chemical Genomics: New Developments
+in KEGG</article-title>. <source>Nucleic Acids Res.</source>
+<year>2006</year>, <volume>34</volume><issue>90001</issue><fpage>D354</fpage>&#x02013;<lpage>D357</lpage><pub-id pub-id-type="doi">10.1093/nar/gkj102</pub-id>.<pub-id pub-id-type="pmid">16381885</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Kanehisa</surname><given-names>M.</given-names></name>; <name><surname>Furumichi</surname><given-names>M.</given-names></name>; <name><surname>Tanabe</surname><given-names>M.</given-names></name>; <name><surname>Sato</surname><given-names>Y.</given-names></name>; <name><surname>Morishima</surname><given-names>K.</given-names></name>
+<article-title>KEGG: New
+Perspectives on Genomes, Pathways, Diseases and Drugs</article-title>. <source>Nucleic Acids Res.</source>
+<year>2017</year>, <volume>45</volume><issue>D1</issue><fpage>D353</fpage>&#x02013;<lpage>D361</lpage><pub-id pub-id-type="doi">10.1093/nar/gkw1092</pub-id>.<pub-id pub-id-type="pmid">27899662</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Kanehisa</surname><given-names>M.</given-names></name>; <name><surname>Sato</surname><given-names>Y.</given-names></name>; <name><surname>Kawashima</surname><given-names>M.</given-names></name>; <name><surname>Furumichi</surname><given-names>M.</given-names></name>; <name><surname>Tanabe</surname><given-names>M.</given-names></name>
+<article-title>KEGG as a Reference Resource for
+Gene and Protein Annotation</article-title>. <source>Nucleic Acids Res.</source>
+<year>2016</year>, <volume>44</volume><issue>D1</issue><fpage>D457</fpage>&#x02013;<lpage>D462</lpage><pub-id pub-id-type="doi">10.1093/nar/gkv1070</pub-id>.<pub-id pub-id-type="pmid">26476454</pub-id></mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Kanehisa</surname><given-names>M.</given-names></name>; <name><surname>Goto</surname><given-names>S.</given-names></name>
+<article-title>KEGG Kyoto Encyclopedia of Genes and Genomes</article-title>. <source>Nucleic Acids Res.</source>
+<year>2000</year>, <volume>28</volume><issue>1</issue><fpage>27</fpage>&#x02013;<lpage>30</lpage><pub-id pub-id-type="doi">10.1093/nar/28.1.27</pub-id>.<pub-id pub-id-type="pmid">10592173</pub-id></mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Goldberg</surname><given-names>R. N.</given-names></name>; <name><surname>Tewari</surname><given-names>Y. B.</given-names></name>; <name><surname>Bhat</surname><given-names>T. N.</given-names></name>
+<article-title>Thermodynamics of Enzyme-Catalyzed
+Reactions--a Database for Quantitative Biochemistry</article-title>. <source>Bioinformatics</source>
+<year>2004</year>, <volume>20</volume><issue>16</issue><fpage>2874</fpage>&#x02013;<lpage>2877</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/bth314</pub-id>.<pub-id pub-id-type="pmid">15145806</pub-id></mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="book" id="cit41"><person-group person-group-type="allauthors"><name><surname>Alberty</surname><given-names>R. A.</given-names></name></person-group><source>Thermodynamics of
+Biochemical Reactions</source>; <publisher-name>John Wiley &#x00026; Sons</publisher-name>, <year>2005</year>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Klamt</surname><given-names>A.</given-names></name>; <name><surname>Sch&#x000fc;&#x000fc;rmann</surname><given-names>G.</given-names></name>
+<article-title>COSMO: A New
+Approach to Dielectric
+Screening in Solvents with Explicit Expressions for the Screening
+Energy and Its Gradient</article-title>. <source>J. Chem. Soc., Perkin
+Trans. 2</source>
+<year>1993</year>, <volume>0</volume><issue>5</issue><fpage>799</fpage>&#x02013;<lpage>805</lpage><pub-id pub-id-type="doi">10.1039/P29930000799</pub-id>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Weininger</surname><given-names>D.</given-names></name>
+<article-title>SMILES, a
+Chemical Language and Information System. 1. Introduction to Methodology
+and Encoding Rules</article-title>. <source>J. Chem. Inf. Model.</source>
+<year>1988</year>, <volume>28</volume><issue>1</issue><fpage>31</fpage>&#x02013;<lpage>36</lpage><pub-id pub-id-type="doi">10.1021/ci00057a005</pub-id>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Heijenoort</surname><given-names>J. v.</given-names></name>
+<article-title>Formation
+of the Glycan Chains in the Synthesis of Bacterial Peptidoglycan</article-title>. <source>Glycobiology</source>
+<year>2001</year>, <volume>11</volume><issue>3</issue><fpage>25R</fpage>&#x02013;<lpage>36R</lpage><pub-id pub-id-type="doi">10.1093/glycob/11.3.25R</pub-id>.</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>O&#x02019;Brien</surname><given-names>P. J.</given-names></name>; <name><surname>Siraki</surname><given-names>A. G.</given-names></name>; <name><surname>Shangari</surname><given-names>N.</given-names></name>
+<article-title>Aldehyde Sources, Metabolism, Molecular
+Toxicity Mechanisms, and Possible Effects on Human Health</article-title>. <source>Crit. Rev. Toxicol.</source>
+<year>2005</year>, <volume>35</volume><issue>7</issue><fpage>609</fpage>&#x02013;<lpage>662</lpage><pub-id pub-id-type="doi">10.1080/10408440591002183</pub-id>.<pub-id pub-id-type="pmid">16417045</pub-id></mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Ferguson</surname><given-names>G. P.</given-names></name>
+<article-title>Protective
+Mechanisms against Toxic Electrophiles in Escherichia Coli</article-title>. <source>Trends Microbiol.</source>
+<year>1999</year>, <volume>7</volume><issue>6</issue><fpage>242</fpage>&#x02013;<lpage>247</lpage><pub-id pub-id-type="doi">10.1016/S0966-842X(99)01510-3</pub-id>.<pub-id pub-id-type="pmid">10366861</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="conf-proc" id="cit47"><person-group person-group-type="allauthors"><name><surname>Salimbeni</surname><given-names>H.</given-names></name>; <name><surname>Deisenroth</surname><given-names>M.</given-names></name></person-group><source>Doubly Stochastic Variational
+Inference for Deep Gaussian Processes</source>, 31st Conference on
+Neural Information Processing Systems (NIPS 2017), <publisher-loc>Long Beach, CA</publisher-loc>, <year>2017</year>; pp <fpage>4588</fpage>&#x02013;<lpage>4599</lpage>.</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="conf-proc" id="cit48"><person-group person-group-type="allauthors"><name><surname>Gal</surname><given-names>Y.</given-names></name>; <name><surname>van der Wilk</surname><given-names>M.</given-names></name>; <name><surname>Rasmussen</surname><given-names>C. E.</given-names></name></person-group><source>Distributed Variational
+Inference in Sparse Gaussian Process Regression and Latent Variable
+Models</source>, Proceedings of Neural Information Processing Systems <year>2014</year>; pp <fpage>3257</fpage>&#x02013;<lpage>3265</lpage>.</mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name><surname>Yao</surname><given-names>K.</given-names></name>; <name><surname>Herr</surname><given-names>J. E.</given-names></name>; <name><surname>Parkhill</surname><given-names>J.</given-names></name>
+<article-title>The Many-Body Expansion Combined
+with Neural Networks</article-title>. <source>J. Chem. Phys.</source>
+<year>2017</year>, <volume>146</volume><issue>1</issue><elocation-id>014106</elocation-id><pub-id pub-id-type="doi">10.1063/1.4973380</pub-id>.<pub-id pub-id-type="pmid">28063436</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name><surname>Wu</surname><given-names>Z.</given-names></name>; <name><surname>Ramsundar</surname><given-names>B.</given-names></name>; <name><surname>Feinberg</surname><given-names>E. N.</given-names></name>; <name><surname>Gomes</surname><given-names>J.</given-names></name>; <name><surname>Geniesse</surname><given-names>C.</given-names></name>; <name><surname>Pappu</surname><given-names>A. S.</given-names></name>; <name><surname>Leswing</surname><given-names>K.</given-names></name>; <name><surname>Pande</surname><given-names>V.</given-names></name>
+<article-title>MoleculeNet A Benchmark
+for Molecular Machine Learning</article-title>. <source>Chem. Sci.</source>
+<year>2018</year>, <volume>9</volume>, <fpage>513</fpage><pub-id pub-id-type="doi">10.1039/C7SC02664A</pub-id>.<pub-id pub-id-type="pmid">29629118</pub-id></mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name><surname>Faber</surname><given-names>F. A.</given-names></name>; <name><surname>Hutchison</surname><given-names>L.</given-names></name>; <name><surname>Huang</surname><given-names>B.</given-names></name>; <name><surname>Gilmer</surname><given-names>J.</given-names></name>; <name><surname>Schoenholz</surname><given-names>S. S.</given-names></name>; <name><surname>Dahl</surname><given-names>G. E.</given-names></name>; <name><surname>Vinyals</surname><given-names>O.</given-names></name>; <name><surname>Kearnes</surname><given-names>S.</given-names></name>; <name><surname>Riley</surname><given-names>P. F.</given-names></name>; <name><surname>von Lilienfeld</surname><given-names>O. A.</given-names></name>
+<article-title>Prediction Errors of Molecular Machine Learning Models
+Lower than Hybrid DFT Error</article-title>. <source>J. Chem. Theory
+Comput.</source>
+<year>2017</year>, <volume>13</volume><issue>11</issue><fpage>5255</fpage>&#x02013;<lpage>5264</lpage><pub-id pub-id-type="doi">10.1021/acs.jctc.7b00577</pub-id>.<pub-id pub-id-type="pmid">28926232</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name><surname>Raymond</surname><given-names>J.</given-names></name>; <name><surname>Segr&#x000e8;</surname><given-names>D.</given-names></name>
+<article-title>The Effect of Oxygen on Biochemical
+Networks and the
+Evolution of Complex Life</article-title>. <source>Science</source>
+<year>2006</year>, <volume>311</volume><issue>5768</issue><fpage>1764</fpage>&#x02013;<lpage>1767</lpage><pub-id pub-id-type="doi">10.1126/science.1118439</pub-id>.<pub-id pub-id-type="pmid">16556842</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name><surname>Zubarev</surname><given-names>D. Y.</given-names></name>; <name><surname>Rappoport</surname><given-names>D.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Uncertainty of Prebiotic Scenarios:
+The Case of the Non-Enzymatic Reverse Tricarboxylic Acid Cycle</article-title>. <source>Sci. Rep.</source>
+<year>2015</year>, <volume>5</volume>, <fpage>8009</fpage><pub-id pub-id-type="doi">10.1038/srep08009</pub-id>.<pub-id pub-id-type="pmid">25620471</pub-id></mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name><surname>Riniker</surname><given-names>S.</given-names></name>; <name><surname>Landrum</surname><given-names>G. A.</given-names></name>
+<article-title>Similarity Maps
+- a Visualization Strategy for Molecular
+Fingerprints and Machine-Learning Methods</article-title>. <source>J.
+Cheminf.</source>
+<year>2013</year>, <volume>5</volume><issue>1</issue><fpage>43</fpage><pub-id pub-id-type="doi">10.1186/1758-2946-5-43</pub-id>.</mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name><surname>Asami</surname><given-names>T.</given-names></name>; <name><surname>Nakano</surname><given-names>T.</given-names></name>; <name><surname>Fujioka</surname><given-names>S.</given-names></name>
+<article-title>Plant Brassinosteroid Hormones</article-title>. <source>Vitam. Horm.</source>
+<year>2005</year>, <volume>72</volume>, <fpage>479</fpage>&#x02013;<lpage>504</lpage><pub-id pub-id-type="doi">10.1016/S0083-6729(05)72014-8</pub-id>.<pub-id pub-id-type="pmid">16492480</pub-id></mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name><surname>Fujioka</surname><given-names>S.</given-names></name>; <name><surname>Yokota</surname><given-names>T.</given-names></name>
+<article-title>Biosynthesis and Metabolism of Brassinosteroids</article-title>. <source>Annu. Rev. Plant Biol.</source>
+<year>2003</year>, <volume>54</volume>, <fpage>137</fpage>&#x02013;<lpage>164</lpage><pub-id pub-id-type="doi">10.1146/annurev.arplant.54.031902.134921</pub-id>.<pub-id pub-id-type="pmid">14502988</pub-id></mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name><surname>Mosblech</surname><given-names>A.</given-names></name>; <name><surname>Feussner</surname><given-names>I.</given-names></name>; <name><surname>Heilmann</surname><given-names>I.</given-names></name>
+<article-title>Oxylipins:
+Structurally Diverse Metabolites
+from Fatty Acid Oxidation</article-title>. <source>Plant Physiol. Biochem.</source>
+<year>2009</year>, <volume>47</volume><issue>6</issue><fpage>511</fpage>&#x02013;<lpage>517</lpage><pub-id pub-id-type="doi">10.1016/j.plaphy.2008.12.011</pub-id>.<pub-id pub-id-type="pmid">19167233</pub-id></mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="journal" id="cit58"><name><surname>Zanger</surname><given-names>U. M.</given-names></name>; <name><surname>Schwab</surname><given-names>M.</given-names></name>
+<article-title>Cytochrome P450 Enzymes in Drug Metabolism: Regulation
+of Gene Expression, Enzyme Activities, and Impact of Genetic Variation</article-title>. <source>Pharmacol. Ther.</source>
+<year>2013</year>, <volume>138</volume><issue>1</issue><fpage>103</fpage>&#x02013;<lpage>141</lpage><pub-id pub-id-type="doi">10.1016/j.pharmthera.2012.12.007</pub-id>.<pub-id pub-id-type="pmid">23333322</pub-id></mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name><surname>Tschumper</surname><given-names>G. S.</given-names></name>; <name><surname>Schaefer</surname><given-names>H. F.</given-names></name>
+<article-title>Predicting Electron
+Affinities with Density Functional
+Theory: Some Positive Results for Negative Ions</article-title>. <source>J. Chem. Phys.</source>
+<year>1997</year>, <volume>107</volume><issue>7</issue><fpage>2529</fpage>&#x02013;<lpage>2541</lpage><pub-id pub-id-type="doi">10.1063/1.474593</pub-id>.</mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="journal" id="cit60"><name><surname>Simons</surname><given-names>J.</given-names></name>
+<article-title>Molecular
+Anions</article-title>. <source>J. Phys. Chem. A</source>
+<year>2008</year>, <volume>112</volume><issue>29</issue><fpage>6401</fpage>&#x02013;<lpage>6511</lpage><pub-id pub-id-type="doi">10.1021/jp711490b</pub-id>.<pub-id pub-id-type="pmid">18630888</pub-id></mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="journal" id="cit61"><name><surname>Rappe</surname><given-names>A. K.</given-names></name>; <name><surname>Casewit</surname><given-names>C. J.</given-names></name>; <name><surname>Colwell</surname><given-names>K. S.</given-names></name>; <name><surname>Goddard</surname><given-names>W. A.</given-names></name>; <name><surname>Skiff</surname><given-names>W. M.</given-names></name>
+<article-title>UFF, a
+Full Periodic Table Force Field for Molecular Mechanics and Molecular
+Dynamics Simulations</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>1992</year>, <volume>114</volume><issue>25</issue><fpage>10024</fpage>&#x02013;<lpage>10035</lpage><pub-id pub-id-type="doi">10.1021/ja00051a040</pub-id>.</mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="journal" id="cit62"><name><surname>Riniker</surname><given-names>S.</given-names></name>; <name><surname>Landrum</surname><given-names>G. A.</given-names></name>
+<article-title>Better Informed Distance Geometry: Using What We Know
+To Improve Conformation Generation</article-title>. <source>J. Chem.
+Inf. Model.</source>
+<year>2015</year>, <volume>55</volume><issue>12</issue><fpage>2562</fpage>&#x02013;<lpage>2574</lpage><pub-id pub-id-type="doi">10.1021/acs.jcim.5b00654</pub-id>.<pub-id pub-id-type="pmid">26575315</pub-id></mixed-citation></ref><ref id="ref63"><mixed-citation publication-type="journal" id="cit63"><name><surname>Alberty</surname><given-names>R. A.</given-names></name>; <name><surname>Cornish-Bowden</surname><given-names>A.</given-names></name>; <name><surname>Goldberg</surname><given-names>R. N.</given-names></name>; <name><surname>Hammes</surname><given-names>G. G.</given-names></name>; <name><surname>Tipton</surname><given-names>K.</given-names></name>; <name><surname>Westerhoff</surname><given-names>H. V.</given-names></name>
+<article-title>Recommendations for Terminology and
+Databases for Biochemical
+Thermodynamics</article-title>. <source>Biophys. Chem.</source>
+<year>2011</year>, <volume>155</volume><issue>2&#x02013;3</issue><fpage>89</fpage>&#x02013;<lpage>103</lpage><pub-id pub-id-type="doi">10.1016/j.bpc.2011.03.007</pub-id>.<pub-id pub-id-type="pmid">21501921</pub-id></mixed-citation></ref><ref id="ref64"><mixed-citation publication-type="journal" id="cit64"><name><surname>Dixon</surname><given-names>S. L.</given-names></name>; <name><surname>Jurs</surname><given-names>P. C.</given-names></name>
+<article-title>Estimation of pKa for Organic Oxyacids Using Calculated
+Atomic Charges</article-title>. <source>J. Comput. Chem.</source>
+<year>1993</year>, <volume>14</volume><issue>12</issue><fpage>1460</fpage>&#x02013;<lpage>1467</lpage><pub-id pub-id-type="doi">10.1002/jcc.540141208</pub-id>.</mixed-citation></ref><ref id="ref65"><mixed-citation publication-type="journal" id="cit65"><name><surname>Csizmadia</surname><given-names>F.</given-names></name>; <name><surname>Tsantili-Kakoulidou</surname><given-names>A.</given-names></name>; <name><surname>Panderi</surname><given-names>I.</given-names></name>; <name><surname>Darvas</surname><given-names>F.</given-names></name>
+<article-title>Prediction of Distribution
+Coefficient from Structure. 1. Estimation Method</article-title>. <source>J. Pharm. Sci.</source>
+<year>1997</year>, <volume>86</volume><issue>7</issue><fpage>865</fpage>&#x02013;<lpage>871</lpage><pub-id pub-id-type="doi">10.1021/js960177k</pub-id>.<pub-id pub-id-type="pmid">9232530</pub-id></mixed-citation></ref><ref id="ref66"><mixed-citation publication-type="journal" id="cit66"><name><surname>Er</surname><given-names>S.</given-names></name>; <name><surname>Suh</surname><given-names>C.</given-names></name>; <name><surname>Marshak</surname><given-names>M. P.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Computational Design of Molecules
+for an All-Quinone Redox Flow Battery</article-title>. <source>Chem.
+Sci.</source>
+<year>2015</year>, <volume>6</volume><issue>2</issue><fpage>885</fpage>&#x02013;<lpage>893</lpage><pub-id pub-id-type="doi">10.1039/C4SC03030C</pub-id>.<pub-id pub-id-type="pmid">29560173</pub-id></mixed-citation></ref><ref id="ref67"><mixed-citation publication-type="journal" id="cit67"><name><surname>Huskinson</surname><given-names>B.</given-names></name>; <name><surname>Marshak</surname><given-names>M. P.</given-names></name>; <name><surname>Suh</surname><given-names>C.</given-names></name>; <name><surname>Er</surname><given-names>S.</given-names></name>; <name><surname>Gerhardt</surname><given-names>M. R.</given-names></name>; <name><surname>Galvin</surname><given-names>C. J.</given-names></name>; <name><surname>Chen</surname><given-names>X.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Gordon</surname><given-names>R. G.</given-names></name>; <name><surname>Aziz</surname><given-names>M. J.</given-names></name>
+<article-title>A Metal-Free Organic-Inorganic Aqueous
+Flow Battery</article-title>. <source>Nature</source>
+<year>2014</year>, <volume>505</volume><issue>7482</issue><fpage>195</fpage>&#x02013;<lpage>198</lpage><pub-id pub-id-type="doi">10.1038/nature12909</pub-id>.<pub-id pub-id-type="pmid">24402280</pub-id></mixed-citation></ref><ref id="ref68"><mixed-citation publication-type="journal" id="cit68"><name><surname>Tong</surname><given-names>L.</given-names></name>; <name><surname>Chen</surname><given-names>Q.</given-names></name>; <name><surname>Wong</surname><given-names>A. A.</given-names></name>; <name><surname>G&#x000f3;mez-Bombarelli</surname><given-names>R.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Gordon</surname><given-names>R. G.</given-names></name>; <name><surname>Aziz</surname><given-names>M. J.</given-names></name>
+<article-title>UV-Vis Spectrophotometry
+of Quinone Flow Battery Electrolyte for in Situ Monitoring and Improved
+Electrochemical Modeling of Potential and Quinhydrone Formation</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2017</year>, <volume>19</volume><issue>47</issue><fpage>31684</fpage>&#x02013;<lpage>31691</lpage><pub-id pub-id-type="doi">10.1039/C7CP05881K</pub-id>.<pub-id pub-id-type="pmid">29165500</pub-id></mixed-citation></ref><ref id="ref69"><mixed-citation publication-type="journal" id="cit69"><name><surname>Yang</surname><given-names>Z.</given-names></name>; <name><surname>Tong</surname><given-names>L.</given-names></name>; <name><surname>Tabor</surname><given-names>D. P.</given-names></name>; <name><surname>Beh</surname><given-names>E. S.</given-names></name>; <name><surname>De Goulet</surname><given-names>M.-A.</given-names></name>; <name><surname>Porcellinis</surname><given-names>D.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Gordon</surname><given-names>R. G.</given-names></name>; <name><surname>Aziz</surname><given-names>M. J.</given-names></name>
+<article-title>Alkaline
+Benzoquinone Aqueous Flow Battery for Large-Scale Storage of Electrical
+Energy</article-title>. <source>Adv. Energy Mater.</source>
+<year>2018</year>, <volume>8</volume>, <fpage>1702056</fpage><pub-id pub-id-type="doi">10.1002/aenm.201702056</pub-id>.</mixed-citation></ref><ref id="ref70"><mixed-citation publication-type="journal" id="cit70"><name><surname>Gerhardt</surname><given-names>M. R.</given-names></name>; <name><surname>Tong</surname><given-names>L.</given-names></name>; <name><surname>G&#x000f3;mez-Bombarelli</surname><given-names>R.</given-names></name>; <name><surname>Chen</surname><given-names>Q.</given-names></name>; <name><surname>Marshak</surname><given-names>M. P.</given-names></name>; <name><surname>Galvin</surname><given-names>C. J.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Gordon</surname><given-names>R. G.</given-names></name>; <name><surname>Aziz</surname><given-names>M. J.</given-names></name>
+<article-title>Anthraquinone Derivatives in Aqueous
+Flow Batteries</article-title>. <source>Adv. Energy Mater.</source>
+<year>2017</year>, <volume>7</volume><issue>8</issue><fpage>1601488</fpage><pub-id pub-id-type="doi">10.1002/aenm.201601488</pub-id>.</mixed-citation></ref><ref id="ref71"><mixed-citation publication-type="journal" id="cit71"><name><surname>Lin</surname><given-names>K.</given-names></name>; <name><surname>G&#x000f3;mez-Bombarelli</surname><given-names>R.</given-names></name>; <name><surname>Beh</surname><given-names>E. S.</given-names></name>; <name><surname>Tong</surname><given-names>L.</given-names></name>; <name><surname>Chen</surname><given-names>Q.</given-names></name>; <name><surname>Valle</surname><given-names>A.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>Aziz</surname><given-names>M. J.</given-names></name>; <name><surname>Gordon</surname><given-names>R. G.</given-names></name>
+<article-title>A Redox-Flow Battery
+with an Alloxazine-Based
+Organic Electrolyte</article-title>. <source>Nature Energy</source>
+<year>2016</year>, <volume>1</volume><issue>9</issue><fpage>16102</fpage><pub-id pub-id-type="doi">10.1038/nenergy.2016.102</pub-id>.</mixed-citation></ref><ref id="ref72"><mixed-citation publication-type="journal" id="cit72"><name><surname>Matthews</surname><given-names>A. G. d. G.</given-names></name>; <name><surname>van der Wilk</surname><given-names>M.</given-names></name>; <name><surname>Nickson</surname><given-names>T.</given-names></name>; <name><surname>Fujii</surname><given-names>K.</given-names></name>; <name><surname>Boukouvalas</surname><given-names>A.</given-names></name>; <name><surname>Leon-Villagra</surname><given-names>P.</given-names></name>; <name><surname>Ghahramani</surname><given-names>Z.</given-names></name>; <name><surname>Hensman</surname><given-names>J.</given-names></name>
+<article-title>GPflow: A Gaussian
+Process Library Using TensorFlow</article-title>. <source>J. Mach. Learn.
+Res.</source>
+<year>2017</year>, <volume>18</volume><issue>40</issue><fpage>1</fpage>&#x02013;<lpage>6</lpage>.</mixed-citation></ref><ref id="ref73"><mixed-citation publication-type="journal" id="cit73"><name><surname>Rogers</surname><given-names>D.</given-names></name>; <name><surname>Hahn</surname><given-names>M.</given-names></name>
+<article-title>Extended-Connectivity Fingerprints</article-title>. <source>J. Chem.
+Inf. Model.</source>
+<year>2010</year>, <volume>50</volume><issue>5</issue><fpage>742</fpage>&#x02013;<lpage>754</lpage><pub-id pub-id-type="doi">10.1021/ci100050t</pub-id>.<pub-id pub-id-type="pmid">20426451</pub-id></mixed-citation></ref><ref id="ref74"><mixed-citation publication-type="journal" id="cit74"><name><surname>Bajusz</surname><given-names>D.</given-names></name>; <name><surname>R&#x000e1;cz</surname><given-names>A.</given-names></name>; <name><surname>H&#x000e9;berger</surname><given-names>K.</given-names></name>
+<article-title>Why Is Tanimoto Index an Appropriate
+Choice for Fingerprint-Based Similarity Calculations?</article-title>. <source>J. Cheminf.</source>
+<year>2015</year>, <volume>7</volume>, <fpage>20</fpage><pub-id pub-id-type="doi">10.1186/s13321-015-0069-3</pub-id>.</mixed-citation></ref><ref id="ref75"><mixed-citation publication-type="journal" id="cit75"><name><surname>Elstner</surname><given-names>M.</given-names></name>; <name><surname>Porezag</surname><given-names>D.</given-names></name>; <name><surname>Jungnickel</surname><given-names>G.</given-names></name>; <name><surname>Elsner</surname><given-names>J.</given-names></name>; <name><surname>Haugk</surname><given-names>M.</given-names></name>; <name><surname>Frauenheim</surname><given-names>T.</given-names></name>; <name><surname>Suhai</surname><given-names>S.</given-names></name>; <name><surname>Seifert</surname><given-names>G.</given-names></name>
+<article-title>Self-Consistent-Charge
+Density-Functional Tight-Binding Method for Simulations of Complex
+Materials Properties</article-title>. <source>Phys. Rev. B: Condens.
+Matter Mater. Phys.</source>
+<year>1998</year>, <volume>58</volume><issue>11</issue><fpage>7260</fpage>&#x02013;<lpage>7268</lpage><pub-id pub-id-type="doi">10.1103/PhysRevB.58.7260</pub-id>.</mixed-citation></ref><ref id="ref76"><mixed-citation publication-type="journal" id="cit76"><name><surname>Sure</surname><given-names>R.</given-names></name>; <name><surname>Grimme</surname><given-names>S.</given-names></name>
+<article-title>Corrected Small Basis
+Set Hartree-Fock Method for Large
+Systems</article-title>. <source>J. Comput. Chem.</source>
+<year>2013</year>, <volume>34</volume><issue>19</issue><fpage>1672</fpage>&#x02013;<lpage>1685</lpage><pub-id pub-id-type="doi">10.1002/jcc.23317</pub-id>.<pub-id pub-id-type="pmid">23670872</pub-id></mixed-citation></ref><ref id="ref77"><mixed-citation publication-type="journal" id="cit77"><name><surname>Grimme</surname><given-names>S.</given-names></name>; <name><surname>Brandenburg</surname><given-names>J. G.</given-names></name>; <name><surname>Bannwarth</surname><given-names>C.</given-names></name>; <name><surname>Hansen</surname><given-names>A.</given-names></name>
+<article-title>Consistent Structures
+and Interactions by Density Functional Theory with Small Atomic Orbital
+Basis Sets</article-title>. <source>J. Chem. Phys.</source>
+<year>2015</year>, <volume>143</volume><issue>5</issue><elocation-id>054107</elocation-id><pub-id pub-id-type="doi">10.1063/1.4927476</pub-id>.<pub-id pub-id-type="pmid">26254642</pub-id></mixed-citation></ref><ref id="ref78"><mixed-citation publication-type="journal" id="cit78"><name><surname>Kozuch</surname><given-names>S.</given-names></name>; <name><surname>Martin</surname><given-names>J. M. L.</given-names></name>
+<article-title>DSD-PBEP86: In
+Search of the Best Double-Hybrid DFT
+with Spin-Component Scaled MP2 and Dispersion Corrections</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2011</year>, <volume>13</volume><issue>45</issue><fpage>20104</fpage>&#x02013;<lpage>20107</lpage><pub-id pub-id-type="doi">10.1039/c1cp22592h</pub-id>.<pub-id pub-id-type="pmid">21993810</pub-id></mixed-citation></ref><ref id="ref79"><mixed-citation publication-type="journal" id="cit79"><name><surname>Riplinger</surname><given-names>C.</given-names></name>; <name><surname>Neese</surname><given-names>F.</given-names></name>
+<article-title>An Efficient and near
+Linear Scaling Pair Natural Orbital Based Local
+Coupled Cluster Method</article-title>. <source>J. Chem. Phys.</source>
+<year>2013</year>, <volume>138</volume><issue>3</issue><elocation-id>034106</elocation-id><pub-id pub-id-type="doi">10.1063/1.4773581</pub-id>.<pub-id pub-id-type="pmid">23343267</pub-id></mixed-citation></ref><ref id="ref80"><mixed-citation publication-type="journal" id="cit80"><name><surname>Boudart</surname><given-names>M.</given-names></name>
+<article-title>Thermochemical
+Kinetics, 2nd. Ed., Sidney W. Benson, Wiley Interscience, 320, New
+York, 1976</article-title>. <source>AIChE J.</source>
+<year>1977</year>, <volume>23</volume><issue>4</issue><fpage>613</fpage>&#x02013;<lpage>613</lpage><pub-id pub-id-type="doi">10.1002/aic.690230437</pub-id>.</mixed-citation></ref></ref-list></back></article>

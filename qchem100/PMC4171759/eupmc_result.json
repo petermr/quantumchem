@@ -1,0 +1,2051 @@
+{
+  "id": [
+    "25309629"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25309629"
+  ],
+  "pmcid": [
+    "PMC4171759"
+  ],
+  "doi": [
+    "10.1002/wcms.1172"
+  ],
+  "title": [
+    "The Dalton quantum chemistry program system."
+  ],
+  "authorString": [
+    "Aidas K, Angeli C, Bak KL, Bakken V, Bast R, Boman L, Christiansen O, Cimiraglia R, Coriani S, Dahle P, Dalskov EK, Ekström U, Enevoldsen T, Eriksen JJ, Ettenhuber P, Fernández B, Ferrighi L, Fliegl H, Frediani L, Hald K, Halkier A, Hättig C, Heiberg H, Helgaker T, Hennum AC, Hettema H, Hjertenæs E, Høst S, Høyvik IM, Iozzi MF, Jansík B, Jensen HJ, Jonsson D, Jørgensen P, Kauczor J, Kirpekar S, Kjærgaard T, Klopper W, Knecht S, Kobayashi R, Koch H, Kongsted J, Krapp A, Kristensen K, Ligabue A, Lutnæs OB, Melo JI, Mikkelsen KV, Myhre RH, Neiss C, Nielsen CB, Norman P, Olsen J, Olsen JM, Osted A, Packer MJ, Pawlowski F, Pedersen TB, Provasi PF, Reine S, Rinkevicius Z, Ruden TA, Ruud K, Rybkin VV, Sałek P, Samson CC, de Merás AS, Saue T, Sauer SP, Schimmelpfennig B, Sneskov K, Steindal AH, Sylvester-Hvid KO, Taylor PR, Teale AM, Tellgren EI, Tew DP, Thorvaldsen AJ, Thøgersen L, Vahtras O, Watson MA, Wilson DJ, Ziolkowski M, Agren H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Aidas K"
+          ],
+          "firstName": [
+            "Kestutis"
+          ],
+          "lastName": [
+            "Aidas"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of General Physics and Spectroscopy, Faculty of Physics, Vilnius University Vilnius, Lithuania."
+          ]
+        },
+        {
+          "fullName": [
+            "Angeli C"
+          ],
+          "firstName": [
+            "Celestino"
+          ],
+          "lastName": [
+            "Angeli"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1348-8175",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Ferrara Ferrara, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Bak KL"
+          ],
+          "firstName": [
+            "Keld L"
+          ],
+          "lastName": [
+            "Bak"
+          ],
+          "initials": [
+            "KL"
+          ],
+          "affiliation": [
+            "Aarhus University School of Engineering Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Bakken V"
+          ],
+          "firstName": [
+            "Vebjørn"
+          ],
+          "lastName": [
+            "Bakken"
+          ],
+          "initials": [
+            "V"
+          ],
+          "affiliation": [
+            "Faculty of Mathematics and Natural Sciences, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Bast R"
+          ],
+          "firstName": [
+            "Radovan"
+          ],
+          "lastName": [
+            "Bast"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Department of Theoretical Chemistry and Biology, School of Biotechnology, KTH Royal Institute of Technology Stockholm, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Boman L"
+          ],
+          "firstName": [
+            "Linus"
+          ],
+          "lastName": [
+            "Boman"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "EMGS ASA Trondheim, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Christiansen O"
+          ],
+          "firstName": [
+            "Ove"
+          ],
+          "lastName": [
+            "Christiansen"
+          ],
+          "initials": [
+            "O"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9215-571X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Cimiraglia R"
+          ],
+          "firstName": [
+            "Renzo"
+          ],
+          "lastName": [
+            "Cimiraglia"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Ferrara Ferrara, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Coriani S"
+          ],
+          "firstName": [
+            "Sonia"
+          ],
+          "lastName": [
+            "Coriani"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4487-897X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemical and Pharmaceutical Sciences, University of Trieste Trieste, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Dahle P"
+          ],
+          "firstName": [
+            "Pål"
+          ],
+          "lastName": [
+            "Dahle"
+          ],
+          "initials": [
+            "P"
+          ],
+          "affiliation": [
+            "Norwegian Computing Center Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Dalskov EK"
+          ],
+          "firstName": [
+            "Erik K"
+          ],
+          "lastName": [
+            "Dalskov"
+          ],
+          "initials": [
+            "EK"
+          ],
+          "affiliation": [
+            "Systematic Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Ekström U"
+          ],
+          "firstName": [
+            "Ulf"
+          ],
+          "lastName": [
+            "Ekström"
+          ],
+          "initials": [
+            "U"
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Enevoldsen T"
+          ],
+          "firstName": [
+            "Thomas"
+          ],
+          "lastName": [
+            "Enevoldsen"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Pharmacy, University of Southern Denmark Odense, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Eriksen JJ"
+          ],
+          "firstName": [
+            "Janus J"
+          ],
+          "lastName": [
+            "Eriksen"
+          ],
+          "initials": [
+            "JJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8583-3842",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Ettenhuber P"
+          ],
+          "firstName": [
+            "Patrick"
+          ],
+          "lastName": [
+            "Ettenhuber"
+          ],
+          "initials": [
+            "P"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Fernández B"
+          ],
+          "firstName": [
+            "Berta"
+          ],
+          "lastName": [
+            "Fernández"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6686-6534",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Physical Chemistry and Center for Research in Biological Chemistry and Molecular Materials (CIQUS), University of Santiago de Compostela Santiago de Compostela, Spain."
+          ]
+        },
+        {
+          "fullName": [
+            "Ferrighi L"
+          ],
+          "firstName": [
+            "Lara"
+          ],
+          "lastName": [
+            "Ferrighi"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5221-1377",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, UiT The Arctic University of Norway, Tromsø Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Fliegl H"
+          ],
+          "firstName": [
+            "Heike"
+          ],
+          "lastName": [
+            "Fliegl"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7541-115X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Frediani L"
+          ],
+          "firstName": [
+            "Luca"
+          ],
+          "lastName": [
+            "Frediani"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, UiT The Arctic University of Norway, Tromsø Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Hald K"
+          ],
+          "firstName": [
+            "Kasper"
+          ],
+          "lastName": [
+            "Hald"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Danske Bank Horsens, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Halkier A"
+          ],
+          "firstName": [
+            "Asger"
+          ],
+          "lastName": [
+            "Halkier"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "CSC Scandihealth Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Hättig C"
+          ],
+          "firstName": [
+            "Christof"
+          ],
+          "lastName": [
+            "Hättig"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5752-2710",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Theoretical Chemistry, Ruhr-University Bochum Bochum, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Heiberg H"
+          ],
+          "firstName": [
+            "Hanne"
+          ],
+          "lastName": [
+            "Heiberg"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Norwegian Meteorological Institute Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Helgaker T"
+          ],
+          "firstName": [
+            "Trygve"
+          ],
+          "lastName": [
+            "Helgaker"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5032-8392",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Hennum AC"
+          ],
+          "firstName": [
+            "Alf Christian"
+          ],
+          "lastName": [
+            "Hennum"
+          ],
+          "initials": [
+            "AC"
+          ],
+          "affiliation": [
+            "Norwegian Defence Research Establishment Kjeller, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Hettema H"
+          ],
+          "firstName": [
+            "Hinne"
+          ],
+          "lastName": [
+            "Hettema"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8325-0114",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Philosophy, The University of Auckland Auckland, New Zealand."
+          ]
+        },
+        {
+          "fullName": [
+            "Hjertenæs E"
+          ],
+          "firstName": [
+            "Eirik"
+          ],
+          "lastName": [
+            "Hjertenæs"
+          ],
+          "initials": [
+            "E"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Norwegian University of Science and Technology Trondheim, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Høst S"
+          ],
+          "firstName": [
+            "Stinne"
+          ],
+          "lastName": [
+            "Høst"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Department of Geoscience, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Høyvik IM"
+          ],
+          "firstName": [
+            "Ida-Marie"
+          ],
+          "lastName": [
+            "Høyvik"
+          ],
+          "initials": [
+            "IM"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Iozzi MF"
+          ],
+          "firstName": [
+            "Maria Francesca"
+          ],
+          "lastName": [
+            "Iozzi"
+          ],
+          "initials": [
+            "MF"
+          ],
+          "affiliation": [
+            "University Centre of Information Technology, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Jansík B"
+          ],
+          "firstName": [
+            "Branislav"
+          ],
+          "lastName": [
+            "Jansík"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "VSB - Technical University of Ostrava Ostrava, Czech Republic."
+          ]
+        },
+        {
+          "fullName": [
+            "Jensen HJ"
+          ],
+          "firstName": [
+            "Hans Jørgen Aa"
+          ],
+          "lastName": [
+            "Jensen"
+          ],
+          "initials": [
+            "HJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8743-7381",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Pharmacy, University of Southern Denmark Odense, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Jonsson D"
+          ],
+          "firstName": [
+            "Dan"
+          ],
+          "lastName": [
+            "Jonsson"
+          ],
+          "initials": [
+            "D"
+          ],
+          "affiliation": [
+            "High-Performance Computing Group, UiT The Arctic University of Norway, Tromsø Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Jørgensen P"
+          ],
+          "firstName": [
+            "Poul"
+          ],
+          "lastName": [
+            "Jørgensen"
+          ],
+          "initials": [
+            "P"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Kauczor J"
+          ],
+          "firstName": [
+            "Joanna"
+          ],
+          "lastName": [
+            "Kauczor"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Biology, Linköping University Linköping, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Kirpekar S"
+          ],
+          "firstName": [
+            "Sheela"
+          ],
+          "lastName": [
+            "Kirpekar"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "KVUC, Copenhagen Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Kjærgaard T"
+          ],
+          "firstName": [
+            "Thomas"
+          ],
+          "lastName": [
+            "Kjærgaard"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Klopper W"
+          ],
+          "firstName": [
+            "Wim"
+          ],
+          "lastName": [
+            "Klopper"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5219-9328",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Physical Chemistry, Karlsruhe Institute of Technology Karlsruhe, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Knecht S"
+          ],
+          "firstName": [
+            "Stefan"
+          ],
+          "lastName": [
+            "Knecht"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Laboratory of Physical Chemistry, ETH Zürich Zürich, Switzerland."
+          ]
+        },
+        {
+          "fullName": [
+            "Kobayashi R"
+          ],
+          "firstName": [
+            "Rika"
+          ],
+          "lastName": [
+            "Kobayashi"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0672-833X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Australian National University Supercomputer Facility Canberra, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Koch H"
+          ],
+          "firstName": [
+            "Henrik"
+          ],
+          "lastName": [
+            "Koch"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8367-8727",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, Norwegian University of Science and Technology Trondheim, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Kongsted J"
+          ],
+          "firstName": [
+            "Jacob"
+          ],
+          "lastName": [
+            "Kongsted"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7725-2164",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Pharmacy, University of Southern Denmark Odense, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Krapp A"
+          ],
+          "firstName": [
+            "Andreas"
+          ],
+          "lastName": [
+            "Krapp"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Jotun A/S Sandefjord, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Kristensen K"
+          ],
+          "firstName": [
+            "Kasper"
+          ],
+          "lastName": [
+            "Kristensen"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Ligabue A"
+          ],
+          "firstName": [
+            "Andrea"
+          ],
+          "lastName": [
+            "Ligabue"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Computer Services: Networks and Systems, University of Modena and Reggio Emilia Modena, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Lutnæs OB"
+          ],
+          "firstName": [
+            "Ola B"
+          ],
+          "lastName": [
+            "Lutnæs"
+          ],
+          "initials": [
+            "OB"
+          ],
+          "affiliation": [
+            "Cisco Systems Lysaker, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Melo JI"
+          ],
+          "firstName": [
+            "Juan I"
+          ],
+          "lastName": [
+            "Melo"
+          ],
+          "initials": [
+            "JI"
+          ],
+          "affiliation": [
+            "Physics Department, FCEyN-UBA and IFIBA-CONICET, Universidad de Buenos Aires Buenos Aires, Argentina."
+          ]
+        },
+        {
+          "fullName": [
+            "Mikkelsen KV"
+          ],
+          "firstName": [
+            "Kurt V"
+          ],
+          "lastName": [
+            "Mikkelsen"
+          ],
+          "initials": [
+            "KV"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4090-7697",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Copenhagen, Copenhagen Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Myhre RH"
+          ],
+          "firstName": [
+            "Rolf H"
+          ],
+          "lastName": [
+            "Myhre"
+          ],
+          "initials": [
+            "RH"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Norwegian University of Science and Technology Trondheim, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Neiss C"
+          ],
+          "firstName": [
+            "Christian"
+          ],
+          "lastName": [
+            "Neiss"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Pharmacy, Friedrich-Alexander University Erlangen-Nürnberg Erlangen, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Nielsen CB"
+          ],
+          "firstName": [
+            "Christian B"
+          ],
+          "lastName": [
+            "Nielsen"
+          ],
+          "initials": [
+            "CB"
+          ],
+          "affiliation": [
+            "Sun Chemical Køge, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Norman P"
+          ],
+          "firstName": [
+            "Patrick"
+          ],
+          "lastName": [
+            "Norman"
+          ],
+          "initials": [
+            "P"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1191-4954",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Biology, Linköping University Linköping, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Olsen J"
+          ],
+          "firstName": [
+            "Jeppe"
+          ],
+          "lastName": [
+            "Olsen"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Olsen JM"
+          ],
+          "firstName": [
+            "Jógvan Magnus H"
+          ],
+          "lastName": [
+            "Olsen"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Pharmacy, University of Southern Denmark Odense, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Osted A"
+          ],
+          "firstName": [
+            "Anders"
+          ],
+          "lastName": [
+            "Osted"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Køge Gymnasium Køge, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Packer MJ"
+          ],
+          "firstName": [
+            "Martin J"
+          ],
+          "lastName": [
+            "Packer"
+          ],
+          "initials": [
+            "MJ"
+          ],
+          "affiliation": [
+            "Department of Physics, Chemistry and Pharmacy, University of Southern Denmark Odense, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Pawlowski F"
+          ],
+          "firstName": [
+            "Filip"
+          ],
+          "lastName": [
+            "Pawlowski"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5928-2140",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Physics, Kazimierz Wielki University Bydgoszcz, Poland."
+          ]
+        },
+        {
+          "fullName": [
+            "Pedersen TB"
+          ],
+          "firstName": [
+            "Thomas B"
+          ],
+          "lastName": [
+            "Pedersen"
+          ],
+          "initials": [
+            "TB"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8967-6055",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Provasi PF"
+          ],
+          "firstName": [
+            "Patricio F"
+          ],
+          "lastName": [
+            "Provasi"
+          ],
+          "initials": [
+            "PF"
+          ],
+          "affiliation": [
+            "Department of Physics, University of Northeastern and IMIT-CONICET Corrientes, Argentina."
+          ]
+        },
+        {
+          "fullName": [
+            "Reine S"
+          ],
+          "firstName": [
+            "Simen"
+          ],
+          "lastName": [
+            "Reine"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1011-6958",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Rinkevicius Z"
+          ],
+          "firstName": [
+            "Zilvinas"
+          ],
+          "lastName": [
+            "Rinkevicius"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "affiliation": [
+            "Department of Theoretical Chemistry and Biology, School of Biotechnology and Swedish e-Science Research Center (SeRC), KTH Royal Institute of Technology Stockholm, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Ruden TA"
+          ],
+          "firstName": [
+            "Torgeir A"
+          ],
+          "lastName": [
+            "Ruden"
+          ],
+          "initials": [
+            "TA"
+          ],
+          "affiliation": [
+            "Kjeller Software Community Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Ruud K"
+          ],
+          "firstName": [
+            "Kenneth"
+          ],
+          "lastName": [
+            "Ruud"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1006-8482",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, UiT The Arctic University of Norway, Tromsø Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Rybkin VV"
+          ],
+          "firstName": [
+            "Vladimir V"
+          ],
+          "lastName": [
+            "Rybkin"
+          ],
+          "initials": [
+            "VV"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5136-6035",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Physical Chemistry, Karlsruhe Institute of Technology Karlsruhe, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Sałek P"
+          ],
+          "firstName": [
+            "Pawel"
+          ],
+          "lastName": [
+            "Sałek"
+          ],
+          "initials": [
+            "P"
+          ],
+          "affiliation": [
+            "PSS9 Development Cracow, Poland."
+          ]
+        },
+        {
+          "fullName": [
+            "Samson CC"
+          ],
+          "firstName": [
+            "Claire C M"
+          ],
+          "lastName": [
+            "Samson"
+          ],
+          "initials": [
+            "CC"
+          ],
+          "affiliation": [
+            "Institute of Physical Chemistry, Karlsruhe Institute of Technology Karlsruhe, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "de Merás AS"
+          ],
+          "firstName": [
+            "Alfredo Sánchez"
+          ],
+          "lastName": [
+            "de Merás"
+          ],
+          "initials": [
+            "AS"
+          ],
+          "affiliation": [
+            "Institute of Molecular Science, University of Valencia Valencia, Spain."
+          ]
+        },
+        {
+          "fullName": [
+            "Saue T"
+          ],
+          "firstName": [
+            "Trond"
+          ],
+          "lastName": [
+            "Saue"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6407-0305",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Paul Sabatier University Toulouse, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Sauer SP"
+          ],
+          "firstName": [
+            "Stephan P A"
+          ],
+          "lastName": [
+            "Sauer"
+          ],
+          "initials": [
+            "SP"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4812-0522",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Copenhagen, Copenhagen Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Schimmelpfennig B"
+          ],
+          "firstName": [
+            "Bernd"
+          ],
+          "lastName": [
+            "Schimmelpfennig"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "Institute for Nuclear Waste Disposal, Karlsruhe Institute of Technology Karlsruhe, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Sneskov K"
+          ],
+          "firstName": [
+            "Kristian"
+          ],
+          "lastName": [
+            "Sneskov"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Danske Bank Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Steindal AH"
+          ],
+          "firstName": [
+            "Arnfinn H"
+          ],
+          "lastName": [
+            "Steindal"
+          ],
+          "initials": [
+            "AH"
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, UiT The Arctic University of Norway, Tromsø Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Sylvester-Hvid KO"
+          ],
+          "firstName": [
+            "Kristian O"
+          ],
+          "lastName": [
+            "Sylvester-Hvid"
+          ],
+          "initials": [
+            "KO"
+          ],
+          "affiliation": [
+            "Danish Technological Institute Nano- and Microtechnology Production Taastrup, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Taylor PR"
+          ],
+          "firstName": [
+            "Peter R"
+          ],
+          "lastName": [
+            "Taylor"
+          ],
+          "initials": [
+            "PR"
+          ],
+          "affiliation": [
+            "VLSCI and School of Chemistry, University of Melbourne Parkville, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Teale AM"
+          ],
+          "firstName": [
+            "Andrew M"
+          ],
+          "lastName": [
+            "Teale"
+          ],
+          "initials": [
+            "AM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9617-1143",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Chemistry, University of Nottingham Nottingham, UK."
+          ]
+        },
+        {
+          "fullName": [
+            "Tellgren EI"
+          ],
+          "firstName": [
+            "Erik I"
+          ],
+          "lastName": [
+            "Tellgren"
+          ],
+          "initials": [
+            "EI"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0019-4330",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "CTCC, Department of Chemistry, University of Oslo Oslo, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Tew DP"
+          ],
+          "firstName": [
+            "David P"
+          ],
+          "lastName": [
+            "Tew"
+          ],
+          "initials": [
+            "DP"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3220-4177",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Chemistry, University of Bristol Bristol, UK."
+          ]
+        },
+        {
+          "fullName": [
+            "Thorvaldsen AJ"
+          ],
+          "firstName": [
+            "Andreas J"
+          ],
+          "lastName": [
+            "Thorvaldsen"
+          ],
+          "initials": [
+            "AJ"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Aarhus University Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Thøgersen L"
+          ],
+          "firstName": [
+            "Lea"
+          ],
+          "lastName": [
+            "Thøgersen"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "CLC bio Aarhus, Denmark."
+          ]
+        },
+        {
+          "fullName": [
+            "Vahtras O"
+          ],
+          "firstName": [
+            "Olav"
+          ],
+          "lastName": [
+            "Vahtras"
+          ],
+          "initials": [
+            "O"
+          ],
+          "affiliation": [
+            "Department of Theoretical Chemistry and Biology, School of Biotechnology, KTH Royal Institute of Technology Stockholm, Sweden."
+          ]
+        },
+        {
+          "fullName": [
+            "Watson MA"
+          ],
+          "firstName": [
+            "Mark A"
+          ],
+          "lastName": [
+            "Watson"
+          ],
+          "initials": [
+            "MA"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Princeton University Princeton, New Jersey."
+          ]
+        },
+        {
+          "fullName": [
+            "Wilson DJ"
+          ],
+          "firstName": [
+            "David J D"
+          ],
+          "lastName": [
+            "Wilson"
+          ],
+          "initials": [
+            "DJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0007-4486",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and La Trobe Institute for Molecular Sciences, La Trobe University Melbourne, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Ziolkowski M"
+          ],
+          "firstName": [
+            "Marcin"
+          ],
+          "lastName": [
+            "Ziolkowski"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "CoE for Next Generation Computing, Clemson University Clemson, South Carolina."
+          ]
+        },
+        {
+          "fullName": [
+            "Agren H"
+          ],
+          "firstName": [
+            "Hans"
+          ],
+          "lastName": [
+            "Agren"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Department of Theoretical Chemistry and Biology, School of Biotechnology, KTH Royal Institute of Technology Stockholm, Sweden."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-8583-3842",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0672-833X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1006-8482",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0007-4486",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5219-9328",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5928-2140",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6407-0305",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-9617-1143",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-4487-897X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6686-6534",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5221-1377",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7541-115X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5752-2710",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5136-6035",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5032-8392",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8743-7381",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8367-8727",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-8967-6055",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-3220-4177",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8325-0114",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-4812-0522",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0019-4330",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1348-8175",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7725-2164",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-4090-7697",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1011-6958",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-7487-944X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-9215-571X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1191-4954",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2210221"
+      ],
+      "dateOfPublication": [
+        "2014 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Wiley interdisciplinary reviews. Computational molecular science"
+          ],
+          "ISOAbbreviation": [
+            "Wiley Interdiscip Rev Comput Mol Sci"
+          ],
+          "medlineAbbreviation": [
+            "Wiley Interdiscip Rev Comput Mol Sci"
+          ],
+          "NLMid": [
+            "101564639"
+          ],
+          "ISSN": [
+            "1759-0876"
+          ],
+          "ESSN": [
+            "1759-0884"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "269-284"
+  ],
+  "abstractText": [
+    "Dalton is a powerful general-purpose program system for the study of molecular electronic structure at the Hartree-Fock, Kohn-Sham, multiconfigurational self-consistent-field, Møller-Plesset, configuration-interaction, and coupled-cluster levels of theory. Apart from the total energy, a wide variety of molecular properties may be calculated using these electronic-structure models. Molecular gradients and Hessians are available for geometry optimizations, molecular dynamics, and vibrational studies, whereas magnetic resonance and optical activity can be studied in a gauge-origin-invariant manner. Frequency-dependent molecular properties can be calculated using linear, quadratic, and cubic response theory. A large number of singlet and triplet perturbation operators are available for the study of one-, two-, and three-photon processes. Environmental effects may be included using various dielectric-medium and quantum-mechanics/molecular-mechanics models. Large molecules may be studied using linear-scaling and massively parallel algorithms. Dalton is distributed at no cost from http://www.daltonprogram.org for a number of UNIX platforms."
+  ],
+  "affiliation": [
+    "Department of General Physics and Spectroscopy, Faculty of Physics, Vilnius University Vilnius, Lithuania."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4171759?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4171759"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1002/wcms.1172"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "167"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc-nd"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2014-10-13"
+  ],
+  "firstIndexDate": [
+    "2014-10-14"
+  ],
+  "dateOfRevision": [
+    "2014-10-15"
+  ],
+  "firstPublicationDate": [
+    "2014-05-01"
+  ]
+}

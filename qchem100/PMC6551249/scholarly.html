@@ -1,0 +1,971 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head> <style type="text/css">
+         	     		 
+         	    a                          {background : #ffffff; }
+         	    article                    {border-style : dotted; border-width : 2px; }
+         		 	
+         		 	div                        {background : #ffffcc;}
+         		 	div.abstract-title         {font-weight : bold ; font-size : 16pt;}
+         		 	div.ack                    {border-style : solid ; border-color : red; margin
+         : 2em; }
+         		 	div.article-meta           {border-style : solid; border-width : 1 pt; margin
+         1em;}
+         		 	div.boxed-text             {margin : 5em; border-style : solid;}
+         		 	div.contrib-group          {margin : 1em; }
+         		 	div.fig                    {border-style : solid; border-width : 2px; margin :
+         2em; }
+         		 	div.funding                {font-weight : bold ; font-size : 16pt;}
+         		 	div.given-names            {font-style : italic;}
+         		 	div.intro                  {border-style : inset; margin : 5px;}
+         		 	div.introduction           {border-style : inset; margin : 5px;}
+         		 	div.journal-meta           {border-style : solid; border-width : 1 pt; margin
+         1em;}
+         		 	div.journal-title-group    {background : #ffeeee;}
+         		 	div.article-title          {font-weight : bold ; font-size : 18pt;}
+         		 	div.kwd                    {font-style : italic}
+         		 	div.meta-name              {font-weight : bold ; font-size : 16pt;}
+         		 	div.name                   {font-weight : bold;}
+         		 	div.alt-title              {font-style : italic; font-size : 12px;}
+         		 	
+         		 	div.sec                    {border : 2px; margin 5px; padding 2px;}
+         		 	div.title                  {font-family : courier; font-weight : bold;
+         		 	                            font-size : 16pt; margin : 5px;}
+         		 	
+         		 	div.materials_methods      {border-style : double; margin : 5px; }
+         		 	div.methods                {border-style : double; margin : 5px; }
+         		 	
+         		 	div.results                {border-style : solid; margin : 5px;}
+         		 	div.background             {border-style : dotted; margin : 5px;}
+         		 	
+         		 	div.discussion             {border-style : groove; margin : 5px;}
+         		 	div.conclusion             {border-style : ridge; margin : 5px;}
+         		 	div.conclusions             {border-style : ridge; margin : 5px;}
+         		 	div.supplementary-material {border-style : inset; margin : 5px;}
+         		 	div.abbreviations          {border-style : double; border-color : red; margin
+         : 5px;}
+         		 	div.competinginterests     {border-style : double; border-color : blue; margin
+         : 5px;}
+         		 	div.acknowledgements       {border-style : double; border-color : green; margin
+         : 5px;}
+         		 	div.authors_contributions   {border-style : double; border-color : purple; margin
+         : 5px;}
+         		 	
+         		 	div.publisher              {border-style : outset; margin : 5px;}
+         		 	div.fn-type-conflict       {background : #f88; }
+         		 	div.fn-type-con            {background : #ddf; }
+         		 	div.fn-type-other          {background : #ddd; }
+         		 	
+         		 	div.unknown                {background : #ffd;
+         									 	  border-style : solid;
+         									 	  border-width : 1px;
+         									 	  padding : 2 px;}
+         		 	  
+         	    table                      {background : #ffffdd;}
+         		 	tr                         {background : #ddddff; padding : 1px;}
+         		 	
+         		 	span                       {background : #ffcccc;}
+         		 	
+         		 	span.citation-author       {font-family : helvetica; background : #ffeeee;}
+         		 	span.collab                {background : #ddffff; }
+         		 	span.comment               {font-family : courier; font-size : 6px; background
+         : #ffaaff;}
+         		 	span.contrib               {background : #ffffff;}
+         		 	span.corresp               {background : #ddffdd; }
+         		 	span.doi                   {background : #ffffff;}
+         		 	span.email                 {font-family : courier; }
+         		 	span.etal                  {font-style : italic;}
+         		 	span.fpage                 {font-family : courier;}
+         		 	span.given-names           {background : #ffffff;}
+         		 	span.iso-abbrev            {background : #ffffff;}
+         		 	span.issn-epub             {background : #ffffff;}
+         		 	span.issn-ppub             {background : #ffffff;}
+         		 	span.journal-title         {background : #ffffff;}
+         		 	span.lpage                 {font-family : courier;}
+         		 	span.mixed-article-title   {font-style : italic ;}
+         		 	span.nlm-ta                {background : #ffffff;}
+         		 	span.pmc                   {background : #ffffff;}
+         		 	span.pmcid                 {background : #ffffff;}
+         		 	span.pmid                  {background : #ffffff;}
+         		 	span.publisher             {background : #ffffff;}
+         		 	span.publisher-id          {background : #ffffff;}
+         		 	span.publisher-name        {background : #ffffff;}
+         		 	span.source                {background : #ffffff;}
+         		 	span.subject               {background : #ffffff;}
+         		 	span.surname               {background : #ffffff;}
+         		 	span.volume                {font-family : courier; font-weight : bold;}
+         		 	span.year                  {font-family : courier ; font-style : italic;}
+         			
+      </style> </head> <body> <div class="front" title="front"> <div class="journal-meta" tagx="journal-meta" title="journal-meta"> <span class="nlm-ta" title="nlm-ta">Heliyon</span> <span class="iso-abbrev" title="iso-abbrev">Heliyon</span> <div class="journal-title-group" tagx="journal-title-group" title="journal-title-group"> <span class="journal-title" tagx="journal-title" title="journal-title">Heliyon</span> </div> <span class="issn-epub" tagx="issn" title="issn-epub">2405-8440</span> <div class="publisher" tagx="publisher" title="publisher"> <span class="publisher-name" tagx="publisher-name" title="publisher-name">Elsevier</span> </div> </div> <div class="article-meta" tagx="article-meta" title="article-meta"> <span class="pmcid" title="pmcid"> pmcid: <a href="http://www.ncbi.nlm.nih.gov/pubmed/6551249">6551249</a> </span> <span class="publisher-id" title="publisher-id">S2405-8440(19)31269-1</span> <span class="doi" title="doi"> doi: <a href="https://dx.doi.org/10.1016/j.heliyon.2019.e01785">10.1016/j.heliyon.2019.e01785</a> </span> <span class="publisher-id" title="publisher-id">e01785</span> <div class="article-categories" title="article-categories">
+: <span class="subject" title="subject">Article</span> </div> <div class="title-group"> <div class="article-title" title="article-title">
+Influence of noise-binding energy interplay on the second and third-order nonlinear optical properties of impurity doped quantum dots </div> </div> <div class="contrib-group" title="contrib-group"> <span class="contrib" title="contrib"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghosh</span> <span class="given-names" tagx="given-names" title="given-names">Anuja</span> </span> </span> <span class="contrib" title="contrib"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Arif</span> <span class="given-names" tagx="given-names" title="given-names">Sk. Md.</span> </span> </span> <span class="contrib" title="contrib"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghosh</span> <span class="given-names" tagx="given-names" title="given-names">Manas</span> </span> <span class="email" tagx="email" title="email">manasghosh.chem@visva-bharati.ac.in</span> <a href="#cr0010">⁎</a> </span> </div> <span class="citation_author_institution" id="aff0010">[], </span> <div class="author-notes" title="author-notes"> <div class="corresp" title="corresp"> <span class="label" tagx="label" title="label">⁎</span>Corresponding author. <span class="email" tagx="email" title="email">manasghosh.chem@visva-bharati.ac.in</span> </div> </div> <span class="pub-date-pmc-release" title="pub-date-pmc-release">pmc-release: <span>2019-6-6</span> </span> <span class="pub-date-collection" title="pub-date-collection">collection: <span>2019-5</span> </span> <span class="pub-date-epub" title="pub-date-epub">epub: <span>2019-6-6</span> </span> <span class="volume" tagx="volume" title="volume">5</span> <span class="issue" tagx="issue" title="issue">5</span> <span class="elocation-id" tagx="elocation-id" title="elocation-id">e01785</span> <span class="history" title="history"> <span class="received" title="received">received: 2019-2-7</span> <span class="rev-recd" title="rev-recd">rev-recd: 2019-4-26</span> <span class="accepted" title="accepted">accepted: 2019-5-17</span> </span> <div class="permissions"> <span class="copyright" title="copyright">(C) , <span class="copyright-year" tagx="copyright-year" title="copyright-year">2019</span> </span> <span class="license" title="license"> <span class="license-p" title="license-p">This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</span> </span> </div> <div class="abstract" title="abstract"> <div class="abstract-title" title="abstract-title">
+Abstract</div> <p>We inspect the role of binding energy (BE) on second-order and third-order nonlinear optical (NLO) properties of doped <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+G</div> <div class="mi_UNKNOWN">
+a</div> <div class="mi_UNKNOWN">
+A</div> <div class="mi_UNKNOWN">
+s</div> </div> </span> quantum dot (QD). In the study ample stress is given on understanding the role of noise on the manifestations of these NLO properties. The profiles of these NLO properties are analyzed mainly on the basis of variation of two important criteria viz. peak-shift and peak-height as a function of BE. Both these features depend on the presence of noise, its pathway (mode) of introduction and sometimes on the identity of the NLO properties. The findings of the study deem significance in realizing the binding energy-dependence of the said NLO properties of low-dimensional semiconductor materials when noise contribution becomes noticeable. </p> </div> <div class="kwd-group"> <div class="title" tagx="title" title="title">
+Keywords</div> <div class="kwd" title="kwd">
+Materials science</div> <div class="kwd" title="kwd">
+Quantum dot</div> <div class="kwd" title="kwd">
+Impurity</div> <div class="kwd" title="kwd">
+Binding energy</div> <div class="kwd" title="kwd">
+Second and third-order nonlinear optical properties</div> <div class="kwd" title="kwd">
+Gaussian white noise</div> </div> </div> </div> <div class="body" title="body"> <div class="introduction" title="sec"> <span class="label" tagx="label" title="label">1</span> <div class="title" tagx="title" title="title">
+Introduction</div> <p>Tremendous enhancement in the research on low-dimensional semiconductor systems (LDSS) e.g. quantum wells (QWLs), quantum wires (QWRs) and quantum dots (QDs) has been envisaged over the last couple of decades. The said enhancement can be justified from two different but highly related angles; technological and pedagogical. The technological angle deals with the widespread application of LDSS in the manufacture of high-output microelectronic and optoelectronic devices such as QD lasers, solar cells, single electron transistors and quantum computers. Simultaneously, the pedagogical angle involves rejuvenation of many fundamental concepts of quantum mechanics. Sudden rise in the level of delicacy of LDSS physics occurs with the introduction of impurity (dopant). The increased delicacy has its roots in the newly formed interaction between the original LDSS confinement potential and the dopant potential. The resultant effective confinement potential discernibly modifies the nonlinear optical (NLO) properties of LDSS from that of a dopant-free condition. LDSS possess special status for displaying enhanced NLO properties. Thus, the modulation of NLO properties of LDSS by impurity is quite interesting and accentuates rigorous research works <a href="#br0010">[1]</a>, <a href="#br0020">[2]</a>, <a href="#br0030">[3]</a>, <a href="#br0040">[4]</a>, <a href="#br0050">[5]</a>, <a href="#br0060">[6]</a>, <a href="#br0070">[7]</a>, <a href="#br0080">[8]</a>, <a href="#br0090">[9]</a>, <a href="#br0100">[10]</a>, <a href="#br0110">[11]</a>, <a href="#br0120">[12]</a>, <a href="#br0130">[13]</a>, <a href="#br0140">[14]</a>, <a href="#br0150">[15]</a>, <a href="#br0160">[16]</a>, <a href="#br0170">[17]</a>, <a href="#br0180">[18]</a>, <a href="#br0190">[19]</a>, <a href="#br0200">[20]</a>, <a href="#br0210">[21]</a>, <a href="#br0220">[22]</a>, <a href="#br0230">[23]</a>, <a href="#br0240">[24]</a>, <a href="#br0250">[25]</a>, <a href="#br0260">[26]</a>, <a href="#br0270">[27]</a>, <a href="#br0280">[28]</a>, <a href="#br0290">[29]</a>, <a href="#br0300">[30]</a>, <a href="#br0310">[31]</a>, <a href="#br0320">[32]</a>, <a href="#br0330">[33]</a>, <a href="#br0340">[34]</a>, <a href="#br0350">[35]</a>, <a href="#br0360">[36]</a>. </p> <p>Presence of <i>noise</i> markedly affects the efficacy of LDSS-based devices. Noise can make its entry to the system by using some external ‘modes’ or ‘pathways’, among which <i>additive</i> and <i>multiplicative</i> are the two most common ones. These two pathways can be distinguished depending on how noise gets engaged with the system coordinates. Noise, thus introduced, conspicuously changes the physical properties of the system through the alteration of the effective confinement potential. Importantly, such change in the physical properties of LDSS has been found to be dependent on the mode of introduction of noise mentioned before. Therefore, exploration of noise-induced modulations of the physical properties of LDSS draws sincere attention. </p> <p>Recently we have studied the influence of noise-binding energy interplay on a magnetic property viz. diamagnetic susceptibility (DMS) of doped QDs <a href="#br0370">[37]</a>. Current study endeavors to carry out an in-depth scrutiny of how the <i>interplay between noise and binding energy (BE)</i> can fine-tune three important NLO properties of 2-d <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+G</div> <div class="mi_UNKNOWN">
+a</div> <div class="mi_UNKNOWN">
+A</div> <div class="mi_UNKNOWN">
+s</div> </div> </span> QD viz. <i>electro-optical effect (EOE)</i> <a href="#br0380">[38]</a>, <a href="#br0390">[39]</a>, <a href="#br0400">[40]</a>, <i>third-order nonlinear optical susceptibilities (TONOS)</i> <a href="#br0410">[41]</a>, <a href="#br0420">[42]</a>, <a href="#br0430">[43]</a>, <a href="#br0440">[44]</a>, <a href="#br0450">[45]</a>, <a href="#br0460">[46]</a>, <a href="#br0470">[47]</a>, <a href="#br0480">[48]</a>, <a href="#br0490">[49]</a>, <a href="#br0500">[50]</a>, <a href="#br0510">[51]</a> and <i>total optical dielectric function (TODF)</i> <a href="#br0520">[52]</a>. Thus, the present study shows some new innovation with respect to our previous study <a href="#br0370">[37]</a>. Among the mentioned NLO properties EOE and TONOS stand for the second-order and third-order nonlinear phenomena, respectively. TODF deserves importance since an extended inspection which commences from it culminates into understanding the effective optical properties of the dot-matrix composite systems because of dielectric mismatch. In this context BE of LDSS deems importance as any alteration in BE noticeably affects the physical properties of LDSS, including the NLO properties <a href="#br0050">[5]</a>, <a href="#br0130">[13]</a>, <a href="#br0190">[19]</a>. Thus, such study appears significant even from a technological viewpoint. In the present work the <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+y</div> </div> </span> confinement is described by harmonic oscillator potential and the <i>z</i>-confinement is offered by a vertical magnetic field. In addition, an electric field of strength <i>F</i> is applied to the system along <i>x</i> and <i>y</i>-directions. The QD is doped with <i>Gaussian impurity</i> and at the same time is subjected to <i>Gaussian white noise</i> applied via <i>additive</i> and <i>multiplicative</i> pathways (modes). The study makes a close scrutiny of how the interplay between BE and noise engineers the above NLO properties with substantial thrust on the influence of the noise mode. </p> </div> <div class="methods" title="sec"> <span class="label" tagx="label" title="label">2</span> <div class="title" tagx="title" title="title">
+Methods</div> <p>The system delineated above may be expressed by the Hamiltonian ( <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span>): </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(1)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+m</div> <div class="mi_UNKNOWN">
+p</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mo_UNKNOWN">
+|</div> <div class="mi_UNKNOWN">
+e</div> <div class="mo_UNKNOWN">
+|</div> <div class="mi_UNKNOWN">
+F</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+o</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+s</div> <div class="mi_UNKNOWN">
+e</div> </div> </div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> </div> </span> is the impurity-free Hamiltonian and <i>e</i> is the electronic charge. Use of effective mass approximation leads to <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(2)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+∇</div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+e</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+c</div> </div> </div> <div class="mtext_UNKNOWN">
+A</div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> represent the effective mass of the electron and the harmonic confinement frequency, respectively. The vector potential <b>A</b> is given by <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+A</div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+B</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+,</div> <div class="mn_UNKNOWN">
+0</div> <div class="mo_UNKNOWN">
+,</div> <div class="mn_UNKNOWN">
+0</div> <div class="mo_UNKNOWN">
+)</div> </div> </span>, where <i>B</i> is the strength of the magnetic field. <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> </div> </span> can be alternatively written as <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(3)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+−</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ħ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+Ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+c</div> </div> </div> <div class="mi_UNKNOWN">
+y</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+∂</div> <div class="mi_UNKNOWN">
+x</div> </div> </div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+Ω</div> <div class="mo_UNKNOWN">
+(</div> <div class="mo_UNKNOWN">
+=</div> <div class="msqrt_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+c</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+c</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mo_UNKNOWN">
+=</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+e</div> <div class="mi_UNKNOWN">
+B</div> </div> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> <div class="mi_UNKNOWN">
+c</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> </span> are the effective confinement frequency in the <i>y</i>-direction and the cyclotron frequency, respectively. <p /> <p> <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+m</div> <div class="mi_UNKNOWN">
+p</div> </div> </div> </div> </span> stands for the impurity (dopant) potential and has the form <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+m</div> <div class="mi_UNKNOWN">
+p</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mspace_UNKNOWN" /> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+e</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+γ</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> </div> </div> </div> </span>. Here <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> </span>, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+γ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+−</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+/</div> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </span> refer to the dopant location, impurity strength and the available space under the influence of impurity potential, respectively. The use of such Gaussian impurity potential as a modification of the confinement potential was first introduced by Szafran et al. in the context of exciton spectrum of a quantum ring <a href="#br0530">[53]</a>. Such Gaussian impurity has also drawn the attention of several other researchers <a href="#br0540">[54]</a>, <a href="#br0550">[55]</a>, <a href="#br0560">[56]</a>, <a href="#br0570">[57]</a>, <a href="#br0580">[58]</a>. Adamowski studied the screening effect of the <i>LO</i> phonons of the <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+D</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+−</div> </div> </div> </div> </span> center confined by a Gaussian potential QD, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+r</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mspace_UNKNOWN" /> <div class="mi_UNKNOWN">
+e</div> <div class="mi_UNKNOWN">
+x</div> <div class="mi_UNKNOWN">
+p</div> <div class="mo_UNKNOWN">
+[</div> <div class="mo_UNKNOWN">
+−</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+r</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+R</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> </span> <a href="#br0560">[56]</a>. Gaussian potential stands for the finite depth and range of QD confinement potential. Gaussian potential is a smooth potential and therefore is a good approximation to the impurity potential in electrostatic quantum dots <a href="#br0570">[57]</a>, in which the spatial restriction originates from an inhomogeneous electric field. In self-assembled quantum dots with a composition modulation <a href="#br0590">[59]</a>, the impurity potential can also be represented by the Gaussian potential <a href="#br0580">[58]</a>. Such Gaussian potentials can be assumed to simulate nanocrystals fabricated by means of colloidal chemical synthesis <a href="#br0600">[60]</a>, <a href="#br0610">[61]</a>, <a href="#br0620">[62]</a>. </p> <p>The quantity <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+o</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+s</div> <div class="mi_UNKNOWN">
+e</div> </div> </div> </div> </span> of eqn. <a href="#fm0010">(1)</a> takes care of the externally introduced Gaussian white noise characterized by <i>zero average</i> and <i>spatial δ-correlation</i>. Such application of noise to the system can be done in two separate modes (known as additive and multiplicative) which indeed govern the system-noise interaction. Mathematically speaking, noise involves a spatially <i>δ</i>-correlated function <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+]</div> </div> </span> which assumes a Gaussian distribution (produced by Box-Muller algorithm) having strength <i>ζ</i> and is described by the set of conditions </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(4)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+〈</div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+〉</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+0</div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> the zero average condition, and <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(5)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+〈</div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+〉</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+2</div> <div class="mi_UNKNOWN">
+ζ</div> <div class="mi_UNKNOWN">
+δ</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+−</div> <div class="mo_UNKNOWN">
+(</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+′</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> the spatial <i>δ</i>-correlation condition. The additive and multiplicative pathways of introduction of noise can be written as <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(6)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+o</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+s</div> <div class="mi_UNKNOWN">
+e</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+λ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> for additive pathway and <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(7)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+o</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+s</div> <div class="mi_UNKNOWN">
+e</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+λ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mi_UNKNOWN">
+f</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+x</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+y</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> for the multiplicative pathway. <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+λ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+λ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </span> are two arbitrary parameters in case of additive and multiplicative noise, respectively. In reality, there exist a variety of physical situations in which external noise can be realized and bears interest. In these situations one deals with system which experiences fluctuations which are not <i>self-originating</i>. These fluctuations can be due to a fluctuating environment or can be consequence of an externally applied random force. Whereas additive noise does not interfere with the system coordinate the multiplicative analogue depends on the instantaneous value of the variables of the system. It does not scale with system size and is not necessarily small <a href="#br0630">[63]</a>, <a href="#br0640">[64]</a>. We can regard the external noise as an external field which drives the system <a href="#br0640">[64]</a>. Experimentally, external noise can be generated by using a function generator (Hewlett-Packard 33120A) and its characteristics, viz. Gaussian distribution and zero mean can be maintained <a href="#br0650">[65]</a>. The external noise could be introduced multiplicatively using a circuit that enables to drive the nonlinear element by using the voltage from an external source <a href="#br0660">[66]</a>. <p /> <p>Now, the construction of Hamiltonian matrix ( <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span>) [cf. eqn. <a href="#fm0010">(1)</a>] has been carried out using the direct product basis of the harmonic oscillator eigenstates. The matrix elements corresponding to all the four components of eqn. <a href="#fm0010">(1)</a> have been derived using the basis function mentioned above. It is followed by diagonalization of <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+H</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> to compute the energy levels and the eigenstates of the system. The routine convergence test has been done during diagonalization. </p> <p>For the computation of different NLO properties it is required to consider an ensemble of QDs and how it interacts with a polarized monochromatic electromagnetic field of angular frequency <i>ω</i>. Such an analysis implicitly assumes that the wavelength of propagating electromagnetic wave is higher than the QD size. Driven by this assumption we can envisage the wave with nearly unaltered amplitude along QD and the electric dipole approximation gets justified. Now, exploiting customary density matrix approach and iterative procedure the expressions of EOE <a href="#br0390">[39]</a>, TONOS <a href="#br0430">[43]</a>, <a href="#br0440">[44]</a>, <a href="#br0450">[45]</a> and TODF <a href="#br0520">[52]</a> can be obtained under appropriate conditions <a href="#br0670">[67]</a>. </p> <p>Thus, the expression of EOE coefficient is given by <a href="#br0390">[39]</a> </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(8)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> <div class="mi_UNKNOWN">
+O</div> <div class="mi_UNKNOWN">
+E</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+8</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+e</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+3</div> </div> </div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+σ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+s</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+r</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+4</div> </div> </div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ε</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+3</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ħ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+δ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+.</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+Γ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+4</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+Γ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mo_UNKNOWN">
+.</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+Γ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> </div> </div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> In the above expression <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ε</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> is the vacuum permittivity, <i>e</i> is the absolute value of electron charge, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+σ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+s</div> </div> </div> </div> </span> is the carrier density, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mi_UNKNOWN">
+e</div> <div class="mo_UNKNOWN">
+〈</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> <div class="mover_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+x</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+ˆ</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mover_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+y</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+ˆ</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+〉</div> <div class="mo_UNKNOWN">
+,</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+i</div> <div class="mo_UNKNOWN">
+,</div> <div class="mi_UNKNOWN">
+j</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+,</div> <div class="mn_UNKNOWN">
+2</div> <div class="mo_UNKNOWN">
+)</div> </div> </span> is the matrix elements of the dipole moment, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+δ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+i</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+j</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> </div> </span>, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> </span> are the eigenstates, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+n</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+r</div> </div> </div> </div> </span> is the static component of refractive index and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+/</div> <div class="mi_UNKNOWN">
+ħ</div> </div> </span> is the transition frequency, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+/</div> <div class="mi_UNKNOWN">
+τ</div> </div> </span> is the relaxation rate with <i>τ</i> as the relaxation time. <p /> <p>Using similar approach as stated above, within second-order perturbation theory, TONOS corresponding to optical mixing between two incident light beams with frequencies <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </span> is given by <a href="#br0430">[43]</a>, <a href="#br0440">[44]</a>, <a href="#br0450">[45]</a> </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(9)</span> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mo_UNKNOWN">
+−</div> <div class="mn_UNKNOWN">
+2</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+;</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+−</div> <div class="mn_UNKNOWN">
+2</div> <div class="mi_UNKNOWN">
+i</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+e</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+4</div> </div> </div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+σ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+s</div> </div> </div> <div class="msubsup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+4</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ε</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ħ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+3</div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mi_UNKNOWN">
+i</div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mn_UNKNOWN">
+2</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mo_UNKNOWN">
+.</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mi_UNKNOWN">
+i</div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+]</div> </div> </div> </div> <div class="mo_UNKNOWN">
+×</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+Γ</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+j</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="mi_UNKNOWN">
+Γ</div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mo_UNKNOWN">
+,</div> </div> </div> Pursuing Xie <a href="#br0430">[43]</a>, <a href="#br0440">[44]</a>, <a href="#br0450">[45]</a>, in the present study we consider <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ν</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mi_UNKNOWN">
+ν</div> </div> </span> for simplicity. <p /> <p>Following Vahdani, considering optical transition between two states <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+〉</div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ψ</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+1</div> </div> </div> <div class="mo_UNKNOWN">
+〉</div> </div> </span>, the linear [ <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> </span>] and the third-order nonlinear [ <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> </span>] electric susceptibilities can be written as <a href="#br0520">[52]</a> </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(10)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+σ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+s</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+Γ</div> </div> </div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> and <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(11)</span> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="mo_UNKNOWN">
+−</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+σ</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+s</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
+|</div> <div class="mover_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+˜</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+Γ</div> </div> </div> <div class="mo_UNKNOWN">
+.</div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+[</div> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+4</div> <div class="mo_UNKNOWN">
+|</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+|</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mrow_UNKNOWN"> <div class="mfrac_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+11</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+M</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+00</div> </div> </div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> <div class="mrow_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+)</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+01</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+i</div> <div class="mi_UNKNOWN">
+ħ</div> <div class="mi_UNKNOWN">
+Γ</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> </div> <div class="mo_UNKNOWN">
+]</div> </div> <div class="mo_UNKNOWN">
+.</div> </div> </div> As stated by Vahdani, the linear and third-order nonlinear ODFs are related to <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> </div> </span> as follows <a href="#br0520">[52]</a>: <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(12)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ϵ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
++</div> <div class="mn_UNKNOWN">
+4</div> <div class="mi_UNKNOWN">
+π</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> and <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(13)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ϵ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+4</div> <div class="mi_UNKNOWN">
+π</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+χ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> The TODF is given by <div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(14)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ϵ</div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+=</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ϵ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+1</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
++</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ϵ</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+(</div> <div class="mn_UNKNOWN">
+3</div> <div class="mo_UNKNOWN">
+)</div> </div> </div> <div class="mo_UNKNOWN">
+(</div> <div class="mi_UNKNOWN">
+ν</div> <div class="mo_UNKNOWN">
+)</div> <div class="mo_UNKNOWN">
+.</div> </div> </div> </div> <p /> <p>The ground state binding energy <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+B</div> </div> </div> </div> </span> can be written as </p><div class="disp-formula" title="disp-formula"> <span class="label" tagx="label" title="label">(15)</span> <div class="math_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+B</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+−</div> <div class="mi_UNKNOWN">
+E</div> <div class="mo_UNKNOWN">
+,</div> </div> </div> </div> where <i>E</i> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+E</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> are the energies of the ground state with and without impurity, respectively. <p /> </div> <div class="results&amp;discussion" title="sec"> <span class="label" tagx="label" title="label">3</span> <div class="title" tagx="title" title="title">
+Results &amp;amp; discussion</div> <p>We have used <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+ε</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+12.4</div> </div> </span> and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+⁎</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+0.067</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> ( <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+m</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> </div> </span> is the mass of free electron). The values of a few important quantities are kept fixed at: <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+ħ</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+ω</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+250.0</div> <div class="mtext_UNKNOWN">
+ meV</div> </div> </span>, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+V</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+280.0</div> <div class="mtext_UNKNOWN">
+ meV</div> </div> </span>, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+B</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+20.0</div> </div> </span> T, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+F</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+100</div> </div> </span> kV/cm, <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+r</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+0</div> </div> </div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+0.0</div> </div> </span> nm and <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+ζ</div> <div class="mo_UNKNOWN">
+=</div> <div class="mn_UNKNOWN">
+1.0</div> <div class="mo_UNKNOWN">
+×</div> <div class="msup_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+10</div> </div> <div class="mrow_UNKNOWN"> <div class="mo_UNKNOWN">
+−</div> <div class="mn_UNKNOWN">
+4</div> </div> </div> </div> </span>, where <i>ζ</i> is the noise strength. The BE value has been considered up to 200 meV <a href="#br0680">[68]</a>, <a href="#br0690">[69]</a>. We also use the abbreviations ADN and MLN to represent additive noise and multiplicative noise, respectively. </p> <p> <a href="#fg0010">Fig. 1</a> depicts the change of EOE with energy of incoming photon ( <i>hω</i>) for four different values of BE (25 meV, 75 meV, 125 meV and 200 meV) without noise [ <a href="#fg0010">Fig. 1</a>a] and when ADN [ <a href="#fg0010">Fig. 1</a>b] and MLN [ <a href="#fg0010">Fig. 1</a>c] are applied. Under a noise-free ambience a regularly increasing BE depletes the EOE peak height and causes <i>blue-shift</i> of EOE peak <a href="#br0390">[39]</a>, <a href="#br0400">[40]</a>. Above observation indicates that an enhancement in BE augments the system confinement and quenches the spatial spread of the eigenstates. The amplified confinement eventually amplifies the energy intervals among the eigenstates and causes the <i>blue-shift</i> of EOE peaks. And the reduced spatial stretch of the eigenstates decreases the mutual overlap between them leading to drop in the EOE peak height. Thus, in absence of noise, low BE of the system is preferred for production of large EOE. Presence of noise (both ADN and MLN) results into <i>unshifted</i> EOE peak as BE increases. However, the peak height enhances (decreases) with BE when ADN (MLN) is introduced. It, therefore, becomes evident that high (low) BE of the system is appropriate for emergence of large EOE under applied ADN (MLN). The plot of peak values of EOE as a function of BE under different conditions [ <a href="#fg0010">Fig. 1</a>d] runs in conformity with above findings as it depicts a steady drop in the peak value with BE under noise-free state and when MLN is present. The same plot also evinces growth in the peak value with BE when ADN is present. </p><div class="fig" title="fig"> <div class="figure" title="figure"> <a href="http://doi.org/"> <span class="label" tagx="label" title="label">Figure 1</span> </a> </div>   <p>Plots of EOE against <i>hω</i> for four different values of BE: (a) noise-free state, (b) ADN operates and (c) MLN operates. In these plots (i) <i>BE</i> = 25 meV, (ii) <i>BE</i> = 75 meV, (iii) <i>BE</i> = 125 meV and (iv) <i>BE</i> = 200 meV. (d) Plot of EOE peak values vs BE: (i) noise-free state, (ii) ADN operates and (iii) MLN operates. </p>   </div> <p /> <p> <a href="#fg0020">Figs. 2</a>(a-d) depict the TONOS profiles relevant to BE change under different conditions. Under noise-free condition, the TONOS peaks display <i>blue-shift</i> and fall of peak height with gradual increase of BE of the system [ <a href="#fg0020">Fig. 2</a>a] <a href="#br0700">[70]</a>. It thus becomes evident that there occur amplification in the energy separation and reduction in the extent of mixing between the eigenfunctions as BE steadily increases. The said amplification originates from the increased quantum confinement effect that follows an increase in BE. The increased confinement also diminishes the spatial stretch of wave functions thereby decreasing the dipole transition matrix elements. The fall in the TONOS peak height with BE thus becomes obvious. Hence, without noise, a low BE appears to be conducive for emergence of large TONOS. Introduction of noise leads to diverse behavior in the variation of TONOS peak height with gradual enhancement of BE. The said diversity is linked with the mode of introduction of noise [ <a href="#fg0020">Figs. 2</a>(b-c)]. Introduction of ADN (MLN) leads to rise (fall) in the TONOS peak height with increase in BE. However, both under applied ADN and MLN the TONOS peaks remain nearly <i>unshifted</i> as BE increases. Thus, generation of large TONOS needs high (low) BE of the system when ADN (MLN) is applied. Above findings are corroborated by TONOS peak value vs BE [ <a href="#fg0020">Fig. 2</a>d] plot under various conditions. The plot reveals fall in the TONOS peak value with increase in BE without noise and when MLN is present. On contrary, TONOS peaks depict steady rise with increase in BE when ADN operates. </p><div class="fig" title="fig"> <div class="figure" title="figure"> <a href="http://doi.org/"> <span class="label" tagx="label" title="label">Figure 2</span> </a> </div>   <p>Plots of TONOS against <i>hω</i> for four different values of BE: (a) noise-free state, (b) ADN operates and (c) MLN operates. In these plots (i) <i>BE</i> = 25 meV, (ii) <i>BE</i> = 75 meV, (iii) <i>BE</i> = 125 meV and (iv) <i>BE</i> = 200 meV. (d) Plot of TONOS peak values vs BE: (i) noise-free state, (ii) ADN operates and (iii) MLN operates. </p>   </div> <p /> <p> <a href="#fg0030">Figs. 3</a>(a-d) exhibit the TODF profiles related to BE without noise effect [ <a href="#fg0030">Fig. 3</a>a] and when ADN [ <a href="#fg0030">Fig. 3</a>b] and MLN [ <a href="#fg0030">Fig. 3</a>c] are present. Under all circumstances the TODF peaks display prominent drop in the peak height as BE increases. The observation reflects enhanced confinement accompanying the increase in BE under different situations. The enhanced confinement forces the wave function to localize and depletes its overlapping ability manifested through drop in the TODF peak height. Thus, a small value of BE would be essential to generate large TODF under all conditions. The TODF peak shift, on the other hand, depends on the existence/non-existence of noise. The TODF peaks display <i>blue-shift</i> (no shift) in absence (presence) of noise <a href="#br0520">[52]</a> indicating enlargement of energy interval without noise as BE increases. The plot of peak value of TODF vs BE [ <a href="#fg0030">Fig. 3</a>d] shows persistent decrease with increase in BE under all conditions and complies with the previous findings. </p><div class="fig" title="fig"> <div class="figure" title="figure"> <a href="http://doi.org/"> <span class="label" tagx="label" title="label">Figure 3</span> </a> </div>   <p>Plots of TODF against <i>hω</i> for four different values of BE: (a) noise-free state, (b) ADN operates and (c) MLN operates. In these plots (i) <i>BE</i> = 25 meV, (ii) <i>BE</i> = 75 meV, (iii) <i>BE</i> = 125 meV and (iv) <i>BE</i> = 200 meV. (d) Plot of TODF peak values vs BE: (i) noise-free state, (ii) ADN operates and (iii) MLN operates. </p>   </div> <p /> </div> <div class="conclusion" title="sec"> <span class="label" tagx="label" title="label">4</span> <div class="title" tagx="title" title="title">
+Conclusion</div> <p>Modulation of a few important NLO properties (EOE, TONOS and TODF) of doped QD by the variation of binding energy has been investigated. In this context the role of noise is thoroughly scrutinized. EOE and TONOS display steady fall as BE increases without noise and when MLN operates. However, in presence of ADN, above two NLO properties reveal persistent amplification with increase in BE. On the other hand, TODF decreases with increase in BE under all conditions. Thus, the rise/fall of NLO properties with BE depends on the existence/non-existence of noise, the noise mode and also on the particular NLO properties concerned. The pattern of peak-shift of the NLO properties with BE is conspicuously linked with the presence of noise although we do not find any remarkable role played by the noise mode. All the NLO properties invariably delineate blue-shift (no shift) with increase in BE when noise becomes absent (present). The observations bear importance in the study of NLO properties of LDSS when noise displays some crucial role. </p> </div> <div class="declarations" title="sec"> <div class="title" tagx="title" title="title">
+Declarations</div> <div class="authorcontributionstatement" title="sec"> <div class="title" tagx="title" title="title">
+Author contribution statement</div> <p>Manas Ghosh, Anuja Ghosh, Sk. Md. Arif: Conceived and designed the experiments; Performed the experiments; Analyzed and interpreted the data; Contributed reagents, materials, analysis tools or data; Wrote the paper. </p> </div> <div class="fundingstatement" title="sec"> <div class="title" tagx="title" title="title">
+Funding statement</div> <p>This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. </p> </div> <div class="competingintereststatement" title="sec"> <div class="title" tagx="title" title="title">
+Competing interest statement</div> <p>The authors declare no conflict of interest.</p> </div> <div class="additionalinformation" title="sec"> <div class="title" tagx="title" title="title">
+Additional information</div> <p>No additional information is available for this paper.</p> </div> </div> </div> <div class="back" title="back"> <div class="references">
+References</div> <div tag="ref-list"> <ul> <div class="title" tagx="title" title="title">
+References</div> <li tag="ref"> <a name="br0010" /> <span class="label" tagx="label" title="label">1</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yakar</span> <span class="given-names" tagx="given-names" title="given-names">Y.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Çakir</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Özmen</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">60</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">389</span> <span class="lpage" tagx="lpage" title="lpage">397</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">Y. Yakar, B. Çakir, A. Özmen, Superlattices and Microstructures, 60 (2013) 389-397.</span> </li> <li tag="ref"> <a name="br0020" /> <span class="label" tagx="label" title="label">2</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Karimi</span> <span class="given-names" tagx="given-names" title="given-names">M.J.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Rezaei</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> </span> <span class="source" tagx="source" title="source">Physica B</span> <span class="volume" tagx="volume" title="volume">406</span> <span class="year" tagx="year" title="year">2011</span> <span class="fpage" tagx="fpage" title="fpage">4423</span> <span class="lpage" tagx="lpage" title="lpage">4428</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. J. Karimi, G. Rezaei, Physica B 406 (2011) 4423-4428.</span> </li> <li tag="ref"> <a name="br0030" /> <span class="label" tagx="label" title="label">3</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zeng</span> <span class="given-names" tagx="given-names" title="given-names">Z.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Garoufalis</span> <span class="given-names" tagx="given-names" title="given-names">C.S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Terzis</span> <span class="given-names" tagx="given-names" title="given-names">A.F.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baskoutas</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> </span> <span class="source" tagx="source" title="source">J. Appl. Phys.</span> <span class="volume" tagx="volume" title="volume">114</span> <span class="year" tagx="year" title="year">2013</span>023510 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">Z. Zeng, C. S. Garoufalis, A. F. Terzis, S. Baskoutas, J. Appl. Phys. 114 (2013) 023510.</span> </li> <li tag="ref"> <a name="br0040" /> <span class="label" tagx="label" title="label">4</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Liu</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Guo</span> <span class="given-names" tagx="given-names" title="given-names">K.-X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Hassanabadi</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Lu</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> </span> <span class="source" tagx="source" title="source">Physica B</span> <span class="volume" tagx="volume" title="volume">407</span> <span class="year" tagx="year" title="year">2012</span> <span class="fpage" tagx="fpage" title="fpage">3676</span> <span class="lpage" tagx="lpage" title="lpage">3682</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">G. Liu, K. -X. Guo, H. Hassanabadi, L. Lu, Physica B 407 (2012) 3676-3682.</span> </li> <li tag="ref"> <a name="br0050" /> <span class="label" tagx="label" title="label">5</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kirak</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yilmaz</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şahin</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Gençasian</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">J. Appl. Phys.</span> <span class="volume" tagx="volume" title="volume">109</span> <span class="year" tagx="year" title="year">2011</span>094309 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Kirak, S. Yilmaz, M. Şahin, M. Gençasian, J. Appl. Phys. 109 (2011) 094309.</span> </li> <li tag="ref"> <a name="br0060" /> <span class="label" tagx="label" title="label">6</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Rezaei</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vahdani</span> <span class="given-names" tagx="given-names" title="given-names">M.R.K.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vaseghi</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> </span> <span class="source" tagx="source" title="source">Curr. Appl. Phys.</span> <span class="volume" tagx="volume" title="volume">11</span> <span class="year" tagx="year" title="year">2011</span> <span class="fpage" tagx="fpage" title="fpage">176</span> <span class="lpage" tagx="lpage" title="lpage">181</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">G. Rezaei, M. R. K. Vahdani, B. Vaseghi, Current Appl. Phys. 11 (2011) 176-181.</span> </li> <li tag="ref"> <a name="br0070" /> <span class="label" tagx="label" title="label">7</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Duque</span> <span class="given-names" tagx="given-names" title="given-names">C.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Porras-Montenegro</span> <span class="given-names" tagx="given-names" title="given-names">N.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Barticevic</span> <span class="given-names" tagx="given-names" title="given-names">Z.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pacheco</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Oliveira</span> <span class="given-names" tagx="given-names" title="given-names">L.E.</span> </span> </span> <span class="source" tagx="source" title="source">J. Phys. Condens. Matter</span> <span class="volume" tagx="volume" title="volume">18</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">1877</span> <span class="pub-id"> <a href="http://www.ncbi.nlm.nih.gov/pubmed/21697562">21697562</a> </span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">C. A. Duque, N. Porras-Montenegro, Z. Barticevic, M. Pacheco, L. E. Oliveira, J. Phys.:Condensed Matters 18 (2006) 1877. </span> </li> <li tag="ref"> <a name="br0080" /> <span class="label" tagx="label" title="label">8</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pacheco</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Barticevic</span> <span class="given-names" tagx="given-names" title="given-names">Z.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">64</span> <span class="year" tagx="year" title="year">2001</span>033406 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Pacheco, Z. Barticevic, Phys. Rev. B 64 (2001) 033406.</span> </li> <li tag="ref"> <a name="br0090" /> <span class="label" tagx="label" title="label">9</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Hakimyfard</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Barseghyan</span> <span class="given-names" tagx="given-names" title="given-names">M.G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kirakosyan</span> <span class="given-names" tagx="given-names" title="given-names">A.A.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">41</span> <span class="year" tagx="year" title="year">2009</span> <span class="fpage" tagx="fpage" title="fpage">1596</span> <span class="lpage" tagx="lpage" title="lpage">1599</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. Hakimyfard, M. G. Barseghyan, A. A. Kirakosyan, Physica E 41 (2009) 1596-1599.</span> </li> <li tag="ref"> <a name="br0100" /> <span class="label" tagx="label" title="label">10</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Khordad</span> <span class="given-names" tagx="given-names" title="given-names">R.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bahramiyan</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">66</span> <span class="year" tagx="year" title="year">2015</span> <span class="fpage" tagx="fpage" title="fpage">107</span> <span class="lpage" tagx="lpage" title="lpage">115</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">R. Khordad, H. Bahramiyan, Physica E 66 (2015) 107-115.</span> </li> <li tag="ref"> <a name="br0110" /> <span class="label" tagx="label" title="label">11</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Gharaati</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Khordad</span> <span class="given-names" tagx="given-names" title="given-names">R.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">48</span> <span class="year" tagx="year" title="year">2010</span> <span class="fpage" tagx="fpage" title="fpage">276</span> <span class="lpage" tagx="lpage" title="lpage">287</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. Gharaati, R. Khordad, Superlattices and Microstructures 48 (2010) 276-287.</span> </li> <li tag="ref"> <a name="br0120" /> <span class="label" tagx="label" title="label">12</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Khordad</span> <span class="given-names" tagx="given-names" title="given-names">R.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Gharaati</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Haghparast</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Curr. Appl. Phys.</span> <span class="volume" tagx="volume" title="volume">10</span> <span class="year" tagx="year" title="year">2010</span> <span class="fpage" tagx="fpage" title="fpage">199</span> <span class="lpage" tagx="lpage" title="lpage">202</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">R. Khordad, A. Gharaati, M. Haghparast, Current Appl. Phys. 10 (2010) 199-202.</span> </li> <li tag="ref"> <a name="br0130" /> <span class="label" tagx="label" title="label">13</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Peter</span> <span class="given-names" tagx="given-names" title="given-names">A.J.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">28</span> <span class="year" tagx="year" title="year">2005</span> <span class="fpage" tagx="fpage" title="fpage">225</span> <span class="lpage" tagx="lpage" title="lpage">229</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. J. Peter, Physica E 28 (2005) 225-229.</span> </li> <li tag="ref"> <a name="br0140" /> <span class="label" tagx="label" title="label">14</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Duque</span> <span class="given-names" tagx="given-names" title="given-names">C.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Mora-Ramos</span> <span class="given-names" tagx="given-names" title="given-names">M.E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kasapoglu</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ungan</span> <span class="given-names" tagx="given-names" title="given-names">F.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yesilgul</span> <span class="given-names" tagx="given-names" title="given-names">U.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şakiroğlu</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sari</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sökmen</span> <span class="given-names" tagx="given-names" title="given-names">I.</span> </span> </span> <span class="source" tagx="source" title="source">J. Lumin.</span> <span class="volume" tagx="volume" title="volume">143</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">304</span> <span class="lpage" tagx="lpage" title="lpage">313</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">C. A. Duque, M. E. Mora-Ramos, E. Kasapoglu, F. Ungan, U. Yesilgul, S. Şakiroğlu, H. Sari, I. Sökmen, J. Lumin. 143 (2013) 304-313. </span> </li> <li tag="ref"> <a name="br0150" /> <span class="label" tagx="label" title="label">15</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghazi</span> <span class="given-names" tagx="given-names" title="given-names">H.E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Jorio</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zorkani</span> <span class="given-names" tagx="given-names" title="given-names">I.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">71</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">211</span> <span class="lpage" tagx="lpage" title="lpage">216</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">H. E. Ghazi, A. Jorio, I. Zorkani, Superlattices and Microstructures 71 (2014) 211-216.</span> </li> <li tag="ref"> <a name="br0160" /> <span class="label" tagx="label" title="label">16</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Peter</span> <span class="given-names" tagx="given-names" title="given-names">A.J.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Lett. A</span> <span class="volume" tagx="volume" title="volume">355</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">59</span> <span class="lpage" tagx="lpage" title="lpage">62</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. J. Peter, Phys. Lett. A 355 (2006) 59-62.</span> </li> <li tag="ref"> <a name="br0170" /> <span class="label" tagx="label" title="label">17</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Cristea</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Niculescu</span> <span class="given-names" tagx="given-names" title="given-names">E.C.</span> </span> </span> <span class="source" tagx="source" title="source">Eur. Phys. J. B</span> <span class="volume" tagx="volume" title="volume">85</span> <span class="year" tagx="year" title="year">2012</span> <span class="fpage" tagx="fpage" title="fpage">191</span> <span class="comment">(13 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Cristea, E. C. Niculescu, Eur. Phys. J. B 85 (2012) 191 (13 pages).</span> </li> <li tag="ref"> <a name="br0180" /> <span class="label" tagx="label" title="label">18</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Niculescu</span> <span class="given-names" tagx="given-names" title="given-names">E.C.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bejan</span> <span class="given-names" tagx="given-names" title="given-names">D.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">74</span> <span class="year" tagx="year" title="year">2015</span> <span class="fpage" tagx="fpage" title="fpage">51</span> <span class="lpage" tagx="lpage" title="lpage">58</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">E. C. Niculescu, D. Bejan, Physica E 74 (2015) 51-58.</span> </li> <li tag="ref"> <a name="br0190" /> <span class="label" tagx="label" title="label">19</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Çakir</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yakar</span> <span class="given-names" tagx="given-names" title="given-names">Y.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Özmen</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Özgür Sezer</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şahin</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">47</span> <span class="year" tagx="year" title="year">2010</span> <span class="fpage" tagx="fpage" title="fpage">556</span> <span class="lpage" tagx="lpage" title="lpage">566</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">B. Çakir, Y. Yakar, A. Özmen, M. Özgür Sezer, M. Şahin, Superlattices and Microstructures 47 (2010) 556-566. </span> </li> <li tag="ref"> <a name="br0200" /> <span class="label" tagx="label" title="label">20</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Karabulut</span> <span class="given-names" tagx="given-names" title="given-names">İ.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Atav</span> <span class="given-names" tagx="given-names" title="given-names">Ü.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şafak</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Tomak</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Eur. Phys. J. B</span> <span class="volume" tagx="volume" title="volume">55</span> <span class="year" tagx="year" title="year">2007</span> <span class="fpage" tagx="fpage" title="fpage">283</span> <span class="lpage" tagx="lpage" title="lpage">288</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">İ. Karabulut, Ü. Atav, H. Şafak, M. Tomak, Eur. Phys. J. B 55 (2007) 283-288.</span> </li> <li tag="ref"> <a name="br0210" /> <span class="label" tagx="label" title="label">21</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Karabulut</span> <span class="given-names" tagx="given-names" title="given-names">İ.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şafak</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Tomak</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Solid State Commun.</span> <span class="volume" tagx="volume" title="volume">135</span> <span class="year" tagx="year" title="year">2005</span> <span class="fpage" tagx="fpage" title="fpage">735</span> <span class="lpage" tagx="lpage" title="lpage">738</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">İ. Karabulut, H. Şafak, M. Tomak, Solid State Commun. 135 (2005) 735-738.</span> </li> <li tag="ref"> <a name="br0220" /> <span class="label" tagx="label" title="label">22</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Özmen</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yakar</span> <span class="given-names" tagx="given-names" title="given-names">Y.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Çakir</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Atav</span> <span class="given-names" tagx="given-names" title="given-names">Ü.</span> </span> </span> <span class="source" tagx="source" title="source">Opt. Commun.</span> <span class="volume" tagx="volume" title="volume">282</span> <span class="year" tagx="year" title="year">2009</span> <span class="fpage" tagx="fpage" title="fpage">3999</span> <span class="lpage" tagx="lpage" title="lpage">4004</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. Özmen, Y. Yakar, B. Çakir, Ü. Atav, Optics Commun. 282 (2009) 3999-4004.</span> </li> <li tag="ref"> <a name="br0230" /> <span class="label" tagx="label" title="label">23</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baskoutas</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Paspalakis</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Terzis</span> <span class="given-names" tagx="given-names" title="given-names">A.F.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">74</span> <span class="year" tagx="year" title="year">2006</span>153306 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Baskoutas, E. Paspalakis, A. F. Terzis, Phys. Rev. B 74 (2006) 153306.</span> </li> <li tag="ref"> <a name="br0240" /> <span class="label" tagx="label" title="label">24</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baskoutas</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Paspalakis</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Terzis</span> <span class="given-names" tagx="given-names" title="given-names">A.F.</span> </span> </span> <span class="source" tagx="source" title="source">J. Phys. Condens. Matter</span> <span class="volume" tagx="volume" title="volume">19</span> <span class="year" tagx="year" title="year">2007</span>395024 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Baskoutas, E. Paspalakis, A. F. Terzis, J. Phys:Cond. Mat. 19 (2007) 395024.</span> </li> <li tag="ref"> <a name="br0250" /> <span class="label" tagx="label" title="label">25</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Hassanabadi</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Liu</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Lu</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> </span> <span class="source" tagx="source" title="source">Solid State Commun.</span> <span class="volume" tagx="volume" title="volume">152</span> <span class="year" tagx="year" title="year">2012</span> <span class="fpage" tagx="fpage" title="fpage">1761</span> <span class="lpage" tagx="lpage" title="lpage">1766</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">H. Hassanabadi, G. Liu, L. Lu, Solid State Commun. 152 (2012) 1761-1766.</span> </li> <li tag="ref"> <a name="br0260" /> <span class="label" tagx="label" title="label">26</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Rezaei</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vaseghi</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Taghizadeh</span> <span class="given-names" tagx="given-names" title="given-names">F.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vahdani</span> <span class="given-names" tagx="given-names" title="given-names">M.R.K.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Karimi</span> <span class="given-names" tagx="given-names" title="given-names">M.J.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">48</span> <span class="year" tagx="year" title="year">2010</span> <span class="fpage" tagx="fpage" title="fpage">450</span> <span class="lpage" tagx="lpage" title="lpage">457</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">G. Rezaei, B. Vaseghi, F. Taghizadeh, M. R. K. Vahdani, M. J. Karimi, Superlattices and Microstructures 48 (2010) 450-457. </span> </li> <li tag="ref"> <a name="br0270" /> <span class="label" tagx="label" title="label">27</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şakiroğlu</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ungan</span> <span class="given-names" tagx="given-names" title="given-names">F.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yesilgul</span> <span class="given-names" tagx="given-names" title="given-names">U.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Mora-Ramos</span> <span class="given-names" tagx="given-names" title="given-names">M.E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Duque</span> <span class="given-names" tagx="given-names" title="given-names">C.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kasapoglu</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sari</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sökmen</span> <span class="given-names" tagx="given-names" title="given-names">I.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Lett. A</span> <span class="volume" tagx="volume" title="volume">376</span> <span class="year" tagx="year" title="year">2012</span> <span class="fpage" tagx="fpage" title="fpage">1875</span> <span class="lpage" tagx="lpage" title="lpage">1880</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Şakiroğlu, F. Ungan, U. Yesilgul, M. E. Mora-Ramos, C. A. Duque, E. Kasapoglu, H. Sari, I. Sökmen, Phys. Lett. A 376 (2012) 1875-1880. </span> </li> <li tag="ref"> <a name="br0280" /> <span class="label" tagx="label" title="label">28</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baghramyan</span> <span class="given-names" tagx="given-names" title="given-names">H.M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Barseghyan</span> <span class="given-names" tagx="given-names" title="given-names">M.G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kirakosyan</span> <span class="given-names" tagx="given-names" title="given-names">A.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Restrepo</span> <span class="given-names" tagx="given-names" title="given-names">R.L.</span> </span> </span> <span class="source" tagx="source" title="source">J. Lumin.</span> <span class="volume" tagx="volume" title="volume">134</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">594</span> <span class="lpage" tagx="lpage" title="lpage">599</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">H. M. Baghramyan, M. G. Barseghyan, A. A. Kirakosyan, R. L. Restrepo, J. Lumin. 134 (2013) 594-599. </span> </li> <li tag="ref"> <a name="br0290" /> <span class="label" tagx="label" title="label">29</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghazi</span> <span class="given-names" tagx="given-names" title="given-names">H.E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Jorio</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zorkani</span> <span class="given-names" tagx="given-names" title="given-names">I.</span> </span> </span> <span class="source" tagx="source" title="source">Opt. Commun.</span> <span class="volume" tagx="volume" title="volume">331</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">73</span> <span class="lpage" tagx="lpage" title="lpage">76</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">H. E. Ghazi, A. Jorio, I. Zorkani, Optics Commun. 331 (2014) 73-76.</span> </li> <li tag="ref"> <a name="br0300" /> <span class="label" tagx="label" title="label">30</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Mahrsia</span> <span class="given-names" tagx="given-names" title="given-names">R.B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Choubani</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bouzaïene</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Maaref</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="source" tagx="source" title="source">J. Alloys Compd.</span> <span class="volume" tagx="volume" title="volume">671</span> <span class="year" tagx="year" title="year">2016</span> <span class="fpage" tagx="fpage" title="fpage">200</span> <span class="lpage" tagx="lpage" title="lpage">207</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">R. B. Mahrsia, M. Choubani, L. Bouzaïene, H. Maaref, J. Alloys and Compounds 671 (2016) 200-207. </span> </li> <li tag="ref"> <a name="br0310" /> <span class="label" tagx="label" title="label">31</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bouzaïene</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Mahrsia</span> <span class="given-names" tagx="given-names" title="given-names">R.B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baira</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sfaxi</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Maaref</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="source" tagx="source" title="source">J. Lumin.</span> <span class="volume" tagx="volume" title="volume">135</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">271</span> <span class="lpage" tagx="lpage" title="lpage">275</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">L. Bouzaïene, R. B. Mahrsia, M. Baira, L. Sfaxi, H. Maaref, J. Lumin. 135 (2013) 271-275.</span> </li> <li tag="ref"> <a name="br0320" /> <span class="label" tagx="label" title="label">32</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yilmaz</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Şahin</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Status Solidi B</span> <span class="volume" tagx="volume" title="volume">247</span> <span class="year" tagx="year" title="year">2010</span> <span class="fpage" tagx="fpage" title="fpage">371</span> <span class="lpage" tagx="lpage" title="lpage">374</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Yilmaz, M. Şahin, Phys. Status Solidi B 247 (2010) 371-374.</span> </li> <li tag="ref"> <a name="br0330" /> <span class="label" tagx="label" title="label">33</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Akankan</span> <span class="given-names" tagx="given-names" title="given-names">O.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">55</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">45</span> <span class="lpage" tagx="lpage" title="lpage">52</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">O. Akankan, Superlattices and Microstructures 55 (2013) 45-52.</span> </li> <li tag="ref"> <a name="br0340" /> <span class="label" tagx="label" title="label">34</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Erdogan</span> <span class="given-names" tagx="given-names" title="given-names">I.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Akankan</span> <span class="given-names" tagx="given-names" title="given-names">O.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Akbas</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">35</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">27</span> <span class="lpage" tagx="lpage" title="lpage">32</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">I. Erdogan, O. Akankan, H. Akbas, Physica E 35 (2006) 27-32.</span> </li> <li tag="ref"> <a name="br0350" /> <span class="label" tagx="label" title="label">35</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baskoutas</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Paspalakis</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Terzis</span> <span class="given-names" tagx="given-names" title="given-names">A.F.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Status Solidi C</span> <span class="volume" tagx="volume" title="volume">4</span> <span class="year" tagx="year" title="year">2007</span> <span class="fpage" tagx="fpage" title="fpage">292</span> <span class="lpage" tagx="lpage" title="lpage">294</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Baskoutas, E. Paspalakis, A. F. Terzis, Physica Status Solidi C 4 (2007) 292-294.</span> </li> <li tag="ref"> <a name="br0360" /> <span class="label" tagx="label" title="label">36</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Karabulut</span> <span class="given-names" tagx="given-names" title="given-names">İ.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Paspalakis</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">81</span> <span class="year" tagx="year" title="year">2016</span> <span class="fpage" tagx="fpage" title="fpage">294</span> <span class="lpage" tagx="lpage" title="lpage">301</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">İ. Karabulut, E. Paspalakis, Physica E 81 (2016) 294-301.</span> </li> <li tag="ref"> <a name="br0370" /> <span class="label" tagx="label" title="label">37</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Arif</span> <span class="given-names" tagx="given-names" title="given-names">S.M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bera</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghosh</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Tuning diamagnetic susceptibility of impurity doped quantum dots by noise-binding energy interplay </span> <span class="source" tagx="source" title="source">Heliyon</span> <span class="volume" tagx="volume" title="volume">5</span> <span class="year" tagx="year" title="year">2019</span>e01147 </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. M. Arif, A. Bera, M. Ghosh, Tuning diamagnetic susceptibility of impurity doped quantum dots by noise-binding energy interplay, Heliyon 5 (2019) e01147. </span> </li> <li tag="ref"> <a name="br0380" /> <span class="label" tagx="label" title="label">38</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Guo</span> <span class="given-names" tagx="given-names" title="given-names">K.-X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Das</span> <span class="given-names" tagx="given-names" title="given-names">T.P.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Chen</span> <span class="given-names" tagx="given-names" title="given-names">C.-Y.</span> </span> </span> <span class="source" tagx="source" title="source">Physica B</span> <span class="volume" tagx="volume" title="volume">293</span> <span class="year" tagx="year" title="year">2000</span> <span class="fpage" tagx="fpage" title="fpage">11</span> <span class="lpage" tagx="lpage" title="lpage">15</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">K. -X. Guo, T. P. Das, C. -Y. Chen, Physica B 293 (2000) 11-15.</span> </li> <li tag="ref"> <a name="br0390" /> <span class="label" tagx="label" title="label">39</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zhang</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xie</span> <span class="given-names" tagx="given-names" title="given-names">H.-J.</span> </span> </span> <span class="source" tagx="source" title="source">Mod. Phys. Lett. B</span> <span class="volume" tagx="volume" title="volume">17</span> <span class="year" tagx="year" title="year">2003</span> <span class="fpage" tagx="fpage" title="fpage">347</span> <span class="lpage" tagx="lpage" title="lpage">354</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">L. Zhang, H. -J. Xie, Mod. Phys. Lett. B 17 (2003) 347-354.</span> </li> <li tag="ref"> <a name="br0400" /> <span class="label" tagx="label" title="label">40</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yu</span> <span class="given-names" tagx="given-names" title="given-names">Y.-B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Guo</span> <span class="given-names" tagx="given-names" title="given-names">K.-X.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">18</span> <span class="year" tagx="year" title="year">2003</span> <span class="fpage" tagx="fpage" title="fpage">492</span> <span class="lpage" tagx="lpage" title="lpage">497</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">Y. -B. Yu, K. -X. Guo, Physica E 18 (2003) 492-497</span> </li> <li tag="ref"> <a name="br0410" /> <span class="label" tagx="label" title="label">41</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Liu</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Li</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xiong</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">25</span> <span class="year" tagx="year" title="year">2005</span> <span class="fpage" tagx="fpage" title="fpage">466</span> <span class="lpage" tagx="lpage" title="lpage">471</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">L. Liu, J. Li, G. Xiong, Physica E 25 (2005) 466-471.</span> </li> <li tag="ref"> <a name="br0420" /> <span class="label" tagx="label" title="label">42</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bahari</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Moghadam</span> <span class="given-names" tagx="given-names" title="given-names">F.R.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">44</span> <span class="year" tagx="year" title="year">2012</span> <span class="fpage" tagx="fpage" title="fpage">782</span> <span class="lpage" tagx="lpage" title="lpage">785</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. Bahari, F. R. Moghadam, Physica E 44 (2012) 782-785.</span> </li> <li tag="ref"> <a name="br0430" /> <span class="label" tagx="label" title="label">43</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xie</span> <span class="given-names" tagx="given-names" title="given-names">W.</span> </span> </span> <span class="source" tagx="source" title="source">Physica B</span> <span class="volume" tagx="volume" title="volume">449</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">57</span> <span class="lpage" tagx="lpage" title="lpage">60</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">W. Xie, Physica B 449 (2014) 57-60.</span> </li> <li tag="ref"> <a name="br0440" /> <span class="label" tagx="label" title="label">44</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xie</span> <span class="given-names" tagx="given-names" title="given-names">W.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">56</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">8</span> <span class="lpage" tagx="lpage" title="lpage">15</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">W. Xie, Superlattices and Microstructures 56 (2013) 8-15.</span> </li> <li tag="ref"> <a name="br0450" /> <span class="label" tagx="label" title="label">45</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xie</span> <span class="given-names" tagx="given-names" title="given-names">W.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">53</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">49</span> <span class="lpage" tagx="lpage" title="lpage">54</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">W. Xie, Superlattices and Microstructures 53 (2013) 49-54.</span> </li> <li tag="ref"> <a name="br0460" /> <span class="label" tagx="label" title="label">46</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zhang</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xiong</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Feng</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> </span> <span class="source" tagx="source" title="source">Physica E</span> <span class="volume" tagx="volume" title="volume">33</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">120</span> <span class="lpage" tagx="lpage" title="lpage">124</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">X. Zhang, G. Xiong, X. Feng, Physica E 33 (2006) 120-124.</span> </li> <li tag="ref"> <a name="br0470" /> <span class="label" tagx="label" title="label">47</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Feng</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xiong</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zhang</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Gao</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="source" tagx="source" title="source">Physica B</span> <span class="volume" tagx="volume" title="volume">383</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">207</span> <span class="lpage" tagx="lpage" title="lpage">212</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">X. Feng, G. Xiong, X. Zhang, H. Gao, Physica B 383 (2006) 207-212.</span> </li> <li tag="ref"> <a name="br0480" /> <span class="label" tagx="label" title="label">48</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Cristea</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Radu</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Niculescu</span> <span class="given-names" tagx="given-names" title="given-names">E.C.</span> </span> </span> <span class="source" tagx="source" title="source">J. Lumin.</span> <span class="volume" tagx="volume" title="volume">143</span> <span class="year" tagx="year" title="year">2013</span> <span class="fpage" tagx="fpage" title="fpage">592</span> <span class="lpage" tagx="lpage" title="lpage">599</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Cristea, A. Radu, E. C. Niculescu, J. Lumin. 143 (2013) 592-599.</span> </li> <li tag="ref"> <a name="br0490" /> <span class="label" tagx="label" title="label">49</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Zeng</span> <span class="given-names" tagx="given-names" title="given-names">Z.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Garoufalis</span> <span class="given-names" tagx="given-names" title="given-names">C.S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Baskoutas</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> </span> <span class="source" tagx="source" title="source">Phys. Lett. A</span> <span class="volume" tagx="volume" title="volume">378</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">2713</span> <span class="lpage" tagx="lpage" title="lpage">2718</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">Z. Zeng, C. S. Garoufalis, S. Baskoutas, Phys. Lett. A 378 (2014) 2713-2718.</span> </li> <li tag="ref"> <a name="br0500" /> <span class="label" tagx="label" title="label">50</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kouhi</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Optik</span> <span class="volume" tagx="volume" title="volume">127</span> <span class="year" tagx="year" title="year">2016</span> <span class="fpage" tagx="fpage" title="fpage">3379</span> <span class="lpage" tagx="lpage" title="lpage">3382</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Kouhi, Optik 127 (2016) 3379-3382.</span> </li> <li tag="ref"> <a name="br0510" /> <span class="label" tagx="label" title="label">51</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kouhi</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vahedi</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Akbarzadeh</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Hanifehpour</span> <span class="given-names" tagx="given-names" title="given-names">Y.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Joo</span> <span class="given-names" tagx="given-names" title="given-names">S.W.</span> </span> </span> <span class="source" tagx="source" title="source">Nanoscale Res. Lett.</span> <span class="volume" tagx="volume" title="volume">9</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">131</span> <span class="pub-id"> <a href="http://www.ncbi.nlm.nih.gov/pubmed/24646318">24646318</a> </span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Kouhi, A. Vahedi, A. Akbarzadeh, Y. Hanifehpour, S. W. Joo, Nanoscale Res. Lett. 9 (2014) 131. </span> </li> <li tag="ref"> <a name="br0520" /> <span class="label" tagx="label" title="label">52</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Vahdani</span> <span class="given-names" tagx="given-names" title="given-names">M.R.K.</span> </span> </span> <span class="source" tagx="source" title="source">Superlattices Microstruct.</span> <span class="volume" tagx="volume" title="volume">76</span> <span class="year" tagx="year" title="year">2014</span> <span class="fpage" tagx="fpage" title="fpage">326</span> <span class="lpage" tagx="lpage" title="lpage">338</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. R. K. Vahdani, Superlattices and Microstructures 76 (2014) 326-338.</span> </li> <li tag="ref"> <a name="br0530" /> <span class="label" tagx="label" title="label">53</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Szafran</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Adamowski</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bednarek</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Effect of the repulsive core on the exciton spectrum in a quantum ring</span> <span class="source" tagx="source" title="source">J. Phys. Condens. Matter</span> <span class="volume" tagx="volume" title="volume">14</span> <span class="year" tagx="year" title="year">2002</span> <span class="fpage" tagx="fpage" title="fpage">73</span> <span class="comment">(14 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">B. Szafran, J. Adamowski, S. Bednarek, Effect of the repulsive core on the exciton spectrum in a quantum ring, J. Phys.: Cond. Matt. 14 (2002) 73 (14 pages). </span> </li> <li tag="ref"> <a name="br0540" /> <span class="label" tagx="label" title="label">54</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Halonen</span> <span class="given-names" tagx="given-names" title="given-names">V.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Hyvönen</span> <span class="given-names" tagx="given-names" title="given-names">P.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pietiläinen</span> <span class="given-names" tagx="given-names" title="given-names">P.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Chakraborty</span> <span class="given-names" tagx="given-names" title="given-names">T.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Effects of scattering centers on the energy spectrum of a quantum dot</span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">53</span> <span class="year" tagx="year" title="year">1996</span> <span class="fpage" tagx="fpage" title="fpage">6971</span> <span class="lpage" tagx="lpage" title="lpage">6974</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">V. Halonen, P. Hyvönen, P. Pietiläinen, T. Chakraborty, Effects of scattering centers on the energy spectrum of a quantum dot, Phys. Rev. B 53 (1996) 6971-6974. </span> </li> <li tag="ref"> <a name="br0550" /> <span class="label" tagx="label" title="label">55</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Halonen</span> <span class="given-names" tagx="given-names" title="given-names">V.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pietiläinen</span> <span class="given-names" tagx="given-names" title="given-names">P.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Chakraborty</span> <span class="given-names" tagx="given-names" title="given-names">T.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Optical-absorption spectra of quantum dots and rings with a repulsive scattering centre</span> <span class="source" tagx="source" title="source">Europhys. Lett.</span> <span class="volume" tagx="volume" title="volume">33</span> <span class="year" tagx="year" title="year">1996</span> <span class="fpage" tagx="fpage" title="fpage">337</span> <span class="lpage" tagx="lpage" title="lpage">382</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">V. Halonen, P. Pietiläinen, T. Chakraborty, Optical-absorption spectra of quantum dots and rings with a repulsive scattering centre, Europhys. Lett. 33 (1996) 337-382. </span> </li> <li tag="ref"> <a name="br0560" /> <span class="label" tagx="label" title="label">56</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Adamowski</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kwaśniowski</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Szafran</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title"> <i>LO</i>-phonon-induced screening of electron-electron interaction in <i>D</i>-centres and quantum dots </span> <span class="source" tagx="source" title="source">J. Phys. Condens. Matter</span> <span class="volume" tagx="volume" title="volume">17</span> <span class="year" tagx="year" title="year">2005</span> <span class="fpage" tagx="fpage" title="fpage">4489</span> <span class="comment">(4 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">J. Adamowski, A. Kwaśniowski, B. Szafran, LO-phonon-induced screening of electron-electron interaction in D− centres and quantum dots, J. Phys:Cond. Mat. 17 (2005) 4489 (4 pages). </span> </li> <li tag="ref"> <a name="br0570" /> <span class="label" tagx="label" title="label">57</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bednarek</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Szafran</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Lis</span> <span class="given-names" tagx="given-names" title="given-names">K.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Adamowski</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Modeling of electronic properties of electrostatic quantum dots</span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">68</span> <span class="year" tagx="year" title="year">2003</span>155333 <span class="comment">(9 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Bednarek, B. Szafran, K. Lis, J. Adamowski, Modeling of electronic properties of electrostatic quantum dots, Phys. Rev. B 68 (2003) 155333 (9 pages). </span> </li> <li tag="ref"> <a name="br0580" /> <span class="label" tagx="label" title="label">58</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Szafran</span> <span class="given-names" tagx="given-names" title="given-names">B.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bednarek</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Adamowski</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Parity symmetry and energy spectrum of excitons in coupled self-assembled quantum dots </span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">64</span> <span class="year" tagx="year" title="year">2001</span>125301 <span class="comment">(10 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">B. Szafran, S. Bednarek, J. Adamowski, Parity symmetry and energy spectrum of excitons in coupled self-assembled quantum dots, Phys. Rev. B 64 (2001) 125301 (10 pages). </span> </li> <li tag="ref"> <a name="br0590" /> <span class="label" tagx="label" title="label">59</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Siverns</span> <span class="given-names" tagx="given-names" title="given-names">P.D.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Malik</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">McPherson</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Childs</span> <span class="given-names" tagx="given-names" title="given-names">D.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Roberts</span> <span class="given-names" tagx="given-names" title="given-names">C.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Murray</span> <span class="given-names" tagx="given-names" title="given-names">R.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Joyce</span> <span class="given-names" tagx="given-names" title="given-names">B.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Davock</span> <span class="given-names" tagx="given-names" title="given-names">H.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Scanning transmission-electron microscopy study of <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+I</div> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+A</div> <div class="mi_UNKNOWN">
+s</div> <div class="mo_UNKNOWN">
+/</div> <div class="mi_UNKNOWN">
+G</div> <div class="mi_UNKNOWN">
+a</div> <div class="mi_UNKNOWN">
+A</div> <div class="mi_UNKNOWN">
+s</div> </div> </span> quantum dots </span> <span class="source" tagx="source" title="source">Phys. Rev. B</span> <span class="volume" tagx="volume" title="volume">58</span> <span class="year" tagx="year" title="year">1998</span>R10127 <span class="comment">(4 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">P. D. Siverns, S. Malik, G. McPherson, D. Childs, C. Roberts, R. Murray, B. A. Joyce, H. Davock, Scanning transmission-electron microscopy study of InAs/GaAs quantum dots Phys. Rev. B 58 (1998) R10127 (4 pages). </span> </li> <li tag="ref"> <a name="br0600" /> <span class="label" tagx="label" title="label">60</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Alivisatos</span> <span class="given-names" tagx="given-names" title="given-names">A.P.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Perspectives on the physical chemistry of semiconductor nanocrystals</span> <span class="source" tagx="source" title="source">J. Phys. Chem.</span> <span class="volume" tagx="volume" title="volume">100</span> <span class="year" tagx="year" title="year">1996</span>13226 <span class="comment">(14 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. P. Alivisatos, Perspectives on the physical chemistry of semiconductor nanocrystals, J. Phys. Chem. 100 (1996) 13226 (14 pages). </span> </li> <li tag="ref"> <a name="br0610" /> <span class="label" tagx="label" title="label">61</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Guzelian</span> <span class="given-names" tagx="given-names" title="given-names">A.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Banin</span> <span class="given-names" tagx="given-names" title="given-names">U.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Kadavinich</span> <span class="given-names" tagx="given-names" title="given-names">A.V.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Peng</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Alivisatos</span> <span class="given-names" tagx="given-names" title="given-names">A.P.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Colloidal chemical synthesis and characterization of <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+I</div> <div class="mi_UNKNOWN">
+n</div> <div class="mi_UNKNOWN">
+A</div> <div class="mi_UNKNOWN">
+s</div> </div> </span> nanocrystal quantum dots </span> <span class="source" tagx="source" title="source">Appl. Phys. Lett.</span> <span class="volume" tagx="volume" title="volume">69</span> <span class="year" tagx="year" title="year">1996</span> <span class="fpage" tagx="fpage" title="fpage">1432</span> <span class="comment">(4 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. A. Guzelian, U. Banin, A. V. Kadavinich, X. Peng, A. P. Alivisatos, Colloidal chemical synthesis and characterization of InAs nanocrystal quantum dots, Appl. Phys. Lett. 69 (1996) 1432 (4 pages). </span> </li> <li tag="ref"> <a name="br0620" /> <span class="label" tagx="label" title="label">62</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Yue</span> <span class="given-names" tagx="given-names" title="given-names">L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">He</span> <span class="given-names" tagx="given-names" title="given-names">Y.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Visible photoluminescence of <i>Ge</i> nanocrystallites embedded in <span class="inline-formula" title="inline-formula"> <div class="math_UNKNOWN"> <div class="mi_UNKNOWN">
+S</div> <div class="mi_UNKNOWN">
+i</div> <div class="msub_UNKNOWN"> <div class="mrow_UNKNOWN"> <div class="mi_UNKNOWN">
+O</div> </div> <div class="mrow_UNKNOWN"> <div class="mn_UNKNOWN">
+2</div> </div> </div> </div> </span> thin films </span> <span class="source" tagx="source" title="source">J. Vac. Sci. Technol. B</span> <span class="volume" tagx="volume" title="volume">15</span> <span class="year" tagx="year" title="year">1997</span> <span class="fpage" tagx="fpage" title="fpage">1607</span> <span class="comment">(4 pages)</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">L. Yue, Y. He, Visible photoluminescence of Ge nanocrystallites embedded in SiO2 thin films, J. Vac. Sci. Technol. B. 15 (1997) 1607 (4 pages). </span> </li> <li tag="ref"> <a name="br0630" /> <span class="label" tagx="label" title="label">63</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">García-Ojalvo</span> <span class="given-names" tagx="given-names" title="given-names">J.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sancho</span> <span class="given-names" tagx="given-names" title="given-names">J.M.</span> </span> </span> <span class="chapter-title" tagx="chapter-title" title="chapter-title">Noise in Spatially Extended Systems</span> <span class="year" tagx="year" title="year">1999</span> <span class="publisher-name" tagx="publisher-name" title="publisher-name">Springer</span> <span class="publisher-loc" tagx="publisher-loc" title="publisher-loc">New York, USA</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">J. García-Ojalvo, J. M. Sancho, Noise in Spatially Extended Systems, Springer, New York, USA, 1999. </span> </li> <li tag="ref"> <a name="br0640" /> <span class="label" tagx="label" title="label">64</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sancho</span> <span class="given-names" tagx="given-names" title="given-names">J.M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Miguel</span> <span class="given-names" tagx="given-names" title="given-names">M.S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Katz</span> <span class="given-names" tagx="given-names" title="given-names">S.L.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Gunton</span> <span class="given-names" tagx="given-names" title="given-names">J.D.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Analytical and numerical studies of multiplicative noise</span> <span class="source" tagx="source" title="source">Phys. Rev. A</span> <span class="volume" tagx="volume" title="volume">26</span> <span class="year" tagx="year" title="year">1982</span> <span class="fpage" tagx="fpage" title="fpage">1589</span> <span class="lpage" tagx="lpage" title="lpage">1609</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">J. M. Sancho, M. S. Miguel, S. L. Katz, J. D. Gunton, Analytical and numerical studies of multiplicative noise, Phys. Rev. A 26 (1982) 1589-1609. </span> </li> <li tag="ref"> <a name="br0650" /> <span class="label" tagx="label" title="label">65</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Sánchez</span> <span class="given-names" tagx="given-names" title="given-names">E.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Matías</span> <span class="given-names" tagx="given-names" title="given-names">M.A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pérez-Muñuzuri</span> <span class="given-names" tagx="given-names" title="given-names">V.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Analysis of synchronization of chaotic systems by noise: an experimental study</span> <span class="source" tagx="source" title="source">Phys. Rev. E</span> <span class="volume" tagx="volume" title="volume">56</span> <span class="year" tagx="year" title="year">1997</span> <span class="fpage" tagx="fpage" title="fpage">4068</span> <span class="lpage" tagx="lpage" title="lpage">4071</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">E. Sánchez, M. A. Matías, V. Pérez-Muñuzuri, Analysis of synchronization of chaotic systems by noise: An experimental study, Phys. Rev. E 56 (1997) 4068-4071. </span> </li> <li tag="ref"> <a name="br0660" /> <span class="label" tagx="label" title="label">66</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Pérez-Muñuzuri</span> <span class="given-names" tagx="given-names" title="given-names">V.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Lorenzo</span> <span class="given-names" tagx="given-names" title="given-names">M.N.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Experimental improvement of chaotic synchronization due to multiplicative time-correlated Gaussian noise </span> <span class="source" tagx="source" title="source">Int. J. Bifurc. Chaos</span> <span class="volume" tagx="volume" title="volume">09</span> <span class="year" tagx="year" title="year">1999</span> <span class="fpage" tagx="fpage" title="fpage">2321</span> <span class="lpage" tagx="lpage" title="lpage">2327</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">V. Pérez-Muñuzuri, M. N. Lorenzo, Experimental improvement of chaotic synchronization due to multiplicative time-correlated Gaussian noise, Int. J. Bifurcation Chaos 09 (1999) 2321-2327. </span> </li> <li tag="ref"> <a name="br0670" /> <span class="label" tagx="label" title="label">67</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Bera</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghosh</span> <span class="given-names" tagx="given-names" title="given-names">A.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Ghosh</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> </span> <span class="source" tagx="source" title="source">Opt. Mater.</span> <span class="volume" tagx="volume" title="volume">69</span> <span class="year" tagx="year" title="year">2017</span> <span class="fpage" tagx="fpage" title="fpage">352</span> <span class="lpage" tagx="lpage" title="lpage">357</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">A. Bera, A. Ghosh, M. Ghosh, Optical Mater. 69 (2017) 352-357.</span> </li> <li tag="ref"> <a name="br0680" /> <span class="label" tagx="label" title="label">68</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Latha</span> <span class="given-names" tagx="given-names" title="given-names">M.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Rajashabala</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Navaneethakrishnan</span> <span class="given-names" tagx="given-names" title="given-names">K.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Effect of dielectric screening on the binding energies and diamagnetic susceptibility of a donor in a quantum well wire </span> <span class="source" tagx="source" title="source">Phys. Status Solidi B</span> <span class="volume" tagx="volume" title="volume">243</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">1219</span> <span class="lpage" tagx="lpage" title="lpage">1228</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">M. Latha, S. Rajashabala, K. Navaneethakrishnan, Effect of dielectric screening on the binding energies and diamagnetic susceptibility of a donor in a quantum well wire, Phys. Stat. Solidi B 243 (2006) 1219-1228. </span> </li> <li tag="ref"> <a name="br0690" /> <span class="label" tagx="label" title="label">69</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Rajashabala</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Navaneethakrishnan</span> <span class="given-names" tagx="given-names" title="given-names">K.</span> </span> </span> <span class="mixed-article-title" title="mixed-article-title">Effective masses for donor binding energies in quantum well systems</span> <span class="source" tagx="source" title="source">Mod. Phys. Lett. B</span> <span class="volume" tagx="volume" title="volume">20</span> <span class="year" tagx="year" title="year">2006</span> <span class="fpage" tagx="fpage" title="fpage">1529</span> <span class="lpage" tagx="lpage" title="lpage">1541</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Rajashabala, K. Navaneethakrishnan, Effective masses for donor binding energies in quantum well systems, Modern Phys. Lett. B 20 (2006) 1529-1541. </span> </li> <li tag="ref"> <a name="br0700" /> <span class="label" tagx="label" title="label">70</span> <span class="element-citation'"> <span class="person-group'"> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xie</span> <span class="given-names" tagx="given-names" title="given-names">S.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Xiong</span> <span class="given-names" tagx="given-names" title="given-names">G.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Feng</span> <span class="given-names" tagx="given-names" title="given-names">X.</span> </span> <span class="name" tagx="name" title="name"> <span class="surname" tagx="surname" title="surname">Chen</span> <span class="given-names" tagx="given-names" title="given-names">Z.</span> </span> </span> <span class="source" tagx="source" title="source">Microelectron. J.</span> <span class="volume" tagx="volume" title="volume">38</span> <span class="year" tagx="year" title="year">2007</span> <span class="fpage" tagx="fpage" title="fpage">787</span> <span class="lpage" tagx="lpage" title="lpage">790</span> </span> <span class="mixed-citation" tagx="mixed-citation" title="mixed-citation">S. Xie, G. Xiong, X. Feng, Z. Chen, Microelectronics J. 38 (2007) 787-790.</span> </li> </ul> </div> <div class="ack" title="ack"> <div class="title" tagx="title" title="title">
+Acknowledgements</div> <p>The authors A.G., S.M.A. and M.G. thank </p><div class="funding-source" title="funding-source">
+DST-FIST</div> (Govt. of India) and <div class="funding-source" title="funding-source">
+UGC-SAP</div> (Govt. of India) for support. Special thanks to Mrs. Aindrila Bera for her sincere help. <p /> </div> </div>  </body></html>

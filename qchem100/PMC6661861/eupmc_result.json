@@ -1,0 +1,324 @@
+{
+  "id": [
+    "31404220"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31404220"
+  ],
+  "pmcid": [
+    "PMC6661861"
+  ],
+  "doi": [
+    "10.1021/acscentsci.9b00297"
+  ],
+  "title": [
+    "A Mixed Quantum Chemistry/Machine Learning Approach for the Fast and Accurate Prediction of Biochemical Redox Potentials and Its Large-Scale Application to 315 000 Redox Reactions."
+  ],
+  "authorString": [
+    "Jinich A, Sanchez-Lengeling B, Ren H, Harman R, Aspuru-Guzik A."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Jinich A"
+          ],
+          "firstName": [
+            "Adrian"
+          ],
+          "lastName": [
+            "Jinich"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Sanchez-Lengeling B"
+          ],
+          "firstName": [
+            "Benjamin"
+          ],
+          "lastName": [
+            "Sanchez-Lengeling"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Ren H"
+          ],
+          "firstName": [
+            "Haniu"
+          ],
+          "lastName": [
+            "Ren"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Harman R"
+          ],
+          "firstName": [
+            "Rebecca"
+          ],
+          "lastName": [
+            "Harman"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, United States."
+          ]
+        },
+        {
+          "fullName": [
+            "Aspuru-Guzik A"
+          ],
+          "firstName": [
+            "Alán"
+          ],
+          "lastName": [
+            "Aspuru-Guzik"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8277-4434",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and Department of Computer Science, University of Toronto, 80 St. George Street, Toronto, Ontario M5S 3H6, Canada."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8277-4434",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "7"
+      ],
+      "volume": [
+        "5"
+      ],
+      "journalIssueId": [
+        "2847769"
+      ],
+      "dateOfPublication": [
+        "2019 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "ACS central science"
+          ],
+          "ISOAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "medlineAbbreviation": [
+            "ACS Cent Sci"
+          ],
+          "NLMid": [
+            "101660035"
+          ],
+          "ISSN": [
+            "2374-7943"
+          ],
+          "ESSN": [
+            "2374-7951"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "1199-1210"
+  ],
+  "abstractText": [
+    "A quantitative understanding of the thermodynamics of biochemical reactions is essential for accurately modeling metabolism. The group contribution method (GCM) is one of the most widely used approaches to estimate standard Gibbs energies and redox potentials of reactions for which no experimental measurements exist. Previous work has shown that quantum chemical predictions of biochemical thermodynamics are a promising approach to overcome the limitations of GCM. However, the quantum chemistry approach is significantly more expensive. Here, we use a combination of quantum chemistry and machine learning to obtain a fast and accurate method for predicting the thermodynamics of biochemical redox reactions. We focus on predicting the redox potentials of carbonyl functional group reductions to alcohols and amines, two of the most ubiquitous carbon redox transformations in biology. Our method relies on semiempirical quantum chemistry calculations calibrated with Gaussian process (GP) regression against available experimental data and results in higher predictive power than the GCM at low computational cost. Direct calibration of GCM and fingerprint-based predictions (without quantum chemistry) with GP regression also results in significant improvements in prediction accuracy, demonstrating the versatility of the approach. We design and implement a network expansion algorithm that iteratively reduces and oxidizes a set of natural seed metabolites and demonstrate the high-throughput applicability of our method by predicting the standard potentials of more than 315 000 redox reactions involving approximately 70 000 compounds. Additionally, we developed a novel fingerprint-based framework for detecting molecular environment motifs that are enriched or depleted across different regions of the redox potential landscape. We provide open access to all source code and data generated."
+  ],
+  "affiliation": [
+    "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, United States."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6661861?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6661861"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1021/acscentsci.9b00297"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2019-08-13"
+  ],
+  "firstIndexDate": [
+    "2019-08-13"
+  ],
+  "dateOfRevision": [
+    "2019-08-15"
+  ],
+  "electronicPublicationDate": [
+    "2019-06-07"
+  ],
+  "firstPublicationDate": [
+    "2019-06-07"
+  ]
+}

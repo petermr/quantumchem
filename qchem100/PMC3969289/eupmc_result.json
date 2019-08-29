@@ -1,0 +1,787 @@
+{
+  "id": [
+    "24468086"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24468086"
+  ],
+  "pmcid": [
+    "PMC3969289"
+  ],
+  "doi": [
+    "10.1016/j.bbrc.2014.01.063"
+  ],
+  "title": [
+    "Role of gamma carboxylated Glu47 in connexin 26 hemichannel regulation by extracellular Ca²⁺: insight from a local quantum chemistry study."
+  ],
+  "authorString": [
+    "Zonta F, Mammano F, Torsello M, Fortunati N, Orian L, Polimeno A."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Zonta F"
+          ],
+          "firstName": [
+            "Francesco"
+          ],
+          "lastName": [
+            "Zonta"
+          ],
+          "initials": [
+            "F"
+          ],
+          "affiliation": [
+            "Dipartimento di Fisica e Astronomia \"G. Galilei\", Università degli Studi di Padova, 35131 Padova, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Mammano F"
+          ],
+          "firstName": [
+            "Fabio"
+          ],
+          "lastName": [
+            "Mammano"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3751-1691",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Dipartimento di Fisica e Astronomia \"G. Galilei\", Università degli Studi di Padova, 35131 Padova, Italy; Istituto Veneto di Medicina Molecolare, Fondazione per la Ricerca Biomedica Avanzata, 35129 Padova, Italy; Istituto CNR di Neuroscienze, 35131 Padova, Italy. Electronic address: fabio.mammano@unipd.it."
+          ]
+        },
+        {
+          "fullName": [
+            "Torsello M"
+          ],
+          "firstName": [
+            "Mauro"
+          ],
+          "lastName": [
+            "Torsello"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3123-2296",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Dipartimento di Scienze Chimiche, Università degli Studi di Padova, Via Marzolo 1, 35131 Padova, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Fortunati N"
+          ],
+          "firstName": [
+            "Nicola"
+          ],
+          "lastName": [
+            "Fortunati"
+          ],
+          "initials": [
+            "N"
+          ],
+          "affiliation": [
+            "Dipartimento di Scienze Chimiche, Università degli Studi di Padova, Via Marzolo 1, 35131 Padova, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Orian L"
+          ],
+          "firstName": [
+            "Laura"
+          ],
+          "lastName": [
+            "Orian"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "Dipartimento di Scienze Chimiche, Università degli Studi di Padova, Via Marzolo 1, 35131 Padova, Italy. Electronic address: laura.orian@unipd.it."
+          ]
+        },
+        {
+          "fullName": [
+            "Polimeno A"
+          ],
+          "firstName": [
+            "Antonino"
+          ],
+          "lastName": [
+            "Polimeno"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Dipartimento di Scienze Chimiche, Università degli Studi di Padova, Via Marzolo 1, 35131 Padova, Italy."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3751-1691",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-3123-2296",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "445"
+      ],
+      "journalIssueId": [
+        "2133657"
+      ],
+      "dateOfPublication": [
+        "2014 Feb"
+      ],
+      "monthOfPublication": [
+        "2"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-02-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Biochemical and biophysical research communications"
+          ],
+          "ISOAbbreviation": [
+            "Biochem. Biophys. Res. Commun."
+          ],
+          "medlineAbbreviation": [
+            "Biochem Biophys Res Commun"
+          ],
+          "NLMid": [
+            "0372516"
+          ],
+          "ISSN": [
+            "0006-291X"
+          ],
+          "ESSN": [
+            "1090-2104"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "10-15"
+  ],
+  "abstractText": [
+    "Connexin hemichannels are regulated by several gating mechanisms, some of which depend critically on the extracellular Ca(2+) concentration ([Ca(2+)]e). It is well established that hemichannel activity is inhibited at normal (∼1 mM) [Ca(2+)]e, whereas lowering [Ca(2+)]e to micromolar levels fosters hemichannel opening. Atomic force microscopy imaging shows significant and reversible changes of pore diameter at the extracellular mouth of Cx26 hemichannels exposed to different [Ca(2+)]e, however, the underlying molecular mechanisms are not fully elucidated. Analysis of the crystal structure of connexin 26 (Cx26) gap junction channels, corroborated by molecular dynamics (MD) simulations, suggests that several negatively charged amino acids create a favorable environment for low-affinity Ca(2+) binding within the extracellular vestibule of the Cx26 hemichannel. In particular a highly conserved glutammic acid, found in position 47 in most connexins, is thought to undergo post translational gamma carboxylation (γGlu47), and is thus likely to play an important role in Ca(2+) coordination. γGlu47 may also form salt bridges with two conserved arginines (Arg75 and Arg184 in Cx26), which are considered important in stabilizing the structure of the extracellular region. Using a combination of quantum chemistry methods, we analyzed the interaction between γGlu47, Arg75 and Arg184 in a Cx26 hemichannel model both in the absence and in the presence of Ca(2+). We show that Ca(2+) imparts significant local structural changes and speculate that these modifications may alter the structure of the extracellular loops in Cx26, and may thus account for the mechanism of hemichannel closure in the presence of mM [Ca(2+)]e."
+  ],
+  "affiliation": [
+    "Dipartimento di Fisica e Astronomia \"G. Galilei\", Università degli Studi di Padova, 35131 Padova, Italy."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "brief-report",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "GGP13114"
+          ],
+          "agency": [
+            "Telethon"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "GGP13114"
+          ],
+          "agency": [
+            "Telethon"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Calcium"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "1-Carboxyglutamic Acid"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Arginine"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ion Channels"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Connexins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Microscopy, Atomic Force"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ion Channel Gating"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Structure"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Structure, Tertiary"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Binding"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Thermodynamics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Dynamics Simulation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Connexin 26"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Calcium ions",
+        "Gating",
+        "Charcot Marie Tooth disease",
+        "Deafness",
+        "Hybrid Dft Calculations",
+        "Connexin Mutations"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Ion Channels"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Connexins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "1-Carboxyglutamic Acid"
+          ],
+          "registryNumber": [
+            "53445-96-8"
+          ]
+        },
+        {
+          "name": [
+            "connexin 26"
+          ],
+          "registryNumber": [
+            "127120-53-0"
+          ]
+        },
+        {
+          "name": [
+            "Calcium"
+          ],
+          "registryNumber": [
+            "SY7Q814VUP"
+          ]
+        },
+        {
+          "name": [
+            "Arginine"
+          ],
+          "registryNumber": [
+            "94ZLA3W45F"
+          ]
+        },
+        {
+          "name": [
+            "DFNA3 protein, human"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC3969289"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24468086/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1016/j.bbrc.2014.01.063"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "N"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "10"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2014-05-02"
+  ],
+  "dateOfCreation": [
+    "2014-03-03"
+  ],
+  "firstIndexDate": [
+    "2014-01-29"
+  ],
+  "dateOfRevision": [
+    "2017-09-22"
+  ],
+  "electronicPublicationDate": [
+    "2014-01-24"
+  ],
+  "firstPublicationDate": [
+    "2014-01-24"
+  ]
+}

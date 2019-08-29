@@ -1,0 +1,428 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">J Chem Inf Model</journal-id><journal-id journal-id-type="iso-abbrev">J Chem Inf Model</journal-id><journal-id journal-id-type="publisher-id">ci</journal-id><journal-id journal-id-type="coden">jcisd8</journal-id><journal-title-group><journal-title>Journal of Chemical Information and Modeling</journal-title></journal-title-group><issn pub-type="ppub">1549-9596</issn><issn pub-type="epub">1549-960X</issn><publisher><publisher-name>American Chemical
+Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6651270</article-id><article-id pub-id-type="doi">10.1021/acs.jcim.9b00384</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>QMflows: A Tool Kit for Interoperable Parallel Workflows in Quantum
+Chemistry</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Zapata</surname><given-names>Felipe</given-names></name><xref rid="aff1" ref-type="aff">#</xref><xref rid="aff2" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath2"><name><surname>Ridder</surname><given-names>Lars</given-names></name><xref rid="aff2" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Hidding</surname><given-names>Johan</given-names></name><xref rid="aff2" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath4"><name><surname>Jacob</surname><given-names>Christoph R.</given-names></name><xref rid="aff3" ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath5"><name><surname>Infante</surname><given-names>Ivan</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">#</xref><xref rid="aff4" ref-type="aff">&#x000a7;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath6"><name><surname>Visscher</surname><given-names>Lucas</given-names></name><xref rid="cor2" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">#</xref></contrib><aff id="aff1"><label>#</label>Division of Theoretical
+Chemistry, Faculty of Science, <institution>Vrije Universiteit
+Amsterdam</institution>, de Boelelaan 1083, 1081 HV Amsterdam, <country>The Netherlands</country></aff><aff id="aff2"><label>&#x02020;</label>Netherlands eScience
+Center, Science Park 140 (Matrix I), 1098 XG Amsterdam, <country>The Netherlands</country></aff><aff id="aff3"><label>&#x02021;</label>Institute of Physical and Theoretical Chemistry, <institution>TU Braunschweig</institution>, Gau&#x000df;stra&#x000df;e 17, 38106 Braunschweig, <country>Germany</country></aff><aff id="aff4"><label>&#x000a7;</label>Department of Nanochemistry, <institution>Istituto Italiano
+di Tecnologia</institution>, Via Morego
+30, 16163 Genova, <country>Italy</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>i.a.c.infante@vu.nl</email>.</corresp><corresp id="cor2"><label>*</label>E-mail: <email>l.visscher@vu.nl</email>.</corresp></author-notes><pub-date pub-type="epub"><day>19</day><month>06</month><year>2019</year></pub-date><pub-date pub-type="ppub"><day>22</day><month>07</month><year>2019</year></pub-date><volume>59</volume><issue>7</issue><fpage>3191</fpage><lpage>3197</lpage><history><date date-type="received"><day>08</day><month>05</month><year>2019</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019 American Chemical Society</copyright-statement><copyright-year>2019</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under a Creative Commons Non-Commercial No Derivative Works (CC-BY-NC-ND) Attribution <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_ccbyncnd_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article, and creation of adaptations, all for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0006" id="ab-tgr1"/></p><p>We
+present the QMflows Python package for quantum chemistry workflow
+automatization. QMflows allows users to write complex workflows in
+terms of simple Python scripts. It supports the development of interoperable
+workflows involving multiple quantum chemistry codes and executes
+them efficiently on large scale parallel computers. This open source
+library provides standardized interfaces to a number of quantum chemistry
+packages and can be easily extended to accommodate additional codes.
+QMflows features are described and illustrated with a number of representative
+applications.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ci9b00384</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ci-2019-00384y</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>In the last years,
+new pathways to materials
+discovery that go beyond trial-and-error processes have been implemented
+with promising results. These paths are usually based on computer
+prediction algorithms that either find new materials by comparing
+structures from available databases storing hundreds of thousands
+of known structures or by exploratory algorithms that generate new
+materials without much previous knowledge.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> Either way, these new materials are usually linked to specific desired
+properties that often need to be computed at the atomistic level and
+that represent further constraints in the search of novel structures.
+Such computed properties are usually carried out at the quantum chemical
+level, and knowledge and availability of the various computational
+tools are fundamental. Rational design based on computational modeling
+indeed often requires a combination of theoretical approaches and
+software and commonly involves composite workflows consisting of a
+large number of individual calculations.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref3">3</xref></sup> Such workflows
+are well suited for parallel computing as it is much easier to exploit
+job-type parallelism than to parallelize each computational task individually.
+There are, however, two complications in exploiting job-type parallelism
+that should be considered. Complex workflows require the execution
+of several different program packages, which require different, program-specific
+input data, which in turn possibly depends on the results of preceding
+calculations. These dependencies between different tasks are often
+nontrivial and need to be taken into account in the parallel execution
+of workflows.</p><p>A well-known example of a computational workflow
+that benefits from automation and parallelization is running a benchmark
+study to assess the performance of a series of density functional
+theory (DFT) exchange-correlation functionals.<sup><xref ref-type="bibr" rid="ref4">4</xref>&#x02212;<xref ref-type="bibr" rid="ref7">7</xref></sup> Another simple example is the
+geometry relaxation of a set of related molecules. More complicated
+applications involve multiple methods and are characterized by interdependencies
+between the calculations. An example is the prediction of the activation
+energy of several reactions by performing a multilevel calculation
+of reactants and transition states.<sup><xref ref-type="bibr" rid="ref8">8</xref></sup></p><p>Overall, three common tasks need to be automated: (i) the preparation
+of specific inputs for the quantum chemical (QM) software package(s)
+that is (are) used; (ii) submission of jobs to a queuing system on
+a supercomputer facility; and (iii) the collection and analysis of
+the output files, often involving postprocessing steps with yet other
+software tools. Commonly used <italic>ad hoc</italic> Unix shell or
+Python scripts for such purposes are often poorly transferable and
+difficult to maintain and extend. They furthermore require sufficient
+programming experience to attain good performance. In most research
+groups, the time available to tune and document such scripts is limited,
+resulting in a suboptimal use of computational and human resources.</p><p>To address these limitations of project-specific scripting, a number
+of generic solutions for the preparation and execution of QM workflows
+have been developed: PyADF,<sup><xref ref-type="bibr" rid="ref9">9</xref></sup> Chemshell,<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> FireWorks,<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> Aiida,<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> ASE.<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> While being
+very helpful in the automation of input/output handling, many of these
+solutions have still limited abilities for parallel processing or
+require expert knowledge. Parallelization of the workflow often requires
+input from the user who should indicate the stages in the simulation
+that can be run in parallel. Another common limitation in currently
+available tools arises from the definition of the interfaces to the
+different QM packages. Usually, the interfaces are specific to the
+different supported program packages, and different interfaces are
+required for performing the same task (e.g., a DFT geometry optimization)
+with different program packages. This hinders the interoperable use
+of different codes in one workflow.</p><p>To facilitate automation
+and parallelization, while keeping maximum flexibility and limiting
+maintenance, we have developed the Python package QMflows for the
+automation of computational chemistry workflows. QMflows is built
+on top of the PLAMS library<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> that is designed
+to provide a general interface to QM simulation packages. QMflows
+furthermore incorporates the Noodles<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> library
+that is developed for dependency analysis and automatic parallel execution
+of workflows. We chose to implement the QMflows platform with Python,
+the most-used programming language for the automation of computations
+in chemistry. In this way, we aim at supporting both beginners and
+experienced Python programmers. Beginners will benefit from the simple
+and unobtrusive syntax to specify job dependencies, while more advanced
+users will be able to construct complex workflows.</p><p>QMflows&#x02019;
+main objective is to allow users with only
+basic programming skills to build complex workflows that can be reused,
+adapted, and executed in high-performance computing environments.
+The most relevant features of our library are (i) manipulation of
+molecular objects to quickly generate and modify molecular structures,
+combined with interoperability between QM packages to facilitate use
+of multiprogram workflows; (ii) parallel execution of tasks defined
+in the workflow by automated analysis of task dependencies; (iii)
+recovery and restart in case of job failure; and (iv) a file manager
+for a posteriori retrieval and analysis of data.</p><p>A major objective
+of QMflows is to enable beginners to focus on the scientific aspects
+of the workflows (the definition of the molecules to be studied, the
+level of theory to be used for each task, and the molecular properties
+that are to be retrieved and analyzed) instead of solving technical
+issues related to specific program packages or to the parallel execution
+of the workflow. For this kind of use only a basic understanding of
+the Python scripting language is required, a skill that most computational
+chemists nowadays possess. Advanced users will be able to extend the
+existing functionality by programming new functions in Python with
+only minor adaptations to allow Noodles to perform an automatic dependency
+analysis. QMflows currently supports the ADF,<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> CP2K,<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> DIRAC,<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> GAMESS-US,<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> and ORCA<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> packages and is distributed as open source software under
+the LGPL-3.0 license.<sup><xref ref-type="bibr" rid="ref21">21</xref></sup></p></sec><sec id="sec2"><title>Methods</title><p>QMflows has four major modules, as schematically depicted in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref> and described in
+more detail below.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Schematic representation
+of the QMflows architecture.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0001" id="gr1" position="float"/></fig><sec id="sec2.1"><title>Module 1: Input Manipulation</title><p>The
+first step takes care of the manipulation of the molecular objects
+that are studied in the QM calculations. In QMflows, molecules are
+by default defined with the <italic>Molecule</italic> class of the
+PLAMS library. An instance of a <italic>Molecule</italic> object holds
+atoms and coordinates and can optionally store bond information as
+well. It can be created from the <italic>xyz</italic>, <italic>mol</italic>, and <italic>pdb</italic> data formats and has methods for adding
+and deleting atoms and for identifying, adding, and deleting bonds.
+For more complex structure manipulations, a dedicated <italic>Molkit</italic> library is available, which builds on 3D chemical structure functionality
+offered by the RDKit package.</p><p>The second step is dedicated to
+the preparation of the input for the individual QM calculations. Here
+we build on the input model adopted by the PLAMS library, which avoids
+the use of &#x0201c;hard-coded&#x0201d; interfaces to the QM packages.
+PLAMS makes use of the fact that most QM packages adopt a hierarchical
+input structure, consisting of input sections, subsections, and key-value
+pairs. PLAMS enables the representation of such input as a nested
+Python dictionary, which can be automatically translated into a correct
+input file for a specific package. This strategy allows PLAMS users
+to access the complete set of features offered by a given QM package
+and not only a subset covered by a predefined wrapper or interface.
+This design also minimizes maintenance costs of the interfaces as
+the addition of new features in a package does not require an update
+of the interface.</p><p>On top of the PLAMS interface, QMflows offers
+a set of <italic>generic</italic> key words and <italic>templates</italic> for easy access to functionalities that are provided by multiple
+QM packages. These <italic>generic</italic> key words make it possible
+to use the same input definitions for common features (e.g., basis
+set, DFT functional) when calling different QM codes and makes it
+easy to switch between two implementations of a particular method.
+The translation from generic to <italic>specific</italic> key word
+is stored as a dictionary that is easy to maintain and extend when
+the input of one or more of the packages changes. The translation
+from <italic>generic</italic> to <italic>specific</italic> key words
+is done automatically at run time, so for standard applications users
+can use identical run scripts for different quantum chemistry packages.</p><p>The <italic>templates</italic> consist of PLAMS settings for common
+computational chemistry tasks, such as structure optimization, transition
+state searches, and vibrational frequency calculations. These settings
+objects can be modified and merged by the user, who can also add <italic>generic</italic> and code-<italic>specific</italic> additional input
+for a particular task.</p><p>An example of a <italic>template</italic> for a geometry optimization is provided below:<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0007" id="gr6" position="float"/></p><p>In <italic>line 3</italic> we define a molecule object by
+reading coordinates from an external <italic>xyz</italic> file. Then
+we use a generic template to define the settings for the type of calculation
+(a geometry optimization). Note that we do not yet define the QM package.
+The next line calls the ADF program with the settings and the molecule
+object as arguments. In this case, the <italic>template</italic> for
+an ADF geometry optimization makes use of a nonscalar calculation
+with a DZP basis set, a BLYP exchange-correlation functional, and
+a frozen core MEDIUM. The advantage of this approach is that, without
+rewriting any input, we may carry out the geometry optimization with
+another code, e.g. CP2k, by simply replacing the word <italic>adf</italic> in <italic>line 5</italic> with <italic>cp2k</italic>. In the latter
+case, the DZP is switched in a basis set of similar quality, a DZVP,
+and a GTH pseudpotential for the core electrons. All the <italic>templates</italic> set for a given task (scf, geometry optimization, etc.) have been
+wrapped for each QM code by applying similar, albeit not equal, input
+parameters. More details on these template input parameters are provided
+in the online documentation of QMflows.</p><p>Below, we also illustrate
+how a user may modify the basis set and the DFT exchange-correlation
+functional of the <italic>template</italic> using <italic>generic</italic> key words:<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0008" id="gr7" position="float"/></p><p>Before calling the <italic>adf</italic> function in <italic>line 7</italic>, in <italic>lines 5 and 6</italic>, the variables <italic>basis</italic> and <italic>functional</italic> of the default settings object are redefined by the user. These <italic>generic</italic> key words can be used with most QM codes and can
+be set to program-independent values. QMflows will translate these
+to the corresponding package-specific key words and values once the
+actual QM code to be used for the task is known. The current list
+of generic key words is presented in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">Table S1</ext-link>, and it will be expanded in the future for enhanced flexibility.</p><p>The definition of <italic>templates</italic> and <italic>generic</italic> key words that can be used by multiple packages does not prohibit
+the use of options that are only available in a specific QM code.
+In this case, the user can extend the default settings for a given
+calculation by adding <italic>generic</italic> key words (as demonstrated
+above) and/or also package-<italic>specific</italic> key words in
+a dedicated subsection of the input settings indicated by the key
+word &#x0201c;specific&#x0201d; and the name of the package. This subsection
+should follow the input tree structure of the specific QM package.
+An example of this is illustrated in the code snippet below:<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0009" id="gr8" position="float"/></p><p>Until <italic>line 6</italic> the workflow resembles exactly
+the previous example. In <italic>lines 7&#x02013;9</italic>, however,
+we assign three extra key words specific to the ADF code. The first
+calls the excitations module to perform a time-dependent DFT (TDDFT)
+calculation computing the lowest 10 roots; the second calls the ZORA
+module to include scalar relativistic effects; the third overwrites
+the default setting for the number of iterations employed in the SCF
+procedure. Only for these specific key words the user should look
+up the input tree structure and key word definition used by the specific
+QM package.</p></sec><sec id="sec2.2"><title>Module 2: Workflow Execution and Communication
+between Jobs</title><p>The task of the second module of the package
+is to efficiently execute the user-defined Python workflows. With
+the Noodles framework, dependencies between the tasks defined in the
+QMflows Python script are automatically detected. The idea behind
+this library is to postpone the execution of tasks to allow for dependency
+analysis. Rather than immediately executing the Python code found
+in a user script, Noodles will first construct a dependency graph
+in which tasks (for example the optimization of a molecular structure
+or a calculation of NMR shieldings for a given molecule) are represented
+by nodes connected via edges to represent the dependencies between
+these tasks (for example the NMR calculation needs the structure from
+the geometry optimization task). The tasks are always implemented
+as scheduled functions which return &#x0201c;promised objects&#x0201d;
+rather than results. The actual results of the workflow are obtained
+using an explicit run statement at the end of the workflow. This run
+statement triggers the evaluation of the dependencies and the generation
+and execution of the actual jobs. The advantage of this approach is
+that the user script looks almost like a normal Python script, while
+in the background Noodles takes care of those calls to QMflows tasks
+that do not depend on each other and are executed in parallel. This
+is highlighted in the following script where the call to Noodles is
+delayed until line 12.<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0010" id="gr9" position="float"/></p><p>This makes it possible to optimally
+use the options available for parallel execution that compute servers
+may offer. For this purpose, Noodles comes with several back ends
+for different common architectures. For small workflows, the user
+can simply reserve a number of threads on his or her local computer,
+while larger workflows can be run via job schedulers on a compute
+cluster or supercomputer. This flexibility allows users to easily
+scale workflows from the testing phase to the production phase. A
+more detailed description of the Noodles library, which is used for
+non-QM workflows as well, is available online.<sup><xref ref-type="bibr" rid="ref15">15</xref></sup></p></sec><sec id="sec2.3"><title>Module 3: Job Recovery</title><p>To enable
+extension of the set of molecules to be studied or the types of analysis
+to be carried out, QMflows is from the outset designed to allow for
+restarts. The workflow and dependencies are stored in a database that
+is updated with information on successfully completed calculations
+during the execution of the workflow. When the run command is invoked,
+noodles traverses the graph of job dependencies and checks against
+the database for a reference to the job results; if such reference
+does not exist, then the job is executed, and the resulting output
+metainformation is stored in the database.</p><p>If the execution
+of the workflow is stopped by the user or fails for technical reasons,
+the generated database with metadata can be used to restart the workflows.
+Noodles will walk through the dependencies tree in the same way as
+when started from scratch but will query the database for already
+existing results and execute only the tasks that were not yet successfully
+completed. This makes the restart procedure very straightforward for
+the user who will need only to resubmit the original job scheduler
+script (Slurm or PBS) without modifications.</p></sec><sec id="sec2.4"><title>Module 4: Output Postprocessing</title><p>When tasks involve different software packages and are run on different
+resources, data transfer between tasks involves data conversion as
+well as communication between the different computational resources.
+To allow for efficient and general data handling, QMflows distinguishes
+between primary data that results from the execution of a particular
+task, output data that is to be used in a next step as input, and
+metadata that describes the type of tasks that was executed. The latter
+is stored in a database that is also used to monitor the progress
+of the workflow execution. The primary data is kept in the native
+format of the quantum chemistry program that was used and at the location
+where this task was executed. The subset of output data that is needed
+as input for a next task is converted to the portable HDF5 format
+for ease of communication between resources. In case primary data
+of a particular step is not needed for analysis of the results, users
+may choose to have these data automatically deleted after the task
+is completed. Otherwise the data of all steps is stored in its original
+form at the local computing node to allow for a posteriori analysis.</p><p>In the simple code snippets presented earlier, the results of the
+calculations were simply printed to screen using Python commands.
+In real applications, in which the amount of data produced is much
+larger, it is desirable to store data to a file and retrieve the subset
+of data of interest when needed. In QMflows, we have implemented parsers
+to retrieve the most essential information about a system from output
+or checkpoint file(s). This currently includes the coordinates of
+the optimized geometry, the total energy of the system, dipole moments,
+gradient, excitation energies, and Hessians matrices. For other data,
+the user can use the parsers offered by the QM code or write its own
+parser to retrieve the desired output data.</p></sec></sec><sec id="sec3"><title>Examples</title><p>To demonstrate QMflows capabilities, we provide some use cases with
+workflows of increasing complexity.</p><sec id="sec3.1"><title>Example 1: Multilevel Geometry
+Optimization and Excitation Spectrum</title><p>A common starting point
+for a high-level quantum chemistry calculation of molecular properties
+is a structure optimized at a lower level of theory. For example,
+it is quite common to perform a single point post-Hartree&#x02013;Fock
+calculation on a DFT-optimized structure. As also DFT optimization
+can be time-consuming for larger molecules it is preferable to perform
+a preoptimization step to define a starting geometry that is already
+close to the minimum. <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref> demonstrates the implementation of such a multilevel approach,
+with three different QM packages interoperating in a single QMflows
+workflow. In this example, we consider calculating the lowest excitation
+energies of the coumarin dye for which we perform a preoptimization
+with DFTB, send the resulting structure to the ADF package for further
+optimization with the PBE functional, and finally employ the Orca
+program to compute the 10 lowest electronically excited states at
+the equation of motion CCSD level of theory. This example demonstrates
+that QMflows provides the flexibility to assign each optimization
+task to the QM implementation that is most suitable for this task.
+The full code is provided in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">Example S1</ext-link> in the Supporting Information.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>QMflows workflow for a multilevel geometry
+optimization followed by an excited states calculation on the relaxed
+structure. The QMflows actions are highlighted in red, while the results
+of the action are highlighted in green.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0002" id="gr2" position="float"/></fig></sec><sec id="sec3.2"><title>Example 2: Screening Absorption Characteristics of Organic Molecules</title><p>In the following example a series of organic chromophores is screened
+to select molecules with absorption wavelength in a desired range.
+As a simple criterion for a first selection we calculate the DFT HOMO&#x02013;LUMO
+gap. The set of molecules is taken from the chemical database GDB-17,<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> which provides structures in <italic>SMILES</italic> format. The flowchart and the workflow to carry out this screening
+is illustrated in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>QMflows workflow for a multilevel geometry optimization followed
+by an excited states calculation on the relaxed structure. The QMflows
+actions are highlighted in red, while the results of the action are
+highlighted in green.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0003" id="gr3" position="float"/></fig><p>First, the <italic>SMILES</italic> strings representing
+the target molecules are converted to 3D chemical structures using
+Molkit. For each molecule, an initial geometry optimization is performed
+using the computationally inexpensive DFTB method followed by a single
+point DFT calculation with the SAOP functional. The HOMO and LUMO
+energies are extracted, and the best performing candidates, those
+with HOMO&#x02013;LUMO gaps within the desired energy range, are selected
+for further study by DFT structure optimization and TD-DFT calculation
+of the lowest excited states. This workflow illustrates manipulation
+of structures, extraction of selected data, and workflows in which
+the number of jobs is determined at runtime. The full code is provided
+in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">Example S2</ext-link> in the Supporting Information.
+Notice that there are no dependencies between the calculations for
+different molecules, and this fact is automatically picked by Noodles
+that generates a dependency graph where the jobs of different molecules
+are independent from each other and therefore are marked to run in
+parallel.</p></sec><sec id="sec3.3"><title>Example 3: Multilevel Transition State Search</title><p><xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref> shows another workflow
+to
+illustrate the integration of calculations with different packages
+by QMflows. Starting from an automatically generated 2-methylbiphenyl
+molecule, a constrained geometry optimization is performed with the
+DFTB package, to obtain an approximate TS state for the rotation between
+two conformers. Subsequently, a frequency calculation is performed
+to obtain a DFTB Hessian. This Hessian is then used to initialize
+the transition state calculation at the DFT level in a different package
+(ORCA). The full code is provided in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">Example S3</ext-link> in the Supporting Information. This example shows how QMFlows allows
+(partial) interoperability between codes by providing generic functionality
+that is common to different packages, translating between different
+input specifications without user intervention.</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>QMflows workflow for
+a multilevel transition state search. The QMflows actions are highlighted
+in red, while the results of the action are highlighted in green.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0004" id="gr4" position="float"/></fig></sec><sec id="sec3.4"><title>Example 4: Multilevel Transition
+State Search with Conditional Workflows</title><p>The flowchart in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> illustrates another
+possibility for conditional workflows. In this case we check whether
+the preoptimization was successful and skip this step in case it was
+not. This is helpful when looping in over a wide class of molecules
+for which it is difficult to predict whether a certain preoptimizer
+will provide a converged result. After the preoptimizing step with
+DFTB, the molecules are further optimized with DFT (Orca) with a final
+step of TD-DFT calculation including solvent effects with the ADF
+program. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">Figure S1</ext-link> shows the output of
+the script, indicating that the preoptimizations for molecules containing
+a boron atom failed (because this atom is not contained in the default
+parameter set). QMflows allows users to decide whether an error should
+be propagated to the rest of the dependencies (as a Python <italic>None</italic> value), or the user can provide an alternative function
+to execute in case of failure, for example an alternative calculation
+or a default value.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>QMflows workflow for a multilevel transition state search
+using a conditional function. The QMflows actions are highlighted
+in red, while the results of the action are highlighted in green.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci-2019-00384y_0005" id="gr5" position="float"/></fig></sec></sec><sec id="sec4"><title>Conclusions</title><p>In
+summary, we have presented the open source software QMflows, a flexible
+and powerful Python code capable of easily automatizing and parallelizing
+quantum chemistry workflows. The software is constructed on four main
+pillars:<list list-type="simple"><list-item><label>a.</label><p>Flexible
+input manipulation. Here QMflows provides generic key words and templates
+for different tasks (single points, geometry optimizations, etc.)
+that are valid for several quantum chemical packages. The users will
+only need to call the desired QM package and a given task to carry
+out the calculation. If specific key words are required beyond the
+provided templates, QMflows allows to add them following the tree
+structure of the given QM code.</p></list-item><list-item><label>b.</label><p>Workflow execution. In a complex workflow where several QM packages
+and tasks are called, QMflows rely on the Noodles framework to construct
+the dependencies between each task and schedule them as &#x0201c;promised
+objects&#x0201d;. The actual workflow is executed at the end of the
+script allowing for optimal usage of parallel resources.</p></list-item><list-item><label>c.</label><p>Efficient restart procedure. Thanks
+to the Noodles framework, if a job fails for whatever reason, Noodles
+will check the dependency tree querying a database with the metadata
+of the successfully executed parts of the workflow. In this way, the
+user will need only to resubmit the original Slurm or PBS script without
+any modification, starting from the last successful job.</p></list-item><list-item><label>d.</label><p>Data postprocessing. QMflows is furnished
+with output parsers of several QM packages to retrieve essential data.
+Additionally, QMflows allows for storing metadata in a HDF5 portable
+format, which can be used for further postprocessing.</p></list-item></list></p></sec></body><back><notes id="notes1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting
+Information is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at
+DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00384">10.1021/acs.jcim.9b00384</ext-link>.<list id="silist" list-type="simple"><list-item><p>Full code snippets
+for examples presented in manuscript (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci9b00384_si_001.pdf"><caption><p>ci9b00384_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d7e622-autogenerated"><p>The authors declare no competing
+financial interest.</p></notes><notes notes-type="" id="NOTES-d7e600-autogenerated"><title>Notes</title><p>This QMflows software is distributed as a Python library
+that can be downloaded from GitHub at <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.github.com/SCM-NV/QMflows">www.github.com/SCM-NV/QMflows</uri>.</p></notes><ack><title>Acknowledgments</title><p>This work was supported
+by The Netherlands eScience Center (Grant No. 027.014.202) and by
+The Netherlands Organization of Scientific Research (NWO) through
+the Innovational Research Incentive (Vidi) Scheme (Grant No. 723.013.002).</p></ack><glossary id="dl1"><def-list><title>Abbreviations</title><def-item><term>DFT</term><def><p>density functional theory</p></def></def-item><def-item><term>DFTB</term><def><p>tight-binding DFT</p></def></def-item><def-item><term>QM</term><def><p>quantum mechanics</p></def></def-item></def-list></glossary><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Liu</surname><given-names>Y.</given-names></name>; <name><surname>Zhao</surname><given-names>T.</given-names></name>; <name><surname>Ju</surname><given-names>W.</given-names></name>; <name><surname>Shi</surname><given-names>S.</given-names></name>
+<article-title>Materials discovery and design using machine learning</article-title>. <source>J. Mater.</source>
+<year>2017</year>, <volume>3</volume>, <fpage>159</fpage>&#x02013;<lpage>177</lpage><pub-id pub-id-type="doi">10.1016/j.jmat.2017.08.002</pub-id>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>G&#x000f3;mez-Bombarelli</surname><given-names>R.</given-names></name>; <name><surname>Aguilera-Iparraguirre</surname><given-names>J.</given-names></name>; <name><surname>Hirzel</surname><given-names>T. D.</given-names></name>; <name><surname>Duvenaud</surname><given-names>D.</given-names></name>; <name><surname>Maclaurin</surname><given-names>D.</given-names></name>; <name><surname>Blood-Forsythe</surname><given-names>M. A.</given-names></name>; <name><surname>Chae</surname><given-names>H. S.</given-names></name>; <name><surname>Einzinger</surname><given-names>M.</given-names></name>; <name><surname>Ha</surname><given-names>D.-G.</given-names></name>; <name><surname>Wu</surname><given-names>T.</given-names></name>; <name><surname>Markopoulos</surname><given-names>G.</given-names></name>; <name><surname>Jeon</surname><given-names>S.</given-names></name>; <name><surname>Kang</surname><given-names>H.</given-names></name>; <name><surname>Miyazaki</surname><given-names>H.</given-names></name>; <name><surname>Numata</surname><given-names>M.</given-names></name>; <name><surname>Kim</surname><given-names>S.</given-names></name>; <name><surname>Huang</surname><given-names>W.</given-names></name>; <name><surname>Hong</surname><given-names>S. I.</given-names></name>; <name><surname>Baldo</surname><given-names>M.</given-names></name>; <name><surname>Adams</surname><given-names>R. P.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Design of efficient molecular organic light-emitting
+diodes by a high-throughput virtual screening and experimental approach</article-title>. <source>Nat. Mater.</source>
+<year>2016</year>, <volume>15</volume>, <fpage>1120</fpage>&#x02013;<lpage>1127</lpage><pub-id pub-id-type="doi">10.1038/nmat4717</pub-id>.<pub-id pub-id-type="pmid">27500805</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Hachmann</surname><given-names>J.</given-names></name>; <name><surname>Olivares-Amaya</surname><given-names>R.</given-names></name>; <name><surname>Atahan-Evrenk</surname><given-names>S.</given-names></name>; <name><surname>Amador-Bedolla</surname><given-names>C.</given-names></name>; <name><surname>S&#x000e1;nchez-Carrera</surname><given-names>R. S.</given-names></name>; <name><surname>Gold-Parker</surname><given-names>A.</given-names></name>; <name><surname>Vogt</surname><given-names>L.</given-names></name>; <name><surname>Brockway</surname><given-names>A. M.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>The Harvard
+Clean Energy Project: Large-Scale Computational Screening and Design
+of Organic Photovoltaics on the World Community Grid</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2011</year>, <volume>2</volume>, <fpage>2241</fpage>&#x02013;<lpage>2251</lpage><pub-id pub-id-type="doi">10.1021/jz200866s</pub-id>.</mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Hamprecht</surname><given-names>F. A.</given-names></name>; <name><surname>Cohen</surname><given-names>A. J.</given-names></name>; <name><surname>Tozer</surname><given-names>D. J.</given-names></name>; <name><surname>Handy</surname><given-names>N. C.</given-names></name>
+<article-title>Development and
+assessment of new exchange-correlation functionals</article-title>. <source>J. Chem. Phys.</source>
+<year>1998</year>, <volume>109</volume>, <fpage>6264</fpage>&#x02013;<lpage>6271</lpage><pub-id pub-id-type="doi">10.1063/1.477267</pub-id>.</mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Goerigk</surname><given-names>L.</given-names></name>; <name><surname>Grimme</surname><given-names>S.</given-names></name>
+<article-title>A thorough benchmark of density functional methods
+for general main group thermochemistry, kinetics, and noncovalent
+interactions</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2011</year>, <volume>13</volume>, <fpage>6670</fpage><pub-id pub-id-type="doi">10.1039/c0cp02984j</pub-id>.<pub-id pub-id-type="pmid">21384027</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Santra</surname><given-names>B.</given-names></name>; <name><surname>Michaelides</surname><given-names>A.</given-names></name>; <name><surname>Scheffler</surname><given-names>M.</given-names></name>
+<article-title>On the accuracy of density-functional theory exchange-correlation
+functionals for H bonds in small water clusters: Benchmarks approaching
+the complete basis set limit</article-title>. <source>J. Chem. Phys.</source>
+<year>2007</year>, <volume>127</volume>, <fpage>184104</fpage><pub-id pub-id-type="doi">10.1063/1.2790009</pub-id>.<pub-id pub-id-type="pmid">18020627</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Azpiroz</surname><given-names>J. M.</given-names></name>; <name><surname>Ugalde</surname><given-names>J. M.</given-names></name>; <name><surname>Infante</surname><given-names>I.</given-names></name>
+<article-title>Benchmark
+Assessment of Density Functional Methods on Group II&#x02013;VI MX
+(M = Zn, Cd; X = S, Se, Te) Quantum Dots</article-title>. <source>J.
+Chem. Theory Comput.</source>
+<year>2014</year>, <volume>10</volume>, <fpage>76</fpage>&#x02013;<lpage>89</lpage><pub-id pub-id-type="doi">10.1021/ct400513s</pub-id>.<pub-id pub-id-type="pmid">26579893</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Jacobson</surname><given-names>L. D.</given-names></name>; <name><surname>Bochevarov</surname><given-names>A. D.</given-names></name>; <name><surname>Watson</surname><given-names>M. A.</given-names></name>; <name><surname>Hughes</surname><given-names>T. F.</given-names></name>; <name><surname>Rinaldo</surname><given-names>D.</given-names></name>; <name><surname>Ehrlich</surname><given-names>S.</given-names></name>; <name><surname>Steinbrecher</surname><given-names>T. B.</given-names></name>; <name><surname>Vaitheeswaran</surname><given-names>S.</given-names></name>; <name><surname>Philipp</surname><given-names>D. M.</given-names></name>; <name><surname>Halls</surname><given-names>M. D.</given-names></name>; <name><surname>Friesner</surname><given-names>R. A.</given-names></name>
+<article-title>Automated Transition
+State Search and Its Application to Diverse Types of Organic Reactions</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2017</year>, <volume>13</volume>, <fpage>5780</fpage>&#x02013;<lpage>5797</lpage><pub-id pub-id-type="doi">10.1021/acs.jctc.7b00764</pub-id>.<pub-id pub-id-type="pmid">28957627</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Jacob</surname><given-names>C. R.</given-names></name>; <name><surname>Beyhan</surname><given-names>S. M.</given-names></name>; <name><surname>Bulo</surname><given-names>R. E.</given-names></name>; <name><surname>Gomes</surname><given-names>A. S. P.</given-names></name>; <name><surname>G&#x000f6;tz</surname><given-names>A. W.</given-names></name>; <name><surname>Kiewisch</surname><given-names>K.</given-names></name>; <name><surname>Sikkema</surname><given-names>J.</given-names></name>; <name><surname>Visscher</surname><given-names>L.</given-names></name>
+<article-title>PyADF - A scripting framework for multiscale quantum
+chemistry</article-title>. <source>J. Comput. Chem.</source>
+<year>2011</year>, <volume>32</volume>, <fpage>2328</fpage>&#x02013;<lpage>2338</lpage><pub-id pub-id-type="doi">10.1002/jcc.21810</pub-id>.<pub-id pub-id-type="pmid">21541961</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Metz</surname><given-names>S.</given-names></name>; <name><surname>K&#x000e4;stner</surname><given-names>J.</given-names></name>; <name><surname>Sokol</surname><given-names>A. A.</given-names></name>; <name><surname>Keal</surname><given-names>T. W.</given-names></name>; <name><surname>Sherwood</surname><given-names>P.</given-names></name>
+<article-title>ChemShell-a modular
+software package for QM/MM simulations</article-title>. <source>Wiley
+Interdiscip. Rev.: Comput. Mol. Sci.</source>
+<year>2014</year>, <volume>4</volume>, <fpage>101</fpage>&#x02013;<lpage>110</lpage><pub-id pub-id-type="doi">10.1002/wcms.1163</pub-id>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Jain</surname><given-names>A.</given-names></name>; <name><surname>Ong</surname><given-names>S. P.</given-names></name>; <name><surname>Chen</surname><given-names>W.</given-names></name>; <name><surname>Medasani</surname><given-names>B.</given-names></name>; <name><surname>Qu</surname><given-names>X.</given-names></name>; <name><surname>Kocher</surname><given-names>M.</given-names></name>; <name><surname>Brafman</surname><given-names>M.</given-names></name>; <name><surname>Petretto</surname><given-names>G.</given-names></name>; <name><surname>Rignanese</surname><given-names>G.-M.</given-names></name>; <name><surname>Hautier</surname><given-names>G.</given-names></name>; <name><surname>Gunter</surname><given-names>D.</given-names></name>; <name><surname>Persson</surname><given-names>K. A.</given-names></name>
+<article-title>FireWorks: a dynamic workflow system designed for high-throughput
+applications</article-title>. <source>Concurr. Comput. Pract. Exp.</source>
+<year>2015</year>, <volume>27</volume>, <fpage>5037</fpage>&#x02013;<lpage>5059</lpage><pub-id pub-id-type="doi">10.1002/cpe.3505</pub-id>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Pizzi</surname><given-names>G.</given-names></name>; <name><surname>Cepellotti</surname><given-names>A.</given-names></name>; <name><surname>Sabatini</surname><given-names>R.</given-names></name>; <name><surname>Marzari</surname><given-names>N.</given-names></name>; <name><surname>Kozinsky</surname><given-names>B.</given-names></name>
+<article-title>AiiDA: automated interactive
+infrastructure and database for computational science</article-title>. <source>Comput. Mater. Sci.</source>
+<year>2016</year>, <volume>111</volume>, <fpage>218</fpage>&#x02013;<lpage>230</lpage><pub-id pub-id-type="doi">10.1016/j.commatsci.2015.09.013</pub-id>.</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Larsen</surname><given-names>A. H.</given-names></name>; <name><surname>Mortensen</surname><given-names>J. J.</given-names></name>; <name><surname>Blomqvist</surname><given-names>J.</given-names></name>; <name><surname>Castelli</surname><given-names>I. E.</given-names></name>; <name><surname>Christensen</surname><given-names>R.</given-names></name>; <name><surname>Du&#x00142;ak</surname><given-names>M.</given-names></name>; <name><surname>Friis</surname><given-names>J.</given-names></name>; <name><surname>Groves</surname><given-names>M. N.</given-names></name>; <name><surname>Hammer</surname><given-names>B.</given-names></name>; <name><surname>Hargus</surname><given-names>C.</given-names></name>; <name><surname>Hermes</surname><given-names>E. D.</given-names></name>; <name><surname>Jennings</surname><given-names>P. C.</given-names></name>; <name><surname>Jensen</surname><given-names>P. B.</given-names></name>; <name><surname>Kermode</surname><given-names>J.</given-names></name>; <name><surname>Kitchin</surname><given-names>J. R.</given-names></name>; <name><surname>Kolsbjerg</surname><given-names>E. L.</given-names></name>; <name><surname>Kubal</surname><given-names>J.</given-names></name>; <name><surname>Kaasbjerg</surname><given-names>K.</given-names></name>; <name><surname>Lysgaard</surname><given-names>S.</given-names></name>; <name><surname>Maronsson</surname><given-names>J. B.</given-names></name>; <name><surname>Maxson</surname><given-names>T.</given-names></name>; <name><surname>Olsen</surname><given-names>T.</given-names></name>; <name><surname>Pastewka</surname><given-names>L.</given-names></name>; <name><surname>Peterson</surname><given-names>A.</given-names></name>; <name><surname>Rostgaard</surname><given-names>C.</given-names></name>; <name><surname>Schi&#x000f8;tz</surname><given-names>J.</given-names></name>; <name><surname>Sch&#x000fc;tt</surname><given-names>O.</given-names></name>; <name><surname>Strange</surname><given-names>M.</given-names></name>; <name><surname>Thygesen</surname><given-names>K. S.</given-names></name>; <name><surname>Vegge</surname><given-names>T.</given-names></name>; <name><surname>Vilhelmsen</surname><given-names>L.</given-names></name>; <name><surname>Walter</surname><given-names>M.</given-names></name>; <name><surname>Zeng</surname><given-names>Z.</given-names></name>; <name><surname>Jacobsen</surname><given-names>K. W.</given-names></name>
+<article-title>The atomic simulation
+environment&#x02014;a Python library for working with atoms</article-title>. <source>J. Phys.: Condens. Matter</source>
+<year>2017</year>, <volume>29</volume>, <fpage>273002</fpage><pub-id pub-id-type="doi">10.1088/1361-648X/aa680e</pub-id>.<pub-id pub-id-type="pmid">28323250</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="undeclared" id="cit14"><publisher-name>Software
+for Chemistry &#x00026; Materials B.V. (SCM)</publisher-name>: <year>2018</year>.</mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="computer-program" id="cit15"><person-group person-group-type="allauthors"><name><surname>Hidding</surname><given-names>J.</given-names></name>; <name><surname>Weel</surname><given-names>B.</given-names></name>; <name><surname>Zapata</surname><given-names>F.</given-names></name>; <name><surname>Borgdorff</surname><given-names>J.</given-names></name></person-group><source>NLeSC/noodles 0.2.3</source>;<pub-id pub-id-type="doi">10.5281/ZENODO.205986</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>te Velde</surname><given-names>G.</given-names></name>; <name><surname>Bickelhaupt</surname><given-names>F. M.</given-names></name>; <name><surname>Baerends</surname><given-names>E. J.</given-names></name>; <name><surname>Fonseca Guerra</surname><given-names>C.</given-names></name>; <name><surname>van Gisbergen</surname><given-names>S. J. A.</given-names></name>; <name><surname>Snijders</surname><given-names>J. G.</given-names></name>; <name><surname>Ziegler</surname><given-names>T.</given-names></name>
+<article-title>Chemistry with ADF</article-title>. <source>J. Comput. Chem.</source>
+<year>2001</year>, <volume>22</volume>, <fpage>931</fpage>&#x02013;<lpage>967</lpage><pub-id pub-id-type="doi">10.1002/jcc.1056</pub-id>.</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Hutter</surname><given-names>J.</given-names></name>; <name><surname>Iannuzzi</surname><given-names>M.</given-names></name>; <name><surname>Schiffmann</surname><given-names>F.</given-names></name>; <name><surname>Vandevondele</surname><given-names>J.</given-names></name>
+<article-title>Cp2k: Atomistic
+simulations of condensed matter systems</article-title>. <source>Wiley
+Interdiscip. Rev. Comput. Mol. Sci.</source>
+<year>2014</year>, <volume>4</volume>, <fpage>15</fpage>&#x02013;<lpage>25</lpage><pub-id pub-id-type="doi">10.1002/wcms.1159</pub-id>.</mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="computer-program" id="cit18"><person-group person-group-type="allauthors"><name><surname>Visscher</surname><given-names>L.</given-names></name>; <name><surname>Jensen</surname><given-names>H. J. Aa.</given-names></name>; <name><surname>Bast</surname><given-names>R.</given-names></name>; <name><surname>Saue</surname><given-names>T.</given-names></name></person-group> with contributions from <person-group person-group-type="editor"><name><surname>Bakken</surname><given-names>V.</given-names></name>; <name><surname>Dyall</surname><given-names>K.
+G.</given-names></name>; <name><surname>Dubillard</surname><given-names>S.</given-names></name>; <name><surname>Ekstr&#x000f6;m</surname><given-names>U.</given-names></name>; <name><surname>Eliav</surname><given-names>E.</given-names></name>; <name><surname>Enevoldsen</surname><given-names>T.</given-names></name>; <name><surname>Fa&#x000df;hauer</surname><given-names>E.</given-names></name>; <name><surname>Fleig</surname><given-names>T.</given-names></name>; <name><surname>Fossgaard</surname><given-names>O.</given-names></name>; <name><surname>Gomes</surname><given-names>A. S. P.</given-names></name>; <name><surname>Hedeg&#x000e5;rd</surname><given-names>E. D.</given-names></name>; <name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Henriksson</surname><given-names>J.</given-names></name>; <name><surname>Ilia&#x00161;</surname><given-names>M.</given-names></name></person-group><source>Dirac, A relativistic ab initio electronic
+structure program, Release DIRAC17</source>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="book" id="cit19"><person-group person-group-type="allauthors"><name><surname>Gordon</surname><given-names>M. S.</given-names></name>; <name><surname>Schmidt</surname><given-names>M. W.</given-names></name></person-group> In <source>Theory and Applications
+of Computational Chemistry</source>; <publisher-name>Elsevier</publisher-name>: <year>2005</year>; pp <fpage>1167</fpage>&#x02013;<lpage>1189</lpage>,<pub-id pub-id-type="doi">10.1016/B978-044451719-7/50084-6</pub-id>.</mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Neese</surname><given-names>F.</given-names></name>
+<article-title>The ORCA program
+system</article-title>. <source>Wiley Interdiscip. Rev. Comput. Mol.
+Sci.</source>
+<year>2012</year>, <volume>2</volume>, <fpage>73</fpage>&#x02013;<lpage>78</lpage><pub-id pub-id-type="doi">10.1002/wcms.81</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="computer-program" id="cit21"><person-group person-group-type="allauthors"><name><surname>Zapata</surname><given-names>F.</given-names></name>; <name><surname>Ridder</surname><given-names>L.</given-names></name>; <name><surname>Hidding</surname><given-names>J.</given-names></name>; <name><surname>Infante</surname><given-names>I.</given-names></name>; <name><surname>Visscher</surname><given-names>L.</given-names></name></person-group><source>QMflows</source>;<pub-id pub-id-type="doi">10.5281/ZENODO.1045523</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Ruddigkeit</surname><given-names>L.</given-names></name>; <name><surname>van Deursen</surname><given-names>R.</given-names></name>; <name><surname>Blum</surname><given-names>L. C.</given-names></name>; <name><surname>Reymond</surname><given-names>J.-L.</given-names></name>
+<article-title>Enumeration of 166
+Billion Organic Small Molecules in the Chemical Universe Database
+GDB-17</article-title>. <source>J. Chem. Inf. Model.</source>
+<year>2012</year>, <volume>52</volume>, <fpage>2864</fpage>&#x02013;<lpage>2875</lpage><pub-id pub-id-type="doi">10.1021/ci300415d</pub-id>.<pub-id pub-id-type="pmid">23088335</pub-id></mixed-citation></ref></ref-list></back></article>

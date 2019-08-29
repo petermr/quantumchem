@@ -1,0 +1,349 @@
+{
+  "id": [
+    "31285433"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31285433"
+  ],
+  "pmcid": [
+    "PMC6614426"
+  ],
+  "doi": [
+    "10.1038/s41467-019-10988-2"
+  ],
+  "title": [
+    "An adaptive variational algorithm for exact molecular simulations on a quantum computer."
+  ],
+  "authorString": [
+    "Grimsley HR, Economou SE, Barnes E, Mayhall NJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Grimsley HR"
+          ],
+          "firstName": [
+            "Harper R"
+          ],
+          "lastName": [
+            "Grimsley"
+          ],
+          "initials": [
+            "HR"
+          ],
+          "affiliation": [
+            "Department of Chemistry, Virginia Tech, Blacksburg, VA, 24061, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Economou SE"
+          ],
+          "firstName": [
+            "Sophia E"
+          ],
+          "lastName": [
+            "Economou"
+          ],
+          "initials": [
+            "SE"
+          ],
+          "affiliation": [
+            "Department of Physics, Virginia Tech, Blacksburg, VA, 24061, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Barnes E"
+          ],
+          "firstName": [
+            "Edwin"
+          ],
+          "lastName": [
+            "Barnes"
+          ],
+          "initials": [
+            "E"
+          ],
+          "affiliation": [
+            "Department of Physics, Virginia Tech, Blacksburg, VA, 24061, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Mayhall NJ"
+          ],
+          "firstName": [
+            "Nicholas J"
+          ],
+          "lastName": [
+            "Mayhall"
+          ],
+          "initials": [
+            "NJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1312-9781",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, Virginia Tech, Blacksburg, VA, 24061, USA. nmayhall@vt.edu."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1312-9781",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "10"
+      ],
+      "journalIssueId": [
+        "2833191"
+      ],
+      "dateOfPublication": [
+        "2019 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "3007"
+  ],
+  "abstractText": [
+    "Quantum simulation of chemical systems is one of the most promising near-term applications of quantum computers. The variational quantum eigensolver, a leading algorithm for molecular simulations on quantum hardware, has a serious limitation in that it typically relies on a pre-selected wavefunction ansatz that results in approximate wavefunctions and energies. Here we present an arbitrarily accurate variational algorithm that, instead of fixing an ansatz upfront, grows it systematically one operator at a time in a way dictated by the molecule being simulated. This generates an ansatz with a small number of parameters, leading to shallow-depth circuits. We present numerical simulations, including for a prototypical strongly correlated molecule, which show that our algorithm performs much better than a unitary coupled cluster approach, in terms of both circuit depth and chemical accuracy. Our results highlight the potential of our adaptive algorithm for exact simulations with present-day and near-term quantum hardware."
+  ],
+  "affiliation": [
+    "Department of Chemistry, Virginia Tech, Blacksburg, VA, 24061, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "1839136"
+          ],
+          "agency": [
+            "National Science Foundation (NSF)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "DE-SC0019318"
+          ],
+          "agency": [
+            "U.S. Department of Energy (DOE)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "DE-SC0019199"
+          ],
+          "agency": [
+            "U.S. Department of Energy (DOE)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6614426?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6614426"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41467-019-10988-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2019-07-10"
+  ],
+  "firstIndexDate": [
+    "2019-07-10"
+  ],
+  "dateOfRevision": [
+    "2019-07-23"
+  ],
+  "electronicPublicationDate": [
+    "2019-07-08"
+  ],
+  "firstPublicationDate": [
+    "2019-07-08"
+  ]
+}

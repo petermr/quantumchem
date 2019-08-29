@@ -1,0 +1,1258 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName A++V2.4.dtd?><?SourceDTD.Version 2.4?><?ConverterInfo.XSLTName springer2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Nat Commun</journal-id><journal-id journal-id-type="iso-abbrev">Nat Commun</journal-id><journal-title-group><journal-title>Nature Communications</journal-title></journal-title-group><issn pub-type="epub">2041-1723</issn><publisher><publisher-name>Nature Publishing Group UK</publisher-name><publisher-loc>London</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6646321</article-id><article-id pub-id-type="publisher-id">11156</article-id><article-id pub-id-type="doi">10.1038/s41467-019-11156-2</article-id><article-categories><subj-group subj-group-type="heading"><subject>Article</subject></subj-group></article-categories><title-group><article-title>Spectroscopic disentanglement of the quantum states of highly excited Cu<sub>2</sub></article-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4475-3587</contrib-id><name><surname>Beck</surname><given-names>M.</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1293-2668</contrib-id><name><surname>Bornhauser</surname><given-names>P.</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib contrib-type="author"><name><surname>Visser</surname><given-names>Bradley</given-names></name><xref ref-type="aff" rid="Aff1">1</xref><xref ref-type="aff" rid="Aff4">4</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0786-3402</contrib-id><name><surname>Knopp</surname><given-names>G.</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib contrib-type="author"><name><surname>Bokhoven</surname><given-names>J. A. van</given-names></name><xref ref-type="aff" rid="Aff2">2</xref><xref ref-type="aff" rid="Aff3">3</xref></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1197-1091</contrib-id><name><surname>Radi</surname><given-names>P. P.</given-names></name><address><email>peter.radi@psi.ch</email></address><xref ref-type="aff" rid="Aff1">1</xref></contrib><aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 1090 7501</institution-id><institution-id institution-id-type="GRID">grid.5991.4</institution-id><institution>Photon Science Division, </institution><institution>Paul Scherrer Institute, </institution></institution-wrap>5232 Villigen, Switzerland </aff><aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 1090 7501</institution-id><institution-id institution-id-type="GRID">grid.5991.4</institution-id><institution>Energy and Environment Division, </institution><institution>Paul Scherrer Institute, </institution></institution-wrap>5232 Villigen, Switzerland </aff><aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2156 2780</institution-id><institution-id institution-id-type="GRID">grid.5801.c</institution-id><institution>Department of Chemistry and Applied Biosciences, </institution><institution>ETH Z&#x000fc;rich, </institution></institution-wrap>8093 Z&#x000fc;rich, Switzerland </aff><aff id="Aff4"><label>4</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 1497 8091</institution-id><institution-id institution-id-type="GRID">grid.410380.e</institution-id><institution>Present Address: University of Applied Sciences and Arts, Northwestern Switzerland, </institution></institution-wrap>5610 Windisch, Switzerland </aff></contrib-group><pub-date pub-type="epub"><day>22</day><month>7</month><year>2019</year></pub-date><pub-date pub-type="pmc-release"><day>22</day><month>7</month><year>2019</year></pub-date><pub-date pub-type="collection"><year>2019</year></pub-date><volume>10</volume><elocation-id>3270</elocation-id><history><date date-type="received"><day>16</day><month>1</month><year>2019</year></date><date date-type="accepted"><day>26</day><month>6</month><year>2019</year></date></history><permissions><copyright-statement>&#x000a9; The Author(s) 2019</copyright-statement><license license-type="OpenAccess"><license-p><bold>Open Access</bold> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article&#x02019;s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article&#x02019;s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p></license></permissions><abstract id="Abs1"><p id="Par1">Transition metals, characterised by their partially filled d orbitals, provide the basis for many of the most relevant processes in chemistry, biology, and physics. Embedded as single atoms or in small clusters, they give rise to exceptional optical, chemical, and magnetic properties. So far, it has proven impossible to disentangle the complex network of excited quantum states, which greatly hinders prediction and control of material properties. Here, we apply two-colour resonant four-wave mixing to quantitatively resolve the quantum states of the neutral copper dimer. This allows us to unwind the individual spectral lines by isotopic composition and rotational quantum number and reveals a rich network of bright and perturbing dark states. While this work presents a road map for the experimental study of the bonding between and with transition metal atoms, it also provides experimental reference data for prospective quantum chemical approaches on handling systems with a high density of states.</p></abstract><abstract id="Abs2" abstract-type="web-summary"><p id="Par2">Transition metals are at the basis of key processes in chemistry and biology but their complex electronic structures make understanding of their properties a challenge. Here the authors resolve individual spectral lines of Cu<sub>2</sub> in the deep UV region by two-colour resonant four-wave mixing.</p></abstract><kwd-group kwd-group-type="npg-subject"><title>Subject terms</title><kwd>Excited states</kwd><kwd>Optical spectroscopy</kwd></kwd-group><funding-group><award-group><funding-source><institution>Swiss National Science Foundation #200021_1531701 and #200020_1754901</institution></funding-source></award-group></funding-group><custom-meta-group><custom-meta><meta-name>issue-copyright-statement</meta-name><meta-value>&#x000a9; The Author(s) 2019</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="Sec1" sec-type="introduction"><title>Introduction</title><p id="Par3">Transition metals are key elements for many applications ranging from high-efficiency white organic light-emitting diodes<sup><xref ref-type="bibr" rid="CR1">1</xref></sup>, catalysis<sup><xref ref-type="bibr" rid="CR2">2</xref></sup> and sensors<sup><xref ref-type="bibr" rid="CR3">3</xref></sup>, to novel approaches for cancer-cell destruction<sup><xref ref-type="bibr" rid="CR4">4</xref></sup>. The usage of transition metals is essential in many chemical reactions. However, even when the atomic structures are known, the underlying quantum chemistry is barely understood. Less is known about processes used in chemical industry, where transition metals are employed as catalysts. While catalysis yields products like fertilisers, which are indispensable to feed the current world population<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>, the lack of knowledge about the active transition metal sites obstructs the rational design of new catalysts, which are necessary for the transition towards green chemistry<sup><xref ref-type="bibr" rid="CR6">6</xref></sup>.</p><p id="Par4">It has been demonstrated that not only the highest activity, but also the largest adjustability of chemical and physical properties, can be found in the quantum size regime, which spans the size range between a single atom<sup><xref ref-type="bibr" rid="CR7">7</xref></sup> and several nanometres<sup><xref ref-type="bibr" rid="CR8">8</xref></sup>. In this regime, the partially filled d orbitals of transition metals lead to a very large number of electronic states. Therefore, perturbation-induced mixing of energetically close states is abundant.</p><p id="Par5">Such vibronic coupling, which is neglected in the Born-Oppenheimer approximation, along with spin&#x02013;orbit interaction combines with coherence phenomena to enhance function in chemical and biophysical systems<sup><xref ref-type="bibr" rid="CR9">9</xref></sup>, but obstructs the understanding of such systems. To reproduce these interactions by computation, multiconfiguration self-consistent field and multireference configuration interaction methods are required<sup><xref ref-type="bibr" rid="CR10">10</xref></sup>. However, the complexity of an excited transition metal dimer in vacuum can easily exceed the size restrictions of these methods. New approaches strongly depend on experimental verification, which up until now was impossible. The densely packed spectra cannot be resolved with standard experimental methods, as the multitude of overlapping and perturbed bands prevents the assignment of individual spectral features. Here, we provide a solution to this problem by partitioning these spectra into components of defined rotational quantum states, which can be assigned easily.</p><p id="Par6">Such an approach is critical for the study of transition metal dimers given the sheer number of possible transitions in even the low-energy regime and the complex interaction of individual states with one another. The method is demonstrated on a coinage metal, as the density of states at low energies remain manageable, but increases dramatically with the promotion of an electron from the d-shell. Other transition metals have open d-shell ground state configurations, leading to a great number of individual states. An extreme of this is Ti<sub>2</sub> that has almost 5000 states in just the first 1.6&#x02009;eV above the ground state<sup><xref ref-type="bibr" rid="CR11">11</xref></sup>.</p><p id="Par7">The copper dimer is often considered to be the simplest transition metal dimer, with just two molecular states arising from the combination of ground state <sup>2</sup>S (3d<sup>10</sup>4s) atoms. While this has made it a preferred test molecule for numerous computational methods, recent work emphasises the role of dicopper centres in the global carbon and nitrogen cycles<sup><xref ref-type="bibr" rid="CR12">12</xref></sup>. The molecular ground state, X<sup>1</sup><inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{\Sigma }}_{\mathrm{g}}^ + (0_{\mathrm{g}}^ + )$$\end{document}</tex-math><mml:math id="M2"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">&#x003a3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq1.gif"/></alternatives></inline-formula>, and the first exited state, a<sup>3</sup><inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{\Sigma }}_{\mathrm{u}}^ + (1_{\mathrm{u}})$$\end{document}</tex-math><mml:math id="M4"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">&#x003a3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq2.gif"/></alternatives></inline-formula>, are formed by the two electrons in the <inline-formula id="IEq3"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$(4{\mathrm{s}}\sigma )^2$$\end{document}</tex-math><mml:math id="M6"><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>4</mml:mn><mml:mi mathvariant="normal">s</mml:mi><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq3.gif"/></alternatives></inline-formula> and <inline-formula id="IEq4"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$(4{\mathrm{s}}\sigma )^1(4{\mathrm{s}}\sigma ^ \ast )^1$$\end{document}</tex-math><mml:math id="M8"><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>4</mml:mn><mml:mi mathvariant="normal">s</mml:mi><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>4</mml:mn><mml:mi mathvariant="normal">s</mml:mi><mml:msup><mml:mrow><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mrow><mml:mo>*</mml:mo></mml:mrow></mml:msup></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq4.gif"/></alternatives></inline-formula> molecular orbitals, respectively, and there is little interaction between the 3d shells localised on the atoms<sup><xref ref-type="bibr" rid="CR13">13</xref></sup>.</p><p id="Par8">As spin&#x02013;orbit interaction is non-negligible in dicopper<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>, states are labelled using their total angular momentum <italic>&#x003a9;</italic> in Hund&#x02019;s case (c) notation, i.e., <inline-formula id="IEq5"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M10"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq5.gif"/></alternatives></inline-formula> and a1<sub>u</sub>. Despite its simple ground state, the low-lying states of a copper dimer in vacuum that can be experimentally probed by visible light, were only recently reproduced by computational methods<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>. Promotion of an electron from the 3d shell leads to a much larger number of possible combinations, with 40 molecular states formed from the bonding of a ground state atom <sup>2</sup>S with an excited <sup>2</sup>D atom. They ensue at low energies since the <sup>2</sup>D state is only &#x02248;1.5&#x02009;eV above the atomic ground state. The combination of two <sup>2</sup>D atoms gives rise to 100 states, which populate the energy range up to 5&#x02009;eV.</p><p id="Par9">Gas-phase measurements of the electronic structure of Cu<sub>2</sub> were reviewed by Morse in&#x000a0;ref.&#x000a0;<sup><xref ref-type="bibr" rid="CR15">15</xref></sup>. Since then, several new states were observed in the ultraviolet (UV)<sup><xref ref-type="bibr" rid="CR16">16</xref></sup> and improved spectroscopic constants for the D state were reported<sup><xref ref-type="bibr" rid="CR17">17</xref></sup>. Despite a considerable number of spectroscopic investigations, very few of the excited states have been rotationally resolved and molecular constants determined. From the recent investigations of dicopper in this laboratory, low-lying states, including the newly found A&#x02032;1<sub><italic>u</italic></sub> state, were rationalised by state-of-the-art MRCI computations, including Hund&#x02019;s case (c) coupling terms. Except for the <inline-formula id="IEq6"><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M12"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq6.gif"/></alternatives></inline-formula> and al<sub>u</sub> state, the low-energy electronic structure is dominated by states that correspond to the <sup>2</sup>S&#x02009;+&#x02009;<sup>2</sup>D pair of atomic limits. The discovery of the A&#x02032;1<sub>u</sub> state confirms that Hund&#x02019;s case (c) coupling is required to account for the number of low-energy electronic states observed. In addition, it was found that the <inline-formula id="IEq7"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M14"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq7.gif"/></alternatives></inline-formula> state can be definitely assigned to a state, which would correspond asymptotically to the ground ion-pair state<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>. More recent studies determined molecular constants for the <inline-formula id="IEq8"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M16"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq8.gif"/></alternatives></inline-formula> and I1<sub>u</sub> state and disclosed their symmetry. The <inline-formula id="IEq9"><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M18"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq9.gif"/></alternatives></inline-formula>-<inline-formula id="IEq10"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M20"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq10.gif"/></alternatives></inline-formula> transition could be assigned to a promotion of a 3d<italic>&#x003c0;</italic><sub>g</sub> electron to the 4p<italic>&#x003c0;</italic><sub>u</sub> molecular orbital thus determining the complete configuration of the <inline-formula id="IEq11"><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M22"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq11.gif"/></alternatives></inline-formula> state as <inline-formula id="IEq12"><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{3d}}^{{\mathrm{18}}}{\mathrm{3d}}\pi _{\mathrm{g}}{\mathrm{4s}}\sigma _{\mathrm{g}}^{\mathrm{2}}{\mathrm{4p}}\pi _{\mathrm{u}}$$\end{document}</tex-math><mml:math id="M24"><mml:msup><mml:mrow><mml:mi mathvariant="normal">3d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">18</mml:mi></mml:mrow></mml:msup><mml:mi mathvariant="normal">3d</mml:mi><mml:msub><mml:mrow><mml:mi>&#x003c0;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow></mml:msub><mml:mi mathvariant="normal">4s</mml:mi><mml:msubsup><mml:mrow><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">2</mml:mi></mml:mrow></mml:msubsup><mml:mi mathvariant="normal">4p</mml:mi><mml:msub><mml:mrow><mml:mi>&#x003c0;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq12.gif"/></alternatives></inline-formula>, a state that dissociates adiabatically to the 3d<sup>10</sup>4s&#x02009;+&#x02009;3d<sup>9</sup>4s4p asymptotic limit<sup><xref ref-type="bibr" rid="CR18">18</xref></sup>. This state is strongly bound as expected from the promotion of a d-electron to a binding 4p orbital.</p><p id="Par10">In this work, by exciting the copper dimer using deep-ultraviolet light, spectra are recorded in the vicinity of the <inline-formula id="IEq13"><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M26"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq13.gif"/></alternatives></inline-formula> state. In this realm, the copper dimer behaves like a typical transition metal dimer possessing open-shell d-electrons: Interactions of close lying states go beyond the reach of any computation and experimental spectra are generally too complex to be assigned. The highly selective and sensitive method applied here quantitatively unravels a rich network of interacting states by assignment of individual rovibronic transitions. The complex bonding features involving ion-pair states, perturbations, and avoided crossings are accessible. Such knowledge sheds light on the electronic structure that governs the functionality of transition metals and provides reference data for advanced computations of these important molecules.</p></sec><sec id="Sec2" sec-type="results"><title>Results</title><sec id="Sec3"><title>Spectral simplification by double-resonance spectroscopy</title><p id="Par11">The <inline-formula id="IEq14"><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M28"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq14.gif"/></alternatives></inline-formula> state can be reached directly from the ground state by a strong transition, which was first described by Powers et al. in ref. <sup><xref ref-type="bibr" rid="CR19">19</xref></sup>. However, in that work the bands recorded were seen to be accompanied by unknown features. In 1991, rotationally resolved measurements by Page et al.<sup><xref ref-type="bibr" rid="CR20">20</xref></sup> revealed a (0-0) <inline-formula id="IEq15"><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M30"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq15.gif"/></alternatives></inline-formula>-<inline-formula id="IEq16"><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M32"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq16.gif"/></alternatives></inline-formula> band that could not be assigned, as no set of contrived molecular constants reproduced it. In light of our results, the reason for this becomes clear.</p><p id="Par12">Figure&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref> shows an accurate simulation of the (0-0) <inline-formula id="IEq17"><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M34"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq17.gif"/></alternatives></inline-formula>-<inline-formula id="IEq18"><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M36"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq18.gif"/></alternatives></inline-formula> band and a Fortrat diagram, which maps the transitions to the individual rotational quantum number <italic>J</italic>&#x02032; of the accessed state. There, not only transitions to the bright <inline-formula id="IEq19"><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M38"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq19.gif"/></alternatives></inline-formula> state, but also hypothesised transitions into three dark vibronic states are shown. These states exhibit little transition strength from the initial ground state and cannot be accessed directly. However, they gain intensity and experience a line shift where their corresponding branches intersect with the <inline-formula id="IEq20"><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M40"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq20.gif"/></alternatives></inline-formula> state. The reason behind this lies in the quantum mechanical mixing of energetically close bright and dark states, given sufficient overlap of their wave functions. Consequently, both states share part of the same character and level repulsion occurs.<fig id="Fig1"><label>Fig. 1</label><caption><p>The underlying structure of a heavily perturbed band. <bold>a</bold> Simulation of the (0-0) <inline-formula id="IEq21"><alternatives><tex-math id="M41">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M42"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq21.gif"/></alternatives></inline-formula>-<inline-formula id="IEq22"><alternatives><tex-math id="M43">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M44"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq22.gif"/></alternatives></inline-formula> vibronic band of the copper dimer, limited to the two most abundant isotopologues. The irregular shape of the band originates from perturbations of the electronic <inline-formula id="IEq23"><alternatives><tex-math id="M45">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M46"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq23.gif"/></alternatives></inline-formula> state by several dark states. <bold>b</bold> Fortrat diagram of the same region, revealing the individual interactions occurring between the bright <inline-formula id="IEq24"><alternatives><tex-math id="M47">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M48"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq24.gif"/></alternatives></inline-formula> state (yellow) and three dark states, <inline-formula id="IEq25"><alternatives><tex-math id="M49">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M50"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq25.gif"/></alternatives></inline-formula> (red), <italic>L</italic>1 (blue), <inline-formula id="IEq26"><alternatives><tex-math id="M51">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{63}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M52"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>63</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq26.gif"/></alternatives></inline-formula> (green), in both <sup>63</sup>Cu<sub>2</sub> (dark colours) and <sup>65</sup>Cu<sup>63</sup>Cu (light colours). While the colour denotes the vibronic state, the area of the coloured square indicates the intensity of the individual line. Band transitions are connected by lines to guide the eye. As dipole selection rules for this bands dictate that the rotational quantum number can change only by &#x000b1;1 for a given initial <italic>J</italic>&#x02033;, two branches occur for each state, a P and R-branch with &#x00394;<italic>J</italic>&#x02009;=&#x02009;<italic>J</italic>&#x02032;&#x02009;&#x02212;&#x02009;<italic>J</italic>&#x02033;&#x02009;=&#x02009;&#x02212;1 and &#x00394;<italic>J</italic>&#x02009;=&#x02009;+1, respectively. Primes and double primes designate the excited and ground state quantum numbers, respectively</p></caption><graphic xlink:href="41467_2019_11156_Fig1_HTML" id="d29e1136"/></fig></p><p id="Par13">As there is no way to extract the data in the Fortrat diagram from an experimental one-photon spectrum (as in the one simulated in Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1a</xref>), the underlying information on the molecular constants of the vibronic states and the interactions among them need to be obtained by a different experimental approach that simplifies the spectrum. In this work, we used Two-Colour Resonant Four-Wave mixing (TC-RFWM)<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> as a spectroscopic method. While this Optical-Optical Double Resonance (OODR) technique enables us to do spectroscopy on individually addressed quantum states of single isotopologues, the complex process of signal generation<sup><xref ref-type="bibr" rid="CR22">22</xref></sup> raises substantial requirements on the experimental set-up. In particular, the target dimeric species needs to be provided with both a high and a stable number density, which was only recently achieved<sup><xref ref-type="bibr" rid="CR18">18</xref></sup>.</p></sec><sec id="Sec4"><title>Rotational disentanglement of bands</title><p id="Par14">TC-RFWM allows spectra to be collected that originate from a single known <italic>J</italic>&#x02033; level of the ground <inline-formula id="IEq27"><alternatives><tex-math id="M53">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M54"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq27.gif"/></alternatives></inline-formula> state. The resulting spectra contain only one R, one P, and sometimes one Q line, depending on the symmetry of the excited state. This capability greatly simplifies the analysis of the spectra, especially in cases where perturbations destroy the regularity of rotational levels in the upper state. When a bright state is perturbed by a dark state, the quantum mechanical mixing of these states causes their energies to shift, but also the strengths of related transitions to redistribute. Hence, the dark state becomes detectable for rotational levels where both states are sufficiently close in energy to perturb each other substantially.</p><p id="Par15">Figure&#x000a0;<xref rid="Fig2" ref-type="fig">2a</xref> illustrates this effect on transitions from the ground state into the vibrationally excited <inline-formula id="IEq28"><alternatives><tex-math id="M55">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M56"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq28.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2) state of the <sup>65</sup>Cu<sup>63</sup>Cu dimer. Analogous to the computed Fortrat diagram in Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1b</xref>, the experimental spectra are arranged as a function of the rotational quantum number <italic>J</italic>&#x02033; in the ground state, which was directly provided by the applied method. As a result of the ordering in the ground state, the intersections of perturbing dark states appear shifted by two rotational levels, when comparing the P-branch (&#x00394;<italic>J</italic>&#x02009;=&#x02009;&#x02212;1) with the R-branch (&#x00394;<italic>J</italic>&#x02009;=&#x02009;+1). For some spectra, additional lines were visible and others remained unassigned, because of spectral overlap in the band used to determine <italic>J</italic>&#x02033; in the ground state. Such ambiguities can be resolved by using another transition to access the same <italic>J</italic>&#x02032;. Figure&#x000a0;<xref rid="Fig2" ref-type="fig">2b</xref> depicts the ordering and relative spacing between the rotational levels of the observed vibronic states. Most obvious is the strong interaction between the <inline-formula id="IEq29"><alternatives><tex-math id="M57">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M58"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq29.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2) state and the vibronic state preliminarily labelled as <inline-formula id="IEq30"><alternatives><tex-math id="M59">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M60"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq30.gif"/></alternatives></inline-formula>. The label <inline-formula id="IEq31"><alternatives><tex-math id="M61">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M62"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq31.gif"/></alternatives></inline-formula> was chosen on purpose, as this level is part of a series of vibrational levels that was observed across all measured vibrational levels of the electronic <inline-formula id="IEq32"><alternatives><tex-math id="M63">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M64"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq32.gif"/></alternatives></inline-formula> state. Using the isotopic shifts, it can be assumed that <inline-formula id="IEq33"><alternatives><tex-math id="M65">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M66"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq33.gif"/></alternatives></inline-formula> corresponds to a vibrational level about <italic>v</italic>&#x02009;=&#x02009;68, while its properties (vide infra) suggest an assignment to the electronic <inline-formula id="IEq34"><alternatives><tex-math id="M67">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M68"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq34.gif"/></alternatives></inline-formula> state<sup><xref ref-type="bibr" rid="CR15">15</xref></sup>. At its culmination, between rotational levels <inline-formula id="IEq35"><alternatives><tex-math id="M69">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$J = 29$$\end{document}</tex-math><mml:math id="M70"><mml:mi>J</mml:mi><mml:mo>=</mml:mo><mml:mn>29</mml:mn></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq35.gif"/></alternatives></inline-formula> and <inline-formula id="IEq36"><alternatives><tex-math id="M71">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$J = 30$$\end{document}</tex-math><mml:math id="M72"><mml:mi>J</mml:mi><mml:mo>=</mml:mo><mml:mn>30</mml:mn></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq36.gif"/></alternatives></inline-formula>, the repulsion of these levels increases their separation from 2 to 10&#x02009;cm<sup>&#x02212;1</sup>.<fig id="Fig2"><label>Fig. 2</label><caption><p>An experimental Fortrat diagram. <bold>a</bold> A series of two-colour resonant four-wave mixing (TC-RFWM) spectra ordered by the experimentally determined rotational quantum number <italic>J</italic>&#x02033; of the ground state <inline-formula id="IEq37"><alternatives><tex-math id="M73">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M74"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq37.gif"/></alternatives></inline-formula> is shown. The regions of unambiguously assigned lines of the <sup>65</sup>Cu<sup>63</sup>Cu isotopologue are coloured based on the excited electronic state (blue: <inline-formula id="IEq38"><alternatives><tex-math id="M75">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M76"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq38.gif"/></alternatives></inline-formula>, green: <italic>O</italic>1 and red: <inline-formula id="IEq39"><alternatives><tex-math id="M77">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M78"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq39.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2)). <bold>b</bold> The corresponding rovibronic levels are plotted, based on molecular constants fitted to the assigned line positions. For clarity, the energy scale was reduced by taking into account the rotational constant <italic>B</italic> of one state to straighten the parabolas</p></caption><graphic xlink:href="41467_2019_11156_Fig2_HTML" id="d29e1515"/></fig></p><p id="Par16">The perturbations between the <inline-formula id="IEq40"><alternatives><tex-math id="M79">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M80"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq40.gif"/></alternatives></inline-formula> and <inline-formula id="IEq41"><alternatives><tex-math id="M81">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{xx}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M82"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq41.gif"/></alternatives></inline-formula> states have been analysed by assuming a homogeneous perturbation on the basis of the observed effective rotational quantum numbers (Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>). Mostly, both P and R branch transitions were observed with sufficient intensity. In contrast, the vibronic state preliminarily labelled <italic>O</italic>1 exhibits a combination of interesting properties. Starting from low rotational levels, the dark <italic>O</italic>1 state just becomes visible at its intersection with the <inline-formula id="IEq42"><alternatives><tex-math id="M83">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M84"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq42.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2) state, where it causes a splitting of about 0.4&#x02009;cm<sup>&#x02212;1</sup> at <inline-formula id="IEq43"><alternatives><tex-math id="M85">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$J = 14$$\end{document}</tex-math><mml:math id="M86"><mml:mi>J</mml:mi><mml:mo>=</mml:mo><mml:mn>14</mml:mn></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq43.gif"/></alternatives></inline-formula>. However, in this range only the P-branch is visible. From <inline-formula id="IEq44"><alternatives><tex-math id="M87">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$J = 15$$\end{document}</tex-math><mml:math id="M88"><mml:mi>J</mml:mi><mml:mo>=</mml:mo><mml:mn>15</mml:mn></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq44.gif"/></alternatives></inline-formula> onwards the situation reverses and only the R-branch is visible. Further afield of the intersection, it does not fully disappear as expected from a dark state. Finally, <italic>O</italic>1 approaches the intersection with <inline-formula id="IEq45"><alternatives><tex-math id="M89">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M90"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq45.gif"/></alternatives></inline-formula> where no significant splitting is added on top of the natural separation of about 1&#x02009;cm<sup>&#x02212;1</sup> between the levels of <italic>O</italic>1 and <inline-formula id="IEq46"><alternatives><tex-math id="M91">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M92"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq46.gif"/></alternatives></inline-formula>, the behaviour of <italic>O</italic>1 changes again and we did not detect a single <italic>O</italic>1 line across the second intersection. Intensity anomalies between P(<italic>J</italic>&#x02009;+&#x02009;1) and R(<italic>J</italic>&#x02009;&#x02212;&#x02009;1) lines have been observed and attributed to the mixing of perturbing states<sup><xref ref-type="bibr" rid="CR23">23</xref></sup>. The effect can be explained by quantum mechanical interference that comprises information on the perturbation class. For example, parallel and perpendicular transitions (with an orbital angular momentum change &#x00394;<italic>&#x0039b;</italic>&#x02009;=&#x02009;0 or &#x000b1;1, respectively) display approximately equal intensities for the P(<italic>J</italic>&#x02009;+&#x02009;1) and R(<italic>J</italic>&#x02009;&#x02212;&#x02009;1) lines for unperturbed states. If a perturbation occurs (<italic>L</italic>-uncoupling) between two states exhibiting an angular momentum difference of &#x00394;<italic>&#x0039b;</italic>&#x02009;=&#x02009;&#x000b1;1, the relative intensity of the branches out of this state can be affected strongly. For parallel transitions the amplitude phases of P and R are identical while for perpendicular transitions they are opposite. As a consequence, P line interference is constructive and the R line interferes destructively and the branch may disappear completely<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>. Numerous intensity anomalies occurring due to perturbation have been observed and their intensity patterns contain information on the class of perturbation (ref.&#x02009;<sup><xref ref-type="bibr" rid="CR24">24</xref></sup> and references therein). Additional information on perturbation effects is accessible by considering saturation and polarisation features of the background-free double-resonant method applied in this work. In a simplified spectrum, exhibiting only few transitions owing to the stringent double-resonance selection rules, partially forbidden features (weak &#x0201c;extra lines&#x0201d; obtaining oscillator strength through perturbation) can be observed at high laser intensities. Even though bright transitions might substantially broaden upon saturation, they are in general well separated from the &#x0201c;extra lines&#x0201d; that are made visible at increased laser powers. Furthermore, specific linear and circular polarisation configurations of the two resonant lasers allow further enhancement or discrimination of entire families of rovibronic transitions<sup><xref ref-type="bibr" rid="CR25">25</xref></sup> for the characterisation of perturbation effects. Considering the quantum mechanical interference for perturbed levels involving perpendicular transitions, <italic>L</italic>-uncoupling is suggested for the <inline-formula id="IEq47"><alternatives><tex-math id="M93">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$O1 \sim G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M94"><mml:mi>O</mml:mi><mml:mn>1</mml:mn><mml:mo>~</mml:mo><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq47.gif"/></alternatives></inline-formula> system and consequently a 1<sub>u</sub> symmetry label for the <italic>O</italic>1 state. However, the classification of these perturbations requires more detailed experiments and is beyond the scope of this report.</p></sec><sec id="Sec5"><title>Isotope-selective tracing of dark bands</title><p id="Par17">As the dark states exhibit different properties than the bright states, the resulting mixed states can also act as gateways for perturbation-facilitated studies of other dark regions of the studied system<sup><xref ref-type="bibr" rid="CR26">26</xref></sup>. For the copper dimer, a good example is provided by the series of vibrational levels that were preliminarily assigned to the <inline-formula id="IEq48"><alternatives><tex-math id="M95">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M96"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq48.gif"/></alternatives></inline-formula> state. In a previous work, we could already affirm computationally that the <inline-formula id="IEq49"><alternatives><tex-math id="M97">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{B0}}_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M98"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">B0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq49.gif"/></alternatives></inline-formula> state and the <inline-formula id="IEq50"><alternatives><tex-math id="M99">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M100"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq50.gif"/></alternatives></inline-formula> state emerge from the avoided crossing between a covalent bound state and an ion-pair state<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>. Transitions into ion-pair states are known for their high transition strength. As a consequence, strong emission into the vibronic ground state <inline-formula id="IEq51"><alternatives><tex-math id="M101">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M102"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq51.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;0) is observed from the <inline-formula id="IEq52"><alternatives><tex-math id="M103">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{B0}}_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M104"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">B0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq52.gif"/></alternatives></inline-formula> state, which has ion-pair character at the inner potential wall (towards low internuclear distance). By implication, the <inline-formula id="IEq53"><alternatives><tex-math id="M105">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M106"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq53.gif"/></alternatives></inline-formula> state should provide similar properties at its outer potential wall. Owing to the shallow potential, this wall is located at a large internuclear distance, so that no vertical transitions into <inline-formula id="IEq54"><alternatives><tex-math id="M107">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M108"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq54.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;0) are possible. On the contrary, strong transitions from the outer potential wall of <inline-formula id="IEq55"><alternatives><tex-math id="M109">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M110"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq55.gif"/></alternatives></inline-formula> would, if they exist, occur into highly excited vibrational levels of <inline-formula id="IEq56"><alternatives><tex-math id="M111">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M112"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq56.gif"/></alternatives></inline-formula>. While scanning the (0-0) <inline-formula id="IEq57"><alternatives><tex-math id="M113">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M114"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq57.gif"/></alternatives></inline-formula>-<inline-formula id="IEq58"><alternatives><tex-math id="M115">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M116"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq58.gif"/></alternatives></inline-formula> band in the deep-ultraviolet range, we indeed found strong blue fluorescence, which corresponds to transitions into the ground state <inline-formula id="IEq59"><alternatives><tex-math id="M117">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M118"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq59.gif"/></alternatives></inline-formula> at vibrational levels starting at <italic>v</italic>&#x02009;=&#x02009;83. Further analysis revealed that the vibronic state <inline-formula id="IEq60"><alternatives><tex-math id="M119">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M120"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq60.gif"/></alternatives></inline-formula>, which is shown in red in Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref>, is responsible for this. Only lines belonging to or perturbed by <inline-formula id="IEq61"><alternatives><tex-math id="M121">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M122"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq61.gif"/></alternatives></inline-formula> exhibit this fluorescence. Figure&#x000a0;<xref rid="Fig3" ref-type="fig">3</xref> depicts excitation scans in which a spectrometer was used to split the laser-induced fluorescence into individual vibronic bands. In Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3a</xref>, the ultraviolet emission close to the excitation wavelength was chosen. Most extra features visible in Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1a</xref> disappear and just some particular changes in intensity indicate that this still is a heavily perturbed band. Taking a look at the blue fluorescence around &#x02248;452 and 446&#x02009;nm in Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3b, c</xref>, respectively, it becomes obvious why these features were missing. Already <inline-formula id="IEq62"><alternatives><tex-math id="M123">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M124"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq62.gif"/></alternatives></inline-formula> levels that are sharing only a fraction of <inline-formula id="IEq63"><alternatives><tex-math id="M125">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M126"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq63.gif"/></alternatives></inline-formula> character strongly emit in the blue and deplete the excited population rapidly. Therefore, the weaker UV fluorescence is strongly suppressed.<fig id="Fig3"><label>Fig. 3</label><caption><p>Spectral decomposition of the laser-induced fluorescence. Excitation scans around the (0-0) <inline-formula id="IEq64"><alternatives><tex-math id="M127">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M128"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq64.gif"/></alternatives></inline-formula>-<inline-formula id="IEq65"><alternatives><tex-math id="M129">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M130"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq65.gif"/></alternatives></inline-formula> region of the copper dimer. <bold>a</bold> Fluorescence of <inline-formula id="IEq66"><alternatives><tex-math id="M131">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M132"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq66.gif"/></alternatives></inline-formula>, <italic>v</italic>&#x02009;=&#x02009;0 into the first vibrational excited level <italic>v</italic>&#x02009;=&#x02009;1 of the ground state <inline-formula id="IEq67"><alternatives><tex-math id="M133">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M134"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq67.gif"/></alternatives></inline-formula> (red). In addition, the (1-1) hot band is weakly visible, as its emission into <italic>v</italic>&#x02009;=&#x02009;2 occurs just 0.2&#x02009;nm below (orange). <bold>b</bold> Fluorescence into <italic>v</italic>&#x02009;=&#x02009;88. Only the <sup>65</sup>Cu<sup>63</sup>Cu isotopologue is visible (blue). <bold>c</bold> Fluorescence into <italic>v</italic>&#x02009;=&#x02009;84. Both isotopologues, <sup>65</sup>Cu<sup>63</sup>Cu (black) and <sup>63</sup>Cu<sub>2</sub> (green), are observed simultaneously. Assignments indicate the rotational quantum numbers of the <inline-formula id="IEq68"><alternatives><tex-math id="M135">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M136"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq68.gif"/></alternatives></inline-formula> and <inline-formula id="IEq69"><alternatives><tex-math id="M137">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M138"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq69.gif"/></alternatives></inline-formula> to <inline-formula id="IEq70"><alternatives><tex-math id="M139">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M140"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq70.gif"/></alternatives></inline-formula> transitions for two isotopologues, which are defined by taking into account the unambiguous results obtained by four-wave mixing</p></caption><graphic xlink:href="41467_2019_11156_Fig3_HTML" id="d29e2345"/></fig></p><p id="Par18">The fast emission of a photon in a totally different spectral range gives these excitation scans a high sensitivity for detecting the dark states. While the nonlinear four-wave mixing discloses the strongly perturbed lines of the dark states close to their intersection with the bright state, the linear, incoherent method is more suitable for the observation of the weak transitions that are energetically more separated. TC-RFWM intensities depend quadratically on the population whereas laser-induced fluorescence intensities depend linearly, which is advantageous in the low-density environment of a molecular beam. In addition, the nonlinear method depends on different powers of the transition moment as the level of saturation changes<sup><xref ref-type="bibr" rid="CR27">27</xref></sup> and is therefore further limiting the detection of weak transitions.</p><p id="Par19">In Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3b, c</xref> numerous rotational levels of the dark <inline-formula id="IEq71"><alternatives><tex-math id="M141">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M142"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq71.gif"/></alternatives></inline-formula> state are observed that are below the detection limit of four-wave mixing. The excitation scan in Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3b</xref> is obtained by monitoring the emission into the highly excited <italic>v</italic>&#x02009;=&#x02009;88 level of the ground state <inline-formula id="IEq72"><alternatives><tex-math id="M143">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M144"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq72.gif"/></alternatives></inline-formula> in the <sup>65</sup>Cu<sup>63</sup>Cu isotopologue. The scan displays rotational levels of the <inline-formula id="IEq73"><alternatives><tex-math id="M145">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M146"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq73.gif"/></alternatives></inline-formula> dark state up to <italic>J</italic>&#x02032;&#x02009;=&#x02009;25. The isotope shift of <italic>v</italic>&#x02009;=&#x02009;84 in the ground state is not sufficiently large to separate the emission of the two main isotopologues by the limited resolution of the spectrometer. As a consequence, weak <sup>63</sup>Cu<sub>2</sub> rotational P and R branch transitions up to <italic>J</italic>&#x02032;&#x02009;=&#x02009;33 of <inline-formula id="IEq74"><alternatives><tex-math id="M147">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M148"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq74.gif"/></alternatives></inline-formula> are observed in addition as shown in the Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3c</xref>. In spite of the complex appearance of the excitation scans, the assignment of the dark states transitions is straightforward on the basis of the more intense transitions to the dark state that are unambiguously defined by double-resonance labelling.</p></sec><sec id="Sec6"><title>Visualisation and deperturbation</title><p id="Par20">By combining TC-RFWM and excitation scans, we could unambiguously assign approximately 1600 rovibronic lines in the vicinity of the <inline-formula id="IEq75"><alternatives><tex-math id="M149">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M150"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq75.gif"/></alternatives></inline-formula> state of <sup>63</sup>Cu<sub>2</sub> and <sup>65</sup>Cu<sup>63</sup>Cu. While the complete line list is appended as Supplementary Data&#x000a0;<xref rid="MOESM4" ref-type="media">1</xref>, Fig.&#x000a0;<xref rid="Fig4" ref-type="fig">4</xref> illustrates the data graphically by compiling all scans into a single plot. Only non-overlapping line positions were assigned, though some lines appear to overlap in this depiction. Many of the reported lines were assigned more than once. While this improves the statistics in determination of the line position, the invariance of a line on change of the double-resonant excitation scheme also guarantees the correct assignment. As different excitation schemes involve different overlaps in the transition used for selecting the rotational quantum state, only the correctly assigned lines will remain at the same position.<fig id="Fig4"><label>Fig. 4</label><caption><p>Overview of all assigned lines. Total view of the transitions that were rotationally assigned in this work. The regions containing assigned lines are printed colour-coded, while the containing raw spectra are printed in grey. The colours denote the isotopologues and the vibronic states that were accessed by transitions from the vibronic ground state <inline-formula id="IEq76"><alternatives><tex-math id="M151">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M152"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq76.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;0) with the corresponding rotational quantum number <italic>J</italic>&#x02033; as denoted on the ordinate. Starting from the bright transitions that were unambiguously assigned by double-resonant selection of <italic>J</italic>&#x02033;, blocks of excitation scans into the dark regimes could be also assigned by numbering consecutively</p></caption><graphic xlink:href="41467_2019_11156_Fig4_HTML" id="d29e2565"/></fig></p><p id="Par21">Next to transitions into the three lowest vibrational bands of the electronic <inline-formula id="IEq77"><alternatives><tex-math id="M153">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M154"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq77.gif"/></alternatives></inline-formula> state (shown in shades of blue), Fig.&#x000a0;<xref rid="Fig4" ref-type="fig">4</xref> is dominated by transitions into two vibrational levels of the I1<sub>u</sub> state (shown in crimson tones). As the vibrational ground state of the I1<sub>u</sub> state was never observed, we use preliminary labels for its levels. <italic>I</italic><sub>1</sub>1<sub>u</sub> and <italic>I</italic><sub>2</sub>1<sub>u</sub> correspond to <italic>v</italic>&#x02009;=&#x02009;&#x0201c;<italic>x</italic>&#x02009;+&#x02009;1&#x0201d; and <italic>v</italic>&#x02009;=&#x02009;&#x0201c;<italic>x</italic>&#x02009;+&#x02009;2&#x0201d;, respectively, in the nomenclature used by Powers et al.<sup><xref ref-type="bibr" rid="CR19">19</xref></sup>. While transitions into the <inline-formula id="IEq78"><alternatives><tex-math id="M155">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M156"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq78.gif"/></alternatives></inline-formula> state, and all dark states borrowing intensity from it, only exhibit P and R branches, the I1<sub>u</sub> state, whose different symmetry we already described in previous work<sup><xref ref-type="bibr" rid="CR18">18</xref></sup>, also exhibits a Q branch. Brought to light by the excitation scans, the <inline-formula id="IEq79"><alternatives><tex-math id="M157">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M158"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq79.gif"/></alternatives></inline-formula> and <inline-formula id="IEq80"><alternatives><tex-math id="M159">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{65}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M160"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>65</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq80.gif"/></alternatives></inline-formula> bands fill significant image area, mostly by their raw spectra plotted in grey. The other <inline-formula id="IEq81"><alternatives><tex-math id="M161">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M162"><mml:mi>G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq81.gif"/></alternatives></inline-formula> bands, as well as the unrelated <italic>L</italic>1, <italic>M</italic>1, <italic>N</italic>1 and <italic>O</italic>1 bands, were only measured close to their intersection with the electronic <inline-formula id="IEq82"><alternatives><tex-math id="M163">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M164"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq82.gif"/></alternatives></inline-formula> state. The interaction of the <inline-formula id="IEq83"><alternatives><tex-math id="M165">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${G}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M166"><mml:mi>G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq83.gif"/></alternatives></inline-formula> levels with the electronic <inline-formula id="IEq84"><alternatives><tex-math id="M167">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M168"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq84.gif"/></alternatives></inline-formula> state increases for higher vibrational excitation, therefore, at higher vibrational levels <italic>v</italic> of the <inline-formula id="IEq85"><alternatives><tex-math id="M169">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M170"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq85.gif"/></alternatives></inline-formula> state, an increasing number of rotational levels became visible also when employing four-wave mixing spectroscopy. In case of <inline-formula id="IEq86"><alternatives><tex-math id="M171">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{67}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M172"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>67</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq86.gif"/></alternatives></inline-formula> some levels became visible even without an actual intersection with the <inline-formula id="IEq87"><alternatives><tex-math id="M173">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M174"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq87.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2) state. This was additionally favoured by a high thermal population in the observed rotational range. Sufficient <italic>J</italic>&#x02032;-levels were obtained in this system to evaluate the symmetry of the perturber (see methods section). Based on the experimentally obtained line positions, we fitted molecular constants for the involved states. For the <inline-formula id="IEq88"><alternatives><tex-math id="M175">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M176"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq88.gif"/></alternatives></inline-formula> state and the perturbing dark states, a deperturbation was possible. By this, we were able to not only obtain the molecular constants of these states, but also their interaction strengths, as stated in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>. For the <inline-formula id="IEq89"><alternatives><tex-math id="M177">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${G}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M178"><mml:mi>G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq89.gif"/></alternatives></inline-formula> and <italic>L</italic> levels, also the calculated isotope shifts could be utilised for verification. For the <inline-formula id="IEq90"><alternatives><tex-math id="M179">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M180"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq90.gif"/></alternatives></inline-formula> state, the data of both isotopologues were combined to refine the equilibrium constants. The resulting equilibrium constants for <sup>63</sup>Cu<sub>2</sub> are presented in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">2</xref>. More details are provided in the methods section. The I1<sub>u</sub> state is an anomaly in many respects. Only a few vibrational levels have been observed and even these are too weak to be observed by most methods. We previously reported its short fluorescence lifetime and molecular constants of seemingly unperturbed regions<sup><xref ref-type="bibr" rid="CR18">18</xref></sup>. The I1<sub>u</sub> state seems not to interact with the other states characterised in this work, but nevertheless is subject to a complicated pattern of perturbations. Therefore, the I1<sub>u</sub> state should be revisited in a subsequent study, so that the perturbing states may be investigated more thoroughly. Such a study can also help to assign the unrelated bands (<italic>L</italic>1, <italic>M</italic>1, <italic>N</italic>1 and <italic>O</italic>1) to specific electronic states. To be used for experimental purposes only, molecular constants that reproduce the observed range were added as Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">3</xref>.</p></sec></sec><sec id="Sec7" sec-type="discussion"><title>Discussion</title><p id="Par22">TC-RFWM spectroscopy allows overcoming the hindrances that have so far prevented experimental access to systems exhibiting a high density of states. Perturbations identified by this method can be used as gateways for experimental access into otherwise inaccessible regions, including the near-dissociation regime of the ground state. These mixed states oscillate between high- and low-vibrational quanta for large and small internuclear distances, respectively. While at short distance, a model based on the linear combination of atomic orbitals is appropriate, ligand-field theory might be better suited to address the behaviour at long range<sup><xref ref-type="bibr" rid="CR28">28</xref></sup>. The large size of the 4s and 4p orbitals serves to de-shield the atomic-ion cores from each other, leading to a positive point charge perturbing the 3d structures on the other atom. This relates to the foundational concept of &#x0201c;oxidation state&#x0201d;, which could be more properly thought of as the charge on one atom as seen by the atom to which it is bound (Field, R. W. (personal communication (2019))). The features of the nonlinear method open a wide field for future experiments on transition metal systems. The presented data also provide reference data to test new quantum chemical methods for computational handling of systems with a high density of states. Such insights lead to fundamental understanding of the complex electronic structure of transition metal clusters that govern their functionality. Ion-pair states, respectively, the states that originate from their avoided crossings with other states, affect almost all regions of the potential energy landscape of the copper dimer. Considering the commonness of perturbation-facilitated mixing between these and other quantum states, it is unlikely that other transition metal systems, which usually exhibit an even higher density of states, can be understood based on the assumption of pure states and the usage of the Born-Oppenheimer approximation. Even for the copper dimer itself, a glance behind the veil of overlapping lines exposed not only a complex network of perturbations, but also vibronic bands displaying interesting properties to access regions of the energy map beyond the possibilities of more conventional spectroscopic methods.</p></sec><sec id="Sec8"><title>Methods</title><sec id="Sec9"><title>Set-up, spectroscopy and deperturbation</title><p id="Par23">The copper dimers are generated in a home-built laser-ablation source<sup><xref ref-type="bibr" rid="CR18">18</xref></sup>. Upon ablation with a pulsed Nd:YAG laser (532&#x02009;nm, 10&#x02009;ns, 100&#x02009;mJ per pulse), the plume of copper plasma is entrained in a helium pulse and expanded into high vacuum. In the course of this process condensation and cooling takes place to create a collision-free molecular beam containing sufficient Cu<sub>2</sub> for nonlinear spectroscopy. TC-RFWM is performed 1&#x02009;cm downstream from the nozzle by focusing three parallel propagating laser beams by a lens (<italic>f</italic>&#x02009;=&#x02009;1000&#x02009;mm) into the interaction region. Doppler broadening is eliminated by probing the molecular beam orthogonally to the direction of propagation. If the OODR selection rules<sup><xref ref-type="bibr" rid="CR22">22</xref></sup> are met, a signal is produced in forward direction governed by phase-matching conditions and detected essentially background-free by a photomultiplier tube. The incident laser beams are produced by using Nd:YAG pumped dye lasers with a specified line width of 0.04&#x02009;cm<sup>&#x02212;1</sup>. For I1<sub>u</sub>-<inline-formula id="IEq91"><alternatives><tex-math id="M181">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M182"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq91.gif"/></alternatives></inline-formula> and <inline-formula id="IEq92"><alternatives><tex-math id="M183">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M184"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq92.gif"/></alternatives></inline-formula>-<inline-formula id="IEq93"><alternatives><tex-math id="M185">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M186"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq93.gif"/></alternatives></inline-formula> transitions the output of the dye-laser frequency is doubled by second harmonic generation and split to provide the two pump beams of &#x02248;100&#x02009;&#x003bc;J per pulse. The (1-0) B-X transitions exhibit a high transition strength and are addressed by the probe beam with laser energies of &#x0003c;100&#x02009;nJ per pulse. An additional channel of information is obtained by placing a spherical mirror perpendicularly to both molecular beams and the main axis of spectroscopy. The emitted light is focused onto the slit of a 1&#x02009;m spectrometer in front of a photomultiplier tube.</p><p id="Par24">The assignment of line positions within the raw spectra, as well as the fitting of molecular constants, were performed using the PGOPHER<sup><xref ref-type="bibr" rid="CR29">29</xref></sup> software. Shifted transitions and extra lines caused by perturbations are often revealed by TC-RFWM in a straightforward manner. The stringent double-resonance selection rules yield simplified spectra and allow unambiguous assignments<sup><xref ref-type="bibr" rid="CR26">26</xref>, <xref ref-type="bibr" rid="CR30">30</xref>&#x02013;<xref ref-type="bibr" rid="CR33">33</xref></sup>. The quantification of the perturbation was also based on PGOPHER, where, once the constants were fitted based on the experimental spectra, perturbations can be excluded for comparison. The molecular constants of the ground state of the copper dimer were taken from Ram et al.<sup><xref ref-type="bibr" rid="CR34">34</xref></sup>.</p></sec><sec id="Sec10"><title>Equilibrium constants of the <inline-formula id="IEq94"><alternatives><tex-math id="M187">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{J}}{\mathbf{0}}_{\mathbf{u}}^ +$$\end{document}</tex-math><mml:math id="M188"><mml:mi mathvariant="bold">J</mml:mi><mml:msubsup><mml:mrow><mml:mi mathvariant="bold">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq94.gif"/></alternatives></inline-formula> state</title><p id="Par25">Utilising the well-established relationships between the molecular constants of different isotopologues<sup><xref ref-type="bibr" rid="CR35">35</xref></sup>, we merged the deperturbed constants of both isotopologues before fitting equilibrium constants. While for most constants, the knowledge of the isotopes&#x02019; masses is sufficient, the determination of the electronic term <italic>T</italic><sub><italic>e</italic></sub> depends on the knowledge of the ground state zero-point energy, as all experimental data is referenced against it. Based on the Dunham coefficients reported by Ram et al.<sup><xref ref-type="bibr" rid="CR34">34</xref></sup>, we calculated the zero-point contributions for <sup>63</sup>Cu<sub>2</sub> (132.9711(19)&#x02009;cm<sup>&#x02212;1</sup>) and <sup>65</sup>Cu<sup>63</sup>Cu (131.9360(18)&#x02009;cm<sup>&#x02212;1</sup>). After merging the isotopologues, <italic>T</italic><sub><italic>e</italic></sub>, <inline-formula id="IEq95"><alternatives><tex-math id="M189">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\omega _e$$\end{document}</tex-math><mml:math id="M190"><mml:msub><mml:mrow><mml:mi>&#x003c9;</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq95.gif"/></alternatives></inline-formula> and <inline-formula id="IEq96"><alternatives><tex-math id="M191">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\omega _ex_e$$\end{document}</tex-math><mml:math id="M192"><mml:msub><mml:mrow><mml:mi>&#x003c9;</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq96.gif"/></alternatives></inline-formula> were fitted to the <italic>T</italic><sub><italic>v</italic></sub> values and <italic>B</italic><sub><italic>e</italic></sub>, and <italic>&#x003b1;</italic><sub><italic>e</italic></sub> were fitted to the <italic>B</italic><sub><italic>v</italic></sub> values. The equilibrium value for the internuclear distance <italic>r</italic><sub><italic>e</italic></sub> was then calculated based on <italic>B</italic><sub><italic>e</italic></sub> and the isotopic masses. To stay consistent within literature, Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">2</xref> presents the equilibrium constants in terms of the lightest isotopologue <sup>63</sup>Cu<sub>2</sub>. However, by using the same relationships, the constants for any isotopologue can be derived. For <sup>65</sup>Cu<sup>63</sup>Cu, for example, one obtains slightly lower values for <inline-formula id="IEq97"><alternatives><tex-math id="M193">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\omega _e$$\end{document}</tex-math><mml:math id="M194"><mml:msub><mml:mrow><mml:mi>&#x003c9;</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq97.gif"/></alternatives></inline-formula> (287.67(17)&#x02009;cm<sup>&#x02212;1</sup>), <inline-formula id="IEq98"><alternatives><tex-math id="M195">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\omega _ex_e$$\end{document}</tex-math><mml:math id="M196"><mml:msub><mml:mrow><mml:mi>&#x003c9;</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq98.gif"/></alternatives></inline-formula> (1.054(57)&#x02009;cm<sup>&#x02212;1</sup>), <italic>B</italic><sub><italic>e</italic></sub> (0.114276(11)&#x02009;cm<sup>&#x02212;1</sup>) and <italic>&#x003b1;</italic><sub><italic>e</italic></sub> (0.0008913(75)&#x02009;cm<sup>&#x02212;1</sup>).</p></sec><sec id="Sec11"><title>Deperturbation and classification of the <inline-formula id="IEq99"><alternatives><tex-math id="M197">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\boldsymbol{G}}_{\boldsymbol{67}}{\mathbf{0}}_{\mathbf{u}}^ +$$\end{document}</tex-math><mml:math id="M198"><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">G</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold-italic">67</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mi mathvariant="bold">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq99.gif"/></alternatives></inline-formula> state</title><p id="Par26">The <inline-formula id="IEq100"><alternatives><tex-math id="M199">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{xx}0_{\mathrm{u}}^ + \sim {\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M200"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq100.gif"/></alternatives></inline-formula> perturbation strength listed in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref> were obtained by assuming a homogeneous, <italic>J</italic> independent perturbation. Trials performed using a heterogeneous perturbation yielded significantly larger residuals for the <inline-formula id="IEq101"><alternatives><tex-math id="M201">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{67}0_{\mathrm{u}}^ + \sim {\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M202"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>67</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq101.gif"/></alternatives></inline-formula> (<italic>v</italic>&#x02009;=&#x02009;2) system. A graphical perturbation analysis has been proposed by Bender<sup><xref ref-type="bibr" rid="CR36">36</xref>, <xref ref-type="bibr" rid="CR37">37</xref></sup> and is shown in the Supplementary Fig.&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>. The effective rotational constants, <italic>B</italic><sub>eff</sub>, of the <inline-formula id="IEq102"><alternatives><tex-math id="M203">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{67}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M204"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>67</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq102.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;2) system vs. <italic>J</italic> are plotted. The crossing of the traces occurs at <inline-formula id="IEq103"><alternatives><tex-math id="M205">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$J &#x0003c; 0$$\end{document}</tex-math><mml:math id="M206"><mml:mi>J</mml:mi><mml:mo>&#x0003c;</mml:mo><mml:mn>0</mml:mn></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq103.gif"/></alternatives></inline-formula> and corroborates the homogeneous perturbation mechanism. Since the symmetry of the bright state <inline-formula id="IEq104"><alternatives><tex-math id="M207">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M208"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq104.gif"/></alternatives></inline-formula> is certainly an <inline-formula id="IEq105"><alternatives><tex-math id="M209">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\it{\Omega }} = 0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M210"><mml:mi>&#x003a9;</mml:mi><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq105.gif"/></alternatives></inline-formula> state, a homogeneous perturbation determines the perturber <inline-formula id="IEq106"><alternatives><tex-math id="M211">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{67}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M212"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>67</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq106.gif"/></alternatives></inline-formula> and the other members of the <inline-formula id="IEq107"><alternatives><tex-math id="M213">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{xx}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M214"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq107.gif"/></alternatives></inline-formula> progression as <inline-formula id="IEq108"><alternatives><tex-math id="M215">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{0}}_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M216"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq108.gif"/></alternatives></inline-formula> states. For comparison, a homogeneous perturbation model is applied for the deperturbation of the <italic>L</italic>1, <italic>M</italic>1, <italic>N</italic>1 and <italic>O</italic>1 perturber states. A definitive assignment, however, requires more detailed investigations.</p></sec><sec id="Sec12"><title>Vibrational quantum numbers of the <inline-formula id="IEq109"><alternatives><tex-math id="M217">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\boldsymbol{G}}_{\boldsymbol{xx}} {\mathbf{0}}_{\mathbf{u}}^ +$$\end{document}</tex-math><mml:math id="M218"><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">G</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold-italic">xx</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mi mathvariant="bold">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq109.gif"/></alternatives></inline-formula> states</title><p id="Par27">The deperturbed molecular constants in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref> allowed determination of the absolute vibrational numbering. The presumption that the vibrational progression of the <inline-formula id="IEq110"><alternatives><tex-math id="M219">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M220"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq110.gif"/></alternatives></inline-formula> to <inline-formula id="IEq111"><alternatives><tex-math id="M221">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M222"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq111.gif"/></alternatives></inline-formula> levels belong to the <inline-formula id="IEq112"><alternatives><tex-math id="M223">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathrm{G}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M224"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq112.gif"/></alternatives></inline-formula> state was supported by a good qualitative match between their spacing and the expected spacing extrapolating from the reported levels from Powers et al.<sup><xref ref-type="bibr" rid="CR19">19</xref></sup>. Following the established approach of determining the vibrational level <italic>v</italic> based on the isotope shift<sup><xref ref-type="bibr" rid="CR35">35</xref></sup>, we fitted our values to a Dunham expansion, which led to an absolute value of about <italic>v</italic>&#x02009;=&#x02009;62 for the lowest of these levels. The initial approach in doing so was to use an equilibrium term energy of <italic>T</italic><sub><italic>e</italic></sub>&#x02009;=&#x02009;30695&#x02009;cm<sup>&#x02212;1</sup>. This value was derived from the levels reported by Powers et al., but taking into account a correction of the numbering assignments (<inline-formula id="IEq113"><alternatives><tex-math id="M225">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$v_N \to v_{N - 1}$$\end{document}</tex-math><mml:math id="M226"><mml:msub><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mi>N</mml:mi></mml:mrow></mml:msub><mml:mo>&#x02192;</mml:mo><mml:msub><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq113.gif"/></alternatives></inline-formula>) already proposed by Rohlfing et al.<sup><xref ref-type="bibr" rid="CR38">38</xref></sup>. However, defining <italic>T</italic><sub><italic>e</italic></sub> as a free fit parameter, the obtained value <italic>v</italic>&#x02009;=&#x02009;62 barely changed (e.g., 62.28&#x02009;&#x02192;&#x02009;62.33). This is in good agreement with recent work by Pashov et al.<sup><xref ref-type="bibr" rid="CR39">39</xref></sup>, in which they demonstrate the establishment of absolute vibrational numbering based on four term energies in one isotopologue and one term energy in another. Also when using their method, which was applied after simulating unperturbed bands using PGOPHER, <inline-formula id="IEq114"><alternatives><tex-math id="M227">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M228"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq114.gif"/></alternatives></inline-formula> was also assigned to <italic>v</italic>&#x02009;=&#x02009;62. Nevertheless, one should take these values with caution. We have already demonstrated that the low-lying electronic states of the copper dimer can be only explained by assuming spin&#x02013;orbit states given by Hund&#x02019;s case (c) coupling<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>. In the computational part of that work, only the potential curves of states corresponding to separated atom limits with only a single excitation were fully covered. Therefore, only two covalently bound <inline-formula id="IEq115"><alternatives><tex-math id="M229">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M230"><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq115.gif"/></alternatives></inline-formula> states interact with the <inline-formula id="IEq116"><alternatives><tex-math id="M231">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M232"><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq116.gif"/></alternatives></inline-formula> ion-pair ground state to bring forth the A, the B, and the <inline-formula id="IEq117"><alternatives><tex-math id="M233">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M234"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq117.gif"/></alternatives></inline-formula> states. Taking a look at the experimentally derived potential energy curves of Cu<sub>2</sub>, which were illustrated, e.g., in a book chapter by Morse<sup><xref ref-type="bibr" rid="CR15">15</xref></sup> (p. 95), it becomes obvious that the separated atom limits with double excitation cannot be ignored, and further <inline-formula id="IEq118"><alternatives><tex-math id="M235">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M236"><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq118.gif"/></alternatives></inline-formula> states originate from the <sup>2</sup>D&#x02009;+&#x02009;<sup>2</sup>D atomic limits. As these states also contribute avoided crossings and, in addition, <italic>v</italic>&#x02009;=&#x02009;0 of the <inline-formula id="IEq119"><alternatives><tex-math id="M237">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M238"><mml:mi mathvariant="normal">G</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq119.gif"/></alternatives></inline-formula> state was never observed, it is still too early to decide if the methods used above are applicable for this system.</p></sec><sec id="Sec13"><title>Interpolation of missing vibrational origins</title><p id="Par28">Within Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>, only the numbers with a specified standard deviation are directly derived from experimental data. The missing <italic>T</italic><sub><italic>v</italic></sub> values of <inline-formula id="IEq120"><alternatives><tex-math id="M239">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{xx}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M240"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq120.gif"/></alternatives></inline-formula> states were filled based on the fitted Dunham expansion that was also used to determine the absolute vibrational levels. For the perturbations, the strengths were similar whenever we had experimental access to both isotopologues. Therefore, we presumed a similarity also when only one isotopologue was measured.</p></sec><sec id="Sec14"><title>Franck-Condon overlaps in the <inline-formula id="IEq121"><alternatives><tex-math id="M241">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\boldsymbol{G}}_{\boldsymbol{{xx}}}{\mathbf{0}}_{\mathbf{u}}^ + \sim {\mathbf{J}}{\mathbf{0}}_{\mathbf{u}}^ +$$\end{document}</tex-math><mml:math id="M242"><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">G</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold-italic">xx</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mi mathvariant="bold">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="bold">J</mml:mi><mml:msubsup><mml:mrow><mml:mi mathvariant="bold">0</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="bold">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq121.gif"/></alternatives></inline-formula> systems</title><p id="Par29">Supplementary Fig.&#x000a0;<xref rid="MOESM1" ref-type="media">2</xref> shows the RKR potentials of the <inline-formula id="IEq122"><alternatives><tex-math id="M243">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M244"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq122.gif"/></alternatives></inline-formula> and <italic>G</italic> states, which were constructed by performing Dunham fits to the molecular constants listed in the Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>. The wave functions and the overlap integrals are then obtained by solving the radial Schr&#x000f6;dinger equation. A ratio of 1:3:6 is computed for the overlaps between <inline-formula id="IEq123"><alternatives><tex-math id="M245">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M246"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq123.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;0)&#x02009;&#x02248;&#x02009;<inline-formula id="IEq124"><alternatives><tex-math id="M247">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{63}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M248"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>63</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq124.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;0): <inline-formula id="IEq125"><alternatives><tex-math id="M249">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{64}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M250"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>64</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq125.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;1)&#x02009;&#x02248;&#x02009;<inline-formula id="IEq126"><alternatives><tex-math id="M251">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{65}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M252"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>65</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq126.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;1)&#x02009;&#x02248;&#x02009;<inline-formula id="IEq127"><alternatives><tex-math id="M253">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{66}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M254"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>66</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq127.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;1): <inline-formula id="IEq128"><alternatives><tex-math id="M255">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{67}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M256"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>67</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq128.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;2)&#x02009;&#x02248;&#x02009;<inline-formula id="IEq129"><alternatives><tex-math id="M257">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{68}0_{\mathrm{u}}^ + \sim {\mathrm{J}}$$\end{document}</tex-math><mml:math id="M258"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>68</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup><mml:mo>~</mml:mo><mml:mi mathvariant="normal">J</mml:mi></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq129.gif"/></alternatives></inline-formula>(<italic>v</italic>&#x02009;=&#x02009;2), which is in good agreement with the values for the homogeneous perturbation strength between the <inline-formula id="IEq130"><alternatives><tex-math id="M259">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{xx}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M260"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq130.gif"/></alternatives></inline-formula> and <inline-formula id="IEq131"><alternatives><tex-math id="M261">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M262"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq131.gif"/></alternatives></inline-formula> states deduced from the experiment and shown in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>.</p></sec><sec id="Sec15"><title>Simulation of perturbed bands</title><p id="Par30">To generate Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref>, we used PGOPHER to simulate the (0-0) <inline-formula id="IEq132"><alternatives><tex-math id="M263">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M264"><mml:mi mathvariant="normal">J</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq132.gif"/></alternatives></inline-formula>-<inline-formula id="IEq133"><alternatives><tex-math id="M265">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</tex-math><mml:math id="M266"><mml:mi mathvariant="normal">X</mml:mi><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">g</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq133.gif"/></alternatives></inline-formula> band of Cu<sub>2</sub> based on the constants and interactions reported in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>. For the spectrum (Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1a</xref>), a rotational temperature of 50&#x02009;K was chosen, in order to achieve a close resemblance of the intensity distribution observed in our experiment. The abundance of the isotopologues was based on natural abundance. As the different statistical weight of symmetrical and asymmetrical rotational levels (3 and 5) in the homonuclear isotopologue is taken into account in the simulation, an average statistical weight of 4 was chosen for all levels of the heteronuclear isotopologue to match the average intensity. In the Fortrat diagram, straight lines between the points of each branch were added as a guide to the eye. To emphasise the perturbations that yield some obvious spectral features, the corresponding regions of the Fortrat diagram were copied into the simulated spectra.</p></sec><sec id="Sec16"><title>Generation of Fig. 2</title><p id="Par31">Parsing the raw list of all assigned lines, the corresponding raw spectra were loaded and normalised. They were then added to the scalable vector graphics (SVG) file, using the rotational quantum number in the ground state as a vertical offset. Therefore, the peak heights do not scale with the absolute intensity, when comparing different scans. For some rotational levels, different lines were used to select the rotational quantum state. Owing to the different overlaps associated with these lines, only the peaks that belong to the targeted rotational state reproduce. In a second round, windows around the assigned line positions were selected from each raw spectrum. These were redrawn with a colourised background to highlight the assigned peak. To achieve a clearer presentation, a few peaks were manually rescaled and the colorized ranges were slightly readjusted when arranging and formatting the final Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2a</xref>. For the corresponding level diagram in Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2b</xref>, we used the simulation based on the fitted molecular constants. At the scale employed, this does not affect the position of the data points, but improves clarity by extrapolating points missing within the experimental dataset. To further clarify the level repulsion, the levels were plotted as relative wavenumber <inline-formula id="IEq134"><alternatives><tex-math id="M267">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde \nu _{{\mathrm{relative}}} = \tilde \nu _{{\mathrm{absolute}}} - 38,000\,{\mathrm{cm}}^{ - 1} - B_{O1}J(J + 1)$$\end{document}</tex-math><mml:math id="M268"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>&#x003bd;</mml:mi></mml:mrow><mml:mo>&#x0007e;</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi mathvariant="normal">relative</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>&#x003bd;</mml:mi></mml:mrow><mml:mo>&#x0007e;</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi mathvariant="normal">absolute</mml:mi></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mn>38</mml:mn><mml:mo>,</mml:mo><mml:mn>000</mml:mn><mml:mspace width="0.25em"/><mml:msup><mml:mrow><mml:mi mathvariant="normal">cm</mml:mi></mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mi>B</mml:mi></mml:mrow><mml:mrow><mml:mi>O</mml:mi><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mi>J</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>J</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq134.gif"/></alternatives></inline-formula> where <italic>B</italic><sub><italic>O</italic>1</sub> is the rotational constant of the <italic>O</italic>1 state as reported in Supplementary Table&#x000a0;<xref rid="MOESM1" ref-type="media">1</xref>. Therefore, the relative values are referenced against an unperturbed, harmonic version of <italic>O</italic>1.</p></sec><sec id="Sec17"><title>Details on the excitation scans</title><p id="Par32">When recording the spectrum in Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3a</xref>, some stray light of the UV pump laser passed the spectrometer off-axis. Therefore, we started integration 20&#x02009;ns after the maximum of the pump pulse to ensure that also the electrical response of the photomultiplier had concluded. In contrast, the strong, and therefore short-lived, blue fluorescence shown in Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3b, c</xref> was integrated over the complete pulse. This timing difference is responsible for the complete disappearance of the <inline-formula id="IEq135"><alternatives><tex-math id="M269">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{62}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M270"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>62</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq135.gif"/></alternatives></inline-formula>-related lines in Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3a</xref>.</p></sec><sec id="Sec18"><title>Generation of Fig. 4</title><p id="Par33">This overview figure was created by reusing the code used for Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref>, but applying it on the full line list. As this inevitably produces overlapping spectra, coloured lines (instead of coloured fills) were used to indicate the assigned lines. While the full spectral raw data was exposed to the Matplotlib library, some data points that did not contribute to significant changes in the shape of the curve were dropped. Therefore, zooming into the vector graphic will not always show the full details of the background noise. The total absence of background in some of the excitation scans allowed to still obtain clear peaks even when averaging at event rates of less than one event per laser pulse. Because of the normalisation of the plotted raw spectra, these features can be invisible, if there are strong lines in the same spectrum. An extreme example of this are the high rotational levels of the <inline-formula id="IEq136"><alternatives><tex-math id="M271">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{65}0_{\mathrm{u}}^ +$$\end{document}</tex-math><mml:math id="M272"><mml:msub><mml:mrow><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mn>65</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi mathvariant="normal">u</mml:mi></mml:mrow><mml:mrow><mml:mo>+</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq136.gif"/></alternatives></inline-formula> state in the <sup>65</sup>Cu<sup>63</sup>Cu isotopologue. There, the background is plotted as a completely flat line and the coloured peaks are just visible, because the amplitude was manually increased when composing the final depiction.</p></sec></sec><sec sec-type="supplementary-material"><title>Supplementary information</title><sec id="Sec19"><p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="41467_2019_11156_MOESM1_ESM.pdf"><caption><p>Supplementary Information</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM2"><media xlink:href="41467_2019_11156_MOESM2_ESM.pdf"><caption><p>Peer Review File</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM3"><media xlink:href="41467_2019_11156_MOESM3_ESM.docx"><caption><p>Description of Additional Supplementary Files</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM4"><media xlink:href="41467_2019_11156_MOESM4_ESM.xlsx"><caption><p>Supplementary Data 1</p></caption></media></supplementary-material>
+</p></sec></sec></body><back><fn-group><fn><p><bold>Peer review information</bold>: <italic>Nature Communications</italic> thanks Robert Field and other anonymous reviewer(s) for their contribution to the peer review of this work. Peer reviewer reports are available.</p></fn><fn><p><bold>Publisher&#x02019;s note:</bold> Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></fn></fn-group><sec><title>Supplementary information</title><p><bold>Supplementary Information</bold> accompanies this paper at 10.1038/s41467-019-11156-2.</p></sec><ack><title>Acknowledgements</title><p>This work is supported by Swiss National Science Foundation (#200021_1531701 and #200020_1754901).</p></ack><notes notes-type="author-contribution"><title>Author contributions</title><p>M.B., B.V. and P.R. carried out the experiments. P.B., M.B. and P.R. analysed the data. M.B., P.R., P.B. and G.K. interpreted the results. P.R. and J.v.B. supervised the study. M.B. wrote the initial manuscript. All authors discussed and reviewed the manuscript.</p></notes><notes notes-type="data-availability"><title>Data availability</title><p>The raw spectroscopic data that supports the findings of this study and the resulting PGOPHER files are available from the corresponding author upon reasonable request. The authors declare that all other data supporting the findings of this study are available within the paper and its Supplementary Information files.</p></notes><notes notes-type="COI-statement"><title>Competing interests</title><p id="Par34">The authors declare no competing interests.</p></notes><ref-list id="Bib1"><title>References</title><ref id="CR1"><label>1.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reineke</surname><given-names>S</given-names></name><etal/></person-group><article-title>White organic light-emitting diodes with fluorescent tube efficiency</article-title><source>Nature</source><year>2009</year><volume>459</volume><fpage>234</fpage><lpage>238</lpage><pub-id pub-id-type="doi">10.1038/nature08003</pub-id><pub-id pub-id-type="pmid">19444212</pub-id></element-citation></ref><ref id="CR2"><label>2.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Labinger</surname><given-names>JA</given-names></name><name><surname>Bercaw</surname><given-names>JE</given-names></name></person-group><article-title>Understanding and exploiting C&#x02013;H bond activation</article-title><source>Nature</source><year>2002</year><volume>417</volume><fpage>507</fpage><pub-id pub-id-type="doi">10.1038/417507a</pub-id><pub-id pub-id-type="pmid">12037558</pub-id></element-citation></ref><ref id="CR3"><label>3.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sun</surname><given-names>S-S</given-names></name><name><surname>Lees</surname><given-names>AJ</given-names></name></person-group><article-title>Transition metal based supramolecular systems: synthesis, photophysics, photochemistry and their potential applications as luminescent anion chemosensors</article-title><source>Coord. Chem. Rev.</source><year>2002</year><volume>230</volume><fpage>171</fpage><lpage>192</lpage><pub-id pub-id-type="doi">10.1016/S0010-8545(02)00043-7</pub-id></element-citation></ref><ref id="CR4"><label>4.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>D-H</given-names></name><etal/></person-group><article-title>Biofunctionalized magnetic-vortex microdiscs for targeted cancer-cell destruction</article-title><source>Nat. Mater.</source><year>2010</year><volume>9</volume><fpage>165</fpage><lpage>171</lpage><pub-id pub-id-type="doi">10.1038/nmat2591</pub-id><pub-id pub-id-type="pmid">19946279</pub-id></element-citation></ref><ref id="CR5"><label>5.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Erisman</surname><given-names>JW</given-names></name><name><surname>Sutton</surname><given-names>MA</given-names></name><name><surname>Galloway</surname><given-names>J</given-names></name><name><surname>Klimont</surname><given-names>Z</given-names></name><name><surname>Winiwarter</surname><given-names>W</given-names></name></person-group><article-title>How a century of ammonia synthesis changed the world</article-title><source>Nat. Geosci.</source><year>2008</year><volume>1</volume><fpage>636</fpage><lpage>639</lpage><pub-id pub-id-type="doi">10.1038/ngeo325</pub-id></element-citation></ref><ref id="CR6"><label>6.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Anastas</surname><given-names>P</given-names></name><name><surname>Eghbali</surname><given-names>N</given-names></name></person-group><article-title>Green chemistry: principles and practice</article-title><source>Chem. Soc. Rev.</source><year>2010</year><volume>39</volume><fpage>301</fpage><lpage>312</lpage><pub-id pub-id-type="doi">10.1039/B918763B</pub-id><pub-id pub-id-type="pmid">20023854</pub-id></element-citation></ref><ref id="CR7"><label>7.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Boehme</surname><given-names>DK</given-names></name><name><surname>Schwarz</surname><given-names>H</given-names></name></person-group><article-title>Gas-phase catalysis by atomic and cluster metal ions: the ultimate single-site catalysts</article-title><source>Angew. Chem. Int Ed. Engl.</source><year>2005</year><volume>44</volume><fpage>2336</fpage><lpage>2354</lpage><pub-id pub-id-type="doi">10.1002/anie.200461698</pub-id><pub-id pub-id-type="pmid">15779095</pub-id></element-citation></ref><ref id="CR8"><label>8.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Roduner</surname><given-names>E</given-names></name></person-group><article-title>Size matters: why nanomaterials are different</article-title><source>Chem. Soc. Rev.</source><year>2006</year><volume>35</volume><fpage>583</fpage><lpage>592</lpage><pub-id pub-id-type="doi">10.1039/b502142c</pub-id><pub-id pub-id-type="pmid">16791330</pub-id></element-citation></ref><ref id="CR9"><label>9.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Scholes</surname><given-names>GD</given-names></name><etal/></person-group><article-title>Using coherence to enhance function in chemical and biophysical systems</article-title><source>Nature</source><year>2017</year><volume>543</volume><fpage>647</fpage><lpage>656</lpage><pub-id pub-id-type="doi">10.1038/nature21425</pub-id><pub-id pub-id-type="pmid">28358065</pub-id></element-citation></ref><ref id="CR10"><label>10.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Szalay</surname><given-names>PG</given-names></name><name><surname>M&#x000fc;ller</surname><given-names>T</given-names></name><name><surname>Gidofalvi</surname><given-names>G</given-names></name><name><surname>Lischka</surname><given-names>H</given-names></name><name><surname>Shepard</surname><given-names>R</given-names></name></person-group><article-title>Multiconfiguration self-consistent field and multireference configuration interaction methods and applications</article-title><source>Chem. Rev.</source><year>2012</year><volume>112</volume><fpage>108</fpage><lpage>181</lpage><pub-id pub-id-type="doi">10.1021/cr200137a</pub-id><pub-id pub-id-type="pmid">22204633</pub-id></element-citation></ref><ref id="CR11"><label>11.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kalemos</surname><given-names>A</given-names></name><name><surname>Mavridis</surname><given-names>A</given-names></name></person-group><article-title>The electronic structure of Ti<sub>2</sub> and Ti<sub>2</sub><sup>+</sup></article-title><source>J. Chem. Phys.</source><year>2011</year><volume>135</volume><fpage>134302</fpage><pub-id pub-id-type="doi">10.1063/1.3643380</pub-id><pub-id pub-id-type="pmid">21992300</pub-id></element-citation></ref><ref id="CR12"><label>12.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fisher</surname><given-names>OS</given-names></name><etal/></person-group><article-title>Characterization of a long overlooked copper protein from methane- and ammonia-oxidizing bacteria</article-title><source>Nat. Commun.</source><year>2018</year><volume>9</volume><fpage>4276</fpage><pub-id pub-id-type="doi">10.1038/s41467-018-06681-5</pub-id><?supplied-pmid 6189053?><pub-id pub-id-type="pmid">30323281</pub-id></element-citation></ref><ref id="CR13"><label>13.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Morse</surname><given-names>MD</given-names></name></person-group><article-title>Clusters of transition-metal atoms</article-title><source>Chem. Rev.</source><year>1986</year><volume>86</volume><fpage>1049</fpage><lpage>1109</lpage><pub-id pub-id-type="doi">10.1021/cr00076a005</pub-id></element-citation></ref><ref id="CR14"><label>14.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Visser</surname><given-names>B</given-names></name><etal/></person-group><article-title>Identification of a new low energy 1<sub>u</sub> state in dicopper with resonant four-wave mixing</article-title><source>J. Chem. Phys.</source><year>2017</year><volume>147</volume><fpage>214308</fpage><pub-id pub-id-type="doi">10.1063/1.5006107</pub-id><pub-id pub-id-type="pmid">29221416</pub-id></element-citation></ref><ref id="CR15"><label>15.</label><mixed-citation publication-type="other">Morse, M. D. in <italic>Advances in Metal and Semiconductor Clusters</italic>, Vol. 1 (ed. Duncan, M. A.) 83&#x02013;121 (JAI Press, Greewich, Conn., 1993).</mixed-citation></ref><ref id="CR16"><label>16.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Okazaki</surname><given-names>T</given-names></name><name><surname>Ando</surname><given-names>Y</given-names></name></person-group><article-title>New optical absorption spectra of Cu<sub>2</sub> molecules produced by the gas evaporation technique</article-title><source>Mol. Phys.</source><year>2000</year><volume>98</volume><fpage>447</fpage><lpage>452</lpage><pub-id pub-id-type="doi">10.1080/00268970009483310</pub-id></element-citation></ref><ref id="CR17"><label>17.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lebedev</surname><given-names>V</given-names></name><name><surname>Moroshkin</surname><given-names>P</given-names></name><name><surname>Toennies</surname><given-names>JP</given-names></name><name><surname>Weis</surname><given-names>A</given-names></name></person-group><article-title>Spectroscopy of the copper dimer in normal fluid, superfluid, and solid <sup>4</sup>He</article-title><source>J. Chem. Phys.</source><year>2010</year><volume>133</volume><fpage>154508</fpage><pub-id pub-id-type="doi">10.1063/1.3497643</pub-id><?supplied-pmid 20969404?><pub-id pub-id-type="pmid">20969404</pub-id></element-citation></ref><ref id="CR18"><label>18.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beck</surname><given-names>M</given-names></name><etal/></person-group><article-title>Rovibrational characterization of high-lying electronic states of Cu<sub>2</sub> by double-resonant nonlinear spectroscopy</article-title><source>J. Phys. Chem. A</source><year>2017</year><volume>121</volume><fpage>8448</fpage><lpage>8452</lpage><pub-id pub-id-type="doi">10.1021/acs.jpca.7b09838</pub-id><?supplied-pmid 29035534?><pub-id pub-id-type="pmid">29035534</pub-id></element-citation></ref><ref id="CR19"><label>19.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Powers</surname><given-names>DE</given-names></name><name><surname>Hansen</surname><given-names>SG</given-names></name><name><surname>Geusic</surname><given-names>ME</given-names></name><name><surname>Michalopoulos</surname><given-names>DL</given-names></name><name><surname>Smalley</surname><given-names>RE</given-names></name></person-group><article-title>Supersonic copper clusters</article-title><source>J. Chem. Phys.</source><year>1983</year><volume>78</volume><fpage>2866</fpage><lpage>2881</lpage><pub-id pub-id-type="doi">10.1063/1.445273</pub-id></element-citation></ref><ref id="CR20"><label>20.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Page</surname><given-names>RH</given-names></name><name><surname>Gudeman</surname><given-names>CS</given-names></name></person-group><article-title>Rotationally resolved dicopper (Cu<sub>2</sub>) laser-induced fluorescence spectra</article-title><source>J. Chem. Phys.</source><year>1991</year><volume>94</volume><fpage>39</fpage><lpage>51</lpage><pub-id pub-id-type="doi">10.1063/1.460355</pub-id></element-citation></ref><ref id="CR21"><label>21.</label><mixed-citation publication-type="other">Rohlfing, E. A., Tobiason, J. D., Dunlop, J. R. &#x00026; Williams, S. in <italic>Laser Techniques for State-Selected and State-to-State Chemistry III</italic>, Vol. 2548, 209&#x02013;219 (International Society for Optics and Photonics, 1995). 10.1117/12.220849.</mixed-citation></ref><ref id="CR22"><label>22.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Williams</surname><given-names>S</given-names></name><name><surname>Rohlfing</surname><given-names>EA</given-names></name><name><surname>Rahn</surname><given-names>LA</given-names></name><name><surname>Zare</surname><given-names>RN</given-names></name></person-group><article-title>Two-color resonant four-wave mixing: analytical expressions for signal intensity</article-title><source>J. Chem. Phys.</source><year>1997</year><volume>106</volume><fpage>3090</fpage><lpage>3102</lpage><pub-id pub-id-type="doi">10.1063/1.473052</pub-id></element-citation></ref><ref id="CR23"><label>23.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ikoma</surname><given-names>H</given-names></name><name><surname>Kasahara</surname><given-names>S</given-names></name><name><surname>Kat&#x000f4;</surname><given-names>H</given-names></name></person-group><article-title>Perturbations, intensity anomalies, and line broadening of 23na39k studied by optical-optical double resonance polarization spectroscopy</article-title><source>Mol. Phys.</source><year>1995</year><volume>85</volume><fpage>799</fpage><lpage>820</lpage><pub-id pub-id-type="doi">10.1080/00268979500101501</pub-id></element-citation></ref><ref id="CR24"><label>24.</label><mixed-citation publication-type="other">Lefebvre-Brion, H. &#x00026; Field, R. W. in <italic>The Spectra and Dynamics of Diatomic Molecules</italic> (ed. Field, H. L.-B. W.) 61&#x02013;86 (Academic Press, San Diego, 2004).</mixed-citation></ref><ref id="CR25"><label>25.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>rdock</surname><given-names>D</given-names></name><name><surname>Burns</surname><given-names>LA</given-names></name><name><surname>Vaccaro</surname><given-names>PH</given-names></name></person-group><article-title>Dissection of rovibronic structure by polarization-resolved two-color resonant four-wave mixing spectroscopy</article-title><source>J. Phys. Chem. A</source><year>2009</year><volume>113</volume><fpage>13184</fpage><lpage>13198</lpage><pub-id pub-id-type="doi">10.1021/jp903970d</pub-id><pub-id pub-id-type="pmid">19670839</pub-id></element-citation></ref><ref id="CR26"><label>26.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bornhauser</surname><given-names>P</given-names></name><etal/></person-group><article-title>Perturbation-facilitated detection of the first quintet-quintet band in C<sub>2</sub></article-title><source>J. Chem. Phys.</source><year>2015</year><volume>142</volume><fpage>094313</fpage><pub-id pub-id-type="doi">10.1063/1.4913925</pub-id><pub-id pub-id-type="pmid">25747087</pub-id></element-citation></ref><ref id="CR27"><label>27.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Farrow</surname><given-names>RL</given-names></name><name><surname>Rakestraw</surname><given-names>DJ</given-names></name><name><surname>Dreier</surname><given-names>T</given-names></name></person-group><article-title>Investigation of the dependence of degenerate 4-wave-mixing line-intensities on transition dipole-moment</article-title><source>J. Opt. Soc. Am. B-Opt. Phys.</source><year>1992</year><volume>9</volume><fpage>1770</fpage><lpage>1777</lpage><pub-id pub-id-type="doi">10.1364/JOSAB.9.001770</pub-id></element-citation></ref><ref id="CR28"><label>28.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Spain</surname><given-names>EM</given-names></name><name><surname>Morse</surname><given-names>MD</given-names></name></person-group><article-title>Ligand-field theory applied to diatomic transition metals. Results for the <inline-formula id="IEq137"><alternatives><tex-math id="M273">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{d}}_{\mathrm{A}}^{\mathrm{9}}{\mathrm{d}}_{\mathrm{B}}^{\mathrm{9}}\sigma ^{\mathrm{2}}$$\end{document}</tex-math><mml:math id="M274"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">B</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msup><mml:mrow><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">2</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq137.gif"/></alternatives></inline-formula> states of Ni<sub>2</sub>, the <inline-formula id="IEq138"><alternatives><tex-math id="M275">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{d}}_{\mathrm{A}}^{\mathrm{9}}{\mathrm{d}}_{\mathrm{B}}^{\mathrm{9}}\sigma ^{\mathrm{2}}$$\end{document}</tex-math><mml:math id="M276"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">B</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msup><mml:mrow><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">2</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq138.gif"/></alternatives></inline-formula> states of NiCu, and the <inline-formula id="IEq139"><alternatives><tex-math id="M277">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{d}}_{\mathrm{A}}^{\mathrm{9}}{\mathrm{d}}_{\mathrm{B}}^{\mathrm{9}}\sigma ^{\mathrm{2}}$$\end{document}</tex-math><mml:math id="M278"><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">d</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">B</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">9</mml:mi></mml:mrow></mml:msubsup><mml:msup><mml:mrow><mml:mi>&#x003c3;</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">2</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="41467_2019_11156_Article_IEq139.gif"/></alternatives></inline-formula> excited states of NiCu</article-title><source>J. Chem. Phys.</source><year>1992</year><volume>97</volume><fpage>4641</fpage><lpage>4660</lpage><pub-id pub-id-type="doi">10.1063/1.463867</pub-id></element-citation></ref><ref id="CR29"><label>29.</label><mixed-citation publication-type="other">Western, C. PGOPHER version 10.0, 10.5523/bris.160i6ixoo4kir1jxvawfws047m (2017).</mixed-citation></ref><ref id="CR30"><label>30.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bornhauser</surname><given-names>P</given-names></name><name><surname>Knopp</surname><given-names>G</given-names></name><name><surname>Gerber</surname><given-names>T</given-names></name><name><surname>Radi</surname><given-names>P</given-names></name></person-group><article-title>Deperturbation study of the d<sup>3</sup>&#x003a0;<sub>g</sub>, <italic>v</italic>&#x02032; = 4 state of C<sub>2</sub> by applying degenerate and two-color resonant four-wave mixing</article-title><source>J. Mol. Spectrosc.</source><year>2010</year><volume>262</volume><fpage>69</fpage><lpage>74</lpage><pub-id pub-id-type="doi">10.1016/j.jms.2010.05.008</pub-id></element-citation></ref><ref id="CR31"><label>31.</label><mixed-citation publication-type="other">Bornhauser, P., Sych, Y., Knopp, G., Gerber, T. &#x00026; Radi, P. P. Shedding light on a dark state: the energetically lowest quintet state of C<sub>2</sub>. <italic>J Chem Phys.</italic><bold>134</bold>, 044302, 00021 (2011).</mixed-citation></ref><ref id="CR32"><label>32.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sych</surname><given-names>Y</given-names></name><etal/></person-group><article-title>Perturbation facilitated two-color four-wave-mixing spectroscopy of C<sub>3</sub></article-title><source>J. Chem. Phys.</source><year>2013</year><volume>139</volume><fpage>154203</fpage><pub-id pub-id-type="doi">10.1063/1.4825198</pub-id><pub-id pub-id-type="pmid">24160506</pub-id></element-citation></ref><ref id="CR33"><label>33.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bornhauser</surname><given-names>P</given-names></name><etal/></person-group><article-title>Experimental and theoretical investigation of the vibrational band structure of the 1<sup>5</sup>&#x003a0;<sub><italic>u</italic></sub>-1<sup>5</sup>&#x003a0;<sub><italic>g</italic></sub> high-spin system of C<sub>2</sub></article-title><source>J. Chem. Phys.</source><year>2017</year><volume>146</volume><fpage>114309</fpage><pub-id pub-id-type="doi">10.1063/1.4978334</pub-id><pub-id pub-id-type="pmid">28330351</pub-id></element-citation></ref><ref id="CR34"><label>34.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ram</surname><given-names>R</given-names></name><name><surname>Jarman</surname><given-names>C</given-names></name><name><surname>Bernath</surname><given-names>P</given-names></name></person-group><article-title>Fourier transform emission spectroscopy of the copper dimer</article-title><source>J. Mol. Spectrosc.</source><year>1992</year><volume>156</volume><fpage>468</fpage><lpage>486</lpage><pub-id pub-id-type="doi">10.1016/0022-2852(92)90247-L</pub-id></element-citation></ref><ref id="CR35"><label>35.</label><mixed-citation publication-type="other">Herzberg, G. &#x00026; Spinks, J. W. T. <italic>Molecular Spectra and Molecular Structure: Diatomic Molecules</italic> (Van Nostrand, 1950).</mixed-citation></ref><ref id="CR36"><label>36.</label><mixed-citation publication-type="other">Bender, D. <italic>UV-Laserspektroskopie gest&#x000f6;rter Zust&#x000e4;nde des Bariumoxids</italic> (University of Hannover, Thesis, Hannover, New York 1985).</mixed-citation></ref><ref id="CR37"><label>37.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bender</surname><given-names>D</given-names></name><name><surname>Schaefer</surname><given-names>S</given-names></name><name><surname>Tiemann</surname><given-names>E</given-names></name></person-group><article-title>Laser spectroscopy of perturbed states of BaO in the region above 32000&#x02009;cm<sup>&#x02212;1</sup></article-title><source>J. Mol. Spectrosc.</source><year>1986</year><volume>116</volume><fpage>286</fpage><lpage>314</lpage><pub-id pub-id-type="doi">10.1016/0022-2852(86)90128-1</pub-id></element-citation></ref><ref id="CR38"><label>38.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rohlfing</surname><given-names>EA</given-names></name><name><surname>Valentini</surname><given-names>JJ</given-names></name></person-group><article-title>UV laser excited fluorescence spectroscopy of the jet-cooled copper dimer</article-title><source>J. Chem. Phys.</source><year>1986</year><volume>84</volume><fpage>6560</fpage><lpage>6566</lpage><pub-id pub-id-type="doi">10.1063/1.450708</pub-id></element-citation></ref><ref id="CR39"><label>39.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pashov</surname><given-names>A</given-names></name><name><surname>Kowalczyk</surname><given-names>P</given-names></name><name><surname>Jastrzebski</surname><given-names>W</given-names></name></person-group><article-title>Absolute vibrational numbering from isotope shifts in fragmentary spectroscopic data</article-title><source>J. Mol. Spectrosc.</source><year>2018</year><volume>347</volume><fpage>48</fpage><lpage>55</lpage><pub-id pub-id-type="doi">10.1016/j.jms.2018.03.016</pub-id></element-citation></ref></ref-list></back></article>

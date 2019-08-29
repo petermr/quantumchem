@@ -1,0 +1,98 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="news" xml:lang="EN"><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 2?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Cent Sci</journal-id><journal-id journal-id-type="iso-abbrev">ACS Cent Sci</journal-id><journal-id journal-id-type="publisher-id">oc</journal-id><journal-id journal-id-type="coden">acscii</journal-id><journal-title-group><journal-title>ACS Central Science</journal-title></journal-title-group><issn pub-type="ppub">2374-7943</issn><issn pub-type="epub">2374-7951</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">4827478</article-id><article-id pub-id-type="doi">10.1021/acscentsci.5b00062</article-id><article-categories><subj-group><subject>First Reactions</subject></subj-group></article-categories><title-group><article-title>Compressive Sensing in Quantum Chemistry: A Little Computation Goes
+a Long Way</article-title></title-group><contrib-group><contrib contrib-type="author" corresp="yes" id="ath1"><name><surname>Beran</surname><given-names>Gregory J. O.</given-names></name><xref rid="cor1" ref-type="other"/></contrib><aff id="aff1">Department of Chemistry, <institution>University of California</institution>, Riverside, California 92521, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><label/>E-mail: <email>gregory.beran@ucr.edu</email>.</corresp></author-notes><pub-date pub-type="epub"><day>23</day><month>03</month><year>2015</year></pub-date><pub-date pub-type="ppub"><day>25</day><month>03</month><year>2015</year></pub-date><volume>1</volume><issue>1</issue><fpage>14</fpage><lpage>15</lpage><history/><permissions><copyright-statement>Copyright &#x000a9; 2015 American Chemical Society</copyright-statement><copyright-year>2015</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>oc5b00062</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>oc-2015-00062t</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><p>Computational
+quantum chemistry has advanced dramatically in recent decades, and
+it is now routinely used in concert with experimental research. This
+progress stems from massive gains in computer hardware, advances in
+physical models (effective density functionals, for example), and
+creative numerical algorithms that maximize the efficiency with which
+those models can be solved. The exploitation of inherent sparsity,
+or the pattern of zeros or near-zero terms in a matrix, is a common
+theme in many of these numerical algorithms. Simply put: why waste time computing
+quantities that do not contribute significantly?</p><p>The challenge lies in the fact that the sparsity of some particular
+matrix in quantum chemistry depends on the representation of the matrix
+(the basis), and it is often difficult to identify an efficient representation <italic>a priori</italic>. Physical insight sometimes suggests an efficient
+representation, as in so-called local-correlation methods<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> which exploit the relatively short-range nature
+of electron&#x02013;electron correlations that produces zeros in the
+integrals involving orbitals on opposite ends of a large molecule.</p><p>In this issue, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/oc5000404">Sanders, Andrade, and Aspuru-Guzik</ext-link> have published
+an interesting new approach for the prediction of molecular vibrations
+in electronic structure theory using compressive sensing.<sup><xref ref-type="bibr" rid="ref99">99</xref></sup> Compressive sensing rose to prominence in signal
+processing over the past decade, and it has quickly spread to applications
+such as medical imaging, audio processing, and even DNA microarrays.
+Compressive sensing allows one to construct sparse matrices inexpensively,
+even if one does not know the specific sparsity pattern beforehand,
+by randomly sampling elements in a non-sparse representation.</p><p>In essence, compressive sensing asks: what is the minimum number
+of measurements that need to be made in order to obtain a high-quality
+approximation for a given signal? The reconstruction of a high-resolution
+graphical image from a low-resolution one provides a nice demonstration
+of the method. As shown in Figure <xref rid="fig1" ref-type="fig">1</xref>, compressive
+sensing (using code kindly provided by Jacob Sanders) provides a very
+good approximation to the original picture even when only a fraction
+of the pixels are sampled randomly.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Compressive sensing reproduces the original
+photograph well even when only a fraction of the pixels are sampled.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2015-00062t_0001" id="gr1" position="float"/></fig><p>Compressive sensing is not magic,
+of course. The ability to construct an accurate approximation to the
+desired matrix with minimal sampling requires the existence of underlying
+structure in the data that produces sparsity in the optimal representation.
+Fortunately, real-world images contain structures and patterns that
+enable compressive sensing to reconstruct the true image effectively.
+Similarly, the matrices that arise in quantum chemistry algorithms
+and other scientific applications also exhibit structure, such as
+the stronger couplings between adjacent atoms in molecular vibrations,
+that lends them to compressive sensing.</p><p>In contrast to typical
+uses of compressive sensing for postprocessing data signals (e.g.,
+for image reconstruction or the work by the same authors on extracting
+properties from molecular dynamics trajectories<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> or processing data from multidimensional spectroscopies<sup><xref ref-type="bibr" rid="ref3">3</xref></sup>), the work presented here stands out because
+compressive sensing is employed here to accelerate computation where
+the evaluation of individual matrix elements forms the computational
+bottleneck. In this context, the compressive sensing ideas here fit
+well with other recent quantum chemistry research on techniques such
+as orbital specific virtuals,<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> tensor hypercontraction,<sup><xref ref-type="bibr" rid="ref5">5</xref></sup> multiresolution methods,<sup><xref ref-type="bibr" rid="ref6">6</xref></sup> and density matrix renormalization group theory,<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> all of which exploit sparse representations and/or low-rank
+approximations to model complex wave functions compactly.</p><p>The
+current work also provides a nice example of bootstrapping more accurate
+results (quantum mechanical vibrational modes) from less accurate
+ones (classical molecular mechanics ones). The simpler model provides
+a representation in which the matrix should be sparse, and that knowledge
+in turn reduces the amount of sampling needed to obtain an accurate
+approximation to the final result.</p><p>In
+the longer term, the article by Sanders and co-workers is most interesting
+not for the specific application of compressive sensing to the calculation
+of molecular vibrations, but rather, for how it might alter our perspective
+on how quantum chemistry algorithms should work&#x02014;by bootstrapping
+our way up from simple approximations via random sampling of the matrix
+elements that arise in more accurate models. One can conceive of many
+potential applications for this technique beyond the one demonstrated
+here, ranging from acceleration of the repeated Fock matrix constructions
+required in density functional theory to cutting down on the extraordinary
+numbers of determinants involved in a configuration interaction calculation.
+This and other recent advances in sparse tensor representations in
+electronic structure prove there remains considerable scope for improvements
+in the algorithms which form the basis of modern quantum chemistry,
+and all chemists will benefit from the new efficiences and physical
+insights yielded by these models.</p></body><back><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Saebo</surname><given-names>S.</given-names></name>; <name><surname>Pulay</surname><given-names>P.</given-names></name>
+<article-title>Local Treatment of
+Electron Correlation</article-title>. <source>Annu. Rev. Phys. Chem.</source>
+<year>1993</year>, <volume>44</volume>, <fpage>213</fpage>&#x02013;<lpage>236</lpage><pub-id pub-id-type="doi">10.1146/annurev.pc.44.100193.001241</pub-id>.</mixed-citation></ref><ref id="ref99"><mixed-citation publication-type="journal" id="cit99"><name><surname>Sanders</surname><given-names>J. N.</given-names></name>; <name><surname>Andrade</surname><given-names>X.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Compressed Sensing for the Fast Computation
+of Matrices: Application to Molecular Vibrations</article-title>. <source>ACS Cent. Sci.</source>
+<year>2015</year>, <pub-id pub-id-type="doi">10.1021/oc5000404</pub-id>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Andrade</surname><given-names>X.</given-names></name>; <name><surname>Sanders</surname><given-names>J. N.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Application
+of compressed sensing to the simulation of atomic systems</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<year>2012</year>, <volume>109</volume>, <fpage>13928</fpage>&#x02013;<lpage>13933</lpage><pub-id pub-id-type="doi">10.1073/pnas.1209890109</pub-id>.<pub-id pub-id-type="pmid">22891294</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Sanders</surname><given-names>J. N.</given-names></name>; <name><surname>Saikin</surname><given-names>S. K.</given-names></name>; <name><surname>Mostame</surname><given-names>S.</given-names></name>; <name><surname>Andrade</surname><given-names>X.</given-names></name>; <name><surname>Widom</surname><given-names>J. R.</given-names></name>; <name><surname>Marcus</surname><given-names>A. H.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>
+<article-title>Compressed
+Sensing for Multidimensional Spectroscopy Experiments</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2012</year>, <volume>3</volume>, <fpage>2697</fpage>&#x02013;<lpage>2702</lpage><pub-id pub-id-type="doi">10.1021/jz300988p</pub-id>.<pub-id pub-id-type="pmid">26295894</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Yang</surname><given-names>J.</given-names></name>; <name><surname>Kurashige</surname><given-names>Y.</given-names></name>; <name><surname>Manby</surname><given-names>F. R.</given-names></name>; <name><surname>Chan</surname><given-names>G. K. L.</given-names></name>
+<article-title>Tensor factorizations of local second-order
+M&#x000f8;ller&#x02013;Plesset theory</article-title>. <source>J. Chem.
+Phys.</source>
+<year>2011</year>, <volume>134</volume>, <fpage>044123</fpage><pub-id pub-id-type="doi">10.1063/1.3528935</pub-id>.<pub-id pub-id-type="pmid">21280703</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Hohenstein</surname><given-names>E. G.</given-names></name>; <name><surname>Parrish</surname><given-names>R. M.</given-names></name>; <name><surname>Sherrill</surname><given-names>C. D.</given-names></name>; <name><surname>Mart&#x000ed;nez</surname><given-names>T. J.</given-names></name>
+<article-title>Tensor
+hypercontraction. III. Least-squares tensor hypercontraction for the
+determination of correlated wavefunctions</article-title>. <source>J.
+Chem. Phys.</source>
+<year>2012</year>, <volume>137</volume>, <fpage>221101</fpage><pub-id pub-id-type="doi">10.1063/1.4768241</pub-id>.<pub-id pub-id-type="pmid">23248980</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Bischoff</surname><given-names>F. A.</given-names></name>; <name><surname>Valeev</surname><given-names>E. F.</given-names></name>
+<article-title>Low-order tensor approximations for electronic wave
+functions: Hartree&#x02013;Fock method with guaranteed precision</article-title>. <source>J. Chem. Phys.</source>
+<year>2011</year>, <volume>134</volume>, <fpage>104104</fpage><pub-id pub-id-type="doi">10.1063/1.3560091</pub-id>.<pub-id pub-id-type="pmid">21405153</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Chan</surname><given-names>G. K.-L.</given-names></name>; <name><surname>Sharma</surname><given-names>S.</given-names></name>
+<article-title>The Density Matrix Renormalization Group in Quantum
+Chemistry</article-title>. <source>Annu. Rev. Phys. Chem.</source>
+<year>2011</year>, <volume>62</volume>, <fpage>465</fpage>&#x02013;<lpage>481</lpage><pub-id pub-id-type="doi">10.1146/annurev-physchem-032210-103338</pub-id>.<pub-id pub-id-type="pmid">21219144</pub-id></mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,425 @@
+{
+  "id": [
+    "31427579"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31427579"
+  ],
+  "pmcid": [
+    "PMC6700155"
+  ],
+  "doi": [
+    "10.1038/s41597-019-0157-8"
+  ],
+  "title": [
+    "Quantum mechanical static dipole polarizabilities in the QM7b and AlphaML showcase databases."
+  ],
+  "authorString": [
+    "Yang Y, Lao KU, Wilkins DM, Grisafi A, Ceriotti M, DiStasio RA."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Yang Y"
+          ],
+          "firstName": [
+            "Yang"
+          ],
+          "lastName": [
+            "Yang"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Cornell University, Ithaca, NY, 14853, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Lao KU"
+          ],
+          "firstName": [
+            "Ka Un"
+          ],
+          "lastName": [
+            "Lao"
+          ],
+          "initials": [
+            "KU"
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Cornell University, Ithaca, NY, 14853, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Wilkins DM"
+          ],
+          "firstName": [
+            "David M"
+          ],
+          "lastName": [
+            "Wilkins"
+          ],
+          "initials": [
+            "DM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3739-5512",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Laboratory of Computational Science and Modeling, IMX, École Polytechnique Fédérale de Lausanne, 1015, Lausanne, Switzerland."
+          ]
+        },
+        {
+          "fullName": [
+            "Grisafi A"
+          ],
+          "firstName": [
+            "Andrea"
+          ],
+          "lastName": [
+            "Grisafi"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Laboratory of Computational Science and Modeling, IMX, École Polytechnique Fédérale de Lausanne, 1015, Lausanne, Switzerland."
+          ]
+        },
+        {
+          "fullName": [
+            "Ceriotti M"
+          ],
+          "firstName": [
+            "Michele"
+          ],
+          "lastName": [
+            "Ceriotti"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2571-2832",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Laboratory of Computational Science and Modeling, IMX, École Polytechnique Fédérale de Lausanne, 1015, Lausanne, Switzerland. michele.ceriotti@epfl.ch."
+          ]
+        },
+        {
+          "fullName": [
+            "DiStasio RA Jr"
+          ],
+          "firstName": [
+            "Robert A"
+          ],
+          "lastName": [
+            "DiStasio"
+          ],
+          "initials": [
+            "RA"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2732-194X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry and Chemical Biology, Cornell University, Ithaca, NY, 14853, USA. distasio@cornell.edu."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-2571-2832",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-2732-194X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-3739-5512",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2844650"
+      ],
+      "dateOfPublication": [
+        "2019 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific data"
+          ],
+          "ISOAbbreviation": [
+            "Sci Data"
+          ],
+          "medlineAbbreviation": [
+            "Sci Data"
+          ],
+          "NLMid": [
+            "101640192"
+          ],
+          "ISSN": [
+            "2052-4463"
+          ],
+          "ESSN": [
+            "2052-4463"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "152"
+  ],
+  "abstractText": [
+    "While density functional theory (DFT) is often an accurate and efficient methodology for evaluating molecular properties such as energies and multipole moments, this approach often yields larger errors for response properties such as the dipole polarizability (α), which describes the tendency of a molecule to form an induced dipole moment in the presence of an electric field. In this work, we provide static α tensors (and other molecular properties such as total energy components, dipole and quadrupole moments, etc.) computed using quantum chemical (QC) and DFT methodologies for all 7,211 molecules in the QM7b database. We also provide the same quantities for the 52 molecules in the AlphaML showcase database, which includes the DNA/RNA nucleobases, uncharged amino acids, several open-chain and cyclic carbohydrates, five popular pharmaceutical molecules, and 23 isomers of C8Hn. All QC calculations were performed using linear-response coupled-cluster theory including single and double excitations (LR-CCSD), a sophisticated approach for electron correlation, and the d-aug-cc-pVDZ basis set to mitigate basis set incompleteness error. DFT calculations employed the B3LYP and SCAN0 hybrid functionals, in conjunction with d-aug-cc-pVDZ (B3LYP and SCAN0) and d-aug-cc-pVTZ (B3LYP)."
+  ],
+  "affiliation": [
+    "Department of Chemistry and Chemical Biology, Cornell University, Ithaca, NY, 14853, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "data-paper",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "677013"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "677013-HBMAP"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "Start-up funding"
+          ],
+          "agency": [
+            "Cornell University | College of Arts and Sciences, Cornell University (College of Arts &amp; Sciences, Cornell University)"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6700155?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6700155"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41597-019-0157-8"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2019-08-21"
+  ],
+  "firstIndexDate": [
+    "2019-08-21"
+  ],
+  "dateOfRevision": [
+    "2019-08-27"
+  ],
+  "electronicPublicationDate": [
+    "2019-08-19"
+  ],
+  "firstPublicationDate": [
+    "2019-08-19"
+  ]
+}

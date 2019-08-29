@@ -1,0 +1,521 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="brief-report"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Angew Chem Int Ed Engl</journal-id><journal-id journal-id-type="iso-abbrev">Angew. Chem. Int. Ed. Engl</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1521-3773</journal-id><journal-id journal-id-type="publisher-id">ANIE</journal-id><journal-title-group><journal-title>Angewandte Chemie (International Ed. in English)</journal-title></journal-title-group><issn pub-type="ppub">1433-7851</issn><issn pub-type="epub">1521-3773</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5698732</article-id><article-id pub-id-type="doi">10.1002/anie.201708266</article-id><article-id pub-id-type="publisher-id">ANIE201708266</article-id><article-categories><subj-group subj-group-type="overline"><subject>Communication</subject></subj-group><subj-group subj-group-type="heading"><subject>Communications</subject><subj-group subj-group-type="heading"><subject>Theoretical NMR Spectroscopy</subject></subj-group></subj-group></article-categories><title-group><article-title>Fully Automated Quantum&#x02010;Chemistry&#x02010;Based Computation of Spin&#x02013;Spin&#x02010;Coupled Nuclear Magnetic Resonance Spectra</article-title></title-group><contrib-group><contrib id="anie201708266-cr-0001" contrib-type="author" corresp="yes"><name><surname>Grimme</surname><given-names>Stefan</given-names><prefix>Prof.&#x02005;Dr.</prefix></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5844-4371</contrib-id><address><email>grimme@thch.uni-bonn.de</email></address><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0002" contrib-type="author"><name><surname>Bannwarth</surname><given-names>Christoph</given-names><prefix>M.&#x02005;Sc.</prefix></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3242-496X</contrib-id><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0003" contrib-type="author"><name><surname>Dohm</surname><given-names>Sebastian</given-names><prefix>Dipl.&#x02010;Chem.</prefix></name><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0004" contrib-type="author"><name><surname>Hansen</surname><given-names>Andreas</given-names><prefix>Dr.</prefix></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1659-8206</contrib-id><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0005" contrib-type="author"><name><surname>Pisarek</surname><given-names>Jana</given-names><prefix>M.&#x02005;Sc.</prefix></name><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0006" contrib-type="author"><name><surname>Pracht</surname><given-names>Philipp</given-names><prefix>B.&#x02005;Sc.</prefix></name><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0007" contrib-type="author"><name><surname>Seibert</surname><given-names>Jakob</given-names><prefix>M.&#x02005;Sc.</prefix></name><xref ref-type="aff" rid="anie201708266-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="anie201708266-cr-0008" contrib-type="author"><name><surname>Neese</surname><given-names>Frank</given-names><prefix>Prof.&#x02005;Dr.</prefix></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4691-0547</contrib-id><xref ref-type="aff" rid="anie201708266-aff-0002">
+<sup>2</sup>
+</xref></contrib></contrib-group><aff id="anie201708266-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Mulliken Center for Theoretical Chemistry</named-content>
+<institution>Institut f&#x000fc;r Physikalische und Theoretische Chemie der Universit&#x000e4;t Bonn</institution>
+<named-content content-type="street">Beringstrasse 4</named-content>
+<named-content content-type="post-code">53115</named-content>
+<named-content content-type="city">Bonn</named-content>
+<country country="DE">Germany</country>
+</aff><aff id="anie201708266-aff-0002">
+<label><sup>2</sup></label>
+<institution>Max Planck Institute for Chemical Energy Conversion</institution>
+<named-content content-type="street">Stiftstrasse 32&#x02013;34</named-content>
+<named-content content-type="post-code">45470</named-content>
+<named-content content-type="city">M&#x000fc;lheim an der Ruhr</named-content>
+<country country="DE">Germany</country>
+</aff><pub-date pub-type="epub"><day>11</day><month>10</month><year>2017</year></pub-date><pub-date pub-type="ppub"><day>13</day><month>11</month><year>2017</year></pub-date><volume>56</volume><issue>46</issue><issue-id pub-id-type="doi">10.1002/anie.v56.46</issue-id><fpage>14763</fpage><lpage>14769</lpage><history><date date-type="received"><day>11</day><month>8</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2017 Wiley&#x02010;VCH Verlag GmbH & Co. KGaA, Weinheim <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2017 The Authors. Published by Wiley-VCH Verlag GmbH &#x00026; Co. KGaA.</copyright-statement><license license-type="creativeCommonsBy-nc-nd"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution&#x02010;NonCommercial&#x02010;NoDerivs</ext-link> License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non&#x02010;commercial and no modifications or adaptations are made.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:ANIE-56-14763.pdf"/><abstract><title>Abstract</title><p>We present a composite procedure for the quantum&#x02010;chemical computation of spin&#x02013;spin&#x02010;coupled <sup>1</sup>H&#x02005;NMR spectra for general, flexible molecules in solution that is based on four main steps, namely conformer/rotamer ensemble (CRE) generation by the fast tight&#x02010;binding method GFN&#x02010;xTB and a newly developed search algorithm, computation of the relative free energies and NMR parameters, and solving the spin Hamiltonian. In this way the NMR&#x02010;specific nuclear permutation problem is solved, and the correct spin symmetries are obtained. Energies, shielding constants, and spin&#x02013;spin couplings are computed at state&#x02010;of&#x02010;the&#x02010;art DFT levels with continuum solvation. A few (in)organic and transition&#x02010;metal complexes are presented, and very good, unprecedented agreement between the theoretical and experimental spectra was achieved. The approach is routinely applicable to systems with up to 100&#x02013;150 atoms and may open new avenues for the detailed (conformational) structure elucidation of, for example, natural products or drug molecules.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="anie201708266-kwd-0001">conformational analysis</kwd><kwd id="anie201708266-kwd-0002">density functional calculations</kwd><kwd id="anie201708266-kwd-0003">NMR spectroscopy</kwd><kwd id="anie201708266-kwd-0004">quantum chemistry</kwd><kwd id="anie201708266-kwd-0005">tight-binding method</kwd></kwd-group><counts><fig-count count="7"/><table-count count="0"/><ref-count count="32"/><page-count count="7"/><word-count count="0"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>anie201708266</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>November 13, 2017</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.2.6 mode:remove_FC converted:22.11.2017</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="self-citation" id="anie201708266-self">S. Grimme, C. Bannwarth, S. Dohm, A. Hansen, J. Pisarek, P. Pracht, J. Seibert, F. Neese, <italic>Angew. Chem. Int. Ed.</italic>
+<bold>2017</bold>, <italic>56</italic>, 14763.</mixed-citation>
+</p></notes></front><body><p>Nuclear magnetic resonance (NMR) is the most important spectroscopic technique in chemistry. It combines very high resolution with an extremely rich information content about the local properties of atoms in molecules in terms of the geometric as well as electronic structure. The theoretical, quantum mechanical (QM) analysis of NMR experiments and the resulting spectra has a long history.<xref rid="anie201708266-bib-0001" ref-type="ref">1</xref>, <xref rid="anie201708266-bib-0002" ref-type="ref">2</xref> With modern linear&#x02010;response&#x02010;based quantum&#x02010;chemistry methods (e.g., density functional theory, DFT), the ab&#x02005;initio computation of the parameters in the NMR spin Hamiltonian, that is, the nuclear magnetic shielding constants (or the chemical shifts <italic>&#x003b4;</italic> on a relative scale) and the indirect spin&#x02013;spin coupling constants (<italic>J</italic>, SSCCs), has become quite routine<xref rid="anie201708266-bib-0003" ref-type="ref">3</xref> (for recent mixed DFT/empirical approaches, see Ref.&#x02005;<xref rid="anie201708266-bib-0004" ref-type="ref">4</xref>). With standard hybrid functional approximations, reasonable accuracies of about 0.1&#x02013;0.3&#x02005;ppm (for <italic>&#x003b4;</italic>) and 0.5&#x02005;Hz (for <italic>J</italic>) can be achieved for these second&#x02010;order properties of organic molecules.<xref rid="anie201708266-bib-0005" ref-type="ref">5</xref>, <xref rid="anie201708266-bib-0006" ref-type="ref">6</xref>, <xref rid="anie201708266-bib-0007" ref-type="ref">7</xref>, <xref rid="anie201708266-bib-0008" ref-type="ref">8</xref> Although these data can often be directly compared to experiment, until now, no fully automated procedure has been described that computes a properly averaged, fully coupled NMR spectrum entirely by quantum chemistry. To the best of our knowledge, such a composite scheme consisting of four more or less independent steps as illustrated in Figure&#x02005;<xref rid="anie201708266-fig-0001" ref-type="fig">1</xref> is proposed here for the first time (for related incomplete attempts, see Refs.&#x02005;<xref rid="anie201708266-bib-0005" ref-type="ref">5</xref>,&#x02005;<xref rid="anie201708266-bib-0009" ref-type="ref">9</xref>, and <xref rid="anie201708266-bib-0010" ref-type="ref">10</xref>). From the very beginning, it was constructed with an eye on robustness and computational feasibility so that natural products with about 100&#x02005;atoms can be treated and that spectra for systems with 40&#x02013;70 atoms can be computed within hours on a standard quad&#x02010;core laptop computer.
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Composite procedure for the automated computation of NMR spectra.</p></caption><graphic id="nlm-graphic-3" xlink:href="ANIE-56-14763-g001"/></fig><p>For a given set of magnetic nuclei in a molecule with known shifts and coupling constants, the resulting spin Hamiltonian can be built exactly. In the following, we considered <italic>N</italic>&#x02005;nuclei with spin&#x02005;1/2 (protons) exclusively but it should be noted that our approach is general, non&#x02010;empirical, and hence applicable to arbitrary nuclei and basically any molecule. The spin problem is of 2<sup><italic>N</italic></sup> (exponential) complexity but owing to the &#x0201c;near&#x02010;sightedness&#x0201d; of the SSCC (typically less than five covalent bonds), the full spin system can be separated, as demonstrated by Castillo and co&#x02010;workers.<xref rid="anie201708266-bib-0011" ref-type="ref">11</xref> We applied a similar procedure based on overlapping fragments with so&#x02010;called buffer spins, which are included in the diagonalization of the spin Hamiltonian but do not contribute to the intensities (see the Supporting Information for a detailed discussion of this feature as well as the entire theoretical procedure). Our newly written anmr code can basically treat spin systems of arbitrary size for molecules with less than 12&#x02013;14 significantly coupled spins per fragment (step&#x02005;4 in Figure&#x02005;<xref rid="anie201708266-fig-0001" ref-type="fig">1</xref>). The chemical shifts as well as the SSCCs were computed at a standard DFT hybrid level (PBE0) employing Jensen's special pcS and pcJ Gaussian AO basis sets,<xref rid="anie201708266-bib-0012" ref-type="ref">12</xref> respectively, for these properties (step&#x02005;3). For the here considered <sup>1</sup>H&#x02005;NMR spectra, mostly <italic>J</italic>
+<sup><italic>HH</italic></sup> coupling constants are required, which are dominated by the Fermi contact term,<xref rid="anie201708266-bib-0005" ref-type="ref">5</xref> and for reasons of computational efficiency, we restricted the computation to this term, which significantly sped up the calculations. The equilibrium geometries in these single&#x02010;point computations were taken from our robust low&#x02010;cost DFT composite procedure PBEh&#x02010;3c because many optimizations have to be conducted. The conformational energies were obtained at a sophisticated DFT level (step&#x02005;2, after re&#x02010;optimization and pre&#x02010;ranking of initial structures), and all steps included a treatment of solvation effects by standard continuum models (see the Supporting Information for details). In standard notation the &#x0201c;best practice&#x0201d; level for the conformational free energies reads DSD&#x02010;BLYP&#x02010;D3/def2&#x02010;TZVPP+G<sub>solv</sub> [COSMO&#x02010;RS]+G<sub>RRHO</sub> [GFN&#x02010;xTB]//PBEh&#x02010;3c[DCOSMO&#x02010;RS].<xref rid="anie201708266-bib-0013" ref-type="ref">13</xref> Most of the DFT computations reported herein (and all NMR parameter calculations) were conducted with the ORCA quantum&#x02010;chemistry code<xref rid="anie201708266-bib-0014" ref-type="ref">14</xref> ((D)COSMO&#x02010;RS with TURBOMOLE<xref rid="anie201708266-bib-0015" ref-type="ref">15</xref>).</p><p>The crucial and thus far unsolved problem for the general prediction of NMR spectra is the thermally induced, nuclear permutation (and averaging) already mentioned by Bagno.<xref rid="anie201708266-bib-0005" ref-type="ref">5</xref> Taking a Boltzmann average of NMR parameters computed for individual conformers, as suggested for example by Willoughby and co&#x02010;workers,<xref rid="anie201708266-bib-0010" ref-type="ref">10</xref> is necessary but unfortunately insufficient to model real systems. As shown in Figure&#x02005;<xref rid="anie201708266-fig-0001" ref-type="fig">1</xref> (left inset), a thermally accessible ensemble of minimum&#x02010;energy structures generally consists of conformers as well as rotamers (conformer/rotamer ensemble, CRE). A conformer belongs to a set of stereoisomers, each of which is characterized by a distinct energy minimum.<xref rid="anie201708266-bib-0016" ref-type="ref">16</xref> Rotamers arise from restricted bond rotation (or other low&#x02010;barrier motions such as inversion), leading to an interchange of nuclei but to minima with identical energies and NMR parameters. Rotamers contribute substantially to the molecular entropy, and the completeness of an ensemble can be checked by comparing the experimental and theoretical values (see the Supporting Information). Rotamers are of utmost importance here because they represent the rapid nuclei interchange (typically on a sub&#x02010;picosecond time scale) that leads to an average of NMR parameters on the much slower time scale of the experiment (for very slow, high&#x02010;barrier (<italic>&#x0003e;</italic>15&#x02013;20&#x02005;kcal&#x02009;mol<sup><italic>&#x02212;</italic>1</sup>) processes, additive signals for different species, termed &#x0201c;isomers&#x0201d; here, are observed). Not considering rotamers would yield totally wrong simulated spectra, for example, isolated methyl groups would not show single (singlet) signals and an ethyl group would not give rise to the expected simple quartet/triplet splitting (see below). Note that intermediate cases leading to line&#x02010;broadening effects are not considered, that is, our method works only for very slow and very fast nuclei exchange.</p><p>The key point of the present work was to automatically obtain a single set of CRE&#x02010;averaged and properly (dynamic) symmetry&#x02010;permuted NMR parameters entirely from quantum chemistry. This was achieved in steps&#x02005;1&#x02013;3 of the proposed composite scheme, in which first a CRE is computed explicitly with the help of the fast semi&#x02010;empirical tight&#x02010;binding quantum chemical method GFN&#x02010;xTB as implemented in the xtb code.<xref rid="anie201708266-bib-0017" ref-type="ref">17</xref>, <xref rid="anie201708266-bib-0018" ref-type="ref">18</xref> This method has already been successfully applied to various chemical problems<xref rid="anie201708266-bib-0019" ref-type="ref">19</xref> and is absolutely essential here. For the CRE generation, a new composite algorithm consisting of normal mode following, &#x0201c;genetic&#x0201d; structure crossing, and long (1&#x02013;2&#x02005;ns) molecular dynamics (MD) based simulated annealing has been developed (see the Supporting Information). Various conformational search algorithms that partially exploit similar ideas have been proposed<xref rid="anie201708266-bib-0020" ref-type="ref">20</xref> but most of them are applicable only to (bio)organic systems and employ only classical force fields, while rotamers are not considered explicitly. In addition to the conformer ensemble (which is also valuable for other spectroscopic methods, such as circular dichroism<xref rid="anie201708266-bib-0021" ref-type="ref">21</xref>), our new scheme non&#x02010;empirically provides information on chemical as well as magnetic equivalence and for which atom pairs <italic>J</italic>&#x02005;values have to be averaged. This requires hundreds to thousands of numerically very well converged full geometry optimizations and thus cannot be conducted routinely at any standard DFT level. Another feature of the new method is its generality as not only organic molecules but basically any molecular system can be treated (heavier nuclei require consideration of other relativistic effects in calculations of the NMR parameters; see Ref.&#x02005;<xref rid="anie201708266-bib-0022" ref-type="ref">22</xref>).</p><p>In addition to the <italic>J</italic>/<italic>&#x003b4;</italic> data, the relative free energies of each conformer (in the typical solvent CDCl<sub>3</sub>) are needed, which are converted into Boltzmann populations to weight the (rotamer&#x02010;averaged) <italic>J/&#x003b4;</italic> values (step&#x02005;2). Many parts of the above procedure are run in parallel such that the total wall time from a Lewis structure to the predicted spectrum for a molecule with 50&#x02005;atoms is only a few hours. Normally, the DFT calculations represent the computational bottleneck while the calculation of the final spectrum takes only a few seconds to minutes (the CRE generation is of intermediate computational effort).</p><p>Note that widely used software such as ACDlabs<xref rid="anie201708266-bib-0030a" ref-type="ref">30a</xref> or a common web&#x02010;based NMR simulation tool (&#x0201c;NMR predict&#x0201d;)<xref rid="anie201708266-bib-0030b" ref-type="ref">30b</xref> estimate <italic>J</italic>/<italic>&#x003b4;</italic> values by empirical (incremental) schemes, and do not properly average (e.g., methyl and ethyl groups are recognized by cheminformatics). This approach may sometimes work but it is not general, does not accurately describe fundamental stereochemical problems (see below), and completely fails for unusual organometallic compounds, for example. Solely conducting MD simulations and taking a few snapshots for the DFT&#x02010;based NMR parameter calculation as proposed by Kwan and Liu<xref rid="anie201708266-bib-0023" ref-type="ref">23</xref> (see also Ref.&#x02005;<xref rid="anie201708266-bib-0024" ref-type="ref">24</xref>) does not solve the problem either because a proper average cannot be obtained in this way with reasonable effort, and furthermore, somewhat higher but still thermally accessible barriers (5&#x02013;10&#x02005;kcal&#x02009;mol<sup><italic>&#x02212;</italic>1</sup>) are very difficult to overcome. A very important &#x0201c;side product&#x0201d; of our procedure is that in case of a reasonable coincidence of experimental and theoretical spectra, knowledge of the dominantly contributing conformers under the measurement conditions is obtained.</p><p>Herein, we did not comprehensively evaluate the performance of our method across large parts of chemistry but simply want to show some key examples demonstrating versatile applicability. Experimental spectra, which are shown with negative intensity in the plots for better visual comparison, were taken from various sources<xref rid="anie201708266-bib-0025" ref-type="ref">25</xref> and were typically recorded in CDCl<sub>3</sub> as the solvent at <sup>1</sup>H resonance frequencies of 300&#x02013;500&#x02005;MHz. The theoretical spectra employ Lorentzian line shapes for each calculated transition, with a full width at half maximum of 0.8&#x02013;1.5&#x02005;Hz depending on the quality of the experimental data. Conformers with a computed population of <italic>&#x0003e;</italic>4&#x02009;% at <italic>T</italic>=298&#x02005;K were taken into account, and exchangeable protons (OH, COOH) were excluded from the calculations.</p><p>As an introductory example to illustrate the above&#x02010;described challenges, we considered the amino acid valine. According to the conformational analysis, only two conformers of the zwitterionic form are populated at 298&#x02005;K in H<sub>2</sub>O (68 and 32&#x02009;% weight, respectively). Their individual spectra are shown in Figure&#x02005;<xref rid="anie201708266-fig-0002" ref-type="fig">2</xref> along with the one referring to the proper <italic>J</italic>/<italic>&#x003b4;</italic> CRE average and the spectrum of a single rotamer (conformer&#x02005;1). The plot includes the result of the simulation obtained by &#x0201c;NMR predict&#x0201d; and the experimental spectrum measured in D<sub>2</sub>O/buffer (where the zwitterionic form is prevalent according to p<italic>K</italic>
+<sub>a</sub> estimates).
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Experimental and calculated <sup>1</sup>H NMR spectra of valine (500&#x02005;MHz, D<sub>2</sub>O).</p></caption><graphic id="nlm-graphic-5" xlink:href="ANIE-56-14763-g002"/></fig><p>It is clearly seen that only the proper CRE average yields a simulated spectrum that is in good agreement with experiment while the single rotamer spectrum is totally off and contains too many signals. The non&#x02010;equivalence of the two methyl groups that is due to the neighboring chiral center (two doublets) is correctly reproduced by our approach (but not in the simulation according to <ext-link ext-link-type="uri" xlink:href="http://www.nmrdb.org">www.nmrdb.org</ext-link>). Notable are the substantially different chemical shifts of the two conformers, yielding a better agreement with the experiment when averaged.</p><p>As a textbook example for a stereochemically interesting transition&#x02010;metal complex, we considered the structure of Cp<sub>2</sub>TiS<sub>5</sub>, which is reminiscent of cyclohexane. In the equilibrium geometry, the S<sub>5</sub> unit is closer to one Cp ring than to the other. This creates two inequivalent rings, which furthermore have five inequivalent protons each. Hence, calculation of a single rotamer yields ten separated proton signals (two superimposed on each other) with the complex multiplet structures shown in the upper part of Figure&#x02005;<xref rid="anie201708266-fig-0003" ref-type="fig">3</xref>.
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>a)&#x02005;Computed <sup>1</sup>H NMR spectra of Cp<sub>2</sub>TiS<sub>5</sub> (400&#x02005;MHz, CDCl<sub>3</sub>). Top: spectrum for one rotamer, bottom: CRE&#x02010;averaged spectrum, showing a singlet as observed experimentally at elevated temperatures (<italic>T</italic>
+<sub>c</sub>=361&#x02005;K<xref rid="anie201708266-bib-0026" ref-type="ref">26</xref>). b)&#x02005;Comparison of experimental<xref rid="anie201708266-bib-0027" ref-type="ref">27</xref> and theoretical <sup>1</sup>H NMR spectra (300&#x02005;MHz, CDCl<sub>3</sub>) of a substituted titanocene complex.</p></caption><graphic id="nlm-graphic-7" xlink:href="ANIE-56-14763-g003"/></fig><p>Owing to the generality of the GFN&#x02010;xTB method, the CRE was properly generated also for this relatively complicated case where S<sub>5</sub> inversion as well as Cp rotation take place, and all rotamers were obtained even though both processes are not simple single bond rotations. The resulting spectrum obtained for 10&#x02005;protons with the same chemical shift (singlet) is in full agreement with the measured high&#x02010;temperature spectrum.<xref rid="anie201708266-bib-0026" ref-type="ref">26</xref> Note that information about the special properties of Cp rings in metallocenes (very low rotational barrier) had not been entered in the computations by any means. Figure&#x02005;<xref rid="anie201708266-fig-0003" ref-type="fig">3</xref>&#x02009;b contains an example of a substituted titanocene<xref rid="anie201708266-bib-0027" ref-type="ref">27</xref> in which only one Cp ring can rotate while the other, restricted one contains further flexible groups. This case is also challenging for any CRE&#x02010;generating method because a certain inherent rigidity is required such that the observed inequivalence of the CH<sub>2</sub> signals (two doublets) is retained. As can be seen, the simulated spectrum from the average over five conformers fits well to the experimental one even in subtle details.</p><p>As an example for a large spin system with many overlapping multiplets, which is often observed for natural products, we discuss the spectrum of adrenosterone. Only one conformer is significantly populated so that the observed errors can be entirely attributed to the calculated NMR parameters (and indirectly to the effect of the DFT structure and the treatment of solvation). The system contains 24&#x02005;protons, which were grouped into eight fragments with 2 to 14 spins (including buffer spins) with our default settings. As shown in the Supporting Information, changing the maximum number of spins per fragment in the range of 10 to 14 results in an insignificant loss of accuracy, indicating the reliability of our spin&#x02010;fragmentation procedure also for complex couplings. Although the match between theory and experiment is not perfect mainly owing to errors of 0.1&#x02013;0.2&#x02005;ppm in relative shifts, the signals could be easily assigned. Again, the &#x0201c;NMR predict&#x0201d; result is much worse than the fully QM&#x02010;computed spectrum (Figure&#x02005;<xref rid="anie201708266-fig-0004" ref-type="fig">4</xref>). As shown in the Supporting Information, the quality of our treatment is sufficient to distinguish diastereomers (inverted methyl groups), which is important in practice.
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Experimental and calculated <sup>1</sup>H NMR spectra of adrenosterone (500&#x02005;MHz, CDCl<sub>3</sub>), including a mapping of experimental and theoretical multiplets based on the experimental assignment.<xref rid="anie201708266-bib-0025" ref-type="ref">25</xref>
+</p></caption><graphic id="nlm-graphic-9" xlink:href="ANIE-56-14763-g004"/></fig><p>Vitamin&#x02005;D2 (ergocalciferol) is a large, flexible molecule (73 atoms, 44 protons) and requires an extensive conformational analysis owing to a high density of structures (91 GFN&#x02010;xTB minima within a 3&#x02005;kcal&#x02009;mol<sup><italic>&#x02212;</italic>1</sup> energy window). After DFT refinement, there still remained six conformers within our 4&#x02009;% population threshold (ranging from 6 to 44&#x02009;%). The observed very good agreement between theory and experiment (Figure&#x02005;<xref rid="anie201708266-fig-0005" ref-type="fig">5</xref>&#x02009;a), enabling the direct assignment of even complex multiplet patterns, was very encouraging. Furthermore, it demonstrates the high accuracy of the computed free conformational energies, which was estimated to be on the order of &#x000b1;0.2&#x02013;0.3&#x02005;kcal&#x02009;mol<sup>&#x02212;1</sup> for weakly polar systems. The 14&#x02005;fragment spectrum calculation for 44 nuclei (corresponding to about 10<sup>13</sup> spin&#x02010;product functions) took a few minutes of computation time, while the DFT calculations for all conformers including the NMR parameters ran overnight on a quad&#x02010;core laptop.
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Experimental and calculated <sup>1</sup>H NMR spectra of a)&#x02005;vitamin&#x02005;D2 (500&#x02005;MHz, CDCl<sub>3</sub>); b)&#x02005;2&#x02010;chloroform&#x02010;<italic>trans</italic>&#x02010;4,6&#x02010;dimethyl&#x02010;1,3,2&#x02010;dioxarsenane (300&#x02005;MHz, in CS<sub>2</sub>, derived from peak list); and c)&#x02005;tricyclopropylgallium (300&#x02005;MHz, in benzene, derived from peak list).</p></caption><graphic id="nlm-graphic-11" xlink:href="ANIE-56-14763-g005"/></fig><p>Figure&#x02005;<xref rid="anie201708266-fig-0005" ref-type="fig">5</xref>&#x02009;b contains an example of a conceivable high&#x02010;barrier inversion process at an arsenic atom leading to isomers with spectra that are just to be added. As can be seen from the comparison of both calculated spectra, only the lower&#x02010;energy isomer&#x02005;1 (preferred by 11.3&#x02005;kcal&#x02009;mol<sup><italic>&#x02212;</italic>1</sup> and consisting of two conformers with populations of 7 and 93&#x02009;%) fits almost perfectly to the experiment, yielding two inequivalent methyl group signals. Note, that the GFN&#x02010;xTB&#x02010;based CRE search procedure can handle such unusual ring systems without any problem.</p><p>As an example for an electron&#x02010;deficient main&#x02010;group system, we show spectra for tricyclopropylgallium in Figure&#x02005;<xref rid="anie201708266-fig-0005" ref-type="fig">5</xref>&#x02009;c. Here, one issue is to properly orient the three cyclopropyl groups around the metal center and to resolve their chemical equivalence. The simulation shown is based on two conformations with populations of 6 and 94&#x02009;%, respectively, with the dominating species depicted in Figure&#x02005;<xref rid="anie201708266-fig-0005" ref-type="fig">5</xref>&#x02009;c. Again, the agreement between theory and experiment is excellent.</p><p>As a challenging case for any conformational search procedure, we discuss the spectrum of the macrocycle nonactin (Figure&#x02005;<xref rid="anie201708266-fig-0006" ref-type="fig">6</xref>). The dynamic pseudo&#x02010;symmetry of the molecule (only two chemically non&#x02010;equivalent methyl signals are observed) is also a hard test for our spin&#x02010;symmetry permutation algorithm. With 116 atoms and 48 protons, this example is quite large for a QM approach but typical for many drug molecules and routinely doable with our procedure. Interestingly, only a single dominantly contributing conformer was eventually found (the 3D structure shown in the inset), indicating relatively little flexibility. The sensitivity of the simulated spectrum to the underlying CRE was demonstrated by comparison to the one resulting from the preferred GFN&#x02010;xTB conformer. As can be seen, only the simulation employing the accurately DFT&#x02010;reranked CRE agrees very well with the experiment, while the high&#x02010;energy conformer spectrum (about 2.5&#x02005;kcal&#x02009;mol<sup><italic>&#x02212;</italic>1</sup> above the lowest at the DFT level) shows inaccurate shifts as well as wrong multiplet splittings. Further spectra (1&#x02010;chlorobutane, 4&#x02010;phenylmorpholine, methylcyclohexane, strychnine, &#x003b1;&#x02010;ionone, guaiol, <sc>d</sc>&#x02010;sucrose) with similarly good mutual agreement between theory and experiment are provided in the Supporting Information.
+</p><fig fig-type="Figure" xml:lang="en" id="anie201708266-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Experimental and calculated <sup>1</sup>H NMR spectra of nonactin (500&#x02005;MHz, in CDCl<sub>3</sub>). The conformer ensemble consists of three dominating species with populations of 7, 9, and 81&#x02009;%. The top spectrum refers to a <italic>C</italic>
+<sub>2</sub>&#x02010;symmetric conformer that does not contribute but is lowest in the GFN&#x02010;xTB ensemble. Impurities are indicated by arrows. The signals appearing at around 4.3&#x02005;ppm in the simulation are an overlay of two bands found experimentally at 3.8 and 4.0&#x02005;ppm, respectively.</p></caption><graphic id="nlm-graphic-13" xlink:href="ANIE-56-14763-g006"/></fig><p>In conclusion, we have presented a routinely applicable composite procedure for the quantum&#x02010;chemical computation of spin&#x02013;spin&#x02010;coupled <sup>1</sup>H&#x02005;NMR spectra for general (flexible) molecules in solution. This procedure is based on four main steps, namely conformer/rotamer ensemble generation, computation of relative free energies and NMR parameters, and solution of the (fragmented) spin Hamiltonian for the spectrum, which can be directly compared to experiment. A prerequisite for the success of this scheme (and the reason for why such a full approach had never been used before) was the automatic generation of a reasonable conformer/rotamer ensemble by the fast tight&#x02010;binding method GFN&#x02010;xTB. In this way, the nuclear permutation problem is solved, and correct thermally induced spin symmetries including subtle stereochemical details are generated. For a few organic molecules, two transition&#x02010;metal complexes, as well as two inorganic main&#x02010;group systems, very good, unprecedented agreement between the theoretical and experimental spectra was obtained.</p><p>The largest sources of error are the computed chemical shifts (DFT errors as well as neglect of zero&#x02010;point effects/vibrational averaging<xref rid="anie201708266-bib-0028" ref-type="ref">28</xref>), sometimes leading to an interchange of close signals. Nevertheless, these imperfections are generally small enough to allow for unambiguous spectral assignments. Furthermore, inaccurate free solvation energies can result in wrong conformer populations, which, in turn, adversely affect the quality of the average (see Ref.&#x02005;<xref rid="anie201708266-bib-0029" ref-type="ref">29</xref> for a recent COSMO&#x02010;RS study of conformational energies). However, the observed and partially unexpected strong dependence of the NMR parameters on details of the molecular conformation is a strong point of the approach, thereby enabling in&#x02010;depth combined theory/experiment&#x02010;based structure elucidation. A remaining (rare) problem concerns cases where the GFN&#x02010;xTB energy surface is inaccurate, leading to very large conformer spaces that have to be reevaluated by sophisticated quantum&#x02010;chemistry methods (see the example of <sc>d</sc>&#x02010;sucrose in the Supporting Information). In such cases, the likelihood that dominant conformers are missing (which must not happen) is large, and we are currently working on improving the semi&#x02010;empirical method to remedy this deficiency. The accuracy of the computed <sup>1</sup>H NMR spin&#x02013;spin couplings, even with including only the Fermi contact term, was found to be sufficient, which is in agreement with previous observations.</p><p>The shown examples demonstrate the potential of the approach, which should already be applicable to systems with up to 100&#x02013;150 atoms. By improving the underlying quantum chemistry (better GFN&#x02010;xTB method, double&#x02010;hybrid functional based shifts), systematically improved theoretical spectra are to be expected, which cannot be generated with existing empirical models. Easy&#x02010;to&#x02010;use computer codes for all calculation steps in Figure&#x02005;<xref rid="anie201708266-fig-0001" ref-type="fig">1</xref> can be obtained from the corresponding author upon request.<xref rid="anie201708266-bib-0018" ref-type="ref">18</xref> Another research direction is the application of the newly developed conformer generation algorithm to problems of circular dichroism as well as for the computation of molecular entropies. Although similar information can also be obtained experimentally by 2D NMR spectroscopy, the present work may pave the way for complementary quantum&#x02010;chemistry&#x02010;assisted NMR studies of natural products, drug molecules, or even small proteins to reveal subtle conformational details.</p><sec disp-level="2" id="anie201708266-sec-0003" sec-type="COI-statement"><title>Conflict of interest</title><p>The authors declare no conflict of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><p>As a service to our authors and readers, this journal provides supporting information supplied by the authors. Such materials are peer reviewed and may be re&#x02010;organized for online delivery, but are not copy&#x02010;edited or typeset. Technical support issues arising from supporting information (other than missing files) should be addressed to the authors.</p></supplementary-material><supplementary-material content-type="local-data"><caption><p>Supplementary</p></caption><media xlink:href="ANIE-56-14763-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="anie201708266-sec-0002"><title>Acknowledgements</title><p>This work was supported by the German Research Foundation (DFG) through a Leibniz prize to S.G. We thank S.&#x02005;Nozinovic for help with the experimental spectra, E.&#x02005;Caldeweyher, F.&#x02005;Bohle, and M.&#x02005;Bursch for initial tests of parts of the computational modules, and Dr. A.&#x02005;Goeller (Bayer AG) for discussions and providing a &#x0201c;real&#x02010;life&#x0201d; conformational benchmark. S.G. thanks Prof. S.&#x02005;Peyerimhoff and Prof. H.&#x02005;Dreeskamp for helpful comments and longstanding support of this work.</p></ack><ref-list><ref id="anie201708266-bib-0001"><label>1</label><mixed-citation publication-type="book" id="anie201708266-cit-0001">
+<string-name>
+<given-names>J. A.</given-names>
+<surname>Pople</surname>
+</string-name>, <string-name>
+<given-names>W. G.</given-names>
+<surname>Schneider</surname>
+</string-name>, <string-name>
+<given-names>H. J.</given-names>
+<surname>Bernstein</surname>
+</string-name>, <source>High-Resolution Nuclear Magnetic Resonance</source>, <publisher-name>McGraw-Hill</publisher-name>, <publisher-loc>New York</publisher-loc>, <year>1959</year>.</mixed-citation></ref><ref id="anie201708266-bib-0002"><label>2</label><mixed-citation publication-type="book" id="anie201708266-cit-0002">
+<string-name>
+<given-names>H.</given-names>
+<surname>G&#x000fc;nther</surname>
+</string-name>, <source>NMR Spectroscopy&#x02014;Basic Principles, Concepts and Applications in Chemistry</source>
+<publisher-name>, 3rd ed.</publisher-name>, <publisher-loc>Wiley-VCH, Weinheim</publisher-loc>, <year>2013</year>.</mixed-citation></ref><ref id="anie201708266-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="anie201708266-cit-0003">
+<string-name>
+<given-names>T.</given-names>
+<surname>Helgaker</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Jaszunski</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Ruud</surname>
+</string-name>, <source>Chem. Rev.</source>
+<year>1999</year>, <volume>99</volume>, <fpage>293</fpage>&#x02013;<lpage>352</lpage>;<pub-id pub-id-type="pmid">11848983</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0004">
+<string-name>
+<given-names>T.</given-names>
+<surname>Helgaker</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Jaszunski</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Pecul</surname>
+</string-name>, <source>Prog. Nucl. Magn. Reson. Spectrosc.</source>
+<year>2008</year>, <volume>53</volume>, <fpage>249</fpage>&#x02013;<lpage>268</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0005">
+<string-name>
+<given-names>M.</given-names>
+<surname>M&#x000fc;hl</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>van&#x02005;Mourik</surname>
+</string-name>, <source>WIREs Comput. Mol. Sci.</source>
+<year>2011</year>, <volume>1</volume>, <fpage>634</fpage>&#x02013;<lpage>647</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0006">
+<string-name>
+<given-names>M. W.</given-names>
+<surname>Lodewyk</surname>
+</string-name>, <string-name>
+<given-names>M. R.</given-names>
+<surname>Siebert</surname>
+</string-name>, <string-name>
+<given-names>D. J.</given-names>
+<surname>Tantillo</surname>
+</string-name>, <source>Chem. Rev.</source>
+<year>2012</year>, <volume>112</volume>, <fpage>1839</fpage>&#x02013;<lpage>1862</lpage>.<pub-id pub-id-type="pmid">22091891</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="anie201708266-cit-0007">
+<string-name>
+<given-names>D.</given-names>
+<surname>Xin</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Sader</surname>
+</string-name>, <string-name>
+<given-names>O.</given-names>
+<surname>Chaudhary</surname>
+</string-name>, <string-name>
+<given-names>P.-J.</given-names>
+<surname>Jones</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Wagner</surname>
+</string-name>, <string-name>
+<given-names>C. S.</given-names>
+<surname>Tautermann</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Busacca</surname>
+</string-name>, <string-name>
+<given-names>R. A.</given-names>
+<surname>Saraceno</surname>
+</string-name>, <string-name>
+<given-names>K. R.</given-names>
+<surname>Fandrick</surname>
+</string-name>, <string-name>
+<given-names>N. C.</given-names>
+<surname>Gonnella</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Horspool</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Hansen</surname>
+</string-name>, <string-name>
+<given-names>C. H.</given-names>
+<surname>Senanayake</surname>
+</string-name>, <source>J. Org. Chem.</source>
+<year>2017</year>, <volume>82</volume>, <fpage>5135</fpage>&#x02013;<lpage>5145</lpage>;<pub-id pub-id-type="pmid">28398046</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0008">
+<string-name>
+<given-names>A. G.</given-names>
+<surname>Kutateladze</surname>
+</string-name>, <string-name>
+<given-names>O. A.</given-names>
+<surname>Mukhina</surname>
+</string-name>, <source>J. Org. Chem.</source>
+<year>2015</year>, <volume>80</volume>, <fpage>5218</fpage>&#x02013;<lpage>5225</lpage>.<pub-id pub-id-type="pmid">25885091</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="anie201708266-cit-0009">
+<string-name>
+<given-names>A.</given-names>
+<surname>Bagno</surname>
+</string-name>, <source>Chem. Eur. J.</source>
+<year>2001</year>, <volume>7</volume>, <fpage>1652</fpage>&#x02013;<lpage>1661</lpage>.<pub-id pub-id-type="pmid">11349906</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="anie201708266-cit-0010">
+<string-name>
+<given-names>A. M.</given-names>
+<surname>Teale</surname>
+</string-name>, <string-name>
+<given-names>O. B.</given-names>
+<surname>Lutnas</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Helgaker</surname>
+</string-name>, <string-name>
+<given-names>D. J.</given-names>
+<surname>Tozer</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Gauss</surname>
+</string-name>, <source>J. Chem. Phys.</source>
+<year>2013</year>, <volume>138</volume>, <fpage>024111</fpage>.<pub-id pub-id-type="pmid">23320672</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="anie201708266-cit-0011">
+<string-name>
+<given-names>D.</given-names>
+<surname>Flaig</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Maurer</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Hanni</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Braunger</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Kick</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Thubauville</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Ochsenfeld</surname>
+</string-name>, <source>J. Chem. Theory Comput.</source>
+<year>2014</year>, <volume>10</volume>, <fpage>572</fpage>&#x02013;<lpage>578</lpage>.<pub-id pub-id-type="pmid">26580033</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="anie201708266-cit-0012">
+<string-name>
+<given-names>E.</given-names>
+<surname>Benassi</surname>
+</string-name>, <source>J. Comput. Chem.</source>
+<year>2017</year>, <volume>38</volume>, <fpage>87</fpage>&#x02013;<lpage>92</lpage>.<pub-id pub-id-type="pmid">27796077</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0009"><label>9</label><mixed-citation publication-type="book" id="anie201708266-cit-0013">
+<string-name>
+<given-names>R.</given-names>
+<surname>Abraham</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Mobli</surname>
+</string-name>, <source>Modelling <sup>1</sup>H-NMR Spectra of Organic Compounds: Theory, Applications and NMR Prediction Software</source>, <publisher-name>Wiley</publisher-name>, <publisher-loc>Chichester</publisher-loc>, <year>2008</year>.</mixed-citation></ref><ref id="anie201708266-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="anie201708266-cit-0014">
+<string-name>
+<given-names>P. H.</given-names>
+<surname>Willoughby</surname>
+</string-name>, <string-name>
+<given-names>M. J.</given-names>
+<surname>Jansma</surname>
+</string-name>, <string-name>
+<given-names>T. R.</given-names>
+<surname>Hoye</surname>
+</string-name>, <source>Nat. Protoc.</source>
+<year>2014</year>, <volume>9</volume>, <fpage>643</fpage>&#x02013;<lpage>660</lpage>.<pub-id pub-id-type="pmid">24556787</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="anie201708266-cit-0015">
+<string-name>
+<given-names>A. M.</given-names>
+<surname>Castillo</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Patiny</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Wist</surname>
+</string-name>, <source>J. Magn. Reson.</source>
+<year>2011</year>, <volume>209</volume>, <fpage>123</fpage>&#x02013;<lpage>130</lpage>.<pub-id pub-id-type="pmid">21316274</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="anie201708266-cit-0016">
+<string-name>
+<given-names>C.</given-names>
+<surname>Adamo</surname>
+</string-name>, <string-name>
+<given-names>V.</given-names>
+<surname>Barone</surname>
+</string-name>, <source>J. Chem. Phys.</source>
+<year>1999</year>, <volume>110</volume>, <fpage>6158</fpage>&#x02013;<lpage>6170</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0017">
+<string-name>
+<given-names>F.</given-names>
+<surname>Jensen</surname>
+</string-name>, <source>Theor. Chem. Acc.</source>
+<year>2010</year>, <volume>126</volume>, <fpage>371</fpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0018">
+<string-name>
+<given-names>F.</given-names>
+<surname>Jensen</surname>
+</string-name>, <source>J. Chem. Theory Comput.</source>
+<year>2008</year>, <volume>4</volume>, <fpage>719</fpage>;<pub-id pub-id-type="pmid">26621087</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0019">
+<string-name>
+<given-names>T.</given-names>
+<surname>Helgaker</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Jaszunski</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Swider</surname>
+</string-name>, <source>J. Org. Chem.</source>
+<year>2016</year>, <volume>81</volume>, <fpage>11496</fpage>&#x02013;<lpage>11500</lpage>.<pub-id pub-id-type="pmid">27802051</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="anie201708266-cit-0020">
+<string-name>
+<given-names>S.</given-names>
+<surname>Kozuch</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Gruzman</surname>
+</string-name>, <string-name>
+<given-names>J. M. L.</given-names>
+<surname>Martin</surname>
+</string-name>, <source>J. Phys. Chem. C</source>
+<year>2010</year>, <volume>114</volume>, <fpage>20801</fpage>&#x02013;<lpage>20808</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0021">
+<string-name>
+<given-names>S.</given-names>
+<surname>Grimme</surname>
+</string-name>, <string-name>
+<given-names>J. G.</given-names>
+<surname>Brandenburg</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Bannwarth</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Hansen</surname>
+</string-name>, <source>J. Chem. Phys.</source>
+<year>2015</year>, <volume>143</volume>, <fpage>054107</fpage>;<pub-id pub-id-type="pmid">26254642</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0022">
+<string-name>
+<given-names>A.</given-names>
+<surname>Klamt</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Sch&#x000fc;&#x000fc;rmann</surname>
+</string-name>, <source>J. Chem. Soc. Perkin Trans. 2</source>
+<year>1993</year>, <fpage>799</fpage>&#x02013;<lpage>805</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0023">
+<string-name>
+<given-names>F.</given-names>
+<surname>Eckert</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Klamt</surname>
+</string-name>, <source>AiChE J.</source>
+<year>2002</year>, <volume>48</volume>, <fpage>369</fpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0024">
+<string-name>
+<given-names>S.</given-names>
+<surname>Sinnecker</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Rajendran</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Klamt</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Diedenhofen</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Neese</surname>
+</string-name>, <source>J. Phys. Chem. A</source>
+<year>2006</year>, <volume>110</volume>, <fpage>2235</fpage>&#x02013;<lpage>2245</lpage>;<pub-id pub-id-type="pmid">16466261</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0025">
+<string-name>
+<given-names>F.</given-names>
+<surname>Weigend</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Ahlrichs</surname>
+</string-name>, <source>Phys. Chem. Chem. Phys.</source>
+<year>2005</year>, <volume>7</volume>, <fpage>3297</fpage>&#x02013;<lpage>3305</lpage>.<pub-id pub-id-type="pmid">16240044</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0014"><label>14</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0026">F. Neese, <italic>ORCA&#x02014;An Ab Initio, DFT and Semiempirical electronic structure package</italic>, <italic>Ver. 4.0.1</italic>, Max Planck Institute for Chemical Energy Conversion, M&#x000fc;lheim, Germany, <bold>2017</bold>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0027">
+<string-name>
+<given-names>F.</given-names>
+<surname>Neese</surname>
+</string-name>, <source>WIREs Comput. Mol. Sci.</source>
+<year>2012</year>, <volume>2</volume>, <fpage>73</fpage>&#x02013;<lpage>78</lpage>.</mixed-citation></ref><ref id="anie201708266-bib-0015"><label>15</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0028">
+<italic>TURBOMOLE&#x02005;7.2</italic>, Universit&#x000e4;t Karlsruhe and Forschungszentrum Karlsruhe GmbH, Karlsruhe, Germany, <bold>2017</bold>, <ext-link ext-link-type="uri" xlink:href="http://www.turbomole.com">http://www.turbomole.com</ext-link>.</mixed-citation></ref><ref id="anie201708266-bib-0016"><label>16</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0029">IUPAC Gold Book, see <ext-link ext-link-type="uri" xlink:href="http://goldbook.iupac.org/html/C/C01262.html">http://goldbook.iupac.org/html/C/C01262.html</ext-link> and <ext-link ext-link-type="uri" xlink:href="http://goldbook.iupac.org/html/R/R05407.html">http://goldbook.iupac.org/html/R/R05407.html</ext-link>.</mixed-citation></ref><ref id="anie201708266-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="anie201708266-cit-0030">
+<string-name>
+<given-names>S.</given-names>
+<surname>Grimme</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Bannwarth</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Shushkov</surname>
+</string-name>, <source>J. Chem. Theory Comput.</source>
+<year>2017</year>, <volume>13</volume>, <fpage>1989</fpage>&#x02013;<lpage>2009</lpage>.<pub-id pub-id-type="pmid">28418654</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0018"><label>18</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0031">S. Grimme, xtb, a tight-binding quantum chemistry code for large molecules, University of Bonn, 2017. The program and additional codes for the conformational search and the computation of NMR spectra (anmr) can be obtained for academic use upon request (xtb@thch.uni-bonn.de).</mixed-citation></ref><ref id="anie201708266-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="anie201708266-cit-0032">
+<string-name>
+<given-names>V.</given-names>
+<surname>&#x000c1;sgeirsson</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Bauer</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Grimme</surname>
+</string-name>, <source>Chem. Sci.</source>
+<year>2017</year>, <volume>8</volume>, <fpage>4879</fpage>&#x02013;<lpage>4895</lpage>;<pub-id pub-id-type="pmid">28959412</pub-id></mixed-citation><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0033">P. Pracht, C.&#x02005;A. Bauer, S. Grimme, <italic>J. Comput. Chem</italic>
+<bold>2017</bold>, DOI: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/jcc.24922">https://doi.org/10.1002/jcc.24922</ext-link>;</mixed-citation><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0034">M. Bursch, S. Grimme, <italic>Inorg. Chem</italic>
+<bold>2017</bold>, DOI: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1021/acs.inorgchem.7b01950">https://doi.org/10.1021/acs.inorgchem.7b01950</ext-link>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0035">
+<string-name>
+<given-names>K.-Y.</given-names>
+<surname>Ye</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Bursch</surname>
+</string-name>, <string-name>
+<given-names>Z.-W.</given-names>
+<surname>Qu</surname>
+</string-name>, <string-name>
+<given-names>C. G.</given-names>
+<surname>Daniliuc</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Grimme</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Kehr</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Erker</surname>
+</string-name>, <source>Chem. Commun.</source>
+<year>2017</year>, <volume>53</volume>, <fpage>633</fpage>&#x02013;<lpage>635</lpage>.</mixed-citation></ref><ref id="anie201708266-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="anie201708266-cit-0036">
+<string-name>
+<given-names>I.</given-names>
+<surname>Kolossv&#x000e1;ry</surname>
+</string-name>, <string-name>
+<given-names>W. C.</given-names>
+<surname>Guida</surname>
+</string-name>, <source>J. Am. Chem. Soc.</source>
+<year>1996</year>, <volume>118</volume>, <fpage>5011</fpage>&#x02013;<lpage>5019</lpage>;</mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0037">
+<string-name>
+<given-names>T.</given-names>
+<surname>Kamachi</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Yoshizawa</surname>
+</string-name>, <source>J. Chem. Inf. Model.</source>
+<year>2016</year>, <volume>56</volume>, <fpage>347</fpage>&#x02013;<lpage>353</lpage>;<pub-id pub-id-type="pmid">26815336</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0038">
+<string-name>
+<given-names>H.</given-names>
+<surname>Tsujishita</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Hirono</surname>
+</string-name>, <source>J. Comput.-Aided Mol. Des.</source>
+<year>1997</year>, <volume>11</volume>, <fpage>305</fpage>&#x02013;<lpage>315</lpage>;<pub-id pub-id-type="pmid">9263857</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0039">
+<string-name>
+<given-names>J.</given-names>
+<surname>Shim</surname>
+</string-name>, <string-name>
+<given-names>A. D.</given-names>
+<surname>MacKerell</surname>,&#x02005;<suffix>Jr.</suffix>
+</string-name>, <source>MedChemComm</source>
+<year>2011</year>, <volume>2</volume>, <fpage>356</fpage>&#x02013;<lpage>370</lpage>;<pub-id pub-id-type="pmid">21716805</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0040">
+<string-name>
+<given-names>G.</given-names>
+<surname>Jones</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Willett</surname>
+</string-name>, <string-name>
+<given-names>R. C.</given-names>
+<surname>Glen</surname>
+</string-name>, <source>J. Comput.-Aided Mol. Des.</source>
+<year>1995</year>, <volume>9</volume>, <fpage>532</fpage>&#x02013;<lpage>549</lpage>;<pub-id pub-id-type="pmid">8789195</pub-id></mixed-citation><mixed-citation publication-type="journal" id="anie201708266-cit-0041">
+<string-name>
+<given-names>M. J.</given-names>
+<surname>Vainio</surname>
+</string-name>, <string-name>
+<given-names>M. S.</given-names>
+<surname>Johnson</surname>
+</string-name>, <source>J. Chem. Inf. Model.</source>
+<year>2007</year>, <volume>47</volume>, <fpage>2462</fpage>&#x02013;<lpage>2474</lpage>.<pub-id pub-id-type="pmid">17892278</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="anie201708266-cit-0042">
+<string-name>
+<given-names>G.</given-names>
+<surname>Pescitelli</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Di&#x02005;Bari</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Berova</surname>
+</string-name>, <source>Chem. Soc. Rev.</source>
+<year>2011</year>, <volume>40</volume>, <fpage>4603</fpage>&#x02013;<lpage>4625</lpage>.<pub-id pub-id-type="pmid">21677932</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0022"><label>22</label><mixed-citation publication-type="book" id="anie201708266-cit-0043">&#x0201c;NMR Parameters of Transition Metal Complexes&#x0201d;: <string-name>
+<given-names>M.</given-names>
+<surname>Kaupp</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>B&#x000fc;hl</surname>
+</string-name> in <source>Computational Inorganic and Bioinorganic Chemistry (in Encyclopedia of Inorganic Chemistry)</source> (Eds.: <person-group person-group-type="editor"><string-name>E. Solomon, R.&#x02005;B. King, R.&#x02005;A. Scott</string-name></person-group>), <publisher-name>Wiley</publisher-name>, <publisher-loc>Chichester</publisher-loc>, <year>2009</year>, pp.&#x02005;<fpage>91</fpage>&#x02013;<lpage>108</lpage>.</mixed-citation></ref><ref id="anie201708266-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="anie201708266-cit-0044">
+<string-name>
+<given-names>E. E.</given-names>
+<surname>Kwan</surname>
+</string-name>, <string-name>
+<given-names>R. Y.</given-names>
+<surname>Liu</surname>
+</string-name>, <source>J. Chem. Theory Comput.</source>
+<year>2015</year>, <volume>11</volume>, <fpage>5083</fpage>&#x02013;<lpage>5089</lpage>.<pub-id pub-id-type="pmid">26574306</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="anie201708266-cit-0045">
+<string-name>
+<given-names>M.</given-names>
+<surname>Dracinsky</surname>
+</string-name>, <string-name>
+<given-names>H. M.</given-names>
+<surname>M&#x000f6;ller</surname>
+</string-name>, <string-name>
+<given-names>T. E.</given-names>
+<surname>Exner</surname>
+</string-name>, <source>J. Chem. Theory Comput.</source>
+<year>2013</year>, <volume>9</volume>, <fpage>3806</fpage>&#x02013;<lpage>3815</lpage>.<pub-id pub-id-type="pmid">26584127</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0025"><label>25</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0046">SDBSWeb, <ext-link ext-link-type="uri" xlink:href="http://sdbs.db.aist.go.jp">http://sdbs.db.aist.go.jp</ext-link> (National Institute of Advanced Industrial Science and Technology). Data are available as peak lists and are converted into spectra as for the theoretical data with the same line width. This is indicated by adding the term &#x0201c;derived from peak list&#x0201d; in the text.; Biological Magnetic Resonance Data Bank, <ext-link ext-link-type="uri" xlink:href="http://www.bmrb.wisc.edu/metabolomics">http://www.bmrb.wisc.edu/metabolomics</ext-link>; S. Nozinovic, NMR laboratory of the chemical institutes, University of Bonn.</mixed-citation></ref><ref id="anie201708266-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="anie201708266-cit-0047">
+<string-name>
+<given-names>A.</given-names>
+<surname>Shaver</surname>
+</string-name>, <string-name>
+<given-names>J. M.</given-names>
+<surname>McCall</surname>
+</string-name>, <source>Organometallics</source>
+<year>1984</year>, <volume>3</volume>, <fpage>1823</fpage>&#x02013;<lpage>1829</lpage>.</mixed-citation></ref><ref id="anie201708266-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="anie201708266-cit-0048">
+<string-name>
+<given-names>A.</given-names>
+<surname>Gans&#x000e4;uer</surname>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Winkler</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Worgull</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Franke</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Lauterbach</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Okkel</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Nieger</surname>
+</string-name>, <source>Organometallics</source>
+<year>2008</year>, <volume>27</volume>, <fpage>5699</fpage>&#x02013;<lpage>5707</lpage>.</mixed-citation></ref><ref id="anie201708266-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="anie201708266-cit-0049">
+<string-name>
+<given-names>K.</given-names>
+<surname>Ruud</surname>
+</string-name>, <string-name>
+<given-names>P.-O.</given-names>
+<surname>Astrand</surname>
+</string-name>, <string-name>
+<given-names>P. R.</given-names>
+<surname>Taylor</surname>
+</string-name>, <source>J. Am. Chem. Soc.</source>
+<year>2001</year>, <volume>123</volume>, <fpage>4826</fpage>&#x02013;<lpage>4833</lpage>.<pub-id pub-id-type="pmid">11457293</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="anie201708266-cit-0050">
+<string-name>
+<given-names>A.</given-names>
+<surname>Pung</surname>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Leito</surname>
+</string-name>, <source>J. Phys. Chem. A</source>
+<year>2017</year>, <volume>121</volume>, <fpage>6823</fpage>&#x02013;<lpage>6829</lpage>. Note that only low-level, non-dispersion-corrected DFT neglecting RRHO contributions was used in this study, which may partially explain the observed errors in the computed conformational populations.<pub-id pub-id-type="pmid">28820591</pub-id></mixed-citation></ref><ref id="anie201708266-bib-0030"><label>30</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0051">&#x000a0;</mixed-citation></ref><ref id="anie201708266-bib-0030a"><label>30a</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0052">
+<ext-link ext-link-type="uri" xlink:href="http://www.acdlabs.com">http://www.acdlabs.com</ext-link>;</mixed-citation></ref><ref id="anie201708266-bib-0030b"><label>30b</label><mixed-citation publication-type="miscellaneous" id="anie201708266-cit-0053">
+<ext-link ext-link-type="uri" xlink:href="http://www.nmrdb.org">http://www.nmrdb.org</ext-link>.</mixed-citation></ref></ref-list></back></article>

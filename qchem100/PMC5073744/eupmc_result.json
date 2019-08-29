@@ -1,0 +1,400 @@
+{
+  "id": [
+    "27818709"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27818709"
+  ],
+  "pmcid": [
+    "PMC5073744"
+  ],
+  "doi": [
+    "10.1186/s13321-016-0169-8"
+  ],
+  "title": [
+    "Multi-level meta-workflows: new concept for regularly occurring tasks in quantum chemistry."
+  ],
+  "authorString": [
+    "Arshad J, Hoffmann A, Gesing S, Grunzke R, Krüger J, Kiss T, Herres-Pawlis S, Terstyanszky G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Arshad J"
+          ],
+          "firstName": [
+            "Junaid"
+          ],
+          "lastName": [
+            "Arshad"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Centre for Parallel Computing, School of Computer Science, University of Westminster, 115 New Cavendish Street, London, W1W 6UW UK."
+          ]
+        },
+        {
+          "fullName": [
+            "Hoffmann A"
+          ],
+          "firstName": [
+            "Alexander"
+          ],
+          "lastName": [
+            "Hoffmann"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Institut für Anorganische Chemie, Lehrstuhl für Bioanorganische Chemie, RWTH Aachen University, Landoltweg 1, 52074 Aachen, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Gesing S"
+          ],
+          "firstName": [
+            "Sandra"
+          ],
+          "lastName": [
+            "Gesing"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "University of Notre Dame, 123 Information Technology Center, Notre Dame, IN 46556 USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Grunzke R"
+          ],
+          "firstName": [
+            "Richard"
+          ],
+          "lastName": [
+            "Grunzke"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Center for Information Services and High Performance Computing, Technische Universität Dresden, Zellescher Weg 12-14, 01062 Dresden, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Krüger J"
+          ],
+          "firstName": [
+            "Jens"
+          ],
+          "lastName": [
+            "Krüger"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2636-3163",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Applied Bioinformatics Tübingen, University of Tübingen, Sand 14, 72076 Tübingen, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Kiss T"
+          ],
+          "firstName": [
+            "Tamas"
+          ],
+          "lastName": [
+            "Kiss"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Centre for Parallel Computing, School of Computer Science, University of Westminster, 115 New Cavendish Street, London, W1W 6UW UK."
+          ]
+        },
+        {
+          "fullName": [
+            "Herres-Pawlis S"
+          ],
+          "firstName": [
+            "Sonja"
+          ],
+          "lastName": [
+            "Herres-Pawlis"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4354-4353",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institut für Anorganische Chemie, Lehrstuhl für Bioanorganische Chemie, RWTH Aachen University, Landoltweg 1, 52074 Aachen, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Terstyanszky G"
+          ],
+          "firstName": [
+            "Gabor"
+          ],
+          "lastName": [
+            "Terstyanszky"
+          ],
+          "initials": [
+            "G"
+          ],
+          "affiliation": [
+            "Centre for Parallel Computing, School of Computer Science, University of Westminster, 115 New Cavendish Street, London, W1W 6UW UK."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-2636-3163",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-4354-4353",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2554940"
+      ],
+      "dateOfPublication": [
+        "2016 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Journal of cheminformatics"
+          ],
+          "ISOAbbreviation": [
+            "J Cheminform"
+          ],
+          "medlineAbbreviation": [
+            "J Cheminform"
+          ],
+          "NLMid": [
+            "101516718"
+          ],
+          "ISSN": [
+            "1758-2946"
+          ],
+          "ESSN": [
+            "1758-2946"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "58"
+  ],
+  "abstractText": [
+    "In Quantum Chemistry, many tasks are reoccurring frequently, e.g. geometry optimizations, benchmarking series etc. Here, workflows can help to reduce the time of manual job definition and output extraction. These workflows are executed on computing infrastructures and may require large computing and data resources. Scientific workflows hide these infrastructures and the resources needed to run them. It requires significant efforts and specific expertise to design, implement and test these workflows.Many of these workflows are complex and monolithic entities that can be used for particular scientific experiments. Hence, their modification is not straightforward and it makes almost impossible to share them. To address these issues we propose developing atomic workflows and embedding them in meta-workflows. Atomic workflows deliver a well-defined research domain specific function. Publishing workflows in repositories enables workflow sharing inside and/or among scientific communities. We formally specify atomic and meta-workflows in order to define data structures to be used in repositories for uploading and sharing them. Additionally, we present a formal description focused at orchestration of atomic workflows into meta-workflows.We investigated the operations that represent basic functionalities in Quantum Chemistry, developed the relevant atomic workflows and combined them into meta-workflows. Having these workflows we defined the structure of the Quantum Chemistry workflow library and uploaded these workflows in the SHIWA Workflow Repository.Graphical AbstractMeta-workflows and embedded workflows in the template representation."
+  ],
+  "affiliation": [
+    "Centre for Parallel Computing, School of Computer Science, University of Westminster, 115 New Cavendish Street, London, W1W 6UW UK."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "quantum chemistry",
+        "Scientific Workflows",
+        "Atomic Workflow",
+        "Meta-workflow",
+        "Workflow Repository"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5073744?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5073744"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s13321-016-0169-8"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2016-11-07"
+  ],
+  "firstIndexDate": [
+    "2016-11-10"
+  ],
+  "dateOfRevision": [
+    "2017-08-16"
+  ],
+  "electronicPublicationDate": [
+    "2016-10-20"
+  ],
+  "firstPublicationDate": [
+    "2016-10-20"
+  ]
+}

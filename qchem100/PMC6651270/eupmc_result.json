@@ -1,0 +1,376 @@
+{
+  "id": [
+    "31260292"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31260292"
+  ],
+  "pmcid": [
+    "PMC6651270"
+  ],
+  "doi": [
+    "10.1021/acs.jcim.9b00384"
+  ],
+  "title": [
+    "QMflows: A Tool Kit for Interoperable Parallel Workflows in Quantum Chemistry."
+  ],
+  "authorString": [
+    "Zapata F, Ridder L, Hidding J, Jacob CR, Infante I, Visscher L."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Zapata F"
+          ],
+          "firstName": [
+            "Felipe"
+          ],
+          "lastName": [
+            "Zapata"
+          ],
+          "initials": [
+            "F"
+          ],
+          "affiliation": [
+            "Division of Theoretical Chemistry, Faculty of Science , Vrije Universiteit Amsterdam , de Boelelaan 1083 , 1081 HV Amsterdam , The Netherlands."
+          ]
+        },
+        {
+          "fullName": [
+            "Ridder L"
+          ],
+          "firstName": [
+            "Lars"
+          ],
+          "lastName": [
+            "Ridder"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "Netherlands eScience Center , Science Park 140 (Matrix I) , 1098 XG Amsterdam , The Netherlands."
+          ]
+        },
+        {
+          "fullName": [
+            "Hidding J"
+          ],
+          "firstName": [
+            "Johan"
+          ],
+          "lastName": [
+            "Hidding"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Netherlands eScience Center , Science Park 140 (Matrix I) , 1098 XG Amsterdam , The Netherlands."
+          ]
+        },
+        {
+          "fullName": [
+            "Jacob CR"
+          ],
+          "firstName": [
+            "Christoph R"
+          ],
+          "lastName": [
+            "Jacob"
+          ],
+          "initials": [
+            "CR"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6227-8476",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Physical and Theoretical Chemistry , TU Braunschweig , Gaußstraße 17 , 38106 Braunschweig , Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Infante I"
+          ],
+          "firstName": [
+            "Ivan"
+          ],
+          "lastName": [
+            "Infante"
+          ],
+          "initials": [
+            "I"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3467-9376",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Division of Theoretical Chemistry, Faculty of Science , Vrije Universiteit Amsterdam , de Boelelaan 1083 , 1081 HV Amsterdam , The Netherlands."
+          ]
+        },
+        {
+          "fullName": [
+            "Visscher L"
+          ],
+          "firstName": [
+            "Lucas"
+          ],
+          "lastName": [
+            "Visscher"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7748-6243",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Division of Theoretical Chemistry, Faculty of Science , Vrije Universiteit Amsterdam , de Boelelaan 1083 , 1081 HV Amsterdam , The Netherlands."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-7748-6243",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6227-8476",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-3467-9376",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "7"
+      ],
+      "volume": [
+        "59"
+      ],
+      "journalIssueId": [
+        "2841044"
+      ],
+      "dateOfPublication": [
+        "2019 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Journal of chemical information and modeling"
+          ],
+          "ISOAbbreviation": [
+            "J Chem Inf Model"
+          ],
+          "medlineAbbreviation": [
+            "J Chem Inf Model"
+          ],
+          "NLMid": [
+            "101230060"
+          ],
+          "ISSN": [
+            "1549-9596"
+          ],
+          "ESSN": [
+            "1549-960X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "3191-3197"
+  ],
+  "abstractText": [
+    "We present the QMflows Python package for quantum chemistry workflow automatization. QMflows allows users to write complex workflows in terms of simple Python scripts. It supports the development of interoperable workflows involving multiple quantum chemistry codes and executes them efficiently on large scale parallel computers. This open source library provides standardized interfaces to a number of quantum chemistry packages and can be easily extended to accommodate additional codes. QMflows features are described and illustrated with a number of representative applications."
+  ],
+  "affiliation": [
+    "Division of Theoretical Chemistry, Faculty of Science , Vrije Universiteit Amsterdam , de Boelelaan 1083 , 1081 HV Amsterdam , The Netherlands."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6651270?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC6651270"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1021/acs.jcim.9b00384"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2019-07-02"
+  ],
+  "firstIndexDate": [
+    "2019-07-03"
+  ],
+  "dateOfRevision": [
+    "2019-07-26"
+  ],
+  "electronicPublicationDate": [
+    "2019-07-01"
+  ],
+  "firstPublicationDate": [
+    "2019-07-01"
+  ]
+}

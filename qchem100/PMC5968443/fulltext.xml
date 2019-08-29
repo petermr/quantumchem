@@ -1,0 +1,682 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?DTDIdentifier.IdentifierValue -//ACS//DTD ACS Journal DTD v1.02 20061031//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName ACSJournal-v102.dtd?><?SourceDTD.Version 1.02?><?ConverterInfo.XSLTName acs2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Cent Sci</journal-id><journal-id journal-id-type="iso-abbrev">ACS Cent Sci</journal-id><journal-id journal-id-type="publisher-id">oc</journal-id><journal-id journal-id-type="coden">acscii</journal-id><journal-title-group><journal-title>ACS Central Science</journal-title></journal-title-group><issn pub-type="ppub">2374-7943</issn><issn pub-type="epub">2374-7951</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5968443</article-id><article-id pub-id-type="doi">10.1021/acscentsci.7b00586</article-id><article-categories><subj-group><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Automatic Differentiation in Quantum Chemistry with
+Applications to Fully Variational Hartree&#x02013;Fock</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Tamayo-Mendoza</surname><given-names>Teresa</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath2"><name><surname>Kreisbeck</surname><given-names>Christoph</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Lindh</surname><given-names>Roland</given-names></name><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath4"><name><surname>Aspuru-Guzik</surname><given-names>Al&#x000e1;n</given-names></name><xref rid="cor2" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#x02020;</xref><xref rid="aff4" ref-type="aff">&#x000a7;</xref></contrib><aff id="aff1"><label>&#x02020;</label>Department
+of Chemistry and Chemical Biology, <institution>Harvard
+University</institution>, 12 Oxford Street, Cambridge, Massachusetts 02138, <country>United States</country></aff><aff id="aff2"><label>&#x02021;</label>Department
+of Chemistry-&#x000c5;ngstr&#x000f6;m, The Theoretical Chemistry Programme,
+Uppsala Center for Computational Chemistry, UC3, <institution>Uppsala University</institution>, Box 518, 751 20, Uppsala, <country>Sweden</country></aff><aff id="aff4"><label>&#x000a7;</label><institution>Canadian
+Institute for Advanced Research</institution>, Toronto, Ontario M5G 1Z8, <country>Canada</country></aff></contrib-group><author-notes><corresp id="cor1">(C.K.) <label>*</label>E-mail: <email>christophkreisbeck@gmail.com</email>.</corresp><corresp id="cor2">(AA.) <label>*</label>E-mail: <email>aspuru@chemistry.harvard.edu</email>.</corresp></author-notes><pub-date pub-type="epub"><day>09</day><month>05</month><year>2018</year></pub-date><pub-date pub-type="ppub"><day>23</day><month>05</month><year>2018</year></pub-date><volume>4</volume><issue>5</issue><fpage>559</fpage><lpage>566</lpage><history><date date-type="received"><day>06</day><month>12</month><year>2017</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2018 American Chemical Society</copyright-statement><copyright-year>2018</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_0004" id="ab-tgr1"/></p><p>Automatic
+differentiation (AD) is a powerful tool that allows calculating
+derivatives of implemented algorithms with respect to all of their
+parameters up to machine precision, without the need to explicitly
+add any additional functions. Thus, AD has great potential in quantum
+chemistry, where gradients are omnipresent but also difficult to obtain,
+and researchers typically spend a considerable amount of time finding
+suitable analytical forms when implementing derivatives. Here, we
+demonstrate that AD can be used to compute gradients with respect
+to any parameter throughout a complete quantum chemistry method. We
+present <italic>DiffiQult</italic>, a Hartree&#x02013;Fock implementation,
+entirely differentiated with the use of AD tools. <italic>DiffiQult</italic> is a software package written in plain Python with minimal deviation
+from standard code which illustrates the capability of AD to save
+human effort and time in implementations of exact gradients in quantum
+chemistry. We leverage the obtained gradients to optimize the parameters
+of one-particle basis sets in the context of the floating Gaussian
+framework.</p></abstract><abstract abstract-type="short"><p><italic>DiffiQult</italic> is a Hartree&#x02212;Fock plain
+Python implementation that computes exact gradients with respect to
+any input parameter using automatic differentiation, without any explicit
+analytical gradient.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>oc7b00586</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>oc-2017-00586m</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><label>1</label><title>Introduction</title><p>Automatic
+differentiation (AD) is a conceptually well-established
+tool to calculate numerical gradients up to machine precision,<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref2">2</xref></sup> by iteratively applying the chain rule and successively walking
+through the computational graph of numerically implemented functions.
+Therefore, AD facilitates the computation of exact derivatives of
+coded algorithms with respect to all its variables without having
+to implement any other expression explicitly. AD circumvents challenges
+arising in traditional approaches. For example, the evaluation of
+analytical expressions tends to be inefficient, and numerical gradients
+can be unstable due to truncations or round-off errors. Enabled by
+a variety of libraries,<sup><xref ref-type="bibr" rid="ref3">3</xref>&#x02212;<xref ref-type="bibr" rid="ref11">11</xref></sup> AD has been successfully implemented to various applications.<sup><xref ref-type="bibr" rid="ref12">12</xref>&#x02212;<xref ref-type="bibr" rid="ref14">14</xref></sup> For example, AD has been used for quantum control in open-quantum
+systems to find an optimal time-dependent field to obtain a specific
+state.<sup><xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref16">16</xref></sup> Furthermore, new libraries developed in
+the context of deep learning<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref17">17</xref>&#x02212;<xref ref-type="bibr" rid="ref19">19</xref></sup> make AD techniques even more accessible to a broader community.
+For instance, Leung et. al used a parallelized machine learning tool,
+TensorFlow, to obtain the optimal parameters to minimize several kinds
+of cost-functions to tune the evolution of quantum states.<sup><xref ref-type="bibr" rid="ref20">20</xref></sup></p><p>In this manuscript, we highlight the relevance
+of AD for quantum
+chemistry and demonstrate that AD provides a novel general path forward
+to reduce the human time spent on the implementation gradients for
+electronic structure methods. Gradients play a fundamental role in
+optimization procedures as well as for the computation of molecular
+response properties such as dipole moments polarizabilities, magnetizabilities,
+or force constants.<sup><xref ref-type="bibr" rid="ref21">21</xref></sup> Although analytical
+expressions are available for some derivatives in many cases,<sup><xref ref-type="bibr" rid="ref22">22</xref>&#x02212;<xref ref-type="bibr" rid="ref25">25</xref></sup> researchers typically spend a considerable amount of time finding
+suitable analytical forms when implementing new quantum chemistry
+methods.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Depending on the complexity
+of the electronic structure method, this can result in a significant
+time delay between the development of the method and the implementation
+of its gradients. The implementation of geometrical gradients for
+MC-SCF<sup><xref ref-type="bibr" rid="ref21">21</xref>,<xref ref-type="bibr" rid="ref26">26</xref></sup> has been published more than 10 years after
+the method itself.<sup><xref ref-type="bibr" rid="ref27">27</xref></sup> Moreover, some analytical
+gradients can be too complicated to be handled manually. For example,
+the complex analytical derivatives of the FIC-CASPT2<sup><xref ref-type="bibr" rid="ref28">28</xref>,<xref ref-type="bibr" rid="ref29">29</xref></sup> method, published more than two decades ago, has been only recently
+accessible through advances in automatic code generation.<sup><xref ref-type="bibr" rid="ref30">30</xref>,<xref ref-type="bibr" rid="ref31">31</xref></sup></p><p>AD techniques could play an important role in quantum chemistry
+by marginalizing the complexity of implementing gradients, as it allows
+computing the gradients without coding them explicitly. The advantages
+of AD techniques have been used before in electronic structure methods.<sup><xref ref-type="bibr" rid="ref32">32</xref>&#x02212;<xref ref-type="bibr" rid="ref36">36</xref></sup> In these previous works, the implementations were tailored to the
+differentiation of the specific application. These typically require
+considerable changes to existing code or the explicit implementation
+of some analytical gradients, Taylor coefficients, or adjoints. For
+instance, in the context of density functional theory, a combined
+approach using analytical expression together with AD has been successfully
+applied to compute higher order derivatives of the exchange-correlation
+term.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> Further, Sorella et al.<sup><xref ref-type="bibr" rid="ref36">36</xref></sup> explicitly derived the appropriate sequence
+of computation of adjoints and their expressions for the kinetic and
+potential energy terms. Here, we apply AD in a broader context and
+demonstrate that AD tools are an efficient way to get arbitrary gradients
+for a complete quantum chemistry method with respect to any input
+parameter. To this end, we implement a fully autodifferentiable Hartree&#x02013;Fock
+(HF) method which we distribute in our <italic>DiffiQult</italic> software
+package<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> written in plain Python language.
+We have selected HF since it is not only used in many electronic correlation
+methods as an initial step but contains complex mathematical operations
+and functions, such as calculating derivatives of eigenvectors or
+special functions. The latter is also relevant for more sophisticated
+quantum chemistry methods<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> and impose
+nontrivial requirements for suitable AD libraries as they need to
+lay out the complete computational graph rather than calling black-box
+routines, for example, implemented in LAPACK.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> We illustrate the capabilities of <italic>DiffiQult</italic> within
+the framework of a fully variational HF method, where we use a gradient-based
+optimization of the SCF-energy to optimize the parameters of the basis
+set within the Floating Gaussian framework.<sup><xref ref-type="bibr" rid="ref40">40</xref>,<xref ref-type="bibr" rid="ref41">41</xref></sup> Our implementation sets the basis for extending the <italic>DiffiQult</italic> software package to include post-HF methods such as FCI and MP2,
+and to leverage higher order derivatives to obtain anharmonic corrections
+for rotational&#x02013;vibrational spectroscopy.</p><p>This paper is
+organized as follows: In <xref rid="sec2" ref-type="other">section <xref rid="sec2" ref-type="other">2</xref></xref>, we provide a small review of the algebra
+behind automatic differentiation. In the <xref rid="sec3" ref-type="other">section <xref rid="sec3" ref-type="other">3</xref></xref> we introduce the fully variational Hartree&#x02013;Fock
+method. In <xref rid="sec4" ref-type="other">section <xref rid="sec4" ref-type="other">4</xref></xref>, we discuss in detail the key components of the canonical HF algorithm
+and explain how they were implemented in <italic>DiffiQult</italic> by considering an appropriate selection and usage of an AD library.
+In <xref rid="sec5" ref-type="other">Section <xref rid="sec5" ref-type="other">5</xref></xref> we demonstrate
+the capabilities of our algorithm by optimizing the one-electron basis
+functions of small molecules. Finally, in <xref rid="sec6" ref-type="other">section <xref rid="sec6" ref-type="other">6</xref></xref>, we conclude with an outlook of future directions
+of <italic>DiffiQult</italic>, and a perspective of the role of AD
+in simplifying and accelerating the implementation of gradients of
+new quantum chemistry methods.</p></sec><sec id="sec2"><label>2</label><title>Automatic Differentiation</title><p>The idea behind automatic differentiation is that every algorithm,
+independent of its complexity, consists of a series of simple arithmetic
+operations that have known analytical forms, such as sums, multiplications,
+sines, cosines, or exponents. The sequence of these elementary operations
+is represented by a computational graph; see for example <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>. In this form, it
+is possible to compute the gradients of the outputs of a function
+with respect to its inputs by applying the chain rule and evaluating
+the analytical derivatives of all of these elementary operations in
+a given order. This implies that AD libraries can differentiate the
+entire algorithm not only mathematical expressions, written in an
+explicit form, but also all the control functions such as recursions,
+loops, conditional statements, etc. Therefore, AD computes the exact
+derivatives of any code with machine precision.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> In practice, there are two main forms to compute derivatives
+using the chain rule with AD tools: forward and backward mode. We
+illustrate both modes in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>The center depicts the computational graph of a simple
+function <italic>F</italic>(<italic>x</italic><sub>1</sub>, <italic>x</italic><sub>2</sub>) and its elementary operations. On the left
+and right, we
+illustrate the differentiation steps of forward and backward mode,
+respectively. In forward mode, the evaluation of the function at a
+given set of parameter and the derivative with respect to <italic>x</italic><sub>1</sub> is evaluated by computing the intermediate
+variables &#x003d5;<sub><italic>i</italic></sub> and their derivatives
+following the order of the computational graph using the chain rule.
+The direction of the evaluation is indicated by the left arrow. In
+backward mode, the function is evaluated first at a given value, and
+later the adjoints of all the intermediate variables are computed
+by iterating backward through the computational graph, indicated by
+the right arrow. Notice, in this mode, the partial derivatives of
+the function with respect to the two independent variables are computed
+together, whereas in forward mode each partial derivative of the function
+has to be evaluated separately. In this example, to compute the entire
+gradient, the number of operations in backward mode is smaller than
+in forward mode.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_0001" id="gr1" position="float"/></fig><p>Forward mode is conceptually
+the easiest way to compute gradients.
+Let us consider the function <inline-formula id="d30e370"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m001.gif"/></inline-formula> defined by a
+sequence of <italic>k</italic> functions, <inline-formula id="d30e376"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m002.gif"/></inline-formula> in the following way <italic>y</italic> = <italic>F</italic>(<italic>x</italic>) = (<italic>f</italic><sub><italic>k</italic></sub>&#x000b0;<italic>f</italic><sub><italic>k</italic>&#x02013;1</sub>&#x000b0;...<italic>f</italic><sub>1</sub>&#x000b0;<italic>f</italic><sub>0</sub>)(<italic>x</italic>). In forward mode, the
+partial derivative of a function with respect to a given parameter <italic>x</italic><sub><italic>j</italic></sub>, <inline-formula id="d30e422"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m003.gif"/></inline-formula>, is computed by evaluating simultaneously
+the intermediate variables &#x003d5;<sub><italic>i</italic>+1</sub> = <italic>f</italic><sub><italic>i</italic></sub>(&#x003d5;<sub><italic>i</italic></sub>) and the derivatives <inline-formula id="d30e441"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m004.gif"/></inline-formula>, at a given <italic>x</italic> = <italic>a</italic>. Note that &#x003d5;<sub>0</sub> = <italic>x</italic> and <inline-formula id="d30e457"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m005.gif"/></inline-formula>. Once we defined the values of the independent
+variables, the algorithm proceeds to calculate &#x003d5;<sub>1</sub> and &#x003d5;&#x00307;<sub>1</sub>, and will continue to compute the
+partial derivatives of the next elementary operations following the
+computational graph by sequentially applying the chain rule. For instance,
+the differentiation of a function <italic>F</italic> with a single
+dependent variable goes from right side to left side of the equation,<disp-formula id="eq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m006" position="anchor"/><label>1</label></disp-formula>An example of forward differentiation
+of a more complex function with two variables is illustrated on the
+left side in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>. We display the steps to compute the partial derivatives of the
+intermediate variables with respect to a single parameter. Since the
+forward mode relies on the generation of the derivatives of the elementary
+operations with respect to each individual input parameter, it is
+particularly suited for functions with few independent variables.</p><p>The second form is backward mode, which relies on the computation
+of the &#x0201c;adjoints&#x0201d; <inline-formula id="d30e482"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m007.gif"/></inline-formula> by computing the adjoints of the intermediate
+variables, <inline-formula id="d30e485"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m008.gif"/></inline-formula>. In contrast to forward mode, in backward
+mode the adjoints are computed following the opposite direction through
+the computational graph by iterating computing each adjoint of all
+the intermediate variables. The algorithm first evaluates the function <italic>F</italic>(<italic>x</italic>) at a given set of parameters <italic>x</italic> = <italic>a</italic>, and later proceeds to calculate
+the adjoints of the last intermediate variable to the first one iterating
+backward through the computational graph. By definition, &#x003d5;<sub><italic>k</italic></sub> = <italic>y</italic>, therefore <inline-formula id="d30e508"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m009.gif"/></inline-formula>. If <italic>F</italic>(<italic>x</italic>) only
+depends on a single parameter, this procedure is the equivalent
+of evaluating the chain rule from left to right,<disp-formula id="eq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_m010" position="anchor"/><label>2</label></disp-formula>The last step of backward
+mode, after calculating all the intermediate adjoints, results in
+the partial derivatives of the function with respect to all parameters.
+An example with a more complex composition of function with two variables
+is illustrated on the right side of <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>, where we get the entire gradient of <italic>F</italic>(<italic>x</italic><sub>1</sub>, <italic>x</italic><sub>2</sub>) with a single backward propagation evaluation. Note that
+intermediate adjoints can be used at a later stage to obtain the partial
+derivatives with respect to both variables resulting in a reduction
+of operations compared to the forward differentiation. This characteristic
+generally makes the backward mode more efficient for a small number
+of dependent variables. For more details about the general differences
+over both modes and its implementation, the reader might refer to
+ref (<xref ref-type="bibr" rid="ref2">2</xref>).</p><p>In practical
+applications, the choice of either differentiation
+mode depends on the specific form of the computational graph as well
+as on performance considerations taking into account the available
+computational resources. For example, backward mode requires either
+storing the complete sequence of operations of the algorithm to compute
+the function or recalculating the intermediate variables. On the other
+hand, this constraint might be compensated by the capability of the
+backward mode to efficiently evaluate derivatives of many parameters
+with fewer operations than the forward mode. In our particular case,
+this analysis is done by reviewing the relevant mathematical operations
+of a canonical HF algorithm for an efficient implementation of gradients
+with AD techniques.</p></sec><sec id="sec3"><label>3</label><title>Fully Variational Hartree&#x02013;Fock</title><p>Our goal is to implement gradients with AD techniques for a quantum
+chemistry method without writing any explicit gradient. In this manuscript,
+as an illustrative, yet useful example, we apply AD to obtain HF energy
+gradients to optimize parameters of Gaussian basis functions. This
+algorithm will enable a more compact wave function representation
+while maintaining a comparable level of accuracy in energy achieved
+by using larger basis sets. Thus, this method will provide tailored
+molecular one-electron basis functions with greater flexibility compared
+to atomic-centered Gaussian expansions.</p><p>In the HF method, the
+wave function is constructed as a linear
+combination of one-electron basis functions, where we minimize the
+energy by finding the appropriate expansion coefficients. The selection
+of these basis functions is critical to accurately reproduce the behavior
+of a system.<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> The most popular form of
+these basis functions is the atomic-centered contracted Gaussian functions
+because the computation of one- and two-electron integrals have well-established
+forms for their implementations.<sup><xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref43">43</xref>&#x02212;<xref ref-type="bibr" rid="ref45">45</xref></sup> Each of these functions is defined by the set of following parameters:
+(i) the exponents {&#x003b1;} defining the Gaussian width, (ii) the
+contraction coefficients {<italic>c</italic>} defining the linear
+expansion of the Gaussian representation of the atomic orbital (AO),
+(iii) the coordinates <bold>A</bold> defining the center of the Gaussians,
+and (iv) the angular momentum <bold>a</bold> defining the order of
+the polynomial factor defined by the coordinate system (e.g., Cartesian
+or spherical harmonics).<sup><xref ref-type="bibr" rid="ref46">46</xref></sup></p><p>These
+one-electron basis functions are generally obtained by energy
+optimizations of single atoms with a certain level of theory and are
+intended to mimic AO.<sup><xref ref-type="bibr" rid="ref47">47</xref></sup> However, when AOs
+are used as a basis for molecules they require some degree of flexibility
+to describe more complex behaviors such as polarization effects. Therefore,
+one usually selects a relatively large number of basis functions with
+AOs of different exponents and sufficiently high angular momentum.<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> The drawback of using a larger basis set is
+the increase in numerical complexity, imposing limitations on actual
+calculations.</p><p>To get a fully optimized wave function, we can
+minimize not only
+the expansion coefficients, but all types of variational parameters
+of the Gaussian AOs mentioned above, such as nuclear coordinates,
+Gaussian centers, contraction coefficients, and exponents. A fully
+variational approach may be useful to reduce the number of basis functions
+and to obtain a more compact representation of the wave function.
+This could either improve the calculation of molecular properties<sup><xref ref-type="bibr" rid="ref40">40</xref>,<xref ref-type="bibr" rid="ref42">42</xref>,<xref ref-type="bibr" rid="ref48">48</xref></sup> or yield a better reference state
+for certain higher levels of theory.<sup><xref ref-type="bibr" rid="ref49">49</xref></sup> A
+prominent example of a variational approach is the so-called Floating
+Gaussians<sup><xref ref-type="bibr" rid="ref41">41</xref>,<xref ref-type="bibr" rid="ref50">50</xref>&#x02212;<xref ref-type="bibr" rid="ref52">52</xref></sup> in which the centers
+of the AOs are optimized. Some authors have partially optimized parameters
+such as the Gaussian widths for the valence shell<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> or included extra orbitals around the region of the chemical
+bond.<sup><xref ref-type="bibr" rid="ref53">53</xref>,<xref ref-type="bibr" rid="ref54">54</xref></sup> Furthermore, wave function parameters have
+been optimized within a higher level of theory,<sup><xref ref-type="bibr" rid="ref55">55</xref>,<xref ref-type="bibr" rid="ref56">56</xref></sup> such as CASSCF and MP2,<sup><xref ref-type="bibr" rid="ref57">57</xref></sup> or HF over
+ab initio molecular dynamics.<sup><xref ref-type="bibr" rid="ref58">58</xref>,<xref ref-type="bibr" rid="ref59">59</xref></sup> These methods have
+implemented gradient or Hessian-based optimization with analytical
+nuclear derivatives.</p><p>In this paper, we present a fully variational
+approach,<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> where we optimize the molecular
+orbitals with
+a quasi-Newton method. Here, the gradients are calculated using solely
+a plain Python implementation of a HF and an AD library. By taking
+advantage of the AD techniques, we can compute numerically exact gradients
+with respect to any parameter without the need for implementing analytical
+gradients explicitly. This provides the flexibility to either simultaneously
+optimize the Gaussian exponents and positions, or to optimize them
+sequentially.</p></sec><sec id="sec4"><label>4</label><title>Implementation</title><p>In
+the following section, we describe <italic>DiffiQult</italic>, a fully
+variational HF algorithm that calculates gradients employing
+AD. In particular, we discuss options and constraints that need to
+be considered when applying AD in a quantum chemistry method. <italic>DiffiQult</italic> contains two main parts, (i) a restricted HF implementation
+that provides HF energies as well as its derivatives with respect
+to any input parameter and (ii) a gradient-based optimization of wave
+function parameters. The scheme of our fully variational Hartree&#x02013;Fock
+implementation is shown in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Diagram of the fully variational algorithm implemented
+in the <italic>DiffiQult</italic> package.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_0002" id="gr2" position="float"/></fig><p>The philosophy behind using AD is centered around the idea
+of saving
+human effort in the implementation of gradients. Ideally, we would
+like to choose a suitable AD library capable of getting gradients
+from AD just by adding minimal changes to standard Python or C++ code.
+In this way, we would be able to significantly reduce the amount of
+time required for the implementation of gradients for new electronic
+structure methods. Moreover, we could link the AD library to existing
+electronic structure software packages for which analytical or numerical
+gradients might be inefficient. However, to what extent the aforementioned
+goals can be reached depends on the capabilities of the available
+AD libraries.<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref4">4</xref>,<xref ref-type="bibr" rid="ref60">60</xref>&#x02212;<xref ref-type="bibr" rid="ref63">63</xref></sup> Each of the libraries differs in some aspects, but all of them have
+in common that they are restricted in some way, and it remains to
+be analyzed which ones match the requirements for a quantum chemistry
+algorithm best. For example, we would need to differentiate some operations
+that are typically computed by library routines, e.g., LAPACK<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> functions. To avoid explicit implementation
+of those methods, an appropriate library preferably supports linear
+algebra operations as well as calls to special functions such as the
+incomplete gamma function. Similarly, the AD modes, e.g., forward
+or backward mode, as discussed in <xref rid="sec2" ref-type="other">section <xref rid="sec2" ref-type="other">2</xref></xref> exhibit different properties, and one might
+be more suitable for a particular implementation than the other. A
+majority of the requirements are shared among various electronic structure
+algorithms, including HF. Therefore, the gradients computed solely
+with AD techniques of a HF implementation in <italic>DiffiQult</italic> serves as a proof-of-concept that helps us to develop an understanding
+of the capabilities of AD in quantum chemistry.</p><p>In the following
+analysis, we review how the library and AD mode
+selection impact the implementation of <italic>DiffiQult</italic>.
+We should notice that certain operations that are simple in standard
+implementations can raise challenges depending on the selected AD
+library. For example, some control flow statements that depend on
+intermediate variables might impose some constraints in backward mode,
+if the library builds the computational graph before the evaluation
+of the function. In HF, control statements are for example implemented
+to determine the required number of SCF steps for convergence. Depending
+on the input parameter, e.g., the molecular geometry, fewer or more
+iterations are needed to reach convergence, and thus the computational
+graph consists of fewer or more operations. This has severe implications
+on the backward mode since for this mode the computational graph needs
+to be fixed before function evaluation. We might circumvent some of
+these issues by hard-coding the number of steps of the SCF, but this
+simple example demonstrates that the implementation of gradients with
+AD tools requires different considerations when compared to developing
+traditional software packages.</p><p>Another relevant aspect for the
+implementation of <italic>DiffiQult</italic> is the matrix operations.
+From the algorithmic point of view, we
+should leverage vectorized operations whenever possible.<sup><xref ref-type="bibr" rid="ref64">64</xref></sup> Vectorized operations are taken as elementary
+operations in most of the AD libraries, and the computation of their
+derivatives is typically stated in a simple vectorized form which
+avoids unnecessary storage and evaluations of intermediate variables.
+However, in HF, as essentially in all wave function based quantum
+chemistry methods, one and two electron integrals are typically defined
+by an element-wise array assignment (e.g., <italic>A</italic>[<italic>i</italic>,<italic>j</italic>] = <italic>k</italic>). This nonvectorized
+assignment represents a major challenge for backward mode regarding
+the amount of memory needed to store the computational graph as well
+as intermediate variables and derivatives.</p><p>The most critical
+component for our HF implementation in <italic>DiffiQult</italic> is
+matrix diagonalization. In some AD libraries
+such as <italic>autograd</italic>,<sup><xref ref-type="bibr" rid="ref65">65</xref></sup> this
+matrix operation is considered as an elementary operation, which can
+be implicitly differentiated to obtain its adjoints and derivatives,
+respectively for each mode. In backward mode, the analytical expression
+for the adjoint of the eigenvectors is in principle available. However,
+the adjoints of the eigenvectors corresponding to repeated eigenvalues
+are not differentiable;<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref64">64</xref></sup> see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf">Supporting Information</ext-link>. Therefore, we cannot use backward differentiation
+for matrix diagonalization of systems with degenerate molecular orbitals.
+Since we aim to compute general molecular systems, we exclude the
+backward mode for our implementation of <italic>DiffiQult</italic>. This leaves the forward mode as a possible option to circumvent
+the challenges of repeated eigenvalues. For the forward mode, the
+analytical expressions of the derivatives of eigenvectors are known,
+even for the degenerate case.<sup><xref ref-type="bibr" rid="ref66">66</xref></sup> This method
+relies on computing the <italic>n</italic>th-order derivative of the
+eigenvalues such that its diagonals are distinct and on computing
+the <italic>n</italic> + 1th-order derivative of the original matrix
+that needs to be diagonalized; see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf">Supporting Information</ext-link>. Therefore, we would need an implementation that
+would depend on a case-by-case analysis. Alternatively, Walter et
+al.<sup><xref ref-type="bibr" rid="ref67">67</xref></sup> proposed a general algorithm to compute
+the diagonalization, based on univariate Taylor polynomials (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf">Supporting Information</ext-link>),<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref63">63</xref></sup> implemented
+in Algopy.<sup><xref ref-type="bibr" rid="ref63">63</xref></sup> This approach is mathematically
+equivalent to forward differentiation and considers the repeated eigenvalue
+problem. For further details, we refer the reader to the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf">Supporting Information</ext-link>.</p><p>Even though we
+may consider reverse mode as a more efficient way
+for our implementation given the large number of input parameters
+and the small number of output variables, after this analysis, we
+conclude that an HF implementation is required to be based on the forward mode. Regarding
+the AD library, we have chosen Algopy,<sup><xref ref-type="bibr" rid="ref63">63</xref></sup> since it supports both AD modes, provides matrix diagonalization
+for repeated eigenvalues, and requires only minimal modifications
+to calculate gradients of functions implemented in plain Python.</p><p>Finally, once we have implemented an autodifferentiable HF algorithm
+in Algopy, we use a gradient-based optimization to optimize Gaussian
+centers, widths, and contraction coefficients either together or separately.
+We use the Broyden&#x02013;Fletcher&#x02013;Goldfarb&#x02013;Shanno (BFGS)
+algorithm<sup><xref ref-type="bibr" rid="ref68">68</xref></sup> implemented in the <italic>scipy</italic> module. As recommended in ref (<xref ref-type="bibr" rid="ref56">56</xref>), we take the natural logarithm
+to optimize the Gaussian exponents. No unexpected or unusually high
+safety hazards were encountered during the course of this study.</p></sec><sec id="sec5"><label>5</label><title>Results</title><p>We tested our implementation by optimizing
+the STO-2G as well as
+the STO-3G minimal basis sets for the small molecules H<sub>2</sub>O, HF, NH<sub>3</sub>, CH<sub>4</sub>, and CH<sub>2</sub>O. Since
+we can obtain the gradients with respect to any input parameter, <italic>DiffiQult</italic> has the freedom to select different optimization
+procedures. Here, we illustrate two schemes: (A) optimizing the Gaussian
+exponents and contraction coefficients, sequentially, and (B) optimizing
+the contraction coefficients and exponents, followed by an optimization
+of the Gaussian centers. For the example of H<sub>2</sub>O, the improvement
+of the energies for each optimization step is illustrated in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>. We find that the
+most efficient way to optimize the HF energy is by employing scheme
+(B) since it already converges after 10 basis set optimization steps.
+For a general assessment of which method works better than the other,
+we need to consider the trade-off between reaching fast convergence
+and computation time. For example, scheme (B) requires more time to
+perform a single optimization step since it requires computing more
+gradients for a larger number of parameters due to the line-search
+procedure within the BFGS algorithm. All optimizations were done until
+finding an infinite norm of the gradient of 10<sup>&#x02013;5</sup> or a total of 10 steps, respectively. <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref> displays HF energies for optimized and nonoptimized
+basis sets for selected small molecules. The optimization scheme (B)
+results in an improvement of up to 0.18 hartree per electron.</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>Hartree&#x02013;Fock Energies in Hartrees
+Test Molecules of the Nonoptimized and Optimized (Scheme (B)) basis
+sets STO-2G and STO-3G<xref rid="tbl1-fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">&#x000a0;</th><th colspan="5" align="center" char=".">basis<hr/></th></tr><tr><th style="border:none;" align="center">&#x000a0;</th><th colspan="2" align="center" char=".">STO-2G<hr/></th><th colspan="2" align="center" char=".">STO-3G<hr/></th><th style="border:none;" align="center" char=".">&#x000a0;</th></tr><tr><th style="border:none;" align="center">molecule</th><th style="border:none;" align="center" char=".">none</th><th style="border:none;" align="center" char=".">Opt. <italic>coef</italic>, &#x003b1;&#x000a0;and&#x000a0;<bold>A</bold></th><th style="border:none;" align="center" char=".">none</th><th style="border:none;" align="center" char=".">Opt. <italic>coef</italic>, &#x003b1;&#x000a0;and&#x000a0;<bold>A</bold></th><th style="border:none;" align="center" char=".">reference:
+3-21G</th></tr></thead><tbody><tr><td style="border:none;" align="left">HF</td><td style="border:none;" align="char" char=".">&#x02013;95.60</td><td style="border:none;" align="char" char=".">&#x02013;97.03</td><td style="border:none;" align="char" char=".">&#x02013;98.57</td><td style="border:none;" align="char" char=".">&#x02013;99.38</td><td style="border:none;" align="char" char=".">&#x02013;99.46</td></tr><tr><td style="border:none;" align="left">H<sub>2</sub>O</td><td style="border:none;" align="char" char=".">&#x02013;72.74</td><td style="border:none;" align="char" char=".">&#x02013;73.82</td><td style="border:none;" align="char" char=".">&#x02013;74.96</td><td style="border:none;" align="char" char=".">&#x02013;75.52</td><td style="border:none;" align="char" char=".">&#x02013;75.59</td></tr><tr><td style="border:none;" align="left">NH<sub>3</sub></td><td style="border:none;" align="char" char=".">&#x02013;53.82</td><td style="border:none;" align="char" char=".">&#x02013;54.65</td><td style="border:none;" align="char" char=".">&#x02013;55.45</td><td style="border:none;" align="char" char=".">&#x02013;55.83</td><td style="border:none;" align="char" char=".">&#x02013;55.87</td></tr><tr><td style="border:none;" align="left">CH<sub>4</sub></td><td style="border:none;" align="char" char=".">&#x02013;38.59</td><td style="border:none;" align="char" char=".">&#x02013;39.32</td><td style="border:none;" align="char" char=".">&#x02013;39.72</td><td style="border:none;" align="char" char=".">&#x02013;39.96</td><td style="border:none;" align="char" char=".">&#x02013;39.98</td></tr><tr><td style="border:none;" align="left">CH<sub>3</sub>F</td><td style="border:none;" align="char" char=".">&#x02013;133.09</td><td style="border:none;" align="char" char=".">&#x02013;134.96</td><td style="border:none;" align="char" char=".">&#x02013;137.17</td><td style="border:none;" align="char" char=".">&#x02013;137.43</td><td style="border:none;" align="char" char=".">&#x02013;138.28</td></tr><tr><td style="border:none;" align="left">CH<sub>2</sub>O</td><td style="border:none;" align="char" char=".">&#x02013;109.02</td><td style="border:none;" align="char" char=".">&#x02013;110.54</td><td style="border:none;" align="char" char=".">&#x02013;112.35</td><td style="border:none;" align="char" char=".">&#x02013;112.72</td><td style="border:none;" align="char" char=".">&#x02013;113.22</td></tr></tbody></table><table-wrap-foot><fn id="tbl1-fn1"><label>a</label><p>As a reference,
+we show results
+for the larger 3-21G basis set.</p></fn></table-wrap-foot></table-wrap><fig id="fig3" position="float"><label>Figure 3</label><caption><p>One-electron
+basis function optimizations of H<sub>2</sub>O. (a)
+Optimization steps of STO-3G and STO-2G with different optimization
+schemes. (A) Optimizing exponents and coefficients 10 steps each twice,
+and (B) optimizing exponents and coefficients together, followed by
+optimizing positions. (b) Contour of the difference in electronic
+density between the STO-3G basis and the optimized one-electron basis
+functions under scheme (B). (c) Contours of the difference in electronic
+density between the conventional STO-3G basis set and the reference
+3-21G basis set. (d) Contour of the difference in electronic density
+between the optimized (scheme (B)) STO-3G basis set and the reference
+3-21G basis set. An increase of density on the optimization is displayed
+in blue and a decrease is in red.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc-2017-00586m_0003" id="gr3" position="float"/></fig><p>The minimal basis sets we optimized lacked in flexibility
+to correctly
+represent polarization and dispersion in the core molecular orbitals.
+For instance, hydrogen contains only a single atom centered s-type
+orbital that is insufficient to display changes in the density induced
+by the surrounding charges. By optimizing the parameters of the atomic
+orbital of each hydrogen, we can partially take into account polarization
+effects. As is depicted in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>b, the optimization of the basis STO-3G of H<sub>2</sub>O shifts the electronic density from the regions around the hydrogen
+atoms toward the bond regions. In the case of the oxygen, as it is
+shown in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>c,d,
+the number of basis function is not sufficient to represent both the
+bond and the density around the oxygen itself, even after the optimization.
+Therefore, corrections to the core atomic orbitals of oxygen would
+need to include a greater number and higher angular momentum one-electron
+functions.</p><p>Finally, we discuss a common convergence problem
+of the HF method
+that can affect our fully variational HF implementation. It appears
+in our examples mainly in the line-search, when the optimizer by chance
+tests the parameter for which the SCF is difficult to get converged. In principle, this
+problem can be circumvented by suitable convergence strategies in
+the HF algorithm.</p></sec><sec id="sec6"><label>6</label><title>Conclusion and Perspective</title><p>AD offers a promising alternative solution for computing accurate
+derivatives of electronic structure methods. In this manuscript, we
+implemented <italic>DiffiQult</italic>, which serves as a proof-of-concept
+that helps us to develop an understanding of the capabilities of AD
+in quantum chemistry. Specifically, we presented and discussed the
+use of AD in the context of a fully variational HF method, which contains
+most of the mathematical components of other electronic structure
+methods. By using the <italic>Algopy</italic> AD library, we calculated
+gradients of any parameter with just minimal adjustments in the source
+code of the canonical HF energy, without any explicit implementation
+of a single derivative. With these gradients at hand, we are able
+to fully minimize the energy with respect to any parameter of the
+Gaussian one-particle basis. As a result, we capture, to some extent,
+polarization effects with a reduced number of atomic orbitals. Since
+the essential functions of many quantum chemistry methods are similar
+to the ones present in HF, we plan to extend <italic>DiffiQult</italic> to post-HF methods in future work.</p><p><italic>DiffiQult</italic> can be seen as a general tool to obtain
+molecular tailored basis functions, that can be used as a starting
+point for other variational methods, e.g., FCI. An emerging application
+could be in the field of quantum computing for quantum chemistry,<sup><xref ref-type="bibr" rid="ref69">69</xref></sup> where the size of one-electron basis function
+is constrained by the number of qubits available in state-of-the-art
+hardware.<sup><xref ref-type="bibr" rid="ref70">70</xref>&#x02212;<xref ref-type="bibr" rid="ref74">74</xref></sup> Thus, experimental demonstrations of quantum algorithms for chemistry
+have been limited to conventional minimal basis sets.<sup><xref ref-type="bibr" rid="ref74">74</xref>,<xref ref-type="bibr" rid="ref75">75</xref></sup> Here, the fully variational setting of <italic>DiffiQult</italic> could offer the advantage to optimize initial parameters of atomic
+orbitals, which could increase the accuracy of variational quantum
+chemistry simulations,<sup><xref ref-type="bibr" rid="ref69">69</xref></sup> while keeping
+the number of basis functions small.</p><p>Finally, the analysis of
+the advantages of AD technologies in the
+implementation of <italic>DiffiQult</italic> demonstrates that AD
+has a huge potential in future implementations. The AD tools could
+extend quantum chemistry methods in many ways. For example, in general,
+it is possible to mix different differentiation modes and approaches.
+We could use the forward mode to compute gradients of element-wise
+matrix definitions (or in general for complex computational graphs)
+and use the backward mode for vectorized functions. Furthermore, AD
+could be combined with symbolic algebra and automated code generation<sup><xref ref-type="bibr" rid="ref76">76</xref>&#x02212;<xref ref-type="bibr" rid="ref78">78</xref></sup> to build a general tool-chain to create software packages capable
+of computing a function and computing gradients with an AD library.</p></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting
+Information
+is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00586">10.1021/acscentsci.7b00586</ext-link>.<list id="silist" list-type="simple"><list-item><p>Derivatives and
+adjoints of eigenvectors (S1). Description
+of a method used to compute the derivatives of repeated eigenvalues
+in forward mode, Univariate Taylor Arithmetic (S2) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="oc7b00586_si_001.pdf"><caption><p>oc7b00586_si_001.pdf</p></caption></media></supplementary-material></sec><notes id="NOTES-d46e1990-autogenerated" notes-type="COI-statement"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>This project was supported by the NSF Award
+Number 1464862.
+R.L. acknowledges support by the Swedish Research Council (Grant 2016-03398).
+T.T-M. thanks CONACyT for scholarship No. 433469. T.T-M. appreciates
+the rich discussions with Jhonathan Romero Fontalvo and Benjamin Sanchez
+Langeling.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="book" id="cit1"><person-group person-group-type="allauthors"><name><surname>Griewank</surname><given-names>A.</given-names></name>; <name><surname>Walther</surname><given-names>A.</given-names></name></person-group><source>Evaluating Derivatives,
+Principles and Techniques of Algorithmic Differentiation</source>, <edition>2nd</edition> ed.; <publisher-name>SIAM</publisher-name>: <publisher-loc>Philadelphia</publisher-loc>, <year>2008</year>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="book" id="cit2"><person-group person-group-type="allauthors"><name><surname>Bischof</surname><given-names>C. H.</given-names></name>; <name><surname>B&#x000fc;cker</surname><given-names>M.</given-names></name></person-group><article-title>Computing derivatives
+of computer programs</article-title>. In <source>Modern Methods and
+Algorithms of Quantum Chemistry</source>; <person-group person-group-type="editor"><name><surname>Grotendorst</surname><given-names>J.</given-names></name></person-group>, Ed.; <publisher-name>NIC</publisher-name>, Series, <year>2000</year>; Vol. <volume>3</volume> ; pp <fpage>315</fpage>&#x02013;<lpage>327</lpage>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="book" id="cit3"><person-group person-group-type="allauthors"><name><surname>Walther</surname><given-names>A.</given-names></name>; <name><surname>Griewank</surname><given-names>A.</given-names></name></person-group><article-title>Getting started
+with ADOL-C</article-title>. In <source>Combinatorial Scientific Computing</source>; <person-group person-group-type="editor"><name><surname>Naumann</surname><given-names>U.</given-names></name>, <name><surname>Schenk</surname><given-names>O.</given-names></name></person-group>, Eds.; <publisher-name>Chapman-Hall CRC Computational Science</publisher-name>, <year>2012</year>; Chapter 7, pp <fpage>181</fpage>&#x02013;<lpage>202</lpage>.</mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Bischof</surname><given-names>C.</given-names></name>; <name><surname>Khademi</surname><given-names>P.</given-names></name>; <name><surname>Mauer</surname><given-names>A.</given-names></name>; <name><surname>Carle</surname><given-names>A.</given-names></name>
+<article-title>Adifor 2.0:
+automatic
+differentiation of Fortran 77 programs</article-title>. <source>IEEE
+Comput. Sci. Eng.</source>
+<year>1996</year>, <volume>3</volume>, <fpage>18</fpage>&#x02013;<lpage>32</lpage><pub-id pub-id-type="doi">10.1109/99.537089</pub-id>.</mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Bischof</surname><given-names>C. H.</given-names></name>; <name><surname>Roh</surname><given-names>L.</given-names></name>; <name><surname>MauerOats</surname><given-names>A.</given-names></name>
+<article-title>ADIC &#x02013; An Extensible Automatic Differentiation
+Tool for ANSI-C</article-title>. <source>Software-Practice and Experience</source>
+<year>1997</year>, <volume>27</volume>, <fpage>1427</fpage>&#x02013;<lpage>1456</lpage><pub-id pub-id-type="doi">10.1002/(SICI)1097-024X(199712)27:12&#x0003c;1427::AID-SPE138&#x0003e;3.0.CO;2-Q</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Bischof</surname><given-names>C.</given-names></name>; <name><surname>Khademi</surname><given-names>P.</given-names></name>; <name><surname>Mauer</surname><given-names>A.</given-names></name>; <name><surname>Carle</surname><given-names>A.</given-names></name>
+<article-title>Adifor 2.0: automatic
+differentiation of Fortran 77 programs</article-title>. <source>IEEE
+Comput. Sci. Eng.</source>
+<year>1996</year>, <volume>3</volume>, <fpage>18</fpage>&#x02013;<lpage>32</lpage><pub-id pub-id-type="doi">10.1109/99.537089</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Hasco&#x000eb;t</surname><given-names>L.</given-names></name>; <name><surname>Pascual</surname><given-names>V.</given-names></name>
+<article-title>The Tapenade Automatic Differentiation tool: Principles,
+Model, and Specification</article-title>. <source>ACM Transactions on
+Mathematical Software</source>
+<year>2013</year>, <volume>39</volume>, <fpage>1</fpage>&#x02013;<lpage>43</lpage><pub-id pub-id-type="doi">10.1145/2450153.2450158</pub-id>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="book" id="cit8"><person-group person-group-type="allauthors"><name><surname>Walther</surname><given-names>A.</given-names></name>; <name><surname>Griewank</surname><given-names>A.</given-names></name></person-group><article-title>Getting started
+with ADOL-C</article-title>. In <source>Combinatorial Scientific Computing</source>; <person-group person-group-type="editor"><name><surname>Naumann</surname><given-names>U.</given-names></name>, <name><surname>Schenk</surname><given-names>O.</given-names></name></person-group>, Eds.; <publisher-name>Chapman-Hall CRC Computational Science</publisher-name>, <year>2012</year>; Chapter 7, pp <fpage>181</fpage>&#x02013;<lpage>202</lpage>.</mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="book" id="cit9"><person-group person-group-type="allauthors"><name><surname>Maclaurin</surname><given-names>D.</given-names></name>; <name><surname>Duvenaud</surname><given-names>D.</given-names></name>; <name><surname>Adams</surname><given-names>R.
+P.</given-names></name></person-group><article-title>Gradient-based
+Hyperparameter Optimization Through Reversible Learning</article-title>. In <source>Proceedings of the 32nd International Conference on
+International Conference on Machine Learning - Vol. 37</source>; ICML&#x02019;15; <publisher-name>JMLR.org</publisher-name>, <year>2015</year>; pp <fpage>2113</fpage>&#x02013;<lpage>2122</lpage>.</mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="weblink" id="cit10"><person-group person-group-type="allauthors"><name><surname>Revels</surname><given-names>J.</given-names></name>; <name><surname>Lubin</surname><given-names>M.</given-names></name>; <name><surname>Papamarkou</surname><given-names>T.</given-names></name></person-group> JuliaDiff, <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/JuliaDiff">https://github.com/JuliaDiff</uri>, <year>2017</year>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="undeclared" id="cit11"><person-group person-group-type="allauthors"><name><surname>Revels</surname><given-names>J.</given-names></name>; <name><surname>Lubin</surname><given-names>M.</given-names></name>; <name><surname>Papamarkou</surname><given-names>T.</given-names></name></person-group><article-title>Forward-Mode
+Automatic Differentiation
+in Julia</article-title>. <source>arXiv:1607.07892</source>, <year>2016</year>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Cohen</surname><given-names>A.</given-names></name>; <name><surname>Shoham</surname><given-names>M.</given-names></name>
+<article-title>Application of hyper-dual
+numbers to rigid bodies equations
+of motion</article-title>. <source>Mech. Mach. Theory</source>
+<year>2017</year>, <volume>111</volume>, <fpage>76</fpage>&#x02013;<lpage>84</lpage><pub-id pub-id-type="doi">10.1016/j.mechmachtheory.2017.01.013</pub-id>.</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Henrard</surname><given-names>M.</given-names></name>
+<article-title>Calibration
+in Finance: Very Fast Greeks Through Algorithmic Differentiation and
+Implicit Function</article-title>. <source>Procedia Comput. Sci.</source>
+<year>2013</year>, <volume>18</volume>, <fpage>1145</fpage>&#x02013;<lpage>1154</lpage><pub-id pub-id-type="doi">10.1016/j.procs.2013.05.280</pub-id>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Niemeyer</surname><given-names>K. E.</given-names></name>; <name><surname>Curtis</surname><given-names>N. J.</given-names></name>; <name><surname>Sung</surname><given-names>C.-J.</given-names></name>
+<article-title>pyJac:
+Analytical Jacobian generator
+for chemical kinetics</article-title>. <source>Comput. Phys. Commun.</source>
+<year>2017</year>, <volume>215</volume>, <fpage>188</fpage>&#x02013;<lpage>203</lpage><pub-id pub-id-type="doi">10.1016/j.cpc.2017.02.004</pub-id>.</mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Jirari</surname><given-names>H.</given-names></name>
+<article-title>Optimal control
+approach to dynamical suppression of decoherence of a qubit</article-title>. <source>Europhys. Lett.</source>
+<year>2009</year>, <volume>87</volume>, <fpage>40003</fpage><pub-id pub-id-type="doi">10.1209/0295-5075/87/40003</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Jirari</surname><given-names>H.</given-names></name>; <name><surname>Wu</surname><given-names>N.</given-names></name>
+<article-title>Optimal state transfer of a single dissipative two-level system</article-title>. <source>Eur. Phys. J. B</source>
+<year>2016</year>, <volume>89</volume>, <fpage>100</fpage><pub-id pub-id-type="doi">10.1140/epjb/e2016-60523-y</pub-id>.</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Schmidhuber</surname><given-names>J.</given-names></name>
+<article-title>Deep learning
+in neural networks: An overview</article-title>. <source>Neural Netw.</source>
+<year>2015</year>, <volume>61</volume>, <fpage>85</fpage>&#x02013;<lpage>117</lpage><pub-id pub-id-type="doi">10.1016/j.neunet.2014.09.003</pub-id>.<pub-id pub-id-type="pmid">25462637</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="undeclared" id="cit18"><person-group person-group-type="allauthors"><name><surname>Baydin</surname><given-names>A. G.</given-names></name>; <name><surname>Pearlmutter</surname><given-names>B. A.</given-names></name>; <name><surname>Radul</surname><given-names>A. A.</given-names></name>; <name><surname>Siskind</surname><given-names>J. M.</given-names></name></person-group><article-title>Automatic differentiation
+in machine learning: a survey</article-title>. <source>Preprint arXiv:1502.05767</source>, <year>2015</year>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="book" id="cit19"><person-group person-group-type="allauthors"><name><surname>Bengio</surname><given-names>Y.</given-names></name></person-group><article-title>Practical Recommendations
+for Gradient-Based Training of Deep Architectures</article-title>.
+In <source>Neural Networks: Tricks of the Trade: Second ed.</source>; <person-group person-group-type="editor"><name><surname>Montavon</surname><given-names>G.</given-names></name>, <name><surname>Orr</surname><given-names>G. B.</given-names></name>, <name><surname>M&#x000fc;ller</surname><given-names>K.-R.</given-names></name></person-group>, Eds.; <publisher-name>Springer
+Berlin Heidelberg</publisher-name>: <publisher-loc>Berlin, Heidelberg</publisher-loc>, <year>2012</year>; pp <fpage>437</fpage>&#x02013;<lpage>478</lpage>.</mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Leung</surname><given-names>N.</given-names></name>; <name><surname>Abdelhafez</surname><given-names>M.</given-names></name>; <name><surname>Koch</surname><given-names>J.</given-names></name>; <name><surname>Schuster</surname><given-names>D.</given-names></name>
+<article-title>Speedup for quantum
+optimal control from automatic differentiation based on graphics processing
+units</article-title>. <source>Phys. Rev. A: At., Mol., Opt. Phys.</source>
+<year>2017</year>, <volume>95</volume>, <fpage>042318</fpage><pub-id pub-id-type="doi">10.1103/PhysRevA.95.042318</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="book" id="cit21"><person-group person-group-type="allauthors"><name><surname>Gauss</surname><given-names>J.</given-names></name></person-group><article-title>Molecular properties</article-title>. In <source>Modern Methods and
+Algorithms of Quantum Chemistry</source>; <person-group person-group-type="editor"><name><surname>Grotendorst</surname><given-names>J.</given-names></name></person-group>, Ed.; <publisher-name>NIC</publisher-name>, Series, <year>2000</year>; Vol. <volume>3</volume>; pp <fpage>541</fpage>&#x02013;<lpage>592</lpage>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Alml&#x000f6;f</surname><given-names>J.</given-names></name>; <name><surname>Taylor</surname><given-names>P. R.</given-names></name>
+<article-title>Molecular properties from perturbation theory: A Unified
+treatment of energy derivatives</article-title>. <source>Int. J. Quantum
+Chem.</source>
+<year>1985</year>, <volume>27</volume>, <fpage>743</fpage>&#x02013;<lpage>768</lpage><pub-id pub-id-type="doi">10.1002/qua.560270610</pub-id>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="book" id="cit23"><person-group person-group-type="allauthors"><name><surname>Helgaker</surname><given-names>T.</given-names></name>, <name><surname>J&#x000f8;rgensen</surname><given-names>P.</given-names></name></person-group><article-title>Analytical Calculation
+of Geometrical Derivatives in Molecular Electronic Structure Theory</article-title>. In <source>Adv. Quantum Chem.</source>; <person-group person-group-type="editor"><name><surname>L&#x000f6;wdin</surname><given-names>P.-O.</given-names></name></person-group>, Ed.; <publisher-name>Academic
+Press</publisher-name>, <year>1988</year>; Vol. <volume>19</volume>; pp <fpage>183</fpage>&#x02013;<lpage>245</lpage>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>Obara</surname><given-names>S.</given-names></name>; <name><surname>Saika</surname><given-names>A.</given-names></name>
+<article-title>Efficient recursive computation of molecular integrals over Cartesian
+Gaussian functions</article-title>. <source>J. Chem. Phys.</source>
+<year>1986</year>, <volume>84</volume>, <fpage>3963</fpage>&#x02013;<lpage>3974</lpage><pub-id pub-id-type="doi">10.1063/1.450106</pub-id>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="book" id="cit25"><person-group person-group-type="allauthors"><name><surname>Yamaguchi</surname><given-names>Y.</given-names></name>; <name><surname>Schaefer</surname><given-names>H. F.</given-names></name></person-group><article-title>Analytic Derivative
+Methods in Molecular Electronic Structure Theory: A New Dimension
+to Quantum Chemistry and its Applications to Spectroscopy</article-title>. In <source>Handbook of High-Resolution</source>; <publisher-name>John Wiley &#x00026; Sons, Ltd</publisher-name>, <year>2011</year>.</mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Kato</surname><given-names>S.</given-names></name>; <name><surname>Morokuma</surname><given-names>K.</given-names></name>
+<article-title>Energy gradient in a multi-configurational
+SCF formalism
+and its application to geometry optimization of trimethylene diradicals</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1979</year>, <volume>65</volume>, <fpage>19</fpage>&#x02013;<lpage>25</lpage><pub-id pub-id-type="doi">10.1016/0009-2614(79)80117-7</pub-id>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Veillard</surname><given-names>A.</given-names></name>; <name><surname>Clementi</surname><given-names>E.</given-names></name>
+<article-title>Complete multi-configuration self-consistent
+field
+theory</article-title>. <source>Theor. Chim. Acta</source>
+<year>1967</year>, <volume>7</volume>, <fpage>133</fpage>&#x02013;<lpage>143</lpage><pub-id pub-id-type="doi">10.1007/BF01151915</pub-id>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Andersson</surname><given-names>K.</given-names></name>; <name><surname>Malmqvist</surname><given-names>P.-A.</given-names></name>; <name><surname>Roos</surname><given-names>B. O.</given-names></name>; <name><surname>Sadlej</surname><given-names>A. J.</given-names></name>; <name><surname>Wolinski</surname><given-names>K.</given-names></name>
+<article-title>Second-order
+perturbation theory with a CASSCF reference function</article-title>. <source>J. Phys. Chem.</source>
+<year>1990</year>, <volume>94</volume>, <fpage>5483</fpage>&#x02013;<lpage>5488</lpage><pub-id pub-id-type="doi">10.1021/j100377a012</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Andersson</surname><given-names>K.</given-names></name>; <name><surname>Malmqvist</surname><given-names>P.-A.</given-names></name>; <name><surname>Roos</surname><given-names>B. O.</given-names></name>
+<article-title>Second-order perturbation theory
+with a complete active space self-consistent field reference function</article-title>. <source>J. Chem. Phys.</source>
+<year>1992</year>, <volume>96</volume>, <fpage>1218</fpage>&#x02013;<lpage>1226</lpage><pub-id pub-id-type="doi">10.1063/1.462209</pub-id>.</mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>MacLeod</surname><given-names>M. K.</given-names></name>; <name><surname>Shiozaki</surname><given-names>T.</given-names></name>
+<article-title>Communication: Automatic code generation enables nuclear
+gradient computations for fully internally contracted multireference
+theory</article-title>. <source>J. Chem. Phys.</source>
+<year>2015</year>, <volume>142</volume>, <fpage>051103</fpage><pub-id pub-id-type="doi">10.1063/1.4907717</pub-id>.<pub-id pub-id-type="pmid">25662628</pub-id></mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Vlaisavljevich</surname><given-names>B.</given-names></name>; <name><surname>Shiozaki</surname><given-names>T.</given-names></name>
+<article-title>Nuclear Energy Gradients for Internally Contracted
+Complete Active Space Second-Order Perturbation Theory: Multistate
+Extensions</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2016</year>, <volume>12</volume>, <fpage>3781</fpage>&#x02013;<lpage>3787</lpage><pub-id pub-id-type="doi">10.1021/acs.jctc.6b00572</pub-id>.<pub-id pub-id-type="pmid">27388038</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Ekstr&#x000f6;m</surname><given-names>U.</given-names></name>; <name><surname>Visscher</surname><given-names>L.</given-names></name>; <name><surname>Bast</surname><given-names>R.</given-names></name>; <name><surname>Thorvaldsen</surname><given-names>A. J.</given-names></name>; <name><surname>Ruud</surname><given-names>K.</given-names></name>
+<article-title>Arbitrary-Order Density Functional
+Response Theory from Automatic
+Differentiation</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2010</year>, <volume>6</volume>, <fpage>1971</fpage>&#x02013;<lpage>1980</lpage><pub-id pub-id-type="doi">10.1021/ct100117s</pub-id>.<pub-id pub-id-type="pmid">26615926</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Bast</surname><given-names>R.</given-names></name>; <name><surname>Ekstr&#x000f6;m</surname><given-names>U.</given-names></name>; <name><surname>Gao</surname><given-names>B.</given-names></name>; <name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Ruud</surname><given-names>K.</given-names></name>; <name><surname>Thorvaldsen</surname><given-names>A. J.</given-names></name>
+<article-title>The ab
+initio calculation of molecular electric, magnetic
+and geometric properties</article-title>. <source>Phys. Chem. Chem.
+Phys.</source>
+<year>2011</year>, <volume>13</volume>, <fpage>2627</fpage>&#x02013;<lpage>2651</lpage><pub-id pub-id-type="doi">10.1039/C0CP01647K</pub-id>.<pub-id pub-id-type="pmid">21180690</pub-id></mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Steiger</surname><given-names>R.</given-names></name>; <name><surname>Bischof</surname><given-names>C. H.</given-names></name>; <name><surname>Lang</surname><given-names>B.</given-names></name>; <name><surname>Thiel</surname><given-names>W.</given-names></name>
+<article-title>Using automatic differentiation
+to compute derivatives for a quantum-chemical computer program</article-title>. <source>Future Gener. Comput. Syst.</source>
+<year>2005</year>, <volume>21</volume>, <fpage>1324</fpage>&#x02013;<lpage>1332</lpage><pub-id pub-id-type="doi">10.1016/j.future.2004.11.011</pub-id>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Barborini</surname><given-names>M.</given-names></name>; <name><surname>Sorella</surname><given-names>S.</given-names></name>; <name><surname>Guidoni</surname><given-names>L.</given-names></name>
+<article-title>Structural
+Optimization by Quantum
+Monte Carlo: Investigating the Low-Lying Excited States of Ethylene</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2012</year>, <volume>8</volume>, <fpage>1260</fpage>&#x02013;<lpage>1269</lpage><pub-id pub-id-type="doi">10.1021/ct200724q</pub-id>.<pub-id pub-id-type="pmid">24634617</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Sorella</surname><given-names>S.</given-names></name>; <name><surname>Capriotti</surname><given-names>L.</given-names></name>
+<article-title>Algorithmic differentiation and the calculation of
+forces by quantum Monte Carlo</article-title>. <source>J. Chem. Phys.</source>
+<year>2010</year>, <volume>133</volume>, <fpage>234111</fpage><pub-id pub-id-type="doi">10.1063/1.3516208</pub-id>.<pub-id pub-id-type="pmid">21186862</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="weblink" id="cit37"><person-group person-group-type="allauthors"><name><surname>Tamayo-Mendoza</surname><given-names>T.</given-names></name>; <name><surname>Kreisbeck</surname><given-names>C.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name></person-group> DiffiQult, <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://aspuru-guzik-group.github.io/DiffiQult">https://aspuru-guzik-group.github.io/DiffiQult</uri>, <year>2017</year>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="book" id="cit38"><person-group person-group-type="allauthors"><name><surname>J&#x000f8;rgensen</surname><given-names>P.</given-names></name>; <name><surname>Simons</surname><given-names>J.</given-names></name></person-group><source>Second Quantization-Based
+Methods in Quantum Chemistry</source>, <edition>1</edition>st ed.; <publisher-name>Academic Press</publisher-name>, <year>1981</year>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="undeclared" id="cit39"><person-group person-group-type="allauthors"><name><surname>Angerson</surname><given-names>E.</given-names></name>; <name><surname>Bai</surname><given-names>Z.</given-names></name>; <name><surname>Dongarra</surname><given-names>J.</given-names></name>; <name><surname>Greenbaum</surname><given-names>A.</given-names></name>; <name><surname>McKenney</surname><given-names>A.</given-names></name>; <name><surname>Croz</surname><given-names>J. D.</given-names></name>; <name><surname>Hammarling</surname><given-names>S.</given-names></name>; <name><surname>Demmel</surname><given-names>J.</given-names></name>; <name><surname>Bischof</surname><given-names>C.</given-names></name>; <name><surname>Sorensen</surname><given-names>D.</given-names></name></person-group><article-title>LAPACK: A portable linear algebra
+library for high-performance computers</article-title>. Proceedings
+SUPERCOMPUTING &#x02019;90. <year>1990</year>; pp <fpage>2</fpage>&#x02013;<lpage>11</lpage>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Alml&#x000f6;f</surname><given-names>J.</given-names></name>
+<article-title>Molecular
+wave functions and properties calculated
+using floating Gaussian orbitals</article-title>. <source>J. Chem. Phys.</source>
+<year>1988</year>, <volume>89</volume>, <fpage>4889</fpage>&#x02013;<lpage>4902</lpage><pub-id pub-id-type="doi">10.1063/1.455659</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name><surname>Frost</surname><given-names>A. A.</given-names></name>
+<article-title>Floating
+Spherical Gaussian Orbital Model of Molecular Structure. I. Computational
+Procedure. LiH as an Example</article-title>. <source>J. Chem. Phys.</source>
+<year>1967</year>, <volume>47</volume>, <fpage>3707</fpage>&#x02013;<lpage>3713</lpage><pub-id pub-id-type="doi">10.1063/1.1701524</pub-id>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="book" id="cit42"><person-group person-group-type="allauthors"><name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>J&#x000f8;rgensen</surname><given-names>P.</given-names></name>; <name><surname>Olsen</surname><given-names>J.</given-names></name></person-group><source>Molecular Electronc-Structure Theory</source>, <edition>1</edition>st ed.; <publisher-name>John Wiley &#x00026; Sons</publisher-name>, <year>2000</year>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Gill</surname><given-names>P. M. W.</given-names></name>; <name><surname>Head-Gordon</surname><given-names>M.</given-names></name>; <name><surname>Pople</surname><given-names>J. A.</given-names></name>
+<article-title>Efficient computation of two-electron
+- repulsion integrals and their nth-order derivatives using contracted
+Gaussian basis sets</article-title>. <source>J. Phys. Chem.</source>
+<year>1990</year>, <volume>94</volume>, <fpage>5564</fpage>&#x02013;<lpage>5572</lpage><pub-id pub-id-type="doi">10.1021/j100377a031</pub-id>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Reine</surname><given-names>S.</given-names></name>; <name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Lindh</surname><given-names>R.</given-names></name>
+<article-title>Multi-electron
+integrals</article-title>. <source>WIREs Comput. Mol. Sci.</source>
+<year>2012</year>, <volume>2</volume>, <fpage>290</fpage>&#x02013;<lpage>303</lpage><pub-id pub-id-type="doi">10.1002/wcms.78</pub-id>.</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="weblink" id="cit45"><person-group person-group-type="allauthors"><name><surname>Valeev</surname><given-names>E. F.</given-names></name></person-group><article-title>Libint: A library
+for the evaluation of molecular integrals of many-body operators over
+Gaussian functions</article-title>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://libint.valeyev.net/">http://libint.valeyev.net/</uri>, <year>2017</year>; version 2.3.1.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Schlegel</surname><given-names>H. B.</given-names></name>; <name><surname>Frisch</surname><given-names>M. J.</given-names></name>
+<article-title>Transformation between Cartesian and pure spherical
+harmonic Gaussians</article-title>. <source>Int. J. Quantum Chem.</source>
+<year>1995</year>, <volume>54</volume>, <fpage>83</fpage>&#x02013;<lpage>87</lpage><pub-id pub-id-type="doi">10.1002/qua.560540202</pub-id>.</mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name><surname>Jensen</surname><given-names>F.</given-names></name>
+<article-title>Atomic orbital
+basis sets</article-title>. <source>WIREs Comput. Mol. Sci.</source>
+<year>2013</year>, <volume>3</volume>, <fpage>273</fpage>&#x02013;<lpage>295</lpage><pub-id pub-id-type="doi">10.1002/wcms.1123</pub-id>.</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="book" id="cit48"><person-group person-group-type="allauthors"><name><surname>Szabo</surname><given-names>A.</given-names></name>; <name><surname>Ostlund</surname><given-names>N. S.</given-names></name></person-group><source>Modern
+Quantum Chemistry</source>, <edition>1</edition>st ed.; <publisher-name>Dover Publication</publisher-name>, <year>1996</year>.</mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name><surname>Alml&#x000f6;f</surname><given-names>J.</given-names></name>; <name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Taylor</surname><given-names>P. R.</given-names></name>
+<article-title>Gaussian basis sets for high-quality
+ab initio calculations</article-title>. <source>J. Phys. Chem.</source>
+<year>1988</year>, <volume>92</volume>, <fpage>3029</fpage>&#x02013;<lpage>3033</lpage><pub-id pub-id-type="doi">10.1021/j100322a003</pub-id>.</mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name><surname>Huber</surname><given-names>H.</given-names></name>
+<article-title>Geometry optimization
+in AB initio calculations. Floating orbital geometry optimization
+applying the hellmann-feyman force</article-title>. <source>Chem. Phys.
+Lett.</source>
+<year>1979</year>, <volume>62</volume>, <fpage>95</fpage>&#x02013;<lpage>99</lpage><pub-id pub-id-type="doi">10.1016/0009-2614(79)80420-0</pub-id>.</mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name><surname>Huber</surname><given-names>H.</given-names></name>
+<article-title>Geometry optimization
+in ab initio SCF calculations</article-title>. <source>J. Mol. Struct.:
+THEOCHEM</source>
+<year>1981</year>, <volume>76</volume>, <fpage>277</fpage>&#x02013;<lpage>284</lpage><pub-id pub-id-type="doi">10.1016/0166-1280(81)85004-X</pub-id>.</mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name><surname>Hurley</surname><given-names>A. C.</given-names></name>
+<article-title>The computation
+of floating functions and their use in force constant calculations</article-title>. <source>J. Comput. Chem.</source>
+<year>1988</year>, <volume>9</volume>, <fpage>75</fpage>&#x02013;<lpage>79</lpage><pub-id pub-id-type="doi">10.1002/jcc.540090110</pub-id>.</mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name><surname>Neisius</surname><given-names>D.</given-names></name>; <name><surname>Verhaegen</surname><given-names>G.</given-names></name>
+<article-title>Bond functions for ab initio calculations on polyatomic
+molecules. Molecules containing C, N, O and H</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1981</year>, <volume>78</volume>, <fpage>147</fpage>&#x02013;<lpage>152</lpage><pub-id pub-id-type="doi">10.1016/0009-2614(81)85573-X</pub-id>.</mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name><surname>Neisius</surname><given-names>D.</given-names></name>; <name><surname>Verhaegen</surname><given-names>G.</given-names></name>
+<article-title>Bond functions for AB initio calculations.
+MCSCF results
+for CH, NH, OH and FH</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1982</year>, <volume>89</volume>, <fpage>228</fpage>&#x02013;<lpage>233</lpage><pub-id pub-id-type="doi">10.1016/0009-2614(82)80047-X</pub-id>.</mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name><surname>Tachikawa</surname><given-names>M.</given-names></name>; <name><surname>Osamura</surname><given-names>Y.</given-names></name>
+<article-title>Simultaneous optimization
+of exponents, centers of
+Gaussian-type basis functions, and geometry with full-configuration
+interaction wave function: Application to the ground and excited states
+of hydrogen molecule</article-title>. <source>J. Chem. Phys.</source>
+<year>2000</year>, <volume>113</volume>, <fpage>4942</fpage>&#x02013;<lpage>4950</lpage><pub-id pub-id-type="doi">10.1063/1.1288382</pub-id>.</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name><surname>Tachikawa</surname><given-names>M.</given-names></name>; <name><surname>Taneda</surname><given-names>K.</given-names></name>; <name><surname>Mori</surname><given-names>K.</given-names></name>
+<article-title>Simultaneous
+optimization of GTF
+exponents and their centers with fully variational treatment of Hartree-Fock
+molecular orbital calculation</article-title>. <source>Int. J. Quantum
+Chem.</source>
+<year>1999</year>, <volume>75</volume>, <fpage>497</fpage>&#x02013;<lpage>510</lpage><pub-id pub-id-type="doi">10.1002/(SICI)1097-461X(1999)75:4/5&#x0003c;497::AID-QUA15&#x0003e;3.0.CO;2-C</pub-id>.</mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name><surname>Shimizu</surname><given-names>N.</given-names></name>; <name><surname>Ishimoto</surname><given-names>T.</given-names></name>; <name><surname>Tachikawa</surname><given-names>M.</given-names></name>
+<article-title>Analytical
+optimization of orbital
+exponents in Gaussian-type functions for molecular systems based on
+MCSCF and MP2 levels of fully variational molecular orbital method</article-title>. <source>Theor. Chem. Acc.</source>
+<year>2011</year>, <volume>130</volume>, <fpage>679</fpage>&#x02013;<lpage>685</lpage><pub-id pub-id-type="doi">10.1007/s00214-011-1052-3</pub-id>.</mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="journal" id="cit58"><name><surname>Perlt</surname><given-names>E.</given-names></name>; <name><surname>Brussel</surname><given-names>M.</given-names></name>; <name><surname>Kirchner</surname><given-names>B.</given-names></name>
+<article-title>Floating orbital molecular
+dynamics
+simulations</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2014</year>, <volume>16</volume>, <fpage>6997</fpage>&#x02013;<lpage>7005</lpage><pub-id pub-id-type="doi">10.1039/c3cp54797c</pub-id>.<pub-id pub-id-type="pmid">24600690</pub-id></mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name><surname>Perlt</surname><given-names>E.</given-names></name>; <name><surname>Apostolidou</surname><given-names>C.</given-names></name>; <name><surname>Eggers</surname><given-names>M.</given-names></name>; <name><surname>Kirchner</surname><given-names>B.</given-names></name>
+<article-title>Unrestricted Floating
+Orbitals for the Investigation of Open Shell Systems</article-title>. <source>Int. J. Chem.</source>
+<year>2015</year>, <volume>8</volume>, <fpage>194</fpage><pub-id pub-id-type="doi">10.5539/ijc.v8n1p194</pub-id>.</mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="undeclared" id="cit60"><collab>Theano
+Development Team</collab>, <article-title>Theano: A Python framework
+for fast computation
+of mathematical expressions</article-title>. <source>Preprint arXiv:
+1605.02688</source><year>2016</year>.</mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="computer-program" id="cit61"><person-group person-group-type="allauthors"><name><surname>Abadi</surname><given-names>M.</given-names></name></person-group><etal/><source>TensorFlow:
+Large-Scale Machine Learning on Heterogeneous Systems</source>; <publisher-name>tensorflow.org</publisher-name>, <year>2015</year>.</mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="journal" id="cit62"><name><surname>Hasco&#x000eb;t</surname><given-names>L.</given-names></name>; <name><surname>Pascual</surname><given-names>V.</given-names></name>
+<article-title>The Tapenade Automatic Differentiation tool: Principles,
+Model, and Specification</article-title>. <source>ACM Trans. Math. Software</source>
+<year>2013</year>, <volume>39</volume>, <fpage>20</fpage><pub-id pub-id-type="doi">10.1145/2450153.2450158</pub-id>.</mixed-citation></ref><ref id="ref63"><mixed-citation publication-type="journal" id="cit63"><name><surname>Walter</surname><given-names>S. F.</given-names></name>; <name><surname>Lehmann</surname><given-names>L.</given-names></name>
+<article-title>Algorithmic differentiation
+in Python with AlgoPy</article-title>. <source>J. of Comp. Sci.</source>
+<year>2013</year>, <volume>4</volume>, <fpage>334</fpage>&#x02013;<lpage>344</lpage><pub-id pub-id-type="doi">10.1016/j.jocs.2011.10.007</pub-id>.</mixed-citation></ref><ref id="ref64"><mixed-citation publication-type="book" id="cit64"><person-group person-group-type="allauthors"><name><surname>Giles</surname><given-names>M. B.</given-names></name></person-group><article-title>Collected Matrix
+Derivative Results for Forward and Reverse Mode Algorithmic Differentiation</article-title>. In <source>Advances in Automatic Differentiation</source>; <person-group person-group-type="editor"><name><surname>Bischof</surname><given-names>C. H.</given-names></name>, <name><surname>B&#x000fc;cker</surname><given-names>H. M.</given-names></name>, <name><surname>Hovland</surname><given-names>P.</given-names></name>, <name><surname>Naumann</surname><given-names>U.</given-names></name>, <name><surname>Utke</surname><given-names>J.</given-names></name></person-group>, Eds.; <publisher-name>Springer Berlin Heidelberg</publisher-name>: <publisher-loc>Berlin, Heidelberg</publisher-loc>, <year>2008</year>; pp <fpage>35</fpage>&#x02013;<lpage>44</lpage>.</mixed-citation></ref><ref id="ref65"><mixed-citation publication-type="undeclared" id="cit65"><person-group person-group-type="allauthors"><name><surname>Maclaurin</surname><given-names>D.</given-names></name>; <name><surname>Duvenaud</surname><given-names>D.</given-names></name>; <name><surname>Adams</surname><given-names>R.
+P.</given-names></name></person-group><article-title>Autograd: Effortless
+Gradients in Numpy</article-title>. In <source>ICML 2015 AutoML Workshop</source>, <year>2015</year>.</mixed-citation></ref><ref id="ref66"><mixed-citation publication-type="journal" id="cit66"><name><surname>Nelson</surname><given-names>R.
+B.</given-names></name>
+<article-title>Simplified
+calculation of eigenvector derivatives</article-title>. <source>AIAA
+J.</source>
+<year>1976</year>, <volume>14</volume>, <fpage>1201</fpage>&#x02013;<lpage>1205</lpage><pub-id pub-id-type="doi">10.2514/3.7211</pub-id>.</mixed-citation></ref><ref id="ref67"><mixed-citation publication-type="journal" id="cit67"><name><surname>Walter</surname><given-names>S.
+F.</given-names></name>; <name><surname>Lehmann</surname><given-names>L.</given-names></name>; <name><surname>Lamour</surname><given-names>R.</given-names></name>
+<article-title>On evaluating higher-order derivatives
+of the QR decomposition of tall matrices with full column rank in
+forward and reverse mode algorithmic differentiation</article-title>. <source>Optim. Method. Softw.</source>
+<year>2012</year>, <volume>27</volume>, <fpage>391</fpage>&#x02013;<lpage>403</lpage><pub-id pub-id-type="doi">10.1080/10556788.2011.610454</pub-id>.</mixed-citation></ref><ref id="ref68"><mixed-citation publication-type="book" id="cit68"><person-group person-group-type="allauthors"><name><surname>Nocedal</surname><given-names>J.</given-names></name>; <name><surname>Wright</surname><given-names>S. J.</given-names></name></person-group><source>Numerical Optimization</source>, <edition>2nd</edition> ed.; <publisher-name>Springer</publisher-name>: <publisher-loc>New York</publisher-loc>, <year>2006</year>; pp <fpage>497</fpage>&#x02013;<lpage>528</lpage>.</mixed-citation></ref><ref id="ref69"><mixed-citation publication-type="journal" id="cit69"><name><surname>Peruzzo</surname><given-names>A.</given-names></name>; <name><surname>McClean</surname><given-names>J. R.</given-names></name>; <name><surname>Shadbolt</surname><given-names>P.</given-names></name>; <name><surname>Yung</surname><given-names>M.</given-names></name>; <name><surname>Zhou</surname><given-names>X.-Q.</given-names></name>; <name><surname>Love</surname><given-names>P.</given-names></name>; <name><surname>Aspuru-Guzik</surname><given-names>A.</given-names></name>; <name><surname>O'Brien</surname><given-names>J. L.</given-names></name>
+<article-title>A Variational
+Eigenvalue
+Solver on a Photonic Quantum Processor</article-title>. <source>Nat.
+Commun.</source>
+<year>2014</year>, <volume>5</volume>, <fpage>4215</fpage><pub-id pub-id-type="doi">10.1038/ncomms5213</pub-id>.<pub-id pub-id-type="pmid">24953219</pub-id></mixed-citation></ref><ref id="ref70"><mixed-citation publication-type="journal" id="cit70"><name><surname>Barends</surname><given-names>R.</given-names></name>; et al. <article-title>Superconducting quantum
+circuits at the surface code threshold for
+fault tolerance</article-title>. <source>Nature</source>
+<year>2014</year>, <volume>508</volume>, <fpage>500</fpage><pub-id pub-id-type="doi">10.1038/nature13171</pub-id>.<pub-id pub-id-type="pmid">24759412</pub-id></mixed-citation></ref><ref id="ref71"><mixed-citation publication-type="journal" id="cit71"><name><surname>Barends</surname><given-names>R.</given-names></name>; et al. <article-title>Digital quantum simulation of fermionic models with a superconducting
+circuit</article-title>. <source>Nat. Commun.</source>
+<year>2015</year>, <volume>6</volume>, <fpage>7654</fpage><pub-id pub-id-type="doi">10.1038/ncomms8654</pub-id>.<pub-id pub-id-type="pmid">26153660</pub-id></mixed-citation></ref><ref id="ref72"><mixed-citation publication-type="journal" id="cit72"><name><surname>Rist&#x000e8;</surname><given-names>D.</given-names></name>; <name><surname>Poletto</surname><given-names>S.</given-names></name>; <name><surname>Huang</surname><given-names>M.-Z.</given-names></name>; <name><surname>Bruno</surname><given-names>A.</given-names></name>; <name><surname>Vesterinen</surname><given-names>V.</given-names></name>; <name><surname>Saira</surname><given-names>O.-P.</given-names></name>; <name><surname>DiCarlo</surname><given-names>L.</given-names></name>
+<article-title>Detecting bit-flip errors in a logical
+qubit using stabilizer measurements</article-title>. <source>Nat. Commun.</source>
+<year>2015</year>, <volume>6</volume>, <fpage>6983</fpage><pub-id pub-id-type="doi">10.1038/ncomms7983</pub-id>.<pub-id pub-id-type="pmid">25923318</pub-id></mixed-citation></ref><ref id="ref73"><mixed-citation publication-type="journal" id="cit73"><name><surname>C&#x000f3;rcoles</surname><given-names>A. D.</given-names></name>; <name><surname>Magesan</surname><given-names>E.</given-names></name>; <name><surname>Srinivasan</surname><given-names>S. J.</given-names></name>; <name><surname>Cross</surname><given-names>A. W.</given-names></name>; <name><surname>Steffen</surname><given-names>M.</given-names></name>; <name><surname>Gambetta</surname><given-names>J. M.</given-names></name>; <name><surname>Chow</surname><given-names>J. M.</given-names></name>
+<article-title>Demonstration
+of a quantum error
+detection code using a square lattice of four superconducting qubits</article-title>. <source>Nat. Commun.</source>
+<year>2015</year>, <volume>6</volume>, <fpage>6979</fpage><pub-id pub-id-type="doi">10.1038/ncomms7979</pub-id>.<pub-id pub-id-type="pmid">25923200</pub-id></mixed-citation></ref><ref id="ref74"><mixed-citation publication-type="journal" id="cit74"><name><surname>O&#x02019;Malley</surname><given-names>P. J.
+J.</given-names></name>; et al. <article-title>Scalable
+Quantum Simulation of Molecular Energies</article-title>. <source>Phys.
+Rev. X</source>
+<year>2016</year>, <volume>6</volume>, <fpage>031007</fpage>.</mixed-citation></ref><ref id="ref75"><mixed-citation publication-type="journal" id="cit75"><name><surname>Kandala</surname><given-names>A.</given-names></name>; <name><surname>Mezzacapo</surname><given-names>A.</given-names></name>; <name><surname>Temme</surname><given-names>K.</given-names></name>; <name><surname>Takita</surname><given-names>M.</given-names></name>; <name><surname>Brink</surname><given-names>M.</given-names></name>; <name><surname>Chow</surname><given-names>J. M.</given-names></name>; <name><surname>Gambetta</surname><given-names>J. M.</given-names></name>
+<article-title>Hardware-efficient variational quantum
+eigensolver for small molecules and quantum magnets</article-title>. <source>Nature</source>
+<year>2017</year>, <volume>549</volume>, <fpage>242</fpage>&#x02013;<lpage>246</lpage><pub-id pub-id-type="doi">10.1038/nature23879</pub-id>.<pub-id pub-id-type="pmid">28905916</pub-id></mixed-citation></ref><ref id="ref76"><mixed-citation publication-type="journal" id="cit76"><name><surname>Hirata</surname><given-names>S.</given-names></name>; <name><surname>Fan</surname><given-names>P. D.</given-names></name>; <name><surname>Auer</surname><given-names>A. A.</given-names></name>; <name><surname>Nooijen</surname><given-names>M.</given-names></name>; <name><surname>Piecuch</surname><given-names>P.</given-names></name>
+<article-title>Combined coupled-cluster
+and many-body perturbation theories</article-title>. <source>J. Chem.
+Phys.</source>
+<year>2004</year>, <volume>121</volume>, <fpage>12197</fpage>&#x02013;<lpage>12207</lpage><pub-id pub-id-type="doi">10.1063/1.1814932</pub-id>.<pub-id pub-id-type="pmid">15606238</pub-id></mixed-citation></ref><ref id="ref77"><mixed-citation publication-type="journal" id="cit77"><name><surname>Janssen</surname><given-names>C.
+L.</given-names></name>; <name><surname>Schaefer</surname><given-names>H. F.</given-names><suffix>III</suffix></name>
+<article-title>The automated solution of second
+quantization equations with application equations with applications
+to the coupled cluster approach</article-title>. <source>Theor. Chim.
+Acta</source>
+<year>1991</year>, <volume>79</volume>, <fpage>1</fpage>&#x02013;<lpage>42</lpage><pub-id pub-id-type="doi">10.1007/BF01113327</pub-id>.</mixed-citation></ref><ref id="ref78"><mixed-citation publication-type="journal" id="cit78"><name><surname>Hirata</surname><given-names>S.</given-names></name>
+<article-title>Tensor Contraction
+Engine: Abstraction and Automated Parallel Implementation of Configuration-Interaction,
+Coupled-Cluster, and Many-Body Perturbation Theories</article-title>. <source>J. Phys. Chem. A</source>
+<year>2003</year>, <volume>107</volume>, <fpage>9887</fpage>&#x02013;<lpage>9897</lpage><pub-id pub-id-type="doi">10.1021/jp034596z</pub-id>.</mixed-citation></ref></ref-list></back></article>
