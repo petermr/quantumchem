@@ -8,7 +8,7 @@ Leonie Mueck suggested "quantum chemistry", this is a prototype.
 
 ## communal resources for OpenNotebook
 Much of the code and processes are shared between the OpenNotebook projects, see:
-[OpenNotebook](opennotebook/README.md)
+[OpenNotebook](https://github.com/petermr/openNotebook/blob/master/README.md)
 
 
 ## issues
