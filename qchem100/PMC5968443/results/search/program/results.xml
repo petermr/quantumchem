@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="Automatic Differentiation in Quantum Chemistry with Applications to Fully Variational" exact="Hartree–Fock" post="Tamayo-Mendoza Teresa † Kreisbeck Christoph * † Lindh Roland"/>
+ <result pre="add any additional functions. Thus, AD has great potential in" exact="quantum chemistry," post="where gradients are omnipresent but also difficult to obtain,"/>
+ <result pre="compute gradients with respect to any parameter throughout a complete" exact="quantum chemistry" post="method. We present DiffiQult, a Hartree–Fock implementation, entirely differentiated"/>
+ <result pre="throughout a complete quantum chemistry method. We present DiffiQult, a" exact="Hartree–Fock" post="implementation, entirely differentiated with the use of AD tools."/>
+ <result pre="differentiated with the use of AD tools. DiffiQult is a" exact="software" post="package written in plain Python with minimal deviation from"/>
+ <result pre="AD tools. DiffiQult is a software package written in plain" exact="Python" post="with minimal deviation from standard code which illustrates the"/>
+ <result pre="human effort and time in implementations of exact gradients in" exact="quantum chemistry." post="We leverage the obtained gradients to optimize the parameters"/>
+ <result pre="of one-particle basis sets in the context of the floating" exact="Gaussian" post="framework. DiffiQult is a Hartree−Fock plain Python implementation that"/>
+ <result pre="of the floating Gaussian framework. DiffiQult is a Hartree−Fock plain" exact="Python" post="implementation that computes exact gradients with respect to any"/>
+ <result pre="In this manuscript, we highlight the relevance of AD for" exact="quantum chemistry" post="and demonstrate that AD provides a novel general path"/>
+ <result pre="amount of time finding suitable analytical forms when implementing new" exact="quantum chemistry" post="methods. 18 Depending on the complexity of the electronic"/>
+ <result pre="30, 31 AD techniques could play an important role in" exact="quantum chemistry" post="by marginalizing the complexity of implementing gradients, as it"/>
+ <result pre="Taylor coefficients, or adjoints. For instance, in the context of" exact="density functional theory," post="a combined approach using analytical expression together with AD"/>
+ <result pre="an efficient way to get arbitrary gradients for a complete" exact="quantum chemistry" post="method with respect to any input parameter. To this"/>
+ <result pre="input parameter. To this end, we implement a fully autodifferentiable" exact="Hartree–Fock" post="(HF) method which we distribute in our DiffiQult software"/>
+ <result pre="autodifferentiable Hartree–Fock (HF) method which we distribute in our DiffiQult" exact="software" post="package 37 written in plain Python language. We have"/>
+ <result pre="distribute in our DiffiQult software package 37 written in plain" exact="Python" post="language. We have selected HF since it is not"/>
+ <result pre="package 37 written in plain Python language. We have selected" exact="HF" post="since it is not only used in many electronic"/>
+ <result pre="special functions. The latter is also relevant for more sophisticated" exact="quantum chemistry" post="methods 38 and impose nontrivial requirements for suitable AD"/>
+ <result pre="capabilities of DiffiQult within the framework of a fully variational" exact="HF" post="method, where we use a gradient-based optimization of the"/>
+ <result pre="optimize the parameters of the basis set within the Floating" exact="Gaussian" post="framework. 40, 41 Our implementation sets the basis for"/>
+ <result pre="41 Our implementation sets the basis for extending the DiffiQult" exact="software" post="package to include post-HF methods such as FCI and"/>
+ <result pre="differentiation. In the section 3 we introduce the fully variational" exact="Hartree–Fock" post="method. In section 4 , we discuss in detail"/>
+ <result pre="we discuss in detail the key components of the canonical" exact="HF" post="algorithm and explain how they were implemented in DiffiQult"/>
+ <result pre="in simplifying and accelerating the implementation of gradients of new" exact="quantum chemistry" post="methods. 2 Automatic Differentiation The idea behind automatic differentiation"/>
+ <result pre="done by reviewing the relevant mathematical operations of a canonical" exact="HF" post="algorithm for an efficient implementation of gradients with AD"/>
+ <result pre="efficient implementation of gradients with AD techniques. 3 Fully Variational" exact="Hartree–Fock" post="Our goal is to implement gradients with AD techniques"/>
+ <result pre="goal is to implement gradients with AD techniques for a" exact="quantum chemistry" post="method without writing any explicit gradient. In this manuscript,"/>
+ <result pre="an illustrative, yet useful example, we apply AD to obtain" exact="HF" post="energy gradients to optimize parameters of Gaussian basis functions."/>
+ <result pre="AD to obtain HF energy gradients to optimize parameters of" exact="Gaussian" post="basis functions. This algorithm will enable a more compact"/>
+ <result pre="molecular one-electron basis functions with greater flexibility compared to atomic-centered" exact="Gaussian" post="expansions. In the HF method, the wave function is"/>
+ <result pre="with greater flexibility compared to atomic-centered Gaussian expansions. In the" exact="HF" post="method, the wave function is constructed as a linear"/>
+ <result pre="popular form of these basis functions is the atomic-centered contracted" exact="Gaussian" post="functions because the computation of one- and two-electron integrals"/>
+ <result pre="set of following parameters: (i) the exponents {α} defining the" exact="Gaussian" post="width, (ii) the contraction coefficients { c} defining the"/>
+ <result pre="contraction coefficients { c} defining the linear expansion of the" exact="Gaussian" post="representation of the atomic orbital (AO), (iii) the coordinates"/>
+ <result pre="expansion coefficients, but all types of variational parameters of the" exact="Gaussian" post="AOs mentioned above, such as nuclear coordinates, Gaussian centers,"/>
+ <result pre="of the Gaussian AOs mentioned above, such as nuclear coordinates," exact="Gaussian" post="centers, contraction coefficients, and exponents. A fully variational approach"/>
+ <result pre="optimized. Some authors have partially optimized parameters such as the" exact="Gaussian" post="widths for the valence shell 40 or included extra"/>
+ <result pre="theory, 55, 56 such as CASSCF and MP2, 57 or" exact="HF" post="over ab initio molecular dynamics. 58, 59 These methods"/>
+ <result pre="method. Here, the gradients are calculated using solely a plain" exact="Python" post="implementation of a HF and an AD library. By"/>
+ <result pre="are calculated using solely a plain Python implementation of a" exact="HF" post="and an AD library. By taking advantage of the"/>
+ <result pre="explicitly. This provides the flexibility to either simultaneously optimize the" exact="Gaussian" post="exponents and positions, or to optimize them sequentially. 4"/>
+ <result pre="In the following section, we describe DiffiQult, a fully variational" exact="HF" post="algorithm that calculates gradients employing AD. In particular, we"/>
+ <result pre="that need to be considered when applying AD in a" exact="quantum chemistry" post="method. DiffiQult contains two main parts, (i) a restricted"/>
+ <result pre="chemistry method. DiffiQult contains two main parts, (i) a restricted" exact="HF" post="implementation that provides HF energies as well as its"/>
+ <result pre="two main parts, (i) a restricted HF implementation that provides" exact="HF" post="energies as well as its derivatives with respect to"/>
+ <result pre="of wave function parameters. The scheme of our fully variational" exact="Hartree–Fock" post="implementation is shown in Figure 2 . Figure 2"/>
+ <result pre="gradients from AD just by adding minimal changes to standard" exact="Python" post="or C++ code. In this way, we would be"/>
+ <result pre="AD just by adding minimal changes to standard Python or" exact="C++" post="code. In this way, we would be able to"/>
+ <result pre="we could link the AD library to existing electronic structure" exact="software" post="packages for which analytical or numerical gradients might be"/>
+ <result pre="to be analyzed which ones match the requirements for a" exact="quantum chemistry" post="algorithm best. For example, we would need to differentiate"/>
+ <result pre="Therefore, the gradients computed solely with AD techniques of a" exact="HF" post="implementation in DiffiQult serves as a proof-of-concept that helps"/>
+ <result pre="to develop an understanding of the capabilities of AD in" exact="quantum chemistry." post="In the following analysis, we review how the library"/>
+ <result pre="AD tools requires different considerations when compared to developing traditional" exact="software" post="packages. Another relevant aspect for the implementation of DiffiQult"/>
+ <result pre="However, in HF, as essentially in all wave function based" exact="quantum chemistry" post="methods, one and two electron integrals are typically defined"/>
+ <result pre="intermediate variables and derivatives. The most critical component for our" exact="HF" post="implementation in DiffiQult is matrix diagonalization. In some AD"/>
+ <result pre="of output variables, after this analysis, we conclude that an" exact="HF" post="implementation is required to be based on the forward"/>
+ <result pre="in plain Python. Finally, once we have implemented an autodifferentiable" exact="HF" post="algorithm in Algopy, we use a gradient-based optimization to"/>
+ <result pre="algorithm in Algopy, we use a gradient-based optimization to optimize" exact="Gaussian" post="centers, widths, and contraction coefficients either together or separately."/>
+ <result pre="( 56), we take the natural logarithm to optimize the" exact="Gaussian" post="exponents. No unexpected or unusually high safety hazards were"/>
+ <result pre="optimization procedures. Here, we illustrate two schemes: (A) optimizing the" exact="Gaussian" post="exponents and contraction coefficients, sequentially, and (B) optimizing the"/>
+ <result pre="contraction coefficients and exponents, followed by an optimization of the" exact="Gaussian" post="centers. For the example of H 2O, the improvement"/>
+ <result pre="We find that the most efficient way to optimize the" exact="HF" post="energy is by employing scheme (B) since it already"/>
+ <result pre="or a total of 10 steps, respectively. Table 1 displays" exact="HF" post="energies for optimized and nonoptimized basis sets for selected"/>
+ <result pre="improvement of up to 0.18 hartree per electron. Table 1" exact="Hartree–Fock" post="Energies in Hartrees Test Molecules of the Nonoptimized and"/>
+ <result pre="and A none Opt. coef, α and A reference: 3-21G" exact="HF" post="–95.60 –97.03 –98.57 –99.38 –99.46 H 2O –72.74 –73.82"/>
+ <result pre="functions. Finally, we discuss a common convergence problem of the" exact="HF" post="method that can affect our fully variational HF implementation."/>
+ <result pre="of the HF method that can affect our fully variational" exact="HF" post="implementation. It appears in our examples mainly in the"/>
+ <result pre="problem can be circumvented by suitable convergence strategies in the" exact="HF" post="algorithm. 6 Conclusion and Perspective AD offers a promising"/>
+ <result pre="to develop an understanding of the capabilities of AD in" exact="quantum chemistry." post="Specifically, we presented and discussed the use of AD"/>
+ <result pre="use of AD in the context of a fully variational" exact="HF" post="method, which contains most of the mathematical components of"/>
+ <result pre="just minimal adjustments in the source code of the canonical" exact="HF" post="energy, without any explicit implementation of a single derivative."/>
+ <result pre="minimize the energy with respect to any parameter of the" exact="Gaussian" post="one-particle basis. As a result, we capture, to some"/>
+ <result pre="number of atomic orbitals. Since the essential functions of many" exact="quantum chemistry" post="methods are similar to the ones present in HF,"/>
+ <result pre="application could be in the field of quantum computing for" exact="quantum chemistry," post="69 where the size of one-electron basis function is"/>
+ <result pre="of atomic orbitals, which could increase the accuracy of variational" exact="quantum chemistry" post="simulations, 69 while keeping the number of basis functions"/>
+ <result pre="huge potential in future implementations. The AD tools could extend" exact="quantum chemistry" post="methods in many ways. For example, in general, it"/>
+ <result pre="generation 76− 78 to build a general tool-chain to create" exact="software" post="packages capable of computing a function and computing gradients"/>
+ <result pre="Mauer A. ; Carle A. Adifor 2.0: automatic differentiation of" exact="Fortran" post="77 programs . IEEE Comput. Sci. Eng. 1996, 3,"/>
+ <result pre="Mauer A. ; Carle A. Adifor 2.0: automatic differentiation of" exact="Fortran" post="77 programs . IEEE Comput. Sci. Eng. 1996, 3,"/>
+ <result pre="Saika A. Efficient recursive computation of molecular integrals over Cartesian" exact="Gaussian" post="functions . J. Chem. Phys. 1986, 84, 3963– 3974"/>
+ <result pre="Almlöf J. Molecular wave functions and properties calculated using floating" exact="Gaussian" post="orbitals . J. Chem. Phys. 1988, 89, 4889– 4902"/>
+ <result pre="89, 4889– 4902 10.1063/1.455659 . Frost A. A. Floating Spherical" exact="Gaussian" post="Orbital Model of Molecular Structure. I. Computational Procedure. LiH"/>
+ <result pre="two-electron - repulsion integrals and their nth-order derivatives using contracted" exact="Gaussian" post="basis sets . J. Phys. Chem. 1990, 94, 5564–"/>
+ <result pre="for the evaluation of molecular integrals of many-body operators over" exact="Gaussian" post="functions . http://libint.valeyev.net/ , 2017; version 2.3.1. Schlegel H."/>
+ <result pre="1996. Almlöf J. ; Helgaker T. ; Taylor P. R." exact="Gaussian" post="basis sets for high-quality ab initio calculations . J."/>
+ <result pre="194 10.5539/ijc.v8n1p194 . collab: Theano Development Team , Theano: A" exact="Python" post="framework for fast computation of mathematical expressions . Preprint"/>
+ <result pre=". Walter S. F. ; Lehmann L. Algorithmic differentiation in" exact="Python" post="with AlgoPy . J. of Comp. Sci. 2013, 4,"/>
+</results>

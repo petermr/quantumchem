@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="Oxford, UK pmcid: 4171759 doi: 10.1002/wcms.1172 : Software Focus The" exact="Dalton" post="quantum chemistry program system Aidas Kestutis 1 Angeli Celestino"/>
+ <result pre="UK pmcid: 4171759 doi: 10.1002/wcms.1172 : Software Focus The Dalton" exact="quantum chemistry" post="program system Aidas Kestutis 1 Angeli Celestino 2 Bak"/>
+ <result pre="14 Rybkin Vladimir V 28 Sałek Pawel 44 Samson Claire" exact="C" post="M 28 de Merás Alfredo Sánchez 45 Saue Trond"/>
+ <result pre="is non-commercial and no modifications or adaptations are made. Abstract" exact="Dalton" post="is a powerful general-purpose program system for the study"/>
+ <result pre="molecules may be studied using linear-scaling and massively parallel algorithms." exact="Dalton" post="is distributed at no cost from http://www.daltonprogram.org for a"/>
+ <result pre="cost from http://www.daltonprogram.org for a number of UNIX platforms. INTRODUCTION" exact="Dalton" post="is a general-purpose program system for advanced quantum-chemical molecular"/>
+ <result pre="be studied using a variety of electronic-structure methods, including the" exact="Hartree–Fock" post="(HF) and Kohn–Sham (KS) self-consistent-field (SCF) methods for wide"/>
+ <result pre="In the present paper, we give an overview of the" exact="Dalton" post="program system, with illustrations and emphasis on the Dalton2013"/>
+ <result pre="and emphasis on the Dalton2013 release. ELECTRONIC-STRUCTURE MODELS With the" exact="Dalton" post="program, the electronic structure of a molecule can be"/>
+ <result pre="using all standard nonrelativistic wave-function and density-functional models of modern" exact="quantum chemistry." post="In particular, the wave function may be calculated using"/>
+ <result pre="be carried out with a range of KS exchange–correlation functionals." exact="Dalton" post="calculations are performed with generally contracted Gaussian-type orbitals (GTOs)"/>
+ <result pre="functions; some models also use two-electron functions for explicit correlation." exact="HF" post="and KS SCF Theories In Dalton, SCF calculations may"/>
+ <result pre="2 Empirical DFT-D2 and DFT-D3 dispersion corrections may be applied." exact="Dalton" post="offers an implementation of spin-restricted and spin-unrestricted DFT for"/>
+ <result pre="be applied. Dalton offers an implementation of spin-restricted and spin-unrestricted" exact="DFT" post="for open-shell states. 3, 4 MCSCF Theory For complicated"/>
+ <result pre="and core–hole states, MCSCF theory often provides the best solution." exact="Dalton" post="is characterized by an advanced MCSCF functionality with respect"/>
+ <result pre="complete-active-space (CAS) and restricted-active-space (RAS) 10 models as special cases." exact="Dalton" post="uses robust and efficient second-order MCSCF optimization techniques, based"/>
+ <result pre="problems. 12, 13 All MCSCF and post-MCSCF multireference-CI calculations in" exact="Dalton" post="are performed using the parallelized LUCITA module 14, 15"/>
+ <result pre="studied using several specially developed models. 20, 21 In particular," exact="Dalton" post="contains the iterative CC2 22 and CC3 23 models"/>
+ <result pre="computational requirements of the CC models. 30 Relativistic Corrections Although" exact="Dalton" post="is a nonrelativistic electronic-structure code based on the Schrödinger"/>
+ <result pre="Although Dalton is a nonrelativistic electronic-structure code based on the" exact="Schrödinger" post="equation, it also has some functionality for incorporating the"/>
+ <result pre="and two-electron spin–orbit operators may be included perturbatively. 32– 34" exact="Dalton" post="offers scaled spin–orbit integrals and the atomic-mean-field approximation to"/>
+ <result pre="the spin–orbit integrals 35 and parity-violation integrals. 36 MOLECULAR PROPERTIES" exact="Dalton" post="is a versatile tool for studying molecular properties. By"/>
+ <result pre="be calculated. In the following, the molecular properties implemented in" exact="Dalton" post="are described. Geometrical Properties Molecular gradients (forces) and Hessians"/>
+ <result pre="these quantities when an analytical implementation is not available. 40" exact="Dalton" post="has an extensive functionality for exploring potential-energy surfaces by"/>
+ <result pre="be determined using first-order (quasi-Newton) and second-order (Newton) methods. 41" exact="Dalton" post="also has several first- and second-order methods for determining"/>
+ <result pre="of systems containing more than one hundred atoms. 47, 48" exact="Dalton" post="may be used to calculate molecular vibrational spectra. In"/>
+ <result pre="Raman intensities at a chosen frequency in the Placzek approximation." exact="Dalton" post="has an automated procedure for calculating rovibrationally averaged molecular"/>
+ <result pre="polarizabilities, 91 for example—to be obtained even for single-reference methods." exact="Dalton" post="contains implementations of special methodologies for the calculation of"/>
+ <result pre="X-ray Raman, 94 and X-ray circular dichroism 95 spectroscopies. For" exact="HF" post="and KS theories, this is accomplished with the ‘static"/>
+ <result pre="continuum or by describing it at the level of polarizable" exact="molecular mechanics." post="In the simplest continuum approach, the self-consistent-reaction-field (SCRF) approach,"/>
+ <result pre="be evaluated. In addition, quadratic-response properties are available at the" exact="HF" post="and KS levels. Figure 3 illustrates the calculation of"/>
+ <result pre="large molecules, containing up to more than a thousand atoms," exact="Dalton" post="contains a massively parallel, linear-scaling module for the HF,"/>
+ <result pre="more than 100 atoms. 48 To illustrate the capabilities of" exact="Dalton" post="for large molecules, we consider two systems—namely, the 168-atom"/>
+ <result pre="designed to model the redox-active site in the titin-I27 domain." exact="Dalton" post="has linear-scaling HF and KS modules for a number"/>
+ <result pre="the redox-active site in the titin-I27 domain. Dalton has linear-scaling" exact="HF" post="and KS modules for a number of molecular properties,"/>
+ <result pre="theory. 100, 137 To recover dynamical correlation in large molecules," exact="Dalton" post="utilizes a novel algorithm for generating highly local HF"/>
+ <result pre="molecules, Dalton utilizes a novel algorithm for generating highly local" exact="HF" post="orbitals. 138, 139 Such orbitals constitute the basis for"/>
+ <result pre="the calculation of the MP2 electrostatic potential of insulin. The" exact="HF" post="orbitals were localized by minimizing the sum of the"/>
+ <result pre="color box (a.u.). DALTON HISTORY The development that led to" exact="Dalton" post="began in the early 1980s, as a collaboration between"/>
+ <result pre="to the mid 1990s, several programs that later became the" exact="Dalton" post="code were run separately from a simple Bourne shell"/>
+ <result pre="integrals over GTOs were calculated using the HERMIT code, 143" exact="HF" post="and MCSCF wave functions were optimized using the SIRIUS"/>
+ <result pre="and RESPONS codes were merged in 1995 and released as" exact="Dalton" post="1.0 in 1997. This first release was essentially an"/>
+ <result pre="Hessians, NMR properties, and linear, quadratic, and cubic response theory." exact="Dalton" post="1.1 was released later in 1997, with bug fixes"/>
+ <result pre="bug fixes and performance improvements. The next major release was" exact="Dalton" post="1.2 in 2001, which included integral-direct CC functionality that"/>
+ <result pre="for vector computers and integral-driven CC theory. 17 In 2005," exact="Dalton" post="2.0 was released with a DFT module with functionality"/>
+ <result pre="theory. 17 In 2005, Dalton 2.0 was released with a" exact="DFT" post="module with functionality for molecular gradients and Hessians, NMR"/>
+ <result pre="parameters, linear and quadratic response properties, based on an initial" exact="DFT" post="implementation from 2000. 52 In addition, Dalton 2.0 included"/>
+ <result pre="on an initial DFT implementation from 2000. 52 In addition," exact="Dalton" post="2.0 included NEVTP2 and MP2–R12 modules and numerous other"/>
+ <result pre="improvements. The Dalton2011 release introduced a new module for linear-scaling" exact="HF" post="and KS calculations of large systems, using density fitting"/>
+ <result pre="to incorporate local orbitals, the DEC-MP2 model, magnetic properties for" exact="HF" post="and KS theories, and molecular dynamics. New massively parallel"/>
+ <result pre="character and various low-spin ground states. PROGRAM STRUCTURE Program Modules" exact="Dalton" post="consists of several modules, developed more or less independently."/>
+ <result pre="with parallel evaluation of configuration vectors and density matrices. The" exact="DFT" post="module performs the numerical exchange–correlation integration and serves the"/>
+ <result pre="calculations are performed with the LSDALTON module. Programming Details and" exact="Language" post="The Dalton program is written in FORTRAN 77, FORTRAN"/>
+ <result pre="performed with the LSDALTON module. Programming Details and Language The" exact="Dalton" post="program is written in FORTRAN 77, FORTRAN 90, and"/>
+ <result pre="77, FORTRAN 90, and C, with machine dependencies isolated using" exact="C" post="preprocessor directives. All floating-point computations are performed in 64-bit"/>
+ <result pre="storage requirements in some sections. The parallelization of the regular" exact="Dalton" post="SCF modules for small molecules has been done exclusively"/>
+ <result pre="the CI routines have been parallelized using MPI. 15 The" exact="Dalton" post="SCF modules for large molecules have been parallelized in"/>
+ <result pre="have been parallelized in a hybrid MPI/OpenMP scheme. Hardware/Software Supported" exact="Dalton" post="runs on a variety of UNIX systems. The current"/>
+ <result pre="is easily ported to other UNIX systems. Program Distribution The" exact="Dalton" post="source code is distributed to users at no cost."/>
+ <result pre="be charged for the use of Dalton. For copies of" exact="Dalton" post="distributed with a site license, users may not access"/>
+ <result pre="personal and site licenses in that access is given to" exact="Dalton" post="only for a restricted period of time. One year"/>
+ <result pre="700 personal and 150 site licenses had been issued for" exact="Dalton" post="2011. User Support Dalton is distributed with limited user"/>
+ <result pre="site licenses had been issued for Dalton 2011. User Support" exact="Dalton" post="is distributed with limited user support. The code is"/>
+ <result pre="installed using CMake with an automatic adaptation to supported platforms." exact="Dalton" post="is distributed with a cross-referenced manual and a test"/>
+ <result pre="about patches, releases, and other updates are provided on the" exact="Dalton" post="forum ( http://daltonprogram.org/forum), where users can also exchange experiences,"/>
+ <result pre="view tutorials and seek help on installing and using the" exact="Dalton" post="programs. CONCLUSION We have presented the Dalton quantum chemistry"/>
+ <result pre="and using the Dalton programs. CONCLUSION We have presented the" exact="Dalton" post="quantum chemistry program system—a highly flexible general-purpose code for"/>
+ <result pre="using the Dalton programs. CONCLUSION We have presented the Dalton" exact="quantum chemistry" post="program system—a highly flexible general-purpose code for molecular electronic-structure"/>
+ <result pre="continuous and vigorous development by a large number of authors," exact="Dalton" post="offers today not only a large selection of molecular"/>
+ <result pre="range of molecular properties from these models. In this manner," exact="Dalton" post="constitutes a unique tool for quantum-mechanical calculations of molecular"/>
+ <result pre="Z Tunell I Salek P Vahtras O Ågren H Restricted" exact="density functional theory" post="of linear time-dependent properties in open-shell molecules J Chem"/>
+ <result pre="O Telyatnyk L Rinkevicius Z Vahtras O Ågren H Time-dependent" exact="density functional theory" post="with the generalized restricted-unrestricted approach J Chem Phys 2006"/>
+ <result pre="1988 89 2185 2192 11 Havenith RWA Taylor PR Angeli" exact="C" post="Cimiraglia R Ruud K Calibration of the n-electron valence"/>
+ <result pre="function J Chem Phys 1995 102 4909 4918 13 Angeli" exact="C" post="Cimiraglia R Evangelisti S Leininger T Malrieu JP Introduction"/>
+ <result pre="Chem Phys 1997 106 8059 8072 21 Christiansen O Hättig" exact="C" post="Jørgensen P Response functions from Fourier component perturbation theory"/>
+ <result pre="26 Samson CCM Klopper W Helgaker T Computation of two-electron" exact="Gaussian" post="integrals for wave functions including the correlation factor r"/>
+ <result pre="2002 149 1 10 27 Tew DP Klopper W Neiss" exact="C" post="Hättig C Quintuple-zeta quality coupled-cluster correlation energies with triple-zeta"/>
+ <result pre="1 10 27 Tew DP Klopper W Neiss C Hättig" exact="C" post="Quintuple-zeta quality coupled-cluster correlation energies with triple-zeta basis sets"/>
+ <result pre="39 Hald K Halkier A Jørgensen P Coriani S Hättig" exact="C" post="Helgaker T A Lagrangian, integral-density direct formulation and implementation"/>
+ <result pre="Wilson PJ Amos RD Handy NC Nuclear shielding constants by" exact="density functional theory" post="with gauge including atomic orbitals J Chem Phys 2000"/>
+ <result pre="Ruud K Helgaker T Bak KL Jørgensen P Jensen HJAa" exact="Hartree–Fock" post="limit magnetizabilities from London orbitals J Chem Phys 1993"/>
+ <result pre="D Vahtras O Ågren H Cubic response functions in time-dependent" exact="density functional theory" post="J Chem Phys 2005 122 054107 81 Cronstrand P"/>
+ <result pre="properties J Chem Phys 1998 108 2801 2816 87 Hättig" exact="C" post="Christiansen O Koch H Jørgensen P Frequency-dependent first hyperpolarizabilities"/>
+ <result pre="theory Chem Phys Lett 1997 269 428 434 88 Hättig" exact="C" post="Christiansen O Jørgensen P Frequency-dependent second hyperpolarizabilities using coupled"/>
+ <result pre="theory Chem Phys Lett 1998 282 139 146 89 Hättig" exact="C" post="Christiansen O Jørgensen P Coupled cluster response calculations of"/>
+ <result pre="corrections J Chem Phys 2002 116 5963 5970 91 Hättig" exact="C" post="Christiansen O Coriani S Jørgensen P Static and frequency-dependent"/>
+ <result pre="P Norman P On the efficiency of algorithms for solving" exact="Hartree–Fock" post="and Kohn–Sham response equations J Chem Theory Comput 2011"/>
+ <result pre="Christiansen O A CC2 dielectric continuum model and a CC2" exact="molecular mechanics" post="model Mol Phys 2003 101 2055 2071 121 Kongsted"/>
+ <result pre="Jørgensen P Helgaker T The augmented Roothaan–Hall method for optimizing" exact="Hartree–Fock" post="and Kohn–Sham density matrices J Chem Phys 2008 129"/>
+ <result pre="J Chem Phys 2004 121 2915 2931 15291602 131 Ochsenfeld" exact="C" post="White CA Head-Gordon M Linear and sublinear scaling formation"/>
+ <result pre="independent formulation and implementation of magneto-optical activity within atomic-orbital-density based" exact="Hartree–Fock" post="and Kohn–Sham response theories J Chem Theory Comp 2009"/>
+ <result pre="55 151 Vahtras O Rinkevicius Z General excitations in time-dependent" exact="density functional theory" post="J Chem Phys 2007 126 114101 17381190 152 Rinkevicius"/>
+</results>

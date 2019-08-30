@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="adaptations, all for non-commercial purposes. Abstract We present the QMflows" exact="Python" post="package for quantum chemistry workflow automatization. QMflows allows users"/>
+ <result pre="non-commercial purposes. Abstract We present the QMflows Python package for" exact="quantum chemistry" post="workflow automatization. QMflows allows users to write complex workflows"/>
+ <result pre="allows users to write complex workflows in terms of simple" exact="Python" post="scripts. It supports the development of interoperable workflows involving"/>
+ <result pre="scripts. It supports the development of interoperable workflows involving multiple" exact="quantum chemistry" post="codes and executes them efficiently on large scale parallel"/>
+ <result pre="and executes them efficiently on large scale parallel computers. This" exact="open source" post="library provides standardized interfaces to a number of quantum"/>
+ <result pre="open source library provides standardized interfaces to a number of" exact="quantum chemistry" post="packages and can be easily extended to accommodate additional"/>
+ <result pre="modeling indeed often requires a combination of theoretical approaches and" exact="software" post="and commonly involves composite workflows consisting of a large"/>
+ <result pre="benchmark study to assess the performance of a series of" exact="density functional theory" post="(DFT) exchange-correlation functionals. 4− 7 Another simple example is"/>
+ <result pre="the preparation of specific inputs for the quantum chemical (QM)" exact="software" post="package(s) that is (are) used; (ii) submission of jobs"/>
+ <result pre="the output files, often involving postprocessing steps with yet other" exact="software" post="tools. Commonly used ad hoc Unix shell or Python"/>
+ <result pre="other software tools. Commonly used ad hoc Unix shell or" exact="Python" post="scripts for such purposes are often poorly transferable and"/>
+ <result pre="interfaces are required for performing the same task (e.g., a" exact="DFT" post="geometry optimization) with different program packages. This hinders the"/>
+ <result pre="keeping maximum flexibility and limiting maintenance, we have developed the" exact="Python" post="package QMflows for the automation of computational chemistry workflows."/>
+ <result pre="have developed the Python package QMflows for the automation of" exact="computational chemistry" post="workflows. QMflows is built on top of the PLAMS"/>
+ <result pre="this way, we aim at supporting both beginners and experienced" exact="Python" post="programmers. Beginners will benefit from the simple and unobtrusive"/>
+ <result pre="this kind of use only a basic understanding of the" exact="Python" post="scripting language is required, a skill that most computational"/>
+ <result pre="to extend the existing functionality by programming new functions in" exact="Python" post="with only minor adaptations to allow Noodles to perform"/>
+ <result pre="the ADF, 16 CP2K, 17 DIRAC, 18 GAMESS-US, 19 and" exact="ORCA" post="20 packages and is distributed as open source software"/>
+ <result pre="GAMESS-US, 19 and ORCA 20 packages and is distributed as" exact="open source" post="software under the LGPL-3.0 license. 21 Methods QMflows has"/>
+ <result pre="and ORCA 20 packages and is distributed as open source" exact="software" post="under the LGPL-3.0 license. 21 Methods QMflows has four"/>
+ <result pre="PLAMS enables the representation of such input as a nested" exact="Python" post="dictionary, which can be automatically translated into a correct"/>
+ <result pre="the same input definitions for common features (e.g., basis set," exact="DFT" post="functional) when calling different QM codes and makes it"/>
+ <result pre="standard applications users can use identical run scripts for different" exact="quantum chemistry" post="packages. The templates consist of PLAMS settings for common"/>
+ <result pre="chemistry packages. The templates consist of PLAMS settings for common" exact="computational chemistry" post="tasks, such as structure optimization, transition state searches, and"/>
+ <result pre="yet define the QM package. The next line calls the" exact="ADF" post="program with the settings and the molecule object as"/>
+ <result pre="object as arguments. In this case, the template for an" exact="ADF" post="geometry optimization makes use of a nonscalar calculation with"/>
+ <result pre="how a user may modify the basis set and the" exact="DFT" post="exchange-correlation functional of the template using generic key words:"/>
+ <result pre="however, we assign three extra key words specific to the" exact="ADF" post="code. The first calls the excitations module to perform"/>
+ <result pre="The first calls the excitations module to perform a time-dependent" exact="DFT" post="(TDDFT) calculation computing the lowest 10 roots; the second"/>
+ <result pre="module of the package is to efficiently execute the user-defined" exact="Python" post="workflows. With the Noodles framework, dependencies between the tasks"/>
+ <result pre="Noodles framework, dependencies between the tasks defined in the QMflows" exact="Python" post="script are automatically detected. The idea behind this library"/>
+ <result pre="to allow for dependency analysis. Rather than immediately executing the" exact="Python" post="code found in a user script, Noodles will first"/>
+ <result pre="is that the user script looks almost like a normal" exact="Python" post="script, while in the background Noodles takes care of"/>
+ <result pre="without modifications. Module 4: Output Postprocessing When tasks involve different" exact="software" post="packages and are run on different resources, data transfer"/>
+ <result pre="primary data is kept in the native format of the" exact="quantum chemistry" post="program that was used and at the location where"/>
+ <result pre="results of the calculations were simply printed to screen using" exact="Python" post="commands. In real applications, in which the amount of"/>
+ <result pre="and Excitation Spectrum A common starting point for a high-level" exact="quantum chemistry" post="calculation of molecular properties is a structure optimized at"/>
+ <result pre="example, it is quite common to perform a single point" exact="post-Hartree–Fock" post="calculation on a DFT-optimized structure. As also DFT optimization"/>
+ <result pre="single point post-Hartree–Fock calculation on a DFT-optimized structure. As also" exact="DFT" post="optimization can be time-consuming for larger molecules it is"/>
+ <result pre="a preoptimization with DFTB, send the resulting structure to the" exact="ADF" post="package for further optimization with the PBE functional, and"/>
+ <result pre="a simple criterion for a first selection we calculate the" exact="DFT" post="HOMO–LUMO gap. The set of molecules is taken from"/>
+ <result pre="the computationally inexpensive DFTB method followed by a single point" exact="DFT" post="calculation with the SAOP functional. The HOMO and LUMO"/>
+ <result pre="the desired energy range, are selected for further study by" exact="DFT" post="structure optimization and TD-DFT calculation of the lowest excited"/>
+ <result pre="then used to initialize the transition state calculation at the" exact="DFT" post="level in a different package (ORCA). The full code"/>
+ <result pre="preoptimizing step with DFTB, the molecules are further optimized with" exact="DFT" post="(Orca) with a final step of TD-DFT calculation including"/>
+ <result pre="final step of TD-DFT calculation including solvent effects with the" exact="ADF" post="program. Figure S1 shows the output of the script,"/>
+ <result pre="be propagated to the rest of the dependencies (as a" exact="Python" post="None value), or the user can provide an alternative"/>
+ <result pre="highlighted in green. Conclusions In summary, we have presented the" exact="open source" post="software QMflows, a flexible and powerful Python code capable"/>
+ <result pre="green. Conclusions In summary, we have presented the open source" exact="software" post="QMflows, a flexible and powerful Python code capable of"/>
+ <result pre="presented the open source software QMflows, a flexible and powerful" exact="Python" post="code capable of easily automatizing and parallelizing quantum chemistry"/>
+ <result pre="and powerful Python code capable of easily automatizing and parallelizing" exact="quantum chemistry" post="workflows. The software is constructed on four main pillars:"/>
+ <result pre="capable of easily automatizing and parallelizing quantum chemistry workflows. The" exact="software" post="is constructed on four main pillars: a. Flexible input"/>
+ <result pre="The authors declare no competing financial interest. Notes This QMflows" exact="software" post="is distributed as a Python library that can be"/>
+ <result pre="financial interest. Notes This QMflows software is distributed as a" exact="Python" post="library that can be downloaded from GitHub at www.github.com/SCM-NV/QMflows"/>
+ <result pre="the Innovational Research Incentive (Vidi) Scheme (Grant No. 723.013.002). Abbreviations" exact="DFT" post="density functional theory DFTB tight-binding DFT QM quantum mechanics"/>
+ <result pre="Innovational Research Incentive (Vidi) Scheme (Grant No. 723.013.002). Abbreviations DFT" exact="density functional theory" post="DFTB tight-binding DFT QM quantum mechanics References References Liu"/>
+ <result pre="(Grant No. 723.013.002). Abbreviations DFT density functional theory DFTB tight-binding" exact="DFT" post="QM quantum mechanics References References Liu Y. ; Zhao"/>
+ <result pre="; Visscher L. PyADF - A scripting framework for multiscale" exact="quantum chemistry" post=". J. Comput. Chem. 2011, 32, 2328– 2338 10.1002/jcc.21810"/>
+ <result pre="A. ; Keal T. W. ; Sherwood P. ChemShell-a modular" exact="software" post="package for QM/MM simulations . Wiley Interdiscip. Rev.: Comput."/>
+ <result pre="Zeng Z. ; Jacobsen K. W. The atomic simulation environment—a" exact="Python" post="library for working with atoms . J. Phys.: Condens."/>
+ <result pre="Elsevier: 2005; pp 1167– 1189, 10.1016/B978-044451719-7/50084-6 . Neese F. The" exact="ORCA" post="program system . Wiley Interdiscip. Rev. Comput. Mol. Sci."/>
+</results>

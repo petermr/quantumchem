@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="qchem100/PMC6661861/results/search/program/results.xml">
+  <result pre="promising approach to overcome the limitations of GCM. However, the" exact="quantum chemistry" post="approach is significantly more expensive. Here, we use a"/>
+  <result pre="is significantly more expensive. Here, we use a combination of" exact="quantum chemistry" post="and machine learning to obtain a fast and accurate"/>
+  <result pre="carbon redox transformations in biology. Our method relies on semiempirical" exact="quantum chemistry" post="calculations calibrated with Gaussian process (GP) regression against available"/>
+  <result pre="Our method relies on semiempirical quantum chemistry calculations calibrated with" exact="Gaussian" post="process (GP) regression against available experimental data and results"/>
+  <result pre="to all source code and data generated. A combination of" exact="quantum chemistry" post="and machine learning accurately predicts biochemical redox potentials of"/>
+  <result pre="or other cheminformatic-based alternatives. Recent work in the intersection of" exact="quantum chemistry" post="and machine learning has resulted in hybrid approaches that"/>
+  <result pre="applied to organic photovoltaics material design, 30, 31 relies on" exact="Gaussian" post="process (GP) regression 32 to calibrate quantum chemical predictions"/>
+  <result pre="models, which also furnishes uncertainty bounds on predicted data points." exact="Gaussian" post="process regression uses the &quot;kernel trick&quot; 33 to make"/>
+  <result pre="predictions with GP regression against experimental data ( Figures 1" exact="C" post="and 2). We innovate on existing GP regression techniques"/>
+  <result pre="molecular geometries using the Universal Force Field, and run semiempirical" exact="quantum chemistry" post="calculations using PM7. (C) We estimate the standard (millimolar"/>
+  <result pre="compounds against available experimental E′ m(pH = 7) values using" exact="Gaussian" post="process (GP) regression. Results Optimization of Redox Potential Prediction"/>
+  <result pre="with GP Regression Our goal is to develop a calibrated" exact="quantum chemistry" post="modeling framework that can accurately predict the reduction potentials"/>
+  <result pre="40 Similar to previous implementations, our approach consists of running" exact="quantum chemistry" post="calculations to obtain electronic structure energies of substrates and"/>
+  <result pre="the experimental data set using the covariance function of the" exact="Gaussian" post="process k( x*, x i ) (see the Methods"/>
+  <result pre="strategy and geometry optimization procedure, the electronic structure method (e.g.," exact="density functional theory" post="(DFT), wave function approaches, or semiempirical methods) as well"/>
+  <result pre="Table 1 Summary Statistics of Prediction Accuracy for Calibration with" exact="Gaussian" post="Process Regression of Different Modeling Approaches a calibration/regression linear"/>
+  <result pre="fingerprints; GCM = group contribution method; GP = calibration with" exact="Gaussian" post="process regression; opt. = geometry optimization of a single"/>
+  <result pre="chemistry using the double-hybrid functional DSD-PBEP86 (based on a double-hybrid" exact="DFT" post="functional) gives the best accuracy but at a higher"/>
+  <result pre="Accuracy at a Low Computational Cost Importantly, our GP-calibrated semiempirical" exact="quantum chemistry" post="method results in higher predictive power than the most"/>
+  <result pre="Comparison of prediction accuracy for the group contribution method and" exact="quantum chemistry" post="with GP regression. Scatter plots of experimental standard transformed"/>
+  <result pre="predictions, as well as fingerprint-based predictions (without relying on any" exact="quantum chemistry" post="calculations), can also be calibrated using GP regression, resulting"/>
+  <result pre="The network expansion algorithm makes use of the RDKit cheminformatics" exact="software" post="to iteratively apply simplified molecular-input line-entry system (SMILES) 35,"/>
+  <result pre="Potentials and Elucidation of Structure–Energy Relationships Using our GP-calibrated semiempirical" exact="quantum chemistry" post="method, we predicted the standard transformed redox potentials for"/>
+  <result pre="chemical calculations ( Methods) and correcting for systematic errors using" exact="Gaussian" post="process regression. The green distribution shows the E′ m(pH"/>
+  <result pre="between substrates and products in redox reactions using the semiempirical" exact="quantum chemistry" post="method PM7. 34 The raw quantum chemistry estimates are"/>
+  <result pre="using the semiempirical quantum chemistry method PM7. 34 The raw" exact="quantum chemistry" post="estimates are then calibrated against experiment using GP regression."/>
+  <result pre="Furthermore, the computational resources required are significantly lower than previous" exact="quantum chemistry" post="strategies for biochemical thermodynamics. The GCM decomposes compounds into"/>
+  <result pre="more expensive electronic structure theory, DSDPEP89 (based on a double-hybrid" exact="DFT" post="functional) gives the best accuracy but at higher computational"/>
+  <result pre="the predicted redox potential. Current work on GP calibration in" exact="computational chemistry" post="relies on molecular fingerprints to compute the similarity between"/>
+  <result pre="networks—which have gained traction in recent machine learning applications to" exact="quantum chemistry" post="49− 51 —are only applicable when much larger data"/>
+  <result pre="energies, p K a’s, and redox potential estimates—available as an" exact="open source" post="repository at https://github.com/aspuru-guzik-group/gp_redox_rxn . Methods Generation of Most Abundant"/>
+  <result pre="involved in every redox reaction of interest. We run the" exact="quantum chemistry" post="simulations on the major protonation states at pH ="/>
+  <result pre="with the COSMO implicit solvation model 42 and then a" exact="quantum chemistry" post="approach (PBE-3H or B3LYP), or we simply use the"/>
+  <result pre="for the systematic errors introduced by this approximation through the" exact="Gaussian" post="process regression (see below). We note that previous work"/>
+  <result pre="the partial charge of atoms in the molecule. 64, 65" exact="Gaussian" post="Process Calibration Using Reaction Fingerprints We calibrate biochemical redox"/>
+  <result pre="fingerprints to calibrate redox potential energies. For our calibrations with" exact="Gaussian" post="process regression we used GPMol, a Python library based"/>
+  <result pre="our calibrations with Gaussian process regression we used GPMol, a" exact="Python" post="library based on GPflow, 72 which in turn is"/>
+  <result pre="GPflow, 72 which in turn is a package for building" exact="Gaussian" post="process models using TensorFlow. GP regression relies on a"/>
+  <result pre="products and substrates. We find that in the context of" exact="Gaussian" post="processes for biochemical redox potential predictions Morgan fingerprints outperform"/>
+  <result pre="Morgan fingerprints outperform AP3 fingerprints by approximately 5–4 mV. The" exact="Gaussian" post="processes’ predictive power comes from learning relationships between relative"/>
+  <result pre="two vectors. This notion is adapted in the field of" exact="Gaussian" post="processes to quantify the similarity between reactions in GP"/>
+  <result pre="variance parameter. Database of Experimental Redox Potentials for Calibration with" exact="Gaussian" post="Process Regression To perform the calibration, a data set"/>
+  <result pre="accurate predictions of redox potentials using the GP regression calibrated" exact="quantum chemistry" post="strategy described above, we tested several different quantum model"/>
+  <result pre="We compared the accuracies obtained using the GP regression calibrated" exact="quantum chemistry" post="approach described above against those obtained with the commonly"/>
+  <result pre="carbon atoms or fewer as seed metabolites. Using the RDKit" exact="open source" post="cheminformatics software, we identify carbonyl functional groups (alcohol/amine functional"/>
+  <result pre="alcohol/amine functional groups that can be oxidized to carbonyls). All" exact="software" post="was written using the Python programming language. Supporting Information"/>
+  <result pre="be oxidized to carbonyls). All software was written using the" exact="Python" post="programming language. Supporting Information Available The Supporting Information is"/>
+  <result pre="Roitberg A. E. ANI-1: An Extensible Neural Network Potential with" exact="DFT" post="Accuracy at Force Field Computational Cost . Chem. Sci."/>
+  <result pre="10.1016/j.joule.2017.10.006 . Rasmussen C. E. ; Williams C. K. I." exact="Gaussian" post="Processes for Machine Learning ; MIT Press, 2006. Kung"/>
+  <result pre="Williams C. K. I. Gaussian Processes for Machine Learning ;" exact="MIT" post="Press, 2006. Kung S. Y. Kernel Methods and Machine"/>
+  <result pre="5 799– 805 10.1039/P29930000799 . Weininger D. SMILES, a Chemical" exact="Language" post="and Information System. 1. Introduction to Methodology and Encoding"/>
+  <result pre="H. ; Deisenroth M. Doubly Stochastic Variational Inference for Deep" exact="Gaussian" post="Processes , 31st Conference on Neural Information Processing Systems"/>
+  <result pre="M. ; Rasmussen C. E. Distributed Variational Inference in Sparse" exact="Gaussian" post="Process Regression and Latent Variable Models , Proceedings of"/>
+  <result pre="Prediction Errors of Molecular Machine Learning Models Lower than Hybrid" exact="DFT" post="Error . J. Chem. Theory Comput. 2017, 13 11"/>
+  <result pre="Leon-Villagra P. ; Ghahramani Z. ; Hensman J. GPflow: A" exact="Gaussian" post="Process Library Using TensorFlow . J. Mach. Learn. Res."/>
+  <result pre="7268 10.1103/PhysRevB.58.7260 . Sure R. ; Grimme S. Corrected Small" exact="Basis" post="Set Hartree-Fock Method for Large Systems . J. Comput."/>
+  <result pre="and Interactions by Density Functional Theory with Small Atomic Orbital" exact="Basis" post="Sets . J. Chem. Phys. 2015, 143 5 054107"/>
+  <result pre="J. M. L. DSD-PBEP86: In Search of the Best Double-Hybrid" exact="DFT" post="with Spin-Component Scaled MP2 and Dispersion Corrections . Phys."/>
+ </snippets>
+</snippetsTree>

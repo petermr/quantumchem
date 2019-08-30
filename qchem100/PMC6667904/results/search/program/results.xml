@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="and Updates: Software News and Updates RAQET: Large‐scale two‐component relativistic" exact="quantum chemistry" post="program package Hayami Masao 1 Seino Junji 2 3"/>
+ <result pre="Relativistic And Quantum Electronic Theory (RAQET) program is a new" exact="software" post="package, which is designed for large‐scale two‐component relativistic quantum"/>
+ <result pre="out in terms of the two‐component relativistic Hamiltonian, wavefunction theory," exact="density functional theory," post="core potential scheme, and evaluation of electron repulsion integrals."/>
+ <result pre="Journal of Computational Chemistry Published by Wiley Periodicals, Inc. relativistic" exact="quantum chemistry" post="spin‐free effect spin‐dependent effect generalized Hartree–Fock heavy element two‐component"/>
+ <result pre="Periodicals, Inc. relativistic quantum chemistry spin‐free effect spin‐dependent effect generalized" exact="Hartree–Fock" post="heavy element two‐component relativistic framework Funding The Ministry of"/>
+ <result pre="periodic table is one of the most significant problems in" exact="quantum chemistry" post="(QC). The solution is essential to theoretically promote the"/>
+ <result pre="of accuracy and efficiency. For example, to maintain accuracy, the" exact="Hartree–Fock" post="(HF) and electron correlation theories should be reformulated to"/>
+ <result pre="72, 73, 74, 75, 76 This effect also contributes to" exact="density functional theory" post="(DFT) calculations through the PC of electron density. 31,"/>
+ <result pre="l e c , WFT for Ψ 2 , and" exact="DFT" post="in RAQET. RAQET utilizes Gaussian‐type orbitals (GTOs) as basis"/>
+ <result pre="option in RAQET for calculations relating to heavy‐element systems. Wavefunction" exact="Hartree–Fock" post="There are various HF scheme modules in RAQET which"/>
+ <result pre="calculations relating to heavy‐element systems. Wavefunction Hartree–Fock There are various" exact="HF" post="scheme modules in RAQET which are summarized in Table"/>
+ <result pre="For SF calculations in the 2c relativistic framework, the restricted" exact="HF" post="(RHF), unrestricted HF (UHF), and open‐shell HF (ROHF) are"/>
+ <result pre="in the 2c relativistic framework, the restricted HF (RHF), unrestricted" exact="HF" post="(UHF), and open‐shell HF (ROHF) are available. In ROHF,"/>
+ <result pre="framework, the restricted HF (RHF), unrestricted HF (UHF), and open‐shell" exact="HF" post="(ROHF) are available. In ROHF, we can select various"/>
+ <result pre="parameter values, in the Supporting Information. Table 2 Capabilities of" exact="HF" post="schemes Spin Keyword Restriction of symmetry a SF RHF"/>
+ <result pre="and complex conjugation symmetries, respectively. For SD calculations, the Kramers‐restricted" exact="HF" post="(KRHF), 86 Kramers‐unrestricted HF (KUHF), 87 Kramers‐restricted open‐shell HF"/>
+ <result pre="respectively. For SD calculations, the Kramers‐restricted HF (KRHF), 86 Kramers‐unrestricted" exact="HF" post="(KUHF), 87 Kramers‐restricted open‐shell HF (KROHF), 88 and generalized"/>
+ <result pre="Kramers‐restricted HF (KRHF), 86 Kramers‐unrestricted HF (KUHF), 87 Kramers‐restricted open‐shell" exact="HF" post="(KROHF), 88 and generalized HF (GHF) 85 are available."/>
+ <result pre="HF (KUHF), 87 Kramers‐restricted open‐shell HF (KROHF), 88 and generalized" exact="HF" post="(GHF) 85 are available. These schemes use spinors ϕ"/>
+ <result pre="β ‐spin basis functions, (9) ϕ i = ∑ μ" exact="C" post="μ i α χ μ α + ∑ μ"/>
+ <result pre="C μ i α χ μ α + ∑ μ" exact="C" post="μ i β χ μ β , where C"/>
+ <result pre="μ C μ i β χ μ β , where" exact="C" post="is the complex orbital coefficient matrix, and χ is"/>
+ <result pre="α β F β α F β β ) (" exact="C" post="α C β ) = ( S α α"/>
+ <result pre="F β α F β β ) ( C α" exact="C" post="β ) = ( S α α 0 0"/>
+ <result pre="S α α 0 0 S β β ) (" exact="C" post="α C β ) ε , where F ,"/>
+ <result pre="α 0 0 S β β ) ( C α" exact="C" post="β ) ε , where F , S ,"/>
+ <result pre="and the working equation is defined by (11) F Q" exact="C" post="Q = S Q C Q ε ⇔ ("/>
+ <result pre="defined by (11) F Q C Q = S Q" exact="C" post="Q ε ⇔ ( F α α + j"/>
+ <result pre="α α + j ˘ F α β ) (" exact="C" post="α − j ˘ C β * ) ="/>
+ <result pre="F α β ) ( C α − j ˘" exact="C" post="β * ) = S α α ( C"/>
+ <result pre="˘ C β * ) = S α α (" exact="C" post="α − j ˘ C β * ) ε"/>
+ <result pre="= S α α ( C α − j ˘" exact="C" post="β * ) ε , where the presuperscript Q"/>
+ <result pre="KUHF is written as (12) { Q F σ Q" exact="C" post="σ = Q S σ Q C σ ε"/>
+ <result pre="F σ Q C σ = Q S σ Q" exact="C" post="σ ε σ Q F σ ¯ Q C"/>
+ <result pre="Q C σ ε σ Q F σ ¯ Q" exact="C" post="σ ¯ = Q S σ ¯ Q C"/>
+ <result pre="Q C σ ¯ = Q S σ ¯ Q" exact="C" post="σ ¯ ε σ ¯ ⇔ { ( F"/>
+ <result pre="α α + j ˘ F α β ) (" exact="C" post="α − j ˘ C β * ) ="/>
+ <result pre="F α β ) ( C α − j ˘" exact="C" post="β * ) = S α α ( C"/>
+ <result pre="˘ C β * ) = S α α (" exact="C" post="α − j ˘ C β * ) ε"/>
+ <result pre="= S α α ( C α − j ˘" exact="C" post="β * ) ε σ ( F β β"/>
+ <result pre="β β + j ˘ F β α ) (" exact="C" post="β − j ˘ C α * ) ="/>
+ <result pre="F β α ) ( C β − j ˘" exact="C" post="α * ) = S β β ( C"/>
+ <result pre="˘ C α * ) = S β β (" exact="C" post="β − j ˘ C α * ) ε"/>
+ <result pre="= S β β ( C β − j ˘" exact="C" post="α * ) ε σ ¯ , where the"/>
+ <result pre="defined by (13) F Q K R O H F" exact="C" post="Q = S Q C Q ε , where"/>
+ <result pre="K R O H F C Q = S Q" exact="C" post="Q ε , where F Q K R O"/>
+ <result pre="Q K R O H F = ( Q R" exact="C" post="C Q F C O Q F C V"/>
+ <result pre="K R O H F = ( Q R C" exact="C" post="Q F C O Q F C V Q"/>
+ <result pre="H F = ( Q R C C Q F" exact="C" post="O Q F C V Q F O C"/>
+ <result pre="Q R C C Q F C O Q F" exact="C" post="V Q F O C Q R O O"/>
+ <result pre="F C O Q F C V Q F O" exact="C" post="Q R O O Q F O V Q"/>
+ <result pre="R O O Q F O V Q F V" exact="C" post="Q F V O Q R V V )"/>
+ <result pre="∑ μ ν ρ λ { A O } (" exact="C" post="μ i ω ) * C ν a ω"/>
+ <result pre="A O } ( C μ i ω ) *" exact="C" post="ν a ω ′ ( C ρ j τ"/>
+ <result pre="i ω ) * C ν a ω ′ (" exact="C" post="ρ j τ ) * C λ b τ"/>
+ <result pre="a ω ′ ( C ρ j τ ) *" exact="C" post="λ b τ ′ [ μ ω ν ω"/>
+ <result pre="replacing the core electrons with the potential. Thus, an efficient" exact="HF" post="calculation is realized. These core potential methods are implemented"/>
+ <result pre="potential methods are implemented in the SF formulations at the" exact="HF" post="level of the theory. MCP and AIMP include the"/>
+ <result pre="level shifts. Density Functional Theory Ground and excited state calculation" exact="DFT" post="calculations, based on the SF and SD formulations for"/>
+ <result pre="are also included. The hybrid functionals with various degrees of" exact="HF" post="exchange, 126, 127, 128, 129, 130, 131, 132 as"/>
+ <result pre="132 as well as the double‐hybrid functionals combined with the" exact="HF" post="exchange and the MP2 correlation, 133, 134, 135, 136"/>
+ <result pre="of the functionals have been implemented on the basis of" exact="Fortran" post="code repositories. 137, 138 The local response dispersion (LRD)"/>
+ <result pre="as a dispersion correction method. For excited states, the time‐dependent" exact="DFT" post="(TDDFT) is implemented at the SF level to evaluate"/>
+ <result pre="accurate 2c Hamiltonian. Table 4 Capabilities of XC functionals for" exact="DFT" post="calculations Type Keyword Ratio of HF exchange Ratio of"/>
+ <result pre="of XC functionals for DFT calculations Type Keyword Ratio of" exact="HF" post="exchange Ratio of MP2 correlation LDA SVWN 0% 0%"/>
+ <result pre="36% PBE0‐DH 50% 12.5% PBE0‐2 79.3701% 50% Picture change in" exact="DFT" post="Any calculation of the expectation values for molecular properties"/>
+ <result pre="to reproduce the results of the 4c relativistic calculations. In" exact="DFT" post="calculations with the 2c relativistic framework, we should consider"/>
+ <result pre="function. This PC correction is now available for ground state" exact="DFT" post="calculations. Furthermore, the LUT scheme will realize an efficient"/>
+ <result pre="implemented in RAQET, and are summarized in Table 5. The" exact="Gaussian" post="quadrature technique, 142, 143 one of the most effective"/>
+ <result pre="for PHMD was taken from an integral library in open‐source" exact="software" post="for massively parallel QC calculations called Scalable Molecular Analysis"/>
+ <result pre="For geometry optimization, the energy gradients of Hamiltonians, wavefunctions, and" exact="DFT" post="formulations are required to evaluate the forces at the"/>
+ <result pre="derivatives of the density matrices. RAQET utilizes the coupled perturbed" exact="HF" post="framework based on RHF, UHF, and GHF, which is"/>
+ <result pre="is solved by an iterative procedure. 158, 159 Useful Options" exact="Basis" post="sets RAQET has a basis set database for the"/>
+ <result pre="DIIS technique. The interpolation coefficients are optimized by minimizing the" exact="HF" post="energy functional, which contains a linear combination of the"/>
+ <result pre="utilizes sophisticated molecular modeling and visualization software, Winmostar. 171 This" exact="software" post="contains modules for easy creation of an input file"/>
+ <result pre="state calculation, excited state calculation schemes in both WFT and" exact="DFT" post="are under development. For analyses of thermodynamics and reactions,"/>
+ <result pre="I. O. Malkin , E. Malkin , ReSpect, Re(lativistic) Spect(roscopy)" exact="DFT" post="Program, Release ReSpect Version 3.3.0 (Beta) 2013, see http://rel-qchem.sav.sk/"/>
+ <result pre="Reiher , Theor. Chem. Acc. 2012, 131, 1081. 49 collab:" exact="CFOUR" post=", J. F. Stanton , J. Gauss , M."/>
+ <result pre="Farkas , J. B. Foresman , D. J. Fox ," exact="Gaussian" post="16; Gaussian, Inc., Wallingford, CT, 2016. 56 P. Pyykkö"/>
+</results>

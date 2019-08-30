@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="required to convert output from a number of different molecular" exact="quantum chemistry" post="packages to a common semantically rich, machine-readable format and"/>
+ <result pre="many levels. The standardised representation of the results will facilitate" exact="software" post="interoperability, for example making it easier for analysis tools"/>
+ <result pre="The repository infrastructure, which is lightweight and built using Open" exact="software" post="components, can be implemented at individual researcher, project, organisation"/>
+ <result pre="and extracting them consistently from the results of the various" exact="software" post="packages can then proceed in an incremental manner, adding"/>
+ <result pre="available to the broader scientific community through a number of" exact="software" post="packages such as Gaussian [ 1], GAMESS(US) [ 2],"/>
+ <result pre="scientific community through a number of software packages such as" exact="Gaussian" post="[ 1], GAMESS(US) [ 2], GAMESS-UK [ 3], NWChem"/>
+ <result pre="as Gaussian [ 1], GAMESS(US) [ 2], GAMESS-UK [ 3]," exact="NWChem" post="[ 4], MOLCAS [ 5] and many more. Additionally,"/>
+ <result pre="1], GAMESS(US) [ 2], GAMESS-UK [ 3], NWChem [ 4]," exact="MOLCAS" post="[ 5] and many more. Additionally, the cost of"/>
+ <result pre="out of a series of meetings and projects in the" exact="computational chemistry" post="(compchem) community which have addressed the desire and need"/>
+ <result pre="Thus to help understand and represent moments of inertia in" exact="computational chemistry" post="we can link to Wikipedia http://en.wikipedia.org/wiki/Moment_of_inertia. This contains many"/>
+ <result pre="and projects which specifically addressed the development of infrastructure in" exact="computational chemistry" post="and materials. The goal of these was to explore"/>
+ <result pre="high-level calculations, with a special emphasis on intermolecular interactions; the" exact="DFT" post="Database for RNA Catalysis (QCRNA) http://theory.rutgers.edu/QCRNA/[ 21], which contains"/>
+ <result pre="In this category of solutions, we can also mention the" exact="Basis" post="Set Exchange (BSE) https://bse.pnl.gov/bse/portal[ 18, 25], which provides an"/>
+ <result pre="existence of vibrant communities, and the wide availability of powerful" exact="software" post="to perform the calculations, and to convert and analyze"/>
+ <result pre="we have spent about 10 years working in semantic chemistry," exact="computational chemistry" post="and repositories and so have anticipated many of the"/>
+ <result pre="The user instructs Lensfield2 to convert output files of different" exact="computational chemistry" post="codes into semantically rich CML files. The conversion is"/>
+ <result pre="orbitals, convergence of results, algorithms, etc.). • Validation sets for" exact="software" post="and methods. In a similar manner datasets within Quixote"/>
+ <result pre="combine components of the calculation. • Data-driven science. Now that" exact="computational chemistry" post="is relatively cheap and relatively accessible for a very"/>
+ <result pre="anticipate that web crawlers can increasingly discover and retrieve published" exact="computational chemistry." post="• Developing software tools. Since Quixote represents an abstraction"/>
+ <result pre="can increasingly discover and retrieve published computational chemistry. • Developing" exact="software" post="tools. Since Quixote represents an abstraction of many codes,"/>
+ <result pre="Since Quixote represents an abstraction of many codes, developers writing" exact="software" post="for computational chemistry will be able to see the"/>
+ <result pre="represents an abstraction of many codes, developers writing software for" exact="computational chemistry" post="will be able to see the type of semantics"/>
+ <result pre="energies, spin densities, non-bonded interactions, and many more subtleties of" exact="computational chemistry." post="But Pandora's box has been opened and computational chemistry"/>
+ <result pre="of computational chemistry. But Pandora's box has been opened and" exact="computational chemistry" post="is a commodity open to all. Quixote will help"/>
+ <result pre="few objective concerns about quality. The Quixote system converts legacy" exact="computational chemistry" post="(logfiles) into semantic form. Automatic conversion will usually have"/>
+ <result pre="this should not be done for articles and theses in" exact="computational chemistry." post="This is harder in compchem until the community develops"/>
+ <result pre="we are appealing to any scientist who have collections of" exact="computational chemistry" post="data that they would be prepared to make available."/>
+ <result pre="of between 20-50 dictionary entries that should relate to any" exact="computational chemistry" post="output. The input to this effort was informed by"/>
+ <result pre="this effort was informed by logfiles from the Gaussian, NWChem," exact="Jaguar" post="and GAMESS-UK programs. The initial approach has been to"/>
+ <result pre="(2011-06) there are about 200 templates for NWChem, 150 for" exact="Gaussian" post="and a small number for Jaguar, GAMESS-UK, GAMESS(US), AMBER"/>
+ <result pre="and a small number for Jaguar, GAMESS-UK, GAMESS(US), AMBER and" exact="MOPAC" post="http://openmopac.net. Each time a parse fails, the section is"/>
+ <result pre="for a number of well-structured output files (Gaussian archive files," exact="MOPAC" post="and various punchfiles) but the emphasis is now on"/>
+ <result pre="makes heavy use of XPath and a core set of" exact="Java" post="routines for generic operations (delete/create/move elements, transform (matrix/molecule/strings etc.))."/>
+ <result pre="process) and that changes can be made external to the" exact="software" post="(by modifying the transformation files). As with the templates"/>
+ <result pre="interpreter to be ported, but this is written in mainstream" exact="Java" post="and should not be particularly problematic for most object-oriented"/>
+ <result pre="be particularly problematic for most object-oriented targets such as Python," exact="C++" post="and C#. To help in the parsing, there are"/>
+ <result pre="altered. Lensfield2 is designed to run workflow steps written in" exact="Java" post="and build using Apache Maven http://maven.apache.org/, utilising Maven's dependency"/>
+ <result pre="has been successfully used in running the parser and subsequent" exact="software" post="over the 40,000 files in the test datasets 1-4"/>
+ <result pre="taking part. Similarly, others may wish to delegate this to" exact="software" post="agents which poll resources and aggregate material for uploading."/>
+ <result pre="searchable through SPARQL endpoint. Institutional repositories, DSpace Institutional repositories (running" exact="software" post="such as DSpace http://www.dspace.org/ or Fedora http://fedora-commons.org/) may be"/>
+ <result pre="- besides accounting for particular cases. Avogadro Avogadro is an" exact="open source," post="cross-platform desktop application to manipulate and visualize chemical data"/>
+ <result pre="from these structures is present for many of the major" exact="computational chemistry" post="codes Quixote targets such as GAMESS(US), GAMESS-UK, Gaussian, NWChem,"/>
+ <result pre="chemistry codes Quixote targets such as GAMESS(US), GAMESS-UK, Gaussian, NWChem," exact="MOPAC" post="and others. These dialogs allow the user to change"/>
+ <result pre="significantly lower barriers for both deposition and retrieval of relevant" exact="computational chemistry" post="output. Avogadro forms a central part of the computational"/>
+ <result pre="computational chemistry output. Avogadro forms a central part of the" exact="computational chemistry" post="workflow, but is in desparate need of high quality"/>
+ <result pre="repositories is a good start, but having high quality, discoverable" exact="computational chemistry" post="output would significantly improve efficiency in the field. Widespread"/>
+ <result pre="1 The first use case consisted of 1095 files in" exact="Gaussian" post="logfile format contributed by Dr. Anna Croft of the"/>
+ <result pre="varied than the Croft sample and include studies on Möbius" exact="computational chemistry," post="transitional metal complexes and transition state geometries. A considerable"/>
+ <result pre="content and, where possible, their intent. Test dataset 3 The" exact="NWChem" post="distribution (NWChem-6.0) contains a directory ( /QA/tests/) with a"/>
+ <result pre="number of calculations were performed in peptide systems using the" exact="Gaussian" post="quantum chemistry package. These calculations represent an exhaustive study"/>
+ <result pre="of calculations were performed in peptide systems using the Gaussian" exact="quantum chemistry" post="package. These calculations represent an exhaustive study (whose results"/>
+ <result pre="Ramachandran angles ϕ and ψ. This totals more than 35000" exact="Gaussian" post="logfiles, all generated at the standard level of verbosity,"/>
+ <result pre="Conclusions Each day, countless calculations are run by thousands of" exact="computational chemistry" post="researchers around the world, on everything from ageing, dusty"/>
+ <result pre="requires knowledge of the code, or the use of specific" exact="software" post="that understands the output. A standard semantic format will:"/>
+ <result pre="system and he has been the main developer of the" exact="software" post="tools. PS has written the manuscript, and collaborated in"/>
+ <result pre="manuscript. Appendixes Appendix A. Template for parsing a link from" exact="Gaussian" post="log files A template to parse the output from"/>
+ <result pre="to parse the output from the 601 link output in" exact="Gaussian" post="logfiles. (The code for beta eigenvalues has been omitted"/>
+ <result pre="B. Dictionary for Computational chemistry The current dictionary for (code-independent)" exact="computational chemistry." post="A few entries are shown in full; most show"/>
+ <result pre="title=&quot;Computational chemistry concepts - CompChem concepts&quot; Top level dictionary for" exact="computational chemistry" post="Concepts in this dictionary are general throughout computational chemistry"/>
+ <result pre="for computational chemistry Concepts in this dictionary are general throughout" exact="computational chemistry" post="and are used extensively in the http://www.xml-cml.org/convention/compchem/&quot;&amp;gt;compchem convention to"/>
+ <result pre="extensively in the http://www.xml-cml.org/convention/compchem/&quot;&amp;gt;compchem convention to describe the structure of" exact="computational chemistry." post="NOTE: Many of the entries are still being developed."/>
+ <result pre="Peter Murray-Rust Joe Townsend A list of computational jobs A" exact="quantum chemistry" post="calculation is often comprised of a series of subtasks,"/>
+ <result pre="fine optimisation -&amp;gt; NMR Spectrum Analysis; this is because most" exact="quantum chemistry" post="software packages are designed to be modularised and only"/>
+ <result pre="-&amp;gt; NMR Spectrum Analysis; this is because most quantum chemistry" exact="software" post="packages are designed to be modularised and only to"/>
+ <result pre="task The job concept represents a computational job performed by" exact="quantum chemistry" post="software, e.g. geometry optimisation job, frequency analysis job. The"/>
+ <result pre="required The computing environment concept refers to a hardware platform," exact="software" post="application, the operating system and any hardware and software"/>
+ <result pre="platform, software application, the operating system and any hardware and" exact="software" post="configurations used in order to run the job or"/>
+ <result pre="and output of the model but is supplementary to the" exact="software" post="application to run properly and may vary from machine"/>
+ <result pre="shell calculations this equals the number of beta electrons 5" exact="Gaussian" post="5 alpha electrons cmlx:format=&quot;&quot; units=&quot;si:none&quot; unitType=&quot;unitType:none&quot;&amp;gt; Basis set 6-31G(d)"/>
+ <result pre="beta electrons 5 Gaussian 5 alpha electrons cmlx:format=&quot;&quot; units=&quot;si:none&quot; unitType=&quot;unitType:none&quot;&amp;gt;" exact="Basis" post="set 6-31G(d) GaussianStandard basis: 6-31G(d) units=&quot;si:none&quot; unitType=&quot;unitType:none&quot;&amp;gt; Date job"/>
+ <result pre="queue. 2006-11-20T00:00:00Z dataType=&quot;xsd:double&quot; cmlx:format=&quot;&quot; unitType=&quot;unitType:electric_dipole_moment&quot;&amp;gt; Electric Dipole moment magnitude 0.00" exact="Gaussian" post="Dipole moment (field-independent basis, Debye): × = 0.0000 Y"/>
+ <result pre="0.0488271 0.0243151 0.0849119 -0.0346652 0.0849119 -0.0737326 0.0600418 -0.0346652 0.0600418 0.0488271" exact="Gaussian" post="dataType=&quot;xsd:double&quot; cmlx:format=&quot;cml:array&quot;&amp;gt; Cartesian Force constants A symmetric matrix (3*N"/>
+ <result pre="unitType=&quot;unitType:none&quot;&amp;gt; Spin multiplicity 1 Appendix C. CML produced from a" exact="Gaussian" post="log file A complete semantic parse for a Gaussian"/>
+ <result pre="a Gaussian log file A complete semantic parse for a" exact="Gaussian" post="log file (Dr Anna Croft, for methane CH4). The"/>
+ <result pre="http:///&quot; xmlns:compchem=&quot;http://www.xml-cml.org/dictionary/compchem http:///&quot; xmlns:g=&quot;http://www.xml-cml.org/dictionary/gaussian/&quot; xmlns:xsd=&quot; http://www.w3.org/2001/XMLSchema&quot; xmlns:nonsi=&quot; http://www.xml-cml.org/unit/nonSi/&quot; xmlns:cml=&quot; http://www.xml-cml.org/dictionary/cml/&quot;&amp;gt;" exact="Gaussian" post="03 GINC-DEEPTHOUGHT WWW-DATA 2006-11-20T00:00:00Z CH4 x86-Linux-G03RevB.04 20-Nov-2006 Gaussian 03"/>
+ <result pre="xmlns:cml=&quot; http://www.xml-cml.org/dictionary/cml/&quot;&amp;gt; Gaussian 03 GINC-DEEPTHOUGHT WWW-DATA 2006-11-20T00:00:00Z CH4 x86-Linux-G03RevB.04 20-Nov-2006" exact="Gaussian" post="03 2-Jun-2003 x86-Linux-G03RevB.04 5 5 5 5 23 (6D,"/>
+ <result pre="X Knox JE Hratchian HP Cross JB Bakken V Adamo" exact="C" post="Jaramillo J Gomperts R Stratmann RE Yazyev O Austin"/>
+ <result pre="R Stratmann RE Yazyev O Austin AJ Cammi R Pomelli" exact="C" post="Ochterski JW Ayala PY Morokuma K Voth GA Salvador"/>
+ <result pre="M Gill PMW Johnson B Chen W Wong MW Gonzalez" exact="C" post="Pople JA Gaussian 03, Revision C.02 2004 Gaussian, Inc.,"/>
+ <result pre="Johnson B Chen W Wong MW Gonzalez C Pople JA" exact="Gaussian" post="03, Revision C.02 2004 Gaussian, Inc., Wallingford, CT Gordon"/>
+ <result pre="B Neogrady P Seijo L MOLCAS: A program package for" exact="computational chemistry" post="Comp Mat Sci 2003 28 222 239 10.1016/S0927-0256(03)00109-5 Echenique"/>
+ <result pre="10.1080/00268970701757875 Shao Y Molnar LF Jung Y Kussmann J Ochsenfeld" exact="C" post="Brown ST Gilbert AT Slipchenko LV Levchenko SV O'Neill"/>
+ <result pre="AK Chipman DM Keil FJ Warshel A Hehre WJ Schaefer" exact="HF" post="Kong J Krylov AI Gill PM Head-Gordon M Advances"/>
+ <result pre="Head-Gordon M Advances in methods and algorithms in a modern" exact="quantum chemistry" post="program package Phys Chem Chem Phys 2006 8 3172"/>
+ <result pre="10.1002/jcc.20028 15067684 Cancès E DeFranceschi M Kutzelnigg W Le Bris" exact="C" post="Maday Y Ciarlet P, Le Bris C Computational quantum"/>
+ <result pre="W Le Bris C Maday Y Ciarlet P, Le Bris" exact="C" post="Computational quantum chemistry: A primer Handbook of numerical analysis."/>
+ <result pre="E Moser A Range K Nieto Faza O Silva Lopez" exact="C" post="Rodriguez de Lera A Schaftenaar G Lopez X Lee"/>
+ <result pre="R Howard MT Hutchison GR Murray-Rust P Rzepa HS Steinbeck" exact="C" post="Wegner J Willighagen EL The Blue Obelisk - Interoperability"/>
+ <result pre="Sun L Gurumoorthi V Chase J Li J Windus TL" exact="Basis" post="Set Exchange: A community database for computational sciences J"/>
+ <result pre="NM Tenderholt AL Langner KM cclib: a library for package-independent" exact="computational chemistry" post="algorithms J Comput Chem 2008 29 839 845 10.1002/jcc.20823"/>
+ <result pre="J Comput Chem 2008 29 839 845 10.1002/jcc.20823 17849392 Steinbeck" exact="C" post="Han Y Kuhn S Horlacher O Luttmann E Willighagen"/>
+ <result pre="E Willighagen EL The Chemistry Development Kit (CDK): An open-source" exact="Java" post="library for chemo- and bioinformatics J Chem Inf Comput"/>
+</results>

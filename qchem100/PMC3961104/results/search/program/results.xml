@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="program">
+ <result pre="10.7717/peerj.277 : Biochemistry: Computational Biology: Computational Science FragBuilder: an efficient" exact="Python" post="library to setup quantum chemistry calculations on peptides models"/>
+ <result pre="Biology: Computational Science FragBuilder: an efficient Python library to setup" exact="quantum chemistry" post="calculations on peptides models Christensen Anders S. 1 andersx@nano.ku.dk"/>
+ <result pre="article must be cited. https://peerj.com/articles/277 Abstract We present a powerful" exact="Python" post="library to quickly and efficiently generate realistic peptide model"/>
+ <result pre="generated peptides can then be geometry optimized by the MMFF94" exact="molecular mechanics" post="force field via convenient functions inside the library. Finally,"/>
+ <result pre="or PDB formats, or directly as input files for a" exact="quantum chemistry" post="program. FragBuilder is freely available at https://github.com/jensengroup/fragbuilder/ under the"/>
+ <result pre="is freely available at https://github.com/jensengroup/fragbuilder/ under the terms of the" exact="BSD" post="open source license. Peptides Computational chemistry Molecular modeling Proteins"/>
+ <result pre="freely available at https://github.com/jensengroup/fragbuilder/ under the terms of the BSD" exact="open source" post="license. Peptides Computational chemistry Molecular modeling Proteins Biochemistry Funding"/>
+ <result pre="example, calculations on peptides have been used to parametrize protein-specific" exact="molecular mechanics" post="force fields, and models for NMR properties of proteins"/>
+ <result pre="Scheurer &amp;amp; Brüschweiler, 2000). Recently, we have used the presented" exact="Python" post="library to carry out calculations on peptides modeling the"/>
+ <result pre="an automated, scripting fashion. The PeptideBuilder library is written in" exact="Python" post="and is therefore very attractive for this purpose. Our"/>
+ <result pre="importantly, our library includes methods for geometry optimization with a" exact="molecular mechanics" post="force field, efficient conformational sampling from continuous probability distributions"/>
+ <result pre="output formats or, optionally, directly as input file for a" exact="quantum chemistry" post="program. Currently Gaussian 09 ( Frisch et al., 2009)"/>
+ <result pre="directly as input file for a quantum chemistry program. Currently" exact="Gaussian" post="09 ( Frisch et al., 2009) is supported via"/>
+ <result pre="supported through the file writer. Methods FragBuilder is implemented in" exact="Python" post="and is a library that can be imported and"/>
+ <result pre="a library that can be imported and used in simple" exact="Python" post="scripting style. Python is attractive, since a very large"/>
+ <result pre="can be imported and used in simple Python scripting style." exact="Python" post="is attractive, since a very large number of scientific"/>
+ <result pre="Open Babel. Especially, the code for manipulating a molecular structure," exact="molecular mechanics" post="and file writers from Open Babel are used in"/>
+ <result pre="NumPy mathematics library ( Oliphant, 2006) and Open Babel with" exact="Python" post="bindings. These packages are already available through package managers"/>
+ <result pre="virtually every recent Linux distribution, or otherwise freely available and" exact="open source." post="Functionality and Usage The functionality to create a peptide"/>
+ <result pre="BASILISK library, read PDB files and write input files for" exact="Gaussian" post="09. An overview of the available class as well"/>
+ <result pre="G09_energy Classes to create input files for QM calculations in" exact="Gaussian" post="09 Creating peptides The structure of a peptide molecule"/>
+ <result pre="The structure of a peptide molecule is generated as a" exact="Python" post="object by using the Peptide class instantiated with the"/>
+ <result pre="for a residue using the BASILISK library optimize Perform a" exact="molecular mechanics" post="optimization using the MMFF94 force field regularize Perform the"/>
+ <result pre="carried out. For the reasons mentioned above, FragBuilder offers specialized" exact="molecular mechanics" post="optimization routines, specifically designed to constrain the dihedral angles"/>
+ <result pre="pair, and a geometry optimization at the B3LYP/6-31+G(d,p) level in" exact="Gaussian" post="09 could not start (at default settings) due to"/>
+ <result pre="Babel’s OBConversion.WriteFile() method. For instance, an input file for the" exact="quantum chemistry" post="program GAMESS ( Schmidt et al., 1993) can be"/>
+ <result pre="format. FragBuilder additionally offers an interface to write input-files for" exact="Gaussian" post="09, beyond the capabilities of Open Babel. Currently, it"/>
+ <result pre="generate a file for geometry optimization of a peptide in" exact="Gaussian" post="09 at the B3LYP/6-31G(d) level (using the fragbulder.G09_opt class)"/>
+ <result pre="Stewart, 2007) for geometry optimization. Other classes that interface to" exact="Gaussian" post="09 are the fragbuilder.G09_NMR and fragbuilder.G09_energy classes, which are"/>
+ <result pre="steric clashes and prepare the structure for use in a" exact="quantum chemistry" post="program. In addition, the file writers accommodate nearly 100"/>
+ <result pre="Peptide class wraps functionality from Open Babel offered through its" exact="Python" post="interface. The molecular structure is stored as an Open"/>
+ <result pre="by wrapping and combining functionality from Open Babel. FragBuilder is" exact="open source" post="and published under the BSD 2-Clause license. Note that"/>
+ <result pre="Open Babel. FragBuilder is open source and published under the" exact="BSD" post="2-Clause license. Note that the packaged BASILISK library is"/>
+ <result pre="10.1093/nar/28.1.235 10592235 Case, Scheurer &amp;amp; Brüschweiler (2000) Case DA Scheurer" exact="C" post="Brüschweiler R Static and dynamic effects on vicinal scalar"/>
+ <result pre="JM Klene M Knox JE Cross JB Bakken V Adamo" exact="C" post="Jaramillo J Gomperts R Stratmann RE Yazyev O Austin"/>
+ <result pre="R Stratmann RE Yazyev O Austin AJ Cammi R Pomelli" exact="C" post="Ochterski JW Martin RL Morokuma K Zakrzewski VG Voth"/>
+ <result pre="Farkas O Foresman JB Ortiz JV Cioslowski J Fox DJ" exact="Gaussian" post="09 Revision D.01 2009 Wallingford, CT Gaussian Inc Halgren"/>
+ <result pre="J Fox DJ Gaussian 09 Revision D.01 2009 Wallingford, CT" exact="Gaussian" post="Inc Halgren (1996) Halgren TA Merck molecular force field."/>
+ <result pre="et al. (2011) O’Boyle NM Banck M James CA Morley" exact="C" post="Vandermeersch T Hutchinson GR Open Babel: an open chemical"/>
+ <result pre="MZ Sydykova DK Meyer AG Wilke CO PeptideBuilder: a simple" exact="Python" post="library to generate model peptides PeerJ 2013 1 e277"/>
+ <result pre="Vila JA Arnautova YA Martin OA Scheraga HA Quantum-mechanics-derived 13" exact="C" post="α chemical shift server ( CheShift) for protein structure"/>
+</results>

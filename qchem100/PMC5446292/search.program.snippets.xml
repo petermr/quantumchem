@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="qchem100/PMC5446292/results/search/program/results.xml">
+  <result pre="A17.02.0211R : ARTICLES: Theoretical Methods and Algorithms A comparison between" exact="quantum chemistry" post="and quantum Monte Carlo techniques for the adsorption of"/>
+  <result pre="can be accounted for by the addition of pairwise interatomic" exact="C" post="6 R −6 terms to the DFT energy or"/>
+  <result pre="of pairwise interatomic C 6 R −6 terms to the" exact="DFT" post="energy or by non-local functionals. 6–8 In this work,"/>
+  <result pre="the van der Waals corrected and van der Waals inclusive" exact="DFT" post="methods as van der Waals density-functionals. Theoretically these corrections"/>
+  <result pre="R in order to remove the attractive singularity from the" exact="C" post="6 R −6 terms. These parameters can be obtained"/>
+  <result pre="chemical methods constitute a hierarchy which starting from the one-particle" exact="Hartree–Fock" post="(HF) approximation, allows for a systematic treatment of the"/>
+  <result pre="details are presented in Secs. II B–II D for plane-wave," exact="Gaussian" post="basis, and DMC calculations, respectively. Section III summarizes all"/>
+  <result pre="In the former schemes, a correction is added to the" exact="DFT" post="total energy after the self-consistent-field (SCF) cycle is converged,"/>
+  <result pre="coupled-cluster methods. The space of the occupied orbitals from the" exact="HF" post="calculation is projected out from the PGTOs, ensuring that"/>
+  <result pre="obtain PGTOs invokes a pseudization procedure of the sharply peaked" exact="Gaussian" post="basis sets, which follows the work of Kresse and"/>
+  <result pre="methods, we first minimize the number of virtual orbitals. Pseudized" exact="Gaussian" post="orbitals were placed only on the top-most layer of"/>
+  <result pre="Li 8H 8 simulation cell. C. Gaussian-basis calculations The Gaussian-type-orbital-based" exact="HF" post="calculations were performed with the crystal program package. 63"/>
+  <result pre="Ref. 22. The effect of the augmented orbitals on the" exact="HF" post="energy was estimated via the first order singles. 67"/>
+  <result pre="2 (740 eV 2). The imaginary time evolution of the" exact="Schrödinger" post="equation has been performed with the usual short time"/>
+  <result pre="the pseudopotentials. The single particle orbitals have been obtained by" exact="DFT" post="plane-wave calculations using the local density approximation and a"/>
+  <result pre="the (001) surface of LiH. We present the results of" exact="DFT" post="calculations, different periodic MP2 and coupled-cluster techniques, and compare"/>
+  <result pre="1. We first discuss the convergence of the DFT-PBE and" exact="HF" post="adsorption energies with respect to the system size. DFT-PBE"/>
+  <result pre="adsorption energies with respect to the system size. DFT-PBE and" exact="HF" post="results using different implementations are summarized in Table II."/>
+  <result pre="The converged results are in excellent agreement using plane-waves and" exact="Gaussian" post="basis sets, with vasp and crystal, respectively. DFT-PBE results"/>
+  <result pre="to the inability of DFT-PBE to describe long-range dispersive interactions." exact="HF" post="results also exhibit a very fast rate of convergence"/>
+  <result pre="neglect of any electronic correlation effects. TABLE II. DFT-PBE and" exact="HF" post="adsorption energies for water on 2-layer LiH substrates with"/>
+  <result pre="with 64-atoms is shown in Fig. 1. The DFT-PBE and" exact="HF" post="calculations have been performed with vasp and employ a"/>
+  <result pre="vasp and employ a 500 eV kinetic energy cutoff. The" exact="HF" post="crystal calculations with an AVTZ-quality basis set and a"/>
+  <result pre="value of 14 meV. E ads (meV) k-mesh Atoms PBE" exact="HF" post="(Γ-point) 32 219 10 (Γ-point) 64 215 14 (Γ-point)"/>
+  <result pre="were used to model the LiH slab. AVDZ and AVTZ" exact="Gaussian" post="basis sets were used for the construction of the"/>
+  <result pre="the number of atoms in the supercell. MP2 results utilizing" exact="Gaussian" post="orbitals for the full LiH surface and a finite-size"/>
+  <result pre="and dispersion (attractive). Importantly, electrostatics are already captured at the" exact="DFT" post="or HF levels, while dispersion is not (unless the"/>
+  <result pre="(attractive). Importantly, electrostatics are already captured at the DFT or" exact="HF" post="levels, while dispersion is not (unless the dispersion correction"/>
+  <result pre="not (unless the dispersion correction is added or a special" exact="DFT" post="functional is used, which is able to describe dispersion)."/>
+  <result pre="further layers are added to the slab, as computed by" exact="DFT" post="and HF. In order to isolate the dispersion contribution,"/>
+  <result pre="can be extrapolated to a semi-infinite slab using the pair-specific" exact="C" post="6 coefficients fitted to the actual LMP2 pair energies"/>
+  <result pre="of the slab replication technique of Ref. 84, employing pair-specific" exact="C" post="6 coefficients fitted to the actual LMP2 pair energies."/>
+  <result pre="2-layer model is given in parentheses. No. of layers PBE" exact="HF" post="-D3 LMP2 3 −0.15 −1.51 +5.36 +2.44 4 −0.16"/>
+  <result pre="+2.44 4 −0.16 +7.01 ∞ +8.44 +4.66(+4.97) The PBE and" exact="HF" post="results suggest that for the non-dispersive contributions, the two-layer"/>
+  <result pre="δCCSD(T) results. In summary, we find excellent agreement between high-level" exact="quantum chemistry" post="and QMC techniques as well as between different methods"/>
+  <result pre="85. J. Moellmann and S. Grimme , J. Phys. Chem." exact="C" post="118, 7615 ( 2014). 10.1021/jp501237c 86. E. Kanaki ,"/>
+ </snippets>
+</snippetsTree>

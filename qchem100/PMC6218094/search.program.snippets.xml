@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="qchem100/PMC6218094/results/search/program/results.xml">
+  <result pre="and mostly with inconsistent experimental setups. Here, we develop a" exact="quantum chemistry" post="approach to calculate redox potentials of biochemical reactions and"/>
+  <result pre="and minimizes the concentration of reactive carbonyls. The use of" exact="quantum chemistry" post="can revolutionize our understanding of biochemical phenomena by enabling"/>
+  <result pre="fall short of desired accuracy and coverage. Here, we harness" exact="quantum chemistry" post="tools to enable the high-throughput prediction of reduction potentials"/>
+  <result pre="Unlike GCM, whose smallest distinct unit is a functional group," exact="quantum chemistry" post="directly relates to the atomic and electronic configuration of"/>
+  <result pre="ab initio prediction of molecular energetics. Here, we adopt a" exact="quantum chemistry" post="modeling approach from the field of redox flow battery"/>
+  <result pre="potentials of biochemical redox pairs. Our approach combines ab initio" exact="quantum chemistry" post="estimates with (minimal) calibration against available experimental data. We"/>
+  <result pre="based on predicting biochemical standard redox potentials using a calibrated" exact="quantum chemistry" post="strategy. (A) The four different redox reaction categories considered"/>
+  <result pre="to calibrate redox potentials using linear regression. We developed a" exact="quantum chemistry" post="method for predicting the standard transformed redox potential of"/>
+  <result pre="explored a range of different model chemistries, including combinations of" exact="DFT" post="(density functional theory) functionals or wave-function electronic structure methods,"/>
+  <result pre="solvent, and choice of dispersion correction. We found that a" exact="DFT" post="approach that uses the double-hybrid functional B2PLYP [ 32,"/>
+  <result pre="calibration by linear regression significantly improves the accuracy of our" exact="quantum chemistry" post="predictions. As shown in Table 1, the predictions of"/>
+  <result pre="chemistry predictions. As shown in Table 1, the predictions of" exact="quantum chemistry" post="have a lower mean absolute error (MAE) than those"/>
+  <result pre="while achieving lower prediction accuracy ( Table 1). Therefore, our" exact="quantum chemistry" post="approach can be extended to predict reduction potentials for"/>
+  <result pre="does not depend as heavily on empirical measurements. While the" exact="quantum chemistry" post="method is computationally more expensive than GCM–with a cost"/>
+  <result pre="prediction errors (z-scores) of G2 reactions for molecular fingerprints and" exact="quantum chemistry." post="The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde"/>
+  <result pre="erroneous experimental values. 10.1371/journal.pcbi.1006471.t001 Table 1 Prediction accuracy of the" exact="quantum chemistry" post="and group contribution method modeling approaches. G1 (n ="/>
+  <result pre="= coefficient of determination. Note that for the G1 category," exact="quantum chemistry" post="has a lower MAE, but GCM has higher values"/>
+  <result pre="prediction and analysis of reduction potentials We used the calibrated" exact="quantum chemistry" post="model to predict redox potentials for a database of"/>
+  <result pre="decomposable into the groups spanned by the model. In contrast," exact="quantum chemistry" post="directly takes into account the electronic structure of metabolites"/>
+  <result pre="inherent in group decomposition, which are avoided when using the" exact="quantum chemistry" post="approach. A more illuminating example is that of 3-dehydroshikimate"/>
+  <result pre="of 3-dehydroshikimate with NAD(P)H is irreversible. On the other hand," exact="quantum chemistry" post="methods predict E′ m = −268 mV, which corresponds"/>
+  <result pre="equilibrium concentration difference with respect to the GCM value. The" exact="quantum chemistry" post="prediction thus implies reversibility of the oxidoreductase reaction with"/>
+  <result pre="clear that the GCM prediction is wrong and that the" exact="quantum chemistry" post="approach provides a more accurate assessment of the thermodynamic"/>
+  <result pre="important biochemical reaction. Unlike previous efforts [ 67, 68], our" exact="quantum chemistry" post="approach relies on a two-parameter calibration for each oxidoreductase"/>
+  <result pre="data becomes available—calibrating using more sophisticated regression techniques, such as" exact="Gaussian" post="Process regression [ 69]. Yet, as we have shown,"/>
+  <result pre="derivatives–to the basis set incompleteness and the shortcomings of the" exact="DFT" post="exchange correlation functionals [ 71]. We note, however, that"/>
+  <result pre="with a similar reduction potential. The enhanced resolution provided by" exact="quantum chemistry" post="uncovers important patterns not accessible using traditional analyses. Exemplifying"/>
+  <result pre="from the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon)—a cheminformatics" exact="software" post="widely used in the field of biochemical thermodynamics ["/>
+  <result pre="2017, ChemAxon). Quantum chemistry calculations were performed using the Orca" exact="software" post="package (version 3.0.3) [ 86]. Geometry optimizations were carried"/>
+  <result pre="their optimized geometry. We used the optimized geometries obtained using" exact="DFT" post="as inputs for SPE calculations (see below and SI"/>
+  <result pre="calibration via linear regression was implemented using the SciKit learn" exact="Python" post="library. In order to optimize prediction accuracy, we ran"/>
+  <result pre="of model chemistries, generated by selecting one of ten possible" exact="DFT" post="functionals, two wave function electronic structure methods, three possible"/>
+  <result pre="model chemistry to predict reactions without experimentally measured potentials: a" exact="DFT" post="approach with the double-hybrid functional B2PLYP [ 32, 33],"/>
+  <result pre="categories ( Table 1 and S3 Fig). Hybrid and double-hybrid" exact="DFT" post="functionals have been shown to accurately capture the thermochemistry"/>
+  <result pre="cluster results [ 90, 91]. Therefore, we select this double-hybrid" exact="DFT" post="approach covers the relevant physics of our problem while"/>
+  <result pre="maximizing predictive power. Although we explored a large set of" exact="DFT" post="functionals, wave function methods, and basis sets, further improvements"/>
+  <result pre="molecular fingerprints and group contribution method We used the RDKit" exact="software" post="tool ( http://www.rdkit.org), to obtain binary molecular fingerprints of"/>
+  <result pre="will return the experimental energies. Thus, for fair comparison against" exact="quantum chemistry" post="we used the GCM code underneath eQuilibrator to obtain"/>
+  <result pre="from experiment by a similar amount for both the calibrated" exact="quantum chemistry" post="and fingerprint-based modeling approaches. In order to make the"/>
+  <result pre="energy (SPE) model chemistry. The model chemistry used consists of" exact="density functional theory" post="with the B2PLYP double-hybrid functional, the DefBas-5 Orca basis"/>
+  <result pre="data file. S3 Table A detailed description of the Default" exact="Basis" post="(DefBas) sets in Orca version 3.0.3. The notation SV(xxx/yyy)"/>
+  <result pre="for additional data file. S4 Table Prediction accuracy of the" exact="quantum chemistry," post="molecular fingerprints, and group contribution method modeling approaches. The"/>
+  <result pre="a subspace of possible model chemistries generated from selecting a" exact="DFT" post="(or wave function method), a basis set, an implicit"/>
+  <result pre="a dispersion correction from a total set of: 10 different" exact="DFT" post="functionals and 2 wave-function methods, 3 possible basis sets,"/>
+  <result pre="prediction accuracy. Quantum chemical predictions were performed using the double-hybrid" exact="DFT" post="functional B2PLYP, the DefBas-2 Orca basis set, COSMO implicit"/>
+  <result pre="prediction errors (z-scores) of G2 reactions for molecular fingerprints and" exact="quantum chemistry." post="The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde"/>
+  <result pre="experimental redox potentials and predicted potentials with the selected calibrated" exact="quantum chemistry" post="approach (upper four panels) and group contribution method (GCM)"/>
+  <result pre="redox categories. Quantum chemical predictions were performed using the double-hybrid" exact="DFT" post="functional B2PLYP, the DefBas-2 Orca default basis set, the"/>
+  <result pre="file. S4 Fig Detection of experimental outliers using a calibrated" exact="quantum chemistry" post="approach and MACCS fingerprint predictions for all four reaction"/>
+  <result pre="potential predictions (pH = 7, I = 0.25) using calibrated" exact="quantum chemistry" post="with our top-two model chemistries. As discussed in the"/>
+  <result pre="geometry optimization and single point energy (SPE) estimates using our" exact="quantum chemistry" post="method. Distributions are over the entire set of molecular"/>
+  <result pre="10.1039/c4cp04538f 25503399 25 Huskinson B , Marshak MP , Suh" exact="C" post=", Er S , Gerhardt MR , Galvin CJ"/>
+  <result pre="505: 195– 198. 10.1038/nature12909 24402280 26 Er S , Suh" exact="C" post=", Marshak MP , Aspuru-Guzik A . Computational design"/>
+  <result pre="Yim H , Haselbeck R , Niu W , Pujol-Baxley" exact="C" post=", Burgard A , Boldt J , et al."/>
+  <result pre="A , van Rossum HM , Seifar RM , Ras" exact="C" post=", Daran J-M , et al. Determination of the"/>
+  <result pre="Hadadi N , Ataman M , Hatzimanikatis V , Panayiotou" exact="C" post=". Molecular thermodynamics of metabolism: quantum thermochemical calculations for"/>
+  <result pre="10453. 10.1039/c4cp05825a 25799954 69 Rasmussen CE , Williams CKI ." exact="Gaussian" post="Processes for Machine Learning. MIT Press; 2006. 70 Dewar"/>
+  <result pre="CE , Williams CKI . Gaussian Processes for Machine Learning." exact="MIT" post="Press; 2006. 70 Dewar MJS , Trinajstic N ."/>
+  <result pre="7: 2490– 2495. 10.1021/acs.jpclett.6b00893 27295124 73 Taylor M , Scott" exact="C" post=", Grogan G . F420-dependent enzymes—potential for applications in"/>
+  <result pre="10.1099/mic.0.27679-0 15870477 76 Zhang W , Zhang M , Gao" exact="C" post=", Zhang Y , Ge Y , Guo S"/>
+  <result pre="EMBO Press; 2007; 3: 121. 86 Neese F . The" exact="ORCA" post="program system WIREs Comput Mol Sci. John Wiley &amp;amp;"/>
+ </snippets>
+</snippetsTree>
