@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Sequence of gates in a single Trotter step of the digital quantum simulation of the Hamiltonian in 
+  <a ref-type="disp-formula" rid="eq10" href="#eq10">equation (5)</a> describing the H
+  <sub>2</sub> molecule.
+ </div>
+ <p>Notice that, for the sake of optimising the number of gates, we swap the logic label of the third and fourth physical qubits. (
+  <span class="bold">a</span>) Original protocol including Mølmer-Sørensen (MS) multiqubit gates (light green), 
+  <div id="d33e755" class="inline-formula">
+   <span id="d33e756" xlink:href="srep27836-m30.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="d33e758" class="inline-formula">
+   <span id="d33e759" xlink:href="srep27836-m31.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where 
+  <div id="d33e761" class="inline-formula">
+   <span id="d33e762" xlink:href="srep27836-m32.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and intermediate unitaries (yellow) 
+  <div id="d33e764" class="inline-formula">
+   <span id="d33e765" xlink:href="srep27836-m33.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="d33e768" class="inline-formula">
+   <span id="d33e769" xlink:href="srep27836-m34.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where the subindex 
+  <span class="italic">j</span> means that it is applied to the 
+  <span class="italic">j</span>-th qubit. The Trotter step also contains 
+  <span class="italic">Z</span>
+  <sub>
+   <span class="italic">π</span>/2
+  </sub>-rotations (purple) 
+  <div id="d33e784" class="inline-formula">
+   <span id="d33e785" xlink:href="srep27836-m35.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="d33e788" class="inline-formula">
+   <span id="d33e789" xlink:href="srep27836-m36.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, single-qubit gates (dark blue) 
+  <div id="d33e791" class="inline-formula">
+   <span id="d33e792" xlink:href="srep27836-m37.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, with 
+  <div id="d33e794" class="inline-formula">
+   <span id="d33e795" xlink:href="srep27836-m38.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="d33e797" class="inline-formula">
+   <span id="d33e798" xlink:href="srep27836-m39.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="d33e800" class="inline-formula">
+   <span id="d33e801" xlink:href="srep27836-m40.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and 
+  <div id="d33e803" class="inline-formula">
+   <span id="d33e804" xlink:href="srep27836-m41.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and two-qubit gates (light blue) 
+  <div id="d33e807" class="inline-formula">
+   <span id="d33e808" xlink:href="srep27836-m42.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, with the phase 
+  <span class="italic">θ</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> depending on the qubits involved, such that 
+  <span class="italic">θ</span>
+  <sub>12</sub> = 2
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">A</span>
+  </sub>, 
+  <span class="italic">θ</span>
+  <sub>13</sub> = 
+  <span class="italic">θ</span>
+  <sub>24</sub> = 2
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">C</span>
+  </sub> − 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">D</span>
+  </sub>, 
+  <span class="italic">θ</span>
+  <sub>14</sub> = 
+  <span class="italic">θ</span>
+  <sub>23</sub> = 2
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">C</span>
+  </sub>, and 
+  <span class="italic">θ</span>
+  <sub>34</sub> = 2
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">B</span>
+  </sub>. (
+  <span class="bold">b</span>) Trotter step with MS multiqubit gates decomposed into two-qubit gates (dark green). Here, 
+  <div id="d33e882" class="inline-formula">
+   <span id="d33e883" xlink:href="srep27836-m43.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and 
+  <div id="d33e885" class="inline-formula">
+   <span id="d33e886" xlink:href="srep27836-m44.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. (
+  <span class="bold">c</span>) Optimised Trotter step, in which we have expressed the algorithm in terms of 
+  <span class="italic">XX</span> gates via the 
+  <span class="italic">Y</span>
+  <sub>
+   <span class="italic">π</span>/2
+  </sub>-rotations (grey) 
+  <div id="d33e902" class="inline-formula">
+   <span id="d33e903" xlink:href="srep27836-m45.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="d33e905" class="inline-formula">
+   <span id="d33e906" xlink:href="srep27836-m46.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and with 
+  <div id="d33e908" class="inline-formula">
+   <span id="d33e909" xlink:href="srep27836-m47.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. (
+  <span class="bold">d</span>) After a complete decomposition into two-qubit gates of the Mølmer-Sørensen gates involved in the simulation of a multiqubit interaction, a simplification of two-qubit gates (red) cancelling each other is shown.
+ </p>
+</div>

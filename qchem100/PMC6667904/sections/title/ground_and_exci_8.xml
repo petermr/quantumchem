@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0009" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ground and excited state calculation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">DFT calculations, based on the SF and SD formulations for the ground state, are executable in RAQET. Table 
+  <a rid="jcc25364-tbl-0004" ref-type="table" href="#jcc25364-tbl-0004">4</a> summarizes the available exchange–correlation (XC) functionals. The Slater–Dirac exchange,
+  <a rid="jcc25364-bib-0116" ref-type="ref" href="#jcc25364-bib-0116">116</a>, 
+  <a rid="jcc25364-bib-0117" ref-type="ref" href="#jcc25364-bib-0117">117</a> Vosko–Wilk–Nusair (VWN) correlation,
+  <a rid="jcc25364-bib-0118" ref-type="ref" href="#jcc25364-bib-0118">118</a> and Perdew–Wang correlation
+  <a rid="jcc25364-bib-0119" ref-type="ref" href="#jcc25364-bib-0119">119</a> are implemented as a local density approximation (LDA) functional. As for the generalized gradient approximation (GGA), the Becke's exchange proposed in 1988 (Becke88),
+  <a rid="jcc25364-bib-0120" ref-type="ref" href="#jcc25364-bib-0120">120</a> Lee–Yang–Parr (LYP) correlation,
+  <a rid="jcc25364-bib-0121" ref-type="ref" href="#jcc25364-bib-0121">121</a> Perdew–Burke–Ernzerhof (PBE) exchange–correlation,
+  <a rid="jcc25364-bib-0122" ref-type="ref" href="#jcc25364-bib-0122">122</a> and revised PBE exchange
+  <a rid="jcc25364-bib-0123" ref-type="ref" href="#jcc25364-bib-0123">123</a> functionals have been implemented. The 1998 Van Voorhis–Scuseria meta‐GGA (VS98) 
+  <a rid="jcc25364-bib-0124" ref-type="ref" href="#jcc25364-bib-0124">124</a> and 2006 Minnesota local meta‐GGA (M06‐L) 
+  <a rid="jcc25364-bib-0125" ref-type="ref" href="#jcc25364-bib-0125">125</a> functional are also included. The hybrid functionals with various degrees of HF exchange,
+  <a rid="jcc25364-bib-0126" ref-type="ref" href="#jcc25364-bib-0126">126</a>, 
+  <a rid="jcc25364-bib-0127" ref-type="ref" href="#jcc25364-bib-0127">127</a>, 
+  <a rid="jcc25364-bib-0128" ref-type="ref" href="#jcc25364-bib-0128">128</a>, 
+  <a rid="jcc25364-bib-0129" ref-type="ref" href="#jcc25364-bib-0129">129</a>, 
+  <a rid="jcc25364-bib-0130" ref-type="ref" href="#jcc25364-bib-0130">130</a>, 
+  <a rid="jcc25364-bib-0131" ref-type="ref" href="#jcc25364-bib-0131">131</a>, 
+  <a rid="jcc25364-bib-0132" ref-type="ref" href="#jcc25364-bib-0132">132</a> as well as the double‐hybrid functionals combined with the HF exchange and the MP2 correlation,
+  <a rid="jcc25364-bib-0133" ref-type="ref" href="#jcc25364-bib-0133">133</a>, 
+  <a rid="jcc25364-bib-0134" ref-type="ref" href="#jcc25364-bib-0134">134</a>, 
+  <a rid="jcc25364-bib-0135" ref-type="ref" href="#jcc25364-bib-0135">135</a>, 
+  <a rid="jcc25364-bib-0136" ref-type="ref" href="#jcc25364-bib-0136">136</a> are available. Some of the functionals have been implemented on the basis of Fortran code repositories.
+  <a rid="jcc25364-bib-0137" ref-type="ref" href="#jcc25364-bib-0137">137</a>, 
+  <a rid="jcc25364-bib-0138" ref-type="ref" href="#jcc25364-bib-0138">138</a> The local response dispersion (LRD) method
+  <a rid="jcc25364-bib-0139" ref-type="ref" href="#jcc25364-bib-0139">139</a>, 
+  <a rid="jcc25364-bib-0140" ref-type="ref" href="#jcc25364-bib-0140">140</a>, 
+  <a rid="jcc25364-bib-0141" ref-type="ref" href="#jcc25364-bib-0141">141</a> is included as a dispersion correction method. For excited states, the time‐dependent DFT (TDDFT) is implemented at the SF level to evaluate excited state energies, electronic transition moments, and oscillator strengths. TDDFT calculations based on the SD formalism will be available after the report on the numerical accuracy for the case of the highly accurate 2c Hamiltonian.
+ </p>
+ <div id="jcc25364-tbl-0004" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 4</span>
+  <div class="caption">
+   <p>Capabilities of XC functionals for DFT calculations</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Type</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of HF exchange</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of MP2 correlation</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">LDA</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SVWN</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">SPW92</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">GGA</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">BLYP</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">PBE</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">revPBE</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Meta‐GGA</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">VS98</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M06‐L</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Hybrid</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">B3LYP</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">20%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">BHHLYP</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">PBE0</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">25%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M05</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">28%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M05‐2X</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">56%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M06</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M06‐2X</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">54%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">M06‐HF</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">100%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Double‐hybrid</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">B2PLYP</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">53%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">B2GPPLYP</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">65%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">36%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐DH</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">12.5%</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐2</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">79.3701%</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</sec>

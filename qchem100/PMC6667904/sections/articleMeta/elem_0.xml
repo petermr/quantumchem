@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6667904</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1002/jcc.25364</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">JCC25364</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="overline" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Software News and Updates</span>
+  </div>
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Software News and Updates</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">RAQET: Large‐scale two‐component relativistic quantum chemistry program package</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib id="jcc25364-cr-0001" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hayami</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Masao</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0002" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Seino</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Junji</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0002" href="#jcc25364-aff-0002" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="aff" rid="jcc25364-aff-0003" href="#jcc25364-aff-0003" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0003" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nakajima</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Yuya</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0004" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nakano</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Masahiko</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0005" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ikabata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Yasuhiro</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0002" href="#jcc25364-aff-0002" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0006" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Yoshikawa</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Takeshi</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0007" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Oyama</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Takuro</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0008" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hiraga</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kenta</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-0009" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hirata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">So</span>
+   </name>
+   <a ref-type="aff" rid="jcc25364-aff-0004" href="#jcc25364-aff-0004" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">4</span>
+   </a>
+   <a ref-type="aff" rid="jcc25364-aff-0005" href="#jcc25364-aff-0005" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">5</span>
+   </a>
+  </contrib>
+  <contrib id="jcc25364-cr-00010" contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nakai</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hiromi</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">nakai@waseda.jp</span>
+   </div>
+   <a ref-type="aff" rid="jcc25364-aff-0001" href="#jcc25364-aff-0001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="aff" rid="jcc25364-aff-0002" href="#jcc25364-aff-0002" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="aff" rid="jcc25364-aff-0004" href="#jcc25364-aff-0004" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">4</span>
+   </a>
+   <a ref-type="aff" rid="jcc25364-aff-0006" href="#jcc25364-aff-0006" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">6</span>
+   </a>
+  </contrib>
+ </div>
+ <aff id="jcc25364-aff-0001" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">1</span>
+  </span>
+  <div content-type="organisation-division" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry and Biochemistry, School of Advanced Science and Engineering</div>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Waseda University</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">3‐4‐1 Okubo, Shinjuku‐ku</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Tokyo</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">169‐8555</div>
+  <span country="JP" class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+ </aff>
+ <aff id="jcc25364-aff-0002" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">2</span>
+  </span>
+  <div content-type="organisation-division" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Waseda Research Institute for Science and Engineering</div>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Waseda University</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">3‐4‐1 Okubo, Shinjuku‐ku</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Tokyo</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">169‐8555</div>
+  <span country="JP" class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+ </aff>
+ <aff id="jcc25364-aff-0003" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">3</span>
+  </span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">PRESTO, Japan Science and Technology Agency</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">4‐18‐81 Honcho, Kawaguchi</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Saitama</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">332‐0012</div>
+  <span country="JP" class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+ </aff>
+ <aff id="jcc25364-aff-0004" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">4</span>
+  </span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CREST, Japan Science and Technology Agency</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">7 Gobancho, Chiyoda‐ku</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Tokyo</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">102‐0076</div>
+  <span country="JP" class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+ </aff>
+ <aff id="jcc25364-aff-0005" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">5</span>
+  </span>
+  <div content-type="organisation-division" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry</div>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">University of Illinois at Urbana‐Champaign</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">600 South Mathews Avenue, Urbana</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Illinois</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">61801</div>
+ </aff>
+ <aff id="jcc25364-aff-0006" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="sup">6</span>
+  </span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">ESICB, Kyoto University, Kyotodaigaku‐Katsura</span>
+  <div content-type="city" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Nishikyo‐ku</div>
+  <div content-type="country-part" class="named-content" xmlns="http://www.w3.org/1999/xhtml">Kyoto</div>
+  <div content-type="post-code" class="named-content" xmlns="http://www.w3.org/1999/xhtml">615‐8520</div>
+  <span country="JP" class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+ </aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="correspondenceTo" class="corresp">
+   <span class="label">*</span>H. Nakai E‐mail: 
+   <span class="email">nakai@waseda.jp</span>
+  </div>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">20</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">9</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+ </pub-date>
+ <pub-date pub-type="ppub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">15</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">39</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">27</span>
+ <span pub-id-type="doi" class="issue-id" xmlns="http://www.w3.org/1999/xhtml">10.1002/jcc.v39.27</span>
+ <span class="fpage" xmlns="http://www.w3.org/1999/xhtml">2333</span>
+ <span class="lpage" xmlns="http://www.w3.org/1999/xhtml">2344</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">13</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">3</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+  </date>
+  <date date-type="rev-recd" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">01</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">03</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2018 Wiley Periodicals, Inc. <copyright-statement>-->
+  <span content-type="article-copyright" class="copyright-statement">© 2018 The Authors Journal of Computational Chemistry Published by Wiley Periodicals, Inc.</span>
+  <div license-type="creativeCommonsBy-nc-nd" class="license">
+   <div class="license-p">This is an open access article under the terms of the 
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://creativecommons.org/licenses/by-nc-nd/4.0/</span> License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.
+   </div>
+  </div>
+ </div>
+ <span content-type="pdf" xlink:type="simple" xlink:href="file:JCC-39-2333.pdf" class="self-uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>The Relativistic And Quantum Electronic Theory (RAQET) program is a new software package, which is designed for large‐scale two‐component relativistic quantum chemical (QC) calculations. The package includes several efficient schemes and algorithms for calculations involving large molecules which contain heavy elements in accurate relativistic formalisms. These calculations can be carried out in terms of the two‐component relativistic Hamiltonian, wavefunction theory, density functional theory, core potential scheme, and evaluation of electron repulsion integrals. Furthermore, several techniques, which have frequently been used in non‐relativistic QC calculations, have been customized for relativistic calculations. This article introduces the brief theories and capabilities of RAQET with several calculation examples. © 2018 The Authors Journal of Computational Chemistry Published by Wiley Periodicals, Inc.</p>
+ </div>
+ <div kwd-group-type="author-generated" class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <span id="jcc25364-kwd-0001" class="kwd">relativistic quantum chemistry</span>
+  <span id="jcc25364-kwd-0002" class="kwd">spin‐free effect</span>
+  <span id="jcc25364-kwd-0003" class="kwd">spin‐dependent effect</span>
+  <span id="jcc25364-kwd-0004" class="kwd">generalized Hartree–Fock</span>
+  <span id="jcc25364-kwd-0005" class="kwd">heavy element</span>
+  <span id="jcc25364-kwd-0006" class="kwd">two‐component relativistic framework</span>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="award-group">
+   <span class="funding-source">The Ministry of Education Culture, Sports, Science and Technology (MEXT)</span>
+  </div>
+  <div class="award-group">
+   <span class="funding-source">Core Research for Evolutional Science and Technology (CREST)</span>
+  </div>
+  <div class="award-group">
+   <span class="funding-source">Japan Science and Technology Agency (JST)</span>
+  </div>
+  <div class="award-group">
+   <span class="funding-source">Precursory Research for Embryonic Science and Technology</span>
+   <span class="award-id">JP17940169</span>
+  </div>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="4" class="fig-count"/>
+  <span count="9" class="table-count"/>
+  <span count="12" class="page-count"/>
+  <span count="9952" class="word-count"/>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">source-schema-version-number</span>
+   <span class="meta-value">2.0</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">component-id</span>
+   <span class="meta-value">jcc25364</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">cover-date</span>
+   <span class="meta-value">October 15, 2018</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">details-of-publishers-convertor</span>
+   <span class="meta-value">Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.6.2 mode:remove_FC converted:31.07.2019</span>
+  </div>
+ </div>
+</article-meta>

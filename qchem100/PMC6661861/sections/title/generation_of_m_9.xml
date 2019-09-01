@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of Most Abundant (Major) Protonation States at pH = 0</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our pipeline is based on performing electronic structure simulations of the most protonated species of each biochemical compound involved in every redox reaction of interest. We run the quantum chemistry simulations on the major protonation states at pH = 0 to avoid errors associated with the prediction of anionic compound energies.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>,
+   <a ref-type="bibr" rid="ref59" href="#ref59">59</a>,
+   <a ref-type="bibr" rid="ref60" href="#ref60">60</a>
+  </span> We use the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon) 
+  <span class="italic">cxcalc majormicrospecies</span> to generate, for each substrate and product involved in a biochemical redox reaction of interest, the major microspecies at pH = 0.
+ </p>
+</sec>

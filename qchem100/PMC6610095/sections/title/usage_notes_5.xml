@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Usage Notes</div>
+ <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">The QM9-G4MP2 database is provided in a compressed file format. The 
+  <span class="italic">data_publication_main.tar.gz</span> file contains all scripts for validation, atomic results and index files (
+  <span class="italic">index_not_converged.txt</span>, 
+  <span class="italic">index_duplicated_structure.txt</span>, and 
+  <span class="italic">index_multi_mol.txt</span>). Files starting with ‘output’ contain log files of G4MP2 calculations for molecules. To run scripts with the default options, all outputs whose name ends with log should be positioned in data_publication/output folder, and for the scripts that perform comparisons to the QM9 database, the xyz files from the QM9 database should be placed in data_publication/ref/dsgdb9nsd/. All scripts require the high-level mathematical library Numpy. Some scripts require the QM9 database, which can be downloaded from figshare
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>. The README.md file stored in the same directory contains additional information for each script.
+ </p>
+ <p id="Par24" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">parse.py</span>: This script parses all G4MP2 outputs in a directory and generates a CSV file that stores a series of energy values obtained from the lines starting with “\1\1”, which are printed at the end of each computation. All energy values of molecules whose calculations do not end normally are not included, and their indices are printed out during running of the script. Pandas is required to run it. It runs in 2~3 hours on an ordinary personal computer.
+ </p>
+ <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">compare_geom.py</span>: This script calculates and stores the distances between all atomic pairs in the geometries of both the QM9 set and our database. The output of this script can be loaded by pickle.load in python. The indices for distances are presented in the lexicographic sort order by the atomic indices.
+ </p>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">compare_energy.py</span>: This script extracts the energies of the QM9 set and calculates 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\rm{E}}}^{QM9}\,-\,{{\rm{E}}}_{B3LYP}^{QM9-G4MP2}$$\end{document}</span>
+    <div id="M10" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+      </div>
+     </div>
+     <span width="0.10em" class="mspace"/>
+     <span class="mo">-</span>
+     <span width="0.10em" class="mspace"/>
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+       <span class="mn">3</span>
+       <span class="mi">L</span>
+       <span class="mi">Y</span>
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+       <span class="mo">-</span>
+       <span class="mi">G</span>
+       <span class="mn">4</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41597_2019_121_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. The output energies are stored in Hartree units. Using numpy.loadtxt(), the output file can be loaded.
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">calculate_atomization.py</span>: This script calculates AEs from 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\rm{E}}}_{B3LYP}^{QM9-G4MP2}$$\end{document}</span>
+    <div id="M12" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+       <span class="mn">3</span>
+       <span class="mi">L</span>
+       <span class="mi">Y</span>
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+       <span class="mo">-</span>
+       <span class="mi">G</span>
+       <span class="mn">4</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41597_2019_121_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. To run this script, calculation results for atomic systems are required. Therefore, 
+  <span class="italic">parse.py</span> in the atom_ref folder should be executed before this script.
+ </p>
+ <p id="Par28" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">count_mol.py</span>: This script counts molecules in the structures belonging to QM9 and QM9-G4MP2 sets and prints the indices of systems including multiple molecules. A library for the analysis of graphs, NetworkX, is required to run it.
+ </p>
+ <p id="Par29" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">count_duplicates.py</span>: This script counts duplicated structures in QM9 and QM9-G4MP2 sets. It takes ~2 days on an ordinary personal computer. A library for analysis of graphs, named NetworkX, is required to run it.
+ </p>
+ <p id="Par30" xmlns="http://www.w3.org/1999/xhtml">Explanations for all the options of each script can be checked through–help option.</p>
+</sec>

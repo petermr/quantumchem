@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="jcc25364-tbl-0002" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 2</span>
+ <div class="caption">
+  <p>Capabilities of HF schemes</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <col align="left" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <thead valign="bottom">
+   <tr style="border-bottom:solid 1px #000000">
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Spin</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Restriction of symmetry
+     <a ref-type="fn" rid="jcc25364-note-0002" href="#jcc25364-note-0002">a</a>
+    </th>
+   </tr>
+  </thead>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">RHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">S</span>
+     <span class="sup">2</span>, 
+     <span class="italic">S</span>
+     <sub>
+      <span class="italic">z</span>
+     </sub>, 
+     <span class="italic">K, K</span>
+     <sub>0</sub>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">UHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">S</span>
+     <sub>
+      <span class="italic">z</span>
+     </sub>, 
+     <span class="italic">K</span>
+     <sub>0</sub>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">ROHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">S</span>
+     <span class="sup">2</span>, 
+     <span class="italic">S</span>
+     <sub>
+      <span class="italic">z</span>
+     </sub>, 
+     <span class="italic">K, K</span>
+     <sub>0</sub>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">SD</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">KRHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">K</span>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">KUHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">K</span> (partially)
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">KROHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">
+     <span class="italic">K</span>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">GHF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">–</td>
+   </tr>
+  </tbody>
+ </table>
+ <div class="table-wrap-foot">
+  <fn id="jcc25364-note-0002" class="fn" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <span class="italic">S</span>
+    <span class="sup">2</span>, 
+    <span class="italic">Sz, K</span>, and 
+    <span class="italic">K</span>
+    <sub>0</sub> mean square and 
+    <span class="italic">z</span>‐component of spin, time‐reversal, and complex conjugation symmetries, respectively.
+   </p>
+  </fn>
+ </div>
+</div>

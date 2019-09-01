@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Fig3" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Fig. 3</span>
+ <div class="caption">
+  <p>Correlation plots of the isotropic (
+   <span class="italic">α</span>
+   <sub>iso</sub>, blue, main plots) and anisotropic (
+   <span class="italic">α</span>
+   <sub>aniso</sub>, red, upper left insets) polarizabilities in the QM7b and AlphaML showcase databases computed at different levels of theory. Normalized probability distributions of the signed percent errors (SPE, computed with respect to the Reference Level of theory on the 
+   <span class="italic">x</span>-axis) are provided in the lower right insets of each panel. Histogram bin widths were set to 0.1% for panels (a) B3LYP/daDZ vs. CCSD/daDZ, (b) SCAN0/daDZ vs. CCSD/daDZ, and (c) B3LYP/daDZ vs. SCAN0/daDZ, and 0.01% for panel (d) B3LYP/daDZ vs. B3LYP/daTZ. For completeness, 
+   <span class="italic">α</span>
+   <sub>iso</sub> and 
+   <span class="italic">α</span>
+   <sub>aniso</sub> values in the AlphaML showcase database are depicted as black circles in the main plots and upper left insets of each panel. Molecules corresponding to the minimum and maximum 
+   <span class="italic">α</span>
+   <sub>iso</sub> and 
+   <span class="italic">α</span>
+   <sub>aniso</sub> SPE values are also depicted in each panel. When computing the minimum and maximum 
+   <span class="italic">α</span>
+   <sub>aniso</sub> SPE values, molecules with very small 
+   <span class="italic">α</span>
+   <sub>aniso</sub> values (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., molecule0001: methane, 
+   <div id="IEq29" class="inline-formula">
+    <div class="alternatives">
+     <span id="M61" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\alpha }_{{\rm{aniso}}}^{{\rm{CCSD/daDZ}}}=2.16\times 1{0}^{-4}$$\end{document}</span>
+     <div id="M62" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">aniso</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">CCSD/daDZ</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">2.16</span>
+      <span class="mo">×</span>
+      <span class="mn">1</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41597_2019_157_Article_IEq29.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> Bohr
+   <span class="sup">3</span> and molecule1009: neopentane, 
+   <div id="IEq30" class="inline-formula">
+    <div class="alternatives">
+     <span id="M63" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\alpha }_{{\rm{aniso}}}^{{\rm{CCSD/daDZ}}}=3.83\times 1{0}^{-4}$$\end{document}</span>
+     <div id="M64" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">aniso</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">CCSD/daDZ</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">3.83</span>
+      <span class="mo">×</span>
+      <span class="mn">1</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41597_2019_157_Article_IEq30.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> Bohr
+   <span class="sup">3</span>) were excluded, as these molecules yielded large (but physically insignificant) SPE values.
+  </p>
+ </div>
+ <div xlink:href="41597_2019_157_Fig3_HTML" id="d29e3909" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

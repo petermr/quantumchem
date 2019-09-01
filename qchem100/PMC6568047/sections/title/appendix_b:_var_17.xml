@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix B: variational quantum simulation with the unitary vibrational coupled cluster ansatz</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We can make use of variational methods to find the low energy spectra of the vibrational Hamiltonian. Inspired by classical computational chemistry, we introduce the unitary vibrational coupled cluster (UVCC) ansatz
+  <div id="eqn38" class="disp-formula">
+   <span class="label">B1</span>|VCC|VCC〉 = exp( = exp(
+   <span class="italic">T[combining circumflex]</span> – 
+   <span class="italic">T[combining circumflex]</span>
+   <span class="sup">†</span>)|Φ
+   <sub>0</sub>〉
+  </div>where the reference state |
+  <span class="bold">Φ</span>
+  <sub>0</sub>〉 is a properly chosen initial state, and is a properly chosen initial state, and 
+  <span class="italic">T</span> is the sum of molecular excitation operators truncated at a specified excitation rank (often single and double excitations)
+  <a rid="cit56" ref-type="bibr" href="#cit56">56</a>
+  <span class="italic">T[combining circumflex]</span> = 
+  <span class="italic">T[combining circumflex]</span>
+  <sub>1</sub> + 
+  <span class="italic">T[combining circumflex]</span>
+  <sub>2</sub> +…with
+  <span xlink:href="c9sc01313j-t39.jpg" id="ugt39" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The initial state can be the product of the ground-state of each mode
+  <div id="eqn39" class="disp-formula">
+   <span class="label">B2</span>|
+   <span class="bold">Φ</span>
+   <sub>0</sub>〉 = | = |
+   <span class="italic">ψ</span>10
+   <span class="italic">ψ</span>20…
+   <span class="italic">ψ</span>
+   <span class="italic">M</span>0〉..
+  </div> Or we can also run a vibrational self-consistent field (VSCF) to get the Hartree–Fock initial state
+  <div id="eqn40" class="disp-formula">
+   <span class="label">B3</span>|
+   <span class="bold">Φ</span>
+   <sub>0</sub>〉 = | = |
+   <span class="italic">φ</span>
+   <span class="sup">1</span>
+   <span class="italic">φ</span>
+   <span class="sup">2</span>…
+   <span class="italic">φ</span>
+   <span class="sup">
+    <span class="italic">M</span>
+   </span>〉,,
+  </div>which is obtained by minimising the energy of the Hamiltonian
+  <div id="eqn41" class="disp-formula">
+   <span class="label">B4</span>
+   <div xlink:href="c9sc01313j-t40.jpg" id="ugt40" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>by solving the self-consistent equation
+  <div id="eqn42" class="disp-formula">
+   <span class="label">B5</span>
+   <span class="italic">H</span>
+   <sub>i</sub>|
+   <span class="italic">φ</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>〉 = = 
+   <span class="italic">E</span>
+   <sub>i</sub>|
+   <span class="italic">φ</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>〉,,
+  </div>with 
+  <span class="italic">H</span>
+  <sub>i</sub> = = 〈
+  <span class="italic">φ</span>
+  <span class="sup">1</span>…
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">i</span>–1
+  </span>
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">i</span>+1
+  </span>…
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">M</span>
+  </span>|
+  <span class="italic">H</span>
+  <sub>0</sub>|
+  <span class="italic">φ</span>
+  <span class="sup">1</span>…
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">i</span>–1
+  </span>
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">i</span>+1
+  </span>…
+  <span class="italic">φ</span>
+  <span class="sup">
+   <span class="italic">M</span>
+  </span>〉..
+ </p>
+</sec>

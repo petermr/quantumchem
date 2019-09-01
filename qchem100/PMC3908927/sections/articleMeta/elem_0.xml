@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">3908927</article-id>
+ <article-id pub-id-type="pmid" class="article-id">24497945</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">PONE-D-13-41128</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1371/journal.pone.0086376</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Chemistry</span>
+   <div class="subj-group">
+    <span class="subject">Computational Chemistry</span>
+    <div class="subj-group">
+     <span class="subject">Semi-Empirical Methods</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Inorganic Chemistry</span>
+    <div class="subj-group">
+     <span class="subject">Inorganic Compounds</span>
+     <div class="subj-group">
+      <span class="subject">Coordination Compounds</span>
+      <span class="subject">Solid State Compounds</span>
+     </div>
+    </div>
+    <div class="subj-group">
+     <span class="subject">Crystal Field Theory</span>
+     <span class="subject">Organometallic Chemistry</span>
+    </div>
+   </div>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Materials Science</span>
+   <div class="subj-group">
+    <span class="subject">Crystallography</span>
+   </div>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Physics</span>
+   <div class="subj-group">
+    <span class="subject">Atomic Physics</span>
+    <div class="subj-group">
+     <span class="subject">Electron Configuration</span>
+     <div class="subj-group">
+      <span class="subject">Electron Shells</span>
+     </div>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Condensed-Matter Physics</span>
+    <div class="subj-group">
+     <span class="subject">Crystallography</span>
+    </div>
+   </div>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Semiempirical Quantum Chemistry Model for the Lanthanides: RM1 (Recife Model 1) Parameters for Dysprosium, Holmium and Erbium</div>
+  <div alt-title-type="running-head" class="alt-title" xmlns="http://www.w3.org/1999/xhtml">RM1 Parameters for Dysprosium, Holmium and Erbium</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Filho</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Manoel A. M.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dutra</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">José Diogo L.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rocha</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Gerd B.</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Simas</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alfredo M.</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Freire</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ricardo O.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="corresp" rid="cor1" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">*</span>
+   </a>
+  </contrib>
+ </div>
+ <aff id="aff1" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Pople Computational Chemistry Laboratory, Departamento de Química, Universidade Federal de Sergipe, São Cristóvão, SE, Brazil</div>
+ </aff>
+ <aff id="aff2" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Departamento de Química, CCEN, Universidade Federal da Paraíba, João Pessoa, PB, Brazil</div>
+ </aff>
+ <aff id="aff3" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Departamento de Química Fundamental, Universidade Federal de Pernambuco, Recife, PE, Brazil</div>
+ </aff>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="editor" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Salahub</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Dennis</span>
+   </name>
+   <span class="role" xmlns="http://www.w3.org/1999/xhtml">Editor</span>
+   <a href="#edit1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+ </div>
+ <aff id="edit1" class="aff">
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">University of Calgary, Canada</div>
+ </aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">* E-mail: 
+   <span class="email">rfreire@ufs.br</span>
+  </div>
+  <fn fn-type="COI-statement" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <span class="bold">Competing Interests: </span>The authors have declared that no competing interests exist.
+   </p>
+  </fn>
+  <fn fn-type="con" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Conceived and designed the experiments: ROF GBR AMS. Performed the experiments: MAMF JDLD ROF. Analyzed the data: MAMF JDLD ROF. Wrote the paper: AMS ROF. Coded the model into MOPAC: GBR. Conceived the parameterization techniques: AMS GBR ROF. Conceived the sampling of the reference structures and the statistical validation of the model: AMS.</p>
+  </fn>
+ </div>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">31</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">9</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">e86376</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">8</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2013</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">6</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">12</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2013</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© 2014 Filho et al</span>
+  <span class="copyright-year">2014</span>
+  <span class="copyright-holder">Filho et al</span>
+  <div xlink:href="http://creativecommons.org/licenses/by/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>Complexes of dysprosium, holmium, and erbium find many applications as single-molecule magnets, as contrast agents for magnetic resonance imaging, as anti-cancer agents, in optical telecommunications, etc. Therefore, the development of tools that can be proven helpful to complex design is presently an active area of research. In this article, we advance a major improvement to the semiempirical description of lanthanide complexes: the Recife Model 1, RM1, model for the lanthanides, parameterized for the trications of Dy, Ho, and Er. By representing such lanthanide in the RM1 calculation as a three-electron atom with a set of 5 d, 6 s, and 6 p semiempirical orbitals, the accuracy of the previous sparkle models, mainly concentrated on lanthanide-oxygen and lanthanide-nitrogen distances, is extended to other types of bonds in the trication complexes’ coordination polyhedra, such as lanthanide-carbon, lanthanide-chlorine, etc. This is even more important as, for example, lanthanide-carbon atom distances in the coordination polyhedra of the complexes comprise about 30% of all distances for all complexes of Dy, Ho, and Er considered. Our results indicate that the average unsigned mean error for the lanthanide-carbon distances dropped from an average of 0.30 Å, for the sparkle models, to 0.04 Å for the RM1 model for the lanthanides; for a total of 509 such distances for the set of all Dy, Ho, and Er complexes considered. A similar behavior took place for the other distances as well, such as lanthanide-chlorine, lanthanide-bromine, lanthanide, phosphorus and lanthanide-sulfur. Thus, the RM1 model for the lanthanides, being advanced in this article, broadens the range of application of semiempirical models to lanthanide complexes by including comprehensively many other types of bonds not adequately described by the previous models.</p>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="funding-statement">This work received financial support from the Brazilian agencies, institutes and networks: CNPq, FAPITEC-SE, FACEPE (Pronex), and INAMI. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</div>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="10" class="page-count"/>
+ </div>
+</article-meta>

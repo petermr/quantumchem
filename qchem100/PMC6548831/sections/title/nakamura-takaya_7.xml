@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Nakamura-Takayanagi-Sato (NTS) Formula</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A flexible approach to describe the deep tunneling phenomenology was proposed 30 years ago by Nakamura et al. (
+  <a rid="B67" ref-type="bibr" href="#B67">1989</a>) and Sato (
+  <a rid="B77" ref-type="bibr" href="#B77">2005</a>): their formula evolves smoothly behavior down to low temperature and with respect to the tendency toward the Wigner limit (Wigner, 
+  <a rid="B97" ref-type="bibr" href="#B97">1948</a>):
+ </p>
+ <div id="E34" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(32)</span>
+  <div id="M43" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">R</span>
+          <div class="msup">
+           <div class="mrow">
+            <div class="mrow">
+             <span stretchy="true" class="mo">(</span>
+             <div class="mrow">
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">T</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">2</span>
+               </div>
+              </div>
+              <span class="mo">+</span>
+              <div class="msubsup">
+               <div class="mrow">
+                <span class="mi">T</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">2</span>
+               </div>
+              </div>
+             </div>
+             <span stretchy="true" class="mo">)</span>
+            </div>
+           </div>
+           <div class="mrow">
+            <div class="mfrac">
+             <div class="mrow">
+              <span class="mn">1</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">2</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">]</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">A</span>, ε
+  <span class="sup">‡</span> and 
+  <span class="italic">T</span>
+  <sub>0</sub> are the parameters. Again, ε
+  <span class="sup">‡</span> is essentially the fitting parameter bearing connection with the barrier height along the minimum energy pathway to reaction.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Also, in this case, we can work out the Nakamura-Takayanagi-Sato transitivity function</p>
+ <div id="E35" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(33)</span>
+  <div id="M44" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">γ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">+</span>
+          <div class="msup">
+           <div class="mrow">
+            <div class="mrow">
+             <span stretchy="false" class="mo">(</span>
+             <div class="mrow">
+              <span class="mi">R</span>
+              <div class="msub">
+               <div class="mrow">
+                <span class="mi">T</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+              </div>
+             </div>
+             <span stretchy="false" class="mo">)</span>
+            </div>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">β</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">]</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">3</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</sec>

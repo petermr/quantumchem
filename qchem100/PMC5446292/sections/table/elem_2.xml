@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="t3" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">TABLE III.</span>
+ <div class="caption">
+  <p>Canonical MP2 adsorption energies for water on 2-layer LiH substrates with different number of atoms in the computational supercell. The calculations were performed with 
+   <span class="sc">vasp</span> and employ PGTOs for the virtual orbitals alongside the Γ-point approximation. The thermodynamic limit is obtained from a 1/
+   <span class="italic">N</span>
+   <span class="sup">2</span> extrapolation (
+   <span class="italic">N</span> denotes the number of atoms in the LiH substrate). The LMP2-F12 and LMP2-pF12 adsorption energies are 238 and 235 meV, respectively.
+  </p>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup span="1">
+   <col align="left" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center" colspan="6" rowspan="1">
+     <div class="inline-formula">
+      <div id="M19" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span class="mtext">ads</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span class="mtext">MP</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div> (meV)
+    </th>
+   </tr>
+   <tr>
+    <th colspan="1" rowspan="1">Atoms</th>
+    <th align="center" colspan="1" rowspan="1">AVDZ</th>
+    <th align="center" colspan="1" rowspan="1">AVTZ</th>
+    <th align="center" colspan="1" rowspan="1">AVQZ–
+     <span class="italic">g</span>
+    </th>
+    <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+    <th align="center" colspan="1" rowspan="1">AV(T,Q–
+     <span class="italic">g</span>)Z
+    </th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="1" rowspan="1">32</td>
+    <td colspan="1" rowspan="1">162</td>
+    <td colspan="1" rowspan="1">193</td>
+    <td colspan="1" rowspan="1">198</td>
+    <td colspan="1" rowspan="1">207</td>
+    <td colspan="1" rowspan="1">201</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">181</td>
+    <td colspan="1" rowspan="1">211</td>
+    <td colspan="1" rowspan="1">218</td>
+    <td colspan="1" rowspan="1">224</td>
+    <td colspan="1" rowspan="1">222</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">72</td>
+    <td colspan="1" rowspan="1">185</td>
+    <td colspan="1" rowspan="1">213</td>
+    <td colspan="1" rowspan="1">220</td>
+    <td colspan="1" rowspan="1">226</td>
+    <td colspan="1" rowspan="1">224</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">128</td>
+    <td colspan="1" rowspan="1">188</td>
+    <td colspan="1" rowspan="1">218</td>
+    <td colspan="1" rowspan="1">228</td>
+    <td colspan="1" rowspan="1">231</td>
+    <td colspan="1" rowspan="1">235</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">
+     <div class="inline-formula">
+      <div id="M20" class="math">
+       <span class="mi">∞</span>
+      </div>
+     </div>
+    </td>
+    <td colspan="1" rowspan="1">189</td>
+    <td colspan="1" rowspan="1">219</td>
+    <td colspan="1" rowspan="1">227</td>
+    <td colspan="1" rowspan="1">231</td>
+    <td colspan="1" rowspan="1">233</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

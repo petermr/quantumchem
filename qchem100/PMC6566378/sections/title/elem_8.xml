@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hot exciton relaxation 
+  <span class="italic">via</span> nonadiabatic interactions
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to the electron-to-hole energy transfer, multi-phonon emission and electron-to-ligand energy transfer mechanisms mentioned above, a more complete and unified picture for hot carrier relaxation was established by Kambhampati 
+  <span class="italic">et al.</span> by performing more advanced state-resolved, pump–probe spectroscopic studies on QDs.
+  <a rid="cit40" ref-type="bibr" href="#cit40">40</a>,
+  <a rid="cit41" ref-type="bibr" href="#cit41">41</a> This picture incorporates yet another important relaxation mechanism which is unique for these quantum-confined nanoscale systems – nonadiabatic transition between excitonic states induced by surface ligands.
+  <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+  <a rid="cit32" ref-type="bibr" href="#cit32">32</a> This mechanism was invoked to explain the absence of a phonon bottleneck for hot hole relaxation in CdSe QDs.
+  <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+  <a rid="cit32" ref-type="bibr" href="#cit32">32</a> Specifically, while hot electron relaxation in CdSe QDs occurs 
+  <span class="italic">via</span> energy transfer to the holes, hot hole relaxation was expected to display a phonon bottleneck. Experimentally, however, hot hole relaxation rates are similarly fast for CdSe QDs with various sizes,
+  <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+  <a rid="cit32" ref-type="bibr" href="#cit32">32</a> similar to our observations here for CsPbBr
+  <sub>3</sub> NCs. In order to account for this peculiar behavior, Cooney 
+  <span class="italic">et al.</span> proposed the nonadiabatic relaxation channel mediated by surface ligands.
+  <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+  <a rid="cit32" ref-type="bibr" href="#cit32">32</a> According to this mechanism, nonadiabatic hot carrier relaxation rates (1/
+  <span class="italic">τ</span>
+  <sub>r</sub>) scale with the Hellman–Feynman force describing electron–nuclear interactions inducing the nonadiabatic transition (
+  <span class="italic">H</span>) and inversely with the energy gap (Δ
+  <span class="italic">E</span>): 1/
+  <span class="italic">τ</span>
+  <sub>r</sub> ∝ 
+  <span class="italic">H</span>/Δ
+  <span class="italic">E</span>. As both 
+  <span class="italic">H</span> and Δ
+  <span class="italic">E</span> increase with decreasing QD sizes, the hot carrier relaxation rates (1/
+  <span class="italic">τ</span>
+  <sub>r</sub>) are relatively size-independent. On the other hand, the energy loss rates should scale with 
+  <span class="italic">H</span>: d
+  <span class="italic">E</span>/d
+  <span class="italic">t</span> = Δ
+  <span class="italic">E</span>/2
+  <span class="italic">τ</span>
+  <sub>r</sub> ∝ 
+  <span class="italic">H</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For surface ligand induced nonadiabatic relaxation, 
+  <span class="italic">H</span> should be proportional to the carrier/exciton wavefunction near NC surfaces, which increases with decreasing NC sizes. Following the procedures in 
+  <a rid="cit31" ref-type="bibr" href="#cit31">ref. 31</a>, we calculated wavefunctions for X
+  <sub>1</sub> and X
+  <sub>2</sub> using effective mass approximation (EMA) and obtained their surface fraction (
+  <span class="italic">F</span>) by integrating wavefunctions in the outermost unit cells and those tunneling into ligand shells; see the ESI
+  <a ref-type="fn" rid="fn2" href="#fn2">‡</a> for details. It is the surface fraction that interacts effectively with the ligand vibrational modes, and induces nonadiabatic transition from X
+  <sub>2</sub> to X
+  <sub>1</sub>. The calculated surface fractions (
+  <span class="italic">F</span>) for X
+  <sub>1</sub> and X
+  <sub>2</sub> are plotted in Fig. S13.
+  <a ref-type="fn" rid="fn2" href="#fn2">‡</a> As shown in 
+  <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>, experimental energy loss rates (d
+  <span class="italic">E</span>/d
+  <span class="italic">t</span>) can be well fitted using: d
+  <span class="italic">E</span>/d
+  <span class="italic">t</span> = 
+  <span class="italic">CF</span>, with 
+  <span class="italic">C</span> being a scaling constant. Because 
+  <span class="italic">F</span>(X
+  <sub>1</sub>) and 
+  <span class="italic">F</span>(X
+  <sub>2</sub>) show similar size-dependence, both can be used to fit the data. This fit provides strong evidence that hot carrier/exciton relaxation in CsPbBr
+  <sub>3</sub> NCs is mainly enabled by nonadiabatic transition induced by surface ligands. Better agreement with experimental data might be achieved by accounting for minor contributions from other factors such as phonon emission which becomes more important for larger-size NCs with smaller Δ
+  <span class="italic">E</span>.
+ </p>
+ <div id="fig4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">Measured hot carrier energy loss rates (orange circles) and calculated wavefunction surface fraction (
+    <span class="italic">F</span>) of X
+    <sub>1</sub> (red solid line) and X
+    <sub>2</sub> (wine solid line) for CsPbBr
+    <sub>3</sub> NCs of varying sizes. 
+    <span class="italic">F</span>(X
+    <sub>1</sub>) and 
+    <span class="italic">F</span>(X
+    <sub>2</sub>) have been appropriately scaled by constant factors.
+   </div>
+  </div>
+  <div xlink:href="c9sc01339c-f4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

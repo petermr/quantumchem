@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec12" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Crystal optimizer based on the small molecule gaff force field</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden 1.0 was already able to read a number of file formats containing crystal information (such as the FDAT and chemx formats) and it was able to display the crystal as a number of unit cells along one or more of the cell axes. The possibility to edit unit cell constants a, b and c, and angles α, β and χ and space group was added later, as well as the possibility to rotate the atoms in the unit cell. In Molden 2.0 the capability to optimise the crystal geometry was added.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The crystal is computationally approximated by a 5 × 5 × 5 grid of copies of the unit cell (in green) placed at the centre of the grid (see Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>). Neutral charge groups are employed by summing the long-range electrostatic interactions between the molecule(s) in the unit cell and its copies on the 5 × 5 × 5 grid. The geometry of the molecule(s) in the unit cell and the lattice parameters can be optimized using the small molecule force field GAFF [
+  <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] and a Powell-Beale conjugate gradient scheme [
+  <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. The GAFF force field requires that partial charges are assigned using a restrained electrostatic potential fit (RESP) model [
+  <a ref-type="bibr" rid="CR43" href="#CR43">43</a>]. Other, simpler charge models are available in Molden too. These may be used when very accurate energy calculations are not required. A parallel implementation of the crystal optimizer is available.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Fig5" class="fig">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <p>Crystal optimisation. Approximation of lattice sums by calculating all pairwise interactions in a 5 × 5 × 5 super cell expansion of the unit cell (
+     <span class="italic">green</span>).For clarity only two dimensions are shown
+    </p>
+   </div>
+   <div xlink:href="10822_2017_42_Fig5_HTML" id="d29e920" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

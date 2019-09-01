@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Bound excitons and trions in TMDCs</div>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Recent interest in TMDCs has mostly focused on compounds based on molybdenum and tungsten as transition metals, and sulfur and selenium as chalcogens. Across these compounds, the quasiparticle band structure is particularly distinct for molybdenum-based (Mo
+  <span class="italic">X</span>
+  <sub>2</sub>) and tungsten-based (W
+  <span class="italic">X</span>
+  <sub>2</sub>) TMDCs. This is illustrated in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, showing a schematic of the band structures near the 
+  <span class="italic">K</span> and 
+  <span class="italic">K</span>′ points, highlighting the spin–orbit splitting of the conduction bands
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>. The splitting of the valence bands is an order of magnitude larger than that of the conduction bands, and results in two distinct absorptive transitions observable in the exciton spectrum. We restrict ourselves to the lowest-energy transition (referred to as 
+  <span class="italic">A</span> exciton) and its associated negatively charged trion complexes to focus on the interpretation of experiments that energy selectively excite this transition, although noting that a generalization to the other transition (
+  <span class="italic">B</span> exciton) is straightforward. We furthermore consider helicity-selective excitation in the 
+  <span class="italic">K</span> valley; identical results would be obtained for the 
+  <span class="italic">K</span>′ valley upon flipping the spins of the involved quasiparticles. As is well known, the combination of energy and helicity selectivity to probe 
+  <span class="italic">A</span> excitons in the 
+  <span class="italic">K</span> valley effectively corresponds to spin-selective excitation, since the involved quasiparticles are constrained to a well-defined spin (spin-up, following the convention of Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>).
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Schematic illustration of the band structure and optical transitions of monolayer Mo
+     <span class="italic">X</span>
+     <sub>2</sub> and W
+     <span class="italic">X</span>
+     <sub>2</sub>. Shown are the spin-dependent band structures near the 
+     <span class="italic">K</span> and 
+     <span class="italic">K</span>′ points, derived from first-principles calculations
+     <span class="sup">
+      <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+     </span>, including the (helicity-selective) optical transitions and electronic configurations involved in 
+     <span class="italic">A</span> excitons and associated negatively charged trions (the lower spin–split valence band is not shown). Singlet trions are intervalley in Mo
+     <span class="italic">X</span>
+     <sub>2</sub> but intravalley in W
+     <span class="italic">X</span>
+     <sub>2</sub>; the situation is reversed for triplet trions. Note that the depicted vertical transitions become mixed as a result of quasiparticle interactions
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11497_Fig1_HTML" id="d29e452" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">Negatively charged trions, consisting of two conduction band electrons interacting with one hole in the valence band, are commonly characterized based on the spin of the two electrons, leading to singlet or triplet trions when the spins are opposite or equal, respectively. In TMDCs, the combination of valley and spin selectivity implies selection rules for trions at low temperatures (with the thermal energy smaller than the conduction band splitting). The behavior is illustrated in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, which considers selective excitation of the 
+  <span class="italic">A</span> transition in the 
+  <span class="italic">K</span> valley, creating an electron–hole pair in addition to an initial one-electron state. At low temperatures, the initial electron is relaxed in the conduction band minimum of either the spin-down state in the 
+  <span class="italic">K</span>′ valley or the spin-up state in the 
+  <span class="italic">K</span> valley. As a result, the corresponding 
+  <span class="italic">intervalley</span> trions have singlet spin, whereas 
+  <span class="italic">intravalley</span> trions have triplet spin. It is easily verified that the opposite relation holds for W
+  <span class="italic">X</span>
+  <sub>2</sub>. We note that the excited electrons have identical valley and spin states only for the triplet trion in Mo
+  <span class="italic">X</span>
+  <sub>2</sub>, and (repulsive) exchange interactions between conduction band electrons are therefore expected to be strongest in this case.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Since the many-body Hamiltonian conserves momentum, the trion states can be expressed as
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\Psi ^\alpha } \right\rangle = \mathop {\sum}\limits_{c_1,c_2,v} {\mathop {\sum}\limits_{{\mathbf{k}}_1,{\mathbf{k}}_2} {C_{c_1,c_2,v}^\alpha } } ({\mathbf{k}}_1,{\mathbf{k}}_2)\;a_{v,{\mathbf{k}}_1 + {\mathbf{k}}_2 - {\mathbf{Q}}}\;a_{c_2,{\mathbf{k}}_2}^\dagger a_{c_1,{\mathbf{k}}_1}^\dagger \left| 0 \right\rangle ,$$\end{document}</span>
+    <div id="M2" class="math">
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">Ψ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">α</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <span class="mi">v</span>
+      </div>
+     </div>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo">∑</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">C</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <span class="mi">v</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">α</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span width="0.16em" class="mspace"/>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">v</span>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">+</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">-</span>
+       <span mathvariant="bold" class="mi">Q</span>
+      </div>
+     </div>
+     <span width="0.16em" class="mspace"/>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_11497_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where 
+  <span class="italic">c</span>
+  <sub>1</sub>, 
+  <span class="italic">c</span>
+  <sub>2</sub>, and 
+  <span class="italic">v</span> label the conduction and valence bands (including spin) and with 
+  <span class="bold">Q</span> as the momentum of the initial conduction band electron. In our simulation, details of which can be found in 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Methods</a>, the band structure is described by a parameterized two-band model
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>, motivated by prior work showing negligible differences in optical properties compared to a more sophisticated three-band analog
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>. The trion states are calculated by configuration interaction using a many-body Hamiltonian containing a screened Coulomb coupling term, as done in previous extensions of the Bethe–Salpeter equation to three-particle complexes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>,
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>. The screened Coulomb interaction is approximated as orbital-independent and isotropic, using a model dielectric function, 
+  <span class="italic">W</span>(
+  <span class="bold">q</span>) = 2
+  <span class="italic">πe</span>
+  <span class="sup">2</span>/
+  <span class="italic">qε</span>(
+  <span class="italic">q</span>) with 
+  <span class="italic">ε</span>(
+  <span class="italic">q</span>) = 1 + 2
+  <span class="italic">πχ</span>
+  <sub>2D</sub>
+  <span class="italic">q</span>, where 
+  <span class="italic">χ</span>
+  <sub>2D</sub> is the material-dependent two-dimensional polarizability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>,
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>,
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>,
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>
+  </span>. For two-dimensional materials, a very dense sampling of the Brillouin zone is required for convergence
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>; however, such a dense sampling makes the trion Hilbert space prohibitively large. To overcome this obstacle, we used a uniform 
+  <span class="italic">N</span> × 
+  <span class="italic">N</span> Monkhorst–Pack mesh with a cut-off radius around the 
+  <span class="italic">K</span> and 
+  <span class="italic">K</span>′ points, denoted 
+  <span class="italic">k</span>
+  <sub>0</sub>. Employed previously by Qiu et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span> for excitons, this truncation scheme utilizes the valley confinement of low-energy excited states, and results in two convergence parameters, 
+  <span class="italic">N</span> and 
+  <span class="italic">k</span>
+  <sub>0</sub>.
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">We first consider the exciton and trion binding energies predicted by this approach. The results are summarized in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>, while details are presented in Supplementary Figs. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> and 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. The exciton binding energies are found to rapidly converge with 
+  <span class="italic">k</span>
+  <sub>0</sub>, with near convergence reached already for 
+  <span class="italic">k</span>
+  <sub>0</sub> = 0.10 (in units of the inverse lattice constant, 2
+  <span class="italic">π</span>/
+  <span class="italic">a</span> (The inverse lattice constants for MoS
+  <sub>2</sub>, WS
+  <sub>2</sub>, MoSe
+  <sub>2</sub>, and WSe
+  <sub>2</sub> are 1.97, 1.96, 1.90, and 1.90 Å
+  <span class="sup">−1</span>, respectively.)). However, convergence with 
+  <span class="italic">N</span> is very slow, with 
+  <span class="italic">N</span> ranging from a few tens to a few hundred. Extrapolation of our results to 
+  <span class="italic">N</span> = ∞ yields exciton binding energies in reasonable agreement with those obtained in a numerically exact diffusion Monte Carlo study of the closely related real-space exciton problem
+  <span class="sup">
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span>, with 0.53 eV (vs. 0.55 eV) for MoS
+  <sub>2</sub>, 0.50 eV (0.52 eV) for WS
+  <sub>2</sub>, 0.46 eV (0.51 eV) for MoSe
+  <sub>2</sub>, and 0.45 eV (0.47 eV) for WSe
+  <sub>2</sub>. In contrast, the trion binding energies depend only weakly on 
+  <span class="italic">N</span>, suggesting a cancellation of sampling errors between the total exciton and trion energies, while a modest dependence on 
+  <span class="italic">k</span>
+  <sub>0</sub> is found. For MoS
+  <sub>2</sub> and MoSe
+  <sub>2</sub>, our model predicts singlet trion binding energies of 31 and 27 meV, respectively, whereas the triplet trion is found to be unbound as a result of the repulsive interactions between conduction band electrons. These interactions are negligible for tungsten-based TMDCs, where we find bound singlet and triplet trions with virtually identical binding energies of 40 and 37 meV for WS
+  <sub>2</sub> and WSe
+  <sub>2</sub>, respectively. We note, however, that modest energetic splitting between these states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>–
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span> is in principle possible due to exchange interactions involving conduction and valence band electrons not considered in our model. The agreement with diffusion Monte Carlo results (singlet trion binding energies of 34 meV for both for MoS
+  <sub>2</sub> and WS
+  <sub>2</sub>, 28 meV for MoSe
+  <sub>2</sub>, and 30 meV for WSe
+  <sub>2</sub>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span> is again reasonable.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Exciton and trion binding energies predicted by our model</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th/>
+      <th>Exciton (eV)</th>
+      <th>Singlet X
+       <span class="sup">−</span> (meV)
+      </th>
+      <th>Triplet X
+       <span class="sup">−</span> (meV)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>MoS
+       <sub>2</sub>
+      </td>
+      <td>0.53 (0.55)</td>
+      <td>31 (34)</td>
+      <td>Unbound</td>
+     </tr>
+     <tr>
+      <td>WS
+       <sub>2</sub>
+      </td>
+      <td>0.50 (0.52)</td>
+      <td>40 (34)</td>
+      <td>40</td>
+     </tr>
+     <tr>
+      <td>MoSe
+       <sub>2</sub>
+      </td>
+      <td>0.46 (0.51)</td>
+      <td>27 (28)</td>
+      <td>Unbound</td>
+     </tr>
+     <tr>
+      <td>WSe
+       <sub>2</sub>
+      </td>
+      <td>0.45 (0.47)</td>
+      <td>37 (30)</td>
+      <td>37</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <p>Shown are extrapolations of our calculated data to 
+     <span class="italic">N</span> = ∞. Numbers within parentheses are exact results from ref. 
+     <span class="sup">
+      <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+     </span>. Note that the results shown here do not include repulsive interactions between conduction and valence band electrons (see text)
+    </p>
+   </div>
+  </div>
+ </p>
+</sec>

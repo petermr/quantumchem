@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec21" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ambfor validation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Since the AMBER and GAFF force field have been extensively validated previously [
+  <a ref-type="bibr" rid="CR59" href="#CR59">59</a>], we merely need to validate the implementation of these force fields in Molden.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Ambfor module is validated by comparing root mean square deviations between protein data bank non-hydrogen coordinates and Ambfor optimised coordinates of 26 protein ligand complexes, at different gradient tolerances (see Table 
+  <a rid="Tab5" ref-type="table" href="#Tab5">5</a>). The force field optimisations were performed while keeping the protein rigid and the ligand fully flexible. Charges were applied to the ligand through the default charge scheme in Molden for ligands in proteins [
+  <a ref-type="bibr" rid="CR60" href="#CR60">60</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Tab5" class="table-wrap">
+   <span class="label">Table 5</span>
+   <div class="caption">
+    <p>Root mean square deviations between optimised coordinates and PDB coordinates for 26 protein-ligand complexes at two different gradient tolerances</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th align="left">PDB entry</th>
+      <th align="left">PDB ligand code</th>
+      <th align="left">RMSD Av. gradient &lt; 0.5 (kcal/mol)/Angstrom</th>
+      <th align="left">RMSD Av. gradient &lt; 0.1 (kcal/mol)/Angstrom</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left">2CEJ</td>
+      <td align="left">1AH</td>
+      <td align="left">0.040</td>
+      <td align="left">0.155</td>
+     </tr>
+     <tr>
+      <td align="left">4HYF</td>
+      <td align="left">1AK</td>
+      <td align="left">0.061</td>
+      <td align="left">0.211</td>
+     </tr>
+     <tr>
+      <td align="left">4NAN</td>
+      <td align="left">2JM</td>
+      <td align="left">0.067</td>
+      <td align="left">0.648</td>
+     </tr>
+     <tr>
+      <td align="left">4ANP</td>
+      <td align="left">3QI</td>
+      <td align="left">0.028</td>
+      <td align="left">0.104</td>
+     </tr>
+     <tr>
+      <td align="left">4WLB</td>
+      <td align="left">3QQ</td>
+      <td align="left">0.021</td>
+      <td align="left">0.133</td>
+     </tr>
+     <tr>
+      <td align="left">3QTI</td>
+      <td align="left">3QT</td>
+      <td align="left">0.025</td>
+      <td align="left">0.051</td>
+     </tr>
+     <tr>
+      <td align="left">5CBJ</td>
+      <td align="left">4ZD</td>
+      <td align="left">0.031</td>
+      <td align="left">0.444</td>
+     </tr>
+     <tr>
+      <td align="left">5CCR</td>
+      <td align="left">4ZT</td>
+      <td align="left">0.058</td>
+      <td align="left">0.154</td>
+     </tr>
+     <tr>
+      <td align="left">5CC3</td>
+      <td align="left">4ZU</td>
+      <td align="left">0.043</td>
+      <td align="left">0.140</td>
+     </tr>
+     <tr>
+      <td align="left">5CCN</td>
+      <td align="left">4ZZ</td>
+      <td align="left">0.073</td>
+      <td align="left">0.163</td>
+     </tr>
+     <tr>
+      <td align="left">2VIN</td>
+      <td align="left">505</td>
+      <td align="left">0.020</td>
+      <td align="left">0.197</td>
+     </tr>
+     <tr>
+      <td align="left">5CEO</td>
+      <td align="left">50D</td>
+      <td align="left">0.038</td>
+      <td align="left">0.174</td>
+     </tr>
+     <tr>
+      <td align="left">4FTR</td>
+      <td align="left">5HK</td>
+      <td align="left">0.029</td>
+      <td align="left">0.223</td>
+     </tr>
+     <tr>
+      <td align="left">5JJS</td>
+      <td align="left">6L2</td>
+      <td align="left">0.043</td>
+      <td align="left">0.147</td>
+     </tr>
+     <tr>
+      <td align="left">5JN2</td>
+      <td align="left">6LO</td>
+      <td align="left">0.040</td>
+      <td align="left">0.393</td>
+     </tr>
+     <tr>
+      <td align="left">5JMS</td>
+      <td align="left">6LP</td>
+      <td align="left">0.040</td>
+      <td align="left">0.181</td>
+     </tr>
+     <tr>
+      <td align="left">3HMM</td>
+      <td align="left">855</td>
+      <td align="left">0.034</td>
+      <td align="left">0.102</td>
+     </tr>
+     <tr>
+      <td align="left">2R7L</td>
+      <td align="left">AMZ+ATP</td>
+      <td align="left">0.162</td>
+      <td align="left">0.953</td>
+     </tr>
+     <tr>
+      <td align="left">2UZN</td>
+      <td align="left">C96</td>
+      <td align="left">0.198</td>
+      <td align="left">0.386</td>
+     </tr>
+     <tr>
+      <td align="left">1IEL</td>
+      <td align="left">CAZ</td>
+      <td align="left">0.062</td>
+      <td align="left">0.308</td>
+     </tr>
+     <tr>
+      <td align="left">1PPP</td>
+      <td align="left">E6C</td>
+      <td align="left">0.418</td>
+      <td align="left">0.923</td>
+     </tr>
+     <tr>
+      <td align="left">1LEV</td>
+      <td align="left">F6P</td>
+      <td align="left">0.049</td>
+      <td align="left">0.440</td>
+     </tr>
+     <tr>
+      <td align="left">4DFR</td>
+      <td align="left">MTX</td>
+      <td align="left">3.493</td>
+      <td align="left">3.451</td>
+     </tr>
+     <tr>
+      <td align="left">1OWY</td>
+      <td align="left">PRY</td>
+      <td align="left">0.253</td>
+      <td align="left">0.503</td>
+     </tr>
+     <tr>
+      <td align="left">5CCL</td>
+      <td align="left">SAM</td>
+      <td align="left">0.040</td>
+      <td align="left">0.161</td>
+     </tr>
+     <tr>
+      <td align="left">3VHU</td>
+      <td align="left">SNL</td>
+      <td align="left">0.078</td>
+      <td align="left">0.160</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The average RMSD at gradient tolerance 0.5 (kcal/mol)/Angstrom is 0.209 Angstrom and at gradient tolerance 0.1 (kcal/mol)/Angstrom is 0.420 Angstrom. The one exceptionally bad case (MTX in 4DFR) is explained by the fact that MTX sticks out of the DFR pocket and makes symmetry contacts in the crystal. Molden cannot yet automatically include such symmetry contacts. When the symmetry related DFR copy is added manually, the two RMSD values become 0.118 and 0.264, respectively.</p>
+ <sec id="Sec22" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Addition of hydrogens to ligands</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">‘wget’ can be used to retrieve information about missing hydrogens of ligands in a PDB entry by downloading a version of the ligand with hydrogens added from the EBI’s PDBECHEM database [
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>] (
+   <span ext-link-type="uri" xlink:href="ftp://ftp.ebi.ac.uk/pub/databases/msd/pdbechem/files/cml" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">ftp://ftp.ebi.ac.uk/pub/databases/msd/pdbechem/files/cml</span>).
+  </p>
+ </sec>
+ <sec id="Sec23" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fixing incomplete residues</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Crystallography does not always reveal the position of all atoms in a protein. Especially the, often mobile, extremities of Glu, Gln, Arg, and Lys, occasionally are missing in PDB file. In case of missing atoms it is possible to either automatically complete the residue, or to use the Z-matrix editor to do this manually. Many protons are not mobile with respect to the heavy atom they are bound to (e.g. the protons on a phenyl ring). These so-called riding protons are placed using a dictionary of proton positions. The positions of other protons can be determined using Ambfor.</p>
+ </sec>
+ <sec id="Sec24" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein-specific visualisation facilities</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden has a large series of protein visualisation facilities available. It can, for example produce Ramachandran plots [
+   <a ref-type="bibr" rid="CR61" href="#CR61">61</a>] (see Fig. 
+   <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>a). Backbone secondary structure elements such as alpha helix and β-sheets tend to be contained in preferred conformational regions of the plot according to Lovell et al. [
+   <a ref-type="bibr" rid="CR62" href="#CR62">62</a>]. Residues that fall outside these regions can be flagged as outliers. By clicking a green dot in the plot, the corresponding amino acid is displayed in solid sphere representation in the main window.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig9" class="fig">
+    <span class="label">Fig. 9</span>
+    <div class="caption">
+     <p>
+      <span class="bold">a</span> Ramachandran plot with favoured (
+      <span class="italic">red</span>) and allowed (
+      <span class="italic">orange</span>) regions of backbone torsion angles. 
+      <span class="bold">b</span> Clipped solvent accessible surface of PDB entry 3ERT [
+      <a ref-type="bibr" rid="CR64" href="#CR64">64</a>] (with the electrostatic potential mapped onto it) exposing the OHT ligand
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig9_HTML" id="d29e1551" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Solvent accessible surface areas can be produced using the external program Surf [
+   <a ref-type="bibr" rid="CR63" href="#CR63">63</a>] that is distributed together with Molden. Optionally, the electrostatic potential calculated from point charges associated with the AMBER force field can be mapped onto this surface. Surfaces can be clipped to reveal the interaction of a ligand with the protein surface, which is especially useful when the ligand is deeply buried within the protein. Figure 
+   <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>b shows the clipped solvent accessible surface of the PDB entry 3ERT [
+   <a ref-type="bibr" rid="CR64" href="#CR64">64</a>], with the electrostatic potential mapped onto it, exposing the OHT ligand.
+  </p>
+ </sec>
+</sec>

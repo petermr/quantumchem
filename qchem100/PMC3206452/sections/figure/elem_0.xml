@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 1</span>
+ <div class="caption">
+  <p>
+   <span class="bold">Quixote architecture and conversion workflow</span>. The user instructs Lensfield2 to convert output files of different computational chemistry codes into semantically rich CML files. The conversion is performed by JUMBO-Converters following the hints provided in the dictionaries and templates. The generated CML files are then transferred to one or more local and remote chem# repositories using a RESTful web API. The user can search and browse those repositories with a web browser, and can also manipulate and visualize the CML files with Avogadro.
+  </p>
+ </div>
+ <div xlink:href="1758-2946-3-38-1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

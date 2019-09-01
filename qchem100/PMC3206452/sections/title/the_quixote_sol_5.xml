@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">The Quixote solution</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The catalyst for Quixote was a meeting on interoperability and repositories in QC held at ZCAM (Zaragoza Scientific Center for Advanced Modeling), Zaragoza (Spain) in September 2010. There was general agreement on the need for collection and re-dissemination of data. In the final discussion a number of participants felt that there was now enough impetus and technology that something could and should be done. This wasn't a universal view, and we are aware that Quixote is unconventional in its genesis and aspirations - hence the name, reflecting a difficult but hopefully not impossible dream.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We decide to pursue this as an informal "unsponsored" project. It is not actually "unfunded", in that we recognize the critical and valuable cash and in-kind support of several bodies, including CECAM, STFC Daresbury Laboratory, EPSRC, JISC, ZCAM, and the employers of many of the participants. In particular we have been able to hold, and continue to hold, meetings. But there are no sponsor-led targets or requirements. In this it has many of the features of successful virtual projects in ICT (such as Apache, Linux, 
+  <span class="italic">etc</span>.) and communal activities such as Wikipedia and Open Street Map.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Speed and ambition were critical and project management has been by deadlines - external events fixed in time for which the project had to have something to show. These have included:</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• An 
+  <span class="italic">ad hoc </span>meeting in 2010-10 in Cambridge where a number of the participants happened to be. This was to convince ourselves that the project was feasible in our eyes
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• The PMR symposium 2011-01 that has catalysed this set of articles</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• A workshop 2011-03 at STFC Daresbury Laboratory to demonstrate the prototype to a representative set of QC scientists and code developers</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Open repositories (OR11) 2011-06 where the technology was presented to the academic repository community as an argument for the need for domain repositories</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• (planned) A meeting in Zaragoza 2011-08 where the argument for domain repositories will be demonstrated by Quixote.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As of 2011-06 we have a working repository with over 6000 entries, which are searchable chemically, by numeric properties and through metadata.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our primary goal has been to build working, flexible technology without being driven by specific use-cases. This can be seen as heresy, and indeed we might regard it as such ourselves, if it were not that we have spent about 10 years working in semantic chemistry, computational chemistry and repositories and so have anticipated many of the possible use cases and caveats. To help show Quixote's flexibility we now list a number of use cases, any one of which may serve to convince the reader that Quixote has something to offer:</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Quixote system (Figure 
+  <a ref-type="fig" rid="F1" href="#F1">1</a> shows the workflow, Figure 
+  <a ref-type="fig" rid="F2" href="#F2">2</a> shows the distributed heterogeneity) is very flexible in that it can be installed in several different ways. Here we give a number of possible uses of the system, some of which we have deployed and several more we expect to be useful.
+ </p>
+ <div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>
+    <span class="bold">Quixote architecture and conversion workflow</span>. The user instructs Lensfield2 to convert output files of different computational chemistry codes into semantically rich CML files. The conversion is performed by JUMBO-Converters following the hints provided in the dictionaries and templates. The generated CML files are then transferred to one or more local and remote chem# repositories using a RESTful web API. The user can search and browse those repositories with a web browser, and can also manipulate and visualize the CML files with Avogadro.
+   </p>
+  </div>
+  <div xlink:href="1758-2946-3-38-1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>
+    <span class="bold">Quixote distributed repositories</span>. A schematic view of distributed Quixote repositories. Some repositories push documents to the public web, others aggregate from it. There is (deliberately) no check on whether repositories have identical documents. Users can build search strategies that look for individual entries with specific data or make collections of documents that share or contrast properties.
+   </p>
+  </div>
+  <div xlink:href="1758-2946-3-38-2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Collection of results within a group or laboratory. There is a growing desire to capture scientific results at the time of creation, and we have been involved in several projects (CLaRION, JISC XYZ) the impetus of which is to see whether scientists can capture their data as they create it. Computational chemistry is one of the simplest types of results and Quixote has been designed so that a single log file provides most of the input to the repository. This system allows groups and individual researchers to "pick up their results" and transport them to different environments.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Formal publication in journals and theses. Results in a Quixote repository can be made available to other people and parties in the publication process. For example an author could make their results available to a journal before review so that the editors and reviewers could use the data to assess the value of the science. Similarly a graduate student could make their results available as part of their thesis submission and these could be assessed by the examiners. If the thesis and accompanying data are also published in the institutional repository then this provides a simple but very effective way of capturing and preserving the record of scientific experiments.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Teaching and learning resources. Quixote can collect resources used for teaching and can also be used to provide subsets of research objects which are valuable for teaching and learning. For example in the current set there are 75 calculations on benzene, mainly from Henry Rzepa's laboratory and these have been deposited by students carrying these out as part of their undergraduate work. This resource allows us to compare methods and to get information and experience which may help us do similar calculations.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• A collaborative central repository for a project. An increasing number of projects are distributed over geography and discipline. (The current Quixote project is an example.) A repository allows different people and groups in the project to share a central resource in an analogous manner to the use of Bitbucket and similar repositories for sharing code.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• A set of reference data and molecules. Quixote allows us to search for different parameters used in a given problem (
+  <span class="italic">e.g</span>. level of theory, number of orbitals, convergence of results, algorithms, 
+  <span class="italic">etc</span>.).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Validation sets for software and methods. In a similar manner datasets within Quixote can be used by different groups as reference input to compare results from different programs or different approaches.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Enrichment of data through curation. Quixote is annotatable, so that it is possible for the world community to add their comments to particular entries. If a result is suspect, an annotation can be added. Similarly it is possible to point out related entries highlighting different scientific aspects.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Building blocks for calculations. It is often valuable to start from an unknown program resource (
+  <span class="italic">e.g</span>. a molecule whose structure is known and where the calculations are verified) and to modify it slightly for a related calculation, 
+  <span class="italic">e.g</span>. by adding additional atoms or by refining the calculation parameters.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Combining data from different sources. As Quixote can also store experimental structures such as crystallographic ones, or experimental data such as spectra it is possible to enhance and combine components of the calculation.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Data-driven science. Now that computational chemistry is relatively cheap and relatively accessible for a very large number of scientists, we foresee that literally millions of processors will be used routinely to calculate theoretical chemistry results. This allows us to carry out data mining from the Quixote repositories with the possibility of discovering new scientific patterns.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Indexing the web. In a similar way to our indexing of crystallography through CrystalEye 
+  <span ext-link-type="uri" xlink:href="http://wwmm.ch.cam.ac.uk/crystaleye/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://wwmm.ch.cam.ac.uk/crystaleye/</span> we anticipate that web crawlers can increasingly discover and retrieve published computational chemistry.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">• Developing software tools. Since Quixote represents an abstraction of many codes, developers writing software for computational chemistry will be able to see the type of semantics which are captured and the structure of the document.</p>
+</sec>

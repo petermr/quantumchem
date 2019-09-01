@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="S0005" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Class D β-lactamases</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Because of their safety and efficacy, β-lactams still constitute the most widely used antibiotics that inhibit bacterial cell-wall transpeptidases (PBPs – Penicilin Binding Proteins). Bacteria's most important resistance mechanism relies on the scavenging potential of β-lactamases to break the amide bond before antibiotics reach their cellular target. The reaction is a two-step process: 1) acylation of the enzyme Ser residue followed by 2) deacylation and release of the cleaved antibiotic (see 
+  <a ref-type="fig" rid="F0005" href="#F0005">Figure 5</a>). Phylogenetic analysis divides the β-lactamases into groups A, C, D (serine hydrolases) and B (metallo- enzymes). The remarkable variety of β-lactamases, the rapid rate of their evolution and acquisition of resistance towards newly developed drugs make it of prime importance for us to understand fully their sequence–structure–function relationships and evolutionary mechanisms towards antibiotic resistance in order to break the current cycle of drug development followed by resistance. Class D, often referred to as OXA, after several initially classified members demonstrated unusually high hydrolysis efficacy against oxacillin, is the most diverse group of β-lactamases, most recently identified, and also the least studied [
+  <a rid="CIT0097" ref-type="bibr" href="#CIT0097">97</a>, 
+  <a rid="CIT0098" ref-type="bibr" href="#CIT0098">98</a>]. They possess a remarkably diverse range of hydrolytic profiles encompassing penicillins, cephems (including third generation drugs: cefotaxime and ceftazidime) as well as carbapenems [
+  <a rid="CIT0098" ref-type="bibr" href="#CIT0098">98</a>]. Interestingly, however, to date no class D enzyme has shown ability to hydrolyze both extended spectrum cephalosporins and carbapenems [
+  <a rid="CIT0098" ref-type="bibr" href="#CIT0098">98</a>, 
+  <a rid="CIT0099" ref-type="bibr" href="#CIT0099">99</a>].
+ </p>
+ <div id="F0005" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <p>Two stage process for the hydrolysis of antibiotic molecule by β-lactamases.</p>
+  </div>
+  <div xlink:href="CSBJ-2-e201209018-g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F0006" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <p>“OXA-2” group-specific residues (Phe76 and Ala132) within the OXA-2 structure (PDB entry 1K38)</p>
+  </div>
+  <div xlink:href="CSBJ-2-e201209018-g006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Class D is one of two known enzymes that employ a post-translational carboxylation of a lysine residue as part of their catalytic machinery. This carboxylated lysine (Lys70) is crucial for activating a water molecule for the deacylation reaction and likely acts as a general base to abstract a proton from the absolutely conserved Ser67 that initiates nucleophilic attack on the β-lactam ring. Our recently published phylogenetic analysis of class D enabled the division/classifying of the sequences into distinct groups [
+  <a rid="CIT0003" ref-type="bibr" href="#CIT0003">3</a>]. Pairwise sequence identities within these groups were very small (as low as 22% in the largest group), yet there were distinct signatures or group-specific residues that allowed us to uniquely demarcate the groups. These group-specific residues are mainly located adjacent to the active site with their van der Waals surfaces in contact with the binding pocket. Thus they are likely to modulate the properties of the conserved active site catalytic residues [
+  <a rid="CIT0021" ref-type="bibr" href="#CIT0021">21</a>, 
+  <a rid="CIT0100" ref-type="bibr" href="#CIT0100">100</a>] and may correlate with the enzyme's spectrum of activity (see 
+  <a ref-type="fig" rid="F0006" href="#F0006">Figure 6</a>). In addition, their location outside the active site may have only a minimal effect on protein stability [
+  <a rid="CIT0016" ref-type="bibr" href="#CIT0016">16</a>]. The largest sub-group of class D sequences (OXA-1 subgroup) made up of α-, β-, and γ-proteobacteria also contains a group-specific Cys pair. In the OXA-1 crystal structure (PDB entry 3ISG [
+  <a rid="CIT0101" ref-type="bibr" href="#CIT0101">101</a>]) this Cys pair is positioned to form a disulfide bond and our analysis of the deposited electron density map reveals that both the reduced and oxidized forms are present in apo OXA-1 (PDB entry 1M6K [
+  <a rid="CIT0102" ref-type="bibr" href="#CIT0102">102</a>]). The reducing cytoplasmic environment of the 
+  <span class="italic">E. coli</span> expression system is responsible for partial or complete reduction of the disulfide bond and its apparent absence in the OXA-1 3ISG crystal structure. Patterns of evolutionary constraint seen in our analyses support the prediction that formation of this disulfide bond in an oxidizing environment may be important for survival by maintaining the hydrophobic core of the enzyme. Additional support to this hypothesis is provided by the fact that 
+  <span class="italic">P. aeruginosa</span> group (OXA- 10 group) also contains a group-specific disulfide-bonded Cys pair – located on the opposite end of the same segment of β-sheet (PDB entry 1K57 [
+  <a rid="CIT0103" ref-type="bibr" href="#CIT0103">103</a>]). Alternatively, the increased stabilization of this region may have an impact on the dynamic behavior of the active site. Long timescale (several microseconds) MD simulations using classical MM force fields showed that when the Cys pair is in a reduced state, the active site becomes disorganized which if accurate would also lead to decarboxylation of the Lys sidechain and destruction of the enzyme's function (manuscript in preparation) while in the oxidized state the active site remained stable.
+ </p>
+</sec>

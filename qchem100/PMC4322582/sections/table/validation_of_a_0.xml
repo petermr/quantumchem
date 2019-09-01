@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div position="float" id="t1" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 1</span>
+ <div class="caption">
+  <div class="title">Validation of atomization enthalpies at B3LYP/6-31G(2df,p)-level. </div>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup>
+   <col align="left"/>
+   <col align="center"/>
+   <col align="center"/>
+   <col align="center"/>
+  </colgroup>
+  <thead valign="bottom">
+   <tr>
+    <th align="left" valign="top" charoff="50">
+     <span class="bold">Reference</span>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <span class="bold">MAE</span>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <span class="bold">RMSE</span>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <span class="bold">maxAE</span>
+    </th>
+   </tr>
+  </thead>
+  <div valign="top" class="tfoot">
+   <tr>
+    <th align="left" valign="top" charoff="50">For 100 molecules randomly drawn out of the pool of 134k molecules, mean absolute error (MAE), root mean square error (RMSE), and maximal absolute error (maxAE) with respect to more accurate reference methods are reported.
+     <span class="hr"/>
+    </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+   </tr>
+   <tr>
+    <th align="left" valign="top" charoff="50">All values are in kcal/mol.</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+   </tr>
+  </div>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" charoff="50">G4MP2</td>
+    <td align="center" valign="top" charoff="50">5.0</td>
+    <td align="center" valign="top" charoff="50">6.1</td>
+    <td align="center" valign="top" charoff="50">16.0</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">G4</td>
+    <td align="center" valign="top" charoff="50">4.9</td>
+    <td align="center" valign="top" charoff="50">5.9</td>
+    <td align="center" valign="top" charoff="50">14.4</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">CBS-QB3</td>
+    <td align="center" valign="top" charoff="50">4.5</td>
+    <td align="center" valign="top" charoff="50">5.5</td>
+    <td align="center" valign="top" charoff="50">13.4</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">All living systems are sustained by complex networks of biochemical reactions that extract energy from organic compounds and generate the building blocks that make up cells.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>
+  </span> Recent work
+  <span class="sup">
+   <a ref-type="bibr" rid="ref2" href="#ref2">2</a>−
+   <a ref-type="bibr" rid="ref5" href="#ref5">5</a>
+  </span> has revived decades-old efforts
+  <span class="sup">
+   <a ref-type="bibr" rid="ref6" href="#ref6">6</a>−
+   <a ref-type="bibr" rid="ref8" href="#ref8">8</a>
+  </span> to obtain a quantitative understanding of the thermodynamics of such metabolic networks. Accurately predicting the thermodynamic parameters, such as Gibbs reaction energies and redox potentials, of biochemical reactions informs both metabolic engineering applications
+  <span class="sup">
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>,
+   <a ref-type="bibr" rid="ref10" href="#ref10">10</a>
+  </span> and the discovery of evolutionary design principles of natural pathways.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref11" href="#ref11">11</a>
+  </span> This applies both to the prediction of the thermodynamics of known metabolic reactions and to non-natural reactions, which can be used to expand nature’s metabolic toolkit.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>,
+   <a ref-type="bibr" rid="ref13" href="#ref13">13</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Experimentally available reaction Gibbs energies and redox potentials provide coverage for only about ∼10% of known natural metabolic reactions. The metabolic modeling community relies mainly on group contribution method (GCM) approaches
+  <span class="sup">
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>−
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> to estimate missing thermodynamic values. GCM decomposes metabolites into functional groups and assigns group energies by calibration against experimental data. The most widely used implementation of the GCM for biochemistry is the eQuilibrator,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> an online thermodynamics calculator. In addition to using GCM to predict the formation energies of compounds, the eQuilibrator makes use of experimental reactant formation energies when available and combines them with group energies in a consistent manner in what is known as the component contribution method. This results in significant increases in accuracy.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> However, whenever experimental reactant formation energies are not available, estimates are based solely on group contribution energies. Such GCM-based estimates, which do not capture intramolecular functional group interactions, have limited prediction accuracy.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>,
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we focus on predicting the thermodynamics of redox biochemistry. Redox reactions, which are fundamental to living systems and are ubiquitous throughout metabolism, consist of electron transfers between two or more redox pairs or half-reactions.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref23" href="#ref23">23</a>
+  </span> Quantum chemistry has recently emerged as an important alternative modeling tool for the accurate prediction of biochemical thermodynamics.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>,
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>,
+   <a ref-type="bibr" rid="ref24" href="#ref24">24</a>,
+   <a ref-type="bibr" rid="ref25" href="#ref25">25</a>
+  </span> However, quantum chemical methods tend to have very high computational cost in comparison with the GCM or other cheminformatic-based alternatives.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Recent work in the intersection of quantum chemistry and machine learning has resulted in hybrid approaches that significantly lower computational cost without sacrificing prediction accuracy.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref26" href="#ref26">26</a>−
+   <a ref-type="bibr" rid="ref29" href="#ref29">29</a>
+  </span> One such hybrid quantum chemistry/machine learning approach, previously applied to organic photovoltaics material design,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref30" href="#ref30">30</a>,
+   <a ref-type="bibr" rid="ref31" href="#ref31">31</a>
+  </span> relies on Gaussian process (GP) regression
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> to calibrate quantum chemical predictions against experimental data. GP regression is an established probabilistic framework in machine learning to build flexible models, which also furnishes uncertainty bounds on predicted data points. Gaussian process regression uses the “kernel trick”
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> to make probabilistic predictions, leveraging the distance between a data point of interest and a training set.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we present a mixed quantum chemistry/machine learning approach for the accurate and high-throughput prediction of biochemical redox potentials. We focus on predicting the thermodynamics of carbonyl (C=O) functional group reductions to alcohols (C—O) or amines (C—N) (
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>A), two of the most abundant redox reaction categories in metabolism, for which a significant amount of experimental data is available. The approach relies on predicting electronic energies of compounds using the semiempirical PM7 method (
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>B)
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> and then correcting for systematic errors in the predictions with GP regression against experimental data (
+  <a rid="fig1" ref-type="fig" href="#fig1">Figures 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>C and 
+  <a rid="fig2" ref-type="fig" href="#fig2">2</a>). We innovate on existing GP regression techniques by making use of novel reaction fingerprints
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> to compute the similarity between redox reactions. We demonstrate that the method results in higher predictive power than the GCM approach. Importantly, this comes at significantly lower computational cost than previously developed quantum chemical methodologies for redox biochemical thermochemistry.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span> In addition, we demonstrate the wide applicability of the GP regression method by directly calibrating GCM and fingerprint-based predictions (without quantum chemistry), also obtaining significant improvements in prediction accuracy. We demonstrate the high-throughput nature of the approach by predicting the redox potentials of what is to our knowledge the largest existing database of non-natural biochemical redox reactions, consisting of more than 315 000 iterative oxidations and reductions of “seed” metabolites from the KEGG database (
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>A).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>−
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+  </span> Using this vast data resource, we apply a novel molecular fingerprint-based analysis—termed “reaction fingerprint heatmap”—to decipher the molecular environment motifs associated with high and low redox potentials, thus providing insights into important structure–energy relationships. We provide open access to the full source code and data, including metabolite geometries, electronic energies, p
+  <span class="italic">K</span>
+  <sub>a</sub>’s, and redox potentials at 
+  <span xlink:href="https://github.com/aspuru-guzik-group/gp_redox_rxn" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/aspuru-guzik-group/gp_redox_rxn</span>.
+ </p>
+ <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>Schematic representation of the workflow. (A) We generate a network of redox reactions obtained from iterative reduction and oxidation of natural seed metabolites. The redox reactions considered are reductions of carbonyl functional groups to both alcohol and amine groups. (B) Starting from simplified molecular-input line-entry system (SMILES)
+    <span class="sup">
+     <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+    </span> string representations of all the compounds in the network at pH = 0, we preoptimize molecular geometries using the Universal Force Field, and run semiempirical quantum chemistry calculations using PM7. (C) We estimate the standard (millimolar state) redox potentials 
+    <span class="italic">E</span>
+    <span class="sup">m</span> for the major species at pH = 0 from the difference in electronic energies. The transformed standard redox potentials 
+    <span class="italic">E</span>′
+    <span class="sup">m</span>(pH = 7) is obtained from cheminformatic p
+    <span class="italic">K</span>
+    <sub>a</sub> estimates and the Alberty–Legendre transform. We calibrated a training set of compounds against available experimental 
+    <span class="italic">E</span>′
+    <span class="sup">m</span>(pH = 7) values using Gaussian process (GP) regression.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-002977_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

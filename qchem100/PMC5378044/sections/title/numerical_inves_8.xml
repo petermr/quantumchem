@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Numerical investigation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to show the feasibility of our protocol, we can estimate the trapped-ion resources needed to simulate, e.g., the prototypical electronic Hamiltonian 
+  <div id="m58" class="inline-formula">
+   <span id="d32e1363" xlink:href="srep03589-m58.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> as described in Eq. (1), for the specific case of the H
+  <sub>2</sub> molecule in a minimal STO-3G basis. This is a two-electron system represented in a basis of four spin-orbitals. The hydrogen atoms were separated by 0.75 Å, near the equilibrium bond distance of the molecule. The Hamiltonian is made up of 12 terms, that include 4 local ion operations and 8 non-local interactions. Each of the non-local terms can be done as a combination of two Mølmer-Sørensen (MS) gates and local rotations, as described in 
+  <a ref-type="table" rid="t1" href="#t1">Table 1</a>. Therefore, to implement the dynamics, one needs 16 MS gates per Trotter step and a certain number of local rotations upon the ions. Since 
+  <span class="italic">π</span>/2 MS gates can be done in ~ 50 
+  <span class="italic">μ</span>s, and local rotations can be performed in negligible times (~ 1 
+  <span class="italic">μ</span>s)
+  <a ref-type="bibr" rid="b22" href="#b22">22</a>
+  <a ref-type="bibr" rid="b32" href="#b32">32</a>, the total simulation time can be assumed of about 800 
+  <span class="italic">μ</span>s for the 
+  <span class="italic">n</span> = 1 protocol, 1.6 ms and 2.4 ms for the 
+  <span class="italic">n</span> = 2 and 
+  <span class="italic">n</span> = 3 protocols. Thus total simulation times are within the decoherence times for trapped-ion setups, of about 30 ms
+  <a ref-type="bibr" rid="b32" href="#b32">32</a>. In a digital protocol performed on real quantum systems, each gate is affected by an error. Thus, increasing the number of Trotter steps leads to an accumulation of the single gate error. To implement an effective quantum simulation, on one hand one has to increase the number of steps to reduce the error due to the digital approximation, on the other hand one is limited by the accumulation of the single gate error. We plot in 
+  <a ref-type="fig" rid="f3" href="#f3">Fig. 3a, 3b, 3c</a>, the fidelity loss 1 − |〈Ψ
+  <span class="italic">
+   <sub>S</sub>
+  </span>|Ψ
+  <span class="italic">
+   <sub>E</sub>
+  </span>〉|
+  <span class="sup">2</span> of the simulated state |Ψ
+  <span class="italic">
+   <sub>S</sub>
+  </span>〉 versus the exact one |Ψ
+  <span class="italic">
+   <sub>E</sub>
+  </span>〉, for the hydrogen Hamiltonian, starting from the initial state with two electrons in the first two orbitals. We plot, along with the digital error, three horizontal lines representing the accumulated gate error, for 
+  <span class="italic">n</span> = 1, 2, 3 in each plot, considering a protocol with an error per Trotter step of 
+  <div id="m59" class="inline-formula">
+   <span id="d32e1425" xlink:href="srep03589-m59.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> (a), 
+  <div id="m60" class="inline-formula">
+   <span id="d32e1428" xlink:href="srep03589-m60.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> (b) and 
+  <div id="m61" class="inline-formula">
+   <span id="d32e1431" xlink:href="srep03589-m61.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> (c). To achieve a reasonable fidelity, one has to find a number of steps that fits the simulation at a specific time. The vertical lines and arrows in the figure mark the time regions in which the error starts to be dominated by the digital error. Trapped-ion two-qubit gates are predicted to achieve in the near future infidelities of 10
+  <span class="sup">−4</span>, thus making the use of these protocols feasible
+  <a ref-type="bibr" rid="b50" href="#b50">50</a>. In 
+  <a ref-type="fig" rid="f3" href="#f3">Fig. 3d</a> we plot the behavior of the energy of the system for the initial state |↑↑↓↓〉 for the exact dynamics, versus the digitized one. Again, one can observe how the energy can be retrieved with a small error within a reduced number of digital steps.
+ </p>
+</sec>

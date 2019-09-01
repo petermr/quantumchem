@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Anticipation that a useful quantum computer will be realized in the near future has motivated intense research into developing quantum algorithms which can potentially make progress on classically intractable computational problems. While many research areas expect to see transformative change with the development of such quantum devices, computational chemistry is poised to be among the first domains to significantly benefit from such new technologies. Due to the exponential growth in the size of the Hilbert space with increasing orbitals, a quantum computer with tens of qubits could potentially surpass classical algorithms
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>. Achieving such a capability depends not only on the quality of the qubits, but also critically on the efficiency of the algorithms.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">The phase estimation algorithm (PEA)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span> was the first algorithm proposed for simulating electronic structure problems on a quantum computer
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>,
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span>. PEA provides a path for obtaining the exact ground state electronic energy for a molecule by evolving in time a quantum state with significant overlap with the ground state using the molecular Hamiltonian of interest. Due to the very long circuit depths and complex quantum gates required by PEA, the coherence times needed to simulate interesting electronic states would exceed the coherence times available on any existing or near-term quantum device. Improvements to PEA still require significant resources and experimental demonstrations to date only involve a few qubits
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>–
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span>.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">In order to reduce the significant hardware demands required by PEA and exploit the capabilities of noisy intermediate-scale quantum (NISQ) devices
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>, the variational quantum eigensolver (VQE) algorithm was proposed and demonstrated using photonic qubits by Peruzzo et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>. This was followed by several theoretical studies on VQE
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>–
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span> and demonstrations on other hardware such as superconducting qubits
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>
+  </span> and trapped ions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>. Other approaches have been pursued as well, including methods for adiabatic quantum computation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span> and quantum machine learning
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span>.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">VQE is a hybrid quantum-classical algorithm, because the computational work is shared between classical and quantum hardware. VQE starts with an assumption about the form of the target wavefunction. Based on this form, an ansatz with several tunable parameters is constructed, and a quantum circuit capable of producing this ansatz is designed. The ansatz parameters are variationally adjusted until they minimize the expectation value of the molecular Hamiltonian. Classical hardware is used to precompute all the Hamiltonian terms and to update the parameters during the circuit optimization. The quantum hardware is only used to prepare a state (defined by its current set of ansatz parameter values) and to perform measurements of the various interaction terms in the molecular Hamiltonian, 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat H = \mathop {\sum}\nolimits_i {g_i} \hat o_i$$\end{document}</span>
+    <div id="M2" class="math">
+     <span class="mi">Ĥ</span>
+     <span class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">ô</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. Because the individual operator terms, 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat o_i$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">ô</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, generally do not commute, the state preparation has to be repeated multiple times, until all the individual operators have been measured enough times to get sufficient statistics on their mean value. Details on all these steps can be found in ref. 
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Compared to PEA, VQE is much more suitable for NISQ devices, trading in the long circuit depths for shorter state preparation circuits, at the expense of a much higher number of measurements. Although VQE has been demonstrated to be more efficient and error-tolerant
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>,
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span>, this comes with the compromise that the ansatz generally only allows one to obtain approximations to the ground state. Because the choice of ansatz determines the variational flexibility of the trial state, the quality of a VQE simulation is only as good as the ansatz.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">Several approaches have been explored with the goal of creating a compact ansatz which provides high accuracy with few parameters and shallow circuits. The first ansatz explored
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span> was based on the unitary variant of coupled cluster theory truncated at single and double excitations (UCCSD), inspired by early efforts in computational chemistry to improve coupled cluster theory
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>–
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>. In UCCSD, trial states are generated by applying to a reference state a unitary operator in the form of an exponential of a sum of single and double fermion operators with their coefficients taken as free parameters. More recent proposals based on UCCSD include the unitary Bogoliubov coupled cluster theory which takes a generalized Hartree–Fock (HF) state as the reference
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span> and the 
+  <span class="italic">k</span>-UpCCGSD approach of Lee et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span> which uses 
+  <span class="italic">k</span> products of unitary paired generalized doubles excitations, along with the full set of generalized single excitations. The 
+  <span class="italic">k</span>-UpCCGSD approach builds on early work by Nakatsuji
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>–
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span> and Nooijen
+  <span class="sup">
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+  </span> studying the use of generalized excitation terms in classical quantum chemistry algorithms, but prunes the expansive operator list by restricting the two-particle terms to only paired interactions, which provides a systematic way to converge to FCI without introducing higher excitation rank operators. Ryabinkin et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span> recently proposed a coupled cluster-like ansatz which is constructed directly in the qubit representation with the goal of achieving shallower circuits. While not directly a variation of the UCCSD ansatz itself, ref. 
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span> developed an approach (termed the quantum subspace expansion) to extract not just the expectation value of 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat H$$\end{document}</span>
+    <div id="M6" class="math">
+     <span class="mi">Ĥ</span>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> but all the matrix elements 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\langle {\rm{I}}|\hat H|J\rangle$$\end{document}</span>
+    <div id="M8" class="math">
+     <span class="mo">⟨</span>
+     <span mathvariant="normal" class="mi">I</span>
+     <span class="mo">∣</span>
+     <span class="mi">Ĥ</span>
+     <span class="mo">∣</span>
+     <span class="mi">J</span>
+     <span class="mo">⟩</span>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> in a small subspace consisting of single excitations from the trial state. This Hamiltonian matrix is then diagonalized on a classical computer, which reduces the impact of decoherence and gives access to excited states. Even further from the original UCC ansatz, Kandala et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>
+  </span> have used an alternative ansatz for their VQE experiments based on the native entangling gate in their superconducting qubit device, referred to as a “hardware-efficient ansatz”. This allows entanglement to be created directly from a device-wide unitary instead of through a more traditional gate decomposition of a fermionic operator.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Despite these considerable improvements to the UCCSD ansatz for VQE, this remains an approximate approach that works best for systems that are not strongly correlated. However, strongly correlated systems are the hardest to simulate classically, and this is precisely the motivation for performing simulations using quantum computers. While an exact VQE simulation could in principle be performed by adding higher rank excitations to the ansatz, this would be prohibitively expensive for both the classical subroutines and NISQ devices. To overcome these challenges, we need to avoid imposing an ad hoc ansatz and instead allow the system to determine its own compact, quasi-optimal ansatz.</p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">In this paper, we achieve this by introducing a simple algorithm termed Adaptive Derivative-Assembled Pseudo-Trotter ansatz Variational Quantum Eigensolver (ADAPT-VQE). ADAPT-VQE determines a quasi-optimal ansatz with the minimal number of operators for a desired level of accuracy. The key idea is to systematically grow the ansatz by adding fermionic operators one-at-a-time, such that the maximal amount of correlation energy is recovered at each step. This results in a wavefunction ansatz that is discovered by the algorithm, and which cannot be predicted a priori from a traditional excitation-based scheme like UCCSD. While intuitive, this approach can also be derived more rigorously as a particular optimization procedure for Full Configuration Interaction (FCI) VQE and is more thoroughly discussed in Section 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> of the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplement</a>. We demonstrate the power of ADAPT-VQE through numerical simulations of three molecules of increasing complexity: LiH, BeH
+  <sub>2</sub>, and H
+  <sub>6</sub>. In each case, we find vastly improved performance compared to UCCSD, both in terms of the number of operators needed to form the trial states and in terms of chemical accuracy. Therefore, we believe that ADAPT-VQE is an ideal hybrid algorithm for NISQ devices.
+ </p>
+</sec>

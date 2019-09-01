@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Transition-State Theory Extended to Moderate Tunneling (
+  <span class="italic">d</span>-TST)
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Eyring's Transition-State Theory (TST) and its variants are frequently used to compute rates of chemical reactions typically assuming a well-defined activated complex. The theory has been the object of a number of studies yielding a variety of formulations based on the concept of an equilibrium between the reactants and the activated complex, all assumed with Boltzmann distributions of the internal degrees of freedom. The rate of transformation is, then, obtained by a combining of thermodynamics, kinetics, quantum chemistry, and statistical mechanics arguments. The authoritative textbook is (Glasstone et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">1941</a>). For a general bimolecular reaction, such as 
+  <div class="inline-formula">
+   <div id="M45" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">R</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span class="mo">+</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">R</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span class="mo">→</span>
+    <span class="mi">T</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">S</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">‡</span>
+     </div>
+    </div>
+    <span class="mo">→</span>
+    <span class="mi">P</span>
+    <span class="mi">r</span>
+    <span class="mi">o</span>
+    <span class="mi">d</span>
+    <span class="mi">u</span>
+    <span class="mi">c</span>
+    <span class="mi">t</span>
+    <span class="mi">s</span>
+   </div>
+  </div>, it is necessary to compute the 
+  <span class="italic">Q</span>
+  <sub>1</sub>, 
+  <span class="italic">Q</span>
+  <sub>2</sub>, and 
+  <span class="italic">Q</span>
+  <span class="sup">‡</span> partition functions of 
+  <span class="italic">R</span>
+  <sub>1</sub>, 
+  <span class="italic">R</span>
+  <sub>2</sub> and of the transition state, respectively. However, the conventional TST is not able to account for low temperature curvatures in the Arrhenius plot, particularly when due to quantum tunneling through the reaction barriers (for the viscosity of fluids see next section). To account for the quantum tunneling in chemical reactions, the transitivity function is modeled in analogy with the AM formula, yielding the 
+  <span class="italic">deformed-</span>Transition-State Theory (
+  <span class="italic">d</span>-TST) (Carvalho-Silva et al., 
+  <a rid="B15" ref-type="bibr" href="#B15">2017</a>):
+ </p>
+ <div id="E36" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(34)</span>
+  <div id="M46" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">h</span>
+       </div>
+      </div>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">Q</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">Q</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">Q</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">-</span>
+          <span class="mi">d</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">ε</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">‡</span>
+             </div>
+            </div>
+           </div>
+           <div class="mrow">
+            <span class="mi">R</span>
+            <span class="mi">T</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+      <span class="mtext">   </span>
+      <span class="mi">d</span>
+      <span class="mo">=</span>
+      <span class="mo">-</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mi">h</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">ν</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">‡</span>
+             </div>
+            </div>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">ε</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">‡</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">h</span> is the Planck's constant and ε
+  <span class="sup">‡</span> is the effective height of the energy barrier, given by the sum of the harmonic zero-point energy correction and the height of the potential energy barrier. This formulation uniformly covers the range from classical to moderate tunneling regimes but is inadequate for deep tunneling. The proposed variant of transition-state theory permits comparison with experiments and tests against alternative formulations (see e.g., Claudino et al., 
+  <a rid="B20" ref-type="bibr" href="#B20">2016</a>; Santin et al., 
+  <a rid="B76" ref-type="bibr" href="#B76">2016</a>; Sanches-Neto et al., 
+  <a rid="B75" ref-type="bibr" href="#B75">2017</a>).
+ </p>
+</sec>

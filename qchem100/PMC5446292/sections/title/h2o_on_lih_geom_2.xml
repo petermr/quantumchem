@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s2A" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">H
+  <sub>2</sub>O on LiH geometry
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The aim of this work is to compare different high-level theories for the calculation of the adsorption energy of a single water molecule on the (001) LiH surface, keeping the atomic structure of the surface fixed. The adsorption energy is defined as the difference in energy between the non-interacting fragments (water and the LiH surface) and the interacting system (water molecule on LiH),
+  <div id="d1" class="disp-formula">
+   <div id="M4" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span class="mtext">ads</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="mstyle">
+       <span class="mtext">O</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">+</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span class="mtext">LiH</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="mstyle">
+       <span class="mtext">O</span>
+      </div>
+      <span class="mo">+</span>
+      <div class="mstyle">
+       <span class="mtext">LiH</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">.</span>
+   </div>
+   <span class="label">(1)</span>
+  </div>An alternative definition for the adsorption energy is the difference between the energy of the system with the water molecule at its equilibrium position on the surface and that of the system in which the water molecule has been displaced vertically by 10 Å. In both definitions, the molecular structure of the water molecule has been kept the same. The latter definition is used for the DMC calculations since it allows to maximize the possible cancellation of errors.
+  <a rid="c44" ref-type="bibr" href="#c44">
+   <span class="sup">44</span>
+  </a> We stress that since we are primarily interested in benchmarking different electronic-structure methods, zero-point energy contributions or finite temperature effects are neglected. The structure of the surface with the adsorbed molecule has been obtained in the following manner. The Li and H atoms have been kept fixed to their pristine lattice sites with a lattice constant of 
+  <span class="italic">a</span> = 4.084 Å, consistent with the previous studies of the LiH crystal.
+  <a rid="c19" ref-type="bibr" href="#c19">
+   <span class="sup">19,20,40</span>
+  </a> This has the advantage of keeping the geometry consistent when supercells or fragments of different sizes are used in quantum chemical and DMC calculations. The water molecule was relaxed on the LiH (001) surface using the Perdew–Burke–Ernzerhof (PBE) XC functional
+  <a rid="c45" ref-type="bibr" href="#c45">
+   <span class="sup">45</span>
+  </a> and a two-layer slab with the 
+  <div class="inline-formula">
+   <div id="M5" class="math">
+    <span class="mn">4</span>
+    <span class="mtext"> </span>
+    <span class="mo">×</span>
+    <span class="mtext"> </span>
+    <span class="mn">4</span>
+   </div>
+  </div> surface supercell. For these calculations, the 
+  <span class="sc">vasp</span> code has been employed.
+  <a rid="c46" ref-type="bibr" href="#c46">
+   <span class="sup">46</span>
+  </a> A vacuum gap of 20.5 Å has been employed to ensure that the surface slab does not interact with its periodic image. The relaxed geometry of the water molecule adsorbed on the LiH surface is shown in Fig. 
+  <a ref-type="fig" rid="f1" href="#f1">1</a>. The DMC adsorption energy curve obtained by varying the distance between the molecule and the surface agrees well with the oxygen–surface distance of the PBE functional (2.15 Å).
+  <a rid="c47" ref-type="bibr" href="#c47">
+   <span class="sup">47</span>
+  </a> The structural coordinates of Fig. 1 are given in the 
+  <span ext-link-type="ftp" xlink:href="ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-146-006721" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supplementary material</span>. This geometry is used throughout the paper for all density-functional and correlated calculations. The convergence of the adsorption energy with the number of layers in the slab is explored in Sec. 
+  <a ref-type="sec" rid="s3B" href="#s3B">III B</a>.
+ </p>
+ <div fig-type="figure" id="f1" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIG. 1.</span>
+  <div class="caption">
+   <p>The adsorption geometry of water on a two-layer slab with 64 atoms per cell, representing the (001) LiH surface. The oxygen–surface distance is 2.15 Å, while the water molecule almost retains its equilibrium structure. The geometry was optimized using the PBE functional.</p>
+  </div>
+  <div xlink:href="JCPSA6-000146-204108_1-g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

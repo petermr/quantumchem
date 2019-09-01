@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">GP-Calibrated Quantum Chemistry Yields High Prediction Accuracy at a Low Computational Cost</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Importantly, our GP-calibrated semiempirical quantum chemistry method results in higher predictive power than the most commonly used approach, the GCM (
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a>, 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>). Using cross-validation to test prediction accuracy, the GP-calibrated PM7 approach results in a higher Pearson correlation coefficient (
+  <span class="italic">r</span>), a higher coefficient of determination (
+  <span class="italic">R</span>
+  <span class="sup">2</span>), and a lower mean absolute error (MAE) than GCM predictions when tested against the set of experimental potentials (
+  <span class="italic">p</span> &lt; 0.05, 
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). The GP calibration also returns a GP uncertainty for each predicted value, and we find that it linearly correlates with the absolute deviation from uncertainty (
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span>).
+ </p>
+ <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Comparison of prediction accuracy for the group contribution method and quantum chemistry with GP regression. Scatter plots of experimental standard transformed redox potentials against predictions from several sources: (a) PM7, (b) linearly calibrated PM7, (c) group contribution method (GCM), and (d) GP-calibrated PM7. The experimental data consist of available standard transformed reduction potentials for carbonyl-to-alcohol and carbonyl-to-amine reductions. Data points in the scatter plot were obtained from a leave-one-out cross-validation (LOOCV) procedure, where the model is trained on all data points except the one point to be predicted. Note that we use the millimolar standard state, 
+    <span class="italic">E</span>′
+    <span class="sup">m</span>, where reactant concentrations are taken as 1 mM, since this is significantly closer to relevant physiological concentrations of metabolites in cells than 1 M. The legend in each plot contains summary statistics for the fit; MAE (mean absolute error) also has the associated standard deviation in parentheses.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-002977_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We note that the GCM predictions, as well as fingerprint-based predictions (without relying on any quantum chemistry calculations), can also be calibrated using GP regression, resulting in significant improvements in their prediction accuracy. Thus, regardless of the underlying modeling choice, the GP calibration approach is an accurate, computationally efficient, and widely applicable modeling framework for the high-throughput prediction of biochemical redox potentials.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">One of the advantages of our approach is its low computational cost (
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>) in comparison to other model chemistries. For instance, the PM7-GP-calibrated calculations are approximately 1000-fold faster than the DLPNO–CCSD(T) calibrated model chemistry, despite both approaches yielding comparable accuracies. We note that the pipeline involves estimating p
+  <span class="italic">K</span>
+  <sub>a</sub>’s and major protonation states at pH = 0 for all metabolites at a slight additional computational cost. However, this cost is also incurred by the GCM approach.
+ </p>
+</sec>

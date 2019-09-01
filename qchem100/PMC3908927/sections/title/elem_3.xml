@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to evaluate the quality of the optimized parameters, we devised two measures 
+  <a rid="pone.0086376-Freire2" ref-type="bibr" href="#pone.0086376-Freire2">[23]</a>, 
+  <a rid="pone.0086376-Freire7" ref-type="bibr" href="#pone.0086376-Freire7">[42]</a>. Both are based on the following formula:
+  <div id="pone.0086376.e008" class="disp-formula">
+   <div xlink:href="pone.0086376.e008.jpg" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">(2)</span>
+  </div>where UME stands for unsigned mean error; i refers to a given complex; n is the number of distances taken into consideration in the given complex; the superscript CSD indicates that the distance R is an experimental crystallographic distance taken from CSD, and the superscript RM1 means that the distance was calculated from the present model. In the first measure we consider only distances between the central lanthanide ion and its directly coordinating atom distances, which we call UME
+  <sub>(Ln-L).</sub> In the second measure, which we call simply UME, we consider not only the lanthanide ion-directly coordinating atoms as before, but also all distances between all atoms of the coordinating polyhedron, thus indirectly taking into account the angles within the coordination polyhedron.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="table" rid="pone-0086376-t002" href="#pone-0086376-t002">Tables 2</a>–
+  <a ref-type="table" rid="pone-0086376-t004" href="#pone-0086376-t004">4</a> present UME
+  <sub>(Ln-L)</sub>s and UMEs for the universe set of complexes for each of the lanthanide trications: Dy(III), Ho(III), and Er(III), identified by their respective CSD codes.
+ </p>
+ <div id="pone-0086376-t002" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t002</span>
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Dy-L)</sub>s and UMEs, for the RM1 model for the lanthanides, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, 
+    <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+    <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a> for each of the 61 dysprosium (III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t002-2" xlink:href="pone.0086376.t002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt103" href="#nt103">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">RM1</td>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt103" href="#nt103">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">RM1</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Dy-L)</sub>s (Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME (Å)</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Dy-L)</sub>s (Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME (Å)</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AMAQDY</td>
+      <td align="left" rowspan="1" colspan="1">0.0517</td>
+      <td align="left" rowspan="1" colspan="1">0.1503</td>
+      <td align="left" rowspan="1" colspan="1">AKUKAT</td>
+      <td align="left" rowspan="1" colspan="1">0.0216</td>
+      <td align="left" rowspan="1" colspan="1">0.1148</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BAFZUE</td>
+      <td align="left" rowspan="1" colspan="1">0.0470</td>
+      <td align="left" rowspan="1" colspan="1">0.1129</td>
+      <td align="left" rowspan="1" colspan="1">BEXLIA</td>
+      <td align="left" rowspan="1" colspan="1">0.0300</td>
+      <td align="left" rowspan="1" colspan="1">0.0972</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BIHLIN</td>
+      <td align="left" rowspan="1" colspan="1">0.0317</td>
+      <td align="left" rowspan="1" colspan="1">0.0719</td>
+      <td align="left" rowspan="1" colspan="1">DANPEN</td>
+      <td align="left" rowspan="1" colspan="1">0.0410</td>
+      <td align="left" rowspan="1" colspan="1">0.0953</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BUVXIZ01</td>
+      <td align="left" rowspan="1" colspan="1">0.0658</td>
+      <td align="left" rowspan="1" colspan="1">0.0872</td>
+      <td align="left" rowspan="1" colspan="1">DEKBEB</td>
+      <td align="left" rowspan="1" colspan="1">0.0438</td>
+      <td align="left" rowspan="1" colspan="1">0.0832</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CECLIF</td>
+      <td align="left" rowspan="1" colspan="1">0.0522</td>
+      <td align="left" rowspan="1" colspan="1">0.0959</td>
+      <td align="left" rowspan="1" colspan="1">DEKBEB01</td>
+      <td align="left" rowspan="1" colspan="1">0.0370</td>
+      <td align="left" rowspan="1" colspan="1">0.0843</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CECLIF10</td>
+      <td align="left" rowspan="1" colspan="1">0.0521</td>
+      <td align="left" rowspan="1" colspan="1">0.0960</td>
+      <td align="left" rowspan="1" colspan="1">DEKCAY01</td>
+      <td align="left" rowspan="1" colspan="1">0.0632</td>
+      <td align="left" rowspan="1" colspan="1">0.1068</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIBTIR</td>
+      <td align="left" rowspan="1" colspan="1">0.0313</td>
+      <td align="left" rowspan="1" colspan="1">0.0977</td>
+      <td align="left" rowspan="1" colspan="1">DUFCOW10</td>
+      <td align="left" rowspan="1" colspan="1">0.0348</td>
+      <td align="left" rowspan="1" colspan="1">0.1042</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIDBOH</td>
+      <td align="left" rowspan="1" colspan="1">0.0417</td>
+      <td align="left" rowspan="1" colspan="1">0.1567</td>
+      <td align="left" rowspan="1" colspan="1">FIGXEZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0327</td>
+      <td align="left" rowspan="1" colspan="1">0.1403</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FOPNAZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0138</td>
+      <td align="left" rowspan="1" colspan="1">0.1471</td>
+      <td align="left" rowspan="1" colspan="1">FUXPAP01</td>
+      <td align="left" rowspan="1" colspan="1">0.1191</td>
+      <td align="left" rowspan="1" colspan="1">0.1026</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FUXRAR</td>
+      <td align="left" rowspan="1" colspan="1">0.0401</td>
+      <td align="left" rowspan="1" colspan="1">0.1662</td>
+      <td align="left" rowspan="1" colspan="1">HIVWEP</td>
+      <td align="left" rowspan="1" colspan="1">0.0665</td>
+      <td align="left" rowspan="1" colspan="1">0.1222</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GAKYEW</td>
+      <td align="left" rowspan="1" colspan="1">0.0258</td>
+      <td align="left" rowspan="1" colspan="1">0.1273</td>
+      <td align="left" rowspan="1" colspan="1">HOCYUU</td>
+      <td align="left" rowspan="1" colspan="1">0.0942</td>
+      <td align="left" rowspan="1" colspan="1">0.0976</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GINPUO</td>
+      <td align="left" rowspan="1" colspan="1">0.0455</td>
+      <td align="left" rowspan="1" colspan="1">0.0813</td>
+      <td align="left" rowspan="1" colspan="1">IMOXAJ</td>
+      <td align="left" rowspan="1" colspan="1">0.0271</td>
+      <td align="left" rowspan="1" colspan="1">0.1036</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HANCAA</td>
+      <td align="left" rowspan="1" colspan="1">0.0553</td>
+      <td align="left" rowspan="1" colspan="1">0.1424</td>
+      <td align="left" rowspan="1" colspan="1">KILZOU02</td>
+      <td align="left" rowspan="1" colspan="1">0.0487</td>
+      <td align="left" rowspan="1" colspan="1">0.1307</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">KITGEZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0480</td>
+      <td align="left" rowspan="1" colspan="1">0.1391</td>
+      <td align="left" rowspan="1" colspan="1">KUYBIP</td>
+      <td align="left" rowspan="1" colspan="1">0.1338</td>
+      <td align="left" rowspan="1" colspan="1">0.1260</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">LEYHUS</td>
+      <td align="left" rowspan="1" colspan="1">0.0296</td>
+      <td align="left" rowspan="1" colspan="1">0.2200</td>
+      <td align="left" rowspan="1" colspan="1">LEZZOG</td>
+      <td align="left" rowspan="1" colspan="1">0.0343</td>
+      <td align="left" rowspan="1" colspan="1">0.0741</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">MANHOY</td>
+      <td align="left" rowspan="1" colspan="1">0.0804</td>
+      <td align="left" rowspan="1" colspan="1">0.1208</td>
+      <td align="left" rowspan="1" colspan="1">MECCUT</td>
+      <td align="left" rowspan="1" colspan="1">0.0408</td>
+      <td align="left" rowspan="1" colspan="1">0.1836</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">PALBIN</td>
+      <td align="left" rowspan="1" colspan="1">0.0205</td>
+      <td align="left" rowspan="1" colspan="1">0.4919</td>
+      <td align="left" rowspan="1" colspan="1">NAKMAO</td>
+      <td align="left" rowspan="1" colspan="1">0.0323</td>
+      <td align="left" rowspan="1" colspan="1">0.0713</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">QQQEMM01</td>
+      <td align="left" rowspan="1" colspan="1">0.0328</td>
+      <td align="left" rowspan="1" colspan="1">0.0841</td>
+      <td align="left" rowspan="1" colspan="1">NAPHAN</td>
+      <td align="left" rowspan="1" colspan="1">0.0377</td>
+      <td align="left" rowspan="1" colspan="1">0.0883</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">SETADY</td>
+      <td align="left" rowspan="1" colspan="1">0.0883</td>
+      <td align="left" rowspan="1" colspan="1">0.2516</td>
+      <td align="left" rowspan="1" colspan="1">OHUYUM</td>
+      <td align="left" rowspan="1" colspan="1">0.0286</td>
+      <td align="left" rowspan="1" colspan="1">0.0985</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">TISQUH</td>
+      <td align="left" rowspan="1" colspan="1">0.0670</td>
+      <td align="left" rowspan="1" colspan="1">0.1240</td>
+      <td align="left" rowspan="1" colspan="1">RABBEX</td>
+      <td align="left" rowspan="1" colspan="1">0.0825</td>
+      <td align="left" rowspan="1" colspan="1">0.2034</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">TUQTUU</td>
+      <td align="left" rowspan="1" colspan="1">0.0601</td>
+      <td align="left" rowspan="1" colspan="1">0.0940</td>
+      <td align="left" rowspan="1" colspan="1">ROCTIN</td>
+      <td align="left" rowspan="1" colspan="1">0.1118</td>
+      <td align="left" rowspan="1" colspan="1">0.2276</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">TUQTUU01</td>
+      <td align="left" rowspan="1" colspan="1">0.0601</td>
+      <td align="left" rowspan="1" colspan="1">0.0943</td>
+      <td align="left" rowspan="1" colspan="1">TESHEF</td>
+      <td align="left" rowspan="1" colspan="1">0.0348</td>
+      <td align="left" rowspan="1" colspan="1">0.1448</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">VOSBOU</td>
+      <td align="left" rowspan="1" colspan="1">0.0587</td>
+      <td align="left" rowspan="1" colspan="1">0.0879</td>
+      <td align="left" rowspan="1" colspan="1">TESHOP</td>
+      <td align="left" rowspan="1" colspan="1">0.0571</td>
+      <td align="left" rowspan="1" colspan="1">0.1010</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">XAWVIA</td>
+      <td align="left" rowspan="1" colspan="1">0.0408</td>
+      <td align="left" rowspan="1" colspan="1">0.1087</td>
+      <td align="left" rowspan="1" colspan="1">TESJEH</td>
+      <td align="left" rowspan="1" colspan="1">0.0356</td>
+      <td align="left" rowspan="1" colspan="1">0.1150</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">XEQMAH</td>
+      <td align="left" rowspan="1" colspan="1">0.0987</td>
+      <td align="left" rowspan="1" colspan="1">0.1019</td>
+      <td align="left" rowspan="1" colspan="1">TESJIL</td>
+      <td align="left" rowspan="1" colspan="1">0.0564</td>
+      <td align="left" rowspan="1" colspan="1">0.1008</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">XIVFUD</td>
+      <td align="left" rowspan="1" colspan="1">0.1015</td>
+      <td align="left" rowspan="1" colspan="1">0.2004</td>
+      <td align="left" rowspan="1" colspan="1">USEPEO</td>
+      <td align="left" rowspan="1" colspan="1">0.0484</td>
+      <td align="left" rowspan="1" colspan="1">0.1090</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">YAVSOD</td>
+      <td align="left" rowspan="1" colspan="1">0.0432</td>
+      <td align="left" rowspan="1" colspan="1">0.0726</td>
+      <td align="left" rowspan="1" colspan="1">WAQZEU</td>
+      <td align="left" rowspan="1" colspan="1">0.1499</td>
+      <td align="left" rowspan="1" colspan="1">0.1742</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ZAXSAS</td>
+      <td align="left" rowspan="1" colspan="1">0.0700</td>
+      <td align="left" rowspan="1" colspan="1">0.1357</td>
+      <td align="left" rowspan="1" colspan="1">WAWJOT01</td>
+      <td align="left" rowspan="1" colspan="1">0.1152</td>
+      <td align="left" rowspan="1" colspan="1">0.1538</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ZZZARG01</td>
+      <td align="left" rowspan="1" colspan="1">0.0602</td>
+      <td align="left" rowspan="1" colspan="1">0.0897</td>
+      <td align="left" rowspan="1" colspan="1">WEDHUJ</td>
+      <td align="left" rowspan="1" colspan="1">0.0282</td>
+      <td align="left" rowspan="1" colspan="1">0.1089</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AGUTOL</td>
+      <td align="left" rowspan="1" colspan="1">0.0719</td>
+      <td align="left" rowspan="1" colspan="1">0.1019</td>
+      <td align="left" rowspan="1" colspan="1">XAYRIZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0416</td>
+      <td align="left" rowspan="1" colspan="1">0.0874</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AHANED</td>
+      <td align="left" rowspan="1" colspan="1">0.0817</td>
+      <td align="left" rowspan="1" colspan="1">0.1433</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="nt103" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">*</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">The complexes are identified by their unique CSD codes 
+     <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+     <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a>.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <div id="pone-0086376-t003" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t003</span>
+  <span class="label">Table 3</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Ho-L)</sub>s and UMEs, for the RM1 model for the lanthanides, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, 
+    <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+    <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a> for each of the 40 holmium (III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t003-3" xlink:href="pone.0086376.t003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt104" href="#nt104">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">Method RM1</td>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt104" href="#nt104">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">Method RM1</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Ho-L)</sub>s (Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME (Å)</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Ho-L)</sub>s (Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME (Å)</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BAGBAN</td>
+      <td align="left" rowspan="1" colspan="1">0.0513</td>
+      <td align="left" rowspan="1" colspan="1">0.1131</td>
+      <td align="left" rowspan="1" colspan="1">XARVOB</td>
+      <td align="left" rowspan="1" colspan="1">0.0363</td>
+      <td align="left" rowspan="1" colspan="1">0.0912</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BEYSAZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0529</td>
+      <td align="left" rowspan="1" colspan="1">0.1976</td>
+      <td align="left" rowspan="1" colspan="1">XAWVOG</td>
+      <td align="left" rowspan="1" colspan="1">0.0530</td>
+      <td align="left" rowspan="1" colspan="1">0.0930</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BUVXOF01</td>
+      <td align="left" rowspan="1" colspan="1">0.0634</td>
+      <td align="left" rowspan="1" colspan="1">0.0869</td>
+      <td align="left" rowspan="1" colspan="1">XEQMEL</td>
+      <td align="left" rowspan="1" colspan="1">0.0843</td>
+      <td align="left" rowspan="1" colspan="1">0.0602</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CAQFUV</td>
+      <td align="left" rowspan="1" colspan="1">0.0676</td>
+      <td align="left" rowspan="1" colspan="1">0.0790</td>
+      <td align="left" rowspan="1" colspan="1">XEWVIE</td>
+      <td align="left" rowspan="1" colspan="1">0.0696</td>
+      <td align="left" rowspan="1" colspan="1">0.1305</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">COZHEE</td>
+      <td align="left" rowspan="1" colspan="1">0.0223</td>
+      <td align="left" rowspan="1" colspan="1">0.0966</td>
+      <td align="left" rowspan="1" colspan="1">XORGEQ</td>
+      <td align="left" rowspan="1" colspan="1">0.0362</td>
+      <td align="left" rowspan="1" colspan="1">0.4482</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CUSYUK</td>
+      <td align="left" rowspan="1" colspan="1">0.0483</td>
+      <td align="left" rowspan="1" colspan="1">0.2318</td>
+      <td align="left" rowspan="1" colspan="1">AGUVED</td>
+      <td align="left" rowspan="1" colspan="1">0.0443</td>
+      <td align="left" rowspan="1" colspan="1">0.0838</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ECOJEL</td>
+      <td align="left" rowspan="1" colspan="1">0.0975</td>
+      <td align="left" rowspan="1" colspan="1">0.1573</td>
+      <td align="left" rowspan="1" colspan="1">AXAZAA</td>
+      <td align="left" rowspan="1" colspan="1">0.0893</td>
+      <td align="left" rowspan="1" colspan="1">0.1137</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FAGYOC</td>
+      <td align="left" rowspan="1" colspan="1">0.0695</td>
+      <td align="left" rowspan="1" colspan="1">0.3482</td>
+      <td align="left" rowspan="1" colspan="1">DEKBAX</td>
+      <td align="left" rowspan="1" colspan="1">0.0378</td>
+      <td align="left" rowspan="1" colspan="1">0.0768</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GAKYIA</td>
+      <td align="left" rowspan="1" colspan="1">0.0462</td>
+      <td align="left" rowspan="1" colspan="1">0.1312</td>
+      <td align="left" rowspan="1" colspan="1">DEKBOL</td>
+      <td align="left" rowspan="1" colspan="1">0.1163</td>
+      <td align="left" rowspan="1" colspan="1">0.1557</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GINREA</td>
+      <td align="left" rowspan="1" colspan="1">0.0460</td>
+      <td align="left" rowspan="1" colspan="1">0.0775</td>
+      <td align="left" rowspan="1" colspan="1">EWIPUV</td>
+      <td align="left" rowspan="1" colspan="1">0.0365</td>
+      <td align="left" rowspan="1" colspan="1">0.1275</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GODKOZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0358</td>
+      <td align="left" rowspan="1" colspan="1">0.0523</td>
+      <td align="left" rowspan="1" colspan="1">FUXRIZ</td>
+      <td align="left" rowspan="1" colspan="1">0.0742</td>
+      <td align="left" rowspan="1" colspan="1">0.0715</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HANCII</td>
+      <td align="left" rowspan="1" colspan="1">0.0196</td>
+      <td align="left" rowspan="1" colspan="1">0.0593</td>
+      <td align="left" rowspan="1" colspan="1">GIFLIQ</td>
+      <td align="left" rowspan="1" colspan="1">0.1142</td>
+      <td align="left" rowspan="1" colspan="1">0.1489</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HOESUL02</td>
+      <td align="left" rowspan="1" colspan="1">0.0621</td>
+      <td align="left" rowspan="1" colspan="1">0.0916</td>
+      <td align="left" rowspan="1" colspan="1">MOGWUB</td>
+      <td align="left" rowspan="1" colspan="1">0.4893</td>
+      <td align="left" rowspan="1" colspan="1">0.6047</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">KITGOJ</td>
+      <td align="left" rowspan="1" colspan="1">0.0254</td>
+      <td align="left" rowspan="1" colspan="1">0.0773</td>
+      <td align="left" rowspan="1" colspan="1">MUHWIW</td>
+      <td align="left" rowspan="1" colspan="1">0.0491</td>
+      <td align="left" rowspan="1" colspan="1">0.0888</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">LEYJEE</td>
+      <td align="left" rowspan="1" colspan="1">0.0413</td>
+      <td align="left" rowspan="1" colspan="1">0.1874</td>
+      <td align="left" rowspan="1" colspan="1">NUFQAG</td>
+      <td align="left" rowspan="1" colspan="1">0.0399</td>
+      <td align="left" rowspan="1" colspan="1">0.0715</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">LIZPAL</td>
+      <td align="left" rowspan="1" colspan="1">0.0499</td>
+      <td align="left" rowspan="1" colspan="1">0.2272</td>
+      <td align="left" rowspan="1" colspan="1">NUYNOL</td>
+      <td align="left" rowspan="1" colspan="1">0.0689</td>
+      <td align="left" rowspan="1" colspan="1">0.0652</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NIHRIF</td>
+      <td align="left" rowspan="1" colspan="1">0.0640</td>
+      <td align="left" rowspan="1" colspan="1">0.1070</td>
+      <td align="left" rowspan="1" colspan="1">NUYNOL01</td>
+      <td align="left" rowspan="1" colspan="1">0.0484</td>
+      <td align="left" rowspan="1" colspan="1">0.0764</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NUJBAV</td>
+      <td align="left" rowspan="1" colspan="1">0.0087</td>
+      <td align="left" rowspan="1" colspan="1">0.0625</td>
+      <td align="left" rowspan="1" colspan="1">QELLOJ</td>
+      <td align="left" rowspan="1" colspan="1">0.0493</td>
+      <td align="left" rowspan="1" colspan="1">0.0937</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">QOZVOQ</td>
+      <td align="left" rowspan="1" colspan="1">0.0185</td>
+      <td align="left" rowspan="1" colspan="1">0.1002</td>
+      <td align="left" rowspan="1" colspan="1">QIVYAW</td>
+      <td align="left" rowspan="1" colspan="1">0.0423</td>
+      <td align="left" rowspan="1" colspan="1">0.0620</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">SIFZIQ</td>
+      <td align="left" rowspan="1" colspan="1">0.0273</td>
+      <td align="left" rowspan="1" colspan="1">0.1721</td>
+      <td align="left" rowspan="1" colspan="1">YEFVUA</td>
+      <td align="left" rowspan="1" colspan="1">0.0349</td>
+      <td align="left" rowspan="1" colspan="1">0.0760</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="nt104" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">*</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">The complexes are identified by their unique CSD codes 
+     <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+     <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a>.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <div id="pone-0086376-t004" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t004</span>
+  <span class="label">Table 4</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Er-L)</sub>s and UMEs, for Method RM1, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, 
+    <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+    <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a> for each of the 59 erbium (III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t004-4" xlink:href="pone.0086376.t004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt105" href="#nt105">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">Method RM1</td>
+      <td align="left" rowspan="1" colspan="1">Complex
+       <a ref-type="table-fn" rid="nt105" href="#nt105">*</a>
+      </td>
+      <td colspan="2" align="left" rowspan="1">Method RM1</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Er-L)</sub>s(Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME(Å)</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">UME
+       <sub>(Er-L)</sub>s(Å)
+      </td>
+      <td align="left" rowspan="1" colspan="1">UME(Å)</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AERETS02</td>
+      <td align="left" rowspan="1" colspan="1">0.0563</td>
+      <td align="left" rowspan="1" colspan="1">0.0895</td>
+      <td align="left" rowspan="1" colspan="1">RIKTEK</td>
+      <td align="left" rowspan="1" colspan="1">0.0522</td>
+      <td align="left" rowspan="1" colspan="1">0.2208</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AKIYEY</td>
+      <td align="left" rowspan="1" colspan="1">0.0440</td>
+      <td align="left" rowspan="1" colspan="1">0.2700</td>
+      <td align="left" rowspan="1" colspan="1">RIKTEK01</td>
+      <td align="left" rowspan="1" colspan="1">0.0488</td>
+      <td align="left" rowspan="1" colspan="1">0.2197</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BAGBER</td>
+      <td align="left" rowspan="1" colspan="1">0.0462</td>
+      <td align="left" rowspan="1" colspan="1">0.1076</td>
+      <td align="left" rowspan="1" colspan="1">ROCSOS</td>
+      <td align="left" rowspan="1" colspan="1">0.0782</td>
+      <td align="left" rowspan="1" colspan="1">0.2444</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BEXLEW</td>
+      <td align="left" rowspan="1" colspan="1">0.0842</td>
+      <td align="left" rowspan="1" colspan="1">0.1678</td>
+      <td align="left" rowspan="1" colspan="1">ROCTOT</td>
+      <td align="left" rowspan="1" colspan="1">0.0595</td>
+      <td align="left" rowspan="1" colspan="1">0.2138</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BOBWAQ</td>
+      <td align="left" rowspan="1" colspan="1">0.0421</td>
+      <td align="left" rowspan="1" colspan="1">0.1184</td>
+      <td align="left" rowspan="1" colspan="1">RUNQOG</td>
+      <td align="left" rowspan="1" colspan="1">0.0513</td>
+      <td align="left" rowspan="1" colspan="1">0.1022</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BODMUD</td>
+      <td align="left" rowspan="1" colspan="1">0.0388</td>
+      <td align="left" rowspan="1" colspan="1">0.1382</td>
+      <td align="left" rowspan="1" colspan="1">SEGVAB</td>
+      <td align="left" rowspan="1" colspan="1">0.0691</td>
+      <td align="left" rowspan="1" colspan="1">0.1681</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BOWXOA</td>
+      <td align="left" rowspan="1" colspan="1">0.0450</td>
+      <td align="left" rowspan="1" colspan="1">0.1848</td>
+      <td align="left" rowspan="1" colspan="1">SOKBID</td>
+      <td align="left" rowspan="1" colspan="1">0.0280</td>
+      <td align="left" rowspan="1" colspan="1">0.0513</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DEKCEC</td>
+      <td align="left" rowspan="1" colspan="1">0.0371</td>
+      <td align="left" rowspan="1" colspan="1">0.0914</td>
+      <td align="left" rowspan="1" colspan="1">TACERB01</td>
+      <td align="left" rowspan="1" colspan="1">0.0262</td>
+      <td align="left" rowspan="1" colspan="1">0.0958</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIBTAJ</td>
+      <td align="left" rowspan="1" colspan="1">0.0369</td>
+      <td align="left" rowspan="1" colspan="1">0.1778</td>
+      <td align="left" rowspan="1" colspan="1">TEJFEU</td>
+      <td align="left" rowspan="1" colspan="1">0.1355</td>
+      <td align="left" rowspan="1" colspan="1">0.2048</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIDCAU</td>
+      <td align="left" rowspan="1" colspan="1">0.0399</td>
+      <td align="left" rowspan="1" colspan="1">0.2601</td>
+      <td align="left" rowspan="1" colspan="1">TEPKOO</td>
+      <td align="left" rowspan="1" colspan="1">0.0297</td>
+      <td align="left" rowspan="1" colspan="1">0.0715</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIJQAO</td>
+      <td align="left" rowspan="1" colspan="1">0.0391</td>
+      <td align="left" rowspan="1" colspan="1">0.2332</td>
+      <td align="left" rowspan="1" colspan="1">TMHDER</td>
+      <td align="left" rowspan="1" colspan="1">0.0588</td>
+      <td align="left" rowspan="1" colspan="1">0.3224</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIJQIW</td>
+      <td align="left" rowspan="1" colspan="1">0.0310</td>
+      <td align="left" rowspan="1" colspan="1">0.1024</td>
+      <td align="left" rowspan="1" colspan="1">TUMJEQ</td>
+      <td align="left" rowspan="1" colspan="1">0.0583</td>
+      <td align="left" rowspan="1" colspan="1">0.1227</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIYNII</td>
+      <td align="left" rowspan="1" colspan="1">0.0260</td>
+      <td align="left" rowspan="1" colspan="1">0.1158</td>
+      <td align="left" rowspan="1" colspan="1">UFIRIK</td>
+      <td align="left" rowspan="1" colspan="1">0.0622</td>
+      <td align="left" rowspan="1" colspan="1">0.0716</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DOGKEP</td>
+      <td align="left" rowspan="1" colspan="1">0.0323</td>
+      <td align="left" rowspan="1" colspan="1">0.1502</td>
+      <td align="left" rowspan="1" colspan="1">VEQFOM</td>
+      <td align="left" rowspan="1" colspan="1">0.0820</td>
+      <td align="left" rowspan="1" colspan="1">0.0617</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GAKYOG</td>
+      <td align="left" rowspan="1" colspan="1">0.0266</td>
+      <td align="left" rowspan="1" colspan="1">0.1057</td>
+      <td align="left" rowspan="1" colspan="1">VOSNOG</td>
+      <td align="left" rowspan="1" colspan="1">0.0375</td>
+      <td align="left" rowspan="1" colspan="1">0.0833</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GINRIE</td>
+      <td align="left" rowspan="1" colspan="1">0.0464</td>
+      <td align="left" rowspan="1" colspan="1">0.0807</td>
+      <td align="left" rowspan="1" colspan="1">VUSGUL</td>
+      <td align="left" rowspan="1" colspan="1">0.0817</td>
+      <td align="left" rowspan="1" colspan="1">0.0941</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HANCOO</td>
+      <td align="left" rowspan="1" colspan="1">0.0165</td>
+      <td align="left" rowspan="1" colspan="1">0.0609</td>
+      <td align="left" rowspan="1" colspan="1">VUSHEW</td>
+      <td align="left" rowspan="1" colspan="1">0.0593</td>
+      <td align="left" rowspan="1" colspan="1">0.1107</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HEDVIW</td>
+      <td align="left" rowspan="1" colspan="1">0.1052</td>
+      <td align="left" rowspan="1" colspan="1">0.1989</td>
+      <td align="left" rowspan="1" colspan="1">WEFVIM</td>
+      <td align="left" rowspan="1" colspan="1">0.0466</td>
+      <td align="left" rowspan="1" colspan="1">0.0843</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HENAEB</td>
+      <td align="left" rowspan="1" colspan="1">0.0283</td>
+      <td align="left" rowspan="1" colspan="1">0.1548</td>
+      <td align="left" rowspan="1" colspan="1">XAXYAX</td>
+      <td align="left" rowspan="1" colspan="1">0.0593</td>
+      <td align="left" rowspan="1" colspan="1">0.0854</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">KITGUP</td>
+      <td align="left" rowspan="1" colspan="1">0.0149</td>
+      <td align="left" rowspan="1" colspan="1">0.0729</td>
+      <td align="left" rowspan="1" colspan="1">XEWVOK</td>
+      <td align="left" rowspan="1" colspan="1">0.0442</td>
+      <td align="left" rowspan="1" colspan="1">0.1163</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">KOZBUW</td>
+      <td align="left" rowspan="1" colspan="1">0.0144</td>
+      <td align="left" rowspan="1" colspan="1">0.0561</td>
+      <td align="left" rowspan="1" colspan="1">XEWWUR</td>
+      <td align="left" rowspan="1" colspan="1">0.0472</td>
+      <td align="left" rowspan="1" colspan="1">0.0938</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">LEYJII</td>
+      <td align="left" rowspan="1" colspan="1">0.0294</td>
+      <td align="left" rowspan="1" colspan="1">0.2276</td>
+      <td align="left" rowspan="1" colspan="1">XOVHAS</td>
+      <td align="left" rowspan="1" colspan="1">0.0851</td>
+      <td align="left" rowspan="1" colspan="1">0.2268</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">MAGDOP</td>
+      <td align="left" rowspan="1" colspan="1">0.0449</td>
+      <td align="left" rowspan="1" colspan="1">0.1319</td>
+      <td align="left" rowspan="1" colspan="1">XOYXIS</td>
+      <td align="left" rowspan="1" colspan="1">0.0285</td>
+      <td align="left" rowspan="1" colspan="1">0.1590</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">MECDEE</td>
+      <td align="left" rowspan="1" colspan="1">0.0281</td>
+      <td align="left" rowspan="1" colspan="1">0.0853</td>
+      <td align="left" rowspan="1" colspan="1">YEGFEV</td>
+      <td align="left" rowspan="1" colspan="1">0.0504</td>
+      <td align="left" rowspan="1" colspan="1">0.1687</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NIVQUE</td>
+      <td align="left" rowspan="1" colspan="1">0.0499</td>
+      <td align="left" rowspan="1" colspan="1">0.2188</td>
+      <td align="left" rowspan="1" colspan="1">YEMSIT</td>
+      <td align="left" rowspan="1" colspan="1">0.0767</td>
+      <td align="left" rowspan="1" colspan="1">0.1338</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NUYNUR</td>
+      <td align="left" rowspan="1" colspan="1">0.0838</td>
+      <td align="left" rowspan="1" colspan="1">0.2163</td>
+      <td align="left" rowspan="1" colspan="1">YICCIW</td>
+      <td align="left" rowspan="1" colspan="1">0.0344</td>
+      <td align="left" rowspan="1" colspan="1">0.1527</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">OHUZEX</td>
+      <td align="left" rowspan="1" colspan="1">0.0269</td>
+      <td align="left" rowspan="1" colspan="1">0.0890</td>
+      <td align="left" rowspan="1" colspan="1">YUFWIG</td>
+      <td align="left" rowspan="1" colspan="1">0.0196</td>
+      <td align="left" rowspan="1" colspan="1">0.0988</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">OMATUS</td>
+      <td align="left" rowspan="1" colspan="1">0.0742</td>
+      <td align="left" rowspan="1" colspan="1">0.1597</td>
+      <td align="left" rowspan="1" colspan="1">ZADWUW</td>
+      <td align="left" rowspan="1" colspan="1">0.1281</td>
+      <td align="left" rowspan="1" colspan="1">0.2265</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">QIVXID</td>
+      <td align="left" rowspan="1" colspan="1">0.0742</td>
+      <td align="left" rowspan="1" colspan="1">0.2170</td>
+      <td align="left" rowspan="1" colspan="1">ZUFSAU</td>
+      <td align="left" rowspan="1" colspan="1">0.0480</td>
+      <td align="left" rowspan="1" colspan="1">0.1304</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">RELNIG</td>
+      <td align="left" rowspan="1" colspan="1">0.0530</td>
+      <td align="left" rowspan="1" colspan="1">0.1011</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="nt105" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">*</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">The complexes are identified by their unique CSD codes 
+     <a rid="pone.0086376-Allen1" ref-type="bibr" href="#pone.0086376-Allen1">[37]</a>–
+     <a rid="pone.0086376-Allen2" ref-type="bibr" href="#pone.0086376-Allen2">[39]</a>.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now proceed to the statistical validation of the model 
+  <a rid="pone.0086376-Freire8" ref-type="bibr" href="#pone.0086376-Freire8">[43]</a>. If the parameterizations captured the essence of the coordinating bonds, then the histograms of both UME
+  <sub>(Ln-L)</sub> and UME must follow gamma distribution functions since, by definition, the UMEs can only have positive values. The gamma distributions are then adjusted to reproduce the mean and variance of the UME
+  <sub>(Ln-L)</sub>s, for each of the parameterized trications. Finally, the qualities of the gamma distribution fits of the data were then assessed via the one-sample nonparametric Kolmogorov-Smirnoff test 
+  <a rid="pone.0086376-Conover1" ref-type="bibr" href="#pone.0086376-Conover1">[44]</a>. If the p-value of the test is larger than 0.05, then the gamma distribution fit is justified within a 95% interval and the use of the mean and variance of the data, as accuracy measures, is also statistically justified. Accordingly, 
+  <a ref-type="table" rid="pone-0086376-t005" href="#pone-0086376-t005">Tables 5</a> and 
+  <a ref-type="table" rid="pone-0086376-t006" href="#pone-0086376-t006">6</a> display the mean, variance, and p-value of the test for each of the lanthanide ions, for both the UME
+  <sub>(Ln-L)</sub>s and UMEs. All p-values are substantially larger than 0.05 and, therefore, the means and variances in 
+  <a ref-type="table" rid="pone-0086376-t005" href="#pone-0086376-t005">Tables 5</a> and 
+  <a ref-type="table" rid="pone-0086376-t006" href="#pone-0086376-t006">6</a> can justifiably be taken as accuracy measures of the models for Dy(III), Ho(III), and Er(III).
+ </p>
+ <div id="pone-0086376-t005" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t005</span>
+  <span class="label">Table 5</span>
+  <div class="caption">
+   <div class="title">Means and variances for the 
+    <span class="italic">γ</span> distribution fits of the UME
+    <sub>(Ln-L)</sub>s computed for the 
+    <span class="italic">N</span> complexes for each lanthanide trication.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t005-5" xlink:href="pone.0086376.t005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td colspan="5" align="left" rowspan="1">UME
+       <sub>(Ln-L)</sub>s
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Lanthanide ion</td>
+      <td align="left" rowspan="1" colspan="1">N</td>
+      <td align="left" rowspan="1" colspan="1">mean (Å)</td>
+      <td align="left" rowspan="1" colspan="1">variance (Å
+       <span class="sup">2</span>)
+      </td>
+      <td align="left" rowspan="1" colspan="1">p-value</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">61</td>
+      <td align="left" rowspan="1" colspan="1">0.0539</td>
+      <td align="left" rowspan="1" colspan="1">0.0032</td>
+      <td align="left" rowspan="1" colspan="1">0.7986</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">40</td>
+      <td align="left" rowspan="1" colspan="1">0.0602</td>
+      <td align="left" rowspan="1" colspan="1">0.0069</td>
+      <td align="left" rowspan="1" colspan="1">0.1292</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">58</td>
+      <td align="left" rowspan="1" colspan="1">0.0506</td>
+      <td align="left" rowspan="1" colspan="1">0.0025</td>
+      <td align="left" rowspan="1" colspan="1">0.9082</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone-0086376-t006" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t006</span>
+  <span class="label">Table 6</span>
+  <div class="caption">
+   <div class="title">Means and variances for the 
+    <span class="italic">γ</span> distribution fits for the UMEs computed for the 
+    <span class="italic">N</span> complexes for each lanthanide trication.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t006-6" xlink:href="pone.0086376.t006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td colspan="5" align="left" rowspan="1">UMEs</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Lanthanide ion</td>
+      <td align="left" rowspan="1" colspan="1">N</td>
+      <td align="left" rowspan="1" colspan="1">mean (Å)</td>
+      <td align="left" rowspan="1" colspan="1">variance (Å
+       <span class="sup">2</span>)
+      </td>
+      <td align="left" rowspan="1" colspan="1">p-value</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">61</td>
+      <td align="left" rowspan="1" colspan="1">0.1193</td>
+      <td align="left" rowspan="1" colspan="1">0.0169</td>
+      <td align="left" rowspan="1" colspan="1">0.1578</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">40</td>
+      <td align="left" rowspan="1" colspan="1">0.1225</td>
+      <td align="left" rowspan="1" colspan="1">0.0290</td>
+      <td align="left" rowspan="1" colspan="1">0.1463</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">58</td>
+      <td align="left" rowspan="1" colspan="1">0.1348</td>
+      <td align="left" rowspan="1" colspan="1">0.0228</td>
+      <td align="left" rowspan="1" colspan="1">0.5425</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now proceed to analyze the performance of the models with respect to specific types of distances for Dy(III), Ho(III), and Er(III). 
+  <a ref-type="table" rid="pone-0086376-t007" href="#pone-0086376-t007">Tables 7</a>–
+  <a ref-type="table" rid="pone-0086376-t009" href="#pone-0086376-t009">9</a> and 
+  <a ref-type="fig" rid="pone-0086376-g001" href="#pone-0086376-g001">Figures 1</a>–
+  <a ref-type="fig" rid="pone-0086376-g003" href="#pone-0086376-g003">3</a> show UMEs for all types of Ln-L distances present in the universe of Ln(III) complexes, together with the corresponding values from the previous sparkle models for comparison. It must be noted, though, that in the original sparkle model articles, we only included complexes with exclusively Ln-O and Ln-N bonds. But, in the present article, we are considering a much larger set of complexes with other types of bonds such as Ln-C, Ln-Cl, etc. Indeed, here we now may have complexes which have not only Ln-O and/or Ln-N bonds, but also other types of bonds, such as Ln-C bonds, all in the same compound. Of course, these were not included as test cases for the previous Sparkle models, but are here taken in full consideration. And that is the reason why UMEs for the Ln-O and Ln-N types of bonds in the present article tend to be different, slightly larger, when set side by side to similar Ln-O and Ln-N UMEs of the original sparkle model articles. However, not to unnecessarily crowd the present article, in the tables, we only show numbers computed using the old models, but for the new test set.
+ </p>
+ <div id="pone-0086376-g001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g001</span>
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Ln)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Ln interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone-0086376-g002" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g002</span>
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-O)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-O interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone-0086376-g003" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g003</span>
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-N)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-N interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone-0086376-t007" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t007</span>
+  <span class="label">Table 7</span>
+  <div class="caption">
+   <div class="title">RM1, Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3, and Sparkle/AM1 unsigned mean errors for different types of distances of dysprosium(III) complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t007-7" xlink:href="pone.0086376.t007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Type of distances</td>
+      <td colspan="7" align="left" rowspan="1">unsigned mean errors for specific types of distances (Å)</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">N</td>
+      <td align="left" rowspan="1" colspan="1">RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM7</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM6</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM3</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/AM1</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - Dy</td>
+      <td align="left" rowspan="1" colspan="1">16</td>
+      <td align="left" rowspan="1" colspan="1">0.2118</td>
+      <td align="left" rowspan="1" colspan="1">0.2397</td>
+      <td align="left" rowspan="1" colspan="1">0.5950</td>
+      <td align="left" rowspan="1" colspan="1">0.5025</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1784</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2531</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - O</td>
+      <td align="left" rowspan="1" colspan="1">283</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0637</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.0760</td>
+      <td align="left" rowspan="1" colspan="1">0.0692</td>
+      <td align="left" rowspan="1" colspan="1">0.1259</td>
+      <td align="left" rowspan="1" colspan="1">0.0685</td>
+      <td align="left" rowspan="1" colspan="1">0.0740</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - N</td>
+      <td align="left" rowspan="1" colspan="1">105</td>
+      <td align="left" rowspan="1" colspan="1">0.0594</td>
+      <td align="left" rowspan="1" colspan="1">0.0510</td>
+      <td align="left" rowspan="1" colspan="1">0.2084</td>
+      <td align="left" rowspan="1" colspan="1">0.0992</td>
+      <td align="left" rowspan="1" colspan="1">0.0741</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0500</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - C</td>
+      <td align="left" rowspan="1" colspan="1">315</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0341</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.1854</td>
+      <td align="left" rowspan="1" colspan="1">0.2567</td>
+      <td align="left" rowspan="1" colspan="1">0.4616</td>
+      <td align="left" rowspan="1" colspan="1">0.2346</td>
+      <td align="left" rowspan="1" colspan="1">0.2161</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - S</td>
+      <td align="left" rowspan="1" colspan="1">21</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0824</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.5016</td>
+      <td align="left" rowspan="1" colspan="1">0.9833</td>
+      <td align="left" rowspan="1" colspan="1">0.5359</td>
+      <td align="left" rowspan="1" colspan="1">0.4996</td>
+      <td align="left" rowspan="1" colspan="1">0.5019</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - P</td>
+      <td align="left" rowspan="1" colspan="1">3</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0273</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.1591</td>
+      <td align="left" rowspan="1" colspan="1">2.3194</td>
+      <td align="left" rowspan="1" colspan="1">0.3934</td>
+      <td align="left" rowspan="1" colspan="1">0.4205</td>
+      <td align="left" rowspan="1" colspan="1">0.3918</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - Cl</td>
+      <td align="left" rowspan="1" colspan="1">20</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0525</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2858</td>
+      <td align="left" rowspan="1" colspan="1">0.1757</td>
+      <td align="left" rowspan="1" colspan="1">0.2318</td>
+      <td align="left" rowspan="1" colspan="1">0.2475</td>
+      <td align="left" rowspan="1" colspan="1">0.2546</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - Br</td>
+      <td align="left" rowspan="1" colspan="1">5</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0311</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.4564</td>
+      <td align="left" rowspan="1" colspan="1">1.3418</td>
+      <td align="left" rowspan="1" colspan="1">0.3986</td>
+      <td align="left" rowspan="1" colspan="1">0.4209</td>
+      <td align="left" rowspan="1" colspan="1">0.4320</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy - L</td>
+      <td align="left" rowspan="1" colspan="1">768</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0539</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.1408</td>
+      <td align="left" rowspan="1" colspan="1">0.2209</td>
+      <td align="left" rowspan="1" colspan="1">0.2846</td>
+      <td align="left" rowspan="1" colspan="1">0.1598</td>
+      <td align="left" rowspan="1" colspan="1">0.1527</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L-L′</td>
+      <td align="left" rowspan="1" colspan="1">3499</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1336</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2370</td>
+      <td align="left" rowspan="1" colspan="1">0.2931</td>
+      <td align="left" rowspan="1" colspan="1">0.3449</td>
+      <td align="left" rowspan="1" colspan="1">0.2433</td>
+      <td align="left" rowspan="1" colspan="1">0.2621</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Dy-L, Dy-Dy and L-L′</td>
+      <td align="left" rowspan="1" colspan="1">4267</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1193</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2197</td>
+      <td align="left" rowspan="1" colspan="1">0.2801</td>
+      <td align="left" rowspan="1" colspan="1">0.3341</td>
+      <td align="left" rowspan="1" colspan="1">0.2283</td>
+      <td align="left" rowspan="1" colspan="1">0.2424</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone-0086376-t008" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t008</span>
+  <span class="label">Table 8</span>
+  <div class="caption">
+   <div class="title">RM1, Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3, and Sparkle/AM1 unsigned mean errors for specific types of distances for holmium(III) complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t008-8" xlink:href="pone.0086376.t008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Type of distances</td>
+      <td colspan="7" align="left" rowspan="1">unsigned mean errors for specific types of distances (Å)</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">N</td>
+      <td align="left" rowspan="1" colspan="1">RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM7</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM6</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM3</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/AM1</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - Ho</td>
+      <td align="left" rowspan="1" colspan="1">4</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1301</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2083</td>
+      <td align="left" rowspan="1" colspan="1">0.2144</td>
+      <td align="left" rowspan="1" colspan="1">0.2751</td>
+      <td align="left" rowspan="1" colspan="1">0.1958</td>
+      <td align="left" rowspan="1" colspan="1">0.2747</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - O</td>
+      <td align="left" rowspan="1" colspan="1">219</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0475</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.0604</td>
+      <td align="left" rowspan="1" colspan="1">0.0554</td>
+      <td align="left" rowspan="1" colspan="1">0.1021</td>
+      <td align="left" rowspan="1" colspan="1">0.0639</td>
+      <td align="left" rowspan="1" colspan="1">0.0557</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - N</td>
+      <td align="left" rowspan="1" colspan="1">58</td>
+      <td align="left" rowspan="1" colspan="1">0.0786</td>
+      <td align="left" rowspan="1" colspan="1">0.0696</td>
+      <td align="left" rowspan="1" colspan="1">0.1592</td>
+      <td align="left" rowspan="1" colspan="1">0.1732</td>
+      <td align="left" rowspan="1" colspan="1">0.0585</td>
+      <td align="left" rowspan="1" colspan="1">0.
+       <span class="bold">0469</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - C</td>
+      <td align="left" rowspan="1" colspan="1">98</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0752</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2256</td>
+      <td align="left" rowspan="1" colspan="1">0.4544</td>
+      <td align="left" rowspan="1" colspan="1">0.5380</td>
+      <td align="left" rowspan="1" colspan="1">0.2537</td>
+      <td align="left" rowspan="1" colspan="1">0.2655</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - Cl</td>
+      <td align="left" rowspan="1" colspan="1">28</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0585</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.3055</td>
+      <td align="left" rowspan="1" colspan="1">0.1262</td>
+      <td align="left" rowspan="1" colspan="1">0.2777</td>
+      <td align="left" rowspan="1" colspan="1">0.2480</td>
+      <td align="left" rowspan="1" colspan="1">0.2679</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho - L</td>
+      <td align="left" rowspan="1" colspan="1">407</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0602</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.1198</td>
+      <td align="left" rowspan="1" colspan="1">0.1727</td>
+      <td align="left" rowspan="1" colspan="1">0.2310</td>
+      <td align="left" rowspan="1" colspan="1">0.1228</td>
+      <td align="left" rowspan="1" colspan="1">0.1217</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L – L′</td>
+      <td align="left" rowspan="1" colspan="1">1748</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1371</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2326</td>
+      <td align="left" rowspan="1" colspan="1">0.3289</td>
+      <td align="left" rowspan="1" colspan="1">0.3462</td>
+      <td align="left" rowspan="1" colspan="1">0.2324</td>
+      <td align="left" rowspan="1" colspan="1">0.2585</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ho-L, Ho-Ho and L-L</td>
+      <td align="left" rowspan="1" colspan="1">2155</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1225</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2113</td>
+      <td align="left" rowspan="1" colspan="1">0.2994</td>
+      <td align="left" rowspan="1" colspan="1">0.3245</td>
+      <td align="left" rowspan="1" colspan="1">0.2117</td>
+      <td align="left" rowspan="1" colspan="1">0.2327</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone-0086376-t009" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.t009</span>
+  <span class="label">Table 9</span>
+  <div class="caption">
+   <div class="title">RM1, Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3, and Sparkle/AM1 unsigned mean errors for specific types of distances for erbium complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone-0086376-t009-9" xlink:href="pone.0086376.t009" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Type of distances</td>
+      <td colspan="7" align="left" rowspan="1">unsigned mean errors for specific types of distances (Å)</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">N</td>
+      <td align="left" rowspan="1" colspan="1">RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/RM1</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM7</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM6</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/PM3</td>
+      <td align="left" rowspan="1" colspan="1">Sparkle/AM1</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - Er</td>
+      <td align="left" rowspan="1" colspan="1">6</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1200</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2639</td>
+      <td align="left" rowspan="1" colspan="1">0.5458</td>
+      <td align="left" rowspan="1" colspan="1">0.2124</td>
+      <td align="left" rowspan="1" colspan="1">0.2439</td>
+      <td align="left" rowspan="1" colspan="1">0.2626</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - O</td>
+      <td align="left" rowspan="1" colspan="1">336</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0509</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.0730</td>
+      <td align="left" rowspan="1" colspan="1">0.0874</td>
+      <td align="left" rowspan="1" colspan="1">0.1285</td>
+      <td align="left" rowspan="1" colspan="1">0.0657</td>
+      <td align="left" rowspan="1" colspan="1">0.0689</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - N</td>
+      <td align="left" rowspan="1" colspan="1">77</td>
+      <td align="left" rowspan="1" colspan="1">0.0594</td>
+      <td align="left" rowspan="1" colspan="1">0.0484</td>
+      <td align="left" rowspan="1" colspan="1">0.0529</td>
+      <td align="left" rowspan="1" colspan="1">0.0846</td>
+      <td align="left" rowspan="1" colspan="1">0.0551</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0434</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - C</td>
+      <td align="left" rowspan="1" colspan="1">96</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0318</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2004</td>
+      <td align="left" rowspan="1" colspan="1">0.4280</td>
+      <td align="left" rowspan="1" colspan="1">0.5474</td>
+      <td align="left" rowspan="1" colspan="1">0.2277</td>
+      <td align="left" rowspan="1" colspan="1">0.2177</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - S</td>
+      <td align="left" rowspan="1" colspan="1">12</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1088</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.4802</td>
+      <td align="left" rowspan="1" colspan="1">1.2501</td>
+      <td align="left" rowspan="1" colspan="1">0.5234</td>
+      <td align="left" rowspan="1" colspan="1">0.5211</td>
+      <td align="left" rowspan="1" colspan="1">0.5212</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - Cl</td>
+      <td align="left" rowspan="1" colspan="1">33</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0574</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.3243</td>
+      <td align="left" rowspan="1" colspan="1">0.3406</td>
+      <td align="left" rowspan="1" colspan="1">0.2753</td>
+      <td align="left" rowspan="1" colspan="1">0.2975</td>
+      <td align="left" rowspan="1" colspan="1">0.2928</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - Br</td>
+      <td align="left" rowspan="1" colspan="1">3</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0463</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.4526</td>
+      <td align="left" rowspan="1" colspan="1">1.5964</td>
+      <td align="left" rowspan="1" colspan="1">0.4475</td>
+      <td align="left" rowspan="1" colspan="1">0.4146</td>
+      <td align="left" rowspan="1" colspan="1">0.4291</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er - L</td>
+      <td align="left" rowspan="1" colspan="1">563</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.0511</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.1199</td>
+      <td align="left" rowspan="1" colspan="1">0.1967</td>
+      <td align="left" rowspan="1" colspan="1">0.2136</td>
+      <td align="left" rowspan="1" colspan="1">0.1205</td>
+      <td align="left" rowspan="1" colspan="1">0.1189</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L – L′</td>
+      <td align="left" rowspan="1" colspan="1">2259</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1575</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2197</td>
+      <td align="left" rowspan="1" colspan="1">0.2938</td>
+      <td align="left" rowspan="1" colspan="1">0.3519</td>
+      <td align="left" rowspan="1" colspan="1">0.2076</td>
+      <td align="left" rowspan="1" colspan="1">0.2371</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Er-L, Er-Er and L-L′</td>
+      <td align="left" rowspan="1" colspan="1">2822</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">0.1363</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">0.2000</td>
+      <td align="left" rowspan="1" colspan="1">0.2746</td>
+      <td align="left" rowspan="1" colspan="1">0.3243</td>
+      <td align="left" rowspan="1" colspan="1">0.1904</td>
+      <td align="left" rowspan="1" colspan="1">0.2137</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dy-Dy distances in dilanthanide complexes of Dy (III), Ho (III), and Er (III) lie in the range from 3.6 Å to 6.6 Å, while lanthanide-other ligand atom distances lie on average around 2.5 Å. That is why Ln-Ln UMEs are larger than other Ln-L UMEs. The previous Sparkle Models focused on these Ln-Ln, a also on Ln-O, and Ln-N distances only. Indeed, considering only Dy complexes (
+  <a ref-type="table" rid="pone-0086376-t007" href="#pone-0086376-t007">Table 7</a>), there are 404 distances of these types, which represent 53% of all distances involving Dy(III) in its universe of complexes. The next most important types are Dy(III)-C distances, for which there are 315 of them making up 41% of the total.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">By examining 
+  <a ref-type="table" rid="pone-0086376-t007" href="#pone-0086376-t007">Table 7</a> and 
+  <a ref-type="fig" rid="pone-0086376-g004" href="#pone-0086376-g004">Figure 4</a>, we can see a significant improvement in these next types of distances, with UME
+  <sub> (Dy-C)</sub>s for the RM1 model for the lanthanides being 0.03 Å, whereas the corresponding average value of the sparkle models is 0.27 Å, a value 9 times larger. That alone would justify the introduction of the RM1 model for the lanthanides because, in the case of dysprosium, almost half the extant Ln-L distances are significantly more accurately described by RM1.
+ </p>
+ <div id="pone-0086376-g004" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g004</span>
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-C)</sub> obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-C interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The situation is less dramatic but still significant for the other trications being parameterized, when Ln-C distances represent 24% of the total for Ho(III), and 17% for Er(III). The RM1 model for the lanthanides is even further justified when we compare other types of less common distances like Ln-S, Ln-Cl, and Ln-Br, because it outperforms all previous sparkle models as shown in 
+  <a ref-type="table" rid="pone-0086376-t007" href="#pone-0086376-t007">Tables 7</a>–
+  <a ref-type="table" rid="pone-0086376-t009" href="#pone-0086376-t009">9</a> and 
+  <a ref-type="fig" rid="pone-0086376-g005" href="#pone-0086376-g005">Figures 5</a>–
+  <a ref-type="fig" rid="pone-0086376-g007" href="#pone-0086376-g007">7</a>. In all these instances, the RM1 UMEs tend to be almost ten times smaller than the corresponding errors of all previous sparkle models.
+ </p>
+ <div id="pone-0086376-g005" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g005</span>
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-S)</sub> obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-S interatomic distances, summed up for all complexes, for each of the lanthanides. There are no Ho-S distances in the universe of Ho(III) complexes considered.</p>
+  </div>
+  <div xlink:href="pone.0086376.g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone-0086376-g006" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g006</span>
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Cl)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Cl interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone-0086376-g007" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g007</span>
+  <span class="label">Figure 7</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Br)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Br interatomic distances, summed up for all complexes, for each of the lanthanides. The RM1 model for lanthanides UME
+    <sub>(Ln-Br)</sub> bars are very small. Besides, there are no Ho-Br distances in the universe of Ho(III) complexes considered.
+   </p>
+  </div>
+  <div xlink:href="pone.0086376.g007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, we can have an idea of the accuracy of the angles by examining the distances between any two atoms of the coordination polyhedron, the L-L′distances. For all three lanthanide trications, there was a significant reduction of these UMEs by a factor of two when compared to the corresponding UMEs for the previous sparkle models: from 0.26 Å to 0.13 Å, as can be inferred from 
+  <a ref-type="fig" rid="pone-0086376-g008" href="#pone-0086376-g008">Figure 8</a>. This is indirect evidence that the angles are much better predicted in the RM1 model for the lanthanides.
+ </p>
+ <div id="pone-0086376-g008" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0086376.g008</span>
+  <span class="label">Figure 8</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(L-L′)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: Dy(III), Ho(III) and Er(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated interatomic distances between the coordinated atoms, L-L′, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0086376.g008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

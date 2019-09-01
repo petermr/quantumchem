@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6540877</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.3389/fchem.2019.00309</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Chemistry</span>
+   <div class="subj-group">
+    <span class="subject">Original Research</span>
+   </div>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Full Dimensional Potential Energy Function and Calculation of State-Specific Properties of the CO+N
+   <sub>2</sub> Inelastic Processes Within an Open Molecular Science Cloud Perspective
+  </div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lombardi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andrea</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="corresp" rid="c001" href="#c001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">*</span>
+   </a>
+   <span xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/622896/overview" class="uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pirani</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Fernando</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <span xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/622633/overview" class="uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bartolomei</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Massimiliano</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Coletti</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Cecilia</span>
+   </name>
+   <a ref-type="aff" rid="aff4" href="#aff4" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">4</span>
+   </a>
+   <span xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/669479/overview" class="uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Laganà</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Antonio</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="aff" rid="aff5" href="#aff5" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">5</span>
+   </a>
+   <a ref-type="aff" rid="aff6" href="#aff6" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">6</span>
+   </a>
+   <span xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/624295/overview" class="uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </contrib>
+ </div>
+ <aff id="aff1" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Dipartimento di Chimica, Biologia e Biotecnologie, Università di Perugia</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Perugia</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+ </aff>
+ <aff id="aff2" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Consortium for Computational Molecular and Materials Sciences (CMS)
+   <span class="sup">2</span>
+  </span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Perugia</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+ </aff>
+ <aff id="aff3" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Instituto de Física Fundamental, Consejo Superior de Investigaciones Científicas</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Madrid</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Spain</span>
+ </aff>
+ <aff id="aff4" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">4</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Dipartimento di Farmacia, Università “G. d'Annunzio” Chieti-Pescara</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Chieti</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+ </aff>
+ <aff id="aff5" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">5</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CNR ISTM-UOS Perugia</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Perugia</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+ </aff>
+ <aff id="aff6" class="aff">
+  <span class="sup" xmlns="http://www.w3.org/1999/xhtml">6</span>
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Master-UP srl</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Perugia</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+ </aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <fn fn-type="edited-by" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Edited by: Xi Zhang, Shenzhen University, China</p>
+  </fn>
+  <fn fn-type="edited-by" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Reviewed by: Thuat Thanh Trinh, Norwegian University of Science and Technology, Norway; Sugata Chowdhury, National Institute of Standards and Technology (NIST), United States</p>
+  </fn>
+  <div id="c001" class="corresp">*Correspondence: Andrea Lombardi 
+   <span class="email">andrea.lombardi@unipg.it</span>
+  </div>
+  <fn fn-type="other" id="fn001" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">This article was submitted to Physical Chemistry and Chemical Physics, a section of the journal Frontiers in Chemistry</p>
+  </fn>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">22</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">7</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">309</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">08</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">18</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2019 Lombardi, Pirani, Bartolomei, Coletti and Laganà.</span>
+  <span class="copyright-year">2019</span>
+  <span class="copyright-holder">Lombardi, Pirani, Bartolomei, Coletti and Laganà</span>
+  <div xlink:href="http://creativecommons.org/licenses/by/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>A full dimensional Potential Energy Surface (PES) of the CO + N
+   <sub>2</sub> system has been generated by extending an approach already reported in the literature and applied to N
+   <sub>2</sub>-N
+   <sub>2</sub> (Cappelletti et al., 
+   <a rid="B20" ref-type="bibr" href="#B20">2008</a>), CO
+   <sub>2</sub>-CO
+   <sub>2</sub> (Bartolomei et al., 
+   <a rid="B14" ref-type="bibr" href="#B14">2012</a>), and CO
+   <sub>2</sub>-N
+   <sub>2</sub> (Lombardi et al., 
+   <a rid="B64" ref-type="bibr" href="#B64">2016b</a>) systems. The generation procedure leverages at the same time experimental measurements and high-level ab initio electronic structure calculations. The procedure adopts an analytic formulation of the PES accounting for the dependence of the electrostatic and non-electrostatic components of the intermolecular interaction on the deformation of the monomers. In particular, the CO and N
+   <sub>2</sub> molecular multipole moments and electronic polarizabilities, the basic physical properties controlling the behavior at intermediate and long-range distances of the interaction components, were made to depend on relevant internal coordinates. The formulated PES exhibits substantial advantages when used for structural and dynamical calculations. This makes it also well suited for reuse in Open Molecular Science Cloud services.
+  </p>
+ </div>
+ <div class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="kwd">intermolecular interactions</span>
+  <span class="kwd">molecular energy transfer</span>
+  <span class="kwd">rate constants</span>
+  <span class="kwd">molecular beams</span>
+  <span class="kwd">astrochemistry</span>
+  <span class="kwd">carbon monoxide</span>
+  <span class="kwd">planetary atmospheres</span>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="10" class="fig-count"/>
+  <span count="5" class="table-count"/>
+  <span count="30" class="equation-count"/>
+  <span count="92" class="ref-count"/>
+  <span count="16" class="page-count"/>
+  <span count="11226" class="word-count"/>
+ </div>
+</article-meta>

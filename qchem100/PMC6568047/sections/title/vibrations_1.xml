@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">II.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A consequence of quantum mechanics is that molecules are never at rest, possessing at least the vibrational zero-point energy correction to the ground-state energy.
+  <a rid="cit20" ref-type="bibr" href="#cit20">20</a>–
+  <a rid="cit22" ref-type="bibr" href="#cit22">22</a> As a result, vibrations affect all chemical calculations, to a greater or lesser extent. They are important in both time dependent and independent contexts. From a dynamics perspective, vibrational structure affects high frequency time-resolved laser experiments,
+  <a rid="cit23" ref-type="bibr" href="#cit23">23</a> reaction dynamics,
+  <a rid="cit24" ref-type="bibr" href="#cit24">24</a>–
+  <a rid="cit26" ref-type="bibr" href="#cit26">26</a> and transport.
+  <a rid="cit27" ref-type="bibr" href="#cit27">27</a>,
+  <a rid="cit28" ref-type="bibr" href="#cit28">28</a> In a static context, vibrations underpin spectral calculations, such as: infrared and Raman spectroscopy
+  <a rid="cit29" ref-type="bibr" href="#cit29">29</a> and fluorescence.
+  <a rid="cit30" ref-type="bibr" href="#cit30">30</a> These calculations determine the performance of solar cells
+  <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+  <a rid="cit32" ref-type="bibr" href="#cit32">32</a> and industrial dyes,
+  <a rid="cit33" ref-type="bibr" href="#cit33">33</a>,
+  <a rid="cit34" ref-type="bibr" href="#cit34">34</a> as well as the susceptibility of molecules to photodamage.
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>,
+  <a rid="cit35" ref-type="bibr" href="#cit35">35</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Despite their importance for accurate results, studying vibrations has proven difficult. There are several possible routes to obtaining an accurate description of vibrational behaviour. Real-space, grid based methods, which treat the electronic and nuclear degrees of freedom on an equal footing, are limited to systems of a few particles. While algorithms to efficiently solve this problem on a universal quantum computer exist,
+  <a rid="cit36" ref-type="bibr" href="#cit36">36</a>,
+  <a rid="cit37" ref-type="bibr" href="#cit37">37</a> it will take many years to develop a quantum computer with the required number of qubits.
+  <a rid="cit38" ref-type="bibr" href="#cit38">38</a> Alternatively, one may separate the electronic and nuclear degrees of freedom. We can solve for the electronic energy levels of the system as a function of the nuclear positions, which enables us to map out potential energy surfaces for the system. A number of approximate classical methods have been developed to solve this problem,
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a>,
+  <a rid="cit39" ref-type="bibr" href="#cit39">39</a> as well as several quantum algorithms.
+  <a rid="cit8" ref-type="bibr" href="#cit8">8</a>,
+  <a rid="cit40" ref-type="bibr" href="#cit40">40</a>–
+  <a rid="cit42" ref-type="bibr" href="#cit42">42</a> These electronic potential surfaces can then be viewed as the nuclear potential, determining the vibrational energy levels. This is known as the vibrational structure problem. The accuracy of the nuclear potential is determined by the accuracy of the electronic structure calculation, as well as the number of points obtained for the potential energy surface. Once this potential has been obtained, a number of classical methods can be used for solving both the time dependent and independent Schrödinger equations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The most simple method uses the ‘harmonic approximation’. This treats the nuclear potential in the vicinity of the equilibrium geometry as a harmonic oscillator potential, resulting in energy eigenstates which are harmonic oscillator eigenfunctions.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alternatively, one may consider higher order expansions of the nuclear potential, resulting in more accurate calculations.
+  <a rid="cit43" ref-type="bibr" href="#cit43">43</a> One common route towards obtaining the nuclear potential is to first carry out many electronic structure calculations on the system, in the vicinity of the minimum energy configuration. Each of these electronic structure calculations is approximate, and so the cost of each one scales polynomially with the system size. However, if one proceeds to obtain the nuclear potential using this simple grid based method, then a number of grid points scaling exponentially with the number of modes is required.
+  <a rid="cit44" ref-type="bibr" href="#cit44">44</a> In practice one can often instead construct an approximate nuclear potential by considering a reduced number of mode couplings, or using interpolation, or using adaptive methods. A review of these, and other state-of-the-art methods can be found in 
+  <a rid="cit44" ref-type="bibr" href="#cit44">ref. 44</a>. The requirement to first perform multiple electronic structure calculations to obtain the anharmonic nuclear potential makes calculating vibrational energy levels expensive,
+  <a rid="cit45" ref-type="bibr" href="#cit45">45</a> even if only mean-field vibrational calculations are then performed. If the correlation between different vibrational modes is included in the calculation, then the simulation becomes even more expensive. While most of the existing classical vibrational simulation methods scale polynomially with the number of modes in the system (
+  <span class="italic">e.g.</span> vibrational self-consistent field methods,
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a> or vibrational coupled cluster theory
+  <a rid="cit46" ref-type="bibr" href="#cit46">46</a>), and are sufficiently accurate for some systems, they only provide approximations to the true full configuration interaction vibrational wavefunction, which can be exponentially costly to obtain. A similar hierarchy of accuracy also exists for dynamics simulations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The computational difficulties described above make accurate vibrational calculations on large systems very challenging for classical computers. To overcome these challenges, quantum solutions have been suggested for the vibrational structure problem.
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>–
+  <a rid="cit19" ref-type="bibr" href="#cit19">19</a>,
+  <a rid="cit47" ref-type="bibr" href="#cit47">47</a> To date, the majority of suggestions have focused on analog quantum simulation of vibrations. In analog simulations, the simulator emulates a specific system of interest, but cannot in general be programmed to perform simulations of other, different systems. Huh 
+  <span class="italic">et al.</span> proposed using boson sampling circuits to determine the absorption spectra of molecules.
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a> These boson sampling circuits consist of photons passing through an optical network. This initial proposal relied on the harmonic oscillator approximation at zero temperature, but does take into account bosonic mode mixing due to nuclear structural changes that result from electronic excitation. This method has since been experimentally demonstrated,
+  <a rid="cit15" ref-type="bibr" href="#cit15">15</a>,
+  <a rid="cit16" ref-type="bibr" href="#cit16">16</a> and extended to finite temperature spectra.
+  <a rid="cit14" ref-type="bibr" href="#cit14">14</a>,
+  <a rid="cit19" ref-type="bibr" href="#cit19">19</a> The main limitation of these simulations is the use of the harmonic oscillator approximation for the vibrational wavefunction. It is in general difficult to engineer ground states of anharmonic Hamiltonians using an optical network, as non-linear operations, such as squeezing, are required. Optical networks have also been used for simulating vibrational dynamics.
+  <a rid="cit17" ref-type="bibr" href="#cit17">17</a> These simulations investigated vibrational transport, adaptive feedback control, and anharmonic effects.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The aforementioned schemes make use of the analogy between the vibrational energy levels in molecules in the Harmonic oscillator approximation, and the bosonic energy levels accessible to photons and ions. One advantage of this is that the bosonic modes are in principle able to store an arbitrary number of excitations. As these analog simulators are relatively simple to construct (when compared to a universal, fault-tolerant quantum computer), they will likely prove useful for small calculations in the near-term. However, it is not yet known how to suppress errors to an arbitrarily low rate in analog simulators. As a result, if we are to simulate the vibrational behaviour of larger quantum systems, we will likely require error corrected universal quantum computers. This motivates our work on methods for vibrational simulation on universal quantum computers.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The rest of this paper is organised as follows. In Section III, we introduce the vibrational structure problem for molecules and show how this problem can be mapped onto a quantum computer. In Section IV, we show how to solve both static and dynamic problems of molecular vibrations. Finally, in Section V, we present the results of numerical simulations of the H
+  <sub>2</sub>O and SO
+  <sub>2</sub> molecules.
+ </p>
+</sec>

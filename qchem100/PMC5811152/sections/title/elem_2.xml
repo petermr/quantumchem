@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Parallel factor analysis (PARAFAC)</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">This method was developed as a robust analysis for a direct determination of unique explanatory factors. In this study explanatory factors correspond to chemical species. Anderson and Bro have shown that simultaneous analysis of multi-way data with three or more independent variables measured in a crossed fashion overcomes the rotation problem and a unique solution of such a model could be found.
+  <span class="sup">
+   <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+  </span> It was demonstrated that PARAFAC is a useful tool for selective excitation luminescence spectroscopy
+  <span class="sup">
+   <a rid="cit28" ref-type="bibr" href="#cit28">28</a>,
+   <a rid="cit29" ref-type="bibr" href="#cit29">29</a>
+  </span> as well as for TRLFS data.
+  <span class="sup">
+   <a rid="cit30" ref-type="bibr" href="#cit30">30</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the following section PARAFAC is illustrated using the example of TRLFS. Raw data were baseline corrected and normalized to a luminescence maximum of one before analysis to ensure equal weighting. Afterwards 2D data (emission wavelength 
+  <span class="italic">versus</span> time) from measurements at different pH values were stacked to a 3D data cube (
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, top). This data cube is a linear combination of individual cubes for respective chemical species (1 to 
+  <span class="italic">f</span>) and additional noise (
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, middle, adapted from Bro 
+  <span class="italic">et al.</span>
+  <span class="sup">
+   <a rid="cit31" ref-type="bibr" href="#cit31">31</a>
+  </span>). Deconvolution with PARAFAC results in three matrices (A–C). The number of matrix columns equals the number of chemical species and the 
+  <span class="italic">i</span>-th column of each matrix represents the 
+  <span class="italic">i</span>-th species (
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, bottom). Therefore the fraction of the 
+  <span class="italic">i</span>-th chemical species within the data is explained by the vectors 
+  <span class="italic">a</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub>, 
+  <span class="italic">b</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> and 
+  <span class="italic">c</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub>. Each of the matrices contains intrinsic characteristics of chemical species along particular parameters (here pH, emission wavelength, and time) providing direct access to species distribution, luminescence spectra and luminescence decays.
+ </p>
+ <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">PARAFAC with TRLFS data. Top: merging data: background corrected data matrices for individual pH values stacked to a data cube. Middle: PARAFAC theoretical model: scheme with 3 independent variables (pH, wavelength and time) and 
+    <span class="italic">f</span> factors (chemical species). Bottom: deconvolution results: each of the three output matrices (A–C) contains parameter specific vectors for determined species: species distribution (A), luminescence spectra (B), luminescence decays (C).
+   </div>
+  </div>
+  <div xlink:href="c4sc02022g-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">PARAFAC has already been implemented as the N-way Toolbox
+  <span class="sup">
+   <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+  </span> for the MATLAB software. Toolbox details can be found in literature
+  <span class="sup">
+   <a rid="cit31" ref-type="bibr" href="#cit31">31</a>–
+   <a rid="cit33" ref-type="bibr" href="#cit33">33</a>
+  </span> and an excellent online tutorial is accessible.
+  <span class="sup">
+   <a rid="cit34" ref-type="bibr" href="#cit34">34</a>
+  </span> In this study PARAFAC was used for modelling uranyl(
+  <span class="sc">vi</span>) hydrolysis data from TRLFS and CW spectroscopy and thus, chemical species correlate with uranyl(
+  <span class="sc">vi</span>) complexes.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Unimodal (one maximum for speciation) and nonnegative (for luminescence spectra) constraints were used for the model as already implemented in the N-way Toolbox 3.31.
+  <span class="sup">
+   <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+  </span> Based on the Optimization Toolbox a monoexponential constraint for the fluorescence decay was additionally implemented. Spectra and lifetimes were normalized directly by the PARAFAC algorithm. All Toolboxes were used with Matlab R2013a.
+ </p>
+</sec>

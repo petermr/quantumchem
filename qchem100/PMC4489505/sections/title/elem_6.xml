@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec003" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="pone.0124372.t004" ref-type="table" href="#pone.0124372.t004">Table 4</a> presents unsigned mean errors for each of the specific types of distances between the lanthanide ion and its directly coordinated atoms found in the universe of complexes for La(III), both for the present RM1 model for the lanthanides and for each of the previous sparkle models. In order to facilitate interpretation of the table, the smallest error in each line is being bolded. Clearly, for dinuclear complexes, the La-La bond is more accurately predicted by Sparkle/PM3. However, its error is relatively close to the RM1 error. The same happens for La-O bonds, where Sparkle/PM3 is again the best model. However, its unsigned mean error of 0.0610Å is too close to the RM1 error of 0.0698Å. However, for all other distances, RM1 presents the smallest errors while the previous Sparkle models sometimes display huge errors as is the case of La-S bonds when the average errors of the Sparkle models is 0.4345Å, a value more than 6 times larger than the RM1 error of 0.0680Å. In 
+  <a rid="pone.0124372.t004" ref-type="table" href="#pone.0124372.t004">Table 4</a>, La-L refers to the unsigned mean error of all distances of all types between the central lanthanum ion and its directly coordinated other atoms, whereas L-L includes all interatomic distances between all directly coordinated atoms, and is, indirectly, a measure of the angles within the coordinated polyhedron. Clearly, RM1, with its unsigned mean error of 0.1704Å is 52% smaller than the average of the previous sparkle models, a situation similar to what happens to the next unsigned mean error, which includes all 5315 types of distances for all lanthanum complexes considered: La-L, La-La, and L,L’, when RM1 displays an error which is 56% smaller than the average error of all previous sparkle models.
+ </p>
+ <div id="pone.0124372.t004" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t004</span>
+  <span class="label">Table 4</span>
+  <div class="caption">
+   <div class="title">Sparkle/AM1, Sparkle/PM3, Sparkle/PM6, Sparkle/PM7, Sparkle/RM1 and RM1 unsigned mean errors for lanthanum(III) complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t004g" xlink:href="pone.0124372.t004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">Type of distances</th>
+      <th colspan="7" align="center" rowspan="1">unsigned mean errors for specific types of distances (Å)</th>
+     </tr>
+     <tr>
+      <th rowspan="2" align="left" colspan="1"/>
+      <th rowspan="2" align="left" colspan="1">N</th>
+      <th rowspan="2" align="left" colspan="1">RM1</th>
+      <th colspan="5" align="center" rowspan="1">Sparkle</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">AM1</th>
+      <th align="left" rowspan="1" colspan="1">PM3</th>
+      <th align="left" rowspan="1" colspan="1">PM6</th>
+      <th align="left" rowspan="1" colspan="1">PM7</th>
+      <th align="left" rowspan="1" colspan="1">RM1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—La</td>
+      <td align="left" rowspan="1" colspan="1">13</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1807</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2056</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1404</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2153</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1900</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2963</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—O</td>
+      <td align="left" rowspan="1" colspan="1">580</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0698</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0853</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0610</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0767</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0962</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1252</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—N</td>
+      <td align="left" rowspan="1" colspan="1">205</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0487</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0541</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0873</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0685</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2437</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0673</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—C</td>
+      <td align="left" rowspan="1" colspan="1">119</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0980</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2193</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2681</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2120</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2771</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2114</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—S</td>
+      <td align="left" rowspan="1" colspan="1">15</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0680</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4018</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4302</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3847</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.5240</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4316</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—Cl</td>
+      <td align="left" rowspan="1" colspan="1">26</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0946</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3033</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3441</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2836</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3693</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3517</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—Br</td>
+      <td align="left" rowspan="1" colspan="1">4</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0957</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3974</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4282</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4009</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.7007</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4742</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La—L</td>
+      <td align="left" rowspan="1" colspan="1">962</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0710</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1092</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1087</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1044</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1697</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2144</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L—L</td>
+      <td align="left" rowspan="1" colspan="1">4353</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1704</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2334</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2300</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2521</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2857</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2941</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La-L, La—La and L-L’</td>
+      <td align="left" rowspan="1" colspan="1">5315</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1524</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2110</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2081</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2255</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2648</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2809</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Tables 
+  <a rid="pone.0124372.t005" ref-type="table" href="#pone.0124372.t005">5</a> and 
+  <a rid="pone.0124372.t006" ref-type="table" href="#pone.0124372.t006">6</a> show equivalent results for Ce(III) and for Pr(III) complexes. For Ce(III) complexes, RM1 is more accurate when compared to the other sparkle models with respect to all measures except for Ce-O distances. Likewise, for Pr(III) complexes, RM1 is more accurate than the other sparkle models except for Pr-O and Pr-N distances. Even in these cases, the accuracy of RM1 is close to the best accuracy available from the other sparkle models. A noteworthy case, are the distances of the three lanthanide ions and bromine, where Sparkle/PM7 displays enormous unsigned mean errors, larger than 1Å, suggesting there might be perhaps some difficulties with the parameterization of bromine in PM7.
+ </p>
+ <div id="pone.0124372.t005" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t005</span>
+  <span class="label">Table 5</span>
+  <div class="caption">
+   <div class="title">Sparkle/AM1, Sparkle/PM3, Sparkle/PM6, Sparkle/PM7, Sparkle/RM1 and RM1 unsigned mean errors for cerium(III) complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t005g" xlink:href="pone.0124372.t005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">Type of distances</th>
+      <th colspan="7" align="center" rowspan="1">unsigned mean errors for specific types of distances (Å)</th>
+     </tr>
+     <tr>
+      <th rowspan="2" align="left" colspan="1"/>
+      <th rowspan="2" align="left" colspan="1">N</th>
+      <th rowspan="2" align="left" colspan="1">RM1</th>
+      <th colspan="5" align="center" rowspan="1">Sparkle</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">AM1</th>
+      <th align="left" rowspan="1" colspan="1">PM3</th>
+      <th align="left" rowspan="1" colspan="1">PM6</th>
+      <th align="left" rowspan="1" colspan="1">PM7</th>
+      <th align="left" rowspan="1" colspan="1">RM1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—Ce</td>
+      <td align="left" rowspan="1" colspan="1">5</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1781</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2003</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2022</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2811</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1271</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1484</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—O</td>
+      <td align="left" rowspan="1" colspan="1">283</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0900</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0787</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0746</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1662</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1564</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0800</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—N</td>
+      <td align="left" rowspan="1" colspan="1">111</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0622</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0836</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0708</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0580</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0636</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0753</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—C</td>
+      <td align="left" rowspan="1" colspan="1">185</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0800</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2307</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2524</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1477</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3390</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2602</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—S</td>
+      <td align="left" rowspan="1" colspan="1">11</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0434</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4792</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4607</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3801</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3074</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4380</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—Cl</td>
+      <td align="left" rowspan="1" colspan="1">17</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0609</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2647</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2882</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1999</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1604</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2969</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—Br</td>
+      <td align="left" rowspan="1" colspan="1">9</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0378</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3757</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3823</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3159</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.4764</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3934</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—L</td>
+      <td align="left" rowspan="1" colspan="1">622</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0805</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1406</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1436</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1641</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2054</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1434</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L—L</td>
+      <td align="left" rowspan="1" colspan="1">3030</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1789</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2421</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2507</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2504</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3078</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2597</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce—L, Ce—Ce and L—L’</td>
+      <td align="left" rowspan="1" colspan="1">3652</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1621</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2249</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2326</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2373</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2903</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2399</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone.0124372.t006" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t006</span>
+  <span class="label">Table 6</span>
+  <div class="caption">
+   <div class="title">Sparkle/AM1, Sparkle/PM3, Sparkle/PM6, Sparkle/PM7, Sparkle/RM1 and RM1 unsigned mean errors for praseodymium(III) complexes.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t006g" xlink:href="pone.0124372.t006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">Type of distances</th>
+      <th colspan="7" align="center" rowspan="1">unsigned mean errors for specific types of distances (Å)</th>
+     </tr>
+     <tr>
+      <th rowspan="2" align="left" colspan="1"/>
+      <th rowspan="2" align="left" colspan="1">N</th>
+      <th rowspan="2" align="left" colspan="1">RM1</th>
+      <th colspan="5" align="center" rowspan="1">Sparkle</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">AM1</th>
+      <th align="left" rowspan="1" colspan="1">PM3</th>
+      <th align="left" rowspan="1" colspan="1">PM6</th>
+      <th align="left" rowspan="1" colspan="1">PM7</th>
+      <th align="left" rowspan="1" colspan="1">RM1</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—Pr</td>
+      <td align="left" rowspan="1" colspan="1">11</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1770</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2278</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1998</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2232</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2673</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2229</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—O</td>
+      <td align="left" rowspan="1" colspan="1">421</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0736</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0786</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0841</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0732</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1044</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0723</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—N</td>
+      <td align="left" rowspan="1" colspan="1">119</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0626</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1183</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1014</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0714</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0534</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1223</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—C</td>
+      <td align="left" rowspan="1" colspan="1">143</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0552</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2446</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2536</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2322</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3591</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2211</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—S</td>
+      <td align="left" rowspan="1" colspan="1">12</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0787</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3817</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3870</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4304</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.5795</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3898</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—Cl</td>
+      <td align="left" rowspan="1" colspan="1">39</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0526</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2549</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2739</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2899</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2975</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3700</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—Br</td>
+      <td align="left" rowspan="1" colspan="1">6</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0251</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3460</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3509</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3814</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.2262</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.4627</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—L</td>
+      <td align="left" rowspan="1" colspan="1">751</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.0685</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1348</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1376</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1248</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1738</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1318</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">L—L</td>
+      <td align="left" rowspan="1" colspan="1">3462</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.2029</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2621</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2401</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2628</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2893</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2566</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr—L, Pr—Pr and L—L’</td>
+      <td align="left" rowspan="1" colspan="1">4213</td>
+      <td align="char" char="." rowspan="1" colspan="1">
+       <span class="bold">0.1790</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2394</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2218</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2382</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2687</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2345</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Figs 
+  <a rid="pone.0124372.g001" ref-type="fig" href="#pone.0124372.g001">1</a>–
+  <a rid="pone.0124372.g010" ref-type="fig" href="#pone.0124372.g010">10</a> present the data in Tables 
+  <a rid="pone.0124372.t003" ref-type="table" href="#pone.0124372.t003">3</a>–
+  <a rid="pone.0124372.t005" ref-type="table" href="#pone.0124372.t005">5</a> in pictorial form in order to provide the user with an instant comprehension of the relative accuracies of the present RM1 model for the lanthanides (light green bar) and the previous sparkle models. Note that the Sparkle/RM1 green bar lies next, followed by the blue bar of Sparkle/PM7. Thus, the situation highlighted above on the inadequacy of Sparkle/PM7 for any of the parameterized lanthanide ions when directly bonded to bromine can be immediately detected in 
+  <a rid="pone.0124372.g007" ref-type="fig" href="#pone.0124372.g007">Fig 7</a>. On the bright side, the good accuracy of all previous sparkle models for directly coordinated oxygen and nitrogen bonds is very clearly manifested (Figs 
+  <a rid="pone.0124372.g002" ref-type="fig" href="#pone.0124372.g002">2</a> and 
+  <a rid="pone.0124372.g003" ref-type="fig" href="#pone.0124372.g003">3</a>).
+ </p>
+ <div id="pone.0124372.g001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g001</span>
+  <span class="label">Fig 1</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Ln)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Ln interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g002" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g002</span>
+  <span class="label">Fig 2</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-O)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-O interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g003" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g003</span>
+  <span class="label">Fig 3</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-N)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-N interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g004" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g004</span>
+  <span class="label">Fig 4</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-C)</sub> obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-C interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g005" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g005</span>
+  <span class="label">Fig 5</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-S)</sub> obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-S interatomic distances, summed up for all complexes, for each of the lanthanides. There are no Ho-S distances in the universe of Ho(III) complexes considered.</p>
+  </div>
+  <div xlink:href="pone.0124372.g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g006" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g006</span>
+  <span class="label">Fig 6</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Cl)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Cl interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g007" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g007</span>
+  <span class="label">Fig 7</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-Br)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated Ln-Br interatomic distances, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g008" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g008</span>
+  <span class="label">Fig 8</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(L-L’)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+   <p>The UMEs are calculated as the absolute value of the difference between the experimental and calculated interatomic distances between the coordinated atoms, L-L’, summed up for all complexes, for each of the lanthanides.</p>
+  </div>
+  <div xlink:href="pone.0124372.g008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g009" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g009</span>
+  <span class="label">Fig 9</span>
+  <div class="caption">
+   <div class="title">UME
+    <sub>(Ln-L’)</sub>s obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).
+   </div>
+  </div>
+  <div xlink:href="pone.0124372.g009" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0124372.g010" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g010</span>
+  <span class="label">Fig 10</span>
+  <div class="caption">
+   <div class="title">UMEs obtained using the RM1 model for the lanthanides and all five versions of the Sparkle Model: Sparkle/RM1, Sparkle/PM7, Sparkle/PM6, Sparkle/PM3 and Sparkle/AM1 for all complexes of the universe set for each of the lanthanide trications: La(III), Ce(III) and Pr(III).</div>
+  </div>
+  <div xlink:href="pone.0124372.g010" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, the raw data used to arrive at the values presented in Tables 
+  <a rid="pone.0124372.t004" ref-type="table" href="#pone.0124372.t004">4</a>–
+  <a rid="pone.0124372.t006" ref-type="table" href="#pone.0124372.t006">6</a>, can be found in Tables 
+  <a rid="pone.0124372.t007" ref-type="table" href="#pone.0124372.t007">7</a>, 
+  <a rid="pone.0124372.t008" ref-type="table" href="#pone.0124372.t008">8</a>, and 
+  <a rid="pone.0124372.t009" ref-type="table" href="#pone.0124372.t009">9</a>, which show individual unsigned mean errors for each of the complexes considered, and identifies by a underlined and bolded codes, the complexes used in the small and large parameterization sets.
+ </p>
+ <div id="pone.0124372.t007" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t007</span>
+  <span class="label">Table 7</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Eu-L)</sub>s and UMEs, for RM1 model for lanthanides, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, for each of the 84 lanthanum(III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t007g" xlink:href="pone.0124372.t007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">RM1</th>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">RM1</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(La-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(La-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">ABXALA</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0684</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1722</td>
+      <td align="left" rowspan="1" colspan="1">NERQUW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1504</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2095</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ALANIC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0676</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1159</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">NOHNIH</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0479</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1353</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">APBNLA</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0513</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1067</td>
+      <td align="left" rowspan="1" colspan="1">OFEGIP</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0304</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1433</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">AXOMOP</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1060</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1183</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">PAFNEP</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0394</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1035</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">AYULUB</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1187</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1565</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">PIBGOW</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0679</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2653</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BEQPOC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0593</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2330</td>
+      <td align="left" rowspan="1" colspan="1">PIRSEO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0879</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1403</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">BIZTIN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0614</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2370</td>
+      <td align="left" rowspan="1" colspan="1">POHDUL</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0640</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2192</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">BOKZUX</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0536</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1135</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">PUHYAS</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0488</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1787</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">BUVVIX01</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0559</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1049</td>
+      <td align="left" rowspan="1" colspan="1">PUWZIQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0615</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1252</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CABLAS01</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0603</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1862</td>
+      <td align="left" rowspan="1" colspan="1">PUZHOH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0406</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1630</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CEFQOT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0619</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0820</td>
+      <td align="left" rowspan="1" colspan="1">QAKWEE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0499</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1854</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">CESRUO</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0983</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1775</td>
+      <td align="left" rowspan="1" colspan="1">QAPXAG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0590</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1403</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">COTDOF</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1244</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1221</td>
+      <td align="left" rowspan="1" colspan="1">QUBWIT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0432</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0859</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DUBWEC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0401</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1174</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">RIWQOE</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0245</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3574</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DUCBOS</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0688</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1450</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">SILWEQ</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0486</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3046</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">EBEGOH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0530</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1483</td>
+      <td align="left" rowspan="1" colspan="1">SIXBIK</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0515</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1749</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">EPAILA</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0398</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1493</td>
+      <td align="left" rowspan="1" colspan="1">SUXLIG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0435</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0876</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">EZIPUY</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0094</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1105</td>
+      <td align="left" rowspan="1" colspan="1">SUZXIU</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0672</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1007</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FABPUT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0875</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1234</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">TEPSOW</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0758</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2000</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FICJEG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0410</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2938</td>
+      <td align="left" rowspan="1" colspan="1">TEQBIA</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0559</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2320</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">FIVCIW</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0262</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0392</td>
+      <td align="left" rowspan="1" colspan="1">TEQBOG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0556</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1459</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">FURLOT</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0976</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1405</td>
+      <td align="left" rowspan="1" colspan="1">TUPWEG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0552</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0808</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GIMMIY</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0487</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2507</td>
+      <td align="left" rowspan="1" colspan="1">VUBLIN</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1069</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2255</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GOJQAX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1064</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1765</td>
+      <td align="left" rowspan="1" colspan="1">WAVNAI</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0551</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0889</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GOZBEC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0660</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1429</td>
+      <td align="left" rowspan="1" colspan="1">WEHTAE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0648</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2119</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GULFOI</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1129</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1787</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">XALSOS</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0808</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1125</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">HAMYUP</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1216</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1383</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">XAWVUM</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0710</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1040</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">HELHOV</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0690</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0958</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">XECQEB</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0540</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1164</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HELMIU</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0543</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2287</td>
+      <td align="left" rowspan="1" colspan="1">XEMNUY</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1021</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1723</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">HETALA11</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0600</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1263</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">XERCAY</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1141</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1245</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">HUQBAX</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0606</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1112</td>
+      <td align="left" rowspan="1" colspan="1">XONXUT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0427</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0738</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">IDAJON</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1064</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2217</td>
+      <td align="left" rowspan="1" colspan="1">XUJTOL</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0587</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1160</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">IKUWER</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0815</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1222</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">YUCXAV</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0512</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2157</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">KIXHAA</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0504</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1331</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">ZAMHEA</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0585</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2756</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">LANITA</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0379</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0983</td>
+      <td align="left" rowspan="1" colspan="1">ZAZQAS</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0694</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1013</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">LAPTEB10</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1106</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1662</td>
+      <td align="left" rowspan="1" colspan="1">ZEHTUB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1072</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1479</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">LIWQEN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0502</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1240</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">ZEJFOJ</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0564</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1001</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">MENQOL</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0297</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1359</td>
+      <td align="left" rowspan="1" colspan="1">ZEQVUM</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0997</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2726</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">MILWEJ</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0426</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1003</td>
+      <td align="left" rowspan="1" colspan="1">ZIDSOX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1210</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1691</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NASLUO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1577</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1606</td>
+      <td align="left" rowspan="1" colspan="1">ZIQXIG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1029</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2243</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">NASTOQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0391</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0803</td>
+      <td align="left" rowspan="1" colspan="1">ZULFOB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0432</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1534</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">NEHDAF</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0656</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0698</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">ZUWFOM</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0585</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0812</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone.0124372.t008" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t008</span>
+  <span class="label">Table 8</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Gd-L)</sub>s and UMEs, for RM1 model for lanthanides, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, for each of the 57 cerium(III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t008g" xlink:href="pone.0124372.t008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">RM1</th>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">RM1</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(Ce-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(Ce-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">ABETEI</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0570</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1694</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">JOLYAK</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0966</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1260</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ABETUY</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0508</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1141</td>
+      <td align="left" rowspan="1" colspan="1">KEDCAX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0507</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1249</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">AFURUO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0709</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1398</td>
+      <td align="left" rowspan="1" colspan="1">KIXXOE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0223</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0632</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">APSBCE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1310</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2886</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">LELBOT</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0838</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1315</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BABZIN</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0659</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2240</td>
+      <td align="left" rowspan="1" colspan="1">LIFHUD</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0492</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1293</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CIBSAH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0599</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1059</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">LIKFUH</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0649</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3247</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">CUMCIW</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0825</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1876</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">MIPTAG</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0728</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1203</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DESYAC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0843</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1290</td>
+      <td align="left" rowspan="1" colspan="1">NATCIW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1034</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1928</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DEWDEP</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0736</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1434</td>
+      <td align="left" rowspan="1" colspan="1">NOJTAH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0933</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1923</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">EJIPES</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0643</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1081</td>
+      <td align="left" rowspan="1" colspan="1">OXDACE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1151</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2071</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">ETOQUZ</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0904</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1280</td>
+      <td align="left" rowspan="1" colspan="1">PEKWEH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0347</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1101</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">ETOROU</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1048</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1430</td>
+      <td align="left" rowspan="1" colspan="1">PIDBAF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1492</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1750</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">FEPKAN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0640</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0734</td>
+      <td align="left" rowspan="1" colspan="1">PUTQAW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0986</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2408</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FILKEQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0692</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0982</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">QEGVOO</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0789</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1403</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">FOTQOV</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1048</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3579</td>
+      <td align="left" rowspan="1" colspan="1">RIWRAR</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0281</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3782</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FUHFEZ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0494</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0950</td>
+      <td align="left" rowspan="1" colspan="1">SASCEV</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1177</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1556</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GACJIE</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0718</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1022</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">TIJCIY</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0779</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1040</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">GAPFIM</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1105</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2786</td>
+      <td align="left" rowspan="1" colspan="1">UKAPEB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0460</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1627</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GEGZEX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1674</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1814</td>
+      <td align="left" rowspan="1" colspan="1">ULUQUN</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0489</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1076</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GETLOG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0535</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0793</td>
+      <td align="left" rowspan="1" colspan="1">VAKJAS</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0363</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0972</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GINNUM</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0786</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1197</td>
+      <td align="left" rowspan="1" colspan="1">VAPCAQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0409</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1133</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HIDLUB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1094</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1252</td>
+      <td align="left" rowspan="1" colspan="1">WAVTAQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1294</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1695</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HIXWEQ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0772</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1228</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">WOPHAL</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0510</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1331</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HUMDOI</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0890</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2701</td>
+      <td align="left" rowspan="1" colspan="1">XASROZ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1168</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1635</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HURRAN</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1177</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2186</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">XEXCUY</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1015</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.5062</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">INDCEP</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0996</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1544</td>
+      <td align="left" rowspan="1" colspan="1">XOLMAM</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0464</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2421</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">JAPPUL</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0932</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2866</td>
+      <td align="left" rowspan="1" colspan="1">XONYAA</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0601</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0871</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">JEXXOZ</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0762</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2089</td>
+      <td align="left" rowspan="1" colspan="1">ZUNMAW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0441</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0663</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">JOCCUA</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0937</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1357</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone.0124372.t009" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t009</span>
+  <span class="label">Table 9</span>
+  <div class="caption">
+   <div class="title">Unsigned mean errors, UME
+    <sub>(Tb-L)</sub>s and UMEs, for RM1 model for lanthanides, as compared to the respective experimental crystallographic values, obtained from the Cambridge Structural Database, [
+    <a rid="pone.0124372.ref046" ref-type="bibr" href="#pone.0124372.ref046">46</a>–
+    <a rid="pone.0124372.ref048" ref-type="bibr" href="#pone.0124372.ref048">48</a>] for each of the 65 praseodymium(III) complexes.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t009g" xlink:href="pone.0124372.t009" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">Method RM1</th>
+      <th rowspan="2" align="left" colspan="1">Structure</th>
+      <th colspan="2" align="center" rowspan="1">Method RM1</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(Pr-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+      <th align="left" rowspan="1" colspan="1">UME
+       <sub>(Pr-L)</sub>s (Å)
+      </th>
+      <th align="left" rowspan="1" colspan="1">UME (Å)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ACURLB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0503</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1516</td>
+      <td align="left" rowspan="1" colspan="1">KOBRUO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0587</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1110</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BABZOT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0460</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1984</td>
+      <td align="left" rowspan="1" colspan="1">LEJSOI</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0379</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1816</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BAFYOX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1280</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3584</td>
+      <td align="left" rowspan="1" colspan="1">LIYFIJ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0583</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1196</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">BIFYUK</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0454</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2495</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">MIPTEK</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0966</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0773</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">BUVWIY01</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0562</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1794</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">MOGFUJ</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0400</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2012</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">CAZGUF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0290</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1338</td>
+      <td align="left" rowspan="1" colspan="1">NEPVAF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0481</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1168</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">CESROI</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0458</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1909</td>
+      <td align="left" rowspan="1" colspan="1">NEPVUZ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0438</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1765</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">CUMCOC</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0722</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1834</td>
+      <td align="left" rowspan="1" colspan="1">NPYPRP10</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0658</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1038</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DEWDIT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0348</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1324</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">PEHHIP</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0649</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1191</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DIYMUT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0320</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1600</td>
+      <td align="left" rowspan="1" colspan="1">PEHXIJ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0467</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3069</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DORDIX</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0594</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2030</td>
+      <td align="left" rowspan="1" colspan="1">PELGOC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0459</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1514</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">DUCHAK</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0707</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1391</td>
+      <td align="left" rowspan="1" colspan="1">POGWIR</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1623</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2897</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">ECABAL</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0661</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0767</td>
+      <td align="left" rowspan="1" colspan="1">POPJAF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0536</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2040</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">EFUJEU</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0268</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0683</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">PUQNOF</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1467</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1709</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">EJINUG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0330</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0860</td>
+      <td align="left" rowspan="1" colspan="1">QIMRIN</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1260</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2671</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">EWIROR</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1045</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3750</td>
+      <td align="left" rowspan="1" colspan="1">QOBBIS</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0675</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1509</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">FAGYIW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0857</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3122</td>
+      <td align="left" rowspan="1" colspan="1">QOVXII</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0516</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1505</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">FATWOM</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0783</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2212</td>
+      <td align="left" rowspan="1" colspan="1">QOZVEG</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0591</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1323</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">FEDYAO</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0764</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0899</td>
+      <td align="left" rowspan="1" colspan="1">RASROS</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0498</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2181</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GIWWEO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0764</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1152</td>
+      <td align="left" rowspan="1" colspan="1">RUGQUF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0724</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3452</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">GUMXIW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1048</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1463</td>
+      <td align="left" rowspan="1" colspan="1">SERWOB01</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0383</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1068</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HEDBOH</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0778</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2625</td>
+      <td align="left" rowspan="1" colspan="1">VELRUZ</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0787</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1039</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HEDKAC</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0648</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1268</td>
+      <td align="left" rowspan="1" colspan="1">VOXJIB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0878</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1415</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HERVUV</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0810</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1132</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">WUWXAN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0707</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2963</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HODDOT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0601</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2396</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">WUWXER</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0677</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1117</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">HODFEL</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0763</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2376</td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">XASRUF</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0540</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0987</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">JALMEP</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0982</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1785</td>
+      <td align="left" rowspan="1" colspan="1">XAVWUM</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0664</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3295</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">JALMUF</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1256</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3801</td>
+      <td align="left" rowspan="1" colspan="1">XOKYIF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0587</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1340</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="underline">
+        <span class="bold">JERWOS</span>
+       </span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0433</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2205</td>
+      <td align="left" rowspan="1" colspan="1">XULNUO</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0731</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.3470</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">JEXXUF</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1778</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2405</td>
+      <td align="left" rowspan="1" colspan="1">YOTYUB</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0979</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2103</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">JUSBII</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0399</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1257</td>
+      <td align="left" rowspan="1" colspan="1">ZAXSEW</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0617</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2579</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="bold">KAHGEF</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0766</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1355</td>
+      <td align="left" rowspan="1" colspan="1">ZULRED</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0815</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0805</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">KAWBIT</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0170</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0636</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</sec>

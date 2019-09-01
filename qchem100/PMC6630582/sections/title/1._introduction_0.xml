@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="sec1-nanomaterials-09-00872" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">1. Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Semiconductor quantum domain systems include quantum wells (QWs), quantum nanowires (QNWs) and quantum dots (QDs) where charge carriers (electrons and/or holes) are spatially confined so they can only move in either two (QW), one (QNW) or zero (QD) dimensions and the lateral dimensions are so small that they influence the carrier confinement energies. </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum mechanics shows for a type-I QW with finite offset between the conduction band levels of the two adjacent materials that the electron wavefunction is mainly confined to the material with the lower conduction band level, leaking only little into the neighbouring barrier material, and the energy levels of the electron depend both on the potential offset (depth of QW) and the thickness of the intermediate layer (width of the QW).</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the idealised model of an infinitely deep QW of thickness 
+  <span class="italic">L</span>, the electron energy above the conduction band minimum of the well, 
+  <span class="italic">E
+   <sub>e</sub>
+  </span>, is given by quantum mechanics as 
+  <div id="FD1-nanomaterials-09-00872" class="disp-formula">
+   <div id="mm1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mi">e</span>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <span class="mi">h</span>
+         <span class="mn">2</span>
+        </div>
+        <div class="msup">
+         <span class="mi">n</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+        <div class="msubsup">
+         <span class="mi">m</span>
+         <span class="mi">e</span>
+         <span class="mi">w</span>
+        </div>
+        <div class="msup">
+         <span class="mi">L</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> wherein 
+  <span class="italic">h</span> is Planck’s constant, 
+  <div class="inline-formula">
+   <div id="mm2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">n</span>
+      <span class="mo">∈</span>
+      <span class="mi">N</span>
+     </div>
+    </div>
+   </div>
+  </div> is an integer number (
+  <span class="italic">n</span> = 1 is the ground state) and 
+  <span class="italic">m</span>* = 
+  <div class="inline-formula">
+   <div id="mm3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">m</span>
+       <span class="mi">e</span>
+       <span class="mi">w</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the effective electron mass in the well, and so depends strongly on the QW thickness. For finite well depths, 
+  <span class="italic">V</span>, the wavefunction extends from the well into the barrier, and one needs to distinguish for the electron its effective mass in the well, 
+  <div class="inline-formula">
+   <div id="mm4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">m</span>
+       <span class="mi">e</span>
+       <span class="mi">w</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> from that in the barrier, 
+  <div class="inline-formula">
+   <div id="mm5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">m</span>
+       <span class="mi">e</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. Continuity of the wavefunction at the boundary and energy conservation yields:
+  <div id="FD2-nanomaterials-09-00872" class="disp-formula">
+   <div id="mm6" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">tan</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">2</span>
+          <div class="msup">
+           <span class="mi">π</span>
+           <span class="mn">2</span>
+          </div>
+          <div class="msubsup">
+           <span class="mi">m</span>
+           <span class="mi">e</span>
+           <span class="mi">w</span>
+          </div>
+          <span class="mo"> </span>
+          <div class="msubsup">
+           <span class="mi">E</span>
+           <span class="mi">e</span>
+           <span class="mi">w</span>
+          </div>
+          <div class="msup">
+           <span class="mi">L</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="msup">
+           <span class="mi">h</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo"> </span>
+      <span class="mo">=</span>
+      <div class="msqrt">
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msubsup">
+           <span class="mi">m</span>
+           <span class="mi">e</span>
+           <span class="mi">b</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">V</span>
+            <span class="mo">−</span>
+            <div class="msubsup">
+             <span class="mi">E</span>
+             <span class="mi">e</span>
+             <span class="mi">w</span>
+            </div>
+           </div>
+           <span class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="msubsup">
+           <span class="mi">m</span>
+           <span class="mi">e</span>
+           <span class="mi">w</span>
+          </div>
+          <span class="mo"> </span>
+          <div class="msubsup">
+           <span class="mi">E</span>
+           <span class="mi">e</span>
+           <span class="mi">w</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Note that [
+  <a rid="B1-nanomaterials-09-00872" ref-type="bibr" href="#B1-nanomaterials-09-00872">1</a>] lists interchanged superscripts on the right hand side of this equation. While this equation can only be solved numerically, it is thus clear that any interdiffusion between well and barrier will change the electron’s confinement energy via two related effects that occur simultaneously, namely increase in the width of the quantum well, 
+  <span class="italic">L</span>, and decrease of the confining potential, 
+  <span class="italic">V</span>. For direct bandgap semiconductors, this will influence the emission energy, 
+  <span class="italic">E
+   <sub>PL</sub>
+  </span>, observed in photoluminescence spectroscopy, which is given by 
+  <div id="FD3-nanomaterials-09-00872" class="disp-formula">
+   <div id="mm7" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">E</span>
+       <div class="mrow">
+        <span class="mi">P</span>
+        <span class="mi">L</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mi">g</span>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">+</span>
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mi">e</span>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">+</span>
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <div class="mrow">
+        <span class="mi">h</span>
+        <span class="mi">h</span>
+       </div>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">−</span>
+      <div class="msub">
+       <span class="mi">E</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> where 
+  <div class="inline-formula">
+   <div id="mm8" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mi">g</span>
+       <span class="mi">w</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> denotes the bandgap of the well material, 
+  <div class="inline-formula">
+   <div id="mm9" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <div class="mrow">
+        <span class="mi">h</span>
+        <span class="mi">h</span>
+       </div>
+       <span class="mi">w</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the ground state energy of the heavy hole in the well and 
+  <div class="inline-formula">
+   <div id="mm10" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">E</span>
+       <span class="mi">X</span>
+      </div>
+      <span class="mo">&gt;</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> the exciton binding energy. As a result, interdiffusion will directly shift the emission wavelength by two concurring effects: firstly, it reduces the confining potential. Secondly, it changes the effective masses as these depend on chemistry. Conversely, segregation describes the drive towards phase separation in a material system and can thereby increase the confining potential if, for example, two as-deposited ternary alloys de-mix into their binary compounds. It is thus clear that interdiffusion and segregation are two competing mechanism that can both change carrier confinement energies and thus influence optical and electrical properties of semiconductor quantum domains, so they need to be controlled.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This article will outline the imaging and spectroscopy techniques that can be applied in transmission electron microscopy (TEM) and scanning TEM (STEM) to measure interdiffusion and/or segregation in semiconductor nanostructures quantitatively at the (sub-) nanometre scale. It is intended as a guide to choose suitable (S)TEM-based methods and avoid common pitfalls; it is not intended as a review of related electron microscopy studies on general signal quantification or on materials other than semiconductors although related studies of ceramics, polymers and metals will sometimes encounter similar limitations as described here. As such, many of the practical examples are drawn from the author’s previous work, but care has been taken to relate these to alternative approaches by other groups.</p>
+</sec>

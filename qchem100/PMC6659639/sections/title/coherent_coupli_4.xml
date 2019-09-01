@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Coherent coupling and mode volumes</div>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">One signature of collective coherent coupling is the square-root dependence of 
+  <span class="italic">g</span> on the number 
+  <span class="italic">N</span> of identical excitons with transition dipole moment 
+  <span class="italic">μ</span>
+  <sub>1</sub> interacting with an optical cavity in the standard QED expression,
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g(N) = \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}},$$\end{document}</span>
+    <div id="M4" class="math">
+     <span class="mi">g</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">N</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <div class="msqrt">
+      <span class="mi">N</span>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">μ</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">vac</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_11315_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$E_{{\mathrm{vac}}} = \sqrt {\hbar \omega _{{\mathrm{Al}}}/(2\varepsilon _0V)}$$\end{document}</span>
+    <div id="M6" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">vac</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msqrt">
+      <span class="mi">ℏ</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">Al</span>
+       </div>
+      </div>
+      <span class="mo">∕</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">0</span>
+         </div>
+        </div>
+        <span class="mi">V</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the vacuum field and 
+  <span class="italic">V</span> is the volume of the electromagnetic mode
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>. Using the Al
+  <sub>201</sub> particle as an example, the expected scaling is shown in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> by the black dotted line using μ
+  <sub>1</sub> of a benzene molecule and 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$E_{{\mathrm{vac}}}^{(201)} = 4.5\,{\mathrm{V}}\, \cdot \,{\mathrm{nm}}^{ - 1}$$\end{document}</span>
+    <div id="M8" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">vac</span>
+      </div>
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">201</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">4.5</span>
+     <span width="0.25em" class="mspace"/>
+     <span mathvariant="normal" class="mi">V</span>
+     <span width="0.25em" class="mspace"/>
+     <span class="mo">⋅</span>
+     <span width="0.25em" class="mspace"/>
+     <div class="msup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">nm</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+       <span class="mn">1</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> with ℏ
+  <span class="italic">ω</span>
+  <sub>Al</sub> = 7.7 eV and 
+  <span class="italic">V</span> = 3.3 nm
+  <span class="sup">3</span> corresponding to the volume of the Al
+  <sub>201</sub> particle, which is an adequate estimate for a nanometer-sized particle
+  <span class="sup">
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>. To estimate the coupling strengths 
+  <span class="italic">g</span> from our first-principles data, we fit the absorption spectra with a coupled harmonic oscillator model
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span> (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>), yielding the 
+  <span class="italic">g</span> values shown as symbols in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. We notice that the coupling strength values obtained using the standard QED expression of Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>), which is insensitive to spatial variations in the electric field, are larger than the ones derived from coupled oscillator fitting. A similar observation holds for the larger particles Al
+  <sub>586</sub> and Al
+  <sub>1289</sub>, except, that due to larger volumes, their respective vacuum fields 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$(E_{{\mathrm{vac}}}^{(586)} = 2.6\,{\mathrm{V}} \cdot {\mathrm{nm}}^{ - 1},\,E_{{\mathrm{vac}}}^{(1289)} = 1.8\,{\mathrm{V}} \cdot {\mathrm{nm}}^{ - 1})$$\end{document}</span>
+    <div id="M10" class="math">
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">vac</span>
+        </div>
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <span class="mn">586</span>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <span class="mn">2.6</span>
+       <span width="0.25em" class="mspace"/>
+       <span mathvariant="normal" class="mi">V</span>
+       <span class="mo">⋅</span>
+       <div class="msup">
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">nm</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <span width="0.25em" class="mspace"/>
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">vac</span>
+        </div>
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <span class="mn">1289</span>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <span class="mn">1.8</span>
+       <span width="0.25em" class="mspace"/>
+       <span mathvariant="normal" class="mi">V</span>
+       <span class="mo">⋅</span>
+       <div class="msup">
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">nm</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+         <span class="mn">1</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and coupling strengths are reduced.
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Coupling strengths of the nanoparticle-molecule systems. Coupling strengths 
+     <span class="italic">g</span> for different numbers 
+     <span class="italic">N</span> of molecules placed 3 Å above the nanoparticle. The symbols denote fitted 
+     <span class="italic">g</span> values from the data of Fig. 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>. The dotted lines mark the ideal theoretical coupling strengths 
+     <div id="IEq5" class="inline-formula">
+      <div class="alternatives">
+       <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g = \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}}$$\end{document}</span>
+       <div id="M12" class="math">
+        <span class="mi">g</span>
+        <span class="mo">=</span>
+        <div class="msqrt">
+         <span class="mi">N</span>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">μ</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">vac</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_11315_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>, while the dashed lines mark the ideal dependence multiplied with efficiency factors 
+     <span class="italic">η</span> of 
+     <span class="italic">η</span>
+     <sub>201</sub> = 0.47, 
+     <span class="italic">η</span>
+     <sub>586</sub> = 0.61, and 
+     <span class="italic">η</span>
+     <sub>1289</sub> = 0.78 (see Fig. 
+     <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a> and its in-text description for details)
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11315_Fig3_HTML" id="d29e980" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

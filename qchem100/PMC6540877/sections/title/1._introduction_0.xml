@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">1. Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The presence of significant traces of CO in gaseous systems in which molecular nitrogen N
+  <sub>2</sub> is an abundant component is a frequent situation in astrochemistry, plasma chemistry and combustion. Besides obvious implications for combustion and CO
+  <sub>2</sub> plasmas, CO plays an important role in planetary atmospheric chemistry (He et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">2017</a>), and it has been detected in Titan, Triton, and Pluto as a stable minor constituent (Lellouch et al., 
+  <a rid="B56" ref-type="bibr" href="#B56">2010</a>), contributing to the energy balance of the planet and the chemistry of small organic molecule formation. For example, recent studies consider the contribution of CO to the formation and role of atmospheric hazes present in a number of solar system and exoplanetary atmospheres (He et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">2017</a>) and, particularly, hydrocarbon hazes, which have substantial radiative heating and cooling effects in such atmospheres, as observed for Saturn's moon Titan (Tomasko et al., 
+  <a rid="B86" ref-type="bibr" href="#B86">2008</a>; He et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">2017</a>; Hörst et al., 
+  <a rid="B41" ref-type="bibr" href="#B41">2018</a>) and for Jupiter's stratosphere (Zhang et al., 
+  <a rid="B92" ref-type="bibr" href="#B92">2015</a>) (not to mention the role of CO in the Earth's atmosphere chemistry). Organic hazes are particularly interesting due to astrobiological implications, such as the potential for Titan's atmosphere to contain the building blocks of life (Hörst, 
+  <a rid="B42" ref-type="bibr" href="#B42">2012</a>; Fabiano et al., 
+  <a rid="B26" ref-type="bibr" href="#B26">2017</a>). It was recently shown in a series of atmosphere simulation experiments using gas mixtures of CO, CH
+  <sub>4</sub>, and N
+  <sub>2</sub> (Hörst et al., 
+  <a rid="B41" ref-type="bibr" href="#B41">2018</a>) that the inclusion of CO has a dramatic effect on the gas phase chemistry as well as on the density and composition of the solid material that is formed. In this respect, CO can actually be seen as the smallest molecule that could serve as a source of oxygen and carbon in space and planetary atmospheres.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The knowledge of the intermolecular interactions involving carbon monoxide and nitrogen (as well as methane) is generally required in the above mentioned fields to correctly assess their role in the chemical kinetics of gaseous environments. A fundamental issue is the accurate representation of the set of energy transfer processes involving CO in the various kinetic models used to study the gaseous mixtures.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Collisions between molecules promote transfer of energy amongst translational, rotational and vibrational degrees of freedom, determining the molecular state population. Dynamics simulations based upon quantum, classical and semiclassical scattering calculations permit one to obtain cross sections and thermal or state-to-state rate coefficients (Lombardi et al., 
+  <a rid="B60" ref-type="bibr" href="#B60">2013</a>, 
+  <a rid="B59" ref-type="bibr" href="#B59">2015</a>, 
+  <a rid="B58" ref-type="bibr" href="#B58">2016a</a>; Celiberto et al., 
+  <a rid="B22" ref-type="bibr" href="#B22">2016</a>). The resulting data, refined and complemented by experimental data (whenever available) can be used to set up relevant parts of kinetic models (Kustova and Kremer, 
+  <a rid="B48" ref-type="bibr" href="#B48">2014</a>), routinely used in many research fields to simulate complex environments such as combustion mixtures, plasmas, atmospheres and molecular clouds in in the interstellar medium (Bacmann et al., 
+  <a rid="B10" ref-type="bibr" href="#B10">2002</a>). The energy transfer processes in each collision event, being generally strongly state-specific, are sensitive to the initial quantum states of the involved molecules. Therefore, energy exchange kinetics is better accounted for by appropriate sets of state-to-state rate coefficients, rather than averaged. Indeed, state-to-state coefficients are entirely necessary when non-equilibrium conditions prevail. In those cases, the collection of reliable energy transfer cross sections and rate coefficients is the true accuracy-determining step of the modeling (Kustova and Nagnibeda, 
+  <a rid="B47" ref-type="bibr" href="#B47">2012</a>; Kustova and Kremer, 
+  <a rid="B48" ref-type="bibr" href="#B48">2014</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In turn, the accuracy of whatever rate coefficient obtained by calculations depends on the realism of the underlying dynamics simulations, which essentially means a very accurate description of the intermolecular interactions, occurring at long- and mid-range distances, with the energy exchanges being to a large extent due to such forces. Finally, the need for accuracy has to be contrasted with the computational demand of campaigns of massive state-to-state coefficient calculations. In this respect, flexible and easy to reuse potential energy surface formulations play an important role in the cooperative assemblage of simulations of chemical processes based on atomistic approaches. However, most of the structural and dynamics data available in popular data banks, of interest in several fields, including astrochemistry, combustion and plasmas, lack solid validation and are sometimes even totally arbitrary. A typical weakness of the mentioned data consists of the fact that even those originating from high-level ab initio calculations might be lacking sufficient accuracy in the long-range region. For this purpose, we currently check the suitability of the proposed PESs for carrying out calculations of the detailed probabilities, cross sections and rate coefficients for inelastic processes of the title systems.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our work, however, due to the general high demand of computational resources that kinetics and dynamics simulations generate, has also the broader prospective aim of building MOlecular Simulator Enabled Cloud Services (MOSEX) (Vitillaro and Laganà, 
+  <a rid="B88" ref-type="bibr" href="#B88">2018</a>) meant to provide the Molecular Science Community with a Cloud service (Laganà et al., 
+  <a rid="B53" ref-type="bibr" href="#B53">2018b</a>) by offering the provision of accurate estimates of molecular properties generated in (often collaborative) experiments and validated by high-level theory (also often collaborative) simulations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Accordingly, the purpose of the present work is threefold. First is to illustrate the development of an accurate full dimensional PES describing the intermolecular interactions of CO-N
+  <sub>2</sub> systems. This is done by extending a well established semiempirical approach, based on a bond-bond description of the interactions (see e.g., Cappelletti et al., 
+  <a rid="B20" ref-type="bibr" href="#B20">2008</a>; Faginas Lago et al., 
+  <a rid="B27" ref-type="bibr" href="#B27">2013</a> and references therein).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Second is to discuss a dynamical preliminary validation of the proposed PES through application to the case of the basic Vibration-Vibration (VV) energy exchange processes of CO in nitrogen-containing mixtures: CO(1)+N
+  <sub>2</sub>(0) → CO(0)+N
+  <sub>2</sub>(1) and N
+  <sub>2</sub>(1)+CO
+  <sub>2</sub>(0) → N
+  <sub>2</sub>(0)+CO
+  <sub>2</sub>(1).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Third is to report on the progress made in providing calculated scattering properties as a service to the community using the so-called Grid Empowered Molecular Simulator (GEMS) (Laganà et al., 
+  <a rid="B50" ref-type="bibr" href="#B50">2010</a>; Manuali et al., 
+  <a rid="B66" ref-type="bibr" href="#B66">2010</a>; Rampino et al., 
+  <a rid="B79" ref-type="bibr" href="#B79">2012a</a>) through the activities of the Virtual Organization (VO) COMPCHEM (Laganà et al., 
+  <a rid="B50" ref-type="bibr" href="#B50">2010</a>) first and of the Chemistry Molecular and Materials Science and Technologies (CMMST) Virtual Research Community (VRC) (Laganà, 
+  <a rid="B49" ref-type="bibr" href="#B49">2012</a>) later.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The paper is therefore organized as follows. Section 2 is devoted to the description, formulation and optimization of the proposed CO+N
+  <sub>2</sub> PES. Section 3 is devoted to illustrating the quantum-classical calculations and related results. Section 4 is devoted to illustrating the implemented Open Molecular Science Cloud prototype.
+ </p>
+</sec>

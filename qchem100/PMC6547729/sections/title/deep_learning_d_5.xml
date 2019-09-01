@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Deep learning decoding mechanism</div>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Conventional security labels with macroscale features, for instance, QR codes or bar codes are convenient for authentication with naked eyes, but easy to be counterfeited. Advanced security labels that carry complex, random nano/microscale features (PUF keys) are formidable to be faked. The decoding of such security labels relies on a similar character extraction, recognition, and comparison analysis that a real fingerprint does
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. Such machine learning algorithms for pattern recognition, enhancement, and identification are widely employed for the authentication of the PUF-based security labels
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. A general drawback of the machine learning approach is time consuming and having a high level of false positives of up to 20%
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>. Furthermore, conventional classification can only be used in the PUF that can be transformed to private keys; for flower-like patterns, it does not work. To deal with this problem, deep learning, an artificial intelligence (AI) technique, was introduced to validate the fabricated unclonable security labels, which pushes anti-counterfeiting technology to a higher dimension.
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Although AI has been recently applied into organic chemistry synthesis and TEM image analysis
+  <span class="sup">
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>,
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>
+  </span>, to the best of our knowledge, this is the first time to use AI for security label authentication. Figure 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a> demonstrates a typical authentication procedure of the inkjet-printed security labels through deep learning. First of all, each quantum dot security label on a commercial product is imaged using an advanced fluorescence microscope (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>, step 1). Only one image is taken from each security label and represents one PUF code. Simply, randomly shifting and rotating the image creates a large number of images for an AI to learn the characteristic features of the security label. Once the images are trained on AI, they are categorized in a very general manner (e.g., classes associated with geometry of the security labels) and then stored as a database in a deep learning engine for the subsequent authentication using (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>, step 2). This is done by the manufacturer. When the consumers receive the products, they can simply use their portable mini-microscope-connected smartphones to readout the PUF codes by taking photos of the security labels (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>, step 3), which are automatically sent to the deep learning engine for validation (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>, step 4). The deep learn engine immediately feeds back the authentication results (real or fake) to the users (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>, step 5).
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Deep learning decoding mechanism. 
+     <span class="bold">a</span> Schematic illustrating the authentication process: 1: image capture and database generation from the goods by the manufacturers, 2: image learning by AI, 3: Image capture from the goods by the consumers using their smart phones, 4: image recognition and comparing by AI, and 5: authentication outcome feedback to the consumers. 
+     <span class="bold">b</span>–
+     <span class="bold">g</span> A library of six single dot pattern security labels, 
+     <span class="bold">h</span>–
+     <span class="bold">m</span> six fluorescence images taken from 
+     <span class="bold">b</span> (referred as to genuine product) with different brightness, sharpness, rotation angles, magnifications, and the mixture of the above-mentioned factors, and 
+     <span class="bold">n</span>–
+     <span class="bold">s</span> six fluorescence images from security labels that are not in the database shown in panel 
+     <span class="bold">b</span>–
+     <span class="bold">g</span> (referred as to fake products). 
+     <span class="bold">t</span>, 
+     <span class="bold">u</span> Recognition rates of labels (h1–h6) and (i1–i6) by the authenticating way of deep learning. Labels (g1–g6), (h1–h6), and (i1–i6) correspond to the labels in figure (
+     <span class="bold">b</span>–
+     <span class="bold">g</span>), (
+     <span class="bold">h</span>–
+     <span class="bold">m</span>), and (
+     <span class="bold">n</span>–
+     <span class="bold">s</span>) respectively. The color scales from blue to red stand for the matching score (ranging from 0 to 100%) of the captured pictures with the labels
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10406_Fig4_HTML" id="d29e881" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">To experimentally demonstrate the above authentication process, six quantum-dot security labels (named as g
+  <sub>
+   <span class="italic">n</span>
+  </sub>, 
+  <span class="italic">n</span> = 1, 2, ···, 6) were randomly chosen to establish a security label database (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b–g</a>). Five hundred fluorescence images of each security label (e.g., g
+  <sub>1</sub>) obtained by randomly shifting and rotating a same image (i.e., g
+  <sub>1</sub>) are provided to AI for learning and classifying. The selected 72 out of the 500 images from g
+  <sub>1</sub> show the exact same geometrical characteristics of the security label (see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">18</a>). The 500 images were divided into two parts: 80% for learning and 20% for validation. After every learning cycle (the parts for learning), the images for validation were sent to AI engine to test, providing a train accuracy plot. After about 1000 learning cycles, they can be recognized with accuracy fluctuating between 97 and 100% when being sent to AI for validation again (see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">19</a>).
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">For decoding, a security label that represented a genuine product (i.e., from the pre-established database) was imaged at various sample rotation angles, magnification, focusing degrees, and the mixture of the above-mentioned factors (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4h–m</a>). We try to cover all possible deviations from the imaging equipment, imaging conditions, personnel habits of users that may happen in a real authentication scenario. None of the images shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4h–m</a> (named as h
+  <sub>
+   <span class="italic">n</span>
+  </sub>, 
+  <span class="italic">n</span> = 1, 2, ···, 6) has ever been previously learnt by AI. The image h
+  <sub>
+   <span class="italic">n</span>
+  </sub> is fed into the trained AI for validation. The authentication outputs show the accuracy of h
+  <sub>
+   <span class="italic">n</span>
+  </sub> (
+  <span class="italic">n</span> = 1, 2, ···, 6) is 0.999, 0.758, 0.999, 0.909, 0.999, and 0.999, respectively (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4t</a>). The relatively low accuracy of h
+  <sub>2</sub> and h
+  <sub>4</sub> are attributed to their over-indistinct characteristics, for which parts of details are lost during imaging, implying sharpness exerting a much higher impact on authentication accuracy than other variations, such as brightness, location, rotation angle, and amplification factor. The threshold of the accuracy at a value of 0.5 is then set to distinguish the real and fake security labels. For comparison, six fake security labels named as i
+  <sub>
+   <span class="italic">n</span>
+  </sub> (
+  <span class="italic">n</span> = 1, 2, ···, 6) were sent to AI for authentication in the same way (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4n–s</a>). The corresponding accuracy is almost zero for all the fake security labels (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4u</a>). By simply comparing the accuracy on the test with the threshold, the deep learning machine can immediately provide the authentication outcomes (real: accuracy ≥0.5, fake: accuracy &lt;0.5) to the customers. Regarding to the rate of false positives, we achieved the false positives rate of 0 using the match score of 0.5 as the threshold when sampling 100 security labels (see Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). It only takes seconds or even less to finish the whole authentication process.
+ </p>
+</sec>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Organometallic compounds which luminesce from triplet excited states, 
+  <span class="italic">i.e. via</span> phosphorescence, have become prominent in a number of applications. Cyclometalated iridium complexes
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a> are a class of molecular phosphors that have achieved commercial success in organic light-emitting diodes (OLEDs)
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a>–
+  <a rid="cit5" ref-type="bibr" href="#cit5">5</a> and have also been demonstrated to be effective in other contexts such as sensing
+  <a rid="cit6" ref-type="bibr" href="#cit6">6</a>,
+  <a rid="cit7" ref-type="bibr" href="#cit7">7</a> and photocatalysis.
+  <a rid="cit8" ref-type="bibr" href="#cit8">8</a>,
+  <a rid="cit9" ref-type="bibr" href="#cit9">9</a> Photoluminescence attributes of cyclometalated iridium complexes include high quantum yields, short lifetimes, and facile color tunability. A significant fundamental challenge in the design of luminescent iridium complexes, which is especially important in OLED research, is the lack of deep blue phosphorescent compounds with adequate performance metrics – 
+  <span class="italic">i.e.</span> color purity, quantum efficiency, and stability – to function in color displays or other optoelectronic applications. The physical origins of this challenge are summarized in 
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>. The HOMO in cyclometalated iridium complexes usually involves significant contribution from an Ir-centered dπ orbital, 
+  <span class="italic">i.e.</span> a t
+  <sub>2g</sub> orbital in rigorously 
+  <span class="italic">O</span>
+  <sub>h</sub> complexes, whereas the LUMO is an unoccupied π* orbital on the cyclometalating ligands. These complexes luminesce from excited states that have contributions from triplet ligand-centered (
+  <span class="sup">3</span>LC) states localized on the cyclometalating ligand and triplet metal-to-ligand charge transfer (
+  <span class="sup">3</span>MLCT) states, which mix through configuration interaction in the low-energy T
+  <sub>1</sub> state.
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a> The lowest-energy ligand-field or metal-centered state, which involves transitions between Ir-centered d orbitals, is also a triplet state (
+  <span class="sup">3</span>MC).
+  <a rid="cit10" ref-type="bibr" href="#cit10">10</a> One of the reasons bis-cyclometalated iridium complexes are very successful as triplet emitters is that the 
+  <span class="sup">3</span>MC state is typically much higher in energy than the T
+  <sub>1</sub> state and thus cannot be populated. However, in deep-blue-emitting compounds with high-energy T
+  <sub>1</sub> states, the 
+  <span class="sup">3</span>MC state is thermally accessible, and population of this nonradiative state decreases quantum yield and also promotes electrons into metal–ligand σ* orbitals, inducing ligand-loss decomposition pathways that limit photostability and lead to degradation of devices fabricated with these emitters.
+  <a rid="cit11" ref-type="bibr" href="#cit11">11</a>
+ </p>
+ <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">Partial excited-state diagram for cyclometalated iridium complexes, showing partial occupation of 
+    <span class="sup">3</span>MC states and destabilization of these states when stronger σ-donor ligands are incorporated.
+   </div>
+  </div>
+  <div xlink:href="c9sc01386e-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As is also shown in 
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, incorporation of strong σ-donor ligand sets can destabilize the deleterious 
+  <span class="sup">3</span>MC state, allowing efficient luminescence from T
+  <sub>1</sub> and greater photostability. In an ideal case, where the σ-donor only perturbs the unoccupied dσ* orbitals and does not influence the frontier orbitals involved in the luminescent T
+  <sub>1</sub> state, this perturbation of the 
+  <span class="sup">3</span>MC state would not influence the photoluminescence spectrum but should improve the quantum yield and photostability. As a result, N-heterocyclic carbenes (NHCs) have emerged as popular design elements in blue-emitting cyclometalated iridium complexes. Many recent works describe cyclometalated iridium complexes with NHC-containing C^C: cyclometalating ligands, chelated to iridium through the NHC and a phenyl group.
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a>–
+  <a rid="cit21" ref-type="bibr" href="#cit21">21</a> In the context of blue OLEDs a majority of the recent breakthroughs involve homoleptic tris-cyclometalated Ir(C^C:
+  <span class="sup">NHC</span>)
+  <sub>3</sub> complexes.
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a>,
+  <a rid="cit14" ref-type="bibr" href="#cit14">14</a>,
+  <a rid="cit15" ref-type="bibr" href="#cit15">15</a>,
+  <a rid="cit17" ref-type="bibr" href="#cit17">17</a>,
+  <a rid="cit19" ref-type="bibr" href="#cit19">19</a> The synthetic chemistry of heteroleptic compounds with only two C^C:
+  <span class="sup">NHC</span> cyclometalating ligands is much less developed, although there are a couple of examples of blue-emitting bis-cyclometalated complexes of the type Ir(C^C:
+  <span class="sup">NHC</span>)
+  <sub>2</sub>(L^X), where L^X is a pyrazolate or triazolate-based ancillary ligand.
+  <a rid="cit16" ref-type="bibr" href="#cit16">16</a>,
+  <a rid="cit18" ref-type="bibr" href="#cit18">18</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Until recently NHCs were the only type of carbene ligand incorporated into blue-emitting iridium complexes. We recognized the possibility that acyclic diaminocarbenes (ADCs), which are known to be even stronger σ-donors than NHCs on account of the greater 2p character in their σ orbital,
+  <a rid="cit22" ref-type="bibr" href="#cit22">22</a>–
+  <a rid="cit25" ref-type="bibr" href="#cit25">25</a> could potentially destabilize 
+  <span class="sup">3</span>MC states to an even greater extent than is possible with NHCs and improve the photostability of blue-phosphorescent complexes. We have shown that ADCs can be installed onto cyclometalated iridium complexes 
+  <span class="italic">via</span> on-complex, nucleophilic addition to coordinated isocyanides. Versions of these complexes exhibit intense blue luminescence when immobilized in polymer films,
+  <a rid="cit26" ref-type="bibr" href="#cit26">26</a>–
+  <a rid="cit28" ref-type="bibr" href="#cit28">28</a> with quantum efficiencies as high as 79% for a cyclometalated ADC complex.
+  <a rid="cit27" ref-type="bibr" href="#cit27">27</a> However, the biggest limitation of these first-generation compounds, which will preclude any practical device applications, is their rather poor color purity, with significant sky blue to blue-green coloration in the photoluminescence. We observed CIE coordinates
+  <a rid="cit29" ref-type="bibr" href="#cit29">29</a> (CIE
+  <span class="italic">x</span>, CIE
+  <span class="italic">y</span>) = (0.20, 0.41) for complexes with cyclometalated ADC ligands,
+  <a rid="cit27" ref-type="bibr" href="#cit27">27</a> with (CIE
+  <span class="italic">x</span>, CIE
+  <span class="italic">y</span>) = (0.16, 0.21) and (0.17, 0.28) for blue-emitting compounds with “Chugaev-type” bis(ADC) ancillary ligands.
+  <a rid="cit26" ref-type="bibr" href="#cit26">26</a>,
+  <a rid="cit28" ref-type="bibr" href="#cit28">28</a> The CIE
+  <span class="italic">y</span> coordinates in particular are larger than the ideal values (&lt;0.1) for high-purity blue emission; the most widely used industry standards are the International Electrotechnical Commission (IEC) sRGB standard, (CIE
+  <span class="italic">x</span>, CIE
+  <span class="italic">y</span>) = (0.15, 0.06), and the primary blue standards proscribed by National Television System Committee (NTSC) (CIE
+  <span class="italic">x</span>, CIE
+  <span class="italic">y</span>) = (0.14, 0.08) and Society of Motion Picture and Television Engineers (SMPTE-C) (CIE
+  <span class="italic">x</span>, CIE
+  <span class="italic">y</span>) = (0.155, 0.07). In addition, the blue-emitting ADC-containing complexes we prepared all use the C^N cyclometalating ligand 2-(2,4-difluorophenyl)pyridine (F
+  <sub>2</sub>ppy), which is known to degrade in OLED devices 
+  <span class="italic">via</span> ligand defluorination.
+  <a rid="cit11" ref-type="bibr" href="#cit11">11</a> In the present work, we address these two limitations and improve upon our previous designs, introducing three new compounds that are devoid of sp
+  <span class="sup">2</span> C–F bonds and give rise to high-purity blue photoluminescence. These mixed-carbene compounds have the general formula Ir(C^C:
+  <span class="sup">NHC</span>)
+  <sub>2</sub>(C^C:
+  <span class="sup">ADC</span>), where C^C:
+  <span class="sup">NHC</span> is an N-heterocyclic carbene (NHC) derived cyclometalating ligand and C^C:
+  <span class="sup">ADC</span> an ADC-containing cyclometalating ligand. These compounds expand the synthetic chemistry of heteroleptic NHC-derived cyclometalated iridium complexes and show that ADC ligands and NHC ligands can be partnered on the same complex. These compounds exhibit very promising photoluminescence attributes, in particular CIE coordinates that are very close to NTSC and IEC standards for color displays, making these compounds excellent candidates for incorporation into OLEDs.
+ </p>
+</sec>

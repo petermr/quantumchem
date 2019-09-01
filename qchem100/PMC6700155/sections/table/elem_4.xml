@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Tab4" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 4</span>
+ <div class="caption">
+  <p>Comparative analysis of the isotropic (
+   <span class="italic">α</span>
+   <sub>iso</sub>) and anisotropic (
+   <span class="italic">α</span>
+   <sub>aniso</sub>) polarizabilities in the QM7b and AlphaML showcase databases computed at the CCSD/daDZ, B3LYP/daDZ, SCAN0/daDZ, and B3LYP/daTZ levels.
+  </p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th>
+     <span class="italic">α</span>
+    </th>
+    <th>Level</th>
+    <th>Reference Level</th>
+    <th>MSE (MSPE)</th>
+    <th>MAE (MAPE)</th>
+    <th>RMSE (RMSPE)</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="6">
+     <span class="bold">QM7b Database</span>
+    </td>
+   </tr>
+   <tr>
+    <td rowspan="4">
+     <span class="italic">α</span>
+     <sub>iso</sub>
+    </td>
+    <td>B3LYP/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>1.91 (2.52)</td>
+    <td>1.92 (2.54)</td>
+    <td>2.32 (2.97)</td>
+   </tr>
+   <tr>
+    <td>SCAN0/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>0.20 (0.21)</td>
+    <td>0.97 (1.29)</td>
+    <td>1.41 (1.78)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>SCAN0/daDZ</td>
+    <td>1.70 (2.31)</td>
+    <td>1.70 (2.31)</td>
+    <td>1.73 (2.36)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>B3LYP/daTZ</td>
+    <td>0.08 (0.11)</td>
+    <td>0.09 (0.12)</td>
+    <td>0.11 (0.14)</td>
+   </tr>
+   <tr>
+    <td rowspan="4">
+     <span class="italic">α</span>
+     <sub>aniso</sub>
+    </td>
+    <td>B3LYP/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>2.99 (9.19)</td>
+    <td>3.03 (9.34)</td>
+    <td>4.48 (10.4)</td>
+   </tr>
+   <tr>
+    <td>SCAN0/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>2.42 (7.34)</td>
+    <td>2.59 (7.93)</td>
+    <td>4.01 (9.25)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>SCAN0/daDZ</td>
+    <td>0.57 (1.78)</td>
+    <td>0.64 (2.09)</td>
+    <td>0.85 (2.52)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>B3LYP/daTZ</td>
+    <td>&lt;0.01 (0.02)</td>
+    <td>0.05 (0.17)</td>
+    <td>0.07 (0.25)</td>
+   </tr>
+   <tr>
+    <td colspan="6">
+     <span class="bold">AlphaML Showcase Database</span>
+    </td>
+   </tr>
+   <tr>
+    <td rowspan="4">
+     <span class="italic">α</span>
+     <sub>iso</sub>
+    </td>
+    <td>B3LYP/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>1.97 (1.83)</td>
+    <td>2.21 (2.09)</td>
+    <td>3.87 (3.22)</td>
+   </tr>
+   <tr>
+    <td>SCAN0/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>−0.22 (−0.43)</td>
+    <td>2.15 (2.08)</td>
+    <td>3.81 (3.24)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>SCAN0/daDZ</td>
+    <td>2.19 (2.29)</td>
+    <td>2.19 (2.29)</td>
+    <td>2.34 (2.44)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>B3LYP/daTZ</td>
+    <td>0.13 (0.14)</td>
+    <td>0.13 (0.14)</td>
+    <td>0.14 (0.15)</td>
+   </tr>
+   <tr>
+    <td rowspan="4">
+     <span class="italic">α</span>
+     <sub>aniso</sub>
+    </td>
+    <td>B3LYP/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>3.52 (7.83)</td>
+    <td>3.66 (8.10)</td>
+    <td>9.87 (9.97)</td>
+   </tr>
+   <tr>
+    <td>SCAN0/daDZ</td>
+    <td>CCSD/daDZ</td>
+    <td>2.69 (5.25)</td>
+    <td>3.37 (6.73)</td>
+    <td>10.0 (9.11)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>SCAN0/daDZ</td>
+    <td>0.84 (2.57)</td>
+    <td>0.94 (2.65)</td>
+    <td>1.44 (3.57)</td>
+   </tr>
+   <tr>
+    <td>B3LYP/daDZ</td>
+    <td>B3LYP/daTZ</td>
+    <td>&lt;0.01 (0.01)</td>
+    <td>0.08 (0.23)</td>
+    <td>0.11 (0.31)</td>
+   </tr>
+  </tbody>
+ </table>
+ <div class="table-wrap-foot">
+  <p>Statistical quantities (in Bohr
+   <span class="sup">3</span>) are computed with respect to the Reference Level and include: mean signed error (MSE), mean absolute error (MAE), and root-mean-square error (RMSE). Corresponding percent errors (MSPE, MAPE, RMSPE) are provided in %. When computing the MSPE, MAPE, and RMSPE values for 
+   <span class="italic">α</span>
+   <sub>aniso</sub> in the QM7b database, molecules with very small 
+   <span class="italic">α</span>
+   <sub>aniso</sub> values (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., molecule0001: methane, 
+   <div id="IEq27" class="inline-formula">
+    <div class="alternatives">
+     <span id="M57" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\alpha }_{{\rm{aniso}}}^{{\rm{CCSD/daDZ}}}=2.16\times 1{0}^{-4}$$\end{document}</span>
+     <div id="M58" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">aniso</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">CCSD/daDZ</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">2.16</span>
+      <span class="mo">×</span>
+      <span class="mn">1</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41597_2019_157_Article_IEq27.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> Bohr
+   <span class="sup">3</span> and molecule1009: neopentane, 
+   <div id="IEq28" class="inline-formula">
+    <div class="alternatives">
+     <span id="M59" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\alpha }_{{\rm{aniso}}}^{{\rm{CCSD/daDZ}}}=3.83\times 1{0}^{-4}$$\end{document}</span>
+     <div id="M60" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">aniso</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">CCSD/daDZ</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">3.83</span>
+      <span class="mo">×</span>
+      <span class="mn">1</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41597_2019_157_Article_IEq28.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> Bohr
+   <span class="sup">3</span>) were excluded, as these molecules yielded large (but physically insignificant) percent errors.
+  </p>
+ </div>
+</div>

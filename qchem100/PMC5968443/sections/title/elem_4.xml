@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec5" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">5</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We tested our implementation by optimizing the STO-2G as well as the STO-3G minimal basis sets for the small molecules H
+  <sub>2</sub>O, HF, NH
+  <sub>3</sub>, CH
+  <sub>4</sub>, and CH
+  <sub>2</sub>O. Since we can obtain the gradients with respect to any input parameter, 
+  <span class="italic">DiffiQult</span> has the freedom to select different optimization procedures. Here, we illustrate two schemes: (A) optimizing the Gaussian exponents and contraction coefficients, sequentially, and (B) optimizing the contraction coefficients and exponents, followed by an optimization of the Gaussian centers. For the example of H
+  <sub>2</sub>O, the improvement of the energies for each optimization step is illustrated in 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>. We find that the most efficient way to optimize the HF energy is by employing scheme (B) since it already converges after 10 basis set optimization steps. For a general assessment of which method works better than the other, we need to consider the trade-off between reaching fast convergence and computation time. For example, scheme (B) requires more time to perform a single optimization step since it requires computing more gradients for a larger number of parameters due to the line-search procedure within the BFGS algorithm. All optimizations were done until finding an infinite norm of the gradient of 10
+  <span class="sup">–5</span> or a total of 10 steps, respectively. 
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a> displays HF energies for optimized and nonoptimized basis sets for selected small molecules. The optimization scheme (B) results in an improvement of up to 0.18 hartree per electron.
+ </p>
+ <div id="tbl1" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Hartree–Fock Energies in Hartrees Test Molecules of the Nonoptimized and Optimized (Scheme (B)) basis sets STO-2G and STO-3G
+    <a rid="tbl1-fn1" ref-type="table-fn" href="#tbl1-fn1">a</a>
+   </div>
+  </div>
+  <table frame="hsides" rules="groups" border="0">
+   <colgroup>
+    <col align="left"/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th style="border:none;" align="center"> </th>
+     <th colspan="5" align="center" char=".">basis
+      <span class="hr"/>
+     </th>
+    </tr>
+    <tr>
+     <th style="border:none;" align="center"> </th>
+     <th colspan="2" align="center" char=".">STO-2G
+      <span class="hr"/>
+     </th>
+     <th colspan="2" align="center" char=".">STO-3G
+      <span class="hr"/>
+     </th>
+     <th style="border:none;" align="center" char="."> </th>
+    </tr>
+    <tr>
+     <th style="border:none;" align="center">molecule</th>
+     <th style="border:none;" align="center" char=".">none</th>
+     <th style="border:none;" align="center" char=".">Opt. 
+      <span class="italic">coef</span>, α and 
+      <span class="bold">A</span>
+     </th>
+     <th style="border:none;" align="center" char=".">none</th>
+     <th style="border:none;" align="center" char=".">Opt. 
+      <span class="italic">coef</span>, α and 
+      <span class="bold">A</span>
+     </th>
+     <th style="border:none;" align="center" char=".">reference: 3-21G</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td style="border:none;" align="left">HF</td>
+     <td style="border:none;" align="char" char=".">–95.60</td>
+     <td style="border:none;" align="char" char=".">–97.03</td>
+     <td style="border:none;" align="char" char=".">–98.57</td>
+     <td style="border:none;" align="char" char=".">–99.38</td>
+     <td style="border:none;" align="char" char=".">–99.46</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">H
+      <sub>2</sub>O
+     </td>
+     <td style="border:none;" align="char" char=".">–72.74</td>
+     <td style="border:none;" align="char" char=".">–73.82</td>
+     <td style="border:none;" align="char" char=".">–74.96</td>
+     <td style="border:none;" align="char" char=".">–75.52</td>
+     <td style="border:none;" align="char" char=".">–75.59</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">NH
+      <sub>3</sub>
+     </td>
+     <td style="border:none;" align="char" char=".">–53.82</td>
+     <td style="border:none;" align="char" char=".">–54.65</td>
+     <td style="border:none;" align="char" char=".">–55.45</td>
+     <td style="border:none;" align="char" char=".">–55.83</td>
+     <td style="border:none;" align="char" char=".">–55.87</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">CH
+      <sub>4</sub>
+     </td>
+     <td style="border:none;" align="char" char=".">–38.59</td>
+     <td style="border:none;" align="char" char=".">–39.32</td>
+     <td style="border:none;" align="char" char=".">–39.72</td>
+     <td style="border:none;" align="char" char=".">–39.96</td>
+     <td style="border:none;" align="char" char=".">–39.98</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">CH
+      <sub>3</sub>F
+     </td>
+     <td style="border:none;" align="char" char=".">–133.09</td>
+     <td style="border:none;" align="char" char=".">–134.96</td>
+     <td style="border:none;" align="char" char=".">–137.17</td>
+     <td style="border:none;" align="char" char=".">–137.43</td>
+     <td style="border:none;" align="char" char=".">–138.28</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">CH
+      <sub>2</sub>O
+     </td>
+     <td style="border:none;" align="char" char=".">–109.02</td>
+     <td style="border:none;" align="char" char=".">–110.54</td>
+     <td style="border:none;" align="char" char=".">–112.35</td>
+     <td style="border:none;" align="char" char=".">–112.72</td>
+     <td style="border:none;" align="char" char=".">–113.22</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="tbl1-fn1" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">As a reference, we show results for the larger 3-21G basis set.</p>
+   </fn>
+  </div>
+ </div>
+ <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>One-electron basis function optimizations of H
+    <sub>2</sub>O. (a) Optimization steps of STO-3G and STO-2G with different optimization schemes. (A) Optimizing exponents and coefficients 10 steps each twice, and (B) optimizing exponents and coefficients together, followed by optimizing positions. (b) Contour of the difference in electronic density between the STO-3G basis and the optimized one-electron basis functions under scheme (B). (c) Contours of the difference in electronic density between the conventional STO-3G basis set and the reference 3-21G basis set. (d) Contour of the difference in electronic density between the optimized (scheme (B)) STO-3G basis set and the reference 3-21G basis set. An increase of density on the optimization is displayed in blue and a decrease is in red.
+   </p>
+  </div>
+  <div xlink:href="oc-2017-00586m_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The minimal basis sets we optimized lacked in flexibility to correctly represent polarization and dispersion in the core molecular orbitals. For instance, hydrogen contains only a single atom centered s-type orbital that is insufficient to display changes in the density induced by the surrounding charges. By optimizing the parameters of the atomic orbital of each hydrogen, we can partially take into account polarization effects. As is depicted in 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>b, the optimization of the basis STO-3G of H
+  <sub>2</sub>O shifts the electronic density from the regions around the hydrogen atoms toward the bond regions. In the case of the oxygen, as it is shown in 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>c,d, the number of basis function is not sufficient to represent both the bond and the density around the oxygen itself, even after the optimization. Therefore, corrections to the core atomic orbitals of oxygen would need to include a greater number and higher angular momentum one-electron functions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, we discuss a common convergence problem of the HF method that can affect our fully variational HF implementation. It appears in our examples mainly in the line-search, when the optimizer by chance tests the parameter for which the SCF is difficult to get converged. In principle, this problem can be circumvented by suitable convergence strategies in the HF algorithm.</p>
+</sec>

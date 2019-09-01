@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0002" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Overview of RAQET</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">This section provides an overview of RAQET. In this program, the fundamental equation for many‐electron systems is solved in the 2c formalism, defined by
+  <div id="jcc25364-disp-0001" class="disp-formula">
+   <span class="label">(1)</span>
+   <div id="nlm-math-1" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span mathvariant="bold" class="mi">H</span>
+      <span class="mn">2</span>
+      <div class="mrow">
+       <span class="mi">e</span>
+       <span class="mi">l</span>
+       <span class="mi">e</span>
+       <span class="mi">c</span>
+      </div>
+     </div>
+     <div class="msub">
+      <span class="mo">Ψ</span>
+      <span class="mn">2</span>
+     </div>
+     <span class="mo">=</span>
+     <span class="mi">E</span>
+     <div class="msub">
+      <span class="mo">Ψ</span>
+      <span class="mn">2</span>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-2" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mo">Ψ</span>
+     <span class="mn">2</span>
+    </div>
+   </div>
+  </div> is the 2c wavefunction for the electronic state, 
+  <span class="italic">E</span> is an energy eigenvalue, and 
+  <div id="nlm-math-3" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">H</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mi">e</span>
+      <span class="mi">l</span>
+      <span class="mi">e</span>
+      <span class="mi">c</span>
+     </div>
+    </div>
+   </div>
+  </div> is the many‐electron 2c relativistic Hamiltonian given by
+  <div id="jcc25364-disp-0002" class="disp-formula">
+   <span class="label">(2)</span>
+   <div id="nlm-math-4" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span mathvariant="bold" class="mi">H</span>
+      <span class="mn">2</span>
+      <div class="mrow">
+       <span class="mi">e</span>
+       <span class="mi">l</span>
+       <span class="mi">e</span>
+       <span class="mi">c</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <span class="mi">i</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <span mathvariant="bold" class="mi">h</span>
+        <span class="mn">2</span>
+        <span class="mo">+</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">+</span>
+       <div displaystyle="true" class="mstyle">
+        <div class="munder">
+         <span class="mo">∑</span>
+         <div class="mrow">
+          <span class="mi">i</span>
+          <span class="mo">&gt;</span>
+          <span class="mi">j</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="msubsup">
+          <span mathvariant="bold" class="mi">g</span>
+          <span class="mn">2</span>
+          <div class="mrow">
+           <span class="mo">+</span>
+           <span class="mo">+</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">i</span>
+         <span class="mo">,</span>
+         <span class="mi">j</span>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-5" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">h</span>
+     <span class="mn">2</span>
+     <span class="mo">+</span>
+    </div>
+   </div>
+  </div> and 
+  <div id="nlm-math-6" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">g</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mo">+</span>
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> are the electronic components of the one‐ and two‐electron Hamiltonians. This program mainly adopts the 2c IODKH/IODKH method
+  <a rid="jcc25364-bib-0040" ref-type="ref" href="#jcc25364-bib-0040">40</a> for the Hamiltonian. This method approximates the block‐diagonalized many‐electron 4c Dirac Hamiltonian 
+  <div id="nlm-math-7" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">H</span>
+     <span class="mn">4</span>
+     <div class="mrow">
+      <span class="mi">D</span>
+      <span class="mi">H</span>
+     </div>
+    </div>
+   </div>
+  </div> as
+  <div id="jcc25364-disp-0003" class="disp-formula">
+   <span class="label">(3)</span>
+   <div id="nlm-math-8" class="math">
+    <div class="mrow">
+     <div class="msup">
+      <span mathvariant="bold" class="mi">U</span>
+      <span class="mo">†</span>
+     </div>
+     <div class="msubsup">
+      <span mathvariant="bold" class="mi">H</span>
+      <span class="mn">4</span>
+      <div class="mrow">
+       <span class="mi">D</span>
+       <span class="mi">H</span>
+      </div>
+     </div>
+     <span mathvariant="bold" class="mi">U</span>
+     <span class="mo"> </span>
+     <span class="mo">≈</span>
+     <div class="munder">
+      <span class="mo">∑</span>
+      <span class="mi">i</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <div class="msubsup">
+           <span mathvariant="bold" class="mi">h</span>
+           <span class="mn">2</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">i</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mn">0</span>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd">
+         <span class="mn">0</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="msubsup">
+           <span mathvariant="bold" class="mi">h</span>
+           <span class="mn">2</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">i</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+      <span class="mo">+</span>
+      <div class="munder">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">&gt;</span>
+        <span class="mi">j</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mo">+</span>
+             <span class="mo">+</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mo">+</span>
+             <span class="mo">−</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mo">−</span>
+             <span class="mo">+</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mo">−</span>
+             <span class="mo">−</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>with
+  <div id="jcc25364-disp-0004" class="disp-formula">
+   <span class="label">(4)</span>
+   <div id="nlm-math-9" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span mathvariant="bold" class="mi">H</span>
+      <span class="mn">4</span>
+      <div class="mrow">
+       <span class="mi">D</span>
+       <span class="mi">H</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <span class="mi">i</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <span mathvariant="bold" class="mi">H</span>
+        <span class="mn">4</span>
+        <span class="mi">D</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span class="mo">+</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">&gt;</span>
+        <span class="mi">j</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <span mathvariant="bold" class="mi">G</span>
+        <span class="mn">4</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mi">i</span>
+       <span class="mo">,</span>
+       <span class="mi">j</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>and
+  <div id="jcc25364-disp-0005" class="disp-formula">
+   <span class="label">(5)</span>
+   <div id="nlm-math-10" class="math">
+    <div class="mrow">
+     <span mathvariant="bold" class="mi">U</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">i</span>
+     <span class="mo">,</span>
+     <span class="mi">j</span>
+     <span class="mo">,</span>
+     <span class="mo">…</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">≈</span>
+     <span mathvariant="bold" class="mi">U</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">i</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">⊗</span>
+     <span mathvariant="bold" class="mi">U</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">j</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">⋯</span>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>Here, 
+  <div id="nlm-math-11" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">H</span>
+     <span class="mn">4</span>
+     <span class="mi">D</span>
+    </div>
+   </div>
+  </div> is the one‐electron 4c Dirac Hamiltonian, and 
+  <div id="nlm-math-12" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">G</span>
+     <span class="mn">4</span>
+     <div class="mrow"/>
+    </div>
+   </div>
+  </div> is the general expression of the two‐electron 4c operator. In RAQET, the simplest Coulomb interaction is adopted as 
+  <span class="bold">G</span>
+  <sub>4</sub>(
+  <span class="italic">i, j</span>), i.e. 
+  <span class="bold">G</span>
+  <sub>4</sub>(
+  <span class="italic">i, j</span>) = 1/
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub>. In eq. (
+  <a rid="jcc25364-disp-0005" ref-type="disp-formula" href="#jcc25364-disp-0005">5</a>), the many‐electron unitary transformation is approximated by the product of the one‐electron unitary transformation. The subsequent sections discuss the capabilities of the Hamiltonian 
+  <div id="nlm-math-13" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">H</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mi">e</span>
+      <span class="mi">l</span>
+      <span class="mi">e</span>
+      <span class="mi">c</span>
+     </div>
+    </div>
+   </div>
+  </div>, WFT for 
+  <div id="nlm-math-14" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mo">Ψ</span>
+     <span class="mn">2</span>
+    </div>
+   </div>
+  </div>, and DFT in RAQET.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">RAQET utilizes Gaussian‐type orbitals (GTOs) as basis functions. In heavy‐element systems, the molecular orbitals have high angular momentum such as 
+  <span class="italic">d</span>‐ and 
+  <span class="italic">f</span>‐orbitals and several nodes between the core and the valence regions. To describe these orbitals accurately, GTOs can be constructed from many primitive functions. Two types of GTOs are frequently adopted for molecular basis sets containing heavy elements: the segmented‐/general‐contractions (SC/GC),
+  <a rid="jcc25364-bib-0090" ref-type="ref" href="#jcc25364-bib-0090">90</a> in which GTOs are treated as a linear combination of primitive functions with the different/same set of exponents. To calculate molecular integrals, such as the electron repulsion integrals (ERIs) and their derivatives (DERIs), which are the time‐consuming steps in QC calculations, the algorithm should be optimized for each type of contracted GTO. RAQET employs optimized algorithms for the evaluation of integrals for both SC and GC.
+  <a rid="jcc25364-bib-0083" ref-type="ref" href="#jcc25364-bib-0083">83</a>, 
+  <a rid="jcc25364-bib-0084" ref-type="ref" href="#jcc25364-bib-0084">84</a>, 
+  <a rid="jcc25364-bib-0091" ref-type="ref" href="#jcc25364-bib-0091">91</a> The section on integral evaluation discusses the capabilities of the algorithms for ERIs and DERIs.
+ </p>
+</sec>

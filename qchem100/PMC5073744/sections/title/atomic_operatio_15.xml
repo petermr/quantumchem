@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec11" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Atomic operations versus atomic workflows in computational chemistry</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Input is mostly the experimental structure obtained from single crystal X-ray diffraction analysis. The most fundamental step of every QC calculation is the geometry optimization where a converged wave function is calculated and the atomic positions are varied until all forces in the system come to a minimum. Afterwards, the frequency calculation checks whether a geometry represents a true minimum and delivers infrared frequencies of the compound. When dealing with systems containing metals, a very good accordance with the experimental structure is achieved when only 0.01 Å deviation in the chemical bond lengths is found. In many cases, the experimental optical properties of a given molecule must be compared to and explained by theoretical analysis. This is performed by time-dependent DFT calculations (TD-DFT) where the response of the wave function of the compound to an external periodic field (e.g. light) is simulated. More information about the electronic structure can be obtained by population analyses and charge calculations, e.g. by using natural bond orbitals (NBO) analysis [
+  <a ref-type="bibr" rid="CR43" href="#CR43">43</a>]. These types of analyses allow to dissect the electron distribution and assign it to atoms in order to obtain partial charges, charge-transfer energies, hybridisation of atoms etc.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Previously, in QC, the calculation in gas phase was standard but today, to obtain a realistic description, solvent models are commonly applied. In explicit models, the single solvent molecules are modelled which leads to enormous computational effort as the number of particles in the simulation system increases exponentially. In implicit models, the solvents are simplified by their radius and their dielectric constant describing the continuum around the molecule of interest. The different approaches represent the compromise between best accuracy (explicit models) and highest speed (implicit models). Hence, every solvent has a specific set of parameters. Special attention has to be paid to the solvent description when changing the QC code or even only the version of the used code, as the implementations of solvent models vary. At the next level, dispersive interactions between molecules and parts of molecules must be described correctly. Dispersive interactions (London forces) are rather weak but they can change the relative energies between conformers since attractive forces between unipolar parts of molecules can affect the position of substituents. The dispersion model after Grimme adds pairwise interaction energies (DFT-D) to model possible contacts [
+  <a ref-type="bibr" rid="CR44" href="#CR44">44</a>, 
+  <a ref-type="bibr" rid="CR45" href="#CR45">45</a>]. It is highly important to understand the influences of different solvent and dispersion models on the structures, frequencies and energies of transition metal complexes because an accurateness of &lt;0.1 kcal/mol is needed for a reasonable reaction mechanism prediction. Both enhancements can be added to all types of calculations described above.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Hence, candidates for atomic workflows are the following ones:
+  <div list-type="bullet" class="list">
+   <div class="list-item">
+    <p>geometry optimization</p>
+   </div>
+   <div class="list-item">
+    <p>frequency analysis</p>
+   </div>
+   <div class="list-item">
+    <p>time-dependent calculation</p>
+   </div>
+   <div class="list-item">
+    <p>population analysis</p>
+   </div>
+   <div class="list-item">
+    <p>charge calculation</p>
+   </div>
+  </div>
+ </p>
+</sec>

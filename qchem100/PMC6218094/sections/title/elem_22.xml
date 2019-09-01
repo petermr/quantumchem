@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="supplementary-material" id="sec015" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Supporting information</div>
+ <div content-type="local-data" id="pcbi.1006471.s001" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S1 Table</span>
+  <div class="caption">
+   <div class="title">The range of range of potentials for the most important redox cofactors in biochemistry.</div>
+   <p>S1 Table shows the physiological range of reduction potentials for the major classes of biological electron carriers, as determined by their physicochemical properties and characteristic intracellular concentrations.</p>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s001.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s002" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S2 Table</span>
+  <div class="caption">
+   <div class="title">Linear regression coefficients obtained from calibrating the raw redox potential estimates obtained from the quantum single point energy (SPE) model chemistry.</div>
+   <p>The model chemistry used consists of density functional theory with the B2PLYP double-hybrid functional, the DefBas-5 Orca basis set (see 
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description), the COSMO implicit solvent, and the D3 dispersion correction.
+   </p>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s002.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s003" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S3 Table</span>
+  <div class="caption">
+   <div class="title">A detailed description of the Default Basis (DefBas) sets in Orca version 3.0.3.</div>
+   <p>The notation SV(xxx/yyy) refers to the SV basis set with polarization functions xxx and diffuse functions yyy.</p>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s003.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s004" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S4 Table</span>
+  <div class="caption">
+   <div class="title">Prediction accuracy of the quantum chemistry, molecular fingerprints, and group contribution method modeling approaches.</div>
+   <p>The number of available experimental values for each reaction category is indicated in parentheses. MAE = Mean Absolute Error; R
+    <span class="sup">2</span> = coefficient of determination. The quantum model chemistry uses the double hybrid functional B2PLYP with the DefBas-5 default Orca basis set (see 
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description), the COSMO implicit solvent, and the D3 dispersion correction. While the Pearson r can range from -1 to 1, R
+    <span class="sup">2</span> can take on any negative value. A prediction method with the same accuracy as the mean predictor (a constant model that always predicts the mean value of the experimental data) has a value of R
+    <span class="sup">2</span> = 0; negative values of R
+    <span class="sup">2</span> indicate prediction accuracies that are worse than the mean predictor.
+   </p>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s004.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s005" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S1 Fig</span>
+  <div class="caption">
+   <div class="title">Prediction accuracy, as measured using Pearson r coefficient, and average runtimes per molecular conformer for different quantum single point energy (SPE) model chemistries.</div>
+   <p>The accuracy measures is obtained from comparing the predicted 
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>(
+    <span class="italic">pH</span> = 7,
+    <span class="italic">I</span> = 0.25) values against available experimental data. Data corresponds to prediction accuracy on the G3 reaction category, which consists of reductions of carbonyls to amines. Mean runtime is calculated over all molecular conformers involved in the simulation of the G3 reaction set with available experimental data. As detailed in section 2.7 “Systematic model chemistry exploration to optimize prediction accuracy”, the SPE model chemistries were obtained from searching over a subspace of possible model chemistries generated from selecting a DFT (or wave function method), a basis set, an implicit solvent model, and a dispersion correction from a total set of: 10 different DFT functionals and 2 wave-function methods, 3 possible basis sets, the option of adding the Conductor-like Screening Model (COSMO) for implicit solvation, as well as the D3 dispersion correction. See Supplementary Dataset 5 for detailed model chemistry descriptions. The option of including or excluding DFT-D3 dispersion correction in the geometry optimization procedure was also considered.
+   </p>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s005.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s006" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S2 Fig</span>
+  <div class="caption">
+   <div class="title">Predicting biochemical redox potentials of carbonyl to hydroxycarbon reactions (category G2) with different approaches.</div>
+   <p>(A-C) Calibrating quantum chemical estimates through linear regression (2-parameters per reaction category) significantly improves prediction accuracy. Quantum chemical predictions were performed using the double-hybrid DFT functional B2PLYP, the DefBas-2 Orca basis set, COSMO implicit solvent, and D3 dispersion correction (
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s012" href="#pcbi.1006471.s012">S1 Text</a>). Points in red correspond to reactions which consistently appear as outliers across modeling approaches: the indolepyruvate reduction to indolelactate and succinate semialdehyde reduction to 4-hydroxybutanoate (D-E) Prediction accuracy of group contribution method (10 parameters for the G2 category) and molecular fingerprints (166 parameters calibrated with regularized Lasso regression). (F) Scatter plot of normalized prediction errors (z-scores) of G2 reactions for molecular fingerprints and quantum chemistry. The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde reductase (EC 1.1.1.61) reactions have potentially erroneous experimental values.
+   </p>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s006.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s007" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S3 Fig</span>
+  <div class="caption">
+   <div class="title">Scatter plots of experimental redox potentials and predicted potentials with the selected calibrated quantum chemistry approach (upper four panels) and group contribution method (GCM) (lower four panels) for all four redox categories.</div>
+   <p>Quantum chemical predictions were performed using the double-hybrid DFT functional B2PLYP, the DefBas-2 Orca default basis set, the COSMO implicit solvent, and D3 dispersion correction (S1 Text). Data corresponds to experimental values and predictions at the pH = 7 and I = 0.25 biochemical state. G1: reduction of an unmodified carboxylic acid (-COO) to a carbonyl (-C = O); G2: reduction of a carbonyl to a hydroxycarbon (-COH, i.e., alcohol); G3: reduction of a carbonyl to an amine (-CNH3); and G4: reduction of a hydroxycarbon to a hydrocarbon (-C-C-).</p>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s007.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s008" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S4 Fig</span>
+  <div class="caption">
+   <div class="title">Detection of experimental outliers using a calibrated quantum chemistry approach and MACCS fingerprint predictions for all four reaction categories.</div>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s008.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s009" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S5 Fig</span>
+  <div class="caption">
+   <div class="title">Correlation between quantum chemical estimates of 
+    <span class="italic">ΔE</span>
+    <sub>
+     <span class="italic">Electronic</span>
+    </sub> and 
+    <span class="italic">ΔG</span>
+    <sub>
+     <span class="italic">r</span>
+    </sub>′
+    <span class="sup">
+     <span class="italic">o</span>
+    </span>.
+   </div>
+   <p>Each redox reaction category is shown in a different color. G1—reduction of carboxyl to aldehyde; G2—reduction of carbonyl (ketone or aldehyde) to hydroxyl; G3—reduction of carbonyl to amine; G4—reduction of hydroxyl to hydrocarbon. 
+    <span class="italic">ΔE</span>
+    <sub>
+     <span class="italic">Electronic</span>
+    </sub> was obtained from single point energy (SPE) calculations, while 
+    <span class="italic">ΔG</span>
+    <sub>
+     <span class="italic">r</span>
+    </sub>′
+    <span class="sup">
+     <span class="italic">o</span>
+    </span> is obtained by additionally including rovibrational contributions to Gibbs formation energy.
+   </p>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s009.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s010" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S6 Fig</span>
+  <div class="caption">
+   <div class="title">Correlation between standard transformed redox potential predictions (pH = 7, I = 0.25) using calibrated quantum chemistry with our top-two model chemistries.</div>
+   <p>As discussed in the 
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s012" href="#pcbi.1006471.s012">S1 Text</a>, the prediction accuracy of the calibrated model chemistries was evaluated using the experimental data for the G3 reaction category only (to avoid overfitting). The labels refer to the quantum model chemistry used to perform a single point energy (SPE) calculation on geometry-optimized conformers. For both SPE model chemistries, geometry optimizations were performed using B3LYP functional, Orca’s predefined DefBas-2 basis set (
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a>), COSMO implicit solvent model and DFT-D3 dispersion correction.
+   </p>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s010.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s011" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S7 Fig</span>
+  <div class="caption">
+   <div class="title">Cumulative distribution functions of runtimes for geometry optimization and single point energy (SPE) estimates using our quantum chemistry method.</div>
+   <p>Distributions are over the entire set of molecular conformers used in our study. Geometry optimizations were performed out using DFT, with the B3LYP functional and Orca’s predefined DefBas-2 basis set, as well as the COSMO implicit solvent model (see SI section 2.3). The cumulative distributions of SPE runtimes are shown for the two best-performing model chemistries: the linear-scaling coupled cluster method DLPNO-CCSD(T), with the DefBas-4 Orca basis set (
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a>), COSMO, implicit solvent, and D3 dispersion correction; and the double-hybrid functional B2PLYP, the DefBas-5 Orca basis set (
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed description), COSMO implicit solvent, and D3 dispersion correction (see SI section 2.7 for further details).
+   </p>
+   <p>(TIF)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s011.tif" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s012" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S1 Text</span>
+  <div class="caption">
+   <div class="title">Supplementary material for “quantum chemistry reveals thermodynamic principles of redox biochemistry”.</div>
+   <p>(DOCX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s012.docx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s013" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S1 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains predicted standard redox potentials (group contribution method and calibrated quantum chemistry) an experimental potentials for all redox pairs considered in this work.</div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s013.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s014" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S2 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains the full set of redox reactions in the extended central metabolic network.</div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s014.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s015" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S3 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains the full set of compound names, KEGG compound identifiers, smiles strings (for the major species at pH = 0), and charge (for the major species at pH = 0) used in this work.</div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s015.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s016" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S4 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains the structural categorization of compounds in the G2 category used to obtain the structure-energy relationships in 
+    <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>.
+   </div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s016.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s017" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S5 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains the details of all the model chemistries tested during the optimization procedure.</div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s017.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+ <div content-type="local-data" id="pcbi.1006471.s018" class="supplementary-material" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">S6 Dataset</span>
+  <div class="caption">
+   <div class="title">Contains the raw quantum chemical electronic energies–using a variety of model chemistries—Calculated for up to 10 geometrical conformers of each compound considered in this work.</div>
+   <p>(XLSX)</p>
+  </div>
+  <div xlink:href="pcbi.1006471.s018.xlsx" class="media" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="caption">
+    <p>Click here for additional data file.</p>
+   </div>
+  </div>
+ </div>
+</sec>

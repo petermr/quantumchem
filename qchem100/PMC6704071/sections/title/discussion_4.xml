@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" sec-type="discussion" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">Next, we investigate the physical mechanisms responsible for the progressive disappearance of the 0.5 G
+  <sub>0</sub> plateau and decrease in size of the hysteresis loops as the width of the QPC channel increases. Since the QPC is fabricated using a nominally symmetric InAs quantum well surrounded by two similar InAlAs barriers of equal height (See Fig. 2 of ref.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>), the spatial inversion asymmetry is negligible along the heterostructure growth axis and the associated Rashba spin-orbit coupling can be neglected in our QPC structures. Furthermore, the Dresselhaus spin-orbit interaction due to the bulk inversion asymmetry in the direction of current flow is also neglected for simplicity. The major spin-orbit interaction in our QPCs is LSOC due to a lateral confinement provided by the wet etching of the channel to form the QPC and applied potential from the contact gates (See Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). In the QPC narrow portion, the single-particle Hamiltonian is given by
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{rcl}H &amp; = &amp; {H}_{0}+{H}_{SO}\\ {H}_{SO} &amp; = &amp; \beta \overrightarrow{\sigma }\cdot (\overrightarrow{k}\times \overrightarrow{\nabla }U)=\overrightarrow{\sigma }\cdot {\overrightarrow{B}}_{SO}\end{array},$$\end{document}</span>
+    <div id="M2" display="block" class="math">
+     <div columnalign="left" class="mtable">
+      <div columnalign="left" class="mtr">
+       <div columnalign="right" class="mtd">
+        <span class="mi">H</span>
+       </div>
+       <div columnalign="center" class="mtd">
+        <span class="mo">=</span>
+       </div>
+       <div columnalign="left" class="mtd">
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">H</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <span class="mo">+</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">H</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">S</span>
+           <span class="mi">O</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div columnalign="left" class="mtr">
+       <div columnalign="right" class="mtd">
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">H</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">S</span>
+           <span class="mi">O</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div columnalign="center" class="mtd">
+        <span class="mo">=</span>
+       </div>
+       <div columnalign="left" class="mtd">
+        <div class="mrow">
+         <span class="mi">β</span>
+         <div accent="true" class="mover">
+          <span class="mi">σ</span>
+          <span class="mo">→</span>
+         </div>
+         <span class="mo">⋅</span>
+         <span stretchy="false" class="mo">(</span>
+         <div accent="true" class="mover">
+          <span class="mi">k</span>
+          <span class="mo">→</span>
+         </div>
+         <span class="mo">×</span>
+         <div accent="true" class="mover">
+          <span class="mo">∇</span>
+          <span class="mo">→</span>
+         </div>
+         <span class="mi">U</span>
+         <span stretchy="false" class="mo">)</span>
+         <span class="mo">=</span>
+         <div accent="true" class="mover">
+          <span class="mi">σ</span>
+          <span class="mo">→</span>
+         </div>
+         <span class="mo">⋅</span>
+         <div class="msub">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <span class="mi">B</span>
+            <span class="mo">→</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mi">S</span>
+           <span class="mi">O</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41598_2019_48380_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${H}_{0}=\frac{1}{2{m}^{\ast }}({p}_{x}^{2}+{p}_{y}^{2})+U(x,y)$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">H</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <span class="mn">1</span>
+      <div class="mrow">
+       <span class="mn">2</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">m</span>
+        </div>
+        <span class="mo">⁎</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <span stretchy="true" class="mo">(</span>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">p</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">x</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">+</span>
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">p</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">y</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+     <span class="mo">+</span>
+     <span class="mi">U</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span class="mo">,</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\beta $$\end{document}</span>
+    <div id="M6" class="math">
+     <span class="mi">β</span>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the intrinsic SOC parameter, 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\overrightarrow{\sigma }$$\end{document}</span>
+    <div id="M8" class="math">
+     <div accent="true" class="mover">
+      <span class="mi">σ</span>
+      <span class="mo">→</span>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the vector of Pauli spin matrices and 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO}$$\end{document}</span>
+    <div id="M10" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <span class="mi">B</span>
+        <span class="mo">→</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">S</span>
+       <span class="mi">O</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the effective magnetic field induced by the LSOC.
+ </p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">We assume that the 2DEG is located in the (
+  <span class="italic">x</span>, 
+  <span class="italic">y</span>) plane, where 
+  <span class="italic">x</span> is the direction of current flow from source contact to drain contact and 
+  <span class="italic">y</span> the direction of lateral confinement in the QPC channel; 
+  <span class="italic">U</span>(x, y) is the confinement potential due to both the electrostatic potential on the SGs and the conduction band discontinuity 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Delta {E}_{c}(y)$$\end{document}</span>
+    <div id="M12" class="math">
+     <span class="mi">Δ</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">c</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> at the InAs/vacuum interface. The details of the conductance band energy profile in the vicinity of the QPC constriction, the strength of the LSOC, and the strength of the e-e interaction were analyzed in refs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>,
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+  </span>.
+ </p>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">A schematic representation of the confining potential U(0,y) along the y direction in the QPC constriction is illustrated in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a>, where a symmetric (full line) or asymmetric bias (dashed line) is applied on its SGs. The application of the same potential to the two SGs results in effective magnetic field 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO}$$\end{document}</span>
+    <div id="M14" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <span class="mi">B</span>
+        <span class="mo">→</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">S</span>
+       <span class="mi">O</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> which has the same magnitude but opposite directions along the two sidewalls that define the narrowest part of the QPC constriction. Electrons flowing through the QPC constriction with opposite spins experience opposite LSOC forces leading to an accumulation of spins with opposite polarity on the QPC sidewalls (thick green arrows in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a>). The spin-up (spin-down) electrons are the majority spin species on edge I (edge II) and the minority species on edge II (edge I) of the QPC. Since the difference of spin density is anti-symmetric with respect to the middle of the narrow portion of the QPC (
+  <span class="italic">y</span> = 
+  <span class="italic">w</span>/2), there is no net polarization in the QPC channel
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>. The application of asymmetric bias voltage between the QPC SGs leads to a population of spin-up electrons on the sidewall I, which is larger than the population of spin-down electrons on the sidewall II. This leads to an imbalance in the spin density profiles and results in a net spin-up polarization in the narrow portion of the QPC. The presence of a strong repulsive Coulomb e-e interaction enhances this spin imbalance
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>. In the regime of single-mode transport though the QPC, a 0.5 conductance plateau appears as the spontaneous spin polarization can reach near 100% in this regime
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>,
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>.
+  <div id="Fig4" class="fig">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>Illustration of the onset of spin polarization in the narrow portion of a QPC in the presence of LSOC when a finite bias is applied between the two SGs. The full and dashed lines represent the potential energy profile U(0,y) in the middle portion of the QPC in the presence of a symmetric and asymmetric bias between the two SGs, respectively. The thick green arrows indicate the amount of spin polarization on either sides of the QPC. Also show are the y-component of the electrical field (
+     <div id="IEq7" class="inline-formula">
+      <div class="alternatives">
+       <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{I}\,$$\end{document}</span>
+       <div id="M16" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">I</span>
+         </div>
+        </div>
+        <span width=".25em" class="mspace"/>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>and 
+     <div id="IEq8" class="inline-formula">
+      <div class="alternatives">
+       <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{2}$$\end{document}</span>
+       <div id="M18" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>) near the QPC sidewalls and the associated effective magnetic field 
+     <div id="IEq9" class="inline-formula">
+      <div class="alternatives">
+       <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO,I}$$\end{document}</span>
+       <div id="M20" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <div accent="true" class="mover">
+           <span class="mi">B</span>
+           <span class="mo">→</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span class="mi">O</span>
+          <span class="mo">,</span>
+          <span class="mi">I</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div> and 
+     <div id="IEq10" class="inline-formula">
+      <div class="alternatives">
+       <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO,II}$$\end{document}</span>
+       <div id="M22" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <div accent="true" class="mover">
+           <span class="mi">B</span>
+           <span class="mo">→</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span class="mi">O</span>
+          <span class="mo">,</span>
+          <span class="mi">I</span>
+          <span class="mi">I</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div> on both sides of the QPC channel.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_48380_Fig4_HTML" id="d29e1493" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">In QPCs with symmetrically biased top split-gates, it has been shown that backscattering events destroy the quantized normal conductance plateaus
+  <span class="sup">
+   <a ref-type="bibr" rid="CR62" href="#CR62">62</a>–
+   <a ref-type="bibr" rid="CR64" href="#CR64">64</a>
+  </span>. For instance, Laughton 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR63" href="#CR63">63</a>
+  </span> have shown that remote impurity scattering from the doped layers in the heterostructures used to build the QPCs is responsible for an indirect mechanism for electron backscattering. This leads to scattering via quasi-localized sates which can occur for any propagating mode and is more pronounced with higher mode occupancy.
+ </p>
+ <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">In the presence of LSOC in a narrow channel, non-magnetic impurity scattering can lead to coupling between eigen spinors of spin-up and spin-down electrons (at the same energy) on the same or opposite sides of the QPC channel because these eigenspinors are not orthogonal, a phenomenon similar to what has been reported in the transport properties of spin field effect transistors
+  <span class="sup">
+   <a ref-type="bibr" rid="CR65" href="#CR65">65</a>
+  </span>. As a result, impurity scattering can cause both elastic intra-subband and inter-subband transitions that relax spin and reduce the overall spin polarization in the QPC channel. In our QPCs, we have shown in the past that in addition to remote impurity scattering, surface roughness and impurity (dangling bond) scattering on the sidewalls of the QPC
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span> trigger additional backscattering events. Figure 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a> illustrates the different scattering mechanisms leading to a reduction of the spin polarization in the narrow portion of the QPC including: back-scattering spin-flip events on left and right sidewalls of the QPC (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5a,b</a>), forward scattering from the left (I) to the right side (II) of the QPC (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5c</a>), and forward scattering from the right (II) to the left side (I) of the QPC (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5d</a>). In the presence of multimode transport, the wave vector of the scattered electron 
+  <div id="IEq11" class="inline-formula">
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\overrightarrow{{k}^{\text{'}}}\,$$\end{document}</span>
+    <div id="M24" class="math">
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <span class="mo">'</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">→</span>
+      </div>
+     </div>
+     <span width=".25em" class="mspace"/>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>can either be equal or different in magnitude compared to the wave vector 
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\overrightarrow{k}$$\end{document}</span>
+    <div id="M26" class="math">
+     <div accent="true" class="mover">
+      <span class="mi">k</span>
+      <span class="mo">→</span>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> of the electron prior to scattering. In all panels in Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>, the top and bottom circles next to each arrow showing the direction of the incident and scattered electron indicate the directions of the effective magnetic field 
+  <div id="IEq13" class="inline-formula">
+   <div class="alternatives">
+    <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO}$$\end{document}</span>
+    <div id="M28" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <span class="mi">B</span>
+        <span class="mo">→</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">S</span>
+       <span class="mi">O</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_48380_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> as well as the directions of alignment of the electron spin along the z axis. The influence of remote impurity scattering increases with the QPC channel width. For a fixed of value of (V
+  <sub>G</sub> - V
+  <sub>T</sub>),where V
+  <sub>T</sub> is the specific pinch-off voltage for conduction in a QPC, the electron density in the QPC channel increases with the width of the QPC channel. As a result, there is an increased screening of the electron-electron interaction leading to a less favorable condition for the existence of a spin polarized state in the QPC channel
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>.
+  <div id="Fig5" class="fig">
+   <span class="label">Figure 5</span>
+   <div class="caption">
+    <p>Illustration of various scattering mechanisms leading to a reduction of the amount of spin polarization in the narrow portion of a QPC and accompanying reduction in the hysteresis loops in the conductance plots: back-scattering spin-flip events on (
+     <span class="bold">a</span>) the left (I) and (
+     <span class="bold">b</span>) right sidewall (II) of the QPC, (
+     <span class="bold">c</span>) forward scattering from the left (I) to the right side (II) of the QPC, and (
+     <span class="bold">d</span>) forward scattering from the right (II) to the left side (I) of the QPC. In the presence of multimode transport, the wave vector of the scattered electron 
+     <div id="IEq14" class="inline-formula">
+      <div class="alternatives">
+       <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\overrightarrow{{k}^{\text{'}}}\,$$\end{document}</span>
+       <div id="M30" class="math">
+        <div accent="true" class="mover">
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">k</span>
+           </div>
+           <span class="mo">'</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span stretchy="true" class="mo">→</span>
+         </div>
+        </div>
+        <span width=".25em" class="mspace"/>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq14.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>can either be equal or different in magnitude compared to the wave vector 
+     <div id="IEq15" class="inline-formula">
+      <div class="alternatives">
+       <span id="M31" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\overrightarrow{k\,}\,$$\end{document}</span>
+       <div id="M32" class="math">
+        <div accent="true" class="mover">
+         <div class="mrow">
+          <span class="mi">k</span>
+          <span width=".25em" class="mspace"/>
+         </div>
+         <div class="mrow">
+          <span stretchy="true" class="mo">→</span>
+         </div>
+        </div>
+        <span width=".25em" class="mspace"/>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq15.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>of the electron prior to scattering. In all cases, next to each arrow indicating the direction of the incident and scattered electron, the top and bottom circles illustrate the direction of the effective magnetic field 
+     <div id="IEq16" class="inline-formula">
+      <div class="alternatives">
+       <span id="M33" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\overrightarrow{B}}_{SO}\,$$\end{document}</span>
+       <div id="M34" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <div accent="true" class="mover">
+           <span class="mi">B</span>
+           <span class="mo">→</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span class="mi">O</span>
+         </div>
+        </div>
+        <span width=".25em" class="mspace"/>
+       </div>
+       <span xlink:href="41598_2019_48380_Article_IEq16.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>and the direction of alignment of the electron spin along the z axis.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_48380_Fig5_HTML" id="d29e1682" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

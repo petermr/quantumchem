@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s2D" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DMC calculations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">DMC calculations have been performed with the Casino code,
+  <a rid="c72" ref-type="bibr" href="#c72">
+   <span class="sup">72</span>
+  </a> using Dirac–Fock pseudo-potentials (PP)
+  <a rid="c73" ref-type="bibr" href="#c73">
+   <span class="sup">73</span>
+  </a> and trial wave functions of the Slater–Jastrow type,
+  <div id="d2" class="disp-formula">
+   <div id="M10" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">Ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">T</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <div class="mrow">
+      <span mathvariant="bold" class="mi">R</span>
+     </div>
+     <span class="mo">)</span>
+    </div>
+    <span class="mo">=</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">D</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">↑</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">D</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">↓</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">e</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">J</span>
+     </div>
+    </div>
+    <span class="mo">,</span>
+   </div>
+   <span class="label">(2)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="M11" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">D</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">↑</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M12" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">D</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">↓</span>
+     </div>
+    </div>
+   </div>
+  </div> are Slater determinants of up- and down-spin single-electron orbitals, respectively, and 
+  <span class="italic">e</span>
+  <span class="sup">
+   <span class="italic">J</span>
+  </span> is the so-called Jastrow factor, which is the exponential of a sum of one-body (electron-nucleus), two-body (electron-electron), and three-body (electron-electron-nucleus) terms. The parameters in the Jastrow factor were optimised by minimising the variance of the variational Monte Carlo energy, which for the system with one water molecule on a two-layer 
+  <div class="inline-formula">
+   <div id="M13" class="math">
+    <span class="mn">3</span>
+    <span class="mo">×</span>
+    <span class="mn">3</span>
+   </div>
+  </div> LiH surface supercell was reduced to just over 1 Ha
+  <span class="sup">2</span> (740 eV
+  <span class="sup">2</span>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The imaginary time evolution of the Schrödinger equation has been performed with the usual short time approximation, using the locality approximation
+  <a rid="c74" ref-type="bibr" href="#c74">
+   <span class="sup">74</span>
+  </a> to treat the non-local part of the pseudopotentials.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The single particle orbitals have been obtained by DFT plane-wave calculations using the local density approximation and a plane-wave cutoff of 3400 eV, using the 
+  <span class="sc">pwscf</span> package,
+  <a rid="c75" ref-type="bibr" href="#c75">
+   <span class="sup">75</span>
+  </a> and re-expanded in terms of B-splines,
+  <a rid="c76" ref-type="bibr" href="#c76">
+   <span class="sup">76</span>
+  </a> using the natural B-spline grid spacing given by 
+  <div class="inline-formula">
+   <div id="M14" class="math">
+    <span class="mi">a</span>
+    <span class="mo">=</span>
+    <span class="mi">π</span>
+    <span class="mo">∕</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">G</span>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">max</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, where 
+  <span class="italic">G</span>
+  <sub>max</sub> is the length of the largest vector employed in the plane-wave calculations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The DMC calculations were then performed with no periodic boundary conditions in the direction perpendicular to the surface, using the Ewald interaction to model electron-electron interactions. DMC adsorption energies were computed as follows:
+  <div id="d3" class="disp-formula">
+   <div id="M15" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">ads</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">s</span>
+     </div>
+    </div>
+    <span class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">b</span>
+     </div>
+    </div>
+    <span class="mo">,</span>
+   </div>
+   <span class="label">(3)</span>
+  </div>where 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">b</span>
+  </sub> is the energy of the system with the water molecule at its equilibrium position on the surface and 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub> is the energy of the system in which the water molecule has been displaced vertically by 10 Å, without relaxing its structure. In the latter configuration, the residual interaction energy between the molecule and the surface is negligible, and this definition of 
+  <span class="italic">E</span>
+  <sub>ads</sub> maximises DMC cancellation of time step errors.
+  <a rid="c44" ref-type="bibr" href="#c44">
+   <span class="sup">44,77</span>
+  </a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Adsorption energies were calculated using time steps between 0.001 and 0.05 a.u., and we found that with a time step of 0.02 a.u. 
+  <span class="italic">E</span>
+  <sub>ads</sub> is converged to better than 10 meV.
+ </p>
+</sec>

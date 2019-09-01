@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="introduction" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">INTRODUCTION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Single quantum emitters in solids in the form of quantum dots (QDs), nitrogen vacancy centers, or engineered defects as artificial atoms have emerged as promising platforms for quantum sensing, metrology, and information processing (
+  <a rid="R1" ref-type="bibr" href="#R1">
+   <span class="italic">1</span>
+  </a>–
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>). These quantum emitters can now be controlled using optical cavities to enhance the coupling strength 
+  <span class="italic">g</span> between emitters and cavity photons to the point where it exceeds the rates of quantum decoherence in the system. However, the diffraction limit restricts the mode volume 
+  <span class="italic">V</span> and thus the coupling strength 
+  <div class="inline-formula">
+   <div id="m1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">g</span>
+      <span class="mo">∝</span>
+      <span class="mn">1</span>
+      <span class="mo">/</span>
+      <div class="msqrt">
+       <span class="mi">V</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, which has so far required operation at cryogenic temperatures to overcome decoherence (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>–
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As an alternative approach, plasmonic cavities with nanoscale mode volumes provide a promising platform for ultracompact cavity quantum electrodynamics (cQED) systems even at room temperature (
+  <a rid="R10" ref-type="bibr" href="#R10">
+   <span class="italic">10</span>
+  </a>–
+  <a rid="R20" ref-type="bibr" href="#R20">
+   <span class="italic">20</span>
+  </a>). Specifically, QDs or molecules coupled strongly to plasmonic nanocavities give rise to a plexcitonic state as a hybrid state of a plasmon and an exciton (
+  <a rid="R21" ref-type="bibr" href="#R21">
+   <span class="italic">21</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The observation of these plexcitonic states from single emitters was recently demonstrated with Rabi splitting in scattering spectra (
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>, 
+  <a rid="R18" ref-type="bibr" href="#R18">
+   <span class="italic">18</span>
+  </a>) even at room temperature. However, in contrast to photoluminescence (PL), the discrimination of strong coupling from competing Fano-like interference effects can still be ambiguous in scattering (
+  <a rid="R22" ref-type="bibr" href="#R22">
+   <span class="italic">22</span>
+  </a>). In addition, once fabricated, the static QD nanocavity devices constrain tunability and control. Furthermore, because of their nanoscopic dimensions, the details of field confinement in these structures are not accessible to conventional microscopy. This limits the ability to measure, optimize, and control coupling and dissipation. Therefore, to expand the utility of this nanocavity approach, a nanoimaging-based implementation of plasmonic strong coupling is desired.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we demonstrate tip-enhanced strong coupling (TESC) spectroscopy, imaging, and control based on scanning probe microscopy. A resonant plasmonic cavity with nanoscale mode volume of 
+  <span class="italic">V</span>/λ
+  <span class="sup">3</span> ≤ 10
+  <span class="sup">−6</span> is deterministically formed between a nano-optical antenna tip and a metal mirror substrate. Using this approach, we scan, locally address, and probe single QDs at room temperature, achieving clear, high-contrast plexcitonic PL with Rabi splitting up to 163 meV. We probe different QDs with exciton energies detuned from the plasmonic cavity over a range of ~100 meV, thereby demonstrating anticrossing of the upper and lower polariton modes. In addition, on the basis of the precise subnanometer distance control of the tip, we spatially map and reversibly modulate the coupling strength over a range of up to 140 meV.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This work extends a previous approach based on an engineered slot antenna on a tip to achieve strong coupling of single QDs near the slot (
+  <a rid="R23" ref-type="bibr" href="#R23">
+   <span class="italic">23</span>
+  </a>). However, the slot antenna limits the cavity mode volume and spatial resolution that can be obtained. Instead, in TESC, we use the inverse structure of a conical optical antenna nanotip to form a nanocavity between the tip and a metal mirror substrate. This eliminates the need to generate a nanogap on the tip itself (
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1</a>) and provides for a greatly simplified and generalizable approach for active control of the confined nanocavity field over distances down to the atomic scale. The resulting improved signal quality and contrast in TESC with unambiguous two-peak splitting, anticrossing, and dynamical subnanometer control over interactions between a nanocavity and a single quantum emitter enables new methods to measure and control quantum state transfer, light-matter entanglement, and single-photon quantum gates.
+ </p>
+ <div id="F1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">TESC spectroscopy and energy diagram for the plasmon and exciton in the weak and strong coupling regime.</div>
+   <p>(
+    <span class="bold">A</span>) The strongly confined ∣
+    <span class="italic">E
+     <sub>z</sub>
+    </span>∣ fields in a single isolated QD (CdSe/ZnS) with a 0.5-nm dielectric capping layer (Al
+    <sub>2</sub>O
+    <sub>3</sub>) and a tilted Au tip induce coupling between the plasmon and exciton. Simulated out-of-plane (
+    <span class="bold">B</span>) and in-plane (
+    <span class="bold">C</span>) optical field distributions in the plasmonic cavity shown in (A). a.u., arbitrary units. (
+    <span class="bold">D</span>) Energy diagram for the plasmonic cavity (red), QD (blue), and upper and lower polariton states (green) with PL energy in the weak (orange) and strong (green) coupling regimes. When the coupling exceeds system losses, the split polariton states emerge and the system begins to undergo Rabi splittings and Rabi oscillations, as illustrated above.
+   </p>
+  </div>
+  <div xlink:href="aav5931-F1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">TESC corresponds to a new paradigm of near-field optical microscopy. While previous near-field optical microscopy efforts have generally focused on a minimally invasive tip-sample interaction to obtain an unperturbed spectroscopic signature (
+  <a rid="R24" ref-type="bibr" href="#R24">
+   <span class="italic">24</span>
+  </a>), TESC moves from a traditionally nonperturbative to a strongly perturbative regime in which the tip acts as a nanocavity to induce, probe, and control quantum hybrid states for all-optical room temperature quantum metrology and sensing at the nanoscale.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">TESC is the optical analog to recent advances in scanning tunneling microscopy based on strongly perturbing tip-induced electric or spin interactions to induce and probe previously unobserved quantum magnetic or quantum coherence effects in a localized and tunable fashion (
+  <a rid="R25" ref-type="bibr" href="#R25">
+   <span class="italic">25</span>
+  </a>–
+  <a rid="R27" ref-type="bibr" href="#R27">
+   <span class="italic">27</span>
+  </a>).
+ </p>
+</sec>

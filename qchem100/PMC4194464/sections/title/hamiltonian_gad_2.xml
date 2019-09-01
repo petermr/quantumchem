@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hamiltonian Gadgets</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to embed electronic structure in an experimentally realizable Hamiltonian, we define a scalable methodology for transforming our (log 
+  <span class="italic">n</span>)-local qubit Hamiltonian into a 2-local Hamiltonian with only 
+  <span class="italic">ZZ</span>, 
+  <span class="italic">XX</span> and 
+  <span class="italic">XZ</span> interaction terms. In this section we will describe tools known as “gadgets” which allow us to simulate the target Hamiltonian with these interactions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Hamiltonian gadgets provide a method for embedding the eigenspectra (and sometimes eigenvectors) of an 
+  <span class="italic">n</span>-qubit “target” Hamiltonian, denoted by 
+  <span class="italic">H</span>
+  <sub>target</sub>, in a restricted (typically low-energy) subspace of a more constrained (
+  <span class="italic">N</span> &gt; 
+  <span class="italic">n</span>)-qubit “gadget” Hamiltonian, denoted by 
+  <div id="m47" class="inline-formula">
+   <span id="d33e610" xlink:href="srep06603-m47.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. To illustrate the general idea of gadgets, we describe how a 2-local Hamiltonian can embed a 
+  <span class="italic">k</span>-local Hamiltonian. Suppose that we have a gadget Hamiltonian, 
+  <div id="m48" class="inline-formula">
+   <span id="d33e617" xlink:href="srep06603-m48.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which contains only 2-local terms which act on 
+  <span class="italic">N</span> = 
+  <span class="italic">n</span> + 
+  <span class="italic">a</span> qubits. Then, 
+  <div id="m6" class="disp-formula">
+   <span id="d33e629" xlink:href="srep06603-m6.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where {
+  <span class="italic">f
+   <sub>i</sub>
+  </span>} are scalar coefficients, 
+  <div id="m49" class="inline-formula">
+   <span id="d33e638" xlink:href="srep06603-m49.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="m50" class="inline-formula">
+   <span id="d33e641" xlink:href="srep06603-m50.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> are the eigenvectors and eigenvalues of 
+  <div id="m51" class="inline-formula">
+   <span id="d33e644" xlink:href="srep06603-m51.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and {
+  <span class="italic">O
+   <sub>i</sub>
+  </span>} are the 2-local interaction terms of the physical Hamiltonian. We choose our interaction terms to be Hilbert-Schmidt orthogonal so that Tr [
+  <span class="italic">O
+   <sub>i</sub>O
+   <sub>j</sub>
+  </span>] = 2
+  <span class="italic">
+   <span class="sup">n</span>δ
+   <sub>i</sub>
+  </span>
+  <sub>,
+   <span class="italic">j</span>
+  </sub>. We now define an 
+  <span class="italic">effective Hamiltonian</span> which has support on the lowest 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span> states of the gadget, 
+  <div id="m7" class="disp-formula">
+   <span id="d33e679" xlink:href="srep06603-m7.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Here Π is a projector onto a particular state (usually the lowest energy state) of the 
+  <span class="italic">a</span> ancilla qubits and the {
+  <span class="italic">O
+   <sub>i</sub>
+  </span>} are a Hilbert-Schmidt orthogonal operator basis for operators on the space of the 
+  <span class="italic">n</span> logical qubits. In other words, the most general representation of 
+  <span class="italic">H</span>
+  <sub>eff</sub> is an expansion of all possible tensor products acting on the logical qubits. In general, there is no reason why 
+  <span class="italic">f
+   <sub>i</sub>
+  </span> = 0 on all non-2-local terms. Therefore a 2-local gadget on 
+  <span class="italic">N</span> = 
+  <span class="italic">n</span> + 
+  <span class="italic">a</span> qubits can embed a (
+  <span class="italic">k</span> &gt; 2)-local, 
+  <span class="italic">n</span>-qubit Hamiltonian using 
+  <span class="italic">a</span> ancilla bits.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The use of perturbation theory to derive Hamiltonian gadgets was introduced by Kempe 
+  <span class="italic">et al.</span> in their canonical proof showing that 2-Local Hamiltonian is QMA-Complete
+  <a ref-type="bibr" rid="b77" href="#b77">77</a>. Their construction, which we refer to as the “bit-flip construction” for reasons that will become obvious later on, was analyzed by Jordan and Farhi using a formulation of perturbation theory due to Bloch
+  <a ref-type="bibr" rid="b78" href="#b78">78</a>. Other perturbative gadget constructions were introduced by Oliveira and Terhal to prove the QMA-Completeness of Hamiltonian on a square lattice
+  <a ref-type="bibr" rid="b79" href="#b79">79</a>. Following this work, Biamonte and Love used gadgets to show that 
+  <span class="italic">XX</span> and 
+  <span class="italic">ZZ</span>, or 
+  <span class="italic">XZ</span> couplings alone, suffice for the QMA-Completeness of 2-local Hamiltonian
+  <a ref-type="bibr" rid="b92" href="#b92">92</a>. Several other papers improve these gadgets from an experimental perspective and introduce novel constructions which are compatible with the protocol developed here
+  <a ref-type="bibr" rid="b80" href="#b80">80</a>
+  <a ref-type="bibr" rid="b91" href="#b91">91</a>
+  <a ref-type="bibr" rid="b93" href="#b93">93</a>
+  <a ref-type="bibr" rid="b94" href="#b94">94</a>. We note that different types of gadgets may have specific advantages when designing Hamiltonians for specific hardware. Results from
+  <a ref-type="bibr" rid="b80" href="#b80">80</a> suggest that there is a rough tradeoff between the number of ancillae required and the amount of control precision required. For instance, 
+  <a ref-type="fig" rid="f2" href="#f2">Figure 2</a> indicates that bit-flip gadgets require less control precision than other gadget constructions (but generally more ancillae). In this paper we focus on the bit-flip family of gadgets.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although we employ the perturbation theory approach here, it does require a high degree of control precision and should be avoided when possible. We point out that when the Hamiltonian is entirely diagonal there are exact gadgets
+  <a ref-type="bibr" rid="b94" href="#b94">94</a> which can embed the ground state with far less control precision and often far fewer ancillae but in a way that does not necessarily conserve the gap scaling. Moreover, “frustration-free” gadgets have been used extensively in proofs of the QMA-Completeness of various forms of quantum satisfiability, and in restricting the necessary Hamiltonian terms for universal adiabatic quantum computing
+  <a ref-type="bibr" rid="b95" href="#b95">95</a>
+  <a ref-type="bibr" rid="b96" href="#b96">96</a>
+  <a ref-type="bibr" rid="b97" href="#b97">97</a>
+  <a ref-type="bibr" rid="b98" href="#b98">98</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">While several types of perturbation theory have been used to derive these gadgets, we closely follow the approach and notation of Kempe 
+  <span class="italic">et al.</span>
+  <a ref-type="bibr" rid="b77" href="#b77">77</a>. We wish to analyze the spectrum of the gadget Hamiltonian, 
+  <div id="m52" class="inline-formula">
+   <span id="d33e765" xlink:href="srep06603-m52.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for the case that the norm of the perturbation Hamiltonian, 
+  <span class="italic">V</span>, is small compared to the spectral gap between the ground state and first excited state of the unperturbed Hamiltonian, 
+  <span class="italic">H</span>. To accomplish this we use the Green's function of 
+  <div id="m53" class="inline-formula">
+   <span id="d33e774" xlink:href="srep06603-m53.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="m8" class="disp-formula">
+   <span id="d33e778" xlink:href="srep06603-m8.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>We also define 
+  <span class="italic">G</span>(
+  <span class="italic">z</span>) using the same expression except with 
+  <span class="italic">H</span> instead of 
+  <div id="m54" class="inline-formula">
+   <span id="d33e790" xlink:href="srep06603-m54.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Further, let 
+  <div id="m55" class="inline-formula">
+   <span id="d33e793" xlink:href="srep06603-m55.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> be the Hilbert space of 
+  <div id="m56" class="inline-formula">
+   <span id="d33e797" xlink:href="srep06603-m56.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> where 
+  <div id="m57" class="inline-formula">
+   <span id="d33e800" xlink:href="srep06603-m57.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> is the “high-energy” subspace spanned by eigenvectors of 
+  <div id="m58" class="inline-formula">
+   <span id="d33e803" xlink:href="srep06603-m58.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> with eigenvalues 
+  <div id="m59" class="inline-formula">
+   <span id="d33e806" xlink:href="srep06603-m59.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="m60" class="inline-formula">
+   <span id="d33e809" xlink:href="srep06603-m60.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> is the complementary “low-energy” subspace, spanned by eigenvectors of 
+  <div id="m61" class="inline-formula">
+   <span id="d33e812" xlink:href="srep06603-m61.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> corresponding to eigenvalues of 
+  <div id="m62" class="inline-formula">
+   <span id="d33e816" xlink:href="srep06603-m62.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Let Π
+  <sub>±</sub> correspond to projectors onto the support of 
+  <div id="m63" class="inline-formula">
+   <span id="d33e822" xlink:href="srep06603-m63.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. In a representation of 
+  <div id="m64" class="inline-formula">
+   <span id="d33e825" xlink:href="srep06603-m64.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, all the aforementioned operators 
+  <span class="italic">V</span>, 
+  <span class="italic">H</span>, 
+  <div id="m65" class="inline-formula">
+   <span id="d33e835" xlink:href="srep06603-m65.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <span class="italic">G</span>(
+  <span class="italic">z</span>), 
+  <div id="m66" class="inline-formula">
+   <span id="d33e844" xlink:href="srep06603-m66.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> are block-diagonal so we employ the notation that 
+  <span class="italic">A</span>
+  <sub>±±</sub> = Π
+  <sub>±</sub>
+  <span class="italic">A</span> Π
+  <sub>±</sub> and, 
+  <div id="m9" class="disp-formula">
+   <span id="d33e861" xlink:href="srep06603-m9.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Finally, we define the operator function known as the 
+  <span class="italic">self-energy</span>, 
+  <div id="m10" class="disp-formula">
+   <span id="d33e867" xlink:href="srep06603-m10.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>We use this notation to restate the “gadget theorem”.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <span class="bold">Theorem 1</span>
+  <span class="italic">Theorem 6.2 in
+   <a ref-type="bibr" rid="b77" href="#b77">77</a>. Assume that H has a spectral gap Δ around the cutoff λ
+   <sub>*</sub>; i.e. all of its eigenvalues are in
+  </span> (−∞, λ
+  <sub>−</sub>] ∪ [λ
+  <sub>+</sub>, +∞) 
+  <span class="italic">where</span> λ
+  <sub>+</sub> = λ
+  <sub>*</sub> + Δ/2 
+  <span class="italic">and</span> λ
+  <sub>−</sub> = λ
+  <sub>*</sub> − Δ/2. 
+  <span class="italic">Assume that ||V||</span> ≤ Δ/2. 
+  <span class="italic">Let</span>
+  <div id="m67" class="inline-formula">
+   <span id="d33e914" xlink:href="srep06603-m67.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic">be arbitrary. Assume there exists an operator</span>
+  <span class="italic">H
+   <sub>eff</sub>
+  </span>
+  <span class="italic">such that</span> λ (
+  <span class="italic">H
+   <sub>eff</sub>
+  </span>) ⊂ [c, d] 
+  <span class="italic">for some</span>
+  <div id="m68" class="inline-formula">
+   <span id="d33e937" xlink:href="srep06603-m68.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic">and, moreover, the inequality</span>
+  <div id="m69" class="inline-formula">
+   <span id="d33e943" xlink:href="srep06603-m69.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic">holds for all</span>
+  <div id="m70" class="inline-formula">
+   <span id="d33e949" xlink:href="srep06603-m70.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. 
+  <span class="italic">Then each eigenvalue</span>
+  <div id="m71" class="inline-formula">
+   <span id="d33e956" xlink:href="srep06603-m71.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic">of</span>
+  <div id="m72" class="inline-formula">
+   <span id="d33e962" xlink:href="srep06603-m72.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic">is</span>
+  <div id="m73" class="inline-formula">
+   <span id="d33e968" xlink:href="srep06603-m73.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <span class="italic"> to the</span>
+  <span class="italic">j
+   <span class="sup">th</span>
+  </span>
+  <span class="italic">eigenvalue of H
+   <sub>eff</sub>
+  </span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Theorem 1 assures us that the eigenspectrum of the self-energy provides an arbitrarily good approximation to the eigenspectrum of the low-energy subspace of the gadget Hamiltonian. This is useful because the self-energy admits a series expansion, 
+  <div id="m11" class="disp-formula">
+   <span id="d33e986" xlink:href="srep06603-m11.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Using 
+  <span class="italic">G</span>
+  <sub>+</sub> = (
+  <span class="italic">z</span> − Δ)
+  <span class="sup">−1</span>
+  <span class="bold">1</span>
+  <sub>+</sub> and 
+  <span class="italic">H</span>
+  <sub>−</sub> = 0, we focus on the range 
+  <div id="m74" class="inline-formula">
+   <span id="d33e1011" xlink:href="srep06603-m74.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and find that, 
+  <div id="m12" class="disp-formula">
+   <span id="d33e1014" xlink:href="srep06603-m12.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>We use this effective Hamiltonian to approximate our 
+  <span class="italic">k</span>-local target Hamiltonian, which we now specify. The terms in our target Hamiltonian will have a locality that scales logarithmically with the number of orbitals. We may write such a term: 
+  <div id="m13" class="disp-formula">
+   <span id="d33e1021" xlink:href="srep06603-m13.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>One can always apply gadgets term by term to reduce locality; however, this may not be the optimal procedure. In addition, we are interested in replacing even tensor powers of the 
+  <span class="italic">Y</span> operator. For both these reasons we consider a slightly more general form of term as a target for gadgetization. We use the fact that it is only the commuting nature of the {
+  <span class="italic">O
+   <sub>i</sub>
+  </span>} that is important for the gadget to function. We therefore write our target term as a product of 
+  <span class="italic">k</span> commuting operators, which includes the special case in which it is a product of 
+  <span class="italic">k</span> operators acting on distinct tensor factors, 
+  <div id="m14" class="disp-formula">
+   <span id="d33e1038" xlink:href="srep06603-m14.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Hence, we can represent the target Hamiltonian as a sum of 
+  <span class="italic">r</span> terms which are the product of 
+  <span class="italic">k</span> commuting operators, 
+  <div id="m15" class="disp-formula">
+   <span id="d33e1048" xlink:href="srep06603-m15.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where all {
+  <span class="italic">O
+   <sub>s</sub>
+  </span>
+  <sub>,
+   <span class="italic">i</span>
+  </sub>} commute for a given 
+  <span class="italic">s</span> and 
+  <span class="italic">H</span>
+  <sub>else</sub> can be realized directly by the physical Hamiltonian. While previous formulations of bit-flip gadgets
+  <a ref-type="bibr" rid="b77" href="#b77">77</a>
+  <a ref-type="bibr" rid="b78" href="#b78">78</a>
+  <a ref-type="bibr" rid="b80" href="#b80">80</a> have gadgetized operators acting on distinct tensor factors, it is only necessary that the operators commute. Their action on distinct tensor factors is sufficient but not necessary for the gadget construction. We take advantage of this property in order to realize 
+  <span class="italic">YY</span> terms without access to such couplings by making the substitution, 
+  <span class="italic">Y
+   <sub>i</sub>Y
+   <sub>j</sub>
+  </span> → −
+  <span class="italic">X
+   <sub>i</sub>X
+   <sub>j</sub>Z
+   <sub>i</sub>Z
+   <sub>j</sub>
+  </span>. Since 
+  <span class="italic">X
+   <sub>i</sub>X
+   <sub>j</sub>
+  </span> commutes with 
+  <span class="italic">Z
+   <sub>i</sub>Z
+   <sub>j</sub>
+  </span>, we can create this effective interaction with a bit-flip gadget. For instance, suppose we have the term, 
+  <span class="italic">Z</span>
+  <sub>0</sub>
+  <span class="italic">Y</span>
+  <sub>1</sub>
+  <span class="italic">Y</span>
+  <sub>2</sub>. We gadgetize the term 
+  <span class="italic">A</span>
+  <span class="bold">·</span>
+  <span class="italic">B</span>
+  <span class="bold">·</span>
+  <span class="italic">C</span> where 
+  <span class="italic">A</span> = 
+  <span class="italic">Z</span>
+  <sub>0</sub>, 
+  <span class="italic">B</span> = −
+  <span class="italic">X</span>
+  <sub>1</sub>
+  <span class="italic">X</span>
+  <sub>2</sub>, and 
+  <span class="italic">C</span> = 
+  <span class="italic">Z</span>
+  <sub>1</sub>
+  <span class="italic">Z</span>
+  <sub>2</sub> and all operators 
+  <span class="italic">A</span>, 
+  <span class="italic">B</span>, 
+  <span class="italic">C</span> commute. We note that another approach to removing 
+  <span class="italic">YY</span> terms is explained in
+  <a ref-type="bibr" rid="b80" href="#b80">80</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now introduce the form of the penalty Hamiltonian that acts only on the ancilla qubits. Bit-flip gadgets introduce an ancilla system which has two degenerate ground-states, usually taken to be |111…〉
+  <span class="italic">
+   <sub>u</sub>
+  </span> and |000…〉
+  <span class="italic">
+   <sub>u</sub>
+  </span> where 
+  <span class="italic">u</span> indicates that these kets refer to an ancilla space. For each of the 
+  <span class="italic">r</span> terms we use a separate ancilla system of the form, 
+  <div id="m16" class="disp-formula">
+   <span id="d33e1207" xlink:href="srep06603-m16.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Again, we use 
+  <span class="italic">u</span> to indicate that operators act on an ancilla; e.g. the label 
+  <span class="italic">u</span>
+  <sub>3,2</sub> indicates the ancilla corresponding to 
+  <span class="italic">O</span>
+  <sub>3,2</sub> (the second operator in the third term). For each term we follow Farhi and Jordan in introducing an ancilla system connected by a complete graph with equal and negative edge weights. Thus, the ground state of the ancilla system is spanned by |111…〉
+  <span class="italic">
+   <sub>u</sub>
+  </span> and |000…〉
+  <span class="italic">
+   <sub>u</sub>
+  </span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Next, we introduce the perturbation Hamiltonian, 
+  <div id="m17" class="disp-formula">
+   <span id="d33e1234" xlink:href="srep06603-m17.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <div id="m75" class="inline-formula">
+   <span id="d33e1237" xlink:href="srep06603-m75.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and Λ is a 2-local operator on logical bits which will be discussed later. The effect of this Hamiltonian on the low energy subspace is to introduce virtual excitations into the high energy space that modify the low energy effective Hamiltonian. Only terms which start and end in the ground state contribute to the perturbation series for the self-energy (see, for example, 
+  <a ref-type="fig" rid="f3" href="#f3">Figure 3</a>). Thus, the gadget will produce the target term at order 
+  <span class="italic">k</span> in which a transition between the two degenerate ground states of the ancillae requires that each of the 
+  <span class="italic">X
+   <sub>u</sub>
+  </span> terms in the perturbation act exactly once to flip all 
+  <span class="italic">r</span>
+  <span class="bold">·</span>
+  <span class="italic">k</span> bits from one ground state to the other. Crucially, the order in which the ancillae are flipped does not matter since the operators 
+  <span class="italic">O
+   <sub>s</sub>
+  </span>
+  <sub>,
+   <span class="italic">i</span>
+  </sub> commute for a given 
+  <span class="italic">s</span>. The complete gadget is 
+  <div id="m18" class="disp-formula">
+   <span id="d33e1274" xlink:href="srep06603-m18.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and is related to the target Hamiltonian and effective Hamiltonian by, 
+  <div id="m19" class="disp-formula">
+   <span id="d33e1277" xlink:href="srep06603-m19.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>for the appropriate choice of Λ and 
+  <div id="m76" class="inline-formula">
+   <span id="d33e1280" xlink:href="srep06603-m76.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> where Π
+  <sub>−</sub> projects onto the ancillae ground space, 
+  <div id="m20" class="disp-formula">
+   <span id="d33e1286" xlink:href="srep06603-m20.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>To illustrate the application of such a gadget and demonstrate how Λ is chosen, we scalably reduce the locality of molecular hydrogen and remove all 
+  <span class="italic">Y</span> terms in the next section.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the example 
+  <span class="italic">H</span>
+  <sub>target</sub> = 
+  <span class="italic">A</span>
+  <span class="bold">·</span>
+  <span class="italic">B</span>
+  <span class="bold">·</span>
+  <span class="italic">C</span> + 
+  <span class="italic">H</span>
+  <sub>else</sub>, the perturbation is 
+  <div id="m21" class="disp-formula">
+   <span id="d33e1320" xlink:href="srep06603-m21.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Its components in the low energy subspace, as in the block diagonal representation of Eq. 9 is: 
+  <div id="m22" class="disp-formula">
+   <span id="d33e1323" xlink:href="srep06603-m22.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>The projection into the high energy subspace is: 
+  <div id="m23" class="disp-formula">
+   <span id="d33e1326" xlink:href="srep06603-m23.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>The projections coupling the low and high energy subspaces are: 
+  <div id="m24" class="disp-formula">
+   <span id="d33e1330" xlink:href="srep06603-m24.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and 
+  <span class="italic">V</span>
+  <sub>−+</sub> = (
+  <span class="italic">V</span>
+  <sub>+−</sub>)
+  <span class="sup">†</span>. Substituting these values into Eq. 12 we see that at order 
+  <span class="italic">k</span> = 3 a term appears with the following form, 
+  <div id="m25" class="disp-formula">
+   <span id="d33e1350" xlink:href="srep06603-m25.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>These terms arise because all ancilla qubits must be flipped and there are six ways of doing so, representing 3! (in general this will be 
+  <span class="italic">k</span>! for a gadget with 
+  <span class="italic">k</span> ancillae) combinations of the operators. These six terms are represented diagrammatically in 
+  <a ref-type="fig" rid="f3" href="#f3">Figure 3</a>. Note that it is the occurrence of all orderings of the operators 
+  <span class="italic">A</span>, 
+  <span class="italic">B</span> and 
+  <span class="italic">C</span> that imposes the requirement that these operators commute. Hence, in order to realize our desired term we see that 
+  <div id="m77" class="inline-formula">
+   <span id="d33e1372" xlink:href="srep06603-m77.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. A few competing processes occur which contribute unwanted terms but these terms either vanish with increasing spectral gap Δ, or they can be removed exactly by introducing terms into the compensation term Λ. A simple way to compute Λ is to evaluate the perturbation series to order 
+  <span class="italic">k</span> and choose Λ so that problematic terms disappear.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">At higher orders we encounter “cross-gadget contamination” which means that processes occur involving multiple ancilla systems, causing operators from different terms to interact. For a 3-operator gadget, such terms will always only contribute at order 
+  <span class="italic">O</span> (Δ
+  <span class="sup">−3</span>). In reductions which require going to higher orders, these terms do not necessarily depend on Δ, and so may introduce unwanted terms into the effective Hamiltonian. For instance, 
+  <a ref-type="fig" rid="f4" href="#f4">Figure 4</a> shows an example of the four processes which occur at fourth order for a multiple term, 4-operator reduction. The diagrams involving multiple ancilla registers are examples of cross-gadget contamination.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">However, if terms are factored into tensor products of operators that square to the identity (as is the case for products of Pauli operators, which is always possible), cross-gadget contamination can only contribute a constant shift to the energy which can be compensated for in Λ. This is because any process contributing to the perturbation series which does not transition between the two different ground states must contain an even multiple of each operator and if we choose to act on the non-ancilla qubits with operators that square to identity we obtain only a constant shift. Consider the two cross-gadget terms represented in these diagrams: 
+  <div id="m78" class="inline-formula">
+   <span id="d33e1392" xlink:href="srep06603-m78.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <span class="italic">D</span>
+  <sub>2</sub>
+  <span class="italic">B</span>
+  <sub>1</sub>
+  <span class="italic">D</span>
+  <sub>2</sub>
+  <span class="italic">B</span>
+  <sub>1</sub> = (
+  <span class="italic">D</span>
+  <sub>2</sub>
+  <span class="italic">B</span>
+  <sub>1</sub>)
+  <span class="sup">2</span> = 
+  <span class="bold">1</span>. At even higher orders, 
+  <span class="italic">individual</span> cross-gadget terms might not equal a constant shift (i.e. the sixth order term 
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>) but the occurrence of all combinations of operators and the fact that all Pauli terms either commute or anti-commute will guarantee that such terms disappear. In the sixth order example, if [
+  <span class="italic">A</span>
+  <sub>1</sub>, 
+  <span class="italic">A</span>
+  <sub>2</sub>] = 0 then 
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>3</sub> = 
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub> = (
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>)
+  <span class="sup">2</span> = 
+  <span class="bold">1</span>, otherwise [
+  <span class="italic">A</span>
+  <sub>1</sub>, 
+  <span class="italic">A</span>
+  <sub>2</sub>]
+  <sub>+</sub> = 0 which implies that 
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>3</sub> + 
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub>
+  <span class="italic">A</span>
+  <sub>1</sub>
+  <span class="italic">A</span>
+  <sub>2</sub>
+  <span class="italic">A</span>
+  <sub>3</sub> = 0.
+ </p>
+</sec>

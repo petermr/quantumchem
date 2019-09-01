@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">RESULTS</div>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">PES parameterization</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The representation of a quantum mechanical PES, 
+   <div class="inline-formula">
+    <div id="m1" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <div class="msubsup">
+        <span class="mi">E</span>
+        <span class="mn">0</span>
+        <span class="mtext">QM</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>, depending on the set of nuclear coordinates, {
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}, by means of an FF, 
+   <span class="italic">E</span>
+   <span class="sup">FF</span>({
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}, {
+   <span class="italic">α
+    <sub>j</sub>
+   </span>}), requires three fundamental steps: (i) the definition of a feature vector to describe the system geometry, (ii) the definition of the relation between this vector and the energy of the system, and (iii) the determination of the unknown coefficients, {α
+   <span class="italic">
+    <sub>i</sub>
+   </span>}, that minimize the difference between 
+   <div class="inline-formula">
+    <div id="m2" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <div class="msubsup">
+        <span class="mi">E</span>
+        <span class="mn">0</span>
+        <span class="mtext">QM</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div> and 
+   <span class="italic">E</span>
+   <span class="sup">FF</span>({
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}, {α
+   <span class="italic">
+    <sub>j</sub>
+   </span>}). Let us now describe how our method addresses these three requirements.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The chemical environment of a given atom contained within a radial cutoff can be conveniently described in terms of the bispectrum components 
+   <span class="italic">B
+    <sub>j</sub>
+   </span>({
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}) (
+   <a rid="R5" ref-type="bibr" href="#R5">
+    <span class="italic">5</span>
+   </a>). These functions are efficiently calculated from the sole atoms’ Cartesian coordinates. The values of the coefficients associated to each term of the 
+   <span class="italic">B
+    <sub>j</sub>
+   </span>({
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}) series comprise the feature vector. This represents the fingerprint of the 
+   <span class="italic">N</span>-body atomic environment, and thus, it overcomes the common assumption on the 2- or 3-body terms of the interaction. The number of functions in the series (
+   <span class="italic">N</span>
+   <sub>2
+    <span class="italic">J</span>
+   </sub>) can be tuned by increasing their maximum order, 2
+   <span class="italic">J</span>. Expanding the chemical environment over a growing number of bispectrum components improves the accuracy of the description in a variational fashion. This definition of the feature vector satisfies the fundamental symmetries of the system such as rotational and translational invariance and the swap invariance of chemically equivalent atoms.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The SNAPs used here use these functions as building blocks for the FF. The crucial assumption is that the total energy of a system containing 
+   <span class="italic">N</span>
+   <sub>atom</sub> atoms can be decomposed into the sum of atomic energies, 
+   <span class="italic">E
+    <sub>l</sub>
+   </span>({
+   <span class="italic">R
+    <sub>i</sub>
+   </span>}, {α
+   <span class="italic">
+    <sub>j</sub>
+   </span>}), which in turn can be written as a linear function of their bispectral components, namely
+   <div id="E1" class="disp-formula">
+    <div id="m3" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <div class="msup">
+        <span class="mi">E</span>
+        <span class="mtext">FF</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span class="mo">,</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span mathvariant="normal" class="mi">α</span>
+        <span class="mi">j</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">=</span>
+       <div displaystyle="true" class="mstyle">
+        <div class="munderover">
+         <span stretchy="true" class="mo">∑</span>
+         <span class="mi">l</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mi">N</span>
+           <span class="mtext">atom</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="msub">
+        <span class="mi">E</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span class="mo">,</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span mathvariant="normal" class="mi">α</span>
+        <span class="mi">j</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">=</span>
+       <div displaystyle="true" class="mstyle">
+        <div class="munderover">
+         <span stretchy="true" class="mo">∑</span>
+         <span class="mi">l</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mi">N</span>
+           <span class="mtext">atom</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div displaystyle="true" class="mstyle">
+        <div class="munderover">
+         <span stretchy="true" class="mo">∑</span>
+         <span class="mi">j</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mi">N</span>
+           <div class="mrow">
+            <span class="mn">2</span>
+            <span class="mi">J</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="msubsup">
+        <span mathvariant="normal" class="mi">α</span>
+        <span class="mi">j</span>
+        <span class="mi">l</span>
+       </div>
+       <div class="msubsup">
+        <span class="mi">B</span>
+        <span class="mi">j</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+    <span class="label">(1)</span>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">There is no rigorous mathematical proof that the total energy can be written as a sum of atomic energies. However, this formulation provides a highly flexible way to represent the PES, whose accuracy can be validated with the accuracy of the predictions made. Similar to first-principles calculations, this class of FFs does not attempt to parameterize the chemical bond but rather to predict its existence as a consequence of the knowledge of the PES’s shape. As a consequence, a large degree of flexibility in the FF is required. This translates to a need to use a large number of degrees of freedom, that is, a large number of coefficients α
+   <span class="italic">
+    <sub>i</sub>
+   </span>. Crucially, since the energy is linearly dependent on the α
+   <span class="italic">
+    <sub>i</sub>
+   </span>s (see 
+   <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a>), their determination can proceed by simple least-square fit, at variance with conventional FFs, which do not depend linearly on the parameters.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Ridge regression, expressed by 
+   <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a>, is here used to solve the problem. The constant λ is the regularization parameter, and it has to be determined to minimize the error on the validation set while using the training set for the fitting. The introduction of a regularization term has the effect of selecting the smoothest solution among the many quasi-degenerate solutions of the simple linear least-square problem. This becomes crucial when the number of parameters to be determined is larger compared to the number of QM reference energy values.
+   <div id="E2" class="disp-formula">
+    <div id="m4" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <div class="munder">
+        <span class="mtext">Min</span>
+        <div class="mrow">
+         <span stretchy="false" class="mo">{</span>
+         <div class="msub">
+          <span mathvariant="normal" class="mi">α</span>
+          <span class="mi">l</span>
+         </div>
+         <span stretchy="false" class="mo">}</span>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">[</span>
+       <span class="mo">||</span>
+       <div class="msubsup">
+        <span class="mi">E</span>
+        <span class="mn">0</span>
+        <span class="mtext">QM</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">−</span>
+       <div class="msup">
+        <span class="mi">E</span>
+        <span class="mtext">FF</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span class="mo">,</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span mathvariant="normal" class="mi">α</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <div class="msup">
+        <span class="mo">||</span>
+        <span class="mn">2</span>
+       </div>
+       <span class="mo">+</span>
+       <span mathvariant="normal" class="mi">λ</span>
+       <span class="mo">||</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span mathvariant="normal" class="mi">α</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <div class="msup">
+        <span class="mo">||</span>
+        <span class="mn">2</span>
+       </div>
+       <span stretchy="true" class="mo">]</span>
+      </div>
+     </div>
+    </div>
+    <span class="label">(2)</span>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a ref-type="disp-formula" rid="E2" href="#E2">Equation 2</a> can be identically used to train the model against either conformations’ total energy or atomic forces. These reference quantities can be computed by means of any quantum mechanical method able to describe a smooth PES. The DFT functional or the post Hartree-Fock method used will be chosen according to the complexity of the problem at hand. Our fitting strategy then follows a relatively canonical four-step procedure: (i) the generation of the training, validation, and test sets by quantum mechanical methods (here DFT); (ii) the fitting of the FF by solving 
+   <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a> for energies and/or forces; (iii) the benchmarking of the FF on the test set, which comprises only configurations not contained in the training and validation sets (configurations that the FF has never seen before); and (iv) the enlargement of the number of configurations in the training set until the results on the test set are satisfactory.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In particular, this last step is fundamental as machine learning–based FFs are able to interpolate to a high degree of accuracy those areas of the phase space included in the training set, but they know little of chemical structures not included in the training set (
+   <a rid="R22" ref-type="bibr" href="#R22">
+    <span class="italic">22</span>
+   </a>). This means that a low error over the training and test sets does not ensure the FF to be of good quality. One must ensure that thermal fluctuations will not bring the system in region of the phase space totally unexplored by the training set. A very powerful method to enforce the self-consistency of the training set consists of using the FF obtained after the third step to generate a molecular dynamics trajectory. Then, one can extract a number of configurations that are classified distant enough from those included in the training set (
+   <a rid="R23" ref-type="bibr" href="#R23">
+    <span class="italic">23</span>
+   </a>, 
+   <a rid="R24" ref-type="bibr" href="#R24">
+    <span class="italic">24</span>
+   </a>) and reintroduce these in the training set itself. The newly enlarged training set is then used to construct a new FF (second step). The Gaussian metric of 
+   <a ref-type="disp-formula" rid="E3" href="#E3">Eq. 3</a> has been chosen to determine the distance between two local environments of an atom 
+   <span class="italic">l</span>
+   <div id="E3" class="disp-formula">
+    <div id="m5" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mi">d</span>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mo">||</span>
+       <div class="msup">
+        <span class="mi">B</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">i</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">−</span>
+       <div class="msup">
+        <span class="mi">B</span>
+        <span class="mi">l</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span stretchy="false" class="mo">{</span>
+       <div class="msub">
+        <span class="mi">R</span>
+        <span class="mi">j</span>
+       </div>
+       <span stretchy="false" class="mo">}</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">||</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">=</span>
+       <span class="mtext">exp</span>
+       <span stretchy="true" class="mo">(</span>
+       <span class="mo">−</span>
+       <div displaystyle="true" class="mstyle">
+        <div class="munder">
+         <span class="mo">∑</span>
+         <span class="mi">v</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="msubsup">
+          <span class="mi">B</span>
+          <span class="mi">v</span>
+          <span class="mi">l</span>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span stretchy="false" class="mo">{</span>
+         <div class="msub">
+          <span class="mi">R</span>
+          <span class="mi">i</span>
+         </div>
+         <span stretchy="false" class="mo">}</span>
+         <span stretchy="false" class="mo">)</span>
+         <span class="mo">−</span>
+         <div class="msubsup">
+          <span class="mi">B</span>
+          <span class="mi">v</span>
+          <span class="mi">l</span>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span stretchy="false" class="mo">{</span>
+         <div class="msub">
+          <span class="mi">R</span>
+          <span class="mi">j</span>
+         </div>
+         <span stretchy="false" class="mo">}</span>
+         <span stretchy="false" class="mo">)</span>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mn">2</span>
+       </div>
+       <span class="mo">/</span>
+       <span class="mn">2</span>
+       <div class="msubsup">
+        <span mathvariant="normal" class="mi">σ</span>
+        <span class="mi">l</span>
+        <span class="mn">2</span>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+    <span class="label">(3)</span>
+   </div>where σ
+   <span class="italic">
+    <sub>l</sub>
+   </span> is a hyperparameter that sets the procedure selectivity.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">General covalent bonds description</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We now demonstrate that the SNAPs can provide an extremely accurate description of the covalent bond without relying on any assumption on the bond geometry. To achieve this goal, we have selected eight prototypical examples of covalent bond geometries, namely two simple organic molecules and six transition metal complexes: methane (CH
+   <sub>4</sub>), benzene (C
+   <sub>6</sub>H
+   <sub>6</sub>), [FeCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>, [MnCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>, [MnCl
+   <sub>5</sub>]
+   <span class="sup">2−</span>, [NiCl
+   <sub>4</sub>]
+   <span class="sup">2−</span>, [ZnCl
+   <sub>4</sub>]
+   <span class="sup">2−</span>, and [VOCl
+   <sub>4</sub>]
+   <span class="sup">2−</span>. For each of these systems, we generate 800 distorted configurations by applying random atomic displacements to the vacuum-optimized structure. The displacements are applied to every atom, and their magnitude is constrained to be smaller than 0.2 Å for 400 configurations and smaller than 0.1 Å for the remaining 400. We take 200 geometries of the training set and use them as validation and test sets. In the case of benzene and methane, we apply displacements of 0.1 and 0.05 Å, by virtue of the fact that they present smaller interatomic distances. We find that 56 coefficients for each chemical species, corresponding to 2
+   <span class="italic">J</span> = 8, are enough to achieve sufficient accuracy (see details below). This choice results in moderate computational overheads, since a larger number of parameters will require a substantially larger training set, that is, more DFT calculations.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a rid="F1" ref-type="fig" href="#F1">Figure 1</a> shows the quality of the SNAP description of the PES for [FeCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>. The figure reports the mean error on the total energy for the training, validation, or test set as function of the number of configurations included in the training set, a curve called the training curve. The overall error on both the training and the test sets is outstandingly small and shows clear convergence as the number of configurations gets larger. At full convergence, one expects that the training set error will be equal to that on the test one, a condition that allows us to extrapolate an asymptotic error in the region of 0.015 kcal/mol. This is as small as the DFT error, meaning that the SNAP PES is indistinguishable from the DFT one. 
+   <a rid="F2" ref-type="fig" href="#F2">Figure 2</a> reports the error on the energy calculated for the training, validation, and test sets for all the eight molecules considered, demonstrating that extremely high accuracy can be achieved regardless of the molecule geometry. The training curves for all molecules look similar to that in 
+   <a rid="F1" ref-type="fig" href="#F1">Fig. 1</a> and are reported in the Supplementary Materials for completeness.
+  </p>
+  <div id="F1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <div class="title">FF training curve for the octahedral [FeCl
+     <sub>6</sub>]
+     <span class="sup">3−</span>complex.
+    </div>
+    <p>The deviation between the DFT and the FF total energy of [FeCl
+     <sub>6</sub>]
+     <span class="sup">3−</span> is plotted as function of the number of configurations included in the training set. The validation and test sets are always composed of the same 200 configurations. Note that an asymptotic error of the order of 0.015 kcal/mol is achieved. RMSE, root mean square error.
+    </p>
+   </div>
+   <div xlink:href="aaw2210-F1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="F2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <div class="title">SNAP performances for organic and coordination bonds with respect to DFT.</div>
+    <p>For each molecule, we report the RMSE on the total energy for the training, validation, and test sets. The molecules span a broad range of bond type. The symmetry of the bond and the symmetry of the coordination environment are reported on top of the plot for the organic and inorganic molecules, respectively.</p>
+   </div>
+   <div xlink:href="aaw2210-F2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Note that, in this formalism, the coordination bond is naturally described without any approximation coming from the introduction of the notion of bonds and topology. For instance, Jahn-Teller distortion is here automatically included in the model and arises as consequence of the symmetry and shape of the PES. In many FFs, it is only possible to introduce Jahn-Teller effects by artificially imposing a lower symmetry on the metal’s coordination shell or by explicitly introducing the d electrons in the model (
+   <a rid="R25" ref-type="bibr" href="#R25">
+    <span class="italic">25</span>
+   </a>, 
+   <a rid="R26" ref-type="bibr" href="#R26">
+    <span class="italic">26</span>
+   </a>). 
+   <a rid="F3" ref-type="fig" href="#F3">Figure 3</a> shows the energy profile of [FeCl
+   <sub>6</sub>]
+   <span class="sup">3−</span> and [MnCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>, along a distortion going from the perfect O
+   <span class="italic">
+    <sub>h</sub>
+   </span> symmetry toward configurations that break the E
+   <span class="italic">
+    <sub>g</sub>
+   </span> d orbitals’ degeneracy. As expected, the complex [FeCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>, having a d
+   <span class="sup">5</span> valence electronic configuration, does not show any Jahn-Teller distortion. In contrast, [MnCl
+   <sub>6</sub>]
+   <span class="sup">3−</span>, having four electrons in the d shell, is correctly predicted to undergo a spontaneous distortion along the selected normal modes to minimize the crystal field energy.
+  </p>
+  <div id="F3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <div class="title">FF prediction of the energy profile for Jahn-Teller–active and Jahn-Teller–inactive octahedral complexes.</div>
+    <p>The concave (purple/green) and the convex (blue/yellow) surfaces represent the PESs for [FeCl
+     <sub>6</sub>]
+     <span class="sup">3−</span> and [MnCl
+     <sub>6</sub>]
+     <span class="sup">3−</span>, respectively. The PES has been scanned in the two-dimensional space defined by the normal modes of vibration with symmetry representation E
+     <span class="italic">
+      <sub>g</sub>
+     </span> of the O
+     <span class="italic">
+      <sub>h</sub>
+     </span> group. The point (
+     <span class="italic">Q
+      <sub>x</sub>
+     </span>,
+     <span class="italic">Q
+      <sub>y</sub>
+     </span>) = (0,0) corresponds to a structure optimized under the constraint of having a perfect O
+     <span class="italic">
+      <sub>h</sub>
+     </span> symmetry. Note that [FeCl
+     <sub>6</sub>]
+     <span class="sup">3−</span> maintains a minimum at the undistorted O
+     <span class="italic">
+      <sub>h</sub>
+     </span> symmetry, while [MnCl
+     <sub>6</sub>]
+     <span class="sup">3−</span> undergoes Jahn-Teller distortion.
+    </p>
+   </div>
+   <div xlink:href="aaw2210-F3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hapticity and coordination: Ferrocene</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">As the first example of a chemically relevant complex, we choose ferrocene. Ferrocene and its derivatives have no wide-scale applications yet, but they have been intensively investigated as possible catalysts (
+   <a rid="R27" ref-type="bibr" href="#R27">
+    <span class="italic">27</span>
+   </a>), fuel additives, and in nanomedicine (
+   <a rid="R28" ref-type="bibr" href="#R28">
+    <span class="italic">28</span>
+   </a>). In ferrocene, the Fe
+   <span class="sup">+2</span> ion is sandwiched between two cyclopentadienyl (Cp) molecules, [C
+   <sub>5</sub>H
+   <sub>5</sub>]
+   <span class="sup">−</span>. The Fe
+   <span class="sup">+2</span> ion has a coordination geometry where the π electron cloud of the aromatic rings acts as a single ligand. To make the nature of this bond even more interesting and complex, there is a virtually absent rotational barrier (1.0 kcal/mol from DFT) between two different conformers: one where the two [C
+   <sub>5</sub>H
+   <sub>5</sub>]
+   <span class="sup">−</span> rings are eclipsed and one where they are staggered. This is a typical situation where FFs, to be effective, need to be constructed by making specific assumptions on the bond geometry.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The same recipe described in the previous section has been used here to generate a starting training set for the isolated FeCp molecule for both the staggered and eclipsed conformations for a total of 1600 configurations. The errors on the training, validation, and test sets are 2.94, 4.41, and 3.78 kcal/mol, respectively. Furthermore, 100 configurations from a molecular dynamics run at 300 K and 12 configurations from one at 500 K are included to guarantee the stability of the structure against the high-energy fluctuations encountered in the molecular dynamics. To emphasize the ability of this approach to predict a smooth and accurate PES, we show in 
+   <a rid="F4" ref-type="fig" href="#F4">Fig. 4</a> the energy profile for the reciprocal rotation of the two Cp rings around the metal ion. The rather small energy difference between the staggered and eclipsed configurations is well reproduced with an error of only 0.3 kcal/mol. Note that configurations specifically exploring the rotation were not explicitly included in the training set, so that the knowledge of these fine details of the PES is provided by the configurations generated by molecular dynamics.
+  </p>
+  <div id="F4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <div class="title">Rotational barrier energy profile for the Cp rings of ferrocene.</div>
+    <p>The energy profile for the complete reciprocal rotation of the two Cp rings around the Fe
+     <span class="sup">+2</span> ion is calculated with both DFT (green line and points) and FF (purple line and points). Note that SNAP describes the energy barrier with an accuracy of about 0.3 kcal/mol.
+    </p>
+   </div>
+   <div xlink:href="aaw2210-F4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Dioxo-Fe
+   <span class="sup">2+</span>(porphyrin)
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Next, we want to demonstrate the ability of SNAP to describe chemical reactions. This is another hard challenge for conventional FFs, which generally fail in describing bond breaking. Reactive FFs are currently available (
+   <a rid="R29" ref-type="bibr" href="#R29">
+    <span class="italic">29</span>
+   </a>), but they typically require a large number of parameters. These FF parameters enter in the definition of the energy in a highly nonlinear form, so the construction of accurate potentials for molecules containing several atomic species is often an insurmountable task (
+   <a rid="R30" ref-type="bibr" href="#R30">
+    <span class="italic">30</span>
+   </a>). The system chosen for this task is the Fe
+   <span class="sup">2+</span>(porphyrin) molecule coordinated with hystidine (Hys) and molecular oxygen. This coordination mimics the active site of the heme group. The impact of the ability to model the O
+   <sub>2</sub> binding and dissociation is enormous, since it is the mechanism at play for oxygen exchange in all vertebrates.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Upon O
+   <sub>2</sub> binding to the Fe
+   <span class="sup">2+</span>(porphyrin)(Hys) complex, one electron is transferred from the Fe
+   <span class="sup">2+</span> ion to O
+   <sub>2</sub>, and at the same time, a spin crossover transition is observed. This transforms the starting 2
+   <span class="italic">S</span> + 1 = 7 spin state into a 2
+   <span class="italic">S</span> + 1 = 1 ground state (
+   <a rid="R31" ref-type="bibr" href="#R31">
+    <span class="italic">31</span>
+   </a>, 
+   <a rid="R32" ref-type="bibr" href="#R32">
+    <span class="italic">32</span>
+   </a>). Predicting this spin crossover phenomenon is already rather challenging at the DFT level (
+   <a rid="R33" ref-type="bibr" href="#R33">
+    <span class="italic">33</span>
+   </a>), and a precise estimation of the energetics involved is beyond the scope of this work. Here, we restrict our study to the reaction occurring along the singlet Born-Oppenheimer surface, selected as representing ground state for dioxo-Fe
+   <span class="sup">+2</span>(porphyrin)(Hys) and correctly showing the charge transfer reversibility along the oxygen dissociation.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">A set of 150:20:30 configurations (training:validation:test) has been generated by applying random displacements of 0.05 and 0.1 Å to the optimized structure of dioxo-Fe
+   <span class="sup">2+</span>(porphyrin)(Hys). To include information about the oxygen reactivity, we have also scanned the reaction pathway by performing eight DFT constraint optimizations with Fe-O distances between 1.6 and 3.0 Å. The structures optimized along the reaction path have been used to generate additional 750:120:120 configurations with random displacements of 0.05 and 0.1 Å. Last, the molecular dynamics refinement at 100, 200, and 300 K has been carried out for a total of ∼400 new structures, spanning both the energy minima of the reaction and the transition state. The final model contains 448 parameters and several chemical species, but it has been successfully trained with less than ∼1500 configurations. The overall errors on the training, validation, and test sets are 1.18, 1.38, and 2.42 kcal/mol, respectively. This is an accuracy comparable with DFT.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a rid="F5" ref-type="fig" href="#F5">Figure 5</a> shows that the energetics of the reaction are perfectly reproduced. From a structural point of view, upon dissociation, the O
+   <sub>2</sub> bond length goes from 1.27 to 1.20 Å, and at the same time, the Fe
+   <span class="sup">+2</span> ion slightly moves out of the porphyrin plane, passing from an octahedral coordination to a square pyramidal one. This is in perfect agreement with DFT results. All these fine structural rearrangements are of many-body nature, and they are well reproduced by the SNAP with great accuracy and without any a priori knowledge of the model.
+  </p>
+  <div id="F5" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <div class="title">Energy and Fe spin density profile for oxygen bonding reaction with Fe
+     <span class="sup">2+</span>(porphyrin).
+    </div>
+    <p>The lines correspond to the SNAP-predicted total energy (blue line and left-hand side scale) and Fe spin density (red line and right-hand side scale), while the symbols are for the DFT results. Here, energy and spin density are computed along the O
+     <sub>2</sub> dissociation path.
+    </p>
+   </div>
+   <div xlink:href="aaw2210-F5" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The same methodology applied to predict energy changes upon conformational distortion can be applied to the prediction of any scalar molecular quantity such as the atomic charges and the spin densities. Here, we test this possibility by building a predictive model for the Fe spin density. For any DFT total energy calculation included in the training or validation set, we also perform a Mülliken population analysis to extract the spin density of the Fe ion. Then, using 
+   <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a>, we train a model, which expresses the Fe spin density as a function of the bispectrum components, in total analogy to the method used to predict the energy. The comparison between the DFT and SNAP predictions for the spin density upon O
+   <sub>2</sub> dissociation is also reported in 
+   <a rid="F5" ref-type="fig" href="#F5">Fig. 5</a>, showing the local Fe spin crossover process.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular dynamics for alanine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The amino acid molecule alanine has been chosen as a prototypical organic molecule because of its ubiquitous relevance in biology. The various alanine derivatives are used in the biosynthesis of proteins and occur both in polypeptides in some bacterial cell walls and in peptide antibiotics. In mammals, alanine is key for the glucose-alanine cycle, which links the glucose production in the liver to the energy production in other tissues. Alanine presents a challenge for conventional FFs as it contains chemical species with different local environments and degrees of freedom, whose dynamics spans quite different time scales.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The starting configurations for constructing the FF are 1000 for the training set and 100 for the validation and test sets, respectively. These are constructed by applying random displacements of 0.05 and 0.1 Å to the optimized alanine structure in four different conformers. Additional 691:150:150 (training:validation:test) configurations extracted from molecular dynamics trajectory runs at temperatures between 100 and 400 K are also included in the training set to guarantee a complete sampling of the configurational space of the system. This time, because of the large number of molecular dynamics configurations included at the refinement stage, we have also extended the validation and test sets to some molecular dynamics configurations. This guarantees an unbiased estimation of the FF error. The total energy regression root mean square error (RMSE) is only 2.34 kcal/mol for all the three configuration sets, that is similar to that obtained previously for the simpler benzene and methane molecules.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Machine learning potentials, although successfully applied to organic compounds, are still in their infancy, and they are not widely used for molecular dynamics acquisition runs. Instead, the AMBER family of FFs represents the common choice for the chemistry community involved in molecular dynamics of biological systems, and a comparison with it is crucial. Here, we compare the accuracy of SNAP against that of the general AMBER FF (GAFF) (
+   <a rid="R34" ref-type="bibr" href="#R34">
+    <span class="italic">34</span>
+   </a>). The test is performed by comparing the FF total energy against the DFT one for 450 structures randomly sampled from molecular dynamics at 200, 300, and 400 K. These are all configurations not included in either the training or the validation set. A linear regression analysis, reported in fig. S8, shows that the SNAP is in good agreement with DFT. The RMSE is 1.82 kcal/mol, and the slope of the DFT versus FF energy curve is 1.032. In contrast, the linear regression of GAFF has a slope of 0.812, highlighting a systematic energy overestimation. This is particularly true as the size of the distortions increases, that is, as one considers largely anharmonic displacements. SNAP is able to account for anharmonic contributions to the PES, which are relevant even at relatively low temperatures. This benchmark also offers the chance to compare the computational performance of SNAP with respect to broadly used harmonic potentials. Testing the two potentials on the alanine benchmark, the SNAP potential is only ~100× more expensive than GAFF. Moreover, the time needed for a single SNAP potential energy evaluation scales linearly with the number of central processing units in parallel runs for large systems (
+   <a rid="R21" ref-type="bibr" href="#R21">
+    <span class="italic">21</span>
+   </a>), suggesting that the extended size and time scales of common harmonic potentials are still within the reach of this machine learning FF.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Comparison with deep learning potentials</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Last, we want to present a comparison between the model discussed here and the state-of-the-art machine learning potentials. In recent years, several variants of neural networks and kernel regression methods have been developed and tested on organic molecular compounds (
+   <a rid="R9" ref-type="bibr" href="#R9">
+    <span class="italic">9</span>
+   </a>, 
+   <a rid="R12" ref-type="bibr" href="#R12">
+    <span class="italic">12</span>
+   </a>, 
+   <a rid="R13" ref-type="bibr" href="#R13">
+    <span class="italic">13</span>
+   </a>, 
+   <a rid="R16" ref-type="bibr" href="#R16">
+    <span class="italic">16</span>
+   </a>). Along with these studies, benchmark sets have been developed to assess the accuracy of the machine learning potentials. The MD-17 benchmark set contains 0.1 to 1 M conformations for eight small organic molecules, as obtained from ab initio molecular dynamics at 500 K (
+   <a rid="R9" ref-type="bibr" href="#R9">
+    <span class="italic">9</span>
+   </a>). 
+   <a rid="F6" ref-type="fig" href="#F6">Figure 6</a> shows the accuracy of the SNAP and the SchNet potentials in predicting the conformational energies of the MD-17 benchmark set. The SchNet potential represents the state-of-the-art deep learning models (
+   <a rid="R13" ref-type="bibr" href="#R13">
+    <span class="italic">13</span>
+   </a>). Training SNAP is rather fast, and the model reaches its optimal accuracy of 1 kcal/mol or below using only 1000 or less energy values for the training. Using training sets of such a small size, SNAP outperforms the SchNet potential. However, the latter, being more complex, is able to reach higher accuracies when trained over many more conformations or when atomic forces are used besides energies (
+   <a rid="R13" ref-type="bibr" href="#R13">
+    <span class="italic">13</span>
+   </a>). The same consideration applies to the energy-conserving gradient-domain potentials (
+   <a rid="R9" ref-type="bibr" href="#R9">
+    <span class="italic">9</span>
+   </a>). The possibility to reach the threshold accuracy (1 kcal/mol) using just conformational energies is an important aspect. It enables the possibility to parameterize the PESs by means of quantum chemistry methods for whom the calculation of analytical forces is not available. This is the common case of high-accuracy post Hartree-Fock methods.
+  </p>
+  <div id="F6" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 6</span>
+   <div class="caption">
+    <div class="title">SNAP and SchNet potentials’ performances for the MD-17 benchmark set.</div>
+    <p>The MD-17 set contains the molecules benzene (1), toluene (2), malonaldehyde (3), salicylic acid (4), aspirin (5), ethanol (6), uracil (7), and naphthalene (8). The mean absolute error (MAE) is reported for three different scenarios: the training of SNAP and that of SchNet on small-size training sets (
+     <a rid="R13" ref-type="bibr" href="#R13">
+      <span class="italic">13</span>
+     </a>) and the training of SchNet on large training sets (
+     <a rid="R13" ref-type="bibr" href="#R13">
+      <span class="italic">13</span>
+     </a>).
+    </p>
+   </div>
+   <div xlink:href="aaw2210-F6" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Franck–Condon factors</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to focusing on the eigenstates or thermal states of a single vibrational Hamiltonian, we can also consider vibronic (vibrational and electronic) transitions between the vibrational levels resulting from different electronic potential energy surfaces. Consider two electronic states, |iIn addition to focusing on the eigenstates or thermal states of a single vibrational Hamiltonian, we can also consider vibronic (vibrational and electronic) transitions between the vibrational levels resulting from different electronic potential energy surfaces. Consider two electronic states, |i〉
+  <sub>e</sub> and |f and |f〉
+  <sub>e</sub>. The molecular Hamiltonian is
+  <div id="eqn14" class="disp-formula">
+   <span class="label">14</span>
+   <span class="italic">H</span>
+   <sub>mol</sub> = |i = |i〉〈i| = |i〉〈i|i|
+   <sub>e</sub>⊗
+   <span class="italic">H</span>
+   <sub>i</sub> + |f + |f〉〈f| + |f〉〈f|f|
+   <sub>e</sub>⊗
+   <span class="italic">H</span>
+   <sub>f</sub>,
+  </div>where 
+  <span class="italic">H</span>
+  <sub>i</sub> and 
+  <span class="italic">H</span>
+  <sub>f</sub> are vibrational Hamiltonians, with energy eigenstates |
+  <span class="italic">ψ</span>ivib〉 and | and |
+  <span class="italic">ψ</span>fvib〉, respectively. Using Fermi's Golden rule, the probability of a photon-induced transition between two wavefunctions |, respectively. Using Fermi's Golden rule, the probability of a photon-induced transition between two wavefunctions |
+  <span class="italic">ψ</span>
+  <span class="sup">i</span>〉 = |i〉⊗| = |i〉 = |i〉⊗|⊗|
+  <span class="italic">ψ</span>ivib〉 and | and |
+  <span class="italic">ψ</span>
+  <span class="sup">f</span>〉 = |f〉⊗| = |f〉 = |f〉⊗|⊗|
+  <span class="italic">ψ</span>fvib〉 is proportional to the square of the transition dipole moment is proportional to the square of the transition dipole moment 
+  <span class="italic">P</span>
+  <span class="sup">2</span> = | = |〈
+  <span class="italic">ψ</span>
+  <span class="sup">f</span>|
+  <span class="italic">μ̂</span>|
+  <span class="italic">ψ</span>
+  <span class="sup">i</span>〉||
+  <span class="sup">2</span>, using first order time-dependent perturbation theory. Within the Condon approximation, 
+  <span class="italic">μ̂</span> = 
+  <span class="italic">μ̂</span>
+  <sub>e</sub> + 
+  <span class="italic">μ̂</span>
+  <sub>N</sub>, the transition probability becomes proportional to 
+  <span class="italic">P</span>
+  <span class="sup">2</span> = | = |〈
+  <span class="italic">ψ</span>fvib|
+  <span class="italic">ψ</span>ivib〉||
+  <span class="sup">2</span>·|·|〈f|f|
+  <span class="italic">μ̂</span>
+  <sub>e</sub>|i|i〉||
+  <span class="sup">2</span>. Here |. Here |〈
+  <span class="italic">ψ</span>fvib|
+  <span class="italic">ψ</span>ivib〉||
+  <span class="sup">2</span> are referred to as Franck–Condon integrals. Without the Condon approximation, the Franck–Condon integrals become | are referred to as Franck–Condon integrals. Without the Condon approximation, the Franck–Condon integrals become |〈
+  <span class="italic">ψ</span>fvib|
+  <span class="italic">μ̂</span>(
+  <span class="bold">q</span>)|
+  <span class="italic">ψ</span>ivib〉||
+  <span class="sup">2</span>, with 
+  <span class="italic">μ̂</span>(
+  <span class="bold">q</span>) = |) = |〈f|f|
+  <span class="italic">μ̂</span>|i|i〉||
+  <span class="sup">2</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In practice, |
+  <span class="italic">ψ</span>ivib〉 and | and |
+  <span class="italic">ψ</span>fvib〉 are eigenstates of Hamiltonians with different harmonic oscillator normal modes are eigenstates of Hamiltonians with different harmonic oscillator normal modes 
+  <span class="bold">q</span>
+  <span class="sup">f</span> and 
+  <span class="bold">q</span>
+  <span class="sup">i</span>. These modes are related by the Duschinsky transform 
+  <span class="bold">q</span>
+  <span class="sup">f</span> = 
+  <span class="bold">Uq</span>
+  <span class="sup">i</span> + 
+  <span class="bold">d</span>.
+  <a rid="cit45" ref-type="bibr" href="#cit45">45</a>,
+  <a rid="cit63" ref-type="bibr" href="#cit63">63</a> According to the Doktorov unitary representation of the Duschinsky transform, the harmonic oscillator eigenstates are related by
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>,
+  <a rid="cit14" ref-type="bibr" href="#cit14">14</a>,
+  <a rid="cit64" ref-type="bibr" href="#cit64">64</a>
+  <div id="eqn15" class="disp-formula">
+   <span class="label">15</span>|
+   <span class="bold">s</span>
+   <sub>f</sub>〉 = = 
+   <span class="italic">Û</span>
+   <sub>Dok</sub>|
+   <span class="bold">s</span>
+   <sub>i</sub>〉
+  </div>where |
+  <span class="bold">s</span>
+  <sub>i</sub>〉 and | and |
+  <span class="bold">s</span>
+  <sub>f</sub>〉 are harmonic oscillator eigenstates in the initial and final coordinates are harmonic oscillator eigenstates in the initial and final coordinates 
+  <span class="bold">q</span>
+  <span class="sup">i</span> and 
+  <span class="bold">q</span>
+  <span class="sup">f</span>, respectively. The Doktorov unitary can be decomposed into a product of unitary operators 
+  <span class="italic">Û</span>
+  <sub>Dok</sub> = 
+  <span class="italic">Û</span>
+  <sub>
+   <span class="italic">t</span>
+  </sub>
+  <span class="italic">Û</span>†
+  <span class="italic">s</span>′
+  <span class="italic">Û</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>
+  <span class="italic">Û</span>
+  <sub>
+   <span class="italic">r</span>
+  </sub>, which depend on the displacement vector 
+  <span class="bold">d</span>, the rotation matrix 
+  <span class="bold">U</span>, and matrices of the frequencies of the harmonic oscillators 
+  <span xlink:href="c9sc01313j-t12.jpg" id="ugt12" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and 
+  <span xlink:href="c9sc01313j-t13.jpg" id="ugt13" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> The definitions of the unitary operators are shown in Appendix C.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If |
+  <span class="bold">Ψ</span>ivib〉 and | and |
+  <span class="bold">Ψ</span>fvib〉 are the qubit wavefunctions resulting from diagonalisation of are the qubit wavefunctions resulting from diagonalisation of 
+  <span class="italic">H</span>
+  <sub>i</sub> and 
+  <span class="italic">H</span>
+  <sub>f</sub> using a quantum computer, they will be obtained in different normal mode bases |
+  <span class="bold">s</span>
+  <sub>i</sub>〉 and | and |
+  <span class="bold">s</span>
+  <sub>f</sub>〉, respectively. We cannot directly calculate the Franck–Condon integrals using |〈, respectively. We cannot directly calculate the Franck–Condon integrals using |〉, respectively. We cannot directly calculate the Franck–Condon integrals using |〈
+  <span class="bold">Ψ</span>fvib|
+  <span class="bold">Ψ</span>ivib〉||
+  <span class="sup">2</span>, as this does not take into account the different bases. Instead, we must implement the Doktorov unitary to get the Franck–Condon integrals
+  <div id="eqn16" class="disp-formula">
+   <span class="label">16</span>||〈
+   <span class="italic">ψ</span>fvib|
+   <span class="italic">ψ</span>ivib〉||
+   <span class="sup">2</span> = | = |〈
+   <span class="bold">Ψ</span>fvib|
+   <span class="italic">Û</span>
+   <sub>Dok</sub>|
+   <span class="bold">Ψ</span>ivib〉||
+   <span class="sup">2</span>.
+  </div>The Franck–Condon integrals without the Condon approximation can be efficiently calculated 
+  <span class="italic">via</span>
+  <div id="eqn17" class="disp-formula">
+   <span class="label">17</span>||〈
+   <span class="italic">ψ</span>fvib|
+   <span class="italic">μ̂</span>(
+   <span class="bold">q</span>)|
+   <span class="italic">ψ</span>ivib〉
+   <span class="sup">2</span> = | = |〈
+   <span class="bold">Ψ</span>fvib|
+   <span class="italic">μ̂</span>(
+   <span class="bold">q</span>
+   <span class="sup">f</span>)
+   <span class="italic">Û</span>
+   <sub>Dok</sub>|
+   <span class="bold">Ψ</span>ivib〉||
+   <span class="sup">2</span>.
+  </div>They can be both efficiently calculated with the generalised SWAP-test circuit.
+  <a rid="cit65" ref-type="bibr" href="#cit65">65</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alternatively, we can obtain the Franck–Condon integrals without realising the Doktorov transform. The qubit states |
+  <span class="bold">Ψ</span>ivib〉 and | and |
+  <span class="bold">Ψ</span>fvib〉 are obtained from are obtained from 
+  <span class="italic">H</span>
+  <sub>i</sub>(
+  <span class="bold">q</span>
+  <span class="sup">i</span>) and 
+  <span class="italic">H</span>
+  <sub>f</sub>(
+  <span class="bold">q</span>
+  <span class="sup">f</span>) with normal mode coordinates 
+  <span class="bold">q</span>
+  <span class="sup">i</span> and 
+  <span class="bold">q</span>
+  <span class="sup">f</span>, respectively. Instead, we can focus on one set of normal mode coordinates 
+  <span class="bold">q</span>
+  <span class="sup">i</span> and represent the Hamiltonian 
+  <span class="italic">H</span>
+  <sub>f</sub> in 
+  <span class="bold">q</span>
+  <span class="sup">i</span>, 
+  <span class="italic">H</span>′
+  <sub>f</sub>(
+  <span class="bold">q</span>
+  <span class="sup">i</span>). By solving the energy eigenstates of 
+  <span class="italic">H</span>′
+  <sub>f</sub>(
+  <span class="bold">q</span>
+  <span class="sup">i</span>), we can directly get 
+  <span xlink:href="c9sc01313j-t14.jpg" id="ugt14" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and calculate the Franck–Condon integrals without realising the Doktorov transform. However, as the Hamiltonian 
+  <span class="italic">H</span>′
+  <sub>f</sub>(
+  <span class="bold">q</span>
+  <span class="sup">i</span>) is not encoded in the correct normal mode basis, the ground state of the harmonic oscillators or the VSCF state |
+  <span class="bold">Ψ</span>
+  <sub>VSCF</sub>〉 may not be an ideal initial state to start with. However, this effect may be negligible if the overlap between | may not be an ideal initial state to start with. However, this effect may be negligible if the overlap between |
+  <span class="bold">Ψ</span>ivib〉 and and 
+  <span xlink:href="c9sc01313j-t15.jpg" id="ugt15" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> is suitably large. In this case, the initial state |
+  <span class="bold">Ψ</span>
+  <sub>0</sub>〉 for | for |
+  <span class="bold">Ψ</span>ivib〉 should also be an ideal initial state for should also be an ideal initial state for 
+  <span xlink:href="c9sc01313j-t16.jpg" id="ugt16" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> The aforementioned transformation can be implemented by transforming the normal mode coordinates 
+  <span class="bold">q</span>
+  <span class="sup">i</span> as described in 
+  <a rid="cit45" ref-type="bibr" href="#cit45">ref. 45</a>.
+ </p>
+</sec>

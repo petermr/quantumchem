@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Coupling efficiencies</div>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Equation (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) is accurate under the condition that all excitonic modes are coherently coupled with the same, maximal rate to the cavity. This is true for structures such as Fabry-Pérot cavities, photonic crystal slabs, or micropillars, in which the anti-node of the mode is accessible to excitonic modes of molecules or semiconductors by precise placement via trapping or doping
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>,
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>. For isolated plasmonic particles the maximum of its mode is, however, typically inside the particle
+  <span class="sup">
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>, such as in the present case. Consequently, the molecular coherent dipole moment interacting with the cavity is smaller than its maximum value of 4.35 D, and it is estimated to be in the range from 2 to 4 D, increasing with the size of the nanoparticle. The reduction of the coherent dipole moment is typically expressed in terms of an efficiency factor 
+  <span class="italic">η</span> determined by the ratio of the mode energy density at the position of the exciton to its maximum value
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>.
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Before extracting efficiency factors 
+  <span class="italic">η</span> from the TDDFT data, we estimate their values on the basis of classical electromagnetic calculations, which are acceptable at a semi-quantitative level for picocavities
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span>, using a local Drude-permittivity tailored to match the TDDFT absorption spectrum for Al
+  <sub>201</sub>. We find that in the spatial region occupied by the benzene molecule the efficiency 
+  <span class="italic">η</span> ranges from 0.3 to 0.5 (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>), due to the rapid decrease of the plasmon-induced electric field. However, such a low value of 
+  <span class="italic">η</span> predicted by calculating the mode profile of a bare cavity might not hold in practice. It is known that the presence of a material with a refractive index greater than the background causes additional field localization, increasing the coupling strength
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>. While a single benzene molecule cannot be meaningfully described in terms of a refractive index, it causes a similar effect. This is supported by the electric near-field enhancements calculated with TDDFT (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b–d</a>). In comparison to the field of the plasmon in the bare nanoparticle, in the LP/UP of the coupled system the benzene molecule focuses the electric field, modifying the cavity and, consequently, its vacuum field
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>.
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Coupling efficiency and electric near-field enhancement in Al
+     <sub>201</sub>. 
+     <span class="bold">a</span> Spatial map of the coupling efficiency (normalized mode energy density, calculated using classical electromagnetism) shows that maximum coupling occurs if the benzene molecule is inside the Al
+     <sub>201</sub> particle and decreases rapidly away from its surface. At the position of benzene the coupling efficiency is about 30–50% of the maximum value. The contours are spaced every 0.2. 
+     <span class="bold">b</span>–
+     <span class="bold">d</span> Field enhancement from time-dependent density-functional theory calculations at (
+     <span class="bold">b</span>) the Al
+     <sub>201</sub> resonance and at the Al
+     <sub>201</sub>-benzene (
+     <span class="bold">c</span>) lower and (
+     <span class="bold">d</span>) upper polaritons (with benzene located at the center of the facet). Benzene focuses the electric field, perturbing the nanoplasmonic cavity and increasing the coupling efficiency beyond the expectation based on the field at the bare resonance
+     <span class="sup">
+      <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+     </span>
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11315_Fig4_HTML" id="d29e1082" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">To estimate the coupling efficiencies 
+  <span class="italic">η</span> from the TDDFT-derived coupling strengths (Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>), we extract their values as modifications of the slope predicted by Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>). The resulting dependencies 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g = \eta \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}}$$\end{document}</span>
+    <div id="M14" class="math">
+     <span class="mi">g</span>
+     <span class="mo">=</span>
+     <span class="mi">η</span>
+     <div class="msqrt">
+      <span class="mi">N</span>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">μ</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">vac</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> are shown as dashed lines in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. For Al
+  <sub>201</sub>, the corresponding value 
+  <span class="italic">η</span>
+  <sub>201</sub> = 0.47 gives a good agreement for 
+  <span class="italic">N</span> ≤ 3, but for 
+  <span class="italic">N</span> &gt; 3 the coupling strengths fall below the slope set by 
+  <span class="italic">η</span>
+  <sub>201</sub>. Such a deviation for large 
+  <span class="italic">N</span> is not observed for the two larger particles, which, respectively, have efficiency factors of 
+  <span class="italic">η</span>
+  <sub>586</sub> = 0.61 and 
+  <span class="italic">η</span>
+  <sub>1289</sub> = 0.78. These larger efficiencies imply that the plasmonic modes of the larger particles are used more efficiently than in the case of Al
+  <sub>201</sub>. Minor deviations seen for the two larger nanoparticles for 
+  <span class="italic">N</span> &lt; 3 are probably caused by inaccurate fitting of the absorption spectra as the LP and UP are not clearly separated.
+ </p>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">To test the effect of a diminishing overlap between the vacuum field of the cavity and the molecular exciton, we calculated the dependence of coupling strength on the nanoparticle-molecule separation (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>). The Rabi splitting of LP and UP decreases with increasing separation and the reduction of the coupling efficiency
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span> leads to a decrease in the coupling strength (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5b</a>).
+  <div id="Fig5" class="fig">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <p>Dependence of coupling on nanoparticle-molecule separation. 
+     <span class="bold">a</span> Photoabsorption spectra for two benzene molecules coupled to the Al
+     <sub>201</sub> particle, showing weaker splitting with increasing separation from 3–8 Å. 
+     <span class="bold">b</span> Coupling strength for two benzene molecules as a function of distance from the Al
+     <sub>201</sub> particle, showing the expected decrease due to the decreasing overlap integral between exciton and mode
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11315_Fig5_HTML" id="d29e1200" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec14" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optical benchmarking</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The TD-DFT calculations can be highly dependent on the selection of the functional. Hence, an optical benchmarking may be needed to investigate the influence of the functional on the prediction of the optical transitions. Charge-transfer transitions are very sensitive towards the choice of the functional [
+  <a ref-type="bibr" rid="CR48" href="#CR48">48</a>–
+  <a ref-type="bibr" rid="CR52" href="#CR52">52</a>] and the results can largely deviate from the experimental spectrum. Hence, for a new transition metal system, one always needs to perform a so-called optical benchmarking and find a suited functional to describe measured spectra correctly. After optimizing the structure, different functionals, such as GGAs, meta-GGAs, hybrid-GGAs can be used to evaluate the functional dependency of the optical transitions (Fig. 
+  <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>). In detail, this might be B3LYP, PW91, TPSSh, PBE, to name just a few.
+  <div id="Fig8" class="fig">
+   <span class="label">Fig. 8</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Opt_Bench M</span>-
+     <span class="italic">WF</span> optical benchmarking meta-workflow with five atomic workflows yielding theoretical UV/Vis spectra
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig8_HTML" id="MO18" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Each TD calculation can be implemented as a separate atomic workflow. See atomic workflows in Fig. 
+  <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>: 
+  <span class="italic">TD</span>-
+  <span class="italic">B3LYP WF, TD</span>-
+  <span class="italic">PW91 WF, TD</span>-
+  <span class="italic">TPSSh</span>-
+  <span class="italic">WF, TD</span>-
+  <span class="italic">PBE WF</span>. They run different time-dependent DFTs (TD-DFT). Having these atomic workflows and the 
+  <span class="italic">Opt WF</span> we have created the 
+  <span class="italic">Opt</span>-
+  <span class="italic">Bench M</span>-
+  <span class="italic">WF</span> meta-workflow. The strength of this concept lies in the re-usability of the TD atomic workflows which have been tested successfully and collected in the MoSGrid Repository. Moreover, for every step, metadata is annotated and stored facilitating the organization of the computational chemists work. In principle, this optical benchmarking meta-workflow can be conceptualized in a broader way when more functionals are required to describe a complicated electronic behaviour [
+  <a ref-type="bibr" rid="CR48" href="#CR48">48</a>–
+  <a ref-type="bibr" rid="CR50" href="#CR50">50</a>].
+ </p>
+</sec>

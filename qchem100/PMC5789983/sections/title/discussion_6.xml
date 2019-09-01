@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec7" sec-type="discussion" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">Cancer immunotherapy research is trying to overcome the cancer’s ability to resist the immune responses by stimulating the body’s own mechanisms to remain effective against the disease. Early clinical results using blocking agents against the human cell surface receptor PD-1 and its ligants PDL-1 and PDL-2, point to unprecedented rates of long lasting anti-tumor activity in patients with metastatic cancers of different histologies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. From the pharmaceutical point of view, however, the clinical development of the PD-1 pathway blockers requires an understanding of the signals that induce expression of its ligands within the tumor.
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">However, there are some patients showing resistance to the blockage of the receptor PD-1
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+  </span>. Over stimulation of immune responses, on the other hand, may lead to damage normal, healthy tissue. Therefore, to be more efficient, the design and production of such a pharmaceutical drug require a precise knowledge not only of its biochemical structure, but also its binding mechanism with the receptor PD-1, leading to a better understanding of how this complex influences the cancer tumor and its anti-angiogenesis therapies as well as its microenvironment. Computational tools based on quantum chemistry may be a promising step in this route, further increased by combination with other anti-cancer therapies.
+ </p>
+ <p id="Par28" xmlns="http://www.w3.org/1999/xhtml">Within this context, we presented here an 
+  <span class="italic">in silico</span> quantum biochemistry calculation of the electronic structure of the complex pembrolizumab Fab drug/PD-1 receptor in order to map its recognition surface, searching for the binding interactions that stabilize it. The quantum MFCC approach used here is a route to investigate accurately large biological systems with low computational cost, and has been applied previously to describe molecular interactions at the quantum level related to the collagen stability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>, central nervous system disorders
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>, and breast cancer
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>, to cite just a few. There is no other quantum mechanical study relating the binding of the pembrolizumab drug at the PD-1 receptor, albeit its high pharmaceutical relevance.
+ </p>
+ <p id="Par29" xmlns="http://www.w3.org/1999/xhtml">After a convergence study on the size of the binding pocket sphere, we have considered all ligand-residue interactions within a pocket radius of 8.0 Å from the ligand. In addition, we have established the residues that play the most important roles on the binding affinity, namely: 
+  <span class="italic">Y</span>33
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">F</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">Y</span>101
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">E</span>59
+  <sub>
+   <span class="italic">LC</span>
+  </sub> &gt; 
+  <span class="italic">M</span>105
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">N</span>52
+  <sub>
+   <span class="italic">HC</span>
+  </sub> &gt; 
+  <span class="italic">Y</span>36
+  <sub>
+   <span class="italic">LC</span>
+  </sub> &gt; 
+  <span class="italic">S</span>95
+  <sub>
+   <span class="italic">LC</span>
+  </sub> &gt; 
+  <span class="italic">D</span>104
+  <sub>
+   <span class="italic">HC</span>
+  </sub>. We also highlighted the energetic and structural differences between the pembrolizumab’s heavy-chain and light-chain besides unveiling the relevance to take into account the water molecules and weak interactions in the design of this therapeutic compounds. The strong attractive character observed in the amino-acid residues 
+  <span class="italic">Y</span>101
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">F</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">D</span>104
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">M</span>105
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">D</span>108
+  <sub>
+   <span class="italic">HC</span>
+  </sub> could give the base for the development of an improved drug targeting the PD-1/PD-L1 pathway by activating an immune resistance mechanism in response to endogenous anti-tumor activity, avoiding an immunosuppressive tumor microenvironment. It is also remarkable the relevance of the residues 
+  <span class="italic">K</span>78, 
+  <span class="italic">D</span>85, 
+  <span class="italic">P</span>89, 
+  <span class="italic">I</span>126 and 
+  <span class="italic">L</span>128 of the receptor PD-1. These amino-acids have been shown making pairs with almost all pembrolizumab residues, and mutational studies have displayed their relevance to the PD-1/ligand interaction
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>.
+ </p>
+ <p id="Par30" xmlns="http://www.w3.org/1999/xhtml">Some of these residues binding energies spectra are consistent with previous experimental studies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span>. Our results show also that in the Pembrolizumab/PD-1 complex, the residue D85 is associated with the strongest interaction energy regime, forming pairs with the residues 
+  <span class="italic">R</span>99
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">Y</span>36
+  <sub>
+   <span class="italic">LC</span>
+  </sub> through a salt bridge and hydrophobic contacts, respectively, while the residue R86 has no interaction whatsoever with any of the residues from the ligand, in agreement with the experimental results
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>. As shown by Fessas 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>, one of the most relevant structural aspect of the Pembrolizumab/PD-1 complex is the interaction of the former with residues from the C’D loop of PD-1 (amino-acids P83-S93), emphasized in our previous section (Results), excluding the amino-acids 
+  <span class="italic">D</span>100
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">Y</span>101
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">Y</span>53
+  <sub>
+   <span class="italic">LC</span>
+  </sub>, 
+  <span class="italic">Y</span>57
+  <sub>
+   <span class="italic">LC</span>
+  </sub> and 
+  <span class="italic">E</span>59
+  <sub>
+   <span class="italic">LC</span>
+  </sub>, commonly showing one energetically relevant pair. These achievements confirm the relevance of this loop for anchoring Pembrolizumab and, likely, its ligand-based compounds.
+ </p>
+ <p id="Par31" xmlns="http://www.w3.org/1999/xhtml">Despite the absence of mutation experimental results, outcomes based on the crystallographic structures of the PD-1 protein mutants bound to the receptors PD-L1 and PD-L2 could be an useful background to understand the energetic behavior depicted in this work. Recently, Lázár-Molnár performed a mutagens study taking into account the wild-type human PD-1 receptor and a mutant form of the protein A132L
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. Mutation of the amino-acids K78A in both proteins (wild-type and mutant) was responsible for the complete loss of the PD-L1 and PD-L2 interaction bind energy. Notwithstanding, K78, a residue from the C’ strand, is seen forming strong interaction pairs with a number of amino-acids from the Pembrolizumab, including the most energetic heavy-chain residues 
+  <span class="italic">Y</span>33
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">D</span>100
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">Y</span>101
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">F</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub>. Also, although the amino-acid I126 makes non-conventional hydrogen bonds only with the heavy-chain residue 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, it is responsible for one of its strongest interaction energies. Meanwhile, the residues I134, L128 and E136, although not presenting a large number of energetically strong pairs, are related to 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">Y</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, which are the second and third most energetic Pembrolizumab heavy-chain residues, thus defining, along with the residue I126, a region of stabilization of the ligand. Taken together, it becomes clear the relevance of these residues for the inhibition mechanism of the Pembrolizumab.
+ </p>
+ <p id="Par32" xmlns="http://www.w3.org/1999/xhtml">To close this section, we would like to propose two pharmacophores that may be useful for the rational design of ligands targeting the receptor PD-1, looking for the development of antibody-based drugs. As one can note, the Pembrolizumab/PD-1 binding surface is mainly governed by a set of hydrophobic contacts strengthened by strong hydrogen bonds. Five residues from the PD-1 receptor can be observed to form two hot-spots required for the inhibition of the PD-1/PD-ligands. The first one is in the C’D loop and C’ sheet, while the second one is in the FG loop and F sheet, respectively. The former is composed by the residues K78, D85 and P89, with their most distinctive feature being the steric complementarity between the residue K78 and the hydrophobic/hydrophilic heavy-chain amino-acids 
+  <span class="italic">Y</span>33
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">Y</span>101
+  <sub>
+   <span class="italic">HC</span>
+  </sub>, 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">F</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub>. They are coupled to flexibilize the C’D loop, permitting the residue D85 to interact with the light-chain amino-acids 
+  <span class="italic">S</span>36
+  <sub>
+   <span class="italic">LC</span>
+  </sub> and 
+  <span class="italic">S</span>95
+  <sub>
+   <span class="italic">LC</span>
+  </sub>. This pocket is ruled by hydrogen bonds and is, likely, one of the first docking points on the PD-1 surface due to its more external position, when compared to other motifs. The latter is located just nearby and has a most hydrophobic character, being composed by the residues I126 and L128. These residues are seen to accommodate the heavy-chain amino-acids 
+  <span class="italic">R</span>102
+  <sub>
+   <span class="italic">HC</span>
+  </sub> and 
+  <span class="italic">F</span>103
+  <sub>
+   <span class="italic">HC</span>
+  </sub> by anchoring them through hydrophobic interactions and non-conventional h-bonds. These proposed pharmacophores should provide a solid point for the design of new antibodies or small molecules targeting the receptor PD-1.
+ </p>
+ <p id="Par33" xmlns="http://www.w3.org/1999/xhtml">In summary, we have provided a quantum mechanics description of the Pembrolizumab/PD-1 complex at a molecular and energetic level by decomposing both proteins into amino-acid fragments and calculating the residue-residue interaction pair through an MFCC-based method within the density functional theory framework. The use of quantum mechanics in our calculations provided a good characterization of important molecular features by including an accurate electronic description and enhancing the differences of interaction intensity among the amino-acid pairs. Since Pembrolizumab has shown great improvement in the treatment of several cancer types, our results could favor the development of new compounds targeting the PD-1/PD-ligands, in special those based on the hot-spots, by avoiding structural features which are in minor relationship with this binding scenario. Notwithstanding, the quantum chemistry computational methods used in this work emerged as a simple and efficient alternative to unveil the drug’s amino-acids residues that play the most important role on the binding affinity of the receptor-ligand complex. No doubt, taking into account the small cost/benefit of the operation, 
+  <span class="italic">in silico</span> approach, not only in clinical oncology but also in pharmaceutical medicine in general, is an important initial step toward the development of efficient cancer pharmaceutical drugs.
+ </p>
+</sec>

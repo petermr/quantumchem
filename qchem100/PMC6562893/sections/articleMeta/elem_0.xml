@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6562893</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.3389/fchem.2019.00424</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Chemistry</span>
+   <div class="subj-group">
+    <span class="subject">Original Research</span>
+   </div>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">On the Probability Density of the Nuclei in a Vibrationally Excited Molecule</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schild</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Axel</span>
+   </name>
+   <a ref-type="corresp" rid="c001" href="#c001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">*</span>
+   </a>
+   <span xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/718067/overview" class="uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </contrib>
+ </div>
+ <aff class="aff">
+  <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Laboratory for Physical Chemistry, ETH Zürich</span>, 
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Zurich</div>, 
+  <span class="country" xmlns="http://www.w3.org/1999/xhtml">Switzerland</span>
+ </aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <fn fn-type="edited-by" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Edited by: Miquel Solà, University of Girona, Spain</p>
+  </fn>
+  <fn fn-type="edited-by" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Reviewed by: Shant Shahbazian, Shahid Beheshti University, Iran; Riccardo Conte, University of Milan, Italy</p>
+  </fn>
+  <div id="c001" class="corresp">*Correspondence: Axel Schild 
+   <span class="email">axel.schild@phys.chem.ethz.ch</span>
+  </div>
+  <fn fn-type="other" id="fn001" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">This article was submitted to Theoretical and Computational Chemistry, a section of the journal Frontiers in Chemistry</p>
+  </fn>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">06</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">6</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">7</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">424</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">09</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">22</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2019 Schild.</span>
+  <span class="copyright-year">2019</span>
+  <span class="copyright-holder">Schild</span>
+  <div xlink:href="http://creativecommons.org/licenses/by/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>For localized and oriented vibrationally excited molecules, the qualitative features of the one-body probability density of the nuclei (one-nucleus density) are investigated. Like the familiar and widely used one-electron density that represents the probability of finding an electron at a given location in space, the one-nucleus density represents the probability of finding a nucleus at a given position in space independent of the location of the other nuclei and independent of their type. In contrast to the electrons, however, the nuclei are comparably localized. Due to this localization of the individual nuclei, the one-nucleus density provides a quantum-mechanical representation of the “chemical picture” of the molecule as an object that can largely be understood in a three-dimensional space, even though its full nuclear probability density is defined on the high-dimensional configuration space of all the nuclei. We study how the nodal structure of the wavefunctions of vibrationally excited states translates to the one-nucleus density. It is found that nodes do not necessarily lead to visible changes in the one-nucleus density: Already for relatively small molecules, only certain vibrational excitations change the one-nucleus density qualitatively compared to the ground state. It turns out that there are simple rules for predicting the shape of the one-nucleus density from the normal mode coordinates. A Python module for the computation of the one-nucleus density is provided at 
+   <span ext-link-type="uri" xlink:href="https://gitlab.com/axelschild/mQNMc" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://gitlab.com/axelschild/mQNMc</span>
+  </p>
+ </div>
+ <div class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="kwd">molecular structure</span>
+  <span class="kwd">normal modes</span>
+  <span class="kwd">vibrational states</span>
+  <span class="kwd">vibrational density</span>
+  <span class="kwd">nuclear probability density</span>
+  <span class="kwd">marginal density</span>
+  <span class="kwd">one-body density</span>
+  <span class="kwd">one-nucleus density</span>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="award-group">
+   <span id="cn001" class="funding-source">Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung
+    <div content-type="fundref-id" class="named-content">10.13039/501100001711</div>
+   </span>
+  </div>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="3" class="fig-count"/>
+  <span count="0" class="table-count"/>
+  <span count="7" class="equation-count"/>
+  <span count="50" class="ref-count"/>
+  <span count="9" class="page-count"/>
+  <span count="7544" class="word-count"/>
+ </div>
+</article-meta>

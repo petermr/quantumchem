@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Diradical Characters</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Let us consider a potential energy curve of the H
+  <sub>2</sub> molecule as an example of the covalent bond dissociation of closed shell singlet molecules. Interactions between 1s orbitals of two hydrogen atoms generate bonding (1σ
+  <sub>g</sub>) and antibonding (1σ
+  <sub>u</sub>) orbitals. At the geometry close to its equilibrium, an electronic configuration for which two electrons occupy the 1σ
+  <sub>g</sub> orbital dominantly contributes to the full-CI wave function of the ground state, and therefore the RHF wave function has a large overlap with the full-CI wave function. As the H···H distance increases, the orbital energy difference between 1σ
+  <sub>g</sub> and 1σ
+  <sub>u</sub> decreases, and the weight of the two-electron excited configuration (1σ
+  <sub>g</sub>)
+  <span class="sup">0</span>(1σ
+  <sub>u</sub>)
+  <span class="sup">2</span> increases. At the dissociation limit, the system is regarded as two hydrogen atoms, and the full-CI wave function is approximated by the following wave function in the canonical orbital basis:
+  <div id="eq1" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m001" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">1</span>
+  </div>Two numbers in the ket represent the occupation numbers of 1σ
+  <sub>g</sub> and 1σ
+  <sub>u</sub> orbitals, respectively. For example, |20⟩ represents the determinant that the 1σ
+  <sub>g</sub> orbital is doubly occupied while the 1σ
+  <sub>u</sub> orbital is unoccupied, namely, RHF configuration. In the localized orbital basis, the wave function is expressed as in 
+  <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+  </a>, which corresponds to one CSF.
+  <div id="eq2" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m002" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">2</span>
+  </div>Here, 
+  <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+  </a> indicates that the molecular orbital is singly occupied by a spin-α and β electron, respectively. The Slater determinant appearing in 
+  <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+  </a> is not a spin eigenfunction, but a linear combination of spin-triplet and singlet wave functions of 
+  <span class="italic">M</span>
+  <sub>S</sub> = 0. Because the determinant |αβ⟩ breaks both spatial and spin symmetries, the single determinant wave function carrying spin-β unpaired electrons in the localized orbital basis is termed a broken-symmetry (BS) wave function.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">At the intermediate H···H distance the wave function is approximated as in 
+  <a rid="eq3" ref-type="disp-formula" href="#eq3">eq 
+   <a rid="eq3" ref-type="disp-formula" href="#eq3">3</a>
+  </a>.
+  <div id="eq3" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m003" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">3</span>
+  </div>Here, 
+  <span class="italic">C</span>
+  <sub>1</sub> &gt; 
+  <span class="italic">C</span>
+  <sub>2</sub> and 
+  <span class="italic">C</span>
+  <sub>1</sub>
+  <span class="sup">2</span> + 
+  <span class="italic">C</span>
+  <sub>2</sub>
+  <span class="sup">2</span> = 1. This wave function is expressed by the linear combinations of RHF (|20⟩) and open shell singlet diradical (given in 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a>) configurations. The coefficients 
+  <span class="italic">C</span>
+  <sub>1</sub> and 
+  <span class="italic">C</span>
+  <sub>2</sub> change continuously along the potential energy curve, depending on the open shell characters. In quantum chemistry, the open shell characters can be measured by diradical characters denoted by 
+  <span class="italic">y
+   <sub>i</sub>
+  </span> (0 ≤ 
+  <span class="italic">y
+   <sub>i</sub>
+  </span> ≤ 1, 
+  <span class="italic">i</span> = 0, 1, 2, ...). The diradical characters 
+  <span class="italic">y
+   <sub>i</sub>
+  </span> can be calculated from the occupation number of the lowest unoccupied natural orbital (LUNO) + 
+  <span class="italic">i</span>, which is equal to twice the weight of the doubly excited configuration from HOMO – 
+  <span class="italic">i</span> to LUMO + 
+  <span class="italic">i</span> in the perfect pairing double excitation CI scheme. In closed shell singlet states, a diradical character 
+  <span class="italic">y</span>
+  <sub>0</sub> = 0, and for pure open shell states like the dissociation limit of H
+  <sub>2</sub>, 
+  <span class="italic">y</span>
+  <sub>0</sub> becomes unity. At intermediate bond regions 
+  <span class="italic">y</span>
+  <sub>0</sub> is between 0 and 1. Diradical characters have attracted attention in the theoretical design for organic nonlinear optical (NLO) and singlet fission molecular systems.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref65" href="#ref65">65</a>−
+   <a ref-type="bibr" rid="ref69" href="#ref69">69</a>
+  </span> The diradical characters can be calculated from UHF wave functions, but UHF wave functions suffer from unwilling contributions from higher spin multiplicities, which are known as spin contaminations. Therefore, the spin projection procedure is important. The diradical characters at the spin-projected UHF (PUHF) level (
+  <span class="italic">y
+   <sub>i</sub>
+  </span>
+  <span class="sup">PUHF</span>) can be calculated using 
+  <a rid="eq4" ref-type="disp-formula" href="#eq4">eq 
+   <a rid="eq4" ref-type="disp-formula" href="#eq4">4</a>
+  </a>.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref62" href="#ref62">62</a>,
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span>
+  <div id="eq4" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m004" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">4</span>
+  </div>Here, 
+  <span class="italic">n</span>
+  <sub>LUNO+
+   <span class="italic">i</span>
+  </sub> represents the occupation number of the LUNO + 
+  <span class="italic">i</span> natural orbital.
+ </p>
+</sec>

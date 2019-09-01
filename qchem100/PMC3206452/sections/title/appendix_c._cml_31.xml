@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix C. CML produced from a Gaussian log file</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A complete semantic parse for a Gaussian log file (Dr Anna Croft, for methane CH4). The log files describes two chained jobs, the first an optimization and the second the calculation of frequencies and thermochemistry. All significant information is captured, but much is repetitious and much is omitted here for brevity. Some fields have been truncated for clarity - no precision is lost in parsing.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The complete parse can be found at</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module convention="convention:compchem" xmlns="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:cmlx="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema/cmlx" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema/cmlx</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:convention="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/convention/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/convention/</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:cc="http://www.xml-cml.org/dictionary/compchem
+  <span ext-link-type="uri" xlink:href="http:///" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http:///</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:compchem="http://www.xml-cml.org/dictionary/compchem
+  <span ext-link-type="uri" xlink:href="http:///" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http:///</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:g="http://www.xml-cml.org/dictionary/gaussian/" xmlns:xsd="
+  <span ext-link-type="uri" xlink:href="http://www.w3.org/2001/XMLSchema" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.w3.org/2001/XMLSchema</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:nonsi="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/unit/nonSi/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/unit/nonSi/</span>"
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:cml="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/dictionary/cml/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/dictionary/cml/</span>"&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- all dictRef values prefixed by cc are linked to the general compchem dictionary. The "g"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         prefix links to a code-specific dictionary --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- the log file describes two jobs under a parent jobList --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module id="jobList1" dictRef="cc:jobList"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;!-- the first job --</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module dictRef="cc:job" id="job1"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;!-- mandatory environment module --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;module id="environment" dictRef="cc:environment"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               &lt;parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:program"&gt;&lt;scalar &gt;Gaussian 03&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:hostname"&gt;&lt;scalar &gt;GINC-DEEPTHOUGHT&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:jobname"&gt;&lt;scalar &gt;WWW-DATA&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:date"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                     &lt;scalar dataType="xsd:date"&gt;2006-11-20T00:00:00Z&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:title"&gt;&lt;scalar &gt;CH4&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:version"&gt;&lt;scalar &gt;x86-Linux-G03RevB.04&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:run.date"&gt;&lt;scalar &gt;20-Nov-2006&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:program"&gt;&lt;scalar &gt;Gaussian 03&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:program.date"&gt;&lt;scalar &gt;2-Jun-2003&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">                  &lt;parameter dictRef="cc:version"&gt;&lt;scalar &gt;x86-Linux-G03RevB.04&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               &lt;/parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- mandatory intialization module --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;module id="initialization" dictRef="cc:initialization"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:nactiveatoms"&gt;&lt;scalar dataType="xsd:integer"&gt;5&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:natoms"&gt;&lt;scalar dataType="xsd:integer"&gt;5&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:betae"&gt;&lt;scalar dataType="xsd:integer"&gt;5&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:alphae"&gt;&lt;scalar dataType="xsd:integer"&gt;5&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:basiscount"&gt;&lt;scalar dataType="xsd:integer"&gt;23&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:diffuse"&gt;&lt;scalar &gt;(6D, 7F)&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:basis"&gt;&lt;scalar &gt;6-31G(d)&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:degfreedom"&gt;&lt;scalar dataType="xsd:integer" &gt;1&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:frameworkgroup"&gt;&lt;scalar &gt;TD[O(C),4C3(H)]&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:pointgroup"&gt;&lt;scalar &gt;TD&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:method"&gt;&lt;scalar &gt;RB3LYP&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:basis"&gt;&lt;scalar &gt;6-31G(d)&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;!-- Gaussian specific keyword --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="g:operation"&gt;&lt;scalar &gt;FOpt&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;#N&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;B3LYP/6-31G(D)&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;OPT&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;FREQ&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- mandatory input molecule --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;molecule id="mol.l202.orient" &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.0"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;atom id="a2" elementType="H" x3="0.0" y3="0.0" z3="1.113"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;atom id="a3" elementType="H" x3="1.049347" y3="0.0" z3="-0.371"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;atom id="a4" elementType="H" x3="-0.524673" y3="-0.908761" z3="-0.371"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;atom id="a5" elementType="H" x3="-0.524673" y3="0.908761" z3="-0.371"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;formula formalCharge="0" concise="C 1 H 4"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;bond atomRefs2="a1 a2" id="a1_a2" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;bond atomRefs2="a1 a3" id="a1_a3" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;bond atomRefs2="a1 a4" id="a1_a4" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;bond atomRefs2="a1 a5" id="a1_a5" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/molecule&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;module id="otherComponents" dictRef="cc:userDefinedModule"&gt; ...&lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- mandatory calculation module --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;module id="calculation" dictRef="cc:calculation"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module id="otherComponents" dictRef="cc:userDefinedModule"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:nucrepener"&gt;13.1577484238&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;module &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;scalar dictRef="g:stoichiometry"&gt;CH4&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;scalar dictRef="cc:frameworkgroup"&gt;TD[O(C),4C3(H)]&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;scalar dataType="xsd:integer" dictRef="cc:degfreedom"&gt;1&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dataType="xsd:double" dictRef="cc:rotconst" size="3"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            157.5433763 157.5433763 157.5433763&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;scalar dataType="xsd:double" dictRef="cc:nucrepener" &gt;13.4043316016&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;!-- module/link specific information --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;list &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dataType="xsd:integer" dictRef="cc:adapted" size="4"&gt;8 5 5 5&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dictRef="cc:symm" size="4"&gt;A B1 B2 B3&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/list&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:basiscount"&gt;23&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="g:primbasis"&gt;44&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:cartesianbasis"&gt;23&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:alphae"&gt;5&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:betae"&gt;5&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:natoms"&gt;5&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:nactiveatoms"&gt;5&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:uniqatoms"&gt;2&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="g:sfac"&gt;5.66&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="g:natfmm"&gt;60&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="g:big"&gt;F&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">...</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- convergence information --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module dictRef="cc:userDefinedModule"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;list &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;array dictRef="g:item"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;array dataType="xsd:double" dictRef="g:val" size="4"&gt;4.5E-4 3.E-4 .0018 .0012&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;array dataType="xsd:double" dictRef="g:threshold" size="4"&gt;0.0 0.0 0.0 0.0&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;array dictRef="g:converged" size="4"&gt;NO NO YES YES&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/list&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">  &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">  &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- mandatory finalization module --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module id="finalization" dictRef="cc:finalization"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;propertyList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:jobtime"&gt;&lt;scalar &gt;PT16.200S&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:jobdatetime.end"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:date"&gt;2006-11-20T14:40:23Z&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:electronicstate"&gt;&lt;scalar &gt;1-A1&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:hfenergy"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-40.5183892&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:rmsd"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:unknown"&gt;2.782E-9&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:rmsf"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:unknown"&gt;8.238E-8&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:dipole"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;array dataType="xsd:double" units="nonsi:debye" size="3"&gt;0.0 0.0 0.0&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:multipole"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;list &gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;array dataType="xsd:double" dictRef="cc:dipole" size="3"&gt;0.0 0.0 0.0&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="x:dipole"&gt;0.0&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;array dataType="xsd:double" dictRef="cc:quadrupole" size="6"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            -8.3036 -8.3036 -8.3036 0.0 0.0 0.0&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;array dataType="xsd:double" dictRef="cc:octapole" size="10"&gt;0.0 ... -0.7195&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;array dataType="xsd:double" dictRef="cc:hexadecapole" size="15"&gt;-16.22 ... .0&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/list&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:virtualorbs"&gt;&lt;array delimiter="|" size="18"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   |(A1)|(T2)|(T2)|...|(T2)|(A1)|&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/propertyList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- final molecule --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;molecule id="mol9999"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.0"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atom id="a2" elementType="H" x3="9.95E-8" y3="1.925E-7" z3="1.09326594"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atom id="a3" elementType="H" x3="1.0307409799" y3="1.096E-7" z3="-0.3644220738"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atom id="a4" elementType="H" x3="-0.5153703892" y3="-0.8926480531" z3="-0.3644217759"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;atom id="a5" elementType="H" x3="-0.5153706902" y3="0.892647751" z3="-0.3644220902"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;formula formalCharge="0" concise="C 1 H 4" dictRef="cc:formula.calc"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a2" id="a1_a2" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a3" id="a1_a3" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a4" id="a1_a4" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a5" id="a1_a5" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;formula concise="C 1 H 4" dictRef="cc:formula.user"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">  &lt;/molecule&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml"> &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- final job (takes input from job 1) --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module dictRef="cc:job" id="job2"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;module id="environment" dictRef="cc:environment"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameter dictRef="cc:date"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;scalar dataType="xsd:date"&gt;2006-11-20T00:00:00Z&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module id="initialization" dictRef="cc:initialization"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;GEOM=ALLCHECK&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;GUESS=READ&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;SCRF=CHECK&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;GENCHK&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;RB3LYP/6-31G(D)&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;parameter dictRef="g:keyword"&gt;&lt;scalar &gt;FREQ&lt;/scalar&gt;&lt;/parameter&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/parameterList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module id="calculation" dictRef="cc:calculation"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;module id="otherComponents" dictRef="cc:userDefinedModule"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:nucrepener" &gt;13.3952533229&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- final coordinates and properties --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module id="finalization" dictRef="cc:finalization"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;propertyList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:jobtime"&gt;&lt;scalar &gt;PT12.700S&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:jobdatetime.end"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:date"&gt;2006-11-20T14:40:36Z&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="g:l601.pol.exact"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;array dataType="xsd:double" size="6"&gt;12.353 .0 12.353 .0 .0 12.353&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:frequencies"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;table id="l716.forcematrix"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:integer" dictRef="x:serial" size="9"&gt;1 2 3 4 5 6 7 8 9&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array delimiter="|" dictRef="cc:irrep" size="9"&gt;|T2|T2|T2|E|E|A1|T2|T2|T2|&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:frequency" size="9"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               1373.49 1373.49 1373.49 1593.96 1593.96 3053.59 3163.92 3163.92 3163.92&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:redmass" size="9"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               1.1787 1.1787 1.1787 1.0078 1.0078 1.0078 1.1019 1.1019 1.1019&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:forceconst" size="9"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               1.3101 1.3101 1.3101 1.5087 1.5087 5.5368 6.4991 6.4991 6.4991&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:irintensity" size="9"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               15.4253 15.4253 15.4253 0.0 0.0 0.0 26.421 26.421 26.421&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/table&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:thermochemistry"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;list id="l716.thermochemistry"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:temp"&gt;298.15&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:press"&gt;1.0&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:molmass"&gt;16.0313&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:moi.eigenvectors"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               0.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0&lt;/matrix&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:moi" size="3"&gt;11.471 11.471 11.471&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="g:top"&gt;spherical&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:integer" dictRef="cc:symmnumber"&gt;12&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:rottemp" size="3"&gt;7.550 7.550 7.550&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:rotconst" size="3"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               157.33005 157.33005 157.33005&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" dictRef="cc:zpe" units="u:jmol-1"&gt;118752.0&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:vibtemp" size="9"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               1976.16 1976.16 1976.16 2293.35 2293.35 4393.44 4552.17 4552.17 4552.17&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/list&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:zeropoint"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;list id="l716.zeropoint"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.correction"&gt;0.04523&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.thermalcorrener"&gt;0.048094&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.thermalcorrenthalpy"&gt;0.049039&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.thermalcorrgfe"&gt;0.027907&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.sumelectzpe"&gt;-40.473159&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.sumelectthermal"&gt;-40.470295&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.sumelectthermal"&gt;-40.469351&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dictRef="cc:zpe.sumelectthermalfe"&gt;-40.490482&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/list&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:electronicstate"&gt;&lt;scalar &gt;1-A1&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:hfenergy"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-40.5183892&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:rmsd"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:unknown"&gt;8.723E-11&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:rmsf"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double" units="nonsi:unknown"&gt;8.224E-8&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:dipole"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" units="nonsi:debye" size="3"&gt;0.0 0.0 0.0&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:multipole"&gt;...&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:virtualorbs"&gt;&lt;array delimiter="|" size="18"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         |(A1)|(T2)|(T2)|(T2)...|(T2)|(T2)|(A1)|&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/propertyList&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;module id="otherComponents" dictRef="cc:userDefinedModule"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;module dictRef="cc:userDefinedModule"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:dipolederiv" units="nonsi:unknown" size="45"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               7.872E-4 0.0 0.0 0.0 7.871E-4 0.0 0.0 0.0 7.871E-4 ... 0.0488271&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:polarizability" units="nonsi:unknown" size="6"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               12.3528403 0.0 12.3528403 0.0 0.0 12.3528403&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;scalar dictRef="cc:pointgroup"&gt;TD [O(C1),4C3(H1)]&lt;/scalar&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:forceConstants" size="120"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">               0.55936081 0.0 0.55936081 0.0 0.0 0.55936081...&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" dictRef="cc:forces" size="15"&gt;0.0 0.0.... -5.0E-8&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- final molecule. Atoms may have child properties --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;molecule id="mo19999"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.0"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:vibdisplacements"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;list&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            &lt;array dataType="xsd:double" size="3" dictRef="cc:displacement"&gt;.0 .0 0.12&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            ... 9 in total ...</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;/list&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:force"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dataType="xsd:double" size="3"&gt;0.0 0.0 0.0&lt;/array&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;property dictRef="cc:mulliken"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;scalar dataType="xsd:double"&gt;-0.628247&lt;/scalar&gt;&lt;/property&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/atom&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atom id="a2" elementType="H" x3="9.95E-8" y3="1.925E-7" z3="1.09326594"&gt;...&lt;/atom&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atom id="a3" elementType="H" x3="1.0307409799" y3="1.096E-7" z3="-0.3644220738"&gt;...&lt;/atom&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atom id="a4" elementType="H" x3="-0.5153703892" y3="-0.8926" z3="-0.3644"&gt;...&lt;/atom&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;atom id="a5" elementType="H" x3="-0.5153706902" y3="0.8926" z3="-0.3644"&gt;...&lt;/atom&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/atomArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;formula formalCharge="0" concise="C 1 H 4" dictRef="cc:formula.calc"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a2" id="a1_a2" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a3" id="a1_a3" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a4" id="a1_a4" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;bond atomRefs2="a1 a5" id="a1_a5" order="S"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">     &lt;/bondArray&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">    &lt;/molecule&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">  &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml"> &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/module&gt;</p>
+</sec>

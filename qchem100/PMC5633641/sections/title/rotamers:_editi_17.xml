@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec17" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Rotamers: editing/search rotamer space</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Amino acid side chains often have several possible conformations commonly known as rotamers. The local structure and a series of external factors (solvent related like pH or salt concentration, the presence of bound ligands or bound ions, the multimeric state of the protein, etc) will influence how often each rotamer is observed. Amino acids tend to prefer rotamers angle is near any of these three values, the rotamer is called gauche-, gauche+, or trans, respectively [
+  <a ref-type="bibr" rid="CR48" href="#CR48">48</a>]. Depending on number of rotatable bonds in the amino acid side chain, residues can have from only one rotamer (Gly, Ala) up to 81 rotamers (Lys). In Molden, rotamers are available from either the Richardson [
+  <a ref-type="bibr" rid="CR49" href="#CR49">49</a>] or the Dunbrack [
+  <a ref-type="bibr" rid="CR50" href="#CR50">50</a>] rotamer library. Molden can scan a part of a protein’s rotamer space (up to a maximum of six residues at a time). This can be instrumental in finding the lowest energy rotamer combination, after a particular residue has been mutated/substituted. The initial scoring is done via the Dfire PMF score. The best ten rotamer combinations will be remembered. The rotamer combinations can be rescored with the AMBER force field. While performing a rotamer scan, Molden will try each conformation available in the rotamer library for the residues considered in the scan, and it will search for the best rotamer by determining DFIRE PMF [
+  <a ref-type="bibr" rid="CR47" href="#CR47">47</a>] scores. Substituting a small residue by a bulky one, the surrounding residues are allowed to adopt their rotamer in order to make room for the bulky side chain. An example of the scanning of the rotamer space of a phenylalanine residue is shown in Fig. 
+  <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>a.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Fig8" class="fig">
+   <span class="label">Fig. 8</span>
+   <div class="caption">
+    <p>Protein visualisation options. 
+     <span class="bold">a</span> Three of the six rotamers of the residue phenylalanine, indicated by colours 
+     <span class="italic">blue, orange</span> and 
+     <span class="italic">green</span>. 
+     <span class="bold">b</span> PDB entry 1REI, (
+     <span class="italic">left</span>) residue Gln90 un-flipped and (
+     <span class="italic">right</span>) flipped. The un-flipped situation shows an energetically unfavourable close contact (in 
+     <span class="italic">white</span> numbers) between two hydrogens. 
+     <span class="bold">c</span> Display of electron density for PDB file 2ETE at contour level 2.0
+    </p>
+   </div>
+   <div xlink:href="10822_2017_42_Fig8_HTML" id="d29e1044" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

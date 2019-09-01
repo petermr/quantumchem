@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DFT calculations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To validate the conclusions drawn from the experimental data presented above, and to determine the role of the ADC ligand in the frontier orbitals and triplet state, DFT calculations were performed on the model complex 
+  <span class="bold">3a-Me</span>, where the 
+  <span class="italic">N</span>-propyl group on the ADC is truncated to a methyl group. All calculations were performed in the gas phase at MN15L/6-311G* for nonmetal atoms, with the SDD basis set used for Ir. The optimized geometry is 
+  <span class="italic">C</span>
+  <sub>1</sub>-symmetric with structural metrics very similar to the crystal structure (
+  <a ref-type="fig" rid="fig2" href="#fig2">Fig. 2</a>). In particular, the ADC N–C–N bond angle, which optimized to 116.75°, is intermediate between the angles of 116.1(15)° and 117.5(14)°, observed for the two crystallographically independent molecules of 
+  <span class="bold">3a</span>. 
+  <a ref-type="fig" rid="fig7" href="#fig7">Fig. 7</a> shows the computed HOMO and LUMO orbitals for 
+  <span class="bold">3a-Me</span>. The HOMO is a mixed metal–ligand orbital consisting primarily of contributions from Ir d orbitals and the phenyl rings of the cyclometalated NHC ligands, as is typical for carbene-based iridium cyclometalates.
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>,
+  <a rid="cit15" ref-type="bibr" href="#cit15">15</a> In contrast, the LUMO is almost exclusively ligand-centered, though it does involve contributions from one of the cyclometalated NHC ligands and the cyclometalated ADC ligand. A HOMO–LUMO gap of 3.50 eV was computed, consistent with the large electrochemical HOMO–LUMO gap (&gt;3 eV) observed 
+  <span class="italic">via</span> cyclic voltammetry (
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a>).
+ </p>
+ <div id="fig7" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 7</span>
+  <div class="caption">
+   <div class="title">DFT-computed HOMO and LUMO energy values and plots for the model complex 
+    <span class="bold">3a-Me</span> (isovalue = 0.03 a.u.). Calculations were performed in the gas phase at MN15L/6-311G* for nonmetal atoms, with the SDD basis set used for Ir. The structure of 
+    <span class="bold">3a-Me</span> is also shown, in the approximate orientation used for the orbital depictions.
+   </div>
+  </div>
+  <div xlink:href="c9sc01386e-f7" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to ground-state calculations in the singlet spin state, the lowest-energy triplet state was computed using unrestricted DFT. There are no major geometric differences between the singlet ground state and the triplet excited state, and the computed singlet–triplet gap of 3.20 eV is a very good match for the 
+  <span class="italic">E</span>
+  <sub>0–0</sub> value of 3.15 eV, estimated from the first maximum in the 77 K photoluminescence spectrum of 
+  <span class="bold">3a</span> (
+  <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5</a>). 
+  <a ref-type="fig" rid="fig8" href="#fig8">Fig. 8</a> shows the computed triplet spin density of 
+  <span class="bold">3a-Me</span>, with the unpaired spin density found to reside exclusively on the Ir center and one of the pmi ligands, consistent with the formulation of the T
+  <sub>1</sub> state as a mixed 
+  <span class="sup">3</span>LC/
+  <span class="sup">3</span>MLCT state. Notably, there is almost no spin density on the ADC ligand, even though the ADC is involved substantially in the LUMO. The nature of this triplet state is very similar to that of homoleptic Ir(C^C:
+  <span class="sup">NHC</span>) complexes, consistent with the observation that the photoluminescence spectra of 
+  <span class="bold">3a–c</span> are quite similar to their homoleptic analogues (see below).
+ </p>
+ <div id="fig8" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 8</span>
+  <div class="caption">
+   <div class="title">UDFT calculated triplet spin density of complex 
+    <span class="bold">3a-Me</span>. Contours are shown at an isovalue of 0.003 a.u. (blue indicates positive, green indicates negative).
+   </div>
+  </div>
+  <div xlink:href="c9sc01386e-f8" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

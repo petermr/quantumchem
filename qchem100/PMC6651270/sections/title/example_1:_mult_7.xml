@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 1: Multilevel Geometry Optimization and Excitation Spectrum</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A common starting point for a high-level quantum chemistry calculation of molecular properties is a structure optimized at a lower level of theory. For example, it is quite common to perform a single point post-Hartree–Fock calculation on a DFT-optimized structure. As also DFT optimization can be time-consuming for larger molecules it is preferable to perform a preoptimization step to define a starting geometry that is already close to the minimum. 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a> demonstrates the implementation of such a multilevel approach, with three different QM packages interoperating in a single QMflows workflow. In this example, we consider calculating the lowest excitation energies of the coumarin dye for which we perform a preoptimization with DFTB, send the resulting structure to the ADF package for further optimization with the PBE functional, and finally employ the Orca program to compute the 10 lowest electronically excited states at the equation of motion CCSD level of theory. This example demonstrates that QMflows provides the flexibility to assign each optimization task to the QM implementation that is most suitable for this task. The full code is provided in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Example S1</span> in the Supporting Information.
+ </p>
+ <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>QMflows workflow for a multilevel geometry optimization followed by an excited states calculation on the relaxed structure. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+  </div>
+  <div xlink:href="ci-2019-00384y_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

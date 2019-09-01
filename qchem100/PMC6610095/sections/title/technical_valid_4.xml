@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Technical Validation</div>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">The geometry optimization procedure of the G4MP2 calculations is performed with the B3LYP/6-31G(2df,p) condition. To validate the consistency and integrity of the molecular structures in the quantum chemical database, we compare the total energy of B3LYP/6-31G(2df,p) from the QM9-G4MP2 and the QM9 sets, denoted as 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\rm{E}}}_{B3LYP}^{QM9-G4MP2}$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+       <span class="mn">3</span>
+       <span class="mi">L</span>
+       <span class="mi">Y</span>
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+       <span class="mo">-</span>
+       <span class="mi">G</span>
+       <span class="mn">4</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41597_2019_121_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and E
+  <span class="sup">
+   <span class="italic">QM</span>9
+  </span>, respectively. Most of the geometry optimization was performed within the first few steps; therefore, this simple energy difference can quantify the subtle changes in the molecular structure. Since the total energy referred as B3LYP/6-31G(2df,p) in the QM9-G4MP2 database does not include zero-point energy, for the comparison, the reference total energy(E
+  <span class="sup">
+   <span class="italic">QM</span>9
+  </span>) is derived by subtracting the zero-point energy from the internal energy at 0 K.
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> plots the distribution of deviations between E
+  <span class="sup">
+   <span class="italic">QM</span>9
+  </span> and 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\rm{E}}}_{B3LYP}^{QM9-G4MP2}$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+       <span class="mn">3</span>
+       <span class="mi">L</span>
+       <span class="mi">Y</span>
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+       <span class="mo">-</span>
+       <span class="mi">G</span>
+       <span class="mn">4</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41597_2019_121_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. In the QM9 set, both the internal energy and ZPVE are given to six decimal places. Therefore, cases with less than 10
+  <span class="sup">−6</span> Hartree differences would be considered the same value. One possible reason our energies have discrepancies with the energies of the QM9 set is the use of different computation options (e.g., opt = diloose and int = ntultrafine) in some cases of the QM9 set to accelerate convergence. Although discordance greater than the numerical tolerance was observed, chemically meaningful differences (&gt;1 kcal/mol) were observed in only a small fraction of molecules (~0.017%).
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Histogram of the differences in total energy, 
+     <div id="IEq3" class="inline-formula">
+      <div class="alternatives">
+       <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$| {{\rm{E}}}^{QM9}\,-\,{{\rm{E}}}_{B3LYP}^{QM9-G4MP2}| $$\end{document}</span>
+       <div id="M6" class="math">
+        <span class="mo">∣</span>
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">Q</span>
+          <span class="mi">M</span>
+          <span class="mn">9</span>
+         </div>
+        </div>
+        <span width="0.10em" class="mspace"/>
+        <span class="mo">-</span>
+        <span width="0.10em" class="mspace"/>
+        <div class="msubsup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">B</span>
+          <span class="mn">3</span>
+          <span class="mi">L</span>
+          <span class="mi">Y</span>
+          <span class="mi">P</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">Q</span>
+          <span class="mi">M</span>
+          <span class="mn">9</span>
+          <span class="mo">-</span>
+          <span class="mi">G</span>
+          <span class="mn">4</span>
+          <span class="mi">M</span>
+          <span class="mi">P</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">∣</span>
+       </div>
+       <span xlink:href="41597_2019_121_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>. The green vertical line indicates 10
+     <span class="sup">−6</span>, which is the maximal number of digits that the QM9 set offers. Deviations below 10
+     <span class="sup">−6</span> Hartree error are numerically meaningless.
+    </p>
+   </div>
+   <div xlink:href="41597_2019_121_Fig1_HTML" id="d29e760" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">To quantify the structure difference, we calculate the distances of all atomic pairs across the entire molecular set. For convenience, d
+  <sub>QM9</sub> and d
+  <sub>QM9–G4MP2</sub> indicate the sets of distances between all atomic pairs present in the QM9 and the QM9-G4MP2 databases, respectively. Figure 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> depicts the correlation plot between d
+  <sub>QM9</sub> and d
+  <sub>QM9−G4MP2</sub> for the cases shorter than 2.15 Å. The specific value of 2.15 Å is the maximum distance at which a chemical bond can be formed between an atomic pair consisting of C, H, O, N, and F atoms. Therefore, Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> plots the distances of all atomic pairs that are able to form covalent bonds in the QM9 and QM9-G4MP2 structures. The solid black line (y = x line) represents the specific atomic pair where no bond distance change during geometry optimizations is observed. The points above and below the line indicate that the distances are elongated and shortened by the additional optimization, respectively. Most of the points in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> are included in the red zone, which indicates a discrepancy of less than 0.1 Å.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Correlation plot of distances of atomic pairs in the QM9 set (d
+     <sub>QM9</sub>) and the QM9-G4MP2 (d
+     <sub>QM9−G4MP2</sub>).
+    </p>
+   </div>
+   <div xlink:href="41597_2019_121_Fig2_HTML" id="d29e799" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> summarizes the geometries and indices that undergo large structure/energy changes by further relaxation. These values are divided into two sets, for changes in molecular structure larger than the criteria of 0.1 Å in bond distance in energy (black upper box) and for energy differences (red lower box) larger than the criteria of 1 kcal/mol (=1.59 mHartree).
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Molecular structures with discrepancies of more than 1 kcal/mol in total energies or more than or 0.1 Å in distances of atomic pairs between the QM9 and QM9-G4MP2 sets. The QM9 and QM9-G4MP2 structures are presented with a 50% transparent and an opaque model, respectively.</p>
+   </div>
+   <div xlink:href="41597_2019_121_Fig3_HTML" id="d29e813" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">The 20 geometries in the black box contain atomic pairs with changes larger than 0.1 Å, which correspond to the points outside the red zone in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>. None of these 20 cases involve bond formation/breaking due to the additional optimization, which means the atomic connectivity is not changed, because the criterion (2.15 Å) is long enough to cover all chemically bonded atomic pairs as well as some nonbonded ones.
+ </p>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">For all 23 cases in the red box in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>, the 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\rm{E}}}_{B3LYP}^{QM9-G4MP2}$$\end{document}</span>
+    <div id="M8" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+       <span class="mn">3</span>
+       <span class="mi">L</span>
+       <span class="mi">Y</span>
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">Q</span>
+       <span class="mi">M</span>
+       <span class="mn">9</span>
+       <span class="mo">-</span>
+       <span class="mi">G</span>
+       <span class="mn">4</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41597_2019_121_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> values are smaller than the corresponding E
+  <span class="sup">
+   <span class="italic">QM</span>9
+  </span> values. This finding means that the newly found conformations in the QM9-G4MP2 set are more stable and likely closer to the global minimum than the QM9 conformations. While the index of 117523 has the largest discrepancy of ~20 kcal/mol, all other cases show 3~5 kcal/mol energy differences. The relatively small energy difference of 3~5 kcal/mol can be sufficiently induced by conformational changes alone, even without connectivity changes. The largest deviation (20 kcal/mol) is observed for the trimolecular systems, which may have many local minima due to complex intermolecular interactions, thus introducing large deviations among conformers.
+ </p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">By definition of the GDB, every structure in the GDB set should be uniquely determined (i.e., there should be no duplicated structures in the GDB set) and should be a single molecule. In Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>, we can find two unexpected types of geometries: 1) duplicated structures and 2) multimolecular systems. The cases 53769 and 97313 contain identical chemical structures, and the case indexed 117523 contains more than one molecule in a single system.
+ </p>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">We applied chemical graph representations to both the QM9 and QM9-G4MP2 sets to count the number of duplicate structures and multimolecular systems. Herein, the nodes and edges of graphs represent atoms and chemical bonds. The edges in graphical representations (=chemical bonds) are formed only when the distance of atomic pairs is shorter than the known covalent bond length with a 15% margin
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>. Through isomorphic relations among graphs, we can determine whether chemical structures are the same. Additionally, the number of components of chemical graphs corresponds to the number of molecules in the chemical graph, and it is possible to check the identity of chemical structures.
+ </p>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">The indices of 252 duplicated systems in the QM9 and QM9-G4MP2 sets could be identified with the script named 
+  <span class="italic">count_duplicate.py</span>, and its output can be found in 
+  <span class="italic">index_duplicated_structure.txt</span>. Moreover, 229 and 227 systems in the QM9 and QM9-G4MP2 sets, respectively, include more than one molecule. This difference (229 and 227) is caused by the exclusion of the cases indexed 21725 and 87037 from QM9-G4MP2 in the graph analysis due to the abnormal termination of the G4MP2 calculations. We confirmed this analysis by parsing InChI, which distinguishes molecules using dot(.). Therefore, the presence of dot(.) means that the system consists of more than one molecule. The InChI of the QM9 set contains dots for the 229 cases with exactly the same molecules found by 
+  <span class="italic">count_duplicate.py</span>. The indices for these 229 cases are listed in 
+  <span class="italic">index_multi_mol.txt</span>.
+ </p>
+ <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">These duplicates and multimolecular structures could be caused by the automated structure generation procedure of the QM9 set. Because the initial geometries for QM9-G4MP2 geometry optimization are adopted from the QM9 set, the two types of unwanted cases mentioned above are also observed in the QM9-G4MP2 set. Although the QM9 and QM9-G4MP2 sets do not completely cover the structure of the GDB set due to inappropriate structure optimizations, the number of problematic structures is only a tiny fraction (~0.01%) of the total size (~134 k) of the database. Therefore, both databases covering large samples of small organic molecules are still valid and irreplaceable.</p>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a> represents the root-mean-square deviation (RMSD) of total energies and the corresponding AEs among computational methods invoked by G4MP2 calculations. The discrepancies among AEs are relatively smaller than those among the total energies, which means that differences arising from computational methods are decreased by the process of stoichiometric calculations. Thus, many other analyses on the QM9-G4MP2 database can be performed by parsing the outputs of 
+  <span class="italic">Gaussian 16</span>.
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Heatmaps of the root-mean-square deviation between different computational conditions for total electronic energies (in Hartree, top) and atomization energies (in kcal/mol, bottom) of the QM9-G4MP2 sets. The labels of each axis represent the computational conditions invoked by the G4MP2 calculations. The order of computational conditions is given in the order printed in the raw outputs of the G4MP2 calculations.</p>
+   </div>
+   <div xlink:href="41597_2019_121_Fig4_HTML" id="d29e915" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

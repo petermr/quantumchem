@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1. The Representation of the PES</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The intermolecular potential energy, 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">inter</span>
+  </sub>, of the two interacting molecules, CO and N
+  <sub>2</sub>, is formulated as a combination of two effective interaction components:
+ </p>
+ <div id="E1" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(1)</span>
+  <div id="M1" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">n</span>
+        <span class="mi">t</span>
+        <span class="mi">e</span>
+        <span class="mi">r</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mi">d</span>
+        <span class="mi">W</span>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">l</span>
+        <span class="mi">e</span>
+        <span class="mi">c</span>
+        <span class="mi">t</span>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">vdW</span>
+  </sub> and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elect</span>
+  </sub> represent the van der Waals (size repulsion plus dispersion-attraction) and the electrostatic interaction components, respectively. 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elect</span>
+  </sub> originates from the anisotropic molecular charge distributions of the two bodies, which asymptotically tend to the sum of the (permanent) quadrupole-(permanent) quadrupole and dipole-quadrupole interactions. Both 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">vdW</span>
+  </sub> and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elect</span>
+  </sub> depend on the distance 
+  <span class="italic">R</span> between the centers of mass of the two molecules (say 
+  <span class="italic">a</span> for CO and 
+  <span class="italic">b</span> for N
+  <sub>2</sub>), and on the Jacobi angular coordinates Θ
+  <sub>
+   <span class="italic">a</span>
+  </sub>, Θ
+  <sub>
+   <span class="italic">b</span>
+  </sub> and Φ describing the 
+  <span class="italic">a</span> − 
+  <span class="italic">b</span> mutual orientation as well (see 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). In the present work we will consider a series of limiting configurations of the interacting molecules, specifically (Θ
+  <sub>
+   <span class="italic">a</span>
+  </sub>,Θ
+  <sub>
+   <span class="italic">b</span>
+  </sub>,Φ)=(90°, 90°, 0°), (90°, 90°, 90°), (90°, 0°, 0°), (0°, 90°, 0°), (180°, 90°, 0°), (0°, 0°, 0°) and (180°, 0°, 0°), which will be referred to as H, X, T
+  <sub>
+   <span class="italic">a</span>
+  </sub>, T
+  <sub>
+   <span class="italic">b</span>1
+  </sub>, T
+  <sub>
+   <span class="italic">b</span>2
+  </sub>, I
+  <sub>1</sub> and I
+  <sub>2</sub>.
+ </p>
+ <div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>CO-N
+    <sub>2</sub> dimer with the 
+    <span class="italic">R</span>, Θ
+    <sub>
+     <span class="italic">a</span>
+    </sub>, Θ
+    <sub>
+     <span class="italic">b</span>
+    </sub>, Φ coordinates, defining the distance between the molecules and the mutual orientation, and the 
+    <span class="italic">r</span>
+    <sub>
+     <span class="italic">i</span>
+    </sub> coordinates defining the distance for all atom-atom interacting pairs.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00309-g0001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The van der Waals term, 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">vdW</span>
+  </sub> of Equation (1), is expressed as a sum of the noncovalent contributions 
+  <div class="inline-formula">
+   <div id="M2" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+      <span class="mi">d</span>
+      <span class="mi">W</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+     </div>
+    </div>
+   </div>
+  </div> as follows,
+ </p>
+ <div id="E2" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(2)</span>
+  <div id="M3" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mi">d</span>
+        <span class="mi">W</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div accentunder="false" accent="false" class="munderover">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+        </div>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mi">d</span>
+        <span class="mi">W</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> is the distance between different interaction centers of the involved molecules, which here are chosen to coincide with the constituting atoms (see 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). Accordingly, the sum of Equation (2) runs over all four atom pairs of the CO-N
+  <sub>2</sub> complex (see 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). It must be emphasized here that in the present work the bond-bond formulation is replaced by the pseudoatom-pseudoatom one in order to properly account for the variation of the anisotropy with the atom-atom distance and the polarizability consistent with the diatom (Pirani et al., 
+  <a rid="B76" ref-type="bibr" href="#B76">2019</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The explicit form of 
+  <div class="inline-formula">
+   <div id="M4" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+      <span class="mi">d</span>
+      <span class="mi">W</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+     </div>
+    </div>
+   </div>
+  </div> is obtained using the Improved Lennard-Jones (ILJ) potential function (Pirani et al., 
+  <a rid="B78" ref-type="bibr" href="#B78">2008</a>):
+ </p>
+ <div id="E3" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(3)</span>
+  <div id="M5" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">V</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">v</span>
+          <span class="mi">d</span>
+          <span class="mi">W</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">,</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">ε</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">f</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">x</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">x</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mo">-</span>
+          <span class="mn">6</span>
+         </div>
+        </div>
+        <div class="msup">
+         <div class="mrow">
+          <div class="mrow">
+           <span stretchy="true" class="mo">(</span>
+           <div class="mrow">
+            <div class="mfrac">
+             <div class="mrow">
+              <span class="mn">1</span>
+             </div>
+             <div class="mrow">
+              <div class="msub">
+               <div class="mrow">
+                <span class="mi">x</span>
+               </div>
+               <div class="mrow">
+                <span class="mi">i</span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <span stretchy="true" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">x</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">x</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">x</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mo">-</span>
+          <span class="mn">6</span>
+         </div>
+        </div>
+        <div class="msup">
+         <div class="mrow">
+          <div class="mrow">
+           <span stretchy="true" class="mo">(</span>
+           <div class="mrow">
+            <div class="mfrac">
+             <div class="mrow">
+              <span class="mn">1</span>
+             </div>
+             <div class="mrow">
+              <div class="msub">
+               <div class="mrow">
+                <span class="mi">x</span>
+               </div>
+               <div class="mrow">
+                <span class="mi">i</span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <span stretchy="true" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">]</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">x</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> is the reduced distance defined as
+ </p>
+ <div id="E4" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(4)</span>
+  <div id="M6" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">x</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">R</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">m</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">and ε and 
+  <span class="italic">R</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub> are, respectively, the well depth and position of the corresponding pair interaction. Note that the ILJ function (Pirani et al., 
+  <a rid="B78" ref-type="bibr" href="#B78">2008</a>) is more realistic than the original Lennard-Jones (12,6) one, with a much more accurate size repulsion (first term within the square brackets) and the long range dispersion attraction tail (second term within the square brackets) (Pirani et al., 
+  <a rid="B75" ref-type="bibr" href="#B75">2004</a>; Lombardi and Palazzetti, 
+  <a rid="B63" ref-type="bibr" href="#B63">2008</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The exponent 
+  <span class="italic">n</span> in Equation (3) is expressed as a function of 
+  <span class="italic">x</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> using the following empirical equation (Pirani et al., 
+  <a rid="B75" ref-type="bibr" href="#B75">2004</a>):
+ </p>
+ <div id="E5" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(5)</span>
+  <div id="M7" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">n</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">x</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">β</span>
+      <span class="mo">+</span>
+      <span class="mn">4</span>
+      <span class="mo">.</span>
+      <span class="mn">0</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">x</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">in which β is a parameter depending on the nature and the hardness of the interacting particles. For the present system, β has been set equal to 8 (a value typical of van der Waals interactions in neutral-neutral systems) for all atom-atom pairs.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The relevant ε and 
+  <span class="italic">R</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub> parameters are directly related to the molecular polarizability of the involved partners, and a zeroth-order estimate of them can be obtained from correlation formulas (Pirani et al., 
+  <a rid="B77" ref-type="bibr" href="#B77">2001</a>, 
+  <a rid="B76" ref-type="bibr" href="#B76">2019</a>; Cappelletti et al., 
+  <a rid="B20" ref-type="bibr" href="#B20">2008</a>) which exploit “effective” atomic polarizability.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this way a tentative full dimensional PES is generated and related ε and 
+  <span class="italic">R</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub> parameters can be fine-tuned by fitting experimental data and by comparing model predictions with accurate ab initio electronic structure calculations (see below).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elect</span>
+  </sub> term of Equation (1) has been formulated as a sum of Coulomb potentials as follows:
+ </p>
+ <div id="E6" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(6)</span>
+  <div id="M8" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">V</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">l</span>
+        <span class="mi">e</span>
+        <span class="mi">c</span>
+        <span class="mi">t</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mo">Θ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">a</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mo">Θ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">b</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <span class="mo">Φ</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">j</span>
+         <span class="mi">k</span>
+        </div>
+       </div>
+      </div>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">q</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">j</span>
+          <span class="mi">a</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">q</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">k</span>
+          <span class="mi">b</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">j</span>
+          <span class="mi">k</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">with 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">ja</span>
+  </sub> and 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">kb</span>
+  </sub> being point charges (located on the monomers 
+  <span class="italic">a</span> and 
+  <span class="italic">b</span>, respectively, and having values consistent with the corresponding calculated molecular dipole and quadrupoles) and 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">jk</span>
+  </sub> being the distance between them.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Such a formulation of 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elect</span>
+  </sub> must be used for cases in which the molecular dimensions are not negligible with respect to the intermolecular distance 
+  <span class="italic">R</span> (Maitland et al., 
+  <a rid="B65" ref-type="bibr" href="#B65">1987</a>). For both monomers a linear distribution of charges as that used in a previous work, see Lombardi et al. (
+  <a rid="B64" ref-type="bibr" href="#B64">2016b</a>), has been adopted, which consists of three charges placed on the atoms and on the molecule center of mass.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For charge values 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> (as well as for the corresponding position 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub>), we took for N
+  <sub>2</sub> the values reported in Lombardi et al. (
+  <a rid="B64" ref-type="bibr" href="#B64">2016b</a>) while for CO we obtained them by exploiting corresponding dipole and quadrupole moment calculations (see below) together with simple geometrical considerations (see 
+  <a ref-type="app" rid="A1" href="#A1">Appendix A</a>). A comparison of the van der Waals and electrostatic interaction contributions to the intermolecular potential energy, for the various configurations of the two interacting molecules is reported in 
+  <a ref-type="supplementary-material" rid="SM1" href="#SM1">Figure S1</a> of the Supplementary Material.
+ </p>
+</sec>

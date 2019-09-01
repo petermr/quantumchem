@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">5968443</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1021/acscentsci.7b00586</article-id>
+ <article-categories class="article-categories">
+  <div class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Automatic Differentiation in Quantum Chemistry with Applications to Fully Variational Hartree–Fock</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" id="ath1" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tamayo-Mendoza</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Teresa</span>
+   </name>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath2" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kreisbeck</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Christoph</span>
+   </name>
+   <a rid="cor1" ref-type="other" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath3" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lindh</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Roland</span>
+   </name>
+   <a rid="aff2" ref-type="aff" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">‡</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath4" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Aspuru-Guzik</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alán</span>
+   </name>
+   <a rid="cor2" ref-type="other" href="#cor2" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+   <a rid="aff4" ref-type="aff" href="#aff4" xmlns="http://www.w3.org/1999/xhtml">§</a>
+  </contrib>
+  <aff id="aff1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">†</span>Department of Chemistry and Chemical Biology, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Harvard University</span>, 12 Oxford Street, Cambridge, Massachusetts 02138, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">United States</span>
+  </aff>
+  <aff id="aff2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">‡</span>Department of Chemistry-Ångström, The Theoretical Chemistry Programme, Uppsala Center for Computational Chemistry, UC3, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Uppsala University</span>, Box 518, 751 20, Uppsala, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Sweden</span>
+  </aff>
+  <aff id="aff4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">§</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Canadian Institute for Advanced Research</span>, Toronto, Ontario M5G 1Z8, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Canada</span>
+  </aff>
+ </div>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">(C.K.) 
+   <span class="label">*</span>E-mail: 
+   <span class="email">christophkreisbeck@gmail.com</span>.
+  </div>
+  <div id="cor2" class="corresp">(AA.) 
+   <span class="label">*</span>E-mail: 
+   <span class="email">aspuru@chemistry.harvard.edu</span>.
+  </div>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">09</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">05</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+ </pub-date>
+ <pub-date pub-type="ppub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">23</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">05</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">4</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">5</span>
+ <span class="fpage" xmlns="http://www.w3.org/1999/xhtml">559</span>
+ <span class="lpage" xmlns="http://www.w3.org/1999/xhtml">566</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">06</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">12</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2017</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2018 American Chemical Society</span>
+  <span class="copyright-year">2018</span>
+  <span class="copyright-holder">American Chemical Society</span>
+  <div class="license">
+   <div class="license-p">This is an open access article published under an ACS AuthorChoice 
+    <span ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">License</span>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.
+   </div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p content-type="toc-graphic">
+   <div xlink:href="oc-2017-00586m_0004" id="ab-tgr1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p>Automatic differentiation (AD) is a powerful tool that allows calculating derivatives of implemented algorithms with respect to all of their parameters up to machine precision, without the need to explicitly add any additional functions. Thus, AD has great potential in quantum chemistry, where gradients are omnipresent but also difficult to obtain, and researchers typically spend a considerable amount of time finding suitable analytical forms when implementing derivatives. Here, we demonstrate that AD can be used to compute gradients with respect to any parameter throughout a complete quantum chemistry method. We present 
+   <span class="italic">DiffiQult</span>, a Hartree–Fock implementation, entirely differentiated with the use of AD tools. 
+   <span class="italic">DiffiQult</span> is a software package written in plain Python with minimal deviation from standard code which illustrates the capability of AD to save human effort and time in implementations of exact gradients in quantum chemistry. We leverage the obtained gradients to optimize the parameters of one-particle basis sets in the context of the floating Gaussian framework.
+  </p>
+ </div>
+ <div abstract-type="short" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+   <span class="italic">DiffiQult</span> is a Hartree−Fock plain Python implementation that computes exact gradients with respect to any input parameter using automatic differentiation, without any explicit analytical gradient.
+  </p>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">document-id-old-9</span>
+   <span class="meta-value">oc7b00586</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">document-id-new-14</span>
+   <span class="meta-value">oc-2017-00586m</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">ccc-price</span>
+   <span class="meta-value"/>
+  </div>
+ </div>
+</article-meta>

@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">RESULTS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we demonstrate a single-step QKT with tunable fractionality using quantum effects based on multiparticle bosonic interference resulting from an exchange interaction. To this end, we interfere photon number states (light pulses with definite particle number) on a BS with an adjustable splitting ratio. This leads to a multiparticle HOM effect (
+  <a rid="R18" ref-type="bibr" href="#R18">
+   <span class="italic">18</span>
+  </a>), which we observe using states with up to five photons. This QKT implementation enables constant-time quantum information processing for quantum 
+  <span class="italic">d</span>-nary (qudit) data encoding, which is set by the total number of interfering particles 
+  <span class="italic">S</span>, allowing up to 
+  <span class="italic">d</span> = 
+  <span class="italic">S</span> + 1 signal samples.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Photon number (Fock) states 
+  <div class="inline-formula">
+   <div id="m12" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">∣</span>
+      <span class="mi">l</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="msup">
+          <span class="mi">a</span>
+          <span class="mo">†</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mi">l</span>
+       </div>
+       <div class="msqrt">
+        <span class="mi">l</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">∣</span>
+      <span class="mn">0</span>
+      <span stretchy="false" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="m13" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">∣</span>
+      <span class="mi">S</span>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="msup">
+          <span class="mi">b</span>
+          <span class="mo">†</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">S</span>
+         <span class="mo">−</span>
+         <span class="mi">l</span>
+        </div>
+       </div>
+       <div class="msqrt">
+        <div class="mrow">
+         <span class="mi">S</span>
+         <span class="mo">−</span>
+         <span class="mi">l</span>
+        </div>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">∣</span>
+      <span class="mn">0</span>
+      <span stretchy="false" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> impinging on a BS exhibit a generalized HOM effect (
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1A</a>). A BS interaction between two such inputs described by annihilation operators 
+  <span class="italic">a</span> and 
+  <span class="italic">b</span> is 
+  <div class="inline-formula">
+   <div id="m14" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">U</span>
+       <span class="mtext">BS</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mtext">exp</span>
+      <span stretchy="true" class="mo">{</span>
+      <div class="mfrac">
+       <span mathvariant="normal" class="mi">θ</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <div class="msup">
+       <span class="mi">a</span>
+       <span class="mo">†</span>
+      </div>
+      <span class="mi">b</span>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <span class="mi">i</span>
+        <span mathvariant="normal" class="mi">φ</span>
+       </div>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">a</span>
+      <div class="msup">
+       <span class="mi">b</span>
+       <span class="mo">†</span>
+      </div>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span mathvariant="normal" class="mi">φ</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">)</span>
+      <span stretchy="true" class="mo">}</span>
+     </div>
+    </div>
+   </div>
+  </div>, where 
+  <div class="inline-formula">
+   <div id="m15" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">r</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <span class="mtext">sin</span>
+       <span class="mn">2</span>
+      </div>
+      <div class="mfrac">
+       <span mathvariant="normal" class="mi">θ</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the BS reflectivity (defined as the probability of reflection of a single photon) and φ is the phase difference between the reflected and transmitted fields (
+  <a rid="R19" ref-type="bibr" href="#R19">
+   <span class="italic">19</span>
+  </a>). Since φ does not influence our experiments, we assume that 
+  <div class="inline-formula">
+   <div id="m16" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">φ</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span mathvariant="normal" class="mi">π</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> for convenience. If the BS is balanced (
+  <span class="italic">r</span> = 0.5), then two photons at the input ports will leave through the same exit port. This is known as photon bunching (
+  <a rid="R7" ref-type="bibr" href="#R7">
+   <span class="italic">7</span>
+  </a>). Similar effects hold for multiphoton number states (
+  <a rid="R18" ref-type="bibr" href="#R18">
+   <span class="italic">18</span>
+  </a>). This is reflected in the probability amplitudes of detecting ∣
+  <span class="italic">k</span>〉 and ∣
+  <span class="italic">S</span> − 
+  <span class="italic">k</span>〉 behind the BS, 
+  <div class="inline-formula">
+   <div id="m17" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="script" class="mi">A</span>
+       <span class="mi">S</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">r</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">k</span>
+      <span class="mo">,</span>
+      <span class="mi">l</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <span class="mi">i</span>
+        <span mathvariant="normal" class="mi">θ</span>
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">〈</span>
+      <span class="mi">k</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span class="mo">−</span>
+      <span class="mi">k</span>
+      <span stretchy="false" class="mo">∣</span>
+      <div class="msub">
+       <span class="mi">U</span>
+       <span class="mtext">BS</span>
+      </div>
+      <span stretchy="false" class="mo">∣</span>
+      <span class="mi">l</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+      <span stretchy="false" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div>. This is important for implementing the KT, since 
+  <div class="inline-formula">
+   <div id="m18" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="script" class="mi">A</span>
+       <span class="mi">S</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">r</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">k</span>
+      <span class="mo">,</span>
+      <span class="mi">l</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <span class="mi">i</span>
+        <span mathvariant="normal" class="mi">θ</span>
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <div class="mfrac">
+         <span mathvariant="normal" class="mi">π</span>
+         <span class="mn">2</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">l</span>
+        <span class="mo">−</span>
+        <span class="mi">k</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span class="mo">·</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">k</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">r</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">l</span>
+      <span class="mo">−</span>
+      <span mathvariant="italic" class="mi">Sr</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>; thus, if we send a quantum state 
+  <div class="inline-formula">
+   <div id="m19" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Ψ</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">l</span>
+        <span class="mo">=</span>
+        <span class="mn">0</span>
+       </div>
+       <span class="mi">S</span>
+      </div>
+      <div class="msub">
+       <span class="mi">x</span>
+       <span class="mi">l</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mi">l</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> into the BS, then the probability of measuring 
+  <span class="italic">k</span> and 
+  <span class="italic">S</span> − 
+  <span class="italic">k</span> photons behind is the absolute square of a fractional QKT of the input probability amplitudes, 
+  <div class="inline-formula">
+   <div id="m20" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msub">
+         <span class="mi">X</span>
+         <span class="mi">k</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span class="mo">∑</span>
+         <div class="mrow">
+          <span class="mi">l</span>
+          <span class="mo">=</span>
+          <span class="mn">0</span>
+         </div>
+         <span class="mi">S</span>
+        </div>
+        <div class="msubsup">
+         <span mathvariant="script" class="mi">A</span>
+         <span class="mi">S</span>
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">k</span>
+        <span class="mo">,</span>
+        <span class="mi">l</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">·</span>
+        <div class="msub">
+         <span class="mi">x</span>
+         <span class="mi">l</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> (compare Eq. 2). The reflectivity 
+  <span class="italic">r</span> determines the QKT fractionality, 
+  <div class="inline-formula">
+   <div id="m21" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">α</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span mathvariant="normal" class="mi">θ</span>
+       </div>
+       <span mathvariant="normal" class="mi">π</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">4</span>
+       <span mathvariant="normal" class="mi">π</span>
+      </div>
+      <span class="mtext">arcsin</span>
+      <div class="msqrt">
+       <span class="mi">r</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. Since two-mode optical interference can be achieved in a single step, regardless of the number of photons involved, this process implements a constant time QKT. For full derivations, see the Supplementary Materials.
+ </p>
+ <div id="F1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">Photonic implementation of a fractional QKT.</div>
+   <p>(
+    <span class="bold">A</span>) HOM interference of photon number states on a variable BS, followed by two photon-counting detectors, (
+    <span class="bold">B</span>) Setup: Ti:Sa, titanium-sapphire laser pump (blue); BS, 50:50 BS; τ, optical phase delay; SPDC, periodically poled potassium titanyl phosphate nonlinear spontaneous parametric down-conversion waveguide chip that produces photon number–correlated states (red); VC, variable coupler; DAQ, data acquisition unit.
+   </p>
+  </div>
+  <div xlink:href="aau9674-F1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A deeper understanding of the result may be gained from the Schwinger representation of the spin algebra (Supplementary Materials), which links multiphoton interference to spin systems and allows the quantum states to be visualized on a Bloch sphere. In this picture, a total of 
+  <span class="italic">S</span> photons correspond to a spin-
+  <div class="inline-formula">
+   <div id="m22" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> system. The Hamiltonian generating 
+  <span class="italic">U</span>
+  <sub>BS</sub> = exp { −
+  <span class="italic">i</span>θ
+  <span class="italic">H</span>
+  <sub>BS</sub>} corresponds to an 
+  <span class="italic">S
+   <sub>x</sub>
+  </span> operator for a spin-
+  <div class="inline-formula">
+   <div id="m23" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. The two-mode Fock state ∣
+  <span class="italic">l</span>, 
+  <span class="italic">S</span> − 
+  <span class="italic">l</span>〉 corresponds to an 
+  <div class="inline-formula">
+   <div id="m24" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">S</span>
+       <span class="mi">z</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+     </div>
+    </div>
+   </div>
+  </div> eigenstate, known as a Dicke state. Hence, HOM interference may be considered a rotation 
+  <span class="italic">R</span>
+  <sub>θ, φ</sub> = exp { −
+  <span class="italic">i</span>θ
+  <span class="italic">S
+   <sub>x</sub>
+  </span>} of 
+  <span class="italic">S
+   <sub>z</sub>
+  </span> around the 
+  <span class="italic">S
+   <sub>x</sub>
+  </span> axis on the sphere. It transfers the eigenstate 
+  <div class="inline-formula">
+   <div id="m25" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">;</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> to a superposition of Dicke states (
+  <a rid="F2" ref-type="fig" href="#F2">Fig 2, A to D</a>). The Q-function in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2 (E to H)</a> shows that the initial and final states are eigenstates of two complementary observables, 
+  <span class="italic">S
+   <sub>z</sub>
+  </span> and 
+  <span class="italic">S
+   <sub>y</sub>
+  </span>, respectively. Thus, one may identify the former with a position, and the latter with a momentum eigenstate.
+ </p>
+ <div id="F2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 2</span>
+  <div class="caption">
+   <div class="title">HOM interference and QKT on a Bloch sphere.</div>
+   <p>(
+    <span class="bold">A</span> to 
+    <span class="bold">D</span>) Two-mode Fock states (blue) correspond to Dicke states (black)—the basis of spin-
+    <div class="inline-formula">
+     <div id="m26" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> states. HOM interference turns Dicke states into a superposition of them. This coincides with a rotation 
+    <span class="italic">R</span>
+    <sub>θ,ϕ</sub> in the Dicke state basis. The two most distinct cases are shown: the rotation 
+    <div class="inline-formula">
+     <div id="m27" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mi">R</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <span mathvariant="normal" class="mi">π</span>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="mfrac">
+           <span mathvariant="normal" class="mi">π</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> of the pole 
+    <div class="inline-formula">
+     <div id="m28" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">;</span>
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+        <span stretchy="true" class="mo">⟩</span>
+       </div>
+      </div>
+     </div>
+    </div> and of the great circle state 
+    <div class="inline-formula">
+     <div id="m29" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="mfrac">
+         <span class="mi">S</span>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">;</span>
+        <span class="mn">0</span>
+        <span stretchy="true" class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+    </div>. (
+    <span class="bold">E</span> to 
+    <span class="bold">H</span>) Q-function representation of (A to D). HOM interference implements a rotation on the Bloch sphere by 
+    <div class="inline-formula">
+     <div id="m30" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">θ</span>
+        <span class="mo">=</span>
+        <div class="mfrac">
+         <span mathvariant="normal" class="mi">π</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> around 
+    <span class="italic">S
+     <sub>x</sub>
+    </span> of input 
+    <span class="italic">S
+     <sub>z</sub>
+    </span>-eigenbasis Dicke states and thus the full QKT (compare Eq. 2). The sequence (
+    <span class="italic">x</span>
+    <sub>0</sub>, 
+    <span class="italic">x</span>
+    <sub>1</sub>,…, 
+    <span class="italic">x
+     <sub>S</sub>
+    </span>) is (1, 0, 0, …, 0) in (A) and (0, …, 1, …, 0) in (C). The QKT transfers the input—a position eigenstate—into the same state but in 
+    <span class="italic">S
+     <sub>y</sub>
+    </span> basis—a momentum eigenstate.
+   </p>
+  </div>
+  <div xlink:href="aau9674-F2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We depicted experimental setup for multiphoton HOM interference in 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1B</a>. Two pulsed spontaneous parametric down-conversion (SPDC) sources each generated two-mode photon number–correlated states (Supplementary Materials). The signal and idler were separated with a polarization BS (PBS) into four spatial modes. The modes 
+  <span class="italic">A</span> and 
+  <span class="italic">D</span> were used for heralding and creation of Fock states ∣
+  <span class="italic">l</span>〉 in 
+  <span class="italic">B</span> and ∣
+  <span class="italic">S</span> − 
+  <span class="italic">l</span>〉 in 
+  <span class="italic">C</span>, which interfered in a variable ratio fiber coupler (the BS). An optical phase delay τ in one of the pump beams ensured optimal temporal overlap at interference. Photon number–resolved measurements were achieved using transition edge sensors (TESs) that we previously estimated to achieve over 90% efficiency (
+  <a rid="R20" ref-type="bibr" href="#R20">
+   <span class="italic">20</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We interfered the vacuum ∣0〉 (
+  <span class="italic">l</span> = 0) with multiphoton Fock states ∣
+  <span class="italic">S</span>〉 (
+  <span class="italic">S</span> − 
+  <span class="italic">l</span> = 
+  <span class="italic">S</span>) on a coupler with splitting ratios 
+  <span class="italic">r</span> = 0.05 (green), 0.2 (red), 0.5 (blue), and 0.95 (gray) and measured photon number statistics. They are depicted in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3 (A to C)</a> for 
+  <span class="italic">S</span> = 3, 4, 5. The input states encode sequences (
+  <span class="italic">x</span>
+  <sub>0</sub> = 1, 
+  <span class="italic">x</span>
+  <sub>1</sub> = 0,…, 
+  <span class="italic">x
+   <sub>S</sub>
+  </span> = 0), while the measured probabilities set their QKTs to (∣
+  <span class="italic">X</span>
+  <sub>0</sub>∣
+  <span class="sup">2</span>, ∣
+  <span class="italic">X</span>
+  <sub>1</sub>∣
+  <span class="sup">2</span>, …, ∣
+  <span class="italic">X
+   <sub>S</sub>
+  </span>∣
+  <span class="sup">2</span>), where 
+  <div class="inline-formula">
+   <div id="m31" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msub">
+         <span class="mi">X</span>
+         <span class="mi">k</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="script" class="mi">A</span>
+         <span class="mi">S</span>
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">k</span>
+        <span class="mo">,</span>
+        <span class="mn">0</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. The reflectivities used correspond to fractionalities α = 0.28, 0.60, 1.00, and 1.72. Errors were estimated as a square root inverse of the number of measurements (Supplementary Materials). The second-order interferometric visibility reached values between 71.4 and 98.6% for 
+  <span class="italic">S</span> = 5 (Supplementary Materials).
+ </p>
+ <div id="F3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">Photon number statistics resulting from Fock state |
+    <span class="italic">l</span>, 
+    <span class="italic">S − l</span>〉 interference.
+   </div>
+   <p>The probabilities of detecting ∣
+    <span class="italic">k</span>〉 and ∣
+    <span class="italic">S</span> − 
+    <span class="italic">k</span>〉 photons behind the BS for input (
+    <span class="bold">A</span>) ∣0,3〉, (
+    <span class="bold">B</span>) ∣0,4〉, (
+    <span class="bold">C</span>) ∣0,5〉, (
+    <span class="bold">D</span>) ∣1,2〉, (
+    <span class="bold">E</span>) ∣2,2〉, and (
+    <span class="bold">F</span>) ∣2,3〉. The BS reflectivities are 
+    <span class="italic">r</span> = 0.05 (green), 0.2 (red), 0.5 (blue), and 0.95 (gray). Vertical bars represent theoretical values for an ideal system, while dots are values determined in experiment. The states in (A) to (C) encode sequences (
+    <span class="italic">x</span>
+    <sub>0</sub> = 1, 
+    <span class="italic">x</span>
+    <sub>1</sub> = 0, …, 
+    <span class="italic">x
+     <sub>S</sub>
+    </span> = 0), and states in (D) to (F) encode (0, 1, 0, 0), (0, 0, 1, 0, 0), and (0, 0, 1, 0, 0, 0), respectively. The measured probabilities set their QKTs (∣
+    <span class="italic">X</span>
+    <sub>0</sub>∣
+    <span class="sup">2</span>, ∣
+    <span class="italic">X</span>
+    <sub>1</sub>∣
+    <span class="sup">2</span>, …, ∣
+    <span class="italic">X
+     <sub>S</sub>
+    </span>∣
+    <span class="sup">2</span>), 
+    <div class="inline-formula">
+     <div id="m32" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span stretchy="false" class="mo">∣</span>
+          <div class="msub">
+           <span class="mi">X</span>
+           <span class="mi">k</span>
+          </div>
+          <span stretchy="false" class="mo">∣</span>
+         </div>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">=</span>
+        <div class="msup">
+         <div class="mrow">
+          <span stretchy="false" class="mo">∣</span>
+          <div class="msubsup">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">l</span>
+            <span class="mo">=</span>
+            <span class="mn">0</span>
+           </div>
+           <span class="mi">S</span>
+          </div>
+          <div class="msubsup">
+           <span mathvariant="script" class="mi">A</span>
+           <span class="mi">S</span>
+           <div class="mrow">
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">r</span>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">k</span>
+          <span class="mo">,</span>
+          <span class="mi">l</span>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">·</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mi">l</span>
+          </div>
+          <span stretchy="false" class="mo">∣</span>
+         </div>
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> of fractionality α = 0.28 (green), 0.60 (red), 1.00 (blue), and 1.72 (gray).
+   </p>
+  </div>
+  <div xlink:href="aau9674-F3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the same values of 
+  <span class="italic">r</span>, we measured photon number distribution resulting from interference of ∣1,2〉, ∣2,2〉, and ∣2,3〉. They are shown in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3 (D to F)</a>. The inputs encode (0, 1, 0, 0), (0, 0, 1, 0, 0), and (0, 0, 1, 0, 0, 0), while 
+  <div class="inline-formula">
+   <div id="m33" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msub">
+         <span class="mi">X</span>
+         <span class="mi">k</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="script" class="mi">A</span>
+         <span class="mn">3</span>
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">k</span>
+        <span class="mo">,</span>
+        <span class="mn">1</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="m34" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="script" class="mi">A</span>
+         <span class="mn">4</span>
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">k</span>
+        <span class="mo">,</span>
+        <span class="mn">2</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, and 
+  <div class="inline-formula">
+   <div id="m35" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="script" class="mi">A</span>
+         <span class="mn">5</span>
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">k</span>
+        <span class="mo">,</span>
+        <span class="mn">2</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. The visibility was between 54.8 and 99.5% (
+  <span class="italic">S</span> = 5) (Supplementary Materials). 
+  <a rid="F3" ref-type="fig" href="#F3">Figure 3</a> shows that the theoretical values computed for an ideal system (the bars) match the experimental results (the dots) well.
+ </p>
+</sec>

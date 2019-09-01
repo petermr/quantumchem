@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec20" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ambfor and Ambmd: protein geometry optimisation and protein dynamics</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Ambfor was designed as an energy minimisation tool and Ambmd as a stand-alone Molecular Dynamics program. Both programs were developed to be run from within the Molden interface and their output can be visualised in real time in Molden. For small molecules the GAFF [
+  <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] force field is used and for proteins the AMBER force field [
+  <a ref-type="bibr" rid="CR44" href="#CR44">44</a>]. Both force fields can be used together so that proteins and their ligand(s) can be optimised simultaneously. A parallelised version for both programs was developed with the help of the Message Passing Interface (MPI) library [
+  <a ref-type="bibr" rid="CR54" href="#CR54">54</a>]. Ambfor makes use of the limited memory BFGS method [
+  <a ref-type="bibr" rid="CR55" href="#CR55">55</a>] for optimisation of proteins. For small molecule optimisation a Powell-Beale conjugate gradient method is employed [
+  <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. Both Ambfor and Ambmd use a damped shifted force protocol [
+  <a ref-type="bibr" rid="CR56" href="#CR56">56</a>] that greatly reduces the number of pairwise interactions that have to be calculated. The Berendsen thermostat [
+  <a ref-type="bibr" rid="CR57" href="#CR57">57</a>] is used to keep MD simulations at a constant temperature by scaling the velocities of the particles. By default the ff99sb extension of AMBER version 99 [
+  <a ref-type="bibr" rid="CR58" href="#CR58">58</a>] is used. All other commonly used MD facilities such as placing the molecule in a water box, boundary conditions, temperature and run time selection, etc., have been implemented too. Energy minimisations and molecular dynamics simulations require that all molecules are chemically correct, which often requires that all hydrogens, and sometimes also some protein side chain C-, O-, and N-atoms are added.
+ </p>
+</sec>

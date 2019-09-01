@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Lanthanide complexes, as is well known, have a wide range of high technology applications. Of particular importance is the discovery that, due to their slow magnetization relaxation, lanthanide mononuclear complexes may function as single-molecule magnets 
+  <a rid="pone.0086376-Ishikawa1" ref-type="bibr" href="#pone.0086376-Ishikawa1">[1]</a>, 
+  <a rid="pone.0086376-Zhang1" ref-type="bibr" href="#pone.0086376-Zhang1">[2]</a>, the ultimate size limit for spin-based devices. Dysprosium complexes, in particular, will be very important in the development of magnetic materials because of recent results leading to the highest relaxation energy barriers for multinuclear clusters 
+  <a rid="pone.0086376-Ishikawa2" ref-type="bibr" href="#pone.0086376-Ishikawa2">[3]</a>, 
+  <a rid="pone.0086376-AlDamen1" ref-type="bibr" href="#pone.0086376-AlDamen1">[4]</a>, the highest temperature at which hysteresis has been observed for any single complex 
+  <a rid="pone.0086376-Lin1" ref-type="bibr" href="#pone.0086376-Lin1">[5]</a>, and a record magnetic blocking temperature of 8.3 K at a sweep rate of 0.08 Ts-1 
+  <a rid="pone.0086376-Rinehart1" ref-type="bibr" href="#pone.0086376-Rinehart1">[6]</a>. Future research, for example, might be directed towards the design of dysprosium complexes that may operate as single-molecule magnets capable of preserving their magnetization at higher and more practical temperatures 
+  <a rid="pone.0086376-Rinehart1" ref-type="bibr" href="#pone.0086376-Rinehart1">[6]</a>. Dysprosium complexes are therefore promising for optical storage and memory.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Not only that, both dysprosium and holmium complexes can also effectively function in magnetic resonance imaging, MRI, as negative contrast agents at high magnetic fields, producing darker images, and as agents for susceptibility-induced enhancement at low magnetic fields 
+  <a rid="pone.0086376-Norek1" ref-type="bibr" href="#pone.0086376-Norek1">[7]</a>. Indeed, they are complementary to gadolinium complexes, which act as positive contrast agents, which brighten the image. Indeed, through the simultaneous applications of gadolinium and dysprosium based contrast agents to the MRI diagnosis of conditions such as ischemic heart disease, unprecedented details can now be revealed 
+  <a rid="pone.0086376-Nilsson1" ref-type="bibr" href="#pone.0086376-Nilsson1">[8]</a>, 
+  <a rid="pone.0086376-Wikstrm1" ref-type="bibr" href="#pone.0086376-Wikstrm1">[9]</a>. Future efforts will likely be intensified towards the design of such MRI contrast agents for the imaging of cellular molecular events involved in normal and pathological processes, including site specific macromolecular and particulate delivery systems 
+  <a rid="pone.0086376-Norek1" ref-type="bibr" href="#pone.0086376-Norek1">[7]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Holmium is also employed in cancer therapeutics due to the characteristics of its 
+  <span class="sup">166</span>Ho isotope and of its complexes, like 166Ho-DOTMP which has been used in combination with chemotherapy in the treatment of myeloma because it concentrates in metastases of the skeleton and irradiates bone marrow 
+  <a rid="pone.0086376-Bayouth1" ref-type="bibr" href="#pone.0086376-Bayouth1">[10]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Erbium (III) luminesces at 1.55 µm, essentially at the center of the third telecommunication window at 1.540 nm. Hence, erbium has been used in long-distance optical transmissions, power amplifiers, repeaters, etc. However, inorganic materials doped with erbium, display a very narrow full width at half maximum 
+  <a rid="pone.0086376-Sun1" ref-type="bibr" href="#pone.0086376-Sun1">[11]</a>. In order to increase the band width, erbium complexes have been used in order to both protect the erbium ion from vibrational coupling, at the same time enhancing the absorption of light through the so-called antenna effect. Indeed, erbium complexes have been prepared that exhibit a much broader full width at half maximum of 68 nm 
+  <a rid="pone.0086376-Park1" ref-type="bibr" href="#pone.0086376-Park1">[12]</a>, a significant broadening when compared to erbium implanted silica which has a typical value of 11 nm for its most intense peak.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Thus, the design of lanthanide complexes towards enhancement of the property of interest, while seeking to avoid eventual side effects to the health of the subject (where applicable) is an active area of research, which may largely benefit from quantum chemical tools that attempt to predict several of the physical, chemical and even pharmacological 
+  <a rid="pone.0086376-Peter1" ref-type="bibr" href="#pone.0086376-Peter1">[13]</a> properties of the conjectural new structures being considered; structures which might be sketched by assembling around the lanthanide ion, ligands, selected from a library of ligands in a combinatorial manner. And the most important information, from which essentially all quantum chemical property predictions derive, is an accurate geometry of the molecular structure of the complex.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Predictions of geometries of lanthanide complexes from ab initio calculations are not so easy due not only to significant relativistic effects, a consequence of their high atomic numbers, but also to the complex manifold of microstates due, not only to a partially filled f-shell, but also from possibly partially filled 5 d 6 s and 6 p shells 
+  <a rid="pone.0086376-Dolg1" ref-type="bibr" href="#pone.0086376-Dolg1">[14]</a>. Therefore, full geometry optimizations from such first principles calculations are essentially unfeasible for the technologically useful complexes, which usually exhibit sizes of the order of 100 atoms or more. As a consequence, effective core potentials arise as a practical and very efficient manner of circumventing the complexity, while retaining important characteristics of 
+  <span class="italic">ab initio</span> calculations. Of these, the most widely used are the relativistic pseudopotentials of Dolg 
+  <a rid="pone.0086376-Dolg2" ref-type="bibr" href="#pone.0086376-Dolg2">[15]</a>, 
+  <a rid="pone.0086376-Dolg3" ref-type="bibr" href="#pone.0086376-Dolg3">[16]</a> which represent an excellent compromise between accuracy and usage of computational resources, mainly computing time. So far, the most thorough study of the geometry prediction accuracy of these relativistic potentials has been carried out by our research group in 2006 when full geometry optimizations were carried out on 52 different lanthanide complexes, including complexes of dysprosium (III), holmium (III) and erbium (III). 
+  <a rid="pone.0086376-Freire1" ref-type="bibr" href="#pone.0086376-Freire1">[17]</a> The counterintuitive results obtained indicated that the best combination of method with basis set when using the MWB pseudopotential was RHF/STO-3G when the intent of the calculation was to predict the geometry of the coordination polyhedron – very important for any subsequent ligand field application. Moreover, either increasing the basis set, or adding electron correlation, only worsened the quality of the resulting coordination polyhedron. On the other hand, although the quality of the obtained coordination polyhedron via RH/STO-3G was very good, that could not be said of the geometry of the attached organic ligands.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In 1994, we introduced the Sparkle Model for the calculation of lanthanide complexes 
+  <a rid="pone.0086376-deAndrade1" ref-type="bibr" href="#pone.0086376-deAndrade1">[18]</a>, 
+  <a rid="pone.0086376-deAndrade2" ref-type="bibr" href="#pone.0086376-deAndrade2">[19]</a>, a semiempirical model within the framework of the AM1 semiempirical model 
+  <a rid="pone.0086376-Dewar1" ref-type="bibr" href="#pone.0086376-Dewar1">[20]</a>, which replaced the lanthanide ion by a +3
+  <span class="italic">e</span> charge, with the corresponding Coulomb field superimposed to a repulsive potential of the form exp(-αr), with α being a parameter designed to somewhat delineate the size of the lanthanide ion, preventing the implosion of the ligands towards it. A very useful method of obtaining absorption spectra of lanthanide complexes was subsequently published 
+  <a rid="pone.0086376-Andrade1" ref-type="bibr" href="#pone.0086376-Andrade1">[21]</a>. Later 
+  <a rid="pone.0086376-Rocha1" ref-type="bibr" href="#pone.0086376-Rocha1">[22]</a>, Gaussians were added to the core-core repulsion of the sparkle-ligand atom to make the Sparkle Model more consistent with the AM1. In 2005, based on a parameterization scheme employed for europium, gadolinium and terbium 
+  <a rid="pone.0086376-Freire2" ref-type="bibr" href="#pone.0086376-Freire2">[23]</a>, the first useful and accurate semiempirical model for dysprosium was defined 
+  <a rid="pone.0086376-daCosta1" ref-type="bibr" href="#pone.0086376-daCosta1">[24]</a>, followed by holmium 
+  <a rid="pone.0086376-daCosta2" ref-type="bibr" href="#pone.0086376-daCosta2">[25]</a>; and in 2006 for erbium 
+  <a rid="pone.0086376-Freire3" ref-type="bibr" href="#pone.0086376-Freire3">[26]</a>. These models were defined for AM1, and became later available in MOPAC2007 
+  <a rid="pone.0086376-Stewart1" ref-type="bibr" href="#pone.0086376-Stewart1">[27]</a>, the overall model being called Sparkle/AM1. So far, most applications of the Sparkle Model are related to luminescence research 
+  <a rid="pone.0086376-Faustino1" ref-type="bibr" href="#pone.0086376-Faustino1">[28]</a>–
+  <a rid="pone.0086376-Faustino2" ref-type="bibr" href="#pone.0086376-Faustino2">[30]</a>. But since different semiempirical models possess different accuracies and eventually develop particular niches of applications, it soon became a necessity to extend the Sparkle Model to others, giving rise to Sparkle/PM3 
+  <a rid="pone.0086376-Simas1" ref-type="bibr" href="#pone.0086376-Simas1">[31]</a>, 
+  <a rid="pone.0086376-Freire5" ref-type="bibr" href="#pone.0086376-Freire5">[32]</a>, Sparkle/PM6 
+  <a rid="pone.0086376-Freire6" ref-type="bibr" href="#pone.0086376-Freire6">[33]</a>, Sparkle/PM7 
+  <a rid="pone.0086376-Dutra1" ref-type="bibr" href="#pone.0086376-Dutra1">[34]</a>, targeted to solids, and Sparkle/RM1 
+  <a rid="pone.0086376-Filho1" ref-type="bibr" href="#pone.0086376-Filho1">[35]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">However, none of the above mentioned Sparkle Models attaches semiempirical atomic orbitals to the lanthanide ion. Nevertheless, these models are all very accurate to describe lanthanide-ligand atom distances when the coordinating atom of the ligands is another lanthanide, oxygen or nitrogen. By moving towards other types of lanthanide-ligand atom bonds, however, the accuracy of the Sparkle Models starts to wane. All that points out to the fact that there is some degree of overlap between the orbitals of the lanthanide and those of the coordinating atoms – in short, there is a degree of covalence not taken into account by the Sparkle Model.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this article, in order to considerably broaden the range of applications of semiempirical methods for lanthanide complexes, we introduce a new model with orbitals for the lanthanide trications of dysprosium, holmium, and erbium, within RM1 
+  <a rid="pone.0086376-Rocha2" ref-type="bibr" href="#pone.0086376-Rocha2">[36]</a>, which we call simply RM1 model for the lanthanides, a significantly more general model, not to be confused with Sparkle/RM1 
+  <a rid="pone.0086376-Filho1" ref-type="bibr" href="#pone.0086376-Filho1">[35]</a> which does not have orbitals associated with the lanthanide ion.
+ </p>
+</sec>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular cartesian coordinates in the QM7b and AlphaML showcase databases</div>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">The molecular geometries for all 7,211 species in the QM7b database
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span> were obtained online 
+  <span class="italic">via</span> the quantum-machine.org website
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>. All QM7b molecular geometries were first translated to their respective center of nuclear (ionic) charge, to remove the origin-dependence of the higher-order (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., quadrupole) multipole moments. Using farthest-point sampling (FPS)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>, all molecules were then reordered using a kernel-based similarity measure
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>, and relabelled accordingly from molecule0001 to molecule7211 (again padded to four digits with leading zeros). For consistency with the QM7b database, all 52 molecules in the AlphaML showcase database (see Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>) were optimized with DFT using the PBE functional
+  <span class="sup">
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span> and a converged numerical atom-centered basis (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., tight settings with the tier-2 basis set in FHI-AIMS)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+  </span>. All AlphaML showcase molecules were also translated to their respective center of nuclear (ionic) charge, and are labelled from showcase0001 to showcase0052, as depicted in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. All 7,263 structures are available on Materials Cloud
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>, according to the format described below in the 
+  <span class="italic">Data Records</span> section.
+ </p>
+</sec>

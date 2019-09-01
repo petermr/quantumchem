@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec16" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of Fig. 2</div>
+ <p id="Par31" xmlns="http://www.w3.org/1999/xhtml">Parsing the raw list of all assigned lines, the corresponding raw spectra were loaded and normalised. They were then added to the scalable vector graphics (SVG) file, using the rotational quantum number in the ground state as a vertical offset. Therefore, the peak heights do not scale with the absolute intensity, when comparing different scans. For some rotational levels, different lines were used to select the rotational quantum state. Owing to the different overlaps associated with these lines, only the peaks that belong to the targeted rotational state reproduce. In a second round, windows around the assigned line positions were selected from each raw spectrum. These were redrawn with a colourised background to highlight the assigned peak. To achieve a clearer presentation, a few peaks were manually rescaled and the colorized ranges were slightly readjusted when arranging and formatting the final Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>. For the corresponding level diagram in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>, we used the simulation based on the fitted molecular constants. At the scale employed, this does not affect the position of the data points, but improves clarity by extrapolating points missing within the experimental dataset. To further clarify the level repulsion, the levels were plotted as relative wavenumber 
+  <div id="IEq134" class="inline-formula">
+   <div class="alternatives">
+    <span id="M267" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tilde \nu _{{\mathrm{relative}}} = \tilde \nu _{{\mathrm{absolute}}} - 38,000\,{\mathrm{cm}}^{ - 1} - B_{O1}J(J + 1)$$\end{document}</span>
+    <div id="M268" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <span class="mo">~</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">relative</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <span class="mo">~</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">absolute</span>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <span class="mn">38</span>
+     <span class="mo">,</span>
+     <span class="mn">000</span>
+     <span width="0.25em" class="mspace"/>
+     <div class="msup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">cm</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">B</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">O</span>
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <span class="mi">J</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">J</span>
+       <span class="mo">+</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq134.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> where 
+  <span class="italic">B</span>
+  <sub>
+   <span class="italic">O</span>1
+  </sub> is the rotational constant of the 
+  <span class="italic">O</span>1 state as reported in Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>. Therefore, the relative values are referenced against an unperturbed, harmonic version of 
+  <span class="italic">O</span>1.
+ </p>
+</sec>

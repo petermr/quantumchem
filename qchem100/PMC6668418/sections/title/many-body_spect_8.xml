@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Many-body spectral calculations</div>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">The theoretical methodology and parametrization employed in this work are described in detail in 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Methods</a>. Our many-body formalism can in principle be combined with an ab initio treatment of the full band structure of TMDCs. For the results presented here, we instead used the two-band model introduced by Xiao et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span>, which through parametrizations against first-principles calculations allows to realistically account for the band structure in the 
+  <span class="italic">K</span> and 
+  <span class="italic">K</span>′ valleys at arbitrary sampling resolution. The Brillouin zone was discretized using a Monkhorst–Pack grid, while a truncation radius was imposed around the 
+  <span class="italic">K</span> and 
+  <span class="italic">K</span>′ points. Excitons and trions are described using the Bethe–Salpeter equation and its generalization to three-body systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>. The dielectric screening appearing in the Coulomb interaction term was taken to be of analytical form, 
+  <span class="italic">ε</span>(
+  <span class="italic">q</span>) = 1 + 2
+  <span class="italic">πχ</span>
+  <sub>2D</sub>
+  <span class="italic">q</span>, with the two-dimensional polarizability parametrized against first-principles calculations. Linear spectra were calculated using Fermi’s Golden Rule, while 2D spectra were obtained through its extension to higher dimensions.
+ </p>
+</sec>

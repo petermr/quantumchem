@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Gaussian Process Calibration Using Reaction Fingerprints</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We calibrate biochemical redox potentials 
+  <span class="italic">E</span>′°(pH = 7) obtained from quantum chemical simulations against available experimental data to correct for systematic errors in our simulations and the cheminformatic p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates. One simple strategy of calibration of energy values would be to use a two-parameter linear regression. We note that our group has successfully employed this in the context of compounds for redox flow battery applications.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref66" href="#ref66">66</a>−
+   <a ref-type="bibr" rid="ref71" href="#ref71">71</a>
+  </span> Here, we make use of the information provided by the difference between the structural similarity of products and substrates and utilize a GP regression approach with reaction fingerprints to calibrate redox potential energies. For our calibrations with Gaussian process regression we used GPMol, a Python library based on GPflow,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref72" href="#ref72">72</a>
+  </span> which in turn is a package for building Gaussian process models using TensorFlow.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">GP regression relies on a similarity or distance metric between data points. To construct the notion of similarity between reactions, we utilize reaction fingerprints.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> Several possible choices of kernel function and distance measure between molecules and reactions exist. Generally, the distance measures between molecules and reactions make use of fingerprint representations of compounds, which encode the structure of a molecule in a binary vector form.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+  </span> Although several varieties of reaction fingerprints exist, we tested our approach on the Morgan2 and AP3 (atom pair) reaction FPs of Schneider et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> and obtain them from the difference of fingerprint vectors of products and substrates. We find that in the context of Gaussian processes for biochemical redox potential predictions Morgan fingerprints outperform AP3 fingerprints by approximately 5–4 mV. The Gaussian processes’ predictive power comes from learning relationships between relative distances in feature space, so it might be the case that for distance-based ML algorithms Morgan fingerprints are better. However, we note that we did not incorporate the usage of any agent to the weighting scheme, so doing so might change the results. Additional performance metrics for comparison can be seen in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">One key ability of Morgan fingerprints is that we can invert the bits back to a corresponding molecular substructure to perform our structure–energy analysis. For each molecule, we generate a counted Morgan fingerprint,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+  </span> a fixed-length counted vector indicating the absence (zeros) or counted presence (positive) of a particular graph–connectivity–environment. Each environment captures the local topological information on a molecule by mapping the local vicinity of connected atoms, along with their formal charges, type of chemical bond, and its position relative to a cyclic structure. Our Morgan fingerprints are constructed from 2048 length-vectors using a radius of 6 and are reduced to a lower dimension (∼200) using a gradient boosted tree. We find that the prediction accuracy did not improve significantly upon using Morgan fingerprints with a larger radius. When we consider the difference of two Morgan fingerprints, we are looking at the subtraction and addition of molecular environments between two molecules. We expect that similar molecular transformations will have similar changes in molecular environments. When these vectors are normalized, the inner product between two reaction fingerprints 
+  <span class="italic">x</span>
+  <sub>1</sub> and 
+  <span class="italic">x</span>
+  <sub>2</sub> is the cosine distance,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref74" href="#ref74">74</a>
+  </span> which is a measure of similarity between two vectors. This notion is adapted in the field of Gaussian processes to quantify the similarity between reactions in GP regression.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Predictions obtained from GPs can be interpreted as weighted averages of the training data, where the weights are probabilistic in nature. GPs are distinct because of their associated covariance functions (i.e., the kernel).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> The equation below shows that the kernel we employ is a mixture of a squared exponential kernel and a noise kernel, which increases the robustness of the model.
+  <div id="ueq2" class="disp-formula">
+   <div xlink:href="oc-2019-002977_m002" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Here, 
+  <span class="italic">K</span> is the kernel function, 
+  <span class="italic">σ</span>
+  <sub>rxn</sub> is the variance of the reaction fingerprint kernel, 
+  <span class="italic">l</span> is the length scale parameter, and 
+  <span class="italic">σ</span>
+  <sub>noise</sub> is the white noise variance parameter.
+ </p>
+</sec>

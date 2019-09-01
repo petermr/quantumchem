@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="sec001" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Schistosomiasis is a neglected disease caused by the parasitic trematode 
+  <span class="italic">Schistosoma</span>. Reported in over 70 tropical and subtropical countries or territories, schistosomiasis is known to affect approximately 240 million people, and more than 700 people live in endemic areas [
+  <a rid="pone.0198476.ref001" ref-type="bibr" href="#pone.0198476.ref001">1</a>]. Infection is prevalent in poorer communities throughout tropical and subtropical areas. Praziquantel, the only drug available to control the disease, was developed in the 1970s and has been shown to be ineffective against the larval stage of the parasite, with concerns about drug resistance. The search for new drugs, mainly from natural resources [
+  <a rid="pone.0198476.ref002" ref-type="bibr" href="#pone.0198476.ref002">2</a>–
+  <a rid="pone.0198476.ref003" ref-type="bibr" href="#pone.0198476.ref003">3</a>], is therefore of interest.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The interdisciplinary study of neglected diseases and medicinal chemistry is a new area of research that involves the rational planning, evaluation, and synthesis of new drugs in addition to the interpretation of their mode of action at the molecular level and the determination of biological effects arising from their molecular structures [
+  <a rid="pone.0198476.ref004" ref-type="bibr" href="#pone.0198476.ref004">4</a>]. To complement this area of study, computational quantum chemistry has developed new tools to enable modeling and molecular dynamics studies that simulate biological tests and create new possibilities for drug models, without the need for solvent and reagent wastage [
+  <a rid="pone.0198476.ref005" ref-type="bibr" href="#pone.0198476.ref005">5</a>–
+  <a rid="pone.0198476.ref009" ref-type="bibr" href="#pone.0198476.ref009">9</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molecular docking is widely used to predict protein-ligand complexes and to screen large libraries for molecules that will modulate the activity of a biological receptor. Molecular docking remains an important tool for structure-based screening to find new ligands and chemical probes, it has enriched hit-rates and often confirming the predicted geometries of the docked complex [
+  <a rid="pone.0198476.ref010" ref-type="bibr" href="#pone.0198476.ref010">10</a>–
+  <a rid="pone.0198476.ref011" ref-type="bibr" href="#pone.0198476.ref011">11</a>]. The importance of optimizing the absorption, distribution, metabolism, excretion, and toxicity (ADMET) properties of compounds in addition to pharmacology increase drug discovery success. This sufficiently acceptable toxicity properties to success through the of human Phase I clinical trials. Intrinsic properties of the molecules and it is responsibility of the medicinal chemistry to optimize not only the pharmacological properties but also the drug-like properties of these molecules [
+  <a rid="pone.0198476.ref012" ref-type="bibr" href="#pone.0198476.ref012">12</a>–
+  <a rid="pone.0198476.ref013" ref-type="bibr" href="#pone.0198476.ref013">13</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Among the candidates for new drugs are the imidazole alkaloids present in the species 
+  <span class="italic">Pilocarpus microphyllus</span> Stapf ex Holm. (Rutaceae), which have been noted in the literature for their pharmacological action against schistosomiasis [
+  <a rid="pone.0198476.ref014" ref-type="bibr" href="#pone.0198476.ref014">14</a>–
+  <a rid="pone.0198476.ref017" ref-type="bibr" href="#pone.0198476.ref017">17</a>]. However, little is known about their mode of action. These alkaloids, which are secondary metabolites found mainly in plants, mainly function as a defense against predators and pathogens.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Of the 
+  <span class="italic">P</span>. 
+  <span class="italic">microphyllus</span> alkaloids used in this study, epiisopiloturine (EPI) is the best characterized. EPI was identified in the 1970s [
+  <a rid="pone.0198476.ref018" ref-type="bibr" href="#pone.0198476.ref018">18</a>] and its subsequent isolation and chemical characterization revealed strong pharmacological potency against 
+  <span class="italic">S</span>. 
+  <span class="italic">mansoni</span> [
+  <a rid="pone.0198476.ref017" ref-type="bibr" href="#pone.0198476.ref017">17</a>,
+  <a rid="pone.0198476.ref019" ref-type="bibr" href="#pone.0198476.ref019">19</a>,
+  <a rid="pone.0198476.ref020" ref-type="bibr" href="#pone.0198476.ref020">20</a>–
+  <a rid="pone.0198476.ref021" ref-type="bibr" href="#pone.0198476.ref021">21</a>]. Other biological functions have been described, including anti-inflammatory, anti-contraceptive [
+  <a rid="pone.0198476.ref022" ref-type="bibr" href="#pone.0198476.ref022">22</a>], and gastro-protective effects [
+  <a rid="pone.0198476.ref023" ref-type="bibr" href="#pone.0198476.ref023">23</a>]. The pharmacological action of epiisopilosine (EPIIS) and isopilosine (ISOP) against 
+  <span class="italic">S</span>. 
+  <span class="italic">mansoni</span> has also been described [
+  <a rid="pone.0198476.ref016" ref-type="bibr" href="#pone.0198476.ref016">16</a>]. Macaubine (MAC) is the only alkaloid to show no effect against schistosomiasis [
+  <a rid="pone.0198476.ref016" ref-type="bibr" href="#pone.0198476.ref016">16</a>], although pilosine (PILO) has not yet been tested.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Among these alkaloids in this study, little is known about their mechanism of action against 
+  <span class="italic">S</span>. 
+  <span class="italic">mansoni</span>; how these molecules interact with the possible enzymes of the worm, which pharmacological reactions are triggered; and how their chemical structures provide effective biological activity against this disease. As there is only a single drug used for treatment, with a high concern about associated resistance, we were motivated to apply the potential of computational quantum chemistry to the problem of this neglected disease. Thus, the main objective of the paper is to perform a theoretical study, in density functional theory (DFT) level, with geometry, electronic, and vibrational properties, molecular docking and absorption, distribution, metabolization, excretion, and toxicity (ADMET) predictions of the imizadole alkaloids of 
+  <span class="italic">P</span>. 
+  <span class="italic">microphyllus</span> with schistosomicidal properties.
+ </p>
+</sec>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Tab1" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 1</span>
+ <div class="caption">
+  <p>Calculated properties at the CCSD/daDZ level.</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th>No.</th>
+    <th>Property</th>
+    <th>Description</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>01</td>
+    <td>Tag</td>
+    <td>“Properties” string</td>
+   </tr>
+   <tr>
+    <td>02</td>
+    <td>
+     <span class="italic">α</span>
+     <sub>iso</sub>
+    </td>
+    <td>isotropic polarizability (see Eq. (
+     <a rid="Equ1" ref-type="" href="#Equ1">1</a>))
+    </td>
+   </tr>
+   <tr>
+    <td>03</td>
+    <td>
+     <span class="italic">α</span>
+     <sub>aniso</sub>
+    </td>
+    <td>anisotropic polarizability (see Eq. (
+     <a rid="Equ2" ref-type="" href="#Equ2">2</a>))
+    </td>
+   </tr>
+   <tr>
+    <td>04–09</td>
+    <td>
+     <span class="bold">
+      <span class="italic">α</span>
+     </span>
+    </td>
+    <td>polarizability tensor
+     <span class="sup">
+      <span class="italic">a</span>
+     </span>
+    </td>
+   </tr>
+   <tr>
+    <td>10–12</td>
+    <td>
+     <span class="bold">
+      <span class="italic">μ</span>
+     </span>
+    </td>
+    <td>(unrelaxed) dipole moment
+     <span class="sup">
+      <span class="italic">b</span>
+     </span>
+    </td>
+   </tr>
+   <tr>
+    <td>13–18</td>
+    <td>
+     <span class="bold">
+      <span class="italic">Q</span>
+     </span>
+    </td>
+    <td>(unrelaxed) quadrupole moment
+     <span class="sup">
+      <span class="italic">c</span>,
+      <span class="italic">d</span>
+     </span>
+    </td>
+   </tr>
+   <tr>
+    <td>19</td>
+    <td>
+     <div id="IEq9" class="inline-formula">
+      <div class="alternatives">
+       <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{{\rm{tot}}}^{{\rm{HF}}}$$\end{document}</span>
+       <div id="M22" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">tot</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">HF</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41597_2019_157_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </td>
+    <td>HF total energy</td>
+   </tr>
+   <tr>
+    <td>20</td>
+    <td>
+     <div id="IEq10" class="inline-formula">
+      <div class="alternatives">
+       <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{{\rm{ss}}}^{{\rm{MP}}2}$$\end{document}</span>
+       <div id="M24" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">ss</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">MP</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41597_2019_157_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </td>
+    <td>MP2 same-spin correlation energy</td>
+   </tr>
+   <tr>
+    <td>21</td>
+    <td>
+     <div id="IEq11" class="inline-formula">
+      <div class="alternatives">
+       <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{{\rm{os}}}^{{\rm{MP}}2}$$\end{document}</span>
+       <div id="M26" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">os</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">MP</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41597_2019_157_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </td>
+    <td>MP2 opposite-spin correlation energy</td>
+   </tr>
+   <tr>
+    <td>22</td>
+    <td>
+     <div id="IEq12" class="inline-formula">
+      <div class="alternatives">
+       <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{{\rm{ss}}}^{{\rm{CCSD}}}$$\end{document}</span>
+       <div id="M28" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">ss</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">CCSD</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41597_2019_157_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </td>
+    <td>CCSD same-spin correlation energy</td>
+   </tr>
+   <tr>
+    <td>23</td>
+    <td>
+     <div id="IEq13" class="inline-formula">
+      <div class="alternatives">
+       <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${E}_{{\rm{os}}}^{{\rm{CCSD}}}$$\end{document}</span>
+       <div id="M30" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">os</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">CCSD</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41597_2019_157_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </td>
+    <td>CCSD opposite-spin correlation energy</td>
+   </tr>
+  </tbody>
+ </table>
+ <div class="table-wrap-foot">
+  <p>All properties are in atomic units and are provided on the “comment line” (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., the second line) of a standard xyz file.
+  </p>
+  <p>
+   <span class="sup">
+    <span class="italic">a</span>
+   </span>04–09: 
+   <span class="italic">α</span>
+   <sub>xx</sub>, 
+   <span class="italic">α</span>
+   <sub>yy</sub>, 
+   <span class="italic">α</span>
+   <sub>zz</sub>, 
+   <span class="italic">α</span>
+   <sub>xy</sub>, 
+   <span class="italic">α</span>
+   <sub>xz</sub>, 
+   <span class="italic">α</span>
+   <sub>yz</sub>.
+  </p>
+  <p>
+   <span class="sup">
+    <span class="italic">b</span>
+   </span>10–12: 
+   <span class="italic">μ</span>
+   <sub>x</sub>, 
+   <span class="italic">μ</span>
+   <sub>y</sub>, 
+   <span class="italic">μ</span>
+   <sub>z</sub>.
+  </p>
+  <p>
+   <span class="sup">c</span>13–18: 
+   <span class="italic">Q</span>
+   <sub>xx</sub>, 
+   <span class="italic">Q</span>
+   <sub>yy</sub>, 
+   <span class="italic">Q</span>
+   <sub>zz</sub>, 
+   <span class="italic">Q</span>
+   <sub>xy</sub>, 
+   <span class="italic">Q</span>
+   <sub>xz</sub>, 
+   <span class="italic">Q</span>
+   <sub>yz</sub>.
+  </p>
+  <p>
+   <span class="sup">
+    <span class="italic">d</span>
+   </span>
+   <span class="bold">
+    <span class="italic">Q</span>
+   </span> values are not provided for the ten largest molecules in the AlphaML showcase database (see text for details).
+  </p>
+ </div>
+</div>

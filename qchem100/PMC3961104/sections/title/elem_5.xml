@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Creating peptides</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The structure of a peptide molecule is generated as a Python object by using the 
+  <span class="monospace">Peptide</span> class instantiated with the sequence as argument. The 
+  <span class="monospace">Peptide</span> class has access to classes for each type of residues which each contain a structure for that residue in XYZ format. Routines from Open Babel are then used to automatically rotate, translate, and connect the residues. Finally the structure is stored in the 
+  <span class="monospace">Peptide.molecule</span> class variable as an Open Babel 
+  <span class="monospace">OBMol</span> object.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The sequence interpreted uses the single letter abbreviation for each amino acid. E.g., 
+  <span class="monospace">Peptide("GLG")</span> will create a glycine–leucine–glycine tripeptide molecule which can then be manipulated through the interface. The minimal code to achieve this could be:
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">from fragbuilder import Peptide pep = Peptide("GLG")</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">As default values, the 
+  <span class="italic">ϕ</span>, 
+  <span class="italic">ψ</span> and 
+  <span class="italic">ω</span> backbone torsion angles are set to −120°, 140° and −180°, which corresponds to a typical extended 
+  <span class="italic">β</span>-strand. The side chain torsion 
+  <span class="italic">χ</span> angles are set so two neighboring side chains will not have steric clashes when no side chain torsion angle input is given. After the peptide has been instantiated, the structure can be manipulated through built-in methods. Several convenient methods of the 
+  <span class="monospace">Peptide</span> class are presented in the next sections. An overview of some of the basic methods of the 
+  <span class="monospace">Peptide</span> class can be seen in 
+  <a ref-type="table" rid="table-2" href="#table-2">Table 2</a>.
+ </p>
+ <div id="table-2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.7717/peerj.277/table-2</span>
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <div class="title">Overview of the basic methods in the 
+    <span class="monospace">Peptide</span> class.
+   </div>
+   <p>See the text for detailed descriptions of each method.</p>
+  </div>
+  <div class="alternatives">
+   <div xlink:href="peerj-02-277-g008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col span="1"/>
+     <col align="justify" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th rowspan="1" colspan="1">Method name</th>
+      <th style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">set_bb_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Set the backbone 
+       <span class="italic">ϕ</span>/
+       <span class="italic">ψ</span>-angles for a residue
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">set_chi_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Set the side chain 
+       <span class="italic">χ</span>-angles for a residue
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">get_bb_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Read the backbone 
+       <span class="italic">ϕ</span>/
+       <span class="italic">ψ</span>-angles for a residue
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">get_chi_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Read the side chain 
+       <span class="italic">χ</span>-angles for a residue
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">sample_bb_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Sample the backbone 
+       <span class="italic">ϕ</span>/
+       <span class="italic">ψ</span>-angles for a residue using the BASILISK library
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">sample_chi_angles</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Sample the side chain 
+       <span class="italic">χ</span>-angles for a residue using the BASILISK library
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">optimize</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Perform a molecular mechanics optimization using the MMFF94 force field</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">regularize</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Perform the regularization procedure to remove steric clashes</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">write_pdb</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to a PDB file</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">write_xyz</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to an XYZ file</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="monospace">write_file</span>
+      </td>
+      <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to one of the nearly 100 file types supported by Open Babel</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</sec>

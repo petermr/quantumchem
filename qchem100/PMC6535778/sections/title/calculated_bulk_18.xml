@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Calculated Bulk and Surface Electronic Structures</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The results of first-principles electronic structure calculations for EuSn
+  <sub>2</sub>P
+  <sub>2</sub> using the generalized gradient approximation (GGA), GGA plus correlation parameter 
+  <span class="italic">U</span> (GGA+
+  <span class="italic">U</span>), and GGA+
+  <span class="italic">U</span> with spin–orbit coupling (SOC) are compared in 
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>. The calculations reveal a semimetallic band structure for this material, with a continuous gap throughout the Brillouin zone, similar in character to what is observed for WTe
+  <sub>2</sub>.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>,
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> The electrons in the 4f orbitals of the Eu atoms are experimentally observed (see below) as localized in the range 1.0–2.0 eV below the Fermi level (
+  <span class="italic">E</span>
+  <sub>F</sub>), and thus the GGA+
+  <span class="italic">U</span>+SOC calculations appear to be the most representative of the material.
+ </p>
+ <div id="fig6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <p>Calculated electronic structure of bulk EuSn
+    <sub>2</sub>P
+    <sub>2</sub>. (A–D) First-principles electronic band structures for EuSn
+    <sub>2</sub>P
+    <sub>2</sub> in its A-type antiferromagnetic ordered state (both spin up and spin down bands are shown) with and without spin–orbit coupling (SOC) and correlation parameter 
+    <span class="italic">U</span> included. (E) Deconvolution of the electronic structure to show the energy regimes of dominance of the Eu, P, and Sn orbitals.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-00202n_0006" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The calculations show that P 3p orbitals dominate the energy bands just below 
+  <span class="italic">E</span>
+  <sub>F</sub>, while Sn 5p orbitals are found below −5 eV and just above 
+  <span class="italic">E</span>
+  <sub>F</sub> (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>E). Like is the case for strong topological insulators, 
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>E shows that in the vicinity of the Fermi energy there are metal states mixed in in significant proportion at the top of the valence band and P states mixed in in significant proportion at the bottom of the conducting band; i.e., there is an inversion of the conventional type of band structure, where this kind of mixing of states above and below 
+  <span class="italic">E</span>
+  <sub>F</sub> is negligible. When the effects of spin polarization are included, the total energies of the ferromagnetic (FM) and antiferromagnetic (AFM) models are the lowest (the calculated energy difference between the AFM and FM states in EuSn
+  <sub>2</sub>P
+  <sub>2</sub> is about 13 meV per f.u.), and indicate that the observed antiferromagnetism is energy favored. The magnetic moments, calculated to be about ∼6.7 μ
+  <sub>B</sub>, are solely on the Eu atoms, consistent with what is expected in a naïve picture for this material, where Eu is the only magnetic atom. The electronic structure of the material, calculated for the antiferromagnetically ordered system, shows that the bands near the Fermi level are hybridized among electrons from the p orbitals on the Sn and P atoms. The GGA and GGA+
+  <span class="italic">U</span> calculations result in a semimetallic ground state, with no band gap, with Fermi surfaces around the Γ and A points in the Brillouin zone (BZ) (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>A,C).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref23" href="#ref23">23</a>
+  </span> When SOC is included in the calculations, a very small (a few meV) band gap is present (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>B,D).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As was designed, EuSn
+  <sub>2</sub>P
+  <sub>2</sub> exhibits interesting surface states. To understand the surface states of EuSn
+  <sub>2</sub>P
+  <sub>2</sub>, surface spectral weight simulations consistent with the practice used in the topological materials field were employed. (The first BZ of the rhombohedral lattice is shown in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00202/suppl_file/oc9b00202_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S2</span>.) The (001) surface is our material’s clear cleavage plane. The (001) surface may be terminated by Eu, P, or Sn atomic layers; surface states are visible for all three possible (001) terminations in the calculations. Consistent with the full bulk DFT calculations, the electronic behavior near 
+  <span class="italic">E</span>
+  <sub>F</sub> in these calculations is predominantly determined by the dispersion of hybridized bands from Sn and P orbitals. For Sn-terminated and Eu-terminated surfaces, comparison of the bulk and surface calculations (
+  <a rid="fig7" ref-type="fig" href="#fig7">Figure 
+   <a rid="fig7" ref-type="fig" href="#fig7">7</a>
+  </a>) shows that surface states are located in the bulk energy gap around the Γ point. The energy dispersion of these states is very similar to the Dirac surface states of strong Tis (inset of 
+  <a rid="fig7" ref-type="fig" href="#fig7">Figure 
+   <a rid="fig7" ref-type="fig" href="#fig7">7</a>
+  </a>D–F). The surface states are more well-separated in 
+  <span class="italic">k</span> for the P-termination case (
+  <a rid="fig7" ref-type="fig" href="#fig7">Figure 
+   <a rid="fig7" ref-type="fig" href="#fig7">7</a>
+  </a>E) than they are for the Sn- and Eu-termination cases. This should make them more observable experimentally than for the case of WTe
+  <sub>2</sub>, where they are strongly confined in both energy and wavevector.
+ </p>
+ <div id="fig7" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 7</span>
+  <div class="caption">
+   <p>Comparison of the calculated bulk and surface band structures for EuSn
+    <sub>2</sub>P
+    <sub>2</sub>. (A–F) Bulk (left) and surface (right) band spectra of a semi-infinite slab with an (001) surface terminated at Sn (upper), P (middle), or Eu (lower) layers. The surface states are the narrow extra states observed in the surface state calculations (right).
+   </p>
+  </div>
+  <div xlink:href="oc-2019-00202n_0007" id="gr7" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is well-established in materials physics that time-reversal-based topological insulators can be described by a “Z
+  <sub>2</sub> invariant”. Generally, Z
+  <sub>2</sub> is undefined in a time-reversal symmetry (TRS) breaking system such as a ferromagnetic phase. Nonetheless, recent studies have proposed that the Z
+  <sub>2</sub> invariant can be expanded to classify topological states in magnetic systems if the system possesses a specific magnetic configuration, for instance, an antiferromagnetic state, in which the combined symmetry 
+  <span class="italic">S</span> = Θ
+  <span class="italic">T</span>
+  <sub>1/2</sub> is preserved, where Θ is the time-reversal operator, and 
+  <span class="italic">T</span>
+  <sub>1/2</sub> is the lattice translational symmetry of the crystal that is broken by the antiferromagnetic order.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref44" href="#ref44">44</a>,
+   <a ref-type="bibr" rid="ref45" href="#ref45">45</a>
+  </span> This is what we have in the current case. Under this definition, we calculate the Z
+  <sub>2</sub> invariant by the Wilson loop method, as shown in 
+  <a rid="fig8" ref-type="fig" href="#fig8">Figure 
+   <a rid="fig8" ref-type="fig" href="#fig8">8</a>
+  </a>.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref46" href="#ref46">46</a>
+  </span> The Z
+  <sub>2</sub> topological invariant can be determined by looking at the evolution of the Wannier function center. In this formalism, the evolution of each Wannier center pair encloses the representation cylinder an integer number of times, which can be viewed as the “winding number” of the Wannier center pair. The Z
+  <sub>2</sub> topological number is related to the summation of the winding numbers for all the pairs. If it is odd, then the Z
+  <sub>2</sub> topological number is odd. According to 
+  <a rid="fig8" ref-type="fig" href="#fig8">Figure 
+   <a rid="fig8" ref-type="fig" href="#fig8">8</a>
+  </a>, the entanglement entropy never becomes zero in the course of any gap- and symmetry-preserving transformation; this demonstrates the nontriviality of the electronic structure of EuSn
+  <sub>2</sub>P
+  <sub>2</sub>, i.e., its topological character.
+ </p>
+ <div id="fig8" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 8</span>
+  <div class="caption">
+   <p>Topological invariant Z
+    <sub>2</sub> of EuSn
+    <sub>2</sub>P
+    <sub>2</sub> (calculated with SOC + 
+    <span class="italic">U</span>). The Wannier charge center evolution (see ref (
+    <a ref-type="bibr" rid="ref46" href="#ref46">46</a>)) is shown for time-reversal invariant planes between π and −π. The Wannier center crosses any reference line (hypothetical horizontal line in the figure) the appropriate number of times to indicate that EuSn
+    <sub>2</sub>P
+    <sub>2</sub> is a topological insulator.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-00202n_0008" id="gr8" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our calculation shows an open curve traversing the entire Brillouin zone in the time-reversal invariant plane 
+  <span class="italic">k</span>
+  <sub>
+   <span class="italic">z</span>
+  </sub> = 0, indicating a Z
+  <sub>2</sub> invariant equal to 1, which demonstrates that EuSn
+  <sub>2</sub>P
+  <sub>2</sub> is indeed an antiferromagnetic topological insulator (AFM-TI).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref46" href="#ref46">46</a>
+  </span> The surface state Fermi contours, calculated by way of the semi-infinite Green’s function,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref47" href="#ref47">47</a>
+  </span> are shown in 
+  <a rid="fig9" ref-type="fig" href="#fig9">Figure 
+   <a rid="fig9" ref-type="fig" href="#fig9">9</a>
+  </a>. The calculated iso-energy band contours at 
+  <span class="italic">E</span> = 0, −0.2, and −0.3 eV (below the calculated Fermi energy) are shown for the three possible (001) surface terminations. (The energies correspond to those of the surface states on the Sn-terminated surface.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref48" href="#ref48">48</a>
+  </span>) There is a prominent feature that is seen for the surface band contour in addition to the bulk states directly around the Γ point in the BZ: a 6-fold symmetry loop. The loop is small on the Sn-terminated and Eu-terminated surfaces but is distinctly seen separated from the bulk states in 
+  <span class="italic">k</span> on the P-terminated surfaces.
+ </p>
+ <div id="fig9" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 9</span>
+  <div class="caption">
+   <p>Calculated surface Fermi surfaces of EuSn
+    <sub>2</sub>P
+    <sub>2</sub>. For the (001) surface (the cleavage plane), terminated by (A–C) an Eu layer, (D–F) a P layer, or (G, H) a Sn layer. The calculated iso-energy band contours are shown for 
+    <span class="italic">E</span> = 0 (the calculated Fermi Energy), −0.2, and −0.3 eV for Green’s function surface spectral weight simulation. The depth of the color indicates the weight of the charge density of each state at the surface layer. The surface states clearly appear as the extra ringlike Fermi surfaces in the panels.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-00202n_0009" id="gr9" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

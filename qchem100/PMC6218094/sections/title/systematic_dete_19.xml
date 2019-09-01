@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec012" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Systematic detection of reactions with potentially erroneous experimental values</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We design a strategy to detect reactions with potentially erroneous experimental values as listed in the NIST Thermodynamics of Enzyme-Catalyzed Reactions Database (TECRDB) [
+  <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>]. We identify reactions whose predicted potential deviates from experiment by a similar amount for both the calibrated quantum chemistry and fingerprint-based modeling approaches. In order to make the errors associated to the two different modeling methods comparable, we normalize the prediction errors by computing their associated z-scores: 
+  <div id="pcbi.1006471.e008" class="inline-formula">
+   <div class="alternatives">
+    <div xlink:href="pcbi.1006471.e008.jpg" id="pcbi.1006471.e008g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M8" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">Z</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">E</span>
+       <span class="mi">r</span>
+       <span class="mi">r</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mo">(</span>
+       <span class="mi">E</span>
+       <span class="mi">r</span>
+       <span class="mi">r</span>
+       <span class="mo">−</span>
+       <span class="mi">μ</span>
+       <span class="mo">)</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">σ</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. We set a threshold value for the z-score of Z = 2, such that reactions with 
+  <span class="italic">Z</span>
+  <sub>
+   <span class="italic">Err</span>
+  </sub>(
+  <span class="italic">QC</span>) &gt; 2 and 
+  <span class="italic">Z</span>
+  <sub>
+   <span class="italic">Err</span>
+  </sub>(
+  <span class="italic">fingerprints</span>) &gt; 2 are assigned a high likelihood of having an erroneously tabulated experimental value in NIST-TECRDB.
+ </p>
+</sec>

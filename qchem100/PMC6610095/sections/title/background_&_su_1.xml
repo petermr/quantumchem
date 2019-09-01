@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background &amp; Summary</div>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">A large number of chemical databases enable new strategies to solve chemical problems that are difficult to address by existing chemical principles
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>. In particular, in the field of functional material/drug design
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>,
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span> and the investigation of reaction pathways
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>, data-driven approaches such as data mining and machine learning techniques open up a new era beyond traditional quantum chemistry approaches. To enable the further development of such promising applications, quantum chemistry databases that cover a wide range of chemical space with a high accuracy comparable to that of experimental observations are desired
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>–
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">For these purposes, many databases containing quantum chemical calculations have been published. Most of the simulations in those databases were performed with density functional theory (DFT) because of its reasonable accuracy/cost ratio. However, the applicability of DFT throughout the entire chemical universe is questioned
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>. In addition, covering the chemical universe with databases relying on a single methodology may introduce a bias to predictive models.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Despite tremendous improvements in computing power, constructing a large quantum chemical database by a highly accurate method is still a challenging and time-consuming problem. The computational cost of the simplest 
+  <span class="italic">ab initio</span> calculation, Hartree-Fock (HF), increases with ~
+  <span class="italic">O(N</span>
+  <span class="sup">
+   <span class="italic">4</span>
+  </span>
+  <span class="italic">)</span>, where N is the number of basis functions. The computational complexity becomes even worse for high-level calculations. Due to this rapid increase in computational cost, the size of existing databases constructed with high-level calculations is too small to cover general chemical applications
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>. For example, the G3/05 test set, which is used for verifying the Gaussian-4 theory using reduced order perturbation theory (G4MP2) method, contains only 236 experimentally obtained enthalpies of formation, 88 ionization potentials, 58 electron affinities, and 8 proton affinities of organic molecules
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span>. To the authors’ knowledge, the largest database built with a composite method includes 16k isomers of C
+  <sub>7</sub>H
+  <sub>10</sub>O
+  <sub>2,</sub> which is only approximately 10% of the database employed in this study. These accumulated data were used to predict the electronic correlation energy by using the kernel regression method
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span>.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">To determine the accurate structure-property relationship via data-driven approaches, systematic and thorough sampling for a large chemical space is essential. The series of Generated Database-n (GDB-n) which include all possible molecules of up to n nonhydrogen atoms were proposed by the enumeration of chemical graphs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>–
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>. The database called QM9, which is a subset of GDB-17, contains all molecules (~134 k) consisting of at most 9 nonhydrogen atoms (carbon, nitrogen, oxygen, and fluorine). For the QM9 set, the geometries and thermodynamic/electronic/energetic properties computed by DFT were reported in a previous report
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>. Although this database has served as the reference chemical space for some chemical problems, the QM9 set is subject the following limitations: (1) A single computational condition was employed, which prohibits investigation into the correlation and difference among various computational conditions. (2) The ability of the B3LYP functional to reproduce high-level 
+  <span class="italic">ab initio</span> calculations is not verified. (3) Only postprocessed information is available, which may limit other interesting approaches.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">In this work, we reported the QM9-G4MP2 database, which contains the G4MP2 energies of the refined molecular structures in the QM9 set
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span> as well as the energies from all methods invoked by the G4MP2 calculations (e.g., DFT, HF, Møller–Plesset perturbation theory and coupled-cluster single and double excitations with perturbative triple correction methods). All the raw outputs of the G4MP2 calculations are also published to allow the research community to obtain information that we do not address in this work. These data could prompt other applications, for instance, improving the quality of data-driven approaches by feeding high-quality data to existing models as well as designing new architectures for predictive models to learn quantum chemical properties.
+ </p>
+</sec>

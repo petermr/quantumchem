@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="f3" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 3</span>
+ <div class="caption">
+  <p>Digital error 1 – 
+   <span class="italic">F</span> (curves) along with the accumulated gate error (horizontal lines) versus time in 
+   <span class="italic">h</span>
+   <sub>11</sub> energy units, for 
+   <span class="italic">n</span> = 1, 2, 3 Trotter steps in each plot, considering a protocol with an error per Trotter step of 
+   <div id="m71" class="inline-formula">
+    <span id="d32e1710" xlink:href="srep03589-m71.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (a), 
+   <div id="m72" class="inline-formula">
+    <span id="d32e1713" xlink:href="srep03589-m72.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (b) and 
+   <div id="m73" class="inline-formula">
+    <span id="d32e1717" xlink:href="srep03589-m73.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (c). The initial state considered is |↑↑↓↓〉, in the qubit representation of the Hartree-Fock state in a molecular orbital basis with one electron on the first and second orbital. Vertical lines and arrows define the time domain in which the dominant part of the error is due to the digital approximation. d) Energy of the system, in 
+   <span class="italic">h</span>
+   <sub>11</sub> units, for the initial state | ↑↑↓↓〉 for the exact dynamics, versus the digitized one. For a protocol with three Trotter steps the energy is recovered up to a negligible error.
+  </p>
+ </div>
+ <div xlink:href="srep03589-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

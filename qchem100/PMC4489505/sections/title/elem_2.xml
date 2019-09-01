@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" id="sec002" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Method</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As indicated before, the RM1 model for the lanthanides assumes that the electronic configuration [Xe]4f
+  <span class="sup">n</span> with n = 0,1,2, for La(III), Ce(III) and Pr(III), respectively, can be correctly described by the semiempirical core of charge +3. In addition, the model attaches a set of semiempirical 5d, 6s, and 6p orbitals to describe the valence shell, which always contains 3 electrons for all lanthanide trications. As a result, 22 parameters need to be optimized for each of the lanthanides.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A usual and recurrent criticism of semiempirical models is that they tend to perform well for systems for which they were parameterized, and tend to perform poorly or even badly for other systems. In order to minimize this, we created, in our research group, a method of parameterization which seeks to obtain much more robust models [
+  <a rid="pone.0124372.ref034" ref-type="bibr" href="#pone.0124372.ref034">34</a>,
+  <a rid="pone.0124372.ref035" ref-type="bibr" href="#pone.0124372.ref035">35</a>,
+  <a rid="pone.0124372.ref045" ref-type="bibr" href="#pone.0124372.ref045">45</a>]. We start by collecting all existing complexes of the lanthanide ion of interest that can be found in the Cambridge Structural Database (CSD) [
+  <a rid="pone.0124372.ref046" ref-type="bibr" href="#pone.0124372.ref046">46</a>–
+  <a rid="pone.0124372.ref048" ref-type="bibr" href="#pone.0124372.ref048">48</a>]. In order to guarantee quality in our parameters, we restrict ourselves to collect only complexes of high crystallographic quality (R &lt; 0.05). Of course, we understand that, due to their unique characteristics, each lanthanide metal has a particular palette of applications, each requiring their own specific type of ligands. Therefore, we assume that the more useful complexes will be naturally more numerous in the universe of high quality structures of the CSD database for each particular metal. Having collected that, we note that there is no point in parameterizing the model for all existing high quality CSD complexes simultaneously because, there could be many repeating ligands, which would be overrepresented in the parameterization set and which could cause an imbalance in the parameters. Therefore, at this point, we need to select sub-sets of complexes to serve as parameterization sets. In addition, this selection must take into account the relative difficulty of predicting, from quantum chemical calculations, the geometries of the complexes. For the purpose of this selection, we assume that a good measure of this difficulty is the difference between the crystallographic geometries and geometries obtained by our previous model Sparkle/AM1 [
+  <a rid="pone.0124372.ref037" ref-type="bibr" href="#pone.0124372.ref037">37</a>,
+  <a rid="pone.0124372.ref038" ref-type="bibr" href="#pone.0124372.ref038">38</a>,
+  <a rid="pone.0124372.ref049" ref-type="bibr" href="#pone.0124372.ref049">49</a>]. Thus, for each complex i, we define the following measure R
+  <sub>i</sub>: 
+  <div id="pone.0124372.e001" class="disp-formula">
+   <div class="alternatives">
+    <div xlink:href="pone.0124372.e001.jpg" id="pone.0124372.e001g" position="anchor" mimetype="image" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M1" class="math">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <span class="mo">∑</span>
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <div displaystyle="true" class="mstyle">
+         <div class="munder">
+          <span class="mo">∑</span>
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <div class="mfrac">
+           <span class="mn">1</span>
+           <div class="mrow">
+            <div class="msubsup">
+             <span class="mi">σ</span>
+             <span class="mi">j</span>
+             <div class="mrow">
+              <span class="mi">d</span>
+              <span class="mi">i</span>
+              <span class="mi">s</span>
+              <span class="mi">t</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mo">|</span>
+           <div class="mrow">
+            <div class="msubsup">
+             <span class="mi">d</span>
+             <div class="mrow">
+              <span class="mi">i</span>
+              <span class="mo">,</span>
+              <span class="mi">j</span>
+              <span class="mo">,</span>
+              <span class="mi">k</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">C</span>
+              <span class="mi">S</span>
+              <span class="mi">D</span>
+             </div>
+            </div>
+            <span class="mo">−</span>
+            <div class="msubsup">
+             <span class="mi">d</span>
+             <div class="mrow">
+              <span class="mi">i</span>
+              <span class="mo">,</span>
+              <span class="mi">j</span>
+              <span class="mo">,</span>
+              <span class="mi">k</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">C</span>
+              <span class="mi">a</span>
+              <span class="mi">l</span>
+              <span class="mi">c</span>
+             </div>
+            </div>
+           </div>
+           <span class="mo">|</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <span class="mo">∑</span>
+        <span class="mi">l</span>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <span class="mn">1</span>
+         <div class="mrow">
+          <div class="msup">
+           <span class="mi">σ</span>
+           <div class="mrow">
+            <span class="mi">a</span>
+            <span class="mi">n</span>
+            <span class="mi">g</span>
+            <span class="mi">l</span>
+            <span class="mi">e</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">|</span>
+         <div class="mrow">
+          <div class="msubsup">
+           <span class="mi">θ</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">,</span>
+            <span class="mtext">l</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">C</span>
+            <span class="mi">S</span>
+            <span class="mi">D</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msubsup">
+           <span class="mi">θ</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">,</span>
+            <span class="mtext">l</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">C</span>
+            <span class="mi">a</span>
+            <span class="mi">l</span>
+            <span class="mi">c</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">|</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div> where d refers to distances, and θ to angles; CSD refers to data obtained from the CSD, and Calc refers to data obtained from our previous model calculation (Sparkle/RM1); j runs over all types of bonds, e.g. Ln-O, Ln-N, Ln-C, etc, and k runs over all bonds of the j type; 
+  <div id="pone.0124372.e002" class="inline-formula">
+   <div class="alternatives">
+    <div xlink:href="pone.0124372.e002.jpg" id="pone.0124372.e002g" position="anchor" mimetype="image" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M2" class="math">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">σ</span>
+       <span class="mi">j</span>
+       <div class="mrow">
+        <span class="mi">d</span>
+        <span class="mi">i</span>
+        <span class="mi">s</span>
+        <span class="mi">t</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the standard deviation of all differences between CSD and Sparkle/AM1 (calc) for all bonds of the j type; l runs over all angles; and 
+  <div id="pone.0124372.e003" class="inline-formula">
+   <div class="alternatives">
+    <div xlink:href="pone.0124372.e003.jpg" id="pone.0124372.e003g" position="anchor" mimetype="image" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M3" class="math">
+     <div class="mrow">
+      <div class="msup">
+       <span class="mi">σ</span>
+       <div class="mrow">
+        <span class="mi">a</span>
+        <span class="mi">n</span>
+        <span class="mi">g</span>
+        <span class="mi">l</span>
+        <span class="mi">e</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the standard deviation of all angle differences between CSD and Sparkle/AM1 (calc). The set of measures R
+  <sub>i</sub> was then used as input for a divisive hierarchical clustering analysis, DIANA [
+  <a rid="pone.0124372.ref050" ref-type="bibr" href="#pone.0124372.ref050">50</a>], from which we selected two parameterization sets from the universes of complexes for each lanthanide metal: one we call the small set, with only 15 complexes for La(III), 8 complexes for Ce(III), and 7 complexes for Pr(III); and another one we call the large parameterization set, with 38 complexes for La(III), 18 for Ce(III), and 16 for Pr(III). The next step, is the optimization of the model where, by means of a combination of a few non-linear optimization techniques, we seek to minimize a response function, which is the sum of all R
+  <sub>i</sub>s of 
+  <a rid="pone.0124372.e001" ref-type="disp-formula" href="#pone.0124372.e001">Eq (1)</a>, with the difference that calc will now refer to the particular distance or angle calculated by means of the intermediary set of parameters of the optimization procedure. When the nonlinear optimization process converges for the small set of complexes, we start it all over again with the large set. Finally, we declare the process of nonlinear optimization to be finished when it converges for the large set.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Assessments of the accuracy of the model can be made via the unsigned mean error, UME
+  <sub>i</sub>, defined for each complex i as 
+  <div id="pone.0124372.e004" class="disp-formula">
+   <div class="alternatives">
+    <div xlink:href="pone.0124372.e004.jpg" id="pone.0124372.e004g" position="anchor" mimetype="image" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M4" class="math">
+     <div class="mrow">
+      <span class="mi">U</span>
+      <span class="mi">M</span>
+      <div class="msub">
+       <span class="mi">E</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mi">n</span>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">j</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mi">n</span>
+       </div>
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">|</span>
+         <div class="mrow">
+          <div class="msubsup">
+           <span class="mi">R</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">,</span>
+            <span class="mi">j</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">C</span>
+            <span class="mi">S</span>
+            <span class="mi">D</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msubsup">
+           <span class="mi">R</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">,</span>
+            <span class="mi">j</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">C</span>
+            <span class="mi">a</span>
+            <span class="mi">l</span>
+            <span class="mi">c</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">|</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(2)</span>
+  </div> where CSD and Calc are as in 
+  <a rid="pone.0124372.e001" ref-type="disp-formula" href="#pone.0124372.e001">Eq (1)</a>, and the summation runs over all the n bonds being considered. As before, we use two different measures: UME
+  <sub>(Ln-L)i</sub> and UME
+  <sub>i</sub>. The first contains all j distances between the lanthanide ion and its directly coordinated atoms. The second, includes, in addition, all distances between all directly coordinated atoms and indirectly also reflects a measure of the accuracy of the predicted angles within the coordination polyhedron.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The next step in verifying the robustness of the parameterization is to determine if the distribution of unsigned mean deviations between the predicted and crystallographic geometries can be adequately described by a gamma distribution function. That can be ascertained, by means of the one-sample nonparametric Kolmogorov-Smirnoff test whose p-value must be larger than 0.05, indicating that usage of the mean and variance of the gamma distribution fit as accuracy measures of the models are statistically justified within a 95% level of confidence.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="pone.0124372.t001" ref-type="table" href="#pone.0124372.t001">Table 1</a> presents the three sets of 22 RM1 parameters found for Ln(III), Ce(III), and Pr(III). And Tables 
+  <a rid="pone.0124372.t002" ref-type="table" href="#pone.0124372.t002">2</a> and 
+  <a rid="pone.0124372.t003" ref-type="table" href="#pone.0124372.t003">3</a> present the mean and variance of the gamma distribution fits for the both types of unsigned mean errors for the universe of complexes, together with the p-value which is larger than 0.05 for all cases. All that indicates that the RM1 models here advanced for La(III), Ce(III), and Pr(III) are capable of predicting the geometries of the corresponding complexes in a reliable manner, and that the eventual deviations from the experiment behave as random around the correct values.
+ </p>
+ <div id="pone.0124372.t001" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t001</span>
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Parameters
+    <a rid="t001fn001" ref-type="table-fn" href="#t001fn001">*</a> for the RM1 model for the trications of La, Ce and Pr.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t001g" xlink:href="pone.0124372.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th colspan="4" align="center" rowspan="1">RM1</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1"/>
+      <th align="left" rowspan="1" colspan="1">La
+       <span class="sup">3+</span>
+      </th>
+      <th align="left" rowspan="1" colspan="1">Ce
+       <span class="sup">3+</span>
+      </th>
+      <th align="left" rowspan="1" colspan="1">Pr
+       <span class="sup">3+</span>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">U</span>
+       <sub>
+        <span class="italic">ss</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">-14.68043413</td>
+      <td align="char" char="." rowspan="1" colspan="1">-14.71938888</td>
+      <td align="char" char="." rowspan="1" colspan="1">-14.52408063</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">U</span>
+       <sub>
+        <span class="italic">pp</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">-6.73473860</td>
+      <td align="char" char="." rowspan="1" colspan="1">-7.68942949</td>
+      <td align="char" char="." rowspan="1" colspan="1">-7.05682683</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">U</span>
+       <sub>
+        <span class="italic">dd</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">-20.48996706</td>
+      <td align="char" char="." rowspan="1" colspan="1">-20.45157682</td>
+      <td align="char" char="." rowspan="1" colspan="1">-20.68932756</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ζ</span>
+       <sub>
+        <span class="italic">s</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.27267748</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.28102807</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.53803892</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ζ</span>
+       <sub>
+        <span class="italic">p</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.42327584</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.42536636</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.58164715</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ζ</span>
+       <sub>
+        <span class="italic">d</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.41036886</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.41286566</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.37490374</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">β</span>
+       <sub>
+        <span class="italic">s</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">-7.66955512</td>
+      <td align="char" char="." rowspan="1" colspan="1">-7.66878654</td>
+      <td align="char" char="." rowspan="1" colspan="1">-7.94799309</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">β</span>
+       <sub>
+        <span class="italic">p</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.47769647</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.44444183</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.85381597</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">β</span>
+       <sub>
+        <span class="italic">d</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">-3.71147661</td>
+      <td align="char" char="." rowspan="1" colspan="1">-3.74493844</td>
+      <td align="char" char="." rowspan="1" colspan="1">-3.83029281</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">F0SD</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">7.72081332</td>
+      <td align="char" char="." rowspan="1" colspan="1">7.71512874</td>
+      <td align="char" char="." rowspan="1" colspan="1">7.61830081</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">G2SD</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">3.91674532</td>
+      <td align="char" char="." rowspan="1" colspan="1">3.91829281</td>
+      <td align="char" char="." rowspan="1" colspan="1">3.96586318</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">POC</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.87517566</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.87508416</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.84741576</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">α</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.28404676</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.28623319</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.28060282</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ZSN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.78452960</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.81941318</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.78194425</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ZPN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.50661174</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.43034873</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.29298193</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">ZDN</span>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.17206190</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.19321984</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.98960461</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">a</span>
+       <sub>
+        <span class="italic">11</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.62855906</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.66196096</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.45337932</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">b</span>
+       <sub>
+        <span class="italic">21</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">7.86084906</td>
+      <td align="char" char="." rowspan="1" colspan="1">7.89025802</td>
+      <td align="char" char="." rowspan="1" colspan="1">7.82319885</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">c</span>
+       <sub>
+        <span class="italic">31</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">1.30447476</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.26282727</td>
+      <td align="char" char="." rowspan="1" colspan="1">1.56516739</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">a</span>
+       <sub>
+        <span class="italic">12</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">0.08164180</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.07599228</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.01039415</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">b</span>
+       <sub>
+        <span class="italic">22</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">10.34685773</td>
+      <td align="char" char="." rowspan="1" colspan="1">10.31610935</td>
+      <td align="char" char="." rowspan="1" colspan="1">10.28836535</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">c</span>
+       <sub>
+        <span class="italic">32</span>
+       </sub>
+      </td>
+      <td align="char" char="." rowspan="1" colspan="1">3.24704021</td>
+      <td align="char" char="." rowspan="1" colspan="1">3.24781703</td>
+      <td align="char" char="." rowspan="1" colspan="1">3.26870321</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="t001fn001" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">*Parameters are 
+     <span class="italic">s</span>, 
+     <span class="italic">p</span>, and 
+     <span class="italic">d</span> atomic orbital one-electron one-center integrals 
+     <span class="italic">U</span>
+     <sub>
+      <span class="italic">ss</span>
+     </sub>, 
+     <span class="italic">U</span>
+     <sub>
+      <span class="italic">pp</span>
+     </sub> and 
+     <span class="italic">U</span>
+     <sub>
+      <span class="italic">dd</span>
+     </sub>; the 
+     <span class="italic">s</span>, 
+     <span class="italic">p</span>, and 
+     <span class="italic">d</span> Slater atomic orbital exponents 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">s</span>
+     </sub>, 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">p</span>
+     </sub>, and 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">d</span>
+     </sub>; the 
+     <span class="italic">s</span>, 
+     <span class="italic">p</span>, and 
+     <span class="italic">d</span> atomic orbital one-electron two-center resonance integral terms 
+     <span class="italic">β</span>
+     <sub>
+      <span class="italic">s</span>
+     </sub>, 
+     <span class="italic">β</span>
+     <sub>
+      <span class="italic">p</span>
+     </sub>, and 
+     <span class="italic">β</span>
+     <sub>
+      <span class="italic">d</span>
+     </sub>; the core-core repulsion term 
+     <span class="italic">α</span>; the two-electron integrals F
+     <span class="sup">0</span>
+     <sub>SD</sub>, G
+     <span class="sup">2</span>
+     <sub>SD</sub>; and the additive term ρ
+     <sub>core</sub> needed to evaluate core-electron and core-core nuclear interactions; the second set of exponents to compute the one-center integrals 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">s</span>
+     </sub>
+     <span class="italic">’</span>, 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">p</span>
+     </sub>
+     <span class="italic">’</span>, and 
+     <span class="italic">ξ</span>
+     <sub>
+      <span class="italic">d</span>
+     </sub>
+     <span class="italic">’</span>; and the six parameters for the two Gaussian functions: height, a
+     <sub>i</sub>; inverse broadness, b
+     <sub>i</sub>; and displacement, c
+     <sub>i</sub>; as in 
+     <div id="pone.0124372.e005" class="inline-formula">
+      <div class="alternatives">
+       <div id="pone.0124372.e005g" xlink:href="pone.0124372.e005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+       <div id="M5" class="math">
+        <div class="mrow">
+         <span class="mi">G</span>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">R</span>
+         <span stretchy="false" class="mo">)</span>
+         <span class="mo">=</span>
+         <div displaystyle="true" class="mstyle">
+          <div class="munderover">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">=</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <div class="mrow">
+           <div class="msub">
+            <span class="mi">a</span>
+            <span class="mi">i</span>
+           </div>
+           <div class="msup">
+            <span class="mi">e</span>
+            <div class="mrow">
+             <div class="mrow">
+              <span class="mo">[</span>
+              <div class="mrow">
+               <div class="msub">
+                <span class="mi">b</span>
+                <span class="mi">i</span>
+               </div>
+               <div class="msup">
+                <div class="mrow">
+                 <span stretchy="false" class="mo">(</span>
+                 <span class="mi">R</span>
+                 <span class="mo">−</span>
+                 <div class="msub">
+                  <span class="mi">c</span>
+                  <span class="mi">i</span>
+                 </div>
+                 <span stretchy="false" class="mo">)</span>
+                </div>
+                <span class="mn">2</span>
+               </div>
+              </div>
+              <span class="mo">]</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div> where R, is the interatomic distance between the lanthanide and the other atom.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <div id="pone.0124372.t002" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t002</span>
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <div class="title">Means and variances of the 
+    <span class="italic">γ</span> distribution fits for the UME
+    <sub>(Ln-L)</sub>s computed for the 
+    <span class="italic">N</span> complexes for each lanthanide trication.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t002g" xlink:href="pone.0124372.t002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th colspan="5" align="center" rowspan="1">UME
+       <sub>(Ln-L)</sub>s
+      </th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">lanthanide ion</th>
+      <th align="left" rowspan="1" colspan="1">N</th>
+      <th align="left" rowspan="1" colspan="1">mean (Å)</th>
+      <th align="left" rowspan="1" colspan="1">variance (Å
+       <span class="sup">2</span>)
+      </th>
+      <th align="left" rowspan="1" colspan="1">p-value</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">84</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0710</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0032</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1418</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">57</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0805</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0040</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.9630</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">65</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0685</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0037</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.6141</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <div id="pone.0124372.t003" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.t003</span>
+  <span class="label">Table 3</span>
+  <div class="caption">
+   <div class="title">Means and Variances of the 
+    <span class="italic">γ</span> distribution fits for the UMEs computed for the 
+    <span class="italic">N</span> complexes for each lanthanide trication.
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0124372.t003g" xlink:href="pone.0124372.t003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th colspan="5" align="center" rowspan="1">UMEs</th>
+     </tr>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">lanthanide ion</th>
+      <th align="left" rowspan="1" colspan="1">N</th>
+      <th align="left" rowspan="1" colspan="1">mean (Å)</th>
+      <th align="left" rowspan="1" colspan="1">variance (Å
+       <span class="sup">2</span>)
+      </th>
+      <th align="left" rowspan="1" colspan="1">p-value</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">La
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">84</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1524</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0276</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.7502</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ce
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">57</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1621</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0373</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.2089</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pr
+       <span class="sup">3+</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">65</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.1790</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.0469</td>
+      <td align="char" char="." rowspan="1" colspan="1">0.5420</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</sec>

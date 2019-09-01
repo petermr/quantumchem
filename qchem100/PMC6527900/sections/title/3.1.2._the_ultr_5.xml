@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.1.2. The Ultra-Cold Limit</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the ultra-cold energy range (below 0.001 meV) only 
+  <span class="italic">J</span> = 0 contributes to the partial wave expansion in Equation (6), so that the dependence of ics on collision energy follows the limiting behavior well-described by the Wigner's threshold law (Wigner, 
+  <a rid="B63" ref-type="bibr" href="#B63">1948</a>):
+ </p>
+ <div id="E9" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(8)</span>
+  <div id="M13" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">W</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">4</span>
+        <span class="mi">π</span>
+        <span class="mi">ℏ</span>
+        <span class="mi">β</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where σ
+  <sub>
+   <span class="italic">W</span>
+  </sub> denotes the ics in the Wigner regime, β is the imaginary part of the scattering length [Balakrishnan et al. (
+  <a rid="B11" ref-type="bibr" href="#B11">1997</a>)] and 
+  <div class="inline-formula">
+   <div id="M14" class="math">
+    <span class="mi">k</span>
+    <span class="mo">=</span>
+    <div class="msqrt">
+     <div class="mrow">
+      <span class="mn">2</span>
+      <span class="mi">m</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span class="mo">/</span>
+    <span class="mi">ℏ</span>
+   </div>
+  </div> is the reactants' wave number. Fitting the ics shown in 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> to Equation (8) we have obtained the values of the imaginary scattering lengths, see 
+  <a rid="T2" ref-type="table" href="#T2">Table 2</a>. Comparing the β values reported in the table, we see that the dispersion forces and isotopic substitutions influence both the collision energy of the onset of the Wigner regime and the magnitude of β. Because of the stronger long-range interaction potential of PES-II with respect to that of SW PES, the Wigner regime manifests itself to lower collision energy (approximately at 10
+  <span class="sup">−4</span> meV for PES-II, as shown in 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). The larger barrier width of PES-II reduces significantly the β values. Also, we can note that lighter isotopic substitution yields larger β values. Again, for the H
+  <sub>2</sub> case the Wigner regime is encountered at higher energies although the effect is of minor entity than changing the entrance channel of the PES. However, the large differences found in the F + H
+  <sub>2</sub> case, where β changes by more than one order of magnitude, suggest that tunneling cannot be the only reason of this different behavior between the PESs.
+ </p>
+ <div id="T2" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <p>Values of the imaginary scattering length, β, in atomic units.</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <thead>
+    <tr>
+     <th rowspan="1" colspan="1"/>
+     <th valign="top" align="center" rowspan="1" colspan="1">
+      <span class="bold">SW PES</span>
+     </th>
+     <th valign="top" align="center" rowspan="1" colspan="1">
+      <span class="bold">PES-II</span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">F + H
+      <sub>2</sub>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">1.201 × 10
+      <span class="sup">−1</span>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">9.933 × 10
+      <span class="sup">−3</span>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">F + D
+      <sub>2</sub>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">1.644 × 10
+      <span class="sup">−3</span>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">7.064 × 10
+      <span class="sup">−4</span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In reference Bodo et al. (
+  <a rid="B14" ref-type="bibr" href="#B14">2004</a>), analyzing elastic and reactive 
+  <span class="italic">J</span>=0 reaction probabilities obtained with the SW PES, the authors were able to obtain the real and imaginary parts of the scattering length. The values obtained were 
+  <span class="italic">a</span> = (−2.0−6.3 × 10
+  <span class="sup">−2</span>
+  <span class="italic">i</span>)Å and 
+  <span class="italic">a</span> = (3.95−8.6 × 10
+  <span class="sup">−4</span>
+  <span class="italic">i</span>)Å for the FH
+  <sub>2</sub> and FD
+  <sub>2</sub> systems, respectively. Comparing with the values reported in 
+  <a rid="T2" ref-type="table" href="#T2">Table 2</a> we can see that the imaginary part of the scattering lengths is in perfect agreement with our results. The negative value obtained for the real part of the scattering length for H
+  <sub>2</sub> is attributed to the presence of a virtual state associated with the van der Waals well in the entrance channel and located around 0.3 meV below the reactive threshold. Fingerprints of this effect can also be noted in the left panel of 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, where the SW PES curve shows up a faster increase around to 0.01 meV before reaching the Wigner regime. Additional evidences will be given later. For the F+D
+  <sub>2</sub> reaction, the positive value of the real part of the scattering length suggests that the scattering may be influenced by a resonance state. However, no structure has been detected in the reactive observables.
+ </p>
+</sec>

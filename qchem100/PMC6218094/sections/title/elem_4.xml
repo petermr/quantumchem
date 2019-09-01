@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec003" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemical predictions of biochemical redox potentials</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To facilitate our analysis we divided redox reactions into several generalized oxidoreductase groups which together cover the vast majority of redox transformations within cellular metabolism (
+  <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1A</a>): (G1) reduction of an unmodified carboxylic acid (-COO) or an activated carboxylic acid–i.e., phosphoanhydride (-COOPO
+  <sub>3</sub>) or thioester (-COS-CoA)–to a carbonyl (-C = O); (G2) reduction of a carbonyl to a hydroxycarbon (-COH, i.e., alcohol); (G3) reduction of a carbonyl to an amine (-CNH
+  <sub>3</sub>); and (G4) reduction of a hydroxycarbon to a hydrocarbon (-C-C-), which usually occurs via an ethylene intermediate (-C = C-). We note that this categorization corresponds to the treatment of carbon oxidation levels in standard organic chemistry textbooks [
+  <a rid="pcbi.1006471.ref029" ref-type="bibr" href="#pcbi.1006471.ref029">29</a>].
+ </p>
+ <div id="pcbi.1006471.g001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g001</span>
+  <span class="label">Fig 1</span>
+  <div class="caption">
+   <div class="title">Our study is based on predicting biochemical standard redox potentials using a calibrated quantum chemistry strategy.</div>
+   <p>(A) The four different redox reaction categories considered here are reduction of a carboxylic acid to a carbonyl—G1, reduction of a carbonyl to a hydroxycarbon—G2, or an amine—G3, and reduction of a hydroxycarbon to a hydrocarbon—G4. (B) For each redox reaction of interest, such as reduction of pyruvate to lactate, we select the most abundant protonation state at acidic pH (pH = 0) for quantum chemical simulation. (C) We estimate the chemical redox potential as the difference between Boltzmann-averaged electronic energies of geometric conformers of products and substrates. (D) In order to convert chemical redox potentials to biochemical potentials at pH = 7, we use cheminformatic pKa estimates and the Alberty-Legendre Transform (Supplementary Information). (E) Finally, we use a set of 105 experimental values obtained from the NIST Thermodynamics of Enzyme-Catalyzed Reactions database (TECRDB) [
+    <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>] and a set of Gibbs formation energies compiled by Robert Alberty [
+    <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] (Supplementary Information) to calibrate redox potentials using linear regression.
+   </p>
+  </div>
+  <div xlink:href="pcbi.1006471.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We developed a quantum chemistry method for predicting the standard transformed redox potential of biochemical redox reactions. We explored a range of different model chemistries, including combinations of DFT (density functional theory) functionals or wave-function electronic structure methods, basis sets, choice of implicit solvent, and choice of dispersion correction. We found that a DFT approach that uses the double-hybrid functional B2PLYP [
+  <a rid="pcbi.1006471.ref032" ref-type="bibr" href="#pcbi.1006471.ref032">32</a>,
+  <a rid="pcbi.1006471.ref033" ref-type="bibr" href="#pcbi.1006471.ref033">33</a>] gave the highest prediction accuracy (see 
+  <a ref-type="sec" rid="sec008" href="#sec008">Methods</a> for detailed model chemistry description; other model chemistries also gave high accuracy as discussed in the Supplementary Information and 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s005" href="#pcbi.1006471.s005">S1 Fig</a>). As each biochemical compound represents an ensemble of different chemical species–each at a different protonation state [
+  <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] –we applied the following pipeline to predict E’
+  <span class="sup">m</span> (
+  <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1</a>, see also 
+  <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>): (i) a quantum chemical simulation was used to obtain the electronic energies of the most abundant chemical species at pH 0; (ii) we then calculated the difference in electronic energies ΔE
+  <sub>Electronic</sub> between the product and substrate of a redox pair at pH 0, thus obtaining estimates of the standard redox potential, E
+  <span class="sup">o</span>; (iii) next, we employed empirical pKa estimates to calculate the energetics of the deprotonated chemical species and used the extended Debye-Huckel equation and the Alberty-Legendre transform [
+  <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] to convert E
+  <span class="sup">o</span> to the standard transformed redox potential E’
+  <span class="sup">m</span> at pH = 7 and ionic strength I = 0.25 M (as recommended [
+  <a rid="pcbi.1006471.ref034" ref-type="bibr" href="#pcbi.1006471.ref034">34</a>]), where reactant concentrations are standardized to 1 mM to better approximate the physiological concentrations of metabolites [
+  <a rid="pcbi.1006471.ref001" ref-type="bibr" href="#pcbi.1006471.ref001">1</a>,
+  <a rid="pcbi.1006471.ref035" ref-type="bibr" href="#pcbi.1006471.ref035">35</a>]. Finally, (iv) to correct for systematic errors, the predicted E’
+  <span class="sup">m</span> values, of each oxidoreductase group, were calibrated by linear regression (two-parameter calibration) against a set of 105 experimentally measured potentials obtained from the NIST Thermodynamics of Enzyme-Catalyzed Reactions database (TECRDB) [
+  <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>] and the Gibbs formation energy dataset of Robert Alberty [
+  <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] (Supplementary Information). We note that we observe empirically that the difference in electronic energies ΔE
+  <sub>Electronic</sub> is strongly correlated with the Gibbs reaction energy ΔG
+  <sub>r</sub> for these redox systems (
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s009" href="#pcbi.1006471.s009">S5 Fig</a>) and so we estimate redox potentials using the former in order to reduce computational cost (see SI for details). We also note that the two-parameter calibration is needed mainly since we ignore vibrational enthalpies and entropies of the compounds (Supplementary Information).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As exemplified in 
+  <a ref-type="fig" rid="pcbi.1006471.g002" href="#pcbi.1006471.g002">Fig 2A and 2B</a> and 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s006" href="#pcbi.1006471.s006">S2 Fig</a>, the calibration by linear regression significantly improves the accuracy of our quantum chemistry predictions. As shown in 
+  <a rid="pcbi.1006471.t001" ref-type="table" href="#pcbi.1006471.t001">Table 1</a>, the predictions of quantum chemistry have a lower mean absolute error (MAE) than those of GCM for all reaction categories. (GCM has a higher Pearson correlation coefficient for category G1, but this is an artifact introduced by a single outlier value, 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s007" href="#pcbi.1006471.s007">S3 Fig</a>). The improved accuracy is especially noteworthy as our quantum chemical approach derives reduction potentials from first principles and requires only two calibration parameters per oxidoreductase group (α and β in 
+  <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1E</a>), as compared to GCM which uses 5–13 parameters while achieving lower prediction accuracy (
+  <a rid="pcbi.1006471.t001" ref-type="table" href="#pcbi.1006471.t001">Table 1</a>). Therefore, our quantum chemistry approach can be extended to predict reduction potentials for a wide domain of redox reactions since it does not depend as heavily on empirical measurements. While the quantum chemistry method is computationally more expensive than GCM–with a cost that scales with the number of electrons per molecule (Supplementary Information)–it can still predict the potentials for several hundreds of reactions when run on a typical high-performance computing cluster.
+ </p>
+ <div id="pcbi.1006471.g002" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g002</span>
+  <span class="label">Fig 2</span>
+  <div class="caption">
+   <div class="title">Quantum chemistry model predicts experimentally measured reduction potential with high accuracy.</div>
+   <p>Data shown corresponds to reactions where carbonyls are reduced to hydroxycarbons (group G2). (A) Quantum chemical predictions after calibration (linear regression with 2-parameters); 
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s006" href="#pcbi.1006471.s006">S2 Fig</a> shows how the calibration improves accuracy. (B) Prediction using group contribution method as implemented in eQuilibrator [
+    <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+    <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>] (see 
+    <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>) (10 parameters for the G2 category) (C) Scatter plot of normalized prediction errors (z-scores) of G2 reactions for molecular fingerprints and quantum chemistry. The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde reductase (EC 1.1.1.61) reactions (red points) have potentially erroneous experimental values.
+   </p>
+  </div>
+  <div xlink:href="pcbi.1006471.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pcbi.1006471.t001" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.t001</span>
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Prediction accuracy of the quantum chemistry and group contribution method modeling approaches.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pcbi.1006471.t001g" xlink:href="pcbi.1006471.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">
+       <span class="break"/>
+      </th>
+      <th align="center" rowspan="1" colspan="1">G1 (n = 8)
+       <span class="break"/>Carboxylic Acid to Carbonyl
+      </th>
+      <th align="center" rowspan="1" colspan="1">G2 (n = 59)
+       <span class="break"/>Carbonyl to Hydroxycarbon
+      </th>
+      <th align="center" rowspan="1" colspan="1">G3 (n = 23)
+       <span class="break"/>Carbonyl to Amine
+      </th>
+      <th align="center" rowspan="1" colspan="1">G4 (n = 15)
+       <span class="break"/>Hydroxycarbon to Hydrocarbon
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">
+       <span class="bold">Quantum Chemistry</span>
+      </td>
+      <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 45 mV
+       <span class="break"/>Pearson r = 0.43
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.19
+       <span class="break"/>No. params. = 2
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+       <span class="break"/>Pearson r = 0.59
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.35
+       <span class="break"/>No. params. = 2
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 17 mV
+       <span class="break"/>Pearson r = 0.70
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.49
+       <span class="break"/>No. params. = 2
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+       <span class="break"/>Pearson r = 0.45
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.21
+       <span class="break"/>No. params. = 2
+      </td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">
+       <span class="bold">Group Contribution Method</span>
+      </td>
+      <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 52 mV
+       <span class="break"/>Pearson r = 0.54
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.17
+       <span class="break"/>No. params. = 6
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+       <span class="break"/>Pearson r = 0.48
+       <span class="break"/>R
+       <span class="sup">2</span> = 0.21
+       <span class="break"/>No. params. = 13
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+       <span class="break"/>Pearson r = 0.22
+       <span class="break"/>R
+       <span class="sup">2</span> = -0.23
+       <span class="break"/>No. params. = 5
+      </td>
+      <td align="left" rowspan="1" colspan="1">MAE = 66 mV
+       <span class="break"/>Pearson r = 0.16
+       <span class="break"/>R
+       <span class="sup">2</span> = -3.39
+       <span class="break"/>No. params. = 6
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="t001fn001" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">The number of available experimental values for each reaction category is indicated in parentheses. MAE = Mean Absolute Error; R
+     <span class="sup">2</span> = coefficient of determination. Note that for the G1 category, quantum chemistry has a lower MAE, but GCM has higher values of Pearson r. While the Pearson r can range from -1 to 1, R
+     <span class="sup">2</span> can take on any negative value. A prediction method with the same accuracy as the mean predictor (a constant model that always predicts the mean value of the experimental data) has a value of R
+     <span class="sup">2</span> = 0; negative values of R
+     <span class="sup">2</span> indicate prediction accuracies that are worse than the mean predictor. GCM estimates of standard redox potentials were obtained from the implementation by Noor et al. [
+     <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+     <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>] used by eQuilibrator (see 
+     <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>).
+    </p>
+   </fn>
+  </div>
+ </div>
+</sec>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" id="sec008" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We performed quantum chemical simulations—geometry optimizations followed by electronic single point energy (SPE) calculations—on the major species (MS) of each metabolite of interest at pH = 0, which corresponds to the most positively charged species (see below and SI for details on the model chemistries used). Running calculations on these reference protonation states yields estimates for the standard redox potential, 
+  <span class="italic">E</span>
+  <span class="sup">
+   <span class="italic">o</span>
+  </span>(
+  <span class="italic">major species at pH</span> = 0). Using pKa values from the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon)—a cheminformatics software widely used in the field of biochemical thermodynamics [
+  <a rid="pcbi.1006471.ref004" ref-type="bibr" href="#pcbi.1006471.ref004">4</a>,
+  <a rid="pcbi.1006471.ref014" ref-type="bibr" href="#pcbi.1006471.ref014">14</a>,
+  <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+  <a rid="pcbi.1006471.ref067" ref-type="bibr" href="#pcbi.1006471.ref067">67</a>,
+  <a rid="pcbi.1006471.ref082" ref-type="bibr" href="#pcbi.1006471.ref082">82</a>–
+  <a rid="pcbi.1006471.ref085" ref-type="bibr" href="#pcbi.1006471.ref085">85</a>] - the extended Debye-Huckel equation and the Alberty-Legendre transform, we converted 
+  <span class="italic">E</span>
+  <span class="sup">
+   <span class="italic">o</span>
+  </span>(
+  <span class="italic">MS at pH</span> = 0) to the standard (standardized to 1 mM) transformed redox potential of interest, 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>(
+  <span class="italic">pH</span> = 7,
+  <span class="italic">I</span> = 0.25) [
+  <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>,
+  <a rid="pcbi.1006471.ref034" ref-type="bibr" href="#pcbi.1006471.ref034">34</a>]. To correct for systematic errors in both the quantum chemical predictions and the pKa estimates, we calibrate the resulting 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>(
+  <span class="italic">pH</span> = 7,
+  <span class="italic">I</span> = 0.25) values against experimental data using linear regression, performing a separate calibration for each of the four different redox reaction categories. We further detail each of these steps below (see also Supplementary Information).
+ </p>
+ <sec id="sec009" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemical geometry optimizations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For each metabolite, we generated ten initial geometric conformations using ChemAxon’s calculator plugin (Marvin 17.7.0, 2017, ChemAxon). Quantum chemistry calculations were performed using the Orca software package (version 3.0.3) [
+   <a rid="pcbi.1006471.ref086" ref-type="bibr" href="#pcbi.1006471.ref086">86</a>]. Geometry optimizations were carried out using DFT, with the B3LYP functional and Orca’s predefined DefBas-2 basis set (see 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description). The COSMO implicit solvent model [
+   <a rid="pcbi.1006471.ref087" ref-type="bibr" href="#pcbi.1006471.ref087">87</a>] was used, with the default parameter values of epsilon = 80.4 and refrac = 1.33. DFT-D3 dispersion correction [
+   <a rid="pcbi.1006471.ref088" ref-type="bibr" href="#pcbi.1006471.ref088">88</a>] using Becke-Johnson damping [
+   <a rid="pcbi.1006471.ref089" ref-type="bibr" href="#pcbi.1006471.ref089">89</a>] was also included.
+  </p>
+ </sec>
+ <sec id="sec010" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemical electronic single point energies (SPE) and calibration against experimental values</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Single point energy (SPE) calculations yield the value of the electronic energy 
+   <span class="italic">E</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub> for each conformer at their optimized geometry. We used the optimized geometries obtained using DFT as inputs for SPE calculations (see below and SI for details on the SPE model chemistry selected). Substrate and product conformers were sampled according to a Boltzmann distribution. By taking the difference of products’ and substrates’ 
+   <span class="italic">E</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub> values, we obtain 
+   <span class="italic">ΔE</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub>, which we treat as directly proportional to the standard reduction potential of the major species at pH 0: 
+   <div id="pcbi.1006471.e005" class="disp-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e005.jpg" id="pcbi.1006471.e005g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M5" class="math">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">o</span>
+       </div>
+      </div>
+      <span class="mo">(</span>
+      <span class="mi">M</span>
+      <span class="mi">S</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mi">a</span>
+      <span class="mi">t</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mi">p</span>
+      <span class="mi">H</span>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mo">)</span>
+      <span class="mo">∼</span>
+      <span class="mo">−</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Δ</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span class="mi">l</span>
+          <span class="mi">e</span>
+          <span class="mi">c</span>
+          <span class="mi">t</span>
+          <span class="mi">r</span>
+          <span class="mi">o</span>
+          <span class="mi">n</span>
+          <span class="mi">i</span>
+          <span class="mi">c</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <span class="mi">F</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The use of 
+   <span class="italic">ΔE</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub> to approximate the reduction potential as opposed to 
+   <div id="pcbi.1006471.e006" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e006.jpg" id="pcbi.1006471.e006g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M6" class="math">
+      <span class="mi">Δ</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">G</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">o</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div> (which includes rotational and vibrational enthalpies and entropies) reduces computational cost and is motivated by the empirical observation that there is a strong correlation between 
+   <span class="italic">ΔE</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub> and 
+   <div id="pcbi.1006471.e007" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e007.jpg" id="pcbi.1006471.e007g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M7" class="math">
+      <span class="mi">Δ</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">G</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">o</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div> for these redox systems (
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s009" href="#pcbi.1006471.s009">S5 Fig</a>, see SI for details). We note that we subtracted the energy of molecular hydrogen (obtained with the same SPE model chemistry) from 
+   <span class="italic">ΔE</span>
+   <sub>
+    <span class="italic">Electronic</span>
+   </sub> in order to get redox the potentials relative to the standard hydrogen electrode. A similar approach has been used to model redox reactions in the context of organic redox flow batteries [
+   <a rid="pcbi.1006471.ref028" ref-type="bibr" href="#pcbi.1006471.ref028">28</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We use cheminformatic pKa estimates (Marvin 17.7.0, 2017, ChemAxon), the extended Debye-Huckel equation and the Alberty-Legendre transform (16, 17) to convert both the experimental standard redox potentials and the quantum chemical predictions of 
+   <span class="italic">E</span>
+   <span class="sup">
+    <span class="italic">o</span>
+   </span>(
+   <span class="italic">MS at pH</span> = 0) to the 
+   <span class="italic">transformed</span> redox potentials standardized to 1 mM, 
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>(
+   <span class="italic">pH</span> = 7,
+   <span class="italic">I</span> = 0.25). Then, independently for each redox category, we performed linear regressions between the 
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>(
+   <span class="italic">pH</span> = 7,
+   <span class="italic">I</span> = 0.25) values and the available experimental redox potentials. The calibration via linear regression was implemented using the SciKit learn Python library.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to optimize prediction accuracy, we ran geometry optimization and SPE calculations using a large diversity of model chemistries, generated by selecting one of ten possible DFT functionals, two wave function electronic structure methods, three possible basis sets, the option of adding implicit solvation, as well as a correction to account for dispersion interactions (
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s005" href="#pcbi.1006471.s005">S1 Fig</a>, and see SI for details). Optimizing for Pearson correlation coefficients r, we selected the following model chemistry to predict reactions without experimentally measured potentials: a DFT approach with the double-hybrid functional B2PLYP [
+   <a rid="pcbi.1006471.ref032" ref-type="bibr" href="#pcbi.1006471.ref032">32</a>,
+   <a rid="pcbi.1006471.ref033" ref-type="bibr" href="#pcbi.1006471.ref033">33</a>], the DefBas-5 Orca basis set (see 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description), COSMO implicit solvent [
+   <a rid="pcbi.1006471.ref087" ref-type="bibr" href="#pcbi.1006471.ref087">87</a>], and D3 dispersion correction [
+   <a rid="pcbi.1006471.ref088" ref-type="bibr" href="#pcbi.1006471.ref088">88</a>]. To avoid overfitting, we trained the model chemistry optimization procedure on the experimental data for the G3 reaction category (carbonyl to amine reduction), and validate its accuracy on the rest of the oxidoreductase reaction categories (
+   <a rid="pcbi.1006471.t001" ref-type="table" href="#pcbi.1006471.t001">Table 1</a> and 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s007" href="#pcbi.1006471.s007">S3 Fig</a>). Hybrid and double-hybrid DFT functionals have been shown to accurately capture the thermochemistry and noncovalent interactions of molecules when compared with coupled cluster results [
+   <a rid="pcbi.1006471.ref090" ref-type="bibr" href="#pcbi.1006471.ref090">90</a>,
+   <a rid="pcbi.1006471.ref091" ref-type="bibr" href="#pcbi.1006471.ref091">91</a>]. Therefore, we select this double-hybrid DFT approach covers the relevant physics of our problem while minimizing computational cost and maximizing predictive power. Although we explored a large set of DFT functionals, wave function methods, and basis sets, further improvements could be achieved by exploring a larger space of model chemistries, including the geometry optimization procedure, conformer generation method, as well as explicit solvation models [
+   <a rid="pcbi.1006471.ref015" ref-type="bibr" href="#pcbi.1006471.ref015">15</a>]. For example, adapting a recent highly accurate method (tested on four molecules) based on the Linear Response Approximation (LRA) to the large scale prediction of E’
+   <span class="sup">m</span> values would be an interesting direction [
+   <a rid="pcbi.1006471.ref072" ref-type="bibr" href="#pcbi.1006471.ref072">72</a>].
+  </p>
+ </sec>
+ <sec id="sec011" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Predicting redox potentials with molecular fingerprints and group contribution method</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We used the RDKit software tool (
+   <span ext-link-type="uri" xlink:href="http://www.rdkit.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.rdkit.org</span>), to obtain binary molecular fingerprints of each compound of interest. Because of the relatively small size of our training sets and in order to minimize overfitting, we used MACCS Key 166 fingerprints instead of other popular Morgan circular fingerprints [
+   <a rid="pcbi.1006471.ref092" ref-type="bibr" href="#pcbi.1006471.ref092">92</a>]. We concatenated each redox half-reaction substrate/product fingerprint pair into a single reaction fingerprint [
+   <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>] and used these as input training data for regularized linear regression. We then performed an independent regularized regression for each of the four different redox reaction categories.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To obtain group contribution estimates of redox potentials, we use the group matrix and the group energies of Noor 
+   <span class="italic">et al</span>. [
+   <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>] used in eQuilibrator [
+   <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>], an online thermodynamics calculator. We note that eQuilibrator uses the component contribution method (CCM) which combines group contribution energies with experimental reaction or formation Gibbs energies (“reactant contributions”) whenever these are available. That is, for reactions with available experimental data, eQuilibrator will return the experimental energies. Thus, for fair comparison against quantum chemistry we used the GCM code underneath eQuilibrator to obtain the group contribution estimates for all reactions in our test set. Just like the quantum chemical predictions, the GCM estimates were standardized to the E
+   <span class="sup">'m</span>(pH = 7, I = 0.25) state.
+  </p>
+ </sec>
+ <sec id="sec012" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Systematic detection of reactions with potentially erroneous experimental values</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We design a strategy to detect reactions with potentially erroneous experimental values as listed in the NIST Thermodynamics of Enzyme-Catalyzed Reactions Database (TECRDB) [
+   <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>]. We identify reactions whose predicted potential deviates from experiment by a similar amount for both the calibrated quantum chemistry and fingerprint-based modeling approaches. In order to make the errors associated to the two different modeling methods comparable, we normalize the prediction errors by computing their associated z-scores: 
+   <div id="pcbi.1006471.e008" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e008.jpg" id="pcbi.1006471.e008g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M8" class="math">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">Z</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">E</span>
+        <span class="mi">r</span>
+        <span class="mi">r</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <span class="mi">E</span>
+        <span class="mi">r</span>
+        <span class="mi">r</span>
+        <span class="mo">−</span>
+        <span class="mi">μ</span>
+        <span class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>. We set a threshold value for the z-score of Z = 2, such that reactions with 
+   <span class="italic">Z</span>
+   <sub>
+    <span class="italic">Err</span>
+   </sub>(
+   <span class="italic">QC</span>) &gt; 2 and 
+   <span class="italic">Z</span>
+   <sub>
+    <span class="italic">Err</span>
+   </sub>(
+   <span class="italic">fingerprints</span>) &gt; 2 are assigned a high likelihood of having an erroneously tabulated experimental value in NIST-TECRDB.
+  </p>
+ </sec>
+ <sec id="sec013" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of comprehensive database of natural and non-natural redox reactions</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To generate a database of all possible redox reactions involving natural compounds, we use a decomposition of all metabolites into functional groups as per the group contribution method [
+   <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>]. We find pairs of metabolites in the KEGG database with functional group vectors whose difference matches the reaction signature of any of the redox reaction categories of interest. For example, pairs of metabolites in the G1 category will have a group difference vector with a +1/-1 in the element corresponding to a carbonyl/carboxylic acid functional group respectively (see SI for details). We note that every reaction generated by this strategy can be uniquely assigned to one of the four redox categories considered.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Using this method we succeeded in generating a rough database of redox reactions. However, additional manual and semi-automated data cleansing was required to get the final version of the database (see SI for further details). For example, use of the group difference vectors failed to account for the chirality of the metabolites, and in some instances stereochemistry was not maintained throughout the reaction. In order to solve this, we applied an additional filter, which used the conventions for assigning chirality (R/S, L/D) present in molecule names to match chirality between the substrate and product. Sugars proved to be especially problematic as those reactions did not maintain stereochemistry throughout; for these reactions, the above filtering method did not suffice, often keeping incorrect reactions such as L-Xylonate → L-Arabinose. For this, we used molecular naming conventions to eliminate the wrong reactions (see SI for further details).</p>
+ </sec>
+ <sec id="sec014" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Statistically significant differences between average E’
+   <span class="sup">m</span> values for distinct structural groups
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We performed Welch’s unequal variance t-test to obtain the p-value for the null hypothesis that pairs of different reaction subcategories within group G2 have identical average E’
+   <span class="sup">m</span> values (
+   <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>). Welch’s t-test is an adaptation of Student’s t-test which does not assume equal variances.
+  </p>
+ </sec>
+</sec>

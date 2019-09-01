@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Simulation of environmental effects</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this section, we propose a quantum simulation in superconducting circuits of generic system-environment interactions, which have long been recognised as fundamental in the description of electron transport in biomolecules.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Biological systems are not isolated, and one can consider minimal models for characterising the quantum baths and decoherence
+  <a ref-type="bibr" rid="b25" href="#b25">25</a>
+  <a ref-type="bibr" rid="b26" href="#b26">26</a>, such as the spin-boson model, or the Caldeira-Leggett model. The former is a widely used model that describes the interaction between a two-level system and a bosonic bath, and the latter deals with the dynamics of a quantum particle coupled to a bosonic bath. Usually, the coupling of the quantum system to the bath degrees of freedom is completely specified by the spectral density 
+  <div id="d33e529" class="inline-formula">
+   <span id="d33e530" xlink:href="srep27836-m13.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which may be obtained from experimental data, and allows us to explore different continuum models of the environment. Nevertheless, in certain limits of strong coupling, the evaluations are computationally hard, and the complete comprehension of the physics remains as an open problem.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In particular, we study a Hamiltonian describing the charge transfer in DNA wires
+  <a ref-type="bibr" rid="b42" href="#b42">42</a>
+  <a ref-type="bibr" rid="b43" href="#b43">43</a>
+  <a ref-type="bibr" rid="b44" href="#b44">44</a>, where experiments show a wide range of results, from insulator to conductor behaviours
+  <a ref-type="bibr" rid="b55" href="#b55">55</a>
+  <a ref-type="bibr" rid="b56" href="#b56">56</a>
+  <a ref-type="bibr" rid="b57" href="#b57">57</a>
+  <a ref-type="bibr" rid="b58" href="#b58">58</a>
+  <a ref-type="bibr" rid="b59" href="#b59">59</a>
+  <a ref-type="bibr" rid="b60" href="#b60">60</a>
+  <a ref-type="bibr" rid="b61" href="#b61">61</a>. When describing the dynamics of electrons in these biomolecules, the influence of a dissipative medium determines substantially the transfer events. We consider a bosonic bath in which a variety of crucial factors are contained, such as the internal vibrations of the biomolecule and the environmental effects.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A generic effective charge-bath model that describes an electronic system coupled to a fluctuating environment, in this case a bosonic bath, is captured by the Hamiltonian
+  <a ref-type="bibr" rid="b44" href="#b44">44</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="eq14" class="disp-formula">
+   <span id="d33e543" xlink:href="srep27836-m14.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">with 
+  <div id="d33e546" class="inline-formula">
+   <span id="d33e547" xlink:href="srep27836-m15.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, fermionic annihilation (creation) operators for electrons on different sites with energies 
+  <span class="italic">ε</span>
+  <sub>
+   <span class="italic">j</span>
+  </sub>. 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">j,j</span>+1
+  </sub> characterises the electron hopping between nearest-neighbour sites. The bath is represented by the bosonic annihilation (creation) operators 
+  <div id="d33e562" class="inline-formula">
+   <span id="d33e563" xlink:href="srep27836-m16.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and the coefficients 
+  <span class="italic">λ</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> indicate how the system and bath are coupled.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A minimal and particular case is the two-site model with 
+  <span class="italic">j</span> = 
+  <span class="italic">A</span>, 
+  <span class="italic">B</span>, which comprises a donor (D) and an acceptor (A) site
+  <a ref-type="bibr" rid="b42" href="#b42">42</a>
+  <a ref-type="bibr" rid="b43" href="#b43">43</a>. This reduced model can be mapped onto the spin-boson model, which has been studied in cQED
+  <a ref-type="bibr" rid="b62" href="#b62">62</a>, for the particular case of one spinless electron in the system. We provide the patterns to treat in a cQED setup a more general situation where the spin degree-of-freedom or more electrons enter into the description. To this end, we consider 
+  <a ref-type="disp-formula" rid="eq14" href="#eq14">equation (9)</a> with 
+  <span class="italic">j</span> = 1, 2, 3, and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">j</span>,
+   <span class="italic">j</span>+1
+  </sub> = 
+  <span class="italic">V</span>, which cannot be mapped onto the well-studied spin-boson model. For the sake of simplicity, we have chosen this truncation, but the techniques can be easily extrapolated to an arbitrary case.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As previously shown, in order to simulate fermionic operators in superconducting circuits, we replace them by Pauli matrices via the Jordan-Wigner transformation, leading to</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="eq17" class="disp-formula">
+   <span id="d33e611" xlink:href="srep27836-m17.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">where the first two terms correspond to the purely electronic subsystem, the third term is the free energy of the bosons in the bath, and the last term represents the interaction of the electrons with the environment.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Hamiltonian is now suitable for a digital quantum simulation in superconducting circuits, in which the qubits are described by Pauli operators, and 3D cavities, multimode coplanar waveguides, or low-Q cavities play the role of bosonic baths. A first step in this direction, considering an open transmission line coupled to qubits in order to simulate fermionic systems interacting with a continuum of bosons was introduced in the context of quantum field theory
+  <a ref-type="bibr" rid="b35" href="#b35">35</a>. While the basic protocol was already developed in this article, here we apply this formalism to the different context of electron transport in biomolecules, for a discrete set of coupled fermionic and bosonic modes. Recently, experimental realisations with a transmon qubit coupled to a multimode cavity in the strong coupling regime have been performed
+  <a ref-type="bibr" rid="b40" href="#b40">40</a>. There, the feasibility of coupling a superconducting transmon qubit to a long coplanar resonator has been shown, achieving in this way the coupling of a qubit to a set of several bosonic modes at the same time. This multimode treatment is also needed to explain results in superconducting 3D cavities or in transmission lines
+  <a ref-type="bibr" rid="b39" href="#b39">39</a>
+  <a ref-type="bibr" rid="b41" href="#b41">41</a>, which allows us to propose a simulation exploiting the natural complexity that superconducting circuits reveal.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">By coupling three tunable superconducting qubits
+  <a ref-type="bibr" rid="b63" href="#b63">63</a>
+  <a ref-type="bibr" rid="b64" href="#b64">64</a> to a multimode cavity as in 
+  <a ref-type="fig" rid="f4" href="#f4">Fig. 4</a>, the Hamiltonian of 
+  <a ref-type="disp-formula" rid="eq17" href="#eq17">equation (10)</a> can be reproduced by using digital-analog methods, that is, introducing the fermionic interactions digitally and the bosonic ones in analog interaction blocks. We propose the emulation of a variety of system-environment dynamics on superconducting circuit technology. To this end, we consider the interaction term describing the 
+  <div id="d33e633" class="inline-formula">
+   <span id="d33e634" xlink:href="srep27836-m18.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>th qubit coupled to a multimode cavity,
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="eq19" class="disp-formula">
+   <span id="d33e638" xlink:href="srep27836-m19.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">with 
+  <div id="d33e641" class="inline-formula">
+   <span id="d33e642" xlink:href="srep27836-m20.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> the 
+  <span class="italic">i</span>th mode annihilation (creation) operator related with the cavity frequency 
+  <div id="d33e647" class="inline-formula">
+   <span id="d33e648" xlink:href="srep27836-m21.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, couplings 
+  <div id="d33e650" class="inline-formula">
+   <span id="d33e651" xlink:href="srep27836-m22.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and 
+  <div id="d33e653" class="inline-formula">
+   <span id="d33e654" xlink:href="srep27836-m23.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> the coupling strength to the fundamental cavity mode 
+  <div id="d33e657" class="inline-formula">
+   <span id="d33e658" xlink:href="srep27836-m24.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We profit from the tunability of the coupling between qubits and transmission lines via external magnetic fluxes 
+  <div id="d33e660" class="inline-formula">
+   <span id="d33e661" xlink:href="srep27836-m25.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="d33e663" class="inline-formula">
+   <span id="d33e664" xlink:href="srep27836-m26.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <a ref-type="bibr" rid="b35" href="#b35">35</a>
+  <a ref-type="bibr" rid="b63" href="#b63">63</a>
+  <a ref-type="bibr" rid="b64" href="#b64">64</a> to address a wider range of regimes and models, since the set of couplings 
+  <div id="d33e667" class="inline-formula">
+   <span id="d33e668" xlink:href="srep27836-m27.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> mimic the coefficients 
+  <span class="italic">λ</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> that characterise the interaction with the environment in 
+  <a ref-type="disp-formula" rid="eq17" href="#eq17">equation (10)</a>. Moreover, it has been shown experimentally how to engineer different shapes for the bath spectral function with a transmission line and partial reflectors
+  <a ref-type="bibr" rid="b62" href="#b62">62</a>
+  <a ref-type="bibr" rid="b65" href="#b65">65</a>. Additionally, it can also be proven that a simple tunable Ohmic bath, as the one provided by a transmission line, equipped with a feedback protocol, can produce highly non-Markovian dynamics
+  <a ref-type="bibr" rid="b66" href="#b66">66</a>. Growing in electronic complexity in 
+  <a ref-type="disp-formula" rid="eq14" href="#eq14">equation (9)</a> implies adding more qubits coupled to the transmission line in 
+  <a ref-type="fig" rid="f4" href="#f4">Fig. 4</a>. However, we can take full advantage of the same multimode cavity by encoding the bath in a similar fashion. Hence, the cQED setup may be easily scaled up by coupling more qubits to the same transmission line.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Let us discuss how the Hamiltonian in 
+  <a ref-type="disp-formula" rid="eq17" href="#eq17">equation (10)</a> is decomposed into different digital and digital-analog blocks for the quantum simulation. As in the previous subsection, the purely electronic subsystem can be decomposed in Trotter steps and reproduced by single- and two-qubit gates. Since the bosonic operators do not enter in this part, we must decouple the tunable qubits from the transmission line to perform the required gates. The remaining terms are encoded in digital-analog blocks, where we divide the dynamics in different Trotter steps in which the multimode cavity enters in an analog way, providing the free energy of the bosons, and simulating the last term of 
+  <a ref-type="disp-formula" rid="eq17" href="#eq17">equation (10)</a>. This last term is composed of purely bosonic interactions proportional to 
+  <div id="d33e698" class="inline-formula">
+   <span id="d33e699" xlink:href="srep27836-m28.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which may be simulated through a microwave driving in the cavity. It also involves qubit-boson interactions, 
+  <div id="d33e701" class="inline-formula">
+   <span id="d33e702" xlink:href="srep27836-m29.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which emerge from the coupling of each qubit with the multimode cavity, as in ref. 
+  <a ref-type="bibr" rid="b35" href="#b35">35</a>. A future analysis of the error in this protocol may include not only the error of the two-qubit gates, but also the contribution of the imperfect decoupling of the qubits with the transmission line in the single-qubit gates in which we introduce the coupling with the bosonic degrees of freedom. The figure of merit in the simulation is the final state of the fermions, which may be extracted from the final state of the qubits. The quantum simulation may be performed for different final times, thereby allowing us to reconstruct the electronic dynamics, such as transfer of excitations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">With this proposal, we have provided not only a way of extracting results illustrating different charge transport regimes in biomolecules, but also a way of testing different minimal models for describing molecules embedded in a bosonic environment. Superconducting circuits are a controllable quantum platform in which we can tune couplings between spins and bosons, and manipulate external conditions to engineer different baths. We analyse models of biological systems with a certain complexity and translate them to a controllable superconducting device that enjoys a similar complexity.</p>
+</sec>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Most new facilities fall in one of three categories: support for quantum chemistry, support for work with ligands, and support for working with proteins (see Table 
+  <a rid="Tab3" ref-type="table" href="#Tab3">3</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Tab3" class="table-wrap">
+   <span class="label">Table 3</span>
+   <div class="caption">
+    <p>Novel Molden facilities mainly fall in one of three groups</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tbody>
+     <tr>
+      <td align="left">Quantum chemistry
+       <span class="sup">a</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left"> QM package support</td>
+     </tr>
+     <tr>
+      <td align="left"> Localised orbitals</td>
+     </tr>
+     <tr>
+      <td align="left"> Electron localisation function (ELF)</td>
+     </tr>
+     <tr>
+      <td align="left"> Visualisation of spectra</td>
+     </tr>
+     <tr>
+      <td align="left">Working with ligands
+       <span class="sup">b</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left"> Polar surface area (PSA)</td>
+     </tr>
+     <tr>
+      <td align="left"> Alignment of molecules</td>
+     </tr>
+     <tr>
+      <td align="left"> Crystal optimiser based on the gaff force field</td>
+     </tr>
+     <tr>
+      <td align="left"> Interactive docking with potential of mean force (PMF) scoring</td>
+     </tr>
+     <tr>
+      <td align="left"> Partial optimisation of a protein–ligand complex</td>
+     </tr>
+     <tr>
+      <td align="left">Working with proteins
+       <span class="sup">c</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left"> Protein editing via the z-matrix</td>
+     </tr>
+     <tr>
+      <td align="left"> Rotamers: editing/search rotamer space</td>
+     </tr>
+     <tr>
+      <td align="left"> Optimisation of hydrogen positions</td>
+     </tr>
+     <tr>
+      <td align="left"> Display of protein electron density maps</td>
+     </tr>
+     <tr>
+      <td align="left"> Ambfor and ambmd: protein geometry optimisation and protein dynamics</td>
+     </tr>
+     <tr>
+      <td align="left"> Addition of hydrogens to ligands</td>
+     </tr>
+     <tr>
+      <td align="left"> Fixing incomplete residues: missing side-chain atoms of amino acids can be added</td>
+     </tr>
+     <tr>
+      <td align="left"> Protein-specific visualisation facilities</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <p> This table is not exhaustive. More information can be found in the documentation at the Molden home page: 
+     <span ext-link-type="uri" xlink:href="http://www.cmbi.ru.nl/molden/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cmbi.ru.nl/molden/</span>. All facilities mentioned in this table are explained in the remainder of this article
+    </p>
+    <p>
+     <span class="sup">a</span>Support for quantum chemistry calculations
+    </p>
+    <p>
+     <span class="sup">b</span>Support for ligand preparation
+    </p>
+    <p>
+     <span class="sup">c</span>Support for working with proteins for the purpose of ligand docking
+    </p>
+   </div>
+  </div>
+ </p>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry</div>
+  <sec id="Sec5" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">QM package support</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molden could already parse output of the quantum chemistry (QC) packages: Gaussian [
+    <a ref-type="bibr" rid="CR20" href="#CR20">20</a>], Gamess-US [
+    <a ref-type="bibr" rid="CR21" href="#CR21">21</a>], Gamess-UK [
+    <a ref-type="bibr" rid="CR22" href="#CR22">22</a>] and Mopac [
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>], and this list was recently extended with NWchem [
+    <a ref-type="bibr" rid="CR24" href="#CR24">24</a>], Orca [
+    <a ref-type="bibr" rid="CR25" href="#CR25">25</a>] and Qchem [
+    <a ref-type="bibr" rid="CR26" href="#CR26">26</a>]. The Molden format was developed to interface to QC programs that produce output that cannot be parsed natively. This format includes all information required for orbital/density and molecular vibration visualisation (e.g. Cartesian coordinates, the basis-set, the molecular orbital coefficients and occupancy numbers). The Molden format (see 
+    <span ext-link-type="uri" xlink:href="http://www.cmbi.ru.nl/molden/molden_format.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cmbi.ru.nl/molden/molden_format.html</span> for a description) is currently used by a series of prominent QC programs (see Table 
+    <a rid="Tab4" ref-type="table" href="#Tab4">4</a>).
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Tab4" class="table-wrap">
+     <span class="label">Table 4</span>
+     <div class="caption">
+      <p>Packages that produce Molden format files</p>
+     </div>
+     <table frame="hsides" rules="groups">
+      <thead>
+       <tr>
+        <th align="left">Package</th>
+        <th align="left">URL</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td align="left">ACES II</td>
+        <td align="left">
+         <span ext-link-type="uri" xlink:href="http://www.qtp.ufl.edu/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.qtp.ufl.edu/</span>
+        </td>
+       </tr>
+       <tr>
+        <td align="left">MOLCAS</td>
+        <td align="left">
+         <span ext-link-type="uri" xlink:href="http://molcas.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://molcas.org/</span>
+        </td>
+       </tr>
+       <tr>
+        <td align="left">MOLPRO</td>
+        <td align="left">
+         <span ext-link-type="uri" xlink:href="http://www.molpro.net/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.molpro.net/</span>
+        </td>
+       </tr>
+       <tr>
+        <td align="left">DALTON</td>
+        <td align="left">
+         <span ext-link-type="uri" xlink:href="http://daltonprogram.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://daltonprogram.org/</span>
+        </td>
+       </tr>
+       <tr>
+        <td align="left">JAGUAR</td>
+        <td align="left">
+         <span ext-link-type="uri" xlink:href="https://www.schrodinger.com/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://www.schrödinger.com/</span>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molcas [
+    <a ref-type="bibr" rid="CR27" href="#CR27">27</a>] is a popular ab initio computational chemistry program that focusses on the calculation of electronic structures in ground and excited states. The Molcas authors recommend that their users apply Molden for visualization. The widely used and often cited Gabedit software [
+    <a ref-type="bibr" rid="CR28" href="#CR28">28</a>] (freeware) is a graphical user interface, offering pre-processing and post-processing options for nine computational chemistry software packages. The Molden format has a prominent position in their list of supported formats. So they use Molden to widen their application base.
+   </p>
+  </sec>
+  <sec id="Sec6" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Localised orbitals</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Visualisation of orbitals is an important aspect of many types of research. A series of orbital visualisation options, such as localised orbitals and electron localisation functions are provided (Fig. 
+    <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> illustrates a few of the orbital visualisation options).
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig1" class="fig">
+     <span class="label">Fig. 1</span>
+     <div class="caption">
+      <p>Orbital visualisation. Standard ab initio quantum chemistry methods yield delocalised orbitals that extend over the entire molecule. Localised orbitals can be found as linear combinations of the occupied delocalised orbitals by a unitary transformation. In Molden the Foster-Boys [
+       <a ref-type="bibr" rid="CR29" href="#CR29">29</a>] scheme is employed to localize molecular orbitals. The 
+       <span class="italic">left-hand panel</span> shows the localised orbital of Iron(III) meso tartaric acid. This calculation proves that there is a bond between the irons and the coordinated water molecules (ultimate 
+       <span class="italic">left</span> and 
+       <span class="italic">right</span> in the figure). The absence of nodal planes between iron (
+       <span class="italic">yellow</span>) and water(s) is tantamount to the presence of electron density (a bond) between irons and water. The right-hand panel shows an example of the ELF on 2,5 Dimethoxyfuran with evidence of lone pairs and covalent bonds. 
+       <span class="italic">Inset</span> a ball-and-stick representation of the molecule (carbon in 
+       <span class="italic">brown</span>, oxygen in 
+       <span class="italic">red</span>, hydrogen in 
+       <span class="italic">white</span>)
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig1_HTML" id="d29e743" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Masunov et al. [
+    <a ref-type="bibr" rid="CR29" href="#CR29">29</a>], for example, introduced a new method to eliminate the spin-contamination in broken symmetry density functional theory calculations. They investigated two complexes of which one had strongly localized magnetic orbitals on which previous spin-contamination eliminate schemes worked well. The other complex had strongly delocalised magnetic orbitals on which previous schemes failed while their new scheme works well. Both restricted and unrestricted natural orbitals were visualized with the help of Molden.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">In his landmark article on the free radical catalysis by galactose oxidase, Whittaker [
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>] used Molden to calculate visualise the crucial SOMO (Singly occupied molecular orbital) to determine at which atom the radical electron is located.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">For a newly designed anilate-based material with luminescence properties, for example, the electrostatic potential calculated by Molden was used to strengthen the conclusions from the analyses of the atomic charges [
+    <a ref-type="bibr" rid="CR31" href="#CR31">31</a>]. Atzori et al. wrote: “The isodensity surface mapped with the electrostatic potential shows for all systems that the oxygen atoms are the source of greater negative charge accumulation followed by the nitrogen atom of the CN moiety. Moreover, there is a moderate negative charge accumulation on the carbon atoms linked to the Cl and CN groups, whereas the remaining four carbon atoms, which are linked to the oxygen atoms, exhibit a positive charge. The chlorine atoms present a typical positive charge on the opposite side of the C–Cl vector and a ring of negative charge perpendicular to the same vector” [
+    <a ref-type="bibr" rid="CR32" href="#CR32">32</a>].
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Hunt et al. [
+    <a ref-type="bibr" rid="CR33" href="#CR33">33</a>] used Molden’s electron density map and Laplacian contour facility to examine charge densities, natural bond orbitals, and delocalised molecular orbitals in ionic liquids to explain the relative acidity of different sites on the imidazolium ring and variation in hydrogen-bond donor and acceptor propensities.
+   </p>
+  </sec>
+  <sec id="Sec7" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electron localisation function</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The Electron Localisation Function (ELF) [
+    <a ref-type="bibr" rid="CR34" href="#CR34">34</a>] is a measure for the probability of finding an electron with the same spin in the neighbourhood of a reference electron at a given location (see Fig. 
+    <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). The ELF shows clear separation between core and valence electrons, and also shows covalent bonds and lone pairs. Whereas the electron density decreases monotonically with the distance from the nucleus, the ELF illustrates the shell electronic structure (S, P, and D shells) of the heavy atoms as clear maxima and minima.
+   </p>
+  </sec>
+  <sec id="Sec8" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Visualisation of spectra</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Visualisation of infrared and Raman spectra was already in place at the time of the first Molden paper. This functionality has been expanded with the option to create a html page and auxiliary files, containing an interactive spectrum in combination with an animation of the selected vibration with the jmol viewer [
+    <a ref-type="bibr" rid="CR35" href="#CR35">35</a>] An example is shown in Fig. 
+    <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>; see also 
+    <span ext-link-type="uri" xlink:href="http://wetche.cmbi.ru.nl/%20calspec/database/0000004/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://wetche.cmbi.ru.nl/ calspec/database/0000004/</span>. A.jdx file of the spectrum is written for use with the jspecview program [
+    <a ref-type="bibr" rid="CR36" href="#CR36">36</a>]. UV-spectra are constructed and visualized from TD-DFT calculations with Gaussian. 
+    <span class="sup">1</span>H and 
+    <span class="sup">13</span>C NMR spectra are constructed and visualized when magnetic shielding and J-coupling information is available from the Gaussian output. With a click on the ‘J’ button, the J-coupling between two selected atoms is displayed. The magnetic shielding and J-coupling corresponding with rotationally equivalent hydrogens can be averaged interactively.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig2" class="fig">
+     <span class="label">Fig. 2</span>
+     <div class="caption">
+      <p>Interactive spectrum as .html document. Clicking on a peak in the spectrum or in the table underneath the spectrum results in the animation of the associated molecular vibration in the molecular display to the 
+       <span class="italic">left</span>
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig2_HTML" id="d29e818" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Vidal-Iglesias [
+    <a ref-type="bibr" rid="CR37" href="#CR37">37</a>], for example, made assignments of the calculated frequencies of monolayers of 4-aminobenzenethiol (4-ABT) on copper, based on the visualisation of the vibrational normal modes and the Surface-Enhanced Raman spectrum (SERS) using Molden. They write “Surface-enhanced raman scattering (SERS) spectra of self-assembled monolayers of 4 aminobenzenethiol (4-ABT) on copper (Cu) and silver (Ag) surfaces decorated with Cu and Ag nanostructures, respectively, have been obtained with lasers at 532, 632.8, 785, and 1064 nm. Density functional theory (DFT) has been used to obtain calculated vibrational frequencies of the 4-ABT and 4,4′-dimercaptoazobenzene (4,4′-DMAB) molecules adsorbed on model Cu surfaces.”
+   </p>
+  </sec>
+ </sec>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Working with ligands</div>
+  <sec id="Sec10" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Polar surface area</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The polar surface area (PSA) is defined as the combined surface area belonging to oxygen and nitrogen atoms and their hydrogen atoms. Palm et al. [
+    <a ref-type="bibr" rid="CR38" href="#CR38">38</a>] were the first to use a calculated PSA to predict the absorption of drugs. A new method was designed to derive the PSA by quantum chemical means QMPSA [
+    <a ref-type="bibr" rid="CR39" href="#CR39">39</a>]. This is illustrated in Fig. 
+    <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The original method by Palm et al., and our QMPSA have both been implemented in Molden.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig3" class="fig">
+     <span class="label">Fig. 3</span>
+     <div class="caption">
+      <p>QMPSA. Quantum mechanical polar surface area for the drug molecule sulfasalazine. 
+       <span class="italic">Red</span> and 
+       <span class="italic">blue</span>: polar; 
+       <span class="italic">green</span>: apolar surface area
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig3_HTML" id="d29e861" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Ren et al. [
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>], for example, analysed anticancer fungal polysaccharides based on physiochemical properties and identified a unique region in chemical space using a series of molecular descriptors including Molden’s QMPSA.
+   </p>
+  </sec>
+  <sec id="Sec11" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Alignment of molecules</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Alignment of molecules -also known as structure superposition- has been implemented following two separate strategies, one for small molecule alignment and one for the alignment of proteins. The alignment of small molecules is illustrated in Fig. 
+    <a rid="Fig4" ref-type="fig" href="#Fig4">4</a>.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig4" class="fig">
+     <span class="label">Fig. 4</span>
+     <div class="caption">
+      <p>Alignment of small molecules. Three equivalent atoms are selected for each molecule. The atoms labelled 1 are used to translate the first molecule on top of the second. The vectors from atom 1 to atom 2 and atom 2 to atom 3, respectively, are used for two consecutive rotations. The user can select any three atoms</p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig4_HTML" id="d29e886" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec id="Sec12" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Crystal optimizer based on the small molecule gaff force field</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molden 1.0 was already able to read a number of file formats containing crystal information (such as the FDAT and chemx formats) and it was able to display the crystal as a number of unit cells along one or more of the cell axes. The possibility to edit unit cell constants a, b and c, and angles α, β and χ and space group was added later, as well as the possibility to rotate the atoms in the unit cell. In Molden 2.0 the capability to optimise the crystal geometry was added.</p>
+   <p xmlns="http://www.w3.org/1999/xhtml">The crystal is computationally approximated by a 5 × 5 × 5 grid of copies of the unit cell (in green) placed at the centre of the grid (see Fig. 
+    <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>). Neutral charge groups are employed by summing the long-range electrostatic interactions between the molecule(s) in the unit cell and its copies on the 5 × 5 × 5 grid. The geometry of the molecule(s) in the unit cell and the lattice parameters can be optimized using the small molecule force field GAFF [
+    <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] and a Powell-Beale conjugate gradient scheme [
+    <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. The GAFF force field requires that partial charges are assigned using a restrained electrostatic potential fit (RESP) model [
+    <a ref-type="bibr" rid="CR43" href="#CR43">43</a>]. Other, simpler charge models are available in Molden too. These may be used when very accurate energy calculations are not required. A parallel implementation of the crystal optimizer is available.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig5" class="fig">
+     <span class="label">Fig. 5</span>
+     <div class="caption">
+      <p>Crystal optimisation. Approximation of lattice sums by calculating all pairwise interactions in a 5 × 5 × 5 super cell expansion of the unit cell (
+       <span class="italic">green</span>).For clarity only two dimensions are shown
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig5_HTML" id="d29e920" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec id="Sec13" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ligand docking with PMF scoring</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molden facilitates both interactive docking and fully automatic optimisation of ligand protein complexes. For interactive docking a Potential of Mean Force (PMF) scoring function by Muegge and Martin [
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>] is being used, while the automatic optimisation of ligand protein complexes uses the AMBER force field [
+    <a ref-type="bibr" rid="CR45" href="#CR45">45</a>]. The PMF is derived from the radial distribution of distances between atoms of two distinct types from the PDB database (the available atom types are listed in the Molden documentation). Muegge and Rarey have reviewed the PMF scoring function in comparison to other scoring functions [
+    <a ref-type="bibr" rid="CR46" href="#CR46">46</a>] and reported that the PMF score outperformed the energy score and the empirical score of FlexX and is less sensitive to small coordinate changes than the FlexX score. The PMF score was the only scoring function for which a statistically significant correlation could be found between the predicted score and the measured binding affinities of inhibitor-ligand complexes. A comparison for a variety of sets of protein–ligand complexes from the PDB showed the superiority of PMF scoring over SMoG and Böhm’s score.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">The PMF distributions are converted to the interatomic energy function [
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>]. The PMF score is used by Molden as a measure of the likelihood of a particular ligand–protein conformation. Conformations can be generated interactively by rotation and translation of the ligand with respect to either the protein, or the world-view. Scores are displayed in a dedicated window that is continuously updated. Individual high/low scoring atom pairs can be highlighted. Figure 
+    <a rid="Fig6" ref-type="fig" href="#Fig6">6</a> illustrates Molden’s interactive docking facility.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig6" class="fig">
+     <span class="label">Fig. 6</span>
+     <div class="caption">
+      <p>Interactive docking of a ligand. The 
+       <span class="italic">inset pop-up window</span> shows the PMF score
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig6_HTML" id="d29e957" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec id="Sec14" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Partial optimisation of a protein–ligand complex</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molden can also perform an AMBER based optimisation of either the whole protein–ligand complex, or of any user-selected part of it. In the latter case, the input of the user is limited to selection of the residues near the ligand as flexible or rigid, using a pop-up window dedicated to this task.</p>
+  </sec>
+ </sec>
+ <sec id="Sec15" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein support</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden 2.0 has a series of facilities built-in to support working with proteins when docking ligands. These options are directed towards visualisation of proteins and protein–ligand complexes, determining alternate pocket conformations, the optimisation of protein structures or protein–ligand complexes, and towards the actual ligand docking process itself.</p>
+  <sec id="Sec16" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein editing via the z-matrix</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The Z-matrix provides an alternative to specifying a geometry by Cartesian coordinates (see Fig. 
+    <a rid="Fig7" ref-type="fig" href="#Fig7">7</a>). In the Z-matrix approach, atom positions are defined with respect to previously defined atoms by means of internal coordinates such as bond distances, bond angles and dihedral angles. For small molecules a Z-matrix can often be constructed ‘by hand’, but for larger molecules this quickly becomes tedious and complex. The impractically large number of variables in a Z-matrix of a protein necessitates a dedicated Z-matrix view of only the most important internal variables, such as φ, ψ, ω, χ1. After interactive selection of an amino acid, the amino acid manipulation menu pops up. From this menu several manipulations can be performed, such as mutation to another amino acid, deletion or insertion of an amino acid, or changing the amino acid’s rotamer. These options are realised by Z-matrix manipulation.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig7" class="fig">
+     <span class="label">Fig. 7</span>
+     <div class="caption">
+      <p>The Z-matrix editor pop-up window. Each residue is represented by a column with a button labelled with its three letter amino acid code and entry fields for the φ, ψ, ω angles. Clicking the button brings up a pop up menu containing residue manipulating options</p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig7_HTML" id="d29e987" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec id="Sec17" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Rotamers: editing/search rotamer space</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Amino acid side chains often have several possible conformations commonly known as rotamers. The local structure and a series of external factors (solvent related like pH or salt concentration, the presence of bound ligands or bound ions, the multimeric state of the protein, etc) will influence how often each rotamer is observed. Amino acids tend to prefer rotamers angle is near any of these three values, the rotamer is called gauche-, gauche+, or trans, respectively [
+    <a ref-type="bibr" rid="CR48" href="#CR48">48</a>]. Depending on number of rotatable bonds in the amino acid side chain, residues can have from only one rotamer (Gly, Ala) up to 81 rotamers (Lys). In Molden, rotamers are available from either the Richardson [
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>] or the Dunbrack [
+    <a ref-type="bibr" rid="CR50" href="#CR50">50</a>] rotamer library. Molden can scan a part of a protein’s rotamer space (up to a maximum of six residues at a time). This can be instrumental in finding the lowest energy rotamer combination, after a particular residue has been mutated/substituted. The initial scoring is done via the Dfire PMF score. The best ten rotamer combinations will be remembered. The rotamer combinations can be rescored with the AMBER force field. While performing a rotamer scan, Molden will try each conformation available in the rotamer library for the residues considered in the scan, and it will search for the best rotamer by determining DFIRE PMF [
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>] scores. Substituting a small residue by a bulky one, the surrounding residues are allowed to adopt their rotamer in order to make room for the bulky side chain. An example of the scanning of the rotamer space of a phenylalanine residue is shown in Fig. 
+    <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>a.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig8" class="fig">
+     <span class="label">Fig. 8</span>
+     <div class="caption">
+      <p>Protein visualisation options. 
+       <span class="bold">a</span> Three of the six rotamers of the residue phenylalanine, indicated by colours 
+       <span class="italic">blue, orange</span> and 
+       <span class="italic">green</span>. 
+       <span class="bold">b</span> PDB entry 1REI, (
+       <span class="italic">left</span>) residue Gln90 un-flipped and (
+       <span class="italic">right</span>) flipped. The un-flipped situation shows an energetically unfavourable close contact (in 
+       <span class="italic">white</span> numbers) between two hydrogens. 
+       <span class="bold">c</span> Display of electron density for PDB file 2ETE at contour level 2.0
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig8_HTML" id="d29e1044" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec id="Sec18" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optimisation of hydrogen positions</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">It is hard to experimentally determine the positions of hydrogens in protein structures. Consequently, hydrogen positions must be determined computationally. Optimisation of hydrogen positions includes optimisation of the hydroxyl orientation of threonine, serine, and tyrosine residues using the AMBER force field for scoring. The latter is also used for determining the necessity of histidine, glutamine, and asparagine flips, histidine protonation states and hydroxyl orientations of water in close contact with the protein. Figure 
+    <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>b shows the flipped and un-flipped state of glutamine 90 in the PDB entry 1REI [
+    <a ref-type="bibr" rid="CR51" href="#CR51">51</a>].
+   </p>
+  </sec>
+  <sec id="Sec19" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Display of protein electron density maps</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">When reading a file from the PDB rather than a locally stored PDB file, the four-letter PDB identifier is stored by Molden. On clicking the “Elec. Dens. Map” button, this identifier is used to automatically retrieve the corresponding omap file from the electron density server at Uppsala University (
+    <span ext-link-type="uri" xlink:href="http://eds.bmc.uu.se/eds/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://eds.bmc.uu.se/eds/</span>) [
+    <a ref-type="bibr" rid="CR52" href="#CR52">52</a>]. After the file is read, a window will pop up, in which the user can specify the electron density contour level. For the sake of clarity, the rendered electron density volume can be clipped in three directions. Figure 
+    <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>c displays, as an example, the electron density for the PDB file 2ETE [
+    <a ref-type="bibr" rid="CR53" href="#CR53">53</a>].
+   </p>
+  </sec>
+  <sec id="Sec20" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ambfor and Ambmd: protein geometry optimisation and protein dynamics</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Ambfor was designed as an energy minimisation tool and Ambmd as a stand-alone Molecular Dynamics program. Both programs were developed to be run from within the Molden interface and their output can be visualised in real time in Molden. For small molecules the GAFF [
+    <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] force field is used and for proteins the AMBER force field [
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>]. Both force fields can be used together so that proteins and their ligand(s) can be optimised simultaneously. A parallelised version for both programs was developed with the help of the Message Passing Interface (MPI) library [
+    <a ref-type="bibr" rid="CR54" href="#CR54">54</a>]. Ambfor makes use of the limited memory BFGS method [
+    <a ref-type="bibr" rid="CR55" href="#CR55">55</a>] for optimisation of proteins. For small molecule optimisation a Powell-Beale conjugate gradient method is employed [
+    <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. Both Ambfor and Ambmd use a damped shifted force protocol [
+    <a ref-type="bibr" rid="CR56" href="#CR56">56</a>] that greatly reduces the number of pairwise interactions that have to be calculated. The Berendsen thermostat [
+    <a ref-type="bibr" rid="CR57" href="#CR57">57</a>] is used to keep MD simulations at a constant temperature by scaling the velocities of the particles. By default the ff99sb extension of AMBER version 99 [
+    <a ref-type="bibr" rid="CR58" href="#CR58">58</a>] is used. All other commonly used MD facilities such as placing the molecule in a water box, boundary conditions, temperature and run time selection, etc., have been implemented too. Energy minimisations and molecular dynamics simulations require that all molecules are chemically correct, which often requires that all hydrogens, and sometimes also some protein side chain C-, O-, and N-atoms are added.
+   </p>
+  </sec>
+ </sec>
+ <sec id="Sec21" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ambfor validation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Since the AMBER and GAFF force field have been extensively validated previously [
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>], we merely need to validate the implementation of these force fields in Molden.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Ambfor module is validated by comparing root mean square deviations between protein data bank non-hydrogen coordinates and Ambfor optimised coordinates of 26 protein ligand complexes, at different gradient tolerances (see Table 
+   <a rid="Tab5" ref-type="table" href="#Tab5">5</a>). The force field optimisations were performed while keeping the protein rigid and the ligand fully flexible. Charges were applied to the ligand through the default charge scheme in Molden for ligands in proteins [
+   <a ref-type="bibr" rid="CR60" href="#CR60">60</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Tab5" class="table-wrap">
+    <span class="label">Table 5</span>
+    <div class="caption">
+     <p>Root mean square deviations between optimised coordinates and PDB coordinates for 26 protein-ligand complexes at two different gradient tolerances</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th align="left">PDB entry</th>
+       <th align="left">PDB ligand code</th>
+       <th align="left">RMSD Av. gradient &lt; 0.5 (kcal/mol)/Angstrom</th>
+       <th align="left">RMSD Av. gradient &lt; 0.1 (kcal/mol)/Angstrom</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left">2CEJ</td>
+       <td align="left">1AH</td>
+       <td align="left">0.040</td>
+       <td align="left">0.155</td>
+      </tr>
+      <tr>
+       <td align="left">4HYF</td>
+       <td align="left">1AK</td>
+       <td align="left">0.061</td>
+       <td align="left">0.211</td>
+      </tr>
+      <tr>
+       <td align="left">4NAN</td>
+       <td align="left">2JM</td>
+       <td align="left">0.067</td>
+       <td align="left">0.648</td>
+      </tr>
+      <tr>
+       <td align="left">4ANP</td>
+       <td align="left">3QI</td>
+       <td align="left">0.028</td>
+       <td align="left">0.104</td>
+      </tr>
+      <tr>
+       <td align="left">4WLB</td>
+       <td align="left">3QQ</td>
+       <td align="left">0.021</td>
+       <td align="left">0.133</td>
+      </tr>
+      <tr>
+       <td align="left">3QTI</td>
+       <td align="left">3QT</td>
+       <td align="left">0.025</td>
+       <td align="left">0.051</td>
+      </tr>
+      <tr>
+       <td align="left">5CBJ</td>
+       <td align="left">4ZD</td>
+       <td align="left">0.031</td>
+       <td align="left">0.444</td>
+      </tr>
+      <tr>
+       <td align="left">5CCR</td>
+       <td align="left">4ZT</td>
+       <td align="left">0.058</td>
+       <td align="left">0.154</td>
+      </tr>
+      <tr>
+       <td align="left">5CC3</td>
+       <td align="left">4ZU</td>
+       <td align="left">0.043</td>
+       <td align="left">0.140</td>
+      </tr>
+      <tr>
+       <td align="left">5CCN</td>
+       <td align="left">4ZZ</td>
+       <td align="left">0.073</td>
+       <td align="left">0.163</td>
+      </tr>
+      <tr>
+       <td align="left">2VIN</td>
+       <td align="left">505</td>
+       <td align="left">0.020</td>
+       <td align="left">0.197</td>
+      </tr>
+      <tr>
+       <td align="left">5CEO</td>
+       <td align="left">50D</td>
+       <td align="left">0.038</td>
+       <td align="left">0.174</td>
+      </tr>
+      <tr>
+       <td align="left">4FTR</td>
+       <td align="left">5HK</td>
+       <td align="left">0.029</td>
+       <td align="left">0.223</td>
+      </tr>
+      <tr>
+       <td align="left">5JJS</td>
+       <td align="left">6L2</td>
+       <td align="left">0.043</td>
+       <td align="left">0.147</td>
+      </tr>
+      <tr>
+       <td align="left">5JN2</td>
+       <td align="left">6LO</td>
+       <td align="left">0.040</td>
+       <td align="left">0.393</td>
+      </tr>
+      <tr>
+       <td align="left">5JMS</td>
+       <td align="left">6LP</td>
+       <td align="left">0.040</td>
+       <td align="left">0.181</td>
+      </tr>
+      <tr>
+       <td align="left">3HMM</td>
+       <td align="left">855</td>
+       <td align="left">0.034</td>
+       <td align="left">0.102</td>
+      </tr>
+      <tr>
+       <td align="left">2R7L</td>
+       <td align="left">AMZ+ATP</td>
+       <td align="left">0.162</td>
+       <td align="left">0.953</td>
+      </tr>
+      <tr>
+       <td align="left">2UZN</td>
+       <td align="left">C96</td>
+       <td align="left">0.198</td>
+       <td align="left">0.386</td>
+      </tr>
+      <tr>
+       <td align="left">1IEL</td>
+       <td align="left">CAZ</td>
+       <td align="left">0.062</td>
+       <td align="left">0.308</td>
+      </tr>
+      <tr>
+       <td align="left">1PPP</td>
+       <td align="left">E6C</td>
+       <td align="left">0.418</td>
+       <td align="left">0.923</td>
+      </tr>
+      <tr>
+       <td align="left">1LEV</td>
+       <td align="left">F6P</td>
+       <td align="left">0.049</td>
+       <td align="left">0.440</td>
+      </tr>
+      <tr>
+       <td align="left">4DFR</td>
+       <td align="left">MTX</td>
+       <td align="left">3.493</td>
+       <td align="left">3.451</td>
+      </tr>
+      <tr>
+       <td align="left">1OWY</td>
+       <td align="left">PRY</td>
+       <td align="left">0.253</td>
+       <td align="left">0.503</td>
+      </tr>
+      <tr>
+       <td align="left">5CCL</td>
+       <td align="left">SAM</td>
+       <td align="left">0.040</td>
+       <td align="left">0.161</td>
+      </tr>
+      <tr>
+       <td align="left">3VHU</td>
+       <td align="left">SNL</td>
+       <td align="left">0.078</td>
+       <td align="left">0.160</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The average RMSD at gradient tolerance 0.5 (kcal/mol)/Angstrom is 0.209 Angstrom and at gradient tolerance 0.1 (kcal/mol)/Angstrom is 0.420 Angstrom. The one exceptionally bad case (MTX in 4DFR) is explained by the fact that MTX sticks out of the DFR pocket and makes symmetry contacts in the crystal. Molden cannot yet automatically include such symmetry contacts. When the symmetry related DFR copy is added manually, the two RMSD values become 0.118 and 0.264, respectively.</p>
+  <sec id="Sec22" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Addition of hydrogens to ligands</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">‘wget’ can be used to retrieve information about missing hydrogens of ligands in a PDB entry by downloading a version of the ligand with hydrogens added from the EBI’s PDBECHEM database [
+    <a ref-type="bibr" rid="CR19" href="#CR19">19</a>] (
+    <span ext-link-type="uri" xlink:href="ftp://ftp.ebi.ac.uk/pub/databases/msd/pdbechem/files/cml" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">ftp://ftp.ebi.ac.uk/pub/databases/msd/pdbechem/files/cml</span>).
+   </p>
+  </sec>
+  <sec id="Sec23" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fixing incomplete residues</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Crystallography does not always reveal the position of all atoms in a protein. Especially the, often mobile, extremities of Glu, Gln, Arg, and Lys, occasionally are missing in PDB file. In case of missing atoms it is possible to either automatically complete the residue, or to use the Z-matrix editor to do this manually. Many protons are not mobile with respect to the heavy atom they are bound to (e.g. the protons on a phenyl ring). These so-called riding protons are placed using a dictionary of proton positions. The positions of other protons can be determined using Ambfor.</p>
+  </sec>
+  <sec id="Sec24" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein-specific visualisation facilities</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Molden has a large series of protein visualisation facilities available. It can, for example produce Ramachandran plots [
+    <a ref-type="bibr" rid="CR61" href="#CR61">61</a>] (see Fig. 
+    <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>a). Backbone secondary structure elements such as alpha helix and β-sheets tend to be contained in preferred conformational regions of the plot according to Lovell et al. [
+    <a ref-type="bibr" rid="CR62" href="#CR62">62</a>]. Residues that fall outside these regions can be flagged as outliers. By clicking a green dot in the plot, the corresponding amino acid is displayed in solid sphere representation in the main window.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <div id="Fig9" class="fig">
+     <span class="label">Fig. 9</span>
+     <div class="caption">
+      <p>
+       <span class="bold">a</span> Ramachandran plot with favoured (
+       <span class="italic">red</span>) and allowed (
+       <span class="italic">orange</span>) regions of backbone torsion angles. 
+       <span class="bold">b</span> Clipped solvent accessible surface of PDB entry 3ERT [
+       <a ref-type="bibr" rid="CR64" href="#CR64">64</a>] (with the electrostatic potential mapped onto it) exposing the OHT ligand
+      </p>
+     </div>
+     <div xlink:href="10822_2017_42_Fig9_HTML" id="d29e1551" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Solvent accessible surface areas can be produced using the external program Surf [
+    <a ref-type="bibr" rid="CR63" href="#CR63">63</a>] that is distributed together with Molden. Optionally, the electrostatic potential calculated from point charges associated with the AMBER force field can be mapped onto this surface. Surfaces can be clipped to reveal the interaction of a ligand with the protein surface, which is especially useful when the ligand is deeply buried within the protein. Figure 
+    <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>b shows the clipped solvent accessible surface of the PDB entry 3ERT [
+    <a ref-type="bibr" rid="CR64" href="#CR64">64</a>], with the electrostatic potential mapped onto it, exposing the OHT ligand.
+   </p>
+  </sec>
+ </sec>
+</sec>

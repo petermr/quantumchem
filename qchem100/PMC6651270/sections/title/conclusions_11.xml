@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In summary, we have presented the open source software QMflows, a flexible and powerful Python code capable of easily automatizing and parallelizing quantum chemistry workflows. The software is constructed on four main pillars:
+  <div list-type="simple" class="list">
+   <div class="list-item">
+    <span class="label">a.</span>
+    <p>Flexible input manipulation. Here QMflows provides generic key words and templates for different tasks (single points, geometry optimizations, etc.) that are valid for several quantum chemical packages. The users will only need to call the desired QM package and a given task to carry out the calculation. If specific key words are required beyond the provided templates, QMflows allows to add them following the tree structure of the given QM code.</p>
+   </div>
+   <div class="list-item">
+    <span class="label">b.</span>
+    <p>Workflow execution. In a complex workflow where several QM packages and tasks are called, QMflows rely on the Noodles framework to construct the dependencies between each task and schedule them as “promised objects”. The actual workflow is executed at the end of the script allowing for optimal usage of parallel resources.</p>
+   </div>
+   <div class="list-item">
+    <span class="label">c.</span>
+    <p>Efficient restart procedure. Thanks to the Noodles framework, if a job fails for whatever reason, Noodles will check the dependency tree querying a database with the metadata of the successfully executed parts of the workflow. In this way, the user will need only to resubmit the original Slurm or PBS script without any modification, starting from the last successful job.</p>
+   </div>
+   <div class="list-item">
+    <span class="label">d.</span>
+    <p>Data postprocessing. QMflows is furnished with output parsers of several QM packages to retrieve essential data. Additionally, QMflows allows for storing metadata in a HDF5 portable format, which can be used for further postprocessing.</p>
+   </div>
+  </div>
+ </p>
+</sec>

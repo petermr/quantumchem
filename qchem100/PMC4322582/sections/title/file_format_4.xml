@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">File format</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For each molecule, atomic coordinates and calculated properties are stored in a file named 
+  <span class="monospace">dataset_index.xyz</span>. The XYZ format (originally developed for the XMol program by the Minnesota Supercomputer Center) is a widespread plain text format for encoding Cartesian coordinates of molecules, with no formal specification. It contains a header line specifying the number of atoms 
+  <span class="italic">n</span>
+  <sub>
+   <span class="italic">a</span>
+  </sub>, a comment line, and 
+  <span class="italic">n</span>
+  <sub>
+   <span class="italic">a</span>
+  </sub> lines containing element type and atomic coordinates, one atom per line. We have extended this format as indicated in 
+  <a ref-type="table" rid="t2" href="#t2">Table 2</a>. Now, the comment line is used to store all scalar properties, Mulliken charges are added as a fifth column. Harmonic vibrational frequencies, SMILES and InChI are appended as respective additional lines.
+ </p>
+</sec>

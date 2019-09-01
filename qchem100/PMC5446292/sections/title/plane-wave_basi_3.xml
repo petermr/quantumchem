@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s2B" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Plane-wave basis set calculations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The calculations using a plane-wave basis set presented in this work have been performed using the 
+  <span class="sc">vasp</span> code employing the PAW method alongside with the Γ-point approximation to sample the first Brillouin zone. The kinetic energy cutoff that determines the size of the plane-wave basis set expansion of the one-particle states was set to 500 eV. There are numerous density-functionals that could be considered, of which we have only chosen a small selection. Thus, we assess the accuracy of one of the most widely used functionals, the PBE functional, as well as of several van der Waals functionals. Specifically, dispersion corrections were taken into account following the approach of Grimme 
+  <span class="italic">et al.</span>,
+  <a rid="c48" ref-type="bibr" href="#c48">
+   <span class="sup">48</span>
+  </a> the method of Tkatchenko and Scheffler,
+  <a rid="c49" ref-type="bibr" href="#c49">
+   <span class="sup">49</span>
+  </a> and the van der Waals density-functional (vdW-DF) method proposed by Dion 
+  <span class="italic">et al.</span>,
+  <a rid="c50" ref-type="bibr" href="#c50">
+   <span class="sup">50–53</span>
+  </a> as implemented in 
+  <span class="sc">vasp</span>. In the former schemes, a correction is added to the DFT total energy after the self-consistent-field (SCF) cycle is converged, whereas the latter scheme is a non-local correlation functional that approximately accounts for dispersion interactions. In all calculations, all electronic states of the H and Li atoms were treated as valence states, whereas the 1
+  <span class="italic">s</span>
+  <span class="sup">2</span> states of the O atom were kept frozen. Supercells of different sizes were used to model the LiH surface, containing 32, 64, and 128 atoms.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the current paper, we employ pseudized Gaussian-type orbitals (PGTOs) expanded in a plane-wave basis set to span the virtual orbital manifold necessary for the quantum chemical MP2 and coupled-cluster methods. The space of the occupied orbitals from the HF calculation is projected out from the PGTOs, ensuring that they solely span the virtual space. The rediagonalization of the Fock matrix in this newly constructed virtual space allows for a canonical formulation of quantum chemical techniques. This enables considerably fewer states to be involved in many-body calculations.
+  <a rid="c54" ref-type="bibr" href="#c54">
+   <span class="sup">54</span>
+  </a> The method to obtain PGTOs invokes a pseudization procedure of the sharply peaked Gaussian basis sets, which follows the work of Kresse and Hafner
+  <span class="italic">.</span>
+  <a rid="c55" ref-type="bibr" href="#c55">
+   <span class="sup">55</span>
+  </a> A more detailed explanation of PGTOs and their application to periodic systems is given in Ref. 
+  <a rid="c54" ref-type="bibr" href="#c54">54</a>. PGTOs allow for a controllable and reliable extrapolation of the adsorption energies to complete basis set limit results. For the present calculations, Dunning’s contracted aug-cc-pVDZ (AVDZ), aug-cc-pVTZ (AVTZ), and aug-cc-pVQZ without 
+  <span class="italic">g</span> functions (AVQZ–
+  <span class="italic">g</span>) basis sets
+  <a rid="c56" ref-type="bibr" href="#c56">
+   <span class="sup">56,57</span>
+  </a> were pseudized and expanded in a plane-wave basis set.
+  <a rid="c54" ref-type="bibr" href="#c54">
+   <span class="sup">54</span>
+  </a> Augmented functions were not included for the Li atom because they possess a small exponent for the radial part that introduces linear dependencies in the virtual orbital space. The AVQZ–
+  <span class="italic">g</span> basis set used here does not encompass 
+  <span class="italic">g</span> angular momentum functions since the corresponding pseudization procedure has not yet been implemented in 
+  <span class="sc">vasp</span>. Counterpoise corrections (CPs) to the basis set superposition error (BSSE)
+  <a rid="c58" ref-type="bibr" href="#c58">
+   <span class="sup">58</span>
+  </a> were included in all correlated quantum-chemical calculations with plane-waves that employ PGTOs for the virtual states.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Canonical periodic MP2 calculations using PGTOs were performed with the 
+  <span class="sc">vasp</span> code.
+  <a rid="c14" ref-type="bibr" href="#c14">
+   <span class="sup">14,18</span>
+  </a> The evaluation of the two-electron-four-index integrals requires the intermediate Fourier-transformed overlap densities which are expanded into an auxiliary plane-wave basis.
+  <a rid="c18" ref-type="bibr" href="#c18">
+   <span class="sup">18</span>
+  </a> The kinetic energy cutoff 
+  <div class="inline-formula">
+   <div id="M6" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">χ</span>
+     </div>
+    </div>
+   </div>
+  </div> defining this auxiliary basis set was set to 200 eV. All reported MP2 adsorption energies have been checked for convergence with respect to this cutoff. Table 
+  <a ref-type="table" rid="t1" href="#t1">I</a> shows the convergence of the MP2 adsorption energy with respect to the cutoff energy.
+ </p>
+ <div id="t1" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE I.</span>
+  <div class="caption">
+   <p>MP2 adsorption energy against the cutoff energy 
+    <div class="inline-formula">
+     <div id="M7" class="math">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">χ</span>
+       </div>
+      </div>
+     </div>
+    </div> of the auxiliary basis set. One-particle states were expanded in a plane-wave basis set with a cutoff of 500 eV, while the virtual states were constructed using an AVTZ basis set.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="char" char="." span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M8" class="math">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">χ</span>
+         </div>
+        </div>
+       </div>
+      </div> (eV)
+     </th>
+     <th align="center" colspan="1" rowspan="1">
+      <span class="italic">E</span>
+      <sub>ads</sub> (meV)
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">50</td>
+     <td align="char" char="." colspan="1" rowspan="1">242</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">100</td>
+     <td align="char" char="." colspan="1" rowspan="1">214</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">150</td>
+     <td align="char" char="." colspan="1" rowspan="1">211</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">200</td>
+     <td align="char" char="." colspan="1" rowspan="1">211</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">250</td>
+     <td align="char" char="." colspan="1" rowspan="1">211</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">300</td>
+     <td align="char" char="." colspan="1" rowspan="1">211</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Periodic CCSD calculations were performed using the two-electron-four-index integrals calculated within the PAW method in 
+  <span class="sc">vasp</span>. To further reduce the computational cost of coupled cluster methods, we first minimize the number of virtual orbitals. Pseudized Gaussian orbitals were placed only on the top-most layer of the LiH slab. In a second step, the auxiliary plane-wave basis, required for the evaluation of the Coulomb integrals, employed a kinetic energy cutoff of 100 eV. MP2 calculations reveal that this approximation yields adsorption energies that deviate by 3 meV from those obtained using a cutoff of 200 eV as indicated in Table 
+  <a ref-type="table" rid="t1" href="#t1">I</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Kats and Manby
+  <a rid="c59" ref-type="bibr" href="#c59">
+   <span class="sup">59</span>
+  </a> proposed an approximation to CCSD theory that neglects exchange processes between different clusters which is formally still exact for two-electron systems. The resultant theories have been called distinguishable cluster theories because they violate the indistinguishability of electrons in a many-electron system. However, it has been shown that distinguishable cluster approximations such as distinguishable cluster singles and doubles (DCSD) correctly dissociate a number of diatomic molecules and yield very accurate equilibrium geometries and interaction energies for many molecular systems, outperforming the accuracy of CCSD theory at the same computational cost.
+  <a rid="c60" ref-type="bibr" href="#c60">
+   <span class="sup">60–62</span>
+  </a> Motivated by these findings, we also performed periodic DCSD calculations for the adsorption energy.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, a 
+  <span class="italic">δ</span>CCSD(T) correction was applied as the difference between canonical periodic CCSD(T) and MP2 calculations using the AVDZ PGTOs (placed in the top-most layer) and an H
+  <sub>2</sub>O + Li
+  <sub>8</sub>H
+  <sub>8</sub> simulation cell.
+ </p>
+</sec>

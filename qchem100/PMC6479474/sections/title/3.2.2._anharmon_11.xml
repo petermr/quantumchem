@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3dot2dot2-molecules-24-01402" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2.2. Anharmonic Calculation of NIR Spectra</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The prediction of NIR bands requires multi-modal anharmonic vibrational analysis. The methods that were based on Vibrational Second-order Perturbation Theory (VPT2) offer superior cost/accuracy factor therein [
+  <a rid="B65-molecules-24-01402" ref-type="bibr" href="#B65-molecules-24-01402">65</a>,
+  <a rid="B66-molecules-24-01402" ref-type="bibr" href="#B66-molecules-24-01402">66</a>,
+  <a rid="B67-molecules-24-01402" ref-type="bibr" href="#B67-molecules-24-01402">67</a>]. In this work, we employed and compared the deperturbed (DVPT2) and generalized (GVPT2) variants [
+  <a rid="B66-molecules-24-01402" ref-type="bibr" href="#B66-molecules-24-01402">66</a>]. The implementation of the latter one allowed for simulating second overtones and ternary combination bands. For the determination of the basic electronic properties at the DFT level, B3LYP functional and triple-
+  <span class="italic">ζ</span> SNST basis set [
+  <a rid="B67-molecules-24-01402" ref-type="bibr" href="#B67-molecules-24-01402">67</a>] were selected; this method has repeatedly been evidenced to deliver good results [
+  <a rid="B31-molecules-24-01402" ref-type="bibr" href="#B31-molecules-24-01402">31</a>,
+  <a rid="B33-molecules-24-01402" ref-type="bibr" href="#B33-molecules-24-01402">33</a>,
+  <a rid="B65-molecules-24-01402" ref-type="bibr" href="#B65-molecules-24-01402">65</a>]. Long-range interactions were refined by Grimme’s D3 variant of empirical correction for dispersion with Becke–Johnson damping (GD3BJ) [
+  <a rid="B68-molecules-24-01402" ref-type="bibr" href="#B68-molecules-24-01402">68</a>]. Prior to vibrational analysis, the molecular geometry optimization procedure was performed with very tight convergence criteria. The calculations were performed with the use of Gaussian 16 A.03 software [
+  <a rid="B69-molecules-24-01402" ref-type="bibr" href="#B69-molecules-24-01402">69</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The final spectra were simulated with the band broadening being obtained through a four-parameter Lorentz–Gauss product function [
+  <a rid="B34-molecules-24-01402" ref-type="bibr" href="#B34-molecules-24-01402">34</a>,
+  <a rid="B70-molecules-24-01402" ref-type="bibr" href="#B70-molecules-24-01402">70</a>] being applied to the quantum mechanically calculated IR and NIR band positions and intensities. The necessary data processing and assembly of figures were carried out in MATLAB R2016b [
+  <a rid="B71-molecules-24-01402" ref-type="bibr" href="#B71-molecules-24-01402">71</a>].
+ </p>
+</sec>

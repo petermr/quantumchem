@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">IP values of anion-solvent pairs</div>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">In this section, we present the results for the IP study of anion-solvent pairs, and provide a simple empirical formula for the IP of the pair, before proposing a simple physical model in the next section. First, we find that the spread of the IP values over all the snapshot configurations is significant (on the order of 1 eV), across all chemistries.</p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">To investigate this spread we study two specific couples, (TFSI
+  <span class="sup">−</span>, PC) and (
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M8" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, DME), using 200 configurations of the anion-solvent pair. Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> shows the obtained distributions of vertical IP. The first pair comprises TFSI
+  <span class="sup">−</span> that is a “weak” anion (i.e., has an IP in gas phase of 7.23 eV), and PC that is a “strong” solvent (i.e., has an IP of 12.66 eV). The second pair comprises a “strong” anion (
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M10" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> with an average IP of 9.7 eV), and a “weak” solvent (DME with an average IP of 10.2 eV). We indeed find that the spread is significant, but that the average distribution converges for a moderate number of configurations (for (TFSI
+  <span class="sup">−</span>, PC) for example, the average with 30 random configurations is 7.5 eV and the average with 200 random configurations is 7.45 eV). The use of 30 random configurations is deemed a good compromise between computational cost and accuracy, and therefore applied to the study of all anion-solvent pairs.
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>IP distribution for 200 random configurations of anion-solvent pair. The first column corresponds to the (TFSI
+     <span class="sup">−</span>, PC) pair, and the second column corresponds to the (
+     <div id="IEq6" class="inline-formula">
+      <div class="alternatives">
+       <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+       <div id="M12" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">PF</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_11317_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>, DME) pair. 
+     <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a> reports a full study for all anion-solvent pairs (Supplementary Fig. 
+     <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>) with 30 configurations. The color code, used consistently throughout this work, represents in blue configurations where the anion is fully oxidized (all configurations of the (TFSI
+     <span class="sup">−</span>, PC) pair) and in red configurations where the solvent is oxidized (all configurations of the (
+     <div id="IEq7" class="inline-formula">
+      <div class="alternatives">
+       <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+       <div id="M14" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">PF</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_11317_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>, DME) pair). Below these two figures, we plot the heat maps of the initial (middle plot) and final (bottom plot) energies for the two pairs. The energies are plotted relative to the average energy (either initial or final)
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11317_Fig1_HTML" id="d29e793" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">We also plot the heat maps of the initial and final energies with respect to the ionization potential (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>) for these two anion-solvent pairs. We find that there is a distinction between anion-solvent pairs for which the anion is oxidized, and those for which the solvent is oxidized. For the (TFSI
+  <span class="sup">−</span>, PC) pair, the anion is oxidized. In this case, for configurations with IP near the average value, the configuration’s initial and final energies are near the average of their respective distributions. For configurations corresponding to the lower end of the IP distribution, their initial energy is high relative to the set of all configurations and their final energy is low. Inversely, configurations with high IP have below average initial energy but high final energies. Considering the (
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M16" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, DME) pair in which the solvent is oxidized, we find a very different behavior: the initial energy is relatively uncorrelated to the IP of the configuration, and the distribution of IP is mostly governed by the final energy. This difference is significant and highlights a difference in the oxidation mechanism which can be understood using the model discussed below.
+ </p>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">Because of this spread, we conclude that sampling many different configurations is essential to properly describe oxidation of realistic solutions at finite temperature. We also note that in principle the stability of the system could be inferred from the IP distribution across different solvation structure configurations. Neglecting interface reactions and considering only intrinsic oxidation stability, one can suppose that the onset of electrolytes’ degradation is determined by the lower edge of the distribution of IP values. Indeed, assuming that electron transfer during oxidation occurs much faster than the nuclear dynamics of the system, and given that many different configurations will be explored over time in the vicinity of the electrode, those configurations that are more easily oxidized will limit the stability of the electrolyte. The whole IP distribution allows to understand the stability of the electrolyte as the voltage is increased past this threshold value. Indeed, in cyclic and differential voltammetry experiments the measured electrical current due to degradation exhibits gradual increase with electrode voltage, qualitatively consistent with our computational result. For all the chemistries we studied, the IP distribution has a single peak and is centered at its average value (see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>). Interestingly, the spread of the distribution was not found to depend significantly on chemistry, but does depend on which species (the anion or the solvent) is oxidized during overall oxidation (this is discussed in detail below and in the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a>). In the rest of the study, we therefore focus on IP trends inferred from the average IP across several configurations as these averages accurately represent the IP distributions.
+ </p>
+ <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">The average IP of 30 configurations for each anion-solvent pair are reported in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>. The IP values of the anion-solvent exhibit a non trivial relationship to the IP values of each individual component. Contrary to common assumptions, the overall IP is not determined by that of the solvent alone, as shown by the lack of solvent dependence in the IP of combinations containing TDI
+  <span class="sup">−</span> (weakest anion). On the other hand, the solvent has a clear effect on the IP of combinations containing 
+  <div id="IEq9" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M18" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> (strongest anion). Importantly, in no case is the couple IP equal to that of the solvent. We now examine this trend quantitatively and later will provide a physical explanation. This overall trend is captured quite well by Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>), where 
+  <span class="italic">A</span>
+  <span class="sup">−</span> is the anion, S the solvent, [
+  <span class="italic">AS</span>]
+  <span class="sup">−</span> is the pair of anion and solvent before oxidation and 
+  <span class="italic">δ</span> = 2.8 eV:
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{IP}}_{{\mathrm{fit}}}\left( {[AS]^ - } \right) = \min \left\{ {\begin{array}{*{20}{l}} {{\mathrm{IP}}\left( {A^ - } \right)} \hfill \\ {{\mathrm{IP}}\left( S \right) - \delta } \hfill \end{array}} \right.$$\end{document}</span>
+    <div id="M20" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">IP</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">fit</span>
+      </div>
+     </div>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <span class="mi">A</span>
+           <span class="mi">S</span>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mo"> min</span>
+     <div close="" open="{" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span mathvariant="normal" class="mi">IP</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">A</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">-</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span mathvariant="normal" class="mi">IP</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <span class="mi">S</span>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <span class="mi">δ</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_11317_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>IP of pairs of one anion and one solvent molecule with respect to the isolated species. Bars represent the average over 30 configurations of each pair, with the 
+     <span class="italic">x</span>-axis showing the anion and the color indicating the solvent used (blue: DMSO; green: DME; orange: PC; red: ACN; gray: isolated anion). Values for the isolated species (
+     <span class="italic">y</span>-axis for the solvent, gray bar for the anion) are averaged over 50 configurations. Dashed bars represent constant shifts 
+     <span class="italic">δ</span> = 2.8 eV (drawn for pairs where the solvent is oxidized). IPs are well approximated by Eq. (
+     <a rid="Equ1" ref-type="" href="#Equ1">1</a>): the smaller of anion IP or the solvent IP minus 
+     <span class="italic">δ</span>
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11317_Fig2_HTML" id="d29e959" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">When the IP of the isolated anion is smaller than that of the solvent by more than 
+  <span class="italic">δ</span>, for example, in the case of pairs (TDI
+  <span class="sup">−</span>, DMSO), (TDI
+  <span class="sup">−</span>, DME), or (TFSI
+  <span class="sup">−</span>, ACN), the combined system IP is roughly that of the anion, and the charge study shows that the electron is removed from the anion. On the other hand, when the IP of the isolated anion is greater than the IP of the solvent minus 
+  <span class="italic">δ</span>, for example, for the pairs (
+  <div id="IEq10" class="inline-formula">
+   <div class="alternatives">
+    <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M22" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, DMSO), (
+  <div id="IEq11" class="inline-formula">
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M24" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, DME), or (
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M26" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, PC), then the combined system is weaker than either species, and the IP of the pair is approximately equal to the IP of the isolated solvent minus 
+  <span class="italic">δ</span>. Our charge study in this case shows that the solvent is oxidized, which is contrary to common intuition, given that the solvent always has higher IP than the anion. This is highlighted in the graph using striped bars of height 
+  <span class="italic">δ</span> showing the difference between the isolated solvent IP and that of the anion-solvent pair. This behavior corresponds to switching from oxidizing the anion to oxidizing the solvent, in which case the IP becomes independent from the anion and equal to the solvent IP minus 
+  <span class="italic">δ</span>. This indicates that for many solvent-anion combinations a charge transfer complex spontaneously forms upon oxidation, depending on the IP of individual species, with an electrostatic stabilization 
+  <span class="italic">δ</span>. We note that our combined simulations properly oxidize one molecule only (whether the anion or the solvent), further validating our choice of the exchange-correlation functional. Naturally, in borderline cases where the values in Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) are similar, oxidation of either the anion or the solvent may be observed, depending on the specific geometry. In this article, we refer to the IP computed using Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) as IP
+  <sub>fit</sub>.
+ </p>
+ <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">We examined this effect using more accurate DLPNO-CCSD(T) calculations for the (TDI
+  <span class="sup">−</span>, PC), (TFSI
+  <span class="sup">−</span>, PC), (
+  <div id="IEq13" class="inline-formula">
+   <div class="alternatives">
+    <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M28" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, PC), and (
+  <div id="IEq14" class="inline-formula">
+   <div class="alternatives">
+    <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M30" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq14.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, PC) combinations, and the full results are reported in the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a> (Supplementary Tables 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a> and 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">9</a>). In brief, we find not only that using a highly accurate level of theory yields IP values that closely agree with experimental data, but also that the trends presented in this work remain unaltered (see Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">9</a>). This validates our computational approach with regards to the choice of the DFT functional.
+ </p>
+</sec>

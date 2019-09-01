@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ref-list class="ref-list">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">References</div>
+ <ref id="ref1" class="ref">
+  <div publication-type="book" id="cit1" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Griewank</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Walther</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>
+   </person-group>
+   <div class="source">Evaluating Derivatives, Principles and Techniques of Algorithmic Differentiation</div>, 
+   <span class="edition">2nd</span> ed.; 
+   <span class="publisher-name">SIAM</span>: 
+   <span class="publisher-loc">Philadelphia</span>, 
+   <span class="year">2008</span>.
+  </div>
+ </ref>
+ <ref id="ref2" class="ref">
+  <div publication-type="book" id="cit2" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C. H.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bücker</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Computing derivatives of computer programs</div>. In 
+   <div class="source">Modern Methods and Algorithms of Quantum Chemistry</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Grotendorst</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>, Ed.; 
+   <span class="publisher-name">NIC</span>, Series, 
+   <span class="year">2000</span>; Vol. 
+   <span class="volume">3</span> ; pp 
+   <span class="fpage">315</span>–
+   <span class="lpage">327</span>.
+  </div>
+ </ref>
+ <ref id="ref3" class="ref">
+  <div publication-type="book" id="cit3" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Walther</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Griewank</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Getting started with ADOL-C</div>. In 
+   <div class="source">Combinatorial Scientific Computing</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Naumann</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">U.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schenk</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">O.</span>
+    </name>
+   </person-group>, Eds.; 
+   <span class="publisher-name">Chapman-Hall CRC Computational Science</span>, 
+   <span class="year">2012</span>; Chapter 7, pp 
+   <span class="fpage">181</span>–
+   <span class="lpage">202</span>.
+  </div>
+ </ref>
+ <ref id="ref4" class="ref">
+  <div publication-type="journal" id="cit4" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Khademi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Mauer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Carle</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <div class="article-title">Adifor 2.0: automatic differentiation of Fortran 77 programs</div>. 
+   <div class="source">IEEE Comput. Sci. Eng.</div>
+   <span class="year">1996</span>, 
+   <span class="volume">3</span>, 
+   <span class="fpage">18</span>–
+   <span class="lpage">32</span>
+   <span pub-id-type="doi" class="pub-id">10.1109/99.537089</span>.
+  </div>
+ </ref>
+ <ref id="ref5" class="ref">
+  <div publication-type="journal" id="cit5" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C. H.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Roh</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">MauerOats</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <div class="article-title">ADIC – An Extensible Automatic Differentiation Tool for ANSI-C</div>. 
+   <div class="source">Software-Practice and Experience</div>
+   <span class="year">1997</span>, 
+   <span class="volume">27</span>, 
+   <span class="fpage">1427</span>–
+   <span class="lpage">1456</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/(SICI)1097-024X(199712)27:12&lt;1427::AID-SPE138&gt;3.0.CO;2-Q</span>.
+  </div>
+ </ref>
+ <ref id="ref6" class="ref">
+  <div publication-type="journal" id="cit6" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Khademi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Mauer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Carle</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <div class="article-title">Adifor 2.0: automatic differentiation of Fortran 77 programs</div>. 
+   <div class="source">IEEE Comput. Sci. Eng.</div>
+   <span class="year">1996</span>, 
+   <span class="volume">3</span>, 
+   <span class="fpage">18</span>–
+   <span class="lpage">32</span>
+   <span pub-id-type="doi" class="pub-id">10.1109/99.537089</span>.
+  </div>
+ </ref>
+ <ref id="ref7" class="ref">
+  <div publication-type="journal" id="cit7" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hascoët</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pascual</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">V.</span>
+   </name>
+   <div class="article-title">The Tapenade Automatic Differentiation tool: Principles, Model, and Specification</div>. 
+   <div class="source">ACM Transactions on Mathematical Software</div>
+   <span class="year">2013</span>, 
+   <span class="volume">39</span>, 
+   <span class="fpage">1</span>–
+   <span class="lpage">43</span>
+   <span pub-id-type="doi" class="pub-id">10.1145/2450153.2450158</span>.
+  </div>
+ </ref>
+ <ref id="ref8" class="ref">
+  <div publication-type="book" id="cit8" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Walther</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Griewank</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Getting started with ADOL-C</div>. In 
+   <div class="source">Combinatorial Scientific Computing</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Naumann</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">U.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schenk</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">O.</span>
+    </name>
+   </person-group>, Eds.; 
+   <span class="publisher-name">Chapman-Hall CRC Computational Science</span>, 
+   <span class="year">2012</span>; Chapter 7, pp 
+   <span class="fpage">181</span>–
+   <span class="lpage">202</span>.
+  </div>
+ </ref>
+ <ref id="ref9" class="ref">
+  <div publication-type="book" id="cit9" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Maclaurin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Duvenaud</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Adams</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R. P.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Gradient-based Hyperparameter Optimization Through Reversible Learning</div>. In 
+   <div class="source">Proceedings of the 32nd International Conference on International Conference on Machine Learning - Vol. 37</div>; ICML’15; 
+   <span class="publisher-name">JMLR.org</span>, 
+   <span class="year">2015</span>; pp 
+   <span class="fpage">2113</span>–
+   <span class="lpage">2122</span>.
+  </div>
+ </ref>
+ <ref id="ref10" class="ref">
+  <div publication-type="weblink" id="cit10" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Revels</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lubin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Papamarkou</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+    </name>
+   </person-group> JuliaDiff, 
+   <span xlink:href="https://github.com/JuliaDiff" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/JuliaDiff</span>, 
+   <span class="year">2017</span>.
+  </div>
+ </ref>
+ <ref id="ref11" class="ref">
+  <div publication-type="undeclared" id="cit11" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Revels</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lubin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Papamarkou</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Forward-Mode Automatic Differentiation in Julia</div>. 
+   <div class="source">arXiv:1607.07892</div>, 
+   <span class="year">2016</span>.
+  </div>
+ </ref>
+ <ref id="ref12" class="ref">
+  <div publication-type="journal" id="cit12" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Cohen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shoham</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <div class="article-title">Application of hyper-dual numbers to rigid bodies equations of motion</div>. 
+   <div class="source">Mech. Mach. Theory</div>
+   <span class="year">2017</span>, 
+   <span class="volume">111</span>, 
+   <span class="fpage">76</span>–
+   <span class="lpage">84</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.mechmachtheory.2017.01.013</span>.
+  </div>
+ </ref>
+ <ref id="ref13" class="ref">
+  <div publication-type="journal" id="cit13" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Henrard</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <div class="article-title">Calibration in Finance: Very Fast Greeks Through Algorithmic Differentiation and Implicit Function</div>. 
+   <div class="source">Procedia Comput. Sci.</div>
+   <span class="year">2013</span>, 
+   <span class="volume">18</span>, 
+   <span class="fpage">1145</span>–
+   <span class="lpage">1154</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.procs.2013.05.280</span>.
+  </div>
+ </ref>
+ <ref id="ref14" class="ref">
+  <div publication-type="journal" id="cit14" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Niemeyer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K. E.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Curtis</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">N. J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sung</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.-J.</span>
+   </name>
+   <div class="article-title">pyJac: Analytical Jacobian generator for chemical kinetics</div>. 
+   <div class="source">Comput. Phys. Commun.</div>
+   <span class="year">2017</span>, 
+   <span class="volume">215</span>, 
+   <span class="fpage">188</span>–
+   <span class="lpage">203</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.cpc.2017.02.004</span>.
+  </div>
+ </ref>
+ <ref id="ref15" class="ref">
+  <div publication-type="journal" id="cit15" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jirari</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H.</span>
+   </name>
+   <div class="article-title">Optimal control approach to dynamical suppression of decoherence of a qubit</div>. 
+   <div class="source">Europhys. Lett.</div>
+   <span class="year">2009</span>, 
+   <span class="volume">87</span>, 
+   <span class="fpage">40003</span>
+   <span pub-id-type="doi" class="pub-id">10.1209/0295-5075/87/40003</span>.
+  </div>
+ </ref>
+ <ref id="ref16" class="ref">
+  <div publication-type="journal" id="cit16" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jirari</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Wu</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">N.</span>
+   </name>
+   <div class="article-title">Optimal state transfer of a single dissipative two-level system</div>. 
+   <div class="source">Eur. Phys. J. B</div>
+   <span class="year">2016</span>, 
+   <span class="volume">89</span>, 
+   <span class="fpage">100</span>
+   <span pub-id-type="doi" class="pub-id">10.1140/epjb/e2016-60523-y</span>.
+  </div>
+ </ref>
+ <ref id="ref17" class="ref">
+  <div publication-type="journal" id="cit17" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schmidhuber</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+   </name>
+   <div class="article-title">Deep learning in neural networks: An overview</div>. 
+   <div class="source">Neural Netw.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">61</span>, 
+   <span class="fpage">85</span>–
+   <span class="lpage">117</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.neunet.2014.09.003</span>.
+   <span pub-id-type="pmid" class="pub-id">25462637</span>
+  </div>
+ </ref>
+ <ref id="ref18" class="ref">
+  <div publication-type="undeclared" id="cit18" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Baydin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. G.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pearlmutter</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B. A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Radul</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Siskind</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. M.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Automatic differentiation in machine learning: a survey</div>. 
+   <div class="source">Preprint arXiv:1502.05767</div>, 
+   <span class="year">2015</span>.
+  </div>
+ </ref>
+ <ref id="ref19" class="ref">
+  <div publication-type="book" id="cit19" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bengio</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Y.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Practical Recommendations for Gradient-Based Training of Deep Architectures</div>. In 
+   <div class="source">Neural Networks: Tricks of the Trade: Second ed.</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Montavon</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">G.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Orr</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">G. B.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Müller</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.-R.</span>
+    </name>
+   </person-group>, Eds.; 
+   <span class="publisher-name">Springer Berlin Heidelberg</span>: 
+   <span class="publisher-loc">Berlin, Heidelberg</span>, 
+   <span class="year">2012</span>; pp 
+   <span class="fpage">437</span>–
+   <span class="lpage">478</span>.
+  </div>
+ </ref>
+ <ref id="ref20" class="ref">
+  <div publication-type="journal" id="cit20" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Leung</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">N.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Abdelhafez</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Koch</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schuster</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+   </name>
+   <div class="article-title">Speedup for quantum optimal control from automatic differentiation based on graphics processing units</div>. 
+   <div class="source">Phys. Rev. A: At., Mol., Opt. Phys.</div>
+   <span class="year">2017</span>, 
+   <span class="volume">95</span>, 
+   <span class="fpage">042318</span>
+   <span pub-id-type="doi" class="pub-id">10.1103/PhysRevA.95.042318</span>.
+  </div>
+ </ref>
+ <ref id="ref21" class="ref">
+  <div publication-type="book" id="cit21" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gauss</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Molecular properties</div>. In 
+   <div class="source">Modern Methods and Algorithms of Quantum Chemistry</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Grotendorst</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>, Ed.; 
+   <span class="publisher-name">NIC</span>, Series, 
+   <span class="year">2000</span>; Vol. 
+   <span class="volume">3</span>; pp 
+   <span class="fpage">541</span>–
+   <span class="lpage">592</span>.
+  </div>
+ </ref>
+ <ref id="ref22" class="ref">
+  <div publication-type="journal" id="cit22" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Almlöf</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Taylor</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P. R.</span>
+   </name>
+   <div class="article-title">Molecular properties from perturbation theory: A Unified treatment of energy derivatives</div>. 
+   <div class="source">Int. J. Quantum Chem.</div>
+   <span class="year">1985</span>, 
+   <span class="volume">27</span>, 
+   <span class="fpage">743</span>–
+   <span class="lpage">768</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/qua.560270610</span>.
+  </div>
+ </ref>
+ <ref id="ref23" class="ref">
+  <div publication-type="book" id="cit23" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jørgensen</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Analytical Calculation of Geometrical Derivatives in Molecular Electronic Structure Theory</div>. In 
+   <div class="source">Adv. Quantum Chem.</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Löwdin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.-O.</span>
+    </name>
+   </person-group>, Ed.; 
+   <span class="publisher-name">Academic Press</span>, 
+   <span class="year">1988</span>; Vol. 
+   <span class="volume">19</span>; pp 
+   <span class="fpage">183</span>–
+   <span class="lpage">245</span>.
+  </div>
+ </ref>
+ <ref id="ref24" class="ref">
+  <div publication-type="journal" id="cit24" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Obara</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Saika</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <div class="article-title">Efficient recursive computation of molecular integrals over Cartesian Gaussian functions</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">1986</span>, 
+   <span class="volume">84</span>, 
+   <span class="fpage">3963</span>–
+   <span class="lpage">3974</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.450106</span>.
+  </div>
+ </ref>
+ <ref id="ref25" class="ref">
+  <div publication-type="book" id="cit25" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Yamaguchi</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Y.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schaefer</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H. F.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Analytic Derivative Methods in Molecular Electronic Structure Theory: A New Dimension to Quantum Chemistry and its Applications to Spectroscopy</div>. In 
+   <div class="source">Handbook of High-Resolution</div>; 
+   <span class="publisher-name">John Wiley &amp; Sons, Ltd</span>, 
+   <span class="year">2011</span>.
+  </div>
+ </ref>
+ <ref id="ref26" class="ref">
+  <div publication-type="journal" id="cit26" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kato</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Morokuma</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>
+   <div class="article-title">Energy gradient in a multi-configurational SCF formalism and its application to geometry optimization of trimethylene diradicals</div>. 
+   <div class="source">Chem. Phys. Lett.</div>
+   <span class="year">1979</span>, 
+   <span class="volume">65</span>, 
+   <span class="fpage">19</span>–
+   <span class="lpage">25</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/0009-2614(79)80117-7</span>.
+  </div>
+ </ref>
+ <ref id="ref27" class="ref">
+  <div publication-type="journal" id="cit27" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Veillard</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Clementi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>
+   <div class="article-title">Complete multi-configuration self-consistent field theory</div>. 
+   <div class="source">Theor. Chim. Acta</div>
+   <span class="year">1967</span>, 
+   <span class="volume">7</span>, 
+   <span class="fpage">133</span>–
+   <span class="lpage">143</span>
+   <span pub-id-type="doi" class="pub-id">10.1007/BF01151915</span>.
+  </div>
+ </ref>
+ <ref id="ref28" class="ref">
+  <div publication-type="journal" id="cit28" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Andersson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Malmqvist</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.-A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Roos</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B. O.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sadlej</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Wolinski</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>
+   <div class="article-title">Second-order perturbation theory with a CASSCF reference function</div>. 
+   <div class="source">J. Phys. Chem.</div>
+   <span class="year">1990</span>, 
+   <span class="volume">94</span>, 
+   <span class="fpage">5483</span>–
+   <span class="lpage">5488</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/j100377a012</span>.
+  </div>
+ </ref>
+ <ref id="ref29" class="ref">
+  <div publication-type="journal" id="cit29" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Andersson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Malmqvist</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.-A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Roos</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B. O.</span>
+   </name>
+   <div class="article-title">Second-order perturbation theory with a complete active space self-consistent field reference function</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">1992</span>, 
+   <span class="volume">96</span>, 
+   <span class="fpage">1218</span>–
+   <span class="lpage">1226</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.462209</span>.
+  </div>
+ </ref>
+ <ref id="ref30" class="ref">
+  <div publication-type="journal" id="cit30" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">MacLeod</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M. K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shiozaki</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>
+   <div class="article-title">Communication: Automatic code generation enables nuclear gradient computations for fully internally contracted multireference theory</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">142</span>, 
+   <span class="fpage">051103</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.4907717</span>.
+   <span pub-id-type="pmid" class="pub-id">25662628</span>
+  </div>
+ </ref>
+ <ref id="ref31" class="ref">
+  <div publication-type="journal" id="cit31" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Vlaisavljevich</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shiozaki</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>
+   <div class="article-title">Nuclear Energy Gradients for Internally Contracted Complete Active Space Second-Order Perturbation Theory: Multistate Extensions</div>. 
+   <div class="source">J. Chem. Theory Comput.</div>
+   <span class="year">2016</span>, 
+   <span class="volume">12</span>, 
+   <span class="fpage">3781</span>–
+   <span class="lpage">3787</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/acs.jctc.6b00572</span>.
+   <span pub-id-type="pmid" class="pub-id">27388038</span>
+  </div>
+ </ref>
+ <ref id="ref32" class="ref">
+  <div publication-type="journal" id="cit32" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ekström</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">U.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Visscher</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bast</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thorvaldsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ruud</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>
+   <div class="article-title">Arbitrary-Order Density Functional Response Theory from Automatic Differentiation</div>. 
+   <div class="source">J. Chem. Theory Comput.</div>
+   <span class="year">2010</span>, 
+   <span class="volume">6</span>, 
+   <span class="fpage">1971</span>–
+   <span class="lpage">1980</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/ct100117s</span>.
+   <span pub-id-type="pmid" class="pub-id">26615926</span>
+  </div>
+ </ref>
+ <ref id="ref33" class="ref">
+  <div publication-type="journal" id="cit33" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bast</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ekström</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">U.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gao</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ruud</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thorvaldsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. J.</span>
+   </name>
+   <div class="article-title">The ab initio calculation of molecular electric, magnetic and geometric properties</div>. 
+   <div class="source">Phys. Chem. Chem. Phys.</div>
+   <span class="year">2011</span>, 
+   <span class="volume">13</span>, 
+   <span class="fpage">2627</span>–
+   <span class="lpage">2651</span>
+   <span pub-id-type="doi" class="pub-id">10.1039/C0CP01647K</span>.
+   <span pub-id-type="pmid" class="pub-id">21180690</span>
+  </div>
+ </ref>
+ <ref id="ref34" class="ref">
+  <div publication-type="journal" id="cit34" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Steiger</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C. H.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lang</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thiel</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">W.</span>
+   </name>
+   <div class="article-title">Using automatic differentiation to compute derivatives for a quantum-chemical computer program</div>. 
+   <div class="source">Future Gener. Comput. Syst.</div>
+   <span class="year">2005</span>, 
+   <span class="volume">21</span>, 
+   <span class="fpage">1324</span>–
+   <span class="lpage">1332</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.future.2004.11.011</span>.
+  </div>
+ </ref>
+ <ref id="ref35" class="ref">
+  <div publication-type="journal" id="cit35" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Barborini</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sorella</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Guidoni</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>
+   <div class="article-title">Structural Optimization by Quantum Monte Carlo: Investigating the Low-Lying Excited States of Ethylene</div>. 
+   <div class="source">J. Chem. Theory Comput.</div>
+   <span class="year">2012</span>, 
+   <span class="volume">8</span>, 
+   <span class="fpage">1260</span>–
+   <span class="lpage">1269</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/ct200724q</span>.
+   <span pub-id-type="pmid" class="pub-id">24634617</span>
+  </div>
+ </ref>
+ <ref id="ref36" class="ref">
+  <div publication-type="journal" id="cit36" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sorella</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Capriotti</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>
+   <div class="article-title">Algorithmic differentiation and the calculation of forces by quantum Monte Carlo</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">2010</span>, 
+   <span class="volume">133</span>, 
+   <span class="fpage">234111</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.3516208</span>.
+   <span pub-id-type="pmid" class="pub-id">21186862</span>
+  </div>
+ </ref>
+ <ref id="ref37" class="ref">
+  <div publication-type="weblink" id="cit37" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tamayo-Mendoza</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kreisbeck</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Aspuru-Guzik</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>
+   </person-group> DiffiQult, 
+   <span xlink:href="https://aspuru-guzik-group.github.io/DiffiQult" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://aspuru-guzik-group.github.io/DiffiQult</span>, 
+   <span class="year">2017</span>.
+  </div>
+ </ref>
+ <ref id="ref38" class="ref">
+  <div publication-type="book" id="cit38" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jørgensen</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Simons</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>
+   <div class="source">Second Quantization-Based Methods in Quantum Chemistry</div>, 
+   <span class="edition">1</span>st ed.; 
+   <span class="publisher-name">Academic Press</span>, 
+   <span class="year">1981</span>.
+  </div>
+ </ref>
+ <ref id="ref39" class="ref">
+  <div publication-type="undeclared" id="cit39" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Angerson</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bai</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Z.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dongarra</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Greenbaum</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">McKenney</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Croz</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. D.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hammarling</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Demmel</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sorensen</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+    </name>
+   </person-group>
+   <div class="article-title">LAPACK: A portable linear algebra library for high-performance computers</div>. Proceedings SUPERCOMPUTING ’90. 
+   <span class="year">1990</span>; pp 
+   <span class="fpage">2</span>–
+   <span class="lpage">11</span>.
+  </div>
+ </ref>
+ <ref id="ref40" class="ref">
+  <div publication-type="journal" id="cit40" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Almlöf</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+   </name>
+   <div class="article-title">Molecular wave functions and properties calculated using floating Gaussian orbitals</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">1988</span>, 
+   <span class="volume">89</span>, 
+   <span class="fpage">4889</span>–
+   <span class="lpage">4902</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.455659</span>.
+  </div>
+ </ref>
+ <ref id="ref41" class="ref">
+  <div publication-type="journal" id="cit41" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Frost</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. A.</span>
+   </name>
+   <div class="article-title">Floating Spherical Gaussian Orbital Model of Molecular Structure. I. Computational Procedure. LiH as an Example</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">1967</span>, 
+   <span class="volume">47</span>, 
+   <span class="fpage">3707</span>–
+   <span class="lpage">3713</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.1701524</span>.
+  </div>
+ </ref>
+ <ref id="ref42" class="ref">
+  <div publication-type="book" id="cit42" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jørgensen</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Olsen</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>
+   <div class="source">Molecular Electronc-Structure Theory</div>, 
+   <span class="edition">1</span>st ed.; 
+   <span class="publisher-name">John Wiley &amp; Sons</span>, 
+   <span class="year">2000</span>.
+  </div>
+ </ref>
+ <ref id="ref43" class="ref">
+  <div publication-type="journal" id="cit43" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gill</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P. M. W.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Head-Gordon</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pople</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. A.</span>
+   </name>
+   <div class="article-title">Efficient computation of two-electron - repulsion integrals and their nth-order derivatives using contracted Gaussian basis sets</div>. 
+   <div class="source">J. Phys. Chem.</div>
+   <span class="year">1990</span>, 
+   <span class="volume">94</span>, 
+   <span class="fpage">5564</span>–
+   <span class="lpage">5572</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/j100377a031</span>.
+  </div>
+ </ref>
+ <ref id="ref44" class="ref">
+  <div publication-type="journal" id="cit44" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Reine</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lindh</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>
+   <div class="article-title">Multi-electron integrals</div>. 
+   <div class="source">WIREs Comput. Mol. Sci.</div>
+   <span class="year">2012</span>, 
+   <span class="volume">2</span>, 
+   <span class="fpage">290</span>–
+   <span class="lpage">303</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/wcms.78</span>.
+  </div>
+ </ref>
+ <ref id="ref45" class="ref">
+  <div publication-type="weblink" id="cit45" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Valeev</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E. F.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Libint: A library for the evaluation of molecular integrals of many-body operators over Gaussian functions</div>. 
+   <span xlink:href="http://libint.valeyev.net/" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">http://libint.valeyev.net/</span>, 
+   <span class="year">2017</span>; version 2.3.1.
+  </div>
+ </ref>
+ <ref id="ref46" class="ref">
+  <div publication-type="journal" id="cit46" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schlegel</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H. B.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Frisch</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M. J.</span>
+   </name>
+   <div class="article-title">Transformation between Cartesian and pure spherical harmonic Gaussians</div>. 
+   <div class="source">Int. J. Quantum Chem.</div>
+   <span class="year">1995</span>, 
+   <span class="volume">54</span>, 
+   <span class="fpage">83</span>–
+   <span class="lpage">87</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/qua.560540202</span>.
+  </div>
+ </ref>
+ <ref id="ref47" class="ref">
+  <div publication-type="journal" id="cit47" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">F.</span>
+   </name>
+   <div class="article-title">Atomic orbital basis sets</div>. 
+   <div class="source">WIREs Comput. Mol. Sci.</div>
+   <span class="year">2013</span>, 
+   <span class="volume">3</span>, 
+   <span class="fpage">273</span>–
+   <span class="lpage">295</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/wcms.1123</span>.
+  </div>
+ </ref>
+ <ref id="ref48" class="ref">
+  <div publication-type="book" id="cit48" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Szabo</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ostlund</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">N. S.</span>
+    </name>
+   </person-group>
+   <div class="source">Modern Quantum Chemistry</div>, 
+   <span class="edition">1</span>st ed.; 
+   <span class="publisher-name">Dover Publication</span>, 
+   <span class="year">1996</span>.
+  </div>
+ </ref>
+ <ref id="ref49" class="ref">
+  <div publication-type="journal" id="cit49" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Almlöf</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Taylor</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P. R.</span>
+   </name>
+   <div class="article-title">Gaussian basis sets for high-quality ab initio calculations</div>. 
+   <div class="source">J. Phys. Chem.</div>
+   <span class="year">1988</span>, 
+   <span class="volume">92</span>, 
+   <span class="fpage">3029</span>–
+   <span class="lpage">3033</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/j100322a003</span>.
+  </div>
+ </ref>
+ <ref id="ref50" class="ref">
+  <div publication-type="journal" id="cit50" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Huber</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H.</span>
+   </name>
+   <div class="article-title">Geometry optimization in AB initio calculations. Floating orbital geometry optimization applying the hellmann-feyman force</div>. 
+   <div class="source">Chem. Phys. Lett.</div>
+   <span class="year">1979</span>, 
+   <span class="volume">62</span>, 
+   <span class="fpage">95</span>–
+   <span class="lpage">99</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/0009-2614(79)80420-0</span>.
+  </div>
+ </ref>
+ <ref id="ref51" class="ref">
+  <div publication-type="journal" id="cit51" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Huber</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H.</span>
+   </name>
+   <div class="article-title">Geometry optimization in ab initio SCF calculations</div>. 
+   <div class="source">J. Mol. Struct.: THEOCHEM</div>
+   <span class="year">1981</span>, 
+   <span class="volume">76</span>, 
+   <span class="fpage">277</span>–
+   <span class="lpage">284</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/0166-1280(81)85004-X</span>.
+  </div>
+ </ref>
+ <ref id="ref52" class="ref">
+  <div publication-type="journal" id="cit52" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hurley</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. C.</span>
+   </name>
+   <div class="article-title">The computation of floating functions and their use in force constant calculations</div>. 
+   <div class="source">J. Comput. Chem.</div>
+   <span class="year">1988</span>, 
+   <span class="volume">9</span>, 
+   <span class="fpage">75</span>–
+   <span class="lpage">79</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/jcc.540090110</span>.
+  </div>
+ </ref>
+ <ref id="ref53" class="ref">
+  <div publication-type="journal" id="cit53" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Neisius</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Verhaegen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">G.</span>
+   </name>
+   <div class="article-title">Bond functions for ab initio calculations on polyatomic molecules. Molecules containing C, N, O and H</div>. 
+   <div class="source">Chem. Phys. Lett.</div>
+   <span class="year">1981</span>, 
+   <span class="volume">78</span>, 
+   <span class="fpage">147</span>–
+   <span class="lpage">152</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/0009-2614(81)85573-X</span>.
+  </div>
+ </ref>
+ <ref id="ref54" class="ref">
+  <div publication-type="journal" id="cit54" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Neisius</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Verhaegen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">G.</span>
+   </name>
+   <div class="article-title">Bond functions for AB initio calculations. MCSCF results for CH, NH, OH and FH</div>. 
+   <div class="source">Chem. Phys. Lett.</div>
+   <span class="year">1982</span>, 
+   <span class="volume">89</span>, 
+   <span class="fpage">228</span>–
+   <span class="lpage">233</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/0009-2614(82)80047-X</span>.
+  </div>
+ </ref>
+ <ref id="ref55" class="ref">
+  <div publication-type="journal" id="cit55" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tachikawa</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Osamura</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Y.</span>
+   </name>
+   <div class="article-title">Simultaneous optimization of exponents, centers of Gaussian-type basis functions, and geometry with full-configuration interaction wave function: Application to the ground and excited states of hydrogen molecule</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">2000</span>, 
+   <span class="volume">113</span>, 
+   <span class="fpage">4942</span>–
+   <span class="lpage">4950</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.1288382</span>.
+  </div>
+ </ref>
+ <ref id="ref56" class="ref">
+  <div publication-type="journal" id="cit56" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tachikawa</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Taneda</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Mori</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>
+   <div class="article-title">Simultaneous optimization of GTF exponents and their centers with fully variational treatment of Hartree-Fock molecular orbital calculation</div>. 
+   <div class="source">Int. J. Quantum Chem.</div>
+   <span class="year">1999</span>, 
+   <span class="volume">75</span>, 
+   <span class="fpage">497</span>–
+   <span class="lpage">510</span>
+   <span pub-id-type="doi" class="pub-id">10.1002/(SICI)1097-461X(1999)75:4/5&lt;497::AID-QUA15&gt;3.0.CO;2-C</span>.
+  </div>
+ </ref>
+ <ref id="ref57" class="ref">
+  <div publication-type="journal" id="cit57" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shimizu</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">N.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ishimoto</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">T.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tachikawa</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <div class="article-title">Analytical optimization of orbital exponents in Gaussian-type functions for molecular systems based on MCSCF and MP2 levels of fully variational molecular orbital method</div>. 
+   <div class="source">Theor. Chem. Acc.</div>
+   <span class="year">2011</span>, 
+   <span class="volume">130</span>, 
+   <span class="fpage">679</span>–
+   <span class="lpage">685</span>
+   <span pub-id-type="doi" class="pub-id">10.1007/s00214-011-1052-3</span>.
+  </div>
+ </ref>
+ <ref id="ref58" class="ref">
+  <div publication-type="journal" id="cit58" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Perlt</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Brussel</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kirchner</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+   </name>
+   <div class="article-title">Floating orbital molecular dynamics simulations</div>. 
+   <div class="source">Phys. Chem. Chem. Phys.</div>
+   <span class="year">2014</span>, 
+   <span class="volume">16</span>, 
+   <span class="fpage">6997</span>–
+   <span class="lpage">7005</span>
+   <span pub-id-type="doi" class="pub-id">10.1039/c3cp54797c</span>.
+   <span pub-id-type="pmid" class="pub-id">24600690</span>
+  </div>
+ </ref>
+ <ref id="ref59" class="ref">
+  <div publication-type="journal" id="cit59" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Perlt</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Apostolidou</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Eggers</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kirchner</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+   </name>
+   <div class="article-title">Unrestricted Floating Orbitals for the Investigation of Open Shell Systems</div>. 
+   <div class="source">Int. J. Chem.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">8</span>, 
+   <span class="fpage">194</span>
+   <span pub-id-type="doi" class="pub-id">10.5539/ijc.v8n1p194</span>.
+  </div>
+ </ref>
+ <ref id="ref60" class="ref">
+  <div publication-type="undeclared" id="cit60" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="collab">Theano Development Team</span>, 
+   <div class="article-title">Theano: A Python framework for fast computation of mathematical expressions</div>. 
+   <div class="source">Preprint arXiv: 1605.02688</div>
+   <span class="year">2016</span>.
+  </div>
+ </ref>
+ <ref id="ref61" class="ref">
+  <div publication-type="computer-program" id="cit61" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Abadi</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+    </name>
+   </person-group>
+   <span class="etal"/>
+   <div class="source">TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems</div>; 
+   <span class="publisher-name">tensorflow.org</span>, 
+   <span class="year">2015</span>.
+  </div>
+ </ref>
+ <ref id="ref62" class="ref">
+  <div publication-type="journal" id="cit62" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hascoët</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pascual</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">V.</span>
+   </name>
+   <div class="article-title">The Tapenade Automatic Differentiation tool: Principles, Model, and Specification</div>. 
+   <div class="source">ACM Trans. Math. Software</div>
+   <span class="year">2013</span>, 
+   <span class="volume">39</span>, 
+   <span class="fpage">20</span>
+   <span pub-id-type="doi" class="pub-id">10.1145/2450153.2450158</span>.
+  </div>
+ </ref>
+ <ref id="ref63" class="ref">
+  <div publication-type="journal" id="cit63" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Walter</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S. F.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lehmann</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>
+   <div class="article-title">Algorithmic differentiation in Python with AlgoPy</div>. 
+   <div class="source">J. of Comp. Sci.</div>
+   <span class="year">2013</span>, 
+   <span class="volume">4</span>, 
+   <span class="fpage">334</span>–
+   <span class="lpage">344</span>
+   <span pub-id-type="doi" class="pub-id">10.1016/j.jocs.2011.10.007</span>.
+  </div>
+ </ref>
+ <ref id="ref64" class="ref">
+  <div publication-type="book" id="cit64" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Giles</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M. B.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Collected Matrix Derivative Results for Forward and Reverse Mode Algorithmic Differentiation</div>. In 
+   <div class="source">Advances in Automatic Differentiation</div>; 
+   <person-group person-group-type="editor" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bischof</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C. H.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bücker</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H. M.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hovland</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Naumann</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">U.</span>
+    </name>, 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Utke</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>
+   </person-group>, Eds.; 
+   <span class="publisher-name">Springer Berlin Heidelberg</span>: 
+   <span class="publisher-loc">Berlin, Heidelberg</span>, 
+   <span class="year">2008</span>; pp 
+   <span class="fpage">35</span>–
+   <span class="lpage">44</span>.
+  </div>
+ </ref>
+ <ref id="ref65" class="ref">
+  <div publication-type="undeclared" id="cit65" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Maclaurin</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Duvenaud</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Adams</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R. P.</span>
+    </name>
+   </person-group>
+   <div class="article-title">Autograd: Effortless Gradients in Numpy</div>. In 
+   <div class="source">ICML 2015 AutoML Workshop</div>, 
+   <span class="year">2015</span>.
+  </div>
+ </ref>
+ <ref id="ref66" class="ref">
+  <div publication-type="journal" id="cit66" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nelson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R. B.</span>
+   </name>
+   <div class="article-title">Simplified calculation of eigenvector derivatives</div>. 
+   <div class="source">AIAA J.</div>
+   <span class="year">1976</span>, 
+   <span class="volume">14</span>, 
+   <span class="fpage">1201</span>–
+   <span class="lpage">1205</span>
+   <span pub-id-type="doi" class="pub-id">10.2514/3.7211</span>.
+  </div>
+ </ref>
+ <ref id="ref67" class="ref">
+  <div publication-type="journal" id="cit67" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Walter</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S. F.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lehmann</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lamour</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>
+   <div class="article-title">On evaluating higher-order derivatives of the QR decomposition of tall matrices with full column rank in forward and reverse mode algorithmic differentiation</div>. 
+   <div class="source">Optim. Method. Softw.</div>
+   <span class="year">2012</span>, 
+   <span class="volume">27</span>, 
+   <span class="fpage">391</span>–
+   <span class="lpage">403</span>
+   <span pub-id-type="doi" class="pub-id">10.1080/10556788.2011.610454</span>.
+  </div>
+ </ref>
+ <ref id="ref68" class="ref">
+  <div publication-type="book" id="cit68" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <person-group person-group-type="allauthors" class="person-group" xmlns="">
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nocedal</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J.</span>
+    </name>; 
+    <name class="name">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Wright</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S. J.</span>
+    </name>
+   </person-group>
+   <div class="source">Numerical Optimization</div>, 
+   <span class="edition">2nd</span> ed.; 
+   <span class="publisher-name">Springer</span>: 
+   <span class="publisher-loc">New York</span>, 
+   <span class="year">2006</span>; pp 
+   <span class="fpage">497</span>–
+   <span class="lpage">528</span>.
+  </div>
+ </ref>
+ <ref id="ref69" class="ref">
+  <div publication-type="journal" id="cit69" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Peruzzo</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">McClean</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. R.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shadbolt</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Yung</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Zhou</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">X.-Q.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Love</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Aspuru-Guzik</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">O'Brien</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. L.</span>
+   </name>
+   <div class="article-title">A Variational Eigenvalue Solver on a Photonic Quantum Processor</div>. 
+   <div class="source">Nat. Commun.</div>
+   <span class="year">2014</span>, 
+   <span class="volume">5</span>, 
+   <span class="fpage">4215</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/ncomms5213</span>.
+   <span pub-id-type="pmid" class="pub-id">24953219</span>
+  </div>
+ </ref>
+ <ref id="ref70" class="ref">
+  <div publication-type="journal" id="cit70" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Barends</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>; et al. 
+   <div class="article-title">Superconducting quantum circuits at the surface code threshold for fault tolerance</div>. 
+   <div class="source">Nature</div>
+   <span class="year">2014</span>, 
+   <span class="volume">508</span>, 
+   <span class="fpage">500</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/nature13171</span>.
+   <span pub-id-type="pmid" class="pub-id">24759412</span>
+  </div>
+ </ref>
+ <ref id="ref71" class="ref">
+  <div publication-type="journal" id="cit71" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Barends</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>; et al. 
+   <div class="article-title">Digital quantum simulation of fermionic models with a superconducting circuit</div>. 
+   <div class="source">Nat. Commun.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">6</span>, 
+   <span class="fpage">7654</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/ncomms8654</span>.
+   <span pub-id-type="pmid" class="pub-id">26153660</span>
+  </div>
+ </ref>
+ <ref id="ref72" class="ref">
+  <div publication-type="journal" id="cit72" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ristè</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">D.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Poletto</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Huang</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.-Z.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bruno</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Vesterinen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">V.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Saira</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">O.-P.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">DiCarlo</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">L.</span>
+   </name>
+   <div class="article-title">Detecting bit-flip errors in a logical qubit using stabilizer measurements</div>. 
+   <div class="source">Nat. Commun.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">6</span>, 
+   <span class="fpage">6983</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/ncomms7983</span>.
+   <span pub-id-type="pmid" class="pub-id">25923318</span>
+  </div>
+ </ref>
+ <ref id="ref73" class="ref">
+  <div publication-type="journal" id="cit73" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Córcoles</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. D.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Magesan</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Srinivasan</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S. J.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Cross</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. W.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Steffen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gambetta</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Chow</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. M.</span>
+   </name>
+   <div class="article-title">Demonstration of a quantum error detection code using a square lattice of four superconducting qubits</div>. 
+   <div class="source">Nat. Commun.</div>
+   <span class="year">2015</span>, 
+   <span class="volume">6</span>, 
+   <span class="fpage">6979</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/ncomms7979</span>.
+   <span pub-id-type="pmid" class="pub-id">25923200</span>
+  </div>
+ </ref>
+ <ref id="ref74" class="ref">
+  <div publication-type="journal" id="cit74" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">O’Malley</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P. J. J.</span>
+   </name>; et al. 
+   <div class="article-title">Scalable Quantum Simulation of Molecular Energies</div>. 
+   <div class="source">Phys. Rev. X</div>
+   <span class="year">2016</span>, 
+   <span class="volume">6</span>, 
+   <span class="fpage">031007</span>.
+  </div>
+ </ref>
+ <ref id="ref75" class="ref">
+  <div publication-type="journal" id="cit75" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kandala</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Mezzacapo</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Temme</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Takita</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Brink</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Chow</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gambetta</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">J. M.</span>
+   </name>
+   <div class="article-title">Hardware-efficient variational quantum eigensolver for small molecules and quantum magnets</div>. 
+   <div class="source">Nature</div>
+   <span class="year">2017</span>, 
+   <span class="volume">549</span>, 
+   <span class="fpage">242</span>–
+   <span class="lpage">246</span>
+   <span pub-id-type="doi" class="pub-id">10.1038/nature23879</span>.
+   <span pub-id-type="pmid" class="pub-id">28905916</span>
+  </div>
+ </ref>
+ <ref id="ref76" class="ref">
+  <div publication-type="journal" id="cit76" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hirata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Fan</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P. D.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Auer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A. A.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nooijen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Piecuch</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">P.</span>
+   </name>
+   <div class="article-title">Combined coupled-cluster and many-body perturbation theories</div>. 
+   <div class="source">J. Chem. Phys.</div>
+   <span class="year">2004</span>, 
+   <span class="volume">121</span>, 
+   <span class="fpage">12197</span>–
+   <span class="lpage">12207</span>
+   <span pub-id-type="doi" class="pub-id">10.1063/1.1814932</span>.
+   <span pub-id-type="pmid" class="pub-id">15606238</span>
+  </div>
+ </ref>
+ <ref id="ref77" class="ref">
+  <div publication-type="journal" id="cit77" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Janssen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">C. L.</span>
+   </name>; 
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schaefer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">H. F.</span>
+    <span class="suffix" xmlns="http://www.w3.org/1999/xhtml">III</span>
+   </name>
+   <div class="article-title">The automated solution of second quantization equations with application equations with applications to the coupled cluster approach</div>. 
+   <div class="source">Theor. Chim. Acta</div>
+   <span class="year">1991</span>, 
+   <span class="volume">79</span>, 
+   <span class="fpage">1</span>–
+   <span class="lpage">42</span>
+   <span pub-id-type="doi" class="pub-id">10.1007/BF01113327</span>.
+  </div>
+ </ref>
+ <ref id="ref78" class="ref">
+  <div publication-type="journal" id="cit78" class="mixed-citation" xmlns="http://www.w3.org/1999/xhtml">
+   <name class="name" xmlns="">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hirata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>
+   <div class="article-title">Tensor Contraction Engine: Abstraction and Automated Parallel Implementation of Configuration-Interaction, Coupled-Cluster, and Many-Body Perturbation Theories</div>. 
+   <div class="source">J. Phys. Chem. A</div>
+   <span class="year">2003</span>, 
+   <span class="volume">107</span>, 
+   <span class="fpage">9887</span>–
+   <span class="lpage">9897</span>
+   <span pub-id-type="doi" class="pub-id">10.1021/jp034596z</span>.
+  </div>
+ </ref>
+</ref-list>

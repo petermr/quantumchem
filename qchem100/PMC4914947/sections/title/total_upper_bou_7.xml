@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Total upper bound of symmetric and regular expansions for the digital simulation of the hydrogen molecule as a function of the error of a two-qubit gate, considering 
+  <span class="italic">l</span> = 2, 3, 4 Trotter steps and a simulated phase of 
+  <span class="italic">θ</span> = 
+  <span class="italic">h</span>
+  <sub>11</sub>
+  <span class="italic">t</span> = 2.
+ </div>
+ <p>The total error is calculated as the sum of the experimental error of two-qubit gates and the digital errors. This plot shows the crossing points between the symmetric and the regular protocols for the same number of Trotter steps. On the left hand side of the crossing points, the symmetric protocol provides better results than the regular one. On the right hand side, however, the considered experimental gate error is higher, and the regular protocol where a less number of gates is executed shows better performance.</p>
+</div>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" sec-type="discussion" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">We have presented a many-body formalism for the simulation of time-resolved nonlinear spectroscopy including three-particle excitonic complexes. Although the formalism can be straightforwardly implemented in a first-principles manner, we have here employed a parameterized two-band model and an isotropic, static dielectric function. Combined with a careful truncation of the Brillouin zone, these choices allowed us to provide highly converged results despite the otherwise high computational cost. In applying this formalism to excitons and trions, we uncover various fundamental properties of these charge carrier complexes that relate to the optoelectronic functionality of TMDCs and provide excellent agreement with recently measured 2DES. As noted before, helicity- and frequency-selective excitation of the 
+  <span class="italic">A</span> transition in the 
+  <span class="italic">K</span> valley allows control of the spin state of the optically created electron–hole pair. Consistent with our results, an even more comprehensive spin control can be achieved for bound trion states in Mo
+  <span class="italic">X</span>
+  <sub>2</sub>: helicity-selective excitation at the bound trion transition generates three-body complexes consisting of a spin-up hole, and spin-differing electrons (following the convention from Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). The resulting state coherently interacts with exciton resonances that optically couple to a shared ground state consisting of an excess spin-down electron relaxed in the 
+  <span class="italic">K</span>′ valley. In case of W
+  <span class="italic">X</span>
+  <sub>2</sub>, where both singlet and triplet trions form bound states with near-degenerate transition energies, such selective excitation generates both well-defined spin configurations with ratios dictated by the spins of the doping charges, and each trion state coherently interacts with the exciton resonance with which it shares a one-electron ground state. In real space, such a sharing of a ground state can be thought of as the photoexcited electron–hole pair and the single electron residing within each others coherent domain. This is automatically fulfilled in theoretical models based on Bloch states, representative of pristine, extended crystals with translational symmetry, such as employed here. Nevertheless, actual materials are characterized by a certain degree of impurities and scattering with phonons, which break this symmetry and limits the size of coherent domains. The level of theory employed here in principle allows sufficient flexibility to include electron–phonon couplings parametrized against first-principles calculated electron–phonon coupling strengths
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span>; for example, by means of a semiconductor Bloch equation approach
+  <span class="sup">
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>
+  </span> or Heine–Allen–Cardona approach
+  <span class="sup">
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>,
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>
+  </span>, or perturbatively at the level of the Boltzmann transport equation. This would allow to unravel the microscopic origin of electronic decoherence and relaxation.
+ </p>
+</sec>

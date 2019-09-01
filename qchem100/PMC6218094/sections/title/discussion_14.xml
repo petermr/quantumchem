@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="conclusions" id="sec007" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we present a novel approach for predicting the thermodynamics of biochemical redox reactions. Our approach differs radically from group contribution methods, which rely on a large set of arbitrarily-defined functional groups, assume no energetic interactions between groups, and are restricted to metabolites that are decomposable into the groups spanned by the model. In contrast, quantum chemistry directly takes into account the electronic structure of metabolites in solution.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Focusing on specific examples highlights the strengths of our quantum chemical approach as well as various weaknesses of GCM. For example, we find several reactions where the GCM predictions are obviously inaccurate as they are too high to be reasonable: 2-Hydroxy-5-methylquinone ⇔ 2,4,5-Trihydroxytoluene (GCM: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> = 543 
+  <span class="italic">mV</span>, QC: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">o</span>
+  </span> = −158 
+  <span class="italic">mV</span>); 2-Pyrone-4,6-dicarboxylate ⇔ 2-Hydroxy-2-hydropyrone-4,6-dicarboxylate (GCM: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> = 1406 
+  <span class="italic">mV</span>, QC: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">o</span>
+  </span> = −375 
+  <span class="italic">mV</span>); and Mevaldate ⇔ (R)-Mevalonate (GCM: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> = 132 
+  <span class="italic">mV</span>, QC: 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">o</span>
+  </span> = −190 
+  <span class="italic">mV</span>). Close inspection of the group matrix underlying these estimates reveals errors in the decomposition of the compounds. Failures in the GCM decomposition are likely due to the complexity of molecular representations in the standard INCHI format [
+  <a rid="pcbi.1006471.ref064" ref-type="bibr" href="#pcbi.1006471.ref064">64</a>] and usually occur with aromatic and delocalized electrons. This reflects challenges inherent in group decomposition, which are avoided when using the quantum chemistry approach.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A more illuminating example is that of 3-dehydroshikimate ⇔ shikimate (shikimate dehydrogenase), the sole redox reaction in the shikimate pathway, converting erythrose 4-phosphate and PEP into chorismate. (Chorismate is required for the biosynthesis of aromatic amino-acids, folates, quinones, and important secondary metabolites [
+  <a rid="pcbi.1006471.ref065" ref-type="bibr" href="#pcbi.1006471.ref065">65</a>]). GCM predicts a value of 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> = −85 
+  <span class="italic">mV</span>, which, if correct, indicates that the reduction of 3-dehydroshikimate with NAD(P)H is irreversible. On the other hand, quantum chemistry methods predict 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> = −268 
+  <span class="italic">mV</span>, which corresponds to a 6 order-of-magnitude equilibrium concentration difference with respect to the GCM value. The quantum chemistry prediction thus implies reversibility of the oxidoreductase reaction with NAD(P)H. As oxidation of shikimate by NAD(P) has been shown to occur 
+  <span class="italic">in-vivo</span> in gram positive bacteria [
+  <a rid="pcbi.1006471.ref066" ref-type="bibr" href="#pcbi.1006471.ref066">66</a>], it is clear that the GCM prediction is wrong and that the quantum chemistry approach provides a more accurate assessment of the thermodynamic potential of this important biochemical reaction.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Unlike previous efforts [
+  <a rid="pcbi.1006471.ref067" ref-type="bibr" href="#pcbi.1006471.ref067">67</a>,
+  <a rid="pcbi.1006471.ref068" ref-type="bibr" href="#pcbi.1006471.ref068">68</a>], our quantum chemistry approach relies on a two-parameter calibration for each oxidoreductase reaction category, which reduces computational cost by avoiding the need to calculate vibrational enthalpies and entropies (Supplementary Information). In future studies, improvements in accuracy could be achieved by exploring a larger space of quantum model chemistries, or—if more experimental data becomes available—calibrating using more sophisticated regression techniques, such as Gaussian Process regression [
+  <a rid="pcbi.1006471.ref069" ref-type="bibr" href="#pcbi.1006471.ref069">69</a>]. Yet, as we have shown, the current procedure is sufficient to yield high coverage and accuracy at a reasonable computational cost.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In contrast with GCM methods, our calibration parameters can be at least partially interpreted. One important contribution to the systematic bias in the raw quantum calculations (i.e. the y-intercept in the linear regression) comes from neglecting the vibrational component of the molecular enthalpy. Interpreting the slope parameter is more complex, yet examples in the literature show that it can be traced back to the choice of solvation [
+  <a rid="pcbi.1006471.ref070" ref-type="bibr" href="#pcbi.1006471.ref070">70</a>] or—in the context of modeling quinone derivatives–to the basis set incompleteness and the shortcomings of the DFT exchange correlation functionals [
+  <a rid="pcbi.1006471.ref071" ref-type="bibr" href="#pcbi.1006471.ref071">71</a>]. We note, however, that faster computational resources will eventually enable full 
+  <span class="italic">ab initio</span> prediction of hundreds of standard transformed redox potentials, rendering the two-parameter calibration and the use of empirical pKa values obsolete [
+  <a rid="pcbi.1006471.ref015" ref-type="bibr" href="#pcbi.1006471.ref015">15</a>,
+  <a rid="pcbi.1006471.ref072" ref-type="bibr" href="#pcbi.1006471.ref072">72</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Importantly, the quantum chemical strategy is not subject to the inconsistencies that plague experimental databases. Experimental values are measured in a wide range of different conditions, including temperature, pH, ionic strength, buffers, and electrolytes. In many cases, the exact measurement conditions are not reported, making it practically impossible to account for these factors. Thus, even if we were to gain access to more experimental data, the lack of systematically applied conditions makes such resources problematic. In contrast, quantum chemical simulations can be performed in consistent, well-defined conditions.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Why does the primary biological reduction potential range lie between -370 mV and -250 mV? One possibility is a frozen evolutionary accident. In this view, NAD(P) was available early in evolution and was found useful in supporting multiple redox reactions; as such, it was fixed as the central redox carrier before the Last Universal Common Ancestor (LUCA). While we cannot rule out this explanation, we suggest an alternative: that the primary reduction potential range represents a near optimal adaptation given biochemical constraints and selection pressures imposed throughout evolution. This idea is supported by the fact that most extant electron carriers already existed in LUCA [
+  <a rid="pcbi.1006471.ref006" ref-type="bibr" href="#pcbi.1006471.ref006">6</a>], and yet none have as extensive a role in metabolism as NAD(P). Furthermore, derivatives of NAD(P) are simple to synthesize biochemically–e.g. deamino-NAD is a precursor of NAD–and can have considerably shifted reduction potentials [
+  <a rid="pcbi.1006471.ref058" ref-type="bibr" href="#pcbi.1006471.ref058">58</a>]. Despite this, no organism has been found to rely on such derivatives. Finally, the deaza-flavin coenzyme F420 is a prominent electron carrier in the central metabolism of methanogens and other prokaryotes [
+  <a rid="pcbi.1006471.ref073" ref-type="bibr" href="#pcbi.1006471.ref073">73</a>,
+  <a rid="pcbi.1006471.ref074" ref-type="bibr" href="#pcbi.1006471.ref074">74</a>], and has a reduction potential around -340 mV [
+  <a rid="pcbi.1006471.ref075" ref-type="bibr" href="#pcbi.1006471.ref075">75</a>], almost identical to that of NAD(P). Hence, even organisms that partially replace NAD(P) use a carrier with a similar reduction potential.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The enhanced resolution provided by quantum chemistry uncovers important patterns not accessible using traditional analyses. Exemplifying this, we found that the main cellular electron carrier, NAD(P), is ‘tuned’ to reduce the concentration of reactive carbonyls, thereby keeping the cellular environment more chemically stable. Yet, this protection comes at a price: the oxidation of hydroxycarbons is thermodynamically challenging and often requires the use of electron carriers with higher reduction potential. A recent study demonstrates the physiological relevance of this thermodynamic barrier: the NAD-dependent 3-phosphoglycerate dehydrogenase–the first enzyme in the serine biosynthesis route–can sustain high flux in spite of its unfavorable thermodynamics only through coupling with the favorable reduction of 2-ketoglutarate [
+  <a rid="pcbi.1006471.ref076" ref-type="bibr" href="#pcbi.1006471.ref076">76</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our analysis further supports the previous assertion that the TCA cycle has evolved in the reductive direction [
+  <a rid="pcbi.1006471.ref053" ref-type="bibr" href="#pcbi.1006471.ref053">53</a>,
+  <a rid="pcbi.1006471.ref077" ref-type="bibr" href="#pcbi.1006471.ref077">77</a>]. While all the other electron transfer reactions in the extended central metabolism belongs to oxidoreductase groups that can be supported by NAD(P)(H), oxidation of succinate–a key TCA cycle reaction–cannot be carried by this electron carrier. As the reverse reaction, i.e., fumarate reduction, can be support by NADH [
+  <a rid="pcbi.1006471.ref078" ref-type="bibr" href="#pcbi.1006471.ref078">78</a>,
+  <a rid="pcbi.1006471.ref079" ref-type="bibr" href="#pcbi.1006471.ref079">79</a>], it is reasonable to speculate that the reaction first evolved in the reductive direction, and only later was adapted to work in the oxidative direction using an alternative cofactor.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">So long as sufficient experimental data is available to allow for calibration, our approach can be extended to other types of biochemical reactions. For example, understanding the thermodynamics of carboxylating and decarboxylating enzymes–the “biochemical gateways” connecting the inorganic and the organic world– could pave the way for the identification of highly efficient, thermodynamically favorable carbon fixation pathways based on non-standard but promising reaction chemistries [
+  <a rid="pcbi.1006471.ref080" ref-type="bibr" href="#pcbi.1006471.ref080">80</a>,
+  <a rid="pcbi.1006471.ref081" ref-type="bibr" href="#pcbi.1006471.ref081">81</a>]. In this way, high-resolution thermodynamic analyses may provide much needed insight for the engineering of microbes to address global challenges.
+ </p>
+</sec>

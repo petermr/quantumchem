@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">In this section, we provide the conventions used in generating and processing the geometries of the molecules in the QM7b and AlphaML showcase databases, all relevant computational details to ensure reproducibility of the quantum mechanical data, as well as a summary of the codes employed in this work.</p>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular cartesian coordinates in the QM7b and AlphaML showcase databases</div>
+  <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">The molecular geometries for all 7,211 species in the QM7b database
+   <span class="sup">
+    <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+    <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+   </span> were obtained online 
+   <span class="italic">via</span> the quantum-machine.org website
+   <span class="sup">
+    <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+   </span>. All QM7b molecular geometries were first translated to their respective center of nuclear (ionic) charge, to remove the origin-dependence of the higher-order (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., quadrupole) multipole moments. Using farthest-point sampling (FPS)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+   </span>, all molecules were then reordered using a kernel-based similarity measure
+   <span class="sup">
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>, and relabelled accordingly from molecule0001 to molecule7211 (again padded to four digits with leading zeros). For consistency with the QM7b database, all 52 molecules in the AlphaML showcase database (see Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>) were optimized with DFT using the PBE functional
+   <span class="sup">
+    <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+   </span> and a converged numerical atom-centered basis (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., tight settings with the tier-2 basis set in FHI-AIMS)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+   </span>. All AlphaML showcase molecules were also translated to their respective center of nuclear (ionic) charge, and are labelled from showcase0001 to showcase0052, as depicted in Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. All 7,263 structures are available on Materials Cloud
+   <span class="sup">
+    <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+   </span>, according to the format described below in the 
+   <span class="italic">Data Records</span> section.
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Details of the quantum mechanical calculations</div>
+  <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">All CCSD/daDZ, B3LYP/daDZ, and B3LYP/daTZ calculations were carried out using Psi4 v1.1
+   <span class="sup">
+    <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+   </span>, while all SCAN0/daDZ calculations were performed with Q-Chem v5.0
+   <span class="sup">
+    <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+   </span>. At the CCSD/daDZ level, all 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span> tensors, unrelaxed dipole moments, 
+   <span class="bold">
+    <span class="italic">μ</span>
+   </span>, and unrelaxed quadrupole moments, 
+   <span class="bold">
+    <span class="italic">Q</span>
+   </span>, were calculated using LR-CCSD/daDZ, with the exception of the ten largest molecules in the AlphaML showcase database (
+   <span class="italic">e</span>.
+   <span class="italic">g</span>., (18) Phenylalanine, (19) Tyrosine, (20) Tryptophan, (21) Caffeine, (23) Aspirin, (25) Acyclovir, (26) D-Fructose, (27) 
+   <span class="italic">β</span>-D-Fructofuranose, (28) D-Glucose, and (29) 
+   <span class="italic">α</span>-D-glucopyranose, see Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). For these molecules, the memory requirements required to solve the Λ-CC equations at the LR-CCSD/daDZ level were computationally prohibitive, and only energy calculations with CCSD/daDZ could be performed with the available computational resources. For consistency, this required the use of the orbital-
+   <span class="italic">unrelaxed</span> finite-field method, in which the molecular orbitals were obtained from a field-free (unperturbed) Hartree-Fock calculation. To obtain 
+   <span class="bold">
+    <span class="italic">μ</span>
+   </span> and 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span>, we computed first and second derivatives of the CCSD/daDZ energy (
+   <span class="italic">U</span>) with respect to an external electric field, 
+   <span class="bold">E</span>, 
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., 
+   <span class="bold">
+    <span class="italic">μ</span>
+   </span> = ∂
+   <span class="italic">U</span>/∂
+   <span class="bold">E</span> and 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span> = ∂
+   <span class="sup">2</span>
+   <span class="italic">U</span>/∂
+   <span class="bold">E</span>
+   <span class="sup">2</span>. 
+   <span class="bold">
+    <span class="italic">Q</span>
+   </span> values were not computed for the ten largest molecules in the AlphaML showcase database. All DFT calculations used the orbital-
+   <span class="italic">relaxed</span> finite-field method, in which a self-consistent field (SCF) was obtained in the presence of each applied field, and 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span> was computed via 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span> = ∂
+   <span class="bold">
+    <span class="italic">μ</span>
+   </span>/∂
+   <span class="bold">E</span>. All other molecular properties at the DFT level (
+   <span class="italic">vide infra</span>) were obtained directly from the field-free (unperturbed) calculation. All derivatives were computed numerically using two-point (for first derivatives) and three-point (for second derivatives) central difference formulae and a step size of 
+   <span class="bold">E</span> = 1.8897261250 × 10
+   <span class="sup">−5</span> atomic units.
+  </p>
+  <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">For all LR-CCSD/daDZ calculations, the convergence criteria were set to their default values in Psi4, 
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., E_convergence = 1.0E-10 and D_convergence = 1.0E-10 for the energy and density during the solution of the HF equations, and E_convergence = 1.0E-08 and R_convergence = 1.0E-07 for the energy and residuals during the solution of the CCSD equations. For the ten largest molecules in the AlphaML showcase database, the finite-field CCSD/daDZ calculations were performed using the following convergence criteria in Psi4: E_convergence = 5.0E-10 and D_convergence = 5.0E-10 for the energy and density during the solution of the HF equations. Significantly tighter convergence criteria of E_convergence = 5.0E-10 and R_convergence = 5.0E-09 were employed for the energy and residuals during the solution of the CCSD equations to minimize errors in the numerical evaluation of 
+   <span class="bold">
+    <span class="italic">μ</span>
+   </span> and 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span>. The frozen core (FC) approximation and scf_type = direct were used for all LR-CCSD/daDZ and CCSD/daDZ calculations. For all B3LYP/daDZ and B3LYP/daTZ calculations, the convergence criteria in Psi4 were again set to tight values to minimize numerical error in the finite-difference evaluation of 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span>: E_convergence = 1.0E-10 and D_convergence = 1.0E-10 for the energy and density during the solution of the Kohn-Sham equations. For all the SCAN0/daDZ calculations, the convergence criteria were set to scf_convergence = 1.0E-10 and thresh = 1.0E-13 for the DIIS error and integral thresholding in Q-Chem. The Dunning-style daDZ and daTZ basis sets
+   <span class="sup">
+    <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+   </span> were obtained from the EMSL Basis Set Library
+   <span class="sup">
+    <a ref-type="bibr" rid="CR36" href="#CR36">36</a>,
+    <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+   </span>.
+  </p>
+ </sec>
+</sec>

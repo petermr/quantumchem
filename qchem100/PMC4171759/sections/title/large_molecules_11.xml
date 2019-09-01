@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">LARGE MOLECULES</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For large molecules, containing up to more than a thousand atoms, Dalton contains a massively parallel, linear-scaling module for the HF, KS, and MP2 electronic-structure models; CCSD energies are also available in a massively parallel but not linear-scaling manner. For large molecules, it is essential to employ stable energy-optimization schemes so as to avoid divergence or convergence to spurious solutions, which is achieved by combining the robust three-level/augmented Roothaan–Hall method with a line-search trust-region technique.
+  <a rid="b126" ref-type="bibr" href="#b126">126</a>–
+  <a rid="b128" ref-type="bibr" href="#b128">128</a> Fock/KS matrices and integrals are calculated by combining 
+  <span class="italic">J</span>-engine and density-fitting techniques with linear-scaling techniques such as the continuous fast multipole method (CFMM)
+  <a rid="b129" ref-type="bibr" href="#b129">129</a>,
+  <a rid="b130" ref-type="bibr" href="#b130">130</a> and the linear-scaling exchange (LinK) method.
+  <a rid="b131" ref-type="bibr" href="#b131">131</a>,
+  <a rid="b132" ref-type="bibr" href="#b132">132</a> This new SCF module is efficient also for medium-sized molecules, often reducing CPU time by an order of magnitude or more relative to optimizations carried out with the standard module—enabling, for example, studies of dynamics for systems containing more than 100 atoms.
+  <a rid="b48" ref-type="bibr" href="#b48">48</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To illustrate the capabilities of Dalton for large molecules, we consider two systems—namely, the 168-atom valinomycin molecule and the 392-atom titin-I27SS model,
+  <a rid="b38" ref-type="bibr" href="#b38">38</a> see Figure 
+  <a ref-type="fig" rid="fig04" href="#fig04">4</a>. For valinomycin, geometry optimizations were conducted at the BP86/6-31G** and CAM-B3LYP/6-31G** levels of theory. Using 64 cores on eight 2.60 GHz Intel Xeon E5-2670 nodes, the geometry optimizations converged in 33 and 30 geometry steps, respectively. These optimizations took a total of 67 and 219 min, with an average of 2.0 and 7.3 min per geometry step, respectively. For the titin model, a single geometry step takes 25 min at the CAM-B3LYP/6-31G** level of theory.
+ </p>
+ <div id="fig04" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIGURE 4</span>
+  <div class="caption">
+   <p>Left: The titin-I27 domain highlighting the disulfide bridging bond and a schematic representation of the stretching of the polyprotein strain by the aid of the atomic force microscopy; right: the titin-I27SS model, designed to model the redox-active site in the titin-I27 domain.</p>
+  </div>
+  <div xlink:href="wcms0004-0269-f4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dalton has linear-scaling HF and KS modules for a number of molecular properties,
+  <a rid="b133" ref-type="bibr" href="#b133">133</a>,
+  <a rid="b134" ref-type="bibr" href="#b134">134</a> including polarizabilities, excitation energies, one- and two-photon absorption spectra, magnetic-circular-dichroism parameters,
+  <a rid="b135" ref-type="bibr" href="#b135">135</a>,
+  <a rid="b136" ref-type="bibr" href="#b136">136</a> and NMR shielding constants. Excited-state geometry optimizations are available.
+  <a rid="b45" ref-type="bibr" href="#b45">45</a> It is also possible to generate various absorption spectra using damped response theory.
+  <a rid="b100" ref-type="bibr" href="#b100">100</a>,
+  <a rid="b137" ref-type="bibr" href="#b137">137</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To recover dynamical correlation in large molecules, Dalton utilizes a novel algorithm for generating highly local HF orbitals.
+  <a rid="b138" ref-type="bibr" href="#b138">138</a>,
+  <a rid="b139" ref-type="bibr" href="#b139">139</a> Such orbitals constitute the basis for the linear-scaling, massively parallel MP2 implementation in Dalton, which exploits the inherent locality of dynamical correlation in the Divide–Expand–Consolidate (DEC) strategy.
+  <a rid="b140" ref-type="bibr" href="#b140">140</a>–
+  <a rid="b142" ref-type="bibr" href="#b142">142</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As an illustration, we consider the calculation of the MP2 electrostatic potential of insulin. The HF orbitals were localized by minimizing the sum of the second powers of the orbital variances, generating a set of local occupied orbitals and a set of local virtual orbitals.
+  <a rid="b138" ref-type="bibr" href="#b138">138</a> Even the least local orbitals from this set, which are plotted in Figure 
+  <a ref-type="fig" rid="fig05" href="#fig05">5</a> (left), are localized to small regions of the insulin molecule. The use of these local orbitals allows the inherently local electron correlation effects to be described efficiently using the DEC scheme. In Figure 
+  <a ref-type="fig" rid="fig05" href="#fig05">5</a> (right), the DEC scheme was used to calculate the MP2 electrostatic potential for insulin, which may be used to identify areas of reactivity.
+ </p>
+ <div id="fig05" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIGURE 5</span>
+  <div class="caption">
+   <p>MP2 study of insulin (787 atoms) in the cc-pVDZ basis (7,604 orbitals). Left: Localized orbitals obtained by minimizing the second power of the orbital variances. The least local occupied (blue) and least local virtual (red) orbitals are plotted using orbital contour values of 0.01 a.u. Right: MP2 electrostatic potential calculated using the DEC scheme plotted on an isodensity surface (0.001 a.u.). The values are indicated by the color box (a.u.).</p>
+  </div>
+  <div xlink:href="wcms0004-0269-f5" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

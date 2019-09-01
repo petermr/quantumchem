@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" sec-type="conclusion" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">The physical mechanisms responsible for the disappearance of the 0.5G
+  <sub>o</sub> conductance plateau and the decrease in size of the hysteresis loops in a series of asymmetrically biased InAs based QPCs with varying channel width but identical channel length (as their aspect ratio (width/length) increases) were identified as: (1) multimode transport in the QPC with larger channel leading to spin-flip backscattering events due to both remote impurities in the doping layer of the heterostructure and surface roughness and impurity (dangling bond) scattering on the sidewalls of the QPC constriction, and (2) an increased in carrier density leading to the screening of the e-e interaction in the QPC channel.
+ </p>
+ <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">In the QPC devices studied here, as their aspect ratio increases, more channels participate in conduction through the narrow portion of the QPC and screening effects are more important in the QPC channel reducing the importance of e-e interaction. As a result, the 0.5G
+  <sub>0</sub> conductance plateau gradually disappears as the QPC channel width increases, a trend supported by NEGF simulations we reported in the past
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>.
+ </p>
+ <p id="Par24" xmlns="http://www.w3.org/1999/xhtml">The progressive disappearance of the net spin polarization in the QPC channel and the accompanying reduction in the size of the hysteresis loops as the QPC channel width increases is an another indirect proof of the onset of spin polarization in InAs based QPCs in the presence of LSOC and an asymmetric bias between the QPC SGs.</p>
+ <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">Asymmetrically biased QPCs with in-plane SGs can act as efficient spin injectors and detectors which could lead to the fabrication of all-electric spin valves. It is anticipated that the asymmetrically biased QPCs studied here could be used as spin-based sensors, filters, and interferometers for future spintronic applications. Furthermore, the onset of hysteresis in the current-voltage characteristics of spin based devices could lead to their potential applications in multilevel logic and data storage circuits
+  <span class="sup">
+   <a ref-type="bibr" rid="CR66" href="#CR66">66</a>
+  </span>.
+ </p>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">Towards that goal, it is imperative to explore means to increase the temperature at which QPC spin polarizer can be used for any practical application. InAs has a high intrinsic SOC but a short spin coherence length of around a micron at 4.2 K
+  <span class="sup">
+   <a ref-type="bibr" rid="CR61" href="#CR61">61</a>
+  </span>. The latter is only around tens of nanometers at ambient temperatures. Hence, InAs or any other semiconductor with a large intrinsic SOC, is not suitable for practical applications at room temperature. Our NEGF simulations have shown that even a very weak SOC can cause significant spin polarization provided the electron-electron interaction is very strong
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>. Our past finding shows that QPC devices made of GaAs (that possesses a weak intrinsic SOC) can also be useful in generating fully spin polarized current by purely electrical means
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>,
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span>. Some advantages of using GaAs based QPCs include: its long spin coherence length of tens of microns
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span> at ambient temperatures; GaAs samples can be grown with very low electron concentration leading to a strong e-e interaction; The existence of a large Schottky barrier at GaAs/metal interfaces which is beneficial for the deposition of surface gates.
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">However, one disadvantage of GaAs is that it has a large surface depletion due to the Fermi level pining by surface states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR67" href="#CR67">67</a>
+  </span>. In fact, in our previous experiments with GaAs QPC devices, we had to apply a large positive bias (more than + 10 volts) on both the SGs to first open the QPC constriction at 4.2K. This is a drawback for GaAs based QPC devices if they are to be used in future generations of low power circuits. In contrast, for InAs QPCs, the Fermi level is pinned into the conduction band bottom, making it easier to form Ohmic contacts to the device which facilitates already-open QPC channel at T = 4.2 K and below. There is therefore a need to look into alternative semiconductors and their compounds for asymmetrically biased QPC devices to become operational at temperature much higher than liquid helium.
+ </p>
+</sec>

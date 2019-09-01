@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">I.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Simulating many-body physical systems enables us to study chemicals and materials without fabricating them, saving both time and resources. The most accurate simulations require a full quantum mechanical treatment—which is exponentially costly for classical computers. While many approximations have been developed to solve this problem, they are often not sufficiently accurate.
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a> One possible route to more accurate simulations is to use quantum computers. Quantum computation can enable us to solve certain problems asymptotically more quickly than with a ‘classical’ computer.
+  <a rid="cit2" ref-type="bibr" href="#cit2">2</a>–
+  <a rid="cit4" ref-type="bibr" href="#cit4">4</a> While the quantum computers that we currently possess are small and error prone, it is hoped that we will one day be able to construct a universal, fault-tolerant quantum computer—widely expected to be capable of outperforming its classical counterparts on certain tasks. One example of such tasks is simulating quantum systems on quantum computers.
+  <a rid="cit5" ref-type="bibr" href="#cit5">5</a>–
+  <a rid="cit7" ref-type="bibr" href="#cit7">7</a> In particular, simulating chemical systems, such as molecules,
+  <a rid="cit8" ref-type="bibr" href="#cit8">8</a> has received significant attention.
+  <a rid="cit84" ref-type="bibr" href="#cit84">84</a>,
+  <a rid="cit85" ref-type="bibr" href="#cit85">85</a> This may stem from the commercial benefits of being able to investigate and design such systems 
+  <span class="italic">in silico</span>.
+  <a rid="cit9" ref-type="bibr" href="#cit9">9</a> The development of quantum computational chemistry has arguably echoed its classical counterpart. In both fields, the majority of investigations have focused on the electronic structure of molecules.
+  <a rid="cit10" ref-type="bibr" href="#cit10">10</a> This has resulted in a wealth of well established methods for solving problems of electrons. However, methods concerned with the nuclear degrees of freedom are comparatively less well established. Understanding vibrations is critical for obtaining the most accurate models of real physical systems.
+  <a rid="cit10" ref-type="bibr" href="#cit10">10</a> Unfortunately, the most detailed classical simulations of vibrations are limited to small molecules, consisting of a few atoms.
+  <a rid="cit11" ref-type="bibr" href="#cit11">11</a> While approximations can be used to treat larger systems, these tend to be less accurate than experiments.
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a> Although recently proposed analog quantum algorithms
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>–
+  <a rid="cit19" ref-type="bibr" href="#cit19">19</a> are capable of simulating molecular vibrations using resources which scale polynomially with the size of the molecule, the long term scalability of these approaches has yet to be established.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we discuss a general method for efficiently simulating molecular vibrations on a universal quantum computer. Our method targets the eigenfunctions of a vibrational Hamiltonian with potential terms beyond quadratic order (‘anharmonic potentials’). These wavefunctions can then be used to efficiently calculate properties of interest, such as absorption spectra at finite temperatures. We can also use our method to perform simulations of vibrational dynamics, enabling the investigation of properties such as vibrational relaxation.</p>
+</sec>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Trotterization and Simulation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to perform the phase estimation algorithm to determine the molecular ground-state energy, a quantum circuit simulating the unitary evolution operator 
+  <span class="italic">Û</span> = exp(−
+  <span class="italic">itĤ</span>/ℏ) of the molecular Hamiltonian must be found. This is similarly required when utilizing a variational quantum eigensolver algorithm using a coupled-cluster ansatz.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>−
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>,
+   <a ref-type="bibr" rid="ref31" href="#ref31">31</a>
+  </span> The qubit form of the electronic Hamiltonian determined through the Bravyi–Kitaev or Jordan–Wigner transformation consists of a weighted sum of strings of Pauli operations. In order to exponentiate this, a Trotter–Suzuki approximation must be invoked.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span> The first-order Trotter–Suzuki expansion is
+  <div id="eq9" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m012" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">9</span>
+  </div>where 
+  <span class="italic">H</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> are the Hamiltonian subterms (strings of Pauli operations, in our case), and 
+  <span class="italic">n</span> is the number of Trotter steps. The overall evolution time is now subdivided into 
+  <span class="italic">n</span> steps. Increasing the number of Trotter steps decreases the error invoked in this procedure. This yields the evolution operator expressed as a product of exponentiated strings of Pauli operations. Standard techniques can be used to transform these into quantum circuits, as shown in 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>. The gates within this circuit can be divided into two types: gates that rotate the state of a single qubit and typically more expensive two-qubit entangling gates. These can be implemented sequentially to form a quantum circuit which simulates the entire evolution operator.
+ </p>
+ <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Canonical circuit for the simulation of 
+    <div id="d30e711" class="inline-formula">
+     <span xlink:href="ct-2018-00450n_m014.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>.
+   </p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0003" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The use of a Trotter–Suzuki approximation results in the introduction of error.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>−
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> This error can be reduced by increasing the number of Trotter steps considered. We consider the impact of this error in 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>.
+ </p>
+</sec>

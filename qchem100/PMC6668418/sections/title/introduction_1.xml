@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Atomically thin materials exhibit unique physical phenomena emerging from extreme dimensional constraints, which add to their attractiveness as functional components in ultrathin electronics and optoelectronics
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>. Of particular recent interest are monolayer transition metal dichalcogenides (TMDCs), compounds of type 
+  <span class="italic">MX</span>
+  <sub>2</sub>, where 
+  <span class="italic">M</span> is a transition metal and 
+  <span class="italic">X</span> represents a chalcogen atom. Monolayer TMDCs are direct bandgap semiconducting analogs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>,
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span> of graphene in which charge carriers experience a large effective mass and reduced dielectric screening, resulting in strong Coulomb interactions and large exciton binding energies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>–
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. The strong Coulomb interactions also lead to the formation of higher-order excitonic complexes such as trions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span>, biexcitons
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>, and potentially Fermi polarons at large doping
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>. Excitons are known to follow a non-hydrogenic Rydberg series
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span> and form in momentum valleys centered at the (inequivalent) 
+  <span class="italic">K</span> and 
+  <span class="italic">K</span>′ points of the hexagonal Brillouin zone with wavefunctions primarily composed of transition metal 
+  <span class="italic">d</span> orbitals
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span>. Such states exhibit robust valley and spin coherence due to the sizable spin–orbit coupling
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>. In addition, inversion symmetry breaking results in valley-dependent optical selection rules. In particular, circularly polarized light has been shown to allow for valley-selective excitation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>,
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">While the steady-state properties of TMDCs have been studied in detail by linear optical techniques, the recent application of time-resolved nonlinear spectroscopy has enabled the study of excited-state dynamics on femtosecond timescales. In particular, two-dimensional electronic spectroscopy (2DES)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>, which has found extensive use in the study of molecular assemblies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, has been applied to TMDCs only quite recently
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>. 2DES is a four-wave mixing technique that improves over two-pulse pump-probe spectroscopy in its ability to map out the full third-order optical susceptibility of a sample by correlating excitation and detection frequencies. Through this approach, indications have been observed of coherent interaction between excitons and trions in TMDCs, in the form of spectral cross-peak beatings on the 100 fs timescale
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. However, the microscopic mechanisms underlying such quantum beats remain to be clarified.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">Despite recent progress
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>–
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>, employing first-principles techniques capable of simulating the nonlinear optical susceptibilities of condensed-phase materials has remained challenging, in particular for the full set of four-wave mixing signals contained in 2DES. This is in stark contrast to linear spectroscopy, where time-dependent density functional theory and the Bethe–Salpeter equation both predict accurate spectra, including excitonic effects
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>–
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. Simulating nonlinear spectroscopic signals of trions in atomically thin materials presents further challenges due to the larger trion Hilbert space and the dense Brillouin zone sampling required to resolve the dielectric function
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>,
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Here, we present a many-body computational framework for the simulation of 2DES and apply it to the coherent interaction of trions and excitons in monolayer TMDCs. Although the approach can be straightforwardly implemented in a fully first-principles manner, here we use a parameterization of the low-energy band structure and a model dielectric function, both of which could be obtained from a calculation using the GW approximation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. The present work builds on an extension of the Bethe–Salpeter equation to simulate linear spectra of three-body excitonic complexes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>, combined with a Brillouin zone truncation scheme previously applied to excitons
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>. We find our simulations to accurately reproduce experimental 2D spectra, including the quantum beats observed at the cross-peak locations, allowing us to study the underlying coherent phenomena at a microscopic level. For molybdenum-based TMDCs, quantum beats are confirmed to accurately reflect the exciton–trion coherence time. In contrast, they are shown to provide a lower bound to the coherence time for tungsten analogs due to a destructive interference from coexisting singlet and triplet trions.
+ </p>
+</sec>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optical properties of single-exciton and biexciton</div>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Previous reports indicate that properties of single-exciton in QDs are critical for reliably determining Auger recombination rates of multi-carrier states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>,
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. Here, CdSe/CdS core/shell QDs with nearly ideal single-exciton properties are synthesized with various core sizes (3–7 nm) and shell thicknesses (4–10 monolayers) (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). For simplicity, this report adopts a systematic abbreviation, in which CdSe
+  <sub>###</sub>/
+  <span class="italic">x</span>CdS represents the first-exciton absorption peak of CdSe core at “###” nm with “
+  <span class="italic">x”</span> monolayers of epitaxial CdS shell. For their single-exciton states, these QDs all possess nearly unity photoluminescence quantum yields (QY), similar photoluminescence peak widths for ensemble and single dots, and mono-exponential photoluminescence decay dynamics with similar lifetimes at both ensemble and single-dot levels (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a, b</a>, Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>, Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>, Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>, and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). With such QDs, the radiative and Auger non-radiative recombination rates of multi-carrier states could be readily and reliably determined by photoluminescence decay dynamics and photoluminescence QYs of the given states following existing protocols (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>).
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Optical properties of exciton, biexciton and trion for CdSe/CdS core/shell quantum dots (QDs). 
+     <span class="bold">a</span> Normalized photoluminescence (PL) spectra of representative single (color-coded) and the corresponding ensemble (black) QDs with different CdSe core sizes (the first-exciton absorption peak of CdSe core at 550, 590, and 630 nm, respectively) and six monolayers of CdS shell. 
+     <span class="bold">b</span> PL QYs and the goodness-of-fit (
+     <span class="italic">χ</span>
+     <sub>
+      <span class="italic">R</span>
+     </sub>
+     <span class="sup">2</span>) for mono-exponential fitting of PL decay curves for CdSe/CdS QDs with different core sizes or shell thicknesses. 
+     <span class="italic">χ</span>
+     <sub>
+      <span class="italic">R</span>
+     </sub>
+     <span class="sup">2</span> = 1.30 and 1.00 are represented by dotted lines. 
+     <span class="bold">c</span> Schematic of a micro-liquid film of QDs excited by a microscope objective. 
+     <span class="bold">d</span> Pump-power dependence of PL intensity for four representative QD samples with different core sizes but the same shell thickness measured by the micro-liquid film approach. Solid lines are the fits to the ‘PL saturation’’ model. The dashed and dotted lines are the PL saturation models with multi-exciton QY being 0% and 100%, respectively. 
+     <span class="bold">e</span> PL decay curves of CdSe
+     <sub>630</sub>/6CdS core/shell QDs as an representative sample with low (black) and relatively high (red) excitation power measured by the micro-liquid film approach. 
+     <span class="bold">f</span> Excitation power dependence of PL intensity of single-exciton (black circles) and biexciton (red diamonds). The slopes in the log–log plot for both channels match the expected values. 
+     <span class="bold">g</span> Representative PL intensity trajectories (black) of CdSe
+     <sub>630</sub>/6CdS core/shell QDs under different excitation power with background noises (gray) and the corresponding histograms. Bin time is 30 ms. 
+     <span class="bold">h</span> PL decay curves of the photons from the bright (black) and dim state (red) corresponding to 
+     <span class="bold">e</span> (&lt;
+     <span class="italic">N</span>&gt; = 0.1)
+    </p>
+   </div>
+   <div xlink:href="41467_2019_9737_Fig1_HTML" id="d29e572" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">With pulsed laser excitation at low power, area ratio between the center and side peaks (
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g_0^{\left( 2 \right)}$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>) of the second-order photon intensity correlation curve of single QD equals to the biexciton QY, given the single-exciton QY being unity
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>. Alternatively, biexciton QY has also been determined by emission saturation curve of either single-dot
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>,
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> or ensemble samples in solid thin film
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>. The first approach becomes not reliable when 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g_0^{\left( 2 \right)}$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is either too small or larger than 0.5. The second approach requires the dots simultaneously to be uncharged, anti-bleaching, and with equal excitation intensity for all dots under high excitation power, which are challenging for either single QD or solid-film ensemble measurements. A method using micro-liquid film of QDs is introduced here for saturation measurements (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1c</a>), which can overcome issues of saturation measurements with either single-dot or ensemble samples in thin solid-film (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> for experimental details). All saturation curves obtained using this method (see Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d</a> for example) begin to deviate from the Auger-free line when 
+  <span class="italic">&lt;N&gt;</span>, the average number of photons absorbed per excitation pulse, increases to ~ 0.5, which corresponds to &lt;10% QDs at bi- or multi-exciton states assuming a Poisson distribution of 
+  <span class="italic">N</span>. Along with the emission-intensity deviation from the Auger-free line, the corresponding photoluminescence decay dynamics of the QDs gradually shows a fast-lifetime component, in addition to the mono-exponential photoluminescence decay of the single-exciton (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> and Supplementary Figs. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a> and 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+  </span>. In contrast to linear dependence of the single-exciton emission on excitation power, the integrated emission intensity of the fast-lifetime component follows quadratic power law (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1f</a>). These results identify the fast-lifetime channel is associated with the biexciton emission rate (
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{XX}$$\end{document}</span>
+    <div id="M6" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>).
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d</a> shows that all saturation curves of QD emission intensity can be well fitted using the standard saturation model (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a> and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>), which yields biexciton QY (
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$QY_{XX}$$\end{document}</span>
+    <div id="M8" class="math">
+     <span class="mi">Q</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">Y</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>) with high accuracy
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>,
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span>. For the QDs with relatively high biexciton QYs, the results are further verified by the second-order photon intensity correlation measurements of single QD (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">7</a>).
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d</a> shows that, as the core size increases, the saturation curves gradually depart from the single-exciton-only trend line—zero quantum yield for bi- and multi-exciton emission—and approach to the linear function (Auger-free line). This means that biexciton QY increases significantly by increasing the core size for the QDs with a fixed shell thickness (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a>). In sharp contrast, the biexciton emission QYs for QDs with a fixed core size but different shell thicknesses are almost constant (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a>), being consistent with the literature reports
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>,
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. With 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$QY_{XX}$$\end{document}</span>
+    <div id="M10" class="math">
+     <span class="mi">Q</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">Y</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{XX}$$\end{document}</span>
+    <div id="M12" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, the radiative and Auger non-radiative recombination rates of biexciton (
+  <div id="IEq7" class="inline-formula">
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{rad}},XX}$$\end{document}</span>
+    <div id="M14" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">rad</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},XX}$$\end{document}</span>
+    <div id="M16" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>) can be calculated. 
+  <div id="IEq9" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{rad}},XX}$$\end{document}</span>
+    <div id="M18" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">rad</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> shows similar dependence on core size and shell thickness, while 
+  <div id="IEq10" class="inline-formula">
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},XX}$$\end{document}</span>
+    <div id="M20" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is much more sensitive to the core size than to the shell thickness (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a> and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>). Quantitative results in Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a> suggest that, instead of increasing the shell thickness, varying the core size is a more efficient way to tune Auger recombination rate and a sole way to tune biexciton QY in CdSe/CdS core/shell QDs.
+ </p>
+</sec>

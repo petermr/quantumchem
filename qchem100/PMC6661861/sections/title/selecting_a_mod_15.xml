@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.7" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Selecting a Model Chemistry with Low Computational Cost and High Prediction Accuracy</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To obtain fast and accurate predictions of redox potentials using the GP regression calibrated quantum chemistry strategy described above, we tested several different quantum model chemistries. A model chemistry consists of a combination of a geometry optimization (GO) procedure, a method to calculate the single-point electronic energies (SPEs) of optimized molecular geometries, as well as other modeling considerations, such as the number of geometric conformations per compound, the water solvation model, and the p
+  <span class="italic">K</span>
+  <sub>a</sub> estimation strategy.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We explored the following set of methods to obtain optimized geometric conformations: the Universal Force Field (UFF),
+  <span class="sup">
+   <a ref-type="bibr" rid="ref61" href="#ref61">61</a>
+  </span> PM7,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> DFTB,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref75" href="#ref75">75</a>
+  </span> HF3-c,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref76" href="#ref76">76</a>
+  </span> and PBEh-3c.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref77" href="#ref77">77</a>
+  </span> Additionally, to compute the electronic energies of the optimized structures through single-point energy (SPE) calculations, we considered the following approaches: DFTB, PM7, HF3-c, PBEh-3c, DSD-PBEP86/SVP,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref78" href="#ref78">78</a>
+  </span> and DLPNO–CCD(T)/SVP.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref79" href="#ref79">79</a>
+  </span> Given computational resource constraints, only a subset of all possible combinations of geometry optimization and SPE procedures were explored.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To select a model chemistry from the exploration set, we compared their prediction accuracies—after the GP regression calibration step described above—when tested on the set of experimental redox potentials. We quantified prediction accuracy using three different metrics: Pearson correlation coefficient (
+  <span class="italic">r</span>), the coefficient of determination (
+  <span class="italic">R</span>
+  <span class="sup">2</span>), and mean absolute error (MAE, in mV). Before applying the GP regression calibration step, the double-hybrid functional and linear-scaling couple-clustered methods DSD-PBEP86 and DLPNO–CCD(T) resulted in the highest accuracy. Due to the relatively small variation in prediction accuracy, we picked the cheapest method that still gave reasonable accuracy (MAE &lt; 30 meV), which turned out to be the PM7 semiempirical method for both geometry optimizations and single-point electronic energies. It should be noted that our geometry is a single, UFF optimized conformation per molecule. For PBEh-3c and HF-3c we also considered utilizing multiple conformers obtained with the ETKDG force field
+  <span class="sup">
+   <a ref-type="bibr" rid="ref62" href="#ref62">62</a>
+  </span> with significant improvement in accuracy over a single conformer (see 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>). For other chemical applications (e.g., redox flow batteries) and molecular data sets, adequately accounting for multiple conformers might have an important influence on the accuracy of the calculations. A single missed hydrogen bond in one reacting partner, but not the other, could easily introduce large errors in the predicted redox potential. As such the adequacy of using just a single geometry should be verified.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To test for statistically significant differences of the prediction accuracy summary statistics of different model chemistries (e.g., GCM versus GP-calibrated PM7), we performed a nonparametric bootstrap hypothesis test: we subsampled data points from the table of redox reactions with experimental data and computed the prediction accuracy summary statistics [Pearson 
+  <span class="italic">r</span>, 
+  <span class="italic">R</span>
+  <span class="sup">2</span>, MAE, root-mean-square error (RMSE)] for each subsample. We then count the fraction of subsampled GCM data sets that result in summary statistics that are greater than or equal in value to the summary statistics of the model chemistry we are comparing against (e.g., GP-calibrated PM7).
+ </p>
+</sec>

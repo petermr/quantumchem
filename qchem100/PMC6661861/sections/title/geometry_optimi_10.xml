@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Geometry Optimization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using the SMILES string representation
+  <span class="sup">
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> for each compound in the reaction network, we obtain the string corresponding to the most abundant (major) microspecies at pH = 0 using ChemAxon. This smiles string is then converted to an RDKit “mol” object. From here we obtain 3D structures based on two decisions. (1) Whenever we want a single 3D geometry, we generate an initial conformer with RDKit (using the EmbedMolecule command, which uses distance geometry to obtain initial coordinates for a molecule), and we optimize this conformer’s geometry Universal Force Field (UFF) as implemented in RDKit.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref61" href="#ref61">61</a>
+  </span> (2) If we want several conformers (to Boltzmann average their energies), we generate around 1000 random “smart” conformers via the ETKDG force field,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref62" href="#ref62">62</a>
+  </span> calculate their energies, and pick between 5 and 20 conformers (based on size) and on clustering of energies (using the Butina clustering algorithm). Depending on the baseline model chemistry, either we further refine the geometry of the PM7
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> semiempirical method with the COSMO implicit solvation model
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> and then a quantum chemistry approach (PBE-3H or B3LYP), or we simply use the base PM7 or UFF geometry and perform single-point energy (SPE) calculations.
+ </p>
+</sec>

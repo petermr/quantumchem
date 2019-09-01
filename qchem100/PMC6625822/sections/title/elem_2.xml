@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">RESULTS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As the quantum emitter, we use single isolated CdSe/ZnS QDs, which are drop-cast onto a flat, template-stripped Au surface that is coated with a thin Al
+  <sub>2</sub>O
+  <sub>3</sub> layer. The QDs are protected against photo-oxidation by another ultrathin 0.5-nm Al
+  <sub>2</sub>O
+  <sub>3</sub> capping layer and are characterized by atomic force microscopy (AFM) to confirm even dispersion of the particles (section S1 and fig. S1). The plasmonic Au tips are etched electrochemically (
+  <a rid="R28" ref-type="bibr" href="#R28">
+   <span class="italic">28</span>
+  </a>). Tip-enhanced photoluminescence (TEPL) spectra are recorded under continuous-wave (632.8 nm, ≤1 mW) resonant tip–surface plasmon polariton (SPP) and QD-exciton excitation, as illustrated in 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1A</a> (for details, see Methods). The tilted tip (35° with respect to the sample surface in this case) controls the tip-SPP resonance frequency and maximizes the field enhancement, as shown recently (
+  <a rid="R29" ref-type="bibr" href="#R29">
+   <span class="italic">29</span>
+  </a>). In the resulting plasmonic cavity, the corresponding SPP mode is most strongly bound in ∣
+  <span class="italic">E
+   <sub>z</sub>
+  </span>∣, as confirmed by finite-difference time-domain (FDTD) simulations (
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1, B and C</a>). Sample scanning and tip-sample distance are controlled with ~0.2-nm precision using a shear-force AFM. All experiments are performed at room temperature.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="F1" ref-type="fig" href="#F1">Figure 1D</a> shows a schematic energy diagram for the plasmon (red), exciton (blue), and their hybridized plexciton (green) with upper ∣UP〉 and lower polariton ∣LP〉 states. When the coupling strength 
+  <span class="italic">g</span> between the cavity plasmon and the QD exciton exceeds the SPP loss rate, γ
+  <sub>SP</sub>, i.e., 
+  <div class="inline-formula">
+   <div id="m2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">g</span>
+      <span class="mo">&gt;</span>
+      <div class="mfrac">
+       <div class="msub">
+        <span mathvariant="normal" class="mi">γ</span>
+        <span class="mtext">SP</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, quantum mixed states of the plexciton give rise to Rabi splitting in the TEPL spectra or, equivalently, a reversible Rabi oscillation between the plasmon and exciton. In contrast, in the weak coupling regime (
+  <div class="inline-formula">
+   <div id="m3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">g</span>
+      <span class="mo">&lt;</span>
+      <div class="mfrac">
+       <div class="msub">
+        <span mathvariant="normal" class="mi">γ</span>
+        <span class="mtext">SP</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>), the usual primarily radiative relaxation with enhanced PL intensity (orange) attributed to the plasmonic Purcell effect is observed at the exciton frequency (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We first characterize the emission properties of the uncoupled QD excitons in the far field, as shown by the PL spectrum (blue) in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2A</a>. Independently, we characterize the tip surface nanocavity through its tip-SPP emission (
+  <a rid="R31" ref-type="bibr" href="#R31">
+   <span class="italic">31</span>
+  </a>) (red), with the tip retracted to ~3 nm from a clean Au mirror substrate without QDs. From fitting to a Lorentzian line shape function, corresponding peak energies (ω
+  <sub>QD</sub> = 1.856 eV and ω
+  <sub>SP</sub> = 1.912 eV) and linewidths (γ
+  <sub>QD</sub> = 0.097 ± 0.002 eV and γ
+  <sub>SP</sub> = 0.126 ± 0.002 eV) are derived (section S2 and fig. S2). We note that ω
+  <sub>SP</sub> is expected to red-shift in the presence of the QD due to modification of the effective dielectric environment in the nanocavity (
+  <a rid="R32" ref-type="bibr" href="#R32">
+   <span class="italic">32</span>
+  </a>). This is beneficial for increasing spectral overlap of SPP and QD resonances. We then scan and position the tip directly over an individual QD and measure its TEPL response coupled to the plasmonic cavity. In a series of experiments for different QDs with the same tip, we observe TEPL spectra across a wide range of coupling strengths due to the random dipole orientation of the different QDs on the mirror substrate, as shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2A</a>. Weak coupling leads only to enhanced PL with spectral broadening, with ω
+  <sub>weak</sub> = 1.860 eV and γ
+  <sub>weak</sub> = 0.118 eV (orange), essentially identical to the unperturbed QD exciton peak. In contrast, in the strong coupling regime (green), for QDs with an out-of-plane transition dipole moment (TDM) with respect to the surface, a qualitatively different behavior with peak splitting and intensity enhancement is observed.
+ </p>
+ <div id="F2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 2</span>
+  <div class="caption">
+   <div class="title">Tip-enhanced plexciton PL at room temperature in the strong coupling regime.</div>
+   <p>(
+    <span class="bold">A</span>) PL spectra of the gap plasmon (red), QD exciton (blue), the weakly coupled plasmon-exciton mode (orange), and the strongly coupled plexciton mode (green). (
+    <span class="bold">B</span>) PL evolution of the uncoupled (top) and the strongly coupled (bottom) single QD. (
+    <span class="bold">C</span>) TEPL spectra for a polarization parallel (green) and perpendicular (red) with respect to the tip. (
+    <span class="bold">D</span>) FEM simulation of scattering spectra for the plasmonic cavity without QD (red) and with a single QD (green). In (A), (C), and (D), the dots and lines indicate the measurement (or simulation) data and the corresponding model fits, respectively.
+   </p>
+  </div>
+  <div xlink:href="aav5931-F2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We fit the observed TEPL intensity spectra I
+  <sub>PL</sub>(ω) using a coupled harmonic oscillator model in the Weisskopf-Wigner approximation for an impulsively excited emitter, given by (
+  <a rid="R33" ref-type="bibr" href="#R33">
+   <span class="italic">33</span>
+  </a>)
+  <div id="E1" class="disp-formula">
+   <div id="m5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">I</span>
+       <span class="mtext">PL</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span mathvariant="normal" class="mi">ω</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="msub">
+        <span mathvariant="normal" class="mi">γ</span>
+        <span class="mtext">QD</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span mathvariant="normal" class="mi">π</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mo">|</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msub">
+           <span mathvariant="normal" class="mi">γ</span>
+           <span class="mtext">SP</span>
+          </div>
+          <span class="mo">/</span>
+          <span class="mn">2</span>
+          <span class="mo">−</span>
+          <span class="mi">i</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ω</span>
+          <span class="mo">−</span>
+          <div class="msub">
+           <span mathvariant="normal" class="mi">ω</span>
+           <span class="mtext">SP</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="false" class="mo">{</span>
+            <span stretchy="false" class="mo">(</span>
+            <div class="msub">
+             <span mathvariant="normal" class="mi">γ</span>
+             <span class="mtext">SP</span>
+            </div>
+            <span class="mo">+</span>
+            <div class="msub">
+             <span mathvariant="normal" class="mi">γ</span>
+             <span class="mtext">QD</span>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+            <span class="mo">/</span>
+            <span class="mn">4</span>
+            <span class="mo">−</span>
+            <span class="mi">i</span>
+            <span stretchy="false" class="mo">(</span>
+            <div class="msub">
+             <span mathvariant="normal" class="mi">ω</span>
+             <span class="mtext">QD</span>
+            </div>
+            <span class="mo">−</span>
+            <div class="msub">
+             <span mathvariant="normal" class="mi">ω</span>
+             <span class="mtext">SP</span>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+            <span class="mo">/</span>
+            <span class="mn">2</span>
+            <span class="mo">−</span>
+            <span class="mi">i</span>
+            <span stretchy="false" class="mo">(</span>
+            <span mathvariant="normal" class="mi">ω</span>
+            <span class="mo">−</span>
+            <div class="msub">
+             <span mathvariant="normal" class="mi">ω</span>
+             <span class="mtext">QD</span>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+            <span stretchy="false" class="mo">}</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">+</span>
+          <div class="msup">
+           <span mathvariant="normal" class="mi">Ω</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">|</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, γ
+  <sub>SP</sub> and γ
+  <sub>QD</sub> are the decay rates; ω
+  <sub>SP</sub> and ω
+  <sub>QD</sub> are the resonance frequencies of the plasmon mode and QD, respectively; and Ω is the vacuum Rabi frequency (for details, see section S3). The corresponding coupling strength 
+  <span class="italic">g</span> can then be obtained from the fit parameters (section S4) as
+  <div id="E2" class="disp-formula">
+   <div id="m6" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">g</span>
+      <span class="mo">=</span>
+      <span class="mn">2</span>
+      <div class="msqrt">
+       <div class="mrow">
+        <div class="msup">
+         <span mathvariant="normal" class="mi">Ω</span>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">−</span>
+        <div class="mfrac">
+         <div class="msup">
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span mathvariant="normal" class="mi">ω</span>
+            <span class="mtext">QD</span>
+           </div>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span mathvariant="normal" class="mi">ω</span>
+            <span class="mtext">SP</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mn">2</span>
+         </div>
+         <span class="mn">4</span>
+        </div>
+        <span class="mo">+</span>
+        <div class="mfrac">
+         <div class="msup">
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span mathvariant="normal" class="mi">γ</span>
+            <span class="mtext">SP</span>
+           </div>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span mathvariant="normal" class="mi">γ</span>
+            <span class="mtext">QD</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mn">2</span>
+         </div>
+         <span class="mn">16</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(2)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the example shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2A</a>, we obtain a coupling strength of 
+  <span class="italic">g</span> ∼ 143 meV &gt; 
+  <div class="inline-formula">
+   <div id="m7" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="msub">
+        <span mathvariant="normal" class="mi">γ</span>
+        <span class="mtext">SP</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, i.e., well in the strong coupling regime. More extended theoretical models that take into account both plasmonic and QD losses reproduce the same spectral behavior of our experimental data (
+  <a rid="R34" ref-type="bibr" href="#R34">
+   <span class="italic">34</span>
+  </a>, 
+  <a rid="R35" ref-type="bibr" href="#R35">
+   <span class="italic">35</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Raman peak of Al
+  <sub>2</sub>O
+  <sub>3</sub> (
+  <div class="inline-formula">
+   <div id="m8" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div accent="true" class="mover">
+       <span class="mi">ν</span>
+       <span stretchy="true" class="mo">¯</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> = 1.897 eV) observed in the far-field PL spectrum is not discernible in the TEPL spectra. This is because of the sparse distribution of QDs compared to the large area of Al
+  <sub>2</sub>O
+  <sub>3</sub> coverage that contributes to the far-field signal.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="F2" ref-type="fig" href="#F2">Figure 2B</a> (top) shows the PL evolution of the uncoupled QD, which exhibits the spectral diffusion and blinking behavior that are generally observed for different QDs. The plexciton TEPL spectra in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2B</a> (bottom) reveal a similar intensity fluctuation and no notable changes in coupling strength, which confirms that the tip-sample distance is precisely controlled in our experiments. In addition, the result shows that the typical blinking due to, e.g., nonradiative Auger recombination and/or thermalization processes (
+  <a rid="R36" ref-type="bibr" href="#R36">
+   <span class="italic">36</span>
+  </a>) still occurs in the strong coupling regime.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As an important control experiment, we can vary the field enhancement in the ∣
+  <span class="italic">E
+   <sub>z</sub>
+  </span>∣ direction through rotation of the incident laser polarization. For a QD with an out-of-plane TDM, for polarization parallel with respect to the tip axis, plexciton formation and emission (green) are induced, as shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2C</a>. In contrast, for perpendicular polarization, only the tip plasmon PL is observed (red). This clear contrast concurs with three-dimensional (3D) FDTD simulations for the given experimental conditions, which show that the excitation polarization parallel with respect to the tip gives rise to an ~800-fold field intensity enhancement compared to polarization perpendicular with respect to the tip (see fig. S3), and which confirm the well-defined nature of the plasmonic nanocavity.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We next model the spectra and the observed Rabi splitting based on finite element method (FEM) calculations (
+  <a rid="R37" ref-type="bibr" href="#R37">
+   <span class="italic">37</span>
+  </a>). In these models, the QD is treated as a dielectric nanoparticle with oscillator strength 
+  <span class="italic">f</span> ~ 0.8, a value that yields the best agreement with experimental observations (
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2, A and C</a>) and is consistent with recent work (
+  <a rid="R18" ref-type="bibr" href="#R18">
+   <span class="italic">18</span>
+  </a>). Approximating the plasmonic antenna tip as a finite length ellipsoid, the resulting simulated scattering spectrum, as shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2D</a>, exhibits the expected splitting of the hybridized state with 
+  <span class="italic">g</span> ~ 121 meV, in good agreement with the experiment (section S5).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As the tip interacts with different QDs in a large-area scan, we observe variations in plexciton coupling strength ranging from 70 meV (at the threshold for strong coupling) to 163 meV (well into the strong coupling regime), as shown in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3A</a>. Because CdSe QDs have a TDM (μ
+  <sub>QD</sub>) oriented perpendicular to the crystallographic 
+  <span class="italic">c</span> axis of the nanocrystal (
+  <a rid="R38" ref-type="bibr" href="#R38">
+   <span class="italic">38</span>
+  </a>), this variation can be described by the different orientations of QDs, which modify the coupling strength with the cavity ∣
+  <span class="italic">E
+   <sub>z</sub>
+  </span>∣ field (
+  <a rid="R39" ref-type="bibr" href="#R39">
+   <span class="italic">39</span>
+  </a>), given by 
+  <span class="italic">g</span> ≈ 
+  <div class="inline-formula">
+   <div id="m9" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">μ</span>
+       <span class="mtext">QD</span>
+      </div>
+      <span stretchy="true" class="mo">‖</span>
+      <div class="msub">
+       <span class="mi">E</span>
+       <span mathvariant="normal" class="mi">z</span>
+      </div>
+      <span class="mo">∣</span>
+     </div>
+    </div>
+   </div>
+  </div>cosθ, where θ denotes the angle between the TDM and the surface normal. In addition to the QD orientation, the inevitable inhomogeneities in local QD environment, e.g., different Al
+  <sub>2</sub>O
+  <sub>3</sub> layer thickness and roughness of the Au film, also give rise to variations in 
+  <span class="italic">g</span> values, but likely to a lesser degree.
+ </p>
+ <div id="F3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">TESC spectra with increasing coupling strength and plexciton energy diagram with QD detuning.</div>
+   <p>(
+    <span class="bold">A</span>) TEPL spectra of different single QDs with variation in coupling strength 
+    <span class="italic">g</span> and Rabi frequency. (
+    <span class="bold">B</span>) Polariton energies from model fits (circles) and anticrossing curves from model calculations (lines) for each of the measured TEPL spectra of 21 different QDs. The expected surface plasmon (red) and QD (blue) detuning dependence is obtained from averaged values from the modeled 21 spectra.
+   </p>
+  </div>
+  <div xlink:href="aav5931-F3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to the observed variation in coupling strength for different QDs, we also measure slightly different resonance frequencies for each QD due to variations in QD size and shape, which correspond to varying amount of spectral detuning from the plasmon resonance. Localizing 21 different QDs, we measure their TEPL spectra and determine the corresponding mode energies of the ∣UP〉 and ∣LP〉 branches and the QD energy detuning (ω
+  <sub>SP</sub> − ω
+  <sub>QD</sub>) by fitting to 
+  <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a>. With the nanocavity characterized by fixed ω
+  <sub>SP</sub> = 1.850 eV and Γ
+  <sub>SP</sub> = 0.160 ± 0.010 eV and identical for all QDs, and the narrow range of QD linewidth of Γ
+  <sub>QD</sub> = 0.090 ± 0.010 eV for all QDs, the data can be fit with the QD resonance frequencies ω
+  <sub>QD</sub> and the coupling strength 
+  <span class="italic">g</span> as the only free parameters (see section S4 for fitted values). The resulting dispersion of the ∣UP〉 and ∣LP〉 branches for each of the 21 QDs is plotted in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3B</a> (circles) as a function of the detuning value, with color scale representing their corresponding 
+  <span class="italic">g</span> value obtained. A clear anticrossing is observed as shown in comparison with the expected cavity dispersion curve (red) and average QD energy (blue).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The data scatter in energy is caused by a variation in 
+  <span class="italic">g</span> from 107 to 152 meV. The corresponding set of plexciton energy dispersions calculated for each QD using eq. S1 (section S3) is shown in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3B</a> as solid lines. This ability to measure individual QDs over a range of detuning values with a single plasmonic nanocavity demonstrates the distinct advantage of TESC spectroscopy.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition, TESC provides the ability to tune the coupling strength and control the nanocavity mode volume in interaction with an individual emitter. As an example, 
+  <a rid="F4" ref-type="fig" href="#F4">Fig. 4A</a> shows the transition into the strong coupling regime with a steady increase in Rabi splitting up to 
+  <span class="italic">g</span> ∼ 140 meV as we laterally scan the tip toward a QD over a length scale defined by the tip radius. Conversely, vertical tip-sample distance control with subnanometer precision shown in 
+  <a rid="F4" ref-type="fig" href="#F4">Fig. 4B</a> reflects the extreme spatial confinement with decreasing gap width (
+  <a rid="R40" ref-type="bibr" href="#R40">
+   <span class="italic">40</span>
+  </a>). The shorter length scale compared to lateral tip-QD separation is due to the rapid decrease in coupling strength 
+  <span class="italic">g</span>. 
+  <a rid="F4" ref-type="fig" href="#F4">Figure 4 (C and D)</a> shows the corresponding tip-QD distance dependence of the coupling strength 
+  <span class="italic">g</span> and Rabi frequency Ω derived from 
+  <a rid="F4" ref-type="fig" href="#F4">Fig. 4 (A and B</a>) (for details and corresponding values for ω
+  <sub>SP</sub> and ω
+  <sub>QD</sub>, see section S4). On the basis of these results, the optical mode volume 
+  <span class="italic">V</span>/λ
+  <span class="sup">3</span> of the plasmonic nanocavity is estimated to be ≤10
+  <span class="sup">−6</span>, consistent with the expectation from the ∣
+  <span class="italic">E
+   <sub>x</sub>
+  </span>∣ and ∣
+  <span class="italic">E
+   <sub>z</sub>
+  </span>∣ field distribution calculation (
+  <span class="italic">V</span> ∼10
+  <span class="sup">3</span> nm
+  <span class="sup">3</span>), as seen in 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1 (B and C</a>) and can readily be further reduced by using tips of smaller radius (
+  <a rid="R41" ref-type="bibr" href="#R41">
+   <span class="italic">41</span>
+  </a>, 
+  <a rid="R42" ref-type="bibr" href="#R42">
+   <span class="italic">42</span>
+  </a>).
+ </p>
+ <div id="F4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">Active control of tip-induced single QD strong coupling.</div>
+   <p>TEPL spectra as the lateral (
+    <span class="bold">A</span>) and vertical (
+    <span class="bold">B</span>) tip-QD distances are varied from 30 to 0 nm and from 0 to 4 nm, respectively. (
+    <span class="bold">C</span> and 
+    <span class="bold">D</span>) Coupling strength 
+    <span class="italic">g</span> and Rabi frequency Ω derived from model fit of the distance-dependent TEPL spectra from (A) and (B).
+   </p>
+  </div>
+  <div xlink:href="aav5931-F4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In contrast to conventional cavities that interact in the far field, the presence of the emitter strongly modifies the mode volume, polarization distribution, and loss rate of a nano-optical cavity. While this complicates quantification and modeling of these properties, the emitter-cavity back-action provides previously unexplored control degrees of freedom, and scanning the nanocavity provides a way to determine its characteristics through TESC imaging.</p>
+</sec>

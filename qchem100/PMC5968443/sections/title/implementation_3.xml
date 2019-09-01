@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Implementation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the following section, we describe 
+  <span class="italic">DiffiQult</span>, a fully variational HF algorithm that calculates gradients employing AD. In particular, we discuss options and constraints that need to be considered when applying AD in a quantum chemistry method. 
+  <span class="italic">DiffiQult</span> contains two main parts, (i) a restricted HF implementation that provides HF energies as well as its derivatives with respect to any input parameter and (ii) a gradient-based optimization of wave function parameters. The scheme of our fully variational Hartree–Fock implementation is shown in 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>.
+ </p>
+ <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Diagram of the fully variational algorithm implemented in the 
+    <span class="italic">DiffiQult</span> package.
+   </p>
+  </div>
+  <div xlink:href="oc-2017-00586m_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The philosophy behind using AD is centered around the idea of saving human effort in the implementation of gradients. Ideally, we would like to choose a suitable AD library capable of getting gradients from AD just by adding minimal changes to standard Python or C++ code. In this way, we would be able to significantly reduce the amount of time required for the implementation of gradients for new electronic structure methods. Moreover, we could link the AD library to existing electronic structure software packages for which analytical or numerical gradients might be inefficient. However, to what extent the aforementioned goals can be reached depends on the capabilities of the available AD libraries.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>,
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>,
+   <a ref-type="bibr" rid="ref60" href="#ref60">60</a>−
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span> Each of the libraries differs in some aspects, but all of them have in common that they are restricted in some way, and it remains to be analyzed which ones match the requirements for a quantum chemistry algorithm best. For example, we would need to differentiate some operations that are typically computed by library routines, e.g., LAPACK
+  <span class="sup">
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+  </span> functions. To avoid explicit implementation of those methods, an appropriate library preferably supports linear algebra operations as well as calls to special functions such as the incomplete gamma function. Similarly, the AD modes, e.g., forward or backward mode, as discussed in 
+  <a rid="sec2" ref-type="other" href="#sec2">section 
+   <a rid="sec2" ref-type="other" href="#sec2">2</a>
+  </a> exhibit different properties, and one might be more suitable for a particular implementation than the other. A majority of the requirements are shared among various electronic structure algorithms, including HF. Therefore, the gradients computed solely with AD techniques of a HF implementation in 
+  <span class="italic">DiffiQult</span> serves as a proof-of-concept that helps us to develop an understanding of the capabilities of AD in quantum chemistry.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the following analysis, we review how the library and AD mode selection impact the implementation of 
+  <span class="italic">DiffiQult</span>. We should notice that certain operations that are simple in standard implementations can raise challenges depending on the selected AD library. For example, some control flow statements that depend on intermediate variables might impose some constraints in backward mode, if the library builds the computational graph before the evaluation of the function. In HF, control statements are for example implemented to determine the required number of SCF steps for convergence. Depending on the input parameter, e.g., the molecular geometry, fewer or more iterations are needed to reach convergence, and thus the computational graph consists of fewer or more operations. This has severe implications on the backward mode since for this mode the computational graph needs to be fixed before function evaluation. We might circumvent some of these issues by hard-coding the number of steps of the SCF, but this simple example demonstrates that the implementation of gradients with AD tools requires different considerations when compared to developing traditional software packages.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Another relevant aspect for the implementation of 
+  <span class="italic">DiffiQult</span> is the matrix operations. From the algorithmic point of view, we should leverage vectorized operations whenever possible.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref64" href="#ref64">64</a>
+  </span> Vectorized operations are taken as elementary operations in most of the AD libraries, and the computation of their derivatives is typically stated in a simple vectorized form which avoids unnecessary storage and evaluations of intermediate variables. However, in HF, as essentially in all wave function based quantum chemistry methods, one and two electron integrals are typically defined by an element-wise array assignment (e.g., 
+  <span class="italic">A</span>[
+  <span class="italic">i</span>,
+  <span class="italic">j</span>] = 
+  <span class="italic">k</span>). This nonvectorized assignment represents a major challenge for backward mode regarding the amount of memory needed to store the computational graph as well as intermediate variables and derivatives.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The most critical component for our HF implementation in 
+  <span class="italic">DiffiQult</span> is matrix diagonalization. In some AD libraries such as 
+  <span class="italic">autograd</span>,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref65" href="#ref65">65</a>
+  </span> this matrix operation is considered as an elementary operation, which can be implicitly differentiated to obtain its adjoints and derivatives, respectively for each mode. In backward mode, the analytical expression for the adjoint of the eigenvectors is in principle available. However, the adjoints of the eigenvectors corresponding to repeated eigenvalues are not differentiable;
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>,
+   <a ref-type="bibr" rid="ref64" href="#ref64">64</a>
+  </span> see 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Supporting Information</span>. Therefore, we cannot use backward differentiation for matrix diagonalization of systems with degenerate molecular orbitals. Since we aim to compute general molecular systems, we exclude the backward mode for our implementation of 
+  <span class="italic">DiffiQult</span>. This leaves the forward mode as a possible option to circumvent the challenges of repeated eigenvalues. For the forward mode, the analytical expressions of the derivatives of eigenvectors are known, even for the degenerate case.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref66" href="#ref66">66</a>
+  </span> This method relies on computing the 
+  <span class="italic">n</span>th-order derivative of the eigenvalues such that its diagonals are distinct and on computing the 
+  <span class="italic">n</span> + 1th-order derivative of the original matrix that needs to be diagonalized; see 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Supporting Information</span>. Therefore, we would need an implementation that would depend on a case-by-case analysis. Alternatively, Walter et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref67" href="#ref67">67</a>
+  </span> proposed a general algorithm to compute the diagonalization, based on univariate Taylor polynomials (
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Supporting Information</span>),
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>,
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span> implemented in Algopy.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span> This approach is mathematically equivalent to forward differentiation and considers the repeated eigenvalue problem. For further details, we refer the reader to the 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.7b00586/suppl_file/oc7b00586_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Supporting Information</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Even though we may consider reverse mode as a more efficient way for our implementation given the large number of input parameters and the small number of output variables, after this analysis, we conclude that an HF implementation is required to be based on the forward mode. Regarding the AD library, we have chosen Algopy,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span> since it supports both AD modes, provides matrix diagonalization for repeated eigenvalues, and requires only minimal modifications to calculate gradients of functions implemented in plain Python.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, once we have implemented an autodifferentiable HF algorithm in Algopy, we use a gradient-based optimization to optimize Gaussian centers, widths, and contraction coefficients either together or separately. We use the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm
+  <span class="sup">
+   <a ref-type="bibr" rid="ref68" href="#ref68">68</a>
+  </span> implemented in the 
+  <span class="italic">scipy</span> module. As recommended in ref (
+  <a ref-type="bibr" rid="ref56" href="#ref56">56</a>), we take the natural logarithm to optimize the Gaussian exponents. No unexpected or unusually high safety hazards were encountered during the course of this study.
+ </p>
+</sec>

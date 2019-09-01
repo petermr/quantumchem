@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 1</span>
+ <div class="caption">
+  <p>A quantum circuit for the construction of multiconfigurational wave functions on quantum registers. (A) The quantum circuit consists of the following steps as indicated by roman numbers and background colors. (i) Generation of the RHF configuration, (ii) ancilla qubit rotation with an angle 
+   <span class="italic">θ
+    <sub>i</sub>
+   </span>, (iii) diradical configuration generations, (iv) tetraradical configuration generations, (v) hexaradical configuration generations, and so on. Detailed quantum circuits for the di-, and tetraradical configuration generations are given in parts B and C, respectively. We draw the full circles if the controlled operation is applied when the control qubit is |1⟩. Wave functions of more extended spin systems can be constructed systematically expanding the circuit. (B) Quantum circuit for the preparation of diradical configurations specified 2 in part A. (C) Quantum circuit for the preparation of tetraradical configurations specified 4 in part A.
+  </p>
+ </div>
+ <div xlink:href="oc-2018-00788n_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

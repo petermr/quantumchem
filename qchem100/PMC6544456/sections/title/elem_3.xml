@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">General covalent bonds description</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now demonstrate that the SNAPs can provide an extremely accurate description of the covalent bond without relying on any assumption on the bond geometry. To achieve this goal, we have selected eight prototypical examples of covalent bond geometries, namely two simple organic molecules and six transition metal complexes: methane (CH
+  <sub>4</sub>), benzene (C
+  <sub>6</sub>H
+  <sub>6</sub>), [FeCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>, [MnCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>, [MnCl
+  <sub>5</sub>]
+  <span class="sup">2−</span>, [NiCl
+  <sub>4</sub>]
+  <span class="sup">2−</span>, [ZnCl
+  <sub>4</sub>]
+  <span class="sup">2−</span>, and [VOCl
+  <sub>4</sub>]
+  <span class="sup">2−</span>. For each of these systems, we generate 800 distorted configurations by applying random atomic displacements to the vacuum-optimized structure. The displacements are applied to every atom, and their magnitude is constrained to be smaller than 0.2 Å for 400 configurations and smaller than 0.1 Å for the remaining 400. We take 200 geometries of the training set and use them as validation and test sets. In the case of benzene and methane, we apply displacements of 0.1 and 0.05 Å, by virtue of the fact that they present smaller interatomic distances. We find that 56 coefficients for each chemical species, corresponding to 2
+  <span class="italic">J</span> = 8, are enough to achieve sufficient accuracy (see details below). This choice results in moderate computational overheads, since a larger number of parameters will require a substantially larger training set, that is, more DFT calculations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="F1" ref-type="fig" href="#F1">Figure 1</a> shows the quality of the SNAP description of the PES for [FeCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>. The figure reports the mean error on the total energy for the training, validation, or test set as function of the number of configurations included in the training set, a curve called the training curve. The overall error on both the training and the test sets is outstandingly small and shows clear convergence as the number of configurations gets larger. At full convergence, one expects that the training set error will be equal to that on the test one, a condition that allows us to extrapolate an asymptotic error in the region of 0.015 kcal/mol. This is as small as the DFT error, meaning that the SNAP PES is indistinguishable from the DFT one. 
+  <a rid="F2" ref-type="fig" href="#F2">Figure 2</a> reports the error on the energy calculated for the training, validation, and test sets for all the eight molecules considered, demonstrating that extremely high accuracy can be achieved regardless of the molecule geometry. The training curves for all molecules look similar to that in 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1</a> and are reported in the Supplementary Materials for completeness.
+ </p>
+ <div id="F1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">FF training curve for the octahedral [FeCl
+    <sub>6</sub>]
+    <span class="sup">3−</span>complex.
+   </div>
+   <p>The deviation between the DFT and the FF total energy of [FeCl
+    <sub>6</sub>]
+    <span class="sup">3−</span> is plotted as function of the number of configurations included in the training set. The validation and test sets are always composed of the same 200 configurations. Note that an asymptotic error of the order of 0.015 kcal/mol is achieved. RMSE, root mean square error.
+   </p>
+  </div>
+  <div xlink:href="aaw2210-F1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 2</span>
+  <div class="caption">
+   <div class="title">SNAP performances for organic and coordination bonds with respect to DFT.</div>
+   <p>For each molecule, we report the RMSE on the total energy for the training, validation, and test sets. The molecules span a broad range of bond type. The symmetry of the bond and the symmetry of the coordination environment are reported on top of the plot for the organic and inorganic molecules, respectively.</p>
+  </div>
+  <div xlink:href="aaw2210-F2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Note that, in this formalism, the coordination bond is naturally described without any approximation coming from the introduction of the notion of bonds and topology. For instance, Jahn-Teller distortion is here automatically included in the model and arises as consequence of the symmetry and shape of the PES. In many FFs, it is only possible to introduce Jahn-Teller effects by artificially imposing a lower symmetry on the metal’s coordination shell or by explicitly introducing the d electrons in the model (
+  <a rid="R25" ref-type="bibr" href="#R25">
+   <span class="italic">25</span>
+  </a>, 
+  <a rid="R26" ref-type="bibr" href="#R26">
+   <span class="italic">26</span>
+  </a>). 
+  <a rid="F3" ref-type="fig" href="#F3">Figure 3</a> shows the energy profile of [FeCl
+  <sub>6</sub>]
+  <span class="sup">3−</span> and [MnCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>, along a distortion going from the perfect O
+  <span class="italic">
+   <sub>h</sub>
+  </span> symmetry toward configurations that break the E
+  <span class="italic">
+   <sub>g</sub>
+  </span> d orbitals’ degeneracy. As expected, the complex [FeCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>, having a d
+  <span class="sup">5</span> valence electronic configuration, does not show any Jahn-Teller distortion. In contrast, [MnCl
+  <sub>6</sub>]
+  <span class="sup">3−</span>, having four electrons in the d shell, is correctly predicted to undergo a spontaneous distortion along the selected normal modes to minimize the crystal field energy.
+ </p>
+ <div id="F3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">FF prediction of the energy profile for Jahn-Teller–active and Jahn-Teller–inactive octahedral complexes.</div>
+   <p>The concave (purple/green) and the convex (blue/yellow) surfaces represent the PESs for [FeCl
+    <sub>6</sub>]
+    <span class="sup">3−</span> and [MnCl
+    <sub>6</sub>]
+    <span class="sup">3−</span>, respectively. The PES has been scanned in the two-dimensional space defined by the normal modes of vibration with symmetry representation E
+    <span class="italic">
+     <sub>g</sub>
+    </span> of the O
+    <span class="italic">
+     <sub>h</sub>
+    </span> group. The point (
+    <span class="italic">Q
+     <sub>x</sub>
+    </span>,
+    <span class="italic">Q
+     <sub>y</sub>
+    </span>) = (0,0) corresponds to a structure optimized under the constraint of having a perfect O
+    <span class="italic">
+     <sub>h</sub>
+    </span> symmetry. Note that [FeCl
+    <sub>6</sub>]
+    <span class="sup">3−</span> maintains a minimum at the undistorted O
+    <span class="italic">
+     <sub>h</sub>
+    </span> symmetry, while [MnCl
+    <sub>6</sub>]
+    <span class="sup">3−</span> undergoes Jahn-Teller distortion.
+   </p>
+  </div>
+  <div xlink:href="aaw2210-F3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

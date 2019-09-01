@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">3961104</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">277</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.7717/peerj.277</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Biochemistry</span>
+  </div>
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Computational Biology</span>
+  </div>
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Computational Science</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">FragBuilder: an efficient Python library to setup quantum chemistry calculations on peptides models</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib id="author-1" contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Christensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Anders S.</span>
+   </name>
+   <a ref-type="aff" rid="aff-1" href="#aff-1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <span class="email" xmlns="http://www.w3.org/1999/xhtml">andersx@nano.ku.dk</span>
+  </contrib>
+  <contrib id="author-2" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hamelryck</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Thomas</span>
+   </name>
+   <a ref-type="aff" rid="aff-2" href="#aff-2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib id="author-3" contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Jan H.</span>
+   </name>
+   <a ref-type="aff" rid="aff-1" href="#aff-1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <aff id="aff-1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, University of Copenhagen</span>, 
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Copenhagen</div>, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Denmark</span>
+  </aff>
+  <aff id="aff-2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Biology, University of Copenhagen</span>, 
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Copenhagen</div>, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Denmark</span>
+  </aff>
+ </div>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib id="editor-1" contrib-type="editor" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Perez-Acle</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Tomas</span>
+   </name>
+  </contrib>
+ </div>
+ <pub-date pub-type="epub" date-type="pub" iso-8601-date="2014-03-04" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">4</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <span iso-8601-date="2014" class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">e277</span>
+ <history class="history">
+  <date date-type="received" iso-8601-date="2013-12-23" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">23</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">12</span>
+   <span iso-8601-date="2013" class="year" xmlns="http://www.w3.org/1999/xhtml">2013</span>
+  </date>
+  <date date-type="accepted" iso-8601-date="2014-01-27" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">27</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">1</span>
+   <span iso-8601-date="2014" class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© 2014 Christensen et al.</span>
+  <span class="copyright-year">2014</span>
+  <span class="copyright-holder">Christensen et al.</span>
+  <div license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open access article distributed under the terms of the 
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" class="ext-link">Creative Commons Attribution License</span>, which permits unrestricted use, distribution, reproduction and adaptation in any medium and for any purpose provided that it is properly attributed. For attribution, the original author(s), title, publication source (PeerJ) and either DOI or URL of the article must be cited.
+   </div>
+  </div>
+ </div>
+ <span xlink:href="https://peerj.com/articles/277" class="self-uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>We present a powerful Python library to quickly and efficiently generate realistic peptide model structures. The library makes it possible to quickly set up quantum mechanical calculations on model peptide structures. It is possible to manually specify a specific conformation of the peptide. Additionally the library also offers sampling of backbone conformations and side chain rotamer conformations from continuous distributions. The generated peptides can then be geometry optimized by the MMFF94 molecular mechanics force field via convenient functions inside the library. Finally, it is possible to output the resulting structures directly to files in a variety of useful formats, such as XYZ or PDB formats, or directly as input files for a quantum chemistry program. FragBuilder is freely available at 
+   <span xlink:href="https://github.com/jensengroup/fragbuilder/" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/jensengroup/fragbuilder/</span> under the terms of the BSD open source license.
+  </p>
+ </div>
+ <div kwd-group-type="author" class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="kwd">Peptides</span>
+  <span class="kwd">Computational chemistry</span>
+  <span class="kwd">Molecular modeling</span>
+  <span class="kwd">Proteins</span>
+  <span class="kwd">Biochemistry</span>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="fund-1" class="award-group">
+   <span class="funding-source">Novo Nordisk STAR program</span>
+  </div>
+  <div class="funding-statement">Anders S. Christensen is funded by the Novo Nordisk STAR program. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</div>
+ </div>
+</article-meta>

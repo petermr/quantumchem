@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Lithium-ion batteries have become the most widespread electrochemical storage technology due to their high-energy density making them ideal in portable applications
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>. However, their implementation for applications requiring higher energy and power density such as car batteries remains a challenge
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>
+  </span>. The necessary energy density for their use in electric cars requires advances in cathode and anode materials, as well as electrolytes, in order to increase the operating voltage and capacity
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>,
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>
+  </span>. However, with an increase of the operating voltage, the commonly used organic electrolytes become unstable and new electrolyte materials are needed to increase safety and cycle life while possessing a lithium-ion conductivity of at least 10
+  <span class="sup">−2</span> S cm
+  <span class="sup">−1</span> at room temperature, normally regarded as the threshold for technological viability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>. The study of the voltage window in which a given electrolyte material remains stable, as well as the pathways of degradation of the electrolyte outside of this window, is particularly important to the design of improved battery materials and systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>,
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Electrolyte breakdown is a complex interface phenomenon that is difficult to characterize experimentally, and computational simulations can give valuable insights into the key microscopic mechanisms that are difficult to access experimentally
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span>.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">When determining the stability window of an electrolyte, one should consider the rate of the oxidation (and reduction) reactions, which is linked to the activation free energy of the electron transfer. Computing this quantity accurately requires systematic explicit calculations of the reaction
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>–
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span>, and we have, for example, done this for the Li-PEO-TFSI system
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">It is also important to consider the full oxidation reaction instead of computing HOMO–LUMO levels of individual species
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>, with many different processes such as complex multi-step reactions with different molecules in the electrolyte, as well as surface effects, impacting the true voltage window of stability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Although there are computational efforts trying to investigate oxidation and reduction effects at the electrolyte-electrode interfaces
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>–
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>
+  </span>, progress is slow due to the computational complexity of such simulations. A practical approach is to investigate the intrinsic stability of the bulk liquid electrolyte, which can be used as a first filter when screening improved materials by providing an upper bound to the voltage stability of the entire system
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>–
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span>. Furthermore, due to the lack of knowledge of the degradation pathways and oxidation mechanisms, it is common to use the vertical or adiabatic ionization potential (IP) as a useful approximation of the electrolyte stability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>–
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">In this direction, the majority of reported works focus on the decomposition of a single species of the electrolyte, the solvent or the anion (possibly within an implicit solvation approximation), which allows for simpler and faster calculations and enables high throughput screening of electrolytes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">In Li-ion battery electrolytes, it was noticed that studying isolated species does not fully capture the intricate interactions between solvents and anions, and instead the correct approach is to investigate systems comprising multiple and explicit solvents and anions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>,
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>–
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span>. The importance of explicit solvation was demonstrated for example in ionic liquids
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>. This approach has highlighted interesting properties of the oxidation processes in electrolytes consisting of multiple species, and, most importantly, shows a weakening of the solvents in the presence of anions, or even other solvents
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>,
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span>. The observed weakening of the solvent was attributed to intermolecular reactions subsequent to the initial oxidation, such as hydrogen or fluorine transfer
+  <span class="sup">
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>,
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>. Experimental studies do not unanimously observe this phenomenon: while some report the dependence of the solvent oxidation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>–
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span> on the anion chemistry, others do not find such behavior
+  <span class="sup">
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>,
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. Thus, degradation mechanisms remain poorly understood because of the complexity of the many possible pathways, and the limitations and cost of current computational methods.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">In this work we explicitly treat the oxidation of anion-solvent complexes, and we focus on the onset of oxidation to estimate an approximate upper limit of the voltage stability window, without looking at possible subsequent degradation pathways and molecular geometry relaxation following the electron removal.</p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Therefore, instead of computing adiabatic IP, which approximates the oxidation potential, our approach of estimating the activation energy of the electron transfer relies on computing the distributions of vertical IP of molecular complexes sampled from molecular dynamics, to describe the stability in a statistical way. Vertical IP has been shown to be a useful indicator of oxidative stability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, and we calculate it using the ΔSCF approach
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>, by computing the energy difference between oxidized and initial states (without geometry relaxation).
+ </p>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">We compare several semi-local and hybrid DFT functionals, such as PBE
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+  </span> and B3LYP
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>, which are susceptible to self-interaction errors and spurious charge delocalization
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>,
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>, and find that the M06-HF
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>–
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span> functional is a suitable option to capture the charge density differences in a physically consistent way.
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">We then examine the vertical ionization of coupled solvent-anion system, using combinations of four anions: 4,5-dicyano-2-(trifluoromethyl)imidazolium (TDI
+  <span class="sup">−</span>), bis-(trifluoromethane solfonimmide) (TFSI
+  <span class="sup">−</span>), tetrafluoroborate (
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>), and hexafluorophosphate (
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>), with four solvents: dimethyl sulfoxide (DMSO), dimethoxyethane (DME), propylene carbonate (PC), and acetonitrile (ACN).
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">The main findings of this work are that (1) upon ionization the charge is removed either from the solvent or the anion depending on the electrolyte chemistry (2) in the case of solvent oxidation, the ionization potential of the combined solvent-anion system can be significantly lower than the IP of either the isolated solvent or the isolated anion; (3) this weakening effect is driven by electrostatic stabilization of the oxidized charge transfer complex forming between the solvent and the anion molecules.</p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Using a simple charge transfer model previously formulated in the context of molecular crystals
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>, we provide an intuitive understanding of the oxidation of the solvent-anion pair, and a simple model to predict whether the anion or one of the solvents is fully oxidized when removing an electron from the total electrolyte system.
+ </p>
+</sec>

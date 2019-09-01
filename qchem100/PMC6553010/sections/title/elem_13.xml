@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The results of our extensive photophysical investigations on two structurally closely related molecular triads clearly demonstrate the difficulty of optimizing all desirable properties for solar energy storage in a single molecular system at once (all pertinent results are summarized in 
+  <a rid="tab2" ref-type="table" href="#tab2">Table 2</a>). After excitation of an Ir-based sensitizer with a single visible photon, both triads are able to form an unusually highly energetic CSS (∼2.0 eV) comprising a triarylamine radical cation and an anthraquinone radical anion. Under optimized excitation conditions, up to 75% of the initial photon energy can be stored in the final CSS. The triad with the short bridge stores the energy 14 times longer than the counterpart with longer intramolecular distances.
+  <a rid="cit16" ref-type="bibr" href="#cit16">16</a> However, quantitative two-pulse laser experiments revealed that the CSS of the shorter triad (
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span>) undergoes light-induced charge recombination about ten times more efficiently than that of the longer triad (
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span>). Thus, the intriguing key finding is that thermal charge recombination is substantially slower in the shorter triad, but at the same time light-induced charge recombination is significantly more efficient in that compound. These observations can be understood in the framework of Marcus theory as pointed out in Sections 2.2 and 2.4. The CSS formation quantum yield of the shorter triad crucially depends on the laser excitation wavelength (anti-Vavilov behavior)
+  <a rid="cit70" ref-type="bibr" href="#cit70">70</a> and ranges from 6.0 to 28.9%, whereas CSS formation for the longer triad is largely wavelength-independent with a quantum yield as high as 82% under comparable conditions. To our knowledge, these observations have no precedent in the literature on charge-separation in donor-sensitizer-acceptor compounds. The wavelength-dependence and the low quantum yields for CSS formation in the short triad are most likely due to direct excitation into an additional intraligand CT state of singlet parentage (substantiated by DFT calculations), which undergoes ultrafast charge recombination competing with CSS formation. By contrast, the longer triad is predominantly excited into a 
+  <span class="sup">1</span>MLCT excited state, and following rapid intersystem crossing to the 
+  <span class="sup">3</span>MLCT state of the Ir sensitizer, productive charge separation outcompetes undesired charge recombination events. This shows that triplet excited states can lead to substantially higher quantum yield for charge separation than singlet excited states.
+ </p>
+ <div id="tab2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <div class="title">Comparative results obtained for the CSSs of the triads under study</div>
+  </div>
+  <table frame="hsides" rules="groups">
+   <colgroup span="1">
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <td rowspan="1" colspan="1">Triad</td>
+     <td rowspan="1" colspan="1">
+      <span class="italic">E</span>
+      <sub>CSS</sub>
+      <a ref-type="table-fn" rid="tab2fna" href="#tab2fna">
+       <span class="sup">
+        <span class="italic">a</span>
+       </span>
+      </a>/eV
+     </td>
+     <td rowspan="1" colspan="1">
+      <span class="italic">τ</span>
+      <sub>CSS</sub>
+      <a ref-type="table-fn" rid="tab2fnb" href="#tab2fnb">
+       <span class="sup">
+        <span class="italic">b</span>
+       </span>
+      </a>/ns
+     </td>
+     <td rowspan="1" colspan="1">
+      <span class="italic">φ</span>
+      <sub>1</sub>
+      <a ref-type="table-fn" rid="tab2fnc" href="#tab2fnc">
+       <span class="sup">
+        <span class="italic">c</span>
+       </span>
+      </a>/%
+     </td>
+     <td rowspan="1" colspan="1">
+      <span class="italic">φ</span>
+      <sub>2</sub>
+      <a ref-type="table-fn" rid="tab2fnd" href="#tab2fnd">
+       <span class="sup">
+        <span class="italic">d</span>
+       </span>
+      </a>/%
+     </td>
+     <td rowspan="1" colspan="1">
+      <span class="italic">η</span>
+      <a ref-type="table-fn" rid="tab2fne" href="#tab2fne">
+       <span class="sup">
+        <span class="italic">e</span>
+       </span>
+      </a>/%
+     </td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="bold">TAA-ph
+       <sub>1</sub>-Ir-ph
+       <sub>1</sub>-AQ
+      </span>
+     </td>
+     <td rowspan="1" colspan="1">1.99</td>
+     <td rowspan="1" colspan="1">1210 ± 20</td>
+     <td rowspan="1" colspan="1">6.0–28.9
+      <a ref-type="table-fn" rid="tab2fnf" href="#tab2fnf">
+       <span class="sup">
+        <span class="italic">f</span>
+       </span>
+      </a>
+     </td>
+     <td rowspan="1" colspan="1">1.5</td>
+     <td rowspan="1" colspan="1">75</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="bold">TAA-ph
+       <sub>2</sub>-Ir-ph
+       <sub>2</sub>-AQ
+      </span>
+     </td>
+     <td rowspan="1" colspan="1">1.96</td>
+     <td rowspan="1" colspan="1">85 ± 5</td>
+     <td rowspan="1" colspan="1">82.2 ± 4.4</td>
+     <td rowspan="1" colspan="1">&lt;0.2</td>
+     <td rowspan="1" colspan="1">71</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="tab2fna" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">a</span>
+     </span>Energy of the respective CSS.
+    </p>
+   </fn>
+   <fn id="tab2fnb" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">b</span>
+     </span>CSS lifetime in deoxygenated CH
+     <sub>3</sub>CN at 293 K.
+    </p>
+   </fn>
+   <fn id="tab2fnc" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">c</span>
+     </span>Quantum yield of CSS formation.
+    </p>
+   </fn>
+   <fn id="tab2fnd" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">d</span>
+     </span>Quantum yield of light-induced charge recombination upon CSS excitation at 532 nm.
+    </p>
+   </fn>
+   <fn id="tab2fne" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">e</span>
+     </span>Upper limit for the efficiency of photon-to-chemical energy conversion.
+    </p>
+   </fn>
+   <fn id="tab2fnf" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">f</span>
+     </span>Wavelength-dependent, see 
+     <a rid="tab1" ref-type="table" href="#tab1">Table 1</a> for details.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As has emerged from this work, wavelength-dependent one- and two-pulse laser flash photolysis with quantitative detection of reaction intermediates is a powerful tool to investigate unexpected or even unexplored effects that are highly relevant for artificial photosynthesis. In particular, quantitative pump-probe and pump–pump–probe spectroscopy combined with electron transfer theory and simple DFT calculations provides a clear picture of important CSS properties. We anticipate that our approach might facilitate both the further optimization of CSS precursors and multi-electron storage in molecular systems.</p>
+</sec>

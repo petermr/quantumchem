@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="introduction" id="s0005" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Connexins, indicated with the abbreviation Cx followed by their molecular weight in kilodalton (e.g. Cx26 for the 26 kDa protomer), are tetraspan transmembrane proteins encoded by at least 21 genes in the human and 20 genes in the mouse genome, 19 of which can be grouped as sequence-orthologous pairs 
+  <a rid="b0005" ref-type="bibr" href="#b0005">[1]</a>. Connexin proteins oligomerize in the ER/Golgi or trans-Golgi network forming hexameric assemblies known as hemichannels or connexons, which are delivered to the plasma membrane by vesicular carriers travelling along microtubules 
+  <a rid="b0010 b0015 b0020" ref-type="bibr" href="#b0010 b0015 b0020">[2–4]</a>. Plasma membrane hemichannels form aqueous conduits with a pore diameter of ∼1.5 Å and open in response to various types of stimuli, including mechanical, shear, ionic and ischemic stress 
+  <a rid="b0015 b0020" ref-type="bibr" href="#b0015 b0020">[3,4]</a>. Open hemichannels provide a pathway for the release from cells of ATP, glutamate, NAD+ and prostaglandin E2, which act as paracrine messengers 
+  <a rid="b0015 b0020" ref-type="bibr" href="#b0015 b0020">[3,4]</a>. Intercellular (gap junction) channels are formed by the head-to-head docking of two connexons in adjacent cells and mediate the exchange of a variety of cytoplasmic molecules (virtually all soluble second messengers, amino acids, nucleotides, ions, glucose and its metabolites) 
+  <a rid="b0010" ref-type="bibr" href="#b0010">[2]</a>. Connexin mutations that alter either hemichannel or gap junction function have been implicated in a variety of human diseases 
+  <a rid="b0195" ref-type="bibr" href="#b0195">[5]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is well established that hemichannel activity is inhibited at normal (∼1 mM) [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub> and this may serve as a protecting mechanism against the harmful effects of leaky hemichannels 
+  <a rid="b0015 b0020 b0030 b0035 b0040" ref-type="bibr" href="#b0015 b0020 b0030 b0035 b0040">[3,4,6–8]</a>. Lowering [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub> to micromolar levels fosters hemichannel opening and promotes signaling 
+  <a rid="b0045" ref-type="bibr" href="#b0045">[9]</a>. Atomic force microscopy imaging shows significant and reversible changes of pore diameter at the extracellular mouth of Cx26 hemichannels exposed to different [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub>
+  <a rid="b0050" ref-type="bibr" href="#b0050">[10]</a>. Also the voltage gating of connexin hemichannels is affected by [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub>. Lowering [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub> to zero causes a marked increase in the amplitude of hemichannel currents, shifts their activation to more negative potentials and alters the kinetics of activation and deactivation, whereas increasing [Ca
+  <span class="sup">2+</span>]
+  <sub>e</sub> has opposite effects (reviewed in Ref. 
+  <a rid="b0055" ref-type="bibr" href="#b0055">[11]</a>). Molecular dynamics (MD) simulations 
+  <a rid="b0060" ref-type="bibr" href="#b0060">[12]</a> show that multiple Ca
+  <span class="sup">2+</span> ions may linger within the negatively charged extracellular mouth of Cx26 hemichannels at a membrane potential of −80 mV, and low-affinity binding of several Ca
+  <span class="sup">2+</span> ions near the point of narrowest pore constriction can occlude the pore. Upon depolarization to 0 mV the interactions weaken and Ca
+  <span class="sup">2+</span> ions shift towards the extracellular space 
+  <a rid="b0060" ref-type="bibr" href="#b0060">[12]</a>. Asp46 and Glu47, two highly conserved negatively charged amino acids facing the pore in the extracellular mouth, are strong candidates for Ca
+  <span class="sup">2+</span> binding 
+  <a rid="b0065" ref-type="bibr" href="#b0065">[13]</a>. Glu47 is also a candidate for gamma carboxylation 
+  <a rid="b0070" ref-type="bibr" href="#b0070">[14]</a>, a post-translational modification that would increase its capability of coordinating Ca
+  <span class="sup">2+</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">According to the crystal structure of Cx26 
+  <a rid="b0075" ref-type="bibr" href="#b0075">[15]</a>, Glu47 is found in the middle of the parahelix formed by residues 42–50 at the border between transmembrane helix 1 (TM1) and the first extracellular loop (E1). MD simulations of the Cx26 hemichannel suggest that Glu47, Arg75 and Arg184 are components of an extensive intra/intersubunit electrostatic network that includes salt-bridge and hydrogen-bond formation and stabilizes the parahelix and TM1/E1 bend angle (
+  <a rid="f0005" ref-type="fig" href="#f0005">Fig. 1</a>) 
+  <a rid="b0080" ref-type="bibr" href="#b0080">[16]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Arg75 and Arg184 are conserved among different connexin isoforms and the deafness-associated R75Q and R75W mutations of Cx26 produce proteins that prevent the formation of functional gap junction channels 
+  <a rid="b0085 b0090 b0095" ref-type="bibr" href="#b0085 b0090 b0095">[17–19]</a>. The absence of gap-junctional communication caused by R75W expression is due to defective gap-junction formation by functional hemichannels 
+  <a rid="b0100" ref-type="bibr" href="#b0100">[20]</a>. In Cx32, mutations of Arg75 (R75Q, R75P, R75W) associated with X-linked Charcot Marie Tooth disease (CMT1X) result in trafficking problems, and mutant proteins fail to reach the plasma membrane 
+  <a rid="b0105" ref-type="bibr" href="#b0105">[21]</a>. A pathogenic role has been also attributed to mutations of Arg184 in Cx26 (R184P 
+  <a rid="b0110" ref-type="bibr" href="#b0110">[22]</a>, R184Q 
+  <a rid="b0115" ref-type="bibr" href="#b0115">[23]</a>, R184W 
+  <a rid="b0120" ref-type="bibr" href="#b0120">[24]</a>), as well as to mutation of the homologous Arg183 in Cx32 (R183C, R183H, R183S 
+  <a rid="b0125" ref-type="bibr" href="#b0125">[25]</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we used quantum chemistry computations to investigate the effects exerted by coordination of Ca
+  <span class="sup">2+</span> to γGlu47. We examined the equilibrium configuration of a local cluster of amino acids surrounding γGlu47, including Arg75 and Arg184, and singled out a local rearrangement of arginines that can be linked to one of the hemichannel gating mechanisms.
+ </p>
+</sec>

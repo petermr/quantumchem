@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quixote components</div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">JUMBO-Converters</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The JUMBO-Converters are based on a templating approach, matching the observed output to an abstraction of the QC concepts. They have been hand-crafted for a number of well-structured output files (Gaussian archive files, MOPAC and various punchfiles) but the emphasis is now on writing JUMBO-Parsers for the logfiles for each code. We have explored a wide range of technologies for parsing logfiles including machine learning, formal grammars (lex/yacc), ANTLR 
+   <span ext-link-type="uri" xlink:href="http://www.antlr.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.antlr.org/</span>, but all of these have problems when confronted with unexpected output, variations between implementations, error messages and many other irregularities. The JUMBO-Parser will not be described in detail here but in essence consists of the following approach:
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Recognition of common document 
+   <span class="italic">fragments </span>in the logfile (
+   <span class="italic">e.g</span>., tables of coords, eigenvalues, atomic charges, 
+   <span class="italic">etc</span>.) which appear to be produced by record-oriented (FORTRAN format) routines in the source code. We create a 
+   <span class="italic">template </span>for each such 
+   <span class="italic">chunk</span>, which contains 
+   <span class="italic">records</span>, with regexes for each record that we wish to match and from which we will extract information. These templates can be nested, often representing the internal structure of the program (
+   <span class="italic">e.g</span>., nested subroutine calls).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Each template is then used to match any chunks in the document, which are then regarded as completed and unavailable to other templates. The strategy allows for nesting and a small amount of back-tracking.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Chunks of document that are not parsed may then be extracted by writing additional parsers, very often to clean up records such as error messages or timing information.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">At the end of this process a good parse will results in a highly-structured document with CML module providing the structure and CML scalar, array and matrix providing the individual fields 
+   <span ext-link-type="uri" xlink:href="http://quixote.wikispot.org/Tutorials_and_problems" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://quixote.wikispot.org/Tutorials_and_problems</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This document is rarely fit for purpose in Quixote or other CML conventions and a second phase of transformation is applied. This carries out the following:</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Removal of unwanted fields.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Removal of unnecessary hierarchy (often an artifact of the parsing strategy)</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Addition of 
+   <span class="monospace">dictRefs</span> to existing dictionaries
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Addition of units (often not explicitly mentioned in the logfile but known to the parser writer)</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Grouping of sibling elements into a more tractable structure (unflattening)</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Annotation of modules to reflect semantic purpose, 
+   <span class="italic">e.g</span>., initial coordinates, optimizations, 
+   <span class="italic">etc</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">• Re-structuring of the modules in the parsed output to fit the 
+   <span class="italic">compchem </span>convention 
+   <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/convention/compchem" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/convention/compchem</span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This is carried out by a domain-specific declarative language which makes heavy use of XPath and a core set of Java routines for generic operations (delete/create/move elements, transform (matrix/molecule/strings etc.)). This approach means that failures are relatively silent (a strange document does not crash the process) and that changes can be made external to the software (by modifying the transformation files). As with the templates this should make it easier for the community to maintain the process (
+   <span class="italic">e.g</span>. when new syntax or vocabulary occurs).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">A typical template is shown in Appendix A.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">JUMBO-Parser has been designed for portability, in that most of the instructions are declarative (XML). It still requires the JUMBO-Parser interpreter to be ported, but this is written in mainstream Java and should not be particularly problematic for most object-oriented targets such as Python, C++ and C#. To help in the parsing, there are a large number of unit and regression tests.</p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">CML Conventions and Dictionaries</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The final output is CML compliant to the 
+   <span class="italic">compchem </span>convention and validated against the current validator 
+   <span ext-link-type="uri" xlink:href="http://validator.xml-cml.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://validator.xml-cml.org/</span>. The dictionaries are in a constant state of update and consist of a reference implementation on the CML site and a working dictionary associated with the JUMBO-Converters distribution. As concepts are made firm in the latter, they are transferred to the reference dictionary.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The current compchem dictionary is shown in Appendix B. It contains about 90 terms which are independent of the codes. We expect that about the same amount again will be added to deal with other properties and solid state concepts.</p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Lensfield2</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 
+   <span ext-link-type="uri" xlink:href="https://bitbucket.org/sea36/lensfield2/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://bitbucket.org/sea36/lensfield2/</span> is a tool for managing file transformation workflows and can be thought of as a 
+   <span class="monospace">make</span> for data.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 requires a build file, defining the various sets of input files and the conversions to be applied to them. Like 
+   <span class="monospace">make</span>, for instance, Lensfield2 is able to detect when files have changed, and update the products of conversions depending on them. However, unlike 
+   <span class="monospace">make</span> where this is just done through comparison of files 'last-modified times, Lensfield2 records the complete build-state, so is able to detect any change in configuration, such as when the parameterisation of builds has changed, and when versions of tools involved in the various steps of the workflow are updated or if intermediate files are altered.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 is designed to run workflow steps written in Java and build using Apache Maven 
+   <span ext-link-type="uri" xlink:href="http://maven.apache.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://maven.apache.org/</span>, utilising Maven's dependency management system to pull in the required libraries for each build step.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 has been successfully used in running the parser and subsequent software over the 40,000 files in the test datasets 1-4 (
+   <span class="italic">v.i</span>.).
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">RESTful uploading</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">It is important that the methods for "uploading" and "downloading" files are as flexible as possible. Some collaborators may not have privilleges to run their own server, so they need to be able to upload material to a resource run by other collaborators. However, if the protocols are complex then they may be put off taking part. Similarly, others may wish to delegate this to software agents which poll resources and aggregate material for uploading. Similar variability exists in the download process. Web-based collaborators are becoming used to very lightweight solutions such as Dropbox 
+   <span ext-link-type="uri" xlink:href="http://www.dropbox.com/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.dropbox.com/</span> where files can be uploaded, and where permitted, downloaded by anyone. We do not expect a single solution to cover everything, and the more emphasis on security, the more effort required. In this phase of Quixote, we are publishing our work to the whole world and do not expect problems of corruption or misappropriation. We have therefore relied on simple proven solutions such as RESTful systems. Some of this is covered in the semantic architecture paper in this issue, and here we simply illustrate that initial systems at Cambridge have been implemented with AtomPub 
+   <span ext-link-type="uri" xlink:href="http://tools.ietf.org/html/rfc5023" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://tools.ietf.org/html/rfc5023</span>. Because the academic repository system has invested effort in the SWORD system 
+   <span ext-link-type="uri" xlink:href="http://www.ukoln.ac.uk/repositories/digirep/index/SWORD" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.ukoln.ac.uk/repositories/digirep/index/SWORD</span> (which runs over AtomPub), this allows us to deposit/upload aggregations of files.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Chempound repository</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Quixote is built on CML compchem and, in our system, is further transformed to provide RDF used for accessing subcomponents and expressing searches. The Chempound (chem#) repository system 
+   <span ext-link-type="uri" xlink:href="https://bitbucket.org/chempound/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://bitbucket.org/chempound/</span>[
+   <a ref-type="bibr" rid="B28" href="#B28">28</a>] (see Figure 
+   <a ref-type="fig" rid="F3" href="#F3">3</a>) has been built to support this. We expect that the first wave of distributed repositories will be using Chempound, and a publically accessible prototype repository is already in use within the Quixote project 
+   <span ext-link-type="uri" xlink:href="http://quixote.ch.cam.ac.uk/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://quixote.ch.cam.ac.uk/</span>
+  </p>
+  <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>
+     <span class="bold">Chempound repository graphical interface</span>. Chempound accepts either converted compchem CML or logfiles (which are then parsed by the JUMBO converters into compchem CML). The entries are indexed on 4 main criteria: (I) environment (program, host, dates, 
+     <span class="italic">etc</span>.) (II) initialization (molecular structure, basis sets, methods, algorithms, parameters, 
+     <span class="italic">etc</span>.) (III) calculation (the progression of optimization) (IV) finalization (molecular structure, properties, times, 
+     <span class="italic">etc</span>.) (a) Each entry is displayed with a thumbnail and key metadata (b) Properties and parameters for each entry, all searchable through SPARQL endpoint.
+    </p>
+   </div>
+   <div xlink:href="1758-2946-3-38-3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Institutional repositories, DSpace</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Institutional repositories (running software such as DSpace 
+   <span ext-link-type="uri" xlink:href="http://www.dspace.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.dspace.org/</span> or Fedora 
+   <span ext-link-type="uri" xlink:href="http://fedora-commons.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://fedora-commons.org/</span>) may be responsible for storing the raw output files that are transformed into CML by the JUMBO-Converters. Alongside, they will also store basic metadata (authorship, usage rights, related works, 
+   <span class="italic">etc</span>.).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This usage of institutional repositories distributes data management responsibilities among the institutions where the creators of the raw output files work. This provides an efficient basic data management support to the creators, and lets topic-specific repositories (such as Quixote's chem#) to focus on leveraging the specialized CML semantics extracted from the raw files, while still linking back to the original raw files at the institutional repositories. This schema also favors re-use of the same primary data by different specialized research topic repositories.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Yet antother temporary advantage of this approach is that, as the data collection increases, resource discoverability becomes a real challenge - even for the researcher herself. Even if much data can be extracted from the datafiles, some title and description metadata could be very useful to issue searches and can be provided by the person submitting the files to the repository. In the development phase, other researchers - as well as the dataset creator - would be able to discover and access a given unprocessed dataset without needing to wait for it to get processed and transferred into the final Chempound data repository.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Designing a DSpace-based raw data repository will also allow for defining a 
+   <span class="italic">de facto </span>standardized metadata collection for compchem data description that may be very useful for harmonisation of data description in this specific research area - and might eventually evolve into some kind of standard for the discipline. At the present stage, we have done some preliminary work along metadata collection definition. A set of metadata has been defined and is being discussed in order to provide thorough descriptions of raw compchem datasets (potentially extendable to data from other research areas). Once the metadata set for bibliographical description of raw datasets is agreed, fields contained therein will be mapped to existing or new qualified DublinCore (QDC) metadata and a draft format will thus be defined. This format will be implemented at a DSpace-based repository, where trial-and-error storing loops with real datasets will be performed for metadata collection completion and fine -tuning - besides accounting for particular cases.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Avogadro</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Avogadro is an open source, cross-platform desktop application to manipulate and visualize chemical data in 3D. It is available on all major operating systems, and uses Open Babel for much of its file input and output as well as basic forcefields and cheminformatics techniques. Avogadro was already capable of downloading chemical structures from the NIH structure resolver service, editing structures and optimizing those structures.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Input generation from these structures is present for many of the major computational chemistry codes Quixote targets such as GAMESS(US), GAMESS-UK, Gaussian, NWChem, MOPAC and others. These dialogs allow the user to change input parameters before producing input files to be run by the code. The output files from several of these codes can also be read directly, this functionality was recently split out into OpenQube - a library to read quantum computational code log files, and calculate molecular orbitals, electron density and other output.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Ultimately, much of this functionality will move into the Quixote parsers, with the OpenQube library concentrating on multithreaded calculation of electronic structure parameters. A native CML reader plugin has also been developed for Avogadro, to read in CML files directly and display the tree structure allowing visual exploration of CML files. As JUMBO and other tools can extract electronic structure, spectra and vibrational data, this plugin is being developed to extract them from the CML document.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Avogadro is already network aware, with a network fetch extension interacting with the NIH structure resolver and the Protein Data Bank (PDB). Experimental support for interacting with a local queue manager is also being actively developed, sending input files to the queue manager, and retrieving log files one the calculation is complete. Some data management features are being added, and as Chempound has a web API a plugin for upload, searching and downloading of structures will be added. A MongoDB-based application has been prototyped, using a document store approach to storing chemical data. This approach coupled with Chempound repositories and seamless integration in the GUI will significantly lower barriers for both deposition and retrieval of relevant computational chemistry output.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Avogadro forms a central part of the computational chemistry workflow, but is in desparate need of high quality chemical data. The data available from existing online chemical repositories is a good start, but having high quality, discoverable computational chemistry output would significantly improve efficiency in the field. Widespread access to optimized chemical structures using high level theories and large basis sets would benefit everyone from teaching right through to academic research and industry.</p>
+ </sec>
+</sec>

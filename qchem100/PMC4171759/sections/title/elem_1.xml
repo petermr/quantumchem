@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">ELECTRONIC-STRUCTURE MODELS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">With the Dalton program, the electronic structure of a molecule can be described using all standard nonrelativistic wave-function and density-functional models of modern quantum chemistry. In particular, the wave function may be calculated using HF, MCSCF, configuration-interaction (CI), and CC theories. Using density-functional theory (DFT), calculations may be carried out with a range of KS exchange–correlation functionals. Dalton calculations are performed with generally contracted Gaussian-type orbitals (GTOs) with solid-harmonic or Cartesian angular factors as one-electron basis functions; some models also use two-electron functions for explicit correlation.</p>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">HF and KS SCF Theories</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In Dalton, SCF calculations may be performed using a variety of optimization techniques. Apart from the traditional iterative Roothaan–Hall diagonalization method with direct-inversion-in-the-iterative-subspace (DIIS) convergence acceleration, the SCF energy may be optimized using a robust second-order trust-region method.
+   <a rid="b1" ref-type="bibr" href="#b1">1</a> All calculations may be carried out in either serial or parallel manner. SCF calculations may also be carried out using the linear-scaling module discussed later.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">With Dalton, KS studies may be performed with a variety of KS exchange–correlation functionals, including local-density-approximation (LDA) functionals, generalized-gradient-approximation (GGA) functionals such as BLYP and PBE, global hybrid functionals such as B3LYP and PBE0, and range-separated hybrid functionals such as CAM-B3LYP and r-CAM-B3LYP. Additional functionals may be obtained by combining the included functionals for exchange and correlation in new ways. Double-hybrid functionals such as B2PLYP and MPW2PLYP, with a second-order perturbation contribution, are available. For the GGA and hybrid functionals, the exchange–correlation potentials may be asymptotically corrected to ensure a proper long-range behavior, important for the study of Rydberg states using response theory.
+   <a rid="b2" ref-type="bibr" href="#b2">2</a> Empirical DFT-D2 and DFT-D3 dispersion corrections may be applied. Dalton offers an implementation of spin-restricted and spin-unrestricted DFT for open-shell states.
+   <a rid="b3" ref-type="bibr" href="#b3">3</a>,
+   <a rid="b4" ref-type="bibr" href="#b4">4</a>
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">MCSCF Theory</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For complicated electronic ground states characterized by static correlation and for valence-excited and core–hole states, MCSCF theory often provides the best solution. Dalton is characterized by an advanced MCSCF functionality with respect to both the construction of the MCSCF wave function and its optimization.
+   <a rid="b5" ref-type="bibr" href="#b5">5</a>–
+   <a rid="b8" ref-type="bibr" href="#b8">8</a> MCSCF ground- and excited-state wave functions can be constructed using the flexible concept of a generalized active space (GAS),
+   <a rid="b9" ref-type="bibr" href="#b9">9</a> including the complete-active-space (CAS) and restricted-active-space (RAS)
+   <a rid="b10" ref-type="bibr" href="#b10">10</a> models as special cases. Dalton uses robust and efficient second-order MCSCF optimization techniques, based on the concept of a trust region.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To recover dynamic as well as static correlation, MCSCF theory may be combined with 
+   <span class="italic">N</span>-electron valence state second-order perturbation theory (NEVPT2).
+   <a rid="b11" ref-type="bibr" href="#b11">11</a> The NEVPT2 approach is similar to second-order CAS perturbation theory (CASPT2) but it is not affected by intruder-state problems.
+   <a rid="b12" ref-type="bibr" href="#b12">12</a>,
+   <a rid="b13" ref-type="bibr" href="#b13">13</a> All MCSCF and post-MCSCF multireference-CI calculations in Dalton are performed using the parallelized LUCITA module
+   <a rid="b14" ref-type="bibr" href="#b14">14</a>,
+   <a rid="b15" ref-type="bibr" href="#b15">15</a> with the wave function expanded either in configuration-state functions or in Slater determinants. As an important special case, FCI wave functions for benchmarking may be calculated using LUCITA.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">CC Theory</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For dynamical correlation, a variety of (spin-restricted) CC-based models have been implemented in Dalton: the coupled-cluster-singles (CCS) model, second-order-Møller–Plesset (MP2) theory, degeneracy-corrected second-order perturbation theory (DCPT2), the coupled-cluster-doubles (CCD) model, the coupled-cluster-singles-and-doubles (CCSD) model,
+   <a rid="b16" ref-type="bibr" href="#b16">16</a>,
+   <a rid="b17" ref-type="bibr" href="#b17">17</a> and the coupled-cluster-singles-doubles-perturbative-triples (CCSD(T)) models. Several ring-CCD and random-phase-approximation (RPA) models are also available,
+   <a rid="b18" ref-type="bibr" href="#b18">18</a> including RPA with second-order screened exchange (RPA+SOSEX).
+   <a rid="b19" ref-type="bibr" href="#b19">19</a> Frequency-dependent ground- and excited-state properties can be studied using several specially developed models.
+   <a rid="b20" ref-type="bibr" href="#b20">20</a>,
+   <a rid="b21" ref-type="bibr" href="#b21">21</a> In particular, Dalton contains the iterative CC2
+   <a rid="b22" ref-type="bibr" href="#b22">22</a> and CC3
+   <a rid="b23" ref-type="bibr" href="#b23">23</a> models for frequency-dependent properties and the noniterative CCSDR(3) triples-correction model
+   <a rid="b24" ref-type="bibr" href="#b24">24</a> for excitation energies.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">For faster basis-set convergence, the explicitly correlated MP2-R12/-F12, CCSD(T)(F12), and CC3(F12) models are available in Dalton.
+   <a rid="b25" ref-type="bibr" href="#b25">25</a>–
+   <a rid="b27" ref-type="bibr" href="#b27">27</a> For higher efficiency, Cholesky decomposition techniques have been implemented for the CCSD(T) energy
+   <a rid="b28" ref-type="bibr" href="#b28">28</a> and for CC2 linear response properties.
+   <a rid="b29" ref-type="bibr" href="#b29">29</a> Atomic subsystems can be defined by Cholesky decomposition to reduce the computational requirements of the CC models.
+   <a rid="b30" ref-type="bibr" href="#b30">30</a>
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Relativistic Corrections</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Although Dalton is a nonrelativistic electronic-structure code based on the Schrödinger equation, it also has some functionality for incorporating the effects of relativity—in particular, effective core potentials may be used for energy and response functions.
+   <a rid="b31" ref-type="bibr" href="#b31">31</a> Relativistic effects may also be included using Douglas–Kroll–Hess second-order one-electron scalar integrals.
+   <a rid="b31" ref-type="bibr" href="#b31">31</a> When molecular response properties are calculated, the Breit–Pauli one- and two-electron spin–orbit operators may be included perturbatively.
+   <a rid="b32" ref-type="bibr" href="#b32">32</a>–
+   <a rid="b34" ref-type="bibr" href="#b34">34</a> Dalton offers scaled spin–orbit integrals and the atomic-mean-field approximation to the spin–orbit integrals
+   <a rid="b35" ref-type="bibr" href="#b35">35</a> and parity-violation integrals.
+   <a rid="b36" ref-type="bibr" href="#b36">36</a>
+  </p>
+ </sec>
+</sec>

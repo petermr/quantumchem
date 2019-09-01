@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="sec4.1" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of Most Abundant (Major) Protonation States at pH = 0</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Our pipeline is based on performing electronic structure simulations of the most protonated species of each biochemical compound involved in every redox reaction of interest. We run the quantum chemistry simulations on the major protonation states at pH = 0 to avoid errors associated with the prediction of anionic compound energies.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref21" href="#ref21">21</a>,
+    <a ref-type="bibr" rid="ref59" href="#ref59">59</a>,
+    <a ref-type="bibr" rid="ref60" href="#ref60">60</a>
+   </span> We use the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon) 
+   <span class="italic">cxcalc majormicrospecies</span> to generate, for each substrate and product involved in a biochemical redox reaction of interest, the major microspecies at pH = 0.
+  </p>
+ </sec>
+ <sec id="sec4.2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Geometry Optimization</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Using the SMILES string representation
+   <span class="sup">
+    <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+   </span> for each compound in the reaction network, we obtain the string corresponding to the most abundant (major) microspecies at pH = 0 using ChemAxon. This smiles string is then converted to an RDKit “mol” object. From here we obtain 3D structures based on two decisions. (1) Whenever we want a single 3D geometry, we generate an initial conformer with RDKit (using the EmbedMolecule command, which uses distance geometry to obtain initial coordinates for a molecule), and we optimize this conformer’s geometry Universal Force Field (UFF) as implemented in RDKit.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref61" href="#ref61">61</a>
+   </span> (2) If we want several conformers (to Boltzmann average their energies), we generate around 1000 random “smart” conformers via the ETKDG force field,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref62" href="#ref62">62</a>
+   </span> calculate their energies, and pick between 5 and 20 conformers (based on size) and on clustering of energies (using the Butina clustering algorithm). Depending on the baseline model chemistry, either we further refine the geometry of the PM7
+   <span class="sup">
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+   </span> semiempirical method with the COSMO implicit solvation model
+   <span class="sup">
+    <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+   </span> and then a quantum chemistry approach (PBE-3H or B3LYP), or we simply use the base PM7 or UFF geometry and perform single-point energy (SPE) calculations.
+  </p>
+ </sec>
+ <sec id="sec4.3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Single-Point Energy Estimates</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We then compute the electronic energy 
+   <span class="italic">E</span>
+   <sub>electronic</sub> of every compound involved in a given redox reaction using the PM7 semiempirical method
+   <span class="sup">
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+   </span> with the COSMO implicit solvation model
+   <span class="sup">
+    <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+   </span> (see below for other single-point energy SPE model chemistries tested). For both reductions of carbonyl groups to alcohols and amines, we add a hydrogen molecule to the substrate side of the redox reaction (in the direction of reduction) and compute its electronic energy. In addition, to balance reductions of carbonyls to amine functional groups, we add an ammonia molecule to the substrate side of the reaction and a water molecule to the product side of the reaction (in the direction of reduction) and compute their electronic energies.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We use the difference in the electronic energies of products and substrates, Δ
+   <span class="italic">E</span>
+   <sub>electronic</sub>, as an estimate of the standard redox potential 
+   <span class="italic">E</span>°(major species, MS, at pH = 0):
+   <div id="ueq1" class="disp-formula">
+    <div xlink:href="oc-2019-002977_m001" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>where 
+   <span class="italic">n</span> is the number of electrons (2 for all reactions considered here), and 
+   <span class="italic">F</span> is Faraday’s constant.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Our approach ignores the contribution of ro–vibrational enthalpies and entropies to Gibbs reaction energies. This significantly reduces the computational cost associated with quantum chemical simulations, and we correct for the systematic errors introduced by this approximation through the Gaussian process regression (see below). We note that previous work has shown that the value of Δ
+   <span class="italic">E</span>
+   <sub>electronic</sub> obtained for these types of redox reactions strongly correlates linearly with the full Δ
+   <span class="italic">G</span>
+   <sub>r</sub>° prediction obtained from including ro–vibrational enthalpic and entropic contribution (data not shown).
+  </p>
+ </sec>
+ <sec id="sec4.4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Transforming Chemical Potentials 
+   <span class="italic">E</span>°(Major Species at pH = 0) to Biochemical Potentials, 
+   <span class="italic">E</span>′°(pH = 7)
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Having estimated the standard redox potential 
+   <span class="italic">E</span>°(major species at pH = 0), we use cheminformatic p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates of reactants and the Alberty–Legendre transform
+   <span class="sup">
+    <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+   </span> (p 67, eqs 4.4–10) to convert 
+   <span class="italic">E</span>°(major species at pH = 0) to the 
+   <span class="italic">transformed</span> standard redox potential, 
+   <span class="italic">E</span>′°(pH = 7), which is a function of pH.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+   </span> To estimate the p
+   <span class="italic">K</span>
+   <sub>a</sub>’s of all reactants in every redox reaction of interest, we use the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon) 
+   <span class="italic">cxcalc pka</span>. Internally, the p
+   <span class="italic">K</span>
+   <sub>a</sub> calculator plugin is based on the calculation of the partial charge of atoms in the molecule.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref64" href="#ref64">64</a>,
+    <a ref-type="bibr" rid="ref65" href="#ref65">65</a>
+   </span>
+  </p>
+ </sec>
+ <sec id="sec4.5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Gaussian Process Calibration Using Reaction Fingerprints</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We calibrate biochemical redox potentials 
+   <span class="italic">E</span>′°(pH = 7) obtained from quantum chemical simulations against available experimental data to correct for systematic errors in our simulations and the cheminformatic p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates. One simple strategy of calibration of energy values would be to use a two-parameter linear regression. We note that our group has successfully employed this in the context of compounds for redox flow battery applications.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref66" href="#ref66">66</a>−
+    <a ref-type="bibr" rid="ref71" href="#ref71">71</a>
+   </span> Here, we make use of the information provided by the difference between the structural similarity of products and substrates and utilize a GP regression approach with reaction fingerprints to calibrate redox potential energies. For our calibrations with Gaussian process regression we used GPMol, a Python library based on GPflow,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref72" href="#ref72">72</a>
+   </span> which in turn is a package for building Gaussian process models using TensorFlow.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">GP regression relies on a similarity or distance metric between data points. To construct the notion of similarity between reactions, we utilize reaction fingerprints.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+   </span> Several possible choices of kernel function and distance measure between molecules and reactions exist. Generally, the distance measures between molecules and reactions make use of fingerprint representations of compounds, which encode the structure of a molecule in a binary vector form.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+   </span> Although several varieties of reaction fingerprints exist, we tested our approach on the Morgan2 and AP3 (atom pair) reaction FPs of Schneider et al.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+   </span> and obtain them from the difference of fingerprint vectors of products and substrates. We find that in the context of Gaussian processes for biochemical redox potential predictions Morgan fingerprints outperform AP3 fingerprints by approximately 5–4 mV. The Gaussian processes’ predictive power comes from learning relationships between relative distances in feature space, so it might be the case that for distance-based ML algorithms Morgan fingerprints are better. However, we note that we did not incorporate the usage of any agent to the weighting scheme, so doing so might change the results. Additional performance metrics for comparison can be seen in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">One key ability of Morgan fingerprints is that we can invert the bits back to a corresponding molecular substructure to perform our structure–energy analysis. For each molecule, we generate a counted Morgan fingerprint,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+   </span> a fixed-length counted vector indicating the absence (zeros) or counted presence (positive) of a particular graph–connectivity–environment. Each environment captures the local topological information on a molecule by mapping the local vicinity of connected atoms, along with their formal charges, type of chemical bond, and its position relative to a cyclic structure. Our Morgan fingerprints are constructed from 2048 length-vectors using a radius of 6 and are reduced to a lower dimension (∼200) using a gradient boosted tree. We find that the prediction accuracy did not improve significantly upon using Morgan fingerprints with a larger radius. When we consider the difference of two Morgan fingerprints, we are looking at the subtraction and addition of molecular environments between two molecules. We expect that similar molecular transformations will have similar changes in molecular environments. When these vectors are normalized, the inner product between two reaction fingerprints 
+   <span class="italic">x</span>
+   <sub>1</sub> and 
+   <span class="italic">x</span>
+   <sub>2</sub> is the cosine distance,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref74" href="#ref74">74</a>
+   </span> which is a measure of similarity between two vectors. This notion is adapted in the field of Gaussian processes to quantify the similarity between reactions in GP regression.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Predictions obtained from GPs can be interpreted as weighted averages of the training data, where the weights are probabilistic in nature. GPs are distinct because of their associated covariance functions (i.e., the kernel).
+   <span class="sup">
+    <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+   </span> The equation below shows that the kernel we employ is a mixture of a squared exponential kernel and a noise kernel, which increases the robustness of the model.
+   <div id="ueq2" class="disp-formula">
+    <div xlink:href="oc-2019-002977_m002" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Here, 
+   <span class="italic">K</span> is the kernel function, 
+   <span class="italic">σ</span>
+   <sub>rxn</sub> is the variance of the reaction fingerprint kernel, 
+   <span class="italic">l</span> is the length scale parameter, and 
+   <span class="italic">σ</span>
+   <sub>noise</sub> is the white noise variance parameter.
+  </p>
+ </sec>
+ <sec id="sec4.6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Database of Experimental Redox Potentials for Calibration with Gaussian Process Regression</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To perform the calibration, a data set of available experimental transformed standard redox potentials is used. This data set of redox half-reactions and their associated transformed standard reduction potentials 
+   <span class="italic">E</span>′°(pH = 7) was generated by Bar-Even et al.,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+   </span> by compiling experimental equilibrium constants (i.e., standard Gibbs reaction energies) from the NIST database of Thermodynamics of Enzyme-Catalyzed Reactions (TECRDB)
+   <span class="sup">
+    <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+   </span> and the Robert Alberty database of biochemical compound Gibbs formation energies.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+   </span> The data set consists of 57 redox reactions that reduce a carbonyl functional group into an alcohol functional group and 24 redox reactions that reduce a carbonyl functional group into an amine group.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To ensure we are not overfitting in the process of calibrating with GP regression, we used leave-one-out cross-validation (LOOCV), where we train our model on all data points except one point and predict its value. This is done for all 81 data points, and reported predictions, accuracies, and resulting scatter plots always come from untrained data. It is also important to note that GPs are inherently robust to overfitting since the training procedure penalizes more complex models (higher-rank kernels) via an objective function.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+   </span>
+  </p>
+ </sec>
+ <sec id="sec4.7" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Selecting a Model Chemistry with Low Computational Cost and High Prediction Accuracy</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To obtain fast and accurate predictions of redox potentials using the GP regression calibrated quantum chemistry strategy described above, we tested several different quantum model chemistries. A model chemistry consists of a combination of a geometry optimization (GO) procedure, a method to calculate the single-point electronic energies (SPEs) of optimized molecular geometries, as well as other modeling considerations, such as the number of geometric conformations per compound, the water solvation model, and the p
+   <span class="italic">K</span>
+   <sub>a</sub> estimation strategy.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We explored the following set of methods to obtain optimized geometric conformations: the Universal Force Field (UFF),
+   <span class="sup">
+    <a ref-type="bibr" rid="ref61" href="#ref61">61</a>
+   </span> PM7,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+   </span> DFTB,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref75" href="#ref75">75</a>
+   </span> HF3-c,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref76" href="#ref76">76</a>
+   </span> and PBEh-3c.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref77" href="#ref77">77</a>
+   </span> Additionally, to compute the electronic energies of the optimized structures through single-point energy (SPE) calculations, we considered the following approaches: DFTB, PM7, HF3-c, PBEh-3c, DSD-PBEP86/SVP,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref78" href="#ref78">78</a>
+   </span> and DLPNO–CCD(T)/SVP.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref79" href="#ref79">79</a>
+   </span> Given computational resource constraints, only a subset of all possible combinations of geometry optimization and SPE procedures were explored.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To select a model chemistry from the exploration set, we compared their prediction accuracies—after the GP regression calibration step described above—when tested on the set of experimental redox potentials. We quantified prediction accuracy using three different metrics: Pearson correlation coefficient (
+   <span class="italic">r</span>), the coefficient of determination (
+   <span class="italic">R</span>
+   <span class="sup">2</span>), and mean absolute error (MAE, in mV). Before applying the GP regression calibration step, the double-hybrid functional and linear-scaling couple-clustered methods DSD-PBEP86 and DLPNO–CCD(T) resulted in the highest accuracy. Due to the relatively small variation in prediction accuracy, we picked the cheapest method that still gave reasonable accuracy (MAE &lt; 30 meV), which turned out to be the PM7 semiempirical method for both geometry optimizations and single-point electronic energies. It should be noted that our geometry is a single, UFF optimized conformation per molecule. For PBEh-3c and HF-3c we also considered utilizing multiple conformers obtained with the ETKDG force field
+   <span class="sup">
+    <a ref-type="bibr" rid="ref62" href="#ref62">62</a>
+   </span> with significant improvement in accuracy over a single conformer (see 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>). For other chemical applications (e.g., redox flow batteries) and molecular data sets, adequately accounting for multiple conformers might have an important influence on the accuracy of the calculations. A single missed hydrogen bond in one reacting partner, but not the other, could easily introduce large errors in the predicted redox potential. As such the adequacy of using just a single geometry should be verified.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To test for statistically significant differences of the prediction accuracy summary statistics of different model chemistries (e.g., GCM versus GP-calibrated PM7), we performed a nonparametric bootstrap hypothesis test: we subsampled data points from the table of redox reactions with experimental data and computed the prediction accuracy summary statistics [Pearson 
+   <span class="italic">r</span>, 
+   <span class="italic">R</span>
+   <span class="sup">2</span>, MAE, root-mean-square error (RMSE)] for each subsample. We then count the fraction of subsampled GCM data sets that result in summary statistics that are greater than or equal in value to the summary statistics of the model chemistry we are comparing against (e.g., GP-calibrated PM7).
+  </p>
+ </sec>
+ <sec id="sec4.8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Group Contribution Method (GCM) Estimates of Redox Potentials</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We compared the accuracies obtained using the GP regression calibrated quantum chemistry approach described above against those obtained with the commonly used GCM.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref14" href="#ref14">14</a>,
+    <a ref-type="bibr" rid="ref18" href="#ref18">18</a>,
+    <a ref-type="bibr" rid="ref80" href="#ref80">80</a>
+   </span> We use the GCM implementation of Noor et al. which was adapted to the thermodynamics of biochemical reactions.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+   </span> Briefly, group energies of all compounds in the KEGG database are stored in a group matrix, with rows corresponding to compounds and columns corresponding to groups. Associated to each group is a group energy corresponding to the energy for the group’s major protonation state (major species) at pH = 7. To obtain a GCM-based estimate for a standard transformed reduction potential for the major species at pH = 7, we take the difference in group energy vectors for all products and substrate in the reaction. We then transform the resulting standard redox potentials 
+   <span class="italic">E</span>°(major species at pH = 7) to the standard 
+   <span class="italic">transformed</span> redox potential at pH = 7, 
+   <span class="italic">E</span>′°(pH = 7), using the same p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates and Alberty transform approach described above.
+  </p>
+ </sec>
+ <sec id="sec4.9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Redox Network Expansion Algorithm with Cheminformatic Reaction Strings</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We implemented a network expansion algorithm to iteratively reduce carbonyl functional groups and oxidized alcohol/amine functional groups for a subset of the natural metabolites of the KEGG database. Due to constraints in available computational resources to run electronic structure calculations, we used the set of all metabolic compounds in the KEGG database with 21 carbon atoms or fewer as seed metabolites. Using the RDKit open source cheminformatics software, we identify carbonyl functional groups (alcohol/amine functional groups) in each of the seed KEGG metabolites and transform them through a redox reaction to the corresponding reduced (oxidized) alcohol/amine (carbonyl). In practice, this is done using SMARTS reaction strings as implemented in RDKit and iteratively applying them to SMILES representations
+   <span class="sup">
+    <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+   </span> of the KEGG metabolites. The SMARTS reaction strings for the reduction and oxidation reactions considered here are shown in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Tables S2 and S3</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We iteratively apply the reduction/oxidation reaction transformations to the compounds generated from KEGG seed metabolites. We terminate the iterations when the resulting product has, in the case of reductions, no more carbonyl functional groups that can be reduced (or in the case of oxidative transformations, no more alcohol/amine functional groups that can be oxidized to carbonyls). All software was written using the Python programming language.</p>
+ </sec>
+</sec>

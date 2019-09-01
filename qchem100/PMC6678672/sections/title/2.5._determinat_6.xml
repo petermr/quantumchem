@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2dot5-ijerph-16-02518" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.5. Determination of Fluorescence Lifetime</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The fluorescence lifetime of quantum dots was fitted by formula (2), and the weighted-average fluorescence lifetime 
+  <div class="inline-formula">
+   <div id="mm2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="sans-serif" class="mi">τ</span>
+       <div class="mrow">
+        <span class="mi">av</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> was calculated by formula (3):
+  <div id="FD2-ijerph-16-02518" class="disp-formula">
+   <span class="label">(2)</span>
+   <div id="mm3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">R</span>
+      <span stretchy="false" class="mo">(</span>
+      <span mathvariant="normal" class="mi">t</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">B</span>
+       <span class="mn">1</span>
+      </div>
+      <div class="msup">
+       <span mathvariant="normal" class="mi">e</span>
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mo">−</span>
+          <div class="mfrac">
+           <span mathvariant="normal" class="mi">t</span>
+           <div class="mrow">
+            <div class="msub">
+             <span mathvariant="sans-serif" class="mi">τ</span>
+             <span class="mn">1</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">B</span>
+       <span class="mn">2</span>
+      </div>
+      <div class="msup">
+       <span mathvariant="normal" class="mi">e</span>
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mo">−</span>
+          <div class="mfrac">
+           <span mathvariant="normal" class="mi">t</span>
+           <div class="mrow">
+            <div class="msub">
+             <span mathvariant="sans-serif" class="mi">τ</span>
+             <span class="mn">2</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+      </div>
+      <span class="mtext"> </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="FD3-ijerph-16-02518" class="disp-formula">
+   <span class="label">(3)</span>
+   <div id="mm4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="sans-serif" class="mi">τ</span>
+       <div class="mrow">
+        <span class="mi">av</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div mathsize="80%" displaystyle="true" class="mstyle">
+         <span class="mo">∑</span>
+        </div>
+        <div class="msub">
+         <span mathvariant="normal" class="mi">B</span>
+         <span mathvariant="normal" class="mi">i</span>
+        </div>
+        <div class="msubsup">
+         <span mathvariant="sans-serif" class="mi">τ</span>
+         <span mathvariant="normal" class="mi">i</span>
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div mathsize="80%" displaystyle="true" class="mstyle">
+         <span class="mo">∑</span>
+        </div>
+        <div class="msub">
+         <span mathvariant="normal" class="mi">B</span>
+         <span mathvariant="normal" class="mi">i</span>
+        </div>
+        <div class="msub">
+         <span mathvariant="sans-serif" class="mi">τ</span>
+         <span mathvariant="normal" class="mi">i</span>
+        </div>
+       </div>
+      </div>
+      <span class="mtext"> </span>
+     </div>
+    </div>
+   </div>
+  </div> where τ
+  <sub>1</sub> and τ
+  <sub>2</sub> represent time constants, and B
+  <sub>1</sub> and B
+  <sub>2</sub> represent the weight.
+ </p>
+</sec>

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Bound excitons and trions in TMDCs</div>
+  <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Recent interest in TMDCs has mostly focused on compounds based on molybdenum and tungsten as transition metals, and sulfur and selenium as chalcogens. Across these compounds, the quasiparticle band structure is particularly distinct for molybdenum-based (Mo
+   <span class="italic">X</span>
+   <sub>2</sub>) and tungsten-based (W
+   <span class="italic">X</span>
+   <sub>2</sub>) TMDCs. This is illustrated in Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, showing a schematic of the band structures near the 
+   <span class="italic">K</span> and 
+   <span class="italic">K</span>′ points, highlighting the spin–orbit splitting of the conduction bands
+   <span class="sup">
+    <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+   </span>. The splitting of the valence bands is an order of magnitude larger than that of the conduction bands, and results in two distinct absorptive transitions observable in the exciton spectrum. We restrict ourselves to the lowest-energy transition (referred to as 
+   <span class="italic">A</span> exciton) and its associated negatively charged trion complexes to focus on the interpretation of experiments that energy selectively excite this transition, although noting that a generalization to the other transition (
+   <span class="italic">B</span> exciton) is straightforward. We furthermore consider helicity-selective excitation in the 
+   <span class="italic">K</span> valley; identical results would be obtained for the 
+   <span class="italic">K</span>′ valley upon flipping the spins of the involved quasiparticles. As is well known, the combination of energy and helicity selectivity to probe 
+   <span class="italic">A</span> excitons in the 
+   <span class="italic">K</span> valley effectively corresponds to spin-selective excitation, since the involved quasiparticles are constrained to a well-defined spin (spin-up, following the convention of Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>).
+   <div id="Fig1" class="fig">
+    <span class="label">Fig. 1</span>
+    <div class="caption">
+     <p>Schematic illustration of the band structure and optical transitions of monolayer Mo
+      <span class="italic">X</span>
+      <sub>2</sub> and W
+      <span class="italic">X</span>
+      <sub>2</sub>. Shown are the spin-dependent band structures near the 
+      <span class="italic">K</span> and 
+      <span class="italic">K</span>′ points, derived from first-principles calculations
+      <span class="sup">
+       <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+      </span>, including the (helicity-selective) optical transitions and electronic configurations involved in 
+      <span class="italic">A</span> excitons and associated negatively charged trions (the lower spin–split valence band is not shown). Singlet trions are intervalley in Mo
+      <span class="italic">X</span>
+      <sub>2</sub> but intravalley in W
+      <span class="italic">X</span>
+      <sub>2</sub>; the situation is reversed for triplet trions. Note that the depicted vertical transitions become mixed as a result of quasiparticle interactions
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11497_Fig1_HTML" id="d29e452" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">Negatively charged trions, consisting of two conduction band electrons interacting with one hole in the valence band, are commonly characterized based on the spin of the two electrons, leading to singlet or triplet trions when the spins are opposite or equal, respectively. In TMDCs, the combination of valley and spin selectivity implies selection rules for trions at low temperatures (with the thermal energy smaller than the conduction band splitting). The behavior is illustrated in Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, which considers selective excitation of the 
+   <span class="italic">A</span> transition in the 
+   <span class="italic">K</span> valley, creating an electron–hole pair in addition to an initial one-electron state. At low temperatures, the initial electron is relaxed in the conduction band minimum of either the spin-down state in the 
+   <span class="italic">K</span>′ valley or the spin-up state in the 
+   <span class="italic">K</span> valley. As a result, the corresponding 
+   <span class="italic">intervalley</span> trions have singlet spin, whereas 
+   <span class="italic">intravalley</span> trions have triplet spin. It is easily verified that the opposite relation holds for W
+   <span class="italic">X</span>
+   <sub>2</sub>. We note that the excited electrons have identical valley and spin states only for the triplet trion in Mo
+   <span class="italic">X</span>
+   <sub>2</sub>, and (repulsive) exchange interactions between conduction band electrons are therefore expected to be strongest in this case.
+  </p>
+  <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Since the many-body Hamiltonian conserves momentum, the trion states can be expressed as
+   <div id="Equ1" class="disp-formula">
+    <span class="label">1</span>
+    <div class="alternatives">
+     <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\Psi ^\alpha } \right\rangle = \mathop {\sum}\limits_{c_1,c_2,v} {\mathop {\sum}\limits_{{\mathbf{k}}_1,{\mathbf{k}}_2} {C_{c_1,c_2,v}^\alpha } } ({\mathbf{k}}_1,{\mathbf{k}}_2)\;a_{v,{\mathbf{k}}_1 + {\mathbf{k}}_2 - {\mathbf{Q}}}\;a_{c_2,{\mathbf{k}}_2}^\dagger a_{c_1,{\mathbf{k}}_1}^\dagger \left| 0 \right\rangle ,$$\end{document}</span>
+     <div id="M2" class="math">
+      <div close="⟩" open="∣" separators="" class="mfenced">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">Ψ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">α</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="munder">
+       <div class="mrow">
+        <span class="mo"> ∑</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <span class="mi">v</span>
+       </div>
+      </div>
+      <div class="munder">
+       <div class="mrow">
+        <span class="mo">∑</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">C</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span width="0.16em" class="mspace"/>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <span mathvariant="bold" class="mi">Q</span>
+       </div>
+      </div>
+      <span width="0.16em" class="mspace"/>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">†</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span mathvariant="bold" class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">†</span>
+       </div>
+      </div>
+      <div close="⟩" open="∣" separators="" class="mfenced">
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+     <div xlink:href="41467_2019_11497_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <span class="italic">c</span>
+   <sub>1</sub>, 
+   <span class="italic">c</span>
+   <sub>2</sub>, and 
+   <span class="italic">v</span> label the conduction and valence bands (including spin) and with 
+   <span class="bold">Q</span> as the momentum of the initial conduction band electron. In our simulation, details of which can be found in 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Methods</a>, the band structure is described by a parameterized two-band model
+   <span class="sup">
+    <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+    <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+    <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+   </span>, motivated by prior work showing negligible differences in optical properties compared to a more sophisticated three-band analog
+   <span class="sup">
+    <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+    <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+   </span>. The trion states are calculated by configuration interaction using a many-body Hamiltonian containing a screened Coulomb coupling term, as done in previous extensions of the Bethe–Salpeter equation to three-particle complexes
+   <span class="sup">
+    <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+    <a ref-type="bibr" rid="CR39" href="#CR39">39</a>,
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+   </span>. The screened Coulomb interaction is approximated as orbital-independent and isotropic, using a model dielectric function, 
+   <span class="italic">W</span>(
+   <span class="bold">q</span>) = 2
+   <span class="italic">πe</span>
+   <span class="sup">2</span>/
+   <span class="italic">qε</span>(
+   <span class="italic">q</span>) with 
+   <span class="italic">ε</span>(
+   <span class="italic">q</span>) = 1 + 2
+   <span class="italic">πχ</span>
+   <sub>2D</sub>
+   <span class="italic">q</span>, where 
+   <span class="italic">χ</span>
+   <sub>2D</sub> is the material-dependent two-dimensional polarizability
+   <span class="sup">
+    <a ref-type="bibr" rid="CR4" href="#CR4">4</a>,
+    <a ref-type="bibr" rid="CR38" href="#CR38">38</a>,
+    <a ref-type="bibr" rid="CR41" href="#CR41">41</a>,
+    <a ref-type="bibr" rid="CR42" href="#CR42">42</a>
+   </span>. For two-dimensional materials, a very dense sampling of the Brillouin zone is required for convergence
+   <span class="sup">
+    <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+   </span>; however, such a dense sampling makes the trion Hilbert space prohibitively large. To overcome this obstacle, we used a uniform 
+   <span class="italic">N</span> × 
+   <span class="italic">N</span> Monkhorst–Pack mesh with a cut-off radius around the 
+   <span class="italic">K</span> and 
+   <span class="italic">K</span>′ points, denoted 
+   <span class="italic">k</span>
+   <sub>0</sub>. Employed previously by Qiu et al.
+   <span class="sup">
+    <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+   </span> for excitons, this truncation scheme utilizes the valley confinement of low-energy excited states, and results in two convergence parameters, 
+   <span class="italic">N</span> and 
+   <span class="italic">k</span>
+   <sub>0</sub>.
+  </p>
+  <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">We first consider the exciton and trion binding energies predicted by this approach. The results are summarized in Table 
+   <a rid="Tab1" ref-type="table" href="#Tab1">1</a>, while details are presented in Supplementary Figs. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> and 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. The exciton binding energies are found to rapidly converge with 
+   <span class="italic">k</span>
+   <sub>0</sub>, with near convergence reached already for 
+   <span class="italic">k</span>
+   <sub>0</sub> = 0.10 (in units of the inverse lattice constant, 2
+   <span class="italic">π</span>/
+   <span class="italic">a</span> (The inverse lattice constants for MoS
+   <sub>2</sub>, WS
+   <sub>2</sub>, MoSe
+   <sub>2</sub>, and WSe
+   <sub>2</sub> are 1.97, 1.96, 1.90, and 1.90 Å
+   <span class="sup">−1</span>, respectively.)). However, convergence with 
+   <span class="italic">N</span> is very slow, with 
+   <span class="italic">N</span> ranging from a few tens to a few hundred. Extrapolation of our results to 
+   <span class="italic">N</span> = ∞ yields exciton binding energies in reasonable agreement with those obtained in a numerically exact diffusion Monte Carlo study of the closely related real-space exciton problem
+   <span class="sup">
+    <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+   </span>, with 0.53 eV (vs. 0.55 eV) for MoS
+   <sub>2</sub>, 0.50 eV (0.52 eV) for WS
+   <sub>2</sub>, 0.46 eV (0.51 eV) for MoSe
+   <sub>2</sub>, and 0.45 eV (0.47 eV) for WSe
+   <sub>2</sub>. In contrast, the trion binding energies depend only weakly on 
+   <span class="italic">N</span>, suggesting a cancellation of sampling errors between the total exciton and trion energies, while a modest dependence on 
+   <span class="italic">k</span>
+   <sub>0</sub> is found. For MoS
+   <sub>2</sub> and MoSe
+   <sub>2</sub>, our model predicts singlet trion binding energies of 31 and 27 meV, respectively, whereas the triplet trion is found to be unbound as a result of the repulsive interactions between conduction band electrons. These interactions are negligible for tungsten-based TMDCs, where we find bound singlet and triplet trions with virtually identical binding energies of 40 and 37 meV for WS
+   <sub>2</sub> and WSe
+   <sub>2</sub>, respectively. We note, however, that modest energetic splitting between these states
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>–
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+   </span> is in principle possible due to exchange interactions involving conduction and valence band electrons not considered in our model. The agreement with diffusion Monte Carlo results (singlet trion binding energies of 34 meV for both for MoS
+   <sub>2</sub> and WS
+   <sub>2</sub>, 28 meV for MoSe
+   <sub>2</sub>, and 30 meV for WSe
+   <sub>2</sub>)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+   </span> is again reasonable.
+   <div id="Tab1" class="table-wrap">
+    <span class="label">Table 1</span>
+    <div class="caption">
+     <p>Exciton and trion binding energies predicted by our model</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th/>
+       <th>Exciton (eV)</th>
+       <th>Singlet X
+        <span class="sup">−</span> (meV)
+       </th>
+       <th>Triplet X
+        <span class="sup">−</span> (meV)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>MoS
+        <sub>2</sub>
+       </td>
+       <td>0.53 (0.55)</td>
+       <td>31 (34)</td>
+       <td>Unbound</td>
+      </tr>
+      <tr>
+       <td>WS
+        <sub>2</sub>
+       </td>
+       <td>0.50 (0.52)</td>
+       <td>40 (34)</td>
+       <td>40</td>
+      </tr>
+      <tr>
+       <td>MoSe
+        <sub>2</sub>
+       </td>
+       <td>0.46 (0.51)</td>
+       <td>27 (28)</td>
+       <td>Unbound</td>
+      </tr>
+      <tr>
+       <td>WSe
+        <sub>2</sub>
+       </td>
+       <td>0.45 (0.47)</td>
+       <td>37 (30)</td>
+       <td>37</td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="table-wrap-foot">
+     <p>Shown are extrapolations of our calculated data to 
+      <span class="italic">N</span> = ∞. Numbers within parentheses are exact results from ref. 
+      <span class="sup">
+       <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+      </span>. Note that the results shown here do not include repulsive interactions between conduction and valence band electrons (see text)
+     </p>
+    </div>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Linear absorption and doping dependence</div>
+  <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> presents zero-temperature exciton and trion linear absorption spectra for MoS
+   <sub>2</sub>, evaluated via
+   <div id="Equ2" class="disp-formula">
+    <span class="label">2</span>
+    <div class="alternatives">
+     <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S(\omega ) = \frac{{2\pi }}{\hbar }\mathop {\sum}\limits_\alpha {\left| {\left\langle {\Psi ^{\mathrm{i}}} \right|V\left| {\Psi ^\alpha } \right\rangle } \right|^2} \Gamma (E^\alpha - E^{\mathrm{i}} - \hbar \omega ).$$\end{document}</span>
+     <div id="M4" class="math">
+      <span class="mi">S</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">π</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">ℏ</span>
+       </div>
+      </div>
+      <div class="munder">
+       <div class="mrow">
+        <span class="mo"> ∑</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div close="∣" open="∣" separators="" class="mfenced">
+         <div class="mrow">
+          <div close="∣" open="⟨" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span mathvariant="normal" class="mi">i</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mi">V</span>
+          <div close="⟩" open="∣" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">α</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mi">Γ</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">α</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">i</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <span class="mi">ℏ</span>
+        <span class="mi">ω</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">.</span>
+     </div>
+     <div xlink:href="41467_2019_11497_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>Here, 
+   <span class="italic">V</span> = (
+   <span class="italic">eA</span>/
+   <span class="italic">mc</span>)
+   <span class="bold">
+    <span class="italic">λ</span>
+   </span> · 
+   <span class="bold">p</span> is the light–matter interaction, where 
+   <span class="italic">A</span> is the vector potential, 
+   <span class="italic">e</span> and 
+   <span class="italic">m</span> are the electron charge and mass, 
+   <span class="italic">c</span> is the speed of light, 
+   <span class="bold">p</span> is the momentum operator, and 
+   <span class="bold">
+    <span class="italic">λ</span>
+   </span> is the polarization of the optical field. Here we use circular polarization that selectively excites carriers in the 
+   <span class="italic">K</span> valley. For the exciton spectrum, the sum is over all eigenstates of the electron–hole Bethe–Salpeter equation, whereas the initial state, labeled “i,” is the Fermi vacuum. For the trion spectrum, the sum is over all eigenstates of the two-electron-one-hole Bethe–Salpeter equation, and the initial state has one excess electron at the minimum of the conduction band, as discussed above. Physically, this implies that the absorption event occurs such that an excess electron (i.e., due to negative doping) resides within the coherence length of the optically created electron–hole pair. For singlet (triplet) trions, this electron has spin down (up) and momentum 
+   <span class="bold">Q</span> at the 
+   <span class="italic">K</span>′ (
+   <span class="italic">K</span>) point; see Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. Note that the optical selection rules involved in exciton and trion absorption are otherwise fully identical (in terms of momentum, spin, and valley degrees of freedom). The function Γ, containing the excited-state lifetime and other lineshape broadening effects, is taken to be a Lorentzian with a width of 4 meV. Shown in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> are results for 
+   <span class="italic">N</span> = 80 and 
+   <span class="italic">k</span>
+   <sub>0</sub> = 0.10, while spectra resulting from different convergence parameters are shown in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a> and in Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>.
+   <div id="Fig2" class="fig">
+    <span class="label">Fig. 2</span>
+    <div class="caption">
+     <p>Exciton and trion absorption spectra and doping dependence. 
+      <span class="bold">a</span> Calculated helicity-selective singlet (solid curve) and triplet (dashed curve) trion spectra of monolayer MoS
+      <sub>2</sub>. The two-particle exciton spectrum is shown in gray. For select singlet trion states, the wavefunction in reciprocal space near the 
+      <span class="italic">K</span> point is shown as a heatmap. 
+      <span class="bold">b</span> Singlet trion spectra for varying Brillouin zone sampling resolutions, 
+      <span class="italic">N</span>. Vertical line at 2.0 eV depicts the converged exciton resonance energy. Trion and exciton resonance peak are labelled as 
+      <span class="italic">I</span>
+      <span class="sup">−</span> and 
+      <span class="italic">I</span>
+      <span class="sup">0</span>, respectively. 
+      <span class="bold">c</span> Trion-to-exciton peak intensity ratio as a function of the electron doping density, calculated as 
+      <div id="IEq1" class="inline-formula">
+       <div class="alternatives">
+        <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$2/\sqrt 3 N^2a^2$$\end{document}</span>
+        <div id="M6" class="math">
+         <span class="mn">2</span>
+         <span class="mo">∕</span>
+         <div class="msqrt">
+          <span class="mn">3</span>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">N</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">a</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+        <span xlink:href="41467_2019_11497_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+       </div>
+      </div> with the lattice constant given by 
+      <span class="italic">a</span> = 3.193 Å for MoS
+      <sub>2</sub> (results are shown for 
+      <span class="italic">N</span> ≥ 40). Linear fit with intercept at the origin shown as dash
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11497_Fig2_HTML" id="d29e1293" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">The exciton spectrum in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> shows typical behavior, with a pronounced 1
+   <span class="italic">s</span> resonance at 2.00 eV and higher lying states corresponding to a non-hydrogenic Rydberg series
+   <span class="sup">
+    <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+   </span>. Consistent with the discussion above, the singlet trion spectrum shows a peak located at ~1.97 eV corresponding to a bound trion, whereas the triplet trion spectrum shows no such peak. Importantly, in both trion spectra we find peaks coinciding with the neutral exciton energies. These can be understood as continuum resonances of the trion, corresponding to a free electron that is unbound from the exciton
+   <span class="sup">
+    <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+   </span>. This picture is consistent with the 
+   <span class="italic">k</span>-space singlet trion wavefunctions that we also present in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>, which are plotted as a function of the hole momentum with one of the electrons fixed at 
+   <span class="italic">K</span> (the other electrons momentum is then equal to the hole momentum, due to momentum conservation). Besides showing an 
+   <span class="italic">s</span>-type azimuthal symmetry of the bound singlet trion state, these wavefunctions confirm that the 
+   <span class="italic">entire</span> Rydberg series is reproduced by the trion calculations, including the broken degeneracy between 2
+   <span class="italic">s</span> and 2
+   <span class="italic">p</span> excitons
+   <span class="sup">
+    <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+   </span> (the finite oscillator strength observed for the latter is the result of limited sampling, and disappears with increasing 
+   <span class="italic">N</span>). We conclude that the bound trion state and such exciton resonances share a common ground state, corresponding to a single excess electron at the conduction band minimum. This common ground state suggests that a coherent exciton–trion cross-peak should be observable in 2DES, which we turn to next, after briefly discussing the role of electron doping.
+  </p>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">While the density of Brillouin zone sampling serves as a convergence parameter, it also provides a proxy to study the doping dependence. Our 
+   <span class="italic">k</span>-space calculations effectively involve a real-space periodic lattice with 
+   <span class="italic">N</span> × 
+   <span class="italic">N</span> unit cells over which a single excess electron is distributed in the initial state. Hence, with increasing 
+   <span class="italic">N</span> the electron doping density decreases. This is borne out in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a> where we show singlet trion absorption for varying 
+   <span class="italic">N</span>, which shows an intensity redistribution from trion-to-exciton with increasing sampling resolution. This behavior is quantified in terms of the effective doping density in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a>, showing a linear dependence of the trion-to-exciton peak intensity ratio to the electron doping density. We note that the simplified electronic structure used here (two bands and a static, model dielectric function) combined with the Brillouin zone truncation scheme enables us to study convergence behavior and low doping densities beyond that achievable by a fully first-principles approach and full Brillouin zone sampling
+   <span class="sup">
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+   </span>.
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Exciton–trion coherence and spectral quantum beats</div>
+  <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">We next turn our attention to 2DES, through which the coherent
+   <span class="sup">
+    <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+   </span> and incoherent
+   <span class="sup">
+    <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+   </span> dynamics of excited states can be monitored. In this technique, details of which can be found elsewhere
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>,
+    <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+   </span>, a material interacts with four ultrashort laser pulses, which can be grouped into an initial “excitation” pair and a subsequent “detection” pair, and the resulting signal is commonly presented as an excitation–detection correlation spectrum for each time delay between the two pulse pairs. Different combinations of pulse interactions result in different spectral signals. In our aim to interpret recent experiments on TMDCs
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>, we specifically focus on the non-rephasing stimulated emission signal,
+   <div id="Equ3" class="disp-formula">
+    <span class="label">3</span>
+    <div class="alternatives">
+     <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S(\omega _1,t_2,\omega _3) = - (\frac{{2\pi }}{\hbar })^2\mathop {\sum}\limits_{\alpha ,\beta } {\left| {\left\langle {\Psi ^{\mathrm{i}}} \right|V\left| {\Psi ^\alpha } \right\rangle } \right|^2} \left| {\left\langle {\Psi ^{\mathrm{i}}} \right|V\left| {\Psi ^\beta } \right\rangle } \right|^2\\ \times e^{ - (i\omega _{\alpha \beta } + \gamma _{\alpha \beta })t_2}\Gamma ^ \ast (E^\alpha - E^{\mathrm{i}} - \hbar \omega _1)\Gamma (E^\beta - E^{\mathrm{i}} - \hbar \omega _3).$$\end{document}</span>
+     <div id="M8" class="math">
+      <span class="mi">S</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">ω</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">t</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">ω</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mo">-</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mn">2</span>
+            <span class="mi">π</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">ℏ</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="munder">
+       <div class="mrow">
+        <span class="mo"> ∑</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">α</span>
+        <span class="mo">,</span>
+        <span class="mi">β</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div close="∣" open="∣" separators="" class="mfenced">
+         <div class="mrow">
+          <div close="∣" open="⟨" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span mathvariant="normal" class="mi">i</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mi">V</span>
+          <div close="⟩" open="∣" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">α</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div close="∣" open="∣" separators="" class="mfenced">
+         <div class="mrow">
+          <div close="∣" open="⟨" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span mathvariant="normal" class="mi">i</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mi">V</span>
+          <div close="⟩" open="∣" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">Ψ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">β</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">×</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">e</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">i</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">ω</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">α</span>
+            <span class="mi">β</span>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">γ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">α</span>
+            <span class="mi">β</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">)</span>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">t</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">Γ</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">*</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">α</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">i</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <span class="mi">ℏ</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">ω</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mi">Γ</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">β</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">i</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <span class="mi">ℏ</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">ω</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">.</span>
+     </div>
+     <div xlink:href="41467_2019_11497_Article_Equ3.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>Here, 
+   <span class="italic">ω</span>
+   <sub>1</sub> and 
+   <span class="italic">ω</span>
+   <sub>3</sub> are the excitation and detection energies, respectively, and 
+   <span class="italic">t</span>
+   <sub>2</sub> is the time delay. The complex lineshape function is given by Γ(
+   <span class="italic">ω</span>) = 1/(
+   <span class="italic">iω</span> − 
+   <span class="italic">σ</span>), with 
+   <span class="italic">σ</span> as the linebroadening parameter. The excitation energy difference between excited states 
+   <span class="italic">α</span> and 
+   <span class="italic">β</span> is given by 
+   <span class="italic">ω</span>
+   <sub>
+    <span class="italic">αβ</span>
+   </sub> = (
+   <span class="italic">E</span>
+   <sub>
+    <span class="italic">α</span>
+   </sub> − 
+   <span class="italic">E</span>
+   <sub>
+    <span class="italic">β</span>
+   </sub>)/ℏ and 
+   <span class="italic">γ</span>
+   <sub>
+    <span class="italic">αβ</span>
+   </sub> represents the associated decoherence rate. The most important mechanistic origin of decoherence is believed to be the scattering of quasiparticles with lattice phonons, and a microscopic investigation of this phenomenon is an interesting topic for future research, albeit beyond the scope of the present study. The damped oscillation as a function of the time delay (quantum beat) contained in the exponential is mapped onto the 2DES signal weighted by the product of transition matrix elements between the excited states and a common initial state Ψ
+   <span class="sup">i</span>. In particular, excited states that do not share a common initial state, as might arise in inhomogeneous samples, do not show coherent cross-peaks in 2DES.
+  </p>
+  <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Recently, Hao et al.
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span> recorded time-dependent oscillatory signals in 2DES of electron-doped MoSe
+   <sub>2</sub> monolayers at 20 K, yielding indications of coherent interactions between the bound trion and the 1
+   <span class="italic">s</span> exciton, and the observed quantum beat decay suggested an associated dephasing time of 
+   <div id="IEq2" class="inline-formula">
+    <div class="alternatives">
+     <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\gamma _{{\mathrm{X - X}}^ - }^{ - 1} = 250$$\end{document}</span>
+     <div id="M10" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">γ</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">X-X</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">250</span>
+     </div>
+     <span xlink:href="41467_2019_11497_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> fs. However, a reliable determination of the exciton–trion coherence time requires detailed knowledge of how such quantum beats are affected by possible interfering oscillatory signals. Our many-body formalism, in its ability to simulate 2DES, allows us to address this in a straightforward manner, while offering the prospect of microscopically investigating the decoherence mechanisms. For now we resort to a phenomenological treatment of the latter, and study the 2DES of TMDCs using MoSe
+   <sub>2</sub> and WSe
+   <sub>2</sub> as representative examples. In Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3a</a>, we show the sum of the singlet and triplet 2D spectrum for MoSe
+   <sub>2</sub> resulting from Eq. (
+   <a rid="Equ3" ref-type="" href="#Equ3">3</a>) at zero time delay and with cocircularly polarized pulses, obtained for the same convergence parameters as in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>. The impulsive signal is multiplied by a Gaussian laser spectrum centered at the bound trion state and with a standard deviation of 17 meV, accounting for the limited laser bandwidth affecting the experimental measurements
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>. The agreement with the 2DES measurements by Hao et al.
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span> is excellent, with the spectrum showing four peaks in a square arrangement, resulting from two optical transitions readily identified with the bound trion and the 1
+   <span class="italic">s</span> exciton.
+   <div id="Fig3" class="fig">
+    <span class="label">Fig. 3</span>
+    <div class="caption">
+     <p>Exciton–trion quantum beats in two-dimensional spectroscopy. 
+      <span class="bold">a</span> Total (singlet plus triplet) trion two-dimensional electronic spectrum of monolayer MoSe
+      <sub>2</sub>, calculated through Eq. (
+      <a rid="Equ3" ref-type="" href="#Equ3">3</a>) at zero time delay (
+      <span class="italic">t</span>
+      <sub>2</sub> = 0 fs). 
+      <span class="bold">b</span> Time-dependent signal at the lower cross-peak (X–X
+      <span class="sup">−</span>) location for MoSe
+      <sub>2</sub> (red) and WSe
+      <sub>2</sub> (blue), shown together with an exponential indicating the phenomenological exciton–trion coherence decay (black dashed). For WSe
+      <sub>2</sub>, results are shown for fully degenerate singlet and triplet trions (solid), and for which the triplet trion is blue-shifted by 7 meV as a result of exchange interactions (dashed). Shown in all cases are the real (absorptive) part of the complex signal
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11497_Fig3_HTML" id="d29e1820" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">According to Eq. (
+   <a rid="Equ3" ref-type="" href="#Equ3">3</a>), the quantum beats due to the exciton–trion coherence are mapped onto the cross-peaks corresponding to trion excitation and exciton detection, and vice versa. Indeed, these spectral locations were employed in the quantum beat measurements by Hao et al.
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>. However, as discussed above, the quantum beats only result from pairs of states (
+   <span class="italic">α</span> and 
+   <span class="italic">β</span>) that are optically coupled to a common initial state, Ψ
+   <span class="sup">i</span>. In Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> we observed the 1
+   <span class="italic">s</span> exciton in all of the trion and exciton calculations, but only its resonance in the 
+   <span class="italic">singlet</span> trion configuration contributes to exciton–trion quantum beats observed for Mo
+   <span class="italic">X</span>
+   <sub>2</sub>, since only this resonance optically couples to the same initial state as the bound trion (an excess spin-down electron relaxed in the 
+   <span class="italic">K</span>′ valley). Hence, it is by virtue of the emergence of an exciton resonance in the trion (two-electron-one-hole) Hilbert space, that coherent interactions between excitons and trions arise.
+  </p>
+  <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a> shows the time-dependent signal of the lower (below-diagonal) cross-peak for MoSe
+   <sub>2</sub> resulting from our model while imposing 
+   <div id="IEq3" class="inline-formula">
+    <div class="alternatives">
+     <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\gamma _{{\mathrm{X - X}}^ - }^{ - 1} = 250$$\end{document}</span>
+     <div id="M12" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">γ</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">X-X</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">250</span>
+     </div>
+     <span xlink:href="41467_2019_11497_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> fs (the other cross-peak, shown in Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>, in principle exhibits an identical signal except for incoherent contributions from population transfer that are not considered in our simulation). The signal features a pronounced oscillation, consistent with the measurements
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>, with the oscillation period matching the Fourier inverse of the singlet trion binding energy. Consistent with the above discussion, we find this quantum beat to result from the bound singlet trion state coherently interacting with its exciton resonance. A comparison of the associated quantum beat decay with the reference decay function 
+   <div id="IEq4" class="inline-formula">
+    <div class="alternatives">
+     <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$e^{ - t_2\gamma _{{\mathrm{X - X}}^ - }}$$\end{document}</span>
+     <div id="M14" class="math">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">e</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">t</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">γ</span>
+         </div>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">X-X</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">-</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11497_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> shows the destructive interference with auxiliary states to be negligible, such that the exciton–trion coherence time is indeed accurately reflected in this oscillatory signal. This substantiates that quantum dephasing in MoSe
+   <sub>2</sub> induces a measurable coherence decay time of 250 fs, as inferred from the reported 2DES experiments
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>.
+  </p>
+  <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">For W
+   <span class="italic">X</span>
+   <sub>2</sub>, both singlet and triplet trions form bound states, and as such both contribute to exciton–trion quantum beats resulting from coherent interactions with their respective exciton resonance. Previous reports have suggested that repulsive exchange interactions between conduction and valence band electrons breaks the degeneracy of the singlet and triplet trions by about 7 meV
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>–
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+   </span>. Inclusion of such interactions in the interaction kernel of the Bethe–Salpeter equation requires access to the real-space structure of the underlying orbitals, which our level of formalism does not provide. However, such interactions are known to be very local in real space and thus well approximated by a 
+   <span class="italic">k</span>-independent contribution to the Bethe–Salpeter equation solution
+   <span class="sup">
+    <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+   </span>. In our simulation, we are flexible in including or excluding this contribution, thereby modulating the degeneracy of the singlet and triplet trions. If we exclude the interaction, the beating pattern shown in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a> is very similar to the MoSe
+   <sub>2</sub> quantum beat, apart from a somewhat higher oscillation frequency (consistent with a higher binding energy). Again, the quantum beat decay is found to form a reliable probe of the underlying exciton–trion dephasing time. However, if we include an exchange interaction leading to an energy splitting of 7 meV, the beating signal changes appreciably, as shown in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a>. The nondegenerate trion states lead to an apparent destructive interference in the total (singlet plus triplet) quantum beat, as a result of which the beat decay occurs considerably faster than the actual dephasing time. Altogether, these results demonstrate that the quantum beats observed at the exciton–trion cross-peak locations in 2DES provide a lower bound to the actual exciton–trion coherence time, and that W
+   <span class="italic">X</span>
+   <sub>2</sub> in particular warrants caution because of the presence of two (nearly degenerate) trion species.
+  </p>
+ </sec>
+</sec>

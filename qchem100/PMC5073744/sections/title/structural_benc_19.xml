@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec15" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Structural benchmarking</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Functionals also influence the structural details of molecules. Hence, a benchmarking for the structural influence (Fig. 
+  <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>) can include variation of the functional and of the basis set. To perform this benchmarking we can create a meta-workflow (
+  <span class="italic">Geo_Opt M</span>-
+  <span class="italic">WF</span>) with different types of optimization runs. The basis set is indicated by “2z” and “3z” which denotes the quality of the basis set. Larger basis sets give better agreement with experimental structural information but the calculation time can increase to such an extent that the calculation might no longer be feasible when dealing with molecules of more than 200 atoms. To run structural benchmarking a combination of a particular function and the quality of the basis set can be implemented as atomic workflows, for example: 
+  <span class="italic">B3LYP</span>-
+  <span class="italic">2 WF, B3LYP</span>-
+  <span class="italic">3 WF, TPSSh</span>-
+  <span class="italic">2 WF, TPSSh</span>-
+  <span class="italic">3 WF</span>, etc. (See in Fig. 
+  <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>).
+  <div id="Fig9" class="fig">
+   <span class="label">Fig. 9</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Geo_Opt M</span>-
+     <span class="italic">WF</span> small structural benchmarking meta-workflow
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig9_HTML" id="MO19" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Further, this meta-workflow can easily be extended with post-optimization steps using dispersion correction or solvent models (Fig. 
+  <a rid="Fig10" ref-type="fig" href="#Fig10">10</a>) in a meta
+  <span class="sup">2</span>-workflow (
+  <span class="italic">Struc_Bench M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span>). These steps can be implemented by B3LYP and TPSSh atomic workflows that run the dispersion corrections and solvent models.
+  <div id="Fig10" class="fig">
+   <span class="label">Fig. 10</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Struc_Bench M</span>
+     <span class="sup">
+      <span class="italic">2</span>
+     </span>-
+     <span class="italic">WF</span> structural benchmarking meta
+     <span class="sup">2</span>-workflow using dispersion and solvent models
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig10_HTML" id="MO20" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Taking into account, that the chemist finally needs the frequencies of desired molecules, frequency and optimization tasks should be combined together with the options of dispersion and solvent models. Right in Fig. 
+  <a rid="Fig11" ref-type="fig" href="#Fig11">11</a> there is a three-layer meta-workflow (
+  <span class="italic">Freq_Disp_Opt M</span>- 
+  <span class="italic">WF</span>) that incorporates four atomic workflows. First, the geometry of the selected molecule is optimized by the 
+  <span class="italic">Opt WF</span> atomic workflow. Next, two atomic workflows are executed in parallel calculating the vibrational properties of the molecule by the 
+  <span class="italic">Freq WF</span> atomic workflow and the optimized molecule is re-optimized using dispersion by the 
+  <span class="italic">OptDisp WF</span> atomic workflow. Finally, the corresponding frequencies of the re-optimized molecule are calculated by the 
+  <span class="italic">FreqDisp WF</span> atomic workflow.
+  <div id="Fig11" class="fig">
+   <span class="label">Fig. 11</span>
+   <div class="caption">
+    <p>Left: 
+     <span class="italic">Struc_Opt M</span>
+     <span class="sup">
+      <span class="italic">2</span>
+     </span>-
+     <span class="italic">WF</span> meta
+     <span class="sup">2</span> -workflow for frequency optimization in dispersion and solvent, right: 
+     <span class="italic">Freq_Disp_Opt M</span>-
+     <span class="italic">WF</span> meta-workflow for frequency optimization in dispersion
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig11_HTML" id="MO21" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="italic">Freq_Disp_Opt M</span>- 
+  <span class="italic">WF</span> meta-workflow runs a simulation in gas phase. It can be combined with the 
+  <span class="italic">Freq_Solv Opt M</span>-
+  <span class="italic">WF</span> meta-workflow to run a simulation in a common solvent as polarizable continuum model into a meta
+  <span class="sup">2</span>-workflow. The 
+  <span class="italic">Struc_Opt M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span> meta workflow saves a lot of time of manual job definition and result analysis, easily up to a factor of 10 in terms of the researchers working time.
+ </p>
+</sec>

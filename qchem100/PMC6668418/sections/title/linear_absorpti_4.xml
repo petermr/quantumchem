@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Linear absorption and doping dependence</div>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> presents zero-temperature exciton and trion linear absorption spectra for MoS
+  <sub>2</sub>, evaluated via
+  <div id="Equ2" class="disp-formula">
+   <span class="label">2</span>
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S(\omega ) = \frac{{2\pi }}{\hbar }\mathop {\sum}\limits_\alpha {\left| {\left\langle {\Psi ^{\mathrm{i}}} \right|V\left| {\Psi ^\alpha } \right\rangle } \right|^2} \Gamma (E^\alpha - E^{\mathrm{i}} - \hbar \omega ).$$\end{document}</span>
+    <div id="M4" class="math">
+     <span class="mi">S</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">2</span>
+       <span class="mi">π</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">ℏ</span>
+      </div>
+     </div>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">α</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <div close="∣" open="∣" separators="" class="mfenced">
+        <div class="mrow">
+         <div close="∣" open="⟨" separators="" class="mfenced">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">Ψ</span>
+            </div>
+            <div class="mrow">
+             <span mathvariant="normal" class="mi">i</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span class="mi">V</span>
+         <div close="⟩" open="∣" separators="" class="mfenced">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">Ψ</span>
+            </div>
+            <div class="mrow">
+             <span class="mi">α</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mi">Γ</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">α</span>
+        </div>
+       </div>
+       <span class="mo">-</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">i</span>
+        </div>
+       </div>
+       <span class="mo">-</span>
+       <span class="mi">ℏ</span>
+       <span class="mi">ω</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_11497_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>Here, 
+  <span class="italic">V</span> = (
+  <span class="italic">eA</span>/
+  <span class="italic">mc</span>)
+  <span class="bold">
+   <span class="italic">λ</span>
+  </span> · 
+  <span class="bold">p</span> is the light–matter interaction, where 
+  <span class="italic">A</span> is the vector potential, 
+  <span class="italic">e</span> and 
+  <span class="italic">m</span> are the electron charge and mass, 
+  <span class="italic">c</span> is the speed of light, 
+  <span class="bold">p</span> is the momentum operator, and 
+  <span class="bold">
+   <span class="italic">λ</span>
+  </span> is the polarization of the optical field. Here we use circular polarization that selectively excites carriers in the 
+  <span class="italic">K</span> valley. For the exciton spectrum, the sum is over all eigenstates of the electron–hole Bethe–Salpeter equation, whereas the initial state, labeled “i,” is the Fermi vacuum. For the trion spectrum, the sum is over all eigenstates of the two-electron-one-hole Bethe–Salpeter equation, and the initial state has one excess electron at the minimum of the conduction band, as discussed above. Physically, this implies that the absorption event occurs such that an excess electron (i.e., due to negative doping) resides within the coherence length of the optically created electron–hole pair. For singlet (triplet) trions, this electron has spin down (up) and momentum 
+  <span class="bold">Q</span> at the 
+  <span class="italic">K</span>′ (
+  <span class="italic">K</span>) point; see Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. Note that the optical selection rules involved in exciton and trion absorption are otherwise fully identical (in terms of momentum, spin, and valley degrees of freedom). The function Γ, containing the excited-state lifetime and other lineshape broadening effects, is taken to be a Lorentzian with a width of 4 meV. Shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> are results for 
+  <span class="italic">N</span> = 80 and 
+  <span class="italic">k</span>
+  <sub>0</sub> = 0.10, while spectra resulting from different convergence parameters are shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a> and in Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Exciton and trion absorption spectra and doping dependence. 
+     <span class="bold">a</span> Calculated helicity-selective singlet (solid curve) and triplet (dashed curve) trion spectra of monolayer MoS
+     <sub>2</sub>. The two-particle exciton spectrum is shown in gray. For select singlet trion states, the wavefunction in reciprocal space near the 
+     <span class="italic">K</span> point is shown as a heatmap. 
+     <span class="bold">b</span> Singlet trion spectra for varying Brillouin zone sampling resolutions, 
+     <span class="italic">N</span>. Vertical line at 2.0 eV depicts the converged exciton resonance energy. Trion and exciton resonance peak are labelled as 
+     <span class="italic">I</span>
+     <span class="sup">−</span> and 
+     <span class="italic">I</span>
+     <span class="sup">0</span>, respectively. 
+     <span class="bold">c</span> Trion-to-exciton peak intensity ratio as a function of the electron doping density, calculated as 
+     <div id="IEq1" class="inline-formula">
+      <div class="alternatives">
+       <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$2/\sqrt 3 N^2a^2$$\end{document}</span>
+       <div id="M6" class="math">
+        <span class="mn">2</span>
+        <span class="mo">∕</span>
+        <div class="msqrt">
+         <span class="mn">3</span>
+        </div>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">N</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">a</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_11497_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div> with the lattice constant given by 
+     <span class="italic">a</span> = 3.193 Å for MoS
+     <sub>2</sub> (results are shown for 
+     <span class="italic">N</span> ≥ 40). Linear fit with intercept at the origin shown as dash
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11497_Fig2_HTML" id="d29e1293" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">The exciton spectrum in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> shows typical behavior, with a pronounced 1
+  <span class="italic">s</span> resonance at 2.00 eV and higher lying states corresponding to a non-hydrogenic Rydberg series
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Consistent with the discussion above, the singlet trion spectrum shows a peak located at ~1.97 eV corresponding to a bound trion, whereas the triplet trion spectrum shows no such peak. Importantly, in both trion spectra we find peaks coinciding with the neutral exciton energies. These can be understood as continuum resonances of the trion, corresponding to a free electron that is unbound from the exciton
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span>. This picture is consistent with the 
+  <span class="italic">k</span>-space singlet trion wavefunctions that we also present in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>, which are plotted as a function of the hole momentum with one of the electrons fixed at 
+  <span class="italic">K</span> (the other electrons momentum is then equal to the hole momentum, due to momentum conservation). Besides showing an 
+  <span class="italic">s</span>-type azimuthal symmetry of the bound singlet trion state, these wavefunctions confirm that the 
+  <span class="italic">entire</span> Rydberg series is reproduced by the trion calculations, including the broken degeneracy between 2
+  <span class="italic">s</span> and 2
+  <span class="italic">p</span> excitons
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span> (the finite oscillator strength observed for the latter is the result of limited sampling, and disappears with increasing 
+  <span class="italic">N</span>). We conclude that the bound trion state and such exciton resonances share a common ground state, corresponding to a single excess electron at the conduction band minimum. This common ground state suggests that a coherent exciton–trion cross-peak should be observable in 2DES, which we turn to next, after briefly discussing the role of electron doping.
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">While the density of Brillouin zone sampling serves as a convergence parameter, it also provides a proxy to study the doping dependence. Our 
+  <span class="italic">k</span>-space calculations effectively involve a real-space periodic lattice with 
+  <span class="italic">N</span> × 
+  <span class="italic">N</span> unit cells over which a single excess electron is distributed in the initial state. Hence, with increasing 
+  <span class="italic">N</span> the electron doping density decreases. This is borne out in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a> where we show singlet trion absorption for varying 
+  <span class="italic">N</span>, which shows an intensity redistribution from trion-to-exciton with increasing sampling resolution. This behavior is quantified in terms of the effective doping density in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a>, showing a linear dependence of the trion-to-exciton peak intensity ratio to the electron doping density. We note that the simplified electronic structure used here (two bands and a static, model dielectric function) combined with the Brillouin zone truncation scheme enables us to study convergence behavior and low doping densities beyond that achievable by a fully first-principles approach and full Brillouin zone sampling
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>.
+ </p>
+</sec>

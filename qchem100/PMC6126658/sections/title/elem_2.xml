@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and discussion   </div>
+ <sec id="sec3.1" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.1.</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Analysis of quantum chemistry data   </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For our analysis we chose 72 atom pairs with completely different types of interactions, from ionic/covalent, hydrogen to metal–metal bonds (
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>). The ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> and BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> values, available in the literature for a large spectrum of compounds, from simple binaries to complex organic and metal–organic complexes (see the references in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span>), were presented as a function of the bond length, 
+   <span class="italic">R
+    <sub>ij</sub>
+   </span>, separately for each pair (see examples in Figs. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S2</span> and 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S3</span>, respectively). An important requirement for an unbiased analysis was a wide 
+   <span class="italic">R
+    <sub>ij</sub>
+   </span> range, because the wider the 
+   <span class="italic">R
+    <sub>ij</sub>
+   </span> range, the more general the established correlation is. Indeed, in the narrow 
+   <span class="italic">R
+    <sub>ij</sub>
+   </span> range, an exponential relationship can be easily confused with a linear one. As can be seen from 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>, for all pairs, the quantum chemistry data agree reasonably well with exponential correlations (1) and (3), although in a few cases, the number of available data was insufficient to properly establish the character of this correlation. Based on the exponential fitting of the BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span>– and the ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub>–distance curves, the BO (or bond valence) parameters, 
+   <span class="italic">R</span>
+   <sub>0(
+    <span class="italic">ij</span>)
+   </sub> and 
+   <span class="italic">b
+    <sub>ij</sub>
+   </span>, as well as the 
+   <span class="italic">C
+    <sub>ij</sub>
+   </span> and 
+   <span class="italic">D
+    <sub>ij</sub>
+   </span> constants were determined for most of the pairs (
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">For comparison, Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S3</span> also presents the BO curves (marked in red) used in crystal chemistry. Since there are a number of different bond valence parameters [
+   <span class="italic">R</span>
+   <sub>0(
+    <span class="italic">ij</span>)
+   </sub> and 
+   <span class="italic">b
+    <sub>ij</sub>
+   </span>] proposed in the literature for the same atom pairs (Brown, 2016
+   <a ref-type="bibr" rid="bb8" href="#bb8"> ▸</a>), we chose those closest to the parameters obtained in this work using quantum calculation data. As can be seen for many atom pairs, crystal chemistry and quantum chemistry curves are very similar, and their differences do not exceed the dispersion of quantum chemistry data. The curve distinctions may be caused by different parameters of exponential decay (
+   <span class="italic">b
+    <sub>ij</sub>
+   </span>) which are difficult to determine properly by crystal chemistry methods (in most cases, 
+   <span class="italic">b
+    <sub>ij</sub>
+   </span> is accepted as constant and equal to 0.37 Å). Despite this 
+   <span class="italic">b
+    <sub>ij</sub>
+   </span> uncertainty, the similarity of the curves shows that equation (2
+   <a href="#fd2">*</a>) is approximately valid for most of the atom pairs, 
+   <span class="italic">i.e.</span> the effective number of shared electron pairs is very close to the formal one. As demonstrated below, the exception is the metal–metal bonds with a more complicated rule of local electroneutrality (Levi &amp; Aurbach, 2011
+   <a ref-type="bibr" rid="bb29" href="#bb29"> ▸</a>; Levi 
+   <span class="italic">et al.</span>, 2013
+   <span class="italic">a</span>
+   <a ref-type="bibr" rid="bb31" href="#bb31"> ▸</a>,
+   <span class="italic">b</span>, 2014
+   <a ref-type="bibr" rid="bb33" href="#bb33"> ▸</a>; Singh 
+   <span class="italic">et al.</span>, 2016
+   <a ref-type="bibr" rid="bb46" href="#bb46"> ▸</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Interestingly, there is a clear correlation (and even relatively close absolute values) between the BO parameter 
+   <span class="italic">R</span>
+   <sub>0(
+    <span class="italic">ij</span>)
+   </sub> and the ED constant 
+   <span class="italic">C
+    <sub>ij</sub>
+   </span> (Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S4</span>). As expected from the structure of equations (1)
+   <a href="#fd1">*</a> and (3)
+   <a href="#fd3">*</a>, both increase with the cumulative size of the 
+   <span class="italic">i</span> and 
+   <span class="italic">j</span> atoms (Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S5</span>). In contrast, we did not see any visible correlation between 
+   <span class="italic">b
+    <sub>ij</sub>
+   </span> and 
+   <span class="italic">D
+    <sub>ij</sub>
+   </span>, but the absence of such correlation may be caused by the relatively high dispersion of the BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> data. Using the parameters listed in 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>, we calculated ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> using equation (3
+   <a href="#fd3">*</a>) and BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> using equation (1
+   <a href="#fd1">*</a>), and then compared them with the literature data (Fig. 1
+   <a ref-type="fig" rid="fig1" href="#fig1"> ▸</a>). Linear relationships between calculated values and the initial quantum chemistry data confirm the existence of the exponential correlation: 
+   <span class="italic">R</span>
+   <span class="sup">2</span> is equal to 95% for BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> calculated using equation (1
+   <a href="#fd1">*</a>) and 99% for ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> calculated using equation (3
+   <a href="#fd3">*</a>). It is evident from Fig. 1
+   <a ref-type="fig" rid="fig1" href="#fig1"> ▸</a> that the original ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> values are almost quantitatively reproduced by the correlations obtained, whereas the agreement of the original BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> with their calculated values is at best qualitative.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The existence of such correlations is not surprising, given the exponential decay of atomic and molecular wavefunctions (or orbitals), and may be qualitatively justified on the basis of very simple reasoning. Model expressions for the ED between two atoms show that the ED, at any point along the internuclear axis (hence also at the BCP), depends on quantities that all decay exponentially with bond distance [see equations (2
+   <a href="#fd2">*</a>
+   <span class="italic">a</span>) and (2
+   <span class="italic">c</span>) in Gatti &amp; Fantucci (1993
+   <a ref-type="bibr" rid="bb18" href="#bb18"> ▸</a>)], including the overlap integral between basis functions centered on the nuclei of the two atoms [see equation A.9 in Szabo &amp; Ostlund (1982
+   <a ref-type="bibr" rid="bb47" href="#bb47"> ▸</a>)]. Delocalization indices, and therefore the BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span>, are also given in terms of the products of molecular or natural orbital integral overlaps, yet defined over the Bader’s domains of each of the two bonded atoms [
+   <span class="italic">e.g.</span> Poater 
+   <span class="italic">et al.</span> (2005
+   <a ref-type="bibr" rid="bb41" href="#bb41"> ▸</a>) and equations 1.48 and 1.49 in Gatti &amp; Macchi (2012
+   <a ref-type="bibr" rid="bb19" href="#bb19"> ▸</a>)]. However, one may surmise that, in such a case, the overlap integrals between different orbitals might decay exponentially with the internuclear distance for a pair of orbitals centered on the nuclei of two interacting atoms, while the orbital self-overlaps should remain almost constant 
+   <span class="italic">versus R
+    <sub>ij</sub>
+   </span>, and not significantly affect the BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">A combination of equations (1)
+   <a href="#fd1">*</a> and (3)
+   <a href="#fd3">*</a> results in the power correlation between BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> and ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> for a given atom pair: 
+   <div id="fd4" class="disp-formula">
+    <div xlink:href="m-05-00542-efd4.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The relationships between ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> and BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> for a number of atom pairs are presented in Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S6</span>, which shows they are quasi-linear for most of the pairs, while the slope of the lines seems to agree with the type of interactions. For example, the low values of the ED at ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> for the metal–metal pairs can be explained by the diffuse nature of TM–TM bonds (TM = transition metal) (Farrugia &amp; Macchi, 2010
+   <a ref-type="bibr" rid="bb15" href="#bb15"> ▸</a>). Thus, in spite of the quasi-linear correlation and the similar dependence of the interatomic distances, the ED at ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> and BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> represent different bonding features and cannot always replace each other in descriptions of atom interactions.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Interestingly, other parameters of the ED topology, which are not related to Pauling’s principles, may also be presented as functions of the interatomic distances or BO (see Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S7</span> and the short comments in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span>). As was mentioned in the 
+   <span class="italic">Introduction</span>
+   <a href="#sec1">*</a>, these parameters are used to describe the differences in the nature of the bonding interactions, as it evolves with the bonding distance.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In spite of the apparent triviality and simplicity of our results, it is hard to overestimate the importance of equations (1
+   <a href="#fd1">*</a>) and (3
+   <a href="#fd3">*</a>) for materials science. They allow for the following.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">(i) Easy access to a qualitative estimate of two basic electron descriptors for any kind of atomic interactions in any complex compound with known interatomic distances (see below and the examples in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span>). The calculations can be performed in the program 
+   <span class="italic">Excel</span>, and they take only a few minutes instead of several days.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">(ii) An empirical proof of the existence of universal qualitative exponential correlations between the bond descriptors BO
+   <span class="italic">
+    <sub>ij</sub>
+   </span> or ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> and the length of a chemical bond, 
+   <span class="italic">R
+    <sub>ij</sub>
+   </span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">(iii) A general correlation between two basic electron descriptors [equation (4
+   <a href="#fd4">*</a>)].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">(iv) Possible rationalization of the exponential correlations between interatomic distances and some other physical descriptors of chemical bonds, 
+   <span class="italic">e.g.</span> stretching frequencies and force constants (Harvey, 1996
+   <a ref-type="bibr" rid="bb25" href="#bb25"> ▸</a>; Da Re 
+   <span class="italic">et al.</span>, 2010
+   <a ref-type="bibr" rid="bb12" href="#bb12"> ▸</a>; Kraka 
+   <span class="italic">et al.</span>, 2010
+   <a ref-type="bibr" rid="bb28" href="#bb28"> ▸</a>). Indeed, although the BOs cannot be determined experimentally, it was shown that they are directly related to the vibrational properties of chemical bonds, and, respectively, to the force constants (Cremer &amp; Kraka, 2010
+   <a ref-type="bibr" rid="bb11" href="#bb11"> ▸</a>; Hardcastle &amp; Wachs, 1990
+   <a ref-type="bibr" rid="bb23" href="#bb23"> ▸</a>, 1991
+   <a ref-type="bibr" rid="bb24" href="#bb24"> ▸</a>). To exemplify the linear correlation between the BOs and the square of the stretching frequencies, we used the interatomic distances and Raman spectroscopy data for the Mo–O bonds in various molybdates (Fig. 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">S8</span>) (Hardcastle &amp; Wachs, 1990
+   <a ref-type="bibr" rid="bb23" href="#bb23"> ▸</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We can also expect reasonable accuracy of the results obtained using equations (1
+   <a href="#fd1">*</a>) and (3
+   <a href="#fd3">*</a>). To illustrate this, the first example in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span> draws a comparison between ρ
+   <sub>c(
+    <span class="italic">ij</span>)
+   </sub> obtained from equation (3
+   <a href="#fd3">*</a>) and by two calculation modes used in the original quantum chemistry work (Pyziak 
+   <span class="italic">et al.</span>, 2015
+   <a ref-type="bibr" rid="bb43" href="#bb43"> ▸</a>): multipolar model I (more precise and close to the experimental data) and a standard independent atom model II. According to this comparison, the relative difference between ρ
+   <sub>c</sub> obtained from equation (3
+   <a href="#fd3">*</a>) and from model I for a given bond is, with exception for very weak intermolecular interactions (O⋯H, H⋯H, O⋯O), effectively smaller than the ρ
+   <sub>c</sub>-difference between the two models for the same bond. All other examples in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span> demonstrate strong agreement between the results of the exponential fitting and the quantum chemistry data for different organic and metal–organic complexes. An additional criterion of the chemical validity of the BO analysis is a correct balance in the electron book-keeping. The last example in the 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span> presents such book-keeping for simple U
+   <sub>3</sub>O
+   <sub>3</sub> and U
+   <sub>4</sub>O
+   <sub>4</sub> clusters. The BO sum obtained from equation (1
+   <a href="#fd1">*</a>) was compared with the sum of the Wiberg bond indices in the original work (Tsipis 
+   <span class="italic">et al.</span>, 2008
+   <a ref-type="bibr" rid="bb48" href="#bb48"> ▸</a>). As demonstrated, the BO sum for the U atoms (U—U and U—O bonds) is closer to the expected value of eight valence electrons than the sum of the Wiberg indices.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In addition, the next section
+   <a href="#sec3.2">*</a> presents an example of the BO analysis for a series of organometallic complexes based on Re
+   <sub>6</sub>-clusters. We chose these complexes to illustrate the general principles of crystal chemistry [exponential valence-length correlation and bond-order conservation expressed by equations (1
+   <a href="#fd1">*</a>) and (2
+   <a href="#fd2">*</a>), respectively], because for years it was commonly accepted that these principles were not valid for a metal–metal bond (Cotton 
+   <span class="italic">et al.</span>, 2005
+   <a ref-type="bibr" rid="bb10" href="#bb10"> ▸</a>). Moreover, in contrast to dinuclear Re
+   <sub>2</sub>-cluster complexes, the quantum chemistry analysis of the effective BOs for the Re
+   <sub>6</sub>-cluster compounds has, to the best of our knowledge, never been performed.
+  </p>
+ </sec>
+ <sec id="sec3.2" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.2.</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">The BO analysis for a series of the Re
+   <sub>6</sub>-cluster complexes   
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Metal–metal bonds in (TM)
+   <sub>
+    <span class="italic">n</span>
+   </sub>-clusters are a widespread feature of inorganic and organometallic complexes. These bonds are commonly formed between TM atoms in low oxidation states when the TM valence electrons, unused in metal–ligand bonding, become available for additional metal–metal interactions. For example, in the Re
+   <sub>6</sub>-cluster compounds, Re
+   <sub>6</sub>
+   <span class="italic">L</span>
+   <span class="sup">i</span>
+   <sub>8</sub>
+   <span class="italic">L</span>
+   <span class="sup">a</span>
+   <sub>6</sub> (
+   <span class="italic">L</span>
+   <span class="sup">i</span> = inner or bridging ligand, 
+   <span class="italic">L</span>
+   <span class="sup">a</span> = outer, apical or terminal ligand) (Fig. 2
+   <a ref-type="fig" rid="fig2" href="#fig2"> ▸</a>
+   <span class="italic">a</span>), three valence electrons of the Re atom are used to form five metal–ligand bonds, while the remaining four electrons participate in four TM–TM interactions (formal BO
+   <sub>Re—Re</sub> = 1).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Since the TM atom in a cluster compound is bonded not only to the ligands but also to adjacent TM atoms (Fig. 2
+   <a ref-type="fig" rid="fig2" href="#fig2"> ▸</a>
+   <span class="italic">a</span>), the conservation principle expressed by equation (2
+   <a href="#fd2">*</a>) transforms into the following, 
+   <div id="fd5" class="disp-formula">
+    <div xlink:href="m-05-00542-efd5.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Here 
+   <span class="italic">V</span>′
+   <sub>TM</sub> and 
+   <span class="italic">m′</span> are the effective valences used by the TM to form TM–L and TM–TM bonds, respectively, while 
+   <span class="italic">l</span> is the total number of the TM electrons participating in all of the bonds.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">If we know the interatomic distances, 
+   <span class="italic">R</span>
+   <sub>TM–L</sub> and 
+   <span class="italic">R</span>
+   <sub>TM–TM</sub>, as well as the bond valence parameters for the TM–
+   <span class="italic">L</span> and TM–TM pairs, the validity of equation (5
+   <a href="#fd5">*</a>) can be easily verified by using the valence–length correlations for all bonds of a given TM atom: 
+   <div id="fd6" class="disp-formula">
+    <div xlink:href="m-05-00542-efd6.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div id="fd7" class="disp-formula">
+    <div xlink:href="m-05-00542-efd7.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The BOs calculated by equations (6
+   <a href="#fd6">*</a>) and (7
+   <a href="#fd7">*</a>) can be used to calculate the number of valence electrons (effective valences) that participate in the TM–
+   <span class="italic">L</span> and TM–TM bonding: 
+   <div id="fd8" class="disp-formula">
+    <div xlink:href="m-05-00542-efd8.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div id="fd9" class="disp-formula">
+    <div xlink:href="m-05-00542-efd9.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The results of the BO calculations for 20 Re
+   <sub>6</sub>-cluster complexes are presented in Fig. 2
+   <a ref-type="fig" rid="fig2" href="#fig2"> ▸</a>(
+   <span class="italic">b</span>) (the details can be found in 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S2</span> and the bond valence parameters used in these calculations are listed in 
+   <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S3</span>). As shown, 
+   <span class="italic">V</span>′
+   <sub>TM</sub> and 
+   <span class="italic">m′</span> differ considerably from the formal values, 
+   <span class="italic">V</span>
+   <sub>TM</sub> and 
+   <span class="italic">m</span> (by at least one electron). However, for the Re
+   <sub>6</sub>-cluster complexes, in accordance with equation (5
+   <a href="#fd5">*</a>), the deficiency of the ED for the TM–TM bonds, 
+   <span class="italic">m′</span> − 
+   <span class="italic">m</span>, is compensated for by their excess from the TM–
+   <span class="italic">L</span> bonds, 
+   <span class="italic">V</span>′
+   <sub>TM</sub> − 
+   <span class="italic">V</span>
+   <sub>TM</sub>, to preserve the local electroneutrality of the TM atom (
+   <span class="italic">l</span> = 7 for Re): 
+   <div id="fd10" class="disp-formula">
+    <div xlink:href="m-05-00542-efd10.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">It was shown that the striking difference between formal and effective BOs of the TM–TM and TM–
+   <span class="italic">L</span> bonds in cluster compounds is caused by a steric conflict between unusually short metal–metal bonds and a rigid ligand environment (Levi 
+   <span class="italic">et al.</span>, 2013
+   <span class="italic">b</span>
+   <a ref-type="bibr" rid="bb32" href="#bb32"> ▸</a>; Singh 
+   <span class="italic">et al.</span>, 2016
+   <a ref-type="bibr" rid="bb46" href="#bb46"> ▸</a>). The conflict results in lattice strain, while the redistribution of the ED between the TM–TM and TM–
+   <span class="italic">L</span> bonds ensures their partial or full relaxation. Thus, the BO analysis of cluster compounds is especially interesting because it allows a correlation between structural features and deformability of the TM clouds.
+  </p>
+ </sec>
+</sec>

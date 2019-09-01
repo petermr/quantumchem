@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Chemical system and experimental conditions</div>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a> shows the structure of the investigated model chemical compass, a molecular triad consisting of covalently linked carotenoid (
+  <span class="bold">C</span>), porphyrin (
+  <span class="bold">P</span>) and fullerene (
+  <span class="bold">F</span>) moieties. Its photophysical behaviour and response to high fields, in the absence and presence of resonant radiofrequency fields, have been studied previously
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>,
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>–
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>
+  </span>. As depicted in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1b</a>, photo-excitation of the porphyrin at 532 nm is followed by rapid intramolecular electron transfer, first generating a primary radical pair 
+  <span class="bold">C</span>-
+  <span class="bold">P</span>
+  <span class="sup">•+</span>-
+  <span class="bold">F</span>
+  <span class="sup">•−</span> of picosecond lifetime, before subsequent electron transfer leads to the formation of the secondary radical pair 
+  <span class="bold">C</span>
+  <span class="sup">•+</span>-
+  <span class="bold">P</span>-
+  <span class="bold">F</span>
+  <span class="sup">•−</span>, which lives for up to roughly a microsecond . Previous work, in similar solvent and temperature conditions to those employed here, demonstrated that this secondary radical pair is formed predominantly in the singlet state, 
+  <span class="sup">S</span>[
+  <span class="bold">C</span>
+  <span class="sup">•+</span>-
+  <span class="bold">P</span>-
+  <span class="bold">F</span>
+  <span class="sup">•−</span>], with just 7% of radical pairs being created in the triplet state
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. While each radical pair is born in a spin-correlated state (either singlet or triplet), the magnetic field characteristics of the radical pair ensemble are complex, as will be shown below.
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Chemical structure, photocycle, and time dependence of the magnetic field effect (MFE) of 
+     <span class="bold">CPF</span>. 
+     <span class="bold">a</span> Structure of the molecular 
+     <span class="bold">CPF</span> triad. 
+     <span class="bold">b</span> Simplified photoscheme including all processes of relevance for this study. For simplicity, the secondary radical pair 
+     <span class="bold">C</span>
+     <span class="sup">•+</span>-
+     <span class="bold">P</span>-
+     <span class="bold">F</span>
+     <span class="sup">•−</span> is shown as created in a pure singlet state. For more detailed photochemical information, refer to refs. 
+     <span class="sup">
+      <a ref-type="bibr" rid="CR40" href="#CR40">40</a>,
+      <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+     </span>. 
+     <span class="bold">c</span> Transient absorption subtraction signal ΔΔ
+     <span class="italic">A</span> of the radical pair, probed at 980 nm, obtained upon application of a magnetic field of 
+     <span class="italic">B</span>
+     <sub>0</sub> = 100 μT. The dotted lines in red, green, and blue indicate delay times of 0.08, 0.28, and 0.71 μs after laser excitation, respectively. 
+     <span class="bold">d</span> Magnetic field dependence of the MFE averaged for a time window of 20 ns centred around the indicated delay times. The dotted black line indicates the field position of 100 μT and the field region approximately corresponding to the low field region is highlighted in grey
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11655_Fig1_HTML" id="d29e599" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">The measurements were carried out at 120 K, where the solvent, 2-methyltetrahydrofuran (MTHF), forms an optically transparent glass. Recombination of 
+  <span class="bold">C</span>
+  <span class="sup">•+</span>-
+  <span class="bold">P</span>-
+  <span class="bold">F</span>
+  <span class="sup">•−</span> is possible from either the singlet or triplet states and occurs with rate constants 
+  <span class="italic">k</span>
+  <sub>S</sub> and 
+  <span class="italic">k</span>
+  <sub>T</sub>, respectively. The rates are strongly dependent on the solvent properties, notably its dielectric constant. Under similar conditions, 
+  <span class="italic">k</span>
+  <sub>S</sub> has been shown to be some three orders of magnitude faster than 
+  <span class="italic">k</span>
+  <sub>T</sub>, and consequently, a significant change in the recombination kinetics is observed upon application of a magnetic field
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. Further details on the sample preparation and experimental set-up are given in the Methods section.
+ </p>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">Most experimental investigations of MFEs have relied on optical methods in which either the concentration of the radicals themselves or of one of their recombination products is determined as a function of field. Here we use nanosecond TA spectroscopy to obtain the concentration profile of the carotenoid radical cation 
+  <span class="bold">C</span>
+  <span class="sup">•+</span> via its absorbance in the near infrared, following radical pair creation by a 532 nm laser pulse. Application of a magnetic field, 
+  <span class="italic">B</span>
+  <sub>0</sub>, is expected to change the rate of singlet–triplet interconversion and consequently the overall radical pair kinetics, concentration and absorbance. The effect of the field is typically quantified via ΔΔ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub>) = Δ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub>) − Δ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub> = 0), where Δ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub>) and Δ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub> = 0) refer to the absorbance of the transient species at 980 nm (predominantly 
+  <span class="bold">C</span>
+  <span class="sup">
+   <span class="bold">•</span>
+   <span class="bold">+</span>
+  </span>), in the presence and absence of the field, respectively. 
+  <span class="italic">t</span> defines the time after the 532 nm pump laser pulse. It can also be instructive to calculate the so-called percentage field effect, defined as MFE(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub>) = ΔΔ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub>)/Δ
+  <span class="italic">A</span>(
+  <span class="italic">t</span>, 
+  <span class="italic">B</span>
+  <sub>0</sub> = 0) × 100%.
+ </p>
+</sec>

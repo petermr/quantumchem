@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec24" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein-specific visualisation facilities</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden has a large series of protein visualisation facilities available. It can, for example produce Ramachandran plots [
+  <a ref-type="bibr" rid="CR61" href="#CR61">61</a>] (see Fig. 
+  <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>a). Backbone secondary structure elements such as alpha helix and β-sheets tend to be contained in preferred conformational regions of the plot according to Lovell et al. [
+  <a ref-type="bibr" rid="CR62" href="#CR62">62</a>]. Residues that fall outside these regions can be flagged as outliers. By clicking a green dot in the plot, the corresponding amino acid is displayed in solid sphere representation in the main window.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Fig9" class="fig">
+   <span class="label">Fig. 9</span>
+   <div class="caption">
+    <p>
+     <span class="bold">a</span> Ramachandran plot with favoured (
+     <span class="italic">red</span>) and allowed (
+     <span class="italic">orange</span>) regions of backbone torsion angles. 
+     <span class="bold">b</span> Clipped solvent accessible surface of PDB entry 3ERT [
+     <a ref-type="bibr" rid="CR64" href="#CR64">64</a>] (with the electrostatic potential mapped onto it) exposing the OHT ligand
+    </p>
+   </div>
+   <div xlink:href="10822_2017_42_Fig9_HTML" id="d29e1551" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Solvent accessible surface areas can be produced using the external program Surf [
+  <a ref-type="bibr" rid="CR63" href="#CR63">63</a>] that is distributed together with Molden. Optionally, the electrostatic potential calculated from point charges associated with the AMBER force field can be mapped onto this surface. Surfaces can be clipped to reveal the interaction of a ligand with the protein surface, which is especially useful when the ligand is deeply buried within the protein. Figure 
+  <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>b shows the clipped solvent accessible surface of the PDB entry 3ERT [
+  <a ref-type="bibr" rid="CR64" href="#CR64">64</a>], with the electrostatic potential mapped onto it, exposing the OHT ligand.
+ </p>
+</sec>

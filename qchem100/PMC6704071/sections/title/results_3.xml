@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Figures 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> and 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> show the common gate voltage (V
+  <sub>G</sub>) dependence of the conductance for the forward (blue arrows) and reverse sweeps (green arrows) for QPCs 1 through 3 and QPCs 4 through 7, respectively. For ease of comparison of the conductance plots, the range of V
+  <sub>G</sub> was kept same for all QPCs. Figures 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> and 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> show that the threshold voltage in the forward sweep, i.e., the value V
+  <sub>G</sub> at which the conductance plot rises depends on the QPC dimensions.
+  <div id="Fig2" class="fig">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Forward (blue arrows) and reverse sweeps (green arrows) in conductance G (in units of 
+     <span class="italic">2e</span>
+     <span class="sup">2</span>
+     <span class="italic">/h</span>) plots for QPCs 1 through 3. Although the individual pinch-off voltage for each QPC channel is different from one another, the range of common gate signal (V
+     <sub>G</sub>) is kept the same for all devices for clarity. All conductance measurements were taken at T = 4.2 K. V
+     <sub>G</sub> is the common mode voltage superimposed on initial side gate potentials V
+     <sub>G1</sub> and V
+     <sub>G2</sub> applied to generate the asymmetric potential energy profile in the narrow portion of the QPC.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_48380_Fig2_HTML" id="d29e819" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="Fig3" class="fig">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Forward (blue arrows) and reverse sweeps (green arrows) in conductance G (in units of 
+     <span class="italic">2e</span>
+     <span class="sup">2</span>
+     <span class="italic">/h</span>) plots for QPCs 4 through 7, as in Fig. 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_48380_Fig3_HTML" id="d29e838" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Focusing on the conductance behavior near the 0.5G
+  <sub>0</sub> conductance plateau, it can be seen that the latter is more pronounced for QPC1 with the smallest channel width and gradually disappears as the QPC width increased. For QPC7, the conductance plot is close to linear and there is no remnant of the original conductance plateau as observed for QPC1. The conductance plot for QPC7 is indicative of a near ohmic behavior for the QPC with the largest width. Figures 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> and 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> show that the hysteresis loop size in the conductance plots also diminishes as the QPC width increases. QPCs 1 and 2 also have an anomalous conductance plateau around 1.5G
+  <sub>0</sub> and QPCs 3 and 4 have another conductance plateau slightly above the normal conductance plateau G
+  <sub>0</sub>, typically observed in symmetrically biased QPCs with top split-gates
+  <span class="sup">
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>.
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Some of the features described above can be explained based on our earlier systematic study of the number and locations of anomalous conductance plateaus in InAs/In
+  <sub>0.52</sub>Al
+  <sub>0.48</sub>As QPCs as a function of the polarity of the common gate voltage between its SGs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>. Some anomalous conductance plateaus were shown to occur over a range of the common sweep voltage as large as 1 V. A similar trend is observed in the size of the 0.5 G
+  <sub>0</sub> plateau for QPCs 1 and 2 reported here.
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">The sensitivity of the conductance measurements to the constant negative voltages 
+  <span class="italic">V</span>
+  <sub>G1</sub> and 
+  <span class="italic">V</span>
+  <sub>G2</sub> applied to the two SGs prior to the application of the common sweep voltage V
+  <sub>G</sub> stems from the importance of surface scattering present on the rugged QPC side walls
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>. Since the 7 QPCs are fabricated with different channel widths, the amount of surface scattering on their side walls will be different leading to both a difference in the threshold voltage in the forward sweep conductance plots and the need for an adjustment in the voltages 
+  <span class="italic">V</span>
+  <sub>G1</sub> and 
+  <span class="italic">V</span>
+  <sub>G2</sub> to observe an anomalous conductance plateau around 0.5 G
+  <sub>0</sub>, is listed in column 4 of Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Details of the QPC geometrical dimensions (lithographic width and length), aspect ratios (W/L) and the value of the asymmetric bias potential applied on the SGs to achieve the most pronounced anomalous plateaus at conductance value 0.5G
+     <sub>o</sub> during the forward sweep of the common gate voltage 
+     <span class="italic">V</span>
+     <sub>
+      <span class="italic">G</span>
+     </sub>.
+    </p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th>QPC#</th>
+      <th>W, L (nm)</th>
+      <th>Aspect Ratio W/L</th>
+      <th>(
+       <span class="italic">V</span>
+       <sub>G1</sub>,
+       <span class="italic">V</span>
+       <sub>G2</sub>)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>QPC 1</td>
+      <td>220,890</td>
+      <td>0.247</td>
+      <td>−2 V, −0.3 V</td>
+     </tr>
+     <tr>
+      <td>QPC 2</td>
+      <td>260,890</td>
+      <td>0.292</td>
+      <td>−1 V, −3 V</td>
+     </tr>
+     <tr>
+      <td>QPC 3</td>
+      <td>330,890</td>
+      <td>0.371</td>
+      <td>−2.5 V, −5 V</td>
+     </tr>
+     <tr>
+      <td>QPC 4</td>
+      <td>410,890</td>
+      <td>0.461</td>
+      <td>−3.2 V, −6.4 V</td>
+     </tr>
+     <tr>
+      <td>QPC 5</td>
+      <td>520,890</td>
+      <td>0.584</td>
+      <td>−4.5 V, −7.9 V</td>
+     </tr>
+     <tr>
+      <td>QPC 6</td>
+      <td>640,890</td>
+      <td>0.719</td>
+      <td>−3.5 V, −7.8 V</td>
+     </tr>
+     <tr>
+      <td>QPC 7</td>
+      <td>780,890</td>
+      <td>0.876</td>
+      <td>−5 V, −9.8 V</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <p>The last column gives the applied potential 
+     <span class="bold">(</span>
+     <span class="italic">V</span>
+     <sub>G1</sub>, 
+     <span class="italic">V</span>
+     <sub>G2</sub>) applied to the two SGs before applying the common gate signal 
+     <span class="italic">V</span>
+     <sub>
+      <span class="italic">G</span>
+     </sub>.
+    </p>
+   </div>
+  </div>
+ </p>
+</sec>

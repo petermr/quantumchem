@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Modeling strong coupling with TDDFT</div>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">We model light-matter interactions by employing the real-time-propagation (RT) TDDFT approach
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> based on the localized basis sets
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>,
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span> as implemented in the open-source GPAW package
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span>. This RT-TDDFT code is combined with extensive analysis tools
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span> that are utilized for analyzing the electron-hole transition contributions to resonances and visualizing them as transition contribution maps (TCM)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>,
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>. See Methods for detailed description. We consider a proof-of-principle plasmonic system based on idealized Al nanoparticles. The free-electron-like electronic structure of Al greatly simplifies the analysis in contrast to noble metals with 
+  <span class="italic">d</span>-electron-screened plasmons. In addition, Al has attracted recent interest as an alternative plasmonic material
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+  </span>.
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Our model systems consist of Al nanoparticles (regular truncated octahedra with 201, 586, and 1289 atoms, approximate diameters of 1.8, 2.7, and 3.6 nm, respectively) and benzene molecules (see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). The Al
+  <sub>201</sub> nanoparticle exhibits a plasmon resonance at ℏ
+  <span class="italic">ω</span>
+  <sub>Al</sub> = 7.7 eV (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>), the collective nature of which is recognizable in the TCM (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1b</a>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span>. The benzene molecule has a doubly-degenerate resonance at ℏ
+  <span class="italic">ω</span>
+  <sub>B</sub> = 7.1 eV with a transition dipole moment 
+  <span class="italic">μ</span>
+  <sub>1</sub> = 4.35 D (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a> and Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>).
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Constituent elements of the strongly coupled system. 
+     <span class="bold">a</span> Strong interaction between a collective plasmon excitation of an Al
+     <sub>201</sub> nanoparticle and a molecular resonance of benzene results in the formation of lower and upper polariton states. Insets show the induced charge densities at resonances. The spectra are to scale but offset for clarity. 
+     <span class="bold">b</span>–
+     <span class="bold">e</span> Transition contribution maps (TCMs) of the (
+     <span class="bold">b</span>) plasmon and (
+     <span class="bold">c</span>) molecular resonance show, respectively, the collective and discrete nature of these resonances. TCMs for 
+     <span class="bold">d</span> the lower polariton (6.9 eV) and 
+     <span class="bold">e</span> the upper polariton (7.7 eV) show the mixture of plasmonic and molecular transition contributions. The molecular transition (from about −2 to 3 eV) shows a clear symmetric and antisymmetric character with respect to the low-energy (≲2 eV) plasmonic transitions at the lower and upper polaritons, respectively, and the induced densities at the polariton energies visualize the corresponding in-phase and out-of-phase alignments (insets of panel 
+     <span class="bold">a</span>). In the density of states the red line marks the contribution from benzene, multiplied by 5 for visibility, and the vacuum level at around 4 eV is marked by a dashed line
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11315_Fig1_HTML" id="d29e513" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">When the nanoparticle and benzene molecules are placed in proximity (bottom part of Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>) their resonances couple and form two polaritons. The lower (at 6.9 eV) and upper (at 7.7 eV) polaritons are, respectively, mixed symmetric and antisymmetric plasmon-molecule states as apparent in the TCMs of the coupled system (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d, e</a>). A comparison with the TCMs of the uncoupled constituents (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1b, c</a>) reveals the individual contributions to the polaritons. The low-energy (≲2 eV) transitions near the Fermi level form the plasmon, while the contribution from about −2 to 3 eV originates from the molecular exciton. Crucially, the two polaritonic states in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d, e</a> differ with respect to the sign of the molecular contributions. In case of the lower polariton (LP) plasmonic and molecular transitions are in-phase, while for the upper polariton (UP) they are out-of-phase. This, respectively, symmetric and antisymmetric combination is also clearly visible in the induced densities (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>). At the LP the dipoles of both particle and molecules are parallel, while they are antiparallel at the UP. Such an arrangement is archetypal for a strongly coupled system. This observation is valid also for the other systems discussed below, indicating the presence of strong or near-strong coupling already in the case of a single molecule placed 3 Å away from the Al
+  <sub>201</sub> particle. We note here, that the density of states of the molecular elements in the coupled system does not significantly differ from its uncoupled counterpart (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>).
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">To determine the fidelity of TDDFT for modeling strong coupling, we calculated the photoabsorption spectra of Al
+  <sub>201</sub>, Al
+  <sub>586</sub>, and Al
+  <sub>1289</sub> coupled to 
+  <span class="italic">N</span> benzene molecules, whose dipole moment is aligned collinearly with that of the plasmon vacuum field. The molecules are placed at the corners of two opposing {100} facets of the particles (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>) and structural relaxation is neglected for simplicity. The coupled systems exhibit the LP and UP modes, the splitting of which increases with the number of molecules, see Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> (TCMs show similar symmetric/antisymmetric mixtures of plasmonic and molecular transitions, see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>). The Rabi splitting of the absorption spectra for Al
+  <sub>201</sub> and one benzene molecule equals 730 meV, a value comparable to the plasmon width. A non-negligible part of the UP/LP separation originates, however, from the plasmon-exciton detuning and the coupling strength 
+  <span class="italic">g</span> is 200 meV for one benzene, a value smaller than the geometrical mean of the plasmon and exciton widths (300 meV). The strong coupling condition is, however, fulfilled for 
+  <span class="italic">N</span> ≥ 3 for Al
+  <sub>201</sub> and for larger 
+  <span class="italic">N</span> for larger particles.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Strong coupling of plasmons in Al nanoparticles and excitations in benzene molecules. The calculated photoabsorption spectra of nanoparticle-molecule systems composed of (
+     <span class="bold">a</span>) Al
+     <sub>201</sub>, (
+     <span class="bold">b</span>) Al
+     <sub>586</sub>, and (
+     <span class="bold">c</span>) Al
+     <sub>1289</sub> nanoparticles coupled with 
+     <span class="italic">N</span> benzene molecules at 3 Å separation (solid lines) show clearly separated lower and upper polaritons, the splitting of which increases with 
+     <span class="italic">N</span>. Spectra of the bare Al particles and benzene molecule are shown for reference (dotted lines)
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11315_Fig2_HTML" id="d29e611" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

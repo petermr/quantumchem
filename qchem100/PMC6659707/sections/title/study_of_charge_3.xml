@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Study of charge delocalization and self-interaction correction</div>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">In this section, we point out the importance of managing the spurious charge delocalization issues present in semi-local DFT calculations of oxidized molecular systems consisting of multiple components. The key results are summarized in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>, which shows IPs and charge study for different functionals and different configurations. Gas phase anion and solvent IPs are reported in columns two and three. In columns 4–9 and 10–15, results are presented for systems of five identical solvents 10 Å apart and five identical anions 500 Å apart respectively, in vacuum. The last five columns present configurations of one TFSI
+  <span class="sup">−</span> molecule solvated by three DME molecules. Structures obtained from optimizing the geometry with the different ab-initio methods are slightly different, but qualitatively the same. We find that only methods including 100% long-range HF exchange (LC-BLYP, M06-HF, and HF) correctly describe the removal of the electron from a single molecule in the cases of 5 anions or 5 solvents. In these cases, the IP is almost independent of the number of molecules in the calculation, as physically expected. Similarly, in the case of one TFSI
+  <span class="sup">−</span> anion surrounded by DME solvents, only LC-BLYP
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span>, M06-HF, and HF correctly remove an electron from a single molecule, namely one of the DMEs. All other functionals, including some commonly used semi-local functionals, nonphysically delocalize the charge, removing a fraction of an electron from all molecules. More results for this study are presented in the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a>, with 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M6" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> as the anion (see Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>), or showing that the results persist when adding implicit solvation (see Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>). Finally, we note that in the case of TFSI
+  <span class="sup">−</span> and three DME, the functionals that completely oxidize one molecule oxidize the solvent, which has a higher IP than the anion. This is counter-intuitive, and we discuss in detail in the rest of this work how charge transfer pair formation is the cause of this oxidation mechanism. The phenomenon of charge transfer upon oxidation of the anion-solvent complex, i.e., removal of the electron from the molecule with higher IP, is the focus of the next sections. As mentioned in the introduction, this effect was described in previous works as a consequence of reaction that follows oxidation, but here we emphasize that it occurs already in the calculations of the vertical IP, independent of chemical degradation pathways.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Ionization potential (eV), and charge distribution for different systems computed in vacuum with different functionals</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tbody>
+     <tr>
+      <td colspan="2">
+       <span xlink:href="41467_2019_11317_Figa_HTML.gif" id="d29e648" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <p>For reference, in the case of DME, the experimental IP is 9.8 eV and our calculated DLPNO-CCSD(T) IP is 9.9 eV. For TFSI
+     <span class="sup">−</span> our calculated DLPNO-CCSD(T) IP is 7.3 eV. These values are reported in Supplementary Table 
+     <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a>. Columns 2 and 3 refer to isolated DME and TFSI
+     <span class="sup">−</span>, respectively. Columns 4–9: five identical DMEs 10 Å apart. Columns 10–15: five identical TFSI
+     <span class="sup">−</span> molecules 500 Å apart. Columns 16–21: one TFSI
+     <span class="sup">−</span> solvated by three DMEs. The fraction of an electron removed from each anion (A) or solvent (S) molecule is proportional to the intensity of blue in the corresponding column
+    </p>
+   </div>
+  </div>
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">In summary, only functionals with 100% of HF exchange at long-range (HF, M06-HF, LC-BLYP) yield the correct ionization behaviors and do not suffer from charge delocalization, while methods without full HF exchange misrepresent the oxidized state, predicting charges delocalized on more than one molecule. We also mention that recent work on ionic liquids showed that range-separated functionals suffer much less from self-interaction delocalization error and show similar dipole moments and interaction energies as wave-function methods
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>. From our study of charge delocalization in DFT functionals, M06-HF is inferred to be an appropriate functional to study the effect of explicit solvation on ionization in a wider set of chemistries and geometries. However, we also observe that the isolated IP from M06-HF for the molecules, whether solvents or anions, are found to be overestimates of the experimental values. The inaccuracy of M06-HF is a known problem, and it persists when computing IP from optimized geometries. In this work, emphasis is placed on the correct treatment of ionization and minimizing delocalization error, focusing on the physical mechanism of ionization and the origins of charge transfer in solvent-anion complexes. Most trends presented here are significant in comparison with the IP errors and are fundamentally not altered by the inaccuracies arising from the functional. Here we also note that none of these functionals is as accurate as CCSD(T) for IP. However, their lower computational cost allows us to study systems of multiple molecules otherwise practically impossible with CCSD(T) level of theory. From the results of our DLPNO-CCSD(T) calculations reported in the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a> (Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a>), we find that it is possible to get very accurate IP values (compared to experimental measurements) with a more accurate method when required. Furthermore, we find that M06-HF accuracy is satisfying for the chemistries studied in this work, with an error smaller than the spread of the IP over different configurations. Furthermore, we discuss later in this paper that although the absolute values of the IP for the different systems may be different between methods, the trends and phenomena described in this work remain valid even when analyzing DLPNO-CCSD(T) results.
+ </p>
+</sec>

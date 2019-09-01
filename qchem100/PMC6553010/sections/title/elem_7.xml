@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum yields and excitation wavelength dependences of CSS formation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In sophisticated molecular systems designed for multiphoton-driven charge accumulation, the quantum yield for formation of the primary CSS should ideally be close to unity. In this section, we will comprehensibly describe an experimental technique suitable for CSS quantum yield determinations using molecular triads as model compounds to study that process in isolation, and we will provide strategies to understand unexpected results. Our methodology is based on relative actinometry
+  <a rid="cit54" ref-type="bibr" href="#cit54">54</a> combined with laser flash photolysis (LFP). In principle the actinometry-LFP combo is a rather old approach,
+  <a rid="cit55" ref-type="bibr" href="#cit55">55</a>–
+  <a rid="cit57" ref-type="bibr" href="#cit57">57</a> but many 21st century photochemists do not seem to be familiar with that powerful tool, perhaps due to the lack of tutorial reviews as recently published for other photochemical techniques.
+  <a rid="cit58" ref-type="bibr" href="#cit58">58</a>,
+  <a rid="cit59" ref-type="bibr" href="#cit59">59</a>
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a> enlarges on our quantum yield determination methodology. As reference system suitable for laser flash photolysis actinometry,
+  <a rid="cit60" ref-type="bibr" href="#cit60">60</a>–
+  <a rid="cit64" ref-type="bibr" href="#cit64">64</a> we selected tris(2,2′-bipyridine)ruthenium(
+  <span class="sc">ii</span>) [Ru(bpy)
+  <sub>3</sub>]
+  <span class="sup">2+</span> in water (the favorable properties of that system are summarized on page S3 of the ESI
+  <a ref-type="fn" rid="fn1" href="#fn1">†</a>). First, solutions of [Ru(bpy)
+  <sub>3</sub>]
+  <span class="sup">2+</span> and the respective Ir-containing triad were prepared with concentrations ensuring identical absorption values at the desired excitation wavelength. An example for 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span> prior to exciting with 410 nm laser pulses is shown in 
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3a</a>. Second, employing the very same excitation conditions for the reference system and the triad under study, transient absorption traces at 455 nm (maximum of the [Ru(bpy)
+  <sub>3</sub>]
+  <span class="sup">2+</span> ground state bleach)
+  <a rid="cit63" ref-type="bibr" href="#cit63">63</a> and the CSS absorption maximum (
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span>, 720 nm; 
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span>, 700 nm) were recorded (
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3b</a>).
+ </p>
+ <div id="fig3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">Raw data used for the quantum yield determination of CSS formation for 
+    <span class="bold">TAA-ph
+     <sub>1</sub>-Ir-ph
+     <sub>1</sub>-AQ
+    </span> upon 410 nm laser excitation with 8 mJ laser pulses of about 10 ns duration. (a) UV-Vis absorption spectra of 
+    <span class="bold">TAA-ph
+     <sub>1</sub>-Ir-ph
+     <sub>1</sub>-AQ
+    </span> (green, in CH
+    <sub>3</sub>CN) and [Ru(bpy)
+    <sub>3</sub>]
+    <span class="sup">2+</span> (orange, in water), which was used as reference compound for relative actinometry. (b) Transient absorption traces upon 410 nm excitation of the deoxygenated solutions shown in (a). CSS formation was monitored at 720 nm (green), [Ru(bpy)
+    <sub>3</sub>]
+    <span class="sup">2+</span> ground state bleach at 455 nm (orange). For further explanation, see the main text and Section 1.3 of the ESI.
+    <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+   </div>
+  </div>
+  <div xlink:href="c9sc01381d-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Third and finally, the transient absorption traces so obtained were converted into relative intermediate concentrations using the well-established (difference) molar absorption coefficients for the [Ru(bpy)
+  <sub>3</sub>]
+  <span class="sup">2+</span> ground state bleach (together with the quantum yield for the [Ru(bpy)
+  <sub>3</sub>]
+  <span class="sup">2+</span> excitation producing its triplet state, which is unity
+  <a rid="cit65" ref-type="bibr" href="#cit65">65</a>) and the estimated extinction coefficients at the maximum of the respective CSS (see Section 1.3 of the ESI
+  <a ref-type="fn" rid="fn1" href="#fn1">†</a> for details). Surprisingly, the CSS quantum yields for the two triads differ by almost a factor of 3 under very similar conditions (
+  <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>). Control experiments with 410 nm excitation at significantly reduced laser intensity (to about 50%) gave essentially the same quantum yields for both triads compared to the results at higher intensities (8 mJ, see 
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a>). We regard these observations as clear evidence for the absence of biphotonic side reactions, such as a two-photon ionization
+  <a rid="cit66" ref-type="bibr" href="#cit66">66</a> or light-induced charge recombination (compare, Section 2.4), and saturation effects.
+  <a rid="cit67" ref-type="bibr" href="#cit67">67</a> Moreover, all quantum yield determinations presented in this work were carried out with solutions having absorptions below 0.105 at the excitation wavelengths to avoid filter effects.
+  <a rid="cit68" ref-type="bibr" href="#cit68">68</a> A simplified procedure frequently used to estimate quantum yields is the analysis of the quenching efficiency of the photosensitizer as CSS precursor employing kinetic measurements.
+  <a rid="cit4" ref-type="bibr" href="#cit4">4</a>,
+  <a rid="cit46" ref-type="bibr" href="#cit46">46</a> This easy-to-obtain quantity, which does not take chemically unproductive deactivation pathways into account, would predict quantitative CSS formation for both 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span> and 
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span> (see Section 4.1 of the ESI
+  <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Therefore, our results highlight the importance of direct quantum yield determinations with relative actinometry.
+ </p>
+ <div id="fig4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">CSS formation quantum yields of 
+    <span class="bold">TAA-ph
+     <sub>1</sub>-Ir-ph
+     <sub>1</sub>-AQ
+    </span> (a) and 
+    <span class="bold">TAA-ph
+     <sub>2</sub>-Ir-ph
+     <sub>2</sub>-AQ
+    </span> (b) upon 410 nm laser excitation (8 mJ pulse energy). The CSS concentrations after the laser pulses were calculated relative to the amounts of absorbed photons as measured by means of relative actinometry with additional experiments on [Ru(bpy)
+    <sub>3</sub>]
+    <span class="sup">2+</span> (orange reference traces) under identical excitation conditions. Further details are given in the main text and Section 1.3 of the ESI.
+    <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+   </div>
+  </div>
+  <div xlink:href="c9sc01381d-f4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The widel y differing quantum yields obtained upon 410 nm excitation (28.6 
+  <span class="italic">vs.</span> 79.4%, 
+  <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>) prompted us to explore the influence of the excitation wavelength on CSS formation. Prior to carrying out additional kinetic measurements as in 
+  <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>, we recorded transient absorption spectra using at least four different laser wavelengths for exciting our triads. Our experiments demonstrate that the spectral shapes and relative absorption signal intensities do not depend on the excitation wavelength (see Fig. S5 of the ESI
+  <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Hence, in line with Kasha's rule,
+  <a rid="cit69" ref-type="bibr" href="#cit69">69</a>,
+  <a rid="cit70" ref-type="bibr" href="#cit70">70</a> the respective CSS is the only intermediate observable on a nanosecond timescale. Furthermore, more than 500 laser flashes on the very same solution do neither change the CSS absorption spectra nor their intensities, indicating that no photochemical side reactions are taking place. All quantum yield determinations at the excitation wavelengths covering the experimentally accessible range (see Section 2.1) were carried out with the same methodology as at 410 nm (
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a> and 
+  <a ref-type="fig" rid="fig4" href="#fig4">4</a>). To compensate small laser intensity fluctuations and obtain a suitable signal-to-noise ratio, at least 20 kinetic traces were averaged for every quantum yield measurement summarized in 
+  <a rid="tab1" ref-type="table" href="#tab1">Table 1</a>. The results presented in that table reveal a quasi-wavelength independence for the CSS formation quantum yield of 
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span> with a mean value as high as 82%, whereas for 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span>, the CSS formation efficiencies differ by a factor of 5 over the explored excitation wavelength range, decreasing in a systematic manner at longer wavelengths.
+ </p>
+ <div id="tab1" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Wavelength-dependent quantum yields of CSS formation
+    <a ref-type="fn" rid="tab1fna" href="#tab1fna">
+     <span class="sup">
+      <span class="italic">a</span>
+     </span>
+    </a>
+   </div>
+  </div>
+  <table frame="hsides" rules="groups">
+   <colgroup span="1">
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <td rowspan="2" colspan="1">Excitation wavelength/nm</td>
+     <td colspan="2" rowspan="1">CSS formation quantum yield
+      <a ref-type="table-fn" rid="tab1fnb" href="#tab1fnb">
+       <span class="sup">
+        <span class="italic">b</span>
+       </span>
+      </a>/%
+      <span class="hr"/>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="bold">TAA-ph
+       <sub>1</sub>-Ir-ph
+       <sub>1</sub>-AQ
+      </span>
+     </td>
+     <td rowspan="1" colspan="1">
+      <span class="bold">TAA-ph
+       <sub>2</sub>-Ir-ph
+       <sub>2</sub>-AQ
+      </span>
+     </td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td rowspan="1" colspan="1">410</td>
+     <td rowspan="1" colspan="1">28.6</td>
+     <td rowspan="1" colspan="1">79.4</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">425</td>
+     <td rowspan="1" colspan="1">24.4</td>
+     <td rowspan="1" colspan="1">76.6</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">433</td>
+     <td rowspan="1" colspan="1">18.9</td>
+     <td rowspan="1" colspan="1">87.4</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">440</td>
+     <td rowspan="1" colspan="1">16.1</td>
+     <td rowspan="1" colspan="1">85.4</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">450</td>
+     <td rowspan="1" colspan="1">14.4</td>
+     <td rowspan="1" colspan="1">82.0</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">460</td>
+     <td rowspan="1" colspan="1">12.8</td>
+     <td rowspan="1" colspan="1">—
+      <a ref-type="table-fn" rid="tab1fnc" href="#tab1fnc">
+       <span class="sup">
+        <span class="italic">c</span>
+       </span>
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">470</td>
+     <td rowspan="1" colspan="1">6.0</td>
+     <td rowspan="1" colspan="1">—
+      <a ref-type="table-fn" rid="tab1fnc" href="#tab1fnc">
+       <span class="sup">
+        <span class="italic">c</span>
+       </span>
+      </a>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="tab1fna" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">a</span>
+     </span>Measured in deoxygenated CH
+     <sub>3</sub>CN at 293 K. The maximum relative error is expected to be less than 10%.
+    </p>
+   </fn>
+   <fn id="tab1fnb" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">b</span>
+     </span>Details concerning the experimental methodology are given in the main text and in Section 1.2 of the ESI.
+    </p>
+   </fn>
+   <fn id="tab1fnc" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="sup">
+      <span class="italic">c</span>
+     </span>Cannot be determined owing to negligible absorption of the triad at the excitation wavelength.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A plausible explanation for the markedly different behavior of the quantum yields in 
+  <a rid="tab1" ref-type="table" href="#tab1">Table 1</a> is provided by different main pathways of CSS formation in the two triads. As discussed in Section 2.1, photoexcitation of 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span> mainly occurs into an intraligand CT transition, whereas in the case of 
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span>, excitation into MLCT bands of the photosensitizer dominates when violet or blue photons are employed. Starting from these charge-transfer states, which are formed in their singlet states due to spin conservation,
+  <a rid="cit71" ref-type="bibr" href="#cit71">71</a> subsequent intersystem crossing (ISC) to the triplet manifold can occur. Ir-based excited 
+  <span class="sup">1</span>MLCT states usually undergo very fast (&lt;1 ps) and quantitative ISC,
+  <a rid="cit72" ref-type="bibr" href="#cit72">72</a>,
+  <a rid="cit73" ref-type="bibr" href="#cit73">73</a> but intraligand CT states or CT states in purely organic systems are known for their ultrafast and unproductive (singlet) recombination in polar solvents (the recombination of 
+  <span class="sup">1</span>TAA˙
+  <span class="sup">+</span>-bpy˙
+  <span class="sup">–</span>/Ir
+  <span class="sup">III</span>-AQ in this case; see 
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1c</a> for details).
+  <a rid="cit74" ref-type="bibr" href="#cit74">74</a>–
+  <a rid="cit76" ref-type="bibr" href="#cit76">76</a> As a direct consequence, the quantum yields for the production of long-lived (triplet) CSSs 
+  <span class="italic">via</span>
+  <span class="sup">3</span>MLCT states can approach values close to unity, while in the intermediate intraligand singlet CT states, ultrafast recombination competes with ISC and productive charge separation. In line with that reasoning, the CSS quantum yields of 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span> increase with decreasing excitation wavelengths, 
+  <span class="italic">i.e.</span>, when the admixture of direct MLCT excitation increases relative to intraligand CT excitation (see UV-Vis spectra in 
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>).
+ </p>
+</sec>

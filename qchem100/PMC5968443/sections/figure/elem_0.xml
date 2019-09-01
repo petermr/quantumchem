@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 1</span>
+ <div class="caption">
+  <p>The center depicts the computational graph of a simple function 
+   <span class="italic">F</span>(
+   <span class="italic">x</span>
+   <sub>1</sub>, 
+   <span class="italic">x</span>
+   <sub>2</sub>) and its elementary operations. On the left and right, we illustrate the differentiation steps of forward and backward mode, respectively. In forward mode, the evaluation of the function at a given set of parameter and the derivative with respect to 
+   <span class="italic">x</span>
+   <sub>1</sub> is evaluated by computing the intermediate variables ϕ
+   <sub>
+    <span class="italic">i</span>
+   </sub> and their derivatives following the order of the computational graph using the chain rule. The direction of the evaluation is indicated by the left arrow. In backward mode, the function is evaluated first at a given value, and later the adjoints of all the intermediate variables are computed by iterating backward through the computational graph, indicated by the right arrow. Notice, in this mode, the partial derivatives of the function with respect to the two independent variables are computed together, whereas in forward mode each partial derivative of the function has to be evaluated separately. In this example, to compute the entire gradient, the number of operations in backward mode is smaller than in forward mode.
+  </p>
+ </div>
+ <div xlink:href="oc-2017-00586m_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

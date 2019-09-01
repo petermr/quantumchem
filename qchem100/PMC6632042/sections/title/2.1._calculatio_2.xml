@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2dot1-molecules-24-02285" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1. Calculation Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the process of structural optimizations, the module of CASTEP was used and the exchange-correlation interaction among electrons was described by the generalized-gradient approximation (GGA)-PW91. [
+  <a rid="B17-molecules-24-02285" ref-type="bibr" href="#B17-molecules-24-02285">17</a>,
+  <a rid="B18-molecules-24-02285" ref-type="bibr" href="#B18-molecules-24-02285">18</a>]. The interactions between the ionic cores and the valence electrons (Fe 3d
+  <span class="sup">6</span>4s
+  <span class="sup">2</span>, S 3s
+  <span class="sup">2</span>3p4, C 2s
+  <span class="sup">2</span>2p
+  <span class="sup">2</span>) were modelled with ultra-soft pseudopotentials (USP) [
+  <a rid="B19-molecules-24-02285" ref-type="bibr" href="#B19-molecules-24-02285">19</a>]. We used a cut-off of 350 eV for the plane-wave basis expansion [
+  <a rid="B15-molecules-24-02285" ref-type="bibr" href="#B15-molecules-24-02285">15</a>] and a Monkhorst-Pack [
+  <a rid="B20-molecules-24-02285" ref-type="bibr" href="#B20-molecules-24-02285">20</a>,
+  <a rid="B21-molecules-24-02285" ref-type="bibr" href="#B21-molecules-24-02285">21</a>] k-point sampling density of 4 × 4 × 4 mesh. To more accurately describe the delocalization of electrons in the transition metal compound, the Hubbard U value of 1.2 eV was used to correct the orbit of Fe 3d. The Fe 3d was treated by the adoption of the Hubbard U correction in the paper and specified by tests in the previous paper [
+  <a rid="B22-molecules-24-02285" ref-type="bibr" href="#B22-molecules-24-02285">22</a>,
+  <a rid="B23-molecules-24-02285" ref-type="bibr" href="#B23-molecules-24-02285">23</a>]. 
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Furthermore, we optimized the carbon atom and water molecule in a 20 × 20 × 20 Å cubic cell with Brillouin zone sampling restricted to the Gamma point in the calculation process. The other parameters were consistent with those reported above.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The strengths of the interactions between the adsorbates (water molecules) and the adsorbent (pyrite surface) were expressed by the adsorption energy (E
+  <sub>ads</sub>) in the paper [
+  <a rid="B24-molecules-24-02285" ref-type="bibr" href="#B24-molecules-24-02285">24</a>,
+  <a rid="B25-molecules-24-02285" ref-type="bibr" href="#B25-molecules-24-02285">25</a>,
+  <a rid="B26-molecules-24-02285" ref-type="bibr" href="#B26-molecules-24-02285">26</a>,
+  <a rid="B27-molecules-24-02285" ref-type="bibr" href="#B27-molecules-24-02285">27</a>], defined as:
+  <div class="disp-formula">E
+   <sub>ads</sub> = E
+   <sub>X/slab</sub> − nE
+   <sub>X</sub> − E
+   <sub>slab</sub>,
+   <span class="label">(1)</span>
+  </div> where E
+  <sub>ads</sub> is the adsorption energy and X is the carbon atoms or water molecules. n is the number of carbon atoms or water molecules. E
+  <sub>X/slab</sub> is the energy of the pyrite surface with water molecules. E
+  <sub>slab</sub> and E
+  <sub>X</sub> are the energy of the pyrite surface and H
+  <sub>2</sub>O, respectively. The more negative the E
+  <sub>ads</sub>, the stronger the interaction between the adsorbate and mineral surface.
+ </p>
+</sec>

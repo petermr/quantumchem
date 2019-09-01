@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background &amp; summary</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The goal of computationally designing novel materials and molecules with desired physicochemical properties is yet to be achieved. High-throughput screening represents the most straightforward approach towards materials design
+  <span class="sup">
+   <a ref-type="bibr" rid="b1" href="#b1">1</a>
+  </span>. However, it presupposes that all assumptions and approximations inherent to the employed modeling techniques are applicable to the entire chemical compound space, which is the space populated by all stable molecules or materials
+  <span class="sup">
+   <a ref-type="bibr" rid="b2" href="#b2">2</a>
+  </span>. Furthermore, due to the combinatorial scaling of chemical space with molecular size, it is difficult to explore or even navigate. Conclusive insights about the domain of applicability (transferability) are lacking even for the most popular first principle quantum chemistry methods. For example, the reliability and accuracy of density functional theory is known to dramatically depend on chemical composition and atomistic configurations
+  <span class="sup">
+   <a ref-type="bibr" rid="b3" href="#b3">3</a>
+  </span>, highlighting the importance of reliable experimental
+  <span class="sup">
+   <a ref-type="bibr" rid="b4" href="#b4">4</a>
+  </span> or high-level quantum chemistry state-of-the-art results
+  <span class="sup">
+   <a ref-type="bibr" rid="b5" href="#b5">5</a>,
+   <a ref-type="bibr" rid="b6" href="#b6">6</a>
+  </span>. Unfortunately, the systems reported are typically small, which implies the existence of severe selection bias. One can therefore question how representative they are. The problem of representative diversity has triggered the design of special purpose chemical space libraries for method validation or molecular design
+  <span class="sup">
+   <a ref-type="bibr" rid="b7" href="#b7">7–10</a>
+   <a ref-type="bibr" rid="b8" href="#b8">7–10</a>
+   <a ref-type="bibr" rid="b9" href="#b9">7–10</a>
+   <a ref-type="bibr" rid="b10" href="#b10">7–10</a>
+  </span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we report molecular structures and properties obtained from quantum chemistry calculations for the first 134k molecules of the chemical universe GDB-17 data base
+  <span class="sup">
+   <a ref-type="bibr" rid="b11" href="#b11">11</a>
+  </span>, covering a molecular property set of unprecedented size and consistency. The data-set corresponds to the GDB-9 subset of all neutral molecules with up to nine atoms (CONF), not counting hydrogen. The molecular size distribution of all 134k molecules is shown in 
+  <a ref-type="fig" rid="f1" href="#f1">Fig. 1</a>. This data set contains small amino acids, such as GLY, ALA, as well as nucleobases cytosine, uracil, and thymine. Also pharmaceutically relevant organic building blocks, such as pyruvic acid, piperazine, or hydroxy urea are included. Among the 134k molecules, there are 621 stoichiometries, among which C
+  <sub>7</sub>H
+  <sub>10</sub>O
+  <sub>2</sub> dominates with 6,095 constitutional isomers for which atomization energies and radii of gyration also are on display in 
+  <a ref-type="fig" rid="f1" href="#f1">Fig. 1</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For all 134k molecules, we have calculated equilibrium geometries, frontier orbital eigenvalues, dipole moments, harmonic frequencies, polarizabilities, and thermochemical energetics corresponding to atomization energies, enthalpies, and entropies at ambient temperature. These properties have been obtained at the B3LYP/6-31G(2df,p) level of theory which forms the basis for the more accurate state-of-the art G
+  <span class="italic">n</span> methods which are on par with experimental accuracy
+  <span class="sup">
+   <a ref-type="bibr" rid="b12" href="#b12">12</a>
+  </span>. For the 6,095 constitutional isomers of the predominant stoichiometry, C
+  <sub>7</sub>H
+  <sub>10</sub>O
+  <sub>2</sub>, we report the energetics at the significantly more accurate G4MP2
+  <span class="sup">
+   <a ref-type="bibr" rid="b12" href="#b12">12</a>
+  </span> level of theory.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This report is structured as follows. We first describe the genesis of the results. Thereafter, we discuss the validation of our DFT results by comparison to (i) G4MP2, (ii) G4, and (iii) CBS-QB3 results for 100 molecules, randomly chosen out of the 134k set. This data can serve the development, training and evaluation of inductive statistical data analysis-based machine learning (ML) models
+  <span class="sup">
+   <a ref-type="bibr" rid="b13" href="#b13">13</a>
+  </span>. It might also assist the search and discovery of hitherto unknown trends, structure-property relationships, and molecular materials design
+  <span class="sup">
+   <a ref-type="bibr" rid="b1" href="#b1">1</a>,
+   <a ref-type="bibr" rid="b14" href="#b14">14</a>,
+   <a ref-type="bibr" rid="b15" href="#b15">15</a>
+  </span>.
+ </p>
+</sec>

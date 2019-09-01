@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Test dataset 4</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the group of Pablo Echenique, at the Institute of Physical Chemistry "Rocasolano" (CSIC) and the University of Zaragoza, a large number of calculations were performed in peptide systems using the Gaussian quantum chemistry package. These calculations represent an exhaustive study (whose results and aims have been discussed elsewhere [
+  <a ref-type="bibr" rid="B14" href="#B14">14</a>]), of more than 250 
+  <span class="italic">ab initio </span>potential energy surfaces (PESs) of the model dipeptide HCO-L-Ala-NH
+  <sub>2</sub>. The model chemistries investigated are constructed as homo- and heterolevels involving possibly different RHF and MP2 calculations for the geometry and the energy. The basis sets used belong to a sample of 39 representants from Pople's split-valence families, ranging from the small 3-21G to the large 6-311++G(2 df, 2 pd). The conformational space of this molecule is scanned by defining a regular 12×12 grid from -165° to 165° in 30° steps in the 2D space spanned by its Ramachandran angles 
+  <span class="italic">ϕ </span>and 
+  <span class="italic">ψ</span>. This totals more than 35000 Gaussian logfiles, all generated at the standard level of verbosity, some of them corresponding to single-point energy calculations, some of them to energy optimizations. The use of JUMBO-converters through Lensfield 2 has allowed to parse the totality of these files, through a complicated folder tree, generating the corresponding raw XML and structured compchem CML with a very high rate of captured concepts. The total time required to do the parsing was about five hours in an iMac desktop machine with a 2.66 GHz Intel Core 2 Duo processor, and 4 GB of RAM memory, running the Mac OS X 10.6.7 operating system.
+ </p>
+</sec>

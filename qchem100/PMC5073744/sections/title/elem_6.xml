@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" sec-type="materials|methods" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Sharing scientific workflows</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In [
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>] a formal description of scientific workflows was presented to enable sharing workflows inside and among research communities. This formal description defines the data and meta-data structure of scientific workflows required to manage workflows, including their uploading, editing, searching and downloading, in workflow repositories. The formal description also provides extra supports for sharing workflows of different workflow systems and their combination into meta-workflows and executing them on different DCIs.
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Atomic and compound workflows and their formal description</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Scientific workflows are generally defined by four entities: abstract workflow, concrete workflow, workflow configuration and workflow engine. The abstract workflow specifies the functionality of the workflow. It defines the workflow structure as a workflow graph including its inputs and outputs, and its edges and nodes where nodes correspond to computational tasks and edges represent the control and/or data flow among nodes. It does not contain any executables, default input files and parameters needed to run the workflow. Abstract workflows may have multiple implementations defined by concrete workflows. The concrete workflow defines a workflow instance for a particular workflow engine. It delivers the functionality defined by the abstract workflow. It contains either data or references (via e.g., URLs) required to run the workflow on the associated workflow engine. Each concrete workflow has its own workflow configuration that contains parameters, references and files of the concrete workflow. Finally, the workflow engine identifies the workflow engine that executes the concrete workflow. Therefore, as described in [
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>], a scientific workflow can be formally defined as
+   <div id="Equ1" class="disp-formula">
+    <span class="label">1</span>
+    <div class="alternatives">
+     <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}} = :\left\{ {{\text{WF}}_{\text{abs}} ,{\text{WF}}_{\text{cnr}} ,{\text{ WF}}_{\text{cnf}} ,{\text{ WF}}_{\text{eng}} } \right\} $$\end{document}</span>
+     <div id="M2" display="block" class="math">
+      <div class="mrow">
+       <span class="mtext">WF</span>
+       <span class="mo">=</span>
+       <span class="mo">:</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">WF</span>
+          <span class="mtext">abs</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <span class="mtext">WF</span>
+          <span class="mtext">cnr</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">WF</span>
+          </div>
+          <span class="mtext">cnf</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">WF</span>
+          </div>
+          <span class="mtext">eng</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where WF
+   <sub>abs</sub>—abstract workflow, WF
+   <sub>cnr</sub>—concrete workflow, WF
+   <sub>cnf</sub>—workflow configuration, WF
+   <sub>eng</sub>—workflow engine.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Workflows may orchestrate complex scientific experiments with a large number of workflow nodes. These workflows are monolithic entities supporting one particular experiment. If there is need to change a scientific experiment, workflow developers have to re-design and test the whole workflow again. It may require significant efforts in both resources and time. Analysing these workflows it can be concluded that they may contain a job or a set of jobs delivering a specific functionality that can be re-used in further scientific experiments. To support workflow sharing and re-usability we introduce the concept of atomic workflows to implement modularity within scientific workflows [
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>, 
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>]. An atomic workflow is a special type of workflows, which is aimed to achieve a very specific objective delivering a specific function with a specific set of inputs and outputs. They contain only jobs i.e. they do not incorporate any further workflows. They represent a job or a set of jobs that can be re-used as part of more complex workflows. An example of such workflows can be a simple geometry optimization workflow in Computational Chemistry which can be re-used as part of a number of other possible workflows such as frequency calculation, time-dependent DFT, population analyses, etc. as demonstrated in [
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>]. Since atomic workflows deliver a well-defined functionality we manage them at the abstract workflow level. To manage atomic workflows both the formal definition of abstract workflows and their data structure must be extended.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In [
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>], we used 
+   <span class="italic">jobs</span> as a structure to represent the set of functions envisaged to be performed by a workflow. In abstract workflows 
+   <span class="italic">jobs</span> represent a set of functionalities while in concrete workflows they are the binaries that deliver these functionalities. Therefore, 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">(I</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">, O</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">)</span> ∈ 
+   <span class="italic">jobs; h</span> = 
+   <span class="italic">1,…, k</span> where 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub> represents the set of functions to be performed by a workflow. As an atomic workflow is envisaged to be focused on accomplishing a single specific function, this can be represented as 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">(I</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">, O</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub>
+   <span class="italic">)</span> ∈ 
+   <span class="italic">jobs; h</span> = 
+   <span class="italic">1</span>. As described above, this function is assumed to be generic enough to be re-used as part of more complex workflows. Now, the function 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub> is expected to operate with a generic set of input 
+   <span class="italic">I,</span> which is envisaged to vary across application domains. Furthermore, 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub> is expected to produce a specific set of outputs 
+   <span class="italic">O,</span> which can be consumed by other atomic workflows and/or jobs within a complex workflow. Within the context of the terminology used by workflow systems, the function 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">h</span>
+   </sub> represents a ‘job’, which is envisaged to execute specific function as part of the overall workflow. We use the formalism presented in [
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>], to further elaborate the inputs and outputs of the atomic workflows:
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">atomic workflow:
+   <div id="Equ2" class="disp-formula">
+    <span class="label">2</span>
+    <div class="alternatives">
+     <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}}_{\text{AT}} = : \, \left\{ {{\text{job}}\left( {{\text{f}}_{\text{h}} } \right)} \right\} $$\end{document}</span>
+     <div id="M4" display="block" class="math">
+      <div class="mrow">
+       <div class="msub">
+        <span class="mtext">WF</span>
+        <span class="mtext">AT</span>
+       </div>
+       <span class="mo">=</span>
+       <span class="mo">:</span>
+       <span width="0.166667em" class="mspace"/>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <span class="mtext">job</span>
+         <div close=")" open="(" separators="" class="mfenced">
+          <div class="msub">
+           <span class="mtext">f</span>
+           <span class="mtext">h</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where h = 1;
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">job(f
+   <sub>h</sub>) ∈ 
+   <span class="italic">jobs</span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">inputs:
+   <div id="Equ3" class="disp-formula">
+    <span class="label">3</span>
+    <div class="alternatives">
+     <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ I = \, \left\{ {{\text{I}}_{1} ,{\text{ I}}_{2} ,{\text{ I}}_{3} , \ldots ,{\text{I}}_{u} } \right\} $$\end{document}</span>
+     <div id="M6" display="block" class="math">
+      <div class="mrow">
+       <span class="mi">I</span>
+       <span class="mo">=</span>
+       <span width="0.166667em" class="mspace"/>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">I</span>
+          <span class="mn">1</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">I</span>
+          </div>
+          <span class="mn">2</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">I</span>
+          </div>
+          <span class="mn">3</span>
+         </div>
+         <span class="mo">,</span>
+         <span class="mo">…</span>
+         <span class="mo">,</span>
+         <div class="msub">
+          <span class="mtext">I</span>
+          <span class="mi">u</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ3.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where I
+   <sub>i</sub>—input for the workflow; i = 1,…, u
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">I
+   <sub>i</sub> = {input_id, input_description, input_data_type}
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">outputs:
+   <div id="Equ4" class="disp-formula">
+    <span class="label">4</span>
+    <div class="alternatives">
+     <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ O \, = \left\{ {{\text{O}}_{1} ,{\text{ O}}_{2} ,{\text{ O}}_{3} , \ldots,{\text{ O}}_{v} } \right\} $$\end{document}</span>
+     <div id="M8" display="block" class="math">
+      <div class="mrow">
+       <span class="mi">O</span>
+       <span width="0.166667em" class="mspace"/>
+       <span class="mo">=</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">O</span>
+          <span class="mn">1</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">O</span>
+          </div>
+          <span class="mn">2</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">O</span>
+          </div>
+          <span class="mn">3</span>
+         </div>
+         <span class="mo">,</span>
+         <span class="mo">…</span>
+         <span class="mo">,</span>
+         <div class="msub">
+          <div class="mrow">
+           <span width="0.333333em" class="mspace"/>
+           <span class="mtext">O</span>
+          </div>
+          <span class="mi">v</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ4.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where O
+   <sub>j</sub>—output for the workflow; j = 1,…, v, O
+   <sub>j</sub> = {output_id, output_description, output_data_type}
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Having the formal description of the atomic workflows and their functionality at the abstract workflow level we extended the data and meta-data structure of abstract workflows. (See in Table 
+   <a rid="Tab1" ref-type="table" href="#Tab1">1</a>) These data structures enable publishing atomic workflows in workflow repositories, for example in the SHIWA Workflow Repository [
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>]. As a result, atomic workflows can be searched and found in these repositories enabling workflow developers to embed atomic workflows with the required functionality in meta-workflows.
+   <div id="Tab1" class="table-wrap">
+    <span class="label">Table 1</span>
+    <div class="caption">
+     <p>Data structure of the atomic workflow’s functionality in the repository</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th align="left">Element</th>
+       <th align="left">Sub-element</th>
+       <th align="left">Sub-sub-element</th>
+       <th align="left">Data type</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left">Functionality</td>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">Ontology vocabulary</td>
+      </tr>
+      <tr>
+       <td align="left">Input(s)</td>
+       <td align="left">input 1</td>
+       <td align="left">input_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input_description</td>
+       <td align="left">Plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input data type</td>
+       <td align="left">Data type</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">input 2</td>
+       <td align="left">input_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input_description</td>
+       <td align="left">plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input data type</td>
+       <td align="left">Data type</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">input…</td>
+       <td align="left"/>
+       <td align="left"/>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">input u</td>
+       <td align="left">input_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input_description</td>
+       <td align="left">Plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">input data type</td>
+       <td align="left">Data type</td>
+      </tr>
+      <tr>
+       <td align="left">Output(s)</td>
+       <td align="left">output 1</td>
+       <td align="left">output_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output_description</td>
+       <td align="left">Plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output data type</td>
+       <td align="left">Data type</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">output 2</td>
+       <td align="left">output_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output_description</td>
+       <td align="left">Plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output data type</td>
+       <td align="left">Data type</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">output 
+        <span class="italic">…</span>
+       </td>
+       <td align="left"/>
+       <td align="left"/>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">output v</td>
+       <td align="left">output_id</td>
+       <td align="left">Integer</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output_description</td>
+       <td align="left">Plain text</td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left"/>
+       <td align="left">output data type</td>
+       <td align="left">Data type</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Workflow libraries and atomic workflows</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Scientific workflows represent valuable knowledge incorporating verified methods to perform specific experiments. Within this context, sharing workflows to establish and improve collaborations facilitates advancement of scientific knowledge. Workflow repositories and libraries have a profound role in achieving this objective by providing the enabling environment. To support workflow sharing we recommend creating a workflow library of atomic workflows for a specific research area, a domain, and it may have multiple sub-domains. Defining a workflow library follows a top-down approach, i.e. first the domain is identified, next, the sub-domains are defined and finally, the functionality of atomic workflows specified.
+   <div id="Equ5" class="disp-formula">
+    <span class="label">5</span>
+    <div class="alternatives">
+     <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{SUB}}\_{\text{DOMAIN}}_{k} \in {\text{DOMAIN}} $$\end{document}</span>
+     <div id="M10" display="block" class="math">
+      <div class="mrow">
+       <span class="mtext">SUB</span>
+       <span class="mi">_</span>
+       <div class="msub">
+        <span class="mtext">DOMAIN</span>
+        <span class="mi">k</span>
+       </div>
+       <span class="mo">∈</span>
+       <span class="mtext">DOMAIN</span>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ5.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where k = 1,…, w
+   <div id="Equ6" class="disp-formula">
+    <span class="label">6</span>
+    <div class="alternatives">
+     <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}}_{{{\text{AT}}({\text{l}})}} \in {\text{SUB}}\_{\text{DOMAIN}}_{\text{k}} $$\end{document}</span>
+     <div id="M12" display="block" class="math">
+      <div class="mrow">
+       <div class="msub">
+        <span class="mtext">WF</span>
+        <div class="mrow">
+         <span class="mtext">AT</span>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mtext">l</span>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <span class="mo">∈</span>
+       <span class="mtext">SUB</span>
+       <span class="mi">_</span>
+       <div class="msub">
+        <span class="mtext">DOMAIN</span>
+        <span class="mtext">k</span>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ6.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where l = 1,…, y
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Being familiar with a particular research domain, researchers can identify the relevant sub-domains and define the functionality of workflow library of each sub-domain.</p>
+ </sec>
+ <sec id="Sec6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Meta-workflows and their formal description</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Complex workflows, also called meta-workflows, may contain jobs and workflows. We call workflows included in meta-workflows embedded workflows. We consider atomic workflows as a sub-set of embedded workflows.
+   <div id="Equ7" class="disp-formula">
+    <span class="label">7</span>
+    <div class="alternatives">
+     <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{M}{-}\text{WF}} = :\left\{ {{\text{J}}_{1} \ldots .{\text{J}}_{{{\text{m}} + {\text{n}}}} } \right\} = \left\{ {{\text{J}}_{{{\text{WF}}1}} \ldots {\text{J}}_{\text{WFm}} ,\;{\text{WF}}_{{{\text{EM}}1}} \ldots {\text{WF}}_{\text{EMn}} ,} \right\} $$\end{document}</span>
+     <div id="M14" display="block" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mtext">M</span>
+        <span class="mo">-</span>
+        <span class="mtext">WF</span>
+       </div>
+       <span class="mo">=</span>
+       <span class="mo">:</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">J</span>
+          <span class="mn">1</span>
+         </div>
+         <span class="mo">…</span>
+         <span class="mo">.</span>
+         <div class="msub">
+          <span class="mtext">J</span>
+          <div class="mrow">
+           <span class="mtext">m</span>
+           <span class="mo">+</span>
+           <span class="mtext">n</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">J</span>
+          <div class="mrow">
+           <span class="mtext">WF</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <span class="mo">…</span>
+         <div class="msub">
+          <span class="mtext">J</span>
+          <span class="mtext">WFm</span>
+         </div>
+         <span class="mo">,</span>
+         <span width="0.277778em" class="mspace"/>
+         <div class="msub">
+          <span class="mtext">WF</span>
+          <div class="mrow">
+           <span class="mtext">EM</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <span class="mo">…</span>
+         <div class="msub">
+          <span class="mtext">WF</span>
+          <span class="mtext">EMn</span>
+         </div>
+         <span class="mo">,</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ7.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where J
+   <sub>WFm</sub>—workflow job m = 1,…, z, WF
+   <sub>EMn</sub>—embedded workflow n = 1, 
+   <span class="italic">…</span>, y, WF
+   <sub>AT</sub> ∈ WF
+   <sub>EM</sub>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To support workflow sharing we propose to incorporate atomic workflows as embedded workflows in meta-workflows to achieve more complex functionalities with less development efforts. In Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> the meta-workflow contains three jobs (N1, N2 and N3) and one embedded atomic workflow with node CN1 and CN2.
+   <div id="Fig1" class="fig">
+    <span class="label">Fig. 1</span>
+    <div class="caption">
+     <p>Example for a meta-workflow</p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig1_HTML" id="MO9" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">As part of our efforts in [
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>], we identified different types of meta-workflows along with their formal definitions. These definitions are envisioned to make a significant contribution in supporting workflow developers to design new workflows by enabling them to comprehend the attributes and semantics of each type of meta-workflow. The different meta-workflow types are listed below with respective graphical representations from WS-PGRADE in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>a–d representing all workflow nodes as jobs that could be either workflow jobs or embedded workflows according to Eq. 
+   <a rid="Equ7" ref-type="" href="#Equ7">7</a>. Details of each of these can be found in [
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>].
+   <div id="Fig2" class="fig">
+    <span class="label">Fig. 2</span>
+    <div class="caption">
+     <p>
+      <span class="bold">a</span> Single job meta-workflow; 
+      <span class="bold">b</span> linear multi-job meta-workflow; 
+      <span class="bold">c</span> Parallel multi-job meta-workflow; 
+      <span class="bold">d</span> parameter sweep meta-workflow
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig2_HTML" id="MO10" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div list-type="order" class="list">
+    <div class="list-item">
+     <p>
+      <span class="italic">Single job meta</span>-
+      <span class="italic">workflow (Fig.</span> 
+      <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+      <span class="italic">a):</span> This is a special type of meta-workflow with a single job workflow. The job representing this workflow can be a simple job or an embedded workflow.
+     </p>
+    </div>
+    <div class="list-item">
+     <p>
+      <span class="italic">Linear multi</span>-
+      <span class="italic">job meta</span>-
+      <span class="italic">workflow (Fig.</span> 
+      <a rid="Fig2" ref-type="fig" href="#Fig2">
+       <span class="italic">2</span>
+      </a>
+      <span class="italic">b):</span> This is a pipeline of multiple jobs in the native workflow system where any (or even all) of these jobs can be non-native workflows. The execution of each job depends on the receipt of inputs from previous jobs.
+     </p>
+    </div>
+    <div class="list-item">
+     <p>
+      <span class="italic">Parallel multi</span>-
+      <span class="italic">job meta</span>-
+      <span class="italic">workflow (Fig.</span> 
+      <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+      <span class="italic">c):</span> This is a workflow in the native workflow system that includes parallel branches. One or more of these branches can include one or more non-native workflows.
+     </p>
+    </div>
+    <div class="list-item">
+     <p>
+      <span class="italic">Parameter sweep meta</span>-
+      <span class="italic">workflow (Fig.</span> 
+      <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+      <span class="italic">d):</span> The parameter sweep meta-workflow has a generator job which produces a number of inputs each to be consumed by a worker job. The collector job then aggregates the outputs of all the worker jobs and prepares the final output.
+     </p>
+    </div>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Considering that there could be multiple level of workflow embedding in meta-workflows we introduce 
+   <span class="italic">p</span> as the depth to describe it.
+   <div id="Equ8" class="disp-formula">
+    <span class="label">8</span>
+    <div class="alternatives">
+     <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{M}}^{\text{p}}{-}{\text{WF}} = :\left\{ {{\text{J}}_{{{\text{WF}}1}} \ldots {\text{J}}_{\text{WFm}} ,\;{\text{WF}}_{{{\text{EM}}1}}^{{{\text{q}}1}} \ldots {\text{WF}}_{\text{EMn}}^{\text{qn}} ,} \right\} $$\end{document}</span>
+     <div id="M16" display="block" class="math">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mtext">M</span>
+        </div>
+        <span class="mtext">p</span>
+       </div>
+       <span class="mo">-</span>
+       <span class="mtext">WF</span>
+       <span class="mo">=</span>
+       <span class="mo">:</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msub">
+          <span class="mtext">J</span>
+          <div class="mrow">
+           <span class="mtext">WF</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <span class="mo">…</span>
+         <div class="msub">
+          <span class="mtext">J</span>
+          <span class="mtext">WFm</span>
+         </div>
+         <span class="mo">,</span>
+         <span width="0.277778em" class="mspace"/>
+         <div class="msubsup">
+          <span class="mtext">WF</span>
+          <div class="mrow">
+           <div class="mrow">
+            <span class="mtext">EM</span>
+            <span class="mn">1</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mtext">q</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <span class="mo">…</span>
+         <div class="msubsup">
+          <span class="mtext">WF</span>
+          <div class="mrow">
+           <span class="mtext">EMn</span>
+          </div>
+          <span class="mtext">qn</span>
+         </div>
+         <span class="mo">,</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ8.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where p—depth of the meta-workflow p = MAX{q
+   <sub>1</sub>,…, q
+   <sub>n</sub>}, q—depth of the embedded workflow q = 1, …, n
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> presents a meta-workflow of depth 2. It combines an atomic workflow Job(AWF1), a meta-workflow Job(MWF1) and an embedded workflow Job(EWF1).
+   <div id="Fig3" class="fig">
+    <span class="label">Fig. 3</span>
+    <div class="caption">
+     <p>Meta-workflow of depth 2</p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig3_HTML" id="MO12" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+</sec>

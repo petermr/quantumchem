@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec10" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Polar surface area</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The polar surface area (PSA) is defined as the combined surface area belonging to oxygen and nitrogen atoms and their hydrogen atoms. Palm et al. [
+  <a ref-type="bibr" rid="CR38" href="#CR38">38</a>] were the first to use a calculated PSA to predict the absorption of drugs. A new method was designed to derive the PSA by quantum chemical means QMPSA [
+  <a ref-type="bibr" rid="CR39" href="#CR39">39</a>]. This is illustrated in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The original method by Palm et al., and our QMPSA have both been implemented in Molden.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>QMPSA. Quantum mechanical polar surface area for the drug molecule sulfasalazine. 
+     <span class="italic">Red</span> and 
+     <span class="italic">blue</span>: polar; 
+     <span class="italic">green</span>: apolar surface area
+    </p>
+   </div>
+   <div xlink:href="10822_2017_42_Fig3_HTML" id="d29e861" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Ren et al. [
+  <a ref-type="bibr" rid="CR40" href="#CR40">40</a>], for example, analysed anticancer fungal polysaccharides based on physiochemical properties and identified a unique region in chemical space using a series of molecular descriptors including Molden’s QMPSA.
+ </p>
+</sec>

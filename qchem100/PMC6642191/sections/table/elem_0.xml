@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Tab1" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 1</span>
+ <div class="caption">
+  <p>Summary of the obtained main parameters for the characterisation of lipdot-cell-interactions.</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th>Sample</th>
+    <th>Particle size/nm
+     <span class="sup">a</span>
+    </th>
+    <th>Luminescence intensity
+     <span class="sup">b</span>
+    </th>
+    <th>Luminescence decay time 
+     <span class="italic">τ</span>
+     <sub>av(int)</sub>/ns
+     <span class="sup">c</span>
+    </th>
+    <th>Translational diffusion time 
+     <span class="italic">τ</span>
+     <sub>D</sub>/ms (fractional contribution 
+     <span class="italic">f</span>
+     <sub>i</sub>/%)
+     <span class="sup">d</span>
+    </th>
+    <th>Diffusion coefficient 
+     <span class="italic">D</span>/µm
+     <span class="sup">2</span> × s
+     <span class="sup">−1</span> (hydro-dynamic radius 
+     <span class="italic">r</span>
+     <sub>h</sub>/nm)
+    </th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>Free QD655</td>
+    <td/>
+    <td>λ
+     <sub>em</sub> = 655 nm
+    </td>
+    <td>29.7 ± 2.31</td>
+    <td>
+     <p>2.34 ± 0.14 (73)</p>
+     <p>0.04 ± 0.01 (27)</p>
+    </td>
+    <td>4.5 ± 0.67 (35)</td>
+   </tr>
+   <tr>
+    <td colspan="6">
+     <span class="bold">
+      <span class="italic">Empty liposomes</span>
+     </span>:
+    </td>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPS</td>
+    <td>96 ± 0.53</td>
+    <td/>
+    <td/>
+    <td/>
+    <td/>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPE</td>
+    <td>111 ± 1.42</td>
+    <td/>
+    <td/>
+    <td/>
+    <td/>
+   </tr>
+   <tr>
+    <td colspan="6">
+     <span class="bold">
+      <span class="italic">Lipodots</span>
+     </span>:
+    </td>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPS</td>
+    <td>97 ± 0.82</td>
+    <td>λ
+     <sub>em</sub> = 652 nm
+    </td>
+    <td>41.4 ± 2.09</td>
+    <td>
+     <p>11.0 ± 0.99 (88)</p>
+     <p>0.27 ± 0.05 (12)</p>
+    </td>
+    <td>1.4 ± 0.22 (120)</td>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPE</td>
+    <td>103 ± 2.99</td>
+    <td>λ
+     <sub>em</sub> = 652 nm
+    </td>
+    <td>39.9 ± 2.71</td>
+    <td>
+     <p>11.4 ± 1.71 (86)</p>
+     <p>0.21 ± 0.11 (14)</p>
+    </td>
+    <td>1.4 ± 0.22 (120)</td>
+   </tr>
+   <tr>
+    <td>Untreated cells
+     <span class="sup">e</span>
+    </td>
+    <td/>
+    <td>weak</td>
+    <td>1.77 ± 0.06</td>
+    <td>370 ± 35 (100)
+     <span class="sup">f</span>
+    </td>
+    <td>0.071 ± 0.007</td>
+   </tr>
+   <tr>
+    <td colspan="6">
+     <span class="bold">
+      <span class="italic">Treated cells</span>
+     </span>
+     <span class="sup">e</span>:
+    </td>
+   </tr>
+   <tr>
+    <td>    Free QD655</td>
+    <td/>
+    <td>weak</td>
+    <td/>
+    <td/>
+    <td/>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPS-lipodots</td>
+    <td/>
+    <td>
+     <span class="italic">I</span>
+     <sub>L,green</sub> &gt; 
+     <span class="italic">I</span>
+     <sub>L,red</sub>
+    </td>
+    <td>2.58 ± 0.37
+     <span class="sup">g</span>
+    </td>
+    <td>
+     <p>523 ± 107 (55)</p>
+     <p>1.85 ± 0.96 (45)</p>
+    </td>
+    <td/>
+   </tr>
+   <tr>
+    <td>    DOPC:DOPE-lipodots</td>
+    <td/>
+    <td>
+     <span class="italic">I</span>
+     <sub>L,green</sub> &gt; 
+     <span class="italic">I</span>
+     <sub>L,red</sub>
+    </td>
+    <td>2.70 ± 0.29
+     <span class="sup">g</span>
+    </td>
+    <td>
+     <p>800 ± 113 (61)</p>
+     <p>1.17 ± 0.52 (39)</p>
+    </td>
+    <td/>
+   </tr>
+  </tbody>
+ </table>
+ <div class="table-wrap-foot">
+  <p>
+   <span class="sup">a</span>Data from DLS recordings.
+  </p>
+  <p>
+   <span class="sup">b</span>
+   <span class="italic">I</span>
+   <sub>L,red</sub> and 
+   <span class="italic">I</span>
+   <sub>L,green</sub> correspond to the luminescence intensities in the red and green detection channel, respectively.
+  </p>
+  <p>
+   <span class="sup">c</span>Data from FLIM recordings, shown as intensity-weighted average decay times.
+  </p>
+  <p>
+   <span class="sup">d</span>Data from FCS recordings.
+  </p>
+  <p>
+   <span class="sup">e</span>Intracellular luminescence.
+  </p>
+  <p>
+   <span class="sup">f</span>Weak signal.
+  </p>
+  <p>
+   <span class="sup">g</span>Data after 30 min incubation.
+  </p>
+ </div>
+</div>

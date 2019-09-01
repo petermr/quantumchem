@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="t5" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">TABLE V.</span>
+ <div class="caption">
+  <p>MP2 and coupled-cluster adsorption energies using LiH substrates with different number of atoms in the supercell. PGTOs were used for the virtual orbitals in the top-most layer of the LiH surface. The thermodynamic limit is obtained via a 1/
+   <span class="italic">N</span>
+   <span class="sup">2</span> extrapolation.
+  </p>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup span="1">
+   <col align="left" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center" colspan="4" rowspan="1">
+     <div class="inline-formula">
+      <div id="M23" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">ads</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">MP2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div> (meV)
+    </th>
+   </tr>
+   <tr>
+    <th colspan="1" rowspan="1">Atoms</th>
+    <th align="center" colspan="1" rowspan="1">AVDZ</th>
+    <th align="center" colspan="1" rowspan="1">AVTZ</th>
+    <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="1" rowspan="1">32</td>
+    <td colspan="1" rowspan="1">157</td>
+    <td colspan="1" rowspan="1">192</td>
+    <td colspan="1" rowspan="1">207</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">173</td>
+    <td colspan="1" rowspan="1">209</td>
+    <td colspan="1" rowspan="1">224</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">
+     <div class="inline-formula">
+      <div id="M24" class="math">
+       <span class="mi">∞</span>
+      </div>
+     </div>
+    </td>
+    <td colspan="1" rowspan="1">180</td>
+    <td colspan="1" rowspan="1">216</td>
+    <td colspan="1" rowspan="1">230</td>
+   </tr>
+  </tbody>
+ </table>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup span="1">
+   <col align="left" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center" colspan="4" rowspan="1">
+     <div class="inline-formula">
+      <div id="M25" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">ads</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">CCSD</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div> (meV)
+    </th>
+   </tr>
+   <tr>
+    <th colspan="1" rowspan="1">Atoms</th>
+    <th align="center" colspan="1" rowspan="1">AVDZ</th>
+    <th align="center" colspan="1" rowspan="1">AVTZ</th>
+    <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="1" rowspan="1">32</td>
+    <td colspan="1" rowspan="1">152</td>
+    <td colspan="1" rowspan="1">195</td>
+    <td colspan="1" rowspan="1">212</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">172</td>
+    <td colspan="1" rowspan="1">209</td>
+    <td colspan="1" rowspan="1">225</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">
+     <div class="inline-formula">
+      <div id="M26" class="math">
+       <span class="mi">∞</span>
+      </div>
+     </div>
+    </td>
+    <td colspan="1" rowspan="1">180</td>
+    <td colspan="1" rowspan="1">215</td>
+    <td colspan="1" rowspan="1">229</td>
+   </tr>
+  </tbody>
+ </table>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup span="1">
+   <col align="left" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center" colspan="4" rowspan="1">
+     <div class="inline-formula">
+      <div id="M27" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">ads</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mstyle">
+          <span mathvariant="normal" class="mtext">DCSD</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div> (meV)
+    </th>
+   </tr>
+   <tr>
+    <th colspan="1" rowspan="1">Atoms</th>
+    <th align="center" colspan="1" rowspan="1">AVDZ</th>
+    <th align="center" colspan="1" rowspan="1">AVTZ</th>
+    <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="1" rowspan="1">32</td>
+    <td colspan="1" rowspan="1">162</td>
+    <td colspan="1" rowspan="1">206</td>
+    <td colspan="1" rowspan="1">225</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">183</td>
+    <td colspan="1" rowspan="1">222</td>
+    <td colspan="1" rowspan="1">238</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">
+     <div class="inline-formula">
+      <div id="M28" class="math">
+       <span class="mi">∞</span>
+      </div>
+     </div>
+    </td>
+    <td colspan="1" rowspan="1">192</td>
+    <td colspan="1" rowspan="1">229</td>
+    <td colspan="1" rowspan="1">243</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

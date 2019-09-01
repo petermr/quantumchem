@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="introduction" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">INTRODUCTION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Science, medicine, and engineering demand efficient information processing. It is a long-standing goal to use quantum mechanics to substantially improve these computations (
+  <a rid="R1" ref-type="bibr" href="#R1">
+   <span class="italic">1</span>
+  </a>). The processing routinely involves examining data as a function of complementary variables, e.g., time and frequency. This is done by the Fourier transform (FT) approximations, which accurately compute inputs of 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span> samples in 
+  <span class="italic">O</span>(
+  <span class="italic">n</span> 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span>) steps (
+  <a rid="R2" ref-type="bibr" href="#R2">
+   <span class="italic">2</span>
+  </a>). In the quantum domain, an analogous process exists, namely an FT of quantum amplitudes (
+  <a rid="R3" ref-type="bibr" href="#R3">
+   <span class="italic">3</span>
+  </a>), which requires exponentially fewer 
+  <span class="italic">O</span>(
+  <span class="italic">n</span> log 
+  <span class="italic">n</span>) quantum gates. Here, we report a quantum fractional Kravchuk-Fourier transform (KT), a related process suited to finite string processing (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>). Unlike previous demonstrations (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>, 
+  <a rid="R6" ref-type="bibr" href="#R6">
+   <span class="italic">6</span>
+  </a>), our architecture involves only one gate, resulting in constant-time processing of quantum information. The gate exploits a generalized Hong-Ou-Mandel (HOM) effect (
+  <a rid="R7" ref-type="bibr" href="#R7">
+   <span class="italic">7</span>
+  </a>), the basis for quantum-photonic information applications (
+  <a rid="R8" ref-type="bibr" href="#R8">
+   <span class="italic">8</span>
+  </a>). We perform a proof-of-concept experiment by the creation of large photon number states, interfering them on a beam splitter (BS) and using photon-counting detection. The discrete FT (DFT) is an efficient approximation to the FT. The signal (
+  <span class="italic">x</span>
+  <sub>0</sub>, 
+  <span class="italic">x</span>
+  <sub>1</sub>,…, 
+  <span class="italic">x
+   <sub>S</sub>
+  </span>) is taken to be samples of one period of a continuous function and is turned into a new sequence (
+  <span class="italic">X</span>
+  <sub>0</sub>, 
+  <span class="italic">X</span>
+  <sub>1</sub>, …, 
+  <span class="italic">X
+   <sub>S</sub>
+  </span>) where
+  <div id="E1" class="disp-formula">
+   <div id="m1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="maligngroup"/>
+      <div class="msub">
+       <span class="mi">X</span>
+       <span class="mi">k</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <div class="msqrt">
+        <div class="mrow">
+         <span class="mi">S</span>
+         <span class="mo">+</span>
+         <span class="mn">1</span>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">l</span>
+         <span class="mo">=</span>
+         <span class="mn">0</span>
+        </div>
+        <span class="mi">S</span>
+       </div>
+      </div>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <span class="mi">i</span>
+        <span class="mn">2</span>
+        <span mathvariant="normal" class="mi">π</span>
+        <div class="mfrac">
+         <span mathvariant="italic" class="mi">kl</span>
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span class="mo">+</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">·</span>
+      <div class="msub">
+       <span class="mi">x</span>
+       <span class="mi">l</span>
+      </div>
+      <span class="mo">,</span>
+      <span class="mi">k</span>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mo">,</span>
+      <span class="mo">…</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div>The DFT does not, however, reproduce all essential features of the FT. In some cases, a transform that is a fractional power of the FT, the α-fractional FT where 0 ≤ α ≤ 1, yields advantages (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>). For α = 0, this transform is the identity, while for α = 1, this is the FT. If 
+  <div class="inline-formula">
+   <div id="m2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">α</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mi">n</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, where 
+  <span class="italic">n =</span> 2, 3, 4,…, then a composition of 
+  <span class="italic">n</span> α-fractional FTs amounts to the FT. This intuitive property does not hold true for the α-fractional DFT (Supplementary Materials), which generalizes the DFT, but for α = 1, it reduces to 
+  <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a>. This is because the α-fractional FT can be seen as a circular rotation of the signal in the time-frequency plane by angle 
+  <div class="inline-formula">
+   <div id="m3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">π</span>
+        <span mathvariant="normal" class="mi">α</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, while the α-fractional DFT is an elliptical rotation in this plane, which requires additional computation steps to properly approximate the α-fractional FT (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The DFT is powerful because of the fast FT (FFT) algorithm (
+  <a rid="R2" ref-type="bibr" href="#R2">
+   <span class="italic">2</span>
+  </a>). Using an FFT lowers the number of operations from 
+  <span class="italic">O</span>(2
+  <span class="sup">2
+   <span class="italic">n</span>
+  </span>) to 
+  <span class="italic">O</span>(
+  <span class="italic">n</span> 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span>), which nevertheless remains a bottleneck in signal processing (
+  <a rid="R10" ref-type="bibr" href="#R10">
+   <span class="italic">10</span>
+  </a>). The FFT uses a “divide and conquer” method to recursively split 
+  <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a> into 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span> sums, which can be processed quickly, and therefore is applicable to signals of period 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span>. Notably, the minimal number of operations required to implement the DFT is unknown (
+  <a rid="R11" ref-type="bibr" href="#R11">
+   <span class="italic">11</span>
+  </a>). The quantum FT, the cornerstone of quantum algorithms (
+  <a rid="R12" ref-type="bibr" href="#R12">
+   <span class="italic">12</span>
+  </a>, 
+  <a rid="R13" ref-type="bibr" href="#R13">
+   <span class="italic">13</span>
+  </a>), enables implementation of the DFT on quantum amplitudes with 
+  <span class="italic">O</span>(
+  <span class="italic">n</span> log 
+  <span class="italic">n</span>) operations by processing 
+  <span class="italic">n</span> qubits (
+  <span class="italic">n</span> quantum bits encode 2
+  <span class="italic">
+   <span class="sup">n</span>
+  </span> amplitudes) (
+  <a rid="R14" ref-type="bibr" href="#R14">
+   <span class="italic">14</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In many applications, e.g., bioimaging, the signals are typically not periodic and are random in length. For these cases, the KT is a useful alternative to the FFT because it can be applied to finite signal processing (
+  <a rid="R15" ref-type="bibr" href="#R15">
+   <span class="italic">15</span>
+  </a>, 
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>). The KT computes orthogonal moments corresponding to the Kravchuk polynomials, which are discrete and orthogonal with respect to a binomial distribution in the data space (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>). By varying a parameter of the binomial distribution, one is able to set the fractionality α of the KT (Supplementary Materials). This feature allows the exploration of a specific region of interest of an image. To illustrate the action of a KT, the numerical study in fig. S5 in the Supplementary Materials demonstrates the advantages of KT over FFT in reconstructing test images.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The KT’s computational time is equal to the DFT’s runtime (
+  <a rid="R17" ref-type="bibr" href="#R17">
+   <span class="italic">17</span>
+  </a>) (Supplementary Materials), and implementations with a lower number of operations are of high demand. Recently, quantum KTs (QKTs) have been realized in waveguides with two photons, but they are difficult to scale up and their fractionality is fixed by waveguide length (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>, 
+  <a rid="R6" ref-type="bibr" href="#R6">
+   <span class="italic">6</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The α-fractional KT uses the weighted Kravchuk polynomials 
+  <div class="inline-formula">
+   <div id="m4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">k</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">p</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">q</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>), which are real-valued and correspond to wave functions of finite harmonic oscillators
+  <div id="E2" class="disp-formula">
+   <div id="m5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div displaystyle="true" class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <span class="maligngroup"/>
+         <div class="msub">
+          <span class="mi">X</span>
+          <span class="mi">k</span>
+         </div>
+         <span class="mo">=</span>
+         <div displaystyle="true" class="mstyle">
+          <div class="munderover">
+           <span stretchy="true" class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">l</span>
+            <span class="mo">=</span>
+            <span class="mn">0</span>
+           </div>
+           <span class="mi">S</span>
+          </div>
+         </div>
+         <div class="msup">
+          <span class="mi">e</span>
+          <div class="mrow">
+           <span class="mo">−</span>
+           <span class="mi">i</span>
+           <div class="mfrac">
+            <div class="mrow">
+             <span class="mo">π</span>
+             <span class="mo">α</span>
+            </div>
+            <span class="mn">2</span>
+           </div>
+           <div class="mfrac">
+            <span class="mi">S</span>
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <div class="msup">
+          <span class="mi">e</span>
+          <div class="mrow">
+           <span class="mi">i</span>
+           <div class="mfrac">
+            <span mathvariant="normal" class="mi">π</span>
+            <span class="mn">2</span>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">l</span>
+           <span class="mo">−</span>
+           <span class="mi">k</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="msubsup">
+          <span mathvariant="normal" class="mi">ϕ</span>
+          <span class="mi">k</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">p</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">l</span>
+         <span class="mo">−</span>
+         <span mathvariant="italic" class="mi">Sp</span>
+         <span class="mo">,</span>
+         <span class="mi">S</span>
+         <span stretchy="false" class="mo">)</span>
+         <span class="mo">·</span>
+         <div class="msub">
+          <span class="mi">x</span>
+          <span class="mi">l</span>
+         </div>
+         <span class="mo">,</span>
+         <span class="mi">k</span>
+         <span class="mo">=</span>
+         <span class="mn">0</span>
+         <span class="mo">,</span>
+         <span class="mo">…</span>
+         <span class="mo">,</span>
+         <span class="mi">S</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(2)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="m6" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">p</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <span class="mtext">sin</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="true" class="mo">(</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">π</span>
+        <span mathvariant="normal" class="mi">α</span>
+       </div>
+       <span class="mn">4</span>
+      </div>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>. Unlike plane waves, 
+  <div class="inline-formula">
+   <div id="m7" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <span class="mi">i</span>
+        <span class="mn">2</span>
+        <span mathvariant="normal" class="mi">π</span>
+        <div class="mfrac">
+         <span mathvariant="italic" class="mi">kl</span>
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span class="mo">+</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, the polynomials are defined and orthogonal on a set of 
+  <span class="italic">S</span> + 1 points. This enables one to transform the signal as a finite sequence rather than as an infinite periodic one. In the limit of 
+  <span class="italic">S</span> → ∞, 
+  <div class="inline-formula">
+   <div id="m8" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">k</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">p</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">q</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> tend to eigenfunctions of quantum harmonic oscillators and the α-fractional KT reproduces the α-fractional FT. 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Equation 2</a> can be viewed in terms of overlaps of two spin-
+  <div class="inline-formula">
+   <div id="m9" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> states, in which they are prepared as eigenstates of 
+  <span class="italic">S</span>
+  <sub>3</sub> and one undergoes a rotation by angle 
+  <div class="inline-formula">
+   <div id="m10" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">π</span>
+        <span class="mo">α</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> generated by 
+  <span class="italic">S</span>
+  <sub>1</sub>, 
+  <div class="inline-formula">
+   <div id="m11" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <div class="mfrac">
+         <span mathvariant="normal" class="mi">π</span>
+         <span class="mn">2</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">l</span>
+        <span class="mo">−</span>
+        <span class="mi">k</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">k</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">p</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">l</span>
+      <span class="mo">−</span>
+      <span mathvariant="italic" class="mi">Sp</span>
+      <span class="mo">,</span>
+      <span class="mi">S</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">;</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">k</span>
+      <span class="mo">∣</span>
+      <div class="msup">
+       <span class="mi">e</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mo">π</span>
+          <span class="mo">α</span>
+         </div>
+         <span class="mn">2</span>
+        </div>
+        <div class="msub">
+         <span class="mi">S</span>
+         <span class="mn">1</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">∣</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">;</span>
+      <div class="mfrac">
+       <span class="mi">S</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">l</span>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div>.
+ </p>
+</sec>

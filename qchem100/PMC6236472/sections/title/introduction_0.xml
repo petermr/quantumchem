@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Computational chemistry is the use of well-developed theoretical techniques and algorithms to solve chemical problems. These typically relate to the properties of molecules and chemical reactions. Such processes occur as a result of the rearrangement of electrons among atoms. Quantum chemistry is the branch of computational chemistry concerned with the theoretical understanding of these processes.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although a vast spectrum of methods has been developed for this purpose, the field is restricted by the computational difficulty of the task. Many calculations of interest involve the determination of ground state electronic wave functions and their corresponding energies. To achieve this exactly (to within nonrelativistic assumptions and basis set limitations) requires the 
+  <span class="italic">full configuration interaction</span> approach. This scales factorially with respect to the number of basis functions considered, limiting application of the technique to small molecules.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref2" href="#ref2">2</a>,
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As this conceptually simple approach is computationally intractable, the difficulty of the task is often reduced by invoking various approximations, well-studied in computational chemistry. While these methods often allow high degrees of precision, some computational tasks—for instance, in determining reaction kinetics or dynamics—would benefit from the decreased error of a full configuration interaction approach.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum simulation algorithms are expected to be capable of alleviating some of the difficulty associated with this through the use of a scalable quantum computer. A quantum computer operates on 
+  <span class="italic">qubits</span>—the quantum equivalent of classical bits. Instead of a unit which can either have a state value of 0 or 1, qubits exist as superpositions of |0⟩ and |1⟩ states, i.e., |ψ⟩ = α|0⟩ + β|1⟩. A system of 
+  <span class="italic">n</span> qubits can exist in a superposition of 2
+  <span class="sup">
+   <span class="italic">n</span>
+  </span> basis states. Similar to classical computation, operations which manipulate the state of qubits are described as quantum gates and are analogous to classical logic gates. A sequence of quantum gates, intended to perform a computational task, is referred to as a quantum circuit. Gates that perform an operation which entangle the state of two or more qubits are called entangling gates.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum algorithms to address various chemical tasks have been developed, including the determination of energy spectra,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+  </span> reaction rates,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref5" href="#ref5">5</a>−
+   <a ref-type="bibr" rid="ref7" href="#ref7">7</a>
+  </span> and reaction dynamics.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref8" href="#ref8">8</a>
+  </span> Quantum simulation of quantum systems—particularly chemistry—is often cited as being one of the most significant potential uses of quantum computation.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The development of a scalable quantum computer is an extremely difficult task. Demonstrations of the quantum simulation of electronic structure problems have mostly thus far been limited to the consideration of small hydrides using a minimal basis set. These have been reported in photonic,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref10" href="#ref10">10</a>
+  </span> NMR,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref11" href="#ref11">11</a>
+  </span> and superconducting
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>
+  </span> devices. The first fully scalable demonstration of this kind was performed in 2016.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>
+  </span> Recently, the use of the variational quantum eigensolver algorithm
+  <span class="sup">
+   <a ref-type="bibr" rid="ref13" href="#ref13">13</a>
+  </span> has extended this to the simulation of beryllium hydride.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">However, recent hardware developments have yielded devices that are rapidly increasing in size.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>,
+   <a ref-type="bibr" rid="ref15" href="#ref15">15</a>
+  </span> Devices of up to 50 qubits are likely to be available in the near future.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref16" href="#ref16">16</a>
+  </span> It is likely that such devices will bring the field close to the ability to perform clasically intractable chemistry calculations.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref7" href="#ref7">7</a>
+  </span> For this, advances in both hardware and circuit design are necessary.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The canonical quantum algorithm for the solution of the electronic structure problem involves several steps.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+  </span> First, the molecular orbitals forming a basis for the electronic states must be represented using states of qubits. The electronic Hamiltonian must then be mapped to an operator on the qubit Hilbert space.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref17" href="#ref17">17</a>−
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> Following this, the Trotter–Suzuki approximation
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>−
+   <a ref-type="bibr" rid="ref23" href="#ref23">23</a>
+  </span> is invoked to form an evolution operator which is implementable on the quantum device. Finally, a phase estimation algorithm is invoked in order to ascertain the ground state molecular energy.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref24" href="#ref24">24</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Many algorithmic developments have been made to further this goal. In particular, hybrid quantum-classical schemes have been shown to yield accurate results for a fraction of the cost of canonical quantum simulation techniques.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>−
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>,
+   <a ref-type="bibr" rid="ref25" href="#ref25">25</a>
+  </span> However, these techniques still require a transformation of electronic states and operators to states of and operations upon qubits. The two most commonly used forms of this transformation are the Jordan–Wigner transformation and the Bravyi–Kitaev transformation,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>,
+   <a ref-type="bibr" rid="ref17" href="#ref17">17</a>−
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> although other constructions have been examined.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref26" href="#ref26">26</a>,
+   <a ref-type="bibr" rid="ref27" href="#ref27">27</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the asymptotic limit and without further circuit optimization, the Bravyi–Kitaev transformation is known to have logarithmically superior scaling with respect to circuit length.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>,
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+  </span> An examination of the performance of this process requires generating descriptions of quantum circuits which would perform the simulation. Initial assessments of this technique demonstrated a saving associated with the simulation of the hydrogen molecule in a minimal basis, a smallest-case example.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+  </span> This saving was thus expected to also be present for larger chemical examples. However, further investigation of methane revealed that overall gate savings were relatively modest, although substantial savings were yielded in terms of entangling gates.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> To date, no large scale numerical analysis involving many systems has been performed.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this paper, we use 86 molecular systems to demonstrate that the use of the Bravyi–Kitaev transformation typically results in quantum circuit lengths equal to or shorter than circuits using the canonical Jordan–Wigner transformation. We also consider the impact of Trotter ordering upon both overall gate count and the relative performance of the Bravyi–Kitaev transformation. Varying the Trotter ordering can impact the error incurred in the use of this approximation, potentially resulting in increased overall gate count, even if within each Trotter step the gate count is reduced. As such, we consider the impact of Trotter ordering on the Trotter error, by examining a subset of our systems.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We begin by providing a brief overview of the theory underlying the Bravyi–Kitaev mapping and of Trotterization. In 
+  <a rid="sec3" ref-type="other" href="#sec3">section 
+   <a rid="sec3" ref-type="other" href="#sec3">3</a>
+  </a>, we discuss circuits with a limited degree of optimization. Following this, we introduce the impact of Trotter ordering, considering its impact on single Trotter step circuit length in 
+  <a rid="sec4" ref-type="other" href="#sec4">section 
+   <a rid="sec4" ref-type="other" href="#sec4">4</a>
+  </a>, and on the Trotter error in 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>.
+ </p>
+</sec>

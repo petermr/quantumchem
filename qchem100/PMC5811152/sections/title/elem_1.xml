@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theory</div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Parallel factor analysis (PARAFAC)</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">This method was developed as a robust analysis for a direct determination of unique explanatory factors. In this study explanatory factors correspond to chemical species. Anderson and Bro have shown that simultaneous analysis of multi-way data with three or more independent variables measured in a crossed fashion overcomes the rotation problem and a unique solution of such a model could be found.
+   <span class="sup">
+    <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+   </span> It was demonstrated that PARAFAC is a useful tool for selective excitation luminescence spectroscopy
+   <span class="sup">
+    <a rid="cit28" ref-type="bibr" href="#cit28">28</a>,
+    <a rid="cit29" ref-type="bibr" href="#cit29">29</a>
+   </span> as well as for TRLFS data.
+   <span class="sup">
+    <a rid="cit30" ref-type="bibr" href="#cit30">30</a>
+   </span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the following section PARAFAC is illustrated using the example of TRLFS. Raw data were baseline corrected and normalized to a luminescence maximum of one before analysis to ensure equal weighting. Afterwards 2D data (emission wavelength 
+   <span class="italic">versus</span> time) from measurements at different pH values were stacked to a 3D data cube (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, top). This data cube is a linear combination of individual cubes for respective chemical species (1 to 
+   <span class="italic">f</span>) and additional noise (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, middle, adapted from Bro 
+   <span class="italic">et al.</span>
+   <span class="sup">
+    <a rid="cit31" ref-type="bibr" href="#cit31">31</a>
+   </span>). Deconvolution with PARAFAC results in three matrices (A–C). The number of matrix columns equals the number of chemical species and the 
+   <span class="italic">i</span>-th column of each matrix represents the 
+   <span class="italic">i</span>-th species (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, bottom). Therefore the fraction of the 
+   <span class="italic">i</span>-th chemical species within the data is explained by the vectors 
+   <span class="italic">a</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>, 
+   <span class="italic">b</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> and 
+   <span class="italic">c</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>. Each of the matrices contains intrinsic characteristics of chemical species along particular parameters (here pH, emission wavelength, and time) providing direct access to species distribution, luminescence spectra and luminescence decays.
+  </p>
+  <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <div class="title">PARAFAC with TRLFS data. Top: merging data: background corrected data matrices for individual pH values stacked to a data cube. Middle: PARAFAC theoretical model: scheme with 3 independent variables (pH, wavelength and time) and 
+     <span class="italic">f</span> factors (chemical species). Bottom: deconvolution results: each of the three output matrices (A–C) contains parameter specific vectors for determined species: species distribution (A), luminescence spectra (B), luminescence decays (C).
+    </div>
+   </div>
+   <div xlink:href="c4sc02022g-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">PARAFAC has already been implemented as the N-way Toolbox
+   <span class="sup">
+    <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+   </span> for the MATLAB software. Toolbox details can be found in literature
+   <span class="sup">
+    <a rid="cit31" ref-type="bibr" href="#cit31">31</a>–
+    <a rid="cit33" ref-type="bibr" href="#cit33">33</a>
+   </span> and an excellent online tutorial is accessible.
+   <span class="sup">
+    <a rid="cit34" ref-type="bibr" href="#cit34">34</a>
+   </span> In this study PARAFAC was used for modelling uranyl(
+   <span class="sc">vi</span>) hydrolysis data from TRLFS and CW spectroscopy and thus, chemical species correlate with uranyl(
+   <span class="sc">vi</span>) complexes.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Unimodal (one maximum for speciation) and nonnegative (for luminescence spectra) constraints were used for the model as already implemented in the N-way Toolbox 3.31.
+   <span class="sup">
+    <a rid="cit27" ref-type="bibr" href="#cit27">27</a>
+   </span> Based on the Optimization Toolbox a monoexponential constraint for the fluorescence decay was additionally implemented. Spectra and lifetimes were normalized directly by the PARAFAC algorithm. All Toolboxes were used with Matlab R2013a.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum-chemical calculations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Calculations were performed in an aqueous phase using the Gaussian 09 program
+   <span class="sup">
+    <a rid="cit35" ref-type="bibr" href="#cit35">35</a>
+   </span> employing the density functional theory (DFT) by using a conductor like polarizable continuum model.
+   <span class="sup">
+    <a rid="cit36" ref-type="bibr" href="#cit36">36</a>,
+    <a rid="cit37" ref-type="bibr" href="#cit37">37</a>
+   </span> Structure optimizations were performed for [UO
+   <sub>2</sub>(H
+   <sub>2</sub>O)
+   <sub>5</sub>]
+   <span class="sup">2+</span> (aquo, 1 : 0), [UO
+   <sub>2</sub>(OH)(H
+   <sub>2</sub>O)
+   <sub>4</sub>]
+   <span class="sup">+</span> (1 : 1), [(UO
+   <sub>2</sub>)
+   <sub>2</sub>(μ
+   <sub>2</sub>-OH)
+   <sub>2</sub>(H
+   <sub>2</sub>O)
+   <sub>6</sub>]
+   <span class="sup">2+</span> (2 : 2), and [(UO
+   <sub>2</sub>)
+   <sub>3</sub>(μ
+   <sub>3</sub>-O)(μ
+   <sub>2</sub>-OH)
+   <sub>3</sub>(H
+   <sub>2</sub>O)
+   <sub>6</sub>]
+   <span class="sup">+</span> (3 : 5) at B3LYP level
+   <span class="sup">
+    <a rid="cit38" ref-type="bibr" href="#cit38">38</a>,
+    <a rid="cit39" ref-type="bibr" href="#cit39">39</a>
+   </span> followed by vibrational frequency analysis at the same level to confirm the absence of imaginary frequencies. For the calculations of the electronic absorption spectra, nonequilibrium time-dependent DFT (TD-DFT) calculations
+   <span class="sup">
+    <a rid="cit40" ref-type="bibr" href="#cit40">40</a>,
+    <a rid="cit41" ref-type="bibr" href="#cit41">41</a>
+   </span> were applied in the aqueous phase producing only singlet excited states. One hundred (aquo and 1 : 1) and two hundred (2 : 2 and 3 : 5) singlet excited states were determined using the ground states geometries of each uranyl(
+   <span class="sc">vi</span>) complex. For the absorption spectra, the half-width at half-height was defined as 0.2 eV. The energy-consistent small-core effective core potential and the corresponding basis set suggested by Küchle 
+   <span class="italic">et al.</span>
+   <span class="sup">
+    <a rid="cit42" ref-type="bibr" href="#cit42">42</a>
+   </span> were used for uranium. The most diffuse basis functions on uranium with the exponent 0.005 (all s, p, d, and f type functions) were omitted as in previous studies.
+   <span class="sup">
+    <a rid="cit43" ref-type="bibr" href="#cit43">43</a>,
+    <a rid="cit44" ref-type="bibr" href="#cit44">44</a>
+   </span> For oxygen and hydrogen, the valence triple-
+   <span class="italic">ζ</span> plus polarization basis was used.
+   <span class="sup">
+    <a rid="cit45" ref-type="bibr" href="#cit45">45</a>
+   </span> The spin–orbit effects and basis set superposition error corrections were neglected. Coordinates of all complexes are given in the ESI.
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+  </p>
+ </sec>
+</sec>

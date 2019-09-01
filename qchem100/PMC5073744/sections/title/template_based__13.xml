@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec9" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Template based meta-workflow development</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The template-based approach is focused at enabling re-use of existing workflows as embedded atomic workflows whilst allowing some degree of freedom for their customization. This approach introduces the concept of a 
+  <span class="italic">template,</span> which describes the default configuration of an embedded workflow. This configuration includes a number of parameters such as the input and output, data required for processing and the executables consequently serving as a prototype for use of the workflow. The template also controls the customization allowed for a workflow being shared. For instance, a workflow developer may allow customization of the data type of the input but restrict the number of input ports allowed for the workflow. This approach, therefore, offers more flexibility to a workflow developer in creating atomic workflows for sharing across different scientific disciplines without making the process cumbersome for the end user. Figures 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a> and 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a> presents a graphical representation of the template based approach for meta-workflow creation.
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Template based approach for meta-workflow creation</p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig4_HTML" id="MO13" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="Fig5" class="fig">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <p>Template based meta-workflow creation</p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig5_HTML" id="MO14" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to formally describe the template based approach, we use the basic definition of the workflow given in (Eq. 
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>). In the context of the template based approach, we define a 
+  <span class="italic">template</span> to encompass the configuration of a workflow as
+  <div id="Equ9" class="disp-formula">
+   <span class="label">9</span>
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}}_{\text{temp}} = :\left\{ {{\text{in}}\_{\text{port}},{\text{ out}}\_{\text{port}},{\text{ target}}\_{\text{DCI}},{\text{ executable}}} \right\} $$\end{document}</span>
+    <div id="M18" display="block" class="math">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mtext">WF</span>
+       <span class="mtext">temp</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mo">:</span>
+      <div close="}" open="{" separators="" class="mfenced">
+       <div class="mrow">
+        <span class="mtext">in</span>
+        <span class="mi">_</span>
+        <span class="mtext">port</span>
+        <span class="mo">,</span>
+        <div class="mrow">
+         <span width="0.333333em" class="mspace"/>
+         <span class="mtext">out</span>
+        </div>
+        <span class="mi">_</span>
+        <span class="mtext">port</span>
+        <span class="mo">,</span>
+        <div class="mrow">
+         <span width="0.333333em" class="mspace"/>
+         <span class="mtext">target</span>
+        </div>
+        <span class="mi">_</span>
+        <span class="mtext">DCI</span>
+        <span class="mo">,</span>
+        <div class="mrow">
+         <span width="0.333333em" class="mspace"/>
+         <span class="mtext">executable</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="13321_2016_169_Article_Equ9.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Furthermore, as defined in Eq. 
+  <a rid="Equ7" ref-type="" href="#Equ7">7</a> a meta-workflow is composed of multiple embedded workflows and multiple jobs. Therefore,
+  <div list-type="bullet" class="list">
+   <div class="list-item">
+    <p>WF_EM—set of embedded workflows for a meta-workflow, and</p>
+   </div>
+   <div class="list-item">
+    <p>WF_ID—unique ID for the workflow</p>
+   </div>
+   <div class="list-item">
+    <p>F_ID—unique ID for the workflow</p>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The template-based approach has been implemented with the gUSE/WS-PGRADE science gateway technology as part of the ER-flow project [
+  <a ref-type="bibr" rid="CR40" href="#CR40">40</a>]. In the current implementation, the first stage involves preparation of atomic workflows by the workflow developer. This includes defining the workflow graph, implementation of a concrete workflow with the defined workflow graph and building a template based on this implementation. This is followed by creation of an implementation for the concrete sub-workflow using the template. The creation of meta-workflow includes importing these sub-workflows shared via SHIWA Repository and configuring the required parameters such as the DCI where the workflow is intended to be processed, the executable and the data to be processed by the workflow.
+ </p>
+</sec>

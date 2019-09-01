@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum-assisted optimization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum-assisted optimization
+  <a ref-type="bibr" rid="b45" href="#b45">45</a> (see also 
+  <a ref-type="fig" rid="f2" href="#f2">Fig. 2</a>) for obtaining ground-state energies aims to optimize the use of quantum coherence by breaking down the quantum simulation through the use of both quantum and classical processors; the quantum processor is strategically employed for expensive tasks only.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To be more specific, the first step of quantum-assisted optimization is to prepare a set of quantum states {|
+  <span class="italic">ψ
+   <sub>λ</sub>
+  </span>〉} that are characterized by a set of parameters {
+  <span class="italic">λ</span>}. After the state is prepared, the expectation value 
+  <span class="italic">E
+   <sub>λ</sub>
+  </span> ≡ 〈
+  <span class="italic">ψ
+   <sub>λ</sub>
+  </span>| 
+  <span class="italic">H</span> |
+  <span class="italic">ψ
+   <sub>λ</sub>
+  </span>〉 of the Hamiltonian 
+  <span class="italic">H</span> will be measured directly, without any quantum evolution in between. Practically, the quantum resources for the measurements can be significantly reduced when we divide the measurement of the Hamiltonian 
+  <div id="m86" class="inline-formula">
+   <span id="d32e695" xlink:href="srep03589-m86.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> into a polynomial number of small pieces 〈
+  <span class="italic">H
+   <sub>i</sub>
+  </span>〉 (cf Eq. (2)). These measurements can be performed in a parallel fashion, and no quantum coherence is needed to maintain between the measurements (see 
+  <a ref-type="fig" rid="f2" href="#f2">Fig. 2a and 2b</a>). Then, once a data point of 
+  <span class="italic">E
+   <sub>λ</sub>
+  </span> is obtained, the whole procedure is repeated for a new state 
+  <div id="m22" class="inline-formula">
+   <span id="d32e712" xlink:href="srep03589-m22.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> with another set of parameters {
+  <span class="italic">λ</span>′}. The choice of the new parameters is determined by a classical optimization algorithm that aims to minimize 
+  <span class="italic">E
+   <sub>λ</sub>
+  </span> (see Methods). The optimization procedure is terminated after the value of 
+  <span class="italic">E
+   <sub>λ</sub>
+  </span> converges to some fixed value.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, for electronic Hamiltonians 
+  <span class="italic">H
+   <sub>e</sub>
+  </span>(
+  <span class="bold">R</span>), the optimized state can then be sent to a quantum circuit of phase estimation algorithm to produce a set of data point for some 
+  <span class="bold">R</span> on the potential energy surfaces (
+  <a ref-type="fig" rid="f2" href="#f2">Fig. 2c</a> shows the 1D case). After locating the local minima of the ground and excited states, vibronic coupling for the electronic structure can be further studied (see 
+  <a ref-type="supplementary-material" rid="s1" href="#s1">Supplementary Material</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The performance of quantum-assisted optimization depends crucially on (a) the choice of the variational states, and (b) efficient measurement methods. We found that the unitary coupled-cluster (UCC) states
+  <a ref-type="bibr" rid="b35" href="#b35">35</a> are particularly suitable for being the input state for quantum-assisted optimization, where each quantum state |
+  <span class="italic">ψ
+   <sub>λ</sub>
+  </span>〉 can be prepared efficiently with standard techniques in trapped ions. Furthermore, efficient measurement methods for 
+  <span class="italic">H
+   <sub>e</sub>
+  </span> are also available for trapped ion systems. We shall discuss these results in detail in the following sections.
+ </p>
+</sec>

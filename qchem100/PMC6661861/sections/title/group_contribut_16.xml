@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Group Contribution Method (GCM) Estimates of Redox Potentials</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We compared the accuracies obtained using the GP regression calibrated quantum chemistry approach described above against those obtained with the commonly used GCM.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>,
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>,
+   <a ref-type="bibr" rid="ref80" href="#ref80">80</a>
+  </span> We use the GCM implementation of Noor et al. which was adapted to the thermodynamics of biochemical reactions.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> Briefly, group energies of all compounds in the KEGG database are stored in a group matrix, with rows corresponding to compounds and columns corresponding to groups. Associated to each group is a group energy corresponding to the energy for the group’s major protonation state (major species) at pH = 7. To obtain a GCM-based estimate for a standard transformed reduction potential for the major species at pH = 7, we take the difference in group energy vectors for all products and substrate in the reaction. We then transform the resulting standard redox potentials 
+  <span class="italic">E</span>°(major species at pH = 7) to the standard 
+  <span class="italic">transformed</span> redox potential at pH = 7, 
+  <span class="italic">E</span>′°(pH = 7), using the same p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates and Alberty transform approach described above.
+ </p>
+</sec>

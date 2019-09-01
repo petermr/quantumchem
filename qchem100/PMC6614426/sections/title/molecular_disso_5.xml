@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular dissociation simulation results</div>
+ <p id="Par32" xmlns="http://www.w3.org/1999/xhtml">In this section, we explore the convergence properties of the ADAPT-VQE algorithm with a few small molecular systems, LiH, BeH
+  <sub>2</sub>, and linear H
+  <sub>6</sub>. The former two molecules have been simulated using quantum hardware
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>. H
+  <sub>6</sub> is included as a prototypical strongly correlated molecule, which allows us to test the ADAPT-VQE approach for systems which are not well described with unitary coupled cluster.
+ </p>
+ <p id="Par33" xmlns="http://www.w3.org/1999/xhtml">In order to perform the simulations, an in-house code was written, using Psi4
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>,
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span> for the integral calculation (via the OpenFermion-Psi4
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span> interface) and OpenFermion was used for the Jordan–Wigner operator transformation. All calculations used the Broyden–Fletcher–Goldfarb–Shannon (BFGS) minimization implemented within Scipy
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span>. To classically simulate the re-optimization subroutine in step 8 of ADAPT-VQE, we could use a standard numerical gradient method. However, in order to improve the efficiency and allow precise gradients for tight convergence, we derived and implemented an efficient analytic gradient function, which is detailed in Section D of the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplement</a>. By reusing intermediates between individual parameter gradients, this algorithm obtains the full gradient vector for all parameters at a cost which is only roughly 2× that of the base energy evaluation. A table with timing data is included in Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> of the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplement</a>.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Average errors across the PES scan for the different methods assessed. Units in kcal/mol</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th/>
+      <th>UCCSD</th>
+      <th>ADAPT(
+       <span class="italic">ε</span>
+       <sub>1</sub>)
+      </th>
+      <th>ADAPT(
+       <span class="italic">ε</span>
+       <sub>2</sub>)
+      </th>
+      <th>ADAPT(
+       <span class="italic">ε</span>
+       <sub>3</sub>)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>LiH</td>
+      <td>0.0480</td>
+      <td>0.3000</td>
+      <td>0.0058</td>
+      <td>0.0002</td>
+     </tr>
+     <tr>
+      <td>BeH
+       <sub>2</sub>
+      </td>
+      <td>2.2384</td>
+      <td>0.8023</td>
+      <td>0.0907</td>
+      <td>0.0041</td>
+     </tr>
+     <tr>
+      <td>H
+       <sub>6</sub>
+      </td>
+      <td>3.7387</td>
+      <td>4.5297</td>
+      <td>0.3023</td>
+      <td>0.0047</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p id="Par34" xmlns="http://www.w3.org/1999/xhtml">As discussed in the previous section, the ADAPT ansatz uses a convergence threshold to determine when the calculation should terminate (step 6). Here we use the norm of the gradient vector and compare it to threshold 
+  <span class="italic">ε</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub>, which we define as
+  <div id="Equ9" class="disp-formula">
+   <span class="label">9</span>
+   <div class="alternatives">
+    <span id="M41" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\varepsilon _m = 10^{ - m}.$$\end{document}</span>
+    <div id="M42" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">ε</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">m</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">1</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+       <span class="mi">m</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ9.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par35" xmlns="http://www.w3.org/1999/xhtml">For example, an ADAPT-VQE calculation where the norm of the operator pool gradient is converged to less than 0.001 would be denoted as ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>). In what follows we present numerical results for bond-dissociation curves for LiH, BeH
+  <sub>2</sub>, and H
+  <sub>6</sub> for three different choices of the threshold (
+  <span class="italic">m</span> = 1, 2, 3). We also investigate alternate protocols for the ansatz growth and demonstrate the superiority of the ADAPT ansatz.
+ </p>
+ <p id="Par36" xmlns="http://www.w3.org/1999/xhtml">Here, we study the LiH bond dissociation computed using several methods, including FCI, UCCSD (un-Trotterized), HF, ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>), ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>), and ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>), all with the STO-3G basis set. In this basis set, LiH has 6 spatial orbitals and a Hilbert space of dimension 4096. By starting with the HF state with two 
+  <span class="italic">α</span> (spin-up) and two 
+  <span class="italic">β</span> (spin-down) electrons and using only number conserving operators, the relevant subspace to explore has a dimension of 
+  <div id="IEq13" class="inline-formula">
+   <div class="alternatives">
+    <span id="M43" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left( {\begin{array}{*{20}{c}} 6 \\ 2 \end{array}} \right) \cdot \left( {\begin{array}{*{20}{c}} 6 \\ 2 \end{array}} \right) = 225$$\end{document}</span>
+    <div id="M44" class="math">
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">6</span>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">⋅</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">6</span>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">225</span>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. In this basis, the occupied orbitals are {1, 2}, and the virtual orbitals are {3, 4, 5, 6}.
+ </p>
+ <p id="Par37" xmlns="http://www.w3.org/1999/xhtml">The bond dissociation curves are shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>, where all the curves, with the exception of HF, cannot really be distinguished on this scale. However, as shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>, when the FCI energy is subtracted and the scale is adjusted, significant differences become evident. Shading is used to indicate chemical accuracy, which is achieved in all cases other than HF. LiH has only a single pair of electrons (a 
+  <span class="italic">σ</span> bond) breaking along the dissociation coordinate, and UCCSD exhibits chemical accuracy throughout the curve. While ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>) is not as accurate as UCCSD, ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) is comparable to UCCSD at short bond distances and comfortably outperforms it at longer distances. This is also evident in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>, where the average error across the potential energy surface (PES) is shown. Remarkably, ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>) outperforms UCCSD throughout the whole curve by at least an order of magnitude and in some cases up to four orders of magnitude.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Dissociation curves for LiH, BeH
+     <sub>2</sub>, and H
+     <sub>6</sub>. Potential energy as a function of nuclear coordinate, Hartree units (
+     <span class="bold">a</span>, 
+     <span class="bold">d</span>, 
+     <span class="bold">g</span>). Absolute energy differences from FCI, kcal/mol units (
+     <span class="bold">b</span>, 
+     <span class="bold">e</span>, 
+     <span class="bold">h</span>). Shaded blue region represents area within “chemical accuracy” as 1 kcal/mol. Number of variational operators in associated ansatz (
+     <span class="bold">c</span>, 
+     <span class="bold">f</span>, 
+     <span class="bold">i</span>). Notation: 
+     <span class="italic">ε</span> indicates gradient norm threshold used such that 
+     <span class="italic">ε</span>
+     <sub>
+      <span class="italic">m</span>
+     </sub> = 10
+     <span class="sup">−
+      <span class="italic">m</span>
+     </span>. In all curves, the FCI curve lies directly underneath the ADAPT(
+     <span class="italic">ε</span>
+     <sub>3</sub>) curve, and so is not visible
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10988_Fig2_HTML" id="d29e2144" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par38" xmlns="http://www.w3.org/1999/xhtml">Even more impressive is how few parameters are needed to achieve this level of accuracy. As shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a>, in all three cases and for all bond distances, ADAPT is much more compact than UCCSD. UCCSD has 92 parameters, which can be reduced to 64 by combining spin-complements. In all three ADAPT calculations, fewer than half of the parameters are needed compared to UCCSD. Although UCCSD is noticeably more accurate than the simplest ADAPT calculation with a gradient norm threshold of 0.1, the ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>) ansatz is incredibly compact, consisting of fewer than 10 parameters across the curve. For example, the ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>) ansatz for LiH at bond distance 2.39 Å is
+  <div id="Equ10" class="disp-formula">
+   <span class="label">10</span>
+   <div class="alternatives">
+    <span id="M45" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\psi ^{{\mathrm{ADAPT}}(\varepsilon _1)}} \right\rangle = e^{\hat \tau _{12}^{16}}e^{\hat \tau _{2\bar 2}^{5\bar 5}}e^{\hat \tau _{2\bar 2}^{4\bar 4}}e^{\hat \tau _{12}^{13}}e^{\hat \tau _{1\bar 1}^{3\bar 3}}e^{\hat \tau _{2\bar 2}^{3\bar 3}}e^{\hat \tau _{2\bar 2}^{3\bar 6}}e^{\hat \tau _{2\bar 2}^{6\bar 6}}\left| {\psi ^{{\mathrm{HF}}}} \right\rangle ,$$\end{document}</span>
+    <div id="M46" class="math">
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">ADAPT</span>
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <div class="msub">
+            <div class="mrow">
+             <span class="mi">ε</span>
+            </div>
+            <div class="mrow">
+             <span class="mn">1</span>
+            </div>
+           </div>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">12</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">16</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">5</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">5</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">4</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">12</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">13</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">1</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">3</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">3</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">6</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">6</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">6</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">HF</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ10.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>which includes a mixture of both double excitations and correlated single excitations 
+  <div id="IEq14" class="inline-formula">
+   <div class="alternatives">
+    <span id="M47" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left( {\hat n_j\hat a_a^\dagger \hat a_i} \right)$$\end{document}</span>
+    <div id="M48" class="math">
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">n</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">j</span>
+        </div>
+       </div>
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">â</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">a</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">†</span>
+        </div>
+       </div>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">â</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">i</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq14.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. The indices denote spatial orbitals, overbar on an index denotes 
+  <span class="italic">β</span> spin, and spin-complemented interactions are implied. For example 
+  <div id="IEq15" class="inline-formula">
+   <div class="alternatives">
+    <span id="M49" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat \tau _{01}^{06}$$\end{document}</span>
+    <div id="M50" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">01</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">06</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq15.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is really 
+  <div id="IEq16" class="inline-formula">
+   <div class="alternatives">
+    <span id="M51" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat \tau _{01}^{06} + \hat \tau _{\bar 0\bar 1}^{\bar 0\bar 6}$$\end{document}</span>
+    <div id="M52" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">01</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">06</span>
+      </div>
+     </div>
+     <span class="mo">+</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <span class="mo"> ¯</span>
+       </div>
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <span class="mo"> ¯</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <span class="mo"> ¯</span>
+       </div>
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mn">6</span>
+        </div>
+        <span class="mo"> ¯</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq16.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. An interesting feature of the ansatz returned by ADAPT-VQE, Eq. (
+  <a rid="Equ10" ref-type="" href="#Equ10">10</a>), is that the HOMO–LUMO double excitation 
+  <div id="IEq17" class="inline-formula">
+   <div class="alternatives">
+    <span id="M53" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left( {e^{\hat \tau _{2\bar 2}^{3\bar 3}}} \right)$$\end{document}</span>
+    <div id="M54" class="math">
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <div class="msubsup">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mi">τ</span>
+            </div>
+            <span class="mo">^</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mn">2</span>
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mn">2</span>
+            </div>
+            <span class="mo"> ¯</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mn">3</span>
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mn">3</span>
+            </div>
+            <span class="mo"> ¯</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq17.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is not the first operator, but instead the third. This is different from what one might expect if classical MP2 or CCSD amplitudes were used to order the ansatz. The reason is that in choosing the next operator no state energy information is used, for instance in the form of a denominator penalizing high energy terms. Interestingly, at convergence it is not the HOMO–LUMO term or the first operator with the largest amplitude, but rather the second operator, 
+  <div id="IEq18" class="inline-formula">
+   <div class="alternatives">
+    <span id="M55" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$e^{\hat \tau _{2\bar 2}^{3\bar 6}}$$\end{document}</span>
+    <div id="M56" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mn">6</span>
+          </div>
+          <span class="mo"> ¯</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq18.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>.
+ </p>
+ <p id="Par39" xmlns="http://www.w3.org/1999/xhtml">In Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2d–f</a>, the dissociation curves for BeH
+  <sub>2</sub> are shown. In the STO-3G basis, BeH
+  <sub>2</sub> has 7 spatial orbitals, for a total Hilbert space dimension of 16,384, and a neutral molecule subspace of dimension 
+  <div id="IEq19" class="inline-formula">
+   <div class="alternatives">
+    <span id="M57" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left( {\begin{array}{*{20}{c}} 7 \\ 3 \end{array}} \right) \cdot \left( {\begin{array}{*{20}{c}} 7 \\ 3 \end{array}} \right) = 1225$$\end{document}</span>
+    <div id="M58" class="math">
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">7</span>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">⋅</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">7</span>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="center" class="mtd">
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">1225</span>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq19.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. Unlike with LiH, UCCSD does not provide chemically accurate results across the full PES. UCCSD and ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>) are comparable at smaller bond distances. Beyond ~3 Å, they both go above 1 kcal/mol in absolute error. However, still with a small fraction of the number of parameters in UCCSD, both ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) and ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>) provide nearly exact results, with average deviations from FCI listed in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>.
+ </p>
+ <p id="Par40" xmlns="http://www.w3.org/1999/xhtml">Now we move our focus to the H
+  <sub>6</sub> data. At bond-breaking, the previous two molecules involved strong correlation between only two and four electrons, respectively. In order to evaluate the ability of ADAPT-VQE to converge to FCI in the presence of much stronger correlations, we have computed the simultaneous stretching of H
+  <sub>6</sub>, with the results presented in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2g–i</a>.
+ </p>
+ <p id="Par41" xmlns="http://www.w3.org/1999/xhtml">The complexity of this strongly correlated system is reflected in two obvious ways: (1) the failure of UCCSD to achieve chemical accuracy across the curve in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2h</a>, and (2) the increased number of parameters selected in the ADAPT calculations in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2i</a>. Despite being strongly correlated, such that higher excitation rank operators should be needed, both ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) and ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>) provide accurate results with only one- and two-body operators. Moreover, in the case of ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) this is achieved with fewer operators than UCCSD for most bond distances. ADAPT(
+  <span class="italic">ε</span>
+  <sub>3</sub>) also uses fewer parameters than UCCSD up to the distance where UCCSD fails to reach chemical accuracy.
+ </p>
+ <p id="Par42" xmlns="http://www.w3.org/1999/xhtml">Because the algorithm is adaptive, during the course of a chemical event (bond breaking, isomerization, etc.) the number of parameters can change abruptly, leading to discontinuous potential energy curves. Two notable examples of this can be seen in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2h</a>, first at R(H-H) = 1.8 Å where ADAPT(
+  <span class="italic">ε</span>
+  <sub>1</sub>) experiences a large jump in energy, and second at 2.5 Å where ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) increases in energy. Figure 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2i</a> shows that these energy jumps correspond to sudden drops in parameter counts.
+ </p>
+ <p id="Par43" xmlns="http://www.w3.org/1999/xhtml">The cause of the discontinuities in the H
+  <sub>6</sub> data can be explained from the convergence data provided in the Supplement (see Supplement Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). For larger bond lengths, as additional operators are added to the ansatz, the energy flattens out before dropping substantially again. If the convergence criterion is too lenient, then the ADAPT-VQE optimization will abort at such “false gradient troughs”. In the ADAPT(
+  <span class="italic">ε</span>
+  <sub>2</sub>) data of Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2h, i</a>, the jump in energy error and drop in parameter number, respectively, are caused by the 2.5 Å optimization aborting at a false gradient trough, while the optimizations at other bond lengths do not. Of course, if a tighter threshold is used (such as 0.001), the ADAPT-VQE algorithm does not prematurely abort, and ultimately yields high-accuracy results, even for this strongly correlated system. More sophisticated convergence checks in step 6 might avoid these situations and will be one focus of future work.
+ </p>
+</sec>

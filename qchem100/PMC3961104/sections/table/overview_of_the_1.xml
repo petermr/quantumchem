@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="table-2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span pub-id-type="doi" class="object-id">10.7717/peerj.277/table-2</span>
+ <span class="label">Table 2</span>
+ <div class="caption">
+  <div class="title">Overview of the basic methods in the 
+   <span class="monospace">Peptide</span> class.
+  </div>
+  <p>See the text for detailed descriptions of each method.</p>
+ </div>
+ <div class="alternatives">
+  <div xlink:href="peerj-02-277-g008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <table frame="hsides" rules="groups">
+   <colgroup span="1">
+    <col span="1"/>
+    <col align="justify" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th rowspan="1" colspan="1">Method name</th>
+     <th style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Description</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">set_bb_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Set the backbone 
+      <span class="italic">ϕ</span>/
+      <span class="italic">ψ</span>-angles for a residue
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">set_chi_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Set the side chain 
+      <span class="italic">χ</span>-angles for a residue
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">get_bb_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Read the backbone 
+      <span class="italic">ϕ</span>/
+      <span class="italic">ψ</span>-angles for a residue
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">get_chi_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Read the side chain 
+      <span class="italic">χ</span>-angles for a residue
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">sample_bb_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Sample the backbone 
+      <span class="italic">ϕ</span>/
+      <span class="italic">ψ</span>-angles for a residue using the BASILISK library
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">sample_chi_angles</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Sample the side chain 
+      <span class="italic">χ</span>-angles for a residue using the BASILISK library
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">optimize</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Perform a molecular mechanics optimization using the MMFF94 force field</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">regularize</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Perform the regularization procedure to remove steric clashes</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">write_pdb</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to a PDB file</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">write_xyz</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to an XYZ file</td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="monospace">write_file</span>
+     </td>
+     <td style="text-align:left;white-space:normal;" rowspan="1" colspan="1">Write the peptide structure to one of the nearly 100 file types supported by Open Babel</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div>

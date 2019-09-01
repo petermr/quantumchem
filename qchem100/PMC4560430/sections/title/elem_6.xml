@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec006" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theory and Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the energy calculations of aa side chain interactions, the amino acids are simplified to only their side chains. All monomer structures of amino acids and their side chains are shown in 
+  <span class="bold">
+   <a rid="pone.0137113.g001" ref-type="fig" href="#pone.0137113.g001">Fig 1</a>.
+  </span>
+ </p>
+ <div id="pone.0137113.g001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0137113.g001</span>
+  <span class="label">Fig 1</span>
+  <div class="caption">
+   <div class="title">The side chain structures of the 8 amino acids involved in the salt-bridge and cation-π interactions.</div>
+   <p>
+    <span class="bold">A)</span> The protonated Arg
+    <span class="sup">+</span> is simplified as the NH
+    <sub>2</sub>CHNH
+    <sub>2</sub>
+    <span class="sup">+</span> cation. 
+    <span class="bold">B)</span> The protonated Lys
+    <span class="sup">+</span> is simplified as the CH
+    <sub>3</sub>NH
+    <sub>3</sub>
+    <span class="sup">+</span> cation. 
+    <span class="bold">C)</span> The side chain of acidic amino acid Asp is represented by CH
+    <sub>3</sub>COOH. 
+    <span class="bold">D)</span> The side chain of acidic amino acid Glu is represented by C
+    <sub>2</sub>H
+    <sub>5</sub>COOH. 
+    <span class="bold">E)</span> The side chain of the aromatic amino acid Phe is C
+    <sub>6</sub>H
+    <sub>6</sub>. 
+    <span class="bold">F)</span> The side chain of the aromatic amino acid Tyr is C
+    <sub>6</sub>H
+    <sub>5</sub>OH. 
+    <span class="bold">G)</span> The side chain of the aromatic amino acid Trp is the indole ring. 
+    <span class="bold">H)</span> The side chain of the aromatic amino acid His is the imidazole group. 
+    <span class="bold">I)</span> The side chain of the amino acid Asn is CH
+    <sub>3</sub>CONH
+    <sub>2</sub>. 
+    <span class="bold">J)</span> The side chain of the amino acid Gln is C
+    <sub>2</sub>H
+    <sub>5</sub>CONH
+    <sub>2</sub>.
+   </p>
+  </div>
+  <div xlink:href="pone.0137113.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this study the aa side chain interaction energies are defined as the energy difference Δ
+  <span class="italic">E</span>(a-b) between the energy 
+  <span class="italic">E</span>(a-b) of the aa pair-complex a-b and the energy summation 
+  <span class="italic">E</span>(a)+
+  <span class="italic">E</span>(b) of the two amino acid monomers a and b, 
+  <div id="pone.0137113.e001" class="disp-formula">
+   <div class="alternatives">
+    <div xlink:href="pone.0137113.e001.jpg" id="pone.0137113.e001g" position="anchor" mimetype="image" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M1" class="math">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">Δ</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">a</span>
+      <span class="mo">−</span>
+      <span class="mi">b</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">a</span>
+      <span class="mo">−</span>
+      <span class="mi">b</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">−</span>
+      <span stretchy="false" class="mo">[</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">a</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">+</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">b</span>
+      <span stretchy="false" class="mo">)</span>
+      <span stretchy="false" class="mo">]</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div> Positive values of Δ
+  <span class="italic">E</span>(a-b) represent repulsive interactions, while negative values describe attractive interactions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Calculations performed using the state-of-the art quantum chemical method CCSD(T) (coupled-cluster with single, double and partial triple excitations) [
+  <a rid="pone.0137113.ref031" ref-type="bibr" href="#pone.0137113.ref031">31</a>–
+  <a rid="pone.0137113.ref036" ref-type="bibr" href="#pone.0137113.ref036">36</a>] are extremely expensive and CPU-time consuming. Alternatively, the post Hartree-Fock method MP2 (a second order perturbation theory method) [
+  <a rid="pone.0137113.ref037" ref-type="bibr" href="#pone.0137113.ref037">37</a>–
+  <a rid="pone.0137113.ref039" ref-type="bibr" href="#pone.0137113.ref039">39</a>] can provide higher accuracy than H-F and DFT methods [
+  <a rid="pone.0137113.ref040" ref-type="bibr" href="#pone.0137113.ref040">40</a>–
+  <a rid="pone.0137113.ref050" ref-type="bibr" href="#pone.0137113.ref050">50</a>] and uses much less CPU-time than CCSD(T) methods [
+  <a rid="pone.0137113.ref031" ref-type="bibr" href="#pone.0137113.ref031">31</a>–
+  <a rid="pone.0137113.ref036" ref-type="bibr" href="#pone.0137113.ref036">36</a>]. In this study, all aa side chain monomer structures are optimized using the MP2 method [
+  <a rid="pone.0137113.ref037" ref-type="bibr" href="#pone.0137113.ref037">37</a>–
+  <a rid="pone.0137113.ref039" ref-type="bibr" href="#pone.0137113.ref039">39</a>] with a 6–311+G(d,p) basis set [
+  <a rid="pone.0137113.ref051" ref-type="bibr" href="#pone.0137113.ref051">51</a>]. The geometries and energies of the interacting aa side chain pairs are calculated and optimized at the MP2/6–311+G(d,p) level. Then more accurate interaction energies of aa side chain pairs are calculated using the state-of-the art CCSD(T)/6–311+G(d,p) method [
+  <a rid="pone.0137113.ref031" ref-type="bibr" href="#pone.0137113.ref031">31</a>–
+  <a rid="pone.0137113.ref036" ref-type="bibr" href="#pone.0137113.ref036">36</a>] at the optimized structures. The aa side chain interaction energies in aqueous solutions are calculated using the polarizable continuum model (PCM) [
+  <a rid="pone.0137113.ref052" ref-type="bibr" href="#pone.0137113.ref052">52</a>–
+  <a rid="pone.0137113.ref055" ref-type="bibr" href="#pone.0137113.ref055">55</a>] method. All calculations are performed using the Gaussian 09 software package [
+  <a rid="pone.0137113.ref056" ref-type="bibr" href="#pone.0137113.ref056">56</a>] at TH-1 A super computer center (
+  <span ext-link-type="uri" xlink:href="http://www.nscc-tj.gov.cn/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">www.nscc-tj.gov.cn</span>).
+ </p>
+</sec>

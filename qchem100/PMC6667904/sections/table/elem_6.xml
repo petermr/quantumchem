@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="jcc25364-tbl-0007" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 7</span>
+ <div class="caption">
+  <p>Capabilities of SCF convergence techniques</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <col align="left" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <thead valign="bottom">
+   <tr style="border-bottom:solid 1px #000000">
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+   </tr>
+  </thead>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">sDamp</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">Static damping technique for density matrix</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">C1‐DIIS</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from previous Fock matrix</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">C2‐DIIS</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from SCF condition</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">EDIIS</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">Energy DIIS interpolation of Fock matrix</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">SOSCF</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">Second‐order SCF orbital optimization</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">FON</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">Use fractional occupation number based on the Fermi distribution function</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">EDIIS+DIIS</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">Hybrid of EDIIS and C2‐DIIS (default)</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="methods" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">FragBuilder is implemented in Python and is a library that can be imported and used in simple Python scripting style. Python is attractive, since a very large number of scientific libraries are already available in Python, and thus easy to extend and combine with new code. FragBuilder is implemented using the Open Babel library as back-end for handling the molecular structure of the peptide via existing classes and methods (
+  <a rid="ref-9" ref-type="bibr" href="#ref-9">O’Boyle et al., 2011</a>). The methods present in FragBuilder thus have access to a multitude of existing chemistry and cheminformatics related library routines which are maintained separately by Open Babel. Especially, the code for manipulating a molecular structure, molecular mechanics and file writers from Open Babel are used in FragBuilder. FragBuilder also comes with the BASILISK library which can sample protein backbone and side chain conformations from a joint probability distribution (
+  <a rid="ref-6" ref-type="bibr" href="#ref-6">Harder et al., 2010</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The only dependencies for running FragBuilder are the NumPy mathematics library (
+  <a rid="ref-10" ref-type="bibr" href="#ref-10">Oliphant, 2006</a>) and Open Babel with Python bindings. These packages are already available through package managers on virtually every recent Linux distribution, or otherwise freely available and open source.
+ </p>
+</sec>

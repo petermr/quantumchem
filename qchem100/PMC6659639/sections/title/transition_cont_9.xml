@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec9" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Transition contribution map (TCM)</div>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">A TCM is used for visualizing the Kohn-Sham (KS) electron-hole transition contributions to photoabsorption. Briefly, the photoabsorption cross-section 
+  <span class="italic">S</span>(
+  <span class="italic">ω</span>) is expressed in the basis of occupied (
+  <span class="italic">i</span>) and unoccupied (
+  <span class="italic">a</span>) KS states as 
+  <div id="IEq9" class="inline-formula">
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S(\omega ) = \mathop {\sum}\nolimits_{ia} S_{ia}(\omega )$$\end{document}</span>
+    <div id="M20" class="math">
+     <span class="mi">S</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">S</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span>. In TCM, the elements of the matrix 
+  <span class="italic">S</span>
+  <sub>
+   <span class="italic">ia</span>
+  </sub>(
+  <span class="italic">ω</span>) at a chosen resonance energy are plotted on a Gaussian-broadened two-dimensional plane spanned by the energy axes for occupied and unoccupied KS states. The color indicates the sign of the transition contribution: positive (red) or negative (blue), and the color intensity indicates the magnitude of the contribution. The maps are augmented with the corresponding densities of states, and a diagonal line is drawn to indicate the KS eigenvalue difference corresponding to 
+  <span class="italic">ω</span>. See ref. 
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span> for a detailed description of TCM construction.
+ </p>
+</sec>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the last years, new pathways to materials discovery that go beyond trial-and-error processes have been implemented with promising results. These paths are usually based on computer prediction algorithms that either find new materials by comparing structures from available databases storing hundreds of thousands of known structures or by exploratory algorithms that generate new materials without much previous knowledge.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>
+  </span> Either way, these new materials are usually linked to specific desired properties that often need to be computed at the atomistic level and that represent further constraints in the search of novel structures. Such computed properties are usually carried out at the quantum chemical level, and knowledge and availability of the various computational tools are fundamental. Rational design based on computational modeling indeed often requires a combination of theoretical approaches and software and commonly involves composite workflows consisting of a large number of individual calculations.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref2" href="#ref2">2</a>,
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+  </span> Such workflows are well suited for parallel computing as it is much easier to exploit job-type parallelism than to parallelize each computational task individually. There are, however, two complications in exploiting job-type parallelism that should be considered. Complex workflows require the execution of several different program packages, which require different, program-specific input data, which in turn possibly depends on the results of preceding calculations. These dependencies between different tasks are often nontrivial and need to be taken into account in the parallel execution of workflows.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A well-known example of a computational workflow that benefits from automation and parallelization is running a benchmark study to assess the performance of a series of density functional theory (DFT) exchange-correlation functionals.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>−
+   <a ref-type="bibr" rid="ref7" href="#ref7">7</a>
+  </span> Another simple example is the geometry relaxation of a set of related molecules. More complicated applications involve multiple methods and are characterized by interdependencies between the calculations. An example is the prediction of the activation energy of several reactions by performing a multilevel calculation of reactants and transition states.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref8" href="#ref8">8</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Overall, three common tasks need to be automated: (i) the preparation of specific inputs for the quantum chemical (QM) software package(s) that is (are) used; (ii) submission of jobs to a queuing system on a supercomputer facility; and (iii) the collection and analysis of the output files, often involving postprocessing steps with yet other software tools. Commonly used 
+  <span class="italic">ad hoc</span> Unix shell or Python scripts for such purposes are often poorly transferable and difficult to maintain and extend. They furthermore require sufficient programming experience to attain good performance. In most research groups, the time available to tune and document such scripts is limited, resulting in a suboptimal use of computational and human resources.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To address these limitations of project-specific scripting, a number of generic solutions for the preparation and execution of QM workflows have been developed: PyADF,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>
+  </span> Chemshell,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref10" href="#ref10">10</a>
+  </span> FireWorks,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref11" href="#ref11">11</a>
+  </span> Aiida,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>
+  </span> ASE.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref13" href="#ref13">13</a>
+  </span> While being very helpful in the automation of input/output handling, many of these solutions have still limited abilities for parallel processing or require expert knowledge. Parallelization of the workflow often requires input from the user who should indicate the stages in the simulation that can be run in parallel. Another common limitation in currently available tools arises from the definition of the interfaces to the different QM packages. Usually, the interfaces are specific to the different supported program packages, and different interfaces are required for performing the same task (e.g., a DFT geometry optimization) with different program packages. This hinders the interoperable use of different codes in one workflow.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To facilitate automation and parallelization, while keeping maximum flexibility and limiting maintenance, we have developed the Python package QMflows for the automation of computational chemistry workflows. QMflows is built on top of the PLAMS library
+  <span class="sup">
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>
+  </span> that is designed to provide a general interface to QM simulation packages. QMflows furthermore incorporates the Noodles
+  <span class="sup">
+   <a ref-type="bibr" rid="ref15" href="#ref15">15</a>
+  </span> library that is developed for dependency analysis and automatic parallel execution of workflows. We chose to implement the QMflows platform with Python, the most-used programming language for the automation of computations in chemistry. In this way, we aim at supporting both beginners and experienced Python programmers. Beginners will benefit from the simple and unobtrusive syntax to specify job dependencies, while more advanced users will be able to construct complex workflows.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">QMflows’ main objective is to allow users with only basic programming skills to build complex workflows that can be reused, adapted, and executed in high-performance computing environments. The most relevant features of our library are (i) manipulation of molecular objects to quickly generate and modify molecular structures, combined with interoperability between QM packages to facilitate use of multiprogram workflows; (ii) parallel execution of tasks defined in the workflow by automated analysis of task dependencies; (iii) recovery and restart in case of job failure; and (iv) a file manager for a posteriori retrieval and analysis of data.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A major objective of QMflows is to enable beginners to focus on the scientific aspects of the workflows (the definition of the molecules to be studied, the level of theory to be used for each task, and the molecular properties that are to be retrieved and analyzed) instead of solving technical issues related to specific program packages or to the parallel execution of the workflow. For this kind of use only a basic understanding of the Python scripting language is required, a skill that most computational chemists nowadays possess. Advanced users will be able to extend the existing functionality by programming new functions in Python with only minor adaptations to allow Noodles to perform an automatic dependency analysis. QMflows currently supports the ADF,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref16" href="#ref16">16</a>
+  </span> CP2K,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref17" href="#ref17">17</a>
+  </span> DIRAC,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> GAMESS-US,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+  </span> and ORCA
+  <span class="sup">
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> packages and is distributed as open source software under the LGPL-3.0 license.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>
+  </span>
+ </p>
+</sec>

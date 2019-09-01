@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="introduction" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">INTRODUCTION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The covalent bond represents the essential building block for chemistry, and its rationalization has been one of the main driving forces for the development of chemical sciences. The reorganization of electrons among atoms and the formation of molecules are complex and multifaceted processes, whose full description is only possible within the boundaries of quantum mechanics (QM). In this respect, density functional theory (DFT) represents the most common choice for routine ground-state calculations, but it becomes readily unsuitable when one needs to sample extended size and time scales. This situation is often encountered in important modern chemistry–related fields and in biological sciences, and it requires the development of computational approaches capable of capturing a restricted but essential number of chemical features in favor of a reduced computational cost.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Multiscale approaches are essential for an efficient implementation of high-throughput (
+  <a rid="R1" ref-type="bibr" href="#R1">
+   <span class="italic">1</span>
+  </a>) and molecular docking screening frameworks (
+  <a rid="R2" ref-type="bibr" href="#R2">
+   <span class="italic">2</span>
+  </a>). In these frameworks, the exact ground-state potential energy surface (PES) is represented in terms of simplified atomistic models called force fields (FFs). An FF consists of an analytical function of the atoms’ positions, which in general depends on a number of unknown parameters to be determined. An ideal FF offers an exact representation of the quantum mechanical PES. The most crucial part in the development of an FF is the initial choice of its own mathematical form. The construction of a general FF, able to describe on an equal footing any chemical system, represents a long-standing open problem in quantum chemistry. Its solution would represent a fundamental step forward in narrowing the existing accuracy gap between a first-principles and an FF representation of a general PES.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">FFs are traditionally conceived for a restricted portion of the configurational space and use simple functions, mainly inspired by the chemical understanding of the system under investigation. Such an approach, when possible, can be quite efficient. However, it generally lacks the necessary flexibility and accuracy to describe the broad spectrum of interactions that falls under the definition of covalent bond. In particular, the coordination bond represents a challenge for FFs due to its nature, which is intermediate between that of covalent directional bonds, commonly encountered in organic materials, and that of the more spherically symmetric metallic bonds. To date, a satisfactory model to describe coordination complexes is still missing (
+  <a rid="R3" ref-type="bibr" href="#R3">
+   <span class="italic">3</span>
+  </a>), a shortfall that hinders an efficient description of highly relevant compounds and phenomena such as organometallic complexes, metalloproteins, enzymes, and catalytic reactions. Such a deficiency can be only resolved by an FF, whose analytical form is able to account for the three-dimensional and many-body nature of the chemical bond. These are features ultimately shared by any covalent bond, but they reach their maximum complexity with metallic complexes.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In recent years, machine learning frameworks have witnessed an increasing attention as possibly revolutionary computational approaches. Chemistry makes no exception to this trend (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>). In particular, machine learning has been demonstrated applicable to the prediction of complex PESs by means of generalized regression methods such as neural networks and kernel regression (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>–
+  <a rid="R20" ref-type="bibr" href="#R20">
+   <span class="italic">20</span>
+  </a>). These methods share the fundamental feature of being able to represent a general continuous function with no limitations. They require an arbitrarily large number of parameters and a suitable representation of the atomic chemical environment.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we demonstrate that ridge regression–based FFs combined with a bispectrum function representation of the atomic distribution (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>), also called the spectral neighbor analysis potentials (SNAPs) (
+  <a rid="R21" ref-type="bibr" href="#R21">
+   <span class="italic">21</span>
+  </a>), are able to account for any fundamental feature of the covalent bond in a natural fashion and without any assumption on the chemistry of the bonds considered. The FFs predict a smooth PES and thus stable molecular dynamics.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We will first give an overview of the method used to generate and test the FF. Then, we will demonstrate its performances on model systems composed of organic and inorganic molecules comprising σ bonds, π bonds, and the most common geometries encountered in metallic complexes. The natural emergence of Jahn-Teller distortion in the model will also be shown. We will apply the method to generate three FFs for three chemical molecules of fundamental importance for materials science and biology. These are, respectively, ferrocene, a metallorganic molecule with applications in catalysis, fuel additives, and nanomedicine; dioxo-Fe
+  <span class="sup">2+</span>(porphyrin), the hemoglobin functional unit, regulating oxygen delivery in all vertebrates and alanine, the fundamental chemical unit for the alanine-glucose cycle that regulates the glucose metabolism of the human body. Last, we will use the MD-17 benchmark set to compare our model with the state-of-the-art deep learning machine learning potentials.
+ </p>
+</sec>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">QM package support</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden could already parse output of the quantum chemistry (QC) packages: Gaussian [
+  <a ref-type="bibr" rid="CR20" href="#CR20">20</a>], Gamess-US [
+  <a ref-type="bibr" rid="CR21" href="#CR21">21</a>], Gamess-UK [
+  <a ref-type="bibr" rid="CR22" href="#CR22">22</a>] and Mopac [
+  <a ref-type="bibr" rid="CR23" href="#CR23">23</a>], and this list was recently extended with NWchem [
+  <a ref-type="bibr" rid="CR24" href="#CR24">24</a>], Orca [
+  <a ref-type="bibr" rid="CR25" href="#CR25">25</a>] and Qchem [
+  <a ref-type="bibr" rid="CR26" href="#CR26">26</a>]. The Molden format was developed to interface to QC programs that produce output that cannot be parsed natively. This format includes all information required for orbital/density and molecular vibration visualisation (e.g. Cartesian coordinates, the basis-set, the molecular orbital coefficients and occupancy numbers). The Molden format (see 
+  <span ext-link-type="uri" xlink:href="http://www.cmbi.ru.nl/molden/molden_format.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cmbi.ru.nl/molden/molden_format.html</span> for a description) is currently used by a series of prominent QC programs (see Table 
+  <a rid="Tab4" ref-type="table" href="#Tab4">4</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Tab4" class="table-wrap">
+   <span class="label">Table 4</span>
+   <div class="caption">
+    <p>Packages that produce Molden format files</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th align="left">Package</th>
+      <th align="left">URL</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left">ACES II</td>
+      <td align="left">
+       <span ext-link-type="uri" xlink:href="http://www.qtp.ufl.edu/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.qtp.ufl.edu/</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left">MOLCAS</td>
+      <td align="left">
+       <span ext-link-type="uri" xlink:href="http://molcas.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://molcas.org/</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left">MOLPRO</td>
+      <td align="left">
+       <span ext-link-type="uri" xlink:href="http://www.molpro.net/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.molpro.net/</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left">DALTON</td>
+      <td align="left">
+       <span ext-link-type="uri" xlink:href="http://daltonprogram.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://daltonprogram.org/</span>
+      </td>
+     </tr>
+     <tr>
+      <td align="left">JAGUAR</td>
+      <td align="left">
+       <span ext-link-type="uri" xlink:href="https://www.schrodinger.com/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://www.schrödinger.com/</span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molcas [
+  <a ref-type="bibr" rid="CR27" href="#CR27">27</a>] is a popular ab initio computational chemistry program that focusses on the calculation of electronic structures in ground and excited states. The Molcas authors recommend that their users apply Molden for visualization. The widely used and often cited Gabedit software [
+  <a ref-type="bibr" rid="CR28" href="#CR28">28</a>] (freeware) is a graphical user interface, offering pre-processing and post-processing options for nine computational chemistry software packages. The Molden format has a prominent position in their list of supported formats. So they use Molden to widen their application base.
+ </p>
+</sec>

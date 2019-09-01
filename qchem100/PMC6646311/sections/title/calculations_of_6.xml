@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Calculations of wavefunctions</div>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">In bulk zinc blend CdSe, the heavy-hole and light-hole bands are degenerate. However, in a quasi-two-dimensional zinc blend CdSe nanoplatelet, the quantum confinement in the 
+  <span class="italic">z</span> ([001]) direction leads to a lifted heavy-hole band which possesses a mixed 
+  <span class="italic">p</span>
+  <sub>
+   <span class="italic">x</span>
+  </sub> and 
+  <span class="italic">p</span>
+  <sub>
+   <span class="italic">y</span>
+  </sub> symmetry with no 
+  <span class="italic">p</span>
+  <sub>
+   <span class="italic">z</span>
+  </sub> contributions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span>. Here, 
+  <span class="italic">x</span> and 
+  <span class="italic">y</span> are in-plane directions. Thus, an optical transition between the conduction band edge state, which has a 
+  <span class="italic">s</span>-like symmetry, and heavy-hole band forms an isotropically distributed in-plane TDM. CdSe QRs could be considered as two-dimensional topological structures that are warped analogs of quantum wires. However, in stark contrast to CdSe nanoplatelets
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span> and other two-dimensional optical emitters such as transition-metal dichalcogenides
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span> which possess isotropic two-dimensional TDMs, QRs are found here to show TDMs with properties similar to that of one-dimensional structures
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>. It appears that topology plays a significant role in determining their TDMs. To understand this finding, we calculate the electronic energy levels and wavefunctions of the CdSe QRs that determine their TDMs. We start by looking at the solutions of two-dimensional infinite ring well potentials. The potentials are defined by the ring outer diameters along the 
+  <span class="italic">x</span> and 
+  <span class="italic">y</span> axes to the center of the ring (OD
+  <sub>1</sub> and OD
+  <sub>2</sub>) and the corresponding inner diameters (ID
+  <sub>1</sub> and ID
+  <sub>2</sub>). The ring thicknesses 
+  <span class="italic">t</span>
+  <sub>1</sub> and 
+  <span class="italic">t</span>
+  <sub>2</sub> along the 
+  <span class="italic">x</span> and 
+  <span class="italic">y</span> axes are defined as: 
+  <span class="italic">t</span>
+  <sub>1</sub> = 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\frac{1}{2}$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11225_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>(OD
+  <sub>1</sub>−ID
+  <sub>1</sub>) and 
+  <span class="italic">t</span>
+  <sub>2</sub> = 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\frac{1}{2}$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11225_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>(OD
+  <sub>2</sub>−ID
+  <sub>2</sub>). Within the ring, the potential is set to zero, whereas outside of the ring, the potential is infinite. When OD
+  <sub>1</sub> = OD
+  <sub>2</sub> = 13.3 nm and 
+  <span class="italic">t</span>
+  <sub>1</sub> = 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.6 nm (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a, b</a>), the ring is circular with a continuous rotational symmetry. We use the discrete variable representation to solve this system
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>. Solutions to the Schrödinger equation with this potential admit an 
+  <span class="italic">s</span>-type orbital, where the wavefunction shows a symmetric distribution through the ring, as the ground state, and 
+  <span class="italic">p</span>-type orbitals, where there are two lobes along different axes, as the second lowest state. Due to the continuous rotational symmetry, these solutions are not unique. A rotation of any amount of the 
+  <span class="italic">p</span>-type orbitals would also be a solution. However, when one of the axes is longer than the other (OD
+  <sub>1</sub> = 13.3 nm, OD
+  <sub>2</sub> = 9.9 nm) while the ring thickness is kept constant (
+  <span class="italic">t</span>
+  <sub>1</sub> = 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.6 nm), breaking of the continuous rotational symmetry leads to the lifting of the 
+  <span class="italic">p</span>- and 
+  <span class="italic">d</span>-type orbitals as the two lowest states, which now show a preferential location for the wavefunction lobes (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4e, f</a>). In this case, there is a preferred direction for a uniaxial dipole excitation between the two. Further adoption of the experimental geometry of OD
+  <sub>1</sub> = 13.3 nm, OD
+  <sub>2</sub> = 9.9 nm, and 
+  <span class="italic">t</span>
+  <sub>1</sub> = 3.6 nm, 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.0 nm gives similar wavefunction distributions and uniaxial dipole orientations (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4i, j</a>).
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Calculations of the electronic structures of CdSe quantum rings. 
+     <span class="bold">a</span>, 
+     <span class="bold">b</span> Calculated wavefunctions of the two lowest states of two-dimensional infinite well potentials with OD
+     <sub>1</sub> = OD
+     <sub>2</sub> = 13.3 nm, ID
+     <sub>1</sub> = ID
+     <sub>2</sub> = 6.1 nm, and 
+     <span class="italic">t</span>
+     <sub>1</sub> = 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.6 nm. 
+     <span class="bold">c</span>, 
+     <span class="bold">d</span> 2D slices of wavefunctions of a CdSe QR (OD
+     <sub>1</sub> = OD
+     <sub>2</sub> = 13.3 nm, ID
+     <sub>1</sub> = ID
+     <sub>2</sub> = 6.1 nm, 
+     <span class="italic">t</span>
+     <sub>1</sub> = 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.6 nm, and 
+     <span class="italic">h</span> = 5.0 nm) corresponding to the conduction band (CB) minimum 
+     <span class="bold">c</span> and the valence band (VB) maximum 
+     <span class="bold">d</span> calculated using an empirical tight-binding method. The slices are in the 
+     <span class="italic">xy</span> plane and cut through the center of the rings. 
+     <span class="bold">e</span>, 
+     <span class="bold">f</span> Calculated wavefunctions of the two lowest states of two-dimensional infinite ring well potentials with OD
+     <sub>1</sub> = 13.3 nm, OD
+     <sub>2</sub> = 9.9 nm, and ID
+     <sub>1</sub> = 6.1 nm, ID
+     <sub>2</sub> = 2.7 nm, and 
+     <span class="italic">t</span>
+     <sub>1</sub> = 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.6 nm. Breaking of the continuous rotational symmetry leads to the lifting of the 
+     <span class="italic">p</span>- and 
+     <span class="italic">d</span>- type orbitals as the two lowest states. An optical transition between these two orbitals has a uniaxial transition dipole. 
+     <span class="bold">g</span>, 
+     <span class="bold">h</span> 2D slices of wavefunctions of a CdSe QR (OD
+     <sub>1</sub> = 13.3 nm, OD
+     <sub>2</sub> = 9.9 nm, and ID
+     <sub>1</sub> = 6.1 nm, ID
+     <sub>2</sub> = 2.7 nm, 
+     <span class="italic">t</span>
+     <sub>1</sub> = 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.6 nm, and 
+     <span class="italic">h</span> = 5.0 nm) corresponding to the conduction band minimum 
+     <span class="bold">g</span> and the valence band maximum 
+     <span class="bold">h</span> calculated using an empirical tight-binding method. 
+     <span class="bold">i</span>, 
+     <span class="bold">j</span> Wavefunctions of the two lowest states of two-dimensional infinite ring well potentials with OD
+     <sub>1</sub> = 13.3 nm, OD
+     <sub>2</sub> = 9.9 nm, ID
+     <sub>1</sub> = 6.1 nm, ID
+     <sub>2</sub> = 3.8 nm, 
+     <span class="italic">t</span>
+     <sub>1</sub> = 3.6 nm, and 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.0 nm. 
+     <span class="bold">k</span>, 
+     <span class="bold">l</span> 2D slices of wavefunctions of a CdSe QR (OD
+     <sub>1</sub> = 13.3 nm, OD
+     <sub>2</sub> = 9.9 nm, and ID
+     <sub>1</sub> = 6.1 nm, ID
+     <sub>2</sub> = 3.8 nm, 
+     <span class="italic">t</span>
+     <sub>1</sub> = 3.6 nm, 
+     <span class="italic">t</span>
+     <sub>2</sub> = 3.0 nm, and 
+     <span class="italic">h</span> = 5.0 nm) corresponding to the conduction band minimum 
+     <span class="bold">k</span> and the valence band maximum 
+     <span class="bold">l</span> calculated using an empirical tight-binding method. Localization of the band edge states due to broken rotational symmetry can be observed. Scale bars: 5 nm
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11225_Fig4_HTML" id="d29e1198" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">To simulate the QR structures with realistic potentials, we solve for the band-edge states using an empirical tight-binding method utilizing the QNANO computational platform (see Methods for details)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>,
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+  </span>. Since we focus on band edge single particle energy states, we do not directly take into account exchange splitting. However, we expect this effect to be small as magnitudes of anisotropic exchange splitting in CdSe nanostructures
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>–
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span> is much smaller than the thermal energies in our experiments. These calculations show that in realistic QRs, though the pure geometry is still a factor, a three-dimensional, atomistic ring adds additional complexity to the electronic structure. This is because the discrete nature of the atomic positions breaks the continuous rotational symmetry present in the infinite ring potential, even in the case of OD
+  <sub>1</sub> = OD
+  <sub>2</sub> = 13.3 nm, 
+  <span class="italic">t</span>
+  <sub>1</sub> = 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.6 nm, and 
+  <span class="italic">h</span> = 5.0 nm (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4c, d</a>) (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> for vertical cross sections). Here, the wavefunction of the lowest conduction band level (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4c</a>) is no longer perfectly symmetric as was observed for the infinite well potentials, although it is still generally delocalized around the ring and keeps the 
+  <span class="italic">s</span>-type character. The overlap of the electron (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4c</a>) and hole (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4d</a>) wavefunctions results in a two-dimensional optical transition dipole moment with components along both the 
+  <span class="italic">x</span> and 
+  <span class="italic">y</span> axes. For CdSe QRs with OD
+  <sub>1</sub> = 13.3 nm, OD
+  <sub>2</sub> = 9.9 nm, 
+  <span class="italic">t</span>
+  <sub>1</sub> = 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.6 nm, and 
+  <span class="italic">h</span> = 5.0 nm (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4g, h</a>), both the oval nature of the quantum ring and the atomic structure break the rotational symmetry. In this case, the elongation of the QR leads to the localization of wavefunctions in the thick end of the oval-shaped rings for both band edge states (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4g, h</a>), although the wavefunctions are still mostly delocalized around the whole ring, and hence has a two-dimensional transition dipole. There are still some effects from the local atomic structures, which break the symmetry between the left and right lobes, although the effects are less significant compared to these in QRs with a smaller thickness (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a> and 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a> for ring thickness dependent atomic structure effects). For the ring geometry that most closely represents our experimentally measured QR samples, the differential thickness (
+  <span class="italic">t</span>
+  <sub>1</sub> = 3.6 nm, 
+  <span class="italic">t</span>
+  <sub>2</sub> = 3.0 nm) further breaks the rotational symmetry and causes additional localization of the wavefunctions in the thick end of the ring, as shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4k, l</a>. This strong, geometry-induced localization leads to a uniaxial, in-plane dipole, as was observed in our experimental measurements. We note that even though the rings vary slightly in size and shape, they are essentially ovals with certain thickness variations (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). As shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4k, l</a> and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>–
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">7</a>, this geometry, over a wide range of possible parameters, gives rise to mostly uniaxial dipoles. Our simulations also show that the specific symmetry breaking between the different wavefunction lobes varies for QRs with various crystallographic orientations (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a>), but their TDMs still remain uniaxial and in-plane. Moreover, the calculated energy difference between the two band edge states of 1.84 eV matches very well with the experimentally observed band edge absorption and emission wavelengths (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1c</a>).
+ </p>
+</sec>

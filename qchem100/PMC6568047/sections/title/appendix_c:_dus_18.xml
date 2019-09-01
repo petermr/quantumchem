@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix C: Duschinsky transform</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The relation between the initial coordinates 
+  <span class="bold">q</span>
+  <sub>1</sub> and final coordinates 
+  <span class="bold">q</span>
+  <sub>2</sub> is
+  <div id="eqn43" class="disp-formula">
+   <span class="label">C1</span>
+   <span class="bold">q</span>
+   <sub>1</sub> = 
+   <span class="bold">Uq</span>
+   <sub>2</sub> + 
+   <span class="bold">d</span>,
+  </div>where 
+  <span class="bold">U</span> is the Duschinsky rotation matrix and 
+  <span class="bold">d</span> is the displacement vector. The harmonic oscillator Hamiltonian with unit mass is
+  <div id="eqn44" class="disp-formula">
+   <span class="label">C2</span>
+   <div xlink:href="c9sc01313j-t41.jpg" id="ugt41" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>with 
+  <span xlink:href="c9sc01313j-t42.jpg" id="ugt42" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> The operators 
+  <span class="bold">q</span>
+  <sub>1</sub> and 
+  <span class="bold">p</span>
+  <sub>1</sub> can be represented by the creation and annihilation operators
+  <div id="eqn45" class="disp-formula">
+   <span class="label">C3</span>
+   <div xlink:href="c9sc01313j-t43.jpg" id="ugt43" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The transformation for 
+  <span class="bold">
+   <span class="bold">p</span>
+  </span> is 
+  <span class="bold">p</span>
+  <sub>1</sub> = 
+  <span class="bold">U</span>
+  <span class="sup">†</span>
+  <span class="bold">
+   <span class="bold">p</span>
+  </span>
+  <sub>2</sub>. The transformation for the creation operators are
+  <div id="eqn46" class="disp-formula">
+   <span class="label">C4</span>
+   <div xlink:href="c9sc01313j-t44.jpg" id="ugt44" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span xlink:href="c9sc01313j-t45.jpg" id="ugt45" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and 
+  <span xlink:href="c9sc01313j-t46.jpg" id="ugt46" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It was shown by Doktorov 
+  <span class="italic">et al.</span>
+  <a rid="cit64" ref-type="bibr" href="#cit64">64</a> that the Duschinsky transform can be implemented using a unitary transform inserted into the overlap integral
+  <div id="eqn47" class="disp-formula">
+   <span class="label">C5</span>〈
+   <span class="italic">ν</span>
+   <sub>f</sub>|
+   <span class="italic">ν</span>
+   <sub>i</sub>〉 = 〈 = 〉 = 〈
+   <span class="italic">ν</span>′
+   <sub>f</sub>|
+   <span class="italic">Û</span>
+   <sub>Dok</sub>|
+   <span class="italic">ν</span>
+   <sub>i</sub>〉
+  </div>where |
+  <span class="italic">v</span>〉 is a harmonic oscillator eigenstate in the initial coordinate is a harmonic oscillator eigenstate in the initial coordinate 
+  <span class="bold">q</span> and |
+  <span class="italic">v</span>′′〉 is a harmonic oscillator eigenstate in the final coordinate is a harmonic oscillator eigenstate in the final coordinate 
+  <span class="bold">q</span>′. The Doktorov unitary can be decomposed into a product of unitaries, which depend on the displacement vector 
+  <span class="italic">d[combining right harpoon above]</span>, the rotation matrix 
+  <span class="bold">U</span>, and matrices of the eigenenergies of the harmonic oscillator states 
+  <span xlink:href="c9sc01313j-t47.jpg" id="ugt47" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>; 
+  <span xlink:href="c9sc01313j-t48.jpg" id="ugt48" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and 
+  <span xlink:href="c9sc01313j-t49.jpg" id="ugt49" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>. It is given by
+  <div id="eqn48" class="disp-formula">
+   <span class="label">C6</span>
+   <span class="italic">Û</span>
+   <sub>Dok</sub> = 
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">t</span>
+   </sub>
+   <span class="italic">Û</span>†
+   <span class="italic">s</span>′
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">s</span>
+   </sub>
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">r</span>
+   </sub>
+  </div>where
+  <div id="eqn49" class="disp-formula">
+   <span class="label">C7</span>
+   <div xlink:href="c9sc01313j-t50.jpg" id="ugt50" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">a[combining right harpoon above]</span> = (
+  <span class="italic">a</span>
+  <sub>0</sub>,…,
+  <span class="italic">a</span>
+  <sub>
+   <span class="italic">M</span>
+  </sub>)
+  <span class="sup">
+   <span class="italic">T</span>
+  </span>, and
+  <div id="eqn50" class="disp-formula">
+   <span class="label">C8</span>
+   <div xlink:href="c9sc01313j-t51.jpg" id="ugt51" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and
+  <div id="eqn51" class="disp-formula">
+   <span class="label">C9</span>
+   <div xlink:href="c9sc01313j-t52.jpg" id="ugt52" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and
+  <div id="eqn52" class="disp-formula">
+   <span class="label">C10</span>
+   <div xlink:href="c9sc01313j-t53.jpg" id="ugt53" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">These exponentials could be expanded into local qubit operators using Trotterization. It is important to note that these relations are only valid when the single-mode basis functions are chosen to be harmonic oscillator eigenstates.</p>
+</sec>

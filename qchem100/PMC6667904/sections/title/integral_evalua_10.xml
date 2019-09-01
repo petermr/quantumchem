@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0011" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Integral Evaluation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Efficient algorithms to evaluate two‐electron integrals are implemented in RAQET, and are summarized in Table 
+  <a rid="jcc25364-tbl-0005" ref-type="table" href="#jcc25364-tbl-0005">5</a>. The Gaussian quadrature technique,
+  <a rid="jcc25364-bib-0142" ref-type="ref" href="#jcc25364-bib-0142">142</a>, 
+  <a rid="jcc25364-bib-0143" ref-type="ref" href="#jcc25364-bib-0143">143</a> one of the most effective algorithms for ERIs composed of GTOs with high angular momentum and short contraction, has been adopted for Gauss–Rys. This algorithm is useful for the two‐electron IODKH transformation because the transformation is performed in the primitive basis function space. The Pople–Hehre and McMurchie–Davidson (PHMD) algorithm
+  <a rid="jcc25364-bib-0144" ref-type="ref" href="#jcc25364-bib-0144">144</a>, 
+  <a rid="jcc25364-bib-0145" ref-type="ref" href="#jcc25364-bib-0145">145</a>, 
+  <a rid="jcc25364-bib-0146" ref-type="ref" href="#jcc25364-bib-0146">146</a> utilizes the expression of a linear combination of Hermite Gaussians in rotated space, which can be useful for calculations involving molecules which contain only light elements. PHMD accepts integrals for 
+  <span class="italic">s, p</span>, and 
+  <span class="italic">d</span> functions. The source code for PHMD was taken from an integral library in open‐source software for massively parallel QC calculations called Scalable Molecular Analysis Solver for High‐performance computing systems (SMASH) which was developed by Ishimura.
+  <a rid="jcc25364-bib-0147" ref-type="ref" href="#jcc25364-bib-0147">147</a> The accompanying coordinate expansion and transferred recurrence relation (ACE–TRR) algorithm employs the ACE formula
+  <a rid="jcc25364-bib-0148" ref-type="ref" href="#jcc25364-bib-0148">148</a> with the ACE‐vertical recurrence relations (RRs) and transfer relations.
+  <a rid="jcc25364-bib-0084" ref-type="ref" href="#jcc25364-bib-0084">84</a> ACE provides the most effective expression for GTOs with long contractions because it is designed to minimize the floating operation count, according to the contraction length, by optimal coordinate expansion. The RR scheme reduces the operation count and improves memory usage for ERIs with high angular momentum GTOs. Furthermore, ACE–TRR is optimized for the SC and GC basis sets. This algorithm is effective for heavy‐element systems, whose basis sets contain long contractions and functions with high angular momentum. RAQET implements a hybrid of Gauss–Rys, PHMD, and ACE–TRR, and switches to the optimal algorithm according to the angular momentum, contraction length, and contraction type by default. Each algorithm is also designed for two orbital shapes of the Cartesian coordinates and spherical harmonics. Derivative two‐electron integral evaluations, such as DERIs, Gauss–Rys, ACE–TRR, and the hybrid algorithm are available up to second‐order derivatives in both SC and GC formulations.
+ </p>
+ <div id="jcc25364-tbl-0005" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 5</span>
+  <div class="caption">
+   <p>Capabilities of ERI evaluations</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Contraction type
+      <a ref-type="fn" rid="jcc25364-note-0003" href="#jcc25364-note-0003">a</a>
+     </th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Orbital shape
+      <span class="sup">[b]</span>
+     </th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">GaussRys</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SC</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">XYZ/SH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Used in 2‐electron IODKH transformation</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">PHMD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SC</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">XYZ/SH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">For 
+      <span class="italic">s, p</span>, and 
+      <span class="italic">d</span> functions
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">ACE‐TRR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SC/GC</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">XYZ/SH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">For all functions</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Hybrid</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SC/GC</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">XYZ/SH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">For all functions (default)</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="jcc25364-note-0003" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">SC and GC mean the optimized algorithms for segmented‐contraction and general‐contraction, respectively. [b] XYZ and SH mean Cartesian and spherical harmonics, respectively.</p>
+   </fn>
+  </div>
+ </div>
+</sec>

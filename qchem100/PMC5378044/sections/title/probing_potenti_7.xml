@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Probing potential energy surfaces</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the Born-Oppenheimer (BO) picture, the potential energy surface 
+  <div id="m53" class="inline-formula">
+   <span id="d32e1252" xlink:href="srep03589-m53.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> associated with each electronic eigenstate |
+  <span class="italic">ϕ
+   <sub>k</sub>
+  </span>〉 is obtained by scanning the eigenvalues 
+  <div id="m54" class="inline-formula">
+   <span id="d32e1260" xlink:href="srep03589-m54.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for each configurations of the nuclear coordinates {
+  <span class="bold">R</span>}. Of course, we can apply the standard quantum phase estimation algorithm
+  <a ref-type="bibr" rid="b49" href="#b49">49</a> that allows us to extract the eigenvalues. However, this can require many ancilla qubits. In fact, locating these eigenvalues can be achieved by the phase estimation method utilizing one extra ancilla qubit
+  <a ref-type="bibr" rid="b12" href="#b12">12</a> corresponding, in our case, to one additional ion.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This method works as follows: suppose we are given a certain quantum state |
+  <span class="italic">ψ</span>〉 (which may be obtained from classical solutions with quantum-assisted optimization) and an electronic Hamiltonian 
+  <span class="italic">H
+   <sub>e</sub>
+  </span>(
+  <span class="bold">R</span>) (cf. Eq. (1)). Expanding the input state, 
+  <div id="m87" class="inline-formula">
+   <span id="d32e1284" xlink:href="srep03589-m87.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, by the eigenstate vectors |
+  <span class="italic">ϕ
+   <sub>k</sub>
+  </span>〉 of 
+  <span class="italic">H
+   <sub>e</sub>
+  </span>(
+  <span class="bold">R</span>), where 
+  <div id="m55" class="inline-formula">
+   <span id="d32e1301" xlink:href="srep03589-m55.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, then for the input state |0〉 |
+  <span class="italic">ψ</span>〉, the quantum circuit of the quantum phase estimation produces the following output state, 
+  <div id="m56" class="inline-formula">
+   <span id="d32e1307" xlink:href="srep03589-m56.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where 
+  <div id="m57" class="inline-formula">
+   <span id="d32e1310" xlink:href="srep03589-m57.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. The corresponding reduced density matrix,
+  <div id="m5" class="disp-formula">
+   <span id="d32e1314" xlink:href="srep03589-m5.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>of the ancilla qubit contains the information about the weight (amplitude-square) |
+  <span class="italic">α
+   <sub>k</sub>
+  </span>|
+  <span class="sup">2</span> of the eigenvectors |
+  <span class="italic">ϕ
+   <sub>k</sub>
+  </span>〉 in |
+  <span class="italic">ψ</span>〉 and the associated eigenvalues 
+  <span class="italic">ω
+   <sub>k</sub>
+  </span> in the off-diagonal matrix elements. All |
+  <span class="italic">α
+   <sub>k</sub>
+  </span>|
+  <span class="sup">2</span>'s and 
+  <span class="italic">ω
+   <sub>k</sub>
+  </span>'s can be extracted by repeating the quantum circuit for a range of values of 
+  <span class="italic">t</span> and performing a (classical) Fourier transform to the measurement results. The potential energy surface is obtained by repeating the procedure for different values of the nuclear coordinates {
+  <span class="bold">R</span>}.
+ </p>
+</sec>

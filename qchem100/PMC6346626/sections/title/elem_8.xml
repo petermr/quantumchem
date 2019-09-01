@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Singlet Ground State of Phenylene-1,4-dinitrene</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Usefulness of multiconfigurational wave functions is not limited on intermediate bond regions of potential energy surfaces. Here, we focus on the electronic ground state of phenylene-1,4-dinitrene as an important chemical entity. Phenylene-1,4-dinitrene is a heteroatomic analog of non-Kekulé molecules, and it has two major resonance structures: quinonoidal diradical and phenyl dinitrene as illustrated in 
+  <a rid="sch1" ref-type="scheme" href="#sch1">Scheme 
+   <a rid="sch1" ref-type="scheme" href="#sch1">1</a>
+  </a>. The electronic ground state of phenylene-1,4-dinitrene is a spin-singlet diradical, in which two unpaired electrons occupy in-plane 2p orbitals of nitrogen atoms.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref74" href="#ref74">74</a>−
+   <a ref-type="bibr" rid="ref78" href="#ref78">78</a>
+  </span> However, because of the existence of the dinitrene resonance structure, the π system is expected to have non-negligible diradical characters.
+ </p>
+ <div id="sch1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Scheme 1</span>
+  <div class="caption">
+   <div class="title">Two Major Resonance Structures of Phenylene-1,4-dinitrene</div>
+  </div>
+  <div xlink:href="oc-2018-00788n_0005" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Natural orbitals and the corresponding occupation numbers calculated from BS-UHF/cc-pVDZ level at the UB3LYP/6-31G* optimized geometry are given in 
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>. The BS-UHF calculation revealed that the in-plane 2p orbitals of the nitrogen atoms (HONO and LUNO) are in almost pure diradical states with 
+  <span class="italic">y</span>
+  <sub>0</sub> = 0.9892. The HONO – 1 and LUNO + 1 pair has an intermediate diradical character with 
+  <span class="italic">y</span>
+  <sub>1</sub> = 0.1584. The other valence π orbitals also have small diradical characters (
+  <span class="italic">y</span>
+  <sub>2</sub> = 0.0109, 
+  <span class="italic">y</span>
+  <sub>3</sub> = 0.0071, and 
+  <span class="italic">y</span>
+  <sub>4</sub> = 0.0009). Note that 
+  <span class="italic">y</span>
+  <sub>5</sub> is less than 0.0001, and therefore diradical characters of valence σ/σ* bonded orbitals are negligibly small.
+ </p>
+ <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <p>BS-UHF/cc-pVDZ natural orbitals and the occupation numbers of phenylene-1,4-dinitrene.</p>
+  </div>
+  <div xlink:href="oc-2018-00788n_0004" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Needless to say, the full-CI calculation of phenylene-1,4-dinitrene is impossible, and hence, we used the CAS-CI(10e,10o)/cc-pVDZ wave function as a reference. As illustrated in 
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>, 10 natural orbitals illustrated in are used as active orbitals. The number of Slater determinants of 
+  <span class="italic">S
+   <sub>
+    <span class="italic">z</span>
+   </sub>
+  </span> = 0 within the active space is 63 504, and the number of spin-singlet CSFs is 19 404. Upon consideration of five diradical characters (
+  <span class="italic">y</span>
+  <sub>0</sub>–
+  <span class="italic">y</span>
+  <sub>4</sub>) the approximated wave function consisting of 264 determinants can be constructed. However, the contributions from octaradical and decaradical configurations are less than 1%, and therefore, we omitted these configurations and generated the wave function containing 72 important Slater determinants. The square overlap between the multiconfigurational wave function and CAS-CI wave function is calculated to be 0.9286, and we conclude that multiconfigurational wave functions can be safely used as initial guess wave functions for QPEA. Dependence of the square overlap against the number of diradical characters used for the multiconfigurational wave function preparation is summarized in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span> in the Supporting Information. If the RHF configuration is used as the initial guess wave function, the square overlap with the CAS-CI wave function is calculated to be 0.3894. The square overlap increases to be 0.8754 if one diradical character 
+  <span class="italic">y</span>
+  <sub>0</sub> is used, and the inclusion of higher-radical characters systematically improves the overlap. Note that spin projection is important if more than one diradical character is used for the wave function preparation. The enhancement of the overlap by using higher-diradical characters such as 
+  <span class="italic">y</span>
+  <sub>3</sub> and 
+  <span class="italic">y</span>
+  <sub>4</sub> is not significant, and therefore, they can be neglected in the case when a sufficient number of qubit resources are not available.
+ </p>
+</sec>

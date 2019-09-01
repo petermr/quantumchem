@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">4322582</article-id>
+ <article-id pub-id-type="pii" class="article-id">sdata201422</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1038/sdata.2014.22</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Data Descriptor</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry structures and properties of 134 kilo molecules</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ramakrishnan</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Raghunathan</span>
+   </name>
+   <a ref-type="aff" rid="a1" href="#a1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dral</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Pavlo O.</span>
+   </name>
+   <a ref-type="aff" rid="a2" href="#a2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+   <a ref-type="aff" rid="a3" href="#a3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rupp</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Matthias</span>
+   </name>
+   <a ref-type="aff" rid="a1" href="#a1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-2934-2958</span>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">von Lilienfeld</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">O. Anatole</span>
+   </name>
+   <a ref-type="corresp" rid="c1" href="#c1" xmlns="http://www.w3.org/1999/xhtml">a</a>
+   <a ref-type="aff" rid="a1" href="#a1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="a4" href="#a4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <aff id="a1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, Institute of Physical Chemistry, University of Basel</span>, Klingelbergstrasse 80, CH-4056 Basel, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Switzerland</span>
+  </aff>
+  <aff id="a2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Max-Planck-Institut für Kohlenforschung, Kaiser-Wilhelm-Platz 1</span>, 45470 Mülheim an der Ruhr, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Germany</span>
+  </aff>
+  <aff id="a3" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Computer-Chemie-Centrum, University of Erlangen-Nuremberg</span>, Nägelsbachstr. 25, 91052 Erlangen, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Germany</span>
+  </aff>
+  <aff id="a4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Argonne Leadership Computing Facility, Argonne National Laboratory</span>, 9700S. Cass Avenue, Lemont, Illinois, 60439, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">USA</span>
+  </aff>
+ </div>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="c1" class="corresp">
+   <span class="label">a</span> O.A.v.L. (email: 
+   <span class="email">anatole.vonlilienfeld@unibas.ch</span>)
+  </div>
+  <fn id="con" class="fn" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml"/>
+   <p xmlns="http://www.w3.org/1999/xhtml">All authors designed and performed research, and wrote the paper.</p>
+  </fn>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">05</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">08</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">140022</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">02</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">04</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">07</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">07</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2014, Macmillan Publishers Limited</span>
+  <span class="copyright-year">2014</span>
+  <span class="copyright-holder">Macmillan Publishers Limited</span>
+  <div license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <!--author-paid-->
+   <div class="license-p">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit 
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link">http://creativecommons.org/licenses/by-nc-sa/4.0/</span> Metadata associated with this Data Descriptor is available at 
+    <span ext-link-type="uri" xlink:href="http://www.nature.com/sdata/" class="ext-link">http://www.nature.com/sdata/</span> and is released under the CC0 waiver to maximize reuse. 
+   </div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>Computational 
+   <span class="italic">de novo</span> design of new drugs and materials requires rigorous and unbiased exploration of chemical compound space. However, large uncharted territories persist due to its size scaling combinatorially with molecular size. We report computed geometric, energetic, electronic, and thermodynamic properties for 134k stable small organic molecules made up of CHONF. These molecules correspond to the subset of all 133,885 species with up to nine heavy atoms (CONF) out of the GDB-17 chemical universe of 166 billion organic molecules. We report geometries minimal in energy, corresponding harmonic frequencies, dipole moments, polarizabilities, along with energies, enthalpies, and free energies of atomization. All properties were calculated at the B3LYP/6-31G(2df,p) level of quantum chemistry. Furthermore, for the predominant stoichiometry, C
+   <sub>7</sub>H
+   <sub>10</sub>O
+   <sub>2</sub>, there are 6,095 constitutional isomers among the 134k molecules. We report energies, enthalpies, and free energies of atomization at the more accurate G4MP2 level of theory for all of them. As such, this data set provides quantum chemical properties for a relevant, consistent, and comprehensive chemical space of small organic molecules. This database may serve the benchmarking of existing methods, development of new methods, such as hybrid quantum mechanics/machine learning, and systematic identification of structure-property relationships.
+  </p>
+ </div>
+</article-meta>

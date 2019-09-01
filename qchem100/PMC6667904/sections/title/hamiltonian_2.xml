@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0003" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hamiltonian</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Several 2c relativistic Hamiltonians are available in RAQET, which are summarized in Table 
+  <a rid="jcc25364-tbl-0001" ref-type="table" href="#jcc25364-tbl-0001">1</a>. For the one‐electron parts, 
+  <div id="nlm-math-15" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">h</span>
+     <span class="mn">2</span>
+     <span class="mo">+</span>
+    </div>
+   </div>
+  </div> of the 2c relativistic Hamiltonian in eq. (
+  <a rid="jcc25364-disp-0002" ref-type="disp-formula" href="#jcc25364-disp-0002">2</a>), the first‐order DKH (DKH1) and IODKH have been implemented as well as the NR Hamiltonian. For the two‐electron parts, 
+  <div id="nlm-math-16" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">g</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mo">+</span>
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> the NR Coulomb and IODKH transformed interactions were implemented.
+ </p>
+ <div id="jcc25364-tbl-0001" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <p>Capabilities of Hamiltonians</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">
+      <div id="nlm-math-17" class="math">
+       <div class="mrow">
+        <div class="msubsup">
+         <span mathvariant="bold" class="mi">h</span>
+         <span class="mn">2</span>
+         <span class="mo">+</span>
+        </div>
+       </div>
+      </div>
+     </th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">
+      <div id="nlm-math-18" class="math">
+       <div class="mrow">
+        <div class="msubsup">
+         <span mathvariant="bold" class="mi">g</span>
+         <span class="mn">2</span>
+         <div class="mrow">
+          <span class="mo">+</span>
+          <span class="mo">+</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Spin</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR/NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">DKH1/NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">DKH1</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF/SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">IODKH/NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF/SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">LUT‐IODKH/NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">LUT‐IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">NR</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF/SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">IODKH/IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF/SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">LUT‐IODKH/LUT‐IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">LUT‐IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">LUT‐IODKH</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Default</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the 2c relativistic calculations, the unitary transformation, 
+  <span class="bold">U</span> in eq. (
+  <a rid="jcc25364-disp-0003" ref-type="disp-formula" href="#jcc25364-disp-0003">3</a>), is determined by the matrix transformation method and the resolution of identity technique proposed by Hess.
+  <a rid="jcc25364-bib-0021" ref-type="ref" href="#jcc25364-bib-0021">21</a>, 
+  <a rid="jcc25364-bib-0022" ref-type="ref" href="#jcc25364-bib-0022">22</a> The unitary transformation is a potential bottleneck because the transformations of one‐ and two‐electron Hamiltonians for the entire system scale as 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">3</span>) and 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">5</span>), respectively. Here, 
+  <span class="italic">n</span> denotes the number of primitive basis functions. To reduce this scaling, local unitary transformation (LUT) schemes for one‐
+  <a rid="jcc25364-bib-0078" ref-type="ref" href="#jcc25364-bib-0078">78</a> and two‐electron
+  <a rid="jcc25364-bib-0081" ref-type="ref" href="#jcc25364-bib-0081">81</a> Hamiltonians are implemented. The LUT scheme approximates the one‐electron unitary transformation, 
+  <span class="bold">U</span>(
+  <span class="italic">i</span>) in eq. (
+  <a rid="jcc25364-disp-0005" ref-type="disp-formula" href="#jcc25364-disp-0005">5</a>), as a block‐diagonal form of the subsystem contributions,
+  <div id="jcc25364-disp-0006" class="disp-formula">
+   <span class="label">(6)</span>
+   <div id="nlm-math-19" class="math">
+    <div class="mrow">
+     <span mathvariant="bold" class="mi">U</span>
+     <span class="mo">≈</span>
+     <div class="msup">
+      <span mathvariant="bold" class="mi">U</span>
+      <span class="mi">A</span>
+     </div>
+     <span class="mo">⊕</span>
+     <div class="msup">
+      <span mathvariant="bold" class="mi">U</span>
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">⊕</span>
+     <span class="mo">⋯</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where {
+  <span class="italic">A</span>, 
+  <span class="italic">B</span>, …} denote subsystems that do not intersect. RAQET adopts an atomic partition as the subsystem. The LUT scheme has been designed based on the locality of relativistic interactions. For the one‐electron Hamiltonian, the relativistic effect is dominant for each atom and in interatomic interactions with nearest‐neighbor atoms. Other interactions behave like those in NR. The cutoff distance is introduced to separate the interatomic interactions, whose default value is set to 3.5 Å. For two‐electron interactions, the relativistic effect is dominant for each atom and the interatomic interactions can be approximated as the NR ones. Thus, the scaling for the transformations of one‐ and two‐electron Hamiltonians become 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">1</span>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The one‐ and two‐electron parts in the 2c relativistic Hamiltonians of eq. (
+  <a rid="jcc25364-disp-0002" ref-type="disp-formula" href="#jcc25364-disp-0002">2</a>) are divided into the SF and SD terms respectively as
+  <div id="jcc25364-disp-0007" class="disp-formula">
+   <span class="label">(7)</span>
+   <div id="nlm-math-20" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span mathvariant="bold" class="mi">H</span>
+      <span class="mn">2</span>
+      <div class="mrow">
+       <span class="mi">e</span>
+       <span class="mi">l</span>
+       <span class="mi">e</span>
+       <span class="mi">c</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <span class="mi">i</span>
+      </div>
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <div class="msubsup">
+          <span mathvariant="bold" class="mi">h</span>
+          <span class="mn">2</span>
+          <div class="mrow">
+           <span class="mi">S</span>
+           <span class="mi">F</span>
+           <span class="mo">+</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">i</span>
+         <span stretchy="false" class="mo">)</span>
+         <span class="mo">+</span>
+         <div class="msubsup">
+          <span mathvariant="bold" class="mi">h</span>
+          <span class="mn">2</span>
+          <div class="mrow">
+           <span class="mi">S</span>
+           <span class="mi">D</span>
+           <span class="mo">+</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">i</span>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <span class="mo">+</span>
+       <div displaystyle="true" class="mstyle">
+        <div class="munder">
+         <span class="mo">∑</span>
+         <div class="mrow">
+          <span class="mi">i</span>
+          <span class="mo">&gt;</span>
+          <span class="mi">j</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mi">S</span>
+             <span class="mi">F</span>
+             <span class="mo">+</span>
+             <span class="mo">+</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+           <span class="mo">+</span>
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mi">S</span>
+             <span class="mi">D</span>
+             <span class="mo">+</span>
+             <span class="mo">+</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mo">,</span>
+           <span class="mi">j</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>For division, the Dirac relation is applied to operators in the transformed Hamiltonian, defined by
+  <div id="jcc25364-disp-0008" class="disp-formula">
+   <span class="label">(8)</span>
+   <div id="nlm-math-21" class="math">
+    <div class="mrow">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mo">⋅</span>
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">X</span>
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mo">⋅</span>
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mo">=</span>
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">X</span>
+     <span class="mo">⋅</span>
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mo">+</span>
+     <span class="mi">i</span>
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mo">⋅</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span mathvariant="bold-italic" class="mi">p</span>
+       <span class="mi">X</span>
+       <span class="mo">×</span>
+       <span mathvariant="bold-italic" class="mi">p</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-22" class="math">
+   <span mathvariant="bold-italic" class="mi">σ</span>
+  </div> is the vector of three Pauli spin matrices, 
+  <span class="bold">
+   <span class="italic">p</span>
+  </span> is the momentum operator, 
+  <span class="italic">X</span> is the arbitrary operator, and 
+  <span class="italic">i</span> is the imaginary unit. In RAQET, all 2c relativistic Hamiltonians for one‐electron interactions are implemented based on both the SF and SD formulations. For two‐electron interactions, the SF formulations of IODKH and LUT‐IODKH for 
+  <div id="nlm-math-23" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">g</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mo">+</span>
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> are implemented. For the SD term of IODKH and LUT‐IODKH for 
+  <div id="nlm-math-24" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">g</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mo">+</span>
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, further investigations will be discussed in future. From the viewpoints of accuracy and efficiency, LUT‐IODKH/LUT‐IODKH is the default option in RAQET for calculations relating to heavy‐element systems.
+ </p>
+</sec>

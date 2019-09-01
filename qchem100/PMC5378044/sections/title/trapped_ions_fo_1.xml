@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Trapped ions for quantum chemistry</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry deals with the many-body problem involving electrons and nuclei. Thus, it is very well suited for being simulated with trapped-ion systems, as we will show below. The full quantum chemistry Hamiltonian, 
+  <span class="italic">H</span> = 
+  <span class="italic">T
+   <sub>e</sub>
+  </span> + 
+  <span class="italic">V
+   <sub>e</sub>
+  </span> + 
+  <span class="italic">T
+   <sub>N</sub>
+  </span> + 
+  <span class="italic">V
+   <sub>N</sub>
+  </span> + 
+  <span class="italic">V
+   <sub>eN</sub>
+  </span>, is a sum of the kinetic energies of the electrons 
+  <div id="m7" class="inline-formula">
+   <span id="d32e352" xlink:href="srep03589-m7.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and nuclei 
+  <div id="m8" class="inline-formula">
+   <span id="d32e355" xlink:href="srep03589-m8.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and the electron-electron 
+  <div id="m83" class="inline-formula">
+   <span id="d32e358" xlink:href="srep03589-m83.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, nuclei-nuclei 
+  <div id="m84" class="inline-formula">
+   <span id="d32e361" xlink:href="srep03589-m84.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and electron-nuclei 
+  <div id="m85" class="inline-formula">
+   <span id="d32e364" xlink:href="srep03589-m85.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> potential energies, where 
+  <span class="bold">r</span> and 
+  <span class="bold">R</span> respectively refer to the electronic and nuclear coordinates.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In many cases, it is more convenient to work on the second-quantization representation for quantum chemistry. The advantage is that one can choose a good fermionic basis set of molecular orbitals, 
+  <div id="m9" class="inline-formula">
+   <span id="d32e376" xlink:href="srep03589-m9.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which can compactly capture the low-energy sector of the chemical system. This kind of second quantized fermionic Hamiltonians are efficiently simulatable in trapped ions
+  <a ref-type="bibr" rid="b23" href="#b23">23</a>. To be more specific, we will choose first 
+  <span class="italic">M</span> &gt; 
+  <span class="italic">N</span> orbitals for an 
+  <span class="italic">N</span>-electron system. Denote 
+  <span class="italic">ϕ
+   <sub>p</sub>
+  </span> (
+  <span class="bold">r</span>) ≡ 〈
+  <span class="bold">r</span>|
+  <span class="italic">p</span>〉 as the single-particle wavefunction corresponding to mode 
+  <span class="italic">p</span>. The electronic part, 
+  <span class="italic">H
+   <sub>e</sub>
+  </span>(
+  <span class="bold">R</span>) ≡ 
+  <span class="italic">T
+   <sub>e</sub>
+  </span> + 
+  <span class="italic">V
+   <sub>eN</sub>
+  </span> (
+  <span class="bold">R</span>) + 
+  <span class="italic">V
+   <sub>e</sub>
+  </span>, of the Hamiltonian 
+  <span class="italic">H</span> can be expressed as follows:
+  <div id="m1" class="disp-formula">
+   <span id="d32e439" xlink:href="srep03589-m1.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">h
+   <sub>pq</sub>
+  </span> is obtained from the single-electron integral 
+  <div id="m10" class="inline-formula">
+   <span id="d32e447" xlink:href="srep03589-m10.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and 
+  <span class="italic">h
+   <sub>pqrs</sub>
+  </span> comes from the electron-electron Coulomb interaction, 
+  <div id="m11" class="inline-formula">
+   <span id="d32e455" xlink:href="srep03589-m11.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We note that the total number of terms in 
+  <span class="italic">H
+   <sub>e</sub>
+  </span> is 
+  <span class="italic">O</span>(
+  <span class="italic">M</span>
+  <span class="sup">4</span>); typically 
+  <span class="italic">M</span> is of the same order as 
+  <span class="italic">N</span>. Therefore, the number of terms in 
+  <span class="italic">H
+   <sub>e</sub>
+  </span> scales polynomially in 
+  <span class="italic">N</span>, and the integrals {
+  <span class="italic">h
+   <sub>pq</sub>
+  </span>, 
+  <span class="italic">h
+   <sub>pqrs</sub>
+  </span>} can be numerically calculated by a classical computer with polynomial resources
+  <a ref-type="bibr" rid="b9" href="#b9">9</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To implement the dynamics associated with the electronic Hamiltonian in Eq. (1) with a trapped-ion quantum simulator, one should take into account the fermionic nature of the operators 
+  <span class="italic">c
+   <sub>p</sub>
+  </span> and 
+  <div id="m12" class="inline-formula">
+   <span id="d32e506" xlink:href="srep03589-m12.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We invoke the Jordan-Wigner transformation (JWT), which is a method for mapping the occupation representation to the spin (or qubit) representation
+  <a ref-type="bibr" rid="b43" href="#b43">43</a>. Specifically, for each fermionic mode 
+  <span class="italic">p</span>, an unoccupied state |0〉
+  <span class="italic">
+   <sub>p</sub>
+  </span> is represented by the spin-down state |↓〉
+  <span class="italic">
+   <sub>p</sub>
+  </span>, and an occupied state |1〉
+  <span class="italic">
+   <sub>p</sub>
+  </span> is represented by the spin-up state |↑〉
+  <span class="italic">
+   <sub>p</sub>
+  </span>. The exchange symmetry is enforced by the Jordan-Wigner transformation: 
+  <div id="m13" class="inline-formula">
+   <span id="d32e531" xlink:href="srep03589-m13.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="m14" class="inline-formula">
+   <span id="d32e534" xlink:href="srep03589-m14.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where 
+  <span class="italic">σ</span>
+  <span class="sup">±</span> ≡ (
+  <span class="italic">σ
+   <span class="sup">x</span>
+  </span> ± 
+  <span class="italic">iσ
+   <span class="sup">y</span>
+  </span>)/2. Consequently, the electronic Hamiltonian in Eq. (1) becomes highly nonlocal in terms of the Pauli operators {
+  <span class="italic">σ
+   <span class="sup">x</span>
+  </span>, 
+  <span class="italic">σ
+   <span class="sup">y</span>
+  </span>, 
+  <span class="italic">σ
+   <span class="sup">z</span>
+  </span>}, i.e.,
+  <div id="m2" class="disp-formula">
+   <span id="d32e569" xlink:href="srep03589-m2.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Nevertheless, the simulation can still be made efficient with trapped ions, as we shall discuss below.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In trapped-ion physics two metastable internal levels of an ion are typically employed as a qubit. Ions can be confined either in Penning traps or radio frequency Paul traps
+  <a ref-type="bibr" rid="b33" href="#b33">33</a>, and cooled down to form crystals. Through sideband cooling the ions motional degrees of freedom can reach the ground state of the quantum Harmonic oscillator, that can be used as a quantum bus to perform gates among the different ions. Using resonance fluorescence with a cycling transition quantum non demolition measurements of the qubit can be performed. The fidelities of state preparation, single- and two-qubit gates, and detection, are all above 99%
+  <a ref-type="bibr" rid="b32" href="#b32">32</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The basic interaction of a two-level trapped ion with a single-mode laser is given by
+  <a ref-type="bibr" rid="b32" href="#b32">32</a>, 
+  <div id="m15" class="inline-formula">
+   <span id="d32e582" xlink:href="srep03589-m15.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where 
+  <span class="italic">σ</span>
+  <sub>±</sub> are the atomic raising and lowering operators, 
+  <span class="italic">a</span> (
+  <span class="italic">a</span>
+  <span class="sup">†</span>) is the annihilation (creation) operator of the considered motional mode, and Ω is the Rabi frequency associated to the laser strength. 
+  <span class="italic">η</span> = 
+  <span class="italic">kz</span>
+  <sub>0</sub> is the Lamb-Dicke parameter, with 
+  <span class="italic">k</span> the wave vector of the laser and 
+  <div id="m16" class="inline-formula">
+   <span id="d32e610" xlink:href="srep03589-m16.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> the ground state width of the motional mode. 
+  <span class="italic">ϕ</span> is a controllable laser phase and Δ the laser-atom detuning.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the Lamb-Dicke regime where 
+  <div id="m17" class="inline-formula">
+   <span id="d32e619" xlink:href="srep03589-m17.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, the basic interaction of a two-level trapped ion with a laser can be rewritten as 
+  <div id="m18" class="inline-formula">
+   <span id="d32e622" xlink:href="srep03589-m18.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">By adjusting the laser detuning Δ, one can generate the three basic ion-phonon interactions, namely: the carrier interaction (Δ = 0) 
+  <div id="m19" class="inline-formula">
+   <span id="d32e626" xlink:href="srep03589-m19.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, the red sideband interaction (Δ = −
+  <span class="italic">ω
+   <sub>t</sub>
+  </span>) 
+  <div id="m20" class="inline-formula">
+   <span id="d32e634" xlink:href="srep03589-m20.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and the blue sideband interaction (Δ = 
+  <span class="italic">ω
+   <sub>t</sub>
+  </span>) 
+  <div id="m21" class="inline-formula">
+   <span id="d32e642" xlink:href="srep03589-m21.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. By combining detuned red and blue sideband interactions, one obtains the Mølmer-Sørensen gate
+  <a ref-type="bibr" rid="b44" href="#b44">44</a>, which is the basic building block for our methods. With combinations of this kind of gates, one can obtain dynamics as the associated one to 
+  <span class="italic">H
+   <sub>e</sub>
+  </span> in Eq. (2), that will allow one to simulate arbitrary quantum chemistry systems.
+ </p>
+</sec>

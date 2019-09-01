@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec005" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular docking</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 3D structures of all possible 
+  <span class="italic">S</span>. 
+  <span class="italic">mansoni</span> targets were obtained from the Protein Data Bank (PDB) [
+  <a rid="pone.0198476.ref036" ref-type="bibr" href="#pone.0198476.ref036">36</a>] with the codes (3QSD, 4Q3P, 4CQF, 4L5A, 1TCU, 2V6O, and 4TXH). All docking procedures utilized the Autodock 4.2 package [
+  <a rid="pone.0198476.ref037" ref-type="bibr" href="#pone.0198476.ref037">37</a>–
+  <a rid="pone.0198476.ref039" ref-type="bibr" href="#pone.0198476.ref039">39</a>]. Protein (ACE) and ligands were prepared for docking simulations with AutoDock Tools (ADT) version 1.5.6. [
+  <a rid="pone.0198476.ref040" ref-type="bibr" href="#pone.0198476.ref040">40</a>]. The receptor was considered rigid; each ligand was considered flexible. Gasteiger [
+  <a rid="pone.0198476.ref041" ref-type="bibr" href="#pone.0198476.ref041">41</a>] partial charges were calculated after the addition of all hydrogens. Nonpolar hydrogen atoms of the protein and ligand were subsequently merged. A cubic box of 60 × 60 × 60 points with a spacing of 0.35 Å between the grid points was generated for the whole protein target. The affinity grid centers were defined on residue Asp158 for ARG, Ala118 for PNP, Asp230 for MTAP, Tyr341 for HDAC8, Gln201 for UP, Tyr296 for TGR, and Cys100 for 2CB1. The global search Lamarckian genetic algorithm (LGA) [
+  <a rid="pone.0198476.ref042" ref-type="bibr" href="#pone.0198476.ref042">42</a>] and the local search (LS) pseudo-Solis and Wets [
+  <a rid="pone.0198476.ref043" ref-type="bibr" href="#pone.0198476.ref043">43</a>] methods were applied in the docking search. Each ligand was subjected to 100 independent runs of docking simulations [
+  <a rid="pone.0198476.ref044" ref-type="bibr" href="#pone.0198476.ref044">44</a>]. Other docking parameters were set as the default values. The resulting docked conformations were clustered into families according to the RMSD. For a more detailed analysis, the coordinates of the selected complexes were chosen by the criterion of lowest docking conformation of the cluster with lowest energy in combination with a visual inspection.
+ </p>
+</sec>

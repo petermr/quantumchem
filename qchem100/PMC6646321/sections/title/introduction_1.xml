@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Transition metals are key elements for many applications ranging from high-efficiency white organic light-emitting diodes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>, catalysis
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>
+  </span> and sensors
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>, to novel approaches for cancer-cell destruction
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. The usage of transition metals is essential in many chemical reactions. However, even when the atomic structures are known, the underlying quantum chemistry is barely understood. Less is known about processes used in chemical industry, where transition metals are employed as catalysts. While catalysis yields products like fertilisers, which are indispensable to feed the current world population
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span>, the lack of knowledge about the active transition metal sites obstructs the rational design of new catalysts, which are necessary for the transition towards green chemistry
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">It has been demonstrated that not only the highest activity, but also the largest adjustability of chemical and physical properties, can be found in the quantum size regime, which spans the size range between a single atom
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span> and several nanometres
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span>. In this regime, the partially filled d orbitals of transition metals lead to a very large number of electronic states. Therefore, perturbation-induced mixing of energetically close states is abundant.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">Such vibronic coupling, which is neglected in the Born-Oppenheimer approximation, along with spin–orbit interaction combines with coherence phenomena to enhance function in chemical and biophysical systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>, but obstructs the understanding of such systems. To reproduce these interactions by computation, multiconfiguration self-consistent field and multireference configuration interaction methods are required
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>. However, the complexity of an excited transition metal dimer in vacuum can easily exceed the size restrictions of these methods. New approaches strongly depend on experimental verification, which up until now was impossible. The densely packed spectra cannot be resolved with standard experimental methods, as the multitude of overlapping and perturbed bands prevents the assignment of individual spectral features. Here, we provide a solution to this problem by partitioning these spectra into components of defined rotational quantum states, which can be assigned easily.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Such an approach is critical for the study of transition metal dimers given the sheer number of possible transitions in even the low-energy regime and the complex interaction of individual states with one another. The method is demonstrated on a coinage metal, as the density of states at low energies remain manageable, but increases dramatically with the promotion of an electron from the d-shell. Other transition metals have open d-shell ground state configurations, leading to a great number of individual states. An extreme of this is Ti
+  <sub>2</sub> that has almost 5000 states in just the first 1.6 eV above the ground state
+  <span class="sup">
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span>.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">The copper dimer is often considered to be the simplest transition metal dimer, with just two molecular states arising from the combination of ground state 
+  <span class="sup">2</span>S (3d
+  <span class="sup">10</span>4s) atoms. While this has made it a preferred test molecule for numerous computational methods, recent work emphasises the role of dicopper centres in the global carbon and nitrogen cycles
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>. The molecular ground state, X
+  <span class="sup">1</span>
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{\Sigma }}_{\mathrm{g}}^ + (0_{\mathrm{g}}^ + )$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">g</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">+</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, and the first exited state, a
+  <span class="sup">3</span>
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{\Sigma }}_{\mathrm{u}}^ + (1_{\mathrm{u}})$$\end{document}</span>
+    <div id="M4" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">u</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, are formed by the two electrons in the 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$(4{\mathrm{s}}\sigma )^2$$\end{document}</span>
+    <div id="M6" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">4</span>
+         <span mathvariant="normal" class="mi">s</span>
+         <span class="mi">σ</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$(4{\mathrm{s}}\sigma )^1(4{\mathrm{s}}\sigma ^ \ast )^1$$\end{document}</span>
+    <div id="M8" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">4</span>
+         <span mathvariant="normal" class="mi">s</span>
+         <span class="mi">σ</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">4</span>
+         <span mathvariant="normal" class="mi">s</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">σ</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">*</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> molecular orbitals, respectively, and there is little interaction between the 3d shells localised on the atoms
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>
+  </span>.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">As spin–orbit interaction is non-negligible in dicopper
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>, states are labelled using their total angular momentum 
+  <span class="italic">Ω</span> in Hund’s case (c) notation, i.e., 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</span>
+    <div id="M10" class="math">
+     <span mathvariant="normal" class="mi">X</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and a1
+  <sub>u</sub>. Despite its simple ground state, the low-lying states of a copper dimer in vacuum that can be experimentally probed by visible light, were only recently reproduced by computational methods
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>. Promotion of an electron from the 3d shell leads to a much larger number of possible combinations, with 40 molecular states formed from the bonding of a ground state atom 
+  <span class="sup">2</span>S with an excited 
+  <span class="sup">2</span>D atom. They ensue at low energies since the 
+  <span class="sup">2</span>D state is only ≈1.5 eV above the atomic ground state. The combination of two 
+  <span class="sup">2</span>D atoms gives rise to 100 states, which populate the energy range up to 5 eV.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Gas-phase measurements of the electronic structure of Cu
+  <sub>2</sub> were reviewed by Morse in ref. 
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>. Since then, several new states were observed in the ultraviolet (UV)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span> and improved spectroscopic constants for the D state were reported
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>. Despite a considerable number of spectroscopic investigations, very few of the excited states have been rotationally resolved and molecular constants determined. From the recent investigations of dicopper in this laboratory, low-lying states, including the newly found A′1
+  <sub>
+   <span class="italic">u</span>
+  </sub> state, were rationalised by state-of-the-art MRCI computations, including Hund’s case (c) coupling terms. Except for the 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</span>
+    <div id="M12" class="math">
+     <span mathvariant="normal" class="mi">X</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and al
+  <sub>u</sub> state, the low-energy electronic structure is dominated by states that correspond to the 
+  <span class="sup">2</span>S + 
+  <span class="sup">2</span>D pair of atomic limits. The discovery of the A′1
+  <sub>u</sub> state confirms that Hund’s case (c) coupling is required to account for the number of low-energy electronic states observed. In addition, it was found that the 
+  <div id="IEq7" class="inline-formula">
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{G}}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M14" class="math">
+     <span mathvariant="normal" class="mi">G</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> state can be definitely assigned to a state, which would correspond asymptotically to the ground ion-pair state
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>. More recent studies determined molecular constants for the 
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M16" class="math">
+     <span mathvariant="normal" class="mi">J</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and I1
+  <sub>u</sub> state and disclosed their symmetry. The 
+  <div id="IEq9" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M18" class="math">
+     <span mathvariant="normal" class="mi">J</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>-
+  <div id="IEq10" class="inline-formula">
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{X}}0_{\mathrm{g}}^ +$$\end{document}</span>
+    <div id="M20" class="math">
+     <span mathvariant="normal" class="mi">X</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> transition could be assigned to a promotion of a 3d
+  <span class="italic">π</span>
+  <sub>g</sub> electron to the 4p
+  <span class="italic">π</span>
+  <sub>u</sub> molecular orbital thus determining the complete configuration of the 
+  <div id="IEq11" class="inline-formula">
+   <div class="alternatives">
+    <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M22" class="math">
+     <span mathvariant="normal" class="mi">J</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> state as 
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{3d}}^{{\mathrm{18}}}{\mathrm{3d}}\pi _{\mathrm{g}}{\mathrm{4s}}\sigma _{\mathrm{g}}^{\mathrm{2}}{\mathrm{4p}}\pi _{\mathrm{u}}$$\end{document}</span>
+    <div id="M24" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">3d</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">18</span>
+      </div>
+     </div>
+     <span mathvariant="normal" class="mi">3d</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">π</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+     </div>
+     <span mathvariant="normal" class="mi">4s</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">2</span>
+      </div>
+     </div>
+     <span mathvariant="normal" class="mi">4p</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">π</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, a state that dissociates adiabatically to the 3d
+  <span class="sup">10</span>4s + 3d
+  <span class="sup">9</span>4s4p asymptotic limit
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>
+  </span>. This state is strongly bound as expected from the promotion of a d-electron to a binding 4p orbital.
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">In this work, by exciting the copper dimer using deep-ultraviolet light, spectra are recorded in the vicinity of the 
+  <div id="IEq13" class="inline-formula">
+   <div class="alternatives">
+    <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{J}}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M26" class="math">
+     <span mathvariant="normal" class="mi">J</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> state. In this realm, the copper dimer behaves like a typical transition metal dimer possessing open-shell d-electrons: Interactions of close lying states go beyond the reach of any computation and experimental spectra are generally too complex to be assigned. The highly selective and sensitive method applied here quantitatively unravels a rich network of interacting states by assignment of individual rovibronic transitions. The complex bonding features involving ion-pair states, perturbations, and avoided crossings are accessible. Such knowledge sheds light on the electronic structure that governs the functionality of transition metals and provides reference data for advanced computations of these important molecules.
+ </p>
+</sec>

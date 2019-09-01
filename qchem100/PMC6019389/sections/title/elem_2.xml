@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" id="sec002" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Materials and methods</div>
+ <sec id="sec003" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Computational details</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Alkaloid geometry, electronic, and vibrational properties were studied using the program Gaussian 09 [
+   <a rid="pone.0198476.ref024" ref-type="bibr" href="#pone.0198476.ref024">24</a>]. The GaussView 5.0.8 [
+   <a rid="pone.0198476.ref025" ref-type="bibr" href="#pone.0198476.ref025">25</a>] software was used to obtain 3D structural models. Geometric optimization calculations were performed in accordance with DFT [
+   <a rid="pone.0198476.ref026" ref-type="bibr" href="#pone.0198476.ref026">26</a>] by combining the B3LYP [
+   <a rid="pone.0198476.ref027" ref-type="bibr" href="#pone.0198476.ref027">27</a>–
+   <a rid="pone.0198476.ref028" ref-type="bibr" href="#pone.0198476.ref028">28</a>] functional hybrid and basis sets SDD, 6–31+g(d,p), and 6–311++g(d,p) [
+   <a rid="pone.0198476.ref029" ref-type="bibr" href="#pone.0198476.ref029">29</a>–
+   <a rid="pone.0198476.ref030" ref-type="bibr" href="#pone.0198476.ref030">30</a>]. Frequency calculations were performed to obtain thermodynamic properties and to verify that each optimization achieved an energy minimum.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The quantum chemical descriptors extracted directly from the Gaussian output file were Mulliken, NBO and ChelpG charge, electronic density, dipole moment, the energy of the highest occupied molecular orbital (E
+   <sub>HOMO</sub>), and the energy of the lowest unoccupied molecular orbital (E
+   <sub>LUMO</sub>) [
+   <a rid="pone.0198476.ref031" ref-type="bibr" href="#pone.0198476.ref031">31</a>–
+   <a rid="pone.0198476.ref032" ref-type="bibr" href="#pone.0198476.ref032">32</a>]. All calculations were performed in the gas phase. Time-dependent density functional theory (TDDFT) was used to calculate the energies and intensities of electronic transitions [
+   <a rid="pone.0198476.ref033" ref-type="bibr" href="#pone.0198476.ref033">33</a>–
+   <a rid="pone.0198476.ref034" ref-type="bibr" href="#pone.0198476.ref034">34</a>]. The calculated electronic transitions, infrared, and Raman spectra were convoluted by using Gaussian functions with half-widths of 25.000 cm
+   <span class="sup">-1</span> computed by the Swizard program [
+   <a rid="pone.0198476.ref035" ref-type="bibr" href="#pone.0198476.ref035">35</a>].
+  </p>
+ </sec>
+ <sec id="sec004" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">ADMET predictions</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The prediction of pharmaceutical parameters was conducted using the freely available pre-ADMET® and FAF-Drugs4® software packages. The in sílico methodology used with the EPI, EPIIS, ISOP, PILO, and MAC molecules included physical–chemical parameters, drug-likeness profile, pharmacokinetic profile (ADME), and toxicity. Among the most relevant parameters of absorption were the observation of the ability of the drug to cross the blood-brain barrier (BBB), as well as the drug absorption rate (Caco2), the rate of absorption by human intestinal cells (HIA) and excretion (MDCK). Regarding the metabolization process, the capacity of inhibition, non-inhibition and substrate formation by the molecules through their behavior on CYP-450 subfamilies was evaluated [
+   <a rid="pone.0198476.ref012" ref-type="bibr" href="#pone.0198476.ref012">12</a>–
+   <a rid="pone.0198476.ref013" ref-type="bibr" href="#pone.0198476.ref013">13</a>].
+  </p>
+ </sec>
+ <sec id="sec005" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular docking</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The 3D structures of all possible 
+   <span class="italic">S</span>. 
+   <span class="italic">mansoni</span> targets were obtained from the Protein Data Bank (PDB) [
+   <a rid="pone.0198476.ref036" ref-type="bibr" href="#pone.0198476.ref036">36</a>] with the codes (3QSD, 4Q3P, 4CQF, 4L5A, 1TCU, 2V6O, and 4TXH). All docking procedures utilized the Autodock 4.2 package [
+   <a rid="pone.0198476.ref037" ref-type="bibr" href="#pone.0198476.ref037">37</a>–
+   <a rid="pone.0198476.ref039" ref-type="bibr" href="#pone.0198476.ref039">39</a>]. Protein (ACE) and ligands were prepared for docking simulations with AutoDock Tools (ADT) version 1.5.6. [
+   <a rid="pone.0198476.ref040" ref-type="bibr" href="#pone.0198476.ref040">40</a>]. The receptor was considered rigid; each ligand was considered flexible. Gasteiger [
+   <a rid="pone.0198476.ref041" ref-type="bibr" href="#pone.0198476.ref041">41</a>] partial charges were calculated after the addition of all hydrogens. Nonpolar hydrogen atoms of the protein and ligand were subsequently merged. A cubic box of 60 × 60 × 60 points with a spacing of 0.35 Å between the grid points was generated for the whole protein target. The affinity grid centers were defined on residue Asp158 for ARG, Ala118 for PNP, Asp230 for MTAP, Tyr341 for HDAC8, Gln201 for UP, Tyr296 for TGR, and Cys100 for 2CB1. The global search Lamarckian genetic algorithm (LGA) [
+   <a rid="pone.0198476.ref042" ref-type="bibr" href="#pone.0198476.ref042">42</a>] and the local search (LS) pseudo-Solis and Wets [
+   <a rid="pone.0198476.ref043" ref-type="bibr" href="#pone.0198476.ref043">43</a>] methods were applied in the docking search. Each ligand was subjected to 100 independent runs of docking simulations [
+   <a rid="pone.0198476.ref044" ref-type="bibr" href="#pone.0198476.ref044">44</a>]. Other docking parameters were set as the default values. The resulting docked conformations were clustered into families according to the RMSD. For a more detailed analysis, the coordinates of the selected complexes were chosen by the criterion of lowest docking conformation of the cluster with lowest energy in combination with a visual inspection.
+  </p>
+ </sec>
+</sec>

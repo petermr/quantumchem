@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Single-Point Energy Estimates</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We then compute the electronic energy 
+  <span class="italic">E</span>
+  <sub>electronic</sub> of every compound involved in a given redox reaction using the PM7 semiempirical method
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> with the COSMO implicit solvation model
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> (see below for other single-point energy SPE model chemistries tested). For both reductions of carbonyl groups to alcohols and amines, we add a hydrogen molecule to the substrate side of the redox reaction (in the direction of reduction) and compute its electronic energy. In addition, to balance reductions of carbonyls to amine functional groups, we add an ammonia molecule to the substrate side of the reaction and a water molecule to the product side of the reaction (in the direction of reduction) and compute their electronic energies.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We use the difference in the electronic energies of products and substrates, Δ
+  <span class="italic">E</span>
+  <sub>electronic</sub>, as an estimate of the standard redox potential 
+  <span class="italic">E</span>°(major species, MS, at pH = 0):
+  <div id="ueq1" class="disp-formula">
+   <div xlink:href="oc-2019-002977_m001" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">n</span> is the number of electrons (2 for all reactions considered here), and 
+  <span class="italic">F</span> is Faraday’s constant.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our approach ignores the contribution of ro–vibrational enthalpies and entropies to Gibbs reaction energies. This significantly reduces the computational cost associated with quantum chemical simulations, and we correct for the systematic errors introduced by this approximation through the Gaussian process regression (see below). We note that previous work has shown that the value of Δ
+  <span class="italic">E</span>
+  <sub>electronic</sub> obtained for these types of redox reactions strongly correlates linearly with the full Δ
+  <span class="italic">G</span>
+  <sub>r</sub>° prediction obtained from including ro–vibrational enthalpic and entropic contribution (data not shown).
+ </p>
+</sec>

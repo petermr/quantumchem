@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Potential Energy Surfaces and Non-adiabatic Coupling</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As we said in the Introduction, the 
+  <div class="inline-formula">
+   <div id="M21" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">HeH</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> adiabatic and diabatic electronic states relevant in the present work were obtained 
+  <span class="italic">ab initio</span> in McLaughlin and Thompson (
+  <a rid="B32" ref-type="bibr" href="#B32">1979</a>), fitted analytically in Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>), and they are schematically plotted in 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>. We label the adiabatic species and PESs by Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and 
+  <div class="inline-formula">
+   <div id="M22" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and by 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">A</span>
+  </sub> and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">B</span>
+  </sub>, respectively. As already discussed (Aguado et al., 
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>), these states belong to the fully symmetric irreducible representation for linear (
+  <span class="italic">C</span>
+  <sub>∞
+   <span class="italic">v</span>
+  </sub>) and non-symmetric (
+  <span class="italic">C</span>
+  <sub>
+   <span class="italic">S</span>
+  </sub>) geometries, while 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> shows that they transform as 
+  <span class="italic">A</span>
+  <sub>1</sub>/
+  <span class="italic">B</span>
+  <sub>2</sub> and 
+  <span class="italic">B</span>
+  <sub>2</sub>/
+  <span class="italic">A</span>
+  <sub>1</sub> for perpendicular geometries (
+  <span class="italic">C</span>
+  <sub>2v</sub>), before/after the CI, respectively, which rules the title reaction. On the other hand, we label the associated diabatic electronic states and PESs by (1)
+  <span class="italic">A</span>
+  <sub>1</sub> and (2)
+  <span class="italic">B</span>
+  <sub>2</sub> and by 
+  <span class="italic">V</span>
+  <sub>11</sub>, 
+  <span class="italic">V</span>
+  <sub>22</sub>, and 
+  <span class="italic">V</span>
+  <sub>12</sub>, respectively, where the third surface describes the CI non-adiabatic coupling in the diabatic representation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to simultaneously describe these electronic species and take into account the CI, a fit of the diabatic PESs and coupling 
+  <span class="italic">V</span>
+  <sub>11</sub>, 
+  <span class="italic">V</span>
+  <sub>22</sub>, and 
+  <span class="italic">V</span>
+  <sub>12</sub> was made in Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>). The description of the adiabatic states is obtained as the eigenvalues 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">A</span>
+  </sub> and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">B</span>
+  </sub> of a 2 × 2 matrix 
+  <div class="inline-formula">
+   <div id="M23" class="math">
+    <div class="mrow">
+     <span class="mtext"> </span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msub">
+            <span class="mi">V</span>
+            <div class="mrow">
+             <span class="mn">11</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msub">
+            <span class="mi">V</span>
+            <div class="mrow">
+             <span class="mn">12</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msub">
+            <span class="mi">V</span>
+            <div class="mrow">
+             <span class="mn">12</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msub">
+            <span class="mi">V</span>
+            <div class="mrow">
+             <span class="mn">22</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mtext"> </span>
+    </div>
+   </div>
+  </div>, in which the interaction term 
+  <span class="italic">V</span>
+  <sub>12</sub> must have the correct symmetry, being anti-symmetric with respect to the permutation of the H atoms and thus vanishing identically for equal He–H distances. This coupling term 
+  <span class="italic">V</span>
+  <sub>12</sub> was fitted in Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>) to reproduce the CI between the Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and 
+  <div class="inline-formula">
+   <div id="M24" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' adiabatic states.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The diabatic surfaces where fitted in Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>) using the Aguado-Paniagua functional form (Aguado and Paniagua, 
+  <a rid="B1" ref-type="bibr" href="#B1">1992</a>; Aguado et al., 
+  <a rid="B4" ref-type="bibr" href="#B4">1998</a>) that expands the energy as a multidimensional permutationally invariant polynomial (Aguado et al., 
+  <a rid="B3" ref-type="bibr" href="#B3">1994</a>, 
+  <a rid="B5" ref-type="bibr" href="#B5">2001</a>) in Rydberg type variables (Rydberg, 
+  <a rid="B41" ref-type="bibr" href="#B41">1931</a>) of the form ρ
+  <sub>AB</sub> = 
+  <span class="italic">R</span>
+  <sub>AB</sub>exp(−β
+  <sub>AB</sub>
+  <span class="italic">R</span>
+  <sub>AB</sub>), where A and B are two nuclei and 
+  <span class="italic">R</span>
+  <sub>AB</sub> is their distance. For the interaction term, a simple expansion in Rydberg functions,
+ </p>
+ <div id="E1" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(1)</span>
+  <div id="M25" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <span class="mi">V</span>
+       <div class="mrow">
+        <span class="mn">12</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <span class="mi">R</span>
+         <div class="mrow">
+          <span class="mtext">HeH</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <span class="mi">R</span>
+         <div class="mrow">
+          <span class="mtext">He</span>
+          <div class="msup">
+           <span class="mtext">H</span>
+           <span class="mo">′</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <span class="mi">R</span>
+         <div class="mrow">
+          <span class="mtext">H</span>
+          <div class="msup">
+           <span class="mtext">H</span>
+           <span class="mo">′</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mi">C</span>
+       <div class="mrow">
+        <span class="mn">12</span>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mo">ρ</span>
+       <div class="mrow">
+        <span class="mtext">H</span>
+        <div class="msup">
+         <span class="mtext">H</span>
+         <span class="mo">′</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">ρ</span>
+         <div class="mrow">
+          <span class="mtext">HeH</span>
+         </div>
+        </div>
+        <span class="mo">−</span>
+        <div class="msub">
+         <span class="mo">ρ</span>
+         <div class="mrow">
+          <span class="mtext">He</span>
+          <div class="msup">
+           <span class="mtext">H</span>
+           <span class="mo">′</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mrow"/>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">fulfills the anti-symmetric requirement.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The DCT is produced through the CI, as shown in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> using nuclear Jacobi coordinates 
+  <span class="italic">R, r</span> = 
+  <span class="italic">R</span>
+  <div class="inline-formula">
+   <div id="M26" class="math">
+    <div class="msub">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mtext">H</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mtext">H</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, and γ , at 
+  <span class="italic">R</span> = 4 
+  <span class="italic">a</span>
+  <sub>0</sub> and γ = 0. The top panel shows the adiabatic Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and 
+  <div class="inline-formula">
+   <div id="M27" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' PESs of 
+  <div class="inline-formula">
+   <div id="M28" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">HeH</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> in the reactant channel, obtained from the diabatic 
+  <span class="italic">V</span>
+  <sub>ij</sub> surfaces, where Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' correlates with He
+  <span class="sup">+</span>(
+  <span class="sup">2</span>
+  <span class="italic">S</span>)+H
+  <sub>2</sub>(
+  <span class="italic">X</span>
+  <span class="sup">1</span>Σ
+  <div class="inline-formula">
+   <div id="M29" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">g</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) for 
+  <span class="italic">r</span> &lt; 2 
+  <span class="italic">a</span>
+  <sub>0</sub> and with He(
+  <span class="sup">1</span>
+  <span class="italic">S</span>)+
+  <div class="inline-formula">
+   <div id="M30" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>(
+  <div class="inline-formula">
+   <div id="M31" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">A</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">Σ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">u</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, unbound) for 
+  <span class="italic">r</span> &gt; 2 
+  <span class="italic">a</span>
+  <sub>0</sub>. To analyze the accuracy of the fit, we compare the analytical non-adiabatic coupling matrix elements (NACMEs) in the adiabatic representation, obtained from the fitted diabatic energies and coupling, with the 
+  <span class="italic">ab initio</span> results calculated using the MOLPRO program package (Werner et al., 
+  <a rid="B49" ref-type="bibr" href="#B49">2018</a>). As done previously for 
+  <div class="inline-formula">
+   <div id="M32" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">4</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M33" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">5</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> in Sanz-Sanz et al. (
+  <a rid="B42" ref-type="bibr" href="#B42">2015</a>), the analytical NACMEs can be calculated from the generalized Hellmann-Feynman theorem,
+ </p>
+ <div id="E2" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(2)</span>
+  <div id="M34" class="math">
+   <div class="mrow">
+    <span class="mo">〈</span>
+    <div class="msup">
+     <div accent="true" class="mover">
+      <span class="mi">A</span>
+      <span class="mo">˜</span>
+     </div>
+     <span class="mn">2</span>
+    </div>
+    <div class="msup">
+     <span class="mi">A</span>
+     <span class="mo">′</span>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div class="mfrac">
+     <span class="mo">∂</span>
+     <div class="mrow">
+      <span class="mo">∂</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <div class="mrow">
+        <span class="mtext">AB</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div accent="true" class="mover">
+        <span class="mi">B</span>
+        <span class="mo">˜</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <div class="msup">
+       <span class="mi">A</span>
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span class="mo">〉</span>
+    </div>
+    <span class="mo">=</span>
+    <div class="mfrac">
+     <span class="mn">1</span>
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">V</span>
+       <span class="mi">B</span>
+      </div>
+      <span class="mo">−</span>
+      <div class="msub">
+       <span class="mi">V</span>
+       <span class="mi">A</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">〈</span>
+    <div class="msup">
+     <div accent="true" class="mover">
+      <span class="mi">A</span>
+      <span class="mo">˜</span>
+     </div>
+     <span class="mn">2</span>
+    </div>
+    <div class="msup">
+     <span class="mi">A</span>
+     <span class="mo">′</span>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <span class="mo">∂</span>
+      <div class="msup">
+       <div accent="true" class="mover">
+        <span class="mi">H</span>
+        <span class="mo">^</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">l</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">∂</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <div class="mrow">
+        <span class="mtext">AB</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <div accent="true" class="mover">
+        <span class="mi">B</span>
+        <span class="mo">˜</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <div class="msup">
+       <span class="mi">A</span>
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span class="mo">〉</span>
+    </div>
+    <span class="mo">,</span>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where Ĥ
+  <span class="sup">
+   <span class="italic">el</span>
+  </span> is the electronic Hamiltonian and the rhsm is obtained from the derivatives of the diabatic energies 
+  <span class="italic">V</span>
+  <sub>ij</sub> (Sanz-Sanz et al., 
+  <a rid="B42" ref-type="bibr" href="#B42">2015</a>). 
+  <span class="italic">Ab initio</span> calculations have been performed using the Multi-Reference Configuration-Interaction method, with the aug-cc-pVTZ basis set of Dunning (
+  <a rid="B18" ref-type="bibr" href="#B18">1989</a>) and Woon and Dunning (
+  <a rid="B50" ref-type="bibr" href="#B50">1994</a>). The 
+  <span class="italic">ab initio</span> NACMEs are obtained using a first order difference method with an interval of 0.01 
+  <span class="italic">a</span>
+  <sub>0</sub>, and that for 
+  <span class="italic">R</span>
+  <sub>AB</sub> = 
+  <span class="italic">r</span> is compared with the fitted one in the bottom panel of 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>. The agreement, in form and in position, between both is excellent, indicating that the equation used for the interaction term 
+  <span class="italic">V</span>
+  <sub>12</sub> is also appropriate to reproduce the NACMEs. The probability density of the first two vibrational states of H
+  <sub>2</sub>(
+  <span class="italic">X</span>
+  <span class="sup">1</span>Σ
+  <div class="inline-formula">
+   <div id="M35" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">g</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) has been included in the top panel of 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>, in order to analyze the reason why the reaction is faster when H
+  <sub>2</sub> is vibrationally excited (Aguillon, 
+  <a rid="B6" ref-type="bibr" href="#B6">1994</a>, 
+  <a rid="B7" ref-type="bibr" href="#B7">1998</a>). While the maximum of the probability density of the vibrational state 
+  <span class="italic">v</span>
+  <sub>0</sub> = 0 is found at 1.4 
+  <span class="italic">a</span>
+  <sub>0</sub>, those in the first excited vibrational state 
+  <span class="italic">v</span>
+  <sub>0</sub> = 1 are at 1.25 and 1.73 
+  <span class="italic">a</span>
+  <sub>0</sub>. The latter is close to the region in which the NACME has is maximum, that explains the enhancement of the reactivity as we shall see in section Reaction Probabilities.
+ </p>
+ <div id="F2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Top panel: Ã
+    <span class="sup">2</span>
+    <span class="italic">A</span>' and 
+    <div class="inline-formula">
+     <div id="M36" class="math">
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">B</span>
+       </div>
+       <span class="mo">~</span>
+      </div>
+     </div>
+    </div>
+    <span class="sup">2</span>
+    <span class="italic">A</span>' adiabatic PESs at reactant Jacobi coordinates 
+    <span class="italic">R</span> = 4 
+    <span class="italic">a</span>
+    <sub>0</sub>, 
+    <span class="italic">r</span>, and γ = 0. The vibrational 
+    <span class="italic">v</span>
+    <sub>0</sub> = 0 and 1 probability density is plotted at the corresponding vibrational energy. Bottom panel: Comparison of the absolute values of the fitted and 
+    <span class="italic">ab initio</span> Multi-Reference Configuration-Interaction (MRCI) NACME.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00249-g0002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In 
+  <a ref-type="fig" rid="F3" href="#F3">Figure 3</a> the ratio between the interaction term and the energy difference of the diabatic states, 
+  <span class="italic">V</span>
+  <sub>12</sub>/(
+  <span class="italic">V</span>
+  <sub>22</sub>-
+  <span class="italic">V</span>
+  <sub>11</sub>), is plotted as a function of the 
+  <span class="italic">R</span>
+  <sub>HeH</sub> and 
+  <span class="italic">R</span>
+  <div class="inline-formula">
+   <div id="M37" class="math">
+    <div class="msub">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mtext">H</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mtext">H</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> distances, for several values of the angle θ ≤ 180° between these distances. This ratio is important for the calculation of the adiabatic PESs from the fitted diabatic ones, according to:
+ </p>
+ <div id="E3" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(3)</span>
+  <div id="M38" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mi">V</span>
+     <div class="mrow">
+      <span class="mi">A</span>
+      <span class="mo">/</span>
+      <span class="mi">B</span>
+      <span class="mtext"> </span>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="mfrac">
+     <span class="mn">1</span>
+     <span class="mn">2</span>
+    </div>
+    <div class="mrow">
+     <span class="mo">{</span>
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">V</span>
+       <div class="mrow">
+        <span class="mn">11</span>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <div class="msub">
+       <span class="mi">V</span>
+       <div class="mrow">
+        <span class="mn">22</span>
+       </div>
+      </div>
+      <span class="mo">−</span>
+      <span class="mo">/</span>
+      <span class="mo">+</span>
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <div class="msub">
+             <span class="mi">V</span>
+             <div class="mrow">
+              <span class="mn">11</span>
+             </div>
+            </div>
+            <span class="mo">−</span>
+            <div class="msub">
+             <span class="mi">V</span>
+             <div class="mrow">
+              <span class="mn">22</span>
+             </div>
+            </div>
+           </div>
+           <span class="mo">)</span>
+          </div>
+         </div>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">+</span>
+        <span class="mn">4</span>
+        <div class="msubsup">
+         <span class="mi">V</span>
+         <div class="mrow">
+          <span class="mn">12</span>
+         </div>
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">]</span>
+      </div>
+      <div class="msup">
+       <span class="mtext"> </span>
+       <div class="mrow">
+        <span class="mn">1</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+        <span class="mtext"> </span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">}</span>
+    </div>
+    <span class="mo">.</span>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As expected, 
+  <span class="italic">V</span>
+  <sub>12</sub>/(
+  <span class="italic">V</span>
+  <sub>22</sub>-
+  <span class="italic">V</span>
+  <sub>11</sub>) changes sign and its absolute value is maximum in the region of the diabatic crossing line shown in Figures 2, 3 of Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>).
+ </p>
+ <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Diabatic PESs: 
+    <span class="italic">V</span>
+    <sub>12</sub>/(
+    <span class="italic">V</span>
+    <sub>22</sub>-
+    <span class="italic">V</span>
+    <sub>11</sub>) as function of the nuclear distances 
+    <span class="italic">R</span>
+    <sub>HeH</sub> and 
+    <span class="italic">R</span>
+    <sub>HH</sub>' = 
+    <span class="italic">r</span>, and of the included angle θ . Solid/dashed curves correspond to positive/negative values.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00249-g0003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In conclusion, these results show that the collisional dynamics of DCT He
+  <span class="sup">+</span>(
+  <span class="sup">2</span>
+  <span class="italic">S</span>)+H
+  <sub>2</sub>(
+  <span class="italic">X</span>
+  <span class="sup">1</span>Σ
+  <div class="inline-formula">
+   <div id="M39" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">g</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>)→ He(
+  <span class="sup">1</span>
+  <span class="italic">S</span>)+H(
+  <span class="sup">2</span>
+  <span class="italic">S</span>)+H
+  <span class="sup">+</span> can be investigated with high accuracy in the present diabatic electronic representation, using the 
+  <span class="italic">V</span>
+  <sub>11</sub>, 
+  <span class="italic">V</span>
+  <sub>22</sub>, and 
+  <span class="italic">V</span>
+  <sub>12</sub> PESs.
+ </p>
+</sec>

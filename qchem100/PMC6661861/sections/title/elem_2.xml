@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optimization of Redox Potential Prediction Strategy That Combines Semiempirical Quantum Chemistry with GP Regression</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our goal is to develop a calibrated quantum chemistry modeling framework that can accurately predict the reduction potentials of biochemical redox reactions in a high-throughput manner. Several different types of redox reactions that change the oxidation state of carbon atoms exist in biochemistry. These include the reduction of carboxylic acids to aldehydes, the reduction of carbonyls to alcohols or amines, and the reduction of alcohols to hydrocarbons.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+  </span> In this work, we focus our efforts on predicting the standard redox potentials (as a function of pH and ionic strength) for the reduction of carbonyls to alcohols or amines. This reaction category represents the most common type of carbon redox transformation in biochemistry.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+  </span> In addition, it is the category for which the largest amount of experimental data is available in the NIST database for the thermodynamics of enzyme-catalyzed reactions (TECRDB).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Similar to previous implementations, our approach consists of running quantum chemistry calculations to obtain electronic structure energies of substrates and products for the redox reactions of interest.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span> We take the difference in electronic energies as an estimate of the standard redox potential of the most abundant species (protonation states) of metabolites at pH = 0. We use cheminformatic p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates and the Alberty–Legendre transform
+  <span class="sup">
+   <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+  </span> to convert the redox potentials to transformed standard redox potentials 
+  <span class="italic">E</span>′° (pH = 7) (
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). We then use GP regression to correct for systematic errors in the ab initio estimates (
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>) as well as p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates that go into the model (
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). To test and optimize the accuracy of our modeling framework, we compared predicted potentials against a data set of 81 experimental redox potentials obtained from the NIST database of thermodynamics of enzyme-catalyzed reactions.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+  </span>
+ </p>
+ <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Schematic diagram of GP regression with reaction fingerprints. A redox reaction of interest 
+    <span class="italic">x</span>* is represented using a reaction fingerprint, which captures the molecular structure of both substrate (oxidized) and product (reduced). This reaction fingerprint is compared against the set of all redox reactions in the experimental data set using the covariance function of the Gaussian process 
+    <span class="italic">k</span>(
+    <span class="italic">x</span>*, 
+    <span class="italic">x</span>
+    <sub>
+     <span class="italic">i</span>
+    </sub>) (see the 
+    <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section). The GP correction (
+    <span class="italic">E</span>′
+    <span class="sup">m</span>
+    <sub>GP</sub>) to the quantum chemical prediction (
+    <span class="italic">E</span>′
+    <span class="sup">m</span>
+    <sub>PM7</sub>) of the standard redox potential is then obtained from a similarity-based average of the correction terms for the experimental data set.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-002977_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We tested several different model chemistries to maximize the accuracy and minimize the computational cost of our methodology (
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section, 
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a>, 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>). In this context, a “model chemistry” consists of the combination of multiple modeling choices that go into running a quantum chemical simulation. These include the conformer generation strategy and geometry optimization procedure, the electronic structure method (e.g., density functional theory (DFT), wave function approaches, or semiempirical methods) as well as the water model used.
+ </p>
+ <div id="tbl1" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Summary Statistics of Prediction Accuracy for Calibration with Gaussian Process Regression of Different Modeling Approaches
+    <a rid="t1fn1" ref-type="table-fn" href="#t1fn1">a</a>
+   </div>
+  </div>
+  <table frame="hsides" rules="groups" border="0">
+   <colgroup>
+    <col align="left"/>
+    <col align="left"/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+    <col align="char" char="."/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th style="border:none;" align="center"> </th>
+     <th style="border:none;" align="center"> </th>
+     <th style="border:none;" align="center" char="."> </th>
+     <th colspan="3" align="center" char=".">calibration/regression
+      <span class="hr"/>
+     </th>
+     <th style="border:none;" align="center" char=".">linear fit</th>
+    </tr>
+    <tr>
+     <th style="border:none;" align="center">approach</th>
+     <th style="border:none;" align="center">geometry source</th>
+     <th style="border:none;" align="center" char=".">average compute time (s)</th>
+     <th style="border:none;" align="center" char=".">MAE (σ) (mV)</th>
+     <th style="border:none;" align="center" char=".">
+      <span class="italic">r</span>
+     </th>
+     <th style="border:none;" align="center" char=".">
+      <span class="italic">R</span>
+      <span class="sup">2</span>
+     </th>
+     <th style="border:none;" align="center" char=".">
+      <span class="italic">R</span>
+      <span class="sup">2</span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td style="border:none;" align="left">GCM</td>
+     <td style="border:none;" align="left">N/A</td>
+     <td style="border:none;" align="char" char=".">0.01</td>
+     <td style="border:none;" align="char" char=".">27.15 (24.04)</td>
+     <td style="border:none;" align="char" char=".">0.58</td>
+     <td style="border:none;" align="char" char=".">0.33</td>
+     <td style="border:none;" align="char" char=".">0.33</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">Rxn-FP + GP</td>
+     <td style="border:none;" align="left">N/A</td>
+     <td style="border:none;" align="char" char=".">0.01</td>
+     <td style="border:none;" align="char" char=".">24.35 (23.44)</td>
+     <td style="border:none;" align="char" char=".">0.65</td>
+     <td style="border:none;" align="char" char=".">0.42</td>
+     <td style="border:none;" align="char" char=".">N/A</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">GCM + GP</td>
+     <td style="border:none;" align="left">N/A</td>
+     <td style="border:none;" align="char" char=".">0.01</td>
+     <td style="border:none;" align="char" char=".">21.20 (20.50)</td>
+     <td style="border:none;" align="char" char=".">0.75</td>
+     <td style="border:none;" align="char" char=".">0.56</td>
+     <td style="border:none;" align="char" char=".">0.33</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">PM7 + GP</td>
+     <td style="border:none;" align="left">opt.</td>
+     <td style="border:none;" align="char" char=".">0.36</td>
+     <td style="border:none;" align="char" char=".">22.47 (19.68)</td>
+     <td style="border:none;" align="char" char=".">0.74</td>
+     <td style="border:none;" align="char" char=".">0.54</td>
+     <td style="border:none;" align="char" char=".">0.22</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">HF-3c + GP</td>
+     <td style="border:none;" align="left">opt.</td>
+     <td style="border:none;" align="char" char=".">588</td>
+     <td style="border:none;" align="char" char=".">21.07 (19.76)</td>
+     <td style="border:none;" align="char" char=".">0.76</td>
+     <td style="border:none;" align="char" char=".">0.57</td>
+     <td style="border:none;" align="char" char=".">0.28</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">DSD-PBEP86 + GP</td>
+     <td style="border:none;" align="left">PM7 opt.</td>
+     <td style="border:none;" align="char" char=".">1223</td>
+     <td style="border:none;" align="char" char=".">21.15 (17.97)</td>
+     <td style="border:none;" align="char" char=".">0.79</td>
+     <td style="border:none;" align="char" char=".">0.61</td>
+     <td style="border:none;" align="char" char=".">0.24</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">DLPNO–CCSD(T)//cc-pVDZ + GP</td>
+     <td style="border:none;" align="left">B3LYP conf.</td>
+     <td style="border:none;" align="char" char=".">6111</td>
+     <td style="border:none;" align="char" char=".">20.45 (19.97)</td>
+     <td style="border:none;" align="char" char=".">0.76</td>
+     <td style="border:none;" align="char" char=".">0.57</td>
+     <td style="border:none;" align="char" char=".">0.47</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="t1fn1" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">See the 
+     <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section for detailed descriptions of each modeling approach (quantum model chemistry). Rxn-FP = reaction fingerprints; GCM = group contribution method; GP = calibration with Gaussian process regression; opt. = geometry optimization of a single geometric conformer with the same level of theory; conf. = geometry optimization of multiple geometric conformers at a given theory level. Regression statistics correspond to GP calibration using Morgan fingerprints of radius 6. Additionally we report the 
+     <span class="italic">R</span>
+     <span class="sup">2</span> (coefficient of determination) obtained using calibration with linear regression to the experimental data. The statistics are MAE = mean absolute error; σ = standard deviation of the absolute error; 
+     <span class="italic">r</span> = Pearson 
+     <span class="italic">r</span>; 
+     <span class="italic">R</span>
+     <span class="sup">2</span> = coefficient of determination; average compute time = estimated average computational time per electron, in seconds. Linear fit is without GP regression.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The GP regression-based calibration step depends on a particular choice of a covariance function, which in turn involves a distance or similarity measure between redox reactions or compounds. We found that the following combination of quantum model chemistry and kernel/distance function between reactions resulted in the most efficient (in terms of a trade-off between accuracy and computational cost) prediction strategy: the PM7
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> semiempirical method for both geometry optimizations and single-point electronic energies, with the COSMO implicit solvation model,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> and a reaction fingerprint obtained by taking the difference between counted Morgan fingerprint vectors of products and substrates,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> with a kernel function that is a mixture of a squared exponential kernel, and a noise kernel (
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). We note that the model chemistry using the double-hybrid functional DSD-PBEP86 (based on a double-hybrid DFT functional) gives the best accuracy but at a higher computational cost.
+ </p>
+</sec>

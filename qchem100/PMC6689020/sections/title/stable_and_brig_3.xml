@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Stable and bright PeLEDs with high ECEs</div>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a> shows the multilayer structure of our devices, consisting of indium tin oxide (ITO)/polyethylenimine ethoxylated (PEIE)-modified zinc oxide (ZnO, 30 nm)/FAPbI
+  <sub>3</sub> perovskite (50 nm)/poly(9,9-dioctyl-fluorene-co-
+  <span class="italic">N</span>-(4-butylphenyl)diphenylamine) (TFB, 40 nm)/molybdenum oxide (MoO
+  <sub>x</sub>, 7 nm)/gold (Au, 60 nm). Here the ZnO/PEIE and TFB are electron transport layer (ETL) and hole transport layer (HTL), respectively
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. The FAPbI
+  <sub>3</sub> perovskite films were deposited by using an anti-solvent method
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>, otherwise the perovskite film has a very low surface coverage (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). The precursor solution consists of a 10 wt.% of formamidinium iodide (FAI) and PbI
+  <sub>2</sub> with a molar ratio of 2:1 in 
+  <span class="italic">N</span>,
+  <span class="italic">N</span>-dimethylformamide (DMF). We note that the concentration of the precursor solution is critical, which will be discussed in the next section.
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>PeLED device structure and optoelectronic characteristics. 
+     <span class="bold">a</span> Device structure and cross-sectional HRTEM image (scale bar, 20 nm). 
+     <span class="bold">b</span> Device EL spectra upon various biases. 
+     <span class="bold">c</span> Current density and radiance versus driving voltage for the highest EQE device (10 wt.%). Radiance of 241 W sr
+     <span class="sup">−1</span> m
+     <span class="sup">−2</span> is obtained under 2.75 V. 
+     <span class="bold">d</span> EQE and ECE versus current density for the highest EQE device (10 wt.%). A peak EQE of 14.2% is achieved at a current density of 188 mA cm
+     <span class="sup">−2</span> and a peak ECE of 10.7% is obtained at a current density of 54 mA cm
+     <span class="sup">−</span>
+     <span class="sup">2</span>. 
+     <span class="bold">e</span> Histogram of peak EQEs measured from 82 devices, which shows an average peak EQE of 10.5% with a relative standard deviation of 16%
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11567_Fig1_HTML" id="d29e564" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">The EL emission peak of the fabricated device is located at 804 nm (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1b</a>), which is slightly blue-shifted compared to the EL emission of FAPbI
+  <sub>3</sub> LEDs fabricated without using the anti-solvent method
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. The shape of the EL spectra remains unchanged upon various biases (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>). Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1c</a> shows the current density-radiance-voltage characteristics of the PeLED. The device has a low turn-on voltage of 1.3 V. The current density and EL increase rapidly over the bias voltage, indicating good charge transport of the 3D perovskite film. At a low voltage of 2.75 V, a brightness up to 241 W sr
+  <span class="sup">−1</span> m
+  <span class="sup">−2</span> can be achieved. The angular emission intensity of the device follows a Lambertian profile (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>). Figure 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d</a> shows that the EQE of the device reaches up to 14.2% at a high current density of 188 mA cm
+  <span class="sup">−2</span> and a high brightness of 131.2 W sr
+  <span class="sup">−1</span> m
+  <span class="sup">−2</span>. Due to the high EQE and low operation voltage, this LED exhibits a high ECE of 10.3% at a current density of 100 mA cm
+  <span class="sup">−2</span> (corresponding to a brightness of 67 W sr
+  <span class="sup">−1</span> m
+  <span class="sup">−2</span>). We note that in literature the highest ECE at 100 mA cm
+  <span class="sup">−2</span> without outcoupling enhancement was 9.2, 5.6, and 5.5% for PeLEDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>, organic LEDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span>, and quantum-dot LEDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>, respectively. Even at a high current density of 300 mA cm
+  <span class="sup">−2</span>, our device shows an EQE of 14.0% and an ECE of 8.3%, suggesting exceptional low efficiency droop. The statistics of 82 devices shows an average peak EQE of 10.5% with a relative standard deviation of 16% (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1e</a>), suggesting that the device performance is reasonably reproducible.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">We highlight that our PeLEDs with high ECEs show remarkable operation stability. A device with simple glass-epoxy encapsulation method, exhibits a lifetime (
+  <span class="italic">T</span>
+  <sub>50</sub>, time to half of the initial brightness) of 0.5 h under a large constant current density of 100 mA cm
+  <span class="sup">−2</span> (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>). In contrast, previously reported pure FAPbI
+  <sub>3</sub> perovskite LED can only survive a few minutes at a much lower current density (10 mA cm
+  <span class="sup">−2</span>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. We believe that the significantly improved stability is due to the high ECE, since low efficiency FAPbI
+  <sub>3</sub> PeLED devices (with 20 wt.% of precursor solution) can only have similar lifetime to previous results. We have measured the stability of FAPbI
+  <sub>3</sub> LEDs under 25, 35, and 45 °C in a glovebox. The result shows that the stability is strongly dependent on the temperature (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>), indicating the high ECE can effectively improve the stability due to less thermal energy generated. We find the device stability can be further enhanced by benzylamine (BA) treatment which was previously demonstrated to be effective as a moisture-resistance and defect-passivation to suppress ion migration in perovskite solar cells
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>. After BA treatment, the photoluminescence (PL) emission intensity was significantly enhanced which can be due to the further reduced defects in grain boundary or surface of the perovskite film (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>). And the X-ray diffraction (XRD) pattern is almost identical to the untreated film, showing α-phase FAPbI
+  <sub>3</sub> (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>)
+  <sub>.</sub> The device 
+  <span class="italic">T</span>
+  <sub>50</sub> is increased to 23.7 h under a constant current density of 100 mA cm
+  <span class="sup">−2</span> (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>). This result indicates a more than 3 orders of magnitude enhancement compared to previous pure FAPbI
+  <sub>3</sub> based PeLEDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. For reference, under much lower current density (10 mA cm
+  <span class="sup">−2</span>), the reported 
+  <span class="italic">T</span>
+  <sub>50</sub> of state-of-the-art near-infrared OLED is 60 h (Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>. We note that the peak EQE of the device with BA treatment is slightly decreased, which is likely due to the increased roughness in perovskite films upon BA treatment (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>).
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Optoelectronic characteristics of the aged devices. 
+     <span class="bold">a</span> EL and PL decay of the 3D PeLEDs without BA treatment at a constant current density of 100 mA cm
+     <span class="sup">−2</span>. 
+     <span class="bold">b</span> EL and PL decay of the 3D PeLEDs with BA treatment at a constant current density of 100 mA cm
+     <span class="sup">−2</span>. 
+     <span class="bold">c</span> Normalized device EL, current density and EQE under cyclic voltages between −1 and 2.5 V after aging test. The EL/current density/EQE show recovery. 
+     <span class="bold">d</span> Microscopy image and corresponding PL and EL intensity maps of device without BA treatment (scale bar, 70 μm), which show the degradation starts from the edge of Au electrode and the EL degrades faster than the PL. 
+     <span class="bold">e</span> Microscopy image and corresponding PL and EL intensity maps of device with BA treatment (scale bar, 70 μm), which show that the BA interfacial layer significantly suppresses the device degradation
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11567_Fig2_HTML" id="d29e758" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">The degraded EL can be caused by the degradation of either emission properties of the perovskites or the electrical transport properties of the devices. In order to reveal more detail on the aging process, we simultaneously measure the PL and EL by using chopped laser light and lock-in amplifier
+  <span class="sup">
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>,
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span>. During the measurement, the device is under a constant current density of 100 mA cm
+  <span class="sup">−2</span>, and the excitation light intensity (425 nm CW laser) was kept extremely low to avoid disturbing EL, around 0.2 mW cm
+  <span class="sup">−2</span>. The in situ PL/EL measurements show that the PL decline is slower than the EL decline (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>). When the EL decreased to half of its initial value, the PL intensity was 67% of its initial value. We hypothesis that in addition to the degradation of the emission layer, the EL degradation is partially due to the deterioration of interfacial (or charge balance) properties of the devices, since the EL degradation is more seriously than the PL degradation. In order to verify this hypothesis, we measured EL and current density of an aged device under cyclic voltages between −1 and 2.5 V (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>). The results show that the EL and current density can be recovered. After eight cycles, the EL intensity almost doubles and the EQE is recovered by a factor of 1.23 at the bias voltage of 2.5 V (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a>). These results are consistent with the scenario that the interface is deteriorated during the aging process by formation of interfacial barrier, and the barrier can be reduced by using cyclic voltages
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>,
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span>. The formation of bias-dependent interfacial barrier is likely associated with the ion migration in perovskites
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>. The observed recoverable EL performance is important for long-term application of PeLEDs.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">In order to obtain more insights on the degradation process of our PeLEDs, we used a confocal fluorescence microscope to measure the PL and EL mapping of the devices in air (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2d, e</a>). The PL and EL mapping measurements both show that the dark areas enlarge from the edge of metal electrode, indicating that degradation of devices starts from the edge, which is likely due to the fast penetration of moisture from the metal-uncovered part. Interestingly, the mapping measurement also shows that the EL dark area enlarges much more quickly than the PL dark area. In particular, for LED without BA treatment, there is almost no EL mapping signal after biasing for 12 min, while the PL intensity is still relatively high. This fact suggests the interfacial degradation plays important role in the aging process of PeLEDs, which is consistent with the above in situ PL/EL intensity measurement. Importantly, the BA treated device shows reduced degradation rate from the edge, and the EL and PL intensity in the center of device exhibits comparable rate of decrease. Since the BA treatment mainly improves the perovskite layer surface, we believe that the improved lifetime of device is mainly due to the reduced interfacial defects and enhanced moisture resistance of the perovskite film after BA treatment.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">In addition to the 10 wt.% device, we also fabricated LEDs using perovskite films processed from precursor solutions with varied concentrations. Detailed device characterization results are presented in Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a>. Briefly, the 7 wt.%-device and 15 wt.%-device show around 4% average peak EQE, and average peak EQEs of the rest two devices are below 2%. The statistics of the device EQEs shows that the device performance is in good reproducibility (Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3f</a>). The results suggest that the LED performance is highly dependent on the properties of the perovskite films.
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>SEM images of FAPbI
+     <sub>3</sub> films and EQE distribution of PeLEDs. Films and PeLEDs are fabricated with different concentrations of precursor solutions. 
+     <span class="bold">a</span> 20 wt.%. 
+     <span class="bold">b</span> 15 wt.%. 
+     <span class="bold">c</span> 10 wt.%. 
+     <span class="bold">d</span> 7 wt.%. 
+     <span class="bold">e</span> 5 wt.%. Scale bar, 1 μm. 
+     <span class="bold">f</span> Peak EQE distribution for devices with different concentrations. More than 20 devices for each concentration. Error bars correspond to the standard deviation
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11567_Fig3_HTML" id="d29e838" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

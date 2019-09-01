@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0020" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Parallel Capability</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">RAQET partially supports a parallel computational environment using the hybrid parallelization technique with OpenMP/MPI modules. OpenMP parallelization is compatible with single‐point energy calculations, geometry optimizations, and molecular property calculations while MPI parallelization is only compatible with single‐point energy calculations. Users can choose a sequential, OpenMP/MPI, or hybrid process according to their computational environment. Figure 
+  <a rid="jcc25364-fig-0003" ref-type="fig" href="#jcc25364-fig-0003">3</a> shows the parallelization efficiencies of OpenMP in a single‐point energy calculation for an Ir(ppy)
+  <sub>3</sub> molecule and Au
+  <sub>10</sub> cluster at the SF‐IODKH/NR level in UHF. The calculations were performed using an Intel(R) Xeon(R) CPU E7‐4870 with 512GB memory. The horizontal and vertical axes show the number of cores used and the effective cores, respectively. The number of effective cores was evaluated as 
+  <span class="italic">t</span>(
+  <span class="italic">n</span> core)/
+  <span class="italic">t</span>(2 core), where 
+  <span class="italic">t</span> is the wall time. The curve in RAQET is close to the ideal efficiency, which is indicated by the diagonal line. When the number of cores is less than 40, the parallel efficiency is greater than 99%. When the number is 80 cores, the efficiency is greater than 85%.
+ </p>
+ <div fig-type="Figure" xml:lang="en" id="jcc25364-fig-0003" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Parallel efficiency for calculations of single‐point energies for the Au
+    <sub>10</sub> cluster and Ir(ppy)
+    <sub>3</sub> complex. [Color figure can be viewed at 
+    <span ext-link-type="uri" xlink:href="http://wileyonlinelibrary.com" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">wileyonlinelibrary.com</span>]
+   </p>
+  </div>
+  <div id="nlm-graphic-7" xlink:href="JCC-39-2333-g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

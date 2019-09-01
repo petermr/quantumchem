@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry</div>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">QM package support</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden could already parse output of the quantum chemistry (QC) packages: Gaussian [
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>], Gamess-US [
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>], Gamess-UK [
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>] and Mopac [
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>], and this list was recently extended with NWchem [
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>], Orca [
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>] and Qchem [
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>]. The Molden format was developed to interface to QC programs that produce output that cannot be parsed natively. This format includes all information required for orbital/density and molecular vibration visualisation (e.g. Cartesian coordinates, the basis-set, the molecular orbital coefficients and occupancy numbers). The Molden format (see 
+   <span ext-link-type="uri" xlink:href="http://www.cmbi.ru.nl/molden/molden_format.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cmbi.ru.nl/molden/molden_format.html</span> for a description) is currently used by a series of prominent QC programs (see Table 
+   <a rid="Tab4" ref-type="table" href="#Tab4">4</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Tab4" class="table-wrap">
+    <span class="label">Table 4</span>
+    <div class="caption">
+     <p>Packages that produce Molden format files</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th align="left">Package</th>
+       <th align="left">URL</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left">ACES II</td>
+       <td align="left">
+        <span ext-link-type="uri" xlink:href="http://www.qtp.ufl.edu/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.qtp.ufl.edu/</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left">MOLCAS</td>
+       <td align="left">
+        <span ext-link-type="uri" xlink:href="http://molcas.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://molcas.org/</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left">MOLPRO</td>
+       <td align="left">
+        <span ext-link-type="uri" xlink:href="http://www.molpro.net/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.molpro.net/</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left">DALTON</td>
+       <td align="left">
+        <span ext-link-type="uri" xlink:href="http://daltonprogram.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://daltonprogram.org/</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left">JAGUAR</td>
+       <td align="left">
+        <span ext-link-type="uri" xlink:href="https://www.schrodinger.com/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://www.schrödinger.com/</span>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molcas [
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>] is a popular ab initio computational chemistry program that focusses on the calculation of electronic structures in ground and excited states. The Molcas authors recommend that their users apply Molden for visualization. The widely used and often cited Gabedit software [
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>] (freeware) is a graphical user interface, offering pre-processing and post-processing options for nine computational chemistry software packages. The Molden format has a prominent position in their list of supported formats. So they use Molden to widen their application base.
+  </p>
+ </sec>
+ <sec id="Sec6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Localised orbitals</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Visualisation of orbitals is an important aspect of many types of research. A series of orbital visualisation options, such as localised orbitals and electron localisation functions are provided (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> illustrates a few of the orbital visualisation options).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig1" class="fig">
+    <span class="label">Fig. 1</span>
+    <div class="caption">
+     <p>Orbital visualisation. Standard ab initio quantum chemistry methods yield delocalised orbitals that extend over the entire molecule. Localised orbitals can be found as linear combinations of the occupied delocalised orbitals by a unitary transformation. In Molden the Foster-Boys [
+      <a ref-type="bibr" rid="CR29" href="#CR29">29</a>] scheme is employed to localize molecular orbitals. The 
+      <span class="italic">left-hand panel</span> shows the localised orbital of Iron(III) meso tartaric acid. This calculation proves that there is a bond between the irons and the coordinated water molecules (ultimate 
+      <span class="italic">left</span> and 
+      <span class="italic">right</span> in the figure). The absence of nodal planes between iron (
+      <span class="italic">yellow</span>) and water(s) is tantamount to the presence of electron density (a bond) between irons and water. The right-hand panel shows an example of the ELF on 2,5 Dimethoxyfuran with evidence of lone pairs and covalent bonds. 
+      <span class="italic">Inset</span> a ball-and-stick representation of the molecule (carbon in 
+      <span class="italic">brown</span>, oxygen in 
+      <span class="italic">red</span>, hydrogen in 
+      <span class="italic">white</span>)
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig1_HTML" id="d29e743" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Masunov et al. [
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>], for example, introduced a new method to eliminate the spin-contamination in broken symmetry density functional theory calculations. They investigated two complexes of which one had strongly localized magnetic orbitals on which previous spin-contamination eliminate schemes worked well. The other complex had strongly delocalised magnetic orbitals on which previous schemes failed while their new scheme works well. Both restricted and unrestricted natural orbitals were visualized with the help of Molden.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In his landmark article on the free radical catalysis by galactose oxidase, Whittaker [
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>] used Molden to calculate visualise the crucial SOMO (Singly occupied molecular orbital) to determine at which atom the radical electron is located.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">For a newly designed anilate-based material with luminescence properties, for example, the electrostatic potential calculated by Molden was used to strengthen the conclusions from the analyses of the atomic charges [
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>]. Atzori et al. wrote: “The isodensity surface mapped with the electrostatic potential shows for all systems that the oxygen atoms are the source of greater negative charge accumulation followed by the nitrogen atom of the CN moiety. Moreover, there is a moderate negative charge accumulation on the carbon atoms linked to the Cl and CN groups, whereas the remaining four carbon atoms, which are linked to the oxygen atoms, exhibit a positive charge. The chlorine atoms present a typical positive charge on the opposite side of the C–Cl vector and a ring of negative charge perpendicular to the same vector” [
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Hunt et al. [
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>] used Molden’s electron density map and Laplacian contour facility to examine charge densities, natural bond orbitals, and delocalised molecular orbitals in ionic liquids to explain the relative acidity of different sites on the imidazolium ring and variation in hydrogen-bond donor and acceptor propensities.
+  </p>
+ </sec>
+ <sec id="Sec7" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electron localisation function</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Electron Localisation Function (ELF) [
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>] is a measure for the probability of finding an electron with the same spin in the neighbourhood of a reference electron at a given location (see Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). The ELF shows clear separation between core and valence electrons, and also shows covalent bonds and lone pairs. Whereas the electron density decreases monotonically with the distance from the nucleus, the ELF illustrates the shell electronic structure (S, P, and D shells) of the heavy atoms as clear maxima and minima.
+  </p>
+ </sec>
+ <sec id="Sec8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Visualisation of spectra</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Visualisation of infrared and Raman spectra was already in place at the time of the first Molden paper. This functionality has been expanded with the option to create a html page and auxiliary files, containing an interactive spectrum in combination with an animation of the selected vibration with the jmol viewer [
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>] An example is shown in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>; see also 
+   <span ext-link-type="uri" xlink:href="http://wetche.cmbi.ru.nl/%20calspec/database/0000004/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://wetche.cmbi.ru.nl/ calspec/database/0000004/</span>. A.jdx file of the spectrum is written for use with the jspecview program [
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>]. UV-spectra are constructed and visualized from TD-DFT calculations with Gaussian. 
+   <span class="sup">1</span>H and 
+   <span class="sup">13</span>C NMR spectra are constructed and visualized when magnetic shielding and J-coupling information is available from the Gaussian output. With a click on the ‘J’ button, the J-coupling between two selected atoms is displayed. The magnetic shielding and J-coupling corresponding with rotationally equivalent hydrogens can be averaged interactively.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig2" class="fig">
+    <span class="label">Fig. 2</span>
+    <div class="caption">
+     <p>Interactive spectrum as .html document. Clicking on a peak in the spectrum or in the table underneath the spectrum results in the animation of the associated molecular vibration in the molecular display to the 
+      <span class="italic">left</span>
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig2_HTML" id="d29e818" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Vidal-Iglesias [
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>], for example, made assignments of the calculated frequencies of monolayers of 4-aminobenzenethiol (4-ABT) on copper, based on the visualisation of the vibrational normal modes and the Surface-Enhanced Raman spectrum (SERS) using Molden. They write “Surface-enhanced raman scattering (SERS) spectra of self-assembled monolayers of 4 aminobenzenethiol (4-ABT) on copper (Cu) and silver (Ag) surfaces decorated with Cu and Ag nanostructures, respectively, have been obtained with lasers at 532, 632.8, 785, and 1064 nm. Density functional theory (DFT) has been used to obtain calculated vibrational frequencies of the 4-ABT and 4,4′-dimercaptoazobenzene (4,4′-DMAB) molecules adsorbed on model Cu surfaces.”
+  </p>
+ </sec>
+</sec>

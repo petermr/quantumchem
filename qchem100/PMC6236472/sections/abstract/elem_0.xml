@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+ <p content-type="toc-graphic">
+  <div xlink:href="ct-2018-00450n_0013" id="ab-tgr1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p>The ability to perform classically intractable electronic structure calculations is often cited as one of the principal applications of quantum computing. A great deal of theoretical algorithmic development has been performed in support of this goal. Most techniques require a scheme for mapping electronic states and operations to states of and operations upon qubits. The two most commonly used techniques for this are the Jordan–Wigner transformation and the Bravyi–Kitaev transformation. However, comparisons of these schemes have previously been limited to individual small molecules. In this paper, we discuss resource implications for the use of the Bravyi–Kitaev mapping scheme, specifically with regard to the number of quantum gates required for simulation. We consider both small systems, which may be simulatable on near-future quantum devices, and systems sufficiently large for classical simulation to be intractable. We use 86 molecular systems to demonstrate that the use of the Bravyi–Kitaev transformation is typically at least approximately as efficient as the canonical Jordan–Wigner transformation and results in substantially reduced gate count estimates when performing limited circuit optimizations.</p>
+</div>

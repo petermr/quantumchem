@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2-nanomaterials-09-00929" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2. The Variational Method Applied to NPs Systems</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Variational Method is the most widely used approach for the calculation of energy and π-orbitals in molecular chemistry, such as Hückel theory. The best wavefunction Ψ representing the system of elements and consisting in a linear combination of the wavefunction representing each single element is the one that minimizes the expectation value of the energy. In this frame, a function of the energy depending on the weight coefficients of the linear combination is obtained. The minimum value of this function E = f(c1, c2, c3,…cn) is greater than or equal to the exact value of the energy. In this light, finding the minimum of this function with respect to the weight coefficients allows the determination of the closest value to the exact energy of the system [
+  <a rid="B18-nanomaterials-09-00929" ref-type="bibr" href="#B18-nanomaterials-09-00929">18</a>]. In this case, as suggested in Reference [
+  <a rid="B17-nanomaterials-09-00929" ref-type="bibr" href="#B17-nanomaterials-09-00929">17</a>], the collective character of the plasmon is described in terms of the linear combination of single-particle excitations and, therefore, a time-dependent model can be bypassed, in the approximation with the use of empirical input data. Although the same method can be applied to other physical quantities, in this instance, we will apply it for the energy of the system, considering that we are focused on the determination of the resonance wavelength, that is linked to the energy by the relation E = hc/λ, where E = ω is the energy of the plasmonic system.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Let us consider a general wavefunction of a linear system of n equally sized and spaced NPs given by the following linear combination. 
+  <div id="FD1-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(1)</span>
+   <div id="mm1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">ψ</span>
+       <span class="mi">k</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mi">c</span>
+       <span class="mn">1</span>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">+</span>
+      <div class="msub">
+       <span class="mi">c</span>
+       <span class="mn">2</span>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">+</span>
+      <div class="msub">
+       <span class="mi">c</span>
+       <span class="mn">3</span>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mn">3</span>
+      </div>
+      <span class="mo">+</span>
+      <span class="mo">…</span>
+      <span class="mo">+</span>
+      <div class="msub">
+       <span class="mi">c</span>
+       <span class="mi">n</span>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mi">n</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> where 
+  <span class="italic">φ</span> is the wavefunction associated with the dipole oscillation of an excited individual NP.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If we use n different basis for the linear combination, n different wavefunctions will be obtained, with each one describing a different mode. In this case, we will consider only longitudinal modes, restricting our attention to those modes which are susceptible when the incident radiation is perpendicular to the NPs cluster.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The expectation value of the energy is given from the following equation, where 
+  <div class="inline-formula">
+   <div id="mm2" class="math">
+    <div class="mrow">
+     <div accent="true" class="mover">
+      <span class="mi">ω</span>
+      <span stretchy="false" class="mo">^</span>
+     </div>
+    </div>
+   </div>
+  </div> is the Hamiltonian operator. 
+  <div id="FD2-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(2)</span>
+   <div id="mm3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">ω</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div displaystyle="true" class="mstyle">
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">∫</span>
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">ψ</span>
+           <div accent="true" class="mover">
+            <span class="mi">ω</span>
+            <span stretchy="false" class="mo">^</span>
+           </div>
+           <span class="mi">ψ</span>
+           <span class="mi">d</span>
+           <span class="mi">τ</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div displaystyle="true" class="mstyle">
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">∫</span>
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">ψ</span>
+           <span class="mi">ψ</span>
+           <span class="mi">d</span>
+           <span class="mi">τ</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div displaystyle="true" class="mstyle">
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">∫</span>
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">1</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">2</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">2</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">3</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">3</span>
+           </div>
+           <span class="mo">+</span>
+           <span class="mo">…</span>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mi">n</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mi">n</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+           <div accent="true" class="mover">
+            <span class="mi">ω</span>
+            <span stretchy="false" class="mo">^</span>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">1</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">2</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">2</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">3</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">3</span>
+           </div>
+           <span class="mo">+</span>
+           <span class="mo">…</span>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mi">n</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mi">n</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+           <span class="mi">d</span>
+           <span class="mi">τ</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div displaystyle="true" class="mstyle">
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">∫</span>
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">1</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">2</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">2</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">3</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">3</span>
+           </div>
+           <span class="mo">+</span>
+           <span class="mo">…</span>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mi">n</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mi">n</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+           <span stretchy="false" class="mo">(</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">1</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">2</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">2</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mn">3</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mn">3</span>
+           </div>
+           <span class="mo">+</span>
+           <span class="mo">…</span>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mi">c</span>
+            <span class="mi">n</span>
+           </div>
+           <div class="msub">
+            <span class="mi">φ</span>
+            <span class="mi">n</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+           <span class="mi">d</span>
+           <span class="mi">τ</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Developing the integral of Equation (2) and setting for each value of 
+  <span class="italic">j</span> with 1 ≤ 
+  <span class="italic">j</span> ≤ 
+  <span class="italic">n</span>, the following derivative equals zero. 
+  <div id="FD3-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(3)</span>
+   <div id="mm4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mo">∂</span>
+            <span class="mi">ω</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">∂</span>
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">j</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <span class="mi">c</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <span class="mi">c</span>
+         <span class="mn">2</span>
+        </div>
+        <span class="mo">,</span>
+        <div class="msub">
+         <span class="mi">c</span>
+         <span class="mn">3</span>
+        </div>
+        <span class="mo">…</span>
+        <div class="msub">
+         <span class="mi">c</span>
+         <span class="mi">n</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We obtain the following system of secular equations. 
+  <div id="FD4-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(4)</span>
+   <div id="mm5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">11</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">12</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">12</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">13</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">13</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">14</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">14</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">21</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">21</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">22</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">23</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">23</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">24</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">24</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">31</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">31</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">32</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">32</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">33</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">34</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">34</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">1</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">1</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">2</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">2</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">3</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mn">3</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mi">n</span>
+                <span class="mo">−</span>
+                <span class="mn">1</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mi">n</span>
+                <span class="mo">−</span>
+                <span class="mn">1</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">2</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">2</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mn">3</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span class="mi">S</span>
+               <div class="mrow">
+                <span class="mn">3</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mo">Ω</span>
+               <div class="mrow">
+                <span class="mi">n</span>
+                <span class="mi">n</span>
+               </div>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">•</span>
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mn">1</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mn">2</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mn">3</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">n</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> where
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">(a) the Coulomb’s integral</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div class="inline-formula">
+   <div id="mm6" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mo">Ω</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">∫</span>
+         <span class="mi">τ</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">i</span>
+         </div>
+         <div accent="true" class="mover">
+          <span class="mi">ω</span>
+          <span stretchy="false" class="mo">^</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mi">d</span>
+      <span class="mi">τ</span>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mi">ω</span>
+       <span class="mn">0</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> that is the energy of the single particle,
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">(b) the interaction integrals</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div class="inline-formula">
+   <div id="mm7" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mo">Ω</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">j</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mo">Ω</span>
+       <div class="mrow">
+        <span class="mi">j</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">∫</span>
+         <span class="mi">τ</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">i</span>
+         </div>
+         <div accent="true" class="mover">
+          <span class="mi">ω</span>
+          <span stretchy="false" class="mo">^</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mi">j</span>
+      </div>
+      <span class="mi">d</span>
+      <span class="mi">τ</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">∫</span>
+         <span class="mi">τ</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">j</span>
+         </div>
+         <div accent="true" class="mover">
+          <span class="mi">ω</span>
+          <span stretchy="false" class="mo">^</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mi">d</span>
+      <span class="mi">τ</span>
+      <span class="mo">=</span>
+      <span class="mi">β</span>
+      <span class="mo">≈</span>
+      <span class="mo">−</span>
+      <span class="mo">Δ</span>
+      <div class="msub">
+       <span class="mi">ω</span>
+       <div class="mrow">
+        <span class="mi">dim</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is equal to the shift of energy of the dimer compared to the single NP when i and j represent adjacent NPs and is null for non-adjacent particles because we assume that non-adjacent dipoles do not interact between them. In the case of a linear chain of NPs, Ω
+  <span class="italic">
+   <sub>ij</sub>
+  </span> = 
+  <span class="italic">β</span> when 
+  <div class="inline-formula">
+   <div id="mm8" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">−</span>
+        <span class="mi">j</span>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div> and is equal to 0 when 
+  <div class="inline-formula">
+   <div id="mm9" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">−</span>
+        <span class="mi">j</span>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">&gt;</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div>;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">(c) the overlapping integral</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div class="inline-formula">
+   <div id="mm10" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">S</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">j</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mi">S</span>
+       <div class="mrow">
+        <span class="mi">j</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">∫</span>
+         <span class="mi">τ</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">i</span>
+         </div>
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">j</span>
+         </div>
+         <span class="mi">d</span>
+         <span class="mi">τ</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mo">∫</span>
+         <span class="mi">τ</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">j</span>
+         </div>
+         <div class="msub">
+          <span class="mi">φ</span>
+          <span class="mi">i</span>
+         </div>
+         <span class="mi">d</span>
+         <span class="mi">τ</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">≈</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> because the NPs are far enough to neglect the contribution of the efficient wavefunctions overlapping. 
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Under these conditions, for the system of equation to be null, the secular determinant must be numerically equal to 0. As an example, in the case of a linear chain of n NPs, the following condition must be assumed. 
+  <div id="FD5-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(5)</span>
+   <div id="mm11" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mn">0</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mn">0</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mn">0</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <span class="mi">β</span>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <span class="mo">…</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mn">0</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Some other examples are reported in the 
+  <a ref-type="app" rid="app1-nanomaterials-09-00929" href="#app1-nanomaterials-09-00929">supplementary materials Figure S1</a>. The solution of this determinant for n particles, i.e., n wavefunctions, gives n energy modes, including some that are bright modes (ω &lt; ω
+  <sub>0</sub>) while the rest are dark modes (ω &gt; ω
+  <sub>0</sub>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A representative sketch in the case of a chain of four equal NPs is shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f001" href="#nanomaterials-09-00929-f001">Figure 1</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As a result of this calculation, we obtain several wavefunctions describing several dipole configurations, as shown in the example reported in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f001" href="#nanomaterials-09-00929-f001">Figure 1</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is worth underlining that, with the present approach, whenever the plasmon energy of the single NP and the shift of energy of the dimer with respect to the single NP is known, the calculation of the secular determinant of Equation (5) is a minor and immediate operation. Thus, this method shows a general trend of the NPs system where the effect of NPs distances is included in the interaction integral whose value can be obtained by using an independent theoretical or experimental approach. The exact wavefunction of the single NPs is not required for the computation of the energy in agreement with the Hückel theory and so the method can be applied virtually to all the geometries of the single element as the effect of the properties of the single NPs in the complex system, which is contained in the input data ω
+  <sub>0</sub> and Δω
+  <sub>dim</sub>. As is well known, dielectric polarization plays an important role in the plasmon resonant energy. For this reason, the input data should be selected properly, taking into account the dielectric medium where the NPs system is embedded.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dimeric systems have been intensively studied in the last decade because the optical properties of this kind of system can be determined accurately using different experimental and theoretical approaches [
+  <a rid="B21-nanomaterials-09-00929" ref-type="bibr" href="#B21-nanomaterials-09-00929">21</a>,
+  <a rid="B22-nanomaterials-09-00929" ref-type="bibr" href="#B22-nanomaterials-09-00929">22</a>,
+  <a rid="B23-nanomaterials-09-00929" ref-type="bibr" href="#B23-nanomaterials-09-00929">23</a>,
+  <a rid="B24-nanomaterials-09-00929" ref-type="bibr" href="#B24-nanomaterials-09-00929">24</a>,
+  <a rid="B25-nanomaterials-09-00929" ref-type="bibr" href="#B25-nanomaterials-09-00929">25</a>,
+  <a rid="B26-nanomaterials-09-00929" ref-type="bibr" href="#B26-nanomaterials-09-00929">26</a>,
+  <a rid="B27-nanomaterials-09-00929" ref-type="bibr" href="#B27-nanomaterials-09-00929">27</a>,
+  <a rid="B28-nanomaterials-09-00929" ref-type="bibr" href="#B28-nanomaterials-09-00929">28</a>,
+  <a rid="B29-nanomaterials-09-00929" ref-type="bibr" href="#B29-nanomaterials-09-00929">29</a>,
+  <a rid="B30-nanomaterials-09-00929" ref-type="bibr" href="#B30-nanomaterials-09-00929">30</a>]. For instance, we reported in 
+  <a rid="nanomaterials-09-00929-t001" ref-type="table" href="#nanomaterials-09-00929-t001">Table 1</a> some data retrieved from published works on Au and Ag NPs dimers.
+ </p>
+</sec>

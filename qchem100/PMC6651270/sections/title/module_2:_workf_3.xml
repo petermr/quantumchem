@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 2: Workflow Execution and Communication between Jobs</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The task of the second module of the package is to efficiently execute the user-defined Python workflows. With the Noodles framework, dependencies between the tasks defined in the QMflows Python script are automatically detected. The idea behind this library is to postpone the execution of tasks to allow for dependency analysis. Rather than immediately executing the Python code found in a user script, Noodles will first construct a dependency graph in which tasks (for example the optimization of a molecular structure or a calculation of NMR shieldings for a given molecule) are represented by nodes connected via edges to represent the dependencies between these tasks (for example the NMR calculation needs the structure from the geometry optimization task). The tasks are always implemented as scheduled functions which return “promised objects” rather than results. The actual results of the workflow are obtained using an explicit run statement at the end of the workflow. This run statement triggers the evaluation of the dependencies and the generation and execution of the actual jobs. The advantage of this approach is that the user script looks almost like a normal Python script, while in the background Noodles takes care of those calls to QMflows tasks that do not depend on each other and are executed in parallel. This is highlighted in the following script where the call to Noodles is delayed until line 12.
+  <div xlink:href="ci-2019-00384y_0010" id="gr9" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This makes it possible to optimally use the options available for parallel execution that compute servers may offer. For this purpose, Noodles comes with several back ends for different common architectures. For small workflows, the user can simply reserve a number of threads on his or her local computer, while larger workflows can be run via job schedulers on a compute cluster or supercomputer. This flexibility allows users to easily scale workflows from the testing phase to the production phase. A more detailed description of the Noodles library, which is used for non-QM workflows as well, is available online.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref15" href="#ref15">15</a>
+  </span>
+ </p>
+</sec>

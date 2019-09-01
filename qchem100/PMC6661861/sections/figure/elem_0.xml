@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 1</span>
+ <div class="caption">
+  <p>Schematic representation of the workflow. (A) We generate a network of redox reactions obtained from iterative reduction and oxidation of natural seed metabolites. The redox reactions considered are reductions of carbonyl functional groups to both alcohol and amine groups. (B) Starting from simplified molecular-input line-entry system (SMILES)
+   <span class="sup">
+    <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+   </span> string representations of all the compounds in the network at pH = 0, we preoptimize molecular geometries using the Universal Force Field, and run semiempirical quantum chemistry calculations using PM7. (C) We estimate the standard (millimolar state) redox potentials 
+   <span class="italic">E</span>
+   <span class="sup">m</span> for the major species at pH = 0 from the difference in electronic energies. The transformed standard redox potentials 
+   <span class="italic">E</span>′
+   <span class="sup">m</span>(pH = 7) is obtained from cheminformatic p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates and the Alberty–Legendre transform. We calibrated a training set of compounds against available experimental 
+   <span class="italic">E</span>′
+   <span class="sup">m</span>(pH = 7) values using Gaussian process (GP) regression.
+  </p>
+ </div>
+ <div xlink:href="oc-2019-002977_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.1. The Main Features of the Adopted Quantum Classical Method</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">According to the QC approach, the quantum mechanical time-dependent Schrödinger equation for the nuclear motion is solved for the degrees of freedom of the system playing the most relevant role in vibration-to-vibration (VV) quantum energy exchange, vibrations and roto-vibrational couplings, by a coupled equations method to obtain the quantum transition amplitudes 
+  <div class="inline-formula">
+   <div id="M12" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">a</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <span class="mi">t</span>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div>, where 
+  <span class="italic">v</span> and 
+  <span class="italic">v</span>′ are the initial vibrational quantum numbers of the diatoms. The vibrational wavefunction is initialized as the product of the Morse functions 
+  <div class="inline-formula">
+   <div id="M13" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ϕ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">CO</span>
+       </div>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ϕ</span>
+     </div>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mtext">N</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> for the two infinitely separated diatoms, whose parameters are given in 
+  <a rid="T3" ref-type="table" href="#T3">Table 3</a>, and is expanded as:
+ </p>
+ <div id="E8" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(7)</span>
+  <div id="M14" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mtext">Ψ</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">v</span>
+         <span class="mo">,</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">v</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">′</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">t</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ϕ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">C</span>
+          <span class="mi">O</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ϕ</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">N</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mtext">i</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ℏ</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">v</span>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">v</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">′</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mi">t</span>
+       </div>
+       <span class="mo">]</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">v</span>
+  </sub> and 
+  <div class="inline-formula">
+   <div id="M15" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> are the vibrational energies of the oscillators in their initial states. The remaining degrees of freedom are treated classically by integrating the corresponding set of Hamilton equations of motion in an effective potential defined as the Ehrenfest average of the interaction potential.
+ </p>
+ <div id="T3" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 3</span>
+  <div class="caption">
+   <p>Morse and vibrational parameters for CO and N
+    <sub>2</sub>.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <thead>
+    <tr>
+     <th rowspan="1" colspan="1"/>
+     <th valign="top" align="center" rowspan="1" colspan="1">
+      <span class="bold">CO</span>
+     </th>
+     <th valign="top" align="center" rowspan="1" colspan="1">
+      <span class="bold">N
+       <sub>
+        <span class="bold">2</span>
+       </sub>
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">ω
+      <sub>
+       <span class="italic">e</span>
+      </sub>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">2169.81 cm
+      <span class="sup">−1</span>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">2359.60 cm
+      <span class="sup">−1</span>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">
+      <span class="italic">x</span>
+      <sub>
+       <span class="italic">e</span>
+      </sub>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">0.006125</td>
+     <td valign="top" align="center" rowspan="1" colspan="1">0.006126</td>
+    </tr>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">
+      <span class="italic">y</span>
+      <sub>
+       <span class="italic">e</span>
+      </sub>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">0.0000048</td>
+     <td valign="top" align="center" rowspan="1" colspan="1">0.0000032</td>
+    </tr>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">
+      <div class="inline-formula">
+       <div id="M20" class="math">
+        <div accent="false" class="mover">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <span accent="true" class="mo">¯</span>
+        </div>
+       </div>
+      </div>
+     </td>
+     <td valign="top" align="center" rowspan="1" colspan="1">1.128 Å</td>
+     <td valign="top" align="center" rowspan="1" colspan="1">1.098 Å</td>
+    </tr>
+    <tr>
+     <td valign="top" align="left" rowspan="1" colspan="1">β</td>
+     <td valign="top" align="center" rowspan="1" colspan="1">2.298</td>
+     <td valign="top" align="center" rowspan="1" colspan="1">2.689</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quantum transition amplitudes 
+  <div class="inline-formula">
+   <div id="M16" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">a</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <span class="mi">t</span>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> can then be used to calculate either specific state-to-state vibrational/rotational transitions cross sections, 
+  <div class="inline-formula">
+   <div id="M17" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">σ</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+      <span class="mo">→</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">f</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, or Monte Carlo averaged cross sections over the Boltzmann distribution of the initial rotational angular momenta 
+  <span class="italic">j</span> and 
+  <span class="italic">j</span>′ for CO and N
+  <sub>2</sub>, respectively:
+ </p>
+ <div id="E9" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(8)</span>
+  <div id="M18" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mo">,</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">U</span>
+        <span class="mo">,</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">0</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">π</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ℏ</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+        <span class="mi">μ</span>
+        <div class="msup">
+         <div class="mrow">
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">k</span>
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">T</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mn">3</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">I</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">C</span>
+          <span class="mi">O</span>
+         </div>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">I</span>
+         </div>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">N</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">×</span>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <div displaystyle="true" class="mstyle">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mo">∫</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">l</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">m</span>
+           <span class="mi">a</span>
+           <span class="mi">x</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mo">∫</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">j</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">m</span>
+           <span class="mi">a</span>
+           <span class="mi">x</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mo">∫</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">j</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">′</span>
+          </div>
+         </div>
+         <span class="mi">m</span>
+         <span class="mi">a</span>
+         <span class="mi">x</span>
+        </div>
+       </div>
+      </div>
+      <span class="mtext">d</span>
+      <span class="mi">j</span>
+      <span class="mtext"> d</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+      <span class="mtext"> d</span>
+      <span class="mi">l</span>
+      <span class="mtext"> </span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">j</span>
+        <span class="mo">+</span>
+        <span class="mn">1</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">j</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <span class="mn">1</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">l</span>
+        <span class="mo">+</span>
+        <span class="mn">1</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">N</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <span class="mo">∑</span>
+      <span class="mo">|</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mo">|</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">T</span>
+  <sub>0</sub> is an arbitrary reference temperature, which cancels out in the formulation of rate constants (Equation 9), 
+  <span class="italic">I</span>
+  <sub>
+   <span class="italic">CO</span>
+  </sub> and 
+  <span class="italic">I</span>
+  <sub>
+   <span class="italic">N</span>
+   <sub>2</sub>
+  </sub> are the moments of inertia of the diatoms, 
+  <span class="italic">U</span> is the classical energy, obtained by subtracting from total energy the vibrational energy of the two diatoms, 
+  <div class="inline-formula">
+   <div id="M21" class="math">
+    <span class="mi">U</span>
+    <span class="mo">=</span>
+    <span class="mi">E</span>
+    <span class="mo">-</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+     </div>
+    </div>
+    <span class="mo">-</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <span class="italic">j</span>
+  <sub>
+   <span class="italic">max</span>
+  </sub> and 
+  <div class="inline-formula">
+   <div id="M22" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">j</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">m</span>
+      <span class="mi">a</span>
+      <span class="mi">x</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">′</span>
+     </div>
+    </div>
+   </div>
+  </div> are the upper limit for the randomly chosen rotational quantum numbers for the diatoms, 
+  <span class="italic">l</span>
+  <sub>
+   <span class="italic">max</span>
+  </sub> the upper limit for the angular momentum and μ is the reduced mass of the system.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">From such averaged cross sections, rate coefficients for vibrational relaxation 
+  <div class="inline-formula">
+   <div id="M23" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">k</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">v</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">v</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <span class="mi">T</span>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> (see e.g., Coletti and Billing, 
+  <a rid="B25" ref-type="bibr" href="#B25">2002</a>; Billing et al., 
+  <a rid="B15" ref-type="bibr" href="#B15">2003</a>) can be derived as follows:
+ </p>
+ <div id="E11" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(9)</span>
+  <div id="M24" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mn">8</span>
+            <span class="mi">k</span>
+            <span class="mi">T</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">π</span>
+            <span class="mi">μ</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">T</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+            </div>
+           </div>
+           <div class="mrow">
+            <span class="mi">T</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mo">∫</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">ϵ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">m</span>
+           <span class="mi">i</span>
+           <span class="mi">n</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">∞</span>
+        </div>
+       </div>
+      </div>
+      <span class="mtext">d</span>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <div accent="false" class="mover">
+           <div class="mrow">
+            <span class="mi">U</span>
+           </div>
+           <span accent="true" class="mo">¯</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">k</span>
+          <span class="mi">T</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <span class="mtext"> </span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mtext">e</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div accent="false" class="mover">
+         <div class="mrow">
+          <span class="mi">U</span>
+         </div>
+         <span accent="true" class="mo">¯</span>
+        </div>
+        <span class="mo">/</span>
+        <span class="mi">k</span>
+        <span class="mi">T</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">v</span>
+        <span class="mo">,</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">0</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <div accent="false" class="mover">
+         <div class="mrow">
+          <span class="mi">U</span>
+         </div>
+         <span accent="true" class="mo">¯</span>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+      <span class="mtext">   </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where ϵ
+  <sub>
+   <span class="italic">min</span>
+  </sub> = 0 for exothermic and ϵ
+  <sub>
+   <span class="italic">min</span>
+  </sub> = Δ
+  <span class="italic">E</span> for endothermic processes and 
+  <div class="inline-formula">
+   <div id="M25" class="math">
+    <div accent="false" class="mover">
+     <div class="mrow">
+      <span class="mi">U</span>
+     </div>
+     <span accent="true" class="mo">¯</span>
+    </div>
+   </div>
+  </div> is the symmetrized classical energy (Billing, 
+  <a rid="B17" ref-type="bibr" href="#B17">1984b</a>):
+ </p>
+ <div id="E12" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(10)</span>
+  <div id="M26" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div accent="false" class="mover">
+       <div class="mrow">
+        <span class="mi">U</span>
+       </div>
+       <span accent="true" class="mo">¯</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">U</span>
+      <span class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">Δ</span>
+      <span class="mi">E</span>
+      <span class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">Δ</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">16</span>
+        <span class="mi">U</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">which has been introduced to restore, in an approximate fashion, the quantum mechanical detailed balance principle (Billing, 
+  <a rid="B16" ref-type="bibr" href="#B16">1984a</a>,
+  <a rid="B17" ref-type="bibr" href="#B17">b</a>, 
+  <a rid="B18" ref-type="bibr" href="#B18">1987</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the present treatment the anharmonic vibrational energy is formulated as:</p>
+ <div id="E13" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(11)</span>
+  <div id="M27" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">ℏ</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">v</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">i</span>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <span class="mo">-</span>
+      <span class="mi">ℏ</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">x</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">v</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mn">1</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <span class="mi">ℏ</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">y</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">e</span>
+        <span class="mi">i</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">v</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mn">1</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where ω
+  <sub>
+   <span class="italic">ei</span>
+  </sub> is the wavenumber for the 
+  <span class="italic">i</span>-th oscillator and 
+  <span class="italic">x</span>
+  <sub>
+   <span class="italic">ei</span>
+  </sub> and 
+  <span class="italic">y</span>
+  <sub>
+   <span class="italic">ei</span>
+  </sub> are the anharmonicity constants (see 
+  <a rid="T3" ref-type="table" href="#T3">Table 3</a> for the values employed in the calculation for N
+  <sub>2</sub> and CO).
+ </p>
+</sec>

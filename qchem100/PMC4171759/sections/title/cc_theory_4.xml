@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">CC Theory</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For dynamical correlation, a variety of (spin-restricted) CC-based models have been implemented in Dalton: the coupled-cluster-singles (CCS) model, second-order-Møller–Plesset (MP2) theory, degeneracy-corrected second-order perturbation theory (DCPT2), the coupled-cluster-doubles (CCD) model, the coupled-cluster-singles-and-doubles (CCSD) model,
+  <a rid="b16" ref-type="bibr" href="#b16">16</a>,
+  <a rid="b17" ref-type="bibr" href="#b17">17</a> and the coupled-cluster-singles-doubles-perturbative-triples (CCSD(T)) models. Several ring-CCD and random-phase-approximation (RPA) models are also available,
+  <a rid="b18" ref-type="bibr" href="#b18">18</a> including RPA with second-order screened exchange (RPA+SOSEX).
+  <a rid="b19" ref-type="bibr" href="#b19">19</a> Frequency-dependent ground- and excited-state properties can be studied using several specially developed models.
+  <a rid="b20" ref-type="bibr" href="#b20">20</a>,
+  <a rid="b21" ref-type="bibr" href="#b21">21</a> In particular, Dalton contains the iterative CC2
+  <a rid="b22" ref-type="bibr" href="#b22">22</a> and CC3
+  <a rid="b23" ref-type="bibr" href="#b23">23</a> models for frequency-dependent properties and the noniterative CCSDR(3) triples-correction model
+  <a rid="b24" ref-type="bibr" href="#b24">24</a> for excitation energies.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For faster basis-set convergence, the explicitly correlated MP2-R12/-F12, CCSD(T)(F12), and CC3(F12) models are available in Dalton.
+  <a rid="b25" ref-type="bibr" href="#b25">25</a>–
+  <a rid="b27" ref-type="bibr" href="#b27">27</a> For higher efficiency, Cholesky decomposition techniques have been implemented for the CCSD(T) energy
+  <a rid="b28" ref-type="bibr" href="#b28">28</a> and for CC2 linear response properties.
+  <a rid="b29" ref-type="bibr" href="#b29">29</a> Atomic subsystems can be defined by Cholesky decomposition to reduce the computational requirements of the CC models.
+  <a rid="b30" ref-type="bibr" href="#b30">30</a>
+ </p>
+</sec>

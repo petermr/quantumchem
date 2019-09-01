@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrational dynamics</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this section, we consider methods to investigate the dynamic properties of vibrational Hamiltonians. Vibrational dynamics underpin phenomena including energy and electron transport
+  <a rid="cit27" ref-type="bibr" href="#cit27">27</a>,
+  <a rid="cit28" ref-type="bibr" href="#cit28">28</a> and chemical reactions.
+  <a rid="cit24" ref-type="bibr" href="#cit24">24</a>–
+  <a rid="cit26" ref-type="bibr" href="#cit26">26</a> Dynamical behaviour can be studied by transforming to a single-mode basis of spatially localised vibrational modes, as described in 
+  <a rid="cit17" ref-type="bibr" href="#cit17">ref. 17</a>. The spatially localised vibrational modes 
+  <span class="italic">a</span>L
+  <span class="italic">i</span>, are related to the normal modes 
+  <span class="italic">a</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub>
+  <span class="italic">via</span> a basis transformation
+  <div id="eqn18" class="disp-formula">
+   <span class="label">18</span>
+   <div xlink:href="c9sc01313j-t17.jpg" id="ugt17" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>with real unitary matrix 
+  <span class="italic">U</span>
+  <sub>
+   <span class="italic">i,j</span>
+  </sub>. We can obtain the corresponding localised Hamiltonian 
+  <span class="italic">H</span>
+  <span class="sup">L</span>, using the transformation of the normal coordinates and momenta
+  <div id="eqn19" class="disp-formula">
+   <span class="label">19</span>
+   <div xlink:href="c9sc01313j-t18.jpg" id="ugt18" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Given an initial state of the localised vibrations, the dynamics can be simulated by applying the time evolution operator e
+  <span class="sup">–i
+   <span class="italic">H</span>
+   <span class="sup">L</span>
+   <span class="italic">t</span>
+  </span>. This can be achieved in a number of ways, using different Hamiltonian simulation algorithms, including: Trotterization (also referred to as product formulae),
+  <a rid="cit5" ref-type="bibr" href="#cit5">5</a>,
+  <a rid="cit66" ref-type="bibr" href="#cit66">66</a> the Taylor series method,
+  <a rid="cit67" ref-type="bibr" href="#cit67">67</a>–
+  <a rid="cit69" ref-type="bibr" href="#cit69">69</a> and qubitization
+  <a rid="cit70" ref-type="bibr" href="#cit70">70</a>,
+  <a rid="cit71" ref-type="bibr" href="#cit71">71</a> in conjunction with quantum signal processing.
+  <a rid="cit72" ref-type="bibr" href="#cit72">72</a>,
+  <a rid="cit73" ref-type="bibr" href="#cit73">73</a> The product formula method is the most simple to realise. If 
+  <span class="italic">H</span>
+  <span class="sup">L</span> can be decomposed as 
+  <span xlink:href="c9sc01313j-t19.jpg" id="ugt19" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> the time evolution operator e
+  <span class="sup">–i
+   <span class="italic">H</span>
+   <span class="sup">L</span>
+   <span class="italic">t</span>
+  </span> can be realised using a product formula,
+  <div id="eqn20" class="disp-formula">
+   <span class="label">20</span>
+   <div xlink:href="c9sc01313j-t20.jpg" id="ugt20" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">N</span> is chosen to be sufficiently large to suppress the error in the approximation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alternatively, the vibrational dynamics can be realised using a recently proposed variational algorithm.
+  <a rid="cit74" ref-type="bibr" href="#cit74">74</a> One could use either a UVCC ansatz, or a Trotterized ansatz.
+  <a rid="cit75" ref-type="bibr" href="#cit75">75</a>,
+  <a rid="cit76" ref-type="bibr" href="#cit76">76</a>
+ </p>
+</sec>

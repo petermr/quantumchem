@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Molden software was conceived in the early 1990s and first published in 2000 [
+  <a ref-type="bibr" rid="CR1" href="#CR1">1</a>]. Molden 1.0 was designed as a tool to support quantum chemistry calculations by pre-processing input data and by visualizing the computational results. Manual inspection of a few hundred of the articles that cite Molden 1.0 revealed that it is used most often for visualisation of wave-functions, for construction and editing of molecules via its Z-matrix functionality, and for validating stationary point(s) at potential energy surfaces. Most citations came from labs working in the drug design field. Surprisingly, we also found a large number of examples of mutations of amino acids (e.g. [
+  <a ref-type="bibr" rid="CR2" href="#CR2">2</a>–
+  <a ref-type="bibr" rid="CR4" href="#CR4">4</a>]). Molden has been cited more than 2000 times according to the Web of Science [
+  <a ref-type="bibr" rid="CR5" href="#CR5">5</a>], but very many more times according to Google Scholar. Registered Molden users now exceed 15,000; including most large pharmaceutical industries.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden was initially designed to augment computational work in quantum chemistry by providing visualisation facilities, and by dealing with data formats and other administrative tasks. Indeed, it became so useful in the quantum chemistry field that its wave-function format that was designed to interface with quantum mechanics packages is now a de facto standard [
+  <a ref-type="bibr" rid="CR6" href="#CR6">6</a>, 
+  <a ref-type="bibr" rid="CR7" href="#CR7">7</a>]. Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a> summarizes some popular facilities (as judged by the number of citations) that were available already in Molden 1.0, and that have been further developed over the years without modifying their goals or fundamental concepts.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Selection of popular Molden 1.0 facilities that were recently improved</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tbody>
+     <tr>
+      <td align="left">Display molecular density from the ab initio packages Gamess-US, Gamess-UK, Gaussian, and the semi-empirical packages Mopac and Ampac</td>
+      <td align="left">Rudimentary support for protein visualisation</td>
+     </tr>
+     <tr>
+      <td align="left">Display molecular orbitals, electron density, and difference density</td>
+      <td align="left">Fitting atomic charges to the electrostatic potential calculated on a Connolly surface</td>
+     </tr>
+     <tr>
+      <td align="left">Calculation and display of the true and multipole derived electrostatic potential</td>
+      <td align="left">Calculation and display of the Laplacian of the electron density</td>
+     </tr>
+     <tr>
+      <td align="left">Animation of reaction paths and molecular vibrations</td>
+      <td align="left">Additional support for a number of other QM packages via the Molden format</td>
+     </tr>
+     <tr>
+      <td align="left">Versatile Z-matrix editor</td>
+      <td align="left">Support for crystal visualisation</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Computers are today so fast that quantum chemical calculations are becoming accessible to everybody, and our inspection of articles that cited Molden revealed that quantum chemistry is becoming a frequently used tool in fields like drug design [e.g. 
+  <a ref-type="bibr" rid="CR8" href="#CR8">8</a>–
+  <a ref-type="bibr" rid="CR11" href="#CR11">11</a>], nanoscience [e.g. 
+  <a ref-type="bibr" rid="CR12" href="#CR12">12</a>, 
+  <a ref-type="bibr" rid="CR13" href="#CR13">13</a>], and organometallics [e.g. 
+  <a ref-type="bibr" rid="CR14" href="#CR14">14</a>]. The scope of Molden was therefore broadened to also support a whole series of activities commonly employed by computational chemists working in the pharmaceutical industry. Table 
+  <a rid="Tab2" ref-type="table" href="#Tab2">2</a> lists a few of these new facilities, some of which will be discussed more extensively in the "
+  <a rid="Sec3" ref-type="sec" href="#Sec3">Results</a>".
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Tab2" class="table-wrap">
+   <span class="label">Table 2</span>
+   <div class="caption">
+    <p>Selection of novel facilities in Molden 2.0</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tbody>
+     <tr>
+      <td align="left">Display molecular density from the ab initio packages ORCA, Nwchem, and QChem.</td>
+      <td align="left">Calculation and display of localized molecular orbitals and the electron localisation function.</td>
+     </tr>
+     <tr>
+      <td align="left">Display solvent-accessible surfaces optionally with electrostatic potentials mapped onto it</td>
+      <td align="left">An amino acid sequence editor to create three dimensional peptides</td>
+     </tr>
+     <tr>
+      <td align="left">Visualisation of NMR and UV spectra</td>
+      <td align="left">Interactive docking with PMF scoring</td>
+     </tr>
+     <tr>
+      <td align="left">Energy minimisation program Ambfor for geometry optimisation with the combined Amber (protein) and GAFF (small molecules) force fields</td>
+      <td align="left">Stand-alone molecular dynamics program Ambmd using the Amber (protein) and GAFF (small molecules) force fields</td>
+     </tr>
+     <tr>
+      <td align="left">Rotamer space scanning to probe active site flexibility</td>
+      <td align="left">Extension of the Z-matrix editor to include protein editing</td>
+     </tr>
+     <tr>
+      <td align="left">Adding hydrogens to ligands and proteins in a PDB file</td>
+      <td align="left">A small molecule crystal optimiser</td>
+     </tr>
+     <tr>
+      <td align="left">A residue command window to turn the visibility of residues/ligands off/on</td>
+      <td align="left">Handling multiple protein structures and allow users to align or superpose them</td>
+     </tr>
+     <tr>
+      <td align="left">A native Windows version is available that does not require the Xwindows emulator, but makes use of the OpenGL graphics library [
+       <a ref-type="bibr" rid="CR16" href="#CR16">16</a>]
+      </td>
+      <td align="left">Support for QM calculations making use of pseudo potentials</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden has been distributed more than 15,000 times to registered users, but the number of downloads is a multitude of this number. We answer on average 3.2 user questions each day. We intend to support Molden for at least ten more years. It is available for the operating systems Linux, Windows, and OS X. It can be downloaded from 
+  <span ext-link-type="uri" xlink:href="ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/</span>. Both tarred and gnu-zipped source code are available as well as binaries for these three operating systems. The website (
+  <span ext-link-type="uri" xlink:href="http://www.cmbi.ru.nl/molden/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cmbi.ru.nl/molden/</span>) lists all the latest software developments and provides a series of help facilities. This includes a manual with a description of the keywords to control Molden through a keyword file.
+ </p>
+</sec>

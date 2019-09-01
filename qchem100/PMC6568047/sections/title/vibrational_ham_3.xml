@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrational Hamiltonian</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Under the Born–Oppenheimer approximation, nuclear variables are treated as parameters in the electronic structure problem and are restored as quantum nuclear variables at the level of the full problem. In the following, we neglect the rotational degrees of freedom from negligible rotational–vibrational couplings for rigid molecules (rigid rotator approximation). After diagonalising the electronic Hamiltonian and neglecting nonadiabatic couplings, the molecular Hamiltonian becomes
+  <div id="eqn1" class="disp-formula">
+   <span class="label">1</span>
+   <div xlink:href="c9sc01313j-t1.jpg" id="ugt1" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where |
+  <span class="italic">ψ</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>〉
+  <sub>e</sub> are the electronic energy eigenstates. The effective nuclear Hamiltonian 
+  <span class="italic">H</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub> is
+  <div id="eqn2" class="disp-formula">
+   <span class="label">2</span>
+   <div xlink:href="c9sc01313j-t2.jpg" id="ugt2" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="bold">q</span> = (
+  <span class="italic">q</span>
+  <sub>1</sub>, 
+  <span class="italic">q</span>
+  <sub>2</sub>…) are nuclear coordinates, 
+  <span class="bold">p</span> = –
+  <span class="italic">i</span>∂/∂
+  <span class="bold">q</span> are nuclear momenta with 
+  <span class="italic">ħ</span> = 1, and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>(
+  <span class="bold">q</span>) is the effective nuclear potential. This potential is determined by the corresponding electronic potential energy surface of |
+  <span class="italic">ψ</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>〉
+  <sub>e</sub>. As described in Appendix A, we work in mass-weighted normal coordinates and decouple the rotational and vibrational modes. The potential 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>(
+  <span class="bold">q</span>) can be approximated as
+  <div id="eqn3" class="disp-formula">
+   <span class="label">3</span>
+   <div xlink:href="c9sc01313j-t3.jpg" id="ugt3" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">ω</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> is the harmonic frequency of the 
+  <span class="italic">i</span>
+  <span class="sup">th</span> vibrational normal mode. Thus, the nuclear Hamiltonian 
+  <span class="italic">H</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub> can be approximated by a sum of independent harmonic oscillators,
+  <div id="eqn4" class="disp-formula">
+   <span class="label">4</span>
+   <div xlink:href="c9sc01313j-t4.jpg" id="ugt4" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>with 
+  <span class="italic">a</span>†
+  <span class="italic">i</span> and 
+  <span class="italic">a</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> being the creation and annihilation operators of the 
+  <span class="italic">i</span>
+  <span class="sup">th</span> harmonic oscillator. This is the commonly used ‘harmonic approximation’. Even for accurate potentials and rigid molecules, the harmonic approximation is less accurate than modern spectroscopic techniques.
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a> This approximation becomes inadequate for large and ‘floppy’ molecules.
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a> Improved results can be obtained by including anharmonic effects which requires information of higher order potential terms in the Hamiltonian.
+  <a rid="cit44" ref-type="bibr" href="#cit44">44</a> For example, we can expand the potential as
+  <div id="eqn5" class="disp-formula">
+   <span class="label">5</span>
+   <div xlink:href="c9sc01313j-t5.jpg" id="ugt5" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">M</span> is the number of modes, 
+  <span class="italic">k</span>
+  <sub>
+   <span class="italic">i</span>
+   <sub>1</sub>,
+   <span class="italic">i</span>
+   <sub>2</sub>,…,
+   <span class="italic">i</span>
+   <sub>
+    <span class="italic">j</span>
+   </sub>
+  </sub> are the coefficients of the expansion 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">i</span>
+   <sub>1</sub>
+  </sub>
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">i</span>
+   <sub>2</sub>
+  </sub>…
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">i</span>
+   <sub>
+    <span class="italic">j</span>
+   </sub>
+  </sub>, and the harmonic frequencies are 
+  <span xlink:href="c9sc01313j-t6.jpg" id="ugt6" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> In general, the eigenstates of these Hamiltonians are entangled states, when working in a basis of harmonic oscillator eigenstates. Consequently, solving the higher order vibrational Hamiltonian is a hard problem for classical computers.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In contrast, we show below that it is possible to efficiently encode the 
+  <span class="italic">k</span>
+  <span class="sup">th</span> order nuclear Hamiltonian into a Hamiltonian acting on qubits. We can then use quantum algorithms to efficiently calculate the static and dynamic properties of the nuclear Hamiltonian.
+ </p>
+</sec>

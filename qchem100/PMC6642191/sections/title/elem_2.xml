@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Material and sample preparation</div>
+  <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">The neutral lipids 1,2-dioleoyl-
+   <span class="italic">sn</span>-glycero-3-phosphocholine (DOPC), 1,2-dioleoyl-
+   <span class="italic">sn</span>-glycero-3-phosphoethanolamine (DOPE) and the anionic lipid 1,2-dioleoyl-
+   <span class="italic">sn-</span>glycero-3-phospho-L-serine (DOPS) were purchased from Avanti Polar Lipids (Alabaster, USA). Qdot 655 ITK Carboxyl Quantum Dots (QD655) were obtained from Thermo Fisher Scientific (Darmstadt, Germany). Phosphate buffered saline (PBS) was from Sigma-Aldrich (Steinheim, Germany), chloroform and other chemicals were from Carl Roth (Karlsruhe, Germany).
+  </p>
+  <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Lipodots were prepared using a thin film hydration method. DOPC:DOPE and DOPC:DOPS (3:1 molar ratio) were dissolved in chloroform and dried in a glass vial under nitrogen stream followed by removal of residual solvent under vacuum for ~3 h. The final concentration of lipids was 1 mM. Multilamellar vesicles were obtained by hydrating the lipid films using PBS (pH 7.0) supplemented with 10 nM QD655. After 60 min incubation at 25 °C, the suspensions were subjected to 15 freeze-thaw cycles in liquid nitrogen with vortexing after each cycle.</p>
+  <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">To form large unilamellar vesicles, the suspensions were passed 35 times through a mini-extruder (Avanti Polar Lipids, Alabaster, USA) using two-stacked polycarbonate membrane filters with a pore size of 100 nm. The final lipodot preparations were stored in the dark at 4 °C and used for experiments up to 7 days. All 
+   <span class="italic">in vitro</span> experiments were performed in PBS. For the cellular uptake experiments, 100 µL of lipodots in PBS were added to a recording chamber containing the salivary gland tissue in 400 µL physiological saline.
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Absorption and luminescence spectra</div>
+  <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Absorption measurements were performed with a Lambda 750UV/VIS spectrometer (Perkin Elmer, Waltham, USA) in the range of 300–700 nm. Luminescence emission spectra (500–800 nm, spectral bandwidth Δλ = 1 nm) were recorded with a FluoroMax 4 (Horiba, Kyoto, Japan) using an excitation wavelength of λ
+   <sub>ex</sub> = 480 nm. Concentrations were adjusted to avoid inner filter effects (absorption maximum below 0.1).
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Time-resolved luminescence measurements</div>
+  <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Time-resolved luminescence measurements were performed by using FluoroMax 4 (Horiba) in a time-correlated single-photon counting (TCSPC) mode. For excitation, a LED source (Horiba) with the excitation wavelength set to λ
+   <sub>ex</sub> = 371 nm and the repetition rate set to 1 MHz was used. The resulting luminescence signal was detected at an emission wavelength of λ
+   <sub>em</sub> = 655 nm. The luminescence decay curves were fitted multiexponentially with 
+   <span class="italic">α</span>
+   <sub>i</sub> being the amplitude of the 
+   <span class="italic">i</span>th component with the corresponding decay time 
+   <span class="italic">τ</span>
+   <sub>i</sub> (Eq. (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>)). Additionally, the intensity-weighted average decay time 
+   <span class="italic">τ</span>
+   <sub>av(int)</sub>, which is calculated according to Eq. (
+   <a rid="Equ2" ref-type="" href="#Equ2">2</a>), was used. The goodness of the fits was judged on the reduced 
+   <div id="IEq1" class="inline-formula">
+    <div class="alternatives">
+     <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\chi }_{R}^{2}$$\end{document}</span>
+     <div id="M2" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">χ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41598_2019_46732_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>-values and randomly distributed residuals.
+   <div id="Equ1" class="disp-formula">
+    <span class="label">1</span>
+    <div class="alternatives">
+     <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}I(t) &amp; = &amp; \sum _{i=1}^{n}{\alpha }_{i}\,exp(-\frac{t}{{\tau }_{i}})+{I}_{{background}} &amp; \,{\rm{with}}\,{i}=1...3\end{array}$$\end{document}</span>
+     <div id="M4" display="block" class="math">
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <span class="mi">I</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">t</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="munderover">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">=</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mi">n</span>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">α</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span width=".25em" class="mspace"/>
+          <span class="mi">e</span>
+          <span class="mi">x</span>
+          <span class="mi">p</span>
+          <div class="mrow">
+           <span stretchy="true" class="mo">(</span>
+           <div class="mrow">
+            <span class="mo">−</span>
+            <div class="mfrac">
+             <span class="mi">t</span>
+             <div class="mrow">
+              <div class="msub">
+               <div class="mrow">
+                <span class="mi">τ</span>
+               </div>
+               <div class="mrow">
+                <span class="mi">i</span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <span stretchy="true" class="mo">)</span>
+          </div>
+          <span class="mo">+</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">I</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="italic" class="mi">background</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span width=".25em" class="mspace"/>
+          <span mathvariant="normal" class="mi">with</span>
+          <span width=".25em" class="mspace"/>
+          <span mathvariant="italic" class="mi">i</span>
+          <span class="mo">=</span>
+          <span class="mn">1</span>
+          <span class="mo">...</span>
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>
+   <div id="Equ2" class="disp-formula">
+    <span class="label">2</span>
+    <div class="alternatives">
+     <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}{\tau }_{av(int)} &amp; = &amp; \sum _{i=1}^{n}{\alpha }_{i}{\tau }_{i}^{2}/\sum _{i=1}^{n}\,{\alpha }_{i}{\tau }_{i} &amp; {\rm{with}}\,i=1...3\end{array}$$\end{document}</span>
+     <div id="M6" display="block" class="math">
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">τ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">a</span>
+            <span class="mi">v</span>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">i</span>
+            <span class="mi">n</span>
+            <span class="mi">t</span>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="munderover">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">=</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mi">n</span>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">α</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msubsup">
+           <div class="mrow">
+            <span class="mi">τ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+          <span class="mo">/</span>
+          <div class="munderover">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">=</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mi">n</span>
+          </div>
+          <span width=".25em" class="mspace"/>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">α</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">τ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">with</span>
+          <span width=".25em" class="mspace"/>
+          <span class="mi">i</span>
+          <span class="mo">=</span>
+          <span class="mn">1</span>
+          <span class="mo">...</span>
+          <span class="mn">3</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Size distribution and zeta potential</div>
+  <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">The size distribution of empty liposomes and lipodots was determined by dynamic light scattering (DLS) using a Zetasizer Nano ZS (Malvern Panalytical, Kassel, Germany) equipped with a He-Ne laser source (633 nm). The detection of the scattered light occurred at an angle of 173° for reducing artefacts. The sample temperature was adjusted to 25 °C. The same setup was used to determine the zeta potential. Empty liposomes and lipodots were analysed in PBS at pH 7.4.</p>
+ </sec>
+ <sec id="Sec7" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Tissue preparation</div>
+  <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">Salivary glands of the American cockroach were used, whose rearing and tissue preparation was performed as previously described
+   <span class="sup">
+    <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+   </span>. In detail, a colony of the American cockroach 
+   <span class="italic">P</span>. 
+   <span class="italic">americana</span> (L.) was reared at 27 °C under light/dark cycle of 12 h:12 h at the Department of Animal Physiology (University of Potsdam). The animals had free access to food and water. Only male adults were used for experiments. Salivary glands were dissected in physiological saline containing 160 mM NaCl, 10 mM KCl, 2 mM CaCl
+   <sub>2</sub>, 2 mM MgCl
+   <sub>2</sub>, 10 mM glucose and 10 mM Tris, pH 7.4 as described previously
+   <span class="sup">
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+   </span>. Small lobes consisting of several acini with their corresponding branched duct system were examined. Thus, lobes were attached to a glass coverslip of precise thickness (170 ± 5 µm) using the tissue adhesive Vectabond (Axxora, Lörrach, Germany).
+  </p>
+ </sec>
+ <sec id="Sec8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2P-FLIM recordings</div>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">2P-microscopy in combination with FLIM was carried out by using the MicroTime 200 fluorescence lifetime microscope system (PicoQuant, Berlin, Germany). The setup was built up and data acquisition and analysis were performed as previously described for quantitative intracellular Ca
+   <span class="sup">2+</span> imaging with 2P-FLIM
+   <span class="sup">
+    <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+   </span>. Thus, it included an inverted microscope (Olympus IX 71) equipped with an Olympus PlanApo ×100/NA 1.4 oil-immersion objective, on which the recording chamber could be mounted. 2P-excitation was performed with a mode-locked femtosecond fiber laser (C-Fiber A 780; MenloSystem, Martinsried, Germany) operating at the fixed wavelength of 780 nm, 50 MHz pulse repetition rate and ~90 fs pulse width. The near infrared (NIR) laser beam was guided toward the objective 
+   <span class="italic">via</span> the microscope side port by using a dichroic mirror (2P-dichroic 725; Chroma, Fürstenfeldbruck, Germany). For rejection of excitation light in the emission pathway, a shortpass filter was used (SP680 OD4, Edmund Optics, Karlsruhe, Germany). The emitted light was guided through a 100 µm pinhole, split by a dichroic mirror FF605 (AHF Analysentechnik, Tübingen, Germany) into the two detection channels and additionally, filtered by passing through the bandpass filters 514/44 (green channel) and 700/75 (red channel) (AHF Analysentechnik), respectively. Single-photon avalanche diodes (SPCM-AQR-13 and SPCM-CD-2801; Perkin Elmer, Waltham, USA) were used for luminescence detection.
+  </p>
+  <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Time-resolved fluorescence image acquisition occurred by raster scanning the objective using a 
+   <span class="italic">xy</span>-piezo-positioner (Physik Instrumente, Karlsruhe, Germany) in the time-correlated single-photon counting (TCSPC) mode by using a PicoHarp 300 device with applied time resolution of 8 ps (PicoQuant). Laser power was adjusted to achieve average photon counting rates ≤10
+   <span class="sup">5</span> photons/s and peak rates close to 10
+   <span class="sup">6</span> photons/s when recording FLIM images, thus below the maximum counting rate allowed by the TCSPC electronics to avoid pulse pile up. Full frame images of 80 µm × 80 µm were acquired in ~50–60 s, with a pixel dwell time of 2.3 ms. Data acquisition and analysis were performed by the SymPhoTime 64 software version 2.3 (PicoQuant). Briefly, all photons collected in a region of interest were used to calculate a global histogram for quantification of the mean fluorescence decay time. Fluorescence decay analysis occurred by deconvolution fitting. The quality of decay fitting was estimated by randomly distributed residuals and comparatively small 
+   <div id="IEq2" class="inline-formula">
+    <div class="alternatives">
+     <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\chi }_{R}^{2}$$\end{document}</span>
+     <div id="M8" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">χ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41598_2019_46732_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>-values. Fluorescence intensity images were calculated by integrating all detected photons in every pixel, thereby ignoring the temporal information. The full width at half-maximum (FWHM) of the daily measured instrument response function (IRF) of the 2P-FLIM setup from backscattered excitation light was 220 ± 5 ps (
+   <span class="italic">N</span> = 30), indicating the detector timing resolution as most critical element. The broadening and temporal shift of the IRF at higher photon count rates can be a potential problem for Perkin Elmer SPAD modules
+   <span class="sup">
+    <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+   </span>. However, the count rate did not influence the temporal position and the FWHM of the IRF up to count rates of 1.2 × 10
+   <span class="sup">5</span> photons/s as applied in all 
+   <span class="italic">in vitro</span> measurements, but did so at higher count rates. For recordings in living cells with higher peak count rates this would be problematic, but it can be neglected statistically because of analysing larger regions of interest.
+  </p>
+ </sec>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2P-FCS recordings</div>
+  <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">By using the MicroTime200 system, we also performed FCS experiments to determine the diffusion characteristics of the luminescent probes. For experiments in aqueous solution, we used single-point FCS. In this case, the size of the 2P-excitation volume was daily calibrated using a 100 nm aqueous solution of rhodamine 6G, whose diffusion coefficient was known
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+   </span>. The experiments were performed at constant room temperature (ϑ = 22 ± 1 °C) with an excitation power for λ
+   <sub>ex</sub> = 780 nm set to 
+   <span class="italic">P</span>
+   <sub>av</sub> ~3.7 mW at the objective’s back aperture. The lipodot preparations were analysed at initial phospholipid and QD655 concentrations of 1 mM and 10 nM, respectively. The SymPhoTime 64 software was used for data acquisition and calculation of the corresponding correlation curve, which was based on a cross-correlation routine using the signal of both photodiodes.
+  </p>
+  <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">FCS measurements in cells were performed using a line-scan FCS method by collecting fluctuation signals along a continuously scanned line
+   <span class="sup">
+    <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+   </span>. The line-scan of the laser focus was performed in the 
+   <span class="italic">xy</span>-plane in one direction with a fixed 
+   <span class="italic">z</span> position and a pixel dwell time of 40 ms. The movement of the detection volume was controlled directly with the SymPhoTime 64 software, after the linear scan path has been selected from a previously recorded FLIM image. Depending on the duct system, the length of the line-scans was chosen between 40–60 µm.
+  </p>
+  <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">The autocorrelation function 
+   <span class="italic">G</span>(
+   <span class="italic">τ</span>) of free diffusing probes was analysed assuming a three-dimensional Gaussian 2P excitation profile using the equation
+   <span class="sup">
+    <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+   </span>
+   <div id="Equ3" class="disp-formula">
+    <span class="label">3</span>
+    <div class="alternatives">
+     <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}G(\tau ) &amp; = &amp; \frac{1}{{N}_{m}}{(1+\frac{8D\tau }{{\omega }_{0}^{2}})}^{-1}{(1+\frac{8D\tau }{{z}_{0}^{2}})}^{-1/2} &amp; {\rm{with}}\,D=\frac{{\omega }_{0}^{2}}{8{\tau }_{D}}\end{array}$$\end{document}</span>
+     <div id="M10" display="block" class="math">
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <span class="mi">G</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">τ</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="mfrac">
+           <span class="mn">1</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">N</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">m</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="true" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">+</span>
+             <div class="mfrac">
+              <div class="mrow">
+               <span class="mn">8</span>
+               <span class="mi">D</span>
+               <span class="mi">τ</span>
+              </div>
+              <div class="mrow">
+               <div class="msubsup">
+                <div class="mrow">
+                 <span class="mi">ω</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">0</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">2</span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <span stretchy="true" class="mo">)</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">−</span>
+            <span class="mn">1</span>
+           </div>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="true" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">+</span>
+             <div class="mfrac">
+              <div class="mrow">
+               <span class="mn">8</span>
+               <span class="mi">D</span>
+               <span class="mi">τ</span>
+              </div>
+              <div class="mrow">
+               <div class="msubsup">
+                <div class="mrow">
+                 <span class="mi">z</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">0</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">2</span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <span stretchy="true" class="mo">)</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">−</span>
+            <span class="mn">1</span>
+            <span class="mo">/</span>
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">with</span>
+          <span width=".25em" class="mspace"/>
+          <span class="mi">D</span>
+          <span class="mo">=</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <div class="msubsup">
+             <div class="mrow">
+              <span class="mi">ω</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">2</span>
+             </div>
+            </div>
+           </div>
+           <div class="mrow">
+            <span class="mn">8</span>
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">τ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">D</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ3.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <span class="italic">τ</span> is the lag time, 
+   <span class="italic">D</span> is the diffusion coefficient, 
+   <span class="italic">N</span>
+   <sub>m</sub> is the mean number of fluorescent particles within the detection volume and 
+   <span class="italic">τ</span>
+   <sub>D</sub> is the average diffusion time of the fluorescent particles diffusing trough the focal volume, expressed by the lateral radius 
+   <span class="italic">ω</span>
+   <sub>0</sub> and axial radius 
+   <span class="italic">z</span>
+   <sub>0</sub>. For multi-component, three-dimensional diffusion, the autocorrelation function was expressed using the equation
+   <div id="Equ4" class="disp-formula">
+    <span class="label">4</span>
+    <div class="alternatives">
+     <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}G(\tau ) &amp; = &amp; \frac{1}{{N}_{p}}\sum _{i=1}^{M}\,{f}_{i}{(1+\frac{8D\tau }{{\omega }_{0}^{2}})}^{-1}{(1+\frac{8D\tau }{{z}_{0}^{2}})}^{-1/2} &amp; {\rm{with}}\,i=1...2\end{array}$$\end{document}</span>
+     <div id="M12" display="block" class="math">
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <span class="mi">G</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">τ</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="mfrac">
+           <span class="mn">1</span>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">N</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">p</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="munderover">
+           <span class="mo">∑</span>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">=</span>
+            <span class="mn">1</span>
+           </div>
+           <span class="mi">M</span>
+          </div>
+          <span width=".10em" class="mspace"/>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">f</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="true" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">+</span>
+             <div class="mfrac">
+              <div class="mrow">
+               <span class="mn">8</span>
+               <span class="mi">D</span>
+               <span class="mi">τ</span>
+              </div>
+              <div class="mrow">
+               <div class="msubsup">
+                <div class="mrow">
+                 <span class="mi">ω</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">0</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">2</span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <span stretchy="true" class="mo">)</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">−</span>
+            <span class="mn">1</span>
+           </div>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="true" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">+</span>
+             <div class="mfrac">
+              <div class="mrow">
+               <span class="mn">8</span>
+               <span class="mi">D</span>
+               <span class="mi">τ</span>
+              </div>
+              <div class="mrow">
+               <div class="msubsup">
+                <div class="mrow">
+                 <span class="mi">z</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">0</span>
+                </div>
+                <div class="mrow">
+                 <span class="mn">2</span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <span stretchy="true" class="mo">)</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">−</span>
+            <span class="mn">1</span>
+            <span class="mo">/</span>
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">with</span>
+          <span width=".25em" class="mspace"/>
+          <span class="mi">i</span>
+          <span class="mo">=</span>
+          <span class="mn">1</span>
+          <span class="mo">...</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ4.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <span class="italic">N</span>
+   <sub>
+    <span class="italic">p</span>
+   </sub> is the total number of diffusing particles and 
+   <span class="italic">f</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> is the fractional contribution of each component to the correlation function.
+  </p>
+  <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">The knowledge of the diffusion coefficient was used to calculate the hydrodynamic particle size, which is twice the hydrodynamic radius 
+   <span class="italic">R</span>
+   <sub>h</sub>, using the Stokes-Einstein equation
+   <div id="Equ5" class="disp-formula">
+    <span class="label">5</span>
+    <div class="alternatives">
+     <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${R}_{h}=\frac{{k}_{B}T}{6\pi \eta D}$$\end{document}</span>
+     <div id="M14" display="block" class="math">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">h</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">B</span>
+         </div>
+        </div>
+        <span class="mi">T</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">6</span>
+        <span class="mi">π</span>
+        <span class="mi">η</span>
+        <span class="mi">D</span>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ5.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <span class="italic">k</span>
+   <sub>B</sub> is the Boltzmann constant, 
+   <span class="italic">T</span> is the temperature and 
+   <span class="italic">η</span> the viscosity of the surrounding medium. Since quantum dots and lipodots were prepared in PBS, the viscosity of 
+   <span class="italic">η</span> = 2.55 mPa s was used for calculations
+   <span class="sup">
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+   </span>.
+  </p>
+  <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">In the case of line-scan FCS, the detection volume was repeatedly scanned in a linear fashion within the cells with a constant velocity. The temporal autocorrelation function 
+   <span class="italic">G</span>(0, 
+   <span class="italic">τ</span>) can be calculated with the equation
+   <span class="sup">
+    <a ref-type="bibr" rid="CR52" href="#CR52">52</a>,
+    <a ref-type="bibr" rid="CR53" href="#CR53">53</a>
+   </span>
+   <div id="Equ6" class="disp-formula">
+    <span class="label">6</span>
+    <div class="alternatives">
+     <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}G(0,\tau ) &amp; = &amp; \frac{1}{C\pi {s}^{2}}(\sqrt{\pi }{\mu }_{i}{\rm{erf}}({\mu }_{i})+{e}^{-{\mu }_{i}^{2}}-1) &amp; {\rm{with}}\,{\mu }_{i}=\frac{s}{\sqrt{{\omega }_{0}^{2}+8D\tau }}\end{array}$$\end{document}</span>
+     <div id="M16" display="block" class="math">
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <span class="mi">G</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mn">0</span>
+          <span class="mo">,</span>
+          <span class="mi">τ</span>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <div class="mfrac">
+           <span class="mn">1</span>
+           <div class="mrow">
+            <span class="mi">C</span>
+            <span class="mi">π</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">s</span>
+             </div>
+             <span class="mn">2</span>
+            </div>
+           </div>
+          </div>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <div class="msqrt">
+             <span class="mi">π</span>
+            </div>
+            <div class="msub">
+             <div class="mrow">
+              <span class="mo">µ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+            <span mathvariant="normal" class="mi">erf</span>
+            <span stretchy="false" class="mo">(</span>
+            <div class="msub">
+             <div class="mrow">
+              <span class="mo">µ</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">i</span>
+             </div>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+            <span class="mo">+</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">e</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">−</span>
+              <div class="msubsup">
+               <div class="mrow">
+                <span class="mo">µ</span>
+               </div>
+               <div class="mrow">
+                <span class="mi">i</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">2</span>
+               </div>
+              </div>
+             </div>
+            </div>
+            <span class="mo">−</span>
+            <span class="mn">1</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">with</span>
+          <span width=".25em" class="mspace"/>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mo">µ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">=</span>
+          <div class="mfrac">
+           <span class="mi">s</span>
+           <div class="mrow">
+            <div class="msqrt">
+             <div class="mrow">
+              <div class="msubsup">
+               <div class="mrow">
+                <span class="mi">ω</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">2</span>
+               </div>
+              </div>
+              <span class="mo">+</span>
+              <span class="mn">8</span>
+              <span class="mi">D</span>
+              <span class="mi">τ</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="41598_2019_46732_Article_Equ6.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <span class="italic">C</span> is the concentration of the particles and 
+   <span class="italic">s</span> the pixel size.
+  </p>
+ </sec>
+</sec>

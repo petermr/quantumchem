@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Experimental approach</div>
+  <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">In order to achieve such a high degree of alignment, better than the theoretical maximum of 〈cos
+   <span class="sup">2</span>
+   <span class="italic">θ</span>〉 = 0.92 for single-pulse alignment
+   <span class="sup">
+    <a ref-type="bibr" rid="CR24" href="#CR24">24</a>,
+    <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+   </span>, we performed a pump–probe experiment with ground-state-selected carbonylsulfide (OCS) molecules
+   <span class="sup">
+    <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+   </span>, with &gt;80% purity, as a showcase. Two off-resonant near-IR pump pulses of 800 nm central wavelength, separated by 38.1(1) ps and with a pulse duration of 250 fs, that is much shorter than the rotational period of OCS of 82.2 ps, were used to create the rotational wavepacket. These pulses were linearly polarised parallel to the detector plane. The probe pulse with a central wavelength of 1.75 μm was polarised perpendicularly to the detector plane to minimise the effects of geometric alignment and ensures that the observed degree of alignment was a lower boundary of the real value. The probe pulse multiply ionised the molecules, resulting in Coulomb explosion into ionic fragments. Two-dimensional (2D) ion-momentum distributions of O
+   <span class="sup">+</span> fragments, which reflect the orientation of the molecules in space at the instance of ionisation, were recorded by a velocity map imaging (VMI) spectrometer
+   <span class="sup">
+    <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+   </span> for different time delays between the alignment pulse sequence and the probe pulse. Further details of the experimental setup are presented in the “Methods” section.
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Experimental movie</div>
+  <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">In Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, snapshots of the experimentally recorded molecular movie, that is 2D ion-momentum distributions, are shown for several probe times covering a whole rotational period. The phase of 0 and 2
+   <span class="italic">π</span> correspond to 
+   <span class="italic">t</span> = 38.57 and 120.78 ps after the peak of the first alignment-laser pulse at 
+   <span class="italic">t</span> = 0, respectively. The simplest snapshot-images, reflecting an unprecedented degree of field-free alignment 〈cos
+   <span class="sup">2</span>
+   <span class="italic">θ</span>
+   <sub>2D</sub>〉 = 0.96, were obtained for the alignment revivals at phases of 0 and 2
+   <span class="italic">π</span>, which correspond to the prompt alignment and its revival regarding the second laser pulse. Here, the molecular axes are preferentially aligned along the alignment-laser polarisation. For the antialignment at a phase of 
+   <span class="italic">π</span> the molecules are preferentially aligned in a plane perpendicular to the alignment-laser polarisation direction. Simple quadrupolar structures are observed at 
+   <span class="italic">π</span>/2 and 3
+   <span class="italic">π</span>/2. At intermediate times, at 
+   <span class="italic">π</span>/3 or 7
+   <span class="italic">π</span>/12, the images display rich angular structures, which could be observed due to the high angular experimental resolution of the recorded movie, which is 4° as derived in the Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>. This rich structure directly reflects the strongly quantum-state selected initial sample exploited in these measurements, whereas the structure would be largely lost in the summation of wavepackets from even a few initially populated states.
+   <div id="Fig1" class="fig">
+    <span class="label">Fig. 1</span>
+    <div class="caption">
+     <p>Rotational clock depicting the molecular movie of the observed quantum dynamics. Individual experimental VMI images of O
+      <span class="sup">+</span> ion-momentum distributions depicting snapshots of the rotational wavepacket over one full period. The displayed data were recorded from the first (prompt) revival at 38.57 ps (0) to the first full revival at 120.78 ps (2
+      <span class="italic">π</span>); the phase-evolution of 
+      <span class="italic">π</span>/12 between images corresponds to ~3.43 ps and the exact delay times of the individual images are specified. Full movies are available as Supplementary Movies 
+      <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> and 
+      <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11122_Fig1_HTML" id="d29e583" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Analysis of the rotational dynamics and the degree of alignment</div>
+  <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">The dynamics was analysed as follows: through the interaction of the molecular ensemble with the alignment-laser pulses, a coherent wavepacket was created from each of the initially populated rotational states. These wavepackets were expressed as a coherent superposition of eigenfunctions of the field-free rotational Hamiltonian, that is
+   <div id="Equ1" class="disp-formula">
+    <span class="label">1</span>
+    <div class="alternatives">
+     <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Psi (\theta ,\phi ,t) = \mathop {\sum}\limits_J {a_J} (t)Y_J^M(\theta ,\phi ),$$\end{document}</span>
+     <div id="M2" class="math">
+      <span class="mi">Ψ</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">θ</span>
+        <span class="mo">,</span>
+        <span class="mi">ϕ</span>
+        <span class="mo">,</span>
+        <span class="mi">t</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="munder">
+       <div class="mrow">
+        <span class="mo"> ∑</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">t</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">Y</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">M</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">θ</span>
+        <span class="mo">,</span>
+        <span class="mi">ϕ</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+     <div xlink:href="41467_2019_11122_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>with the time-dependent complex amplitudes 
+   <span class="italic">a</span>
+   <sub>
+    <span class="italic">J</span>
+   </sub>(
+   <span class="italic">t</span>), the spherical harmonics 
+   <div id="IEq1" class="inline-formula">
+    <div class="alternatives">
+     <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$Y_J^M(\theta ,\phi )$$\end{document}</span>
+     <div id="M4" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">Y</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">M</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">θ</span>
+        <span class="mo">,</span>
+        <span class="mi">ϕ</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11122_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>, the quantum number of angular momentum 
+   <span class="italic">J</span>, and its projection 
+   <span class="italic">M</span> onto the laboratory-fixed axis defined by the laser polarisation. We note that 
+   <span class="italic">M</span> was conserved and thus no 
+   <span class="italic">ϕ</span> dependence existed. The angular distribution is defined as the sum of the squared moduli of all Ψ(
+   <span class="italic">θ</span>, 
+   <span class="italic">ϕ</span>, 
+   <span class="italic">t</span>) weighted by the initial-state populations.
+  </p>
+  <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">The degree of alignment was extracted from the VMI images using the commonly utilised expectation value 〈cos
+   <span class="sup">2</span>
+   <span class="italic">θ</span>
+   <sub>2D</sub>〉. The maximum value observed at the alignment revival reached 0.96, which, to the best of our knowledge, is the highest degree of field-free alignment achieved to date. Comparing the angular distributions at different delay times with the degree of alignment 〈cos
+   <span class="sup">2</span>
+   <span class="italic">θ</span>
+   <sub>2D</sub>〉, see Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>, we observed the same degree of alignment for angular distributions that are in fact very different from each other. This highlights that much more information is contained in the angular distributions than in the commonly utilised expectation value
+   <span class="sup">
+    <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+   </span>. Indeed 〈cos
+   <span class="sup">2</span>
+   <span class="italic">θ</span>
+   <sub>2D</sub>〉, merely describes the leading term in an expansion of the angular distribution, for instance, in terms of Legendre polynomials, see (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>) in the Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. In order to fully characterise the angular distribution a description in terms of a polynomial series is necessary that involves the same maximum order as the maximum angular momentum 
+   <span class="italic">J</span>
+   <sub>max</sub> of the populated rotational eigenstates, which corresponds to, at most, 2
+   <span class="italic">J</span>
+   <sub>max</sub> lobes in the momentum maps.
+  </p>
+  <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">As the probe laser is polarised perpendicularly to the detector plane, the cylindrical symmetry as generated by the alignment-laser polarisation was broken and an Abel inversion to retrieve the 3D angular distribution directly from the experimental VMI images was not possible. In order to retrieve the complete 3D wavepacket, the time-dependent Schrödinger equation (TDSE) was solved for a rigid rotor coupled to a non-resonant ac electric field representing the two-laser pulses as well as the dc electric field of the VMI spectrometer. For a direct comparison with the experimental data the rotational wavepacket and thus the 3D angular distribution was constructed and, using a Monte-Carlo approach, projected onto a 2D screen using the radial distribution extracted from the experiment at the alignment revival at 120.78 ps. The relation between the 3D rotational wavepacket and the 2D projected density is graphically illustrated in Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. The anisotropic angle-dependent ionisation efficiency for double ionisation, resulting in a two-body breakup into O
+   <span class="sup">+</span> and CS
+   <span class="sup">+</span> fragments, was taken into account by approximating it by the square of the measured single-electron ionisation rate. Non-axial recoil during the fragmentation process is expected to be negligible and was not included in the simulations.
+  </p>
+ </sec>
+ <sec id="Sec6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fitting procedure and the computed molecular movie</div>
+  <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">The initial-state distribution in the quantum-state selected OCS sample as well as the interaction volume with the alignment and probe lasers were not known a priori and used as fitting parameters. For each set of parameters the TDSE was solved and the 2D projection of the rotational density, averaged over the initial-state distribution and the interaction volume of the pump and probe lasers, was carried out. The aforementioned expansion in terms of Legendre polynomials was realised for the experimental and simulated angular distributions and the best fit was determined through least squares minimisation, see Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. Taking into account the eight lowest even moments of the angular distribution allowed to precisely reproduce the experimental angular distribution. The results for the first four moments are shown in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>; the full set is given in Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> as well as the optimal fitting parameters in Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. The overall agreement between experiment and theory is excellent for all moments. Before the onset of the second pulse, centred around 
+   <span class="italic">t</span> = 38.1 ps, the oscillatory structure in all moments is fairly slow compared to later times, which reflects the correspondingly small number of interfering states in the wavepacket before the second pulse, and the large number thereafter.
+   <div id="Fig2" class="fig">
+    <span class="label">Fig. 2</span>
+    <div class="caption">
+     <p>Decomposition of angular distributions into their moments. 
+      <span class="bold">a</span> Comparison of the decomposition of the experimental and theoretical angular distributions in terms of Legendre polynomials. 
+      <span class="bold">b</span> Simulated and experimental angular-distribution VMI images for selected times; the radial distributions in the simulations are extracted from the experimental distribution at 120.78 ps, see text for details
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11122_Fig2_HTML" id="d29e820" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">Theoretical images, computed for the best fit parameters, are shown in Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>; a full movie is provided as Supplementary Movie 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>. The theoretical results are in excellent agreement with the measured ion-momentum angular distributions at all times, see Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>, and prove that we were able to fully characterise the 3D rotational wavepacket with the amplitudes and phases of all rotational states included.
+  </p>
+ </sec>
+ <sec id="Sec7" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Populations and phases in the wavepacket</div>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">In Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3a</a>, the extracted rotational-state populations are shown for the wavepacket created from the rotational ground state after the first and the second alignment-laser pulse. It clearly shows that the rotational-state distribution is broader after the second pulse, reaching up to 
+   <span class="italic">J</span> ≥ 16. This also matches the convergence of the Legendre-polynomial series, with eight even terms, derived from the fit to the data above. In Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a> the corresponding phase differences for all populated states relative to the state with the largest population in the wavepacket are shown, where 
+   <span class="italic">ϕ</span>(
+   <span class="italic">J</span>) is the phase of the complex coefficient 
+   <span class="italic">a</span>
+   <sub>
+    <span class="italic">J</span>
+   </sub> in (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>). Combining these populations and phases it became clear that the very high degree of alignment after the second alignment pulse arises from the combination of the broad distribution of rotational states, reaching large angular momenta, and the very strong and flat rephasing of all significantly populated states at the revival at 120.78 ps, Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a> (red). Similarly, the antialignment at 79.58 ps occurs due to alternating phase differences of 
+   <span class="italic">π</span> between adjacent populated rotational states, Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3b</a> (black).
+   <div id="Fig3" class="fig">
+    <span class="label">Fig. 3</span>
+    <div class="caption">
+     <p>Populations and phase differences in the rotational wavepacket at alignment and antialignment times. 
+      <span class="bold">a</span> Rotational-state populations and 
+      <span class="bold">b</span> phase differences to the phase of the state with largest population, 
+      <span class="italic">J</span> = 2, 
+      <span class="italic">J</span> = 6, respectively, at the alignment revival following a single-pulse excitation, 2.78 ps (blue dots), and the two-pulse excitation, 120.78 ps (red dots) as well as for the antialignment at 79.58 ps (black dots, populations coincide with the red dots). Only states with even angular momentum are populated due to the Raman-transition selection rules Δ
+      <span class="italic">J</span> = ±2
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11122_Fig3_HTML" id="d29e895" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+</sec>

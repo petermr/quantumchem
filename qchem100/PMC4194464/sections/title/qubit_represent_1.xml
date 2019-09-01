@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Qubit Representation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The next step in our reduction will be to represent our fermionic wavefunction in terms of qubits. We use the direct mapping introduced in
+  <a ref-type="bibr" rid="b1" href="#b1">1</a> that maps an occupancy state to a qubit basis state. Using Pauli operators we can represent qubit raising and lowering operators as, 
+  <div id="m3" class="disp-formula">
+   <span id="d33e512" xlink:href="srep06603-m3.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>However, these operators do not obey the fermionic commutation relations given in Eq. 1. To write qubit operators that obey the commutation relations in Eq. 1, we could use the Jordan-Wigner transformation
+  <a ref-type="bibr" rid="b1" href="#b1">1</a>
+  <a ref-type="bibr" rid="b75" href="#b75">75</a>
+  <a ref-type="bibr" rid="b76" href="#b76">76</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Unfortunately, the Jordan-Wigner transformation is not a scalable way to reduce electronic structure to an experimentally realizable Hamiltonian for AQC. This is because the Jordan-Wigner transformation introduces 
+  <span class="italic">k</span>-local interaction terms into the Hamiltonian and 
+  <span class="italic">k</span> grows linearly in the system size. Prima facie, this is not a major problem because there exist theoretical tools known as perturbative gadgets which allow for reductions in interaction order. However, in all known formulations of perturbative gadgets, control precision increases exponentially in 
+  <span class="italic">k</span>. Thus, the linear locality overhead introduced by the Jordan-Wigner transformation translates into an exponential control precision requirement in the reduction.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An alternative mapping between the occupation number basis and qubit representation, known as the Bravyi-Kitaev transformation, introduces logarithmic locality overhead
+  <a ref-type="bibr" rid="b73" href="#b73">73</a>
+  <a ref-type="bibr" rid="b74" href="#b74">74</a>. Two pieces of information are required in order to correctly construct creation and annihilation operators that act on qubits and obey the fermionic commutation relations. First, the occupancy of each orbital must be stored. Second, parity information must be stored so that for a pair of orbitals, it is possible to determine the parity of the occupancy of the orbitals that lie between them. This parity determines the phase which results from exchanging the occupancy of the two orbitals.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The occupation number basis stores the occupation directly in the qubit state (hence the name). This implies that occupancy is a fully local variable in this basis; one may determine the occupancy of an orbital by measuring a single qubit. However, this also implies that the parity information is completely non-local. It is this fact that determines the structure of the qubit creation and annihilation operators in the Jordan-Wigner transformation. Each such operator changes the state of a single qubit 
+  <span class="italic">j</span> (updating the occupancy information) but also acts on all qubits with indices less than 
+  <span class="italic">j</span> to determine the parity of their occupancy. This results in qubit operators, expressed as tensor products of Pauli matrices, that contain strings of 
+  <span class="italic">Z</span> operators whose length grows with the number of qubits. One could consider storing the parity information locally, so that the qubit basis states store sums of orbital occupancies. Then determination of parity requires a single qubit operation. However, updating occupancy information requires updating the state of a number of qubits that again grows with the number of qubits. Hence this “parity basis” construction offers no advantage over the Jordan Wigner transformation
+  <a ref-type="bibr" rid="b74" href="#b74">74</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Bravyi-Kitaev transformation offers a middle ground in which both parity and occupancy information are stored non-locally, so neither can be determined by measurement of a single qubit
+  <a ref-type="bibr" rid="b73" href="#b73">73</a>
+  <a ref-type="bibr" rid="b74" href="#b74">74</a>. Both parity and occupancy information can be accessed by acting on a number of qubits that scales as the logarithm of the number of qubits. This logarithmic scaling makes the proposed mapping of electronic structure to a 2-local qubit Hamiltonian efficient.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The consequences of this mapping, originally defined in
+  <a ref-type="bibr" rid="b74" href="#b74">74</a>, were computed for electronic structure in
+  <a ref-type="bibr" rid="b73" href="#b73">73</a>. That work defines several subsets of qubits in which the parity and occupancy information is stored. The occupancy information is stored in the update set, whereas the parity information is stored in the parity set. These sets are distinct and their size is strictly bounded above by the logarithm base two of the number of qubits. The total number of qubits on which a qubit creation and annihilation operator may act can be a multiple of the logarithm base two of the number of qubits. However, this multiple is irrelevant from the point of view of the scalability of the construction. Using the Bravyi-Kitaev transformation, the spin Hamiltonian for molecular hydrogen in the minimal (STO-3G) basis, as reported in
+  <a ref-type="bibr" rid="b73" href="#b73">73</a>, is given by 
+  <div id="m4" class="disp-formula">
+   <span id="d33e557" xlink:href="srep06603-m4.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where the integral values (in Hartree) are, 
+  <div id="m5" class="disp-formula">
+   <span id="d33e560" xlink:href="srep06603-m5.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>In general, the Bravyi-Kitaev transformation applied to electronic structure produces an 
+  <span class="italic">n</span>-qubit Hamiltonian which is (log 
+  <span class="italic">n</span>)-local, and has 
+  <span class="italic">n</span>
+  <a ref-type="bibr" rid="b4" href="#b4">4</a> real terms. This implies that each term has an even number of 
+  <span class="italic">Y</span> terms, or none.
+ </p>
+</sec>

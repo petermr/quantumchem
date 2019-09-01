@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="pcbi.1006471.t001" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.t001</span>
+ <span class="label">Table 1</span>
+ <div class="caption">
+  <div class="title">Prediction accuracy of the quantum chemistry and group contribution method modeling approaches.</div>
+ </div>
+ <div class="alternatives">
+  <div id="pcbi.1006471.t001g" xlink:href="pcbi.1006471.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <table frame="hsides" rules="groups">
+   <colgroup span="1">
+    <col align="left" valign="middle" span="1"/>
+    <col align="left" valign="middle" span="1"/>
+    <col align="left" valign="middle" span="1"/>
+    <col align="left" valign="middle" span="1"/>
+    <col align="left" valign="middle" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="left" rowspan="1" colspan="1">
+      <span class="break"/>
+     </th>
+     <th align="center" rowspan="1" colspan="1">G1 (n = 8)
+      <span class="break"/>Carboxylic Acid to Carbonyl
+     </th>
+     <th align="center" rowspan="1" colspan="1">G2 (n = 59)
+      <span class="break"/>Carbonyl to Hydroxycarbon
+     </th>
+     <th align="center" rowspan="1" colspan="1">G3 (n = 23)
+      <span class="break"/>Carbonyl to Amine
+     </th>
+     <th align="center" rowspan="1" colspan="1">G4 (n = 15)
+      <span class="break"/>Hydroxycarbon to Hydrocarbon
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td align="center" rowspan="1" colspan="1">
+      <span class="bold">Quantum Chemistry</span>
+     </td>
+     <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 45 mV
+      <span class="break"/>Pearson r = 0.43
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.19
+      <span class="break"/>No. params. = 2
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+      <span class="break"/>Pearson r = 0.59
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.35
+      <span class="break"/>No. params. = 2
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 17 mV
+      <span class="break"/>Pearson r = 0.70
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.49
+      <span class="break"/>No. params. = 2
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+      <span class="break"/>Pearson r = 0.45
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.21
+      <span class="break"/>No. params. = 2
+     </td>
+    </tr>
+    <tr>
+     <td align="center" rowspan="1" colspan="1">
+      <span class="bold">Group Contribution Method</span>
+     </td>
+     <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 52 mV
+      <span class="break"/>Pearson r = 0.54
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.17
+      <span class="break"/>No. params. = 6
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+      <span class="break"/>Pearson r = 0.48
+      <span class="break"/>R
+      <span class="sup">2</span> = 0.21
+      <span class="break"/>No. params. = 13
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+      <span class="break"/>Pearson r = 0.22
+      <span class="break"/>R
+      <span class="sup">2</span> = -0.23
+      <span class="break"/>No. params. = 5
+     </td>
+     <td align="left" rowspan="1" colspan="1">MAE = 66 mV
+      <span class="break"/>Pearson r = 0.16
+      <span class="break"/>R
+      <span class="sup">2</span> = -3.39
+      <span class="break"/>No. params. = 6
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="table-wrap-foot">
+  <fn id="t001fn001" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">The number of available experimental values for each reaction category is indicated in parentheses. MAE = Mean Absolute Error; R
+    <span class="sup">2</span> = coefficient of determination. Note that for the G1 category, quantum chemistry has a lower MAE, but GCM has higher values of Pearson r. While the Pearson r can range from -1 to 1, R
+    <span class="sup">2</span> can take on any negative value. A prediction method with the same accuracy as the mean predictor (a constant model that always predicts the mean value of the experimental data) has a value of R
+    <span class="sup">2</span> = 0; negative values of R
+    <span class="sup">2</span> indicate prediction accuracies that are worse than the mean predictor. GCM estimates of standard redox potentials were obtained from the implementation by Noor et al. [
+    <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+    <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>] used by eQuilibrator (see 
+    <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>).
+   </p>
+  </fn>
+ </div>
+</div>

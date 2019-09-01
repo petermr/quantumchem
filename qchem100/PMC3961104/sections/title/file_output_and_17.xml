@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">File output and interface to QM programs</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Open Babel provides very flexible file readers and writers. The 
+  <span class="monospace">Peptide</span> class wraps Open Babel with functions to directly write the geometry of a 
+  <span class="monospace">Peptide</span> object to a file in XYZ or PDB format. This can be done simply as:
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">pep = Peptide(sequence) pep.write_xyz("pep.xyz") pep.write_pdb("pep.pdb")</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is also possible to write to any of the nearly 100 formats supported in Open Babel by using the method 
+  <span class="monospace">Peptide.write_file(filetype, filename)</span> which offers direct access to Open Babel’s 
+  <span class="monospace">OBConversion.WriteFile()</span> method. For instance, an input file for the quantum chemistry program GAMESS (
+  <a rid="ref-11" ref-type="bibr" href="#ref-11">Schmidt et al., 1993</a>) can be created with the following code:
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">pep.write_file("gamin", "pep.inp")</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, the file type argument follows the Open Babel syntax, where 
+  <span class="monospace">"gamin"</span> corresponds to the GAMESS input file format.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">FragBuilder additionally offers an interface to write input-files for Gaussian 09, beyond the capabilities of Open Babel. Currently, it is possible to set up geometry optimization, single-point energy calculations and calculation of NMR shielding. An example for a simple workflow that will generate a file for geometry optimization of a peptide in Gaussian 09 at the B3LYP/6-31G(d) level (using the 
+  <span class="monospace">fragbulder.G09_opt</span> class) is as follows:
+ </p>
+ <div class="preformat" xmlns="http://www.w3.org/1999/xhtml">from fragbuilder import Peptide, G09_opt pep = Peptide(sequence) # 
+  <span class="italic">The user can manipulate the structure here</span> opt = G09_opt(pep) opt.set_method("B3LYP/6-31G(d)") opt.write_com("pep.com")
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">If no method or basis set is specified, the file writer defaults to PM6 (
+  <a rid="ref-13" ref-type="bibr" href="#ref-13">Stewart, 2007</a>) for geometry optimization. Other classes that interface to Gaussian 09 are the 
+  <span class="monospace">fragbuilder.G09_NMR</span> and 
+  <span class="monospace">fragbuilder.G09_energy</span> classes, which are imported and instantiated similarly.
+ </p>
+</sec>

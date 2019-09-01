@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec005" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Comprehensive prediction and analysis of reduction potentials</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We used the calibrated quantum chemistry model to predict redox potentials for a database of natural and non-natural redox reactions. We generated this dataset by identifying pairs of metabolites from KEGG [
+  <a rid="pcbi.1006471.ref007" ref-type="bibr" href="#pcbi.1006471.ref007">7</a>,
+  <a rid="pcbi.1006471.ref008" ref-type="bibr" href="#pcbi.1006471.ref008">8</a>] that fit the chemical transformations associated with each of the four different oxidoreductase groups (Methods). We considered only compounds with fewer than 7 carbon atoms, thus generating a dataset consisting of 652 reactions: 83 reductions of category G1; 205 reductions of category G2; 104 reductions of category G3; and 260 reductions of category G4 (Supplementary Dataset 1). Some of these redox pairs are known to participate in enzyme-catalyzed reactions while others are hypothetical transformations that could potentially be performed by engineered enzymes. We note that our approach to generate reactions is similar to that of the comprehensive Atlas of Biochemistry [
+  <a rid="pcbi.1006471.ref043" ref-type="bibr" href="#pcbi.1006471.ref043">43</a>], but we focus solely on the four redox transformations of interest.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3A</a> shows the distribution of all predicted redox potentials at pH = 7, I = 0.25 M and reactant concentrations of 1 mM, i.e., E’
+  <span class="sup">m</span> [
+  <a rid="pcbi.1006471.ref014" ref-type="bibr" href="#pcbi.1006471.ref014">14</a>,
+  <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>]. 
+  <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a> demonstrates that the value of E’
+  <span class="sup">m</span> is directly related to the oxidation state of the functional group being reduced. The general trend is that “the rich get richer” [
+  <a rid="pcbi.1006471.ref001" ref-type="bibr" href="#pcbi.1006471.ref001">1</a>,
+  <a rid="pcbi.1006471.ref044" ref-type="bibr" href="#pcbi.1006471.ref044">44</a>,
+  <a rid="pcbi.1006471.ref045" ref-type="bibr" href="#pcbi.1006471.ref045">45</a>]: more reduced functional groups have a greater tendency to accept electrons, i.e., have higher reduction potentials. Specifically, the reduction potential of hydroxycarbons (G4, &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; = −15 
+  <span class="italic">mV</span>) is higher than that of carbonyls (&lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; = −225 
+  <span class="italic">mV</span> for both G2 and G3) and the reduction potential of carbonyls is higher than that of un-activated carboxylic acids (G1, &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; = −550 
+  <span class="italic">mV</span>). Categories G2 and G3 (reduction of carbonyls to hydroxycarbons or amines, respectively) have very similar potentials because the oxidation state of the functional groups involved is identical (note that this holds for the physiological 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span> but not for 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">o</span>
+  </span> because reactions in the G3 category are balanced with an ammonia molecule as a substrate, thus introducing a factor of RTln(10
+  <span class="sup">−3</span>) when converting to the mM standard state). For category G1, activation of carboxylic acids significantly increases their reduction potential (orange line in 
+  <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>) as the energy released by the hydrolysis of the phosphoanhydride or thioester (~50kJ/mol) activates the reduction: 
+  <div id="pcbi.1006471.e001" class="inline-formula">
+   <div class="alternatives">
+    <div xlink:href="pcbi.1006471.e001.jpg" id="pcbi.1006471.e001g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M1" class="math">
+     <span class="mi">Δ</span>
+     <span class="mi">E</span>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">50</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mi">F</span>
+      </div>
+     </div>
+     <span class="mo">≅</span>
+     <span class="mn">250</span>
+     <span width="0.25em" class="mspace"/>
+     <span class="mi">m</span>
+     <span class="mi">V</span>
+    </div>
+   </div>
+  </div> (n being the number of electrons, F the Faraday constant).
+ </p>
+ <div id="pcbi.1006471.g003" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g003</span>
+  <span class="label">Fig 3</span>
+  <div class="caption">
+   <div class="title">Distributions of predicted standard transformed redox potentials at pH = 7 and I = 0.25 for a dataset of 650 natural and non-natural reactions.</div>
+   <p>The average reduction potentials for each reaction category are (values rounded to nearest multiple of 5): un-activated carboxylic acid to carbonyl (G1: &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt; = −550 
+    <span class="italic">mV</span>), activated carboxylic acid to carbonyl (activated G1: &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt; = −300 
+    <span class="italic">mV</span>), carbonyl to hydroxycarbon (G2: &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt; = −225 
+    <span class="italic">mV</span>), carbonyl to amine (G3: &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt; = −225 
+    <span class="italic">mV</span>), and hydroxycarbon to hydrocarbon (G4: &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt; = −15 
+    <span class="italic">mV</span>) Both histograms and cumulative distributions (bold lines, right y-axis) are shown. The distributions for unactivated and activated carboxylic acid to carbonyl reductions (red and purple) are the same, but shifted by +250 mV. Dashed colored lines show the median redox potential for each reaction category. Grey shaded regions corresponds to the range of NAD(P) redox potential, while light grey wavy lines delimit the region of reversible oxidation/reduction by NAD(P)/NAD(P)H. Ranges of reduction potentials for different alternative cofactors are shown as grey rectangles underneath graph (
+    <a ref-type="supplementary-material" rid="pcbi.1006471.s001" href="#pcbi.1006471.s001">S1 Table</a>).
+   </p>
+  </div>
+  <div xlink:href="pcbi.1006471.g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quantum chemical predictions further enable us to explore detailed structure-energy relationships within each of the general oxidoreductase groups. To exemplify this we focus on the G2 category, as shown in 
+  <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>. While we find no significant difference between the average E’
+  <span class="sup">m</span> of aldehydes and ketones, we can clearly see that the identity of functional groups adjacent to the carbonyl has a significant effect on E’
+  <span class="sup">m</span>, as expected. Alpha ketoacids and dicarbonyls have a significantly higher E’
+  <span class="sup">m</span> than alpha hydroxy-carbonyls (
+  <span class="italic">Δ</span> &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; ≅ 20 
+  <span class="italic">mV</span>,
+  <span class="italic">p</span> &lt; 0.005) and carbonyls adjacent to hydrocarbons (
+  <span class="italic">Δ</span> &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; ≅ 35 
+  <span class="italic">mV</span>,
+  <span class="italic">p</span> &lt; 0.0005). Carbonyls next to double bonds or aromatic rings have a significantly lower E’
+  <span class="sup">m</span> values than alpha hydroxy-carbonyls and carbonyls that are next to hydrocarbons (
+  <span class="italic">Δ</span> &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; ≅ −50 
+  <span class="italic">mV</span>, and 
+  <span class="italic">Δ</span> &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; ≅ −40 
+  <span class="italic">mV</span> respectively, 
+  <span class="italic">p</span> &lt; 0.0001). Lactones (cyclic esters), have redox potentials that are significantly lower than any other subgroup within the G2 category. As another validation of the predicted potentials, we found that the reduction potentials of open-chain sugars are significantly higher than those of closed-ring sugars that undergo ring opening upon reduction, where 
+  <span class="italic">Δ</span> &lt;
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>&gt; ≅ 60 
+  <span class="italic">mV</span> (
+  <span class="italic">p</span> &lt; 10
+  <span class="sup">−5</span>). This is consistent with the known thermodynamics of closed-ring sugar conformations, e.g., the K
+  <sub>eq</sub> of arabinose ring opening is ~350[
+  <a rid="pcbi.1006471.ref046" ref-type="bibr" href="#pcbi.1006471.ref046">46</a>], which translates to 
+  <div id="pcbi.1006471.e002" class="inline-formula">
+   <div class="alternatives">
+    <div xlink:href="pcbi.1006471.e002.jpg" id="pcbi.1006471.e002g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <div id="M2" class="math">
+     <span class="mi">Δ</span>
+     <span class="mi">E</span>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mi">R</span>
+       <span class="mi">T</span>
+       <span class="mi">l</span>
+       <span class="mi">n</span>
+       <span class="mo">(</span>
+       <span class="mn">350</span>
+       <span class="mo">)</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mi">F</span>
+      </div>
+     </div>
+     <span class="mo">≅</span>
+     <span class="mn">75</span>
+     <span width="0.25em" class="mspace"/>
+     <span class="mi">m</span>
+     <span class="mi">V</span>
+    </div>
+   </div>
+  </div>, close to the observed average potential difference between the subgroups (R is the gas constant, and T the temperature).
+ </p>
+ <div id="pcbi.1006471.g004" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g004</span>
+  <span class="label">Fig 4</span>
+  <div class="caption">
+   <div class="title">Comparison between the redox potentials of sub-groups for reactions in the G2 category (carbonyl to hydroxycarbon reductions).</div>
+   <p>(A) Aldehydes vs. ketones (non-statistically significant 
+    <span class="italic">Δ</span> &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt;); (B) nearest-neighbor functional group (all subgroups have statistically significant 
+    <span class="italic">Δ</span> &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt;, p&lt;0.005, except hydroxyl/amine and hydrocarbon) (C) closed-ring sugar reduction to open-chain vs. open-chain sugar reduction to open-chain (statistically significant 
+    <span class="italic">Δ</span> &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt;, p&lt;10–5), (D) natural reactions appearing in KEGG vs. non-natural reactions (statistically significant 
+    <span class="italic">Δ</span> &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt;, p&lt;0.005) (E) natural reactions that only use NAD(P) as redox cofactor vs. those that use alternative cofactors (cytochromes, FAD, O
+    <sub>2</sub>, or quinones) (non-statistically significant 
+    <span class="italic">Δ</span> &lt;
+    <span class="italic">E</span>′
+    <span class="sup">
+     <span class="italic">m</span>
+    </span>&gt;, p = 0.03).
+   </p>
+  </div>
+  <div xlink:href="pcbi.1006471.g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

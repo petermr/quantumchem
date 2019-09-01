@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Synthesis of CdSe quantum rings</div>
+  <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">CdSe QRs were synthesized following a previously published method
+   <span class="sup">
+    <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+   </span>. CdSe nanoplatelets were first synthesized at 240 °C from Cd myristate, Cd acetate, and Se power in 1-octadecene. They were then precipitated with ethanol and re-dispersed in a mixture of 1-octadecene and oleylamine in a three-neck flask. A suspension of Se in oleylamine was added into the flask as well. The contents of the flask were then degassed at room temperature for 10 min, heated up to 140 °C under nitrogen and maintained in this condition for 10 min. After injecting a certain amount of tributylphosphine into the flask, the temperature of the mixture was increased to 220 °C. The solution was then allowed to cool to 37 °C. Finally, ground Cd formate was added to the mixture and it was stirred for an hour.
+  </p>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Transmission electron microscopy of the samples were performed using a 300 kV FEI Tecnai F30 microscope. Absorption and emission spectra of the solutions were collected using a Cary 5000 UV-Vis-NIR spectrometer and FluoroMax-4 spectrofluoremeter, respectively.</p>
+ </sec>
+ <sec id="Sec10" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Single quantum ring optical spectroscopy and imaging</div>
+  <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">To prepare samples for single particle optical measurements, the stock solutions of QRs were diluted by hexane and spin coated onto quartz or glass cover slips. Optical measurements of single QRs were performed on home-built confocal laser scanning microscopes at room temperature. The angle-resolved photoluminescence spectroscopy was performed on a Fourier imaging system (see Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>). In this method, to inhibit photoluminescence blinking of the QRs, a layer of polystyrene was deposited onto the QRs. This was considered within the dipole distribution simulations by adjusting the refractive index of the upper half-space to 
+   <span class="italic">n</span>
+   <sub>1</sub> = 1.1, since the presence of the polystyrene thin film will increase the effective refractive index experienced by the QRs. The lower half-space refractive index 
+   <span class="italic">n</span>
+   <sub>2</sub> was defined by the glass cover slide, index matching oil and objective and given with 
+   <span class="italic">n</span>
+   <sub>2</sub> = 1.52. A continuous wave HeNe laser with a wavelength of 633 nm was focused by a microscope objective (NA = 1.4) to excite the samples. Emission from the QRs was collected by the same objective and sent to a cooled charge-coupled device (CCD) after spectral filtering. A Bertrand lens was used to form an image of the back focal plane on the CCD. The higher-order laser scanning microscopy of the QRs were performed using similar excitation conditions, except that the Gaussian laser beam was converted into a higher-order radially polarized beam and a microscope objective with NA = 1.49 was used. Emission from the QRs collected by the objective was focused onto an avalanche photon diode to form confocally scanned images.
+  </p>
+ </sec>
+ <sec id="Sec11" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theoretical modeling of quantum rings</div>
+  <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">The two-dimensional infinite potential well calculations were performed using a discrete variable representation with a sinc basis
+   <span class="sup">
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>. Two ovals, defined by the parameters OD
+   <sub>1</sub>, OD
+   <sub>2</sub>, ID
+   <sub>1</sub>, and ID
+   <sub>2</sub> (see Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1c</a>), were defined. Any points in the discretized space in between these two ovals had a potential of zero; any point outside had a potential set arbitrarily high, defining a Hamiltonian matrix. This matrix was diagonalized using the parallel eigenvalue solver package SLEPc
+   <span class="sup">
+    <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+   </span> for the eigenstates with eigenvalues closest to zero.
+  </p>
+  <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">To calculate the energy levels and wavefunctions of the CdSe QRs, we started with a large supercell of zinc-blend CdSe atoms with lattice constant 6.052 Å. We then defined an ideal three-dimensional generalized torus, where any slice along 
+   <span class="italic">z</span> was defined by two ovals in the 
+   <span class="italic">x</span>, 
+   <span class="italic">y</span> plane. In the middle of the ring along the 
+   <span class="italic">z</span> dimension, these two ovals were defined by the parameters OD
+   <sub>1</sub>, OD
+   <sub>2</sub>, ID
+   <sub>1</sub>, and ID
+   <sub>2</sub>. Towards the edges of the ring in the 
+   <span class="italic">z</span> plane (defined by the height of the ring, 
+   <span class="italic">h</span>), the parameters of the two ovals changed such that a slice along the 
+   <span class="italic">x</span> or 
+   <span class="italic">y</span> planes results in an oval. Any atom which fell inside of this three-dimensional geometry was kept; any atom outside of the ring was discarded. After cutting out the ring, we iteratively looped through all atoms and removed any atoms which had only a single bond until all atoms had at least two bonds. This may result in unequal numbers of Cd and Se in the QRs, but since we are not doing total energy calculations, a slight nonstoichiometry should not alter our calculation results. Using this set of atoms, we solved for the band-edge states using the empirical tight-binding method within the code QNANO
+   <span class="sup">
+    <a ref-type="bibr" rid="CR31" href="#CR31">31</a>,
+    <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+   </span>. Within the empirical tight-binding method, a set of orbitals was defined for each atom. The parameters of these orbitals were fit to density functional theory calculations of bulk systems. The method solved for the eigenstates near the band-edge using the basis of these parameterized orbitals.
+  </p>
+ </sec>
+</sec>

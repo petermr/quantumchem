@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Deep Tunneling and the ASCC Formula</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As reported in the earlier literature (Bell, 
+  <a rid="B12" ref-type="bibr" href="#B12">1980</a>; Christov, 
+  <a rid="B19" ref-type="bibr" href="#B19">1997</a>), the degree of concavity in the Arrhenius plot can be correlated with the assessment of the role of tunneling in chemical reactions: the definition of a “crossover temperature,”
+ </p>
+ <div id="E29" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(27)</span>
+  <div id="M37" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">ℏ</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ν</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">permits to conventionally establish (within some arbitrariness) the ranges of tunneling regimes for a specific imaginary frequency at the top of the barrier point, consistently denoted by a double dagger, ν
+  <span class="sup">‡</span>: classical (
+  <span class="italic">T</span> &gt; 4
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>), negligible(4
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> &gt; 
+  <span class="italic">T</span> &gt; 2
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>), moderate (2
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> &gt; 
+  <span class="italic">T</span> &gt; 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>) and deep (
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> &gt; 
+  <span class="italic">T</span>) regimes. The ranges of tunneling regimes are indicative of the importance of quantum tunneling to affect rate constants in particular cases. From a mathematical viewpoint, the AM formulation has clear limitations in the description of the deep tunneling regime toward the Wigner limit (Wigner, 
+  <a rid="B97" ref-type="bibr" href="#B97">1948</a>)
+ </p>
+ <div id="E30" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(28)</span>
+  <div id="M38" class="math">
+   <div class="mrow">
+    <div class="munder">
+     <div class="mrow">
+      <span class="mi">lim</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">T</span>
+      <span class="mo">→</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span class="mi">k</span>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <span class="mi">T</span>
+     <span class="mo">)</span>
+    </div>
+    <span class="mo">∝</span>
+    <div class="msup">
+     <span class="mi">T</span>
+     <span class="mn">0</span>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Details pertinent to the present discussion can be found in a very useful reference (Takayanagi et al., 
+  <a rid="B84" ref-type="bibr" href="#B84">1987</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As a counterpart for 
+  <span class="italic">sub</span>-Arrhenius behavior of the 
+  <span class="italic">super</span>-Arrhenius VFT formula, it is argued that cases of deep tunneling can be dealt by introducing a modified form of the AM formula (Coutinho et al., 
+  <a rid="B28" ref-type="bibr" href="#B28">2018b</a>), defined as 
+  <span class="italic">Aquilanti-Sanches-Coutinho-Carvalho</span> (ASCC) expression:
+ </p>
+ <div id="E31" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(29)</span>
+  <div id="M39" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">-</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mi">d</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">ε</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">‡</span>
+             </div>
+            </div>
+           </div>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">k</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">B</span>
+             </div>
+            </div>
+            <span class="mi">T</span>
+            <span class="mo">+</span>
+            <span class="mi">h</span>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">ν</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">‡</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <div class="inline-formula">
+   <div id="M40" class="math">
+    <span class="mi">d</span>
+    <span class="mo">=</span>
+    <span class="mo">-</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">3</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">h</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ν</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> as reported in Silva et al. (
+  <a rid="B79" ref-type="bibr" href="#B79">2013</a>) and references therein. Here, the formulation introduces the three 
+  <span class="italic">A</span>, ε
+  <span class="sup">‡</span> and ν
+  <span class="sup">‡</span> parameters and reproduces the Wigner limit at low temperature, β → ∞. The ASCC transitivity function can be worked out considering the logarithmic differentiation of Equation (29) with respect to β and the result is
+ </p>
+ <div id="E32" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(30)</span>
+  <div id="M41" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">γ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">-</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">d</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+        <span class="mo">-</span>
+        <span class="mn">2</span>
+        <span class="mi">h</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ν</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mi">β</span>
+      <span class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">h</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ν</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">d</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <span class="mi">h</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ν</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">or in a more compact representation,</p>
+ <div id="E33" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(31)</span>
+  <div id="M42" class="math">
+   <div class="mrow">
+    <div columnalign="left" class="mtable">
+     <div columnalign="left" class="mtr">
+      <div columnalign="left" class="mtd">
+       <div class="mrow">
+        <span class="mi">γ</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">β</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">=</span>
+        <div class="mfrac">
+         <span class="mn">1</span>
+         <div class="mrow">
+          <div class="msup">
+           <span class="mi">ε</span>
+           <span class="mo">‡</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">+</span>
+          <span class="mi">h</span>
+          <div class="msup">
+           <span class="mi">ν</span>
+           <span class="mo">‡</span>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span class="mo">]</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">−</span>
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">d</span>
+            <div class="msup">
+             <span class="mi">ε</span>
+             <span class="mo">‡</span>
+            </div>
+            <span class="mo">−</span>
+            <span class="mi">h</span>
+            <div class="msup">
+             <span class="mi">ν</span>
+             <span class="mo">‡</span>
+            </div>
+           </div>
+           <span class="mo">)</span>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span class="mo">]</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For small values of 
+  <span class="italic">dε</span>
+  <span class="sup">‡</span>, an analogous to VFT formula is recovered, see Equation (22). The ASCC formula was initially applied in Coutinho et al. (
+  <a rid="B28" ref-type="bibr" href="#B28">2018b</a>) for astrochemical reactions in extremely cold environments generated by “exact” benchmark quantum dynamics. More results of applications will be given elsewhere for a variety of processes that involve deep tunneling.
+ </p>
+</sec>

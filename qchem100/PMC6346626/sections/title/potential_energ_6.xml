@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Potential Energy Curve of a H
+  <sub>2</sub> Molecule
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">First, we focused on the simplest system; potential energy curve of a H
+  <sub>2</sub> molecule. The overlaps between the full-CI/cc-pVDZ wave function and RHF wave function, a wave function consisting of one CSF, and the two-configurational wave function prepared using diradical characters calculated from the UHF wave function were computed by changing the H···H distance from 0.74 (equilibrium geometry) to 3.0 Å. The results are summarized in 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>. As expected, the RHF wave function has large overlap with the full-CI root around the equilibrium geometry, but the overlap decreases with increasing H···H distance. CSF has an opposite trend: Large overlap is obtained for the long H···H distance, but overlap becomes small as it approaches the equilibrium geometry. By contrast, the two-configurational wave function gives sufficiently large overlap with the full-CI wave function at any H···H distances. Note that BS-UHF converges to RHF root for the atom–atom distance 1.2 Å and shorter. The calculated diradical character 
+  <span class="italic">y</span>
+  <sub>0</sub> is plotted as an inset of 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>. When SCF converged to unrestricted root, a nonzero 
+  <span class="italic">y</span>
+  <sub>0</sub> value is obtained, and the 
+  <span class="italic">y</span>
+  <sub>0</sub> value increases as the H···H distance becomes longer, and approaches to unity for the bond dissociation limit. We also checked overlaps of the two-configurational wave functions prepared using diradical characters obtained from the DFT framework with different HF exchange contributions using BLYP, B3LYP, BHandHLYP, and LC-BLYP functionals
+  <span class="sup">
+   <a ref-type="bibr" rid="ref71" href="#ref71">71</a>−
+   <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+  </span> (see 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span> in the Supporting Information). The pure exchange–correlation functional (BLYP) tends to converge the spin-restricted root for the longer H···H distance, and the inclusion of HF exchange stabilizes the broken-symmetry state. The overlaps between the full-CI and two-configurational wave functions are similar among BS-UHF and DFT-based calculations. In the following calculations, we utilized diradical characters calculated from the BS-UHF wave functions.
+ </p>
+ <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Square of overlap between the full-CI/cc-pVDZ wave function of the ground state and initial guess wave functions in H
+    <sub>2</sub>. Inset: diradical character 
+    <span class="italic">y</span>
+    <sub>0</sub> obtained from the PUHF calculations.
+   </p>
+  </div>
+  <div xlink:href="oc-2018-00788n_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

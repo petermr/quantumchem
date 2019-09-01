@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="sec2.1" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optimization of Redox Potential Prediction Strategy That Combines Semiempirical Quantum Chemistry with GP Regression</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Our goal is to develop a calibrated quantum chemistry modeling framework that can accurately predict the reduction potentials of biochemical redox reactions in a high-throughput manner. Several different types of redox reactions that change the oxidation state of carbon atoms exist in biochemistry. These include the reduction of carboxylic acids to aldehydes, the reduction of carbonyls to alcohols or amines, and the reduction of alcohols to hydrocarbons.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+   </span> In this work, we focus our efforts on predicting the standard redox potentials (as a function of pH and ionic strength) for the reduction of carbonyls to alcohols or amines. This reaction category represents the most common type of carbon redox transformation in biochemistry.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+   </span> In addition, it is the category for which the largest amount of experimental data is available in the NIST database for the thermodynamics of enzyme-catalyzed reactions (TECRDB).
+   <span class="sup">
+    <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+   </span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Similar to previous implementations, our approach consists of running quantum chemistry calculations to obtain electronic structure energies of substrates and products for the redox reactions of interest.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+   </span> We take the difference in electronic energies as an estimate of the standard redox potential of the most abundant species (protonation states) of metabolites at pH = 0. We use cheminformatic p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates and the Alberty–Legendre transform
+   <span class="sup">
+    <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+   </span> to convert the redox potentials to transformed standard redox potentials 
+   <span class="italic">E</span>′° (pH = 7) (
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). We then use GP regression to correct for systematic errors in the ab initio estimates (
+   <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+    <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+   </a>) as well as p
+   <span class="italic">K</span>
+   <sub>a</sub> estimates that go into the model (
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). To test and optimize the accuracy of our modeling framework, we compared predicted potentials against a data set of 81 experimental redox potentials obtained from the NIST database of thermodynamics of enzyme-catalyzed reactions.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+   </span>
+  </p>
+  <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Schematic diagram of GP regression with reaction fingerprints. A redox reaction of interest 
+     <span class="italic">x</span>* is represented using a reaction fingerprint, which captures the molecular structure of both substrate (oxidized) and product (reduced). This reaction fingerprint is compared against the set of all redox reactions in the experimental data set using the covariance function of the Gaussian process 
+     <span class="italic">k</span>(
+     <span class="italic">x</span>*, 
+     <span class="italic">x</span>
+     <sub>
+      <span class="italic">i</span>
+     </sub>) (see the 
+     <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section). The GP correction (
+     <span class="italic">E</span>′
+     <span class="sup">m</span>
+     <sub>GP</sub>) to the quantum chemical prediction (
+     <span class="italic">E</span>′
+     <span class="sup">m</span>
+     <sub>PM7</sub>) of the standard redox potential is then obtained from a similarity-based average of the correction terms for the experimental data set.
+    </p>
+   </div>
+   <div xlink:href="oc-2019-002977_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We tested several different model chemistries to maximize the accuracy and minimize the computational cost of our methodology (
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section, 
+   <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+    <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+   </a>, 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>). In this context, a “model chemistry” consists of the combination of multiple modeling choices that go into running a quantum chemical simulation. These include the conformer generation strategy and geometry optimization procedure, the electronic structure method (e.g., density functional theory (DFT), wave function approaches, or semiempirical methods) as well as the water model used.
+  </p>
+  <div id="tbl1" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <div class="title">Summary Statistics of Prediction Accuracy for Calibration with Gaussian Process Regression of Different Modeling Approaches
+     <a rid="t1fn1" ref-type="table-fn" href="#t1fn1">a</a>
+    </div>
+   </div>
+   <table frame="hsides" rules="groups" border="0">
+    <colgroup>
+     <col align="left"/>
+     <col align="left"/>
+     <col align="char" char="."/>
+     <col align="char" char="."/>
+     <col align="char" char="."/>
+     <col align="char" char="."/>
+     <col align="char" char="."/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th style="border:none;" align="center"> </th>
+      <th style="border:none;" align="center"> </th>
+      <th style="border:none;" align="center" char="."> </th>
+      <th colspan="3" align="center" char=".">calibration/regression
+       <span class="hr"/>
+      </th>
+      <th style="border:none;" align="center" char=".">linear fit</th>
+     </tr>
+     <tr>
+      <th style="border:none;" align="center">approach</th>
+      <th style="border:none;" align="center">geometry source</th>
+      <th style="border:none;" align="center" char=".">average compute time (s)</th>
+      <th style="border:none;" align="center" char=".">MAE (σ) (mV)</th>
+      <th style="border:none;" align="center" char=".">
+       <span class="italic">r</span>
+      </th>
+      <th style="border:none;" align="center" char=".">
+       <span class="italic">R</span>
+       <span class="sup">2</span>
+      </th>
+      <th style="border:none;" align="center" char=".">
+       <span class="italic">R</span>
+       <span class="sup">2</span>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td style="border:none;" align="left">GCM</td>
+      <td style="border:none;" align="left">N/A</td>
+      <td style="border:none;" align="char" char=".">0.01</td>
+      <td style="border:none;" align="char" char=".">27.15 (24.04)</td>
+      <td style="border:none;" align="char" char=".">0.58</td>
+      <td style="border:none;" align="char" char=".">0.33</td>
+      <td style="border:none;" align="char" char=".">0.33</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">Rxn-FP + GP</td>
+      <td style="border:none;" align="left">N/A</td>
+      <td style="border:none;" align="char" char=".">0.01</td>
+      <td style="border:none;" align="char" char=".">24.35 (23.44)</td>
+      <td style="border:none;" align="char" char=".">0.65</td>
+      <td style="border:none;" align="char" char=".">0.42</td>
+      <td style="border:none;" align="char" char=".">N/A</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">GCM + GP</td>
+      <td style="border:none;" align="left">N/A</td>
+      <td style="border:none;" align="char" char=".">0.01</td>
+      <td style="border:none;" align="char" char=".">21.20 (20.50)</td>
+      <td style="border:none;" align="char" char=".">0.75</td>
+      <td style="border:none;" align="char" char=".">0.56</td>
+      <td style="border:none;" align="char" char=".">0.33</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">PM7 + GP</td>
+      <td style="border:none;" align="left">opt.</td>
+      <td style="border:none;" align="char" char=".">0.36</td>
+      <td style="border:none;" align="char" char=".">22.47 (19.68)</td>
+      <td style="border:none;" align="char" char=".">0.74</td>
+      <td style="border:none;" align="char" char=".">0.54</td>
+      <td style="border:none;" align="char" char=".">0.22</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">HF-3c + GP</td>
+      <td style="border:none;" align="left">opt.</td>
+      <td style="border:none;" align="char" char=".">588</td>
+      <td style="border:none;" align="char" char=".">21.07 (19.76)</td>
+      <td style="border:none;" align="char" char=".">0.76</td>
+      <td style="border:none;" align="char" char=".">0.57</td>
+      <td style="border:none;" align="char" char=".">0.28</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">DSD-PBEP86 + GP</td>
+      <td style="border:none;" align="left">PM7 opt.</td>
+      <td style="border:none;" align="char" char=".">1223</td>
+      <td style="border:none;" align="char" char=".">21.15 (17.97)</td>
+      <td style="border:none;" align="char" char=".">0.79</td>
+      <td style="border:none;" align="char" char=".">0.61</td>
+      <td style="border:none;" align="char" char=".">0.24</td>
+     </tr>
+     <tr>
+      <td style="border:none;" align="left">DLPNO–CCSD(T)//cc-pVDZ + GP</td>
+      <td style="border:none;" align="left">B3LYP conf.</td>
+      <td style="border:none;" align="char" char=".">6111</td>
+      <td style="border:none;" align="char" char=".">20.45 (19.97)</td>
+      <td style="border:none;" align="char" char=".">0.76</td>
+      <td style="border:none;" align="char" char=".">0.57</td>
+      <td style="border:none;" align="char" char=".">0.47</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <fn id="t1fn1" class="fn" xmlns="">
+     <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+     <p xmlns="http://www.w3.org/1999/xhtml">See the 
+      <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section for detailed descriptions of each modeling approach (quantum model chemistry). Rxn-FP = reaction fingerprints; GCM = group contribution method; GP = calibration with Gaussian process regression; opt. = geometry optimization of a single geometric conformer with the same level of theory; conf. = geometry optimization of multiple geometric conformers at a given theory level. Regression statistics correspond to GP calibration using Morgan fingerprints of radius 6. Additionally we report the 
+      <span class="italic">R</span>
+      <span class="sup">2</span> (coefficient of determination) obtained using calibration with linear regression to the experimental data. The statistics are MAE = mean absolute error; σ = standard deviation of the absolute error; 
+      <span class="italic">r</span> = Pearson 
+      <span class="italic">r</span>; 
+      <span class="italic">R</span>
+      <span class="sup">2</span> = coefficient of determination; average compute time = estimated average computational time per electron, in seconds. Linear fit is without GP regression.
+     </p>
+    </fn>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The GP regression-based calibration step depends on a particular choice of a covariance function, which in turn involves a distance or similarity measure between redox reactions or compounds. We found that the following combination of quantum model chemistry and kernel/distance function between reactions resulted in the most efficient (in terms of a trade-off between accuracy and computational cost) prediction strategy: the PM7
+   <span class="sup">
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+   </span> semiempirical method for both geometry optimizations and single-point electronic energies, with the COSMO implicit solvation model,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+   </span> and a reaction fingerprint obtained by taking the difference between counted Morgan fingerprint vectors of products and substrates,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+   </span> with a kernel function that is a mixture of a squared exponential kernel, and a noise kernel (
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). We note that the model chemistry using the double-hybrid functional DSD-PBEP86 (based on a double-hybrid DFT functional) gives the best accuracy but at a higher computational cost.
+  </p>
+ </sec>
+ <sec id="sec2.2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">GP-Calibrated Quantum Chemistry Yields High Prediction Accuracy at a Low Computational Cost</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Importantly, our GP-calibrated semiempirical quantum chemistry method results in higher predictive power than the most commonly used approach, the GCM (
+   <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+    <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+   </a>, 
+   <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+    <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+   </a>). Using cross-validation to test prediction accuracy, the GP-calibrated PM7 approach results in a higher Pearson correlation coefficient (
+   <span class="italic">r</span>), a higher coefficient of determination (
+   <span class="italic">R</span>
+   <span class="sup">2</span>), and a lower mean absolute error (MAE) than GCM predictions when tested against the set of experimental potentials (
+   <span class="italic">p</span> &lt; 0.05, 
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). The GP calibration also returns a GP uncertainty for each predicted value, and we find that it linearly correlates with the absolute deviation from uncertainty (
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span>).
+  </p>
+  <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Comparison of prediction accuracy for the group contribution method and quantum chemistry with GP regression. Scatter plots of experimental standard transformed redox potentials against predictions from several sources: (a) PM7, (b) linearly calibrated PM7, (c) group contribution method (GCM), and (d) GP-calibrated PM7. The experimental data consist of available standard transformed reduction potentials for carbonyl-to-alcohol and carbonyl-to-amine reductions. Data points in the scatter plot were obtained from a leave-one-out cross-validation (LOOCV) procedure, where the model is trained on all data points except the one point to be predicted. Note that we use the millimolar standard state, 
+     <span class="italic">E</span>′
+     <span class="sup">m</span>, where reactant concentrations are taken as 1 mM, since this is significantly closer to relevant physiological concentrations of metabolites in cells than 1 M. The legend in each plot contains summary statistics for the fit; MAE (mean absolute error) also has the associated standard deviation in parentheses.
+    </p>
+   </div>
+   <div xlink:href="oc-2019-002977_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We note that the GCM predictions, as well as fingerprint-based predictions (without relying on any quantum chemistry calculations), can also be calibrated using GP regression, resulting in significant improvements in their prediction accuracy. Thus, regardless of the underlying modeling choice, the GP calibration approach is an accurate, computationally efficient, and widely applicable modeling framework for the high-throughput prediction of biochemical redox potentials.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">One of the advantages of our approach is its low computational cost (
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>) in comparison to other model chemistries. For instance, the PM7-GP-calibrated calculations are approximately 1000-fold faster than the DLPNO–CCSD(T) calibrated model chemistry, despite both approaches yielding comparable accuracies. We note that the pipeline involves estimating p
+   <span class="italic">K</span>
+   <sub>a</sub>’s and major protonation states at pH = 0 for all metabolites at a slight additional computational cost. However, this cost is also incurred by the GCM approach.
+  </p>
+ </sec>
+ <sec id="sec2.3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of a Large Network of Non-Natural Redox Reactions Using a Novel Network Expansion Algorithm</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To demonstrate the high-throughput nature of our method, we implemented a redox reaction network expansion algorithm to generate what is, to our knowledge, the largest database of non-natural biochemical redox reactions (
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). The network expansion algorithm makes use of the RDKit cheminformatics software to iteratively apply simplified molecular-input line-entry system (SMILES)
+   <span class="sup">
+    <a ref-type="bibr" rid="ref35" href="#ref35">35</a>,
+    <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+   </span> reaction strings to natural metabolites in the KEGG database. We generate two types of redox reactions, implemented in both the reductive and oxidative directions. The first type is the reduction of carbonyls to alcohols (and the reverse oxidations); the second is the reduction of carbonyls to amines (and the reverse oxidations). Applying the cheminformatic transformation to metabolites in the KEGG database results in a first set of nearest-neighbor reduction or oxidation products. We then iteratively apply the reactions to the resulting set of products, until there are no more carbonyl functional groups to reduce (or alcohol or amine functional groups to oxidize).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Although the KEGG database of natural metabolic compounds and reactions contains molecules with up to 135 carbon atoms (a peptidoglycan cell wall component is the molecule with the highest number of carbon atoms),
+   <span class="sup">
+    <a ref-type="bibr" rid="ref44" href="#ref44">44</a>
+   </span> we limit our network expansion algorithm to molecules with 21 carbon atoms or less. This threshold is imposed in consideration of the size of the compounds in the training set; if experimental data were available for larger compounds, this methodology could easily be adapted.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+    <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+   </a> shows the number and type of reactions that make up the network. It consists of ∼75 000 compounds connected by ∼315 000 reactions (reductions and oxidations). Of these reactions, 83% convert carbonyls to alcohols (or alcohols to carbonyls), while 17% convert carbonyls to amines (or amines to carbonyls). The large majority of the reactions (more than 80%) are oxidations of alcohols to carbonyls. Thus, the alcohol functional group is significantly more ubiquitous in the set of natural metabolites than either carbonyls or amine functional groups. The large majority of the reactions in the network—97%—stem from the recursive 
+   <span class="italic">oxidations</span> of seed natural metabolites, while only ∼3% come from recursive reductions. This is consistent with the notion that carbonyl functional groups can cause damage to macromolecules
+   <span class="sup">
+    <a ref-type="bibr" rid="ref45" href="#ref45">45</a>,
+    <a ref-type="bibr" rid="ref46" href="#ref46">46</a>
+   </span> and are thus kept at check in the cell.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We analyzed the structure of the resulting network by looking at the distribution of compound sizes. 
+   <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+    <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+   </a>A shows the number of compounds in the networks as a function of their number of carbon atoms. The distribution shows three peaks corresponding to molecules with 6
+   <span class="italic">n</span> carbon atoms (
+   <span class="italic">n</span> = 1, 2, 3). These peaks reflect a large number of products that result from combinatorially oxidizing all alcohol groups in mono-, di-, and trisaccharides (
+   <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+    <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+   </a>B).
+  </p>
+  <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>The network of redox reactions obtained from iterative reductions and oxidations of natural metabolites. (A) Carbon number distribution for the full set of ∼70 000 compounds in the network. The peaks at multiples of 6 carbon atoms reflect the combinatorial oxidation of mono-, di-, and trisaccharides and their multiple alcohol functional groups. (B) Schematic diagram of a natural trisaccharide being iteratively oxidized at all possible alcohol functional groups. Blue circles depict sites of initial alcohol-to-carbonyl oxidation, and green circles depict a second oxidation site.</p>
+   </div>
+   <div xlink:href="oc-2019-002977_0004" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="sec2.4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">High-Throughput Prediction of Redox Potentials and Elucidation of Structure–Energy Relationships</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Using our GP-calibrated semiempirical quantum chemistry method, we predicted the standard transformed redox potentials for the set of ∼315 000 reactions generated with the iterative network expansion algorithm. The resulting distribution of standard transformed redox potentials is shown in 
+   <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+    <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+   </a>. We note the use of the millimolar standard state, 
+   <span class="italic">E</span>′
+   <span class="sup">m</span>, instead of the more commonly used 
+   <span class="italic">E</span>′° (where reactant concentrations are taken as 1 M). This is a standard state that is commonly used in the field of biochemical thermodynamics since 1 mM is closer to the relevant physiological concentrations of metabolites in cells.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+   </span> The resulting distributions for the two reaction categories peak at very close but slightly different values, with ⟨
+   <span class="italic">E</span>′
+   <span class="sup">m</span>⟩ ∼ −220 mV for carbonyl-to-alcohol reductions and ⟨
+   <span class="italic">E</span>′
+   <span class="sup">m</span>⟩ ∼ −235 mV for carbonyl-to-amine reductions.
+  </p>
+  <div id="fig5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 5</span>
+   <div class="caption">
+    <p>Distribution of predicted standard redox potentials (pH = 7) for a set of ∼315 000 non-natural redox reactions. Predicted potentials were obtained by running semiempirical quantum chemical calculations (
+     <a rid="sec4" ref-type="other" href="#sec4">Methods</a>) and correcting for systematic errors using Gaussian process regression. The green distribution shows the 
+     <span class="italic">E</span>′
+     <span class="sup">m</span>(pH = 7) values for 53 095 reductions of carbonyls to amines. The blue distribution shows the 
+     <span class="italic">E</span>′
+     <span class="sup">m</span>(pH = 7) values for 261 903 reductions of carbonyls to alcohols.
+    </p>
+   </div>
+   <div xlink:href="oc-2019-002977_0005" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Importantly, our vast network of non-natural redox reactions and their associated redox potentials are amenable to structure–energy analyses to elucidate molecular structures that are enriched or depleted in reactions with high or low potentials. Toward this end, we developed a novel molecular fingerprint-based structure–energy analysis, which we term “reaction fingerprint heatmaps”, to detect such reaction motifs (
+   <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+    <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+   </a>). The main idea behind reaction fingerprint heatmaps is that, by comparing the 
+   <span class="italic">average</span> reaction fingerprints of reactions with different redox potential values, one can visually detect the structural patterns that correlate with energetics. More specifically, we first divide the distribution of predicted standard redox potentials into arbitrary discrete bins, in our case 100 bins. We then find, for each standard redox potential bin, the subset of reactions with potentials falling within that range and average their corresponding fingerprint vectors. We then extract structure–energy trends by looking at the changes in average fingerprints values across consecutive bins. When these changes are large for a particular bit, it signifies that a meaningful molecular environment (motif) is enriched or depleted at that particular bin (range) of redox potential values. For any particular reaction, we can reverse engineer the reaction fingerprint to obtain substructures that activate the particular bit. For example (
+   <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+    <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+   </a>), we find that Bit-4 is enriched in reactions with standard potentials of −160 mV &lt; 
+   <span class="italic">E</span>′
+   <span class="sup">m</span> &lt; −100 mV. By mapping Bit-4 back to specific reactions, we find a molecular environment that corresponds to a dicarbonyl within a heterocyclic ring (see example reaction in 
+   <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+    <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+   </a>) that is enriched in substrate molecules within that range of standard potentials. While, across all reactions, the difference between the substrate and product molecules is the reduction of a single carbonyl into a hydroxy carbon group, our reaction fingerprint heatmaps detect the molecular environments dictating the energetics associated with that transformation.
+  </p>
+  <div id="fig6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 6</span>
+   <div class="caption">
+    <p>Elucidating structure–energy relationships using a reaction fingerprint heatmap. The top right panel shows the distribution of predicted standard redox potentials (in the millimolar standard state) using our GP-calibrated quantum chemical approach. The bottom right panel shows a reaction fingerprint heatmap, where the 
+     <span class="italic">y</span>-axis corresponds to the bits in the reaction fingerprint vector averaged across all reactions falling within a redox potential bin (range of values). The heatmap highlights bits that have significantly different values (on average) as a function of redox potential. The example reactions on the left correspond to each of the significant reaction fingerprint bits. For example, Bit-4 is a structure enriched in substrate molecules of reactions with high values of standard redox potentials.
+    </p>
+   </div>
+   <div xlink:href="oc-2019-002977_0006" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

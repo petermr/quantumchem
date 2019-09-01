@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum Chemical calculations and data</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">High-level quantum chemical (QC) methods have become increasingly available to the broader scientific community through a number of software packages such as Gaussian [
+  <a ref-type="bibr" rid="B1" href="#B1">1</a>], GAMESS(US) [
+  <a ref-type="bibr" rid="B2" href="#B2">2</a>], GAMESS-UK [
+  <a ref-type="bibr" rid="B3" href="#B3">3</a>], NWChem [
+  <a ref-type="bibr" rid="B4" href="#B4">4</a>], MOLCAS [
+  <a ref-type="bibr" rid="B5" href="#B5">5</a>] and many more. Additionally, the cost of computer power has experienced an exponential reduction in recent decades and, more importantly, sophisticated approximations have been developed that pursue (and promisingly approach) the holy grail of linear scaling methods [
+  <a ref-type="bibr" rid="B6" href="#B6">6</a>,
+  <a ref-type="bibr" rid="B7" href="#B7">7</a>]. This has enabled any researcher, with no specific QC training, to perform calculations on large, interesting systems using very accurate methods, thus generating a large amount of valuable and expensive data. Despite the scientific interest of this data and its potential utility to other groups, its lack of homogeneity, organization and accessibility has been recognized as a significant problem by important agents within the scientific community [
+  <a ref-type="bibr" rid="B8" href="#B8">8</a>,
+  <a ref-type="bibr" rid="B9" href="#B9">9</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">These problems, and specially the ones related to the accessibility of data have many consequences that reduce the efficiency of the field. As mentioned, QC methods are computationally expensive: the scaling of the computer effort and storage of high-level computations with the size of the system (
+  <span class="italic">N</span>) is harsh, reaching, for example, 
+  <span class="italic">N</span>
+  <span class="sup">7</span>, for the most expensive and most accurate wavefunction-based methods, such as Coupled Cluster [
+  <a ref-type="bibr" rid="B10" href="#B10">10</a>-
+  <a ref-type="bibr" rid="B12" href="#B12">12</a>]. This makes it very difficult for groups that cannot use supercomputing facilities to have access to high-quality results, even if they possess the expertise to analyze and use the data. Even groups that do have access to powerful computational resources, given the lack of access to previously computed data by other researchers, often face the choice between 
+  <span class="italic">two inefficient </span>options: either they spend a lot of human time digging in the literature and contacting colleagues to find out what has already been calculated, or they spend a lot of computer effort (and also human time) calculating the needed data themselves, with the risk of needlessly duplicating work.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Another problem originating in the lack of access to computed QC data and the very large number of methods available, is that users typically do not have the integrated information about which method presents the best accuracy 
+  <span class="italic">vs</span>. cost relation for a given application. The reason is that comparing one quantum chemical method with another, with classical force fields or with experimental data is non-trivial, the answer frequently depending on the studied molecular system and on the physical observable sought. Moreover, all the details and parameters that define what John Pople termed a 
+  <span class="italic">model chemistry </span>[
+  <a ref-type="bibr" rid="B13" href="#B13">13</a>], 
+  <span class="italic">i.e</span>., the exact set of rules needed to perform a given calculation do not obey a continuous monotonic function. Thus increasing the expense and "accuracy" of a calculation may not always converge to the "correct" solution. As a consequence, the quality of the results does not steadily grow with the computational effort invested, but rather there exist certain tradeoffs that render the relation between them more involved [
+  <a ref-type="bibr" rid="B14" href="#B14">14</a>-
+  <a ref-type="bibr" rid="B16" href="#B16">16</a>]. Hence, not only the choice of the more efficient QC method for a given problem among the already existing ones, but also the design of novel model chemistries becomes 'more an art than a science' [
+  <a ref-type="bibr" rid="B17" href="#B17">17</a>], based more on know-how and empiricism than in a set of systematic procedures.
+ </p>
+</sec>

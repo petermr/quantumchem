@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theory</div>
+ <sec id="sec2.1" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.1</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Diradical Characters</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Let us consider a potential energy curve of the H
+   <sub>2</sub> molecule as an example of the covalent bond dissociation of closed shell singlet molecules. Interactions between 1s orbitals of two hydrogen atoms generate bonding (1σ
+   <sub>g</sub>) and antibonding (1σ
+   <sub>u</sub>) orbitals. At the geometry close to its equilibrium, an electronic configuration for which two electrons occupy the 1σ
+   <sub>g</sub> orbital dominantly contributes to the full-CI wave function of the ground state, and therefore the RHF wave function has a large overlap with the full-CI wave function. As the H···H distance increases, the orbital energy difference between 1σ
+   <sub>g</sub> and 1σ
+   <sub>u</sub> decreases, and the weight of the two-electron excited configuration (1σ
+   <sub>g</sub>)
+   <span class="sup">0</span>(1σ
+   <sub>u</sub>)
+   <span class="sup">2</span> increases. At the dissociation limit, the system is regarded as two hydrogen atoms, and the full-CI wave function is approximated by the following wave function in the canonical orbital basis:
+   <div id="eq1" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m001" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">1</span>
+   </div>Two numbers in the ket represent the occupation numbers of 1σ
+   <sub>g</sub> and 1σ
+   <sub>u</sub> orbitals, respectively. For example, |20⟩ represents the determinant that the 1σ
+   <sub>g</sub> orbital is doubly occupied while the 1σ
+   <sub>u</sub> orbital is unoccupied, namely, RHF configuration. In the localized orbital basis, the wave function is expressed as in 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+    <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+   </a>, which corresponds to one CSF.
+   <div id="eq2" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m002" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">2</span>
+   </div>Here, 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+    <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+   </a> indicates that the molecular orbital is singly occupied by a spin-α and β electron, respectively. The Slater determinant appearing in 
+   <a rid="eq2" ref-type="disp-formula" href="#eq2">eq 
+    <a rid="eq2" ref-type="disp-formula" href="#eq2">2</a>
+   </a> is not a spin eigenfunction, but a linear combination of spin-triplet and singlet wave functions of 
+   <span class="italic">M</span>
+   <sub>S</sub> = 0. Because the determinant |αβ⟩ breaks both spatial and spin symmetries, the single determinant wave function carrying spin-β unpaired electrons in the localized orbital basis is termed a broken-symmetry (BS) wave function.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+   </span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">At the intermediate H···H distance the wave function is approximated as in 
+   <a rid="eq3" ref-type="disp-formula" href="#eq3">eq 
+    <a rid="eq3" ref-type="disp-formula" href="#eq3">3</a>
+   </a>.
+   <div id="eq3" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m003" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">3</span>
+   </div>Here, 
+   <span class="italic">C</span>
+   <sub>1</sub> &gt; 
+   <span class="italic">C</span>
+   <sub>2</sub> and 
+   <span class="italic">C</span>
+   <sub>1</sub>
+   <span class="sup">2</span> + 
+   <span class="italic">C</span>
+   <sub>2</sub>
+   <span class="sup">2</span> = 1. This wave function is expressed by the linear combinations of RHF (|20⟩) and open shell singlet diradical (given in 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+    <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+   </a>) configurations. The coefficients 
+   <span class="italic">C</span>
+   <sub>1</sub> and 
+   <span class="italic">C</span>
+   <sub>2</sub> change continuously along the potential energy curve, depending on the open shell characters. In quantum chemistry, the open shell characters can be measured by diradical characters denoted by 
+   <span class="italic">y
+    <sub>i</sub>
+   </span> (0 ≤ 
+   <span class="italic">y
+    <sub>i</sub>
+   </span> ≤ 1, 
+   <span class="italic">i</span> = 0, 1, 2, ...). The diradical characters 
+   <span class="italic">y
+    <sub>i</sub>
+   </span> can be calculated from the occupation number of the lowest unoccupied natural orbital (LUNO) + 
+   <span class="italic">i</span>, which is equal to twice the weight of the doubly excited configuration from HOMO – 
+   <span class="italic">i</span> to LUMO + 
+   <span class="italic">i</span> in the perfect pairing double excitation CI scheme. In closed shell singlet states, a diradical character 
+   <span class="italic">y</span>
+   <sub>0</sub> = 0, and for pure open shell states like the dissociation limit of H
+   <sub>2</sub>, 
+   <span class="italic">y</span>
+   <sub>0</sub> becomes unity. At intermediate bond regions 
+   <span class="italic">y</span>
+   <sub>0</sub> is between 0 and 1. Diradical characters have attracted attention in the theoretical design for organic nonlinear optical (NLO) and singlet fission molecular systems.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref65" href="#ref65">65</a>−
+    <a ref-type="bibr" rid="ref69" href="#ref69">69</a>
+   </span> The diradical characters can be calculated from UHF wave functions, but UHF wave functions suffer from unwilling contributions from higher spin multiplicities, which are known as spin contaminations. Therefore, the spin projection procedure is important. The diradical characters at the spin-projected UHF (PUHF) level (
+   <span class="italic">y
+    <sub>i</sub>
+   </span>
+   <span class="sup">PUHF</span>) can be calculated using 
+   <a rid="eq4" ref-type="disp-formula" href="#eq4">eq 
+    <a rid="eq4" ref-type="disp-formula" href="#eq4">4</a>
+   </a>.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref62" href="#ref62">62</a>,
+    <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+   </span>
+   <div id="eq4" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m004" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">4</span>
+   </div>Here, 
+   <span class="italic">n</span>
+   <sub>LUNO+
+    <span class="italic">i</span>
+   </sub> represents the occupation number of the LUNO + 
+   <span class="italic">i</span> natural orbital.
+  </p>
+ </sec>
+ <sec id="sec2.2" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.2</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum Chemical Calculations on Quantum Computers</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The approach to perform full-CI calculations on quantum computers developed by Aspuru-Guzik and co-workers
+   <span class="sup">
+    <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+   </span> is based on the quantum phase estimation algorithm (QPEA) proposed by Abrams and Lloyd:
+   <span class="sup">
+    <a ref-type="bibr" rid="ref56" href="#ref56">56</a>
+   </span> Time evolution of a wave function |Ψ⟩ is conditionally simulated with a unitary operator 
+   <span class="italic">U</span> = exp(−
+   <span class="italic">iHt</span>) (controlled-
+   <span class="italic">U</span>; ctrl-
+   <span class="italic">U</span>) as given in 
+   <a rid="eq5" ref-type="disp-formula" href="#eq5">eq 
+    <a rid="eq5" ref-type="disp-formula" href="#eq5">5</a>
+   </a>, and the energy eigenvalue 
+   <span class="italic">E</span> is read out as a phase difference ϕ between |0⟩ and |1⟩ using an inverse quantum Fourier transformation.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="eq5" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m005" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">5</span>
+   </div>where 
+   <span class="italic">H</span>
+   <sub>d</sub> denotes a Hadamard transformation, and it generates the superposition state {|0⟩ + |1⟩}/√2 from |0⟩. Importantly, the QPEA utilizes projective measurements with an electronic Hamiltonian 
+   <span class="italic">H</span> to readout the eigenenergy, and therefore, the preparation of good initial guess wave functions having sufficiently large overlap with the particular eigenstate is essential.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The QPEA-based full-CI initially scales 
+   <span class="italic">O</span>(
+   <span class="italic">N</span>
+   <sub>orb</sub>
+   <span class="sup">11</span>) in the upper bound (
+   <span class="italic">O</span>(
+   <span class="italic">N</span>
+   <sub>orb</sub>
+   <span class="sup">9</span>) in the empirical base),
+   <span class="sup">
+    <a ref-type="bibr" rid="ref26" href="#ref26">26</a>
+   </span> where 
+   <span class="italic">N</span>
+   <sub>orb</sub> denotes the number of spin orbitals, but currently the gate scaling is reduced to be 
+   <span class="italic">Õ</span>(η
+   <span class="sup">2</span>
+   <span class="italic">N</span>
+   <sub>orb</sub>
+   <span class="sup">3</span>
+   <span class="italic">t</span>) and 
+   <span class="italic">Õ</span>(
+   <span class="italic">N</span>
+   <sub>orb</sub>
+   <span class="sup">5</span>
+   <span class="italic">t</span>) for Gaussian orbitals with first- and second-quantized representations, respectively,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref29" href="#ref29">29</a>,
+    <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+   </span> by adopting qubitization
+   <span class="sup">
+    <a ref-type="bibr" rid="ref57" href="#ref57">57</a>
+   </span> or truncated Taylor series techniques,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref58" href="#ref58">58</a>
+   </span> on-the-fly computations of molecular integrals, and so on. Here, 
+   <span class="italic">O</span> indicates an asymptotic upper bound and 
+   <span class="italic">Õ</span> represents an asymptotic upper bound suppressing polylogarithmic factors, and η is a number of electrons.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To perform quantum simulations of atoms and molecules on quantum computers, information on electronic wave functions should be mapped onto quantum registers. Several approaches for wave function mapping were proposed,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref3" href="#ref3">3</a>,
+    <a ref-type="bibr" rid="ref36" href="#ref36">36</a>,
+    <a ref-type="bibr" rid="ref37" href="#ref37">37</a>,
+    <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+   </span> and the most fundamental one is a direct mapping (DM).
+   <span class="sup">
+    <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+   </span> In the DM, each qubit represents the occupation number of a particular spin orbital (|1⟩ if the spin orbital is occupied, otherwise |0⟩), and requires 
+   <span class="italic">N</span>
+   <sub>orb</sub> of qubits (
+   <span class="italic">N</span>
+   <sub>orb</sub> is the number of spin orbitals). In this work, we construct a quantum circuit in the DM representation.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">It should be noted that the classical–quantum hybrid system known as a variational quantum eigensolver (VQE) has attracted attention as near-future applications of quantum computers for quantum chemical problems.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref13" href="#ref13">13</a>−
+    <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+   </span> In VQE, the wave function is generated by applying a unitary operator 
+   <span class="italic">U</span>(θ) to an initial guess wave function, and the energy expectation value of the prepared wave function is calculated using quantum computers; then, the parameters θ in the unitary operator are variationally optimized on classical computers to minimize the energy expectation value. VQE-based molecular energy calculations were experimentally implemented using photonic systems,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref13" href="#ref13">13</a>
+   </span> superconducting circuits,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref15" href="#ref15">15</a>,
+    <a ref-type="bibr" rid="ref20" href="#ref20">20</a>,
+    <a ref-type="bibr" rid="ref21" href="#ref21">21</a>
+   </span> and trapped ion systems,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+    <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+   </span> exemplifying the error-resilient nature of the calculations.
+  </p>
+ </sec>
+ <sec id="sec2.3" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.3</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Preparation of Multiconfigurational Wave Functions on Quantum Registers</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">As discussed above, the wave function of the molecules having intermediate diradical characters have multiconfigurational characters, and in such cases neither RHF nor CSF has sufficiently large overlap with the full-CI root. The construction of the multiconfigurational wave function by making an appropriate linear combination of closed shell and open shell wave functions is a straightforward solution to improve the overlap. For the construction of multiconfigurational wave functions, a method to estimate expansion coefficients of individual Slater determinants (or CSFs) is required. In this study, we utilized diradical characters for this purpose. From the definitions of diradical characters given in 
+   <a rid="sec2.1" ref-type="other" href="#sec2.1">Section 
+    <a rid="sec2.1" ref-type="other" href="#sec2.1">2.1</a>
+   </a>, we can calculate 
+   <span class="italic">y
+    <sub>i</sub>
+   </span> from approximated wave functions like UHF and use them to estimate the weights of closed shell and open shell electronic configurations in the CI expansion.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Our strategy is as follows: (I) perform a BS-UHF calculation, (II) diagonalize one-particle density matrix to generate natural orbitals, (III) determine spin-projected diradical characters 
+   <span class="italic">y
+    <sub>i</sub>
+   </span> using 
+   <a rid="eq4" ref-type="disp-formula" href="#eq4">eq 
+    <a rid="eq4" ref-type="disp-formula" href="#eq4">4</a>
+   </a>, and (IV) construct a multiconfigurational wave function using an assumption given in 
+   <a rid="eq6" ref-type="disp-formula" href="#eq6">eq 
+    <a rid="eq6" ref-type="disp-formula" href="#eq6">6</a>
+   </a>:
+   <div id="eq6" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m006" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">6</span>
+   </div>Here, |φ(CSS)⟩ and |φ(OSS)⟩ represent closed shell singlet and open shell singlet wave functions, respectively. By using natural orbitals as the basis of the wave function expansion and applying 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+    <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+   </a>, the following equation can be obtained.
+   <div id="eq7" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m007" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">7</span>
+   </div>
+   <a rid="eq7" ref-type="disp-formula" href="#eq7">Equation 
+    <a rid="eq7" ref-type="disp-formula" href="#eq7">7</a>
+   </a> is equivalent to the definition of diradical characters in the perfect pairing double excitation CI scheme. For tetraradical systems, the wave function is approximated as follows:
+   <div id="eq8" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m008" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">8</span>
+   </div>Here, |φ (Diradical 0)⟩ stands for the configuration having an open shell singlet character for HONO–LUNO pair whereas (HONO – 1)–(LUNO + 1) has a closed shell singlet character. In a similar way to 
+   <a rid="eq8" ref-type="disp-formula" href="#eq8">eq 
+    <a rid="eq8" ref-type="disp-formula" href="#eq8">8</a>
+   </a>, multiconfigurational wave functions for hexa- and higher-radical characters can be readily constructed.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">A quantum circuit to prepare the multiconfigurational wave function is illustrated in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>. In 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>, each horizontal line corresponds to a qubit, and quantum gates depicted by squares, circles, and vertical lines are applied in left-to-right order. The circuit contains ancilla qubits, which keep information on diradical characters 
+   <span class="italic">y
+    <sub>i</sub>
+   </span>, in addition to 
+   <span class="italic">N</span>
+   <sub>orb</sub> of qubits used for DM. The number of the ancilla qubits equals that of the diradical characters considered in the wave function preparation.
+  </p>
+  <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 1</span>
+   <div class="caption">
+    <p>A quantum circuit for the construction of multiconfigurational wave functions on quantum registers. (A) The quantum circuit consists of the following steps as indicated by roman numbers and background colors. (i) Generation of the RHF configuration, (ii) ancilla qubit rotation with an angle 
+     <span class="italic">θ
+      <sub>i</sub>
+     </span>, (iii) diradical configuration generations, (iv) tetraradical configuration generations, (v) hexaradical configuration generations, and so on. Detailed quantum circuits for the di-, and tetraradical configuration generations are given in parts B and C, respectively. We draw the full circles if the controlled operation is applied when the control qubit is |1⟩. Wave functions of more extended spin systems can be constructed systematically expanding the circuit. (B) Quantum circuit for the preparation of diradical configurations specified 2 in part A. (C) Quantum circuit for the preparation of tetraradical configurations specified 4 in part A.
+    </p>
+   </div>
+   <div xlink:href="oc-2018-00788n_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The quantum circuit starts RHF configuration preparation (specified i in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>A). This step consists of NOT operations (denoted by X) to the qubits representing occupied orbitals to change the qubit states from |0⟩ to |1⟩. The second step (ii) is rotations applied to the ancilla qubits with the rotating angle 
+   <span class="italic">θ
+    <sub>i</sub>
+   </span> depending on diradical characters 
+   <span class="italic">y
+    <sub>i</sub>
+   </span>:
+   <div id="eq9" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m009" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">9</span>
+   </div>
+   <div id="eq10" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m010" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">10</span>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The third and following steps, iii–v, and so on, are sequential generations of di-, tetra-, hexa-, and higher-radical configurations conditional to ancilla qubits. These steps generate open shell electronic configurations if the corresponding ancilla qubits are in state |1⟩ and adopt no operations if the ancillas are the |0⟩ state. These conditional operations produce linear combinations of open shell and closed shell electronic configurations as given in 
+   <a rid="eq6" ref-type="disp-formula" href="#eq6">eq 
+    <a rid="eq6" ref-type="disp-formula" href="#eq6">6</a>
+   </a>. The diradical wave function given in 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+    <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+   </a> can be generated using a circuit given in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>B, by analogy with Bell state preparations. The diradical wave function preparation in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>B consists of two single-qubit rotations and following three CNOT operations. The first three quantum gates generate the linear combination of states in which LUNO + 
+   <span class="italic">i</span> is doubly occupied and unoccupied. The subsequent two CNOT gates conditionally change the occupation number of the HONO – 
+   <span class="italic">i</span> orbital from doubly occupied to unoccupied, if the LUNO + 
+   <span class="italic">i</span> is doubly occupied. The wave function after diradical configuration generations specified iii in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>A is given in 
+   <a rid="eq11" ref-type="disp-formula" href="#eq11">eq 
+    <a rid="eq11" ref-type="disp-formula" href="#eq11">11</a>
+   </a>.
+   <div id="eq11" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m011" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">11</span>
+   </div>Upon comparison of 
+   <a rid="eq8" ref-type="disp-formula" href="#eq8">eqs 
+    <a rid="eq8" ref-type="disp-formula" href="#eq8">8</a>
+   </a> and 
+   <a rid="eq11" ref-type="disp-formula" href="#eq11">11</a>, the wave function component corresponding to tetraradical configuration at this stage is given in 
+   <a rid="eq12" ref-type="disp-formula" href="#eq12">eq 
+    <a rid="eq12" ref-type="disp-formula" href="#eq12">12</a>
+   </a>.
+   <div id="eq12" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m012" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">12</span>
+   </div>The genuine tetraradical wave function we want to construct is given in 
+   <a rid="eq13" ref-type="disp-formula" href="#eq13">eq 
+    <a rid="eq13" ref-type="disp-formula" href="#eq13">13</a>
+   </a>.
+   <div id="eq13" class="disp-formula">
+    <div xlink:href="oc-2018-00788n_m013" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">13</span>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To generate the configuration in 
+   <a rid="eq13" ref-type="disp-formula" href="#eq13">eq 
+    <a rid="eq13" ref-type="disp-formula" href="#eq13">13</a>
+   </a> from that in 
+   <a rid="eq12" ref-type="disp-formula" href="#eq12">eq 
+    <a rid="eq12" ref-type="disp-formula" href="#eq12">12</a>
+   </a>, we introduce another ancilla qubit and perform two Fredkin (controlled-SWAP) gates with conditionally interchange occupation of the spin-β electron between HONO – 
+   <span class="italic">i</span> and LUNO + 
+   <span class="italic">i</span> as illustrated in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>C. In 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>C black circles and crosses represent control and target qubits, respectively, and the SWAP operations between two target qubits are performed if the control qubit is in the |1⟩ state. These operations generate, for example, |ααββ⟩ from |2200⟩. The constructions of the hexaradical configuration specified v in 
+   <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+    <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+   </a>A and higher-radical configurations can be also achieved by introducing ancillas and applying Fredkin gates.
+  </p>
+ </sec>
+</sec>

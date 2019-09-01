@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Installing a Quixote repository</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Quixote system is based on the Chempound package, which provides a complete set of components for ingestion of CML, conversion to RDF and customisable display of webpages (using Freemarker templates). This installation has already been satisfactorily carried out at Zaragoza in less than 24 hours using the current Chempound distribution 
+  <span ext-link-type="uri" xlink:href="http://bitbucket.org/chempound" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://bitbucket.org/chempound</span> and a number of calculations have been ingested. The Chempound system contains customisable modules for many types of chemical object and, in this case, is supported by the compchem module. This provides everything necessary for the default installation but, if customisation is required, the configuration and resource files in compchem-common, compchem-handler and compchem-importer can be edited. Chempound uses the SWORD2 protocol for ingest and so can accept input from any SWORD2- compliant client system.
+ </p>
+</sec>

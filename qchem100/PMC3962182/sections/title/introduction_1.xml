@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="S0001" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Enzymes have obtained their amazing transformational capabilities through a colossal experiment in the optimization and diversification of protein structure-function relationships carried out over enormous stretches of time [
+  <a rid="CIT0001" ref-type="bibr" href="#CIT0001">1</a>]. As such, it is critical to understand both the physicochemical properties of a biomolecular system and its history. Thus, the subject of this mini-review is on how both sequence-based bioinformatics and molecular dynamics (MD) simulations, particularly those using hybrid Quantum Chemical/Molecular Mechanical (QC/MM, the term QM/MM is also often used) potential energy functions, can be employed to discover the most critical amino acids relating to the enzyme's specific function as well as the atomic details of an enzymatic mechanism. We will highlight some results obtained from our own lab studying sesquiterpene synthases [
+  <a rid="CIT0002" ref-type="bibr" href="#CIT0002">2</a>] and class D β-lactamases[
+  <a rid="CIT0003" ref-type="bibr" href="#CIT0003">3</a>], two enzyme families known for their evolvability.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Comparative analysis of sequence and structural features of extant, mechanistically diverse, enzyme family members can result in the construction of powerful structure-function relationships and continues to dominate enzymatic studies today[
+  <a rid="CIT0004" ref-type="bibr" href="#CIT0004">4</a>]. Yet, there remains an immense lack of knowledge at the atomic level on how enzymes evolve novel functions especially when residues outside the active site play a central role in this evolution. Some of the now classical studies of molecular adaptation, on topics such as insecticide resistance[
+  <a rid="CIT0005" ref-type="bibr" href="#CIT0005">5</a>], color vision [
+  <a rid="CIT0006" ref-type="bibr" href="#CIT0006">6</a>], antibiotic resistance [
+  <a rid="CIT0007" ref-type="bibr" href="#CIT0007">7</a>–
+  <a rid="CIT0009" ref-type="bibr" href="#CIT0009">9</a>], cofactor selectivity [
+  <a rid="CIT0010" ref-type="bibr" href="#CIT0010">10</a>, 
+  <a rid="CIT0011" ref-type="bibr" href="#CIT0011">11</a>], hormone receptor selectivity [
+  <a rid="CIT0012" ref-type="bibr" href="#CIT0012">12</a>–
+  <a rid="CIT0014" ref-type="bibr" href="#CIT0014">14</a>] as well as those from directed evolution [
+  <a rid="CIT0015" ref-type="bibr" href="#CIT0015">15</a>], have uncovered a complex network of interactions often involving residues outside the active site. These studies have elucidated structure-function relationships that otherwise would have remained hidden with conventional analyses [
+  <a rid="CIT0001" ref-type="bibr" href="#CIT0001">1</a>]. In addition, they have revealed stability-function trade-offs [
+  <a rid="CIT0016" ref-type="bibr" href="#CIT0016">16</a>–
+  <a rid="CIT0018" ref-type="bibr" href="#CIT0018">18</a>], promiscuity of ancestral proteins [
+  <a rid="CIT0019" ref-type="bibr" href="#CIT0019">19</a>], and the profound concept of functional epistasis [
+  <a rid="CIT0020" ref-type="bibr" href="#CIT0020">20</a>]. Functional epistasis is defined here as the phenotypic consequences of a mutation depending on the genetic sequence in which it occurs [
+  <a rid="CIT0021" ref-type="bibr" href="#CIT0021">21</a>]. Epistasis restricts the evolutionary pathway to novel functions so that adaptive walks through sequence space must be acquired in a particular order and through a rugged functional landscape to avoid non-functional intermediates; an idea pioneered by Linus Pauling and Emile Zuckerkandl in a summary of their research [
+  <a rid="CIT0022" ref-type="bibr" href="#CIT0022">22</a>] and by the evolutionary biologist John Maynard Smith in response to an attack on the concept of natural selection[
+  <a rid="CIT0023" ref-type="bibr" href="#CIT0023">23</a>]. These studies obligate us to seek answers to broader, more fundamental questions [
+  <a rid="CIT0024" ref-type="bibr" href="#CIT0024">24</a>] such as, “Does functional evolution proceed by a few mutations of large effect or by many mutations each of small effect?”; “Could alternative solutions to the same problem have evolved and if so how might they differ in sequence, structure and mechanism?”; “What role does epistasis have in structuring evolutionary trajectories?” and “Can we predict the course of genetic evolution?”[
+  <a rid="CIT0025" ref-type="bibr" href="#CIT0025">25</a>]. The answers to these questions have deep implications for unlocking nature's fundamental design principles, understanding chemical allostery [
+  <a rid="CIT0026" ref-type="bibr" href="#CIT0026">26</a>] and for developing totally new strategies for the rational design of molecules to control biochemical processes [
+  <a rid="CIT0027" ref-type="bibr" href="#CIT0027">27</a>]. Achieving these remarkable insights into protein structure and function evolution will require a multi-disciplinary approach involving cutting-edge molecular biology, structural biology, bioinformatics and molecular modeling methods.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Enzymatic catalytic cycles often involve several chemical steps requiring the stabilization of multiple intermediate and transition states during catalysis. In principle, their active sites could be pre-organized to catalyze all of the chemical reactions involved (a principle championed by Arieh Warshel [
+  <a rid="CIT0028" ref-type="bibr" href="#CIT0028">28</a>]) minimizing any reorganizational motions required to meet the demands of subsequent steps. This principle was demonstrated in a study of serine esterases [
+  <a rid="CIT0029" ref-type="bibr" href="#CIT0029">29</a>]. However, if the active site reorganization needed to achieve catalysis of a subsequent step involves, for example, a conformational change, then evolution could have acted to 1) lower the energetic cost of reorganization and/or 2) evolve a novel function. In the latter case, protein fluctuations [
+  <a rid="CIT0030" ref-type="bibr" href="#CIT0030">30</a>] play an important role in the mechanism and in understanding its evolution of novel function. In addition, the study of enzymes that show changes in catalytic activity upon mutation of residues distant from the active site presents a clear opportunity to better understand 1) allosteric principles [
+  <a rid="CIT0031" ref-type="bibr" href="#CIT0031">31</a>, 
+  <a rid="CIT0032" ref-type="bibr" href="#CIT0032">32</a>] to control, not just the binding of a substrate to the enzyme but also its reactivity with implications for the design of new natural products and the chemical rescue of disease proteins [
+  <a rid="CIT0033" ref-type="bibr" href="#CIT0033">33</a>, 
+  <a rid="CIT0034" ref-type="bibr" href="#CIT0034">34</a>], and 2) the vast neutral sequence space of proteins that endows them with two seemingly conflicting properties; robustness and evolvability [
+  <a rid="CIT0035" ref-type="bibr" href="#CIT0035">35</a>].
+ </p>
+</sec>

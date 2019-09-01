@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Dependence of convergence on operator ordering</div>
+ <p id="Par44" xmlns="http://www.w3.org/1999/xhtml">To demonstrate the importance of the gradient-based operator ordering chosen by ADAPT-VQE, we compare it to a few alternate procedures for growing the ansatz: (a) Random (ijab): Randomly select from a pool of 
+  <div id="IEq20" class="inline-formula">
+   <div class="alternatives">
+    <span id="M59" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _{ij}^{ab}$$\end{document}</span>
+    <div id="M60" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq20.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where the indices are restricted to those which do not annihilate the HF reference state. (b) Random (pqrs): Randomly select from a pool of 
+  <div id="IEq21" class="inline-formula">
+   <div class="alternatives">
+    <span id="M61" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _{pq}^{rs}$$\end{document}</span>
+    <div id="M62" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq21.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where the indices are not restricted. (c) Lexical (ijab): Select from an ordered pool of 
+  <div id="IEq22" class="inline-formula">
+   <div class="alternatives">
+    <span id="M63" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _{ij}^{ab}$$\end{document}</span>
+    <div id="M64" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq22.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where the indices are restricted to those which do not annihilate the HF reference state. (d) Lexical (pqrs): Select from an ordered pool of 
+  <div id="IEq23" class="inline-formula">
+   <div class="alternatives">
+    <span id="M65" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _{pq}^{rs}$$\end{document}</span>
+    <div id="M66" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq23.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where the indices are not restricted.
+ </p>
+ <p id="Par45" xmlns="http://www.w3.org/1999/xhtml">In Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>, we show the convergence of each of these orderings and compare them to ADAPT using BeH
+  <sub>2</sub> as a typical example. What stands out is that the ADAPT ansatz converges dramatically faster than the other four cases considered. While the two random-growth ansätze converge relatively similar to each other regardless of whether restricted indices are used or not, the lexically ordered ansatz shows a clear distinction between the restricted index (singles and doubles) and un-restricted index (generalized singles and doubles) ordering. This is due to the fact that the first operators in the ansatz involve creation operators on the occupied orbitals, and these do not contribute until the wavefunction has become entangled. The un-Trotterized UCCSD result is also marked for reference. Overall, the data in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> demonstrate that an iterative gradient minimization algorithm yields a highly compact ansatz for a given state.
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Convergence of the energy as a function of parameter count for BeH
+     <sub>2</sub> with a Be–H distance of 2.39 Å. The black dot indicates the UCCSD point
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10988_Fig3_HTML" id="d29e2892" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

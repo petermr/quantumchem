@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Implementation of UCC through time evolution</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We can generate the UCC state by simulating a pseudo time evolution through Suzuki-Trotter expansion on the evolution operator 
+  <div id="m29" class="inline-formula">
+   <span id="d32e853" xlink:href="srep03589-m29.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <a ref-type="bibr" rid="b21" href="#b21">21</a>. To proceed, we consider an 
+  <span class="italic">N</span>-electron system with 
+  <span class="italic">M</span>, where 
+  <span class="italic">M</span> &gt; 
+  <span class="italic">N</span>, molecular orbitals (including spins). We need totally 
+  <span class="italic">M</span> qubits; the reference state is the Hartree-Fock state where 
+  <span class="italic">N</span> orbitals are filled, and 
+  <span class="italic">M</span> − 
+  <span class="italic">N</span> orbitals are empty, i.e, |Φ〉 = |000…0111…1〉. We also define an effective Hamiltonian 
+  <span class="italic">K</span> ≡ 
+  <span class="italic">i</span> (
+  <span class="italic">T</span> − 
+  <span class="italic">T</span>
+  <span class="sup">†</span>), which means that we should prepare the state 
+  <span class="italic">e</span>
+  <span class="sup">−
+   <span class="italic">iK</span>
+  </span> |Φ〉.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We decompose 
+  <span class="italic">K</span> into subgroups 
+  <span class="italic">K</span> = 
+  <span class="italic">K</span>
+  <sub>1</sub> + 
+  <span class="italic">K</span>
+  <sub>2</sub> + 
+  <span class="italic">K</span>
+  <sub>3</sub> + … + 
+  <span class="italic">K
+   <sub>P</sub>
+  </span>, where 
+  <span class="italic">P</span> ≤ 
+  <span class="italic">N</span>, and 
+  <div id="m30" class="inline-formula">
+   <span id="d32e939" xlink:href="srep03589-m30.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We now write 
+  <span class="italic">e</span>
+  <span class="sup">−
+   <span class="italic">iK</span>
+  </span> = (
+  <span class="italic">e</span>
+  <span class="sup">−
+   <span class="italic">iKδ</span>
+  </span>)
+  <span class="sup">1/
+   <span class="italic">δ</span>
+  </span> for some dimensionless constant 
+  <span class="italic">δ</span>. For small 
+  <span class="italic">δ</span>, we have 
+  <div id="m31" class="inline-formula">
+   <span id="d32e969" xlink:href="srep03589-m31.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Since each 
+  <span class="italic">K
+   <sub>j</sub>
+  </span> contains 
+  <span class="italic">N
+   <span class="sup">j</span>
+  </span>(
+  <span class="italic">M</span> − 
+  <span class="italic">N</span>)
+  <span class="italic">
+   <span class="sup">j</span>
+  </span> terms of the creation 
+  <span class="italic">c</span>
+  <span class="sup">†</span> and annihilation 
+  <span class="italic">c</span> operators, we will need to individually simulate each term separately, e.g., 
+  <div id="m32" class="inline-formula">
+   <span id="d32e1001" xlink:href="srep03589-m32.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="m33" class="inline-formula">
+   <span id="d32e1004" xlink:href="srep03589-m33.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which can be implemented by transforming into spin operators through Jordan-Wigner transformation. The time evolution for each term can be simulated with a quantum circuit involving many nonlocal controlled gates, which can be efficiently implemented with trapped ions as we shall see below.
+ </p>
+</sec>

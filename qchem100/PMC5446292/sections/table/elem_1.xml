@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="t2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">TABLE II.</span>
+ <div class="caption">
+  <p>DFT-PBE and HF adsorption energies for water on 2-layer LiH substrates with different number of atoms in the supercell and different 
+   <span class="italic">k</span>-meshes. The reference 2-layer geometry with 64-atoms is shown in Fig. 
+   <a ref-type="fig" rid="f1" href="#f1">1</a>. The DFT-PBE and HF calculations have been performed with 
+   <span class="sc">vasp</span> and employ a 500 eV kinetic energy cutoff. The HF 
+   <span class="sc">crystal</span> calculations with an AVTZ-quality basis set and a 
+   <div class="inline-formula">
+    <div id="M16" class="math">
+     <span class="mn">3</span>
+     <span class="mo">×</span>
+     <span class="mn">3</span>
+     <span class="mo">×</span>
+     <span class="mn">1</span>
+    </div>
+   </div>
+   <span class="italic">k</span>-mesh yield a value of 14 meV.
+  </p>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup span="1">
+   <col align="left" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+   <col align="center" span="1"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center" colspan="4" rowspan="1">
+     <span class="italic">E</span>
+     <sub>ads</sub> (meV)
+    </th>
+   </tr>
+   <tr>
+    <th colspan="1" rowspan="1">
+     <span class="italic">k</span>-mesh
+    </th>
+    <th align="center" colspan="1" rowspan="1">Atoms</th>
+    <th align="center" colspan="1" rowspan="1">PBE</th>
+    <th align="center" colspan="1" rowspan="1">HF</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="1" rowspan="1">(Γ-point)</td>
+    <td colspan="1" rowspan="1">32</td>
+    <td colspan="1" rowspan="1">219</td>
+    <td colspan="1" rowspan="1">10</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">(Γ-point)</td>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">215</td>
+    <td colspan="1" rowspan="1">14</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">(Γ-point)</td>
+    <td colspan="1" rowspan="1">128</td>
+    <td colspan="1" rowspan="1">215</td>
+    <td colspan="1" rowspan="1">15</td>
+   </tr>
+   <tr>
+    <td colspan="1" rowspan="1">(
+     <div class="inline-formula">
+      <div id="M17" class="math">
+       <span class="mn">3</span>
+       <span class="mo">×</span>
+       <span class="mn">3</span>
+       <span class="mo">×</span>
+       <span class="mn">1</span>
+      </div>
+     </div>)
+    </td>
+    <td colspan="1" rowspan="1">64</td>
+    <td colspan="1" rowspan="1">214</td>
+    <td colspan="1" rowspan="1">15</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

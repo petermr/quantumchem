@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.9" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Redox Network Expansion Algorithm with Cheminformatic Reaction Strings</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We implemented a network expansion algorithm to iteratively reduce carbonyl functional groups and oxidized alcohol/amine functional groups for a subset of the natural metabolites of the KEGG database. Due to constraints in available computational resources to run electronic structure calculations, we used the set of all metabolic compounds in the KEGG database with 21 carbon atoms or fewer as seed metabolites. Using the RDKit open source cheminformatics software, we identify carbonyl functional groups (alcohol/amine functional groups) in each of the seed KEGG metabolites and transform them through a redox reaction to the corresponding reduced (oxidized) alcohol/amine (carbonyl). In practice, this is done using SMARTS reaction strings as implemented in RDKit and iteratively applying them to SMILES representations
+  <span class="sup">
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> of the KEGG metabolites. The SMARTS reaction strings for the reduction and oxidation reactions considered here are shown in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.9b00297/suppl_file/oc9b00297_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Tables S2 and S3</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We iteratively apply the reduction/oxidation reaction transformations to the compounds generated from KEGG seed metabolites. We terminate the iterations when the resulting product has, in the case of reductions, no more carbonyl functional groups that can be reduced (or in the case of oxidative transformations, no more alcohol/amine functional groups that can be oxidized to carbonyls). All software was written using the Python programming language.</p>
+</sec>

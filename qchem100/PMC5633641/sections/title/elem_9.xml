@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec9" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Working with ligands</div>
+ <sec id="Sec10" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Polar surface area</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The polar surface area (PSA) is defined as the combined surface area belonging to oxygen and nitrogen atoms and their hydrogen atoms. Palm et al. [
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>] were the first to use a calculated PSA to predict the absorption of drugs. A new method was designed to derive the PSA by quantum chemical means QMPSA [
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>]. This is illustrated in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The original method by Palm et al., and our QMPSA have both been implemented in Molden.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig3" class="fig">
+    <span class="label">Fig. 3</span>
+    <div class="caption">
+     <p>QMPSA. Quantum mechanical polar surface area for the drug molecule sulfasalazine. 
+      <span class="italic">Red</span> and 
+      <span class="italic">blue</span>: polar; 
+      <span class="italic">green</span>: apolar surface area
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig3_HTML" id="d29e861" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Ren et al. [
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>], for example, analysed anticancer fungal polysaccharides based on physiochemical properties and identified a unique region in chemical space using a series of molecular descriptors including Molden’s QMPSA.
+  </p>
+ </sec>
+ <sec id="Sec11" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Alignment of molecules</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Alignment of molecules -also known as structure superposition- has been implemented following two separate strategies, one for small molecule alignment and one for the alignment of proteins. The alignment of small molecules is illustrated in Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig4" class="fig">
+    <span class="label">Fig. 4</span>
+    <div class="caption">
+     <p>Alignment of small molecules. Three equivalent atoms are selected for each molecule. The atoms labelled 1 are used to translate the first molecule on top of the second. The vectors from atom 1 to atom 2 and atom 2 to atom 3, respectively, are used for two consecutive rotations. The user can select any three atoms</p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig4_HTML" id="d29e886" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec12" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Crystal optimizer based on the small molecule gaff force field</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden 1.0 was already able to read a number of file formats containing crystal information (such as the FDAT and chemx formats) and it was able to display the crystal as a number of unit cells along one or more of the cell axes. The possibility to edit unit cell constants a, b and c, and angles α, β and χ and space group was added later, as well as the possibility to rotate the atoms in the unit cell. In Molden 2.0 the capability to optimise the crystal geometry was added.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The crystal is computationally approximated by a 5 × 5 × 5 grid of copies of the unit cell (in green) placed at the centre of the grid (see Fig. 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>). Neutral charge groups are employed by summing the long-range electrostatic interactions between the molecule(s) in the unit cell and its copies on the 5 × 5 × 5 grid. The geometry of the molecule(s) in the unit cell and the lattice parameters can be optimized using the small molecule force field GAFF [
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] and a Powell-Beale conjugate gradient scheme [
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. The GAFF force field requires that partial charges are assigned using a restrained electrostatic potential fit (RESP) model [
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>]. Other, simpler charge models are available in Molden too. These may be used when very accurate energy calculations are not required. A parallel implementation of the crystal optimizer is available.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig5" class="fig">
+    <span class="label">Fig. 5</span>
+    <div class="caption">
+     <p>Crystal optimisation. Approximation of lattice sums by calculating all pairwise interactions in a 5 × 5 × 5 super cell expansion of the unit cell (
+      <span class="italic">green</span>).For clarity only two dimensions are shown
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig5_HTML" id="d29e920" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec13" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ligand docking with PMF scoring</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden facilitates both interactive docking and fully automatic optimisation of ligand protein complexes. For interactive docking a Potential of Mean Force (PMF) scoring function by Muegge and Martin [
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>] is being used, while the automatic optimisation of ligand protein complexes uses the AMBER force field [
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>]. The PMF is derived from the radial distribution of distances between atoms of two distinct types from the PDB database (the available atom types are listed in the Molden documentation). Muegge and Rarey have reviewed the PMF scoring function in comparison to other scoring functions [
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>] and reported that the PMF score outperformed the energy score and the empirical score of FlexX and is less sensitive to small coordinate changes than the FlexX score. The PMF score was the only scoring function for which a statistically significant correlation could be found between the predicted score and the measured binding affinities of inhibitor-ligand complexes. A comparison for a variety of sets of protein–ligand complexes from the PDB showed the superiority of PMF scoring over SMoG and Böhm’s score.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The PMF distributions are converted to the interatomic energy function [
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>]. The PMF score is used by Molden as a measure of the likelihood of a particular ligand–protein conformation. Conformations can be generated interactively by rotation and translation of the ligand with respect to either the protein, or the world-view. Scores are displayed in a dedicated window that is continuously updated. Individual high/low scoring atom pairs can be highlighted. Figure 
+   <a rid="Fig6" ref-type="fig" href="#Fig6">6</a> illustrates Molden’s interactive docking facility.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig6" class="fig">
+    <span class="label">Fig. 6</span>
+    <div class="caption">
+     <p>Interactive docking of a ligand. The 
+      <span class="italic">inset pop-up window</span> shows the PMF score
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig6_HTML" id="d29e957" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec14" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Partial optimisation of a protein–ligand complex</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molden can also perform an AMBER based optimisation of either the whole protein–ligand complex, or of any user-selected part of it. In the latter case, the input of the user is limited to selection of the residues near the ligand as flexible or rigid, using a pop-up window dedicated to this task.</p>
+ </sec>
+</sec>

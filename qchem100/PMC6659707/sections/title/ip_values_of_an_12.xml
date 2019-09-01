@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec12" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">IP values of anion-solvent pairs study</div>
+ <p id="Par35" xmlns="http://www.w3.org/1999/xhtml">In the second part of this study, we look at anions solvated by a different number of solvent molecules. Previous works have shown the importance of sampling electrolyte configurations
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>,
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>, and have done so using classical MD
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span> or ab-initio MD
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>. We note here that in our investigations we do not report results for complexes involving Li
+  <span class="sup">+</span> cations, since these always have higher IP, as previously reported
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span>, confirmed by our calculations and expected from electrostatic considerations. Thus, the most relevant configurations for oxidation, i.e., with the lowest IP, are those where the cation is not present. In this work, the structures are obtained from snapshots of classical MD simulations, obtained as follows.
+ </p>
+ <p id="Par36" xmlns="http://www.w3.org/1999/xhtml">First, the anion of interest and the solvent molecules are placed on the vertices of a three-dimensional cubic grid, with the aim to create a low-density non-overlapping initial structure
+  <span class="sup">
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>,
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>
+  </span>. Once generated, the structures are brought close to equilibrium by a series of energy minimization, compression/decompression, and annealing stages, broadly based on previous works
+  <span class="sup">
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>,
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span>, to overcome local energy barriers in search of lower energy minima, and, ultimately, more representative structures. The structures are then evolved using the velocity-Verlet algorithm, with a time step of 1.0 fs, in the constant number of atoms, pressure, and temperature (or NPT) ensemble. Temperature and pressure are kept at 300 K and 1 atmosphere, respectively, with a Nosé-Hoover barostat and thermostat
+  <span class="sup">
+   <a ref-type="bibr" rid="CR60" href="#CR60">60</a>–
+   <a ref-type="bibr" rid="CR62" href="#CR62">62</a>
+  </span>. The coordinates of all atoms are saved every 10
+  <span class="sup">3</span> timesteps (i.e., 1 ps) to ensure sufficiently uncorrelated structures. In post processing the positions of the anion and of the closest X solvent molecules (X ranging from one to five) are extracted from the snapshots and used in the ab-initio calculations. The structures do not undergo any further geometry optimization, instead we sample different configurations of this system in order to gather statistics on the IP of anion and solvent complexes. All molecular dynamics simulations are performed in the LAMMPS simulation package
+  <span class="sup">
+   <a ref-type="bibr" rid="CR63" href="#CR63">63</a>
+  </span>. The interactions are modeled using the OPLS2005 force-field
+  <span class="sup">
+   <a ref-type="bibr" rid="CR64" href="#CR64">64</a>
+  </span> from Schrodinger Inc. Since the MD structures do not undergo further geometry optimization, it is important to ensure that the configurations are well sampled by the classical energy model approximation. To this end, we consider a set of 200 configurations of the (TFSI
+  <span class="sup">−</span>, PC) pair and plot in Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5a</a> the energy for these configurations computed with the classical force-field (red) and with DFT (blue). The two distributions are Gaussian-like, with the classical force-field underestimating the energy of the configurations compared to DFT, but preserving the distribution of the energy in the phase space. Thus we conclude that the OPLS2005 force-field samples configurations with reasonable accuracy. Figure 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5b</a> shows an example of a snapshot for the solvated anion (for clarity, not all solvent molecules are shown), in the case of the (TFSI
+  <span class="sup">−</span>, DME) pair, and Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5c–e</a> examples of extracted configurations with one anion and its closest solvent for the same pair.
+  <div id="Fig5" class="fig">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <p>Figure 
+     <span class="bold">a</span> represents for 200 configurations of anion-solvent pairs from MD snapshots for the (TFSI
+     <span class="sup">−</span>, PC) pair, the distribution in energy computed from MD and the distribution of energy computed from DFT (M06-HF). Both these distributions are plotted relative to their average. 
+     <span class="bold">b</span> shows a solvated anion for an MD snapshot in the case of the (TFSI
+     <span class="sup">−</span>, DME) pair. 
+     <span class="bold">c</span>–
+     <span class="bold">e</span> show examples of configurations of solvent-anion pair from MD snapshots for the (TFSI
+     <span class="sup">−</span>, DME) pair
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11317_Fig5_HTML" id="d29e2307" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par37" xmlns="http://www.w3.org/1999/xhtml">Ab-initio calculations were performed using the M06-HF hybrid functional with the NWCHEM software
+  <span class="sup">
+   <a ref-type="bibr" rid="CR65" href="#CR65">65</a>
+  </span>, and for each pair we computed the IP of 30 different configurations obtained from the MD run. All calculations were spin-unrestricted, and the spin contamination of the system was consistently checked. The basis set used for all atoms was aug-cc-PVTZ
+  <span class="sup">
+   <a ref-type="bibr" rid="CR66" href="#CR66">66</a>
+  </span>. No implicit solvation model was used for this part of the work, because we wish to study the IP of explicitly solvated anions with a functional that does not induce erroneous charge delocalization. The effect of implicit solvation is also studied, and reported in the last section of the Results section. Finally, coupled-cluster with single, double, and perturbative triple corrections (CCSD(T)) calculations were performed to validate our approach. These calculations were performed using ORCA
+  <span class="sup">
+   <a ref-type="bibr" rid="CR67" href="#CR67">67</a>
+  </span>, in the Domain-Based Local Pair-Natural Orbital Coupled Cluster (DLPNO-CCSD(T)) approximation. The basis set for these calculations was aug-cc-PVDZ
+  <span class="sup">
+   <a ref-type="bibr" rid="CR66" href="#CR66">66</a>
+  </span>. For reference, we also compute the IP of the isolated species (anion or solvent in vacuum). The IP shown for the isolated species is the average IP from 50 different configurations taken from MD (created with a single molecule in a cubic box with 100 Å side and using the same force field).
+ </p>
+</sec>

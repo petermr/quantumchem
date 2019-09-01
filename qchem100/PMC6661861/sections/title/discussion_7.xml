@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we developed a mixed quantum chemistry/machine learning modeling approach for the prediction of biochemical redox potentials of carbonyl functional groups. The method is based on calculating the electronic energy difference between substrates and products in redox reactions using the semiempirical quantum chemistry method PM7.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+  </span> The raw quantum chemistry estimates are then calibrated against experiment using GP regression.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We demonstrated that the method has better prediction power than the commonly used GCM approach. Furthermore, the computational resources required are significantly lower than previous quantum chemistry strategies for biochemical thermodynamics. The GCM decomposes compounds into discrete functional groups and assigns energies to each group by calibrating via linear regression against experimentally available Gibbs energies. It then estimates reaction energies as the group energy difference between products and substrates. As 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>A shows, GCM collapses a large fraction of the redox potentials of carbonyl compounds into a few sets of values. We also note that, in a recent variant of the GCM, group energies can be combined with experimental reactant Gibbs formation energies to significantly increase the accuracy of predictions, resulting in what is known as the CCM.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> Since we seek to apply our modeling approach to predicting redox potentials of non-natural reactions, the CCM is not applicable to the vast majority of the reactions in our data set. However, we also found that the GP regression technique can be used to further calibrate both GCM and fingerprint-based predictions (without relying on quantum chemical calculations), resulting in significant improvements to the prediction accuracies of these two approaches. Thus, the decision on what modeling choice to use can be based on a balancing act between accuracy, computational cost, and the preferred underlying modeling baseline. For example, if one desires an accurate, computationally cheap approach that relies on an underlying electronic structure method, PM7+GP is an optimal choice. Alternatively, for more accurate results that rely on more expensive electronic structure theory, DSDPEP89 (based on a double-hybrid DFT functional) gives the best accuracy but at higher computational cost. Likewise, if a good baseline for your chemical application is GCM, at a very low cost and almost comparable accuracy GCM+GP will be a good modeling choice. GP calibration proves to be a versatile approach to improve the accuracy of a wide variety of prediction methods.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We considered model chemistries that rely on a single conformation per molecule and also ensembles of conformers. In our case we did not observe a huge difference in predicted accuracy between both approaches. Other chemical applications and data sets should be tested to see if performance is impacted by conformer diversity. A single missed hydrogen bond in one reacting partner, but not the other, could easily introduce large errors in the predicted redox potential.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Current work on GP calibration in computational chemistry relies on 
+  <span class="italic">molecular</span> fingerprints to compute the similarity between molecules of interest and compounds with experimental data. Our implementation is to our knowledge the first application of GP to reaction energy predictions using reaction fingerprints. We chose to use GP—as opposed to other machine learning techniques such as neural networks—on the basis of the amount of experimental data available. GPs are suited for this task since they grow in complexity according to the data; a GP is robust to overfitting since it penalizes complex models and is able to provide estimates of uncertainty on predictions.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>,
+   <a ref-type="bibr" rid="ref47" href="#ref47">47</a>,
+   <a ref-type="bibr" rid="ref48" href="#ref48">48</a>
+  </span> In contrast, techniques such as deep neural networks—which have gained traction in recent machine learning applications to quantum chemistry
+  <span class="sup">
+   <a ref-type="bibr" rid="ref49" href="#ref49">49</a>−
+   <a ref-type="bibr" rid="ref51" href="#ref51">51</a>
+  </span>—are only applicable when much larger data sets are available.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We focused our approach to the prediction of the standard redox potentials of carbonyl functional groups (i.e., reduction to alcohols or amines). The application of GP regression to other redox transformations—including the reduction of carboxylic acids to aldehydes and the reduction of alcohols to hydrocarbons—is limited by the availability of experimental data. This highlights the importance of a concerted effort to generate more experimental data for biochemical redox potentials in controlled conditions (such as pH, ionic strength, temperature, and buffer) to increase the predictive power and scope of calibrated quantum chemical approaches.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We demonstrated the high-throughput nature of the methodology by generating a network of more than 315 000 non-natural biochemical reactions involving ∼70 000 compounds. Our algorithm is different from other network expansion algorithms previously applied to metabolic networks. By solely focusing on redox biochemistry, iterative application of the reactions converges to molecules that cannot be further reduced or oxidized. This contrasts with other network expansion algorithms
+  <span class="sup">
+   <a ref-type="bibr" rid="ref52" href="#ref52">52</a>,
+   <a ref-type="bibr" rid="ref53" href="#ref53">53</a>
+  </span> used to investigate scenarios related to the origins of life, where several types of chemical transformations are considered, including carbon-bond formation and cleavage. Other network expansion algorithms also start from natural seed compounds but only consider natural metabolites.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>
+  </span> In contrast, our algorithm uses natural metabolites as seeds but results in the expansion to a vast network of non-natural compounds.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Despite the improvements obtained over GCM with our method, the variance in the prediction accuracies across individual reactions is still significant. In practice, this spread places a limit on the confidence with which one can predict the redox potential of an individual reaction of interest. This is true, and to a larger degree, for other methods currently widely used, such as GCM. However, the main value of developing a method with lower average prediction error lies in our ability to analyze large sets of compounds, where average trends in the energies of different molecular substructures can be captured. We thus developed a novel structure–energy relationship analysis framework which we term reaction fingerprint heatmaps. These allow us to detect molecular environments that are enriched or depleted in reactions that fall within specific regions (bins) of the redox potential distribution. This could potentially be useful for future metabolic engineering applications: being able to pinpoint the exact molecular environments that correlate with redox potentials would allow the fine-tuning of the energetics of synthetic metabolites. We note that this approach captures large-scale structure–energy trends. An alternative approach, which is able to associate weights to individual atoms or subfragments, are the similarity maps as introduced by Riniker et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref54" href="#ref54">54</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We envision several applications of our biochemical redox potential prediction methodology. One such application is studying the thermodynamic landscape of specific families of natural metabolic compounds that undergo combinatorial reductions (or oxidations) of carbonyl (or alcohol or amine) functional groups. One such family of compounds are the brassinosteroids and the oxylipins,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref55" href="#ref55">55</a>−
+   <a ref-type="bibr" rid="ref57" href="#ref57">57</a>
+  </span> structurally diverse plant metabolites that play important roles in many physiological processes. In addition, in the context of drug metabolism, our methodology could be applied to obtain quantitative insights into the thermodynamics of redox transformations such as those mediated by the P450 (CYP) superfamily of enzymes.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref58" href="#ref58">58</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To our knowledge, our database contains the largest set of geometric structures, electronic energies, p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates, and redox potentials of natural metabolites and compounds related to these through oxidoreductive transformations. We make all the code and data sets generated in this work—including metabolite 3D geometries, electronic energies, p
+  <span class="italic">K</span>
+  <sub>a</sub>’s, and redox potential estimates—available as an open source repository at 
+  <span xlink:href="https://github.com/aspuru-guzik-group/gp_redox_rxn" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/aspuru-guzik-group/gp_redox_rxn</span>.
+ </p>
+</sec>

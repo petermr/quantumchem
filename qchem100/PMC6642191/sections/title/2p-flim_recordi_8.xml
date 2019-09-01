@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2P-FLIM recordings</div>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">2P-microscopy in combination with FLIM was carried out by using the MicroTime 200 fluorescence lifetime microscope system (PicoQuant, Berlin, Germany). The setup was built up and data acquisition and analysis were performed as previously described for quantitative intracellular Ca
+  <span class="sup">2+</span> imaging with 2P-FLIM
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+  </span>. Thus, it included an inverted microscope (Olympus IX 71) equipped with an Olympus PlanApo ×100/NA 1.4 oil-immersion objective, on which the recording chamber could be mounted. 2P-excitation was performed with a mode-locked femtosecond fiber laser (C-Fiber A 780; MenloSystem, Martinsried, Germany) operating at the fixed wavelength of 780 nm, 50 MHz pulse repetition rate and ~90 fs pulse width. The near infrared (NIR) laser beam was guided toward the objective 
+  <span class="italic">via</span> the microscope side port by using a dichroic mirror (2P-dichroic 725; Chroma, Fürstenfeldbruck, Germany). For rejection of excitation light in the emission pathway, a shortpass filter was used (SP680 OD4, Edmund Optics, Karlsruhe, Germany). The emitted light was guided through a 100 µm pinhole, split by a dichroic mirror FF605 (AHF Analysentechnik, Tübingen, Germany) into the two detection channels and additionally, filtered by passing through the bandpass filters 514/44 (green channel) and 700/75 (red channel) (AHF Analysentechnik), respectively. Single-photon avalanche diodes (SPCM-AQR-13 and SPCM-CD-2801; Perkin Elmer, Waltham, USA) were used for luminescence detection.
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Time-resolved fluorescence image acquisition occurred by raster scanning the objective using a 
+  <span class="italic">xy</span>-piezo-positioner (Physik Instrumente, Karlsruhe, Germany) in the time-correlated single-photon counting (TCSPC) mode by using a PicoHarp 300 device with applied time resolution of 8 ps (PicoQuant). Laser power was adjusted to achieve average photon counting rates ≤10
+  <span class="sup">5</span> photons/s and peak rates close to 10
+  <span class="sup">6</span> photons/s when recording FLIM images, thus below the maximum counting rate allowed by the TCSPC electronics to avoid pulse pile up. Full frame images of 80 µm × 80 µm were acquired in ~50–60 s, with a pixel dwell time of 2.3 ms. Data acquisition and analysis were performed by the SymPhoTime 64 software version 2.3 (PicoQuant). Briefly, all photons collected in a region of interest were used to calculate a global histogram for quantification of the mean fluorescence decay time. Fluorescence decay analysis occurred by deconvolution fitting. The quality of decay fitting was estimated by randomly distributed residuals and comparatively small 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\chi }_{R}^{2}$$\end{document}</span>
+    <div id="M8" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">R</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_46732_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>-values. Fluorescence intensity images were calculated by integrating all detected photons in every pixel, thereby ignoring the temporal information. The full width at half-maximum (FWHM) of the daily measured instrument response function (IRF) of the 2P-FLIM setup from backscattered excitation light was 220 ± 5 ps (
+  <span class="italic">N</span> = 30), indicating the detector timing resolution as most critical element. The broadening and temporal shift of the IRF at higher photon count rates can be a potential problem for Perkin Elmer SPAD modules
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span>. However, the count rate did not influence the temporal position and the FWHM of the IRF up to count rates of 1.2 × 10
+  <span class="sup">5</span> photons/s as applied in all 
+  <span class="italic">in vitro</span> measurements, but did so at higher count rates. For recordings in living cells with higher peak count rates this would be problematic, but it can be neglected statistically because of analysing larger regions of interest.
+ </p>
+</sec>

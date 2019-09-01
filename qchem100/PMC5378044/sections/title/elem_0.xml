@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and Discussion</div>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Trapped ions for quantum chemistry</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry deals with the many-body problem involving electrons and nuclei. Thus, it is very well suited for being simulated with trapped-ion systems, as we will show below. The full quantum chemistry Hamiltonian, 
+   <span class="italic">H</span> = 
+   <span class="italic">T
+    <sub>e</sub>
+   </span> + 
+   <span class="italic">V
+    <sub>e</sub>
+   </span> + 
+   <span class="italic">T
+    <sub>N</sub>
+   </span> + 
+   <span class="italic">V
+    <sub>N</sub>
+   </span> + 
+   <span class="italic">V
+    <sub>eN</sub>
+   </span>, is a sum of the kinetic energies of the electrons 
+   <div id="m7" class="inline-formula">
+    <span id="d32e352" xlink:href="srep03589-m7.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> and nuclei 
+   <div id="m8" class="inline-formula">
+    <span id="d32e355" xlink:href="srep03589-m8.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, and the electron-electron 
+   <div id="m83" class="inline-formula">
+    <span id="d32e358" xlink:href="srep03589-m83.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, nuclei-nuclei 
+   <div id="m84" class="inline-formula">
+    <span id="d32e361" xlink:href="srep03589-m84.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, and electron-nuclei 
+   <div id="m85" class="inline-formula">
+    <span id="d32e364" xlink:href="srep03589-m85.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> potential energies, where 
+   <span class="bold">r</span> and 
+   <span class="bold">R</span> respectively refer to the electronic and nuclear coordinates.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In many cases, it is more convenient to work on the second-quantization representation for quantum chemistry. The advantage is that one can choose a good fermionic basis set of molecular orbitals, 
+   <div id="m9" class="inline-formula">
+    <span id="d32e376" xlink:href="srep03589-m9.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, which can compactly capture the low-energy sector of the chemical system. This kind of second quantized fermionic Hamiltonians are efficiently simulatable in trapped ions
+   <a ref-type="bibr" rid="b23" href="#b23">23</a>. To be more specific, we will choose first 
+   <span class="italic">M</span> &gt; 
+   <span class="italic">N</span> orbitals for an 
+   <span class="italic">N</span>-electron system. Denote 
+   <span class="italic">ϕ
+    <sub>p</sub>
+   </span> (
+   <span class="bold">r</span>) ≡ 〈
+   <span class="bold">r</span>|
+   <span class="italic">p</span>〉 as the single-particle wavefunction corresponding to mode 
+   <span class="italic">p</span>. The electronic part, 
+   <span class="italic">H
+    <sub>e</sub>
+   </span>(
+   <span class="bold">R</span>) ≡ 
+   <span class="italic">T
+    <sub>e</sub>
+   </span> + 
+   <span class="italic">V
+    <sub>eN</sub>
+   </span> (
+   <span class="bold">R</span>) + 
+   <span class="italic">V
+    <sub>e</sub>
+   </span>, of the Hamiltonian 
+   <span class="italic">H</span> can be expressed as follows:
+   <div id="m1" class="disp-formula">
+    <span id="d32e439" xlink:href="srep03589-m1.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>where 
+   <span class="italic">h
+    <sub>pq</sub>
+   </span> is obtained from the single-electron integral 
+   <div id="m10" class="inline-formula">
+    <span id="d32e447" xlink:href="srep03589-m10.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, and 
+   <span class="italic">h
+    <sub>pqrs</sub>
+   </span> comes from the electron-electron Coulomb interaction, 
+   <div id="m11" class="inline-formula">
+    <span id="d32e455" xlink:href="srep03589-m11.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. We note that the total number of terms in 
+   <span class="italic">H
+    <sub>e</sub>
+   </span> is 
+   <span class="italic">O</span>(
+   <span class="italic">M</span>
+   <span class="sup">4</span>); typically 
+   <span class="italic">M</span> is of the same order as 
+   <span class="italic">N</span>. Therefore, the number of terms in 
+   <span class="italic">H
+    <sub>e</sub>
+   </span> scales polynomially in 
+   <span class="italic">N</span>, and the integrals {
+   <span class="italic">h
+    <sub>pq</sub>
+   </span>, 
+   <span class="italic">h
+    <sub>pqrs</sub>
+   </span>} can be numerically calculated by a classical computer with polynomial resources
+   <a ref-type="bibr" rid="b9" href="#b9">9</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To implement the dynamics associated with the electronic Hamiltonian in Eq. (1) with a trapped-ion quantum simulator, one should take into account the fermionic nature of the operators 
+   <span class="italic">c
+    <sub>p</sub>
+   </span> and 
+   <div id="m12" class="inline-formula">
+    <span id="d32e506" xlink:href="srep03589-m12.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. We invoke the Jordan-Wigner transformation (JWT), which is a method for mapping the occupation representation to the spin (or qubit) representation
+   <a ref-type="bibr" rid="b43" href="#b43">43</a>. Specifically, for each fermionic mode 
+   <span class="italic">p</span>, an unoccupied state |0〉
+   <span class="italic">
+    <sub>p</sub>
+   </span> is represented by the spin-down state |↓〉
+   <span class="italic">
+    <sub>p</sub>
+   </span>, and an occupied state |1〉
+   <span class="italic">
+    <sub>p</sub>
+   </span> is represented by the spin-up state |↑〉
+   <span class="italic">
+    <sub>p</sub>
+   </span>. The exchange symmetry is enforced by the Jordan-Wigner transformation: 
+   <div id="m13" class="inline-formula">
+    <span id="d32e531" xlink:href="srep03589-m13.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> and 
+   <div id="m14" class="inline-formula">
+    <span id="d32e534" xlink:href="srep03589-m14.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where 
+   <span class="italic">σ</span>
+   <span class="sup">±</span> ≡ (
+   <span class="italic">σ
+    <span class="sup">x</span>
+   </span> ± 
+   <span class="italic">iσ
+    <span class="sup">y</span>
+   </span>)/2. Consequently, the electronic Hamiltonian in Eq. (1) becomes highly nonlocal in terms of the Pauli operators {
+   <span class="italic">σ
+    <span class="sup">x</span>
+   </span>, 
+   <span class="italic">σ
+    <span class="sup">y</span>
+   </span>, 
+   <span class="italic">σ
+    <span class="sup">z</span>
+   </span>}, i.e.,
+   <div id="m2" class="disp-formula">
+    <span id="d32e569" xlink:href="srep03589-m2.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Nevertheless, the simulation can still be made efficient with trapped ions, as we shall discuss below.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In trapped-ion physics two metastable internal levels of an ion are typically employed as a qubit. Ions can be confined either in Penning traps or radio frequency Paul traps
+   <a ref-type="bibr" rid="b33" href="#b33">33</a>, and cooled down to form crystals. Through sideband cooling the ions motional degrees of freedom can reach the ground state of the quantum Harmonic oscillator, that can be used as a quantum bus to perform gates among the different ions. Using resonance fluorescence with a cycling transition quantum non demolition measurements of the qubit can be performed. The fidelities of state preparation, single- and two-qubit gates, and detection, are all above 99%
+   <a ref-type="bibr" rid="b32" href="#b32">32</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The basic interaction of a two-level trapped ion with a single-mode laser is given by
+   <a ref-type="bibr" rid="b32" href="#b32">32</a>, 
+   <div id="m15" class="inline-formula">
+    <span id="d32e582" xlink:href="srep03589-m15.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where 
+   <span class="italic">σ</span>
+   <sub>±</sub> are the atomic raising and lowering operators, 
+   <span class="italic">a</span> (
+   <span class="italic">a</span>
+   <span class="sup">†</span>) is the annihilation (creation) operator of the considered motional mode, and Ω is the Rabi frequency associated to the laser strength. 
+   <span class="italic">η</span> = 
+   <span class="italic">kz</span>
+   <sub>0</sub> is the Lamb-Dicke parameter, with 
+   <span class="italic">k</span> the wave vector of the laser and 
+   <div id="m16" class="inline-formula">
+    <span id="d32e610" xlink:href="srep03589-m16.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> the ground state width of the motional mode. 
+   <span class="italic">ϕ</span> is a controllable laser phase and Δ the laser-atom detuning.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the Lamb-Dicke regime where 
+   <div id="m17" class="inline-formula">
+    <span id="d32e619" xlink:href="srep03589-m17.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, the basic interaction of a two-level trapped ion with a laser can be rewritten as 
+   <div id="m18" class="inline-formula">
+    <span id="d32e622" xlink:href="srep03589-m18.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">By adjusting the laser detuning Δ, one can generate the three basic ion-phonon interactions, namely: the carrier interaction (Δ = 0) 
+   <div id="m19" class="inline-formula">
+    <span id="d32e626" xlink:href="srep03589-m19.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, the red sideband interaction (Δ = −
+   <span class="italic">ω
+    <sub>t</sub>
+   </span>) 
+   <div id="m20" class="inline-formula">
+    <span id="d32e634" xlink:href="srep03589-m20.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, and the blue sideband interaction (Δ = 
+   <span class="italic">ω
+    <sub>t</sub>
+   </span>) 
+   <div id="m21" class="inline-formula">
+    <span id="d32e642" xlink:href="srep03589-m21.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. By combining detuned red and blue sideband interactions, one obtains the Mølmer-Sørensen gate
+   <a ref-type="bibr" rid="b44" href="#b44">44</a>, which is the basic building block for our methods. With combinations of this kind of gates, one can obtain dynamics as the associated one to 
+   <span class="italic">H
+    <sub>e</sub>
+   </span> in Eq. (2), that will allow one to simulate arbitrary quantum chemistry systems.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum-assisted optimization</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Quantum-assisted optimization
+   <a ref-type="bibr" rid="b45" href="#b45">45</a> (see also 
+   <a ref-type="fig" rid="f2" href="#f2">Fig. 2</a>) for obtaining ground-state energies aims to optimize the use of quantum coherence by breaking down the quantum simulation through the use of both quantum and classical processors; the quantum processor is strategically employed for expensive tasks only.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To be more specific, the first step of quantum-assisted optimization is to prepare a set of quantum states {|
+   <span class="italic">ψ
+    <sub>λ</sub>
+   </span>〉} that are characterized by a set of parameters {
+   <span class="italic">λ</span>}. After the state is prepared, the expectation value 
+   <span class="italic">E
+    <sub>λ</sub>
+   </span> ≡ 〈
+   <span class="italic">ψ
+    <sub>λ</sub>
+   </span>| 
+   <span class="italic">H</span> |
+   <span class="italic">ψ
+    <sub>λ</sub>
+   </span>〉 of the Hamiltonian 
+   <span class="italic">H</span> will be measured directly, without any quantum evolution in between. Practically, the quantum resources for the measurements can be significantly reduced when we divide the measurement of the Hamiltonian 
+   <div id="m86" class="inline-formula">
+    <span id="d32e695" xlink:href="srep03589-m86.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> into a polynomial number of small pieces 〈
+   <span class="italic">H
+    <sub>i</sub>
+   </span>〉 (cf Eq. (2)). These measurements can be performed in a parallel fashion, and no quantum coherence is needed to maintain between the measurements (see 
+   <a ref-type="fig" rid="f2" href="#f2">Fig. 2a and 2b</a>). Then, once a data point of 
+   <span class="italic">E
+    <sub>λ</sub>
+   </span> is obtained, the whole procedure is repeated for a new state 
+   <div id="m22" class="inline-formula">
+    <span id="d32e712" xlink:href="srep03589-m22.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> with another set of parameters {
+   <span class="italic">λ</span>′}. The choice of the new parameters is determined by a classical optimization algorithm that aims to minimize 
+   <span class="italic">E
+    <sub>λ</sub>
+   </span> (see Methods). The optimization procedure is terminated after the value of 
+   <span class="italic">E
+    <sub>λ</sub>
+   </span> converges to some fixed value.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Finally, for electronic Hamiltonians 
+   <span class="italic">H
+    <sub>e</sub>
+   </span>(
+   <span class="bold">R</span>), the optimized state can then be sent to a quantum circuit of phase estimation algorithm to produce a set of data point for some 
+   <span class="bold">R</span> on the potential energy surfaces (
+   <a ref-type="fig" rid="f2" href="#f2">Fig. 2c</a> shows the 1D case). After locating the local minima of the ground and excited states, vibronic coupling for the electronic structure can be further studied (see 
+   <a ref-type="supplementary-material" rid="s1" href="#s1">Supplementary Material</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The performance of quantum-assisted optimization depends crucially on (a) the choice of the variational states, and (b) efficient measurement methods. We found that the unitary coupled-cluster (UCC) states
+   <a ref-type="bibr" rid="b35" href="#b35">35</a> are particularly suitable for being the input state for quantum-assisted optimization, where each quantum state |
+   <span class="italic">ψ
+    <sub>λ</sub>
+   </span>〉 can be prepared efficiently with standard techniques in trapped ions. Furthermore, efficient measurement methods for 
+   <span class="italic">H
+    <sub>e</sub>
+   </span> are also available for trapped ion systems. We shall discuss these results in detail in the following sections.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Unitary coupled-cluster (UCC) ansatz</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The unitary coupled-cluster (UCC) ansatz
+   <a ref-type="bibr" rid="b35" href="#b35">35</a> assumes electronic states |
+   <span class="italic">ψ</span>〉 have the following form, 
+   <div id="m23" class="inline-formula">
+    <span id="d32e771" xlink:href="srep03589-m23.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where |Φ〉 is a reference state, which can be, e.g., a Slater determinant constructed from Hartree-Fock molecular orbitals. The particle-hole excitation operator, or cluster operator 
+   <span class="italic">T</span>, creates a linear combination of excited Slater determinants from |Φ〉. Usually, 
+   <span class="italic">T</span> is divided into subgroups based on the particle-hole rank. More precisely, 
+   <span class="italic">T</span> = 
+   <span class="italic">T</span>
+   <sub>1</sub> + 
+   <span class="italic">T</span>
+   <sub>2</sub> + 
+   <span class="italic">T</span>
+   <sub>3</sub> + … + 
+   <span class="italic">T
+    <sub>N</sub>
+   </span> for an 
+   <span class="italic">N</span>-electron system, where 
+   <div id="m24" class="inline-formula">
+    <span id="d32e808" xlink:href="srep03589-m24.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, 
+   <div id="m25" class="inline-formula">
+    <span id="d32e811" xlink:href="srep03589-m25.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, and so on.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Here 
+   <div id="m26" class="inline-formula">
+    <span id="d32e816" xlink:href="srep03589-m26.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> creates an electron in the orbital 
+   <span class="italic">a</span>. The indices 
+   <span class="italic">a</span>, 
+   <span class="italic">b</span> label unoccupied orbitals in the reference state |Φ〉, and 
+   <span class="italic">i</span>, 
+   <span class="italic">j</span> label occupied orbitals. The energy obtained from UCC, namely 
+   <div id="m27" class="inline-formula">
+    <span id="d32e835" xlink:href="srep03589-m27.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> is a variational upper bound of the exact ground-state energy.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The key challenge for implementing UCC on a classical computer is that the computational resource grows exponentially. It is because, in principle, one has to expand the expression 
+   <div id="m28" class="inline-formula">
+    <span id="d32e840" xlink:href="srep03589-m28.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> into an infinity series, using the Baker-Campbell-Hausdorff expansion. Naturally, one has to rely on approximate methods
+   <a ref-type="bibr" rid="b35" href="#b35">35</a>
+   <a ref-type="bibr" rid="b46" href="#b46">46</a> to truncate the series and keep track of finite numbers of terms. Therefore, in order to make good approximations by perturbative methods, i.e., assuming 
+   <span class="italic">T</span> is small, one implicitly assumes that the reference state |Φ〉 is a good solution to the problem. However, in many cases, such an assumption is not valid and the use of approximate UCC breaks down. We explain below how implementing UCC on a trapped-ion quantum computer can overcome this problem.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Implementation of UCC through time evolution</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We can generate the UCC state by simulating a pseudo time evolution through Suzuki-Trotter expansion on the evolution operator 
+   <div id="m29" class="inline-formula">
+    <span id="d32e853" xlink:href="srep03589-m29.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <a ref-type="bibr" rid="b21" href="#b21">21</a>. To proceed, we consider an 
+   <span class="italic">N</span>-electron system with 
+   <span class="italic">M</span>, where 
+   <span class="italic">M</span> &gt; 
+   <span class="italic">N</span>, molecular orbitals (including spins). We need totally 
+   <span class="italic">M</span> qubits; the reference state is the Hartree-Fock state where 
+   <span class="italic">N</span> orbitals are filled, and 
+   <span class="italic">M</span> − 
+   <span class="italic">N</span> orbitals are empty, i.e, |Φ〉 = |000…0111…1〉. We also define an effective Hamiltonian 
+   <span class="italic">K</span> ≡ 
+   <span class="italic">i</span> (
+   <span class="italic">T</span> − 
+   <span class="italic">T</span>
+   <span class="sup">†</span>), which means that we should prepare the state 
+   <span class="italic">e</span>
+   <span class="sup">−
+    <span class="italic">iK</span>
+   </span> |Φ〉.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We decompose 
+   <span class="italic">K</span> into subgroups 
+   <span class="italic">K</span> = 
+   <span class="italic">K</span>
+   <sub>1</sub> + 
+   <span class="italic">K</span>
+   <sub>2</sub> + 
+   <span class="italic">K</span>
+   <sub>3</sub> + … + 
+   <span class="italic">K
+    <sub>P</sub>
+   </span>, where 
+   <span class="italic">P</span> ≤ 
+   <span class="italic">N</span>, and 
+   <div id="m30" class="inline-formula">
+    <span id="d32e939" xlink:href="srep03589-m30.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. We now write 
+   <span class="italic">e</span>
+   <span class="sup">−
+    <span class="italic">iK</span>
+   </span> = (
+   <span class="italic">e</span>
+   <span class="sup">−
+    <span class="italic">iKδ</span>
+   </span>)
+   <span class="sup">1/
+    <span class="italic">δ</span>
+   </span> for some dimensionless constant 
+   <span class="italic">δ</span>. For small 
+   <span class="italic">δ</span>, we have 
+   <div id="m31" class="inline-formula">
+    <span id="d32e969" xlink:href="srep03589-m31.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. Since each 
+   <span class="italic">K
+    <sub>j</sub>
+   </span> contains 
+   <span class="italic">N
+    <span class="sup">j</span>
+   </span>(
+   <span class="italic">M</span> − 
+   <span class="italic">N</span>)
+   <span class="italic">
+    <span class="sup">j</span>
+   </span> terms of the creation 
+   <span class="italic">c</span>
+   <span class="sup">†</span> and annihilation 
+   <span class="italic">c</span> operators, we will need to individually simulate each term separately, e.g., 
+   <div id="m32" class="inline-formula">
+    <span id="d32e1001" xlink:href="srep03589-m32.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> and 
+   <div id="m33" class="inline-formula">
+    <span id="d32e1004" xlink:href="srep03589-m33.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, which can be implemented by transforming into spin operators through Jordan-Wigner transformation. The time evolution for each term can be simulated with a quantum circuit involving many nonlocal controlled gates, which can be efficiently implemented with trapped ions as we shall see below.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Implementation of UCC and simulation of time evolution with trapped-ions</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Our protocol for implementing the UCC ansatz requires the simulation of the small-time 
+   <span class="italic">t/n</span> evolution of non-local product of Pauli matrices of the form: 
+   <div id="m34" class="inline-formula">
+    <span id="d32e1015" xlink:href="srep03589-m34.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where 
+   <div id="m35" class="inline-formula">
+    <span id="d32e1018" xlink:href="srep03589-m35.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for 
+   <span class="italic">i</span>, 
+   <span class="italic">j</span>, 
+   <span class="italic">k</span> ∈ {
+   <span class="italic">x</span>, 
+   <span class="italic">y</span>, 
+   <span class="italic">z</span>}. Note that for any 
+   <span class="italic">N</span>-spin interaction, the 
+   <div id="m36" class="inline-formula">
+    <span id="d32e1043" xlink:href="srep03589-m36.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> terms are equivalent to 
+   <div id="m37" class="inline-formula">
+    <span id="d32e1047" xlink:href="srep03589-m37.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> through local spin rotations, which are simple to implement on trapped ions. Such a non-local operator can be implemented using the multi-particle Mølmer-Sørensen gate
+   <a ref-type="bibr" rid="b23" href="#b23">23</a>
+   <a ref-type="bibr" rid="b39" href="#b39">39</a>: 
+   <span class="italic">U</span>
+   <sub>MS</sub>(
+   <span class="italic">θ</span>, 
+   <span class="italic">φ</span>) ≡ exp [−
+   <span class="italic">iθ</span>(cos 
+   <span class="italic">φS
+    <sub>x</sub>
+   </span> + sin 
+   <span class="italic">φS
+    <sub>y</sub>
+   </span>)
+   <span class="sup">2</span>/4], where 
+   <div id="m38" class="inline-formula">
+    <span id="d32e1080" xlink:href="srep03589-m38.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> is a collective spin operator. Explicitly,
+   <div id="m3" class="disp-formula">
+    <span id="d32e1083" xlink:href="srep03589-m3.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Here 
+   <span class="italic">R
+    <sub>N</sub>
+   </span>(
+   <span class="italic">ϕ</span>) is defined as follows: for any 
+   <div id="m39" class="inline-formula">
+    <span id="d32e1095" xlink:href="srep03589-m39.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, 
+   <div id="m40" class="inline-formula">
+    <span id="d32e1098" xlink:href="srep03589-m40.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for 
+   <span class="italic">N</span> = 4
+   <span class="italic">m</span> ± 1, and (ii) 
+   <div id="m41" class="inline-formula">
+    <span id="d32e1108" xlink:href="srep03589-m41.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for 
+   <span class="italic">N</span> = 4
+   <span class="italic">m</span>, and (iii) 
+   <div id="m42" class="inline-formula">
+    <span id="d32e1117" xlink:href="srep03589-m42.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for 
+   <span class="italic">N</span> = 4
+   <span class="italic">m</span> − 2.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">It is remarkable that the standard quantum-circuit treatment (e.g. see Ref.
+   <a ref-type="bibr" rid="b47" href="#b47">47</a>) for implementing each 
+   <div id="m43" class="inline-formula">
+    <span id="d32e1130" xlink:href="srep03589-m43.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> involves as many as 2
+   <span class="italic">N</span> two-qubit gates for simulating 
+   <span class="italic">N</span> fermionic modes; in our protocol one needs only two Mølmer-Sørensen gates, which are straightforwardly implementable with current trapped-ion technology. Furthermore, the local rotation 
+   <span class="italic">R
+    <sub>N</sub>
+   </span>(
+   <span class="italic">ϕ</span>) can also include motional degrees of freedom of the ions for simulating arbitrary fermionic Hamiltonians coupled linearly to bosonic operators 
+   <span class="italic">a
+    <sub>k</sub>
+   </span> and 
+   <div id="m44" class="inline-formula">
+    <span id="d32e1153" xlink:href="srep03589-m44.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Measurement of arbitrarily-nonlocal spin operators</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For any given state |
+   <span class="italic">ψ</span>〉, we show how to encode expectation value of products of Pauli matrices 
+   <div id="m45" class="inline-formula">
+    <span id="d32e1164" xlink:href="srep03589-m45.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where 
+   <span class="italic">i</span>, 
+   <span class="italic">j</span>, 
+   <span class="italic">k</span> ∈ {
+   <span class="italic">x</span>, 
+   <span class="italic">y</span>, 
+   <span class="italic">z</span>}, onto an expectation value of a single qubit. The idea is to first apply the unitary evolution of the form: 
+   <div id="m46" class="inline-formula">
+    <span id="d32e1186" xlink:href="srep03589-m46.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, which as we have seen (cf Eq. 3) can be generated by trapped ions efficiently, to the state |
+   <span class="italic">ψ</span>〉 before the measurement. For example, defining 
+   <div id="m47" class="inline-formula">
+    <span id="d32e1192" xlink:href="srep03589-m47.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, we have the relation
+   <div id="m4" class="disp-formula">
+    <span id="d32e1196" xlink:href="srep03589-m4.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>which equals 
+   <div id="m48" class="inline-formula">
+    <span id="d32e1199" xlink:href="srep03589-m48.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for 
+   <span class="italic">θ</span> = 
+   <span class="italic">π</span>/4. Note that the application of this method requires the measurement of one qubit only, making this technique especially suited for trapped ion systems where the fidelity of the measurement of one qubit is 99.99%
+   <a ref-type="bibr" rid="b48" href="#b48">48</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This method can be further extended to include bosonic operators in the resulting expectation values. For example, re-define 
+   <div id="m49" class="inline-formula">
+    <span id="d32e1212" xlink:href="srep03589-m49.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> and consider 
+   <span class="italic">θ</span> → 
+   <span class="italic">θ</span> (
+   <span class="italic">a</span> + 
+   <span class="italic">a</span>
+   <span class="sup">†</span>) in Eq. (4). We can obtain the desired correlation through the derivative of the single-qubit measurement: 
+   <div id="m50" class="inline-formula">
+    <span id="d32e1230" xlink:href="srep03589-m50.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. Note that the evolution operator of the form 
+   <div id="m51" class="inline-formula">
+    <span id="d32e1233" xlink:href="srep03589-m51.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> can be generated by replacing the local operation 
+   <span class="italic">R
+    <sub>N</sub>
+   </span>(
+   <span class="italic">ϕ</span>) in Eq. 3 with 
+   <div id="m52" class="inline-formula">
+    <span id="d32e1244" xlink:href="srep03589-m52.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. This technique allows us to obtain a diverse range of correlations between bosonic and internal degrees of freedom.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Probing potential energy surfaces</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the Born-Oppenheimer (BO) picture, the potential energy surface 
+   <div id="m53" class="inline-formula">
+    <span id="d32e1252" xlink:href="srep03589-m53.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> associated with each electronic eigenstate |
+   <span class="italic">ϕ
+    <sub>k</sub>
+   </span>〉 is obtained by scanning the eigenvalues 
+   <div id="m54" class="inline-formula">
+    <span id="d32e1260" xlink:href="srep03589-m54.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> for each configurations of the nuclear coordinates {
+   <span class="bold">R</span>}. Of course, we can apply the standard quantum phase estimation algorithm
+   <a ref-type="bibr" rid="b49" href="#b49">49</a> that allows us to extract the eigenvalues. However, this can require many ancilla qubits. In fact, locating these eigenvalues can be achieved by the phase estimation method utilizing one extra ancilla qubit
+   <a ref-type="bibr" rid="b12" href="#b12">12</a> corresponding, in our case, to one additional ion.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This method works as follows: suppose we are given a certain quantum state |
+   <span class="italic">ψ</span>〉 (which may be obtained from classical solutions with quantum-assisted optimization) and an electronic Hamiltonian 
+   <span class="italic">H
+    <sub>e</sub>
+   </span>(
+   <span class="bold">R</span>) (cf. Eq. (1)). Expanding the input state, 
+   <div id="m87" class="inline-formula">
+    <span id="d32e1284" xlink:href="srep03589-m87.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, by the eigenstate vectors |
+   <span class="italic">ϕ
+    <sub>k</sub>
+   </span>〉 of 
+   <span class="italic">H
+    <sub>e</sub>
+   </span>(
+   <span class="bold">R</span>), where 
+   <div id="m55" class="inline-formula">
+    <span id="d32e1301" xlink:href="srep03589-m55.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, then for the input state |0〉 |
+   <span class="italic">ψ</span>〉, the quantum circuit of the quantum phase estimation produces the following output state, 
+   <div id="m56" class="inline-formula">
+    <span id="d32e1307" xlink:href="srep03589-m56.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, where 
+   <div id="m57" class="inline-formula">
+    <span id="d32e1310" xlink:href="srep03589-m57.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. The corresponding reduced density matrix,
+   <div id="m5" class="disp-formula">
+    <span id="d32e1314" xlink:href="srep03589-m5.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>of the ancilla qubit contains the information about the weight (amplitude-square) |
+   <span class="italic">α
+    <sub>k</sub>
+   </span>|
+   <span class="sup">2</span> of the eigenvectors |
+   <span class="italic">ϕ
+    <sub>k</sub>
+   </span>〉 in |
+   <span class="italic">ψ</span>〉 and the associated eigenvalues 
+   <span class="italic">ω
+    <sub>k</sub>
+   </span> in the off-diagonal matrix elements. All |
+   <span class="italic">α
+    <sub>k</sub>
+   </span>|
+   <span class="sup">2</span>'s and 
+   <span class="italic">ω
+    <sub>k</sub>
+   </span>'s can be extracted by repeating the quantum circuit for a range of values of 
+   <span class="italic">t</span> and performing a (classical) Fourier transform to the measurement results. The potential energy surface is obtained by repeating the procedure for different values of the nuclear coordinates {
+   <span class="bold">R</span>}.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Numerical investigation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to show the feasibility of our protocol, we can estimate the trapped-ion resources needed to simulate, e.g., the prototypical electronic Hamiltonian 
+   <div id="m58" class="inline-formula">
+    <span id="d32e1363" xlink:href="srep03589-m58.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> as described in Eq. (1), for the specific case of the H
+   <sub>2</sub> molecule in a minimal STO-3G basis. This is a two-electron system represented in a basis of four spin-orbitals. The hydrogen atoms were separated by 0.75 Å, near the equilibrium bond distance of the molecule. The Hamiltonian is made up of 12 terms, that include 4 local ion operations and 8 non-local interactions. Each of the non-local terms can be done as a combination of two Mølmer-Sørensen (MS) gates and local rotations, as described in 
+   <a ref-type="table" rid="t1" href="#t1">Table 1</a>. Therefore, to implement the dynamics, one needs 16 MS gates per Trotter step and a certain number of local rotations upon the ions. Since 
+   <span class="italic">π</span>/2 MS gates can be done in ~ 50 
+   <span class="italic">μ</span>s, and local rotations can be performed in negligible times (~ 1 
+   <span class="italic">μ</span>s)
+   <a ref-type="bibr" rid="b22" href="#b22">22</a>
+   <a ref-type="bibr" rid="b32" href="#b32">32</a>, the total simulation time can be assumed of about 800 
+   <span class="italic">μ</span>s for the 
+   <span class="italic">n</span> = 1 protocol, 1.6 ms and 2.4 ms for the 
+   <span class="italic">n</span> = 2 and 
+   <span class="italic">n</span> = 3 protocols. Thus total simulation times are within the decoherence times for trapped-ion setups, of about 30 ms
+   <a ref-type="bibr" rid="b32" href="#b32">32</a>. In a digital protocol performed on real quantum systems, each gate is affected by an error. Thus, increasing the number of Trotter steps leads to an accumulation of the single gate error. To implement an effective quantum simulation, on one hand one has to increase the number of steps to reduce the error due to the digital approximation, on the other hand one is limited by the accumulation of the single gate error. We plot in 
+   <a ref-type="fig" rid="f3" href="#f3">Fig. 3a, 3b, 3c</a>, the fidelity loss 1 − |〈Ψ
+   <span class="italic">
+    <sub>S</sub>
+   </span>|Ψ
+   <span class="italic">
+    <sub>E</sub>
+   </span>〉|
+   <span class="sup">2</span> of the simulated state |Ψ
+   <span class="italic">
+    <sub>S</sub>
+   </span>〉 versus the exact one |Ψ
+   <span class="italic">
+    <sub>E</sub>
+   </span>〉, for the hydrogen Hamiltonian, starting from the initial state with two electrons in the first two orbitals. We plot, along with the digital error, three horizontal lines representing the accumulated gate error, for 
+   <span class="italic">n</span> = 1, 2, 3 in each plot, considering a protocol with an error per Trotter step of 
+   <div id="m59" class="inline-formula">
+    <span id="d32e1425" xlink:href="srep03589-m59.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (a), 
+   <div id="m60" class="inline-formula">
+    <span id="d32e1428" xlink:href="srep03589-m60.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (b) and 
+   <div id="m61" class="inline-formula">
+    <span id="d32e1431" xlink:href="srep03589-m61.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> (c). To achieve a reasonable fidelity, one has to find a number of steps that fits the simulation at a specific time. The vertical lines and arrows in the figure mark the time regions in which the error starts to be dominated by the digital error. Trapped-ion two-qubit gates are predicted to achieve in the near future infidelities of 10
+   <span class="sup">−4</span>, thus making the use of these protocols feasible
+   <a ref-type="bibr" rid="b50" href="#b50">50</a>. In 
+   <a ref-type="fig" rid="f3" href="#f3">Fig. 3d</a> we plot the behavior of the energy of the system for the initial state |↑↑↓↓〉 for the exact dynamics, versus the digitized one. Again, one can observe how the energy can be retrieved with a small error within a reduced number of digital steps.
+  </p>
+ </sec>
+</sec>

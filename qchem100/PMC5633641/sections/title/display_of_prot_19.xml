@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec19" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Display of protein electron density maps</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">When reading a file from the PDB rather than a locally stored PDB file, the four-letter PDB identifier is stored by Molden. On clicking the “Elec. Dens. Map” button, this identifier is used to automatically retrieve the corresponding omap file from the electron density server at Uppsala University (
+  <span ext-link-type="uri" xlink:href="http://eds.bmc.uu.se/eds/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://eds.bmc.uu.se/eds/</span>) [
+  <a ref-type="bibr" rid="CR52" href="#CR52">52</a>]. After the file is read, a window will pop up, in which the user can specify the electron density contour level. For the sake of clarity, the rendered electron density volume can be clipped in three directions. Figure 
+  <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>c displays, as an example, the electron density for the PDB file 2ETE [
+  <a ref-type="bibr" rid="CR53" href="#CR53">53</a>].
+ </p>
+</sec>

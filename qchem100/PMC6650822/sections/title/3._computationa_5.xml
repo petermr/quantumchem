@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="methods" id="sec3-ijms-20-03227" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3. Computational Methodology</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quantum chemistry calculations in this paper are carried out using Gaussian 09 software [
+  <a rid="B27-ijms-20-03227" ref-type="bibr" href="#B27-ijms-20-03227">27</a>]. Geometry optimization and frequency analysis are performed at M06-2X/cc-pVTZ level [
+  <a rid="B28-ijms-20-03227" ref-type="bibr" href="#B28-ijms-20-03227">28</a>]. The resulted frequencies and zero-point energies (ZPEs) are scaled by 0.96 and 0.97, respectively. For the treatment of internal rotations, relaxed potential energy scans are performed as a function of the corresponding dihedral angle with an interval of 10° at M06-2X/cc-pVTZ level. The scanned results are then fitted to a Fourier-series used for rate constant calculations. For the transition state structures, intrinsic reaction coordinate (IRC) calculations [
+  <a rid="B29-ijms-20-03227" ref-type="bibr" href="#B29-ijms-20-03227">29</a>] are carried out to make sure the saddle points connect the desired reactants and products. Moreover, the IRC results for abstraction reactions by OH radical are also used to determine the structures of the formed reactant complex (RC) and product complex (PC) at the entrance and exit channels.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To obtain reliable rate constants, single-point energy calculations should be performed with high-level quantum chemistry methods. For the studied reaction systems (C3-C10) in this work, high-level CCSD(T)/CBS or very accurate composite W1BD methods can only be used for small systems since the largest molecule (but-3-yn-2-ylbenzene) contains 10 carbon atoms. Considering the trade-off between accuracy and computational cost, W1BD and CCSD(T)/CBS methods are employed for the abstraction reactions of propyne and 1-butyne as benchmark results to choose an appropriate DFT method for larger reaction systems. The T1 diagnostics [
+  <a rid="B30-ijms-20-03227" ref-type="bibr" href="#B30-ijms-20-03227">30</a>] are complemented to CCSD(T) calculations to check the multi-reference nature of the studied reactions. Generally, a single-reference coupled cluster calculation for closed-shell species is considered to be reliable if the T1 diagnostic value is within 0.020 [
+  <a rid="B30-ijms-20-03227" ref-type="bibr" href="#B30-ijms-20-03227">30</a>,
+  <a rid="B31-ijms-20-03227" ref-type="bibr" href="#B31-ijms-20-03227">31</a>]. For open-shell systems, a higher threshold value for the T1 diagnostic up to 0.044 can be acceptable [
+  <a rid="B32-ijms-20-03227" ref-type="bibr" href="#B32-ijms-20-03227">32</a>]. For all the species during open-shell CCSD(T) calculations, it is found that all T1 diagnostics values are within 0.025, which indicates that single-reference methods are adequate for the studied reactions in this work.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To select an appropriate DFT method, the computed reaction barriers using 13 typical DFT methods including B3LYP [
+  <a rid="B33-ijms-20-03227" ref-type="bibr" href="#B33-ijms-20-03227">33</a>,
+  <a rid="B34-ijms-20-03227" ref-type="bibr" href="#B34-ijms-20-03227">34</a>], BH&amp;HLYP [
+  <a rid="B35-ijms-20-03227" ref-type="bibr" href="#B35-ijms-20-03227">35</a>], B2PLYP [
+  <a rid="B36-ijms-20-03227" ref-type="bibr" href="#B36-ijms-20-03227">36</a>], B2PLYPD3 [
+  <a rid="B37-ijms-20-03227" ref-type="bibr" href="#B37-ijms-20-03227">37</a>], CAM-B3LYP [
+  <a rid="B38-ijms-20-03227" ref-type="bibr" href="#B38-ijms-20-03227">38</a>], BMK [
+  <a rid="B39-ijms-20-03227" ref-type="bibr" href="#B39-ijms-20-03227">39</a>], M05-2X [
+  <a rid="B40-ijms-20-03227" ref-type="bibr" href="#B40-ijms-20-03227">40</a>], MN15 [
+  <a rid="B41-ijms-20-03227" ref-type="bibr" href="#B41-ijms-20-03227">41</a>], MPW1K [
+  <a rid="B42-ijms-20-03227" ref-type="bibr" href="#B42-ijms-20-03227">42</a>], PBE0 [
+  <a rid="B43-ijms-20-03227" ref-type="bibr" href="#B43-ijms-20-03227">43</a>], ωB97XD [
+  <a rid="B44-ijms-20-03227" ref-type="bibr" href="#B44-ijms-20-03227">44</a>], M08HX [
+  <a rid="B45-ijms-20-03227" ref-type="bibr" href="#B45-ijms-20-03227">45</a>] and M06-2X [
+  <a rid="B28-ijms-20-03227" ref-type="bibr" href="#B28-ijms-20-03227">28</a>] with cc-pVTZ basis set are compared with the benchmark results via W1BD and CCSD(T)/CBS methods. In addition, basis set effect on the computed results are also examined by using M06-2X functional with cc-pVTZ, cc-pVQZ, aug-cc-pVTZ and aug-cc-pVQZ basis set [
+  <a rid="B46-ijms-20-03227" ref-type="bibr" href="#B46-ijms-20-03227">46</a>]. It is found that the basis sets show small influence on reaction barriers for propyne and 1-butyne with H and OH radicals and the deviations are less than 0.40 kcal mol
+  <span class="sup">−1</span>. Thus, all the DFT calculations are performed using cc-pVTZ basis set unless otherwise mentioned.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Based on quantum chemistry calculations, reaction rate constants of the hydrogen abstraction reactions are computed using the canonical transition state theory. The quantum mechanical tunneling corrections are included by using unsymmetrical Eckart barrier model [
+  <a rid="B47-ijms-20-03227" ref-type="bibr" href="#B47-ijms-20-03227">47</a>] for reactions with positive barrier heights, while the Wigner method [
+  <a rid="B48-ijms-20-03227" ref-type="bibr" href="#B48-ijms-20-03227">48</a>] is adopted for some H-abstraction reactions by OH radical with slight negative barrier heights. It has been shown that the two methods can provide very close tunneling coefficients under the studied temperature ranges [
+  <a rid="B49-ijms-20-03227" ref-type="bibr" href="#B49-ijms-20-03227">49</a>,
+  <a rid="B50-ijms-20-03227" ref-type="bibr" href="#B50-ijms-20-03227">50</a>]. The rate constants are computed at temperatures from 500 to 2500 K in increments of 100 K and are fitted into the modified Arrhenius equation as 
+  <div class="inline-formula">
+   <div id="mm1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mi">T</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <div class="msup">
+       <span class="mi">T</span>
+       <span class="mi">n</span>
+      </div>
+      <span class="mi">exp</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mo">−</span>
+        <div class="msub">
+         <span class="mi">E</span>
+         <span class="mi">a</span>
+        </div>
+        <span class="mo">/</span>
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, in which 
+  <span class="italic">A</span> is the Arrhenius prefactor, 
+  <span class="italic">E</span>
+  <sub>a</sub> is the barrier height, and 
+  <span class="italic">n</span> is the temperature exponent representing the deviation from the standard Arrhenius equation. The fitted rate coefficients listed in 
+  <a rid="ijms-20-03227-t004" ref-type="table" href="#ijms-20-03227-t004">Table 4</a> can be directly used for kinetic modeling studies. The rate constant calculations are performed using Multiwell software [
+  <a rid="B51-ijms-20-03227" ref-type="bibr" href="#B51-ijms-20-03227">51</a>].
+ </p>
+</sec>

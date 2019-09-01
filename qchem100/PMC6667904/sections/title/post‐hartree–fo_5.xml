@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0006" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Post‐Hartree–Fock</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Electron correlation schemes are implemented in RAQET and they are summarized in Table 
+  <a rid="jcc25364-tbl-0003" ref-type="table" href="#jcc25364-tbl-0003">3</a>. In SF calculations, the Møller–Plesset perturbation theory (MPPT), including MP2, MP2.5, and MP3, and the coupled‐cluster (CC) theory, including LCCD, CCD, LCCSD, CCSD, CCSD[T], CCSD(T), CCSDT, CCSDTQ, are available. These were generated using the tensor contraction engine,
+  <a rid="jcc25364-bib-0100" ref-type="ref" href="#jcc25364-bib-0100">100</a>, 
+  <a rid="jcc25364-bib-0101" ref-type="ref" href="#jcc25364-bib-0101">101</a>, 
+  <a rid="jcc25364-bib-0102" ref-type="ref" href="#jcc25364-bib-0102">102</a> a computerized symbolic algebra system. All of these schemes can be combined with the divide‐and‐conquer (DC) technique,
+  <a rid="jcc25364-bib-0089" ref-type="ref" href="#jcc25364-bib-0089">89</a>, 
+  <a rid="jcc25364-bib-0103" ref-type="ref" href="#jcc25364-bib-0103">103</a>, 
+  <a rid="jcc25364-bib-0104" ref-type="ref" href="#jcc25364-bib-0104">104</a>, 
+  <a rid="jcc25364-bib-0105" ref-type="ref" href="#jcc25364-bib-0105">105</a>, 
+  <a rid="jcc25364-bib-0106" ref-type="ref" href="#jcc25364-bib-0106">106</a>, 
+  <a rid="jcc25364-bib-0107" ref-type="ref" href="#jcc25364-bib-0107">107</a>, 
+  <a rid="jcc25364-bib-0108" ref-type="ref" href="#jcc25364-bib-0108">108</a> which is one of the fragmentation‐based linear‐scaling electron correlation approaches.
+ </p>
+ <div id="jcc25364-tbl-0003" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 3</span>
+  <div class="caption">
+   <p>Capabilities of post‐HF schemes with and without the DC technique</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" rowspan="2" valign="bottom" colspan="1">Correlation method</th>
+     <th align="left" rowspan="2" valign="bottom" colspan="1">Keyword</th>
+     <th colspan="2" align="left" valign="bottom" rowspan="1">Spin</th>
+    </tr>
+    <tr>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">w/o DC</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">w/ DC</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">MP</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">MP2</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF/SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">MP2.5</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">MP3</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">CC</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">LCCD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">LCCSD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCSD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCSD[T]</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCSD(T)</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCSDT</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">CCSDTQ</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">MP2 is available in SD calculations and the SD formalism of MP2, which is termed generalized MP2 (GMP2), is reconstructed using the molecular orbitals of eq. (
+  <a rid="jcc25364-disp-0009" ref-type="disp-formula" href="#jcc25364-disp-0009">9</a>) in GHF.
+  <a rid="jcc25364-bib-0068" ref-type="ref" href="#jcc25364-bib-0068">68</a> The working equation is defined as
+  <div id="jcc25364-disp-0015" class="disp-formula">
+   <span class="label">(15)</span>
+   <div id="nlm-math-44" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span class="mi">E</span>
+      <div class="mrow">
+       <span class="mi">c</span>
+       <span class="mi">o</span>
+       <span class="mi">r</span>
+       <span class="mi">r</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">G</span>
+       <span class="mi">M</span>
+       <span class="mi">P</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mo">−</span>
+     <div class="mfrac">
+      <span class="mn">1</span>
+      <span class="mn">4</span>
+     </div>
+     <div displaystyle="true" class="mstyle">
+      <div class="munderover">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <span class="mi">o</span>
+        <span class="mi">c</span>
+        <span class="mi">c</span>
+        <span class="mo">}</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div displaystyle="true" class="mstyle">
+        <div class="munderover">
+         <span class="mo">∑</span>
+         <div class="mrow">
+          <span class="mi">a</span>
+          <span class="mi">b</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">{</span>
+          <span class="mi">v</span>
+          <span class="mi">i</span>
+          <span class="mi">r</span>
+          <span class="mo">}</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="mfrac">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow">
+             <div class="mrow">
+              <span class="mo">|</span>
+              <div class="mrow">
+               <div class="mrow">
+                <span class="mo">(</span>
+                <div class="mrow">
+                 <span class="mi">i</span>
+                 <span class="mi">a</span>
+                </div>
+               </div>
+               <div class="mrow">
+                <span class="mo">|</span>
+                <div class="mrow">
+                 <div class="msubsup">
+                  <span mathvariant="bold" class="mi">g</span>
+                  <span class="mn">2</span>
+                  <div class="mrow">
+                   <span class="mo">+</span>
+                   <span class="mo">+</span>
+                  </div>
+                 </div>
+                 <span stretchy="false" class="mo">(</span>
+                 <span class="mn">1</span>
+                 <span class="mo">,</span>
+                 <span class="mn">2</span>
+                 <span stretchy="false" class="mo">)</span>
+                </div>
+                <span class="mo">|</span>
+               </div>
+               <div class="mrow">
+                <div class="mrow">
+                 <span class="mi">j</span>
+                 <span class="mi">b</span>
+                </div>
+                <span class="mo">)</span>
+               </div>
+               <span class="mo">−</span>
+               <div class="mrow">
+                <span class="mo">(</span>
+                <div class="mrow">
+                 <span class="mi">i</span>
+                 <span class="mi">b</span>
+                </div>
+               </div>
+               <div class="mrow">
+                <span class="mo">|</span>
+                <div class="mrow">
+                 <div class="msubsup">
+                  <span mathvariant="bold" class="mi">g</span>
+                  <span class="mn">2</span>
+                  <div class="mrow">
+                   <span class="mo">+</span>
+                   <span class="mo">+</span>
+                  </div>
+                 </div>
+                 <span stretchy="false" class="mo">(</span>
+                 <span class="mn">1</span>
+                 <span class="mo">,</span>
+                 <span class="mn">2</span>
+                 <span stretchy="false" class="mo">)</span>
+                </div>
+                <span class="mo">|</span>
+               </div>
+               <div class="mrow">
+                <div class="mrow">
+                 <span class="mi">j</span>
+                 <span class="mi">a</span>
+                </div>
+                <span class="mo">)</span>
+               </div>
+              </div>
+              <span class="mo">|</span>
+             </div>
+            </div>
+            <span class="mn">2</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <div class="msub">
+            <span class="mo">ε</span>
+            <span class="mi">a</span>
+           </div>
+           <span class="mo">+</span>
+           <div class="msub">
+            <span class="mo">ε</span>
+            <span class="mi">b</span>
+           </div>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span class="mo">ε</span>
+            <span class="mi">i</span>
+           </div>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span class="mo">ε</span>
+            <span class="mi">j</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>with
+  <div id="jcc25364-disp-0016" class="disp-formula">
+   <span class="label">(16)</span>
+   <div id="nlm-math-45" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">|</span>
+      <div class="mrow">
+       <div class="msubsup">
+        <span mathvariant="bold" class="mi">g</span>
+        <span class="mn">2</span>
+        <div class="mrow">
+         <span class="mo">+</span>
+         <span class="mo">+</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">1</span>
+       <span class="mo">,</span>
+       <span class="mn">2</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mi">j</span>
+       <span class="mi">b</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munderover">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mo">ω</span>
+        <div class="msup">
+         <span class="mo">ω</span>
+         <span class="mo">′</span>
+        </div>
+        <span class="mo">τ</span>
+        <div class="msup">
+         <span class="mo">τ</span>
+         <span class="mo">′</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <span class="mo">α</span>
+        <span class="mo">,</span>
+        <span class="mo">β</span>
+        <span class="mo">}</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div displaystyle="true" class="mstyle">
+        <div class="munderover">
+         <span class="mo">∑</span>
+         <div class="mrow">
+          <span class="mo">μ</span>
+          <span class="mo">ν</span>
+          <span class="mo">ρ</span>
+          <span class="mo">λ</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">{</span>
+          <span class="mi">A</span>
+          <span class="mi">O</span>
+          <span class="mo">}</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <div class="msubsup">
+              <span class="mi">C</span>
+              <div class="mrow">
+               <span class="mo">μ</span>
+               <span class="mi">i</span>
+              </div>
+              <span class="mo">ω</span>
+             </div>
+            </div>
+            <span class="mo">)</span>
+           </div>
+          </div>
+          <span class="mo">*</span>
+         </div>
+         <div class="msubsup">
+          <span class="mi">C</span>
+          <div class="mrow">
+           <span class="mo">ν</span>
+           <span class="mi">a</span>
+          </div>
+          <div class="msup">
+           <span class="mo">ω</span>
+           <span class="mo">′</span>
+          </div>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <div class="msubsup">
+              <span class="mi">C</span>
+              <div class="mrow">
+               <span class="mo">ρ</span>
+               <span class="mi">j</span>
+              </div>
+              <span class="mo">τ</span>
+             </div>
+            </div>
+            <span class="mo">)</span>
+           </div>
+          </div>
+          <span class="mo">*</span>
+         </div>
+         <div class="msubsup">
+          <span class="mi">C</span>
+          <div class="mrow">
+           <span class="mo">λ</span>
+           <span class="mi">b</span>
+          </div>
+          <div class="msup">
+           <span class="mo">τ</span>
+           <span class="mo">′</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <span class="mo">μ</span>
+           <span class="mo">ω</span>
+           <span class="mo">ν</span>
+           <div class="msup">
+            <span class="mo">ω</span>
+            <span class="mo">′</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mo">|</span>
+          <div class="mrow">
+           <div class="msubsup">
+            <span mathvariant="bold" class="mi">g</span>
+            <span class="mn">2</span>
+            <div class="mrow">
+             <span class="mo">+</span>
+             <span class="mo">+</span>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mn">1</span>
+           <span class="mo">,</span>
+           <span class="mn">2</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mo">|</span>
+         </div>
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mo">ρ</span>
+           <span class="mo">τ</span>
+           <span class="mo">λ</span>
+           <div class="msup">
+            <span class="mo">τ</span>
+            <span class="mo">′</span>
+           </div>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>Here, {
+  <span class="italic">i, j</span>} and {
+  <span class="italic">a, b</span>} are the occupied and virtual orbitals, respectively while {
+  <div id="nlm-math-46" class="math">
+   <span class="mo">ω</span>
+  </div>, 
+  <div id="nlm-math-47" class="math">
+   <div class="msup">
+    <span class="mo">ω</span>
+    <span class="mo">′</span>
+   </div>
+  </div>} and {
+  <div id="nlm-math-48" class="math">
+   <span class="mo">τ</span>
+  </div>, 
+  <div id="nlm-math-49" class="math">
+   <div class="msup">
+    <span class="mo">τ</span>
+    <span class="mo">′</span>
+   </div>
+  </div>} are the spin functions for electrons 1 and 2, respectively. For the SD term of the two‐electron 2c relativistic Hamiltonian 
+  <div id="nlm-math-50" class="math">
+   <div class="mrow">
+    <div class="msubsup">
+     <span mathvariant="bold" class="mi">g</span>
+     <span class="mn">2</span>
+     <div class="mrow">
+      <span class="mi">S</span>
+      <span class="mi">D</span>
+      <span class="mo">+</span>
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> in eq. (
+  <a rid="jcc25364-disp-0007" ref-type="disp-formula" href="#jcc25364-disp-0007">7</a>), arbitrary combinations of spins are required for the evaluation of operators such as 
+  <div id="nlm-math-51" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">i</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">i</span>
+    </div>
+    <div class="msub">
+     <span class="mi">X</span>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">i</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">i</span>
+    </div>
+   </div>
+  </div>, 
+  <div id="nlm-math-52" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">j</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">j</span>
+    </div>
+    <div class="msub">
+     <span class="mi">X</span>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">j</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">j</span>
+    </div>
+   </div>
+  </div>, and 
+  <div id="nlm-math-53" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">i</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">i</span>
+    </div>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="bold-italic" class="mi">σ</span>
+       <span class="mi">j</span>
+      </div>
+      <span class="mo">⋅</span>
+      <div class="msub">
+       <span mathvariant="bold-italic" class="mi">p</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="msub">
+       <span class="mi">X</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">j</span>
+       </div>
+      </div>
+      <div class="msub">
+       <span mathvariant="bold-italic" class="mi">σ</span>
+       <span class="mi">j</span>
+      </div>
+      <span class="mo">⋅</span>
+      <div class="msub">
+       <span mathvariant="bold-italic" class="mi">p</span>
+       <span class="mi">j</span>
+      </div>
+     </div>
+     <span class="mo">)</span>
+    </div>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">σ</span>
+     <span class="mi">i</span>
+    </div>
+    <span class="mo">⋅</span>
+    <div class="msub">
+     <span mathvariant="bold-italic" class="mi">p</span>
+     <span class="mi">i</span>
+    </div>
+   </div>
+  </div>, where 
+  <span class="italic">X</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> is an arbitrary two‐electron operator.
+ </p>
+</sec>

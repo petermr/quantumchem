@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vogel–Fulcher–Tammann (VFT) Formula</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is insightful to obtain the expression for the transitivity function for perhaps the most popular equation for modeling 
+  <span class="italic">super</span>-Arrhenius behavior, the Vogel–Fulcher–Tammann (VFT) formula (Vogel, 
+  <a rid="B92" ref-type="bibr" href="#B92">1921</a>; Fulcher, 
+  <a rid="B38" ref-type="bibr" href="#B38">1925</a>; Tammann and Hesse, 
+  <a rid="B85" ref-type="bibr" href="#B85">1926</a>), here written as a rate constant in an Arrhenius-like fashion, but involving one additional parameter:
+ </p>
+ <div id="E22" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(20)</span>
+  <div id="M30" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">B</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">T</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">T</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">0</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">A, B, and T</span>
+  <sub>0</sub> are the fitting parameters: they are often designated, respectively being often denoted as the pre-factor, pseudo-activation energy and VFT-temperature, respectively. It is noteworthy, that in the polymer and food science community (Angell, 
+  <a rid="B3" ref-type="bibr" href="#B3">1997</a>; Peleg et al., 
+  <a rid="B68" ref-type="bibr" href="#B68">2002</a>; Coutinho et al., 
+  <a rid="B27" ref-type="bibr" href="#B27">2015b</a>) Equation (20) is also known as the Williams-Landel-Ferry (WLF) equation: see (Williams et al., 
+  <a rid="B98" ref-type="bibr" href="#B98">1955</a>; Dudowicz et al., 
+  <a rid="B33" ref-type="bibr" href="#B33">2015</a>) where the equivalence among the respective parameters is demonstrated explicitly.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The VFT transitivity function is obtained directly from the definition through the analytical logarithmic differentiation of Equation (20) with respect to β: The result is</p>
+ <div id="E23" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(21)</span>
+  <div id="M31" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">γ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">B</span>
+       </div>
+      </div>
+      <span class="mo">-</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">0</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">B</span>
+       </div>
+      </div>
+      <span class="mi">β</span>
+      <span class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">R</span>
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">0</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">B</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">That can be worked out in a more compact representation,</p>
+ <div id="E24" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(22)</span>
+  <div id="M32" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">γ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">B</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">-</span>
+          <span class="mi">R</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">T</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">0</span>
+           </div>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, formula (22) adds insight on the VFT parametrization for γ by a summarizing comparison with the Arrhenius and with the AM formulations for the transitivity function: the following general expression,</p>
+ <div id="E25" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(23)</span>
+  <div id="M33" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">γ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">d</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+          </div>
+          <div class="msubsup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">covers three cases for different values of 
+  <span class="italic">n</span>: (i) for 
+  <span class="italic">n</span> = 0 one recovers Arrhenius formula, (ii) for 
+  <span class="italic">n</span> = 1 the AM formula is obtained, and (iii) for 
+  <span class="italic">n</span> = 2 one gets the VFT (and WLF) formula. From 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, in the transitivity plane, a geometrical interpretation can be given and leads to
+ </p>
+ <div id="E26" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(24)</span>
+  <div id="M34" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mo">tan</span>
+      <span class="mi">δ</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mtext">d</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">γ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">β</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mtext">d </span>
+        <span class="mi">β</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">in limiting case of β tending to zero,</p>
+ <div id="E27" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(25)</span>
+  <div id="M35" class="math">
+   <div class="mrow">
+    <div class="munder">
+     <div class="mrow">
+      <span class="mi">lim</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">β</span>
+      <span class="mo">→</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <div class="mfrac">
+     <div class="mrow">
+      <div mathsize="normal" class="mstyle">
+       <span class="mtext">d</span>
+      </div>
+      <div class="msub">
+       <span class="mi">γ</span>
+       <span class="mi">n</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <span class="mi">β</span>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mtext">d</span>
+      <span class="mi">β</span>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="munder">
+     <div class="mrow">
+      <span class="mi">lim</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">β</span>
+      <span class="mo">→</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span class="mo">−</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <span class="mi">n</span>
+      <div class="msub">
+       <span class="mi">d</span>
+       <span class="mi">n</span>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">−</span>
+          <div class="msub">
+           <span class="mi">d</span>
+           <span class="mi">n</span>
+          </div>
+          <div class="msubsup">
+           <span class="mi">ε</span>
+           <span class="mi">n</span>
+           <span class="mo">‡</span>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span class="mo">)</span>
+        </div>
+       </div>
+       <span class="mi">n</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+      <span class="mo">−</span>
+      <div class="msub">
+       <span class="mi">d</span>
+       <span class="mi">n</span>
+      </div>
+      <div class="msubsup">
+       <span class="mi">ε</span>
+       <span class="mi">n</span>
+       <span class="mo">‡</span>
+      </div>
+      <span class="mi">β</span>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <span class="mo">−</span>
+    <span class="mi">n</span>
+    <div class="msub">
+     <span class="mi">d</span>
+     <span class="mi">n</span>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">and the comparison between 
+  <span class="italic">n</span> = 1 (AM) and 
+  <span class="italic">n</span> = 2 (VFT) parametrizations is shown to be
+ </p>
+ <div id="E28" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(26)</span>
+  <div id="M36" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">d</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">d</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mtext"> </span>
+      <span class="mi">o</span>
+      <span class="mi">r</span>
+      <span class="mtext"> </span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">†</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">2</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">†</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">See details in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>, where the ASCC and NTS formulas, to be discussed next, are also considered.
+ </p>
+</sec>

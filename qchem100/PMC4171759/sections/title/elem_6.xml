@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">MOLECULAR PROPERTIES</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dalton is a versatile tool for studying molecular properties. By response theory, the linear, quadratic, and cubic response of a molecule to external perturbations, including geometrical distortions and electromagnetic fields, may be explored in detail and a wide variety of spectroscopic parameters can be calculated. In the following, the molecular properties implemented in Dalton are described.</p>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Geometrical Properties</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Molecular gradients (forces) and Hessians (force constants) may be calculated analytically at the HF, KS, and MCSCF
+   <a rid="b37" ref-type="bibr" href="#b37">37</a>,
+   <a rid="b38" ref-type="bibr" href="#b38">38</a> levels of theory, whereas analytical molecular gradients are available for the CCS, CC2, CCD, MP2, RPA, CCSD, and CCSD(T) models,
+   <a rid="b18" ref-type="bibr" href="#b18">18</a>,
+   <a rid="b39" ref-type="bibr" href="#b39">39</a> also in the frozen-core approximation. Numerical differentiation may be performed automatically for these quantities when an analytical implementation is not available.
+   <a rid="b40" ref-type="bibr" href="#b40">40</a>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton has an extensive functionality for exploring potential-energy surfaces by means of molecular gradients and Hessians. Minima can be determined using first-order (quasi-Newton) and second-order (Newton) methods.
+   <a rid="b41" ref-type="bibr" href="#b41">41</a> Dalton also has several first- and second-order methods for determining saddle points (transition states), including mode following
+   <a rid="b42" ref-type="bibr" href="#b42">42</a> and image minimization.
+   <a rid="b43" ref-type="bibr" href="#b43">43</a> Geometry optimizations may be performed for excited states
+   <a rid="b44" ref-type="bibr" href="#b44">44</a>,
+   <a rid="b45" ref-type="bibr" href="#b45">45</a> and core-ionized states.
+   <a rid="b46" ref-type="bibr" href="#b46">46</a> Potential-energy surfaces can be mapped by the calculation of intrinsic reaction coordinates. Born–Oppenheimer direct-dynamics studies can be performed by calculating classical molecular trajectories on the potential-energy surfaces, iteratively solving Newton's equation of motion for the atoms in the system, allowing dynamical studies of systems containing more than one hundred atoms.
+   <a rid="b47" ref-type="bibr" href="#b47">47</a>,
+   <a rid="b48" ref-type="bibr" href="#b48">48</a>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton may be used to calculate molecular vibrational spectra. In addition to harmonic frequencies, infrared intensities are obtained in the double-harmonic approximation
+   <a rid="b49" ref-type="bibr" href="#b49">49</a> and Raman intensities at a chosen frequency in the Placzek approximation. Dalton has an automated procedure for calculating rovibrationally averaged molecular geometries
+   <a rid="b50" ref-type="bibr" href="#b50">50</a> and vibrational averages for molecular properties at the HF, KS, and MCSCF levels of theory.
+   <a rid="b40" ref-type="bibr" href="#b40">40</a>,
+   <a rid="b51" ref-type="bibr" href="#b51">51</a>
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Magnetic Properties</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Nuclear shielding and indirect nuclear spin–spin coupling constants of nuclear-magnetic-resonance (NMR) spectroscopy may be studied at many levels of theory, including DFT,
+   <a rid="b52" ref-type="bibr" href="#b52">52</a>–
+   <a rid="b54" ref-type="bibr" href="#b54">54</a> HF, and MCSCF theory,
+   <a rid="b55" ref-type="bibr" href="#b55">55</a>,
+   <a rid="b56" ref-type="bibr" href="#b56">56</a> the second-order polarization-propagator approximation (SOPPA),
+   <a rid="b57" ref-type="bibr" href="#b57">57</a> and CC theory; for an illustration, see the KS calculation of spin–spin coupling constants in valinomycin in Figure 
+   <a ref-type="fig" rid="fig01" href="#fig01">1</a>. Likewise, the hyperfine coupling tensors,
+   <a rid="b58" ref-type="bibr" href="#b58">58</a>,
+   <a rid="b59" ref-type="bibr" href="#b59">59</a> electronic 
+   <span class="italic">g</span> tensors,
+   <a rid="b60" ref-type="bibr" href="#b60">60</a> and zero-field splitting tensors
+   <a rid="b61" ref-type="bibr" href="#b61">61</a> of electron-paramagnetic-resonance (EPR) spectroscopy may be calculated. A number of related properties such as spin–rotation tensors,
+   <a rid="b62" ref-type="bibr" href="#b62">62</a> magnetizabilities,
+   <a rid="b63" ref-type="bibr" href="#b63">63</a> rotational,
+   <a rid="b62" ref-type="bibr" href="#b62">62</a> and vibrational
+   <a rid="b64" ref-type="bibr" href="#b64">64</a>
+   <span class="italic">g</span> tensors are available. In addition, several chiroptical properties may be studied: vibrational circular dichroism,
+   <a rid="b65" ref-type="bibr" href="#b65">65</a> electronic circular dichroism,
+   <a rid="b66" ref-type="bibr" href="#b66">66</a> optical rotation,
+   <a rid="b67" ref-type="bibr" href="#b67">67</a> and vibrational Raman optical activity.
+   <a rid="b68" ref-type="bibr" href="#b68">68</a>
+  </p>
+  <div id="fig01" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">FIGURE 1</span>
+   <div class="caption">
+    <p>The absolute value of the indirect spin–spin coupling constants (Hz, greater than 0.1 Hz) in valinomycin (left), on a logarithmic scale as a function of the internuclear distance (pm).
+     <a rid="b54" ref-type="bibr" href="#b54">54</a> We have used blue, black, red, and green for the CH, CC, CO, and CN coupling constants, respectively. The spin–spin coupling constants have been calculated at the LDA/6-31G level of theory. (Reproduced with permission from Ref 54. Copyright 2004, John Wiley &amp; Sons, Ltd.)
+    </p>
+   </div>
+   <div xlink:href="wcms0004-0269-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In all calculations involving an external magnetic field, gauge-origin invariance is ensured by the use of London atomic orbitals, also known as gauge-including atomic orbitals. Alternatively, invariance may be ensured by the diamagnetic-zero version of the method of continuous transformation of the origin of the current density (CTOCD-DZ).
+   <a rid="b69" ref-type="bibr" href="#b69">69</a>
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Frequency-Dependent Properties</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Frequency-dependent linear response functions may be calculated at the HF, KS,
+   <a rid="b70" ref-type="bibr" href="#b70">70</a> SOPPA,
+   <a rid="b71" ref-type="bibr" href="#b71">71</a> and MCSCF levels of theory; at most of these levels of theory, quadratic and cubic response functions are also available. These functions contain a wealth of information not only about the reference state but also about other states of the molecular electronic system.
+   <a rid="b72" ref-type="bibr" href="#b72">72</a> For example, the poles of a linear response function (such as the dipole–dipole polarizability tensor) correspond to excitation energies from the reference state (not necessarily the ground state), whereas the corresponding residues represent transition moments between the reference state and the excited states. Quadratic response functions
+   <a rid="b73" ref-type="bibr" href="#b73">73</a> such as the first hyperpolarizability tensor provide information about nonlinear molecular response and two-photon processes—for example, coherent two-photon absorption
+   <a rid="b74" ref-type="bibr" href="#b74">74</a>,
+   <a rid="b75" ref-type="bibr" href="#b75">75</a> and two-photon absorption circular dichroism.
+   <a rid="b76" ref-type="bibr" href="#b76">76</a> By means of quadratic response theory, phosphorescence phenomena such as spin-forbidden dipole transitions induced by spin–orbit coupling can be studied.
+   <a rid="b55" ref-type="bibr" href="#b55">55</a>,
+   <a rid="b77" ref-type="bibr" href="#b77">77</a> Cubic response functions
+   <a rid="b78" ref-type="bibr" href="#b78">78</a>–
+   <a rid="b80" ref-type="bibr" href="#b80">80</a> such as the second hyperpolarizability tensor give information about three-photon processes
+   <a rid="b81" ref-type="bibr" href="#b81">81</a> and excited-state polarizabilities,
+   <a rid="b82" ref-type="bibr" href="#b82">82</a> various higher-order spectroscopies such as second harmonic generation circular intensity difference,
+   <a rid="b83" ref-type="bibr" href="#b83">83</a> as well as a wide range of birefringences. Many of these properties may be studied in the presence of an externally applied electric field.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Several response functions have been implemented for the CCS, CC2, and CCSD models, including ground-state expectation values,
+   <a rid="b84" ref-type="bibr" href="#b84">84</a> excitation energies,
+   <a rid="b85" ref-type="bibr" href="#b85">85</a> linear response functions,
+   <a rid="b86" ref-type="bibr" href="#b86">86</a> quadratic response functions,
+   <a rid="b87" ref-type="bibr" href="#b87">87</a> cubic response functions,
+   <a rid="b88" ref-type="bibr" href="#b88">88</a> and their residues.
+   <a rid="b86" ref-type="bibr" href="#b86">86</a>,
+   <a rid="b89" ref-type="bibr" href="#b89">89</a> For the CC3 model, response properties including excitation energies have been implemented.
+   <a rid="b85" ref-type="bibr" href="#b85">85</a>,
+   <a rid="b90" ref-type="bibr" href="#b90">90</a> The double residues of the quadratic and cubic response functions allow first- and second-order properties of excited states—excited-state dipole moments and polarizabilities,
+   <a rid="b91" ref-type="bibr" href="#b91">91</a> for example—to be obtained even for single-reference methods.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton contains implementations of special methodologies for the calculation of a variety of X-ray spectroscopies, such as X-ray emission, absorption,
+   <a rid="b92" ref-type="bibr" href="#b92">92</a> shake-up,
+   <a rid="b93" ref-type="bibr" href="#b93">93</a> X-ray Raman,
+   <a rid="b94" ref-type="bibr" href="#b94">94</a> and X-ray circular dichroism
+   <a rid="b95" ref-type="bibr" href="#b95">95</a> spectroscopies. For HF and KS theories, this is accomplished with the ‘static exchange’ approximation
+   <a rid="b92" ref-type="bibr" href="#b92">92</a> and the RPA-restricted channel technology, both of which are implemented with integral-direct methods, for applications to large systems such as polymers and surface adsorbates.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In standard response theory, the response functions become divergent under resonance conditions. Such divergences are unphysical, arising from the assumption of infinite lifetimes of excited states. In reality, relaxation mechanisms deplete the excited-state populations, making perturbation theory sound also under these conditions. Using the Ehrenfest theorem, an equation of motion for state vectors that mimics the inclusion of relaxation in density-matrix theory by the Liouville equation has been established.
+   <a rid="b96" ref-type="bibr" href="#b96">96</a> The resulting complex-polarization-propagator (CPP) approach has been implemented at the HF, KS, MCSCF, and CC levels of theory.
+   <a rid="b96" ref-type="bibr" href="#b96">96</a>–
+   <a rid="b100" ref-type="bibr" href="#b100">100</a> The CPP response functions are resonance convergent and complex valued, providing a direct means of addressing spectroscopies carried out in regions of electronic resonances such as electronic circular dichroism,
+   <a rid="b101" ref-type="bibr" href="#b101">101</a> resonance Raman,
+   <a rid="b102" ref-type="bibr" href="#b102">102</a> magnetic circular dichroism,
+   <a rid="b103" ref-type="bibr" href="#b103">103</a> and vis/UV/X-ray absorption
+   <a rid="b98" ref-type="bibr" href="#b98">98</a>,
+   <a rid="b104" ref-type="bibr" href="#b104">104</a> spectroscopies. In Figure 
+   <a ref-type="fig" rid="fig02" href="#fig02">2</a>, we have plotted the NEXAFS linear absorption cross-section of Gd acetate nanoparticles, extracted from the imaginary part of the KS CPP electric-dipole polarizability.
+   <a rid="b105" ref-type="bibr" href="#b105">105</a> This calculation addresses the spectral region of the carbon K-edge, demonstrating the universal treatment of the spectrum in CPP theory.
+  </p>
+  <div id="fig02" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">FIGURE 2</span>
+   <div class="caption">
+    <p>Near-edge X-ray absorption fine structure (NEXAFS) study of Gd acetate nanoparticles. The experimental spectrum (top) is compared with the sum of the theoretical spectra (black) for isolated acetate (green) and a coordination complex (red). (Reproduced with permission from Ref 105. Copyright 2012, Springer.)</p>
+   </div>
+   <div xlink:href="wcms0004-0269-f2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Environmental Effects</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In Dalton, environmental effects may be included in quantum-chemical calculations either by treating the environment as a homogeneous dielectric continuum or by describing it at the level of polarizable molecular mechanics. In the simplest continuum approach, the self-consistent-reaction-field (SCRF) approach,
+   <a rid="b106" ref-type="bibr" href="#b106">106</a>–
+   <a rid="b108" ref-type="bibr" href="#b108">108</a> the solute is placed in a spherical cavity in the dielectric medium. The SCRF method has been implemented for the HF, KS, CC2, CCSD, MCSCF, and SOPPA models and may be applied to linear, quadratic, and cubic response functions (up to quadratic response functions for the CC models) as well as for geometrical properties (molecular gradients and Hessians) and spin-resonance properties.
+   <a rid="b109" ref-type="bibr" href="#b109">109</a>–
+   <a rid="b114" ref-type="bibr" href="#b114">114</a> In the more elaborate polarized-dielectric-continuum model (PCM),
+   <a rid="b115" ref-type="bibr" href="#b115">115</a> the solute is placed in a molecule-shaped cavity, thereby improving the solute–solvent description. Solvent effects at the level of PCM may be evaluated using the HF, KS, or MCSCF models and are available for properties up to the level of cubic response theory
+   <a rid="b116" ref-type="bibr" href="#b116">116</a>–
+   <a rid="b118" ref-type="bibr" href="#b118">118</a> and for molecular gradients. The SCRF and PCM solvation models have both been implemented in a general nonequilibrium formalism.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Using the polarizable-embedding (PE) sch-eme,
+   <a rid="b119" ref-type="bibr" href="#b119">119</a>–
+   <a rid="b125" ref-type="bibr" href="#b125">125</a> the environment may be treated as a structured and polarizable medium—that is, the discrete nature of the environment is retained and is described by distributed multipoles and anisotropic dipole–dipole polarizabilities. The PE method may be applied at the HF, KS, MP2, SOPPA, CCSD, or CC2 levels of theory and properties up to linear response may be evaluated. In addition, quadratic-response properties are available at the HF and KS levels.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a ref-type="fig" rid="fig03" href="#fig03">3</a> illustrates the calculation of biophotonics properties with Dalton. The left insert shows an X-ray structure of channelrhodopsin, highlighting the chromophore embedded in the binding pocket of the protein. Using the PE method, the effect of the protein on the chromophore is described by representing the protein by distributed multipoles and (anisotropic) polarizabilities, retaining a quantum-mechanical description of the chromophore itself. The calculated embedding potential is highly anisotropic, significantly affecting the optical properties of the chromophore as illustrated by the one- and two-photon absorption spectra calculated at different levels of theory: by neglecting the protein environment entirely (‘vacuum’), by adjusting the chromophore geometry to that inside the protein (‘geometry’), by including the electrostatics but neglecting protein relaxation (‘electrostatics’), and by including both electrostatics and protein relaxation (‘polarization’).
+  </p>
+  <div id="fig03" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">FIGURE 3</span>
+   <div class="caption">
+    <p>One- and two-photon absorption spectra for channelrhodopsin calculated using the polarizable embedding method implemented in Dalton. The insert on the top of the right hand side shows the protein embedding potential projected onto the molecular surface.</p>
+   </div>
+   <div xlink:href="wcms0004-0269-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec5-nanomaterials-09-00872" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">5. Quantum Wells</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In a QW structure A-B-A as sketched in the top of 
+  <a ref-type="fig" rid="nanomaterials-09-00872-f004" href="#nanomaterials-09-00872-f004">Figure 4</a>, interdiffusion will broaden and smear the originally abrupt interfaces. This will be symmetrical if the temperature was not changed suddenly during deposition and the deposited structure held at growth temperature for roughly the same duration. Dynamical segregation of B atoms to the free surface during growth, however, will result in asymmetrical interface broadening where the long-range tail towards the free surface on the right (‘trailing or upper interface’) is often the most noticeable effect. In-situ Auger electron spectroscopy was the first technique to detect such surface segregation in semiconductors: P segregation to the Si/SiO
+  <sub>2</sub> interface was detected by depth profiling combining sputter etching with Auger analysis [
+  <a rid="B22-nanomaterials-09-00872" ref-type="bibr" href="#B22-nanomaterials-09-00872">22</a>], and for SiGe the Ge signal persisted despite capping by Si for a long time during epitaxy [
+  <a rid="B23-nanomaterials-09-00872" ref-type="bibr" href="#B23-nanomaterials-09-00872">23</a>]. At the same time, the position of the first-deposited ‘leading’ or bottom interface moves by exactly 1 monolayer towards the substrate due to some B atoms swapping sites with A atoms in the first deposited barrier layer. This downward shift by a single monolayer is not usually observable in any experiment because there is no sufficiently accurate marker that could be employed for reference.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is clear that individual atomic-scale growth steps within an otherwise abrupt interface between A and B (so-called roughness) will only be visible if, firstly, the step density is low enough so that their typical distance is not smaller than the specimen thickness along the beam direction and, secondly, if the viewing direction is perpendicular to these steps—otherwise, the projection effect in transmission geometry will make it impossible to distinguish rough from diffuse interfaces [
+  <a rid="B24-nanomaterials-09-00872" ref-type="bibr" href="#B24-nanomaterials-09-00872">24</a>]. This means thin samples will be required for quantitative measurements and the local specimen thickness should be determined (by electron diffraction or spectroscopy).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In analogy to the case of colloidal core–shell particles, strain can influence the formation of epitaxial QWs by, rather than incorporating deposited atoms that are too large for incorporation within a certain unit cell, driving such atoms towards the surface. In fact, misfit strain has been directly identified as the key parameter behind the Stranski–Krastanow growth in both InGaAs/GaAs (as in 
+  <a ref-type="fig" rid="nanomaterials-09-00872-f003" href="#nanomaterials-09-00872-f003">Figure 3</a>) and SiGe/Si epitaxy whereby larger atomic species from a deposited wetting layer accumulate within spontaneously formed islands which, if small enough, can directly form randomly positioned QWs.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">There are several different models for surface segregation during epitaxy that may be either classified as atomistic or phenomenological. Atomistic models simulate individual atomic site swaps on the surface using various atomic configurations and kinetic approximations, examples being the two-state exchange model that considers the surface monolayer and the sub-surface monolayer of a perfectly flat surface only [
+  <a rid="B25-nanomaterials-09-00872" ref-type="bibr" href="#B25-nanomaterials-09-00872">25</a>,
+  <a rid="B26-nanomaterials-09-00872" ref-type="bibr" href="#B26-nanomaterials-09-00872">26</a>], while the three-state exchange model considers atomic site swaps between the three topmost monolayers during epitaxy [
+  <a rid="B27-nanomaterials-09-00872" ref-type="bibr" href="#B27-nanomaterials-09-00872">27</a>,
+  <a rid="B28-nanomaterials-09-00872" ref-type="bibr" href="#B28-nanomaterials-09-00872">28</a>] and may also take into account the role of atomic steps, kinks and even surface reconstructions. The 3-state-model has been necessary to explain the presence of more than a single full Ge monolayer segregated on top of epitaxial SiGe [
+  <a rid="B29-nanomaterials-09-00872" ref-type="bibr" href="#B29-nanomaterials-09-00872">29</a>,
+  <a rid="B30-nanomaterials-09-00872" ref-type="bibr" href="#B30-nanomaterials-09-00872">30</a>]. Phenomenological models fit the extended tails of the resulting compositional profiles based on either geometric series of effective segregation ratios, 
+  <span class="italic">R</span>, between successive monolayers (giving for 
+  <span class="italic">n</span> deposited monolayers 
+  <span class="italic">x</span>
+  <sub>i</sub> = 
+  <span class="italic">x</span>
+  <sub>0</sub>(1 – 
+  <span class="italic">R</span>
+  <span class="sup">i</span>) for the i
+  <span class="sup">th</span> monolayer of the leading interface, 1 ≤ i ≤ 
+  <span class="italic">n</span>, and 
+  <span class="italic">x</span>
+  <sub>i</sub> = 
+  <span class="italic">x</span>
+  <sub>0</sub>(1 – 
+  <span class="italic">R</span>
+  <span class="sup">n</span>)
+  <span class="italic">R</span>
+  <span class="sup">i–n</span>, i &gt; 
+  <span class="italic">n</span>, for the trailing interface) or based on exponential functions with 1/e decay lengths, 
+  <span class="italic">L</span>. Both approaches of profile fitting are equivalent because of the relationship 
+  <div id="FD4-nanomaterials-09-00872" class="disp-formula">
+   <div id="mm12" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">ln</span>
+      <span class="mi">R</span>
+      <span class="mo">=</span>
+      <span class="mo">−</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mi">d</span>
+         <div class="mrow">
+          <span class="mi">M</span>
+          <span class="mi">L</span>
+         </div>
+        </div>
+       </div>
+       <span class="mi">L</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> where 
+  <span class="italic">d</span>
+  <sub>ML</sub> is the distance between successive monolayers measured along the growth direction [
+  <a rid="B31-nanomaterials-09-00872" ref-type="bibr" href="#B31-nanomaterials-09-00872">31</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="nanomaterials-09-00872-f005" href="#nanomaterials-09-00872-f005">Figure 5</a> shows as an example multiple Si
+  <sub>1-x</sub>Ge
+  <sub>x</sub>/Si quantum wells, where lower and upper interfaces are visually slightly different, however, bright field imaging can introduce strong non-linearity with composition even for the relatively low Ge content of the quantum wells studied here (
+  <span class="italic">x</span> ≈ 0.2) and so has to be treated with care for quantification [
+  <a rid="B32-nanomaterials-09-00872" ref-type="bibr" href="#B32-nanomaterials-09-00872">32</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">High-angle ADF imaging is sometimes referred to as ‘Z-contrast’ because for sufficiently large collection angles the intensity increases with the square of the atomic number, 
+  <span class="italic">Z</span>, in agreement with Rutherford scattering [
+  <a rid="B10-nanomaterials-09-00872" ref-type="bibr" href="#B10-nanomaterials-09-00872">10</a>]. For 
+  <span class="italic">i</span> atoms in the atomic column of a crystal the electron traverses, the intensity then is proportional to ∑
+  <span class="italic">
+   <sub>i</sub>
+  </span>
+  <span class="italic">Z
+   <sub>i</sub>
+  </span>
+  <span class="sup">2</span> where 
+  <span class="italic">Z</span>i is the atomic number of the 
+  <span class="italic">i</span>
+  <span class="sup">th</span> atom along the electron beam direction. For a simple binary alloy A
+  <span class="italic">
+   <sub>j</sub>
+  </span>B
+  <span class="italic">
+   <sub>k</sub>
+  </span>, we have ∑
+  <span class="italic">
+   <sub>i</sub> Z
+   <sub>i</sub>
+  </span>
+  <span class="sup">2</span> = 
+  <span class="italic">jZ</span>
+  <sub>A</sub>
+  <span class="sup">2</span> + 
+  <span class="italic">kZ</span>
+  <sub>B</sub>
+  <span class="sup">2</span> ≠ ∑
+  <span class="italic">
+   <sub>i</sub>
+  </span> [
+  <span class="sup">1</span>/
+  <sub>2</sub>(
+  <span class="italic">Z</span>
+  <sub>A</sub> + Z
+  <sub>B</sub>)]
+  <span class="sup">2</span> = 
+  <span class="italic">i</span>&lt;
+  <span class="italic">Z&gt;</span>
+  <span class="sup">2</span>, which means that in a crystal one can only work with a hypothetical average atomic number &lt;
+  <span class="italic">Z</span>&gt; under certain assumptions, and the situation can be even more complicated by surface oxidation which many semiconductors are prone to [
+  <a rid="B33-nanomaterials-09-00872" ref-type="bibr" href="#B33-nanomaterials-09-00872">33</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="nanomaterials-09-00872-f006" href="#nanomaterials-09-00872-f006">Figure 6</a> demonstrates that ‘perfect 
+  <span class="italic">Z</span>-contrast’ imaging will yield an intensity profile which, when scaled to the same minimum and maximum values compared to the true underlying compositional profile, will be underestimating the concentration of the heavier atomic species (for Si
+  <sub>1-x</sub>Ge
+  <sub>x</sub> with 
+  <span class="italic">Z</span>
+  <sub>Si</sub> = 14 and 
+  <span class="italic">Z</span>
+  <sub>Ge</sub> = 32 by Δ
+  <span class="italic">Z</span> = −1.76 or Δ
+  <span class="italic">x</span> = −0.1, i.e., 10 at%) as well as appear considerably narrower [
+  <a rid="B10-nanomaterials-09-00872" ref-type="bibr" href="#B10-nanomaterials-09-00872">10</a>]. In the above example of SiGe, the full width at half maximum (FWHM) of the 
+  <span class="italic">Z</span>-contrast profile will be 40 instead of 45 ML and the full width at tenth maximum (FWTM) 69.5 instead of 75.7 ML, i.e., 5–6 ML or 0.7–0.8 nm narrower. This will be important when extracting quantitative compositional profiles. Therefore, taking the square root of an intensity profile rather than the intensity profile itself will be a much better approximation of the underlying chemical gradients as it can remove the coarse non-linearity of contrast with the chemical composition shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00872-f006" href="#nanomaterials-09-00872-f006">Figure 6</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This method has been used to obtain the germanium concentration profiles in 
+  <a ref-type="fig" rid="nanomaterials-09-00872-f007" href="#nanomaterials-09-00872-f007">Figure 7</a> at ~0.5 nm resolution [
+  <a rid="B34-nanomaterials-09-00872" ref-type="bibr" href="#B34-nanomaterials-09-00872">34</a>]. Repeating the quantification for two different anneal temperatures gives the possibility to separately determine diffusion constant and activation energy for interdiffusion [
+  <a rid="B34-nanomaterials-09-00872" ref-type="bibr" href="#B34-nanomaterials-09-00872">34</a>,
+  <a rid="B35-nanomaterials-09-00872" ref-type="bibr" href="#B35-nanomaterials-09-00872">35</a>]. For the quantum wells with high Ge content, tails towards the surface during the highest anneal temperature indicate surface segregation presumably due to in-diffusion of point defects from the surface during the anneal.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="nanomaterials-09-00872-f008" href="#nanomaterials-09-00872-f008">Figure 8</a> compares simulations of surface segregation for a modelled quantum well only 10 monolayers thin. This model is generally valid for any (pseudo) binary system and not confined to any specific material as it only considers atomistic swaps between two different atom types with certain probabilities 
+  <span class="italic">p</span> (for jumps from sub-surface to surface monolayer) and 
+  <span class="italic">q</span> (for reverse jumps). While the deviations from the as-deposited square box-shaped profile are obvious for all simulations, differences between them are actually rather small and typically confined to the concentration values of only two intermediate monolayers on either side, indicating that not only atomic resolution but also high fitting accuracy for each monolayer would be required to distinguish them. Hence, to measure segregation ratios or lengths from experimental data it will generally be more reliable to use extended fit ranges that include many data points (i.e., modelling the long tail components) rather than attempting to fit a model to a few data points only.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Methods to extract and analyse such compositional profiles of semiconductor QWs with single monolayer (in the diamond lattice) or bilayer (in the sphalerite or wurtzite lattices) spatial resolution all involve measuring either the amplitudes or the positions of lattice fringes. Amplitude measurements include high-resolution lattice imaging with chemically sensitive (002) type reflections in sphalerite lattices at certain specimen thicknesses, e.g., (Al)GaAs [
+  <a rid="B24-nanomaterials-09-00872" ref-type="bibr" href="#B24-nanomaterials-09-00872">24</a>], (In)AlAs [
+  <a rid="B36-nanomaterials-09-00872" ref-type="bibr" href="#B36-nanomaterials-09-00872">36</a>], (In)GaAs [
+  <a rid="B37-nanomaterials-09-00872" ref-type="bibr" href="#B37-nanomaterials-09-00872">37</a>], Ga(Sb)As [
+  <a rid="B38-nanomaterials-09-00872" ref-type="bibr" href="#B38-nanomaterials-09-00872">38</a>], Ga(In,N)As [
+  <a rid="B39-nanomaterials-09-00872" ref-type="bibr" href="#B39-nanomaterials-09-00872">39</a>] and (Cd)ZnSe [
+  <a rid="B40-nanomaterials-09-00872" ref-type="bibr" href="#B40-nanomaterials-09-00872">40</a>]. ADF imaging can alternatively be used to map the intensity of atomic columns from which the chemical composition in simple binary and ternary compound semiconductor (pseudo-binary) systems, such as InGaN, can be inferred if the thickness influence is taken into account [
+  <a rid="B41-nanomaterials-09-00872" ref-type="bibr" href="#B41-nanomaterials-09-00872">41</a>,
+  <a rid="B42-nanomaterials-09-00872" ref-type="bibr" href="#B42-nanomaterials-09-00872">42</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The positions of lattice fringes can be determined and their displacements be interpreted in terms of lattice strain [
+  <a rid="B43-nanomaterials-09-00872" ref-type="bibr" href="#B43-nanomaterials-09-00872">43</a>] if surface relaxation in the thin foil specimen remains negligible and if the chemical composition either does not change at all [
+  <a rid="B44-nanomaterials-09-00872" ref-type="bibr" href="#B44-nanomaterials-09-00872">44</a>] or changes by so small an amount that it does not visibly change the image pattern [
+  <a rid="B45-nanomaterials-09-00872" ref-type="bibr" href="#B45-nanomaterials-09-00872">45</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">One key problem, however, is that composition and strain are inter-related in strained layers and so will influence each other. Lattice fringe intensities and displacements can either be fitted together in high-resolution electron microscopy [
+  <a rid="B46-nanomaterials-09-00872" ref-type="bibr" href="#B46-nanomaterials-09-00872">46</a>,
+  <a rid="B47-nanomaterials-09-00872" ref-type="bibr" href="#B47-nanomaterials-09-00872">47</a>] or electron holography methods can be applied to the same effect [
+  <a rid="B48-nanomaterials-09-00872" ref-type="bibr" href="#B48-nanomaterials-09-00872">48</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="nanomaterials-09-00872-f009" href="#nanomaterials-09-00872-f009">Figure 9</a> shows that the profile of a set of 5 quantum wells, in this case of AlGaN, can be well fitted with only three parameters: one for the peak concentration (which is not actually reached in the cases of the thinnest quantum wells) and decay lengths for each interface side, yielding highly reproducible measurements for all quantum wells [
+  <a rid="B42-nanomaterials-09-00872" ref-type="bibr" href="#B42-nanomaterials-09-00872">42</a>]. The resulting segregation ratios resulting from the numerical values of the decay length stated in the figure caption would be 82.4 ± 0.5% for the leading and 83.6 ± 0.5% for the trailing interfaces.
+ </p>
+</sec>

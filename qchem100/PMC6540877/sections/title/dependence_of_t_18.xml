@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="A1" class="app" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Dependence of the CO Polarizability and Permanent Multipoles on the Monomer Bond Length</div>
+ <p>The radial dependence of the CO average polarizability 
+  <div class="inline-formula">
+   <div id="M33" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <span class="mo">¯</span>
+    </div>
+   </div>
+  </div> (in Å
+  <span class="sup">3</span>) is defined by the following empirical equations given in terms of 
+  <span class="italic">n</span>, an effective bond order, 
+  <span class="italic">r</span>, the bond length, and 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">eq</span>
+  </sub> its equilibrium value (see 
+  <a rid="T1" ref-type="table" href="#T1">Table 1</a>):
+ </p>
+ <div id="E17" class="disp-formula">
+  <span class="label">(A1)</span>
+  <div id="M35" class="math">
+   <div columnalign="left" class="mtable">
+    <div columnalign="left" class="mtr">
+     <div columnalign="left" class="mtd">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <span class="mi">α</span>
+        <span class="mo">¯</span>
+       </div>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mi">r</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">=</span>
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">0.5733</span>
+       <span class="mi">n</span>
+       <span class="mo">+</span>
+       <span class="mn">0.8400</span>
+       <span stretchy="false" class="mo">)</span>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <div class="mrow">
+         <span class="mn">1</span>
+         <span class="mo">+</span>
+         <div class="mfrac">
+          <span class="mn">1</span>
+          <span class="mn">3</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <div class="mfrac">
+            <span class="mi">r</span>
+            <div class="mrow">
+             <div class="msub">
+              <span class="mi">r</span>
+              <div class="mrow">
+               <span class="mi">e</span>
+               <span class="mi">q</span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <span class="mo">−</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div columnalign="left" class="mtr">
+     <div columnalign="left" class="mtd">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mi">exp</span>
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <span class="mn">1.0961</span>
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <div class="mfrac">
+              <span class="mi">r</span>
+              <div class="mrow">
+               <div class="msub">
+                <span class="mi">r</span>
+                <div class="mrow">
+                 <span class="mi">e</span>
+                 <span class="mi">q</span>
+                </div>
+               </div>
+              </div>
+             </div>
+             <span class="mo">−</span>
+             <span class="mn">1</span>
+            </div>
+            <span class="mo">)</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">−</span>
+             <span class="mn">0.4682</span>
+             <span class="mi">r</span>
+            </div>
+            <span class="mo">)</span>
+           </div>
+           <div class="msqrt">
+            <div class="mrow">
+             <div class="mfrac">
+              <span class="mi">r</span>
+              <div class="mrow">
+               <div class="msub">
+                <span class="mi">r</span>
+                <div class="mrow">
+                 <span class="mi">e</span>
+                 <span class="mi">q</span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+        <span class="mo">}</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>where the effective bond order reads</p>
+ <div id="E18" class="disp-formula">
+  <span class="label">(A2)</span>
+  <div id="M36" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">n</span>
+      <span class="mo">=</span>
+      <span class="mn">3</span>
+      <span class="mo">-</span>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">0</span>
+          <span class="mo">.</span>
+          <span class="mn">6538</span>
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">r</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">e</span>
+              <span class="mi">q</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <span class="mn">1</span>
+          <span class="mo">.</span>
+          <span class="mn">3076</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">+</span>
+          <span class="mn">0</span>
+          <span class="mo">.</span>
+          <span class="mn">8770</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">0</span>
+        <span class="mo">.</span>
+        <span class="mn">9635</span>
+        <span class="mi">r</span>
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">r</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">e</span>
+              <span class="mi">q</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <span class="mn">1</span>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <span class="mo">]</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>The dependence of 
+  <div class="inline-formula">
+   <div id="M37" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <span class="mo">¯</span>
+    </div>
+   </div>
+  </div> on 
+  <span class="italic">r</span> is reported in the bottom panel of 
+  <a ref-type="fig" rid="F5" href="#F5">Figure 5</a> where a comparison with previous ab initio estimates is also provided.
+ </p>
+ <p>The atomic polarizabilities related to the C and O atoms are obtained as</p>
+ <div id="E19" class="disp-formula">
+  <div id="M38" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">C</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">66</span>
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <span class="mo">¯</span>
+      </div>
+      <span class="mo">,</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">O</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">33</span>
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <span class="mo">¯</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>while that for the N atom (α
+  <sub>
+   <span class="italic">N</span>
+  </sub>) is assumed to be half the N
+  <sub>2</sub> molecular polarizability which is obtained from the Appendix B of Cappelletti et al. (
+  <a rid="B20" ref-type="bibr" href="#B20">2008</a>).
+ </p>
+ <p>The atomic polarizabilities of the involved molecular partners are then used to obtain the 
+  <span class="italic">R</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub> and ε interaction parameters for each atom
+  <sub>
+   <span class="italic">a</span>
+  </sub>-atom pair
+  <sub>
+   <span class="italic">b</span>
+  </sub> as follows Pirani et al. (
+  <a rid="B77" ref-type="bibr" href="#B77">2001</a>):
+ </p>
+ <div id="E20" class="disp-formula">
+  <span class="label">(A3)</span>
+  <div id="M39" class="math">
+   <div class="msub">
+    <span class="mi">R</span>
+    <span class="mi">m</span>
+   </div>
+   <span class="mo">=</span>
+   <span class="mn">1.767</span>
+   <div class="mfrac">
+    <div class="mrow">
+     <div class="msubsup">
+      <span class="mi">α</span>
+      <div class="mrow">
+       <span class="mtext">   </span>
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+       <span class="mtext"> </span>
+       <span class="mn">1</span>
+       <span class="mo">/</span>
+       <span class="mn">3</span>
+      </div>
+     </div>
+     <span class="mo">+</span>
+     <div class="msubsup">
+      <span class="mi">α</span>
+      <div class="mrow">
+       <span class="mtext">   </span>
+       <span class="mi">b</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+       <span class="mtext"> </span>
+       <span class="mn">1</span>
+       <span class="mo">/</span>
+       <span class="mn">3</span>
+      </div>
+     </div>
+    </div>
+    <div class="mrow">
+     <div class="msup">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">α</span>
+          <span class="mi">a</span>
+         </div>
+         <div class="msub">
+          <span class="mi">α</span>
+          <span class="mi">b</span>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">0.095</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="mi">Å</span>
+  </div>
+ </div>
+ <p>with 
+  <div class="inline-formula">
+   <div id="M41" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span class="mi">α</span>
+      <div class="mrow">
+       <span class="mtext">   </span>
+       <span class="mi">C</span>
+      </div>
+      <span class="mo">′</span>
+     </div>
+    </div>
+   </div>
+  </div>= 1.382 α
+  <sub>
+   <span class="italic">C</span>
+  </sub>, 
+  <div class="inline-formula">
+   <div id="M42" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span class="mi">α</span>
+      <div class="mrow">
+       <span class="mtext">   </span>
+       <span class="mi">O</span>
+      </div>
+      <span class="mo">′</span>
+     </div>
+    </div>
+   </div>
+  </div>= 1.382 α
+  <sub>
+   <span class="italic">O</span>
+  </sub> and 
+  <div class="inline-formula">
+   <div id="M43" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <span class="mi">α</span>
+      <div class="mrow">
+       <span class="mtext">   </span>
+       <span class="mi">N</span>
+      </div>
+      <span class="mo">′</span>
+     </div>
+    </div>
+   </div>
+  </div>= 1.65 α
+  <sub>
+   <span class="italic">N</span>
+  </sub>, and
+ </p>
+ <div id="E22" class="disp-formula">
+  <span class="label">(A4)</span>
+  <div id="M44" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">ε</span>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">72</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">C</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+          <span class="mi">i</span>
+          <span class="mi">s</span>
+          <span class="mi">p</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">R</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">m</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">6</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mtext">meV</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>being</p>
+ <div id="E23" class="disp-formula">
+  <div id="M45" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">C</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">d</span>
+      <span class="mi">i</span>
+      <span class="mi">s</span>
+      <span class="mi">p</span>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <span class="mn">15</span>
+    <span class="mo">.</span>
+    <span class="mn">7</span>
+    <span class="mo">×</span>
+    <span class="mn">1</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">3</span>
+     </div>
+    </div>
+    <div class="mfrac">
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">a</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">b</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">α</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">a</span>
+           </div>
+          </div>
+          <span class="mo">/</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mtext">N</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">a</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">α</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">b</span>
+           </div>
+          </div>
+          <span class="mo">/</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mtext">N</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">b</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span class="mtext">me</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mtext">V</span>
+      <span class="mo">Å</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">6</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>an efficient dispersion coefficient depending on the numerical coefficients 
+  <span class="italic">N</span>
+  <sub>
+   <span class="italic">C</span>
+  </sub>, 
+  <span class="italic">N</span>
+  <sub>
+   <span class="italic">O</span>
+  </sub> and 
+  <span class="italic">N</span>
+  <sub>
+   <span class="italic">N</span>
+  </sub> with the meaning of the total atomic effective electron numbers which assume the 4, 6, and 4.4 values, respectively.
+ </p>
+ <p>The radial dependence of the CO molecular dipole (μ(
+  <span class="italic">r</span>)) is formulated as
+ </p>
+ <div id="E25" class="disp-formula">
+  <span class="label">(A5)</span>
+  <div id="M47" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">μ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">μ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">e</span>
+          <span class="mi">q</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">-</span>
+      <span class="mn">1</span>
+      <span class="mo">.</span>
+      <span class="mn">250</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">r</span>
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">e</span>
+          <span class="mi">q</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">+</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">210</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mtr">
+     <div columnalign="right" class="mtd">
+      <span class="mo">+</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">420</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+      <span class="mo">-</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">015</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>where μ(
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">eq</span>
+  </sub>) represents the dipole moment at 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">eq</span>
+  </sub>.
+ </p>
+ <p>That of the CO molecular quadrupole (
+  <span class="italic">Q</span>(
+  <span class="italic">r</span>)) is expressed as
+ </p>
+ <div id="E27" class="disp-formula">
+  <span class="label">(A6)</span>
+  <div id="M49" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div columnalign="right" class="mtd">
+      <span class="mi">Q</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">Q</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">e</span>
+          <span class="mi">q</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">+</span>
+      <span class="mn">2</span>
+      <span class="mo">.</span>
+      <span class="mn">250</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">r</span>
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">e</span>
+          <span class="mi">q</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">+</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">680</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mo">+</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">490</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+      <span class="mo">-</span>
+      <span class="mn">1</span>
+      <span class="mo">.</span>
+      <span class="mn">580</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">4</span>
+       </div>
+      </div>
+      <span class="mo">+</span>
+      <span class="mn">0</span>
+      <span class="mo">.</span>
+      <span class="mn">400</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">r</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">e</span>
+            <span class="mi">q</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">5</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>being 
+  <span class="italic">Q</span>(
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">eq</span>
+  </sub>) the quadrupole moment at 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">eq</span>
+  </sub>.
+ </p>
+ <p>Such polynomial representations provide results in atomic units which reproduce the ab initio data illustrated in the top and intermediate panels of 
+  <a ref-type="fig" rid="F5" href="#F5">Figure 5</a>.
+ </p>
+ <p>From the above relationships we obtain the molecular charge distribution as</p>
+ <div id="E28" class="disp-formula">
+  <span class="label">(A7)</span>
+  <div id="M50" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">q</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">O</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Q</span>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mo">+</span>
+        <span class="mi">μ</span>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mo">·</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">C</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">C</span>
+         </div>
+        </div>
+        <span class="mo">·</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">O</span>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">O</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div id="E29" class="disp-formula">
+  <span class="label">(A8)</span>
+  <div id="M51" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">q</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">C</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mi">μ</span>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mo">+</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">q</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">O</span>
+         </div>
+        </div>
+        <span class="mo">·</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">O</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">C</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>and</p>
+ <div id="E30" class="disp-formula">
+  <span class="label">(A9)</span>
+  <div id="M52" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">q</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+        <span class="mi">m</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mo">-</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">q</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">O</span>
+       </div>
+      </div>
+      <span class="mo">-</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">q</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">C</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>where 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">O</span>
+  </sub>, 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">C</span>
+  </sub>, and 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">cm</span>
+  </sub> are point charges on the oxygen and carbon atoms and CO center of mass (CM), respectively, and 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">O</span>
+  </sub>, 
+  <span class="italic">r</span>
+  <sub>
+   <span class="italic">C</span>
+  </sub> are atom positions with respect to CM.
+ </p>
+</div>

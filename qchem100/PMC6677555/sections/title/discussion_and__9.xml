@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="discussion|conclusion" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DISCUSSION AND CONCLUSION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the measurement setting of the Werner state, 
+  <a ref-type="disp-formula" rid="E11" href="#E11">Eq. 11</a> is violated when 
+  <div class="inline-formula">
+   <div id="m54" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">p</span>
+      <span class="mo">&gt;</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. Meanwhile, we know that the Werner state will be an entangled state when 
+  <div class="inline-formula">
+   <div id="m55" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">p</span>
+      <span class="mo">&gt;</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mn">3</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. Hence, violation of 
+  <a ref-type="disp-formula" rid="E11" href="#E11">Eq. 11</a> guarantees existence of entanglement, yet the nonviolation of the inequality does not exclude the possibility of entanglement.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As shown in 
+  <a rid="F4" ref-type="fig" href="#F4">Fig. 4</a>, the simulation result (red) 
+  <span class="italic">E</span> is very close to the theory result (black). The difference is mostly due to the statistical error (please refer to the Supplementary Materials for method in simulation). We studied 1 × 10
+  <span class="sup">6</span> particles and divided scattering angles into 18 slots uniformly. We also want to mention that, if we divide the scattering angle into too many or too few slots (≤10 or ≥50), then the simulation result 
+  <span class="italic">E</span> will be much further from the theory prediction.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In summary, we have generalized the standard Bell’s inequality from discrete to continuous measurement results. We designed an experiment setting as a potential application of violating the Bell’s inequality. We performed theoretical simulations to show the validity of the proposed experiment. The method is general and might be used to design and classify entanglement in new molecular scattering experiments.</p>
+</sec>

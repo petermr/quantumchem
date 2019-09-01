@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">VI.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we have extended many of the techniques developed for quantum simulation to the problem of simulating vibrations. Understanding vibrations is an important problem for accurately modelling chemical systems, yet one that is difficult to solve classically.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have discussed ways to map between vibrational modes and qubit states. This is only possible when we consider a restricted number of harmonic oscillator energy levels. This approximation is appropriate when investigating the low energy properties of the Hamiltonian, such as the ground state energy. However, it may not always be possible to use this approximation when considering time evolution, as this requires the exponentiation of our truncated Hamiltonian. One possible route to overcome this challenge is to repeat simulations which consider an increasing number of energy levels, and then to extrapolate to the infinite energy level result. This technique was used in a similar context to this work in 
+  <a rid="cit49" ref-type="bibr" href="#cit49">ref. 49</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Once the vibrational Hamiltonian has been mapped to a qubit Hamiltonian, much of the existing machinery for quantum simulation can be applied. Static properties, such as energy levels, can be calculated using phase estimation or variational approaches. To aid variational state preparation, we proposed a unitary version of the powerful VCC method used in classical vibrational simulations. The resulting energy eigenstates can be used as an input for SWAP-test circuits. These calculate the Franck–Condon factors for the molecules, which are related to the absorption spectra. Alternatively, one may investigate dynamic properties, using methods for Hamiltonian simulation to time evolve a specified state.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Compared with analog algorithms,
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>,
+  <a rid="cit14" ref-type="bibr" href="#cit14">14</a>,
+  <a rid="cit16" ref-type="bibr" href="#cit16">16</a>,
+  <a rid="cit17" ref-type="bibr" href="#cit17">17</a> our method can easily take into account anharmonic terms in the nuclear Hamiltonian. Moreover, it could be used to simulate large systems by protecting the quantum computer with error correction. As our technique is tailored for simulating vibrational states, it makes it simple to investigate interesting vibrational properties, such as the Franck–Condon factors. However, as our approach uses the Born–Oppenheimer approximation, it is not suitable for all problems in chemistry, such as problems including relativistic effects
+  <a rid="cit77" ref-type="bibr" href="#cit77">77</a> or conical intersections.
+  <a rid="cit78" ref-type="bibr" href="#cit78">78</a>–
+  <a rid="cit80" ref-type="bibr" href="#cit80">80</a> Future work will address whether restricting our vibrational modes to low-lying energy levels poses a significant challenge for problems of practical interest.
+ </p>
+</sec>

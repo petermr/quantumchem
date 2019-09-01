@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">SNAP fitting and simulations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The fitting and refinement of the SNAP potentials were done through the Fortran code fitsnap. Such a code uses large-scale atomic/molecular massively parallel simulator (LAMMPS) (
+  <a rid="R37" ref-type="bibr" href="#R37">
+   <span class="italic">37</span>
+  </a>) as an external library to generate the bispectrum components for all atoms and to accordingly calculate molecular dynamics runs. In all cases, the order 2
+  <span class="italic">J</span> = 8 for the bispectrum components, corresponding to 56 elements for each atomic kind, was used. Thus, except for Fe
+  <span class="sup">2+</span>(porphyrin), we defined the atomic kinds as identical to the chemical elements, even when the same element appears in a different chemical environment. The dioxo-Fe
+  <span class="sup">+2</span>(porphyrin)(Hys) system was simulated with a redundant number of kinds. In particular, chemically inequivalent elements in the porphyrin ring and the hystidine moiety were defined as different kinds to give more flexibility to the model. The radial cutoff used to build the bispectrum components was optimized to minimize the overall error on the training and validation set. The radial cutoff for hydrogen was always reduced by a factor of 0.6 with respect to the other elements. The definition of bispectrum components gives the possibility to differentiate different atomic kinds with weights (
+  <a rid="R21" ref-type="bibr" href="#R21">
+   <span class="italic">21</span>
+  </a>). In this work, we set all the weights to unity.
+ </p>
+</sec>

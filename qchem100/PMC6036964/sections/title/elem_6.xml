@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and Discussion</div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theoretical results</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In contrast to the already studied diphenyl ether–alcohol clusters [
+   <a rid="R19" ref-type="bibr" href="#R19">19</a>–
+   <a rid="R20" ref-type="bibr" href="#R20">20</a>
+   <a rid="R22" ref-type="bibr" href="#R22">22</a>], phenyl vinyl ether offers three different binding sites for possible interactions with small solvent molecules: the ether oxygen, the phenyl ring and the vinyl moiety. Since both the phenyl ring and the vinyl moiety interact with the solvent via a π cloud, preferred binding sites are indicated using the following nomenclature: P (phenyl) and E (ethenyl), respectively. The optimizations using B3LYP-D3(BJ)/def2-TZVP yield six different structures, representing each binding motif with two isomers (cf. 
+   <a ref-type="fig" rid="F1" href="#F1">Fig. 1</a>).
+  </p>
+  <div id="F1" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 1</span>
+   <div class="caption">
+    <p>Minimum structures of the most stable PVE–MeOH dimers obtained at the B3LYP-D3(BJ)/def2-TZVP level; dashed colored lines indicate the different primary docking motifs, dashed gray lines illustrate secondary CH–O contacts; values in parentheses correspond to the relative, zero-point-corrected energies 
+     <span class="italic">E</span>
+     <sub>0,rel</sub> with respect to the OH–O isomer, calculated at the LCCSD(T0)-F12/CBS[T:Q]//B3LYP-D3/def2-TZVP level of theory (cf
+     <span class="italic">.</span>
+     <a rid="T1" ref-type="table" href="#T1">Table 1</a>).
+    </p>
+   </div>
+   <div xlink:href="Beilstein_J_Org_Chem-14-1642-g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to verify the structures of the complexes, a second level of theory was applied, namely SCS-CC2/def2-TZVP. Similar minima were found in the latter calculations, confirming the rich variety of binding motifs. However, distinct differences were found between the two methods: While B3LYP-D3 predicted the OH–E conformer as the most stable complex SCS-CC2 gave OH–P as the lowest minimum (cf. Table S1 in 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). This is in contrast to our results of diphenyl ether–alcohol clusters [
+   <a rid="R19" ref-type="bibr" href="#R19">19</a>–
+   <a rid="R20" ref-type="bibr" href="#R20">20</a>
+   <a rid="R22" ref-type="bibr" href="#R22">22</a>], where both computational levels predicted the same energetic order of the isomers. The two structures correspond to quite different docking positions, reflecting well the demanding test this system imposes on quantum chemical methods. Several minima are separated by energy differences of 1 kJ/mol or less. The complete energetic analysis at both levels of theory is presented in 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a> (cf. Tables S1 and S2). The reasons behind the discrepancies are manifold, ranging from the method to the small basis set used. In order to obtain a more reliable theoretical prediction, LCCSD(T0)-F12/CBS[T:Q] calculations were carried out on top of the DFT-optimized geometries. The results are presented in 
+   <a rid="T1" ref-type="table" href="#T1">Table 1</a>, with and without zero-point vibrational energy (ZPVE) corrections.
+  </p>
+  <div id="T1" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Comparison of different structures for PVE–MeOH dimers in the S
+     <sub>0</sub> state with LCCSD(T0)-F12/CBS[T:Q]//B3LYP-D3/def2-TZVP electronic energies 
+     <span class="italic">E</span>
+     <sub>rel</sub> and B3LYP zero-point corrected energies 
+     <span class="italic">E</span>
+     <sub>0,rel</sub> relative to the minimum OH–O structure. The scaled wavenumbers 
+     <span xlink:href="Beilstein_J_Org_Chem-14-1642-i001.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> of the OH-stretching vibration together with the respective IR intensity 
+     <span class="italic">I</span> are presented for two levels of theory: B3LYP-D3 (scaling factor: 0.9600) and SCS-CC2/def2-TZVP (scaling factor: 0.9635).
+    </p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tr>
+     <td rowspan="3" align="left" valign="middle" colspan="1"/>
+     <td rowspan="3" align="left" valign="middle" colspan="1">
+      <span class="italic">E</span>
+      <sub>rel</sub> [kJ/mol]
+     </td>
+     <td rowspan="3" align="left" valign="middle" colspan="1">
+      <span class="italic">E</span>
+      <sub>0,rel</sub> [kJ/mol]
+     </td>
+     <td colspan="2" align="center" valign="middle" rowspan="1">B3LYP-D3</td>
+     <td colspan="2" align="center" valign="top" rowspan="1">SCS-CC2</td>
+    </tr>
+    <tr>
+     <td colspan="4" align="left" valign="middle" rowspan="1">
+      <span class="hr"/>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">
+      <span xlink:href="Beilstein_J_Org_Chem-14-1642-i002.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> [cm
+      <span class="sup">−1</span>]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">
+      <span class="italic">I</span> [km/mol]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">
+      <span xlink:href="Beilstein_J_Org_Chem-14-1642-i003.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> [cm
+      <span class="sup">−1</span>]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">
+      <span class="italic">I</span> [km/mol]
+     </td>
+    </tr>
+    <tr>
+     <td colspan="7" align="left" valign="middle" rowspan="1">
+      <span class="hr"/>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–O</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">0.0</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">0.0</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3597</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">219</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3619</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">160</td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–O’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−0.3</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">0.2</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3600</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">193</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3621</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">144</td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–P</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">1.4</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">1.0</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3619</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">112</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3631</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">67</td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–P’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3.9</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">2.4</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3631</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">127</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3636</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">110</td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–E</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">1.5</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">2.0</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3567</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">187</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3607</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">121</td>
+    </tr>
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1">OH–E’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">4.8</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">4.7</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3567</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">197</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">3606</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">128</td>
+    </tr>
+   </table>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The coupled cluster results show a clear energetic preference for the OH–O and OH–O’ isomers. Observing the intermolecular contacts, which may or may not be designated as weak hydrogen bonds but are expected to stabilize the complexes, the main difference between the two structures is a phenyl vs ethenyl CH to methanol O contact (cf. dashed gray lines in 
+   <a ref-type="fig" rid="F1" href="#F1">Fig. 1</a>). Both are separated by only a few tenths of a kJ/mol, which is within the error of the method used (considering that the coupled cluster expansion is truncated at triples excitations and the neglect of core-valence correlation effects, which should be the largest sources of error along with the harmonic B3LYP ZPVE error). It also confirmed the subtle difference between the six conformers, with an energy span of approximately 4–5 kJ/mol (≈1 kcal/mol, the commonly accepted definition of chemical accuracy) among all structures.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Also featured in 
+   <a rid="T1" ref-type="table" href="#T1">Table 1</a> are the computed O–H stretch fundamentals together with the IR intensity at the two different levels of theory used in the optimizations. The frequencies were scaled according to the experimental value of the OH–π isomer of DPE–MeOH [
+   <a rid="R19" ref-type="bibr" href="#R19">19</a>]. Based on the computational results, the vibrational spectral signals of the OH–O and OH–O’ isomers will be extremely hard to distinguish, as they lie less than 3 cm
+   <span class="sup">−1</span> apart, with very similar intensities. The same can be asserted for the less stable OH–E and OH–E’ structures. This is not surprising, given the similarities of the OH binding pattern for both sets of structures.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to gain further insight into the energetic order of the different isomers, we conducted an analysis of the dispersion interactions present in the system by decomposing the CCSD energy terms obtained with the largest basis set (VQZ-F12). The latter procedure is based on the classification of the intermolecular excitation classes as detailed in [
+   <a rid="R48" ref-type="bibr" href="#R48">48</a>,
+   <a rid="R67" ref-type="bibr" href="#R67">67</a>]. The results are shown in 
+   <a rid="T2" ref-type="table" href="#T2">Table 2</a>. Beyond the total dispersion contributions, we also made use of the local analysis to separate the contribution of different molecular moieties in the PVE molecule (phenyl, ether oxygen and ethenyl). Shared orbitals are split up according to their NPA (natural population analysis) charges as described in [
+   <a rid="R68" ref-type="bibr" href="#R68">68</a>].
+  </p>
+  <div id="T2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 2</span>
+   <div class="caption">
+    <p>Comparison of different structures for PVE–MeOH dimers, with dispersion energies calculated at the LCCSD/VQZ-F12 level of theory (the parentheses contain the percentage of the fragment’s dispersion relative to the total dispersion energy).</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tr>
+     <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     <td align="left" valign="middle" rowspan="1" colspan="1">∆
+      <span class="italic">E</span>
+      <sub>disp</sub>(total) [kJ/mol]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">∆
+      <span class="italic">E</span>
+      <sub>disp</sub>(phenyl) [kJ/mol]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">∆
+      <span class="italic">E</span>
+      <sub>disp</sub>(O) [kJ/mol]
+     </td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">∆
+      <span class="italic">E</span>
+      <sub>disp</sub>(ethenyl) [kJ/mol]
+     </td>
+    </tr>
+    <tr>
+     <td colspan="5" align="left" valign="middle" rowspan="1">
+      <span class="hr"/>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–O</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−14.3</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−6.2 (43.2)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−5.1 (35.8)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−3.0 (21.1)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–O’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−15.7</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−6.1 (38.7)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−4.9 (31.5)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−4.7 (29.8)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–P</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−16.9</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−11.9 (70.4)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−1.5 (9.2)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−3.5 (20.5)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–P’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−16.0</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−14.0 (87.6)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−1.3 (8.0)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−0.7 (4.4)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–E</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−15.6</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−6.9 (44.3)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−2.1 (13.3)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−6.6 (42.4)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">OH–E’</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−13.1</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−4.5 (34.0)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−0.9 (6.7)</td>
+     <td align="left" valign="middle" rowspan="1" colspan="1">−7.8 (59.3)</td>
+    </tr>
+   </table>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The dispersion interaction energies show an interesting pattern. Although all structures are significantly stabilized by dispersion, with a maximum energy difference of 2.6 kJ/mol when summed all together, the relative weight of the different molecular fragments varies quite significantly. The moiety with the largest potential as dispersion energy donor (DED) is the phenyl ring. This results in the strongest stabilization for the two conformers whereby the methanol is closest to the ring (OH–P and OH–P’). The other conformers have much more spread out contributions. What is surprising is that even for the ethenyl binding complexes the contribution of the phenyl ring is sizeable. Geometrically, this seems unlikely, given that the methanol moiety is not oriented favorably relative to the ring. The effect can, however, be understood by inspecting the respective dispersion interaction densities (DIDs, cf. 
+   <a ref-type="fig" rid="F2" href="#F2">Fig. 2</a>), which allow for an even finer-grained analysis. There, one can observe that the major contributor is not the π-system of the phenyl ring, but a C–H contact to the methanol (a similar effect had already been observed in diphenyl ether–methanol complexes [
+   <a rid="R19" ref-type="bibr" href="#R19">19</a>]). This contact is reminiscent of stabilization effects observed in coupled diamondoids [
+   <a rid="R69" ref-type="bibr" href="#R69">69</a>] or supramolecular complexes [
+   <a rid="R70" ref-type="bibr" href="#R70">70</a>], where such interactions can be found in large numbers.
+  </p>
+  <div id="F2" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Dispersion interaction density (DID) plots calculated at the LCCSD/VQZ-F12 level. The brown zones indicate regions of electron density in a monomer which interact strongly by dispersion interactions with the other molecule. Blue stands for weaker/diffuse contributions. For example, in the top left figure one can observe that the OH group of methanol interacts strongly with the ether oxygen, with some dispersion energy coming as well from a CH orbital in the phenyl close to the methanol.</p>
+   </div>
+   <div xlink:href="Beilstein_J_Org_Chem-14-1642-g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electronic ground state spectra</div>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">FTIR spectroscopy</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The results of an FTIR exploration of the conformational diversity of this system are shown in 
+    <a ref-type="fig" rid="F3" href="#F3">Fig. 3</a>. Besides methanol monomer, methanol dimer and a signal clearly attributed to a larger cluster, only a single, reasonably narrow absorption at 3625 cm
+    <span class="sup">−1</span> is observed. It can be attributed to mixed dimers of MeOH with PVE and allows for a single rigorous conclusion, due to the linearity of the technique and the comparable IR absorption cross section of all predicted dimer conformations (cf. 
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a> and Table S1, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>): the global minimum structure and any other, higher lying isomers which are initially formed and impeded from relaxation to the global minimum due to broad or high interconversion barriers must have their OH stretching fundamental at 3625 ± 5 cm
+    <span class="sup">−1</span> or be significantly less abundant.
+   </p>
+   <div id="F3" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Figure 3</span>
+    <div class="caption">
+     <p>FTIR spectra of the supersonic expansion of methanol (MeOH) and phenyl vinyl ether (PVE) at different concentrations in helium. The spectra are spread out along the ordinate to improve visualization. Only one dominant mixed dimer band is visible in the spectra, lying at 3625 cm
+      <span class="sup">−1</span> (marked MeOH + PVE) between the methanol monomer at 3686 cm
+      <span class="sup">−1</span> (MeOH) and methanol dimer at 3575 cm
+      <span class="sup">−1</span> ((MeOH)
+      <sub>2</sub>). By comparing the spectrum at the top with the other two spectra recorded at reduced concentrations of methanol (middle) or methanol and PVE (bottom), the further downshifted band at 3466 cm
+      <span class="sup">−1</span> can be attributed to a higher cluster, probably a methanol-rich mixed trimer ((MeOH)
+      <sub>2</sub> + PVE (?)), due to its scaling with the variation of the concentrations.
+     </p>
+    </div>
+    <div xlink:href="Beilstein_J_Org_Chem-14-1642-g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">If one were to trust the relative harmonic wavenumber predictions from the preceding subsection (cf. 
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>), this would imply a single docking motif, as different docking motifs are predicted to lead to larger spectral separations. However, different extents of anharmonicity do not allow to completely ruling out overlapping docking motifs. Therefore, conformationally selective methods are desirable to investigate this possibility. Finally, the actual docking site has to be identified by structural or electronic excitation spectroscopy.
+   </p>
+  </sec>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">IR/R2PI spectroscopy</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Additional insight can be gained by using the mass- and isomer-selective IR/R2PI technique. This method requires knowledge on electronic excitation energies of the PVE–MeOH complex. For this reason, one-color R2PI spectra were recorded in the range of 36100–37600 cm
+    <span class="sup">−1</span> (cf. Figure S1 in 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). While the R2PI spectrum of the PVE monomer shows well-resolved vibrational progressions (cf
+    <span class="italic">.</span> Figure S1a, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), the spectrum of the solvent aggregate is broadened and affected by ionization-induced fragmentation of larger clusters (cf
+    <span class="italic">.</span> Figure S1b, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). This is also reflected in the recorded IR/R2PI spectra (cf
+    <span class="italic">.</span> Figure S2, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), yielding solely the spectrum shown in 
+    <a ref-type="fig" rid="F4" href="#F4">Fig. 4</a> via the excitation energy of 36885 cm
+    <span class="sup">−1</span> containing an OH stretching vibration of a PVE–MeOH dimer.
+   </p>
+   <div id="F4" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Figure 4</span>
+    <div class="caption">
+     <p>The IR/R2PI spectrum in the range of 3520–3750 cm
+      <span class="sup">−1</span> was obtained via the excitation energy of 36885 cm
+      <span class="sup">−1</span> using the carrier gas neon; the asterisk (*) indicates ionization-induced fragmentation from larger clusters (cf
+      <span class="italic">.</span> Figure S2 in 
+      <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>).
+     </p>
+    </div>
+    <div xlink:href="Beilstein_J_Org_Chem-14-1642-g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Comparing the calculated OH stretching frequencies for the different isomers obtained at the DFT-D3 and SCS-CC2 levels (cf
+    <span class="italic">.</span>
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>) to the experiment does not allow for a clear structural assignment: the DFT-D3 calculations show the best agreement for the OH–P structure (3619 cm
+    <span class="sup">−1</span>, scaling factor 0.9600). Regarding the relative electronic energies, the OH–O structure is somewhat favored, with OH–O’ coming as a close second. The latter frequencies are 3597 and 3600 cm
+    <span class="sup">−1</span>, respectively, at the same level of theory. On the other hand, the computed SCS-CC2 frequencies would provide a coincident assignment, as both O-docking isomers would have the closest fundamentals compared to the measured frequency (3619 and 3621 cm
+    <span class="sup">−1</span>). The assignment, however, would be tentative at best with this information alone. The OH–E isomers on the other hand can be excluded due to their lower OH stretching frequencies as well as the energetic disadvantage at the LCCSD(T0)-F12/CBS[T:Q] level (cf
+    <span class="italic">.</span>
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>).
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">In order to elucidate this problem, the electronic excitation energies can serve as a further indication for the binding motif, as shown for DPE–alcohol clusters before [
+    <a rid="R20" ref-type="bibr" href="#R20">20</a>–
+    <a rid="R22" ref-type="bibr" href="#R22">22</a>]. Comparing the vertical excitation energies for the different isomers with the experimental excitation energy of 36885 cm
+    <span class="sup">–1</span> yields the best agreement for the OH–O or OH–O’ isomer, which also show a significantly blue-shifted S
+    <sub>1</sub>←S
+    <sub>0</sub> transition compared to the PVE monomer (adiabatic excitation energies of 38291 and 38164 cm
+    <span class="sup">−1</span>, respectively, compared to 38034 cm
+    <span class="sup">−1</span> for the PVE monomer, cf
+    <span class="italic">.</span> Table S2, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), as observed experimentally. In contrast to that, a red-shifted S
+    <sub>1</sub>←S
+    <sub>0</sub> transition compared to PVE is predicted for the OH–P isomer (37907 cm
+    <span class="sup">−1</span>), which would coincide with the fragmentation-dominated region of the R2PI spectrum, where, however, only signatures of larger clusters could be identified. These considerations strengthen the arguments for the presence of an OH∙∙∙O structure laid before, on the basis of the computed coupled cluster energies and the SCS-CC2 fundamental stretch frequencies. Additional experimental insight will be gained from the UV/IR/UV spectrum of the S
+    <sub>1</sub> state as well as the microwave investigations in the following section.
+   </p>
+  </sec>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Chirp pulse Fourier transform microwave (CP-FTMW) spectroscopy</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">From the broadband CP-FTMW spectra obtained with neon as a carrier gas, we assigned two PVE–MeOH complexes with significantly different intensities. Complex 1 is about ten times more intense than complex 2. The experimental rotational constants (
+    <a rid="T3" ref-type="table" href="#T3">Table 3</a>) for the two isomers agree the best with the values calculated for the OH–O’ isomer (as also indicated in the FTIR and the IR–UV investigations, which are, however, unable to distinguish OH–O from OH–O’) and the OH–P isomer, respectively. The identification of the two complexes to the OH–O’ and the OH–P isomers is guided by the absolute and relative values of the B and C rotational constants. Generally, the rotational constants calculated at the SCS-CC2/def2-TZVP level of theory agree somewhat better with the experimental values than the B3LYP-D3(BJ)/def2-TZVP values (note that we compare experimental 
+    <span class="italic">B</span>
+    <sub>0</sub> rotational constants with theoretical 
+    <span class="italic">B</span>
+    <sub>e</sub> rotational constants here). For the OH–P complex, however, we find that the B3LYP-D3(BJ)/def2-TZVP level of theory provides a better prediction of the magnitudes of the dipole-moment components. Experimentally, we only observe a-type transitions for this complex, which points to rather low values for μ
+    <sub>b</sub> and μ
+    <sub>c</sub>. SCS-CC2 calculations predict all three dipole-moment components to be of comparable magnitude. At the B3LYP-D3(BJ) level, μ
+    <sub>a</sub> is predicted to be significantly stronger than μ
+    <sub>b</sub> and μ
+    <sub>c</sub>. This change in magnitude for the dipole-moment components for different levels of calculation is more often observed for weakly bound complexes because the exact arrangement of the two monomers with respect to each other can have a major influence on the dipole-moment components. Also note that in none of the spectroscopic experiments, we observe the OH–E isomer that is also predicted to be of relatively low energy (cf
+    <span class="italic">.</span>
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>).
+   </p>
+   <div id="T3" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Table 3</span>
+    <div class="caption">
+     <p>Experimental rotational constants of the two observed complexes, using neon as carrier gas, that are assigned to the OH–O’ and the OH–P isomers, respectively. The experimental rotational parameters for the OH–O’ isomer (called Exp 1) are the results of a fit to a rigid-rotor asymmetric Hamiltonian including solely the A lines of the internal rotation splitting. Rotational parameters of a global fit (XIAM) including both A and E levels due to internal rotation for the OH–O’ isomer are presented in the Table S9 of 
+      <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>.
+     </p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td colspan="2" align="left" valign="middle" rowspan="1">Complex 1
+       <span class="break"/>(OH–O’ isomer)
+      </td>
+      <td colspan="2" align="left" valign="middle" rowspan="1">Complex 2
+       <span class="break"/>(OH–P isomer)
+      </td>
+     </tr>
+     <tr>
+      <td colspan="5" align="left" valign="middle" rowspan="1">
+       <span class="hr"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">Exp 1</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">SCS-CC2/def2-TZVP</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">Exp 1</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">SCS-CC2/def2-TZVP</td>
+     </tr>
+     <tr>
+      <td colspan="5" align="left" valign="middle" rowspan="1">
+       <span class="hr"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">
+       <span class="italic">A</span> [MHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">1466.59120(26)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">1501.94</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">1275.7623(49)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">1297.89</td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">
+       <span class="italic">B</span> [MHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">697.48965(11)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">697.58</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">818.45271(73)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">818.01</td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">
+       <span class="italic">C</span> [MHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">572.109900(95)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">589.94</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">640.2184(11)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">646.81</td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">∆
+       <sub>J</sub> [kHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">0.72697(62)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">0.070(14)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">∆
+       <sub>JK</sub> [kHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">−0.6669(26)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">2.19(10)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">∆
+       <sub>K</sub> [kHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">5.6217(62)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">–</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">δ
+       <sub>J</sub> [kHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">0.15121(11)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">–</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">δ
+       <sub>K</sub> [kHz]
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">2.5783(29)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">–</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">A state transition</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">213 (49/104/60)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">20(20/0/0)</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">Dipole moment (D) (μ
+       <sub>a</sub>/μ
+       <sub>b</sub>/μ
+       <sub>c</sub>)
+      </td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">2.2/1.9/1.2</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">0.8/0.4/0.8</td>
+     </tr>
+     <tr>
+      <td align="left" valign="middle" rowspan="1" colspan="1">σ [kHz]</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1">6.7</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+      <td align="left" valign="middle" rowspan="1" colspan="1">7.9</td>
+      <td align="left" valign="middle" rowspan="1" colspan="1"/>
+     </tr>
+    </table>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The rotational spectra of the two isomers are qualitatively different. For the OH–O’ isomer (complex 1), we observe a characteristic line splitting into so-called A and E components (cf. 
+    <a ref-type="fig" rid="F5" href="#F5">Fig. 5</a>) arising from internal rotation of the methyl group of methanol, similar to the case of the DPE–MeOH complex. For the OH–P isomer (complex 2), no line splitting due to internal rotation was observed. This is consistent with the higher barrier for this motion due to the secondary interactions of the methyl group with PVE (cf. 
+    <a ref-type="fig" rid="F2" href="#F2">Fig. 2</a>).
+   </p>
+   <div id="F5" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Figure 5</span>
+    <div class="caption">
+     <p>A section of the experimental 2–8 GHz spectrum using a mixture of PVE and MeOH (3 million acquisitions). The upper experimental trace in black is compared with simulations, based on fitted parameters that can be assigned to the OH–O’ isomer (complex 1, red) for the PVE–MeOHcomplex. The observed complex has a clear splitting pattern due to the internal rotation of the methyl group of methanol, labeled with A and E. The experimental 
+      <span class="sup">13</span>C positions (blue atoms) (r
+      <sub>s</sub> substitution structure) deduced from a Kraitchman analysis are compared to the calculated structure at the SCS-CC2/def2-TZVP level of theory and further confirm the observation of the OH–O’ isomer.
+     </p>
+    </div>
+    <div xlink:href="Beilstein_J_Org_Chem-14-1642-g006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Two different ways of analyzing the rotational spectrum of the OH–O’ isomer (complex 1) were performed. In 
+    <a rid="T3" ref-type="table" href="#T3">Table 3</a>, the results from a fit to an asymmetric-top Hamiltonian of only the A state species of the internal rotation splitting pair, which is often a good approximation, is summarized (Exp 1). In addition, we used the program XIAM to perform a global fit including both A and E lines. This global fit does not only provide the rotational constants, but also parameters of the internal rotor, in this case the methyl group. This includes the barrier height for internal rotation as well as the geometrical arrangement of the rotor with respect to the overall rotating molecule, as also discussed for the DPE–MeOH complex [
+    <a rid="R19" ref-type="bibr" href="#R19">19</a>]. For PVE–MeOH, the barrier height was determined to be 261 cm
+    <span class="sup">−1</span>, as summarized in Table S9 of 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>. This value is in agreement to barrier heights observed for other complexes with methanol [
+    <a rid="R19" ref-type="bibr" href="#R19">19</a>]. It is somewhat lower than in the case of free methanol (373 cm
+    <span class="sup">−1</span>) and also lower than the calculated barrier height of 341 cm
+    <span class="sup">−1</span> (cf
+    <span class="italic">.</span> Table S9, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). This somewhat lower methyl group internal rotation barrier for the OH–O’ isomer could point to a softening of the C–O bond of methanol due to the hydrogen bond. The DID plots in 
+    <a ref-type="fig" rid="F2" href="#F2">Fig. 2</a> also indicate that the methyl group is basically free from other interactions, so that no additional hindering is expected.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Furthermore, the transition intensities for the OH–O’ isomer are strong enough (with a signal-to-noise (SNR) of about 500:1 to 600:1 for the stronger transitions) to assign rotational transitions arising from all nine singly substituted 
+    <span class="sup">13</span>C isotopologues in natural abundance (about 1%, cf
+    <span class="italic">.</span> Figure S3, 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). The additional data sets of rotational constants are summarized in 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a> (Table S12) together with line lists of the main isotopologues (Tables S10–S11) and the 
+    <span class="sup">13</span>C isotopologues (Tables S13–S21). They allow us, using Kraitchman’s equations, to determine the carbon substitution structure, 
+    <span class="italic">r</span>
+    <sub>s</sub>, of the complexes, which are the positions of the respective substituted carbon atoms with respect to the center of mass of the complex and thus the carbon backbone structure. The obtained 
+    <span class="italic">r</span>
+    <sub>s</sub> structure for complex 1 (cf
+    <span class="italic">.</span>
+    <a ref-type="fig" rid="F5" href="#F5">Fig. 5</a>) further confirms the assignment of complex 1 as the OH–O’ isomer, where the methyl group of the methanol moiety points towards the phenyl ring.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">As mentioned, the OH–O’ isomer is about ten times more intense than the OH–P isomer. The intensity observed in CP-FTMW spectroscopy directly depends on the number of molecules, i.e., the population of the respective isomers, as well as the square of the transition dipole moments. Since the μ
+    <sub>a</sub> values for the two isomers differ by a factor of two (cf
+    <span class="italic">.</span> Table S11 in 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), the OH–P isomer can be considered to be about 2.5 times less populated than the OH–O’ isomer, as an upper estimate. Taking the predicted energy difference of 0.8 kJ/mol for granted, this ratio would correspond to a plausible [
+    <a rid="R18" ref-type="bibr" href="#R18">18</a>] conformational freezing temperature of 100 K. A three-fold lower or three-fold higher conformational temperature appears unlikely, and thus a tentative experimental energy penalty for OH–P relative to OH–O’ ranges from 0.3 to 2 kJ/mol. This contradicts both inexpensive approaches (B3LYP-D3 and SCS-CC2 with def2-TZVP) and suggests that these methods somewhat underestimate the stability of OH∙∙∙O contacts.
+   </p>
+  </sec>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electronically excited state spectrum</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For the investigation of the electronically excited state by using the UV/IR/UV technique, a two-color R2PI signal is required. For this reason, the one-color R2PI signal was suppressed by attenuating the laser power of the excitation laser. On the other hand, higher pulse energies were used for the ionizing laser. The latter was set to 31847 cm
+   <span class="sup">−1</span> for the UV/IR/UV experiment in order to yield the best two-color R2PI signal. 
+   <a ref-type="fig" rid="F6" href="#F6">Fig. 6</a> shows the recorded UV/IR/UV spectrum for the PVE–MeOH mass trace.
+  </p>
+  <div id="F6" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 6</span>
+   <div class="caption">
+    <p>UV/IR/UV spectrum of PVE–MeOH in the range of 3520–3750 cm
+     <span class="sup">−1</span>; excitation laser: 36741 cm
+     <span class="sup">−1</span>, ionizing laser: 31847 cm
+     <span class="sup">−1</span>, carrier gas helium; the lower trace shows the calculated OH stretching frequencies at the SCS-CC2/def2-TZVP level for the optimized S
+     <sub>0</sub> and S
+     <sub>1</sub> structure of the OH–O’ isomer scaled by 0.9635.
+    </p>
+   </div>
+   <div xlink:href="Beilstein_J_Org_Chem-14-1642-g007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Due to temporally overlapping laser pulses, the spectrum contains transitions from the S
+   <sub>0</sub> state, the electronically excited (S
+   <sub>1</sub>, at 3637 cm
+   <span class="sup">−1</span>) and also the ionic D
+   <sub>0</sub> state (at 3667 cm
+   <span class="sup">−1</span>). This could not be avoided, as the lifetime of the excited state, which is estimated to be in the order of 5–7 ns, is shorter than the laser pulse-widths of 7–10 ns. The OH stretching vibration at 3637 cm
+   <span class="sup">−1</span> originating from the electronically excited state of the PVE–MeOH complex is blue-shifted compared to the ground state, which indicates a decrease of the hydrogen bond strength in the S
+   <sub>1</sub> compared to the S
+   <sub>0</sub> state. A comparison with SCS-CC2 calculations shows a good agreement of a blue-shifted OH stretching frequency at 3642 cm
+   <span class="sup">−1</span> (cf
+   <span class="italic">.</span> Table S2, 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>, scaled by 0.9635) compared to the ground state at 3619 cm
+   <span class="sup">−1</span> (cf
+   <span class="italic">.</span>
+   <a rid="T1" ref-type="table" href="#T1">Table 1</a>) for the OH–O’ isomer, which is also reflected in an increase of the H∙∙∙O hydrogen bond distance from 2.068 to 2.168 Å from S
+   <sub>0</sub> to S
+   <sub>1</sub> state geometry. This destabilization of the OH∙∙∙O hydrogen bond is further reflected in the calculated binding energies of the PVE–MeOH complex obtained at the SCS-CC2/def2-TZVP level, which are reduced by 0.9 kJ/mol regarding 
+   <span class="italic">D</span>
+   <sub>0</sub> and 1.6 kJ/mol regarding 
+   <span class="italic">D</span>
+   <sub>e</sub> in the S
+   <sub>1</sub> state compared to the S
+   <sub>0</sub> state for OH–O’ (cf
+   <span class="italic">.</span> Table S3, 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). The spectral shift can be explained by regarding the HOMO and LUMO orbitals involved in the S
+   <sub>1</sub>←S
+   <sub>0</sub> transition, which is predicted to be mainly a π–π* transition with a small charge transfer contribution from the ether oxygen to the phenyl ring. The latter leads to a slightly decreased electron density at the binding site for the methanol molecule and therefore weakens the hydrogen bond. These findings are in line with observations in previous studies on diphenyl ether–alcohol complexes [
+   <a rid="R20" ref-type="bibr" href="#R20">20</a>–
+   <a rid="R21" ref-type="bibr" href="#R21">21</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In principle, as the OH–O’ isomer has been identified in the S
+   <sub>0</sub> state, the observation of a respective OH∙∙∙O-bound structure can be expected in the S
+   <sub>1</sub> state as well. However, the OH–P isomers are predicted to be significantly stabilized in the S
+   <sub>1</sub> state (cf
+   <span class="italic">.</span> Table S2, 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). Nevertheless, due to the predicted red-shifts of the OH stretching frequencies of the OH–P isomers (indicating an increased hydrogen bond strength compared to the S
+   <sub>0</sub> state), their presence, i.e., by a rearrangement reaction from the OH–O’ isomer, can be excluded. By exciting the electronic origin of the OH–O’ isomer the formation of OH–E isomers can also be excluded as their expected excitation energies are higher than the one for OH–O’ and in addition they are energetically less stable (cf
+   <span class="italic">.</span> Table S2, 
+   <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>).
+  </p>
+ </sec>
+</sec>

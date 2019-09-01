@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DFT and TDDFT calculations</div>
+ <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">The DFT and TDDFT calculations were carried out using the Perdew-Burke-Ernzerhof (PBE)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+  </span> exchange-correlation functional in the adiabatic limit. The spectra were calculated using the 
+  <span class="italic">δ</span>-kick technique
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> in the linear-response regime and employing the dipole approximation for light-matter interaction. The default projector augmented-wave
+  <span class="sup">
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>
+  </span> data sets and double-
+  <span class="italic">ζ</span> polarized (dzp) basis sets provided in GPAW were used. The dzp basis set of Al includes diffuse 3p functions, which are important for describing plasmon resonances
+  <span class="sup">
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+  </span>. To minimize spurious effects due to the basis-set superposition error, the so-called ghost-atom approach was used separately for each nanoparticle size to keep the total system basis set as intact as possible despite the changing number of surrounding molecules. In general, while the used basis sets might not be adequate for yielding numerical values at the complete-basis-set limit, they are expected to be sufficient for the purposes of the present work. A grid spacing parameter of 0.3 Å was chosen to represent densities and potentials, and the molecules/particles were surrounded by a vacuum region of at least 6 Å. The Hartree potential was evaluated on a larger grid with at least 120 Å vacuum around the system and a coarser grid spacing of 1.2 Å, and subsequently refined to the original grid. For the time propagation, we used a time step of Δ
+  <span class="italic">t</span> = 15 as and total propagation time of at least 
+  <span class="italic">T</span> = 30 fs. The spectra were broadened using Lorentzian spectral broadening with 
+  <span class="italic">η</span> = 0.1 eV corresponding to a full width at half-maximum of 0.2 eV. Codes for reproducing the calculations are available (see Code availability).
+ </p>
+</sec>

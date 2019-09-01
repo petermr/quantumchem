@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="sec1-ijms-20-03190" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">1. Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Transforming growth factor beta (TGF-β) is a highly studied cytokine that participates in or controls a wide variety of cell signaling pathways. These include control of cell cycle [
+  <a rid="B1-ijms-20-03190" ref-type="bibr" href="#B1-ijms-20-03190">1</a>], cell proliferation [
+  <a rid="B2-ijms-20-03190" ref-type="bibr" href="#B2-ijms-20-03190">2</a>,
+  <a rid="B3-ijms-20-03190" ref-type="bibr" href="#B3-ijms-20-03190">3</a>], extracellular matrix formation [
+  <a rid="B4-ijms-20-03190" ref-type="bibr" href="#B4-ijms-20-03190">4</a>,
+  <a rid="B5-ijms-20-03190" ref-type="bibr" href="#B5-ijms-20-03190">5</a>], and even stem cell differentiation [
+  <a rid="B6-ijms-20-03190" ref-type="bibr" href="#B6-ijms-20-03190">6</a>,
+  <a rid="B7-ijms-20-03190" ref-type="bibr" href="#B7-ijms-20-03190">7</a>]. However, TGF-β is also implicated in cell cytosis [
+  <a rid="B8-ijms-20-03190" ref-type="bibr" href="#B8-ijms-20-03190">8</a>], cellular senescence [
+  <a rid="B9-ijms-20-03190" ref-type="bibr" href="#B9-ijms-20-03190">9</a>], apoptosis [
+  <a rid="B10-ijms-20-03190" ref-type="bibr" href="#B10-ijms-20-03190">10</a>], and even tumor formation [
+  <a rid="B11-ijms-20-03190" ref-type="bibr" href="#B11-ijms-20-03190">11</a>]. Due to its potential to induce these potentially dangerous off-target effects, TGF-β is rarely used in a clinical setting [
+  <a rid="B12-ijms-20-03190" ref-type="bibr" href="#B12-ijms-20-03190">12</a>]. As such, a method to spatially and temporally control the release of TGF-β, preferably in a non-invasive manner, is required to more fully unlock its clinical potential.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Within the body, TGF-β exists sequestered by a latency associated peptide (LAP), forming what is known as the small latent complex (SLC) [
+  <a rid="B13-ijms-20-03190" ref-type="bibr" href="#B13-ijms-20-03190">13</a>]. The active form of TGF-β can be released from the SLC via a variety of different methods, including mechanical unfolding of the LAP by cell surface integrins, as well as chemical interaction with thrombospndin-1 or reactive oxygen species [
+  <a rid="B14-ijms-20-03190" ref-type="bibr" href="#B14-ijms-20-03190">14</a>,
+  <a rid="B15-ijms-20-03190" ref-type="bibr" href="#B15-ijms-20-03190">15</a>]. However, the active form of TGF-β can also be released via a temperature increase or induced shear stress [
+  <a rid="B16-ijms-20-03190" ref-type="bibr" href="#B16-ijms-20-03190">16</a>]. Lin et al. showed that they were able to successfully conjugate the SLC to carbon nanotubes, via carbodiimide crosslinking chemistry, and then thermally release the active growth factor by irradiating the carbon nanotubes with near-infrared light [
+  <a rid="B17-ijms-20-03190" ref-type="bibr" href="#B17-ijms-20-03190">17</a>]. However, in vivo applications of this method are limited by the penetration depth of near-infrared light (1–2 cm [
+  <a rid="B18-ijms-20-03190" ref-type="bibr" href="#B18-ijms-20-03190">18</a>]). Ergo, another method of triggered release combined with greater penetration depth is needed to provide therapeutic effects to deep tissues.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Superparamagnetic iron oxide nanoparticles (SPIONs) [
+  <a rid="B19-ijms-20-03190" ref-type="bibr" href="#B19-ijms-20-03190">19</a>] have begun to see widespread use in several different biomedical applications [
+  <a rid="B20-ijms-20-03190" ref-type="bibr" href="#B20-ijms-20-03190">20</a>,
+  <a rid="B21-ijms-20-03190" ref-type="bibr" href="#B21-ijms-20-03190">21</a>,
+  <a rid="B22-ijms-20-03190" ref-type="bibr" href="#B22-ijms-20-03190">22</a>], including magnetically targeted drug delivery [
+  <a rid="B23-ijms-20-03190" ref-type="bibr" href="#B23-ijms-20-03190">23</a>], magnetically induced drug [
+  <a rid="B24-ijms-20-03190" ref-type="bibr" href="#B24-ijms-20-03190">24</a>] and protein release [
+  <a rid="B25-ijms-20-03190" ref-type="bibr" href="#B25-ijms-20-03190">25</a>], and magnetic activation of receptor signaling (MARS) [
+  <a rid="B26-ijms-20-03190" ref-type="bibr" href="#B26-ijms-20-03190">26</a>]. An additional application, magnetic hyperthermia, utilizes a property of SPIONs to couple to an alternating magnetic field, rotate their magnetic moment with the direction of the field, and generate heat as a result of the phase lag [
+  <a rid="B27-ijms-20-03190" ref-type="bibr" href="#B27-ijms-20-03190">27</a>,
+  <a rid="B28-ijms-20-03190" ref-type="bibr" href="#B28-ijms-20-03190">28</a>]. Magnetically triggered release of active TGF-β from the SLC offers a potential route to the spatiotemporal control over cell signaling, while also overcoming the problem of penetration depth. In previous work, we have shown magneto-thermal activation of latent TGF-β via sulfosuccinimidyl 4-[N-maleimidomethyl] cyclohexane-1-carboxylate (Sulfo-SMCC) conjugation to SPIONs and exposure to radiofrequency (RF) alternating magnetic fields [
+  <a rid="B29-ijms-20-03190" ref-type="bibr" href="#B29-ijms-20-03190">29</a>]. This current study aims to replicate the previous work of conjugating latent TGF-β to SPIONS for magneto-thermal activation via the carbodiimide crosslinking chemistry used to conjugate the same protein with carbon nanotubes for near infra-red (NIR) light triggered release. At the same time, this work aims to elucidate the change in material properties of the SPIONS from their pre-conjugated state to their post-conjugated state, as well as give insight into the use of magnetic hyperthermia and the phenomenon of surface heating.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Carbodiimide crosslinking chemistry is used to conjugate a carboxylic acid to a primary amine. Our SPIONS come pre-coated with maleic anhydride; this maleic anhydride can be hydrolyzed into maleic acid, which contains two carboxyl groups. The carboxylic acids on the magnetic nanoparticle and the primary amine of the protein (specifically, on surface lysines and at the N-terminus) are the targets for this carbodiimide conjugation reaction. The process begins with EDC binding to an open carboxyl group to form an unstable o-Acylisourea intermediate [
+  <a rid="B30-ijms-20-03190" ref-type="bibr" href="#B30-ijms-20-03190">30</a>]. Unfortunately, the rate of hydrolysis of the intermediate back into the carboxyl is much faster than the rate of amide formation, and thus, Sulfo-NHS is typically used to create a dry-stable intermediate [
+  <a rid="B31-ijms-20-03190" ref-type="bibr" href="#B31-ijms-20-03190">31</a>]. The Sulfo-NHS acts as a nucleophile, which binds to the carbonyl carbon, forming a tetrahedral complex wherein the o-Acylisourea group is substituted by Sulfo-NHS. Another substitution can take place wherein a primary amine can substitute the Sulfo-NHS to form an amide bond. In this case, LAP contains multiple amino acid residues of lysine [
+  <a rid="B32-ijms-20-03190" ref-type="bibr" href="#B32-ijms-20-03190">32</a>], as well as a terminal amine group—any of which can serve as a possible site for amide bond formation.
+ </p>
+</sec>

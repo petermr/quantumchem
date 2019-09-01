@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DALTON HISTORY</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The development that led to Dalton began in the early 1980s, as a collaboration between Scandinavian research groups at the Universities of Aarhus (H. J. Aa. Jensen, P. Jørgensen, J. Olsen), Oslo (T. Helgaker), and Uppsala (H. Ågren). Up to the mid 1990s, several programs that later became the Dalton code were run separately from a simple Bourne shell script. Molecular integrals over GTOs were calculated using the HERMIT code,
+  <a rid="b143" ref-type="bibr" href="#b143">143</a> HF and MCSCF wave functions were optimized using the SIRIUS code,
+  <a rid="b1" ref-type="bibr" href="#b1">1</a> whereas frequency-independent and -dependent molecular properties were calculated using the ABACUS
+  <a rid="b144" ref-type="bibr" href="#b144">144</a> and RESPONS
+  <a rid="b145" ref-type="bibr" href="#b145">145</a> codes, respectively.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The separate HERMIT, SIRIUS, ABACUS, and RESPONS codes were merged in 1995 and released as 
+  <span class="bold">Dalton 1.0</span> in 1997. This first release was essentially an MCSCF code with emphasis on molecular properties, including molecular gradients, Hessians, NMR properties, and linear, quadratic, and cubic response theory. 
+  <span class="bold">Dalton 1.1</span> was released later in 1997, with bug fixes and performance improvements.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The next major release was 
+  <span class="bold">Dalton 1.2</span> in 2001, which included integral-direct CC functionality that had been developed since the early 1990s
+  <a rid="b16" ref-type="bibr" href="#b16">16</a> and properties up to cubic response. Other important additions were SOPPA, nonequilibrium solvation, and vibrational averaging of molecular properties. The release included a new integral module ERI, developed for vector computers and integral-driven CC theory.
+  <a rid="b17" ref-type="bibr" href="#b17">17</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In 2005, 
+  <span class="bold">Dalton 2.0</span> was released with a DFT module with functionality for molecular gradients and Hessians, NMR and EPR parameters, linear and quadratic response properties, based on an initial DFT implementation from 2000.
+  <a rid="b52" ref-type="bibr" href="#b52">52</a> In addition, Dalton 2.0 included NEVTP2 and MP2–R12 modules and numerous other additions and improvements.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="bold">Dalton2011</span> release introduced a new module for linear-scaling HF and KS calculations of large systems, using density fitting and CFMM techniques. In addition, Dalton2011 introduced a variety of additions and improvements to existing modules (CC3 and CCSD-R12), Cholesky techniques in the CC module,
+  <a rid="b146" ref-type="bibr" href="#b146">146</a> range-separated functionals,
+  <a rid="b147" ref-type="bibr" href="#b147">147</a> an excitation-energy diagnostic for DFT,
+  <a rid="b148" ref-type="bibr" href="#b148">148</a> and an atomic integral-direct implementation of the SOPPA
+  <a rid="b149" ref-type="bibr" href="#b149">149</a> and RPA(D)
+  <a rid="b150" ref-type="bibr" href="#b150">150</a> models. For the treatment of environmental effects, the PCM module was introduced.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the 
+  <span class="bold">Dalton2013</span> release, the linear-scaling module has been extended significantly to incorporate local orbitals, the DEC-MP2 model, magnetic properties for HF and KS theories, and molecular dynamics. New massively parallel techniques have been introduced for SCF, DEC-MP2, and CCSD energies. Parallel MCSCF techniques have been introduced, extending the limit for MCSCF configuration-space sizes by at least an order of magnitude. Spin-multiplet
+  <a rid="b151" ref-type="bibr" href="#b151">151</a> and spin-flip
+  <a rid="b152" ref-type="bibr" href="#b152">152</a> density-functional response-theory methodologies, based on collinear and noncollinear exchange–correlation kernels, have been introduced, allowing computations of excited states with double-excitation character and various low-spin ground states.
+ </p>
+</sec>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix A. Template for parsing a link from Gaussian log files</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A template to parse the output from the 601 link output in Gaussian logfiles. (The code for beta eigenvalues has been omitted for clarity.)</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- the template selects a chunk of text beginning with "pattern" and ending</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      with endPattern. --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;template id="l601.alphabetaeigen" pattern="\s*(Alpha|Beta)\s+(occ|virt)\. eigenvalues.*"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   repeat="*"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   endPattern="\s[^A][^B].*"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- an example of input which also acts as a unit test --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;comment class="example.input" id="l601.alphabeta"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alpha occ. eigenvalues -- -10.17514 -0.68437 -0.38581 -0.38581 -0.38581</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alpha virt. eigenvalues -- 0.11292 0.17036 0.17036 0.17036 0.53917</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alpha virt. eigenvalues -- 0.53917 0.53917 0.88316 0.88316 0.88316</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alpha virt. eigenvalues -- 0.91927 1.09380 1.66027 1.66027 2.21731</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Alpha virt. eigenvalues -- 2.21731 2.21731 4.16488</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/comment&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- all lines are parsed with a single recordReader. The trailing part of the line is</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         captured into an array and names with the leading string --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;record id="eigen" repeat="*"&gt;\s*{X, g:name}\s*eigenvalues \-\-{1_5F, g:eigen}&lt;/record&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- rename the dictRef to conform to dictionary and to CML syntax --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;transform process="addDictRef" xpath=".//cml:array[@cmlx:temp=' Alpha occ.']" value="cc:alphaocc"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;transform process="addDictRef" xpath=".//cml:array[@cmlx:temp='Alpha virt.']" value="cc:alphavirt"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- stitch lines together --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;transform process="joinArrays" xpath=".//cml:array[@dictRef='g:alphaocc']"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;transform process="joinArrays" xpath=".//cml:array[@dictRef='g:alphavirt']"/&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;!-- expected output (can also be used for unit testing). Note that the result is</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         labelled with the chunk number (l601) as well as the --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;comment class="example.output" id="l601.alphabeta"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;module cmlx:templateRef="l601.alphabetaeigen" xmlns="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema</span>" xmlns:cmlx="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema/cmlx" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema/cmlx</span>"&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dataType="xsd:double" size="5" dictRef="cc:alphaocc"&gt;-10.17514 -0.68437 -0.38581 -0.38581 -0.38581&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;array dataType="xsd:double" size="18" dictRef=cc:alphavirt"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            0.11292 0.17036 0.17036 0.17036 0.53917 0.53917 0.53917 0.88316 0.88316</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">            0.88316 0.91927 1.0938 1.66027 1.66027 2.21731 2.21731 2.21731 4.16488&lt;/array&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/module&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/comment&gt;</p>
+</sec>

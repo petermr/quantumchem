@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div position="float" id="t3" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 3</span>
+ <div class="caption">
+  <div class="title">Calculated properties. </div>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup>
+   <col align="left"/>
+   <col align="center"/>
+   <col align="center"/>
+   <col align="left"/>
+  </colgroup>
+  <thead valign="bottom">
+   <tr>
+    <th align="left" valign="top" charoff="50">
+     <span class="bold">No.</span>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <span class="bold">Property</span>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <span class="bold">Unit</span>
+    </th>
+    <th align="left" valign="top" charoff="50">
+     <span class="bold">Description</span>
+    </th>
+   </tr>
+  </thead>
+  <div valign="top" class="tfoot">
+   <tr>
+    <th align="left" valign="top" charoff="50">Properties are stored in the order given by the first column.</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+   </tr>
+  </div>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" charoff="50">1</td>
+    <td align="center" valign="top" charoff="50">tag</td>
+    <td align="center" valign="top" charoff="50">—</td>
+    <td align="left" valign="top" charoff="50">‘gdb9’ string to facilitate extraction</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">2</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">i</span>
+    </td>
+    <td align="center" valign="top" charoff="50">—</td>
+    <td align="left" valign="top" charoff="50">Consecutive, 1-based integer identifier</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">3</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">A</span>
+    </td>
+    <td align="center" valign="top" charoff="50">GHz</td>
+    <td align="left" valign="top" charoff="50">Rotational constant</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">4</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">B</span>
+    </td>
+    <td align="center" valign="top" charoff="50">GHz</td>
+    <td align="left" valign="top" charoff="50">Rotational constant</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">5</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">C</span>
+    </td>
+    <td align="center" valign="top" charoff="50">GHz</td>
+    <td align="left" valign="top" charoff="50">Rotational constant</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">6</td>
+    <td align="center" valign="top" charoff="50">μ</td>
+    <td align="center" valign="top" charoff="50">D</td>
+    <td align="left" valign="top" charoff="50">Dipole moment</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">7</td>
+    <td align="center" valign="top" charoff="50">α</td>
+    <td align="center" valign="top" charoff="50">
+     <div id="d33e1018" class="inline-formula">
+      <div id="M1" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">a</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </td>
+    <td align="left" valign="top" charoff="50">Isotropic polarizability</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">8</td>
+    <td align="center" valign="top" charoff="50">ϵ
+     <sub>HOMO</sub>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Energy of HOMO</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">9</td>
+    <td align="center" valign="top" charoff="50">ϵ
+     <sub>LUMO</sub>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Energy of LUMO</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">10</td>
+    <td align="center" valign="top" charoff="50">ϵ
+     <sub>gap</sub>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Gap (ϵ
+     <sub>LUMO</sub>−ϵ
+     <sub>HOMO</sub>)
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">11</td>
+    <td align="center" valign="top" charoff="50">〈
+     <span class="italic">R</span>
+     <span class="sup">2</span>〉
+    </td>
+    <td align="center" valign="top" charoff="50">
+     <div id="d33e1087" class="inline-formula">
+      <div id="M2" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">a</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </td>
+    <td align="left" valign="top" charoff="50">Electronic spatial extent</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">12</td>
+    <td align="center" valign="top" charoff="50">zpve</td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Zero point vibrational energy</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">13</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">U</span>
+     <sub>0</sub>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Internal energy at 0 K</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">14</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">U</span>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Internal energy at 298.15 K</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">15</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">H</span>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Enthalpy at 298.15 K</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">16</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">G</span>
+    </td>
+    <td align="center" valign="top" charoff="50">Ha</td>
+    <td align="left" valign="top" charoff="50">Free energy at 298.15 K</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">17</td>
+    <td align="center" valign="top" charoff="50">
+     <span class="italic">C</span>
+     <sub>
+      <span class="italic">v</span>
+     </sub>
+    </td>
+    <td align="center" valign="top" charoff="50">
+     <div id="d33e1177" class="inline-formula">
+      <div id="M3" class="math">
+       <div class="mfrac">
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">cal</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">molK</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </td>
+    <td align="left" valign="top" charoff="50">Heat capacity at 298.15 K</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

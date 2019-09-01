@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4.4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Transforming Chemical Potentials 
+  <span class="italic">E</span>°(Major Species at pH = 0) to Biochemical Potentials, 
+  <span class="italic">E</span>′°(pH = 7)
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Having estimated the standard redox potential 
+  <span class="italic">E</span>°(major species at pH = 0), we use cheminformatic p
+  <span class="italic">K</span>
+  <sub>a</sub> estimates of reactants and the Alberty–Legendre transform
+  <span class="sup">
+   <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+  </span> (p 67, eqs 4.4–10) to convert 
+  <span class="italic">E</span>°(major species at pH = 0) to the 
+  <span class="italic">transformed</span> standard redox potential, 
+  <span class="italic">E</span>′°(pH = 7), which is a function of pH.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref63" href="#ref63">63</a>
+  </span> To estimate the p
+  <span class="italic">K</span>
+  <sub>a</sub>’s of all reactants in every redox reaction of interest, we use the ChemAxon calculator plugin (Marvin 17.7.0, 2017, ChemAxon) 
+  <span class="italic">cxcalc pka</span>. Internally, the p
+  <span class="italic">K</span>
+  <sub>a</sub> calculator plugin is based on the calculation of the partial charge of atoms in the molecule.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref64" href="#ref64">64</a>,
+   <a ref-type="bibr" rid="ref65" href="#ref65">65</a>
+  </span>
+ </p>
+</sec>

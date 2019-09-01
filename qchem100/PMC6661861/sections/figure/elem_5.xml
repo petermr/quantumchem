@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 6</span>
+ <div class="caption">
+  <p>Elucidating structure–energy relationships using a reaction fingerprint heatmap. The top right panel shows the distribution of predicted standard redox potentials (in the millimolar standard state) using our GP-calibrated quantum chemical approach. The bottom right panel shows a reaction fingerprint heatmap, where the 
+   <span class="italic">y</span>-axis corresponds to the bits in the reaction fingerprint vector averaged across all reactions falling within a redox potential bin (range of values). The heatmap highlights bits that have significantly different values (on average) as a function of redox potential. The example reactions on the left correspond to each of the significant reaction fingerprint bits. For example, Bit-4 is a structure enriched in substrate molecules of reactions with high values of standard redox potentials.
+  </p>
+ </div>
+ <div xlink:href="oc-2019-002977_0006" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

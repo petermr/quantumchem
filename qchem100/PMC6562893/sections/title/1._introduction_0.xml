@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">1. Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum-mechanically, a molecule is typically described with a complex-valued function Ψ, the wavefunction, that is a solution of the Schrödinger equation Ĥ
+  <sub>mol</sub>Ψ = 
+  <span class="italic">E</span>Ψ with the molecular Hamiltonian Ĥ
+  <sub>mol</sub> that includes the Coulomb interactions among and between the electrons and nuclei of the molecule. If we want to understand features of the spatial molecular structure like the relative arrangement of the nuclei with respect to (w.r.t.) each other from the wavefunction, we would have to consider the corresponding probability density |Ψ|
+  <span class="sup">2</span> (in position space) that represent the probability of finding a particle within a certain volume of the configuration space of all particles. It follows that |Ψ|
+  <span class="sup">2</span> is a function which depends on the coordinates of all nuclei and electrons of the molecule and hence is a rather complicated object: Already for a small molecule like H
+  <sub>2</sub>O, |Ψ|
+  <span class="sup">2</span> depends on the coordinates of thirteen particles (three nuclei and ten electrons) and is thus difficult to visualize, to comprehend, and also to measure.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Notwithstanding, in chemistry there exists an intuitive concept of a molecule. This concept is nicely illustrated by the idea of Lewis structures that indicate the participating compounds and the mechanism of a chemical reaction by means of graphs. The corners of the graphs are thought to represent the relative position of the nuclei (together with “core electrons”) in a three-dimensional space and the edges of the graph represent the electrons as “electron bonds.” The success of Lewis structures to encode and to rationalize chemical transformations suggests that somehow, from |Ψ|
+  <span class="sup">2</span> an effective three-dimensional picture of a molecule should emerge. We call this picture the “chemical picture” and understanding this emergence is a non-trivial and still partially open problem (Cafiero and Adamowicz, 
+  <a rid="B11" ref-type="bibr" href="#B11">2004</a>, 
+  <a rid="B12" ref-type="bibr" href="#B12">2007</a>; Sutcliffe and Woolley, 
+  <a rid="B43" ref-type="bibr" href="#B43">2005</a>; Sutcliffe, 
+  <a rid="B42" ref-type="bibr" href="#B42">2010</a>; Mátyus et al., 
+  <a rid="B30" ref-type="bibr" href="#B30">2011a</a>,
+  <a rid="B31" ref-type="bibr" href="#B31">b</a>; Mátyus and Reiher, 
+  <a rid="B32" ref-type="bibr" href="#B32">2012</a>; Goli and Shahbazian, 
+  <a rid="B21" ref-type="bibr" href="#B21">2015</a>) The aim of this paper is to investigate a certain aspect of the emergence: How the nuclei, whose quantum-mechanical probability densities depend on all their coordinates, become essentially points in a three-dimensional space in the chemical picture. This reduction of complexity can be achieved if the 
+  <span class="italic">N</span> nuclei are considered to be classical particles with their location being described by a point in the 3
+  <span class="italic">N</span>-dimensional configuration space, which is equivalent to 
+  <span class="italic">N</span> points in a three-dimensional space. However, despite the success of this classical picture the nuclei are quantum particles, as is exemplified by recent interest in measuring e.g., the nuclear probability density (Shapiro, 
+  <a rid="B39" ref-type="bibr" href="#B39">1981</a>; Zewail, 
+  <a rid="B50" ref-type="bibr" href="#B50">2000</a>; Jurek et al., 
+  <a rid="B24" ref-type="bibr" href="#B24">2004</a>; Ergler et al., 
+  <a rid="B20" ref-type="bibr" href="#B20">2006</a>; Schmidt et al., 
+  <a rid="B38" ref-type="bibr" href="#B38">2012</a>; Kimberg and Miron, 
+  <a rid="B25" ref-type="bibr" href="#B25">2014</a>; Zeller et al., 
+  <a rid="B49" ref-type="bibr" href="#B49">2016</a>) or the nuclear flux (current) density (Manz et al., 
+  <a rid="B28" ref-type="bibr" href="#B28">2013</a>; Barth et al., 
+  <a rid="B5" ref-type="bibr" href="#B5">2015</a>; Bredtmann et al., 
+  <a rid="B9" ref-type="bibr" href="#B9">2015</a>). Hence, for the chemical picture to make sense it should be possible to obtain it quantum-mechanically without the need for (semi-)classical approximations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this article, we investigate how a three-dimensional nuclear structure emerges quantum-mechanically from |Ψ|
+  <span class="sup">2</span>. As explained below, the equivalent quantum-mechanical operation of the reduction of a classical system from configuration space to a three-dimensional space is the calculation of the marginal probability density of a nucleus independent of its type, called the “one-nucleus density.” The nuclear (many-body) probability density in configuration space has often been calculated and analyzed (Smit et al., 
+  <a rid="B41" ref-type="bibr" href="#B41">2001</a>; Dawes et al., 
+  <a rid="B14" ref-type="bibr" href="#B14">2013</a>; Welsch and Manthe, 
+  <a rid="B48" ref-type="bibr" href="#B48">2015</a>; Donoghue et al., 
+  <a rid="B16" ref-type="bibr" href="#B16">2016</a>), but to this authors knowledge the one-nucleus has been calculated previously only for a few small molecules (Barth et al., 
+  <a rid="B7" ref-type="bibr" href="#B7">2008</a>, 
+  <a rid="B6" ref-type="bibr" href="#B6">2009</a>, 
+  <a rid="B4" ref-type="bibr" href="#B4">2012</a>) and a systematic study of the one-nucleus densities of the eigenstates of a molecule is still missing. From the chemical picture, we expect that the one-nucleus density yields well-localized and spatially separated densities for each nucleus and that the localization depends on the nuclear mass. Additionally, the one-nucleus density should provide a quantum-mechanical picture of vibrational excitations: For classical nuclei, a vibrational excitation corresponds to a larger amplitude of motion, but quantum-mechanically the wavefunction of an excited state not only becomes more delocalized but also has nodes. The nodes exist in the configuration space of all nuclei but it is not obvious how they manifest in the one-nucleus density.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the next sections, we discuss how the chemical picture of a molecule can be obtained conceptually as well as what the one-nucleus density is and how it is calculated. Thereafter, examples of the one-nucleus densities for vibrationally excited states of small molecules are given. It is shown how qualitative features of the one-nucleus density can be predicted from knowledge of the normal modes and it is discussed to what extend the idea that vibrationally excited nuclear states simply have a broader probability distribution than the vibrational ground state holds despite the nodes that such wavefunctions exhibit in the configuration space of all nuclei.</p>
+</sec>

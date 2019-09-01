@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec16" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein editing via the z-matrix</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Z-matrix provides an alternative to specifying a geometry by Cartesian coordinates (see Fig. 
+  <a rid="Fig7" ref-type="fig" href="#Fig7">7</a>). In the Z-matrix approach, atom positions are defined with respect to previously defined atoms by means of internal coordinates such as bond distances, bond angles and dihedral angles. For small molecules a Z-matrix can often be constructed ‘by hand’, but for larger molecules this quickly becomes tedious and complex. The impractically large number of variables in a Z-matrix of a protein necessitates a dedicated Z-matrix view of only the most important internal variables, such as φ, ψ, ω, χ1. After interactive selection of an amino acid, the amino acid manipulation menu pops up. From this menu several manipulations can be performed, such as mutation to another amino acid, deletion or insertion of an amino acid, or changing the amino acid’s rotamer. These options are realised by Z-matrix manipulation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="Fig7" class="fig">
+   <span class="label">Fig. 7</span>
+   <div class="caption">
+    <p>The Z-matrix editor pop-up window. Each residue is represented by a column with a button labelled with its three letter amino acid code and entry fields for the φ, ψ, ω angles. Clicking the button brings up a pop up menu containing residue manipulating options</p>
+   </div>
+   <div xlink:href="10822_2017_42_Fig7_HTML" id="d29e987" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

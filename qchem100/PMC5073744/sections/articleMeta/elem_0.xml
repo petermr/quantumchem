@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">5073744</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">169</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1186/s13321-016-0169-8</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Methodology</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Multi-level meta-workflows: new concept for regularly occurring tasks in quantum chemistry</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Arshad</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Junaid</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">rjarshad@gmail.com</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hoffmann</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alexander</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">alexander.hoffmann@ac.rwth-aachen.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gesing</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sandra</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">sandra.gesing@nd.edu</span>
+   </div>
+   <a ref-type="aff" rid="Aff3" href="#Aff3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Grunzke</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Richard</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">richard.grunzke@tu-dresden.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff4" href="#Aff4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Krüger</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Jens</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">krueger@informatik.uni-tuebingen.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff5" href="#Aff5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kiss</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Tamas</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">T.Kiss@westminster.ac.uk</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-4354-4353</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Herres-Pawlis</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sonja</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">sonja.herres-pawlis@ac.rwth-aachen.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Terstyanszky</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Gabor</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">g.z.terstyanszky@westminster.ac.uk</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <aff id="Aff1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>Centre for Parallel Computing, School of Computer Science, University of Westminster, 115 New Cavendish Street, London, W1W 6UW UK 
+  </aff>
+  <aff id="Aff2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>Institut für Anorganische Chemie, Lehrstuhl für Bioanorganische Chemie, RWTH Aachen University, Landoltweg 1, 52074 Aachen, Germany 
+  </aff>
+  <aff id="Aff3" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>University of Notre Dame, 123 Information Technology Center, Notre Dame, IN 46556 USA 
+  </aff>
+  <aff id="Aff4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>Center for Information Services and High Performance Computing, Technische Universität Dresden, Zellescher Weg 12-14, 01062 Dresden, Germany 
+  </aff>
+  <aff id="Aff5" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">5</span>Applied Bioinformatics Tübingen, University of Tübingen, Sand 14, 72076 Tübingen, Germany 
+  </aff>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">20</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2016</span>
+ </pub-date>
+ <pub-date pub-type="pmc-release" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">20</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2016</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2016</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">8</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">58</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">14</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2016</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2016</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© The Author(s) 2016</span>
+  <div license-type="OpenAccess" class="license">
+   <div class="license-p">
+    <span class="bold">Open Access</span>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://creativecommons.org/licenses/by/4.0/</span>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://creativecommons.org/publicdomain/zero/1.0/</span>) applies to the data made available in this article, unless otherwise stated.
+   </div>
+  </div>
+ </div>
+ <div id="Abs1" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background</div>
+   <p xmlns="http://www.w3.org/1999/xhtml"> In Quantum Chemistry, many tasks are reoccurring frequently, e.g. geometry optimizations, benchmarking series etc. Here, workflows can help to reduce the time of manual job definition and output extraction. These workflows are executed on computing infrastructures and may require large computing and data resources. Scientific workflows hide these infrastructures and the resources needed to run them. It requires significant efforts and specific expertise to design, implement and test these workflows.</p>
+  </sec>
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Significance</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Many of these workflows are complex and monolithic entities that can be used for particular scientific experiments. Hence, their modification is not straightforward and it makes almost impossible to share them. To address these issues we propose developing atomic workflows and embedding them in meta-workflows. Atomic workflows deliver a well-defined research domain specific function. Publishing workflows in repositories enables workflow sharing inside and/or among scientific communities. We formally specify atomic and meta-workflows in order to define data structures to be used in repositories for uploading and sharing them. Additionally, we present a formal description focused at orchestration of atomic workflows into meta-workflows.</p>
+  </sec>
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">We investigated the operations that represent basic functionalities in Quantum Chemistry, developed the relevant atomic workflows and combined them into meta-workflows. Having these workflows we defined the structure of the Quantum Chemistry workflow library and uploaded these workflows in the SHIWA Workflow Repository.
+    <div position="anchor" id="Figa" class="fig">
+     <span class="label">Graphical Abstract</span>
+     <div class="caption">
+      <p>Meta-workflows and embedded workflows in the template representation</p>
+     </div>
+     <div position="anchor" xlink:href="13321_2016_169_Figa_HTML" id="MO1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </p>
+  </sec>
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electronic supplementary material</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The online version of this article (doi:10.1186/s13321-016-0169-8) contains supplementary material, which is available to authorized users.</p>
+  </sec>
+ </div>
+ <div xml:lang="en" class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="title">Keywords</div>
+  <span class="kwd">Scientific workflows</span>
+  <span class="kwd">Workflow repository</span>
+  <span class="kwd">Quantum chemistry</span>
+  <span class="kwd">Meta-workflow</span>
+  <span class="kwd">Atomic workflow</span>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="award-group">
+   <span class="funding-source">
+    <div class="institution-wrap">
+     <span institution-id-type="FundRef" class="institution-id">http://dx.doi.org/10.13039/501100001659</span>
+     <span class="institution">Deutsche Forschungsgemeinschaft</span>
+    </div>
+   </span>
+   <span class="award-id">FOR1405</span>
+   <span class="award-id">MASi (NA711/9-1)</span>
+   <div class="principal-award-recipient">
+    <name class="name" xmlns="">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Herres-Pawlis</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sonja</span>
+    </name>
+   </div>
+  </div>
+  <div class="award-group">
+   <span class="funding-source">
+    <div class="institution-wrap">
+     <span institution-id-type="FundRef" class="institution-id">http://dx.doi.org/10.13039/501100004963</span>
+     <span class="institution">Seventh Framework Programme</span>
+    </div>
+   </span>
+   <span class="award-id">283481 (SCI-BUS)</span>
+   <span class="award-id">no 312579 (ER-flow)</span>
+  </div>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">issue-copyright-statement</span>
+   <span class="meta-value">© The Author(s) 2016</span>
+  </div>
+ </div>
+</article-meta>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Lensfield2</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 
+  <span ext-link-type="uri" xlink:href="https://bitbucket.org/sea36/lensfield2/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://bitbucket.org/sea36/lensfield2/</span> is a tool for managing file transformation workflows and can be thought of as a 
+  <span class="monospace">make</span> for data.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 requires a build file, defining the various sets of input files and the conversions to be applied to them. Like 
+  <span class="monospace">make</span>, for instance, Lensfield2 is able to detect when files have changed, and update the products of conversions depending on them. However, unlike 
+  <span class="monospace">make</span> where this is just done through comparison of files 'last-modified times, Lensfield2 records the complete build-state, so is able to detect any change in configuration, such as when the parameterisation of builds has changed, and when versions of tools involved in the various steps of the workflow are updated or if intermediate files are altered.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 is designed to run workflow steps written in Java and build using Apache Maven 
+  <span ext-link-type="uri" xlink:href="http://maven.apache.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://maven.apache.org/</span>, utilising Maven's dependency management system to pull in the required libraries for each build step.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Lensfield2 has been successfully used in running the parser and subsequent software over the 40,000 files in the test datasets 1-4 (
+  <span class="italic">v.i</span>.).
+ </p>
+</sec>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">Ab initio</span> “Exact” Quantum Dynamics
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In principle, this is the most valuable source of kinetics data but still limited to simple benchmark cases. For full formulations of the reaction kinetics, following the microcanonical path along a quantum chemically or empirically generated potential energy surface, high-level computational effort is demanded. It typically proceeds according to these steps: a) calculation of the intermolecular interactions involved in a reactive process with a high-level of accuracy, b) dynamical evolution in phase-space configurations from the solution of quantum equations of motion, c) identification of reactive trajectories, with consequent calculation of the quantum scattering matrix, cumulative reaction probability and cross sections. Finally, the Boltzmann weight averaging over a large span of kinetics energies yields the canonical expressions of kinetic variables as a function of temperature. These severe prescriptions have been able to provide the exact calculation over a given potential energy surface for reaction rate constants of only a limited number of reactive systems: in fact, the complexity of the programming and the computationally demanding requirements and computational demand strongly limit the study of reactive processes involving only a few atoms. Additional reactions involving isotopic exchange among three hydrogen atoms, exemplary benchmarks to be cited are the three-body reactions: F + H
+  <sub>2</sub> (Aquilanti et al., 
+  <a rid="B7" ref-type="bibr" href="#B7">2005</a>), F + HD (De Fazio et al., 
+  <a rid="B31" ref-type="bibr" href="#B31">2006</a>; Cavalli et al., 
+  <a rid="B16" ref-type="bibr" href="#B16">2014</a>), H + HeH
+  <span class="sup">+</span> (De Fazio, 
+  <a rid="B30" ref-type="bibr" href="#B30">2014</a>) see also and references therein.
+ </p>
+</sec>

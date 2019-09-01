@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Magnetic transition metal complexes are a promising platform to create qubits, the smallest unit of quantum information science (QIS) systems. Within the broad scope of QIS there are numerous applications, most prominently, quantum computing which offers the potential to revolutionize our approach to certain computational problems.
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a>–
+  <a rid="cit3" ref-type="bibr" href="#cit3">3</a> A second emerging area of QIS, well suited to molecular intervention, is quantum sensing, wherein quantum objects are used as environmental probes.
+  <a rid="cit4" ref-type="bibr" href="#cit4">4</a> Magnetic complexes comprise a highly promising platform to develop design principles for the foregoing applications owing to their wide range of tunability.
+  <a rid="cit5" ref-type="bibr" href="#cit5">5</a>–
+  <a rid="cit7" ref-type="bibr" href="#cit7">7</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To develop systems for QIS, it is essential to design qubits with long spin–spin and spin–lattice relaxation times, 
+  <span class="italic">T</span>
+  <sub>2</sub> and 
+  <span class="italic">T</span>
+  <sub>1</sub>, respectively. In quantum computing, 
+  <span class="italic">T</span>
+  <sub>2</sub> represents the lifetime of information, while, 
+  <span class="italic">T</span>
+  <sub>1</sub> signals the maximum memory storage time, as well as the minimum possible time length between each computational cycle. For applications within quantum sensing, it is possible harness the sensitivity of the timescales of 
+  <span class="italic">T</span>
+  <sub>1</sub> and 
+  <span class="italic">T</span>
+  <sub>2</sub> to the local chemical and magnetic environment of the electronic spin to probe the local chemical environment. Both of these applications rely on an explicit understanding of how molecular factors influence 
+  <span class="italic">T</span>
+  <sub>1</sub> and 
+  <span class="italic">T</span>
+  <sub>2</sub> and is of intense current interest.
+  <a rid="cit8" ref-type="bibr" href="#cit8">8</a>–
+  <a rid="cit12" ref-type="bibr" href="#cit12">12</a> Owing to the inherent chemical tunability of spins in transition metal complexes, investigating 
+  <span class="italic">T</span>
+  <sub>1</sub> and 
+  <span class="italic">T</span>
+  <sub>2</sub> in such species is a promising route to the requisite knowledge.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">By modifying the chemical structure of molecules, it is possible to tune the specific lattice vibrations thereby engendering changes to 
+  <span class="italic">T</span>
+  <sub>1</sub>. Prior research into molecular design of candidate qubits focused on lengthening 
+  <span class="italic">T</span>
+  <sub>1</sub> and 
+  <span class="italic">T</span>
+  <sub>2</sub> and increasing their persistence to higher temperatures. Specifically, the role phonons and local vibrational modes play in modulating spin dynamics of electronic spin qubits is of particular importance.
+  <a rid="cit13" ref-type="bibr" href="#cit13">13</a>–
+  <a rid="cit19" ref-type="bibr" href="#cit19">19</a> In this study, we focus on a different parameter, modulating the covalency of the metal–ligand bond to control relaxation times. The identity of the spin-bearing orbital and its interaction with the lattice and intramolecular vibrations should guide the magnitude of 
+  <span class="italic">T</span>
+  <sub>1</sub>. A nonbonding orbital, for example, should interact less strongly with lattice vibrations than a bonding (or antibonding) orbital, and thus display a longer 
+  <span class="italic">T</span>
+  <sub>1</sub>. Within this framework, we hypothesize that tuning the covalency of metal–ligand bonding could likewise enhance 
+  <span class="italic">T</span>
+  <sub>1</sub>. Despite this intuitive picture, significant experimental work remains to be done to test its validity.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Similarly, metal–ligand covalency could be envisioned to impact 
+  <span class="italic">T</span>
+  <sub>2</sub> by modulating the interaction of an electronic spin with nearby nuclear and electronic spins.
+  <a rid="cit20" ref-type="bibr" href="#cit20">20</a> When these environmental spins undergo flip-flop motions, such interactions shorten 
+  <span class="italic">T</span>
+  <sub>2</sub>. Here, delocalization of the metal-based spin toward the ligand-based nuclear spins may engender stronger magnetic interactions that shut down flip-flop motions and lead to longer 
+  <span class="italic">T</span>
+  <sub>2</sub> times. Metal ions ligated by nuclear spin-free ligand shells completely eliminate such flip-flops, which enable near-millisecond-length 
+  <span class="italic">T</span>
+  <sub>2</sub> times.
+  <a rid="cit21" ref-type="bibr" href="#cit21">21</a>,
+  <a rid="cit22" ref-type="bibr" href="#cit22">22</a> Yet that design principle is chemically limited, and hence, methods of enabling nuclear spins to be incorporated into the synthetic design are important.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To test this hypothesis we synthesized and investigated the Ph
+  <sub>4</sub>P
+  <span class="sup">+</span> salts of the dithiocatecholate complexes of vanadium(
+  <span class="sc">iv</span>) and copper(
+  <span class="sc">ii</span>):
+  <a rid="cit23" ref-type="bibr" href="#cit23">23</a>,
+  <a rid="cit24" ref-type="bibr" href="#cit24">24</a> [V(C
+  <sub>6</sub>H
+  <sub>4</sub>S
+  <sub>2</sub>)
+  <sub>3</sub>]
+  <span class="sup">2–</span> (
+  <span class="bold">1</span>), [Cu(C
+  <sub>6</sub>H
+  <sub>4</sub>S
+  <sub>2</sub>)
+  <sub>2</sub>]
+  <span class="sup">2–</span> (
+  <span class="bold">2</span>), and the diselenocatecholate complexes [V(C
+  <sub>6</sub>H
+  <sub>4</sub>Se
+  <sub>2</sub>)
+  <sub>3</sub>]
+  <span class="sup">2–</span> (
+  <span class="bold">3</span>), and [Cu(C
+  <sub>6</sub>H
+  <sub>4</sub>Se
+  <sub>2</sub>)
+  <sub>2</sub>]
+  <span class="sup">2–</span> (
+  <span class="bold">4</span>) (
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>). Here, we hypothesized that direct comparison of the V(
+  <span class="sc">iv</span>) and Cu(
+  <span class="sc">ii</span>) complexes would offer insight into the impact of changing the nature of the molecular orbital in which the electronic spin resides; a non-bonding, low-covalency d
+  <sub>
+   <span class="italic">z</span>
+   <span class="sup">2</span>
+  </sub> orbital and an anti-bonding, high-covalency d
+  <sub>
+   <span class="italic">x</span>
+   <span class="sup">2</span>–
+   <span class="italic">y</span>
+   <span class="sup">2</span>
+  </sub> orbital, respectively. Notably, in the V(
+  <span class="sc">iv</span>) complex (
+  <span class="bold">1</span>) the echo disappears beyond 100 K, whereas in the Cu(
+  <span class="sc">ii</span>) complex (
+  <span class="bold">2</span>) the spin echo persists until room temperature. We attribute this difference in behavior to a change in metal–ligand covalency. Investigation of 
+  <span class="bold">3</span> and 
+  <span class="bold">4</span> in concert with 
+  <span class="bold">1</span> and 
+  <span class="bold">2</span> allowed us to systematically test the role that more diffuse, 4p donor atoms play in modulating covalency and, thus, spin relaxation times. Note, because all complexes feature ligands that contain proton nuclear spins (
+  <span class="sup">1</span>H, 
+  <span class="italic">I</span> = 1/2, 99.98% natural abundance) at nearly identical distances from the spin-bearing metal ion, the series provides a qualitative picture of the role of the variation in metal–ligand covalency on 
+  <span class="italic">T</span>
+  <sub>2</sub> times with a constant number of nuclear hyperfine interactions.
+ </p>
+ <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">(a) Molecular structures of the [VL
+    <sub>3</sub>]
+    <span class="sup">2–</span> and [CuL
+    <sub>2</sub>]
+    <span class="sup">2–</span> units as determined in the crystal structures of 
+    <span class="bold">1</span> and 
+    <span class="bold">2</span>. Dark green, red, yellow, gray, and white spheres represent vanadium, copper, sulfur, carbon, and hydrogen atoms, respectively. (b) Qualitative d-orbital splitting diagrams for 
+    <span class="bold">1</span> (top), and 
+    <span class="bold">2</span> (bottom) highlight the nature of the orbital singly occupied by an unpaired spin.
+   </div>
+  </div>
+  <div xlink:href="c9sc00074g-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

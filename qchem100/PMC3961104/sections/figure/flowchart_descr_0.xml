@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig-1" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span pub-id-type="doi" class="object-id">10.7717/peerj.277/fig-1</span>
+ <span class="label">Figure 1</span>
+ <div class="caption">
+  <div class="title">Flowchart describing the use of FragBuilder.</div>
+  <p>Simple chart of a common workflow using FragBuilder. First a peptide is generated from the sequence. Then torsion angles are set — either specified manually or sampled through BASILISK and a quick geometry optimization is performed using the MMFF94 force field. Finally, the structure is written to a file.</p>
+ </div>
+ <div xlink:href="peerj-02-277-g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

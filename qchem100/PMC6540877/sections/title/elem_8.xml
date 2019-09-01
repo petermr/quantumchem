@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">4. The Prototyping of the Open Molecular Science Cloud Service</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this section the present implementation of the above-mentioned MOSEX [MOlecular Simulator Enabled Cloud Services (MOSEX) (Vitillaro and Laganà, 
+  <a rid="B88" ref-type="bibr" href="#B88">2018</a>)], which aimed to support research in computational simulations of molecular scattering processes, is illustrated with particular focus on related progress in the following: 
+  <div list-type="alpha-lower" class="list">
+   <div class="list-item">
+    <p>a) networking and networked software applications,</p>
+   </div>
+   <div class="list-item">
+    <p>b) assembling cloud computing infrastructures,</p>
+   </div>
+   <div class="list-item">
+    <p>c) developing a sustainable operational model.</p>
+   </div>
+  </div>
+ </p>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">4.1. Networking and Networked Software Applications</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Networking and assembling networked software applications for the Molecular science community begun within COST (
+   <span ext-link-type="uri" xlink:href="https://www.cost.eu/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">www.cost.eu/</span>) Action D23 (METACHEM) and D37 (Grid Computing in Chemistry: GRIDCHEM). In METACHEM the activities of various Molecular Science research laboratories were networked on a shared computing platform made of a geographically distributed cluster of heterogeneous computers operating as a single virtual parallel machine (Foster and Kesselman, 
+   <a rid="B37" ref-type="bibr" href="#B37">1999</a>). In the following Action GRIDCHEM Grid solutions and paradigms for molecular science research developed by D23 were consolidated on the grid. GRIDCHEM leveraged the creation and the use of distributed computing infrastructures (the “Grid”) to drive collaborative computer modeling and simulation in chemistry toward “new frontiers in complexity and a new regime of time-to-solution” (GRIDCHEM, 
+   <a rid="B39" ref-type="bibr" href="#B39">2006–2010</a>). At more infrastructural level, the European projects EGEE (Enabling Grids for E-sciencE, 
+   <span ext-link-type="uri" xlink:href="https://cordis.europa.eu/project/rcn/87264_en.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://cordis.europa.eu/project/rcn/87264_en.html</span>), first, and the EGI (European Grid Infrastructure, 
+   <span ext-link-type="uri" xlink:href="https://en.wikipedia.org/wiki/European-Grid-Infrastructure" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://en.wikipedia.org/wiki/European-Grid-Infrastructure</span>), next, provided various disciplines, including Molecular Science, with a world class level platform for computational collaborations. In particular, during EGEE-III, the first pilot computational application called GEMS (Laganà et al., 
+   <a rid="B50" ref-type="bibr" href="#B50">2010</a>)—designed to enable the distributed calculation of cross sections and rate coefficients starting from the ab initio computation of the electronic structure of the molecular system followed by the fitting of the computed ab initio points using a combination of analytic formulae into a proper functional representation of the interaction in short, intermediate and long-range regions—was implemented. This allows at present routine computation of reactive and nonreactive properties of elementary systems based on the desired number of molecular geometries (Storchi et al., 
+   <a rid="B83" ref-type="bibr" href="#B83">2006</a>) and collisional paths (Gervasi and Laganà, 
+   <a rid="B38" ref-type="bibr" href="#B38">2004</a>) by distributing them on the grid. The scheme of the most recent evolution of GEMS toward the atomistic simulation of the kinetics of more complex systems, together with the related “data analysis and validation” and “open archive and reuse” in a cloud service perspective, is sketched in 
+   <a ref-type="fig" rid="F10" href="#F10">Figure 10</a>.
+  </p>
+  <div id="F10" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 10</span>
+   <div class="caption">
+    <p>Block diagram of the present evolution of GEMS.</p>
+   </div>
+   <div xlink:href="fchem-07-00309-g0010" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The molecular science community has been accordingly organized into the COMPCHEM (Laganà et al., 
+   <a rid="B50" ref-type="bibr" href="#B50">2010</a>) VO first and in the CMMST (Chemistry, Molecular and Materials Science a Technologies) VRC (Virtual Research Community) (
+   <span ext-link-type="uri" xlink:href="https://wiki.egi.eu/wiki/Towards_a_CMMST_VRC" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://wiki.egi.eu/wiki/Towards_a_CMMST_VRC</span>) later. On a national basis, then, the different disciplinary communities were gathered in Joint Research Units (JRU), for example in Italy with IGI (
+   <span ext-link-type="uri" xlink:href="http://www.italiangrid.it" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.italiangrid.it</span>), in order to give a higher local momentum to networked applications. In this spirit, the following activities were pursued in networked Molecular Sciences: 
+   <div list-type="bullet" class="list">
+    <div class="list-item">
+     <p>orchestrate the initiatives of the e-infrastructure experts and of the disciplinary researchers so as to enable an effective intra- and trans-community networked implementation and coordination of a collaborative/competitive (synergistic) research environment by allowing a selection of compute resources based on quality parameters;</p>
+    </div>
+    <div class="list-item">
+     <p>compose higher level of complexity chained applications through the coordinated usage of distributed hardware and software, the creation of specialized web portals and workflows facilitating the production of data and innovative know how, the direct re-use of the produced data and knowledge in education, training and further research, the rewarding of the work done on behalf of the community by proactive members;</p>
+    </div>
+    <div class="list-item">
+     <p>produce and provide computational services useful to enhancing multi-scale treatments necessary to reproduce the observables of realistic systems in the areas of energy, environment, materials, pharmacology, biology, biotechnologies, medicine, etc., by means of state-of-the-art first principle electronic structure and nuclei dynamics computations, high level of accuracy multiscale design of complex molecular systems, knowledge management for training and education in sciences and technologies;</p>
+    </div>
+    <div class="list-item">
+     <p>turn (in collaboration with partner SMEs), the versatility of the adopted e-infrastructure tools, the richness of the developed CMMST knowledge and the credit mechanism supporting the synergistic operating into a business model, enabling an efficient transfer of the activities to the market, thereby ensuring business sustainability by leveraging synergistic models.</p>
+    </div>
+   </div>
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">4.2. Assembling Cloud Computing Infrastructures</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The cloud-oriented computing infrastructure developed for our calculations is an embryonic platform of the Beowulf type running under the OpenStack platform sketched in the lower side of Figure 3 of Vitillaro and Laganà (
+   <a rid="B88" ref-type="bibr" href="#B88">2018</a>) named HERLA (
+   <span ext-link-type="uri" xlink:href="https://en.wikipedia.org/wiki/Beowulf_cluster" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://en.wikipedia.org/wiki/Beowulf_cluster</span>). HERLA has been established at the Dipartimento di Chimica, Biologia e Biotecnologia (DCBB) of the University of Perugia. The platform consists of a couple of HPC clusters, (CG/training) and (FE/research) running Scientific Linux 6.x with two distinct access nodes. The clusters are connected using NIS in a single-image system and are used first for students' training (CG) and second for scientists' research (FE). The management of Herla is presently carried out by the CMS
+   <span class="sup">2</span> Consortium (
+   <span ext-link-type="uri" xlink:href="http://www.cms-2.org/index.php" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.cms-2.org/index.php</span>) of the University of Perugia, CNR-ISTM - Perugia unit and the two companies Master-UP s.r.l. and Molecular Horizon s.r.l. Recently, cloud images of HERLA (VHERLA) have been created and deployed in a storage system (CEPH located at DCBB). This effort was meant to support as well the activities of the School on Open Science Cloud (SOSC17) held in Perugia on June 2017 in collaboration with the Department of Physics and Geology (DFG) and INFN Perugia (running under the INFN OpenStack platform sketched in the lhs upper side of Figure 3 of Vitillaro and Laganà, 
+   <a rid="B88" ref-type="bibr" href="#B88">2018</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Later, as sketched in the rhs side of Figure 4 of Vitillaro and Laganà (
+   <a rid="B88" ref-type="bibr" href="#B88">2018</a>), the images of VHERLA were allocated to the OpenStack GARR Cloud platform in Palermo within the project “cnr-istm” and were used to install the version VHERLA(GARR-CLOUD) hscw (
+   <span ext-link-type="uri" xlink:href="http://hscw.herla.unipg.it/ganglia/?p=2&amp;c=FrontEnd" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://hscw.herla.unipg.it/ganglia/?p=2&amp;c=FrontEnd</span>) bearing the following features: Access node hscw (2 core, 4Gb RAM, 200Gb storage) and Cluster (7 nodes, 96 cores, 360Gb RAM, 700Gb storage). The Access node hscw, can be reached at the IP address [90.147.189.20] via SSH and the following 7 nodes, 96core, 380Gb, 512Gb scratch are defined at Torque(PBS)/MAUI as [Intel Xeon E3-12xx v2(Ivy Bridge)/2.6Ghz]. This allowed the generation of a virtual cluster for Molecular Sciences that has also been used for the training of the Students of the XIII EM TCCM (European Master in Theoretical Chemistry and Computational Modeling) Intensive Course (
+   <span ext-link-type="uri" xlink:href="http://www-old.chm.unipg.it/chimgen/mb/theo2/TCCM2018/EM-TCCM2018/EM-TCCM/Welcome.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www-old.chm.unipg.it/chimgen/mb/theo2/TCCM2018/EM- TCCM2018/EM-TCCM/Welcome.html</span>) with details at the following reference web page: 
+   <span ext-link-type="uri" xlink:href="http://hscw.herla.unipg.it" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://hscw.herla.unipg.it</span> URL.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">4.3. Developing a Sustainable Operational Model</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">As to the operational model we have already developed a sustainable open collaborative user/producer (Prosumer), whose prototype has been first implemented for running the ECTN (European Chemistry Thematic Network (
+   <span ext-link-type="uri" xlink:href="http://ectn.eu/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://ectn.eu/</span>)) EChemTest 
+   <span class="italic">e</span>-tests based on the use of the educational LibreEOL (
+   <span ext-link-type="uri" xlink:href="https://echemtest.libreeol.org" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://echemtest.libreeol.org</span>) and GLOREP (
+   <span ext-link-type="uri" xlink:href="https://glorep.unipg.it/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://glorep.unipg.it/</span>) services Laganà et al., 
+   <a rid="B52" ref-type="bibr" href="#B52">2018a</a>. An important feature of the Prosumer model adopted for EChemTest was the containment of costs by leveraging the fact that the ECTN member HEIs running 
+   <span class="italic">e</span>-test Self Evaluation Sessions (SES)s for the assessment of the Chemistry competences of their own students already act at the same time as consumers of EChemTest services and as producers of Question and Answers (Q&amp;A)s, assessors of students' competences, designers and developers of e-learning materials (a typical cluster of the horizontal type) for the harmonization at the European level of the assessment of Molecular Science competences. This behavior is quite usual in education and research activities in which knowledge is a common good to be at the same time produced and consumed.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The only additional action needed to the end of making the prosumer model sustainable was to assign to a company the role of market spinner. For EChemTest this role was taken by Master-Up s.r.l. thanks to its nature as a former spinoff of the University of Perugia (started in the year 2004 out of the aggregation of some members of the Chemistry Department and the Mathematics and Informatics Department who were experts in molecular dynamics simulations and computer science) devoted to design, production and marketing services for technological innovation as its main goal. As a matter of fact, the mission of Master-Up has been since the very beginning the design and development of cloud services for molecular sciences and technologies. In the particular case of EChemTest, the Prosumer model has led to the production in the year 2018 of 2622 SESs, with an increase of 5 percent over the previous year. Further efforts have also been spent in the period up to January 2019 for the implementation of the already mentioned MOlecular Simulator Enabled Cloud Services (MOSEX), a European Open Science Cloud Pilot designed as a follow-up of the EGI COMPCHEM VO activities for the following applications: 
+   <div list-type="order" class="list">
+    <div class="list-item">
+     <p>Molecular electronic structure and dynamical properties programs of GEMS (including the QC ones reported reported in this paper)</p>
+    </div>
+    <div class="list-item">
+     <p>Drug design programs (QSPR and 3D QSPR models)</p>
+    </div>
+    <div class="list-item">
+     <p>Distributed repository of molecular science data (including the IOCHEM (
+      <span ext-link-type="uri" xlink:href="https://www.iochem-bd.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://www.iochem-bd.org/</span>) software for the organization, publication and storage of molecular information on materials)
+     </p>
+    </div>
+    <div class="list-item">
+     <p>Dissemination and evaluation of molecular knowledge through GLOREP (Distributed repository of shared Learning Objects and educational tools) for the assemblage of Molecular Science multimedia Learning Objects.</p>
+    </div>
+   </div>
+  </p>
+ </sec>
+</sec>

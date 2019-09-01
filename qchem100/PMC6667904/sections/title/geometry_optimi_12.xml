@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0013" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Geometry optimization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For geometry optimization, the energy gradients of Hamiltonians, wavefunctions, and DFT formulations are required to evaluate the forces at the nuclei. The analytical gradients of NR, SF‐IODKH/NR, SF‐LUT‐IODKH/NR, and SD‐LUT‐IODKH/NR, as well as the numerical gradients for all of the Hamiltonians, are available in RAQET. The LUT analytical scheme is the default option for the calculations because it requires considerably less computational time than conventional 2c relativistic Hamiltonians
+  <a rid="jcc25364-bib-0149" ref-type="ref" href="#jcc25364-bib-0149">149</a>, 
+  <a rid="jcc25364-bib-0150" ref-type="ref" href="#jcc25364-bib-0150">150</a>, 
+  <a rid="jcc25364-bib-0151" ref-type="ref" href="#jcc25364-bib-0151">151</a> with similar accuracy. For wavefunctions and DFT, the analytical gradients of RHF, RDFT, UHF, UDFT, RMP2, and GHF have been implemented. RAQET utilizes the redundant internal coordinates
+  <a rid="jcc25364-bib-0152" ref-type="ref" href="#jcc25364-bib-0152">152</a> (default) and Cartesian coordinates for geometry optimization. Furthermore, rational functional optimization,
+  <a rid="jcc25364-bib-0153" ref-type="ref" href="#jcc25364-bib-0153">153</a> which uses calculated forces, was adopted to change structures. The source codes of the Cartesian coordinates, redundant internal coordinates, and rational functional optimization were taken from SMASH.
+ </p>
+</sec>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" sec-type="materials|methods" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p id="Par34" xmlns="http://www.w3.org/1999/xhtml">The calculations performed in this study have taken full advantage of the first X-ray crystal structure of human programed cell death protein 1 (PD-1) solved in complex with a Fab fragment of pembrolizumab (PDB ID: 5GGS) at 2.00 Å of resolution. The protonation state of the receptor PD-1 and its ligand was adjusted according to the results obtained from the PROPKA 3.1 package
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>
+  </span>. Afterwards, atoms not resolved by X-ray diffraction and therefore absent in the crystallographic files, as hydrogens and some amino-acid side-chains, were added to the structures and submitted to a classical geometry optimization fixing the other atoms. This optimization was performed using the classical force field CHARMm22 (Chemistry at Harvard Molecular Mechanics 22 forcefield), which is especially parametrized for organic molecules
+  <span class="sup">
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span>. The calculations were carried out with convergence tolerances set to 10
+  <span class="sup">−5</span> kcal mol
+  <span class="sup">−1</span> (total energy variation), 0.001 kcal mol
+  <span class="sup">−1</span>Å
+  <span class="sup">−1</span> (RMS gradient) and 10
+  <span class="sup">−5</span> Å (maximum atomic displacement).
+ </p>
+ <p id="Par35" xmlns="http://www.w3.org/1999/xhtml">The interaction energy between the amino-acids from the pembrolizumab (at position R
+  <sub>
+   <span class="italic">i</span>
+  </sub>) and PD-1 (at position R
+  <sub>
+   <span class="italic">j</span>
+  </sub>) was calculated by using the formalism of MFCC fragmentation scheme proposed by Zhang and Zhang
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>,
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>, and modified by Rodrigues and co-workers to calculate protein-protein interactions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>, within a DFT framework. For each amino acid residue of interest at position R
+  <sub>
+   <span class="italic">i</span>
+  </sub>, we draw an imaginary sphere with radius equal to 8.0 Å, and evaluate the interaction energy EI(R
+  <sub>
+   <span class="italic">i</span>
+  </sub>-R
+  <sub>
+   <span class="italic">j</span>
+  </sub>) with each residue at position R
+  <sub>
+   <span class="italic">j</span>
+  </sub>, considering at least one atom inside the sphere. Hence, the scheme to compute the residue-residue interaction energies follows the MFCC approach, in which the interaction energy between the residue R
+  <sub>
+   <span class="italic">i</span>
+  </sub> and the other residues R
+  <sub>
+   <span class="italic">j</span>
+  </sub> was calculated according to:
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{rcl}EI({R}_{i}-{R}_{j}) &amp; = &amp; E({C}_{i}{R}_{i}{C}_{i\ast }-{C}_{j}{R}_{j}{C}_{j\ast })-E({C}_{i}{R}_{i}{C}_{i\ast }-{C}_{j}{C}_{j\ast })\\ &amp; &amp; -E({C}_{i}{C}_{i\ast }-{C}_{j}{R}_{j}{C}_{j\ast })+E({C}_{i}{C}_{i\ast }-{C}_{j}{C}_{j\ast })\end{array}$$\end{document}</span>
+    <div id="M2" display="block" class="math">
+     <div mathsize="8pt" class="mstyle">
+      <div columnalign="left" class="mtable">
+       <div columnalign="left" class="mtr">
+        <div columnalign="right" class="mtd">
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span class="mi">I</span>
+          <span stretchy="false" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+        <div columnalign="center" class="mtd">
+         <span class="mo">=</span>
+        </div>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span stretchy="false" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">−</span>
+          <span class="mi">E</span>
+          <span stretchy="false" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <div columnalign="left" class="mtr">
+        <div columnalign="right" class="mtd"/>
+        <div columnalign="right" class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <span class="mo">−</span>
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span stretchy="false" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">R</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">+</span>
+          <span class="mi">E</span>
+          <span stretchy="false" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span class="mo">−</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">C</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">j</span>
+            <span class="mo">⁎</span>
+           </div>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41598_2018_20325_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where the C
+  <sub>
+   <span class="italic">i</span>
+  </sub> and C
+  <sub>
+   <span class="italic">i</span>*
+  </sub> (C
+  <sub>
+   <span class="italic">j</span>
+  </sub> and C
+  <sub>
+   <span class="italic">j</span>*
+  </sub>) caps are respectively the neighbour residues R
+  <sub>
+   <span class="italic">i</span>−1
+  </sub> and R
+  <sub>
+   <span class="italic">i</span>+1
+  </sub> (R
+  <sub>
+   <span class="italic">j</span>−1
+  </sub> and R
+  <sub>
+   <span class="italic">j</span>+1
+  </sub>) attached to the reference residue R
+  <sub>
+   <span class="italic">i</span>
+  </sub> (R
+  <sub>
+   <span class="italic">j</span>
+  </sub>). The term E(C
+  <sub>
+   <span class="italic">i</span>
+  </sub> R
+  <sub>
+   <span class="italic">i</span>
+  </sub> C
+  <sub>
+   <span class="italic">i</span>*
+  </sub> − C
+  <sub>
+   <span class="italic">j</span>
+  </sub> R
+  <sub>
+   <span class="italic">j</span>
+  </sub> C
+  <sub>
+   <span class="italic">j</span>*
+  </sub>) corresponds to the total energy of the fragment comprises both residues as well as their capped residues. The second (third) term, E(C
+  <sub>
+   <span class="italic">i</span>
+  </sub> R
+  <sub>
+   <span class="italic">i</span>
+  </sub> C
+  <sub>
+   <span class="italic">i</span>*
+  </sub> − C
+  <sub>
+   <span class="italic">j</span>
+  </sub> C
+  <sub>
+   <span class="italic">j</span>*
+  </sub>) [E(C
+  <sub>
+   <span class="italic">i</span>
+  </sub> C
+  <sub>
+   <span class="italic">i</span>*
+  </sub> − C
+  <sub>
+   <span class="italic">j</span>
+  </sub> R
+  <sub>
+   <span class="italic">j</span>
+  </sub> C
+  <sub>
+   <span class="italic">j</span>*
+  </sub>)], gives the total energy of the system formed by the capped residue R
+  <sub>
+   <span class="italic">i</span>
+  </sub> (R
+  <sub>
+   <span class="italic">j</span>
+  </sub>) and the hydrogenated caps of R
+  <sub>
+   <span class="italic">j</span>
+  </sub> (R
+  <sub>
+   <span class="italic">i</span>
+  </sub>). E(C
+  <sub>
+   <span class="italic">i</span>
+  </sub> C
+  <sub>
+   <span class="italic">i</span>*
+  </sub> − C
+  <sub>
+   <span class="italic">j</span>
+  </sub> C
+  <sub>
+   <span class="italic">j</span>*
+  </sub>) is the total energy of the system formed by the caps only.
+ </p>
+ <p id="Par36" xmlns="http://www.w3.org/1999/xhtml">In order to achieve the structural stability of the complex promoted by interactions with extended hydration network, all water molecules forming hydrogen bonds with a particular residue were included for completeness in the fragments. The analysis of the binding scenario were based in the criteria adopted by Bezerra 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>.
+ </p>
+ <p id="Par37" xmlns="http://www.w3.org/1999/xhtml">Energetic calculations for each residue were performed using the Gaussian G09 code
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+  </span>, within the density functional theory (DFT) formalism, with the generalized gradient approximation (GGA) functional B97D (for a review see ref.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>). It was proposed by Grimme
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span> and include dispersion terms in order to improve the description of the non-covalent interactions, being recently used together with the D3 dispersion correction under vacuum and COSMO continuum solvation model to calculate the binding energy of some protein ligand complexes within a MFCC scheme
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>. We selected the 6–311 + G(d,p) basis set for the calculations of the expanded Kohn-Sham orbitals for all electrons.
+ </p>
+ <p id="Par38" xmlns="http://www.w3.org/1999/xhtml">The representation of molecular environment is a necessary step for the theoretical study of molecular properties. Recently, models of implicit solvation have been used in the MFCC scheme by Ourique 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span> and Dantas 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span> to calculate binding affinity in protein-ligand complexes, by assuming different values of the dielectric constant (
+  <span class="italic">ε</span>) to take into account the effect of the protein and solvent environment in the evaluation of the electrostatic energies. Here, we have employed the MFCC approach together with the CPCM (Conductor-like Polarizable Continuum Model) continuum solvation model
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span> with dielectric constants 
+  <span class="italic">ε</span> considered to be 20 (
+  <span class="italic">ε</span>
+  <sub>20</sub> and 40 (
+  <span class="italic">ε</span>
+  <sub>40</sub>), respectively) to increase the similarity with the protein environment and estimate energy effects, such as the electrostatic polarization promoted by the solvent.
+ </p>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Data availability</div>
+  <p id="Par39" xmlns="http://www.w3.org/1999/xhtml">All other relevant data are available from the corresponding authors upon reasonable request.</p>
+ </sec>
+</sec>

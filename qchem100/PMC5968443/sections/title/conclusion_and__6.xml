@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec6" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">6</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusion and Perspective</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">AD offers a promising alternative solution for computing accurate derivatives of electronic structure methods. In this manuscript, we implemented 
+  <span class="italic">DiffiQult</span>, which serves as a proof-of-concept that helps us to develop an understanding of the capabilities of AD in quantum chemistry. Specifically, we presented and discussed the use of AD in the context of a fully variational HF method, which contains most of the mathematical components of other electronic structure methods. By using the 
+  <span class="italic">Algopy</span> AD library, we calculated gradients of any parameter with just minimal adjustments in the source code of the canonical HF energy, without any explicit implementation of a single derivative. With these gradients at hand, we are able to fully minimize the energy with respect to any parameter of the Gaussian one-particle basis. As a result, we capture, to some extent, polarization effects with a reduced number of atomic orbitals. Since the essential functions of many quantum chemistry methods are similar to the ones present in HF, we plan to extend 
+  <span class="italic">DiffiQult</span> to post-HF methods in future work.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">DiffiQult</span> can be seen as a general tool to obtain molecular tailored basis functions, that can be used as a starting point for other variational methods, e.g., FCI. An emerging application could be in the field of quantum computing for quantum chemistry,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref69" href="#ref69">69</a>
+  </span> where the size of one-electron basis function is constrained by the number of qubits available in state-of-the-art hardware.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref70" href="#ref70">70</a>−
+   <a ref-type="bibr" rid="ref74" href="#ref74">74</a>
+  </span> Thus, experimental demonstrations of quantum algorithms for chemistry have been limited to conventional minimal basis sets.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref74" href="#ref74">74</a>,
+   <a ref-type="bibr" rid="ref75" href="#ref75">75</a>
+  </span> Here, the fully variational setting of 
+  <span class="italic">DiffiQult</span> could offer the advantage to optimize initial parameters of atomic orbitals, which could increase the accuracy of variational quantum chemistry simulations,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref69" href="#ref69">69</a>
+  </span> while keeping the number of basis functions small.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, the analysis of the advantages of AD technologies in the implementation of 
+  <span class="italic">DiffiQult</span> demonstrates that AD has a huge potential in future implementations. The AD tools could extend quantum chemistry methods in many ways. For example, in general, it is possible to mix different differentiation modes and approaches. We could use the forward mode to compute gradients of element-wise matrix definitions (or in general for complex computational graphs) and use the backward mode for vectorized functions. Furthermore, AD could be combined with symbolic algebra and automated code generation
+  <span class="sup">
+   <a ref-type="bibr" rid="ref76" href="#ref76">76</a>−
+   <a ref-type="bibr" rid="ref78" href="#ref78">78</a>
+  </span> to build a general tool-chain to create software packages capable of computing a function and computing gradients with an AD library.
+ </p>
+</sec>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0021" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Calculation Example</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">This section demonstrates the performance of RAQET. First, the computational time was measured in a single‐point energy calculation for the Au
+  <sub>20</sub> cluster. The calculation was performed using NR, IODKH/NR, LUT‐IODKH/NR, and LUT‐IODKH/LUT‐IODKH Hamiltonians at the SF level in the RHF framework. For other options, the DIIS + EDIIS technique for the SCF convergence, MO coefficients obtained from the extended Hückel calculation for the initial guess, and DKH3‐Gen‐TK/NOSec‐V‐TZP for the basis set, were employed. The calculations were performed on 32 cores of an Intel(R) Xeon(R) CPU E5‐2683 v4 with 64GB memory. Table 
+  <a rid="jcc25364-tbl-0008" ref-type="table" href="#jcc25364-tbl-0008">8</a> shows the wall time for each calculation step, the number of SCF iterations, and the converged total energies. Here, the SCF step includes evaluations of the NR two‐electron integrals (TEIs) because the direct SCF technique was adopted. For LUT‐IODKH/LUT‐IODKH, the relativistic two‐electron integrals for each atom were stored in disk storage before the SCF step. In NR/NR, two steps are required: one‐electron integrals (OEIs) and SCF. In (LUT‐)IODKH/NR, the transformation step for the OEIs based on (LUT‐)IODKH is included. In (LUT‐)IODKH/LUT‐IODKH, the transformation step for TEI based on LUT‐IODKH is also included. These relativistic frameworks also require additional OEIs and TEIs for these transformations. From the results, we see that the wall time for IODKH/NR is larger than NR/NR. This is due to the transformation of the OEIs. However, the wall time in LUT‐IODKH/NR and LUT‐IODKH/LUT‐IODKH are similar to that for NR/NR. Thus, the LUT scheme with the relativistic IODKH transformation for both OEIs and TEIs realizes accurate calculations for large molecules with little additional computational time compared with NR calculations.
+ </p>
+ <div id="jcc25364-tbl-0008" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 8</span>
+  <div class="caption">
+   <p>Wall time in minutes and the total energy in Hartree for the Au
+    <sub>20</sub> cluster using NR, IODKH/NR, LUT‐IODKH/NR, and LUT‐IODKH/LUT‐IODKH Hamiltonians at the SF level in the RHF framework
+   </p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="center" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="center" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="center" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="center" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Step</th>
+     <th align="center" valign="bottom" rowspan="1" colspan="1">NR</th>
+     <th align="center" valign="bottom" rowspan="1" colspan="1">IODKH/NR</th>
+     <th align="center" valign="bottom" rowspan="1" colspan="1">LUT‐IODKH/NR</th>
+     <th align="center" valign="bottom" rowspan="1" colspan="1">LUT‐IODKH/LUT‐IODKH</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Wall time [min]</td>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">OEI</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.06</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.17</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.06</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.06</td>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">Transformation of OEI</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">–</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">5.42</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.04</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">0.05</td>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">Transformation of TEI</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">–</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">–</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">–</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">5.99</td>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">SCF</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">2260.46</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1542.95</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1465.85</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1722.98</td>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">SCF per iter.</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">27.91</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">35.07</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">36.65</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">31.91</td>
+    </tr>
+    <tr>
+     <td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">Total</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">2260.69</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1548.71</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1466.12</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1729.25</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Number of iteration</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">81</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">44</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">40</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">54</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Total energy [Hartree]</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">−327,952.2329</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">−380,224.3549</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">−380,224.3549</td>
+     <td align="right" valign="top" rowspan="1" colspan="1">−380,378.6063</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Second, the computational time of the electron correlation schemes were evaluated for single‐point energy calculations. Three systems were adopted: zigzag‐structured (HAt)
+  <sub>
+   <span class="italic">n</span>
+  </sub> molecules (
+  <span class="italic">n</span> = 5, 10, 20, and 30), Hg
+  <span class="sup">2+</span> in 100 water molecules, and bis‐(b‐carotene)Pt
+  <sub>10</sub>. The calculations were performed using the LUT‐IODKH/NR Hamiltonian at the SF level in the RMP2 framework with and without the DC technique. The convergence was set to DIIS + EDIIS, the initial guess was Hückel, and the basis sets were Sapporo‐DZP. These calculations were performed on 16 cores of an Intel(R) Xeon(R) CPU E5‐2690 with 128GB memory. Table 
+  <a rid="jcc25364-tbl-0009" ref-type="table" href="#jcc25364-tbl-0009">9</a> shows the wall time for evaluations of the correlation energy. In larger molecules, the DC technique effectively reduces the computational time and enables calculations to be performed in a practical time. In particular for (HAt)
+  <sub>
+   <span class="italic">n</span>
+  </sub>, linear scaling was achieved with respect to 
+  <span class="italic">n.</span>
+ </p>
+ <div id="jcc25364-tbl-0009" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 9</span>
+  <div class="caption">
+   <p>Wall time in minutes of MP2 calculations for systems containing heavy elements with and without the DC technique</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">System</th>
+     <th colspan="2" align="left" valign="bottom" rowspan="1">Wall time [min]</th>
+    </tr>
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1"/>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">w/ DC</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">w/o DC</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+      <sub>5</sub>
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">91.9</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">69.9</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+      <sub>10</sub>
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">217.8</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">558.9</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+      <sub>20</sub>
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">462.0</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">1743.9</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+      <sub>30</sub>
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">675.5</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Hg
+      <span class="sup">2+</span> with 100 H
+      <sub>2</sub>O
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1520.3</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Bis‐(b‐carotene) Pt
+      <sub>10</sub>
+     </td>
+     <td align="right" valign="top" rowspan="1" colspan="1">1842.5</td>
+     <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</sec>

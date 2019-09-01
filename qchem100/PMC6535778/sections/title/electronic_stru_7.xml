@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electronic Structure Calculations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The bulk electronic structure calculations for EuSn
+  <sub>2</sub>P
+  <sub>2</sub> were performed by using the projector augmented wave method as implemented in the VASP package within the generalized gradient approximation (GGA) scheme.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref34" href="#ref34">34</a>,
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> The experimental structural parameters were employed. Spin–orbit coupling was included self-consistently in some of the calculations for comparison to the expected electronic structure with SOC absent. Spin polarization using GGA+
+  <span class="italic">U</span> (
+  <span class="italic">U</span> = 4 eV) was employed for the magnetic models investigated.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>
+  </span> How f electron states are treated in DFT calculations is of interest because when considered as valence electrons then they are always found at the Fermi energy for partly filled f orbitals, which, except in very rare cases such as for heavy fermion materials,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref37" href="#ref37">37</a>,
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> is not a realistic picture for their relative position in energy—in our calculations, the energies of the calculated Eu f electron states are tested to match with the experimental ARPES measurements. A Monkhorst–Pack 11 × 11 × 7 
+  <span class="italic">k</span>-point mesh was used for the 
+  <span class="italic">k</span>-space integrations.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+  </span> With these settings, the calculated total energy converged to less than 0.1 meV per atom. For the surface spectral weight calculations, a semi-infinite Green’s function method, terminated by (001) surfaces, was employed. Calculations were made for Sn-, P-, and Eu-terminated (001) surfaces. The median line of the Sn bilayer is selected as the Sn-terminated surface.
+ </p>
+</sec>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Composite methods target highly accurate thermochemical properties (deviation from the experiments less than 1 kcal/mol) within manageable time by performing a series of low-level calculations. This approach is based on the fact that extending correlation energy and basis set effects are additive to a certain degree. The G4MP2 method consists of geometry optimization with B3LYP/6-31 G(2df,p) and single point calculations with CCSD(T,FC)/6-31 G(d), MP2(FC)/G3MP2largeXP, RHF/mod-aug-cc-pVTZ and RHF/mod-aug-cc-pVQZ. The philosophy of Gaussian methods and technical details of the G4MP2 method can be found in the work of Curtiss and his coworkers
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span>.
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">The geometries of the QM9 set molecules were reoptimized to ensure convergence to a minimum. All calculations were performed with the 
+  <span class="italic">Gaussian 16</span> package (A.03 version), while the results of the QM9 set were computed with 
+  <span class="italic">Gaussian 09</span>. To obtain atomization energies (AEs), G4MP2 calculations for H, C, N, O, and F atoms were performed. Both the charge and spin multiplicities for all systems are the same as those of the QM9 set.
+ </p>
+</sec>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par2" xmlns="http://www.w3.org/1999/xhtml">During the last decades, the biomedical application of nanomaterials has rapidly increased, especially in the fields of targeted drug delivery, cancer treatment and therapeutics
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>. Photoluminescent semiconductor nanocrystals, also known as quantum dots, are outstanding labels for biomedical applications due to their unique optical characteristics that enable them to overcome the limitations of other luminescent probes, such as organic fluorophores
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Quantum dots exhibit high molar extinction coefficients with broad excitation spectra and size-tuneable, narrow emission spectra with high luminescence quantum yields and low photobleaching rates
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>,
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>
+  </span>. Quantum dots are usually synthesised in organic solvents, so that they have to make water-soluble and biofunctionalised for biomedical applications
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span>. Due to surface modifications, quantum dots have been used for a wide range of applications in biological research such as luminescent markers for cellular trafficking
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>,
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>, membrane dynamics and cellular movements
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>,
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span>, single particle tracking
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span> and multicolour imaging
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>,
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span> or biomarker sensing
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>.
+ </p>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">However, the use of water-soluble quantum dots for intracellular labelling can be very challenging. In cell culture media or physiological buffer solutions, quantum dots can exhibit low stability due to particle aggregation and surface degradation, which leads to lower cellular uptake efficiencies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>
+  </span>. This goes along with the fact that quantum dots also tend to aggregate within the cytosol, being often trapped in organelles such as endosomes and lysosomes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span>. Moreover, the use of different surface coatings among them polyethylene glycol, polymers, amine and carboxyl functional groups might be responsible for their 
+  <span class="italic">in vivo</span> toxicity
+  <span class="sup">
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span>. A smart way to improve the intracellular delivery and to neutralise the cytotoxic effects of quantum dots is their encapsulation into specific carrier systems. Liposomes are simply spherical vesicles consisting of phospholipid bilayers surrounding an aqueous volume
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. Liposomes are thought to be biocompatible as well as biodegradable and due to their structure, they can carry both hydrophilic water-soluble molecules in the aqueous core and hydrophobic compounds in the lipid membrane, as previously shown
+  <span class="sup">
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>,
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>. Thus, liposomes have proven useful for cellular quantum dot delivery 
+  <span class="italic">via</span> encapsulation of quantum dots, either into the bilayer membrane of liposomes or into the liposome interior
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span>. These so-called lipodots have been also exploited to fabricate potential diagnostic and therapeutic tools by additional encapsulation of anticancer drugs such as doxorubicin or docetaxel
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>,
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>. Thus, drug-coupled lipodots can function for drug delivery, optical tracking and targeted therapy.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">For systematic advances in drug delivery in general and lipodot-cell-interaction in particular, adequate information is required about the spatiotemporal interaction of lipodots with the specific biological system. Confocal fluorescence microscopy has been mainly used to study the cellular uptake of quantum dots and their intracellular fate
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>,
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>–
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>. However, fluorescence intensity based recordings can be challenging due to varying intensities as a result of different microenvironments, intracellular aggregation or quenching effects. The application of advanced fluorescence techniques can expand the portfolio of useful parameters for a more comprehensive evaluation of lipodots. Thus, fluorescence lifetime imaging microscopy (FLIM) provides access to the luminescence decay time of a fluorophore. This nanosecond decay time is a unique, intrinsic property of a fluorophore and shows a sensitivity towards changes in the microenvironment
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. The single molecule technique fluorescence correlation spectroscopy (FCS) allows for the determination of physical parameters like the translational diffusion times of particles as well as their hydrodynamic radii
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>. Although FLIM and FCS can obviously improve the interpretation of lipodot-cell-interactions, these techniques have been only sparsely applied in the past. So, changes in the luminescence decay time or in the diffusion time could proof the encapsulation of quantum dots into liposomes in aqueous solution
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>–
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span> as well as their long term stability
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>. However, only few FLIM studies are available showing a decrease in the quantum dot luminescence decay time after intracellular accumulation by applying cell culture experiments
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>–
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>. Thus, FLIM recordings could be successfully used for distinguishing the extra- and intracellular localisation of quantum dots as well as their different intracellular microenvironments due to changed luminescence decay times. Nevertheless, to the best of our knowledge no study is available combing FLIM and FCS recordings for the complementary analysis of cellular quantum dot uptake even in a more complex biological system.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">In this study, we for the first time applied both techniques complementary, in order to characterise different lipodot preparations 
+  <span class="italic">in vitro</span>, but also to study their intracellular behaviour in a complex biological system. Particularly, by combining FLIM and FCS with two-photon excitation (2P), live cell imaging could be further promoted due to minimised global photobleaching and cell damage. We encapsulated hydrophilic quantum dots into liposomes of different membrane compositions and surface charges, but without further surface modification. This simple and manageable carrier system allowed for evaluation of its cellular uptake into epithelial cells of salivary glands by using FLIM and FCS.
+ </p>
+</sec>

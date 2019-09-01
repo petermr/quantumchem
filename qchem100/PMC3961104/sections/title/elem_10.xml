@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Sampling dihedral angles from BASILISK</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to manual specification of torsion angle values, it is possible to set these to values from predefined distributions, such as the Ramachandran-plot for backbone angles or rotamer distributions for side chain angles. This allows for fast and efficient sampling of realistic peptide conformations and rotamer distribution without the need for a molecular dynamics or Monte Carlo simulation. For this purpose FragBuilder includes the BASILISK library and convenient methods to access BASILISK from the 
+  <span class="monospace">Peptide</span> class.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">BASILISK is a dynamic Bayesian network trained on a large set of representative structures from the Protein Data Bank (
+  <a rid="ref-1" ref-type="bibr" href="#ref-1">Berman et al., 2000</a>) and is able to sample backbone angles and side chain angles. BASILISK makes use of directional statistics — the statistics of angles, orientations and directions — to formulate a well-defined joint probability distribution over side and main chain angles. Backbone angles are essentially sampled from the Ramachandran-plot via BASILISK. Similarly, side chain angles are sampled from corresponding rotamer distributions. The distributions offered by the BASILISK library are continuous, in contrast to most approaches based on discrete rotamer libraries. BASILISK can sample side chain angles either in a backbone conformation-dependent mode or -independent mode (where backbone dependency is the default behavior). The random seed can be set explicitly via the 
+  <span class="monospace">fragbuilder.set_seed()</span> function. If no seed is supplied the seeding will be random.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The methods 
+  <span class="monospace">Peptide.sample_bb_angles()</span> and 
+  <span class="monospace">Peptide.sample_bb_angles()</span> allows the user to simultaneously sample and set the torsion angles of a residue. The methods return the new sets of sampled angles so they are known to the user directly.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The following code will create a glycine–leucine–glycine peptide and set the backbone and side chain angles of the second residue (leucine) to values that are sampled from BASILISK. The values of the sampled angles are stored in the 
+  <span class="monospace">new_bb</span> and 
+  <span class="monospace">new_chi</span> variables.
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">from fragbuilder import Peptide, set_seed set_seed(42) pep = Peptide("GLG") new_bb = pep.sample_bb_angles(2) new_chi = pep.sample_chi_angles(2)</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is also possible to get samples from BASILISK via FragBuilder by using the 
+  <span class="monospace">fragbuilder.Basilisk_DBN</span> class which provides direct access to the sampler in the BASILISK library. This class is used to obtain samples of 
+  <span class="italic">ϕ</span>/
+  <span class="italic">ψ</span> angles from the Ramachandran-plot or sets of 
+  <span class="italic">χ</span> angles from rotamer distribution without first creating a peptide.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For instance, a random set of 
+  <span class="italic">χ</span> angles (
+  <span class="monospace">chi</span>), 
+  <span class="italic">ϕ</span>/
+  <span class="italic">ψ</span> angles (
+  <span class="monospace">bb</span>), and their corresponding log-likelihood (
+  <span class="monospace">ll</span>) in the probability distribution can be obtained as follows (here for a Leucine (“L”) residue):
+ </p>
+ <div class="preformat" xmlns="http://www.w3.org/1999/xhtml">from fragbuilder import Basilisk_DBN dbn = Basilisk_DBN() # 
+  <span class="italic">Amino acid type as argument</span> chi, bb, ll = dbn.get_sample("L")
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">10,000 of such samples from the above code was used to create the Ramachandran plot and rotamer distribution of leucine which can be seen in 
+  <a ref-type="fig" rid="fig-5" href="#fig-5">Figs. 5A</a> and 
+  <a ref-type="fig" rid="fig-5" href="#fig-5">5B</a>, respectively.
+ </p>
+ <div id="fig-4" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.7717/peerj.277/fig-4</span>
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <div class="title">Overview of the available peptide-capping schemes available in FragBuilder.</div>
+   <p>All three examples show an alanine residue (shown between a set of gray lines). In (A), the caps are the N- and C-termini in their charged states. In (B) the caps are the N- and C-termini in their neutral states. In (C) the caps are methyl groups. Caps can be mixed and matched according to the user’s specifications.</p>
+  </div>
+  <div xlink:href="peerj-02-277-g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

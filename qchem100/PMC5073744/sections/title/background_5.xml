@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Scientific workflows represent complex computational experiments conducted by scientists focused at identifying and addressing scientific problems across diverse subject domains such as Quantum Chemistry simulations [
+  <a ref-type="bibr" rid="CR1" href="#CR1">1</a>], Astrophysics [
+  <a ref-type="bibr" rid="CR2" href="#CR2">2</a>], Heliophysics [
+  <a ref-type="bibr" rid="CR3" href="#CR3">3</a>] and Neuroimaging data analysis [
+  <a ref-type="bibr" rid="CR4" href="#CR4">4</a>]. Such experiments usually involve analysis of large volumes of data and typically they are executed in Distributed Computing Infrastructures (DCIs), such as clouds, clusters, supercomputers, etc. as demonstrated by [
+  <a ref-type="bibr" rid="CR5" href="#CR5">5</a>, 
+  <a ref-type="bibr" rid="CR6" href="#CR6">6</a>]. Scientific workflows represent an abstraction that hides the complexity of the involved computing and data infrastructures. They are often composed of control and data flow statements and rules which perform the analysis required to achieve the intended experiment. A typical scientific workflow is composed of one or more distinct tasks (often termed as 
+  <span class="italic">jobs).</span> Each of these jobs performs a specific function and contributes to the overall goal of the workflow e.g., a single point energy, frequency calculation, etc. An interesting and emerging trend in workflow development is to orchestrate workflows from one or more sub-workflows, i.e. individual jobs may be workflows designed to achieve a specific function. Such composite workflows are termed as 
+  <span class="italic">meta</span>-
+  <span class="italic">workflows</span> [
+  <a ref-type="bibr" rid="CR7" href="#CR7">7</a>–
+  <a ref-type="bibr" rid="CR9" href="#CR9">9</a>] and are envisaged to use existing workflows as components of the meta-workflow for improving their development and enabling their reusability. With respect to reusing multiple workflows to achieve a more complex task, terms such as 
+  <span class="italic">nested workflows</span> [
+  <a ref-type="bibr" rid="CR10" href="#CR10">10</a>] and 
+  <span class="italic">embedded workflows</span> [
+  <a ref-type="bibr" rid="CR11" href="#CR11">11</a>] have also been used. However, these refer to sub workflows that are collated to orchestrate meta-workflows. The development and use of meta-workflows is facilitated by repositories such as [
+  <a ref-type="bibr" rid="CR12" href="#CR12">12</a>–
+  <a ref-type="bibr" rid="CR14" href="#CR14">14</a>] which aim to store and share scientific workflows. The existence and flexibility of such repositories enables workflow sharing to wider scientific communities thereby facilitating development of meta-workflows to achieve modelling complex scientific problems via workflows. Meta-workflows engage complex orchestration of applications, which may span across multiple domains. For such complex workflows the workflow nodes represent a combination of jobs and sub-workflows, which can host multiple tasks within them. However, there remain challenges in achieving widespread workflow sharing as different workflow repositories may choose different approaches to describe workflows leading to problems in sharing workflows across repositories.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Computational Chemistry covers a broad range of scientific challenges and consequently a multitude of methods and algorithms have been developed over the past decades. They can be subdivided into several sub-domains including Quantum Chemistry (QC), Molecular Dynamics (MD) and Molecular Docking. Within each sub-domain simulation protocols have emerged which can be considered to be good practice within the field. These sub-domains strongly differ in theoretical approaches, simulation codes and workflows. For example in docking and Molecular Dynamics, workflows have some longer tradition [
+  <a ref-type="bibr" rid="CR15" href="#CR15">15</a>–
+  <a ref-type="bibr" rid="CR17" href="#CR17">17</a>] than in other sub-domains. Within the MoSGrid Science Gateway [
+  <a ref-type="bibr" rid="CR18" href="#CR18">18</a>], which has adopted the WS-PGRADE workflow system [
+  <a ref-type="bibr" rid="CR19" href="#CR19">19</a>], workflows have been used extensively especially in the Docking and Molecular Dynamics domain contributing to facilitated job submission and output analysis. The concept of complex meta-workflows has been recently introduced into the Quantum Chemistry sub-domain. These workflows consist of workflows with a basic set of operations that can be re-used in different complex workflows [
+  <a ref-type="bibr" rid="CR1" href="#CR1">1</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Several production workflow systems have been developed in the last decade, which serve diverse user communities, follow different workflow concepts, support different workflow languages and are based on different workflow technologies. Examples are Dispel [
+  <a ref-type="bibr" rid="CR20" href="#CR20">20</a>], Galaxy [
+  <a ref-type="bibr" rid="CR21" href="#CR21">21</a>], Kepler [
+  <a ref-type="bibr" rid="CR22" href="#CR22">22</a>], KNIME [
+  <a ref-type="bibr" rid="CR23" href="#CR23">23</a>], Pegasus [
+  <a ref-type="bibr" rid="CR24" href="#CR24">24</a>], Swift [
+  <a ref-type="bibr" rid="CR25" href="#CR25">25</a>], Taverna [
+  <a ref-type="bibr" rid="CR26" href="#CR26">26</a>] and WS-PGRADE [
+  <a ref-type="bibr" rid="CR27" href="#CR27">27</a>]. While all enable scientific workflow management, Galaxy, Kepler, KNIME, Taverna, and WS-PGRADE are widely used in the Computational Chemistry community.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">WS-PGRADE is a flexible web-based user interface of the gUSE scientific gateway framework. It is built on the Liferay portal framework [
+  <a ref-type="bibr" rid="CR28" href="#CR28">28</a>], which allows easily extending WS-PGRADE’s user interface for domain-specific features via so-called portlets and needs only installation on the server side while users can access all features via a web browser. WS-PGRADE offers workflow management features including editing, configuring, submitting and monitoring workflows plus a repository for storing workflows. This repository enables users to share workflows and to import or export workflows from and to other WS-PGRADE portals. Besides the workflow repository in WS-PGRADE, other related repositories have been implemented with complimentary features. The SCI-BUS Portlet Repository [
+  <a ref-type="bibr" rid="CR29" href="#CR29">29</a>] has been developed to share portlets and the available user interface features provided by such extensions. The SHIWA Workflow Repository [
+  <a ref-type="bibr" rid="CR12" href="#CR12">12</a>] follows a workflow-driven approach and allows sharing workflows between major workflow platforms such as Galaxy, Kepler, Pegasus, Taverna, WS-PGRADE, etc. There are several science gateways based on the gUSE framework in the Computational Chemistry community for example the MoSGrid portal [
+  <a ref-type="bibr" rid="CR30" href="#CR30">30</a>], the AutoDock Portal [
+  <a ref-type="bibr" rid="CR31" href="#CR31">31</a>] as well as the AMC Docking Gateway [
+  <a ref-type="bibr" rid="CR32" href="#CR32">32</a>]. As above mentioned, MoSGrid supports the following three domains: Docking, Molecular Dynamics (MD) and Quantum Chemistry (QC), while the AutoDock Portal and the AMC Docking Gateway are concerned with leveraging AutoDock [
+  <a ref-type="bibr" rid="CR33" href="#CR33">33</a>] or AutoDock Vina [
+  <a ref-type="bibr" rid="CR34" href="#CR34">34</a>], respectively, for the Docking community. The latter portals apply pre-configured workflows similar to MoSGrid, whereas MoSGrid additionally applies the meta-workflow concept.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The KNIME workbench supports also the meta-workflow concept and enables users to easily orchestrate Computational Chemistry workflows via basic workflows in its repository. While its user interface is very intuitive, it needs installation on the user side. The KNIME Web Portal, which relieves users from the local installation, also gives access to the repository but does not possess all the features of the workbench such as reporting tools directly.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Taverna follows a similar approach compared to the KNIME workbench and requires local installations on the user’s computers. Taverna workflows can be shared in a web-based environment via the social platform myExperiment [
+  <a ref-type="bibr" rid="CR14" href="#CR14">14</a>]. The meta-workflow concept is not supported directly in Taverna but via the web-based solution Tavaxy [
+  <a ref-type="bibr" rid="CR7" href="#CR7">7</a>]. This workflow system has been especially created to implement the meta-workflow concept via featuring to connect Taverna and Galaxy workflows with each other and submit them. Galaxy workflows can be additionally edited in Tavaxy, while Taverna workflows can be simply re-used but not changed. Galaxy as widely used portal in the biomedical community offers also a web-based repository for sharing workflows but lacks the support of the meta-workflow concept. Further workflow solutions tailored to the Computational Chemistry community include Kepler, PyADF [
+  <a ref-type="bibr" rid="CR35" href="#CR35">35</a>] and JACOB [
+  <a ref-type="bibr" rid="CR36" href="#CR36">36</a>]. They are highly flexible and apply cutting edge technologies such as RESTful APIs. While the meta-workflow concept is not directly supported out of the box, they can be extended to support it. Such solutions necessitate programming skills on the users’ side though.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our focus here is to investigate the challenges encountered in developing and using complex meta-workflows. In particular, we make the following major contributions:
+  <div list-type="bullet" class="list">
+   <div class="list-item">
+    <p>Formal definitions for atomic workflows have been formulated to facilitate their understanding and reuse by addressing challenges in workflow sharing</p>
+   </div>
+   <div class="list-item">
+    <p>A template-based approach to create complex meta-workflows has been presented along with its formal representation</p>
+   </div>
+   <div class="list-item">
+    <p>Use cases from quantum chemistry workflows have been included which represent successful demonstrations of the concepts and technologies presented herein.</p>
+   </div>
+  </div>
+ </p>
+</sec>

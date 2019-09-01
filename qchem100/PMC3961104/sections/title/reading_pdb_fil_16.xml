@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Reading PDB files</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">While sampling and conformational scanning, etc., are efficient ways to generate new peptide conformations, it can be necessary to extract information about the conformation of a specific protein structure, usually given in PDB format. FragBuilder implements functionality to extract information about the amino acid sequence and dihedral angles from a structure in a PDB formatted file, which can then be stored or passed on in the program, for instance to methods in the 
+  <span class="monospace">Peptide</span> class. This is carried out via the 
+  <span class="monospace">fragbuilder.PDB</span> class which creates an object from a PDB file and offers methods to read the relevant information.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The following code example illustrates the basic usage of the 
+  <span class="monospace">fragbuilder.PDB</span> module, and will print the amino acid type and dihedral angles of residue number 10 in the PDB file 
+  <span class="monospace">"structure.pdb"</span>:
+ </p>
+ <div class="preformat" xmlns="http://www.w3.org/1999/xhtml">from fragbuilder import PDB pdbfile = PDB("structure.pdb") i = 10 # 
+  <span class="italic">Residue number 10 in this example</span> print pdbfile.get_resname(i) print pdbfile.get_bb_angles(i) print pdbfile.get_chi_angles(i)
+ </div>
+</sec>

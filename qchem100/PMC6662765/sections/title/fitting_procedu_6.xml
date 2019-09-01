@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fitting procedure and the computed molecular movie</div>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">The initial-state distribution in the quantum-state selected OCS sample as well as the interaction volume with the alignment and probe lasers were not known a priori and used as fitting parameters. For each set of parameters the TDSE was solved and the 2D projection of the rotational density, averaged over the initial-state distribution and the interaction volume of the pump and probe lasers, was carried out. The aforementioned expansion in terms of Legendre polynomials was realised for the experimental and simulated angular distributions and the best fit was determined through least squares minimisation, see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. Taking into account the eight lowest even moments of the angular distribution allowed to precisely reproduce the experimental angular distribution. The results for the first four moments are shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>; the full set is given in Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> as well as the optimal fitting parameters in Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>. The overall agreement between experiment and theory is excellent for all moments. Before the onset of the second pulse, centred around 
+  <span class="italic">t</span> = 38.1 ps, the oscillatory structure in all moments is fairly slow compared to later times, which reflects the correspondingly small number of interfering states in the wavepacket before the second pulse, and the large number thereafter.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Decomposition of angular distributions into their moments. 
+     <span class="bold">a</span> Comparison of the decomposition of the experimental and theoretical angular distributions in terms of Legendre polynomials. 
+     <span class="bold">b</span> Simulated and experimental angular-distribution VMI images for selected times; the radial distributions in the simulations are extracted from the experimental distribution at 120.78 ps, see text for details
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11122_Fig2_HTML" id="d29e820" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">Theoretical images, computed for the best fit parameters, are shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>; a full movie is provided as Supplementary Movie 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>. The theoretical results are in excellent agreement with the measured ion-momentum angular distributions at all times, see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>, and prove that we were able to fully characterise the 3D rotational wavepacket with the amplitudes and phases of all rotational states included.
+ </p>
+</sec>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+ <p content-type="toc-graphic">
+  <div xlink:href="oc-2017-00586m_0004" id="ab-tgr1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p>Automatic differentiation (AD) is a powerful tool that allows calculating derivatives of implemented algorithms with respect to all of their parameters up to machine precision, without the need to explicitly add any additional functions. Thus, AD has great potential in quantum chemistry, where gradients are omnipresent but also difficult to obtain, and researchers typically spend a considerable amount of time finding suitable analytical forms when implementing derivatives. Here, we demonstrate that AD can be used to compute gradients with respect to any parameter throughout a complete quantum chemistry method. We present 
+  <span class="italic">DiffiQult</span>, a Hartree–Fock implementation, entirely differentiated with the use of AD tools. 
+  <span class="italic">DiffiQult</span> is a software package written in plain Python with minimal deviation from standard code which illustrates the capability of AD to save human effort and time in implementations of exact gradients in quantum chemistry. We leverage the obtained gradients to optimize the parameters of one-particle basis sets in the context of the floating Gaussian framework.
+ </p>
+</div>

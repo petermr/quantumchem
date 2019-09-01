@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Preparation of Multiconfigurational Wave Functions on Quantum Registers</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As discussed above, the wave function of the molecules having intermediate diradical characters have multiconfigurational characters, and in such cases neither RHF nor CSF has sufficiently large overlap with the full-CI root. The construction of the multiconfigurational wave function by making an appropriate linear combination of closed shell and open shell wave functions is a straightforward solution to improve the overlap. For the construction of multiconfigurational wave functions, a method to estimate expansion coefficients of individual Slater determinants (or CSFs) is required. In this study, we utilized diradical characters for this purpose. From the definitions of diradical characters given in 
+  <a rid="sec2.1" ref-type="other" href="#sec2.1">Section 
+   <a rid="sec2.1" ref-type="other" href="#sec2.1">2.1</a>
+  </a>, we can calculate 
+  <span class="italic">y
+   <sub>i</sub>
+  </span> from approximated wave functions like UHF and use them to estimate the weights of closed shell and open shell electronic configurations in the CI expansion.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our strategy is as follows: (I) perform a BS-UHF calculation, (II) diagonalize one-particle density matrix to generate natural orbitals, (III) determine spin-projected diradical characters 
+  <span class="italic">y
+   <sub>i</sub>
+  </span> using 
+  <a rid="eq4" ref-type="disp-formula" href="#eq4">eq 
+   <a rid="eq4" ref-type="disp-formula" href="#eq4">4</a>
+  </a>, and (IV) construct a multiconfigurational wave function using an assumption given in 
+  <a rid="eq6" ref-type="disp-formula" href="#eq6">eq 
+   <a rid="eq6" ref-type="disp-formula" href="#eq6">6</a>
+  </a>:
+  <div id="eq6" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m006" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">6</span>
+  </div>Here, |φ(CSS)⟩ and |φ(OSS)⟩ represent closed shell singlet and open shell singlet wave functions, respectively. By using natural orbitals as the basis of the wave function expansion and applying 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a>, the following equation can be obtained.
+  <div id="eq7" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m007" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">7</span>
+  </div>
+  <a rid="eq7" ref-type="disp-formula" href="#eq7">Equation 
+   <a rid="eq7" ref-type="disp-formula" href="#eq7">7</a>
+  </a> is equivalent to the definition of diradical characters in the perfect pairing double excitation CI scheme. For tetraradical systems, the wave function is approximated as follows:
+  <div id="eq8" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m008" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">8</span>
+  </div>Here, |φ (Diradical 0)⟩ stands for the configuration having an open shell singlet character for HONO–LUNO pair whereas (HONO – 1)–(LUNO + 1) has a closed shell singlet character. In a similar way to 
+  <a rid="eq8" ref-type="disp-formula" href="#eq8">eq 
+   <a rid="eq8" ref-type="disp-formula" href="#eq8">8</a>
+  </a>, multiconfigurational wave functions for hexa- and higher-radical characters can be readily constructed.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A quantum circuit to prepare the multiconfigurational wave function is illustrated in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>. In 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>, each horizontal line corresponds to a qubit, and quantum gates depicted by squares, circles, and vertical lines are applied in left-to-right order. The circuit contains ancilla qubits, which keep information on diradical characters 
+  <span class="italic">y
+   <sub>i</sub>
+  </span>, in addition to 
+  <span class="italic">N</span>
+  <sub>orb</sub> of qubits used for DM. The number of the ancilla qubits equals that of the diradical characters considered in the wave function preparation.
+ </p>
+ <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>A quantum circuit for the construction of multiconfigurational wave functions on quantum registers. (A) The quantum circuit consists of the following steps as indicated by roman numbers and background colors. (i) Generation of the RHF configuration, (ii) ancilla qubit rotation with an angle 
+    <span class="italic">θ
+     <sub>i</sub>
+    </span>, (iii) diradical configuration generations, (iv) tetraradical configuration generations, (v) hexaradical configuration generations, and so on. Detailed quantum circuits for the di-, and tetraradical configuration generations are given in parts B and C, respectively. We draw the full circles if the controlled operation is applied when the control qubit is |1⟩. Wave functions of more extended spin systems can be constructed systematically expanding the circuit. (B) Quantum circuit for the preparation of diradical configurations specified 2 in part A. (C) Quantum circuit for the preparation of tetraradical configurations specified 4 in part A.
+   </p>
+  </div>
+  <div xlink:href="oc-2018-00788n_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quantum circuit starts RHF configuration preparation (specified i in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>A). This step consists of NOT operations (denoted by X) to the qubits representing occupied orbitals to change the qubit states from |0⟩ to |1⟩. The second step (ii) is rotations applied to the ancilla qubits with the rotating angle 
+  <span class="italic">θ
+   <sub>i</sub>
+  </span> depending on diradical characters 
+  <span class="italic">y
+   <sub>i</sub>
+  </span>:
+  <div id="eq9" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m009" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">9</span>
+  </div>
+  <div id="eq10" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m010" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">10</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The third and following steps, iii–v, and so on, are sequential generations of di-, tetra-, hexa-, and higher-radical configurations conditional to ancilla qubits. These steps generate open shell electronic configurations if the corresponding ancilla qubits are in state |1⟩ and adopt no operations if the ancillas are the |0⟩ state. These conditional operations produce linear combinations of open shell and closed shell electronic configurations as given in 
+  <a rid="eq6" ref-type="disp-formula" href="#eq6">eq 
+   <a rid="eq6" ref-type="disp-formula" href="#eq6">6</a>
+  </a>. The diradical wave function given in 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a> can be generated using a circuit given in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>B, by analogy with Bell state preparations. The diradical wave function preparation in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>B consists of two single-qubit rotations and following three CNOT operations. The first three quantum gates generate the linear combination of states in which LUNO + 
+  <span class="italic">i</span> is doubly occupied and unoccupied. The subsequent two CNOT gates conditionally change the occupation number of the HONO – 
+  <span class="italic">i</span> orbital from doubly occupied to unoccupied, if the LUNO + 
+  <span class="italic">i</span> is doubly occupied. The wave function after diradical configuration generations specified iii in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>A is given in 
+  <a rid="eq11" ref-type="disp-formula" href="#eq11">eq 
+   <a rid="eq11" ref-type="disp-formula" href="#eq11">11</a>
+  </a>.
+  <div id="eq11" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m011" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">11</span>
+  </div>Upon comparison of 
+  <a rid="eq8" ref-type="disp-formula" href="#eq8">eqs 
+   <a rid="eq8" ref-type="disp-formula" href="#eq8">8</a>
+  </a> and 
+  <a rid="eq11" ref-type="disp-formula" href="#eq11">11</a>, the wave function component corresponding to tetraradical configuration at this stage is given in 
+  <a rid="eq12" ref-type="disp-formula" href="#eq12">eq 
+   <a rid="eq12" ref-type="disp-formula" href="#eq12">12</a>
+  </a>.
+  <div id="eq12" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m012" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">12</span>
+  </div>The genuine tetraradical wave function we want to construct is given in 
+  <a rid="eq13" ref-type="disp-formula" href="#eq13">eq 
+   <a rid="eq13" ref-type="disp-formula" href="#eq13">13</a>
+  </a>.
+  <div id="eq13" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m013" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">13</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To generate the configuration in 
+  <a rid="eq13" ref-type="disp-formula" href="#eq13">eq 
+   <a rid="eq13" ref-type="disp-formula" href="#eq13">13</a>
+  </a> from that in 
+  <a rid="eq12" ref-type="disp-formula" href="#eq12">eq 
+   <a rid="eq12" ref-type="disp-formula" href="#eq12">12</a>
+  </a>, we introduce another ancilla qubit and perform two Fredkin (controlled-SWAP) gates with conditionally interchange occupation of the spin-β electron between HONO – 
+  <span class="italic">i</span> and LUNO + 
+  <span class="italic">i</span> as illustrated in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>C. In 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>C black circles and crosses represent control and target qubits, respectively, and the SWAP operations between two target qubits are performed if the control qubit is in the |1⟩ state. These operations generate, for example, |ααββ⟩ from |2200⟩. The constructions of the hexaradical configuration specified v in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>A and higher-radical configurations can be also achieved by introducing ancillas and applying Fredkin gates.
+ </p>
+</sec>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum computing and quantum information processing (QC/QIP) is one of the most innovative research fields not only in computer and information sciences, but also in interdisciplinary areas among physics, mathematics, chemistry, materials science, and so on. The appearance of a quantum computer processor consisting of 72 quantum bits (qubits) from Google LLC reminds us that it is close to “quantum supremacy”,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>
+  </span> and intercontinental quantum communications between China and Austria have been demonstrated very recently.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref2" href="#ref2">2</a>
+  </span> Among the diverse subjects in QC/QIP, quantum simulation of electronic structure problems of atoms and molecules is one of the most intensively studied realms.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>−
+   <a ref-type="bibr" rid="ref53" href="#ref53">53</a>
+  </span> Studies on quantum simulations of quantum chemical objects can date back to the first proposal of quantum computers by Feynman in the early 1980s.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref54" href="#ref54">54</a>
+  </span> Feynman suggested that the computer built of quantum mechanical elements obeying quantum mechanical laws has an ability to simulate other quantum systems efficiently. Quantum computers use qubits as the minimum unit of information.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref55" href="#ref55">55</a>
+  </span> Qubits provide any arbitrary superposition of their two basis states; 
+  <span class="italic">c</span>
+  <sub>0</sub>|0⟩ + 
+  <span class="italic">c</span>
+  <sub>1</sub>|1⟩, where |0⟩ and |1⟩ represent the bases of the quantum states in the Dirac’s bra-ket notation, while classical bits can have only one of two values: either 0 or 1. From the viewpoint of practical applications of quantum computing, those to quantum chemistry are of significant importance, and the implementation of quantum algorithms to empower quantum chemistry is the focus of the applications in QC/QIP.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An approach to calculate the full configuration interaction (full-CI) energy of atoms and molecules, which is the variationally best possible energy within a given basis set, was proposed by Aspuru-Guzik and co-workers in 2005,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+  </span> and the first experimental demonstrations of the full-CI/STO-3G calculations of the H
+  <sub>2</sub> molecule were reported by using photonic and NMR quantum computers in 2010.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref8" href="#ref8">8</a>,
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>
+  </span> Computational time of the full-CI on classical computers scales exponentially against the system size, and it is an intractable problem to deal with even small molecules; however, time scaling becomes polynomial on quantum computers. The approach is based on the quantum phase estimation algorithm (QPEA) proposed by Abrams and Lloyd,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref56" href="#ref56">56</a>
+  </span> and it relies on projective measurements with an electronic Hamiltonian 
+  <span class="italic">H</span>: Measurement projects an initially prepared quantum state onto the eigenstate of a given Hamiltonian, and the probability to obtain a particular outcome is proportional to the square of overlap between the prepared wave function and corresponding eigenfunction. In this context, importance of the preparation of good initial guess wave functions having sufficiently large overlap with the particular eigenstate cannot be overemphasized.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The most important electronic state in chemistry is an electronic ground state. A Hartree–Fock (HF) wave function |Ψ
+  <sub>HF</sub>⟩, which is approximated to the single Slater determinant, is usually a good initial guess for typical closed shell singlet molecules and high-spin open shell systems carrying no unpaired electrons of spin-β, around their equilibrium geometry. However, it is well-known that the restricted Hartree–Fock (RHF) method cannot describe potential energy curve associated with covalent bond cleavage correctly. Single bond dissociation creates a spin-singlet diradical, in which the wave function is represented by a linear combination of two Slater determinants.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref59" href="#ref59">59</a>
+  </span> The number of Slater determinants required to represent a low-spin multiradical wave function increases exponentially against the number of unpaired electrons and those of spin-β,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref60" href="#ref60">60</a>
+  </span> and the overlap between the Slater determinant and the exact wave function decays exponentially. This means that we have to carry out QPEA experiments an exponential number of times to capture a correct ground state by using a single Slater determinant as the initial guess, which spoils advantages of quantum speedup. The overlap between the initial guess and exact wave functions can be improved systematically by adopting more sophisticated wave functions like complete active space self-consistent field (CASSCF)
+  <span class="sup">
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> and adaptive sampling CI (ASCI),
+  <span class="sup">
+   <a ref-type="bibr" rid="ref45" href="#ref45">45</a>
+  </span> or by using adiabatic state preparation (ASP) techniques
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>,
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>,
+   <a ref-type="bibr" rid="ref44" href="#ref44">44</a>
+  </span> starting from HF wave functions. ASP can generate a full-CI wave function starting from a HF wave function based on the adiabatic theorem, by slowly changing the system Hamiltonian from HF to full-CI. However, these approaches require time-consuming calculations on classical and quantum computers, respectively, and therefore, it is preferable to develop theoretical approaches to improve wave functions without performing post-HF calculations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Recently, we investigated the “overlap catastrophe” in open shell systems based on the spin symmetry.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref49" href="#ref49">49</a>,
+   <a ref-type="bibr" rid="ref50" href="#ref50">50</a>
+  </span> Origin of the overlap decay in open shell systems is the symmetry requirement from 
+  <span class="bold">S</span>
+  <span class="sup">2</span> operators. In previous papers, we reported that the wave function consisting of one spin symmetry-adapted configuration state function (CSF) has large overlap with the full-CI wave function of the ground state in open shell molecules, and proposed quantum circuits to prepare CSF on quantum registers in polynomial time.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref49" href="#ref49">49</a>,
+   <a ref-type="bibr" rid="ref50" href="#ref50">50</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">CSF is a linear combination of Slater determinants to become an eigenfunction of the 
+  <span class="bold">S</span>
+  <span class="sup">2</span> operator (hereafter denoted as a spin eigenfunction).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref60" href="#ref60">60</a>
+  </span> By making use of spin eigenfunctions one issue on the “overlap catastrophe” inherent in open shell systems can be solved. However, the previous study focused on single CSF’s, and it is just a starting point. In fact, as discussed below in detail, the overlap with the exact wave function of the ground state and one CSF as well as RHF becomes small at intermediate bond regions. It is highly desirable to develop a method to construct multiconfigurational wave functions without performing time-consuming computations on both classical and quantum computers. In this work, we propose a method to construct multiconfigurational wave functions having large overlap with the exact ground state on quantum registers, by making use of diradical characters
+  <span class="sup">
+   <a ref-type="bibr" rid="ref61" href="#ref61">61</a>−
+   <a ref-type="bibr" rid="ref64" href="#ref64">64</a>
+  </span> calculated from spin-unrestricted HF (UHF) wave functions with spin projections. Importantly, a diradical character is a measure of open shell nature, and it can be calculated from the occupation number of natural orbitals. Thus, we utilize diradical characters to estimate weights of open shell electronic configurations. Applications of the proposed method to covalent bond dissociations in H
+  <sub>2</sub>, ethane (C
+  <sub>2</sub>H
+  <sub>6</sub>), ethylene (C
+  <sub>2</sub>H
+  <sub>4</sub>), and acetylene (C
+  <sub>2</sub>H
+  <sub>2</sub>), and the electronic ground state of phenylene-1,4-dinitrene as an important chemical entity, will be given.
+ </p>
+</sec>

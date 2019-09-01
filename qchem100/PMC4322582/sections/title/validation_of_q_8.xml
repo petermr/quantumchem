@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Validation of quantum chemistry results</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">All 134k molecules have been modeled using B3LYP/6-31G(2df,p) based DFT. Previously, B3LYP has been validated for several subsets, containing up to a few hundred small molecules. These benchmarks are of limited use since they are not necessarily sufficiently representative for gauging B3LYP’s performance in general. In the case of DFT’s systematic errors this issue is particularly pertinent
+  <span class="sup">
+   <a ref-type="bibr" rid="b22" href="#b22">22</a>
+  </span>. Experimental data assembled in the NIST database is very sparse by comparison to our 134k organic molecules made up of CHONF atoms. Consequently, we have performed additional benchmark calculations for a subset of 100 randomly selected molecules using high level theories G4MP2
+  <span class="sup">
+   <a ref-type="bibr" rid="b12" href="#b12">12</a>
+  </span>, G4
+  <span class="sup">
+   <a ref-type="bibr" rid="b23" href="#b23">23</a>
+  </span>, and CBS-QB3
+  <span class="sup">
+   <a ref-type="bibr" rid="b24" href="#b24">24</a>,
+   <a ref-type="bibr" rid="b25" href="#b25">25</a>
+  </span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The predictive power of the G4MP2 method is widely considered to be on par with experimental uncertainties. For example, comparison to the G3/05 test set
+  <span class="sup">
+   <a ref-type="bibr" rid="b26" href="#b26">26</a>,
+   <a ref-type="bibr" rid="b27" href="#b27">27</a>
+  </span> with 454 experimental energies (including enthalpies of formation, ionization potentials, electron affinities, proton affinities, and hydrogen bond energies) of small molecules yields MAE, and RMSE of 1.0, and 1.5 kcal/mol, respectively
+  <span class="sup">
+   <a ref-type="bibr" rid="b12" href="#b12">12</a>
+  </span>. For the same properties and molecules, the slightly more accurate, and considerably more expensive method G4
+  <span class="sup">
+   <a ref-type="bibr" rid="b12" href="#b12">12</a>,
+   <a ref-type="bibr" rid="b23" href="#b23">23</a>
+  </span> yields errors of MAE=0.8 kcal/mol, RMSE=1.2 kcal/mol. G4MP2 has been shown to deviate only by 1.4 kcal/mol from 261 bond dissociation enthalpies computed with the highly accurate W1w composite procedure
+  <span class="sup">
+   <a ref-type="bibr" rid="b28" href="#b28">28</a>,
+   <a ref-type="bibr" rid="b29" href="#b29">29</a>
+  </span> for the BDE261 data set
+  <span class="sup">
+   <a ref-type="bibr" rid="b28" href="#b28">28</a>
+  </span>. Consequently, we believe these calculations to be sufficiently suitable to validate the quality of the B3LYP energetics predictions. Various resulting deviations are summarized in 
+  <a ref-type="table" rid="t1" href="#t1">Table 1</a>. For the 100 molecules, the mean absolute error of B3LYP heats of atomization amounts to no more than 5 kcal/mol.
+ </p>
+</sec>

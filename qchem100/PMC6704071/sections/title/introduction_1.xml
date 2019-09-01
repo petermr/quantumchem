@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par2" xmlns="http://www.w3.org/1999/xhtml">Exploring viable route and device architecture to create, manipulate and detect spin-polarized current through 
+  <span class="italic">all-electric means</span> has received considerable attention over the last decade
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>. Spin-orbit coupling (SOC) offers numerous interesting ways in this direction in variety of device architectures made from two-dimensional electron gas (2DEG) systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Among others quantum point contacts (QPCs) have shown promising applications for spin based devices
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>–
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>.
+ </p>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">For more than two decades, conductance anomalies have been observed experimentally in QPCs at non-integer multiples of 
+  <span class="italic">G</span>
+  <sub>0</sub> (=
+  <span class="italic">2e</span>
+  <span class="sup">2</span>
+  <span class="italic">/h</span>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>–
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>. Thomas 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>
+  </span> suggested that the 0.7
+  <span class="italic">G</span>
+  <sub>0</sub> conductance anomaly may be due to a spontaneous ferromagnetic spin polarization in the QPC constriction. Theoretical explanations for the conductance anomalies include the onset of spontaneous spin polarization in the narrow portion of the QPC as a result of the exchange-correlation interaction
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>–
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span>, the presence of quasi-bound states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span> being formed in the QPC constriction, and the Kondo effect
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span>, among others
+  <span class="sup">
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>–
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">Crook 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span> observed a 0.5G
+  <sub>o</sub> conductance plateau in a symmetric GaAs QPC with symmetrically biased top split-gates, which they also attributed to the onset of spontaneous spin-polarization. The plateau was found to be more pronounced when the QPC potential energy landscape was made 
+  <span class="italic">symmetric</span> with the proximity of a low-temperature scanning probe. Over the last few years, spin polarization in a QPC channel and the accompanying 0.5G
+  <sub>o</sub> conductance plateau have been reported by several groups when an 
+  <span class="italic">asymmetric bias</span> is applied between the top or in-plane side-gates (SGs) of a QPC. The 0.5G
+  <sub>o</sub> conductance plateau has been found in QPCs made of different materials (GaAs and InAs) with 2DEG of different electron mobility, and with a wide variety of heterostructure design (including suspended QPCs) and QPC dimensions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">Specifically, over the last decade, we have experimentally observed (in both InAs and GaAs 2DEG based QPCs) conductance plateaus around 0.5G
+  <sub>0</sub> by tuning the electrostatic confining potential of the QPC constriction using an asymmetric bias on its side-gates (SGs)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>–
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span>. We argued that onset of such a conductance anomaly constitutes indirect evidence of the creation of spontaneous spin-polarized current in the narrow portion of the QPCs. It was shown that lateral spin-orbit coupling (LSOC), due to the lateral in-plane electric field of the confining potential of the QPCs with in-plane SGs, is an efficient way to generate a strongly spin-polarized current by 
+  <span class="italic">purely electrical means</span>
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>–
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span>. Furthermore, we used Non-Equilibrium Green’s Function (NEGF) analysis to model both InAs and GaAs QPCs with SGs in the presence of LSOC. Assuming a parabolic dispersion relation for the conduction band in the InAs QPC channel, the following three conditions were found to be 
+  <span class="italic">sufficient</span> to create a strong spin polarization
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>: (1) an asymmetric lateral confinement in the narrow portion of the QPC, (2) a LSOC due to the lateral confining potential of the QPC and (3) a strong electron-electron (e-e) interaction. More importantly, NEGF simulations suggest that a very strong SOC is not paramount for achieving a strong spin polarization. In fact, we have observed 0.5G
+  <sub>0</sub> conductance plateaus in both GaAs and InAs QPCs with very different LSOC strength
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>,
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">The effects of LSOC in a one-dimensional asymmetrically biased quantum wire were studied by Karlsson 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span> using a Hartree–Fock method. They showed that spin polarization can be generated by LSOC in the presence of a non-zero source-to-drain bias. The latter was shown to be due to either numerical noise mimicking the effects of a random magnetic field generated by the metallic contacts to the device or due to a random background magnetic field such as the earth magnetic field. Karlsson 
+  <span class="italic">et al</span>. showed that electrons spontaneously form spin texture in the quantum wire with an associated finite spin polarization as a result of e-e interaction. They also found that the spin polarization direction is random at zero source-drain bias and that LSOC influences the spin rows orientation only when a non-zero source-to-drain bias is applied across the quantum wire.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Recently, Chuang 
+  <span class="italic">et al</span>. achieved near 100% spin injection and detection in an all-electric AlGaAs/GaAs spin valve made of asymmetrically biased QPCs with top gates
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. Chuang 
+  <span class="italic">et al</span>. argued that the asymmetry in LSOC in their devices is ultimately responsible for the efficient spin injection and detection. Very recently, Zhdanov 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> and Pokabov 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span> performed conductance measurements on unsuspended and suspended GaAs QPCs with in-plane SGs and the 0.5G
+  <sub>o</sub> conductance plateau was only observed for the latter. They argued that in their suspended QPCs spin transport mechanism was also governed by LSOC and that the onset of 0.5G
+  <sub>o</sub> plateau in asymmetrically biased QPCs is due to enhanced e-e interaction, when the QPCs were suspended. These observations further support the argument that it is the strong e-e interaction which is instrumental for the appearance of 0.5G
+  <sub>o</sub> plateau. These reports further suggest that the onset of half-integer conductance plateau can be treated as indirect evidence of spin-polarization in QPC constrictions.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">To date, only a few groups have reported theoretical and experimental investigations of the presence of hysteresis in electrical characteristics of QPCs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>,
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>–
+   <a ref-type="bibr" rid="CR61" href="#CR61">61</a>
+  </span>. Shailos 
+  <span class="italic">et al</span>. studied conventional QPC devices with an additional gate whose purpose was to modify the electron density on one side of the device and break the QPC symmetry in a controlled manner
+  <span class="sup">
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>
+  </span>. As the bias on this additional finger gate was varied, reproducible conductance anomalies below the normal conductance plateau G
+  <sub>o</sub> were found. In addition, alterations to the normal conductance plateaus were also observed. Furthermore, hysteresis was observed in the conductance characteristics while varying the split-gate voltage in opposite directions. Starting with a density functional theory, Ihnatenska and Zozoulenko calculated the conductance of a typical QPC in the presence of a symmetric potential applied to its split-gates
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>. The latter is responsible for lifting the spin degeneracy of the conductance channels and a broad conductance plateau near 0.5G
+  <sub>0</sub>. Their calculations also predict the onset of hysteresis in the conductance curves when forward and reverse sweeps are applied to the QPC split-gates – a feature attributed to the presence of quasi bound states in the narrow portion of the QPC. Finally, hysteresis in the conductance characteristics of QPCs can be generated by surface acoustic wave, as recently shown by Song 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+  </span>. The surface acoustic wave is responsible for a modification of surface state distribution on the QPC sidewalls which is ultimately responsible for the observed hysteresis
+  <span class="sup">
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+  </span>.
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">In the past, we observed hysteresis when sweeping the common mode bias, V
+  <sub>G</sub>, applied to the two in-plane SGs of asymmetrically biased GaAs QPC
+  <span class="sup">
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>,
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+  </span> in both directions. The hysteresis loops were found to be larger when the amount of bias asymmetry Δ
+  <span class="italic">V</span>
+  <sub>G</sub> between the SGs was increased and to be dependent on the Δ
+  <span class="italic">V</span>
+  <sub>G</sub> polarity. These results are in agreement with NEGF simulations which show that the conductance plots versus common gate voltage applied to a QPC SGs reveal the presence of single or multiple hysteresis loops when varying the QPC dimensions and biasing conditions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>,
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+  </span>. The following features were predicted by NEGF simulations: (a) hysteresis in the conductance plots is present only for sufficiently long QPCs and the e-e interaction in the channel must be strong enough; (b) The size of the hysteresis loops depends both on the polarity and magnitude of the asymmetric bias between the side gates, Δ
+  <span class="italic">V</span>
+  <sub>G</sub>, and also on the magnitude of the e-e interaction; (c) The hysteresis loops are sensitive to the presence of dangling bonds on the QPC sidewalls
+  <span class="sup">
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span>. We also used NEGF simulations to illustrate how to fine tune the location of the 0.5 G
+  <sub>0</sub> and the onset of hysteresis loops in four-gate QPCs when LSOC is present in the channel
+  <span class="sup">
+   <a ref-type="bibr" rid="CR60" href="#CR60">60</a>
+  </span>. The rich plethora and sensitivity of the hysteresis loops is a fingerprint of the wide variety of metastable spin textures accompanying the onset of a net spin polarization and the appearance of conductance anomalies in the QPC constriction
+  <span class="sup">
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>,
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span>. The observation of hysteresis loops is yet another indirect evidence for the onset of spontaneous spin polarization in the QPC constriction. Previously, we have shown that the observed hysteresis loops depend on the sweep rate of the common mode potential applied to the QPC SGs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>,
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span>.
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">In a recent study
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span> using InAs QPCs with identical lithographic width but longer channel length, we found that there is approximately a fourfold increase in the range of common sweep voltage over which the 0.5G
+  <sub>0</sub> conductance plateau is observed when the QPC aspect ratio (ratio of lithographic length over lithographic width of the narrow portion of the structure) increases by a factor of 3. NEGF simulations indicate that the observation of 0.5G
+  <sub>0</sub> conductance plateau over a larger range of common sweep voltage is due to an increased importance of the effects of e-e interactions in QPC devices with larger aspect ratio (longer length for fixed width)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>.
+ </p>
+</sec>

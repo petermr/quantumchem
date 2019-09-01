@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Light-matter interaction between an optical mode and a quantum emitter is accurately described in terms of the cavity quantum electrodynamics (cQED) formalism
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>. The interaction can be weak or strong, depending on circumstances, leading to drastically different behavior. The regime of strong light-matter coupling, unlike its weak counterpart, leads to formation of hybrid cavity-emitter eigenmodes manifested in coherent energy exchange between the subsystems occurring on timescales that are much faster than the corresponding damping rates. Thus, the emitter and the cavity form a unified light-matter hybrid polariton, whose properties, including spontaneous emission and chemical potential, can be tuned
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>–
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Because of their compositional nature, polaritons are useful for photon–photon interactions, which lead to remarkable nonlinear and quantum optical phenomena, including photon blockade and Bose-Einstein condensation of exciton polaritons
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>–
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span>. On the other hand, strong light-matter coupling may lead to changes in emitter properties, including photochemical rates
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>–
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span> and exciton transport
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>,
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">Traditionally cavity-exciton polaritons have been realized in atomic or solid state systems utilizing high quality-factor optical cavities at low temperatures
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>. Polaritonic behavior associated with “dressing” of the emitter by a cavity field is usually captured by traditional quantum optical approaches such as Jaynes–Cummings or Dicke models
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>–
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>,
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>. However, these quantum optical formalisms treat matter in an extremely simplified manner, that is, as a two-level system, leading to oversimplifications and inconsistencies in the description of the material subpart.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">Advanced theoretical techniques developed recently allow for more sophisticated effects including, for example, multiple electronic resonances, accounting for atomic vibrations, and light-matter interactions beyond the point-dipole approximation. Significant progress along these lines has been achieved by several groups using various quantum optical and quantum chemistry methods
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>–
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>–
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span>. However, typically either molecules or electromagnetic fields in these approaches are treated in a simplified manner.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Plasmon-molecule interactions can be modeled computationally using density-functional theory (DFT)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span> and/or time-dependent density-functional theory (TDDFT)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span> approaches, thanks to the relatively small number of atoms involved in these interactions. Here, we model the entire plasmon-exciton system by TDDFT, which allows the whole system to be treated on the same footing, enabling one to track effects related to modification of the matter subpart, which are inaccessible by purely quantum optical or classical electromagnetism methods. In fact, analytical and numerical quantum chemistry approaches, including DFT and TDDFT, have been successfully applied to study plasmon-molecule interactions, charge transfer, chemical enhancement and electromagnetic effects in surface-enhanced Raman scattering experiments
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>–
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. However, vacuum Rabi splitting and strong plasmon-molecule coupling have not been in the focus. Yet, many recent experimental observations cannot be easily explained with current theories
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>–
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>.
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">In response to the above, quantum electrodynamics density-functional theory (QED-DFT) has been developed recently
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, enabling the modeling of strong coupling between electromagnetic cavity modes and electronic excitations
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>. While the commonly-used TDDFT approaches with classical description of electric fields may not be able to describe the full range of quantum optical phenomena that QED-DFT aims at, we demonstrate in this paper that the cavity mode created by a localized surface plasmon resonance as well as its strong coupling with excitons can be described already within the standard TDDFT. In the following, we argue that theoretical predictions obtained at the nanometer scale may in fact be useful for understanding and modeling of more extended systems. We use TDDFT to study the optical response of aluminum (Al) nanoparticles composed of a few hundred atoms coupled with one to eight benzene molecules. Thereby we show that cavity quantum electrodynamics holds down to resonators on the order of a few cubic nanometers. In the case of an Al
+  <sub>201</sub> particle we observe a single-molecule coupling strength of 200 meV due to a very large vacuum field of 4.5 V · nm
+  <span class="sup">−1</span>, while for a large number of molecules, the molecules perturb the system increasing the mode volume and decreasing the per-molecule coupling strength. For larger Al
+  <sub>586</sub> and Al
+  <sub>1289</sub> nanoparticles the coupling strengths are smaller and follow well the 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sqrt N$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msqrt">
+      <span class="mi">N</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> dependence of coherent coupling with the number 
+  <span class="italic">N</span> of molecules.
+ </p>
+</sec>

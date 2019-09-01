@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The RM1 model for the lanthanides represents a significant improvement in the theoretical semiempirical modeling of lanthanide complexes, which started with the sparkle model in 1994 
+  <a rid="pone.0086376-deAndrade1" ref-type="bibr" href="#pone.0086376-deAndrade1">[18]</a>, 
+  <a rid="pone.0086376-deAndrade2" ref-type="bibr" href="#pone.0086376-deAndrade2">[19]</a> which and attained maturity with the introduction of Sparkle/AM1 in 2005 
+  <a rid="pone.0086376-Freire2" ref-type="bibr" href="#pone.0086376-Freire2">[23]</a>, and was extended to Sparkle/PM3 
+  <a rid="pone.0086376-Simas1" ref-type="bibr" href="#pone.0086376-Simas1">[31]</a>, 
+  <a rid="pone.0086376-Freire5" ref-type="bibr" href="#pone.0086376-Freire5">[32]</a>, Sparkle/PM6 
+  <a rid="pone.0086376-Freire6" ref-type="bibr" href="#pone.0086376-Freire6">[33]</a>, to Sparkle/PM7 
+  <a rid="pone.0086376-Dutra1" ref-type="bibr" href="#pone.0086376-Dutra1">[34]</a> and up to Sparkle/RM1 
+  <a rid="pone.0086376-Filho1" ref-type="bibr" href="#pone.0086376-Filho1">[35]</a>, the last two in 2013.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">There is, however, a cost associated with the improvement. The RM1 model for the lanthanides adds nine more orbitals per lanthanide to the calculation, whereas all sparkle models add none. Thus, for a single SCF calculation of a complex of about 60 atoms, for example, an RM1 model for the lanthanides calculation takes about twice the computing time of a Sparkle/RM1 calculation. Such cost can become even weightier if the molecular structure contains more than one lanthanide ion, as is usually the case of metal-organic frameworks. Since the performance of both Sparkle/RM1 and RM1 model for the lanthanides is essentially equivalent for Ln-Ln, Ln-O, and Ln-N, the user may still benefit from the speed of the sparkle models if the structure of interest contains only these types of bonds, as it takes place in the majority of cases.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In conclusion, via the introduction of a set of 5 d, 6 s, and 6 p semiempirical atomic orbitals, the RM1 model for the lanthanides thus extends the Sparkle Models’ capabilities of correctly describing Ln-Ln, Ln-O, and Ln-N distances, to other types of distances, such as Ln-C, Ln-S, Ln-P, Ln-Cl, and Ln-Br, while simultaneously improving the coordinating bond angles.</p>
+</sec>

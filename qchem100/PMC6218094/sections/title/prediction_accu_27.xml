@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Prediction accuracy, as measured using Pearson r coefficient, and average runtimes per molecular conformer for different quantum single point energy (SPE) model chemistries.</div>
+ <p>The accuracy measures is obtained from comparing the predicted 
+  <span class="italic">E</span>′
+  <span class="sup">
+   <span class="italic">m</span>
+  </span>(
+  <span class="italic">pH</span> = 7,
+  <span class="italic">I</span> = 0.25) values against available experimental data. Data corresponds to prediction accuracy on the G3 reaction category, which consists of reductions of carbonyls to amines. Mean runtime is calculated over all molecular conformers involved in the simulation of the G3 reaction set with available experimental data. As detailed in section 2.7 “Systematic model chemistry exploration to optimize prediction accuracy”, the SPE model chemistries were obtained from searching over a subspace of possible model chemistries generated from selecting a DFT (or wave function method), a basis set, an implicit solvent model, and a dispersion correction from a total set of: 10 different DFT functionals and 2 wave-function methods, 3 possible basis sets, the option of adding the Conductor-like Screening Model (COSMO) for implicit solvation, as well as the D3 dispersion correction. See Supplementary Dataset 5 for detailed model chemistry descriptions. The option of including or excluding DFT-D3 dispersion correction in the geometry optimization procedure was also considered.
+ </p>
+ <p>(TIF)</p>
+</div>

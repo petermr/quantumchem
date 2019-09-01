@@ -1,0 +1,2230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="se0020" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p id="pr0040" xmlns="http://www.w3.org/1999/xhtml">The system delineated above may be expressed by the Hamiltonian (
+  <div class="inline-formula">
+   <div id="M4" altimg="si28.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>):
+  <div id="fm0010" class="disp-formula">
+   <span class="label">(1)</span>
+   <div id="M5" altimg="si4.svg" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">H</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">H</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">V</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">m</span>
+       <span class="mi">p</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <span stretchy="false" class="mo">|</span>
+     <span class="mi">e</span>
+     <span stretchy="false" class="mo">|</span>
+     <span class="mi">F</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">V</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mi">o</span>
+       <span class="mi">i</span>
+       <span class="mi">s</span>
+       <span class="mi">e</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>
+  <div class="inline-formula">
+   <div id="M6" altimg="si5.svg" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">′</span>
+     </div>
+    </div>
+   </div>
+  </div> is the impurity-free Hamiltonian and 
+  <span class="italic">e</span> is the electronic charge. Use of effective mass approximation leads to
+  <div id="fm0020" class="disp-formula">
+   <span class="label">(2)</span>
+   <div id="M7" altimg="si6.svg" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">H</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">m</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">⁎</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span stretchy="true" class="mo">[</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <span class="mi">i</span>
+       <span class="mi">ħ</span>
+       <span mathvariant="normal" class="mi">∇</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+       </div>
+       <span mathvariant="bold" class="mtext">A</span>
+       <span stretchy="true" class="mo">]</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">m</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">⁎</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">x</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">y</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>
+  <div class="inline-formula">
+   <div id="M8" altimg="si7.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">m</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">⁎</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M9" altimg="si8.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ω</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> represent the effective mass of the electron and the harmonic confinement frequency, respectively. The vector potential 
+  <span class="bold">A</span> is given by 
+  <div class="inline-formula">
+   <div id="M10" altimg="si9.svg" class="math">
+    <span class="mi">A</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">B</span>
+    <span class="mi">y</span>
+    <span class="mo">,</span>
+    <span class="mn">0</span>
+    <span class="mo">,</span>
+    <span class="mn">0</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div>, where 
+  <span class="italic">B</span> is the strength of the magnetic field. 
+  <div class="inline-formula">
+   <div id="M11" altimg="si5.svg" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">′</span>
+     </div>
+    </div>
+   </div>
+  </div> can be alternatively written as
+  <div id="fm0030" class="disp-formula">
+   <span class="label">(3)</span>
+   <div id="M12" altimg="si10.svg" class="math">
+    <div class="mrow">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">H</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ħ</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">m</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">⁎</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <span stretchy="true" class="mo">(</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mo">∂</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">∂</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">x</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mo">∂</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">∂</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">y</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">m</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">⁎</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">x</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">m</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">⁎</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Ω</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">y</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">−</span>
+     <span class="mi">i</span>
+     <span class="mi">ħ</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">ω</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">c</span>
+      </div>
+     </div>
+     <span class="mi">y</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mo">∂</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">∂</span>
+       <span class="mi">x</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>
+  <div class="inline-formula">
+   <div id="M13" altimg="si11.svg" class="math">
+    <span mathvariant="normal" class="mi">Ω</span>
+    <span stretchy="false" class="mo">(</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="msqrt">
+     <div class="mrow">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M14" altimg="si12.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ω</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">c</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <span class="mi">e</span>
+      <span class="mi">B</span>
+     </div>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">m</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">⁎</span>
+       </div>
+      </div>
+      <span class="mi">c</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> are the effective confinement frequency in the 
+  <span class="italic">y</span>-direction and the cyclotron frequency, respectively.
+ </p>
+ <p id="pr0050" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="inline-formula">
+   <div id="M15" altimg="si13.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">m</span>
+      <span class="mi">p</span>
+     </div>
+    </div>
+   </div>
+  </div> stands for the impurity (dopant) potential and has the form 
+  <div class="inline-formula">
+   <div id="M16" altimg="si14.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">m</span>
+      <span class="mi">p</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span width="0.25em" class="mspace"/>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">e</span>
+     </div>
+     <div class="mrow">
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mi">γ</span>
+      <div class="mrow">
+       <span stretchy="true" class="mo">[</span>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">x</span>
+         <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">x</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">y</span>
+         <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">y</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">]</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. Here 
+  <div class="inline-formula">
+   <div id="M17" altimg="si15.svg" class="math">
+    <span stretchy="false" class="mo">(</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">x</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span class="mo">,</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">y</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M18" altimg="si16.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M19" altimg="si17.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">γ</span>
+     </div>
+     <div class="mrow">
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mn">1</span>
+      <span stretchy="false" class="mo">/</span>
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> refer to the dopant location, impurity strength and the available space under the influence of impurity potential, respectively. The use of such Gaussian impurity potential as a modification of the confinement potential was first introduced by Szafran et al. in the context of exciton spectrum of a quantum ring 
+  <a rid="br0530" ref-type="bibr" href="#br0530">[53]</a>. Such Gaussian impurity has also drawn the attention of several other researchers 
+  <a rid="br0540" ref-type="bibr" href="#br0540">[54]</a>, 
+  <a rid="br0550" ref-type="bibr" href="#br0550">[55]</a>, 
+  <a rid="br0560" ref-type="bibr" href="#br0560">[56]</a>, 
+  <a rid="br0570" ref-type="bibr" href="#br0570">[57]</a>, 
+  <a rid="br0580" ref-type="bibr" href="#br0580">[58]</a>. Adamowski studied the screening effect of the 
+  <span class="italic">LO</span> phonons of the 
+  <div class="inline-formula">
+   <div id="M20" altimg="si18.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">D</span>
+     </div>
+     <div class="mrow">
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+     </div>
+    </div>
+   </div>
+  </div> center confined by a Gaussian potential QD, 
+  <div class="inline-formula">
+   <div id="M21" altimg="si19.svg" class="math">
+    <span class="mi">V</span>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">r</span>
+    <span stretchy="false" class="mo">)</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span width="0.25em" class="mspace"/>
+    <span class="mi">e</span>
+    <span class="mi">x</span>
+    <span class="mi">p</span>
+    <span stretchy="false" class="mo">[</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="msup">
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">r</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">]</span>
+   </div>
+  </div>
+  <a rid="br0560" ref-type="bibr" href="#br0560">[56]</a>. Gaussian potential stands for the finite depth and range of QD confinement potential. Gaussian potential is a smooth potential and therefore is a good approximation to the impurity potential in electrostatic quantum dots 
+  <a rid="br0570" ref-type="bibr" href="#br0570">[57]</a>, in which the spatial restriction originates from an inhomogeneous electric field. In self-assembled quantum dots with a composition modulation 
+  <a rid="br0590" ref-type="bibr" href="#br0590">[59]</a>, the impurity potential can also be represented by the Gaussian potential 
+  <a rid="br0580" ref-type="bibr" href="#br0580">[58]</a>. Such Gaussian potentials can be assumed to simulate nanocrystals fabricated by means of colloidal chemical synthesis 
+  <a rid="br0600" ref-type="bibr" href="#br0600">[60]</a>, 
+  <a rid="br0610" ref-type="bibr" href="#br0610">[61]</a>, 
+  <a rid="br0620" ref-type="bibr" href="#br0620">[62]</a>.
+ </p>
+ <p id="pr0060" xmlns="http://www.w3.org/1999/xhtml">The quantity 
+  <div class="inline-formula">
+   <div id="M22" altimg="si20.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">n</span>
+      <span class="mi">o</span>
+      <span class="mi">i</span>
+      <span class="mi">s</span>
+      <span class="mi">e</span>
+     </div>
+    </div>
+   </div>
+  </div> of eqn. 
+  <a rid="fm0010" ref-type="disp-formula" href="#fm0010">(1)</a> takes care of the externally introduced Gaussian white noise characterized by 
+  <span class="italic">zero average</span> and 
+  <span class="italic">spatial δ-correlation</span>. Such application of noise to the system can be done in two separate modes (known as additive and multiplicative) which indeed govern the system-noise interaction. Mathematically speaking, noise involves a spatially 
+  <span class="italic">δ</span>-correlated function 
+  <div class="inline-formula">
+   <div id="M23" altimg="si21.svg" class="math">
+    <span stretchy="false" class="mo">[</span>
+    <span class="mi">f</span>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">x</span>
+    <span class="mo">,</span>
+    <span class="mi">y</span>
+    <span stretchy="false" class="mo">)</span>
+    <span stretchy="false" class="mo">]</span>
+   </div>
+  </div> which assumes a Gaussian distribution (produced by Box-Muller algorithm) having strength 
+  <span class="italic">ζ</span> and is described by the set of conditions
+  <div id="fm0040" class="disp-formula">
+   <span class="label">(4)</span>
+   <div id="M24" altimg="si22.svg" class="math">
+    <div class="mrow">
+     <span stretchy="false" class="mo">〈</span>
+     <span class="mi">f</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span class="mo">,</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span stretchy="false" class="mo">〉</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <span class="mn">0</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> the zero average condition, and
+  <div id="fm0050" class="disp-formula">
+   <span class="label">(5)</span>
+   <div id="M25" altimg="si23.svg" class="math">
+    <div class="mrow">
+     <span stretchy="false" class="mo">〈</span>
+     <span class="mi">f</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span class="mo">,</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mi">f</span>
+     <span stretchy="false" class="mo">(</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">x</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">y</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">′</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+     <span stretchy="false" class="mo">〉</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <span class="mn">2</span>
+     <span class="mi">ζ</span>
+     <span class="mi">δ</span>
+     <div class="mrow">
+      <span stretchy="true" class="mo">[</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">x</span>
+      <span class="mo">,</span>
+      <span class="mi">y</span>
+      <span stretchy="false" class="mo">)</span>
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span stretchy="false" class="mo">(</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">x</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">′</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">y</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">′</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">)</span>
+      <span stretchy="true" class="mo">]</span>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> the spatial 
+  <span class="italic">δ</span>-correlation condition. The additive and multiplicative pathways of introduction of noise can be written as
+  <div id="fm0060" class="disp-formula">
+   <span class="label">(6)</span>
+   <div id="M26" altimg="si24.svg" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">V</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mi">o</span>
+       <span class="mi">i</span>
+       <span class="mi">s</span>
+       <span class="mi">e</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">λ</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <span class="mi">f</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span class="mo">,</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> for additive pathway and
+  <div id="fm0070" class="disp-formula">
+   <span class="label">(7)</span>
+   <div id="M27" altimg="si25.svg" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">V</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mi">o</span>
+       <span class="mi">i</span>
+       <span class="mi">s</span>
+       <span class="mi">e</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">λ</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mi">f</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span class="mo">,</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">x</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+     <span class="mi">y</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> for the multiplicative pathway. 
+  <div class="inline-formula">
+   <div id="M28" altimg="si26.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">λ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M29" altimg="si27.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">λ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> are two arbitrary parameters in case of additive and multiplicative noise, respectively. In reality, there exist a variety of physical situations in which external noise can be realized and bears interest. In these situations one deals with system which experiences fluctuations which are not 
+  <span class="italic">self-originating</span>. These fluctuations can be due to a fluctuating environment or can be consequence of an externally applied random force. Whereas additive noise does not interfere with the system coordinate the multiplicative analogue depends on the instantaneous value of the variables of the system. It does not scale with system size and is not necessarily small 
+  <a rid="br0630" ref-type="bibr" href="#br0630">[63]</a>, 
+  <a rid="br0640" ref-type="bibr" href="#br0640">[64]</a>. We can regard the external noise as an external field which drives the system 
+  <a rid="br0640" ref-type="bibr" href="#br0640">[64]</a>. Experimentally, external noise can be generated by using a function generator (Hewlett-Packard 33120A) and its characteristics, viz. Gaussian distribution and zero mean can be maintained 
+  <a rid="br0650" ref-type="bibr" href="#br0650">[65]</a>. The external noise could be introduced multiplicatively using a circuit that enables to drive the nonlinear element by using the voltage from an external source 
+  <a rid="br0660" ref-type="bibr" href="#br0660">[66]</a>.
+ </p>
+ <p id="pr0070" xmlns="http://www.w3.org/1999/xhtml">Now, the construction of Hamiltonian matrix (
+  <div class="inline-formula">
+   <div id="M30" altimg="si28.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>) [cf. eqn. 
+  <a rid="fm0010" ref-type="disp-formula" href="#fm0010">(1)</a>] has been carried out using the direct product basis of the harmonic oscillator eigenstates. The matrix elements corresponding to all the four components of eqn. 
+  <a rid="fm0010" ref-type="disp-formula" href="#fm0010">(1)</a> have been derived using the basis function mentioned above. It is followed by diagonalization of 
+  <div class="inline-formula">
+   <div id="M31" altimg="si28.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> to compute the energy levels and the eigenstates of the system. The routine convergence test has been done during diagonalization.
+ </p>
+ <p id="pr0080" xmlns="http://www.w3.org/1999/xhtml">For the computation of different NLO properties it is required to consider an ensemble of QDs and how it interacts with a polarized monochromatic electromagnetic field of angular frequency 
+  <span class="italic">ω</span>. Such an analysis implicitly assumes that the wavelength of propagating electromagnetic wave is higher than the QD size. Driven by this assumption we can envisage the wave with nearly unaltered amplitude along QD and the electric dipole approximation gets justified. Now, exploiting customary density matrix approach and iterative procedure the expressions of EOE 
+  <a rid="br0390" ref-type="bibr" href="#br0390">[39]</a>, TONOS 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>, 
+  <a rid="br0440" ref-type="bibr" href="#br0440">[44]</a>, 
+  <a rid="br0450" ref-type="bibr" href="#br0450">[45]</a> and TODF 
+  <a rid="br0520" ref-type="bibr" href="#br0520">[52]</a> can be obtained under appropriate conditions 
+  <a rid="br0670" ref-type="bibr" href="#br0670">[67]</a>.
+ </p>
+ <p id="pr0090" xmlns="http://www.w3.org/1999/xhtml">Thus, the expression of EOE coefficient is given by 
+  <a rid="br0390" ref-type="bibr" href="#br0390">[39]</a>
+  <div id="fm0080" class="disp-formula">
+   <span class="label">(8)</span>
+   <div id="M32" altimg="si29.svg" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">E</span>
+       <span class="mi">O</span>
+       <span class="mi">E</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">8</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">σ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">s</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">n</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">r</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+        </div>
+       </div>
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">ε</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ħ</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">M</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">δ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">Γ</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="mrow">
+        <span stretchy="true" class="mo">[</span>
+        <div class="msup">
+         <div class="mrow">
+          <span stretchy="true" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">ω</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+          <span class="mi">ν</span>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">Γ</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span stretchy="true" class="mo">]</span>
+       </div>
+       <span class="mo">.</span>
+       <div class="mrow">
+        <span stretchy="true" class="mo">[</span>
+        <div class="msup">
+         <div class="mrow">
+          <span stretchy="true" class="mo">(</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">ω</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">i</span>
+            <span class="mi">j</span>
+           </div>
+          </div>
+          <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+          <span class="mi">ν</span>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">Γ</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span stretchy="true" class="mo">]</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div> In the above expression 
+  <div class="inline-formula">
+   <div id="M33" altimg="si30.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ε</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> is the vacuum permittivity, 
+  <span class="italic">e</span> is the absolute value of electron charge, 
+  <div class="inline-formula">
+   <div id="M34" altimg="si31.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">σ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">s</span>
+     </div>
+    </div>
+   </div>
+  </div> is the carrier density, 
+  <div class="inline-formula">
+   <div id="M35" altimg="si32.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">M</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mi">e</span>
+    <span stretchy="false" class="mo">〈</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">x</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">ˆ</span>
+     </div>
+    </div>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">y</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">ˆ</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">〉</span>
+    <span class="mo">,</span>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">i</span>
+    <span class="mo">,</span>
+    <span class="mi">j</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mn">1</span>
+    <span class="mo">,</span>
+    <span class="mn">2</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> is the matrix elements of the dipole moment, 
+  <div class="inline-formula">
+   <div id="M36" altimg="si33.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">δ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span stretchy="false" class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">M</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">i</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">M</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">j</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">|</span>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M37" altimg="si34.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> are the eigenstates, 
+  <div class="inline-formula">
+   <div id="M38" altimg="si35.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">r</span>
+     </div>
+    </div>
+   </div>
+  </div> is the static component of refractive index and 
+  <div class="inline-formula">
+   <div id="M39" altimg="si36.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ω</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span stretchy="false" class="mo">(</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">i</span>
+     </div>
+    </div>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">j</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+    <span stretchy="false" class="mo">/</span>
+    <span class="mi">ħ</span>
+   </div>
+  </div> is the transition frequency, 
+  <div class="inline-formula">
+   <div id="M40" altimg="si37.svg" class="math">
+    <span mathvariant="normal" class="mi">Γ</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mn">1</span>
+    <span stretchy="false" class="mo">/</span>
+    <span class="mi">τ</span>
+   </div>
+  </div> is the relaxation rate with 
+  <span class="italic">τ</span> as the relaxation time.
+ </p>
+ <p id="pr0100" xmlns="http://www.w3.org/1999/xhtml">Using similar approach as stated above, within second-order perturbation theory, TONOS corresponding to optical mixing between two incident light beams with frequencies 
+  <div class="inline-formula">
+   <div id="M41" altimg="si38.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M42" altimg="si39.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> is given by 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>, 
+  <a rid="br0440" ref-type="bibr" href="#br0440">[44]</a>, 
+  <a rid="br0450" ref-type="bibr" href="#br0450">[45]</a>
+  <div id="fm0090" class="disp-formula">
+   <span class="label">(9)</span>
+   <div id="M43" altimg="si40.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <span class="mn">2</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span class="mo">;</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span class="mo">,</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span class="mo">,</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">)</span>
+    <span id="mmlbr0001" linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mn">2</span>
+      <span class="mi">i</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">e</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">4</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">s</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">M</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">j</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">4</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ε</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">0</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">ħ</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">[</span>
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">(</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ω</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mi">j</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <span class="mn">2</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <span mathvariant="normal" class="mi">Γ</span>
+       <span stretchy="true" class="mo">]</span>
+      </div>
+      <span class="mo">.</span>
+      <div class="mrow">
+       <span stretchy="true" class="mo">[</span>
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">(</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <span mathvariant="normal" class="mi">Γ</span>
+       <span stretchy="true" class="mo">]</span>
+      </div>
+     </div>
+    </div>
+    <span linebreak="newline" indentalign="id" indenttarget="mmlbr0001" linebreakstyle="before" class="mo">×</span>
+    <div class="mrow">
+     <span stretchy="true" class="mo">[</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">(</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ω</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mi">j</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <span mathvariant="normal" class="mi">Γ</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span stretchy="false" class="mo">(</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ν</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ω</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mi">j</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <span mathvariant="normal" class="mi">Γ</span>
+      </div>
+     </div>
+     <span stretchy="true" class="mo">]</span>
+    </div>
+    <span class="mo">,</span>
+   </div>
+  </div> Pursuing Xie 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>, 
+  <a rid="br0440" ref-type="bibr" href="#br0440">[44]</a>, 
+  <a rid="br0450" ref-type="bibr" href="#br0450">[45]</a>, in the present study we consider 
+  <div class="inline-formula">
+   <div id="M44" altimg="si41.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ν</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mi">ν</span>
+   </div>
+  </div> for simplicity.
+ </p>
+ <p id="pr0110" xmlns="http://www.w3.org/1999/xhtml">Following Vahdani, considering optical transition between two states 
+  <div class="inline-formula">
+   <div id="M45" altimg="si42.svg" class="math">
+    <span stretchy="false" class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">〉</span>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M46" altimg="si43.svg" class="math">
+    <span stretchy="false" class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">〉</span>
+   </div>
+  </div>, the linear [
+  <div class="inline-formula">
+   <div id="M47" altimg="si44.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">1</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">ν</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div>] and the third-order nonlinear [
+  <div class="inline-formula">
+   <div id="M48" altimg="si45.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">ν</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div>] electric susceptibilities can be written as 
+  <a rid="br0520" ref-type="bibr" href="#br0520">[52]</a>
+  <div id="fm0100" class="disp-formula">
+   <span class="label">(10)</span>
+   <div id="M49" altimg="si46.svg" class="math">
+    <div class="mrow">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">1</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">σ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">s</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">|</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">M</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">01</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">|</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">E</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">01</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <span class="mi">ħ</span>
+       <span class="mi">ν</span>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+       <span class="mi">i</span>
+       <span class="mi">ħ</span>
+       <span mathvariant="normal" class="mi">Γ</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> and
+  <div id="fm0110" class="disp-formula">
+   <span class="label">(11)</span>
+   <div id="M50" altimg="si47.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">ν</span>
+    <span stretchy="false" class="mo">)</span>
+    <span id="mmlbr0002" linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+    <div class="mfrac">
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">s</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">|</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">M</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">01</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">|</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">|</span>
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span stretchy="false" class="mo">˜</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">|</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">01</span>
+       </div>
+      </div>
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mi">ħ</span>
+      <span class="mi">ν</span>
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mi">i</span>
+      <span class="mi">ħ</span>
+      <span mathvariant="normal" class="mi">Γ</span>
+     </div>
+    </div>
+    <span class="mo">.</span>
+    <div class="mrow">
+     <span stretchy="true" class="mo">[</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">4</span>
+       <span stretchy="false" class="mo">|</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">M</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">01</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="false" class="mo">|</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">E</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">01</span>
+          </div>
+         </div>
+         <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+         <span class="mi">ħ</span>
+         <span class="mi">ν</span>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span linebreak="badbreak" linebreakstyle="after" class="mo">+</span>
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <span class="mi">ħ</span>
+         <span mathvariant="normal" class="mi">Γ</span>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span linebreak="newline" indentalign="id" indenttarget="mmlbr0002" linebreakstyle="before" class="mo">−</span>
+    <div class="mrow">
+     <div class="mfrac">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">M</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">11</span>
+          </div>
+         </div>
+         <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">M</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">00</span>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <div class="mrow">
+        <span stretchy="true" class="mo">(</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">01</span>
+         </div>
+        </div>
+        <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+        <span class="mi">i</span>
+        <span class="mi">ħ</span>
+        <span mathvariant="normal" class="mi">Γ</span>
+        <span stretchy="true" class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span stretchy="true" class="mo">(</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">01</span>
+         </div>
+        </div>
+        <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+        <span class="mi">ħ</span>
+        <span class="mi">ν</span>
+        <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+        <span class="mi">i</span>
+        <span class="mi">ħ</span>
+        <span mathvariant="normal" class="mi">Γ</span>
+        <span stretchy="true" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+     <span stretchy="true" class="mo">]</span>
+    </div>
+    <span class="mo">.</span>
+   </div>
+  </div> As stated by Vahdani, the linear and third-order nonlinear ODFs are related to 
+  <div class="inline-formula">
+   <div id="M51" altimg="si44.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">1</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">ν</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M52" altimg="si45.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+    <span stretchy="false" class="mo">(</span>
+    <span class="mi">ν</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> as follows 
+  <a rid="br0520" ref-type="bibr" href="#br0520">[52]</a>:
+  <div id="fm0120" class="disp-formula">
+   <span class="label">(12)</span>
+   <div id="M53" altimg="si48.svg" class="math">
+    <div class="mrow">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">ϵ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">1</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <span class="mn">1</span>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <span class="mn">4</span>
+     <span class="mi">π</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">1</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> and
+  <div id="fm0130" class="disp-formula">
+   <span class="label">(13)</span>
+   <div id="M54" altimg="si49.svg" class="math">
+    <div class="mrow">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">ϵ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">3</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <span class="mn">4</span>
+     <span class="mi">π</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">3</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div> The TODF is given by
+  <div id="fm0140" class="disp-formula">
+   <span class="label">(14)</span>
+   <div id="M55" altimg="si50.svg" class="math">
+    <div class="mrow">
+     <span class="mi">ϵ</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">ϵ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">1</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">ϵ</span>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mn">3</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mi">ν</span>
+     <span stretchy="false" class="mo">)</span>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p id="pr0120" xmlns="http://www.w3.org/1999/xhtml">The ground state binding energy 
+  <div class="inline-formula">
+   <div id="M56" altimg="si51.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+    </div>
+   </div>
+  </div> can be written as
+  <div id="fm0150" class="disp-formula">
+   <span class="label">(15)</span>
+   <div id="M57" altimg="si52.svg" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">B</span>
+      </div>
+     </div>
+     <span linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+     </div>
+     <span linebreak="goodbreak" linebreakstyle="after" class="mo">−</span>
+     <span class="mi">E</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div> where 
+  <span class="italic">E</span> and 
+  <div class="inline-formula">
+   <div id="M58" altimg="si53.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> are the energies of the ground state with and without impurity, respectively.
+ </p>
+</sec>

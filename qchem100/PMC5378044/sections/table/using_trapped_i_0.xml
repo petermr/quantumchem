@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div position="float" id="t1" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 1</span>
+ <div class="caption">
+  <div class="title">Using trapped ions to simulate quantum chemistry</div>
+ </div>
+ <div class="alternatives">
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup>
+    <col align="left"/>
+    <col align="center"/>
+    <col align="center"/>
+   </colgroup>
+   <thead valign="bottom">
+    <tr>
+     <th align="left" valign="top" charoff="50"> </th>
+     <th align="justify" valign="top" charoff="50">Simulating Quantum Chemistry</th>
+     <th align="justify" valign="top" charoff="50">Implementation with Trapped Ions</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="justify" valign="top" charoff="50">Hamiltonian transformation:</td>
+     <td align="justify" valign="top" charoff="50">The fermionic (electronic) Hamiltonian 
+      <span class="italic">H
+       <sub>e</sub>
+      </span> is transformed into a spin Hamiltonian through the Jordan-Wigner transformation.
+     </td>
+     <td align="justify" valign="top" charoff="50">The spin degrees of freedom in 
+      <span class="italic">H
+       <sub>e</sub>
+      </span> are represented by the internal degrees of freedom of the trapped ions.
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" charoff="50"> </td>
+     <td colspan="2" align="center" valign="top" charoff="50"> </td>
+    </tr>
+    <tr>
+     <td align="justify" valign="top" charoff="50">Simulation of time evolution:</td>
+     <td align="justify" valign="top" charoff="50">The time evolution operator is split into 
+      <span class="italic">n</span> small-time (
+      <span class="italic">t</span>/
+      <span class="italic">n</span>) pieces through the Suzuki-Trotter expansion.
+     </td>
+     <td align="justify" valign="top" charoff="50">Each individual term can be simulated with trapped ions through the use of Mølmer-Sørensen gates 
+      <span class="italic">U
+       <sub>MS</sub>
+      </span>. Explicitly,
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" charoff="50"> </td>
+     <td colspan="2" align="center" valign="top" charoff="50"> </td>
+    </tr>
+    <tr>
+     <td align="justify" valign="top" charoff="50">Obtaining average energy:</td>
+     <td align="justify" valign="top" charoff="50">The average energy 〈
+      <span class="italic">H
+       <sub>e</sub>
+      </span>〉 of the Hamiltonian can be obtained through the sum of the individual terms 〈
+      <span class="italic">H
+       <sub>l</sub>
+      </span>〉, which reduces to the measurement of products of Pauli matrices.
+     </td>
+     <td align="justify" valign="top" charoff="50"> For any prepared state |
+      <span class="italic">ψ</span>〉, average values of the products of Pauli matrices can be measured by first applying the pseudo time evolution operator to |
+      <span class="italic">ψ</span>〉 and then measuring .
+     </td>
+    </tr>
+    <tr>
+     <td align="justify" valign="top" charoff="50">Measuring eigenvalues:</td>
+     <td align="justify" valign="top" charoff="50">The eigenvalues of the Hamiltonian can be obtained through the phase estimation algorithm. Good trial states can be obtained through classical computing, or the unitary coupled-cluster method.</td>
+     <td align="justify" valign="top" charoff="50"> The phase estimation algorithm can be implemented through the simulation of controlled time evolutions.</td>
+    </tr>
+    <tr>
+     <td align="justify" valign="top" charoff="50">Molecular vibrations:</td>
+     <td align="justify" valign="top" charoff="50">The inclusion of vibrational degrees of freedom is necessary for corrections on the Born-Oppenheimer picture in the electronic structure of molecules.</td>
+     <td align="justify" valign="top" charoff="50"> The vibrational degrees of freedom are represented by the quantized vibrational motion of the trapped ions.</td>
+    </tr>
+   </tbody>
+  </table>
+  <div xlink:href="srep03589-t1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</div>

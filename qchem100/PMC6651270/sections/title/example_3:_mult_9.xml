@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 3: Multilevel Transition State Search</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a> shows another workflow to illustrate the integration of calculations with different packages by QMflows. Starting from an automatically generated 2-methylbiphenyl molecule, a constrained geometry optimization is performed with the DFTB package, to obtain an approximate TS state for the rotation between two conformers. Subsequently, a frequency calculation is performed to obtain a DFTB Hessian. This Hessian is then used to initialize the transition state calculation at the DFT level in a different package (ORCA). The full code is provided in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Example S3</span> in the Supporting Information. This example shows how QMFlows allows (partial) interoperability between codes by providing generic functionality that is common to different packages, translating between different input specifications without user intervention.
+ </p>
+ <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <p>QMflows workflow for a multilevel transition state search. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+  </div>
+  <div xlink:href="ci-2019-00384y_0004" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

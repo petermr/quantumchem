@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3B" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Convergence of the adsorption energy with the number of layers</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this section, we investigate the adequacy of the chosen slab model, which consists of just two LiH layers, for studying the adsorption of water. Generally, the convergence of the adsorption energy with the number of layers in the slab is expected to be governed by long-range effects, such as electrostatics (attractive or repulsive) and dispersion (attractive). Importantly, electrostatics are already captured at the DFT or HF levels, while dispersion is not (unless the dispersion correction is added or a special DFT functional is used, which is able to describe dispersion).</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Table 
+  <a ref-type="table" rid="t6" href="#t6">VI</a> demonstrates by how much the adsorption energy grows or declines if further layers are added to the slab, as computed by DFT and HF. In order to isolate the dispersion contribution, we provide the -D3 contribution separately, as well as the LMP2 correlation energy. For dispersion alone, it is actually possible to obtain convergence with the number of layers: -D3 is very inexpensive and thus can be computed for very thick slabs, while for LMP2 the inter-adsorbate-slab contribution can be extrapolated to a semi-infinite slab using the pair-specific 
+  <span class="italic">C</span>
+  <sub>6</sub> coefficients fitted to the actual LMP2 pair energies (see Ref. 
+  <a rid="c84" ref-type="bibr" href="#c84">84</a> for details).
+ </p>
+ <div id="t6" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE VI.</span>
+  <div class="caption">
+   <p>Convergence of the adsorption energy (DFT-PBE, HF), the dispersion correction (-D3), and the correlation energy (LMP2) with respect to the slab thickness. The provided energies (in meV) represent the excess or depletion in the energy with respect to the 2-layer slab model due to additional layers. All the calculations employed the 
+    <div class="inline-formula">
+     <div id="M32" class="math">
+      <span class="mn">4</span>
+      <span class="mo">×</span>
+      <span class="mn">4</span>
+     </div>
+    </div> surface supercell. The 
+    <div class="inline-formula">
+     <div id="M33" class="math">
+      <span class="mi">∞</span>
+     </div>
+    </div> symbol indicates the converged D3 and LMP2 value. The latter is obtained by extrapolation of the inter-LiH-Water energy from the 3-layer model to a semi-infinite slab by means of the slab replication technique of Ref. 
+    <a rid="c84" ref-type="bibr" href="#c84">84</a>, employing pair-specific 
+    <span class="italic">C</span>
+    <sub>6</sub> coefficients fitted to the actual LMP2 pair energies. The result of such an extrapolation from the 2-layer model is given in parentheses.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="char" char="." span="1"/>
+    <col align="char" char="." span="1"/>
+    <col align="char" char="." span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th colspan="1" rowspan="1">No. of layers</th>
+     <th align="center" colspan="1" rowspan="1">PBE</th>
+     <th align="center" colspan="1" rowspan="1">HF</th>
+     <th align="center" colspan="1" rowspan="1">-D3</th>
+     <th align="center" colspan="1" rowspan="1">LMP2</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">3</td>
+     <td align="char" char="." colspan="1" rowspan="1">−0.15</td>
+     <td align="char" char="." colspan="1" rowspan="1">−1.51</td>
+     <td align="char" char="." colspan="1" rowspan="1">+5.36</td>
+     <td colspan="1" rowspan="1">+2.44</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">4</td>
+     <td align="char" char="." colspan="1" rowspan="1">−0.16</td>
+     <td colspan="1" rowspan="1"/>
+     <td align="char" char="." colspan="1" rowspan="1">+7.01</td>
+     <td colspan="1" rowspan="1"/>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M34" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1"/>
+     <td colspan="1" rowspan="1"/>
+     <td align="char" char="." colspan="1" rowspan="1">+8.44</td>
+     <td colspan="1" rowspan="1">+4.66(+4.97)</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"/>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The PBE and HF results suggest that for the non-dispersive contributions, the two-layer slab is already an adequate model. Dispersion, on the contrary, is not entirely converged with just two LiH-layers. However, at the scale of the whole adsorption energy, the lack of a few meV of dispersion in the two-layer model can be tolerated.</p>
+</sec>

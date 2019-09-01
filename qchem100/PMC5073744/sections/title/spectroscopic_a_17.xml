@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec13" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Spectroscopic analysis</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this context, a highly interesting use case is the so-called spectroscopic analysis (Fig. 
+  <a rid="Fig6" ref-type="fig" href="#Fig6">6</a>). After a first geometry optimization of the selected molecule several further simulations such as frequency analysis, time dependent calculation, population analysis and solvent analysis are performed using the optimized coordinates. These simulations can be further divided into smaller tasks, such as the input file generation by a so-called 
+  <span class="italic">job generator</span>, then the job submission to the DCI and the calculation by the QC code, which produces the corresponding output. Input and output files are graphically represented by rhombs whereas jobs are rounded boxes.
+  <div id="Fig6" class="fig">
+   <span class="label">Fig. 6</span>
+   <div class="caption">
+    <p>Spectroscopic analysis 
+     <span class="italic">Spec_Analy M</span>-
+     <span class="italic">WF</span> meta-workflow (
+     <span class="italic">top left</span> molecular structure, bottom from 
+     <span class="italic">left</span> to 
+     <span class="italic">right</span>: Raman spectrum, UV/Vis spectrum, lowest unoccupied orbital)
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig6_HTML" id="MO16" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To create a spectroscopic analysis meta-workflow (
+  <span class="italic">Spec_Analy M</span>-
+  <span class="italic">WF</span>) first, we defined the structure of the meta-workflow. Next, we identified the atomic workflows i.e. small operations or tasks that can be re-used in other meta-workflows. The first atomic workflow (
+  <span class="italic">Opt WF</span>) runs a simple geometry optimization. The subsequent atomic workflows have a similar structure but they provide different functionalities. They contain a converter script that extracts the output geometry from the optimization output and combines it with blank input files (i.e. just lacking input coordinates) with the corresponding keywords for frequency calculations (
+  <span class="italic">Freq WF</span>), time-dependent DFT calculations giving UV/Vis spectra (
+  <span class="italic">TD WF</span>), population analyses (
+  <span class="italic">Pop WF</span>) and subsequent calculations in solvents (
+  <span class="italic">Solv WF</span>). All these atomic workflows, shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">6</a> are highly valuable since they can be re-used in other QC meta-workflows.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">With regard to a real-life system as depicted in Fig. 
+  <a rid="Fig6" ref-type="fig" href="#Fig6">6</a>, the spectroscopic analysis has to tackle issues such as antiferromagnetic coupling between copper atoms, correct description of the coordination sphere and multiple conformations of the whole molecule. [
+  <a ref-type="bibr" rid="CR46" href="#CR46">46</a>, 
+  <a ref-type="bibr" rid="CR47" href="#CR47">47</a>] Methodologically, density functional theory is most appropriate here due to size of the system and investigated questions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Hence, the spectroscopic analysis meta-workflow needs to be performed several times for an array of functionals and basis sets which have to be tested for the ultimate structural and optical description with respect to experimental data. Now, this meta-workflow can be combined into a spectroscopic benchmarking meta
+  <span class="sup">2</span>-workflow (
+  <span class="italic">Spec</span>-
+  <span class="italic">Bench M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span>). Figure 
+  <a rid="Fig7" ref-type="fig" href="#Fig7">7</a> shows four spectroscopic analysis meta-workflows which are combined after performing a basic optimization. This basic optimization atomic workflow (
+  <span class="italic">Basic Opt WF</span>) runs a pre-optimization step, which saves calculation time in all subsequent optimizations included in the spectroscopic workflows (Spec1 WF…Spec4WF). The 
+  <span class="italic">Basic Opt WF</span> can for example use a smaller basis set. Here, the 
+  <span class="italic">Opt WF</span> from Fig. 
+  <a rid="Fig6" ref-type="fig" href="#Fig6">6</a> can be re-used. The 
+  <span class="italic">Spec</span>-
+  <span class="italic">Bench M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span> saves a lot of time in this application.
+  <div id="Fig7" class="fig">
+   <span class="label">Fig. 7</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Spec_Bench M</span>
+     <span class="sup">
+      <span class="italic">2</span>
+     </span>-
+     <span class="italic">WF</span> spectroscopic benchmarking meta-workflow
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig7_HTML" id="MO17" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">After execution of the spectroscopic benchmarking meta-workflow, the user collects and analyses the data. These steps should still be performed manually since the outputs are rather diverse. But the largest benefit of using meta-workflows is that it decreases the overall workload of defining all input job files, extracting geometry data after the pre-optimization step and others, as a result it saves a lot of the researchers´ time.</p>
+</sec>

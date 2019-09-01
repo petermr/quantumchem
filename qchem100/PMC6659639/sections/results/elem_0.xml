@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Modeling strong coupling with TDDFT</div>
+  <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">We model light-matter interactions by employing the real-time-propagation (RT) TDDFT approach
+   <span class="sup">
+    <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+   </span> based on the localized basis sets
+   <span class="sup">
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>,
+    <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+   </span> as implemented in the open-source GPAW package
+   <span class="sup">
+    <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+    <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+   </span>. This RT-TDDFT code is combined with extensive analysis tools
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+   </span> that are utilized for analyzing the electron-hole transition contributions to resonances and visualizing them as transition contribution maps (TCM)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>,
+    <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+   </span>. See Methods for detailed description. We consider a proof-of-principle plasmonic system based on idealized Al nanoparticles. The free-electron-like electronic structure of Al greatly simplifies the analysis in contrast to noble metals with 
+   <span class="italic">d</span>-electron-screened plasmons. In addition, Al has attracted recent interest as an alternative plasmonic material
+   <span class="sup">
+    <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+   </span>.
+  </p>
+  <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Our model systems consist of Al nanoparticles (regular truncated octahedra with 201, 586, and 1289 atoms, approximate diameters of 1.8, 2.7, and 3.6 nm, respectively) and benzene molecules (see Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>). The Al
+   <sub>201</sub> nanoparticle exhibits a plasmon resonance at ℏ
+   <span class="italic">ω</span>
+   <sub>Al</sub> = 7.7 eV (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>), the collective nature of which is recognizable in the TCM (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1b</a>)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+   </span>. The benzene molecule has a doubly-degenerate resonance at ℏ
+   <span class="italic">ω</span>
+   <sub>B</sub> = 7.1 eV with a transition dipole moment 
+   <span class="italic">μ</span>
+   <sub>1</sub> = 4.35 D (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a> and Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>).
+   <div id="Fig1" class="fig">
+    <span class="label">Fig. 1</span>
+    <div class="caption">
+     <p>Constituent elements of the strongly coupled system. 
+      <span class="bold">a</span> Strong interaction between a collective plasmon excitation of an Al
+      <sub>201</sub> nanoparticle and a molecular resonance of benzene results in the formation of lower and upper polariton states. Insets show the induced charge densities at resonances. The spectra are to scale but offset for clarity. 
+      <span class="bold">b</span>–
+      <span class="bold">e</span> Transition contribution maps (TCMs) of the (
+      <span class="bold">b</span>) plasmon and (
+      <span class="bold">c</span>) molecular resonance show, respectively, the collective and discrete nature of these resonances. TCMs for 
+      <span class="bold">d</span> the lower polariton (6.9 eV) and 
+      <span class="bold">e</span> the upper polariton (7.7 eV) show the mixture of plasmonic and molecular transition contributions. The molecular transition (from about −2 to 3 eV) shows a clear symmetric and antisymmetric character with respect to the low-energy (≲2 eV) plasmonic transitions at the lower and upper polaritons, respectively, and the induced densities at the polariton energies visualize the corresponding in-phase and out-of-phase alignments (insets of panel 
+      <span class="bold">a</span>). In the density of states the red line marks the contribution from benzene, multiplied by 5 for visibility, and the vacuum level at around 4 eV is marked by a dashed line
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11315_Fig1_HTML" id="d29e513" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">When the nanoparticle and benzene molecules are placed in proximity (bottom part of Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>) their resonances couple and form two polaritons. The lower (at 6.9 eV) and upper (at 7.7 eV) polaritons are, respectively, mixed symmetric and antisymmetric plasmon-molecule states as apparent in the TCMs of the coupled system (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1d, e</a>). A comparison with the TCMs of the uncoupled constituents (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1b, c</a>) reveals the individual contributions to the polaritons. The low-energy (≲2 eV) transitions near the Fermi level form the plasmon, while the contribution from about −2 to 3 eV originates from the molecular exciton. Crucially, the two polaritonic states in Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1d, e</a> differ with respect to the sign of the molecular contributions. In case of the lower polariton (LP) plasmonic and molecular transitions are in-phase, while for the upper polariton (UP) they are out-of-phase. This, respectively, symmetric and antisymmetric combination is also clearly visible in the induced densities (Fig. 
+   <a rid="Fig1" ref-type="fig" href="#Fig1">1a</a>). At the LP the dipoles of both particle and molecules are parallel, while they are antiparallel at the UP. Such an arrangement is archetypal for a strongly coupled system. This observation is valid also for the other systems discussed below, indicating the presence of strong or near-strong coupling already in the case of a single molecule placed 3 Å away from the Al
+   <sub>201</sub> particle. We note here, that the density of states of the molecular elements in the coupled system does not significantly differ from its uncoupled counterpart (Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>).
+  </p>
+  <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">To determine the fidelity of TDDFT for modeling strong coupling, we calculated the photoabsorption spectra of Al
+   <sub>201</sub>, Al
+   <sub>586</sub>, and Al
+   <sub>1289</sub> coupled to 
+   <span class="italic">N</span> benzene molecules, whose dipole moment is aligned collinearly with that of the plasmon vacuum field. The molecules are placed at the corners of two opposing {100} facets of the particles (Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>) and structural relaxation is neglected for simplicity. The coupled systems exhibit the LP and UP modes, the splitting of which increases with the number of molecules, see Fig. 
+   <a rid="Fig2" ref-type="fig" href="#Fig2">2</a> (TCMs show similar symmetric/antisymmetric mixtures of plasmonic and molecular transitions, see Supplementary Fig. 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>). The Rabi splitting of the absorption spectra for Al
+   <sub>201</sub> and one benzene molecule equals 730 meV, a value comparable to the plasmon width. A non-negligible part of the UP/LP separation originates, however, from the plasmon-exciton detuning and the coupling strength 
+   <span class="italic">g</span> is 200 meV for one benzene, a value smaller than the geometrical mean of the plasmon and exciton widths (300 meV). The strong coupling condition is, however, fulfilled for 
+   <span class="italic">N</span> ≥ 3 for Al
+   <sub>201</sub> and for larger 
+   <span class="italic">N</span> for larger particles.
+   <div id="Fig2" class="fig">
+    <span class="label">Fig. 2</span>
+    <div class="caption">
+     <p>Strong coupling of plasmons in Al nanoparticles and excitations in benzene molecules. The calculated photoabsorption spectra of nanoparticle-molecule systems composed of (
+      <span class="bold">a</span>) Al
+      <sub>201</sub>, (
+      <span class="bold">b</span>) Al
+      <sub>586</sub>, and (
+      <span class="bold">c</span>) Al
+      <sub>1289</sub> nanoparticles coupled with 
+      <span class="italic">N</span> benzene molecules at 3 Å separation (solid lines) show clearly separated lower and upper polaritons, the splitting of which increases with 
+      <span class="italic">N</span>. Spectra of the bare Al particles and benzene molecule are shown for reference (dotted lines)
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11315_Fig2_HTML" id="d29e611" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Coherent coupling and mode volumes</div>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">One signature of collective coherent coupling is the square-root dependence of 
+   <span class="italic">g</span> on the number 
+   <span class="italic">N</span> of identical excitons with transition dipole moment 
+   <span class="italic">μ</span>
+   <sub>1</sub> interacting with an optical cavity in the standard QED expression,
+   <div id="Equ1" class="disp-formula">
+    <span class="label">1</span>
+    <div class="alternatives">
+     <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g(N) = \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}},$$\end{document}</span>
+     <div id="M4" class="math">
+      <span class="mi">g</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">N</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msqrt">
+       <span class="mi">N</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">μ</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">vac</span>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+     <div xlink:href="41467_2019_11315_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>where 
+   <div id="IEq2" class="inline-formula">
+    <div class="alternatives">
+     <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$E_{{\mathrm{vac}}} = \sqrt {\hbar \omega _{{\mathrm{Al}}}/(2\varepsilon _0V)}$$\end{document}</span>
+     <div id="M6" class="math">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">vac</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msqrt">
+       <span class="mi">ℏ</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">ω</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">Al</span>
+        </div>
+       </div>
+       <span class="mo">∕</span>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">2</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">ε</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+         <span class="mi">V</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11315_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> is the vacuum field and 
+   <span class="italic">V</span> is the volume of the electromagnetic mode
+   <span class="sup">
+    <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+   </span>. Using the Al
+   <sub>201</sub> particle as an example, the expected scaling is shown in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> by the black dotted line using μ
+   <sub>1</sub> of a benzene molecule and 
+   <div id="IEq3" class="inline-formula">
+    <div class="alternatives">
+     <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$E_{{\mathrm{vac}}}^{(201)} = 4.5\,{\mathrm{V}}\, \cdot \,{\mathrm{nm}}^{ - 1}$$\end{document}</span>
+     <div id="M8" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">vac</span>
+       </div>
+       <div class="mrow">
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">201</span>
+         </div>
+         <span class="mo">)</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">4.5</span>
+      <span width="0.25em" class="mspace"/>
+      <span mathvariant="normal" class="mi">V</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mo">⋅</span>
+      <span width="0.25em" class="mspace"/>
+      <div class="msup">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">nm</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11315_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> with ℏ
+   <span class="italic">ω</span>
+   <sub>Al</sub> = 7.7 eV and 
+   <span class="italic">V</span> = 3.3 nm
+   <span class="sup">3</span> corresponding to the volume of the Al
+   <sub>201</sub> particle, which is an adequate estimate for a nanometer-sized particle
+   <span class="sup">
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+   </span>. To estimate the coupling strengths 
+   <span class="italic">g</span> from our first-principles data, we fit the absorption spectra with a coupled harmonic oscillator model
+   <span class="sup">
+    <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+   </span> (see Supplementary Note 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>), yielding the 
+   <span class="italic">g</span> values shown as symbols in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. We notice that the coupling strength values obtained using the standard QED expression of Eq. (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>), which is insensitive to spatial variations in the electric field, are larger than the ones derived from coupled oscillator fitting. A similar observation holds for the larger particles Al
+   <sub>586</sub> and Al
+   <sub>1289</sub>, except, that due to larger volumes, their respective vacuum fields 
+   <div id="IEq4" class="inline-formula">
+    <div class="alternatives">
+     <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$(E_{{\mathrm{vac}}}^{(586)} = 2.6\,{\mathrm{V}} \cdot {\mathrm{nm}}^{ - 1},\,E_{{\mathrm{vac}}}^{(1289)} = 1.8\,{\mathrm{V}} \cdot {\mathrm{nm}}^{ - 1})$$\end{document}</span>
+     <div id="M10" class="math">
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">vac</span>
+         </div>
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span class="mn">586</span>
+           </div>
+           <span class="mo">)</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">=</span>
+        <span class="mn">2.6</span>
+        <span width="0.25em" class="mspace"/>
+        <span mathvariant="normal" class="mi">V</span>
+        <span class="mo">⋅</span>
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">nm</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">,</span>
+        <span width="0.25em" class="mspace"/>
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">vac</span>
+         </div>
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span class="mn">1289</span>
+           </div>
+           <span class="mo">)</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">=</span>
+        <span class="mn">1.8</span>
+        <span width="0.25em" class="mspace"/>
+        <span mathvariant="normal" class="mi">V</span>
+        <span class="mo">⋅</span>
+        <div class="msup">
+         <div class="mrow">
+          <span mathvariant="normal" class="mi">nm</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">-</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11315_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> and coupling strengths are reduced.
+   <div id="Fig3" class="fig">
+    <span class="label">Fig. 3</span>
+    <div class="caption">
+     <p>Coupling strengths of the nanoparticle-molecule systems. Coupling strengths 
+      <span class="italic">g</span> for different numbers 
+      <span class="italic">N</span> of molecules placed 3 Å above the nanoparticle. The symbols denote fitted 
+      <span class="italic">g</span> values from the data of Fig. 
+      <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>. The dotted lines mark the ideal theoretical coupling strengths 
+      <div id="IEq5" class="inline-formula">
+       <div class="alternatives">
+        <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g = \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}}$$\end{document}</span>
+        <div id="M12" class="math">
+         <span class="mi">g</span>
+         <span class="mo">=</span>
+         <div class="msqrt">
+          <span class="mi">N</span>
+         </div>
+         <div class="msub">
+          <div class="mrow">
+           <span mathvariant="normal" class="mi">μ</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">E</span>
+          </div>
+          <div class="mrow">
+           <span mathvariant="normal" class="mi">vac</span>
+          </div>
+         </div>
+        </div>
+        <span xlink:href="41467_2019_11315_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+       </div>
+      </div>, while the dashed lines mark the ideal dependence multiplied with efficiency factors 
+      <span class="italic">η</span> of 
+      <span class="italic">η</span>
+      <sub>201</sub> = 0.47, 
+      <span class="italic">η</span>
+      <sub>586</sub> = 0.61, and 
+      <span class="italic">η</span>
+      <sub>1289</sub> = 0.78 (see Fig. 
+      <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a> and its in-text description for details)
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11315_Fig3_HTML" id="d29e980" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Coupling efficiencies</div>
+  <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Equation (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>) is accurate under the condition that all excitonic modes are coherently coupled with the same, maximal rate to the cavity. This is true for structures such as Fabry-Pérot cavities, photonic crystal slabs, or micropillars, in which the anti-node of the mode is accessible to excitonic modes of molecules or semiconductors by precise placement via trapping or doping
+   <span class="sup">
+    <a ref-type="bibr" rid="CR3" href="#CR3">3</a>,
+    <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+   </span>. For isolated plasmonic particles the maximum of its mode is, however, typically inside the particle
+   <span class="sup">
+    <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+   </span>, such as in the present case. Consequently, the molecular coherent dipole moment interacting with the cavity is smaller than its maximum value of 4.35 D, and it is estimated to be in the range from 2 to 4 D, increasing with the size of the nanoparticle. The reduction of the coherent dipole moment is typically expressed in terms of an efficiency factor 
+   <span class="italic">η</span> determined by the ratio of the mode energy density at the position of the exciton to its maximum value
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+   </span>.
+  </p>
+  <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Before extracting efficiency factors 
+   <span class="italic">η</span> from the TDDFT data, we estimate their values on the basis of classical electromagnetic calculations, which are acceptable at a semi-quantitative level for picocavities
+   <span class="sup">
+    <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+   </span>, using a local Drude-permittivity tailored to match the TDDFT absorption spectrum for Al
+   <sub>201</sub>. We find that in the spatial region occupied by the benzene molecule the efficiency 
+   <span class="italic">η</span> ranges from 0.3 to 0.5 (Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>), due to the rapid decrease of the plasmon-induced electric field. However, such a low value of 
+   <span class="italic">η</span> predicted by calculating the mode profile of a bare cavity might not hold in practice. It is known that the presence of a material with a refractive index greater than the background causes additional field localization, increasing the coupling strength
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+   </span>. While a single benzene molecule cannot be meaningfully described in terms of a refractive index, it causes a similar effect. This is supported by the electric near-field enhancements calculated with TDDFT (Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4b–d</a>). In comparison to the field of the plasmon in the bare nanoparticle, in the LP/UP of the coupled system the benzene molecule focuses the electric field, modifying the cavity and, consequently, its vacuum field
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+   </span>.
+   <div id="Fig4" class="fig">
+    <span class="label">Fig. 4</span>
+    <div class="caption">
+     <p>Coupling efficiency and electric near-field enhancement in Al
+      <sub>201</sub>. 
+      <span class="bold">a</span> Spatial map of the coupling efficiency (normalized mode energy density, calculated using classical electromagnetism) shows that maximum coupling occurs if the benzene molecule is inside the Al
+      <sub>201</sub> particle and decreases rapidly away from its surface. At the position of benzene the coupling efficiency is about 30–50% of the maximum value. The contours are spaced every 0.2. 
+      <span class="bold">b</span>–
+      <span class="bold">d</span> Field enhancement from time-dependent density-functional theory calculations at (
+      <span class="bold">b</span>) the Al
+      <sub>201</sub> resonance and at the Al
+      <sub>201</sub>-benzene (
+      <span class="bold">c</span>) lower and (
+      <span class="bold">d</span>) upper polaritons (with benzene located at the center of the facet). Benzene focuses the electric field, perturbing the nanoplasmonic cavity and increasing the coupling efficiency beyond the expectation based on the field at the bare resonance
+      <span class="sup">
+       <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+      </span>
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11315_Fig4_HTML" id="d29e1082" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">To estimate the coupling efficiencies 
+   <span class="italic">η</span> from the TDDFT-derived coupling strengths (Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>), we extract their values as modifications of the slope predicted by Eq. (
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>). The resulting dependencies 
+   <div id="IEq6" class="inline-formula">
+    <div class="alternatives">
+     <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$g = \eta \sqrt N {\rm{\mu}} _1E_{{\mathrm{vac}}}$$\end{document}</span>
+     <div id="M14" class="math">
+      <span class="mi">g</span>
+      <span class="mo">=</span>
+      <span class="mi">η</span>
+      <div class="msqrt">
+       <span class="mi">N</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">μ</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span mathvariant="normal" class="mi">vac</span>
+       </div>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11315_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div> are shown as dashed lines in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. For Al
+   <sub>201</sub>, the corresponding value 
+   <span class="italic">η</span>
+   <sub>201</sub> = 0.47 gives a good agreement for 
+   <span class="italic">N</span> ≤ 3, but for 
+   <span class="italic">N</span> &gt; 3 the coupling strengths fall below the slope set by 
+   <span class="italic">η</span>
+   <sub>201</sub>. Such a deviation for large 
+   <span class="italic">N</span> is not observed for the two larger particles, which, respectively, have efficiency factors of 
+   <span class="italic">η</span>
+   <sub>586</sub> = 0.61 and 
+   <span class="italic">η</span>
+   <sub>1289</sub> = 0.78. These larger efficiencies imply that the plasmonic modes of the larger particles are used more efficiently than in the case of Al
+   <sub>201</sub>. Minor deviations seen for the two larger nanoparticles for 
+   <span class="italic">N</span> &lt; 3 are probably caused by inaccurate fitting of the absorption spectra as the LP and UP are not clearly separated.
+  </p>
+  <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">To test the effect of a diminishing overlap between the vacuum field of the cavity and the molecular exciton, we calculated the dependence of coupling strength on the nanoparticle-molecule separation (Fig. 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>). The Rabi splitting of LP and UP decreases with increasing separation and the reduction of the coupling efficiency
+   <span class="sup">
+    <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+   </span> leads to a decrease in the coupling strength (Fig. 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5b</a>).
+   <div id="Fig5" class="fig">
+    <span class="label">Fig. 5</span>
+    <div class="caption">
+     <p>Dependence of coupling on nanoparticle-molecule separation. 
+      <span class="bold">a</span> Photoabsorption spectra for two benzene molecules coupled to the Al
+      <sub>201</sub> particle, showing weaker splitting with increasing separation from 3–8 Å. 
+      <span class="bold">b</span> Coupling strength for two benzene molecules as a function of distance from the Al
+      <sub>201</sub> particle, showing the expected decrease due to the decreasing overlap integral between exciton and mode
+     </p>
+    </div>
+    <div xlink:href="41467_2019_11315_Fig5_HTML" id="d29e1200" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+</sec>

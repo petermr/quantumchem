@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec16" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Inorganic polymerization catalysis</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Since QC is applied in all fields of chemistry, we searched for a use case from catalysis in order to demonstrate the wide applicability of the concept. In modern controlled polymerization techniques such as atom transfer radical polymerization (ATRP) [
+  <a ref-type="bibr" rid="CR53" href="#CR53">53</a>], the control over redox properties is crucial for the polymerization control. In this use case, we are interested in the relative ratio of an equilibrium between different copper guanidine complexes which can interchange electrons and halide atoms. Hence, we have two slightly differing ligands, TMGqu and DMEGqu [
+  <a ref-type="bibr" rid="CR54" href="#CR54">54</a>], which stabilise copper(I) and copper(II) complexes. As equilibrium with the equilibrium constant K
+  <sub>iso</sub>, we can write the atom transfer reaction as described in Fig. 
+  <a rid="Fig12" ref-type="fig" href="#Fig12">12</a>. We start with experimental structures of the four complexes. So, the whole equilibrium workflow is performed for each structure.
+  <div id="Fig12" class="fig">
+   <span class="label">Fig. 12</span>
+   <div class="caption">
+    <p>Equilibrium between copper(I) and (II) complexes with guanidine–quinoline ligands and the structures of these complexes</p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig12_HTML" id="MO22" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To describe the equilibrium we developed the 
+  <span class="italic">Equil_Calc WF</span> meta-workflow with a three-layer structure as depicted in Fig. 
+  <a rid="Fig13" ref-type="fig" href="#Fig13">13</a>. There are three atomic workflows to run the QC code at the bottom layer (or first layer). The 
+  <span class="italic">Opt WF</span> atomic workflow processes the 
+  <span class="italic">input file</span> (of the experimental structure) produced by the 
+  <span class="italic">Job Creator</span> from the experimental structure and generates an optimization input file within this atomic workflow. The optimized structure is parsed by the job creator of the 
+  <span class="italic">Freq</span>-
+  <span class="italic">0</span> 
+  <span class="italic">K WF</span> and 
+  <span class="italic">Freq</span>-
+  <span class="italic">400</span> 
+  <span class="italic">K WF</span> atomic workflow to create two parallel frequency files (Fig. 
+  <a rid="Fig13" ref-type="fig" href="#Fig13">13</a>). Normally, the standard frequency calculations are performed at 0 K but in this equilibrium case, experimental conditions at 400 K shall be considered as well. These two atomic workflows run in parallel. This meta-workflow represents the second layer of the simulation.
+  <div id="Fig13" class="fig">
+   <span class="label">Fig. 13</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Equil_Calc M</span>-
+     <span class="italic">WF</span> meta-workflow with three atomic workflows
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig13_HTML" id="MO23" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As this type of calculations has to be performed in different solvents (acetonitrile = MeCN and xylene) as well as with and without dispersion, the meta-workflow has to be performed four times in parallel inside the 
+  <span class="italic">Equil_Solv_M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span> meta workflow given in Fig. 
+  <a rid="Fig14" ref-type="fig" href="#Fig14">14</a>. This meta-workflow represents the third layer of the simulation incorporating the 
+  <span class="italic">Opt plus 2freq M</span>-
+  <span class="italic">WF</span> meta-workflows. The result of this meta-workflow is a table containing the energies, enthalpies and free energies parsed out of the result files of the eight frequency jobs, since every single meta-workflow produces two frequency output files. This table contains basically the results for one complex.
+  <div id="Fig14" class="fig">
+   <span class="label">Fig. 14</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Equil_Solv M</span>
+     <span class="sup">
+      <span class="italic">2</span>
+     </span>-
+     <span class="italic">WF</span> meta
+     <span class="sup">2</span>workflow
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig14_HTML" id="MO24" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">After completing the 
+  <span class="italic">Equil_Solv M</span>
+  <span class="sup">
+   <span class="italic">2</span>
+  </span>-
+  <span class="italic">WF</span> meta
+  <span class="sup">2</span>-workflow the user can summarize the resulting tables and calculate the relative energies yielding the desired K
+  <sub>iso</sub> value. This could be included into 
+  <span class="italic">the Equi_Energ M</span>
+  <span class="sup">
+   <span class="italic">3</span>
+  </span>-
+  <span class="italic">WF</span> meta-workflow at the fourth workflow layer (Fig. 
+  <a rid="Fig15" ref-type="fig" href="#Fig15">15</a>). In principle, one should also evaluate the functional influence because different density functionals treat electron correlation differently yielding different results here. This would even add a fifth layer.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the daily chemical computational work, we have found that every layer adds efficiency with a factor of around 2–3 as time-consuming job definition, structure extraction and data collection are considerably facilitated. This factor can be calculated by the following example: the manual definition of one job takes 3 min. So, the embedded workflow in Fig. 
+  <a rid="Fig13" ref-type="fig" href="#Fig13">13</a> would need 9 min and the meta-workflow in Fig. 
+  <a rid="Fig14" ref-type="fig" href="#Fig14">14</a> four times more, 36 min. The highest level WF would then add up to 144 min of job definition time in manual mode. The data extraction time can be assumed to the same amount; hence, we end up with approximately 280 min for one run of the jobs summarized in Fig. 
+  <a rid="Fig15" ref-type="fig" href="#Fig15">15</a>. In fact, the corresponding workflow needs to be defined and tested, but since the embedded workflows are very similar the meta-workflow system saves time, such that the whole workflow definition needs 3–4 h. But then, it can be performed several times and re-used in itself or by its building blocks. Thereby, we estimate the efficiency factor to 2–3.
+  <div id="Fig15" class="fig">
+   <span class="label">Fig. 15</span>
+   <div class="caption">
+    <p>
+     <span class="italic">Equil_Energ M</span>
+     <span class="sup">
+      <span class="italic">3</span>
+     </span>-
+     <span class="italic">WF</span> meta
+     <span class="sup">3</span>workflow defined for each complex and analysed into a single table
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig15_HTML" id="MO25" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

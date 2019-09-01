@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Mapping to qubits</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We first discuss mapping the molecular Hamiltonian into qubits. We work in the basis of harmonic oscillator eigenstates, as these can be easily mapped to qubits. The direct mapping presented below was originally suggested in the context of simulating general bosonic systems by Somma 
+  <span class="italic">et al.</span>
+  <a rid="cit48" ref-type="bibr" href="#cit48">48</a> It has been used recently in the context of quantum simulation of nuclear physics to investigate the binding energy of a deuteron nucleus.
+  <a rid="cit49" ref-type="bibr" href="#cit49">49</a> The compact mapping discussed below was proposed by Veis 
+  <span class="italic">et al.</span>, in the context of using quantum computers to simulate ‘nuclear orbital plus molecular orbital (NOMO)’ theory, which uses Gaussian orbitals for the nuclei, and treats them on an equal footing to the electrons.
+  <a rid="cit50" ref-type="bibr" href="#cit50">50</a> This differs from our work, which separates the nuclear and electronic degrees of freedom, and predominantly considers a harmonic oscillator basis for the vibrational modes. While this tailors our method for vibrational problems, it means we are limited to solving problems for which the Born–Oppenheimer approximation is valid, unlike 
+  <a rid="cit50" ref-type="bibr" href="#cit50">ref. 50</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Focusing first on one harmonic oscillator, 
+  <span class="italic">ĥ</span> = 
+  <span class="italic">ωa</span>
+  <span class="sup">†</span>
+  <span class="italic">a</span>, we consider the truncated eigenstates with the lowest 
+  <span class="italic">d</span> energies, |
+  <span class="italic">s</span>〉 with with 
+  <span class="italic">s</span> = 0,1,…,
+  <span class="italic">d</span> – 1. A 
+  <span class="italic">direct mapping</span> of the space {|
+  <span class="italic">s</span>〉} is to encode it with } is to encode it with 
+  <span class="italic">d</span> qubits as
+  <div id="eqn6" class="disp-formula">
+   <span class="label">6</span>|
+   <span class="italic">s</span>〉 = ⊗ = ⊗
+   <span class="italic">s</span>–1
+   <span class="italic">j</span>=0|0|0〉
+   <sub>
+    <span class="italic">j</span>
+   </sub>|1|1〉
+   <sub>
+    <span class="italic">s</span>
+   </sub>⊗
+   <span class="italic">d</span>–1
+   <span class="italic">j</span>=
+   <span class="italic">s</span>+1|0|0〉
+   <sub>
+    <span class="italic">j</span>
+   </sub>,
+  </div>with creation operator
+  <div id="eqn7" class="disp-formula">
+   <span class="label">7</span>
+   <div xlink:href="c9sc01313j-t7.jpg" id="ugt7" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The annihilation operator can be obtained by taking the Hermitian conjugate of 
+  <span class="italic">a</span>
+  <span class="sup">†</span>. As an alternative to the direct mapping, we can use a 
+  <span class="italic">compact mapping</span>, using 
+  <span class="italic">K</span> = [log 
+  <span class="italic">d</span>]′ qubits,
+  <div id="eqn8" class="disp-formula">
+   <span class="label">8</span>|
+   <span class="italic">s</span>〉 = | = |
+   <span class="italic">b</span>
+   <sub>
+    <span class="italic">K</span>–1
+   </sub>〉||
+   <span class="italic">b</span>
+   <sub>
+    <span class="italic">K</span>–2
+   </sub>〉…|…|
+   <span class="italic">b</span>
+   <sub>0</sub>〉,,
+  </div>with binary representation 
+  <span class="italic">s</span> = 
+  <span class="italic">b</span>
+  <sub>
+   <span class="italic">K</span>–1
+  </sub>2
+  <span class="sup">
+   <span class="italic">K</span>–1
+  </span> + 
+  <span class="italic">b</span>
+  <sub>
+   <span class="italic">K</span>–2
+  </sub>2
+  <span class="sup">
+   <span class="italic">K</span>–2
+  </span> + …
+  <span class="italic">b</span>
+  <sub>0</sub>2
+  <span class="sup">0</span>. The representation of the creation operator is
+  <div id="eqn9" class="disp-formula">
+   <span class="label">9</span>
+   <div xlink:href="c9sc01313j-t8.jpg" id="ugt8" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">These binary projectors can then be mapped to Pauli operators;
+  <div id="eqn10" class="disp-formula">
+   <span class="label">10</span>
+   <div xlink:href="c9sc01313j-t9.jpg" id="ugt9" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>when decomposing 
+  <span class="italic">a</span>
+  <span class="sup">†</span> and 
+  <span class="italic">a</span> into local Pauli matrices, there are 
+  <span class="italic">O</span>(
+  <span class="italic">d</span>) and 
+  <span class="italic">O</span>(
+  <span class="italic">d</span>
+  <span class="sup">2</span>) terms for the direct and compact mapping, respectively. In 
+  <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1</a>, we show the number of qubits required to describe the vibrational Hamiltonians of several molecules, for both mappings.
+ </p>
+ <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">Number of qubits required for the direct and compact mappings with 
+    <span class="italic">d</span> = 4 energy levels for each mode.
+   </div>
+  </div>
+  <div xlink:href="c9sc01313j-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As 
+  <span class="bold">p</span> and 
+  <span class="bold">q</span> can both be represented by a linear combination of creation and annihilation operators, we can thus map the nuclear vibrational Hamiltonian to a qubit Hamiltonian. If the molecule has 
+  <span class="italic">n</span> atoms, it has 
+  <span class="italic">M</span> = 3
+  <span class="italic">n</span> – 6 vibrational modes for a nonlinear molecule, and 
+  <span class="italic">M</span> = 3
+  <span class="italic">n</span> – 5 for a linear molecule. The vibrational wavefunction can then be represented with 
+  <span class="italic">Md</span> (direct mapping) or 
+  <span class="italic">M</span> log(
+  <span class="italic">d</span>) (compact mapping) qubits. This can be contrasted with the exponentially scaling classical memory required to store the wavefunction. If the potential is expanded to 
+  <span class="italic">k</span>
+  <span class="sup">th</span> order (with 
+  <span class="italic">M</span> ≫ 
+  <span class="italic">k</span>), the Hamiltonian contains 
+  <span class="italic">O</span>(
+  <span class="italic">M</span>
+  <span class="sup">
+   <span class="italic">k</span>
+  </span>
+  <span class="italic">d</span>
+  <span class="sup">
+   <span class="italic">k</span>
+  </span>) (direct) or 
+  <span class="italic">O</span>(
+  <span class="italic">M</span>
+  <span class="sup">
+   <span class="italic">k</span>
+  </span>
+  <span class="italic">d</span>
+  <span class="sup">2
+   <span class="italic">k</span>
+  </span>) (compact) terms. These terms are strings of local Pauli matrices. In this work, we take 
+  <span class="italic">d</span> to be a small constant. This approximation constrains us to the low energy subspace of the Hamiltonian, which should be valid for calculations of ground and low-lying excited states. The applicability of this approximation to the simulation of dynamics is discussed in Section VI. We set 
+  <span class="italic">k</span> = 4 to investigate the Hamiltonian to quartic order. The resulting Hamiltonian has 
+  <span class="italic">O</span>(
+  <span class="italic">M</span>
+  <span class="sup">4</span>) terms.
+ </p>
+</sec>

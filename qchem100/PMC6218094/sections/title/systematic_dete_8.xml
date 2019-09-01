@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec004" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Systematic detection of potentially erroneous experimental values</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Inconsistencies between our predictions and experimental measurements can be used to identify potentially erroneous experimental values. However, as such discrepancies might stem from false predictions, we used an independent method to estimate redox potentials. We reasoned that consistent deviation from two very different prediction approaches should be regarded as indicative of potential experimental error. The second prediction approach we used is based on reaction fingerprints [
+  <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>], where the structure of the reactants involved is encoded as a binary vector (166 parameters without regularization, Supplementary Information). These binary vectors are then used as variables in a regularized regression to correlate structure against a physicochemical property of interest, such as redox potential [
+  <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>,
+  <a rid="pcbi.1006471.ref039" ref-type="bibr" href="#pcbi.1006471.ref039">39</a>]. This approach is similar to the group contribution method (GCM) in that it is based on a structural decomposition of compounds; however, unlike GCM, fingerprints encode a more detailed structural representation of the compounds.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To detect potentially erroneous experimental measurements, we focused on redox potentials of category G2 (carbonyl to hydroxycarbon reduction) as we have abundant experimental information for this oxidoreductase group (see 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s008" href="#pcbi.1006471.s008">S4 Fig</a> for results with the other categories). As shown in 
+  <a ref-type="fig" rid="pcbi.1006471.g002" href="#pcbi.1006471.g002">Fig 2C</a>, we normalized the prediction errors by computing their associated z-scores (indicating how many standard deviations a prediction error is from the mean error across all reactions). Two redox reactions stand out as having significantly different experimental and predicted values for both methods (Z&gt;2): indolepyruvate reduction to indolelactate (indolelactate dehydrogenase, EC 1.1.1.110) and succinate semialdehyde reduction to 4-hydroxybutanoate (succinate semialdehyde reductase, 1.1.1.61).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We suggest an explanation for the observed deviation of the first reaction: in the experimental study, the K’
+  <sub>eq</sub> of indolelactate dehydrogenase was measured using absorbance at 340 nm as an indicator of the concentration of NADH [
+  <a rid="pcbi.1006471.ref040" ref-type="bibr" href="#pcbi.1006471.ref040">40</a>]. However, since indolic compounds also have strong absorption at 340 nm [
+  <a rid="pcbi.1006471.ref041" ref-type="bibr" href="#pcbi.1006471.ref041">41</a>], this method probably resulted in an overestimation of the concentration of NADH, and thus an underestimation of K’
+  <sub>eq</sub>. Indeed, the experimentally derived E’
+  <span class="sup">m</span> is considerably lower (-400 mV) than the predicted one (-190 mV, via quantum chemistry). With regards to the second reaction, succinate semialdehyde reductase, we note that re-measuring its redox potential is of considerable significance as it plays a central role both in carbon fixation–e.g., the 3-hydroxypropionate-4-hydroxybutyrate cycle and the dicarboxylate-4-hydroxybutyrate cycle [
+  <a rid="pcbi.1006471.ref011" ref-type="bibr" href="#pcbi.1006471.ref011">11</a>] –as well as in production of key commodities–e.g., biosynthesis of 1,4-butanediol [
+  <a rid="pcbi.1006471.ref042" ref-type="bibr" href="#pcbi.1006471.ref042">42</a>].
+ </p>
+</sec>

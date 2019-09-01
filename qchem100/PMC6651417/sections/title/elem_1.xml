@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" id="sec2-ijms-20-03190" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2. Results</div>
+ <sec id="sec2dot1-ijms-20-03190" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1. Characterization of Conjugated Particles</div>
+  <sec id="sec2dot1dot1-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1.1. Fourier Transform Infrared—Attenuated Total Reflectance Spectroscopy</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">FTIR analysis showed a peak at ~1700 cm
+    <span class="sup">−1</span> that is representative of a carbonyl carbon belonging to a carboxylic acid functional group (
+    <a ref-type="fig" rid="ijms-20-03190-f001" href="#ijms-20-03190-f001">Figure 1</a>). When comparing the pre-conjugation particles to the post-conjugation particles, this peak is replaced by the dual peaks at ~1550cm
+    <span class="sup">−1</span> and ~1650 cm
+    <span class="sup">−1</span>, as well as a new peak at ~3300 cm
+    <span class="sup">−1</span>. The peaks at 1550 and 3300 are mostly representative of an N–H bond found in an amide group. The peak at 1650 is mostly representative of a carbonyl carbon attached to an amine in an amide bond.
+   </p>
+   <p xmlns="http://www.w3.org/1999/xhtml">Taken together, the loss of the carboxylic acid functional group and the gaining of an amide bond strongly suggest that the conjugation between the magnetic nanoparticle and the protein by way of EDC/NHS, was successful. Furthermore, these results are consistent across multiple different proteins, which suggests that FTIR is a reliable method for testing conjugation chemistry.</p>
+  </sec>
+  <sec id="sec2dot1dot2-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1.2. Dynamic Light Scattering (DLS)</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The bimodal peak distribution in 
+    <a ref-type="fig" rid="ijms-20-03190-f002" href="#ijms-20-03190-f002">Figure 2</a>c indicates aggregation of the magnetic nanoparticles. The aggregate size was 1 to 3 µm. In 
+    <a ref-type="fig" rid="ijms-20-03190-f002" href="#ijms-20-03190-f002">Figure 2</a>b, however, it was assumed that the particle size would be akin to that of 
+    <a ref-type="fig" rid="ijms-20-03190-f002" href="#ijms-20-03190-f002">Figure 2</a>a, around the given size of 30 nm, however, the size distribution of the control group was seemingly an order of magnitude greater than that of the particles alone. The unimodal distribution does not point to aggregation of the particles, but rather to a change in the particle’s hydrodynamic radius. One possible explanation could be the increase of hydrodynamic radius by the ring opening conversion of maleic anhydride to maleic acid, which represents the converted surface species on the magnetic nanoparticles. The additional carboxyl groups are then additionally stabilized and solvated by Phosphate-buffered saline (PBS), which would be the most likely case for the shift in distribution but retention of unimodality.
+   </p>
+  </sec>
+  <sec id="sec2dot1dot3-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1.3. Transmission Electron Microscopy (TEM)</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The TEM images of 
+    <a ref-type="fig" rid="ijms-20-03190-f003" href="#ijms-20-03190-f003">Figure 3</a>c,d show the formation of a film-like structure surrounding the magnetic nanoparticles after both EDC and NHS were added. If we assume that this film is made of latent TGF-β, then this suggests that the EDC/NHS conjugation reaction effectively crosslinked the nanoparticles. The conversion of maleic anhydride to maleic acid frees up two units of carboxylic acids that are primed for use by carbodiimide conjugation, the density of the surface species, maleic acid, would dictate the degree of binding availability for the protein to be bound to. TGF-β has multiple binding domains available for carbodiimide conjugation chemistry to occur. Thus, the free TGF-β that may have already reacted with one magnetic nanoparticle may yet still react with another magnetic nanoparticle, or even with another protein. This is likely the cause of the aggregation seen in 
+    <a ref-type="fig" rid="ijms-20-03190-f002" href="#ijms-20-03190-f002">Figure 2</a>c’s DLS results.
+   </p>
+  </sec>
+  <sec id="sec2dot1dot4-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1.4. Superconducting Quantum Interference Device Magnetometer.</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The high magnetization and lack of hysteresis shown in 
+    <a ref-type="fig" rid="ijms-20-03190-f004" href="#ijms-20-03190-f004">Figure 4</a>A indicate that the particles were superparamagnetic and retained their superparamagnetic properties after conjugation. In 
+    <a ref-type="fig" rid="ijms-20-03190-f004" href="#ijms-20-03190-f004">Figure 4</a>B, the two groups shared similar volume fractions, as expected. This suggests an accurate Lavange-Chantrell model. Notably, the results shown in 
+    <a ref-type="fig" rid="ijms-20-03190-f004" href="#ijms-20-03190-f004">Figure 4</a>B also indicate that there was no observable decrease in saturation magnetization caused by the conjugation of the magnetic nanoparticles, though further studies are required to verify the statistical significance of this observation. Interestingly enough, 
+    <a ref-type="fig" rid="ijms-20-03190-f004" href="#ijms-20-03190-f004">Figure 4</a>B also indicates that the conjugated particles exhibited an increase in magnetic diameter. The magnetic diameter obtained from the Chantrell model often differs from a particle’s physical diameter. Thus, it does not necessarily follow that an increase in physical diameter should also lead to an increase in magnetic diameter, especially when that increase is due to the conjugation of a nominally diamagnetic protein. As such, further investigation into this matter is needed.
+   </p>
+  </sec>
+ </sec>
+ <sec id="sec2dot2-ijms-20-03190" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.2. ELISA of Activated TGF-β</div>
+  <sec id="sec2dot2dot1-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.2.1. Magnetic Release of Active TGF-β</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Results indicate a statistically significant (
+    <span class="italic">p</span> &lt; 0.001) increase in the release of active TGF-β from the samples that underwent magnetic hyperthermia, compared to the background release seen in the control. However, the high background release of the control group indicates that either the alternating magnetic field, sample handling, or the carbodiimide crosslinking itself may have led to some release of active TGF-β from the SLC.
+   </p>
+  </sec>
+  <sec id="sec2dot2dot2-ijms-20-03190" class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.2.2. Heat Controls</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">An ELISA specific to active TGF-β was run with samples at room temperature versus samples heated at 55 °C for a period for 1 h, and samples heated at 80 °C for 10 min. As shown by 
+    <a ref-type="fig" rid="ijms-20-03190-f005" href="#ijms-20-03190-f005">Figure 5</a>a, the bulk temperature of the sample reached as high as 55 °C during magnetic induction. However, heating at 55 °C for a period of 1 h was not enough to cause a significant increase in the release of active TGF-β from the latent complex when compared to the negative control of latent TGF-β left at room temperature, as shown in 
+    <a ref-type="fig" rid="ijms-20-03190-f005" href="#ijms-20-03190-f005">Figure 5</a>b. Instead, temperature must exceed 80 °C in order to show a significant amount of release.
+   </p>
+  </sec>
+ </sec>
+</sec>

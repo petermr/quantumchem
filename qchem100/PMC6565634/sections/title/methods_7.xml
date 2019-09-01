@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec7" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">JPA 1 and JPA 2 perform a squeezing operation 
+  <div id="IEq3" class="inline-formula">
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat S(\xi )|0\rangle$$\end{document}</span>
+    <div id="M10" class="math">
+     <span class="mi">Ŝ</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">ξ</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">∣</span>
+     <span class="mn">0</span>
+     <span class="mo">⟩</span>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq3.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <div id="IEq4" class="inline-formula">
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat S(\xi ) = {\mathrm{exp}}\left( {\frac{1}{2}\xi ^ \ast \hat a^2 - \frac{1}{2}\xi (\hat a^\dagger )^2} \right)$$\end{document}</span>
+    <div id="M12" class="math">
+     <span class="mi">Ŝ</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">ξ</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <span mathvariant="normal" class="mi">exp</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ξ</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">*</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">â</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">-</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mi">ξ</span>
+       <div class="msup">
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">â</span>
+            </div>
+            <div class="mrow">
+             <span class="mo">†</span>
+            </div>
+           </div>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq4.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the squeezing operator, 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat a^\dagger = \hat q - i\hat p$$\end{document}</span>
+    <div id="M14" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">q</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+     <span class="mo">-</span>
+     <span class="mi">i</span>
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">p</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat a = \hat q + i\hat p$$\end{document}</span>
+    <div id="M16" class="math">
+     <span class="mi">â</span>
+     <span class="mo">=</span>
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">q</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+     <span class="mo">+</span>
+     <span class="mi">i</span>
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">p</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> are the creation and annihilation operators with 
+  <div id="IEq7" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left[ {\hat a,\hat a^\dagger } \right] = 1$$\end{document}</span>
+    <div id="M18" class="math">
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mi">â</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">â</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">†</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">1</span>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> of the 
+  <span class="italic">f</span>
+  <sub>0</sub> mode with quadratures 
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat q$$\end{document}</span>
+    <div id="M20" class="math">
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">q</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq9" class="inline-formula">
+   <div class="alternatives">
+    <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat p$$\end{document}</span>
+    <div id="M22" class="math">
+     <div accent="true" class="mover">
+      <div class="mrow">
+       <span class="mi">p</span>
+      </div>
+      <span class="mo">^</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, and 
+  <span class="italic">ξ</span> = 
+  <span class="italic">re</span>
+  <span class="sup">
+   <span class="italic">iϕ</span>
+  </span> is the complex squeezing amplitude. Here, the phase 
+  <span class="italic">ϕ</span> = − 2
+  <span class="italic">γ</span> determines the squeezing angle 
+  <span class="italic">γ</span> between the antisqueezed quadrature and the 
+  <span class="italic">p</span>-axis in the phase space, while the squeezing factor 
+  <span class="italic">r</span> parameterizes the amount of squeezing. We define the degree of squeezing in decibels as 
+  <div id="IEq10" class="inline-formula">
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S = - 10{\kern 1pt} \,\log _{10}\left[ {\sigma _{\mathrm{s}}^2/0.25} \right]$$\end{document}</span>
+    <div id="M24" class="math">
+     <span class="mi">S</span>
+     <span class="mo">=</span>
+     <span class="mo">-</span>
+     <span class="mn">10</span>
+     <span width="0.25em" class="mspace"/>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mo">log</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">10</span>
+      </div>
+     </div>
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">σ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">s</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">∕</span>
+       <span class="mn">0.25</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <div id="IEq11" class="inline-formula">
+   <div class="alternatives">
+    <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sigma _{\mathrm{s}}^2$$\end{document}</span>
+    <div id="M26" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">s</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the variance of the squeezed quadrature and the vacuum variance is 0.25. Positive values of 
+  <span class="italic">S</span> indicate squeezing below the vacuum level. The antisqueezing level is defined as 
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$A = 10\,{\mathrm{log}}_{10}\left[ {\sigma _{\mathrm{a}}^2/0.25} \right]$$\end{document}</span>
+    <div id="M28" class="math">
+     <span class="mi">A</span>
+     <span class="mo">=</span>
+     <span class="mn">10</span>
+     <span width="0.25em" class="mspace"/>
+     <div class="msub">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">log</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">10</span>
+      </div>
+     </div>
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">σ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">a</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">∕</span>
+       <span class="mn">0.25</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <div id="IEq13" class="inline-formula">
+   <div class="alternatives">
+    <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sigma _{\mathrm{a}}^2$$\end{document}</span>
+    <div id="M30" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the variance of the antisqueezed quadrature. We generate symmetric TMS states at the outputs of the hybrid ring by pumping JPA 1 and JPA 2 with strong quasi-continuous microwave drives, so that they produce squeezed states with the same squeezing level and orthogonal squeezing angles 
+  <span class="italic">γ</span>
+  <sub>2</sub> = 
+  <span class="italic">γ</span>
+  <sub>1</sub> + 
+  <span class="italic">π</span>/2. These angles are stabilized by controlling the respective pump phases employing a phase-locked loop
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>,
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+  </span>. The stability of these TMS states in terms of two-mode squeezing and symmetry is of paramount importance in our experiments. Only by utilizing the nonclassical correlations between Alice and Bob, it is possible to demonstrate the successful RSP protocol. In order to reconstruct the quantum states in the experiment, we employ a well-tested reference state tomography based on statistical moments of the detected field quadratures
+  <span class="sup">
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>,
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>.
+ </p>
+</sec>

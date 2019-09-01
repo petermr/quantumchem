@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">IV.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Simulating molecular vibrations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Once the vibrational modes have been mapped to qubits, we can use quantum algorithms to obtain the static and dynamic properties of the system. We can write the qubit Hamiltonian as 
+  <span xlink:href="c9sc01313j-t10.jpg" id="ugt10" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> where 
+  <span class="italic">λ
+   <sub>i</sub>
+  </span> are coefficients determining the strength of each term in the Hamiltonian.
+ </p>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrational energy levels</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">An important, but classically difficult problem, is to obtain accurate energy levels for the vibrational Hamiltonian. The spectrum of the vibrational Hamiltonian provides corrections to the electronic eigenstates used to predict reaction rates.
+   <a rid="cit22" ref-type="bibr" href="#cit22">22</a> Moreover, we will show how these energy levels can be used to calculate the absorption spectrum of molecules in Section IV.B. Of particular interest are the lowest lying energy levels at low temperature. Using a universal quantum computer, we can first prepare an initial state that has a large overlap with the ground state of the vibrational Hamiltonian. We can then use the phase estimation algorithm
+   <a rid="cit7" ref-type="bibr" href="#cit7">7</a>,
+   <a rid="cit51" ref-type="bibr" href="#cit51">51</a> to probabilistically obtain the ground state and ground state energy. A possible initial ground state is the lowest energy product state of the harmonic oscillator basis states, |
+   <span class="italic">ψ</span>
+   <sub>0</sub>〉 = ⊗ = ⊗
+   <sub>
+    <span class="italic">m</span>
+   </sub>|
+   <span class="italic">s</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>〉
+   <sub>
+    <span class="italic">m</span>
+   </sub>. However, we note that the overlap between this state and the true ground state may decrease exponentially with the size of the molecule. This so-called ‘orthogonality catastrophe’ has been discussed previously in the context of electronic structure calculations on a quantum computer.
+   <a rid="cit52" ref-type="bibr" href="#cit52">52</a>,
+   <a rid="cit53" ref-type="bibr" href="#cit53">53</a> As a result, for large systems it may be more efficient to use an initial state obtained from a classical vibrational self-consistent field (VSCF) calculation. VSCF is the vibrational analogue of the Hartree–Fock method in electronic structure theory. VSCF optimises the basis functions to minimise the energy of the Hamiltonian with a product state.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Another route to a state with a large overlap with the ground state, is to prepare the VSCF state, and then adiabatically evolve under a Hamiltonian that changes slowly from the VSCF Hamiltonian, to the full vibrational Hamiltonian 
+   <span class="italic">H</span>. This approach has received significant attention within quantum computing approaches to the electronic structure problem, since it was first proposed in the context of quantum computational chemistry in 
+   <a rid="cit8" ref-type="bibr" href="#cit8">ref. 8</a>. However, both adiabatic state preparation and phase estimation typically require long circuits, with a large number of gates. As a result, quantum error correction is required to suppress the effect of device imperfections. It is therefore helpful to introduce variational methods, which may make these calculations feasible for near-term, non-error corrected quantum computers. Variational methods replace the long gate sequences required by phase estimation with a polynomial number of shorter circuits.
+   <a rid="cit42" ref-type="bibr" href="#cit42">42</a>,
+   <a rid="cit54" ref-type="bibr" href="#cit54">54</a> This dramatically reduces the coherence time required. As a result, quantum error correction may not be required, if the error rate is sufficiently low, in the context of the number of gates required. The circuits used consist of a number of parametrised gates which seek to create an accurate approximation of the desired state. The parameters are updated using a classical feedback loop, in order to produce better approximations of the desired state. The circuit used is known as the ‘ansatz’ circuit.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Inspired by classical methods for the vibrational structure problem, we introduce the unitary vibrational coupled cluster (UVCC) ansatz. This is a unitary analogue of the VCC ansatz introduced in 
+   <a rid="cit12" ref-type="bibr" href="#cit12">ref. 12 and 46</a>. We note that a similar pairing exists for the electronic structure problem, where the unitary coupled cluster (UCC) ansatz
+   <a rid="cit55" ref-type="bibr" href="#cit55">55</a>,
+   <a rid="cit56" ref-type="bibr" href="#cit56">56</a> has been suggested as a quantum version of the classical coupled cluster method. The UVCC ansatz is given by
+   <div id="eqn11" class="disp-formula">
+    <span class="label">11</span>|
+    <span class="bold">Ψ</span>(
+    <span class="italic">θ⃑</span>))〉 = exp( = exp(
+    <span class="italic">T[combining circumflex]</span> – 
+    <span class="italic">T[combining circumflex]</span>
+    <span class="sup">†</span>)|
+    <span class="bold">Ψ</span>
+    <sub>0</sub>〉,,
+   </div>where the initial state |
+   <span class="bold">Ψ</span>
+   <sub>0</sub>〉 can be either the ground state | can be either the ground state |
+   <span class="italic">ψ</span>
+   <sub>0</sub>〉 of the harmonic oscillators or the VSCF state | of the harmonic oscillators or the VSCF state |
+   <span class="bold">Ψ</span>
+   <sub>VSCF</sub>〉, , 
+   <span class="italic">T[combining circumflex]</span> is the sum of molecular excitation operators truncated at a specified excitation rank, and 
+   <span class="italic">θ⃑</span> are the parameters defined below. Similar to the unitary coupled cluster ansatz in electronic structure problems, the single and double excitation operators are
+   <div id="eqn12" class="disp-formula">
+    <span class="label">12</span>
+    <span class="italic">T[combining circumflex]</span> = 
+    <span class="italic">T[combining circumflex]</span>
+    <sub>1</sub> + 
+    <span class="italic">T[combining circumflex]</span>
+    <sub>2</sub> +…,
+   </div>with
+   <div id="eqn13" class="disp-formula">
+    <span class="label">13</span>
+    <div xlink:href="c9sc01313j-t11.jpg" id="ugt11" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Here, we omit the subscript of modes for simplicity. 
+   <span class="italic">θ</span>
+   <sub>
+    <span class="italic">s</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">t</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>
+   </sub> and 
+   <span class="italic">θ</span>
+   <sub>
+    <span class="italic">s</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">t</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">p</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">q</span>
+    <sub>
+     <span class="italic">n</span>
+    </sub>
+   </sub> are real parameters, and 
+   <span class="italic">θ⃑</span> = {
+   <span class="italic">θ</span>
+   <sub>
+    <span class="italic">s</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">t</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>
+   </sub>,
+   <span class="italic">θ</span>
+   <sub>
+    <span class="italic">s</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">t</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">p</span>
+    <sub>
+     <span class="italic">m</span>
+    </sub>,
+    <span class="italic">q</span>
+    <sub>
+     <span class="italic">n</span>
+    </sub>
+   </sub>}. The 
+   <span class="italic">T[combining circumflex]</span> operators can be mapped to qubit operators 
+   <span class="italic">via</span> either the direct or compact mapping.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The UVCC ansatz seeks to create a good approximation to the true ground state by considering excitations above a reference state. We note that the classical VCC ansatz is not a unitary operator. Correspondingly, the method is not variational, meaning that energies are not bounded from below. Moreover, we expect that the UVCC ansatz will deal better with problems of strong static correlation than the VCC ansatz, as the former can easily be used with multi-reference states. This echoes the way in which the UCC ansatz can be used with multi-reference states,
+   <a rid="cit56" ref-type="bibr" href="#cit56">56</a> while it is typically more difficult when using the canonical CC method.
+   <a rid="cit1" ref-type="bibr" href="#cit1">1</a>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Once we have obtained the energy levels of the vibrational Hamiltonian using the methods discussed above, we can calculate the infrared and Raman frequencies, using the difference between the excited and ground-state energies.
+   <a rid="cit57" ref-type="bibr" href="#cit57">57</a>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">It is often also the case that one is interested in the properties of a system in thermal equilibrium, rather than a specific eigenstate. We can also use established quantum algorithms with the Hamiltonians described above to construct these thermal states. On error corrected quantum computers, we can use the heuristic algorithms presented in 
+   <a rid="cit58" ref-type="bibr" href="#cit58">ref. 58 and 59</a> to construct these thermal states. Alternatively, we can use near-term devices to implement hybrid algorithms for imaginary time evolution.
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a>–
+   <a rid="cit62" ref-type="bibr" href="#cit62">62</a>
+  </p>
+ </sec>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">B.</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Franck–Condon factors</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In addition to focusing on the eigenstates or thermal states of a single vibrational Hamiltonian, we can also consider vibronic (vibrational and electronic) transitions between the vibrational levels resulting from different electronic potential energy surfaces. Consider two electronic states, |iIn addition to focusing on the eigenstates or thermal states of a single vibrational Hamiltonian, we can also consider vibronic (vibrational and electronic) transitions between the vibrational levels resulting from different electronic potential energy surfaces. Consider two electronic states, |i〉
+   <sub>e</sub> and |f and |f〉
+   <sub>e</sub>. The molecular Hamiltonian is
+   <div id="eqn14" class="disp-formula">
+    <span class="label">14</span>
+    <span class="italic">H</span>
+    <sub>mol</sub> = |i = |i〉〈i| = |i〉〈i|i|
+    <sub>e</sub>⊗
+    <span class="italic">H</span>
+    <sub>i</sub> + |f + |f〉〈f| + |f〉〈f|f|
+    <sub>e</sub>⊗
+    <span class="italic">H</span>
+    <sub>f</sub>,
+   </div>where 
+   <span class="italic">H</span>
+   <sub>i</sub> and 
+   <span class="italic">H</span>
+   <sub>f</sub> are vibrational Hamiltonians, with energy eigenstates |
+   <span class="italic">ψ</span>ivib〉 and | and |
+   <span class="italic">ψ</span>fvib〉, respectively. Using Fermi's Golden rule, the probability of a photon-induced transition between two wavefunctions |, respectively. Using Fermi's Golden rule, the probability of a photon-induced transition between two wavefunctions |
+   <span class="italic">ψ</span>
+   <span class="sup">i</span>〉 = |i〉⊗| = |i〉 = |i〉⊗|⊗|
+   <span class="italic">ψ</span>ivib〉 and | and |
+   <span class="italic">ψ</span>
+   <span class="sup">f</span>〉 = |f〉⊗| = |f〉 = |f〉⊗|⊗|
+   <span class="italic">ψ</span>fvib〉 is proportional to the square of the transition dipole moment is proportional to the square of the transition dipole moment 
+   <span class="italic">P</span>
+   <span class="sup">2</span> = | = |〈
+   <span class="italic">ψ</span>
+   <span class="sup">f</span>|
+   <span class="italic">μ̂</span>|
+   <span class="italic">ψ</span>
+   <span class="sup">i</span>〉||
+   <span class="sup">2</span>, using first order time-dependent perturbation theory. Within the Condon approximation, 
+   <span class="italic">μ̂</span> = 
+   <span class="italic">μ̂</span>
+   <sub>e</sub> + 
+   <span class="italic">μ̂</span>
+   <sub>N</sub>, the transition probability becomes proportional to 
+   <span class="italic">P</span>
+   <span class="sup">2</span> = | = |〈
+   <span class="italic">ψ</span>fvib|
+   <span class="italic">ψ</span>ivib〉||
+   <span class="sup">2</span>·|·|〈f|f|
+   <span class="italic">μ̂</span>
+   <sub>e</sub>|i|i〉||
+   <span class="sup">2</span>. Here |. Here |〈
+   <span class="italic">ψ</span>fvib|
+   <span class="italic">ψ</span>ivib〉||
+   <span class="sup">2</span> are referred to as Franck–Condon integrals. Without the Condon approximation, the Franck–Condon integrals become | are referred to as Franck–Condon integrals. Without the Condon approximation, the Franck–Condon integrals become |〈
+   <span class="italic">ψ</span>fvib|
+   <span class="italic">μ̂</span>(
+   <span class="bold">q</span>)|
+   <span class="italic">ψ</span>ivib〉||
+   <span class="sup">2</span>, with 
+   <span class="italic">μ̂</span>(
+   <span class="bold">q</span>) = |) = |〈f|f|
+   <span class="italic">μ̂</span>|i|i〉||
+   <span class="sup">2</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In practice, |
+   <span class="italic">ψ</span>ivib〉 and | and |
+   <span class="italic">ψ</span>fvib〉 are eigenstates of Hamiltonians with different harmonic oscillator normal modes are eigenstates of Hamiltonians with different harmonic oscillator normal modes 
+   <span class="bold">q</span>
+   <span class="sup">f</span> and 
+   <span class="bold">q</span>
+   <span class="sup">i</span>. These modes are related by the Duschinsky transform 
+   <span class="bold">q</span>
+   <span class="sup">f</span> = 
+   <span class="bold">Uq</span>
+   <span class="sup">i</span> + 
+   <span class="bold">d</span>.
+   <a rid="cit45" ref-type="bibr" href="#cit45">45</a>,
+   <a rid="cit63" ref-type="bibr" href="#cit63">63</a> According to the Doktorov unitary representation of the Duschinsky transform, the harmonic oscillator eigenstates are related by
+   <a rid="cit13" ref-type="bibr" href="#cit13">13</a>,
+   <a rid="cit14" ref-type="bibr" href="#cit14">14</a>,
+   <a rid="cit64" ref-type="bibr" href="#cit64">64</a>
+   <div id="eqn15" class="disp-formula">
+    <span class="label">15</span>|
+    <span class="bold">s</span>
+    <sub>f</sub>〉 = = 
+    <span class="italic">Û</span>
+    <sub>Dok</sub>|
+    <span class="bold">s</span>
+    <sub>i</sub>〉
+   </div>where |
+   <span class="bold">s</span>
+   <sub>i</sub>〉 and | and |
+   <span class="bold">s</span>
+   <sub>f</sub>〉 are harmonic oscillator eigenstates in the initial and final coordinates are harmonic oscillator eigenstates in the initial and final coordinates 
+   <span class="bold">q</span>
+   <span class="sup">i</span> and 
+   <span class="bold">q</span>
+   <span class="sup">f</span>, respectively. The Doktorov unitary can be decomposed into a product of unitary operators 
+   <span class="italic">Û</span>
+   <sub>Dok</sub> = 
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">t</span>
+   </sub>
+   <span class="italic">Û</span>†
+   <span class="italic">s</span>′
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">s</span>
+   </sub>
+   <span class="italic">Û</span>
+   <sub>
+    <span class="italic">r</span>
+   </sub>, which depend on the displacement vector 
+   <span class="bold">d</span>, the rotation matrix 
+   <span class="bold">U</span>, and matrices of the frequencies of the harmonic oscillators 
+   <span xlink:href="c9sc01313j-t12.jpg" id="ugt12" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and 
+   <span xlink:href="c9sc01313j-t13.jpg" id="ugt13" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> The definitions of the unitary operators are shown in Appendix C.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">If |
+   <span class="bold">Ψ</span>ivib〉 and | and |
+   <span class="bold">Ψ</span>fvib〉 are the qubit wavefunctions resulting from diagonalisation of are the qubit wavefunctions resulting from diagonalisation of 
+   <span class="italic">H</span>
+   <sub>i</sub> and 
+   <span class="italic">H</span>
+   <sub>f</sub> using a quantum computer, they will be obtained in different normal mode bases |
+   <span class="bold">s</span>
+   <sub>i</sub>〉 and | and |
+   <span class="bold">s</span>
+   <sub>f</sub>〉, respectively. We cannot directly calculate the Franck–Condon integrals using |〈, respectively. We cannot directly calculate the Franck–Condon integrals using |〉, respectively. We cannot directly calculate the Franck–Condon integrals using |〈
+   <span class="bold">Ψ</span>fvib|
+   <span class="bold">Ψ</span>ivib〉||
+   <span class="sup">2</span>, as this does not take into account the different bases. Instead, we must implement the Doktorov unitary to get the Franck–Condon integrals
+   <div id="eqn16" class="disp-formula">
+    <span class="label">16</span>||〈
+    <span class="italic">ψ</span>fvib|
+    <span class="italic">ψ</span>ivib〉||
+    <span class="sup">2</span> = | = |〈
+    <span class="bold">Ψ</span>fvib|
+    <span class="italic">Û</span>
+    <sub>Dok</sub>|
+    <span class="bold">Ψ</span>ivib〉||
+    <span class="sup">2</span>.
+   </div>The Franck–Condon integrals without the Condon approximation can be efficiently calculated 
+   <span class="italic">via</span>
+   <div id="eqn17" class="disp-formula">
+    <span class="label">17</span>||〈
+    <span class="italic">ψ</span>fvib|
+    <span class="italic">μ̂</span>(
+    <span class="bold">q</span>)|
+    <span class="italic">ψ</span>ivib〉
+    <span class="sup">2</span> = | = |〈
+    <span class="bold">Ψ</span>fvib|
+    <span class="italic">μ̂</span>(
+    <span class="bold">q</span>
+    <span class="sup">f</span>)
+    <span class="italic">Û</span>
+    <sub>Dok</sub>|
+    <span class="bold">Ψ</span>ivib〉||
+    <span class="sup">2</span>.
+   </div>They can be both efficiently calculated with the generalised SWAP-test circuit.
+   <a rid="cit65" ref-type="bibr" href="#cit65">65</a>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Alternatively, we can obtain the Franck–Condon integrals without realising the Doktorov transform. The qubit states |
+   <span class="bold">Ψ</span>ivib〉 and | and |
+   <span class="bold">Ψ</span>fvib〉 are obtained from are obtained from 
+   <span class="italic">H</span>
+   <sub>i</sub>(
+   <span class="bold">q</span>
+   <span class="sup">i</span>) and 
+   <span class="italic">H</span>
+   <sub>f</sub>(
+   <span class="bold">q</span>
+   <span class="sup">f</span>) with normal mode coordinates 
+   <span class="bold">q</span>
+   <span class="sup">i</span> and 
+   <span class="bold">q</span>
+   <span class="sup">f</span>, respectively. Instead, we can focus on one set of normal mode coordinates 
+   <span class="bold">q</span>
+   <span class="sup">i</span> and represent the Hamiltonian 
+   <span class="italic">H</span>
+   <sub>f</sub> in 
+   <span class="bold">q</span>
+   <span class="sup">i</span>, 
+   <span class="italic">H</span>′
+   <sub>f</sub>(
+   <span class="bold">q</span>
+   <span class="sup">i</span>). By solving the energy eigenstates of 
+   <span class="italic">H</span>′
+   <sub>f</sub>(
+   <span class="bold">q</span>
+   <span class="sup">i</span>), we can directly get 
+   <span xlink:href="c9sc01313j-t14.jpg" id="ugt14" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and calculate the Franck–Condon integrals without realising the Doktorov transform. However, as the Hamiltonian 
+   <span class="italic">H</span>′
+   <sub>f</sub>(
+   <span class="bold">q</span>
+   <span class="sup">i</span>) is not encoded in the correct normal mode basis, the ground state of the harmonic oscillators or the VSCF state |
+   <span class="bold">Ψ</span>
+   <sub>VSCF</sub>〉 may not be an ideal initial state to start with. However, this effect may be negligible if the overlap between | may not be an ideal initial state to start with. However, this effect may be negligible if the overlap between |
+   <span class="bold">Ψ</span>ivib〉 and and 
+   <span xlink:href="c9sc01313j-t15.jpg" id="ugt15" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> is suitably large. In this case, the initial state |
+   <span class="bold">Ψ</span>
+   <sub>0</sub>〉 for | for |
+   <span class="bold">Ψ</span>ivib〉 should also be an ideal initial state for should also be an ideal initial state for 
+   <span xlink:href="c9sc01313j-t16.jpg" id="ugt16" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> The aforementioned transformation can be implemented by transforming the normal mode coordinates 
+   <span class="bold">q</span>
+   <span class="sup">i</span> as described in 
+   <a rid="cit45" ref-type="bibr" href="#cit45">ref. 45</a>.
+  </p>
+ </sec>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrational dynamics</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In this section, we consider methods to investigate the dynamic properties of vibrational Hamiltonians. Vibrational dynamics underpin phenomena including energy and electron transport
+   <a rid="cit27" ref-type="bibr" href="#cit27">27</a>,
+   <a rid="cit28" ref-type="bibr" href="#cit28">28</a> and chemical reactions.
+   <a rid="cit24" ref-type="bibr" href="#cit24">24</a>–
+   <a rid="cit26" ref-type="bibr" href="#cit26">26</a> Dynamical behaviour can be studied by transforming to a single-mode basis of spatially localised vibrational modes, as described in 
+   <a rid="cit17" ref-type="bibr" href="#cit17">ref. 17</a>. The spatially localised vibrational modes 
+   <span class="italic">a</span>L
+   <span class="italic">i</span>, are related to the normal modes 
+   <span class="italic">a</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>
+   <span class="italic">via</span> a basis transformation
+   <div id="eqn18" class="disp-formula">
+    <span class="label">18</span>
+    <div xlink:href="c9sc01313j-t17.jpg" id="ugt17" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>with real unitary matrix 
+   <span class="italic">U</span>
+   <sub>
+    <span class="italic">i,j</span>
+   </sub>. We can obtain the corresponding localised Hamiltonian 
+   <span class="italic">H</span>
+   <span class="sup">L</span>, using the transformation of the normal coordinates and momenta
+   <div id="eqn19" class="disp-formula">
+    <span class="label">19</span>
+    <div xlink:href="c9sc01313j-t18.jpg" id="ugt18" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Given an initial state of the localised vibrations, the dynamics can be simulated by applying the time evolution operator e
+   <span class="sup">–i
+    <span class="italic">H</span>
+    <span class="sup">L</span>
+    <span class="italic">t</span>
+   </span>. This can be achieved in a number of ways, using different Hamiltonian simulation algorithms, including: Trotterization (also referred to as product formulae),
+   <a rid="cit5" ref-type="bibr" href="#cit5">5</a>,
+   <a rid="cit66" ref-type="bibr" href="#cit66">66</a> the Taylor series method,
+   <a rid="cit67" ref-type="bibr" href="#cit67">67</a>–
+   <a rid="cit69" ref-type="bibr" href="#cit69">69</a> and qubitization
+   <a rid="cit70" ref-type="bibr" href="#cit70">70</a>,
+   <a rid="cit71" ref-type="bibr" href="#cit71">71</a> in conjunction with quantum signal processing.
+   <a rid="cit72" ref-type="bibr" href="#cit72">72</a>,
+   <a rid="cit73" ref-type="bibr" href="#cit73">73</a> The product formula method is the most simple to realise. If 
+   <span class="italic">H</span>
+   <span class="sup">L</span> can be decomposed as 
+   <span xlink:href="c9sc01313j-t19.jpg" id="ugt19" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> the time evolution operator e
+   <span class="sup">–i
+    <span class="italic">H</span>
+    <span class="sup">L</span>
+    <span class="italic">t</span>
+   </span> can be realised using a product formula,
+   <div id="eqn20" class="disp-formula">
+    <span class="label">20</span>
+    <div xlink:href="c9sc01313j-t20.jpg" id="ugt20" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>where 
+   <span class="italic">N</span> is chosen to be sufficiently large to suppress the error in the approximation.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Alternatively, the vibrational dynamics can be realised using a recently proposed variational algorithm.
+   <a rid="cit74" ref-type="bibr" href="#cit74">74</a> One could use either a UVCC ansatz, or a Trotterized ansatz.
+   <a rid="cit75" ref-type="bibr" href="#cit75">75</a>,
+   <a rid="cit76" ref-type="bibr" href="#cit76">76</a>
+  </p>
+ </sec>
+</sec>

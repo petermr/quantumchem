@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.3. Implementation: The 
+  <span class="monospace">mQNMc</span> Python Module
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the calculation of the one-nucleus density the Python 3 module 
+  <span class="monospace">mQNMc</span> was developed. This module is available at 
+  <span ext-link-type="uri" xlink:href="https://gitlab.com/axelschild/mQNMc" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://gitlab.com/axelschild/mQNMc</span> and is released under the GNU General Public License version 3. It uses the output of a Psi4 calculation as input, but adding interfaces to other programs is straightforward because 
+  <span class="monospace">mQNMc</span> needs only the Hessian matrix, the nuclear configuration and the nuclear masses to perform the calculation. The codes for generating the figures of the water molecule are given as examples in the module and can be used as a template for other calculations.
+ </p>
+</sec>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Chempound repository</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quixote is built on CML compchem and, in our system, is further transformed to provide RDF used for accessing subcomponents and expressing searches. The Chempound (chem#) repository system 
+  <span ext-link-type="uri" xlink:href="https://bitbucket.org/chempound/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">https://bitbucket.org/chempound/</span>[
+  <a ref-type="bibr" rid="B28" href="#B28">28</a>] (see Figure 
+  <a ref-type="fig" rid="F3" href="#F3">3</a>) has been built to support this. We expect that the first wave of distributed repositories will be using Chempound, and a publically accessible prototype repository is already in use within the Quixote project 
+  <span ext-link-type="uri" xlink:href="http://quixote.ch.cam.ac.uk/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://quixote.ch.cam.ac.uk/</span>
+ </p>
+ <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>
+    <span class="bold">Chempound repository graphical interface</span>. Chempound accepts either converted compchem CML or logfiles (which are then parsed by the JUMBO converters into compchem CML). The entries are indexed on 4 main criteria: (I) environment (program, host, dates, 
+    <span class="italic">etc</span>.) (II) initialization (molecular structure, basis sets, methods, algorithms, parameters, 
+    <span class="italic">etc</span>.) (III) calculation (the progression of optimization) (IV) finalization (molecular structure, properties, times, 
+    <span class="italic">etc</span>.) (a) Each entry is displayed with a thumbnail and key metadata (b) Properties and parameters for each entry, all searchable through SPARQL endpoint.
+   </p>
+  </div>
+  <div xlink:href="1758-2946-3-38-3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

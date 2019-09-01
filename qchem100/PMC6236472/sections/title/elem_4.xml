@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Basic Circuits</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our code was used to assess the serial quantum circuit length corresponding to the simulation of 86 small molecules and atoms. Molecular structures were gathered from the NIST CCCBDB database
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+  </span> optimized at the Hartree–Fock level. Most systems used a STO-3G basis; however, larger Pople basis sets were used in 18 trials. Of these, four systems (CH
+  <sub>2</sub>
+  <span class="sup">2•</span>, HF, LiH, H
+  <sub>2</sub>O) using a 3-21G basis set were examined, with the remainder studying H
+  <sub>2</sub> and HeH
+  <span class="sup">+</span>. Clearly, this choice of basis is insufficient for an accurate solution of the electronic structure problem. When performing a simulation on a real quantum device, a larger basis set would be chosen as in conventional quantum chemistry methods. Fortunately, the error introduced by our choice of basis is fixed and independent of our choice of quantum methodology. As our benchmarking procedure is not directly concerned with the exact energies predicted, our choice of basis set allows for the simulation of a variety of systems with relatively low computational overhead. Details of the systems studied can be found in 
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a> and in the 
+  <a rid="app1" ref-type="other" href="#app1">Appendices</a>. Our systems range in size from 2 to 54 spin–orbitals. While containing systems that are classically intractable to simulate, this number is relatively modest in contrast to simulations that would be performed upon a real quantum device;
+  <span class="sup">
+   <a ref-type="bibr" rid="ref7" href="#ref7">7</a>
+  </span> however, it allows us to maintain relatively low computational expense (approximately 1 week of CPU time for the largest examples).
+ </p>
+ <div id="tbl1" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">A breakdown of systems studied. Note that most of the systems involving a non-minimal basis set were H
+    <sub>2</sub> and HeH
+    <span class="sup">+</span> systems, as specified in the 
+    <a rid="app1" ref-type="other" href="#app1">Appendices</a>. Numbers in parentheses indicate the number of systems where Trotter error was considered, as discussed in 
+    <a rid="sec5" ref-type="other" href="#sec5">section 
+     <a rid="sec5" ref-type="other" href="#sec5">5</a>
+    </a>
+   </div>
+  </div>
+  <table frame="hsides" rules="groups" border="0">
+   <colgroup>
+    <col align="left"/>
+    <col align="center"/>
+    <col align="center"/>
+    <col align="center"/>
+    <col align="center"/>
+    <col align="center"/>
+    <col align="center"/>
+    <col align="center"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th style="border:none;" align="center">qubits</th>
+     <th style="border:none;" align="center">1–10</th>
+     <th style="border:none;" align="center">11–20</th>
+     <th style="border:none;" align="center">21–30</th>
+     <th style="border:none;" align="center">31–40</th>
+     <th style="border:none;" align="center">41–50</th>
+     <th style="border:none;" align="center">51–60</th>
+     <th style="border:none;" align="center">total</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td style="border:none;" align="left">molecules + radicals</td>
+     <td style="border:none;" align="center">1(1)</td>
+     <td style="border:none;" align="center">3(13)</td>
+     <td style="border:none;" align="center">12(3)</td>
+     <td style="border:none;" align="center">4(0)</td>
+     <td style="border:none;" align="center">8(0)</td>
+     <td style="border:none;" align="center">3(0)</td>
+     <td style="border:none;" align="center">41(17)</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">atoms</td>
+     <td style="border:none;" align="center">10(4)</td>
+     <td style="border:none;" align="center">7(6)</td>
+     <td style="border:none;" align="center">1(0)</td>
+     <td style="border:none;" align="center">1(0)</td>
+     <td style="border:none;" align="center">0(0)</td>
+     <td style="border:none;" align="center">1(0)</td>
+     <td style="border:none;" align="center">20(10)</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">ions</td>
+     <td style="border:none;" align="center">2(2)</td>
+     <td style="border:none;" align="center">4(3)</td>
+     <td style="border:none;" align="center">0(0)</td>
+     <td style="border:none;" align="center">2(0)</td>
+     <td style="border:none;" align="center">1(0)</td>
+     <td style="border:none;" align="center">1(0)</td>
+     <td style="border:none;" align="center">10(5)</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">nonminimal basis sets</td>
+     <td style="border:none;" align="center">4(4)</td>
+     <td style="border:none;" align="center">6(5)</td>
+     <td style="border:none;" align="center">5(2)</td>
+     <td style="border:none;" align="center">0(0)</td>
+     <td style="border:none;" align="center">0(0)</td>
+     <td style="border:none;" align="center">0(0)</td>
+     <td style="border:none;" align="center">15(11)</td>
+    </tr>
+    <tr>
+     <td style="border:none;" align="left">total</td>
+     <td style="border:none;" align="center">17(11)</td>
+     <td style="border:none;" align="center">30(27)</td>
+     <td style="border:none;" align="center">18(5)</td>
+     <td style="border:none;" align="center">7(0)</td>
+     <td style="border:none;" align="center">9(0)</td>
+     <td style="border:none;" align="center">5(0)</td>
+     <td style="border:none;" align="center">86(43)</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Hartree–Fock molecular orbitals and their 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> and 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ijkl</span>
+  </sub> integrals were obtained using the PSI4 electronic structure theory package
+  <span class="sup">
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>
+  </span> and the FermiLib PSI4 Plugin.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref37" href="#ref37">37</a>
+  </span> Our code was then used to generate Jordan–Wigner and Bravyi–Kitaev Hamiltonians. These are stored symbolically as strings of Pauli operations, as in previous work.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> The Hamiltonian can be stored as blocks of second quantized terms, potentially grouped according to their character, that is, excitation operations, number operations, and so on. Note that due to molecular symmetries (and the symmetries of the integrals present in 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a>), the terms in 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a> do not necessarily have independent coefficients.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A basis of Hartree–Fock molecular orbitals was used to describe the system when employing the Jordan–Wigner or Bravyi–Kitaev mapping. Much work has been performed in assessing the performance of other basis choices,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref25" href="#ref25">25</a>,
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> with localized basis orbitals showing promise in reducing the number of significant terms in the Hamiltonian. However, as this advantage is gained from reduction of the number of significant overlap integrals, there is no obvious reason to believe that the Jordan–Wigner and Bravyi–Kitaev mappings would perform inequivalently in a predictable manner. Preliminary analysis using natural and orthogonalized atomic orbital integrals provided by collaborators
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> did not suggest any consistent dependence of the performance of the Bravyi–Kitaev mapping (versus the Jordan–Wigner mapping) on the choice of basis considered.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As such, in order to reduce the computational cost of our simulations, this degree of freedom was not considered here. A rigorous demonstration of the independence of the performance of the Bravyi–Kitaev mapping on the basis choice could be considered in future work.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Optimisation and Trotterization could be performed on the level of second quantized operators. Other works have taken this approach, maintaining Fermionic terms throughout optimization procedures.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>,
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> Instead, our code does not retain the original Fermionic components of the electronic Hamiltonian and reduces the qubit Hamiltonian to a list of strings of Pauli operations, before attempting circuit-level optimization. While fewer assumptions can be made about the structure of the new Hamiltonian (a fact of relevance in 
+  <a rid="sec6" ref-type="other" href="#sec6">section 
+   <a rid="sec6" ref-type="other" href="#sec6">6</a>
+  </a>), this approach allows for greater flexibility when ordering terms for Trotterization.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">From here, our code allows for generation of quantum circuit objects corresponding to the implementation of one Trotter step of the evolution operator of the qubit Hamiltonian (discussed below).</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Neglecting any benefits from optimization at the interfaces of Trotter steps (which would save at most 
+  <div id="d30e953" class="inline-formula">
+   <span xlink:href="ct-2018-00450n_m013.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> gates), the number of gates necessary for larger numbers of Trotter steps is a simple multiple of the number of gates necessary for one Trotter step. Consequentially, extending our analysis to higher Trotter numbers was not considered necessary for our initial analysis, although this was performed when considering Trotter error in 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A full treatment of the entire phase estimation algorithm (including error correction) was not performed. This is in contrast to other work that has attempted to characterize the resource implications of performing the full procedure.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref7" href="#ref7">7</a>,
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> For our analysis of the raw gate counts of Bravyi–Kitaev circuits, this was not considered important for the above reasons. Note that at present, the largest simulations conducted have been of around 45 qubits.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>−
+   <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+  </span> These required extensive specialized computing resources. Performing simulations at this level would have made it impossible to perform a large, multisystem survey. In particular, assessing the point at which Bravyi–Kitaev scaling is expected to dominate (around 32 qubits, as discussed above) would have been problematic. Despite this, a full consideration of the phase estimation algorithm could yield useful results in regard to the Trotter error of simulation. For simplicity, we have only considered here the canonical phase estimation procedure, as the expected benefits of the Bravyi–Kitaev mapping will apply in any system which involved the use of such a mapping scheme.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is important to note that many of the circuits discussed in this paper are substantial in terms of quantum resources required. For around 50 spin–orbitals (and thus 50 logical qubits), the unoptimized circuits consist of around 10
+  <span class="sup">7</span> gates. It is likely that the implementation of such circuits on a quantum device would require the use of some form of error correcting code. In order to assess resource implications of circuits within a fault tolerant framework, the number of Clifford and non-Clifford gates within the circuit are counted.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> While Clifford gates are considered relatively straightforward to implement in a fault-tolerant manner, the resource implications of performing the non-Clifford gates are assessed by counting the number of T (π/4 phase rotation) gates required to implement them.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">While a thorough analysis of the practicality of implementing these circuits on a quantum device would require consideration of this point, our focus here is on assessing the use of the Bravyi–Kitaev mapping. Observing 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>, it is evident that only the central rotation gate is a non-Clifford gate. There is one of these gates for every term in the qubit Hamiltonian. As the number of terms in the Hamiltonian is the same for either mapping scheme, this implies that the number (and type) of non-Clifford gates is the same regardless of the mapping scheme chosen. This is confirmed by numerical analysis in the circuits discussed below. This implies that the choice of Bravyi–Kitaev or Jordan–Wigner mapping does not impact that T count of the circuit and thus does not impact the difficulty of performing error correction. As such, we do not consider this difficulty here.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">However, previous studies have shown
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> that the Bravyi–Kitaev mapping results in a reduction in the number of CNOT gates required, independent of those used in constructing a fault-tolerant representation of the central rotation gate. This comes at the expense of an increased number of single qubit Clifford gates required. In other words, these previous examples showed that the Bravyi–Kitaev mapping traded a reduction in two qubit Clifford gates for an increase in one qubit Clifford gates (along with an overall decrease in the total number of Clifford gates). While this is not of huge impact in a fault tolerant framework (as the T count remains the same), experimental devices in the near future are still likely to benefit from the minimization of entangling gates so as to reduce error. As such, we have considered the breakdown of circuits into entangling and single qubit gates in this paper.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Initially, the Hamiltonians were ordered by the magnitude of their coefficients. This somewhat arbitrary ordering was chosen in order to assess the preoptimization efficacy of the Bravyi–Kitaev mapping and is in contrast to optimized ordering schemes used in other work.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> These are considered in detail in 
+  <a rid="sec4" ref-type="other" href="#sec4">sections 
+   <a rid="sec4" ref-type="other" href="#sec4">4</a>
+  </a> and 
+  <a rid="sec5" ref-type="other" href="#sec5">5</a>. The systems studied involved between 2 (the hydrogen atom) and 56 (the iodine atom) spin–orbitals. As to be expected,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> the serial circuit length dramatically increases for larger systems, requiring of order 10
+  <span class="sup">7</span> gates for the simulation of systems involving around 50 spin–orbitals. While not as ruinous as the factorial difficulty of classical full configuration interaction, this large circuit length illustrates the need for compiler optimizations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An initial assessment of circuits for the implementation of Jordan–Wigner and Bravyi–Kitaev Hamiltonians suggests that the use of the Bravyi–Kitaev mapping is associated with a substantial improvement for the larger systems. 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a> demonstrates this. From roughly 30 spin–orbitals, this improvement is consistent and constitutes approximately 25% of the overall circuit length for the largest of the systems we have examined. However, many systems smaller than this see no improvement, or even demonstrate larger circuit lengths. This is in line with our earlier rough estimate that the superior scaling of the Bravyi–Kitaev mapping dominates the increased overhead at around 32 spin–orbitals. Classical full configuration interaction calculations have been performed on systems marginally larger than this (36 molecular orbitals).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> Consequently, for simulations aiming to achieve results which are classically intractable, a naive approach involving no circuit optimizations would be substantially eased through the use of the Bravyi–Kitaev mapping.
+ </p>
+ <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Unoptimized gate counts. Upper: Total number of gates in Jordan–Wigner circuits, before optimization. Lower: Gate savings through use of Bravyi–Kitaev mapping as a fraction of Jordan–Wigner gate count. Squares indicate instances where the Jordan–Wigner transformation outperformed the Bravyi–Kitaev transformation. In this scheme, the Bravyi–Kitaev transformation reliably results in shorter circuits from around 30 spin–orbitals, with up to around 25% gate savings in the examples with 50 spin–orbitals.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0004" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In addition to optimization performed through combination of duplicate Pauli strings, our code optimizes circuits by the cancellation of duplicate gates.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> Circuit objects can automatically search their gate sequence for duplicate self-inverse gates and remove them. Furthermore, the code tests individual gates for commutativity with gates that follow in sequence. If such commutativity is present, it tests to see if any accessible gates are accessible through commutation. This is performed according to a set of rules: gates acting on different qubits always commute, CNOT gates commute unless one targets the other’s control, and so on. This avoids the generation of matrix representations of the gates. Optimisation in this form is repeated until the circuit is self-consistent and no further optimization could be yielded.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref44" href="#ref44">44</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Based on work by Hastings, Wecker, Bauer, and Troyer,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>,
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> savings from this procedure arise from two factors. First, redundancy in parity determination is eliminated, as this information is not decomputed after every term in the Hamiltonian. This results in savings in the CNOT string used to determine parities. Additionally, basis changes are not decomputed when unnecessary. This saves on the single qubit 
+  <span class="italic">H</span> and 
+  <span class="italic">Y</span> gates necessary to set these bases.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">When duplicate gates in the circuit are removed, the superiority of the Bravyi–Kitaev mapping is even more pronounced while still using a magnitude ordering. This relative improvement appears to increase with larger circuits, as demonstrated by 
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>. In circuits involving more than about 10
+  <span class="sup">7</span> gates, the reduction in gate count associated with the use of the Bravyi–Kitaev mapping is larger than that of gate cancellation. In these cases, the use of the Bravyi–Kitaev mapping results in circuits that are approximately 30–40% shorter. Additionally, the number of gates canceled using the Bravyi–Kitaev mapping is several times greater than the number of gates canceled using Jordan–Wigner mapping. In some cases the advantage associated with the Bravyi–Kitaev mapping reduces the circuit length to that observed for systems involving fewer orbitals. For example, the Bravyi–Kitaev circuit for the simulation of the iodine atom (54 spin–orbitals) requires 5 204 912 gates per Trotter step, whereas the Jordan–Wigner circuit for the simulation of acetone (52 spin–orbitals) requires 8 954 933 gates per Trotter step.
+ </p>
+ <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <p>Number of gates in Bravyi–Kitaev and Jordan–Wigner circuits, before and after gate cancellation, versus the number of gates in Jordan–Wigner circuit before optimization, using a magnitude ordering. Upper: Total gate count. Lower: Entangling gate count only.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0005" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">With systems requiring more than 10
+  <span class="sup">6</span> gates to simulate, there are no examples where the optimized Jordan–Wigner technique outperforms the optimized Bravyi–Kitaev technique. Thus, using this magnitude ordering, it is clear that the Bravyi–Kitaev mapping should be preferred to the Jordan–Wigner mapping in the general case.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As discussed above, previous work
+  <span class="sup">
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> on the methane molecule indicated that the Bravyi–Kitaev mapping may be advantageous with particular regard to the number of entangling gates required. Our findings here confirm that this advantage holds in general, as shown in 
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>. In addition to the general gate savings associated with the Bravyi–Kitaev mapping, we observe a substantial decrease in the number of CNOT gates required. We consider this to be a major advantage of the Bravyi–Kitaev mapping. This advantage is typically offset by a small increase in the number of single qubit gates required (as the total savings are smaller than the entangling gate savings).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">While using a magnitude ordering, gate cancellation does not result in a great deal of entangling gate savings, which are typically far fewer than the advantage associated with the use of the Bravyi–Kitaev transformation. Instead, the bulk of gate savings associated with cancellation techniques arises from maintaining the calculation basis between sequential terms, as opposed to continually resetting to the computational basis. It is likely that many CNOT strings are being “trapped” behind noncommuting gates earlier in their respective CNOT strings. This could be alleviated by further circuit optimization; however, this task is difficult to perform without further decreasing the locality of the CNOT chain.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The results of this scheme use a magnitude ordering for both the Jordan–Wigner mapping and the Bravyi–Kitaev mapping. Further analysis of the performance of the Bravyi–Kitaev mapping is impossible without consideration of the Trotterization ordering chosen. This is considered in the following section. Manipulation of the Trotter ordering can also cause variation in the Trotter error, which could result in an increased number of Trotter steps necessary for constant precision. This increased difficulty could undermine the savings gained from the use of a particular ordering in terms of cancellation, and is examined in 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>.
+ </p>
+</sec>

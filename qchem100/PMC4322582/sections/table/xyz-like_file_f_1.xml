@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div position="float" id="t2" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 2</span>
+ <div class="caption">
+  <div class="title">XYZ-like file format for molecular structure and properties. </div>
+ </div>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup>
+   <col align="left"/>
+   <col align="left"/>
+  </colgroup>
+  <thead valign="bottom">
+   <tr>
+    <th align="left" valign="top" charoff="50">
+     <span class="bold">Line</span>
+    </th>
+    <th align="left" valign="top" charoff="50">
+     <span class="bold">Content</span>
+    </th>
+   </tr>
+  </thead>
+  <div valign="top" class="tfoot">
+   <tr>
+    <th align="left" valign="top" charoff="50">
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>=number of atoms.
+    </th>
+    <td> </td>
+   </tr>
+  </div>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" charoff="50">1</td>
+    <td align="left" valign="top" charoff="50">Number of atoms 
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">2</td>
+    <td align="left" valign="top" charoff="50">Scalar properties (see 
+     <a ref-type="table" rid="t3" href="#t3">Table 3</a>)
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">3,…,
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>+2
+    </td>
+    <td align="left" valign="top" charoff="50">Element type, coordinate (
+     <span class="italic">x</span>, 
+     <span class="italic">y</span>, 
+     <span class="italic">z</span>, in Å), Mulliken partial charges (in 
+     <span class="italic">e</span>) on atoms
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>+3
+    </td>
+    <td align="left" valign="top" charoff="50">Harmonic vibrational frequencies (3
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>−5 or 3
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>-6, in cm
+     <span class="sup">−1</span>)
+    </td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>+4
+    </td>
+    <td align="left" valign="top" charoff="50">SMILES strings from GDB-17 and from B3LYP relaxation</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">
+     <span class="italic">n</span>
+     <sub>
+      <span class="italic">a</span>
+     </sub>+5
+    </td>
+    <td align="left" valign="top" charoff="50">InChI strings for Corina and B3LYP geometries</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

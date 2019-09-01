@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec5-nanomaterials-09-00929" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">5. Effect of the Surface</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The effect of the metallic surface on the chain plasmon resonance is of great interest and has been investigated by several authors (see [
+  <a rid="B20-nanomaterials-09-00929" ref-type="bibr" href="#B20-nanomaterials-09-00929">20</a>,
+  <a rid="B38-nanomaterials-09-00929" ref-type="bibr" href="#B38-nanomaterials-09-00929">38</a>,
+  <a rid="B39-nanomaterials-09-00929" ref-type="bibr" href="#B39-nanomaterials-09-00929">39</a>,
+  <a rid="B40-nanomaterials-09-00929" ref-type="bibr" href="#B40-nanomaterials-09-00929">40</a>,
+  <a rid="B41-nanomaterials-09-00929" ref-type="bibr" href="#B41-nanomaterials-09-00929">41</a>]). Two approaches may be feasible in the context of the VM. Applying the first approach, we can directly couple the surface plasmon energy independently with all the single NPs constituting the chain. From the mathematical point of view, it means adding a further equation in the system as well as adding a second term, α, that takes into account the energy shift due to the interaction of an individual NP with the metallic surface. In any case, this approach would take into account only the main energy shift due to a strong coupling of the metal surface and the NPs. On the contrary, the surface can interact with the NPs chain, which induces two main groups of modes, with one representing the most effective coupling and the other one’s surface interacting destructively with the modes of the chain [
+  <a rid="B20-nanomaterials-09-00929" ref-type="bibr" href="#B20-nanomaterials-09-00929">20</a>]. In order to better represent this phenomenon, we propose coupling directly each chain wavefunction with the metallic surface. Consequently, each single mode determined, as discussed in the previous paragraph, is coupled with the metal plasma energy of the surface where the chain or cluster is placed. This obtains a 2 × 2 matrix for each mode. Thus, the determinant becomes:
+  <div id="FD6-nanomaterials-09-00929" class="disp-formula">
+   <span class="label">(6)</span>
+   <div id="mm12" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mo">|</span>
+       <div class="mrow">
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mi">k</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <div class="mtd">
+           <span class="mi">α</span>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mi">α</span>
+          </div>
+          <div class="mtd">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <div class="msub">
+               <span class="mi">ω</span>
+               <span class="mi">S</span>
+              </div>
+              <span class="mo">−</span>
+              <span class="mi">ω</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">|</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div> where ω
+  <sub>k</sub> is the resonance energy of the mode k of the chain, ω
+  <sub>S</sub> is the plasma energy of the metal, and the interaction integral α is the shift in energy due to the interaction of the chain with the surface. A sketch of the level formation is shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f008" href="#nanomaterials-09-00929-f008">Figure 8</a> for the chain system and for the chain on the metallic surface.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For large numbers of NPs (N &gt; 10) in the chain, the interaction with the surface generates three groups of levels. The first one concerns the influence of NPs system on a surface where the energy is beyond the plasma energy of the metal. It is clearly a set of dark modes. The other two groups represent two sets of modes of the chain on the metallic surface, where the interaction of the surface with the chain decreases the energy of both low and high energy modes of the insulated chain. Moreover, it is worth underlining that the dark modes of the insulated chain become bright under the effect of interaction with the surface. It clearly explains the nature of the second peak when a chain of NPs is placed on the metallic surface [
+  <a rid="B39-nanomaterials-09-00929" ref-type="bibr" href="#B39-nanomaterials-09-00929">39</a>,
+  <a rid="B40-nanomaterials-09-00929" ref-type="bibr" href="#B40-nanomaterials-09-00929">40</a>]. This issue is very interesting as the introduction of the surface in the investigated system allows n new coherent dipole interactions due to the interaction of every single particle constituting the chain and the surface plasmon. In this view, the number of coherent dipole interactions where hot spots can be formed becomes m
+  <sub>s</sub> = 2n − k for the positive interaction with the surface while the number of nodes remains the same as the insulated chain. On the contrary, for the destructive interaction of the chain with the surface, the number of nodes becomes N
+  <sub>s</sub> = n + k − 1, while the number of coherent dipole interactions remains the same as the insulated chain. This effect is shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f009" href="#nanomaterials-09-00929-f009">Figure 9</a> in the case of a four NPs chain.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to explore the potentiality of this method, we calculated the resonance energy of the modes related to a chain of gold NPs on a gold surface, assuming the input data as follows: ω
+  <sub>s</sub> = 8.9 eV, α = −2.6 eV, with ω
+  <sub>k</sub> calculated using the VM, as described in the previous paragraph with ω
+  <sub>0</sub> = 2.38 and β = −0.28 eV. By a formal point of view, it would be more correct to use the energy of the metal surface plasmon (6.4 eV) and the corresponding interaction integral, but, as from the practical point of view, the energy of the metal is only the baseline for the calculation. We decided to use the plasma frequency (8.9 eV) and the corresponding interaction integral, which is more easy to estimate from literature data.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Results are shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f010" href="#nanomaterials-09-00929-f010">Figure 10</a>, which depicts the trend of Peak I and II, interpreted as the lowest and highest energy mode of the bright band, as a function of the chain length. It is observable that, while the group of modes of Peak II is slightly blue-shifted with respect to the free chain, Peak I is strongly red-shifted, which allows resonance until the near IR. The two peaks represent two different ways in which the metallic surface interacts with the chain: Peak I is obtained by a further stabilization of the system due to the localization of the metal plasmon with opposite charges with respect to the particle charge in contact with the surface. This stabilization of the charges of the entire system decreases the plasmonic energy. On the contrary, Peak II is the result of the stabilization of high energy modes of the chain due to the effect of the coupling of these modes with the surface plasmon of the metallic substrate. As the interaction of the dipole in the chain for these high energy modes increases, the energy of the system leads to an increasing number of elements in the chain. The resonance wavelength is slightly blue-shifted. 
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The same approach can be applied to other geometries, as shown in 
+  <a ref-type="fig" rid="nanomaterials-09-00929-f011" href="#nanomaterials-09-00929-f011">Figure 11</a>, for the case of the heptamer cluster. As a general result, the coupling of the NPs cluster with the surface induces an evident red-shift of the modes and, consequently, some of those levels that were dark modes become bright modes. This is a further enlargement of the resonance band and a new peak in the left side of the band. It is analogical to what has been discussed in case of the chain coupled to the metallic surface. If the heptamer is tested with the VM at the experimental conditions used for the chain system discussed previously, the maximum of the resonance peak is expected at 1380 nm. Moreover, a resonance mode at the same energy of the single NPs is formed as well as a narrow band of levels at a high energy, as already observed in the case of the chain.
+ </p>
+</sec>

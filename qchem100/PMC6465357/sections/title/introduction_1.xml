@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">Colloidal quantum dots (QDs) are semiconductor nanocrystals with their sizes in the quantum-confinement regime
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>
+  </span>. For multi-carrier states—charged excitons and bi-/multi-excitons—of QDs, Auger recombination consumes the energy of a photo- or electro-excited electron-hole pair (exciton) to promote another carrier to a high-energy level
+  <span class="sup">
+   <a ref-type="bibr" rid="CR2" href="#CR2">2</a>,
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>. Auger recombination is the main non-radiative energy dissipation pathway of multi-carrier states, affecting all aspects of their properties
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Because of relaxation of momentum conservation requirement and increased Coulomb interactions, Auger recombination is very efficient in QDs in comparison with the corresponding bulk semiconductors
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>,
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span>. Different from small-molecular emitters, multi-carrier states are quite commonly generated in QDs under either photo-excitation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>,
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>–
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span> or electro-excitation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>,
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>. For instance, due to Auger non-radiative recombination of multi-carrier states, short gain lifetime in QD lasing
+  <span class="sup">
+   <a ref-type="bibr" rid="CR6" href="#CR6">6</a>,
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span> and efficiency roll-off in QD-based light-emitting-diodes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>,
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span> are frequently observed. As the wavefunction of a band-edge hole (or electron) is mostly confined to the inner portion of a core/shell QD, charged QD is usually quite stable. Charging leads to photoluminescence blinking of single QD—random switching of photoluminescence between a dim charged state with efficient Auger non-radiative recombination and a bright neutral state
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>–
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>. Photoluminescence blinking brings issues for certain applications, such as single-molecule tracking in biological systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>,
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>
+  </span>. It is interesting to note that Auger recombination is not always detrimental. For instance, photoluminescence blinking of QDs can be applied for super-resolution microscopy
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>, and Auger is beneficial for purity of QD-based single-photon source powered by either photo-excitation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>–
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>
+  </span> or electro-excitation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>
+  </span>. These facts suggest that the challenge is how to tune Auger non-radiative recombination of QDs in a controllable manner.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">Synthetic chemistry of QDs recently makes ideal single-exciton properties be accessible for the most developed CdSe/CdS core/shell QDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>,
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>, but synthetic control of multi-carrier states remains in its infancy primarily because of poor understanding of Auger non-radiative recombination in QDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span>. Basic forms of multi-carrier states in a QD are negative and positive trions that are, respectively, composed of one exciton plus one extra electron or hole
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Interestingly, Auger non-radiative recombination of other multi-carrier states, such as biexciton and multi-exciton, can be treated as various combinations of negative- and positive-trion Auger pathways
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>,
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>, simplifying all Auger recombination processes into two basic channels.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">Continuous efforts have been devoted to study and tune Auger recombination in QDs in the past 20 years. Based on existing experimental results
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>–
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>, Klimov et al. summarized three strategies for Auger engineering, namely control of the overlap of electron and hole envelop wavefunctions, control of conduction- and valence-band mixing, and control of strength of the intraband transition
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>. Although tuning Auger recombination of negative trion of QDs has been studied widely
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>,
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>–
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+  </span>, behavior of Auger recombination of the positive trion is largely unknown. Furthermore, for commonly studied CdSe/CdS core/shell
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span>, CdSe/gradient-shell
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>, and other II–IV QDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+  </span>, Auger recombination of positive trion has been regarded to be always dominating that of the corresponding negative trion.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">Using CdSe/CdS core/shell QDs as a model system, we show independent assessment of both basic Auger recombination channels by separately tuning dimensions of the CdSe core and CdS shell. Our results demonstrate that, for certain geometric structures, Auger recombination of positive trion can actually become significantly slower than that of the corresponding negative trion. By altering the core and/or shell dimensions, rates of both basic Auger recombination channels of CdSe/CdS core/shell QDs can be readily tuned by ~ 1 order of magnitude. Besides the known factors applied for Auger engineering for QDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>
+  </span>, theoretical calculation demonstrates that the unexpected phenomena are associated with geometry-dependent dielectric screening. Given the critical role of Auger recombination for QDs, the experimental and theoretical results in this work should open a new door to design and synthesize QDs with desired optical and optoelectronic properties.
+ </p>
+</sec>

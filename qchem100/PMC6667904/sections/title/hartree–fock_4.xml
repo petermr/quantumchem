@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0005" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hartree–Fock</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">There are various HF scheme modules in RAQET which are summarized in Table 
+  <a rid="jcc25364-tbl-0002" ref-type="table" href="#jcc25364-tbl-0002">2</a>. For SF calculations in the 2c relativistic framework, the restricted HF (RHF), unrestricted HF (UHF), and open‐shell HF (ROHF) are available. In ROHF, we can select various parameters as keywords
+  <a rid="jcc25364-bib-0092" ref-type="ref" href="#jcc25364-bib-0092">92</a>, 
+  <a rid="jcc25364-bib-0093" ref-type="ref" href="#jcc25364-bib-0093">93</a>, 
+  <a rid="jcc25364-bib-0094" ref-type="ref" href="#jcc25364-bib-0094">94</a>, 
+  <a rid="jcc25364-bib-0095" ref-type="ref" href="#jcc25364-bib-0095">95</a>, 
+  <a rid="jcc25364-bib-0096" ref-type="ref" href="#jcc25364-bib-0096">96</a>, 
+  <a rid="jcc25364-bib-0097" ref-type="ref" href="#jcc25364-bib-0097">97</a>, 
+  <a rid="jcc25364-bib-0098" ref-type="ref" href="#jcc25364-bib-0098">98</a>, 
+  <a rid="jcc25364-bib-0099" ref-type="ref" href="#jcc25364-bib-0099">99</a> which are listed, as well as the parameter values, in the 
+  <a rid="jcc25364-supitem-0001" ref-type="supplementary-material" href="#jcc25364-supitem-0001">Supporting Information</a>.
+ </p>
+ <div id="jcc25364-tbl-0002" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <p>Capabilities of HF schemes</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Spin</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Restriction of symmetry
+      <a ref-type="fn" rid="jcc25364-note-0002" href="#jcc25364-note-0002">a</a>
+     </th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">SF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">RHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">S</span>
+      <span class="sup">2</span>, 
+      <span class="italic">S</span>
+      <sub>
+       <span class="italic">z</span>
+      </sub>, 
+      <span class="italic">K, K</span>
+      <sub>0</sub>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">UHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">S</span>
+      <sub>
+       <span class="italic">z</span>
+      </sub>, 
+      <span class="italic">K</span>
+      <sub>0</sub>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">ROHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">S</span>
+      <span class="sup">2</span>, 
+      <span class="italic">S</span>
+      <sub>
+       <span class="italic">z</span>
+      </sub>, 
+      <span class="italic">K, K</span>
+      <sub>0</sub>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">SD</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">KRHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">K</span>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">KUHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">K</span> (partially)
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">KROHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">
+      <span class="italic">K</span>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1"/>
+     <td align="left" valign="top" rowspan="1" colspan="1">GHF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">–</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="table-wrap-foot">
+   <fn id="jcc25364-note-0002" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml">a</span>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="italic">S</span>
+     <span class="sup">2</span>, 
+     <span class="italic">Sz, K</span>, and 
+     <span class="italic">K</span>
+     <sub>0</sub> mean square and 
+     <span class="italic">z</span>‐component of spin, time‐reversal, and complex conjugation symmetries, respectively.
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For SD calculations, the Kramers‐restricted HF (KRHF),
+  <a rid="jcc25364-bib-0086" ref-type="ref" href="#jcc25364-bib-0086">86</a> Kramers‐unrestricted HF (KUHF),
+  <a rid="jcc25364-bib-0087" ref-type="ref" href="#jcc25364-bib-0087">87</a> Kramers‐restricted open‐shell HF (KROHF),
+  <a rid="jcc25364-bib-0088" ref-type="ref" href="#jcc25364-bib-0088">88</a> and generalized HF (GHF) 
+  <a rid="jcc25364-bib-0085" ref-type="ref" href="#jcc25364-bib-0085">85</a> are available. These schemes use spinors 
+  <div id="nlm-math-25" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mo">ϕ</span>
+     <span class="mi">i</span>
+    </div>
+   </div>
+  </div>, which are expressed as a linear combination of 
+  <div id="nlm-math-26" class="math">
+   <span class="mo">α</span>
+  </div>‐ and 
+  <div id="nlm-math-27" class="math">
+   <span class="mo">β</span>
+  </div>‐spin basis functions,
+  <div id="jcc25364-disp-0009" class="disp-formula">
+   <span class="label">(9)</span>
+   <div id="nlm-math-28" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <span class="mo">ϕ</span>
+      <span class="mi">i</span>
+     </div>
+     <span class="mo">=</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <span class="mo">μ</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <span class="mi">C</span>
+        <div class="mrow">
+         <span class="mo">μ</span>
+         <span class="mi">i</span>
+        </div>
+        <span class="mo">α</span>
+       </div>
+       <div class="msub">
+        <span class="mo">χ</span>
+        <span class="mo">μ</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">α</span>
+     <span class="mo">+</span>
+     <div displaystyle="true" class="mstyle">
+      <div class="munder">
+       <span class="mo">∑</span>
+       <span class="mo">μ</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <span class="mi">C</span>
+        <div class="mrow">
+         <span class="mo">μ</span>
+         <span class="mi">i</span>
+        </div>
+        <span class="mo">β</span>
+       </div>
+       <div class="msub">
+        <span class="mo">χ</span>
+        <span class="mo">μ</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">β</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <span class="italic">C</span> is the complex orbital coefficient matrix, and 
+  <div id="nlm-math-29" class="math">
+   <span class="mo">χ</span>
+  </div> is the basis function. The orbitals represented in eq. (
+  <a rid="jcc25364-disp-0009" ref-type="disp-formula" href="#jcc25364-disp-0009">9</a>) require the treatment of complex numbers to describe the SD contributions, such as the spin‐orbit interaction, in the 2c relativistic Hamiltonian. In addition, the dimension of the basis function space increases to twice its original size to represent the 
+  <div id="nlm-math-30" class="math">
+   <span class="mo">α</span>
+  </div>‐ and 
+  <div id="nlm-math-31" class="math">
+   <span class="mo">β</span>
+  </div>‐spin mixing. Due to these differences in the SF formulations, the whole procedures in KRHF, KROHF, KUHF, and GHF have been reconstructed for the SD calculations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The working equation in GHF is derived using eq. (
+  <a rid="jcc25364-disp-0009" ref-type="disp-formula" href="#jcc25364-disp-0009">9</a>) without any symmetry constraints, which, given in block form, is
+  <div id="jcc25364-disp-0010" class="disp-formula">
+   <span class="label">(10)</span>
+   <div id="nlm-math-32" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">F</span>
+            <div class="mrow">
+             <span class="mo">α</span>
+             <span class="mo">α</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">F</span>
+            <div class="mrow">
+             <span class="mo">α</span>
+             <span class="mo">β</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">F</span>
+            <div class="mrow">
+             <span class="mo">β</span>
+             <span class="mo">α</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">F</span>
+            <div class="mrow">
+             <span class="mo">β</span>
+             <span class="mo">β</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">C</span>
+            <span class="mo">α</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">C</span>
+            <span class="mo">β</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">S</span>
+            <div class="mrow">
+             <span class="mo">α</span>
+             <span class="mo">α</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <span class="mn">0</span>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <span class="mn">0</span>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">S</span>
+            <div class="mrow">
+             <span class="mo">β</span>
+             <span class="mo">β</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">C</span>
+            <span class="mo">α</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <span mathvariant="bold" class="mi">C</span>
+            <span class="mo">β</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span mathvariant="bold" class="mi">ε</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-33" class="math">
+   <span mathvariant="bold" class="mi">F</span>
+  </div>, 
+  <div id="nlm-math-34" class="math">
+   <span mathvariant="bold" class="mi">S</span>
+  </div>, and 
+  <div id="nlm-math-35" class="math">
+   <span mathvariant="bold" class="mi">ε</span>
+  </div> are the Fock matrix, the overlap matrix, and orbital energies, respectively. KRHF preserves only time‐reversal symmetry, and the working equation is defined by
+  <div id="jcc25364-disp-0011" class="disp-formula">
+   <span class="label">(11)</span>
+   <div id="nlm-math-36" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <div class="mmultiscripts">
+        <span mathvariant="bold" class="mi">F</span>
+        <span class="mprescripts"/>
+        <span class="none"/>
+        <span mathvariant="normal" class="mi">Q</span>
+       </div>
+       <div class="mmultiscripts">
+        <span mathvariant="bold" class="mi">C</span>
+        <span class="mprescripts"/>
+        <span class="none"/>
+        <span class="mtext">Q</span>
+       </div>
+       <span class="mo">=</span>
+       <div class="mmultiscripts">
+        <span mathvariant="bold" class="mi">S</span>
+        <span class="mprescripts"/>
+        <span class="none"/>
+        <span class="mtext">Q</span>
+       </div>
+       <div class="mmultiscripts">
+        <span mathvariant="bold" class="mi">C</span>
+        <span class="mprescripts"/>
+        <span class="none"/>
+        <span class="mtext">Q</span>
+       </div>
+       <span mathvariant="bold" class="mi">ε</span>
+      </div>
+     </div>
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mo">⇔</span>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <div class="msup">
+          <span mathvariant="bold" class="mi">F</span>
+          <div class="mrow">
+           <span class="mo">α</span>
+           <span class="mo">α</span>
+          </div>
+         </div>
+         <span class="mo">+</span>
+         <div accent="true" class="mover">
+          <span class="mi">j</span>
+          <span class="mo">˘</span>
+         </div>
+         <div class="msup">
+          <span mathvariant="bold" class="mi">F</span>
+          <div class="mrow">
+           <span class="mo">α</span>
+           <span class="mo">β</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <div class="msup">
+          <span mathvariant="bold" class="mi">C</span>
+          <span class="mo">α</span>
+         </div>
+         <span class="mo">−</span>
+         <div accent="true" class="mover">
+          <span class="mi">j</span>
+          <span class="mo">˘</span>
+         </div>
+         <div class="msup">
+          <span mathvariant="bold" class="mi">C</span>
+          <div class="mrow">
+           <span class="mo">β</span>
+           <span class="mo">*</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <span class="mo">=</span>
+       <div class="msup">
+        <span mathvariant="bold" class="mi">S</span>
+        <div class="mrow">
+         <span class="mo">α</span>
+         <span class="mo">α</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <div class="msup">
+          <span mathvariant="bold" class="mi">C</span>
+          <span class="mo">α</span>
+         </div>
+         <span class="mo">−</span>
+         <div accent="true" class="mover">
+          <span class="mi">j</span>
+          <span class="mo">˘</span>
+         </div>
+         <div class="msup">
+          <span mathvariant="bold" class="mi">C</span>
+          <div class="mrow">
+           <span class="mo">β</span>
+           <span class="mo">*</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <span mathvariant="bold" class="mi">ε</span>
+       <span class="mo">,</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>where the presuperscript Q denotes a quaternion matrix, 
+  <div id="nlm-math-37" class="math">
+   <div accent="true" class="mover">
+    <span class="mi">j</span>
+    <span class="mo">˘</span>
+   </div>
+  </div> is one of the quaternion units. KRHF works as a generalization of the spin restriction and induces twofold degeneracy for the orbitals. Thus, KRHF is regarded as the relativistic counterpart of RHF. The difference between KRHF and RHF is that the Fock matrix, orbital coefficients, and density matrix are defined in quaternionic space rather than real space. Using the characteristics of KRHF, KUHF, and KROHF with quaternionic matrices, the algorithms become similar to those for RHF, UHF, and ROHF, respectively. The working equation for KUHF is written as
+  <div id="jcc25364-disp-0012" class="disp-formula">
+   <span class="label">(12)</span>
+   <div id="nlm-math-38" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <div class="mrow">
+        <span class="mo">{</span>
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="msup">
+            <div class="mrow"/>
+            <span mathvariant="normal" class="mi">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mo">σ</span>
+           </div>
+           <span class="mo"> </span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span mathvariant="normal" class="mi">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">C</span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mo">σ</span>
+           </div>
+           <span class="mo">=</span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span mathvariant="normal" class="mi">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">S</span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mo">σ</span>
+           </div>
+           <span class="mo"> </span>
+           <div class="msup">
+            <div class="mrow"/>
+            <span mathvariant="normal" class="mi">Q</span>
+           </div>
+           <div class="msup">
+            <span mathvariant="bold" class="mi">C</span>
+            <span class="mo">σ</span>
+           </div>
+           <div class="msup">
+            <span mathvariant="bold" class="mi">ε</span>
+            <span class="mo">σ</span>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow"/>
+             <span mathvariant="normal" class="mi">Q</span>
+            </div>
+            <div class="msup">
+             <span mathvariant="bold" class="mi">F</span>
+             <div class="mrow">
+              <div accent="true" class="mover">
+               <span class="mi">σ</span>
+               <span class="mo">¯</span>
+              </div>
+             </div>
+            </div>
+            <div class="msup">
+             <div class="mrow"/>
+             <span mathvariant="normal" class="mi">Q</span>
+            </div>
+            <div class="msup">
+             <span mathvariant="bold" class="mi">C</span>
+             <div class="mrow">
+              <div accent="true" class="mover">
+               <span class="mi">σ</span>
+               <span class="mo">¯</span>
+              </div>
+             </div>
+            </div>
+            <span class="mo">=</span>
+            <div class="msup">
+             <div class="mrow"/>
+             <span mathvariant="normal" class="mi">Q</span>
+            </div>
+            <span mathvariant="bold" class="mi">S</span>
+            <div class="msup">
+             <div class="mrow"/>
+             <div class="mrow">
+              <div accent="true" class="mover">
+               <span class="mi">σ</span>
+               <span class="mo">¯</span>
+              </div>
+             </div>
+            </div>
+            <div class="msup">
+             <div class="mrow"/>
+             <span mathvariant="normal" class="mi">Q</span>
+            </div>
+            <span mathvariant="bold" class="mi">C</span>
+            <div class="msup">
+             <div class="mrow"/>
+             <div class="mrow">
+              <div accent="true" class="mover">
+               <span class="mi">σ</span>
+               <span class="mo">¯</span>
+              </div>
+             </div>
+            </div>
+            <div class="msup">
+             <span mathvariant="bold" class="mi">ε</span>
+             <div class="mrow">
+              <div accent="true" class="mover">
+               <span class="mi">σ</span>
+               <span class="mo">¯</span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mo">⇔</span>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <div class="mrow">
+         <div class="mtable">
+          <div class="mtr">
+           <div class="mtd">
+            <div class="mrow">
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">F</span>
+                <div class="mrow">
+                 <span class="mo">α</span>
+                 <span class="mo">α</span>
+                </div>
+               </div>
+               <span class="mo">+</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">F</span>
+                <div class="mrow">
+                 <span class="mo">α</span>
+                 <span class="mo">β</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <span class="mo">α</span>
+               </div>
+               <span class="mo">−</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <div class="mrow">
+                 <span class="mo">β</span>
+                 <span class="mo">*</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <span class="mo">=</span>
+             <div class="msup">
+              <span mathvariant="bold" class="mi">S</span>
+              <div class="mrow">
+               <span class="mo">α</span>
+               <span class="mo">α</span>
+              </div>
+             </div>
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <span class="mo">α</span>
+               </div>
+               <span class="mo">−</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <div class="mrow">
+                 <span class="mo">β</span>
+                 <span class="mo">*</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <div class="msup">
+              <span mathvariant="bold" class="mi">ε</span>
+              <span class="mo">σ</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="mtr">
+           <div class="mtd">
+            <div class="mrow">
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">F</span>
+                <div class="mrow">
+                 <span class="mo">β</span>
+                 <span class="mo">β</span>
+                </div>
+               </div>
+               <span class="mo">+</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">F</span>
+                <div class="mrow">
+                 <span class="mo">β</span>
+                 <span class="mo">α</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <span class="mo">β</span>
+               </div>
+               <span class="mo">−</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <div class="mrow">
+                 <span class="mo">α</span>
+                 <span class="mo">*</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <span class="mo">=</span>
+             <div class="msup">
+              <span mathvariant="bold" class="mi">S</span>
+              <div class="mrow">
+               <span class="mo">β</span>
+               <span class="mo">β</span>
+              </div>
+             </div>
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <span class="mo">β</span>
+               </div>
+               <span class="mo">−</span>
+               <div accent="true" class="mover">
+                <span class="mi">j</span>
+                <span class="mo">˘</span>
+               </div>
+               <div class="msup">
+                <span mathvariant="bold" class="mi">C</span>
+                <div class="mrow">
+                 <span class="mo">α</span>
+                 <span class="mo">*</span>
+                </div>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <div class="msup">
+              <span mathvariant="bold" class="mi">ε</span>
+              <div class="mrow">
+               <div accent="true" class="mover">
+                <span class="mi">σ</span>
+                <span class="mo">¯</span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">,</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>where the superscripts 
+  <div id="nlm-math-39" class="math">
+   <span class="mo">σ</span>
+  </div> and 
+  <div id="nlm-math-40" class="math">
+   <div class="mrow">
+    <div accent="true" class="mover">
+     <span class="mi">σ</span>
+     <span class="mo">¯</span>
+    </div>
+   </div>
+  </div> denote the pseudo‐alpha and pseudo‐beta spins, respectively. The working equation for KROHF is defined by
+  <div id="jcc25364-disp-0013" class="disp-formula">
+   <span class="label">(13)</span>
+   <div id="nlm-math-41" class="math">
+    <div class="mrow">
+     <div class="mmultiscripts">
+      <span mathvariant="bold" class="mi">F</span>
+      <span class="mprescripts"/>
+      <span class="none"/>
+      <span class="mtext">Q</span>
+     </div>
+     <div class="msup">
+      <div class="mrow"/>
+      <div class="mrow">
+       <span class="mi">K</span>
+       <span class="mi">R</span>
+       <span class="mi">O</span>
+       <span class="mi">H</span>
+       <span class="mi">F</span>
+      </div>
+     </div>
+     <div class="mmultiscripts">
+      <span mathvariant="bold" class="mi">C</span>
+      <span class="mprescripts"/>
+      <span class="none"/>
+      <span class="mtext">Q</span>
+     </div>
+     <span class="mo">=</span>
+     <div class="mmultiscripts">
+      <span mathvariant="bold" class="mi">S</span>
+      <span class="mprescripts"/>
+      <span class="none"/>
+      <span class="mtext">Q</span>
+     </div>
+     <div class="mmultiscripts">
+      <span mathvariant="bold" class="mi">C</span>
+      <span class="mprescripts"/>
+      <span class="none"/>
+      <span class="mtext">Q</span>
+     </div>
+     <span mathvariant="bold" class="mi">ε</span>
+     <span class="mo">,</span>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-42" class="math">
+   <div class="mrow">
+    <div class="mmultiscripts">
+     <span mathvariant="bold" class="mi">F</span>
+     <span class="mprescripts"/>
+     <span class="none"/>
+     <span class="mtext">Q</span>
+    </div>
+    <div class="msup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">K</span>
+      <span class="mi">R</span>
+      <span class="mi">O</span>
+      <span class="mi">H</span>
+      <span class="mi">F</span>
+     </div>
+    </div>
+   </div>
+  </div> is Roothaan's effective Fock operator extended to quaternions,
+  <div id="jcc25364-disp-0014" class="disp-formula">
+   <span class="label">(14)</span>
+   <div id="nlm-math-43" class="math">
+    <div class="mrow">
+     <div class="mmultiscripts">
+      <span mathvariant="bold" class="mi">F</span>
+      <span class="mprescripts"/>
+      <span class="none"/>
+      <span class="mtext">Q</span>
+     </div>
+     <div class="msup">
+      <div class="mrow"/>
+      <div class="mrow">
+       <span class="mi">K</span>
+       <span class="mi">R</span>
+       <span class="mi">O</span>
+       <span class="mi">H</span>
+       <span class="mi">F</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">R</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">C</span>
+             <span class="mi">C</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">C</span>
+             <span class="mi">O</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">C</span>
+             <span class="mi">V</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">O</span>
+             <span class="mi">C</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">R</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">O</span>
+             <span class="mi">O</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">O</span>
+             <span class="mi">V</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">V</span>
+             <span class="mi">C</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">F</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">V</span>
+             <span class="mi">O</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow"/>
+            <span class="mtext">Q</span>
+           </div>
+           <span mathvariant="bold" class="mi">R</span>
+           <div class="msub">
+            <div class="mrow"/>
+            <div class="mrow">
+             <span class="mi">V</span>
+             <span class="mi">V</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>The subscripts C, O, and V show closed‐, open‐, and virtual‐shell MOs, respectively. The same manner and parameters can be used in eq. (
+  <a rid="jcc25364-disp-0014" ref-type="disp-formula" href="#jcc25364-disp-0014">14</a>) as for ROHF.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">KROHF preserves the time‐reversal symmetry while KUHF partially breaks this symmetry for open‐shell calculations. KRHF, KUHF, and KROHF have the advantage that they can perform with smaller degrees of freedom than GHF. These constraints are effective for rapid SCF convergence.
+  <a rid="jcc25364-bib-0087" ref-type="ref" href="#jcc25364-bib-0087">87</a>, 
+  <a rid="jcc25364-bib-0088" ref-type="ref" href="#jcc25364-bib-0088">88</a>
+ </p>
+</sec>

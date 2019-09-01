@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Second Quantization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We begin by writing down the full configuration interaction (FCI) Hamiltonian in the occupation number basis. We define spin orbitals as the product of a spin function (representing either spin up or spin down) and a single-electron spatial function (usually molecular orbitals produced from a Hartree-Fock calculation). For example, in the case of molecular hydrogen there are two electrons and thus, two single-electron molecular orbitals, |
+  <span class="italic">ψ</span>
+  <sub>1</sub>〉 and |
+  <span class="italic">ψ</span>
+  <sub>2</sub>〉. Electrons have two possible spin states, |
+  <span class="italic">α</span>〉 (spin up) and |
+  <span class="italic">β</span>〉 (spin down). The four spin orbitals for molecular hydrogen are therefore, |
+  <span class="italic">χ</span>
+  <sub>0</sub>〉 = |
+  <span class="italic">ψ</span>
+  <sub>1</sub>〉|
+  <span class="italic">α</span>〉, |
+  <span class="italic">χ</span>
+  <sub>1</sub>〉 = |
+  <span class="italic">ψ</span>
+  <sub>1</sub>〉|
+  <span class="italic">β</span>〉, |
+  <span class="italic">χ</span>
+  <sub>2</sub>〉 = |
+  <span class="italic">ψ</span>
+  <sub>2</sub>〉|
+  <span class="italic">α</span>〉, and |
+  <span class="italic">χ</span>
+  <sub>3</sub>〉 = |
+  <span class="italic">ψ</span>
+  <sub>2</sub>〉|
+  <span class="italic">β</span>〉.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The occupation number basis is formed from all possible configurations of 
+  <span class="italic">n</span> spin orbitals which are each either empty or occupied. We represent these vectors as a tensor product of individual spin orbitals written as |
+  <span class="italic">f
+   <sub>n</sub>
+  </span>
+  <sub>−1</sub>…
+  <span class="italic">f</span>
+  <sub>0</sub>〉 where 
+  <div id="m44" class="inline-formula">
+   <span id="d33e458" xlink:href="srep06603-m44.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> indicates the occupation of spin orbital |
+  <span class="italic">χ
+   <sub>j</sub>
+  </span>〉. Any interaction between electrons can be represented as some combination of creation and annihilation operators 
+  <div id="m45" class="inline-formula">
+   <span id="d33e467" xlink:href="srep06603-m45.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <span class="italic">a
+   <sub>j</sub>
+  </span> for 
+  <div id="m46" class="inline-formula">
+   <span id="d33e475" xlink:href="srep06603-m46.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Because fermionic wavefunctions must be antisymmetric with respect to particle label exchange, these operators must obey the fermionic anti-commutation relations, 
+  <div id="m1" class="disp-formula">
+   <span id="d33e478" xlink:href="srep06603-m1.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>With these definitions we write the second-quantized molecular electronic Hamiltonian, 
+  <div id="m2" class="disp-formula">
+   <span id="d33e481" xlink:href="srep06603-m2.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>The coefficients 
+  <span class="italic">h
+   <sub>ij</sub>
+  </span> and 
+  <span class="italic">h
+   <sub>ijkl</sub>
+  </span> are single and double electron overlap integrals which are precomputed classically. The number of distinct integrals scale as 
+  <span class="italic">O</span> (
+  <span class="italic">n</span>
+  <a ref-type="bibr" rid="b4" href="#b4">4</a>) in the number of molecular orbitals 
+  <span class="italic">n</span>.
+ </p>
+</sec>

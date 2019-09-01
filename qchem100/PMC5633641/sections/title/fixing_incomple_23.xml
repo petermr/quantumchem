@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec23" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fixing incomplete residues</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Crystallography does not always reveal the position of all atoms in a protein. Especially the, often mobile, extremities of Glu, Gln, Arg, and Lys, occasionally are missing in PDB file. In case of missing atoms it is possible to either automatically complete the residue, or to use the Z-matrix editor to do this manually. Many protons are not mobile with respect to the heavy atom they are bound to (e.g. the protons on a phenyl ring). These so-called riding protons are placed using a dictionary of proton positions. The positions of other protons can be determined using Ambfor.</p>
+</sec>

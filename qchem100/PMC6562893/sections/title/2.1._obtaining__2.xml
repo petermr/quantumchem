@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1. Obtaining the Chemical Picture of a Molecule</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">An important prerequisite for the obtaining the chemical picture of a molecule is the large mass difference of nuclei and electrons. Exact calculations for the static states of small systems show e.g., how the features of the molecular wavefunction |Ψ|
+  <span class="sup">2</span> change when H
+  <span class="sup">−</span> becomes 
+  <div class="inline-formula">
+   <div id="M1" class="math">
+    <div class="msubsup">
+     <span class="mtext">H</span>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, which is mathematically “just” a change of the mass of one particle (|Ψ|
+  <span class="sup">2</span> is invariant w.r.t. charge conjugation) (Mátyus et al., 
+  <a rid="B30" ref-type="bibr" href="#B30">2011a</a>,
+  <a rid="B31" ref-type="bibr" href="#B31">b</a>; Mátyus and Reiher, 
+  <a rid="B32" ref-type="bibr" href="#B32">2012</a>). The mass difference motivates a separation of the molecular wavefunction into a (marginal) nuclear wavefunction and an electronic wavefunction that conditionally depends on the location of the nuclei,
+ </p>
+ <div id="E1" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(1)</span>
+  <div id="M2" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mo">Ψ</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">X</span>
+        <span class="mo">,</span>
+        <span class="mi">x</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+     <div class="mtd">
+      <span class="mo">=</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">el</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">x</span>
+        <span class="mo">|</span>
+        <span class="mi">X</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">X</span> and 
+  <span class="italic">x</span> represent the coordinates of all nuclei and electrons, respectively. While such a separation is exact and can be used to define a nuclear wavefunction (Hunter, 
+  <a rid="B23" ref-type="bibr" href="#B23">1975</a>; Abedi et al., 
+  <a rid="B1" ref-type="bibr" href="#B1">2010</a>, 
+  <a rid="B2" ref-type="bibr" href="#B2">2012</a>), its practical application is usually in terms of the Born-Oppenheimer approximation (Born and Oppenheimer, 
+  <a rid="B8" ref-type="bibr" href="#B8">1927</a>; Eich and Agostini, 
+  <a rid="B19" ref-type="bibr" href="#B19">2016</a>) where the effect of the nuclear motion on the electronic wavefunction is neglected and only the chosen positions of the nuclei are relevant (Schild et al., 
+  <a rid="B37" ref-type="bibr" href="#B37">2016</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">However, the nuclear probability density 
+  <div class="inline-formula">
+   <div id="M3" class="math">
+    <span class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> of a single water molecule still depends on nine coordinates and thus does not directly correspond to the corners of the Lewis structure that are thought to represent the relative position of the nuclei w.r.t. each other. There are two additional problems when the molecule is assumed to be a closed system: The first problem is that for a perfectly isolated molecule the density 
+  <div class="inline-formula">
+   <div id="M4" class="math">
+    <span class="mo">|</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> would be a constant, because only relative interactions exists and the Hamiltonian is invariant w.r.t. translation of the whole system. This view of an isolated molecule is a bit useless but can be remedied by taking a relative view. A sensible choice would be to give up the idea of considering the molecule as a closed system and to define its coordinates relative to an external system. This choice is discussed further below. What is typically done instead is to chose an internal coordinate to which the coordinates of the nuclei are referred to, in particular the center-of-mass coordinates of either the nuclei or of the whole molecule. Then the nuclear wavefunction is
+ </p>
+ <div id="E2" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(2)</span>
+  <div id="M5" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">com</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">X</span>
+         </div>
+         <div class="mrow">
+          <span class="mtext">com</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rel</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">X</span>
+         </div>
+         <div class="mrow">
+          <span class="mtext">rel</span>
+         </div>
+        </div>
+        <span class="mo">|</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">X</span>
+         </div>
+         <div class="mrow">
+          <span class="mtext">com</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <div class="inline-formula">
+   <div id="M6" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">com</span>
+     </div>
+    </div>
+   </div>
+  </div> is the wavefunction of the center of mass with the (three) coordinates 
+  <span class="italic">X</span>
+  <sub>com</sub> and 
+  <div class="inline-formula">
+   <div id="M7" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rel</span>
+     </div>
+    </div>
+   </div>
+  </div> is the wavefunction of the relative coordinates 
+  <span class="italic">X</span>
+  <sub>rel</sub> that conditionally depends on 
+  <span class="italic">X</span>
+  <sub>com</sub>. For a closed system without external interactions this conditional dependence vanishes (for the center of mass of the molecule or, in the Born-Oppenheimer approximation, for the center of mass of the nuclei) and 
+  <div class="inline-formula">
+   <div id="M8" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rel</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rel</span>
+       </div>
+      </div>
+      <span class="mo">|</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">com</span>
+       </div>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+    <span class="mo">≡</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rel</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rel</span>
+       </div>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> can be obtained independent of 
+  <span class="italic">X</span>
+  <sub>com</sub>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The second problem when the molecule is considered to be a closed system is that the probability density 
+  <div class="inline-formula">
+   <div id="M9" class="math">
+    <span class="mo">|</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rel</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">X</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rel</span>
+       </div>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> after separation of the center of mass is spherically symmetric because the Hamiltonian is invariant w.r.t. rotation of the whole molecule (Mátyus et al., 
+  <a rid="B30" ref-type="bibr" href="#B30">2011a</a>,
+  <a rid="B31" ref-type="bibr" href="#B31">b</a>; Mátyus and Reiher, 
+  <a rid="B32" ref-type="bibr" href="#B32">2012</a>). Such a bubble-shaped density has interesting dynamical features (Manz et al., 
+  <a rid="B29" ref-type="bibr" href="#B29">2014</a>; Bredtmann et al., 
+  <a rid="B9" ref-type="bibr" href="#B9">2015</a>; Pérez-Torres, 
+  <a rid="B34" ref-type="bibr" href="#B34">2015</a>; Diestler et al., 
+  <a rid="B15" ref-type="bibr" href="#B15">2018</a>) and is an excellent approximation to the rotational eigenstates of single molecules in vacuum, but it is of limited help to understand how Lewis structures represent a molecule. The wavefunction 
+  <div class="inline-formula">
+   <div id="M10" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rel</span>
+     </div>
+    </div>
+   </div>
+  </div> can, however, approximately be written as (Bunker and Jensen, 
+  <a rid="B10" ref-type="bibr" href="#B10">2006</a>)
+ </p>
+ <div id="E3" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(3)</span>
+  <div id="M11" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rel</span>
+       </div>
+      </div>
+      <span class="mo">≈</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">rot</span>
+       </div>
+      </div>
+      <span class="mo">×</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ψ</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">nuc</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">vib</span>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <div class="inline-formula">
+   <div id="M12" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">rot</span>
+     </div>
+    </div>
+   </div>
+  </div> depends on three coordinates that describe the overall rotation of the molecule and 
+  <div class="inline-formula">
+   <div id="M13" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">vib</span>
+     </div>
+    </div>
+   </div>
+  </div> may be interpreted as describing the vibrations of the molecule. For water, 
+  <div class="inline-formula">
+   <div id="M14" class="math">
+    <span class="mo">|</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">vib</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> depends on three coordinates, but for 
+  <span class="italic">N</span> nuclei 
+  <div class="inline-formula">
+   <div id="M15" class="math">
+    <span class="mo">|</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">ψ</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">nuc</span>
+     </div>
+     <div class="mrow">
+      <span class="mtext">vib</span>
+     </div>
+    </div>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> depends on 3
+  <span class="italic">N</span> − 6 coordinates (or 3
+  <span class="italic">N</span> − 5 coordinates for linear nuclear configurations) and describes the shape of the molecule in configuration space for a given location and orientation. Thus, it encodes the relative location of the nuclei w.r.t. each other but it is not the three-dimensional arrangement that the corners of a Lewis structure are representing.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">From the preceding discussion follows that for the chemical picture, it is necessary to have a localized and oriented the molecule so that we can go back to the full nuclear wavefunction ψ
+  <sub>nuc</sub>(
+  <span class="italic">X</span>) and determine reduced quantities that yield the information about the nuclear structure that we are interested in, i.e., the one-nucleus density. Before doing that by simply assuming a distribution such that the molecule is localized and oriented, we would like to comment on how the one-nucleus density could be obtained more rigorously.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The localization and orientation of the molecule can be achieved conceptually by changing from an absolute view of a molecule to a relative view where there is a second system which the molecule is related to. We might call the second system an “environment.” This environment can e.g., be other molecules (like in a liquid phase or during a chemical reaction), a surface with which the molecule is interacting, or a suitably chosen laser pulse. We can then obtain a Schrödinger equation for the molecule alone by either choosing it as a marginal system (like a Schrödinger equation can be obtained for the nuclei in a molecule alone, which is, however, representing the whole molecule Hunter, 
+  <a rid="B23" ref-type="bibr" href="#B23">1975</a>; Abedi et al., 
+  <a rid="B1" ref-type="bibr" href="#B1">2010</a>, 
+  <a rid="B2" ref-type="bibr" href="#B2">2012</a>) or as a system that conditionally depends on the state of a second system (which yields a generalization of the time-dependent Schrödinger equation Schild, 
+  <a rid="B36" ref-type="bibr" href="#B36">2018</a>). In any case, we may remove the translational and rotational degrees of freedom of the combined system and work within a relative picture. The interaction with the environment can then result in a localization and orientation of the molecule.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Following this procedure to embed the molecule in an environment is mathematically challenging and depends on the actual problem under study. It will not be done or needed in this article but is outlined here to motivate why we will, in the following, use calculations for isolated molecules but still assume that the molecule is located and oriented (relative to another molecule, a surface, etc.). Clearly, the interaction with an environment changes the problem and thus also the details of the nuclear densities that are presented below. Nevertheless, the general rules given below for predicting the shapes of the one-nucleus densities still apply but care has to be taken to determine the normal modes correctly.</p>
+</sec>

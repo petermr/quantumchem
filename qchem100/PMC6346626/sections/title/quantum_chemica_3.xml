@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum Chemical Calculations on Quantum Computers</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The approach to perform full-CI calculations on quantum computers developed by Aspuru-Guzik and co-workers
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+  </span> is based on the quantum phase estimation algorithm (QPEA) proposed by Abrams and Lloyd:
+  <span class="sup">
+   <a ref-type="bibr" rid="ref56" href="#ref56">56</a>
+  </span> Time evolution of a wave function |Ψ⟩ is conditionally simulated with a unitary operator 
+  <span class="italic">U</span> = exp(−
+  <span class="italic">iHt</span>) (controlled-
+  <span class="italic">U</span>; ctrl-
+  <span class="italic">U</span>) as given in 
+  <a rid="eq5" ref-type="disp-formula" href="#eq5">eq 
+   <a rid="eq5" ref-type="disp-formula" href="#eq5">5</a>
+  </a>, and the energy eigenvalue 
+  <span class="italic">E</span> is read out as a phase difference ϕ between |0⟩ and |1⟩ using an inverse quantum Fourier transformation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <div id="eq5" class="disp-formula">
+   <div xlink:href="oc-2018-00788n_m005" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">5</span>
+  </div>where 
+  <span class="italic">H</span>
+  <sub>d</sub> denotes a Hadamard transformation, and it generates the superposition state {|0⟩ + |1⟩}/√2 from |0⟩. Importantly, the QPEA utilizes projective measurements with an electronic Hamiltonian 
+  <span class="italic">H</span> to readout the eigenenergy, and therefore, the preparation of good initial guess wave functions having sufficiently large overlap with the particular eigenstate is essential.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The QPEA-based full-CI initially scales 
+  <span class="italic">O</span>(
+  <span class="italic">N</span>
+  <sub>orb</sub>
+  <span class="sup">11</span>) in the upper bound (
+  <span class="italic">O</span>(
+  <span class="italic">N</span>
+  <sub>orb</sub>
+  <span class="sup">9</span>) in the empirical base),
+  <span class="sup">
+   <a ref-type="bibr" rid="ref26" href="#ref26">26</a>
+  </span> where 
+  <span class="italic">N</span>
+  <sub>orb</sub> denotes the number of spin orbitals, but currently the gate scaling is reduced to be 
+  <span class="italic">Õ</span>(η
+  <span class="sup">2</span>
+  <span class="italic">N</span>
+  <sub>orb</sub>
+  <span class="sup">3</span>
+  <span class="italic">t</span>) and 
+  <span class="italic">Õ</span>(
+  <span class="italic">N</span>
+  <sub>orb</sub>
+  <span class="sup">5</span>
+  <span class="italic">t</span>) for Gaussian orbitals with first- and second-quantized representations, respectively,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref29" href="#ref29">29</a>,
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> by adopting qubitization
+  <span class="sup">
+   <a ref-type="bibr" rid="ref57" href="#ref57">57</a>
+  </span> or truncated Taylor series techniques,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref58" href="#ref58">58</a>
+  </span> on-the-fly computations of molecular integrals, and so on. Here, 
+  <span class="italic">O</span> indicates an asymptotic upper bound and 
+  <span class="italic">Õ</span> represents an asymptotic upper bound suppressing polylogarithmic factors, and η is a number of electrons.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To perform quantum simulations of atoms and molecules on quantum computers, information on electronic wave functions should be mapped onto quantum registers. Several approaches for wave function mapping were proposed,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>,
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>,
+   <a ref-type="bibr" rid="ref37" href="#ref37">37</a>,
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+  </span> and the most fundamental one is a direct mapping (DM).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>
+  </span> In the DM, each qubit represents the occupation number of a particular spin orbital (|1⟩ if the spin orbital is occupied, otherwise |0⟩), and requires 
+  <span class="italic">N</span>
+  <sub>orb</sub> of qubits (
+  <span class="italic">N</span>
+  <sub>orb</sub> is the number of spin orbitals). In this work, we construct a quantum circuit in the DM representation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It should be noted that the classical–quantum hybrid system known as a variational quantum eigensolver (VQE) has attracted attention as near-future applications of quantum computers for quantum chemical problems.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref13" href="#ref13">13</a>−
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span> In VQE, the wave function is generated by applying a unitary operator 
+  <span class="italic">U</span>(θ) to an initial guess wave function, and the energy expectation value of the prepared wave function is calculated using quantum computers; then, the parameters θ in the unitary operator are variationally optimized on classical computers to minimize the energy expectation value. VQE-based molecular energy calculations were experimentally implemented using photonic systems,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref13" href="#ref13">13</a>
+  </span> superconducting circuits,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref15" href="#ref15">15</a>,
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>,
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>
+  </span> and trapped ion systems,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+  </span> exemplifying the error-resilient nature of the calculations.
+ </p>
+</sec>

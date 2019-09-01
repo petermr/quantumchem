@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ground and first excited state electronic properties</div>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Ground and first excited state electronic structure calculations were completed for SEVO and ISO to explain the linear optical properties in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. In order to understand the effect that the halogens in SEVO and ISO have on the molecular orbitals and energy levels, calculations were also completed for aliphatic ethers that have the same structure as the halogenated ethers but with all halogens replaced with hydrogens. The aliphatic parent ether of SEVO is methyl isopropyl ether and that of ISO is ethyl methyl ether. The results of the TD-DFT calculations for the ground-state-to-excited-state transitions in all four molecules are summarized in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>. Results for diethyl ether are also shown to compare with the experimental linear optical properties obtained in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>TD-DFT/B3LYP/6–311 + G(2d,p) calculations for SEVO, ISO, their aliphatic parent ethers (methyl isopropyl ether and ethyl methyl ether, respectively), and diethyl ether.</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th>Compound</th>
+      <th>S
+       <sub>0</sub> → S
+       <sub>1</sub> excitation energy (eV/nm)
+      </th>
+      <th>HOMO-LUMO gap (eV)</th>
+      <th>S
+       <sub>0</sub> → S
+       <sub>1</sub> transition dipole moment (D)
+      </th>
+      <th>S
+       <sub>0</sub> → S
+       <sub>1</sub> oscillator strength
+      </th>
+      <th>Permanent dipole moment (D)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>methyl isopropyl ether</td>
+      <td>6.307/196.6</td>
+      <td>7.185</td>
+      <td>0.6318</td>
+      <td>0.0096</td>
+      <td>1.2974</td>
+     </tr>
+     <tr>
+      <td>SEVO</td>
+      <td>8.339/148.7</td>
+      <td>9.290</td>
+      <td>0.6905</td>
+      <td>0.0151</td>
+      <td>2.2638</td>
+     </tr>
+     <tr>
+      <td>ethyl methyl ether</td>
+      <td>6.368/194.7</td>
+      <td>7.313</td>
+      <td>0.9523</td>
+      <td>0.0219</td>
+      <td>1.2461</td>
+     </tr>
+     <tr>
+      <td>ISO</td>
+      <td>6.923/179.1</td>
+      <td>8.324</td>
+      <td>0.2374</td>
+      <td>0.0015</td>
+      <td>1.8675</td>
+     </tr>
+     <tr>
+      <td>diethyl ether</td>
+      <td>6.343/195.5</td>
+      <td>7.268</td>
+      <td>0.8621</td>
+      <td>0.0179</td>
+      <td>1.1498</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">Similar to the observed blue-shift for SEVO (compared to diethyl ether) in the UV absorption spectra in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, the TD-DFT results in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a> also show a blue-shift for SEVO in the first excitation energy, corresponding to the ground state (S
+  <sub>0</sub>) to first excited state (S
+  <sub>1</sub>) transition, compared to its aliphatic parent ether, methyl isopropyl ether. A similar blue-shift is observed in ISO compared to its aliphatic parent ether, ethyl methyl ether, though the shift (+0.555 eV) is not as large as compared to SEVO’s blue-shift (+2.032 eV). This correlates well with our UV absorption spectra in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, where SEVO has a large blue-shift compared to the aliphatic ether while ISO has little to no blue-shift. This difference between SEVO and ISO is most likely due to the different characteristics of their HOMOs, shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>. The HOMO for SEVO is located predominantly on the oxygen lone pairs, while that of ISO is located predominantly on the chlorine lone pairs.
+  <div id="Fig2" class="fig">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>HOMO for (
+     <span class="bold">a</span>) SEVO, and (
+     <span class="bold">b</span>) ISO. Isosurface values were chosen such that only the most predominant location of each orbital is shown in order to identify the character of the HOMO.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_47651_Fig2_HTML" id="d29e599" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">The excitation wavelength for SEVO in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a> (148.7 nm) shows why 
+  <span class="italic">λ</span>
+  <sub>
+   <span class="italic">max</span>
+  </sub> is not seen in the UV absorption spectrum in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, since the calculated energy to the first excited state in SEVO requires a wavelength beyond the limits of our spectrophotometer. The wavelength of the first excitation energy in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a> for diethyl ether (195.5 nm) corresponds very well with the peak in the absorption spectrum for diethyl ether in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> (200 nm), thus confirming the accuracy of our electronic structure calculations. The calculated permanent dipole moments are also very close to literature values for diethyl ether
+  <span class="sup">
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>, SEVO
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR21" href="#CR21">21</a>,
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span>, and ISO
+  <span class="sup">
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span>. Additional electronic structure calculation results for molecular orbitals are provided in Supplementary Figs 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">S1</a>–
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">S5</a>.
+ </p>
+</sec>

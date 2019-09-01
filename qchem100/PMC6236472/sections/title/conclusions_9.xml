@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec7" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">7</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this paper, we have made a detailed comparison of the Jordan–Wigner and Brayvi–Kitaev mappings using a variety of advanced circuit optimization techniques drawn from the theory of quantum simulation. Using unoptimized circuits, the use of the Bravyi–Kitaev mapping dramatically reduces the quantum computational expense of simulation in all systems involving more than 30 qubits and for systems likely to be classically intractable to simulate. In cases with approximately 50 qubits, this improvement reduced the gate count by roughly 25%.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The use of an optimized Trotter ordering absorbs the advantage associated with the Bravyi–Kitaev mapping. The Jordan–Wigner mapping in this case results in slightly shorter circuits for an individual Trotter step. Nonetheless, in most cases the use of the Bravyi–Kitaev mapping is at worst roughly equivalent to the use of the traditional Jordan–Wigner mapping. Frequently, the gate count reduction is particularly large in the number of expensive entangling gates required. Notably, the Bravyi–Kitaev mapping is superior in all cases aside from the lexicographic ordering.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">While our results suggest a slightly reduced error associated with the use of a magnitude ordering, we do not conclude that this ordering should be favored due to the substantial overall gate count associated with a lexicographic ordering. Our analysis of Trotter ordering error suggests that the use of the Bravyi–Kitaev mapping typically results in a reduced Trotter error when using any ordering studied, other than a magnitude ordering. This difference is almost a factor of 2 in many larger examples when using a lexicographic ordering. This encourages the use of the Bravyi–Kitaev mapping, as it could outweigh the relatively small benefit from the use of the Jordan–Wigner mapping in optimized lexicographic circuits.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our results demonstrate that the performance of the Bravyi–Kitaev mapping is dependent on a variety of factors. While it is superior to the Jordan–Wigner mapping in most cases studied, several exceptions were observed. This emphasizes the importance of numerical analysis in future work. It is apparent that such studies must be performed across a range of molecular systems, with due consideration given to the region where classical full configuration interaction calculations are intractable.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Recent hardware developments have prompted the suggestion that quantum devices could be used for practical tasks in as little as five years.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref16" href="#ref16">16</a>
+  </span> The use of quantum computers to perform classically intractable quantum chemistry calculations is often cited as one of the principal uses of emerging quantum technology.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have demonstrated here that the use of the Bravyi–Kitaev transformation frequently results in substantially reduced gate count estimates. In the future, we anticipate that the application of this mapping will assist in the performance of electronic structure calculations on real quantum computers, yielding results that have proven computationally elusive for classical devices.</p>
+</sec>

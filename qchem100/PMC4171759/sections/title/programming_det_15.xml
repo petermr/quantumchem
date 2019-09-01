@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Programming Details and Language</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Dalton program is written in FORTRAN 77, FORTRAN 90, and C, with machine dependencies isolated using C preprocessor directives. All floating-point computations are performed in 64-bit precision but the code takes advantage of 32-bit precision to reduce integer storage requirements in some sections.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The parallelization of the regular Dalton SCF modules for small molecules has been done exclusively using MPI and scales (for sufficiently large systems) with up to 90% efficiency on 1000 processors,
+  <a rid="b153" ref-type="bibr" href="#b153">153</a>,
+  <a rid="b154" ref-type="bibr" href="#b154">154</a> even demonstrating superlinear scaling.
+  <a rid="b155" ref-type="bibr" href="#b155">155</a> Also the CI routines have been parallelized using MPI.
+  <a rid="b15" ref-type="bibr" href="#b15">15</a> The Dalton SCF modules for large molecules have been parallelized in a hybrid MPI/OpenMP scheme.
+ </p>
+</sec>

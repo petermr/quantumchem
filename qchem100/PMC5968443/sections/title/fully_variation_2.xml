@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Fully Variational Hartree–Fock</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our goal is to implement gradients with AD techniques for a quantum chemistry method without writing any explicit gradient. In this manuscript, as an illustrative, yet useful example, we apply AD to obtain HF energy gradients to optimize parameters of Gaussian basis functions. This algorithm will enable a more compact wave function representation while maintaining a comparable level of accuracy in energy achieved by using larger basis sets. Thus, this method will provide tailored molecular one-electron basis functions with greater flexibility compared to atomic-centered Gaussian expansions.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the HF method, the wave function is constructed as a linear combination of one-electron basis functions, where we minimize the energy by finding the appropriate expansion coefficients. The selection of these basis functions is critical to accurately reproduce the behavior of a system.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> The most popular form of these basis functions is the atomic-centered contracted Gaussian functions because the computation of one- and two-electron integrals have well-established forms for their implementations.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref24" href="#ref24">24</a>,
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>−
+   <a ref-type="bibr" rid="ref45" href="#ref45">45</a>
+  </span> Each of these functions is defined by the set of following parameters: (i) the exponents {α} defining the Gaussian width, (ii) the contraction coefficients {
+  <span class="italic">c</span>} defining the linear expansion of the Gaussian representation of the atomic orbital (AO), (iii) the coordinates 
+  <span class="bold">A</span> defining the center of the Gaussians, and (iv) the angular momentum 
+  <span class="bold">a</span> defining the order of the polynomial factor defined by the coordinate system (e.g., Cartesian or spherical harmonics).
+  <span class="sup">
+   <a ref-type="bibr" rid="ref46" href="#ref46">46</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">These one-electron basis functions are generally obtained by energy optimizations of single atoms with a certain level of theory and are intended to mimic AO.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref47" href="#ref47">47</a>
+  </span> However, when AOs are used as a basis for molecules they require some degree of flexibility to describe more complex behaviors such as polarization effects. Therefore, one usually selects a relatively large number of basis functions with AOs of different exponents and sufficiently high angular momentum.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>
+  </span> The drawback of using a larger basis set is the increase in numerical complexity, imposing limitations on actual calculations.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To get a fully optimized wave function, we can minimize not only the expansion coefficients, but all types of variational parameters of the Gaussian AOs mentioned above, such as nuclear coordinates, Gaussian centers, contraction coefficients, and exponents. A fully variational approach may be useful to reduce the number of basis functions and to obtain a more compact representation of the wave function. This could either improve the calculation of molecular properties
+  <span class="sup">
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>,
+   <a ref-type="bibr" rid="ref42" href="#ref42">42</a>,
+   <a ref-type="bibr" rid="ref48" href="#ref48">48</a>
+  </span> or yield a better reference state for certain higher levels of theory.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref49" href="#ref49">49</a>
+  </span> A prominent example of a variational approach is the so-called Floating Gaussians
+  <span class="sup">
+   <a ref-type="bibr" rid="ref41" href="#ref41">41</a>,
+   <a ref-type="bibr" rid="ref50" href="#ref50">50</a>−
+   <a ref-type="bibr" rid="ref52" href="#ref52">52</a>
+  </span> in which the centers of the AOs are optimized. Some authors have partially optimized parameters such as the Gaussian widths for the valence shell
+  <span class="sup">
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>
+  </span> or included extra orbitals around the region of the chemical bond.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref53" href="#ref53">53</a>,
+   <a ref-type="bibr" rid="ref54" href="#ref54">54</a>
+  </span> Furthermore, wave function parameters have been optimized within a higher level of theory,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref55" href="#ref55">55</a>,
+   <a ref-type="bibr" rid="ref56" href="#ref56">56</a>
+  </span> such as CASSCF and MP2,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref57" href="#ref57">57</a>
+  </span> or HF over ab initio molecular dynamics.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref58" href="#ref58">58</a>,
+   <a ref-type="bibr" rid="ref59" href="#ref59">59</a>
+  </span> These methods have implemented gradient or Hessian-based optimization with analytical nuclear derivatives.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this paper, we present a fully variational approach,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref56" href="#ref56">56</a>
+  </span> where we optimize the molecular orbitals with a quasi-Newton method. Here, the gradients are calculated using solely a plain Python implementation of a HF and an AD library. By taking advantage of the AD techniques, we can compute numerically exact gradients with respect to any parameter without the need for implementing analytical gradients explicitly. This provides the flexibility to either simultaneously optimize the Gaussian exponents and positions, or to optimize them sequentially.
+ </p>
+</sec>

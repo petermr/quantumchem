@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Interpretation of previous experiments and computations</div>
+ <p id="Par24" xmlns="http://www.w3.org/1999/xhtml">For further supporting evidence to our hypothesis, we compare our results with previous experimental and computational works from the literature. Comparison between computed IP and experimental IP as measured in gas phase is provided in the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a>. Focusing on the trends of oxidation voltage with respect to the choice of anion-solvent chemistry, we argue that the observed behavior will depend on which species is oxidized. When considering electrolytes with the same solvent species and varying anion species, the oxidation voltage will increase with increasingly “strong” anion (while the species that is oxidized is the anion, i.e. it is “weak” compared to the solvent), until it saturates when switching happens and the solvent becomes the oxidized species. Therefore, we expect a dependence of the oxidation voltage on the anion, but only for anions that are “weak” enough. When keeping the same anion and changing the solvent species, two different effects are at play to determine the oxidation voltage: the oxidation mechanism (whether the anion or the solvent is oxidized) and the solvation effect, which leads to a more ambiguous, chemistry-dependent trend. Looking at the experimental observations by Ue et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>,
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span>, they first find that for a given solvent, (PC), the combined system oxidation potential depends on the anion IP, but that this dependence saturates for anions such as 
+  <div id="IEq15" class="inline-formula">
+   <div class="alternatives">
+    <span id="M31" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M32" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq15.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> or stronger. Indeed, in their experimental results, the oxidation voltage for 
+  <div id="IEq16" class="inline-formula">
+   <div class="alternatives">
+    <span id="M33" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M34" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq16.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, 
+  <div id="IEq17" class="inline-formula">
+   <div class="alternatives">
+    <span id="M35" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M36" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq17.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, and 
+  <div id="IEq18" class="inline-formula">
+   <div class="alternatives">
+    <span id="M37" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{AsF}}_6^ -$$\end{document}</span>
+    <div id="M38" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">AsF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq18.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> are roughly the same, which in our understanding of oxidation, hints at a switching from anion oxidation to solvent oxidation. Then, they use a more oxidation-resistant solvent, glutaronitrile, in order to determine the anodic stability order of those anions. Thus, we find a situation where both anion and solvent oxidation matter, depending on which species is oxidized, and their study shows the two possible behaviors of oxidation voltage with changing anion. All these observations are consistent and can be explained with our new understanding of oxidation. However, direct comparison to oxidation voltages as obtained through cyclic voltammetry measurements is not a well-defined validation procedure for computational methods. These measurements have a large variance as they are affected by a wide range of parameters such as the scanning rate
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span>, the nature of the electrode, the concentration of species in the electrolyte, and even the method adopted to infer the oxidation voltage from the raw data
+  <span class="sup">
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>. On the other hand, computational method suffer from DFT functional and basis set inaccuracies and approximate solvation effects. In this work, emphasis was given to accurately describe oxidation mechanisms from the microscopic, ab-initio standpoint, compromising on the accuracy on the absolute value of the IP (also, surface effects are not taken into account). Furthermore, we did not take into account zero-point energies and vibrational entropy. Whilst, for these reasons, quantitative comparison with experimental results is difficult, we believe that the trends presented in this work give important insights into the possible oxidation scenarios. In the case of (TFSI
+  <span class="sup">−</span>, DMSO), for which detailed experimental data are available
+  <span class="sup">
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>, we obtain an excellent agreement with the observed oxidation potential, as reported in a separate publication
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>.
+ </p>
+ <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">Previous computational work by Kim et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span> presented, without elaborating, the location of the HOMO for different anion-solvent pairs, finding that the HOMO of the pair can be on the anion or on the solvent. Even though the exchange-correlation functional used (M06-2X) still has a degree of spurious delocalization (Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>), the trend in the reported data is consistent with our findings. In the work by Kim et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span>, the HOMO is always on the anion for a very weak anion (bis(oxalate)borate) across all studied solvents. However, for a strong anion (
+  <div id="IEq19" class="inline-formula">
+   <div class="alternatives">
+    <span id="M39" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M40" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq19.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>), the HOMO is always on the solvent across all studied solvents. In intermediate cases such as for TFSI
+  <span class="sup">−</span>, the HOMO is on the solvent for the weaker solvents, but is on the anion for stronger solvents. The decrease of the overall IP of the anion-solvent combination relative to the IP of each species is explained in that work, and earlier ones
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>,
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+  </span>, as a consequence of intermolecular chemical reactions. Thus, we see strong evidence emerging that the oxidation of the electrolyte is controlled by both the anion and the solvent. However, in contrast to previous interpretations, we conclude that the weakening effect is driven by the spontaneous charge transfer between the anion and the solvent and does not require consideration of the specific reaction pathway following oxidation.
+ </p>
+</sec>

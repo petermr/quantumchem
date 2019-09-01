@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec6" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">6</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Further Optimized Circuits</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our code also generates some of the optimized circuits developed by Hastings, Wecker, Bauer, and Troyer,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> in order to assess the impact of these optimizations with respect to the Bravyi–Kitaev mapping. Examining 
+  <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+   <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+  </a>, it is evident that many of the CNOT strings may be “blocked off” from cancellation by the basis change gates exterior to them. In this approach, these basis change gates are brought inside the bulk of the CNOT string, as shown in 
+  <a rid="fig9" ref-type="fig" href="#fig9">Figure 
+   <a rid="fig9" ref-type="fig" href="#fig9">9</a>
+  </a>. Note that in the first CNOT string, the final CNOT is replaced by a CZ gate. An inspection of the gate sequence implemented on the final qubit in the case of even and odd parities of each subset of qubits demonstrates why this is the case, as discussed in the 
+  <a rid="app1" ref-type="other" href="#app1">Appendices</a>.
+ </p>
+ <div id="fig9" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 9</span>
+  <div class="caption">
+   <p>A circuit performing an equivalent operation to 
+    <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+     <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+    </a>, using a basis change shift optimization.
+   </p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0010" id="gr9" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our implementation is a slight modification of this technique. As discussed above, our code reduces the Hamiltonian to a symbolic list of exponentiated Pauli strings which does not preserve the electronic Hamiltonian’s original 
+  <span class="italic">H</span>
+  <sub>
+   <span class="italic">pqrs</span>
+  </sub> components. In this scheme, it is not always the case that the “final” qubit—the qubit which is acted on by the central single qubit rotation—is always in the 
+  <span class="italic">X</span> basis. As such, the above method requires modification. For example, if the central qubit is to be rotated in the 
+  <span class="italic">Z</span> basis, the additional CZ gate could simply be commuted through the central rotation and canceled, leading to a phase error.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Fortuitously, in the case that the central qubit is to be rotated in either the 
+  <span class="italic">Y</span> or 
+  <span class="italic">Z</span> basis, a CNOT gate can be used in place of the CZ gate, as in 
+  <a rid="fig9" ref-type="fig" href="#fig9">Figure 
+   <a rid="fig9" ref-type="fig" href="#fig9">9</a>
+  </a>. To demonstrate this, we consider the action on the final qubit in the case of the parity of each subset of qubits, as shown in the 
+  <a rid="app1" ref-type="other" href="#app1">Appendices</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Additionally, circuits described by Hastings, Wecker, Bauer, and Troyer
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> involving an ancilla qubit can be generated. Here, all parity calculating CNOT gates are targeted on a single ancilla qubit. This allows for CNOTS performed in the same basis to be moved around arbitrarily, allowing for a greater level of gate cancellation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Circuits of these forms are known to reduce overall gate count substantially.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> We focus here on the relevance of the Bravyi–Kitaev mapping when using these techniques.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using the former technique, the performance of the Bravyi–Kitaev technique using a lexicographic or random ordering displays roughly the same trend as previous circuits. However, using a magnitude ordering reduces the efficacy of the Bravyi–Kitaev mapping to the point of near-equivalence to the Jordan–Wigner mapping. Any savings or penalties associated with the use of the Bravyi–Kitaev mapping are then negligible compared to gains from the basis change shift optimization procedure. We do not yet have an explanation for the ordering dependence of this behavior. Nonetheless, the Bravyi–Kitaev mapping never substantially under-performs when compared to the Jordan–Wigner mapping. In essence, the observed trends are the same as for the previous circuits, albeit with a greatly reduced factor of improvement associated with the use of the Bravyi–Kitaev mapping (
+  <a rid="fig10" ref-type="fig" href="#fig10">Figure 
+   <a rid="fig10" ref-type="fig" href="#fig10">10</a>
+  </a>).
+ </p>
+ <div id="fig10" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 10</span>
+  <div class="caption">
+   <p>Gate savings associated with the Bravyi–Kitaev mapping normalized by the gate savings acquired using the same optimization with the Jordan–Wigner mapping, using the modified basis change shift technique. Upper: Total gate count. Lower: Entangling gate count. Here we see that the Bravyi–Kitaev and Jordan–Wigner mappings perform relatively equivalently when using both lexicographic and magnitude orderings. Using an alternative ordering, the Bravyi–Kitaev mapping is superior, however these result in an overall increased gate count in both cases.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0011" id="gr10" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The use of ancilla circuits displays a markedly different trend. Here, the effect of the Bravyi–Kitaev mapping is greatly reduced in all ordering schemes—there is a maximum of around 30% reduction in the largest examples, when using a “lexoMag” ordering. It is likely that any major savings or penalties associated with the Bravyi–Kitaev mapping are masked by the substantial savings associated with the use of ancillarised circuits. Using a lexicographic ordering, there is no predictable difference between the two mapping schemes at all.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Curiously, using a magnitude ordering reverses the trend observed for previous optimization schemes. Here, the Bravyi–Kitaev mapping is consistently outperformed by the Jordan–Wigner mapping. However, this distinction is relatively small, and disappears entirely in larger system sizes. As such, we do not conclude that a consistent preference for either mapping is present using these circuits. Note that the use of such circuits may be undesirable in certain architectures, due to the loss of nearest-neighbor CNOT chains, which could undermine the substantial savings associated with this technique (
+  <a rid="fig11" ref-type="fig" href="#fig11">Figure 
+   <a rid="fig11" ref-type="fig" href="#fig11">11</a>
+  </a>).
+ </p>
+ <div id="fig11" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 11</span>
+  <div class="caption">
+   <p>Gate savings associated with the Bravyi–Kitaev mapping normalized by the gate savings acquired using the same optimization with the Jordan–Wigner mapping, using the ancilla-based technique. Upper left: Total gate count. Upper right: Total gate count, zoomed. Lower left: Entangling gate count. Lower right: Entangling gate count, zoomed. Here, we again see roughly equivalent performance when using either a magnitude or lexicographic ordering. Once again, when using a alternative ordering, the Bravyi–Kitaev mapping is superior, however to a greatly reduced extent.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0012" id="gr11" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, we note that in all optimization systems studied, a random choice of ordering resulted in the strongest performance of the Bravyi–Kitaev mapping. While one ordering is clearly not a statistically meaningful sample of the possible orderings, it is interesting that our results here are extremely consistent.</p>
+</sec>

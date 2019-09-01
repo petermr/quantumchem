@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Examples</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To demonstrate QMflows capabilities, we provide some use cases with workflows of increasing complexity.</p>
+ <sec id="sec3.1" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 1: Multilevel Geometry Optimization and Excitation Spectrum</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">A common starting point for a high-level quantum chemistry calculation of molecular properties is a structure optimized at a lower level of theory. For example, it is quite common to perform a single point post-Hartree–Fock calculation on a DFT-optimized structure. As also DFT optimization can be time-consuming for larger molecules it is preferable to perform a preoptimization step to define a starting geometry that is already close to the minimum. 
+   <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+    <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+   </a> demonstrates the implementation of such a multilevel approach, with three different QM packages interoperating in a single QMflows workflow. In this example, we consider calculating the lowest excitation energies of the coumarin dye for which we perform a preoptimization with DFTB, send the resulting structure to the ADF package for further optimization with the PBE functional, and finally employ the Orca program to compute the 10 lowest electronically excited states at the equation of motion CCSD level of theory. This example demonstrates that QMflows provides the flexibility to assign each optimization task to the QM implementation that is most suitable for this task. The full code is provided in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Example S1</span> in the Supporting Information.
+  </p>
+  <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>QMflows workflow for a multilevel geometry optimization followed by an excited states calculation on the relaxed structure. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+   </div>
+   <div xlink:href="ci-2019-00384y_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="sec3.2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 2: Screening Absorption Characteristics of Organic Molecules</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the following example a series of organic chromophores is screened to select molecules with absorption wavelength in a desired range. As a simple criterion for a first selection we calculate the DFT HOMO–LUMO gap. The set of molecules is taken from the chemical database GDB-17,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+   </span> which provides structures in 
+   <span class="italic">SMILES</span> format. The flowchart and the workflow to carry out this screening is illustrated in 
+   <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+    <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+   </a>.
+  </p>
+  <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>QMflows workflow for a multilevel geometry optimization followed by an excited states calculation on the relaxed structure. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+   </div>
+   <div xlink:href="ci-2019-00384y_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">First, the 
+   <span class="italic">SMILES</span> strings representing the target molecules are converted to 3D chemical structures using Molkit. For each molecule, an initial geometry optimization is performed using the computationally inexpensive DFTB method followed by a single point DFT calculation with the SAOP functional. The HOMO and LUMO energies are extracted, and the best performing candidates, those with HOMO–LUMO gaps within the desired energy range, are selected for further study by DFT structure optimization and TD-DFT calculation of the lowest excited states. This workflow illustrates manipulation of structures, extraction of selected data, and workflows in which the number of jobs is determined at runtime. The full code is provided in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Example S2</span> in the Supporting Information. Notice that there are no dependencies between the calculations for different molecules, and this fact is automatically picked by Noodles that generates a dependency graph where the jobs of different molecules are independent from each other and therefore are marked to run in parallel.
+  </p>
+ </sec>
+ <sec id="sec3.3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 3: Multilevel Transition State Search</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+    <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+   </a> shows another workflow to illustrate the integration of calculations with different packages by QMflows. Starting from an automatically generated 2-methylbiphenyl molecule, a constrained geometry optimization is performed with the DFTB package, to obtain an approximate TS state for the rotation between two conformers. Subsequently, a frequency calculation is performed to obtain a DFTB Hessian. This Hessian is then used to initialize the transition state calculation at the DFT level in a different package (ORCA). The full code is provided in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Example S3</span> in the Supporting Information. This example shows how QMFlows allows (partial) interoperability between codes by providing generic functionality that is common to different packages, translating between different input specifications without user intervention.
+  </p>
+  <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>QMflows workflow for a multilevel transition state search. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+   </div>
+   <div xlink:href="ci-2019-00384y_0004" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="sec3.4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 4: Multilevel Transition State Search with Conditional Workflows</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The flowchart in 
+   <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+    <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+   </a> illustrates another possibility for conditional workflows. In this case we check whether the preoptimization was successful and skip this step in case it was not. This is helpful when looping in over a wide class of molecules for which it is difficult to predict whether a certain preoptimizer will provide a converged result. After the preoptimizing step with DFTB, the molecules are further optimized with DFT (Orca) with a final step of TD-DFT calculation including solvent effects with the ADF program. 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span> shows the output of the script, indicating that the preoptimizations for molecules containing a boron atom failed (because this atom is not contained in the default parameter set). QMflows allows users to decide whether an error should be propagated to the rest of the dependencies (as a Python 
+   <span class="italic">None</span> value), or the user can provide an alternative function to execute in case of failure, for example an alternative calculation or a default value.
+  </p>
+  <div id="fig5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 5</span>
+   <div class="caption">
+    <p>QMflows workflow for a multilevel transition state search using a conditional function. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+   </div>
+   <div xlink:href="ci-2019-00384y_0005" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

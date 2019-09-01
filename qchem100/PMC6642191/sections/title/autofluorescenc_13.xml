@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec13" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Autofluorescence of salivary gland duct cells</div>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">For live cell applications, we used salivary glands of the American cockroach, representing a well-established model system for studying transepithelial ion transport processes. In addition, the salivary glands display straightforward methodological accessibility and ease of physiological manipulation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR67" href="#CR67">67</a>,
+   <a ref-type="bibr" rid="CR68" href="#CR68">68</a>
+  </span>. Here, we initially determined whether the salivary gland ducts show time-dependent changes, induced by the incubation medium or irradiation of the applied excitation light (
+  <span class="italic">P</span>
+  <sub>av</sub> = 3.7 mW, measured at objective back aperture). The morphology of the duct cells before and after treatment with physiological saline (pH = 7.4), similar to that of the lipodots 
+  <span class="italic">in vitro</span> experiments, for 120 min is shown in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The overview images illustrate the median optical section plane through the duct with the prominent lumen, a thin continuous luminal cuticle, numerous cellular nuclei and apically located, characteristic point-shaped structures of yet unknown origin. The unloaded cells displayed a comparatively low autofluorescence when excited at 780 nm as expected for 2P-excitation in the NIR spectral range in comparison to the corresponding 1P-excitation in the blue spectral range. In addition, cells stayed intact over the measurement time without visible cell volume changes or photodamage effects. The autofluorescence mainly resulted from the redox pairs nicotinamide adenine dinucleotide (NADH/NAD
+  <span class="sup">+</span>) and flavin adenine (FADH
+  <sub>2</sub>/FAD), serving as electron carriers during ATP-producing oxidative phosphorylation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. However, only reduced NADH and oxidized FAD are fluorescent and can be monitored by fluorescence microscopy. Both redox pairs exist in two physiological forms, a free form and a protein-bound form, which exhibit well separated fluorescence decay times
+  <span class="sup">
+   <a ref-type="bibr" rid="CR69" href="#CR69">69</a>
+  </span>. Upon binding to mitochondrial proteins, the fluorescence decay time of FAD decreases, whereas that of NADH increases. Thus, to discriminate between free and protein-bound forms, biexponential fluorescence lifetime imaging maps of cellular metabolism are typically generated
+  <span class="sup">
+   <a ref-type="bibr" rid="CR70" href="#CR70">70</a>
+  </span>. From time-resolved measurements we examined for the duct cells a biexponential fluorescence decay behaviour with two distinct decay time components 
+  <span class="italic">τ</span>
+  <sub>1</sub> = 2.60 ± 0.10 ns (
+  <span class="italic">α</span>
+  <sub>1</sub> = 19%) and 
+  <span class="italic">τ</span>
+  <sub>2</sub> = 0.36 ± 0.01 ns (
+  <span class="italic">α</span>
+  <sub>2</sub> = 81%) with an intensity-weighted average decay time 
+  <span class="italic">τ</span>
+  <sub>av(int)</sub> = 1.77 ± 0.06 ns (
+  <span class="italic">N</span> = 12). Since 2P-excitation at 780 nm leads to excitation of both, NADH and FAD, the biexponential decay behaviour most probably reflects both species. This result was in good agreement with the fluorescence decay times of NADH and FAD described previously
+  <span class="sup">
+   <a ref-type="bibr" rid="CR69" href="#CR69">69</a>
+  </span>. More important, the measured autofluorescence decayed one order of magnitude faster than that of free or encapsulated QD655 allowing for reliable signal analysis.
+  <div id="Fig3" class="fig">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Cellular autofluorescence. Fluorescence intensity images (top) and 2P
+     <span class="bold">-</span>FLIM images (bottom) of an unstained cockroach salivary duct treated only with physiological saline (pH = 7.4), displaying the autofluorescence (λ
+     <sub>em</sub> = 492 nm–680 nm) after 2P-excitation at λ
+     <sub>ex</sub> = 780 nm for 0 min and 120 min, The median optical section plane through the gland duct indicated the following structural features: 1 cell nucleus, 2 luminal cuticle, 3 point-shaped structures, 4 lumen. Recording parameters: 128 pixel × 128 pixel, 80 μm × 80 μm, pixel dwell time 2.3 ms/pixel, TCSPC time resolution 8 ps, laser repetition rate 50 MHz.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_46732_Fig3_HTML" id="d29e1828" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">Furthermore, by using the line-scan FCS method in the intracellular region we monitored the diffusion of autofluorescent cellular components. While in most cases we observed a lack of autocorrelation curves due to relatively low autofluorescence, in some duct cells we could determine correlations resulting in an average diffusion time of 
+  <span class="italic">τ</span>
+  <sub>D</sub> = 370 ± 35 ms, which corresponded to an average diffusion coefficient of 
+  <span class="italic">D</span> = 0.071 ± 0.007 µm
+  <span class="sup">2</span>/s (
+  <span class="italic">N</span> = 30). This value is about four orders of magnitude smaller than the diffusion coefficient of NADH and FAD measured in aqueous buffer and water, respectively
+  <span class="sup">
+   <a ref-type="bibr" rid="CR71" href="#CR71">71</a>,
+   <a ref-type="bibr" rid="CR72" href="#CR72">72</a>
+  </span>. This fact indicates the presence of further autofluorescent species. Moreover, by comparing the autocorrelation amplitudes obtained from the autocorrelation curves at 0 min and 120 min, we observed in most cases an increase in the number of molecules. A similar effect was also described by Brock 
+  <span class="italic">et al</span>. and was attributed to either subcellular motions or to an increase in the fluorescence signals of certain molecules above the detection threshold, due to the metabolism-dependent changes in their quantum yields
+  <span class="sup">
+   <a ref-type="bibr" rid="CR73" href="#CR73">73</a>
+  </span>. Since the diffusion of molecules in the cytoplasm is a complex phenomenon, strongly dependent on the cell physiology, it is difficult to compare the results of different studies in different cell types
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>,
+   <a ref-type="bibr" rid="CR73" href="#CR73">73</a>,
+   <a ref-type="bibr" rid="CR74" href="#CR74">74</a>
+  </span>. Therefore, comprehensive studies are required in order to correctly assign the measured diffusion time of autofluorescent cellular components.
+ </p>
+</sec>

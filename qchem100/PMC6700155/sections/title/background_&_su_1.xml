@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background &amp; Summary</div>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">The molecular dipole polarizability, 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span>, describes the tendency of a molecule to form an induced dipole moment in the presence of an external electric field. Knowledge of this fundamental response property is central to describing non-bonded interactions (such as induction and dispersion) between molecules in clusters or the condensed phase
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR3" href="#CR3">3</a>
+  </span>, computing Raman and sum frequency generation (SFG) spectra
+  <span class="sup">
+   <a ref-type="bibr" rid="CR4" href="#CR4">4</a>–
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span>, and developing polarizable force fields
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>–
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>
+  </span>. When compared to other ground-state molecular properties (
+  <span class="italic">e</span>.
+  <span class="italic">g</span>., multipole moments), the theoretical prediction of the 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> tensor is considerably more difficult to obtain, as this quantity is often more sensitive to the description of the underlying molecular electronic structure. In this regard, benchmark 
+  <span class="italic">ab initio</span> calculations of 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> are quite challenging to perform, as they require a simultaneous treatment of sophisticated electron correlation effects as well as mitigation of basis set incompleteness error to ensure sufficiently accurate and converged results.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">To obtain benchmark values for 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> in molecular systems with a sizeable HOMO-LUMO gap (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., systems that are well-described by a single-reference wavefunction), one can utilize quantum chemical methods such as linear-response coupled-cluster theory (LR-CC)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>–
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>, which provides an accurate and reliable treatment of electron correlation. The downside of such wavefunction-based approaches is the large (and often prohibitive) computational cost associated with the inclusion of higher order excitations in the CC expansion. For example, LR-CC at the lowest order includes single and double excitations (LR-CCSD), and scales as 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">6</span>), where 
+  <span class="italic">n</span> is a measure of the system size (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., the number of orbitals). This computational cost keeps increasing as higher order excitations are included, and scales as 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">8</span>) with the inclusion of triple excitations (LR-CCSDT) and 
+  <span class="italic">O</span>(
+  <span class="italic">n</span>
+  <span class="sup">10</span>) with the further inclusion of quadruple excitations (LR-CCSDTQ). As a result of this steep rise in the cost, such calculations are computationally prohibitive, even when one is dealing with relatively small molecules containing only 10–15 heavy (non-hydrogen) atoms. In addition to the computational cost required for a wavefunction-based treatment of the electron correlation, the error introduced by the use of a finite one-electron basis set is another factor that needs to be considered when computing 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span>. In this regard, basis set incompleteness error in the prediction of 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> can be more severe than the error due to the lack of higher order (
+  <span class="italic">e</span>.
+  <span class="italic">g</span>., beyond doubles) excitations
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>.
+ </p>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">In this work, we provide static (frequency-independent) 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> tensors computed using LR-CCSD and hybrid density functional theory (DFT) for all molecules in the QM7b
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span> and AlphaML showcase databases
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. The QM7b database
+  <span class="sup">
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>–
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+  </span> has become one of the 
+  <span class="italic">de facto</span> standard databases for machine-learning (ML) applications in chemistry, and contains 
+  <span class="italic">N</span> = 7,211 small organic molecules with up to seven heavy atoms (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., C, N, O, S, and Cl) and varying levels of H saturation. Recently introduced by Wilkins 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span> for testing the transferability of ML-based predictions of 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span>, the AlphaML showcase database consists of 
+  <span class="italic">N</span> = 52 larger organic molecules (with up to 16 heavy atoms), and includes the DNA/RNA nucleobases, uncharged amino acids, several open-chain and cyclic carbohydrates, five popular pharmaceutical molecules, and 23 isomers of C
+  <sub>8</sub>H
+  <sub>n</sub> (see Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>). The diversity of structures in this combination of databases includes alkanes, alkenes, alkynes, (hetero)cycles, carbonyl and carboxyl groups, cyanides, amides, alcohols, amines, thiols, ethers, and epoxides, thereby providing a meaningful survey of 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> across a wide swath of chemical compound space.
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Names and indices of the 52 molecules in the AlphaML showcase database. (1–5) DNA/RNA nucleobases; (6–20) uncharged canonical amino acids (
+     <span class="italic">L</span>-type); (21–25) popular pharmaceutical molecules; (26–29) open-chain and cyclic carbohydrates; and (30–52) 23 isomers of C
+     <sub>8</sub>H
+     <sub>n</sub>. Throughout this work, these molecules will be specified by “showcase” followed by the corresponding index (padded to four digits with leading zeros, 
+     <span class="italic">e</span>.
+     <span class="italic">g</span>., showcase0001 to showcase0052).
+    </p>
+   </div>
+   <div xlink:href="41597_2019_157_Fig1_HTML" id="d29e533" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">Reference values for 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> were obtained with LR-CCSD with the doubly-augmented d-aug-cc-pVDZ basis set of Woon and Dunning
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, as this method (when employed in conjunction with a sufficiently large and diffuse one-particle basis set) has been shown to yield accurate and reliable predictions for 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span>
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span>. The use of d-aug-cc-pVDZ greatly mitigates the basis set incompleteness error at the double-
+  <span class="italic">ζ</span> level, and the validity of this basis set choice will be critically examined and discussed in more detail below. For comparative purposes, we also provide finite-field DFT values for 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> obtained with the popular B3LYP
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span> and SCAN0
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>
+  </span> hybrid functionals in conjunction with the d-aug-cc-pVDZ (B3LYP and SCAN0) and d-aug-cc-pVTZ (B3LYP only) basis sets. Throughout the remainder of this work, the d-aug-cc-pVXZ basis sets (with X = D and T) will be referred to as daXZ, and all LR-CCSD/daDZ calculations will simply be denoted by CCSD/daDZ unless otherwise specified.
+ </p>
+</sec>

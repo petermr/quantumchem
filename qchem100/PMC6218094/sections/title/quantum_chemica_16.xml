@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec009" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemical geometry optimizations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For each metabolite, we generated ten initial geometric conformations using ChemAxon’s calculator plugin (Marvin 17.7.0, 2017, ChemAxon). Quantum chemistry calculations were performed using the Orca software package (version 3.0.3) [
+  <a rid="pcbi.1006471.ref086" ref-type="bibr" href="#pcbi.1006471.ref086">86</a>]. Geometry optimizations were carried out using DFT, with the B3LYP functional and Orca’s predefined DefBas-2 basis set (see 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description). The COSMO implicit solvent model [
+  <a rid="pcbi.1006471.ref087" ref-type="bibr" href="#pcbi.1006471.ref087">87</a>] was used, with the default parameter values of epsilon = 80.4 and refrac = 1.33. DFT-D3 dispersion correction [
+  <a rid="pcbi.1006471.ref088" ref-type="bibr" href="#pcbi.1006471.ref088">88</a>] using Becke-Johnson damping [
+  <a rid="pcbi.1006471.ref089" ref-type="bibr" href="#pcbi.1006471.ref089">89</a>] was also included.
+ </p>
+</sec>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0010" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Picture change in DFT</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Any calculation of the expectation values for molecular properties should consider the PC correction to reproduce the results of the 4c relativistic calculations. In DFT calculations with the 2c relativistic framework, we should consider the PC problem in the electron density 
+  <div id="nlm-math-54" class="math">
+   <span class="mo">ρ</span>
+  </div>,
+  <a rid="jcc25364-bib-0077" ref-type="ref" href="#jcc25364-bib-0077">77</a> which originates from the unitary transformation 
+  <div id="nlm-math-55" class="math">
+   <span mathvariant="bold" class="mi">U</span>
+  </div> of the 4c wavefunction from 
+  <div id="nlm-math-56" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mo">Ψ</span>
+     <span class="mn">4</span>
+    </div>
+   </div>
+  </div> to 
+  <div id="nlm-math-57" class="math">
+   <div class="mrow">
+    <div class="msub">
+     <span class="mo">Ψ</span>
+     <span class="mn">2</span>
+    </div>
+   </div>
+  </div> where
+  <div id="jcc25364-disp-0017" class="disp-formula">
+   <span class="label">(17)</span>
+   <div id="nlm-math-58" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <span class="mo">Ψ</span>
+      <span class="mn">4</span>
+     </div>
+     <span class="mo">=</span>
+     <span mathvariant="bold" class="mi">U</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div class="mtd">
+          <div class="mrow">
+           <div class="msub">
+            <span class="mo">Ψ</span>
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div class="mtd">
+          <span class="mn">0</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">.</span>
+    </div>
+   </div>
+  </div>The electron density 
+  <div id="nlm-math-59" class="math">
+   <div class="mrow">
+    <span class="mo">ρ</span>
+    <span stretchy="false" class="mo">(</span>
+    <span mathvariant="bold" class="mi">r</span>
+    <span stretchy="false" class="mo">)</span>
+   </div>
+  </div> at position 
+  <span class="bold">r</span> is defined for both the 4c and 2c formalisms by
+  <div id="jcc25364-disp-0018" class="disp-formula">
+   <span class="label">(18)</span>
+   <div id="nlm-math-60" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mo">ρ</span>
+       <span stretchy="false" class="mo">(</span>
+       <span mathvariant="bold" class="mi">r</span>
+       <span stretchy="false" class="mo">)</span>
+       <span class="mo">=</span>
+       <div class="mrow">
+        <span class="mo">〈</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">4</span>
+         </div>
+        </div>
+        <span class="mo">|</span>
+       </div>
+       <div displaystyle="true" class="mstyle">
+        <div class="munder">
+         <span class="mo">∑</span>
+         <span class="mi">i</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">δ</span>
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <span mathvariant="bold" class="mi">r</span>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span mathvariant="bold" class="mi">r</span>
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">)</span>
+         </div>
+         <div class="msub">
+          <span mathvariant="bold" class="mi">1</span>
+          <span class="mn">4</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">|</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">4</span>
+         </div>
+        </div>
+        <span class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mo"> </span>
+       <span class="mo"> </span>
+       <span class="mo"> </span>
+       <span class="mo">≈</span>
+       <div class="mrow">
+        <span class="mo">〈</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">|</span>
+       </div>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <div displaystyle="true" class="mstyle">
+           <div class="munder">
+            <span class="mo">∑</span>
+            <span class="mi">i</span>
+           </div>
+           <div class="mrow">
+            <div class="msup">
+             <span mathvariant="bold" class="mi">U</span>
+             <span class="mo">†</span>
+            </div>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">i</span>
+            <span stretchy="false" class="mo">)</span>
+            <span class="mo">δ</span>
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <span mathvariant="bold" class="mi">r</span>
+              <span class="mo">−</span>
+              <div class="msub">
+               <span mathvariant="bold" class="mi">r</span>
+               <span class="mi">i</span>
+              </div>
+             </div>
+             <span class="mo">)</span>
+            </div>
+            <div class="msub">
+             <span mathvariant="bold" class="mi">1</span>
+             <span class="mn">4</span>
+            </div>
+            <span mathvariant="bold" class="mi">U</span>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">i</span>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+          </div>
+         </div>
+         <span class="mo">]</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">e</span>
+         <span class="mi">l</span>
+         <span class="mi">e</span>
+         <span class="mi">c</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">|</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mo"> </span>
+       <span class="mo"> </span>
+       <span class="mo"> </span>
+       <span class="mo">≠</span>
+       <div class="mrow">
+        <span class="mo">〈</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">|</span>
+       </div>
+       <div displaystyle="true" class="mstyle">
+        <div class="munder">
+         <span class="mo">∑</span>
+         <span class="mi">i</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">δ</span>
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <span mathvariant="bold" class="mi">r</span>
+           <span class="mo">−</span>
+           <div class="msub">
+            <span mathvariant="bold" class="mi">r</span>
+            <span class="mi">i</span>
+           </div>
+          </div>
+          <span class="mo">)</span>
+         </div>
+         <div class="msub">
+          <span mathvariant="bold" class="mi">1</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">|</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mo">Ψ</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">〉</span>
+       </div>
+       <span class="mo">,</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>where 
+  <div id="nlm-math-61" class="math">
+   <span class="mo">δ</span>
+  </div> is the delta function, and 
+  <span class="bold">1</span>
+  <sub>n</sub> is the n × n identity matrix. The subscript elec denotes the electronic component of the unitary transformed delta function. This PC correction is now available for ground state DFT calculations. Furthermore, the LUT scheme will realize an efficient PC correction process for eq. (
+  <a rid="jcc25364-disp-0018" ref-type="disp-formula" href="#jcc25364-disp-0018">18</a>) following the confirmation of the locality of the PC correction in an earlier article.
+  <a rid="jcc25364-bib-0077" ref-type="ref" href="#jcc25364-bib-0077">77</a>
+ </p>
+</sec>

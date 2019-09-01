@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">ADAPT-VQE algorithm</div>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">The above discussion described the Trotter expansion as an approximation to UCCGSD. However, as recognized previously
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>,
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>, if the parameters are optimized after the Trotterization, this is not so much an approximation to UCC as it is a wholly unique ansatz. In fact, the exact FCI solution could be obtained by simply going to an 
+  <span class="italic">n</span>th order Trotterized form of UCCSD and allowing the different parameter replicas to vary independently. This is due to the fact that 
+  <span class="italic">n</span>-body interactions can be described as products of one- and two-body interactions. The exact (FCI) quantum state can thus be represented as an arbitrarily long product of one- and two-body operators,
+  <div id="Equ7" class="disp-formula">
+   <span class="label">7</span>
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\psi ^{{\mathrm{FCI}}}} \right\rangle = \mathop {\prod}\limits_k^\infty {\mathop {\prod}\limits_{pq} {e^{\hat \tau _p^q(k)}} } \mathop {\prod}\limits_{pqrs} {e^{\hat \tau _{pq}^{rs}(k)}} \left| {\psi ^{{\mathrm{HF}}}} \right\rangle$$\end{document}</span>
+    <div id="M24" class="math">
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">FCI</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div accent="false" accentunder="false" class="munderover">
+      <div class="mrow">
+       <span class="mo"> ∏</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">∞</span>
+      </div>
+     </div>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo">∏</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">p</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">q</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+     </div>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∏</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">p</span>
+         <span class="mi">q</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">r</span>
+         <span class="mi">s</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">HF</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ7.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where 
+  <div id="IEq6" class="inline-formula">
+   <div class="alternatives">
+    <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat \tau _{pq}^{rs}(k)$$\end{document}</span>
+    <div id="M26" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq6.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is the 
+  <span class="italic">k</span>th instance, or “replica”, of the operators in 
+  <div id="IEq7" class="inline-formula">
+   <div class="alternatives">
+    <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat t_{pq}^{rs} - \hat t_{rs}^{pq}$$\end{document}</span>
+    <div id="M28" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. It is important to note that this is not a Trotter approximation to any simple two-body ansatz, as each replica can assume different parameter values, e.g., 
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _{pq}^{rs}(k) \, \ne \, \tau _{pq}^{rs}(j)$$\end{document}</span>
+    <div id="M30" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span width="0.25em" class="mspace"/>
+     <span class="mo">≠</span>
+     <span width="0.25em" class="mspace"/>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">τ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">j</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>.
+ </p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">The main goal in this paper is to approximate FCI with arbitrary accuracy using a maximally compact sequence of unitary operators. The basic outline of the algorithm is drawn schematically in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> and is as follows:
+  <div list-type="order" class="list">
+   <div class="list-item">
+    <p id="Par19">On classical hardware, compute one- and two-electron integrals, and transform the fermionic Hamiltonian into a qubit representation using an appropriate transformation: Jordan–Wigner, Bravyi–Kitaev, etc. This is a standard step in regular VQE.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par20">Define an “Operator Pool”. This is simply a collection of operator definitions which will be used to construct the ansatz. For the examples presented in the next section, we consider the set of all unique spin-complemented one- and two-body operators, but one might imagine adding a few three-body or four-body terms as well.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par21">Initialize qubits to an appropriate reference state, ideally one with the correct number of electrons. The HF state would be a sensible choice here. Initialize the ansatz to the identity operator.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par22">On a quantum computer, prepare a trial state with the current ansatz. If multiple quantum computers are available, perform this step on all devices simultaneously.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par23">Measure the commutator of the Hamiltonian with each operator in the pool to get the gradient. Repeating this multiple times and averaging gives the gradient of the expectation value of the Hamiltonian with respect to the coefficient of each operator. This can be done in parallel.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par24">If the norm of the gradient vector is smaller than some threshold, 
+     <span class="italic">ε</span>, exit.
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par25">Identify the operator with the largest gradient and add this single operator to the left end of the ansatz, with a new variational parameter. Note that this does not “drain” the pool in the sense that choosing an operator does not remove it from the pool so it can be used again later.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par26">Perform a VQE experiment to re-optimize all parameters in the ansatz.</p>
+   </div>
+   <div class="list-item">
+    <p id="Par27">Go to step 4.</p>
+   </div>
+  </div>
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Schematic depiction of the ADAPT-VQE algorithm described presented. Since step 1 occurs on classical hardware, it is not included in the illustration. 
+     <div id="IEq9" class="inline-formula">
+      <div class="alternatives">
+       <span id="M31" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\vec \theta ^{(n)}$$\end{document}</span>
+       <div id="M32" class="math">
+        <div class="msup">
+         <div class="mrow">
+          <div accent="true" class="mover">
+           <div class="mrow">
+            <span class="mi">θ</span>
+           </div>
+           <span class="mo">→</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+           <span class="mo">)</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_10988_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div> is the list of ansatz parameters at the 
+     <span class="italic">n</span>th iteration. The number of parameters, 
+     <div id="IEq10" class="inline-formula">
+      <div class="alternatives">
+       <span id="M33" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$len(\vec \theta ^{(n)})$$\end{document}</span>
+       <div id="M34" class="math">
+        <span class="mi">l</span>
+        <span class="mi">e</span>
+        <span class="mi">n</span>
+        <div class="mrow">
+         <span class="mo">(</span>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <div accent="true" class="mover">
+             <div class="mrow">
+              <span class="mi">θ</span>
+             </div>
+             <span class="mo">→</span>
+            </div>
+           </div>
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">(</span>
+             <div class="mrow">
+              <span class="mi">n</span>
+             </div>
+             <span class="mo">)</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span class="mo">)</span>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_10988_Article_IEq10.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>, is equal to the number of operators in the ansatz. “Operator Pool” refers to the collection of operators which are used to grow the ansatz one-at-a-time. Each 
+     <div id="IEq11" class="inline-formula">
+      <div class="alternatives">
+       <span id="M35" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\tau _p^q$$\end{document}</span>
+       <div id="M36" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">τ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">p</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">q</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_10988_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div> represents a generalized single or double excitation, and these operators are then spin-complemented. The orbital indices refer to spatial orbitals, and the overbar indicates 
+     <span class="italic">β</span> spin. Orbital indices without overbars have 
+     <span class="italic">α</span> spin. Note that growing the ansatz does not drain the pool, and so operators can show up multiple times if selected by the algorithm
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10988_Fig1_HTML" id="d29e1625" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par28" xmlns="http://www.w3.org/1999/xhtml">As described above and illustrated in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>, each iteration starts as a series of uncoupled experiments to obtain the parameter gradients via measurements of operator commutators (the gradient expression in step 5 is derived in section IB of the 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplemental Information</a>). The purpose of these gradient measurements is to determine the best operator with which to grow the ansatz, as the operator with the largest gradient is likely to recover the most correlation energy in the subsequent VQE minimization. This process is continued iteratively, until a convergence threshold is met. In the classical numerical examples presented below, we chose to consider the 
+  <span class="italic">L</span>
+  <span class="sup">2</span> norm of the gradient vector to determine convergence. This is just one possibility, and alternative convergence indicators could be used instead in step 6. At convergence, the ADAPT-VQE algorithm obtains the following ansatz:
+  <div id="Equ8" class="disp-formula">
+   <span class="label">8</span>
+   <div class="alternatives">
+    <span id="M37" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\psi ^{{\mathrm{ADAPT}}(\varepsilon )}} \right\rangle = \left( {e^{\hat \tau _N}} \right)\left( {e^{\hat \tau _{N - 1}}} \right) \cdots \left( {e^{\hat \tau _2}} \right)\left( {e^{\hat \tau _1}} \right)\left| {\psi ^{{\mathrm{HF}}}} \right\rangle$$\end{document}</span>
+    <div id="M38" class="math">
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">ADAPT</span>
+         <div class="mrow">
+          <span class="mo">(</span>
+          <div class="mrow">
+           <span class="mi">ε</span>
+          </div>
+          <span class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mi">τ</span>
+            </div>
+            <span class="mo">^</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mi">N</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mi">τ</span>
+            </div>
+            <span class="mo">^</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mi">N</span>
+           <span class="mo">-</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">⋯</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mi">τ</span>
+            </div>
+            <span class="mo">^</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <div accent="true" class="mover">
+            <div class="mrow">
+             <span class="mi">τ</span>
+            </div>
+            <span class="mo">^</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span class="mn">1</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">HF</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ8.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where the identity of each 
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M39" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat \tau _i$$\end{document}</span>
+    <div id="M40" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is determined by the algorithm.
+ </p>
+ <p id="Par29" xmlns="http://www.w3.org/1999/xhtml">The re-optimization subroutine in step 8 can be implemented on either a classical or quantum processor using any of the gradient- or non-gradient-based optimization routines that have been proposed or demonstrated for VQE
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>,
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>,
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>
+  </span>. Note that this subroutine is distinct from the gradient computed in step 5 of the algorithm. Additional possible modifications to the algorithm are mentioned in the “Discussion” section.
+ </p>
+ <p id="Par30" xmlns="http://www.w3.org/1999/xhtml">The evaluation of all the gradient terms could in principle be achieved in a NISQ-friendly, highly parallel manner with a large number of uncoupled quantum computers all tasked with preparing the same state and measuring a different operator. This is the same potential for parallelization that the underlying VQE subroutine has. Just as with the original motivation for VQE, ADAPT-VQE decreases the circuit depth at the expense of a larger number of measurements. In our case a sequence of VQE experiments is performed, with the most resource-demanding experimental steps happening at the end. This constitutes a rather large prefactor which would scale with the size of the system, but the crucial advantage is controllability over the ansatz accuracy (in principle approaching FCI). Because the number of non-zero parameters equals the number of iterations, in order to discover an ansatz for a large system, an equal number of VQE re-optimizations will need to be performed. One strategy to minimize this prefactor could simply be to add a few operators at a time.</p>
+ <p id="Par31" xmlns="http://www.w3.org/1999/xhtml">Determining resource requirements for adaptive procedures is rather difficult. The classical resources are not expected to be significant in the foreseeable future. However, as quantum technology progresses toward deeper circuits, the parameter manipulation and updating on a classical computer could become costly. However, we expect the dependence between parameters at the beginning and end of the ADAPT-VQE circuit to decay with circuit depth, such that one could imagine freezing the early parameters after a certain number of iterations. This would possibly establish an approach for FCI with only a polynomial number of variables, completely avoiding any exponential cost for the classical hardware.</p>
+</sec>

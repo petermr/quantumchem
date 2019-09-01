@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">High-Throughput Prediction of Redox Potentials and Elucidation of Structure–Energy Relationships</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using our GP-calibrated semiempirical quantum chemistry method, we predicted the standard transformed redox potentials for the set of ∼315 000 reactions generated with the iterative network expansion algorithm. The resulting distribution of standard transformed redox potentials is shown in 
+  <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+   <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+  </a>. We note the use of the millimolar standard state, 
+  <span class="italic">E</span>′
+  <span class="sup">m</span>, instead of the more commonly used 
+  <span class="italic">E</span>′° (where reactant concentrations are taken as 1 M). This is a standard state that is commonly used in the field of biochemical thermodynamics since 1 mM is closer to the relevant physiological concentrations of metabolites in cells.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>
+  </span> The resulting distributions for the two reaction categories peak at very close but slightly different values, with ⟨
+  <span class="italic">E</span>′
+  <span class="sup">m</span>⟩ ∼ −220 mV for carbonyl-to-alcohol reductions and ⟨
+  <span class="italic">E</span>′
+  <span class="sup">m</span>⟩ ∼ −235 mV for carbonyl-to-amine reductions.
+ </p>
+ <div id="fig5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <p>Distribution of predicted standard redox potentials (pH = 7) for a set of ∼315 000 non-natural redox reactions. Predicted potentials were obtained by running semiempirical quantum chemical calculations (
+    <a rid="sec4" ref-type="other" href="#sec4">Methods</a>) and correcting for systematic errors using Gaussian process regression. The green distribution shows the 
+    <span class="italic">E</span>′
+    <span class="sup">m</span>(pH = 7) values for 53 095 reductions of carbonyls to amines. The blue distribution shows the 
+    <span class="italic">E</span>′
+    <span class="sup">m</span>(pH = 7) values for 261 903 reductions of carbonyls to alcohols.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-002977_0005" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Importantly, our vast network of non-natural redox reactions and their associated redox potentials are amenable to structure–energy analyses to elucidate molecular structures that are enriched or depleted in reactions with high or low potentials. Toward this end, we developed a novel molecular fingerprint-based structure–energy analysis, which we term “reaction fingerprint heatmaps”, to detect such reaction motifs (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>). The main idea behind reaction fingerprint heatmaps is that, by comparing the 
+  <span class="italic">average</span> reaction fingerprints of reactions with different redox potential values, one can visually detect the structural patterns that correlate with energetics. More specifically, we first divide the distribution of predicted standard redox potentials into arbitrary discrete bins, in our case 100 bins. We then find, for each standard redox potential bin, the subset of reactions with potentials falling within that range and average their corresponding fingerprint vectors. We then extract structure–energy trends by looking at the changes in average fingerprints values across consecutive bins. When these changes are large for a particular bit, it signifies that a meaningful molecular environment (motif) is enriched or depleted at that particular bin (range) of redox potential values. For any particular reaction, we can reverse engineer the reaction fingerprint to obtain substructures that activate the particular bit. For example (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>), we find that Bit-4 is enriched in reactions with standard potentials of −160 mV &lt; 
+  <span class="italic">E</span>′
+  <span class="sup">m</span> &lt; −100 mV. By mapping Bit-4 back to specific reactions, we find a molecular environment that corresponds to a dicarbonyl within a heterocyclic ring (see example reaction in 
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>) that is enriched in substrate molecules within that range of standard potentials. While, across all reactions, the difference between the substrate and product molecules is the reduction of a single carbonyl into a hydroxy carbon group, our reaction fingerprint heatmaps detect the molecular environments dictating the energetics associated with that transformation.
+ </p>
+ <div id="fig6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <p>Elucidating structure–energy relationships using a reaction fingerprint heatmap. The top right panel shows the distribution of predicted standard redox potentials (in the millimolar standard state) using our GP-calibrated quantum chemical approach. The bottom right panel shows a reaction fingerprint heatmap, where the 
+    <span class="italic">y</span>-axis corresponds to the bits in the reaction fingerprint vector averaged across all reactions falling within a redox potential bin (range of values). The heatmap highlights bits that have significantly different values (on average) as a function of redox potential. The example reactions on the left correspond to each of the significant reaction fingerprint bits. For example, Bit-4 is a structure enriched in substrate molecules of reactions with high values of standard redox potentials.
+   </p>
+  </div>
+  <div xlink:href="oc-2019-002977_0006" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

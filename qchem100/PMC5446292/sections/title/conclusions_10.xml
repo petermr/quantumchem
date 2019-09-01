@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s4" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">IV.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">CONCLUSIONS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have presented a comprehensive comparison between different electronic structure methods including wave function based theories and a small selection of density-functionals for the prediction of the adsorption energy of a single water molecule on the (001) LiH surface.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum chemical methods are systematically improvable, hence yielding increasingly accurate adsorption energies as one moves up the hierarchy to higher orders of theory. Distinguishable cluster theory and inclusion of triple excitations to CCSD theory give the best agreement with the DMC results. We find that MP2 and CCSD reach a similar level of accuracy for this system, slightly underbinding the water molecule on the LiH surface by roughly 20 meV. We also find good agreement between periodic canonical and local implementations utilizing explicit correlation techniques for improved basis set convergence. All these demonstrate that quantum chemical approaches are becoming a robust and reliable tool for condensed phase electronic structure calculations.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have also employed van der Waals functionals for the study of the same system, finding that these functionals yield a significantly larger spread of adsorption energy estimates compared to the employed many-electron theories. The underestimation and overestimation compared to DMC and 
+  <span class="italic">δ</span>CCSD(T) are as large as 30 meV (RPBE-vdW-DF) and 100 meV (PBE-D3), respectively. Although the PBE-TS functional achieves good agreement with the DMC and 
+  <span class="italic">δ</span>CCSD(T) estimates for the present case, it remains difficult to achieve such a high level of accuracy for a wide class of materials using van der Waals functionals. This study contributes another benchmark system to the literature that can be used to further improve upon the currently available and computationally very efficient van der Waals functionals for cases where higher accuracy is needed.
+ </p>
+</sec>

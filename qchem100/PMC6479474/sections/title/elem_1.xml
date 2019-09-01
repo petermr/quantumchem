@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" id="sec2-molecules-24-01402" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2. Results and Discussion</div>
+ <sec id="sec2dot1-molecules-24-01402" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.1. Experimental and Simulated IR Spectra of Crystalline Melamine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The simulation of the IR spectrum of melamine in polycrystalline state requires a proper representation of the long-range ordered structure (
+   <a ref-type="fig" rid="molecules-24-01402-f001" href="#molecules-24-01402-f001">Figure 1</a>). There exists a decisive decrease in the accuracy for the IR spectrum calculated on the basis of finite model, even in anharmonic approximation (
+   <a ref-type="fig" rid="molecules-24-01402-f002" href="#molecules-24-01402-f002">Figure 2</a>). Such spectra are markedly poor and numerous bands are missing (
+   <a ref-type="fig" rid="molecules-24-01402-f002" href="#molecules-24-01402-f002">Figure 2</a>C,D). In contrast, the spectrum that was calculated for infinite (3D periodic) model (
+   <a ref-type="fig" rid="molecules-24-01402-f002" href="#molecules-24-01402-f002">Figure 2</a>B) correctly reproduces all of the major experimental bands (
+   <a ref-type="fig" rid="molecules-24-01402-f002" href="#molecules-24-01402-f002">Figure 2</a>A). The overestimation of the calculated peak positions, particularly noticeable above 3000 cm
+   <span class="sup">−1</span>, likely results foremost from neglecting the anharmonic effects that are typically strong in the X-H stretching region. However, this may be accurately corrected by employing wavenumber scaling. This observation may appear obvious; however, in light of NIR simulations (as discussed in 
+   <a ref-type="sec" rid="sec2dot2-molecules-24-01402" href="#sec2dot2-molecules-24-01402">Section 2.2</a> and 
+   <a ref-type="sec" rid="sec2dot3-molecules-24-01402" href="#sec2dot3-molecules-24-01402">Section 2.3</a>), it leads to farer-reaching conclusions. In 
+   <a ref-type="sec" rid="sec2dot4-molecules-24-01402" href="#sec2dot4-molecules-24-01402">Section 2.4</a>, we will explore this topic in detail.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Therefore, the discussion of the IR bands will be based on harmonic periodic system calculations. The neglecting of anharmonicity in the case of periodic system calculations did not decrease noticeably the agreement with the experimental spectrum. We have carried out two separate calculations of IR spectra for the lattice model (B3LYP/Gatti and B3LYP/TZVP; 
+   <a ref-type="app" rid="app1-molecules-24-01402" href="#app1-molecules-24-01402">Figures S2 and S3 in Supplementary Materials</a>). The differences between these two simulated spectra are qualitatively negligible, with the exception of the low-lying bands in the region of 900–650 cm
+   <span class="sup">−1</span> (
+   <a ref-type="app" rid="app1-molecules-24-01402" href="#app1-molecules-24-01402">Figure S3 in Supplementary Materials</a>). Accordingly, the overhead computing cost that is introduced by the larger TZVP basis set did not return any profit in the case of melamine. The accuracy of scaled B3LYP/Gatti allows for unambiguous band assignments in the entire 4000–650 cm
+   <span class="sup">−1</span> region of crystalline melamine (
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a>A,B; 
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">A good comprehension of all IR bands in the crystalline melamine was accomplished; the resulting assignments are presented in 
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a>A,B and in 
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>. The upper IR region (X-H stretching region) is mostly populated by 
+   <span class="italic">ν</span>
+   <sub>as</sub>NH
+   <sub>2</sub> bands; three of them are separated, while the fourth one (at ca. 3188 cm
+   <span class="sup">−1</span>) overlaps with the neighboring strong 
+   <span class="italic">ν</span>
+   <sub>s</sub>NH
+   <sub>2</sub> peak. That single 
+   <span class="italic">ν</span>
+   <sub>s</sub>NH
+   <sub>2</sub> band at 3122 cm
+   <span class="sup">−1</span> has the highest intensity in this region. These features are very well reflected in the calculated spectrum. The broadening that was observable just below 3000 cm
+   <span class="sup">−1</span> in the experimental spectrum 
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a>A) originates from the strong anharmonic effects that occur because of the long-range ordering of hydrogen-bonded melamine molecules, which exists in the crystal lattice [
+   <a rid="B47-molecules-24-01402" ref-type="bibr" href="#B47-molecules-24-01402">47</a>,
+   <a rid="B48-molecules-24-01402" ref-type="bibr" href="#B48-molecules-24-01402">48</a>]. These effects have well-known impact on IR spectra [
+   <a rid="B47-molecules-24-01402" ref-type="bibr" href="#B47-molecules-24-01402">47</a>,
+   <a rid="B48-molecules-24-01402" ref-type="bibr" href="#B48-molecules-24-01402">48</a>,
+   <a rid="B49-molecules-24-01402" ref-type="bibr" href="#B49-molecules-24-01402">49</a>,
+   <a rid="B50-molecules-24-01402" ref-type="bibr" href="#B50-molecules-24-01402">50</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The lower IR region (fingerprint region; 1700–650 cm
+   <span class="sup">−1</span> in the present case; 
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a>B) of melamine features rather well separated bands. The most notable group of the intense bands in the region of 1650–1430 cm
+   <span class="sup">−1</span> primarily arises from in-plane NH
+   <sub>2</sub> deformations (scissoring and rocking modes of NH
+   <sub>2</sub>; in-plane ring modes and C-N(H
+   <sub>2</sub>) stretching modes). The internal coordinates corresponding to these vibrations are rather highly mixed (
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>). In contrast, the bands appearing at 1194 and 1174 cm
+   <span class="sup">−1</span> stems from relatively “clean” NH
+   <sub>2</sub> rocking modes. However, the intensities of those two bands are weak. These observations will find good confirmation in the subsequent analysis of the NIR spectrum of melamine. The next band (1024 cm
+   <span class="sup">−1</span>) has a moderate intensity and it corresponds to two transitions; 
+   <span class="italic">δ</span>
+   <sub>rock</sub>NH
+   <sub>2</sub> mixed with 
+   <span class="italic">δ</span>
+   <sub>ip</sub>ring (at calc. position of 1035 cm
+   <span class="sup">−1</span>) and 
+   <span class="italic">δ</span>
+   <sub>rock</sub>NH
+   <sub>2</sub> mixed with 
+   <span class="italic">ν</span>C-N(H
+   <sub>2</sub>) and 
+   <span class="italic">δ</span>
+   <sub>ip</sub>ring (at calc. position of 1021 cm
+   <span class="sup">−1</span>). The very strong band at 810 cm
+   <span class="sup">−1</span> originates from the out-of-plane deformations. The transitions corresponding to less mixed 
+   <span class="italic">δ</span>
+   <sub>rock</sub>NH
+   <sub>2</sub> and 
+   <span class="italic">δ</span>
+   <sub>rock</sub>NH
+   <sub>2</sub> give rise to weak bands at 768 and 675 cm
+   <span class="sup">−1</span> (calc. 755 and 661 cm
+   <span class="sup">−1</span>), respectively (
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a>B and 
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>). Thus, the mixing of internal coordinates can consistently be noted for the corresponding bands with stronger intensities.
+  </p>
+ </sec>
+ <sec id="sec2dot2-molecules-24-01402" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.2. Experimental and Simulated NIR Spectra of Crystalline Melamine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In decisive contrast to the IR region (
+   <a ref-type="sec" rid="sec2dot1-molecules-24-01402" href="#sec2dot1-molecules-24-01402">Section 2.1</a>), and as evidenced in 
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>, the NIR bands of crystalline melamine are accurately reproduced on the basis of a finite model. In this case, even the calculations that are based on a single molecule of melamine provide good agreement between the calculated and experimental spectra (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>). If further studies will allow for generalizing this observation, a lower requirement for the model complexity in modeling of NIR spectra could open other opportunities for refining the theoretical approach. For example, a hybrid approach combining higher-level harmonic computations augmenting DVPT2/GVPT2 anharmonic analysis could be used. Barone and co-workers have reported evidences of accurate and affordable hybrid B3LYP(harmonic)/B2PLYP(anharmonic) computations [
+   <a rid="B51-molecules-24-01402" ref-type="bibr" href="#B51-molecules-24-01402">51</a>,
+   <a rid="B52-molecules-24-01402" ref-type="bibr" href="#B52-molecules-24-01402">52</a>], as also seen in our previous studies [
+   <a rid="B53-molecules-24-01402" ref-type="bibr" href="#B53-molecules-24-01402">53</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The principle difference between the DVPT2 and GVPT2 approaches is the treatment of vibrational resonances; the latter method features an advanced correction for Fermi and Darling-Dennison resonances by the variational method [
+   <a rid="B54-molecules-24-01402" ref-type="bibr" href="#B54-molecules-24-01402">54</a>]. The improvement does not seem to significantly affect the major NIR bands of melamine (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>). However, improved method allows for calculations of three quanta transitions (i.e., second overtones, 3
+   <span class="italic">ν</span>; and ternary combinations, 2
+   <span class="italic">ν</span>
+   <sub>x</sub> + 
+   <span class="italic">ν</span>
+   <sub>y</sub>, and 
+   <span class="italic">ν</span>
+   <sub>x</sub> + 
+   <span class="italic">ν</span>
+   <sub>y</sub> + 
+   <span class="italic">ν</span>
+   <sub>z</sub>). The addition of these minor bands slightly enhances the agreement, for example, below 6500 cm
+   <span class="sup">−1</span> and in the region of 4400–4150 cm
+   <span class="sup">−1</span> (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a> and 
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>). This observation remains similar to our previous estimations that were based on the anharmonic study of methanol molecule and its deuterated isotopomers [
+   <a rid="B55-molecules-24-01402" ref-type="bibr" href="#B55-molecules-24-01402">55</a>]. We have therein concluded that the bands due to three quanta transitions are only responsible for minority (ca. 20%) of the NIR spectra of methanol [
+   <a rid="B55-molecules-24-01402" ref-type="bibr" href="#B55-molecules-24-01402">55</a>]. These higher order bands are weak, overlapping bands, and the corresponding spectral information is “diffused” along the wavenumber axis [
+   <a rid="B55-molecules-24-01402" ref-type="bibr" href="#B55-molecules-24-01402">55</a>]. A similar case may be reported for melamine, and it is probably shared by other molecules. There are some exceptions, e.g., in the literature, 3
+   <span class="italic">ν</span>C=O has been reported to appear near 5150–5160 cm
+   <span class="sup">−1</span> in gas phase (and near 5122–5076 cm
+   <span class="sup">−1</span> in various solvents), as a well resolved band in some molecules with a C=O group [
+   <a rid="B56-molecules-24-01402" ref-type="bibr" href="#B56-molecules-24-01402">56</a>,
+   <a rid="B57-molecules-24-01402" ref-type="bibr" href="#B57-molecules-24-01402">57</a>]. No such exceptions were observed for melamine, and close inspection of the theoretical spectra confirms that the majority of the experimental bands were reproduced by both approximations (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>). The more comprehensive, but also resource intensive, calculations of additional three quanta transitions of melamine allowed for explaining finer features that were observed in its NIR spectrum (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>). Primarily, the influence of higher order bands may be seen throughout the 6500–5200 cm
+   <span class="sup">−1</span> region and in the vicinity of 4300–4100 cm
+   <span class="sup">−1</span> (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>A,B). In the former case (6500–5200 cm
+   <span class="sup">−1</span> region), these bands remain very weak. For the latter (4300–4100 cm
+   <span class="sup">−1</span> region), there appears a marked band overlapping that gives rise to a broadened feature of moderate intensity at 4300–4200 cm
+   <span class="sup">−1</span>, and also a similar one appearing at the high-frequency wing of the ~4090 cm
+   <span class="sup">−1</span> band (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>B). The present study of NIR spectra of crystalline melamine may be compared with our earlier calculations of NIR spectra of medium-chain fatty acids [
+   <a rid="B35-molecules-24-01402" ref-type="bibr" href="#B35-molecules-24-01402">35</a>]. In contrast to the previously observed significance of the hydrogen-bonding interaction for the NIR region of crystalline sorbic acid [
+   <a rid="B35-molecules-24-01402" ref-type="bibr" href="#B35-molecules-24-01402">35</a>], NIR bands of melamine reveal surprisingly low sensitivity to the hydrogen-bonding. This occurs despite the fact that melamine interacts strongly and it forms multiple hydrogen-bonds in crystalline states, as recently demonstrated by Yuan et al. [
+   <a rid="B41-molecules-24-01402" ref-type="bibr" href="#B41-molecules-24-01402">41</a>]. We will discuss in detail the reasons for such distinctiveness of NIR region of melamine in 
+   <a ref-type="sec" rid="sec2dot3-molecules-24-01402" href="#sec2dot3-molecules-24-01402">Section 2.3</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The agreement with the experimental spectrum is slightly lower in the 5200–4000 cm
+   <span class="sup">−1</span> region, as the level of band overlapping is very high there. In contrast, the upper NIR region (ca. 6900–6450 cm
+   <span class="sup">−1</span>) was accurately reproduced in the calculation (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>A). The first overtones and the binary combinations bands of NH
+   <sub>2</sub> stretching modes populate this region (as the primary contributions). Similar to other kinds of X-H vibrations (e.g., OH), these modes are expected in the literature to be sensitive to the molecules’ chemical neighborhood, e.g., prone to red-shifting in hydrogen-bonded complexes. This effect has been clearly observed for alcohols [
+   <a rid="B58-molecules-24-01402" ref-type="bibr" href="#B58-molecules-24-01402">58</a>] or in our recent NIR investigation of thymol [
+   <a rid="B37-molecules-24-01402" ref-type="bibr" href="#B37-molecules-24-01402">37</a>]. Surprisingly, in the case of melamine it may be concluded that the first overtones and binary combinations bands of NH
+   <sub>2</sub> stretching modes are properly reproduced, even in the simplified case of an isolated molecule, for which the inter-molecular interactions are not reflected (
+   <a ref-type="fig" rid="molecules-24-01402-f004" href="#molecules-24-01402-f004">Figure 4</a>A).
+  </p>
+ </sec>
+ <sec id="sec2dot3-molecules-24-01402" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.3. An In-Depth Analysis of the Origin of NIR Bands of Crystalline Melamine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Numerous overlapping bands populate NIR spectra of even relatively simple molecules [
+   <a rid="B16-molecules-24-01402" ref-type="bibr" href="#B16-molecules-24-01402">16</a>,
+   <a rid="B31-molecules-24-01402" ref-type="bibr" href="#B31-molecules-24-01402">31</a>]. This makes their detailed analysis difficult, and the interpretation of the leading contributions is not as straightforward as it is for the corresponding IR spectra. To better elucidate these influences and to present them in a clear manner, we have developed a density map (colormap) of spectral contributions to highlight the modes of interest in a straightforward way (
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>). The color range corresponds to the square rooted intensity ratio of the selected simulated bands to the total intensity of modeled spectrum at any given wavenumber 
+   <span class="italic">ν</span>
+   <sub>i</sub> and additionally proportionalized to the calculated intensity at that point. The yielded value ranges from 0 (no contribution) to 1 (the NIR spectrum is influenced by the selected mode/modes entirely). The corresponding color varies from black to white, and it may be directly interpreted as the intensity of a given mode at a given wavenumber; the colortable is presented underneath the figure. The square root allows for elucidating less pronounced contributions. The density maps that are determined for various selections of modes-of-interest allow for unequivocal and thorough analysis of the influential determinants in the NIR spectrum of crystalline melamine (
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>), while keeping the figure compact and easy to read.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The upper NIR region (ca. 6900–6500 cm
+   <span class="sup">−1</span>) is almost entirely populated by the first overtones and the binary combination bands of NH
+   <sub>2</sub> stretching modes (
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>). Other than this exception, the overtone bands of melamine may be described as non-essential for the other regions of NIR spectrum. Instead, the combination bands (binary combinations the most, ternary combinations to a bit lesser degree) play the primary role there. Again, the combinations that involve stretching NH
+   <sub>2</sub> modes are the most important factor. The corresponding binary combinations provide very strong influence in the 6900–6500 cm
+   <span class="sup">−1</span> region and throughout a broad 5100–4000 cm
+   <span class="sup">−1</span> region. Ternary combinations that involve NH
+   <sub>2</sub> stretching modes only give weak influence in the region of 6500–6000 cm
+   <span class="sup">−1</span>, where the spectral lineshape is rather flat. The highly populated region between 5100–4000 cm
+   <span class="sup">−1</span> is mostly influenced by the combinations of stretching modes with deformation modes of NH
+   <sub>2</sub> groups. The other influential factor is 
+   <span class="italic">ν</span>C-N mode (both in ring as well as between C atoms in ring and NH
+   <sub>2</sub> groups). However, the wagging NH
+   <sub>2</sub> modes are largely suppressed. The modes that do not influence NIR region are as follows; overtones of 
+   <span class="italic">δ</span>
+   <sub>ip</sub>ring, 
+   <span class="italic">δ</span>
+   <sub>ip</sub>C-N(H
+   <sub>2</sub>), 
+   <span class="italic">δ</span>
+   <sub>oop</sub>ring, 
+   <span class="italic">δ</span>
+   <sub>oop</sub>C-N(H
+   <sub>2</sub>), 
+   <span class="italic">δ</span>
+   <sub>rock</sub>NH
+   <sub>2</sub>, 
+   <span class="italic">δ</span>
+   <sub>twist</sub>NH
+   <sub>2</sub>, 
+   <span class="italic">δ</span>
+   <sub>wagg</sub>NH
+   <sub>2</sub>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The analysis of the NIR modes reveals a structural pattern. The modes that involve in-plane atoms displacements tend to impact NIR spectrum relatively stringer than those that involve out-of-plane motions. This observation will be discussed in detail in 
+   <a ref-type="sec" rid="sec2dot4-molecules-24-01402" href="#sec2dot4-molecules-24-01402">Section 2.4</a>, together with the conclusions drawn from the analysis of IR spectrum of melamine (
+   <a ref-type="sec" rid="sec2dot1-molecules-24-01402" href="#sec2dot1-molecules-24-01402">Section 2.1</a>).
+  </p>
+ </sec>
+ <sec id="sec2dot4-molecules-24-01402" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.4. The Relationships Between IR and NIR Bands, and the Structural Features of Crystalline Melamine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Important conclusions may be drawn from the detailed comprehension of both IR and NIR spectra of crystalline melamine. The vibrational modes involving out-of-plane atomic motions are much more essential in the IR region (
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a> and 
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>), and thus a proper reflection of the inter-plane structure of crystalline melamine is required. Therefore, calculations that are based on a 3D infinite model of crystal lattice allows for the best description of these vibrations, even with harmonic approximation. However, in the NIR spectrum the most influential modes are those that involve in-plane atomic displacements. Thus, the neighboring planes of crystalline lattice do not impact these motions as much. Therefore, the NIR modes calculated for a single molecule are largely enough to accurately reflect the experimental spectrum.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This also makes perfect sense by comparing the IR vibrations calculated in periodic system to the ones calculated for a single molecule (also refer to 
+   <a ref-type="app" rid="app1-molecules-24-01402" href="#app1-molecules-24-01402">Table S1 in Supporting Materials</a> presenting the potential energy distribution calculated for melamine). In the calculations that are based on a single molecule (vs. the model of crystalline lattice), the out-of-plane deformation vibrations (e.g., 
+   <span class="italic">δ</span>
+   <sub>twist</sub>NH
+   <sub>2</sub>, 
+   <span class="italic">δ</span>
+   <sub>wagg</sub>NH
+   <sub>2</sub>, 
+   <span class="italic">δ</span>
+   <sub>oop</sub>ring) are positioned at higher calculated wavenumbers, while the in-plane deformation vibrations are positioned at the lower calculated wavenumbers. Thus, the oscillators with the out-of-plane atomic motions have lower calculated force constants because of neglecting the surrounding crystalline planes. The neglecting of intra-plane interactions of melamine lead to a surprisingly miniscule decrease of the accuracy of the calculated NIR modes. The corresponding vibrations with in-plane atomic motions (primarily 
+   <span class="italic">ν</span>NH
+   <sub>2</sub>, but also 
+   <span class="italic">δ</span>
+   <sub>ip</sub>ring, 
+   <span class="italic">ν</span>C-N[H
+   <sub>2</sub>]) were mostly overestimated in the calculated frequencies, which was easily corrected by applying scaling. These modes are seemingly less affected by the intermolecular interactions of melamine in crystal lattice, including the effects of hydrogen-bonding.
+  </p>
+ </sec>
+ <sec id="sec2dot5-molecules-24-01402" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.5. New Insights on the Quantitative Analytical Spectroscopy of Melamine</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Melamine is known food adulterant, and for this reason, it has been frequently focused on analytical IR and NIR spectroscopy [
+   <a rid="B9-molecules-24-01402" ref-type="bibr" href="#B9-molecules-24-01402">9</a>,
+   <a rid="B42-molecules-24-01402" ref-type="bibr" href="#B42-molecules-24-01402">42</a>,
+   <a rid="B43-molecules-24-01402" ref-type="bibr" href="#B43-molecules-24-01402">43</a>,
+   <a rid="B44-molecules-24-01402" ref-type="bibr" href="#B44-molecules-24-01402">44</a>,
+   <a rid="B45-molecules-24-01402" ref-type="bibr" href="#B45-molecules-24-01402">45</a>,
+   <a rid="B46-molecules-24-01402" ref-type="bibr" href="#B46-molecules-24-01402">46</a>]. After reproducing the spectra of melamine, we can more deeply discuss some of the observations that were reported in these previous contributions.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">NIR bands of melamine remain at relatively similar positions throughout various kinds of samples, unlike its IR bands, which are prone to shifting in response to the chemical environment [
+   <a rid="B43-molecules-24-01402" ref-type="bibr" href="#B43-molecules-24-01402">43</a>]. This can be fully confirmed by our conclusions from quantum mechanical calculations. Lu et al. [
+   <a rid="B42-molecules-24-01402" ref-type="bibr" href="#B42-molecules-24-01402">42</a>] have reported that the most relevant spectral region of milk powder useful for the detection of melamine is 5300–4900 cm
+   <span class="sup">−1</span>. This region contains the binary and ternary combinations of NH
+   <sub>2</sub> stretching with NH
+   <sub>2</sub> deformation modes of melamine; however, no overtone bands can be found there (
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>). Cantor et al. [
+   <a rid="B9-molecules-24-01402" ref-type="bibr" href="#B9-molecules-24-01402">9</a>] have found that the most meaningful region for the analysis of melamine content in gelatin by IR spectroscopy is at around 800 cm
+   <span class="sup">−1</span>; the melamine bands therein stem from 
+   <span class="italic">δ</span>
+   <sub>oop</sub>ring, 
+   <span class="italic">δ</span>
+   <sub>twist</sub>NH
+   <sub>2</sub>, and 
+   <span class="italic">δ</span>
+   <sub>wagg</sub>NH
+   <sub>2</sub> (
+   <a ref-type="fig" rid="molecules-24-01402-f003" href="#molecules-24-01402-f003">Figure 3</a> and 
+   <a rid="molecules-24-01402-t001" ref-type="table" href="#molecules-24-01402-t001">Table 1</a>). On the other hand, the chemometric models that are based on NIR spectra of gelatin contaminated by melamine have been found to recognize the most the 7000–6500 cm
+   <span class="sup">−1</span> region. The NIR bands of melamine due to the first overtones and binary combinations of both symmetric and asymmetric NH
+   <sub>2</sub> stretching modes can be exclusively found there (
+   <a ref-type="fig" rid="molecules-24-01402-f005" href="#molecules-24-01402-f005">Figure 5</a>). Our study allows for correcting Haughey et al. [
+   <a rid="B45-molecules-24-01402" ref-type="bibr" href="#B45-molecules-24-01402">45</a>], who ascribed the NIR region of melamine in the vicinity of 6800 cm
+   <span class="sup">−1</span> to only overtone bands.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In more detail, the influential spectral regions in chemometric analysis of melamine content in milk powders based on NIR spectroscopy has been reported by Lim et al. [
+   <a rid="B46-molecules-24-01402" ref-type="bibr" href="#B46-molecules-24-01402">46</a>]. They have found that the partial least squares regression (PLSR) models have recognized 6763 and 6808 cm
+   <span class="sup">−1</span> as the most meaningful in the analysis. They have concluded that these regions correspond to 6676 and 6529 cm
+   <span class="sup">−1</span> peaks of melamine observed in the spectrum of milk powder. We may now confirm that these two bands arise from the first overtones and binary combinations of 
+   <span class="italic">ν</span>
+   <sub>as</sub>NH
+   <sub>2</sub> and 
+   <span class="italic">ν</span>
+   <sub>s</sub>NH
+   <sub>2</sub> modes of melamine, respectively. These previous chemometric analyses consistently indicate that for the detection and quantification of melamine, its NH
+   <sub>2</sub> stretching vibrations are the most meaningful; however, we may now indicate that not only the first overtones, but also binary combinations equally contribute. On the other hand, the lower NIR region, where combination bands due to NH
+   <sub>2</sub> stretching and deformation modes of melamine are present, is less essential.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Balabin et al. [
+   <a rid="B43-molecules-24-01402" ref-type="bibr" href="#B43-molecules-24-01402">43</a>] have concluded that, for the samples with high content of melamine, NIR spectroscopy yields better analytical performance than IR spectroscopy. It may be now confirmed that this occurs due to relatively much lower sensitivity of NIR bands to intermolecular interactions with the matrix molecules when compared to IR bands. The hydrogen-bonding influences the IR region of melamine much stronger than the NIR region, in which only minor band shifts and negligible intensity variations occur due to this effect. In such sense, this feature of pure melamine in crystal evidenced here (lower sensitivity of NIR bands than IR bands to the chemical environment of molecules of melamine), seems to also be universally preserved in complex samples consisting of various other molecules and biomolecules, e.g., in milk powder [
+   <a rid="B43-molecules-24-01402" ref-type="bibr" href="#B43-molecules-24-01402">43</a>]. Thus, analytical IR and NIR spectroscopy can evidence the structural and vibrational properties of melamine that were unveiled in our study to have a direct impact on the detection and quantification of melamine content.
+  </p>
+ </sec>
+</sec>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optimization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">When generating peptides with a specific set of dihedral angles the structure may, in some cases, contain steric clashes. We found this prevented us from starting quantum mechanical geometry optimization on the structures, even when these were generated to match angles from experimental structures. Typical problems with these structures were SCF convergence issues and very large molecular gradients which cause the program to fail. In some cases, problems with large molecular gradients may be alleviated by adjusting the step-size in the optimizer, but this must be investigated on a case-to-case basis. It is therefore advantageous to remove steric clashes before any quantum mechanical calculation is carried out.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the reasons mentioned above, FragBuilder offers specialized molecular mechanics optimization routines, specifically designed to constrain the dihedral angles of peptides while removing steric clashes. Optimization is performed through Open Babel which provides access to several force fields and a number of optimizers. The MMFF94 force field (
+  <a rid="ref-5" ref-type="bibr" href="#ref-5">Halgren, 1996</a>) is arguably the most advanced force field for biomolecules in Open Babel and is used exclusively in FragBuilder along with the conjugate gradient method. FragBuilder offers three kinds of optimization methods in the 
+  <span class="monospace">Peptide</span> class.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The method 
+  <span class="monospace">Peptide.optimize()</span> will perform a conjugate gradient optimization of the peptide with no restraints, until the default convergence criterion of Open Babel is reached (Δ
+  <span class="italic">E</span> &lt; 1.0 × 10
+  <span class="sup">−6</span> kcal/mol or a max of 500 steps). Another option is to impose harmonic constraints on all dihedral angles. This is achieved through an extra keyword, i.e., 
+  <span class="monospace">Peptide.optimize(constraint=True)</span>. This will perform a conjugate gradient minimization through Open Babel with harmonic potentials on 
+  <span class="italic">ϕ</span>, 
+  <span class="italic">ψ</span> and 
+  <span class="italic">ω</span> backbone angles as well as all side chain 
+  <span class="italic">χ</span> angles.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A harmonic potential does not keep torsion angles completely fixed during optimization, and after convergence they deviate slightly from the starting values. For situations where this is problematic, FragBuilder is offering a routine termed “regularizing” which is accessed via the 
+  <span class="monospace">Peptide.regularize()</span> method.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Regularizing cycles between a few constrained geometry optimization steps and resetting the dihedral angles to the initially specified angles, until self consistency is reached. A default regularization cycles 10 times between 50 conjugate gradient steps and angle resets. In most cases this converges the constrained optimization to less than 0.002° from the specified dihedral angles, which are then set to the specified values.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We found our regularization procedure with flexible bond lengths and angles through the MMFF94 force field to allowing convergence of QM calculations in many cases, which would have been hindered by steric clashes due to fixed bond length and angles.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A similar approach to avoid spurious conformations has been adopted by Vila et al. in the creation of the CheShift chemical shifts predictor, which is parametrized from quantum mechanical calculations on model peptides (
+  <a rid="ref-15" ref-type="bibr" href="#ref-15">2009</a>). Here bond angles and lengths are simply set to the standard values of the ECEPP/3 force field (
+  <a rid="ref-8" ref-type="bibr" href="#ref-8">Nemethy et al., 1992</a>). Subsequently the internal energy of the peptide is calculated with the ECEPP-05 force field and any conformation with an internal energy &gt;30 kcal/mol is rejected as being unphysical.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="fig-6" href="#fig-6">Figure 6</a> shows an example of a tryptophan–aspartate–glycine peptide with methyl caps in which the backbone torsion angles are taken from the experimental structure of xylanase (PDB-code: 1XNB), residues 99–101. This choice of angles causes a clash between a hydrogen bonding O...H pair, and a geometry optimization at the B3LYP/6-31+G(d,p) level in Gaussian 09 could not start (at default settings) due to an excessively large molecular gradient in the initial geometry. Regularization removes the clash, while retaining the specified dihedral angles, and allows the optimization to proceed.
+ </p>
+ <div id="fig-6" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.7717/peerj.277/fig-6</span>
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <div class="title">Removing clashes by regularization in a tryptophan–apartate–glycine peptide.</div>
+   <p>In (A) the peptide clashes between the amide proton on the C-terminal methyl cap and the amide oxygen in residue 1. In (B) this clash has been removed by constrained relaxation during the regularization procedure. Both structures have identical 
+    <span class="italic">ϕ</span>, 
+    <span class="italic">ψ</span> and 
+    <span class="italic">ω</span> backbone torsion angles.
+   </p>
+  </div>
+  <div xlink:href="peerj-02-277-g006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A peptide can be created and regularized using the following code, which also prints the MMFF94 force field energy in units of kcal/mol:</p>
+ <div class="preformat" xmlns="http://www.w3.org/1999/xhtml">pep = Peptide(sequence) # 
+  <span class="italic">The user can manipulate the structure here</span> pep.regularize() print pep.get_energy()
+ </div>
+</sec>

@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="other1" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">BELL’S INEQUALITY FOR CONTINUOUS MEASUREMENT RESULTS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We start by preparing N-particles in a pure state ∣Φ〉. If we perform an 
+  <span class="italic">r</span>-th measurement on them, then they will collapse on the eigenstate set 
+  <div class="inline-formula">
+   <div id="m1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">{</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mn">1</span>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">,</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">,</span>
+      <span class="mo">⋯</span>
+      <span class="mo">,</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">n</span>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span stretchy="false" class="mo">}</span>
+     </div>
+    </div>
+   </div>
+  </div>. Then, we could expand ∣Φ〉 as
+  <div id="E1" class="disp-formula">
+   <div id="m2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="m3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> is the 
+  <span class="italic">i</span>-th eigenstate corresponding to the measurement 
+  <span class="italic">r</span>, and ∣Φ〉 is normalized, 
+  <div class="inline-formula">
+   <div id="m4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <span class="mi">i</span>
+       <span class="mi">n</span>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">α</span>
+         <span class="mi">r</span>
+         <span class="mi">i</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div>. Performing measurement 
+  <span class="italic">r</span>, we can obtain the measurement results (denoted here by spectrum) 
+  <span class="italic">S</span>(∣ Φ〉〈Φ ∣, 
+  <span class="italic">r</span>, 
+  <span class="italic">x</span>), where (∣ Φ〉〈Φ∣ is the density matrix, 
+  <span class="italic">r</span> represents the measurement 
+  <span class="italic">r</span>, and the variable 
+  <span class="italic">x</span> could be, for instance, the scattering angle in the scattering experiment.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The distribution of the measurement results (spectrum) can be written as
+  <div id="E2" class="disp-formula">
+   <div id="m5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <span class="mi">i</span>
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">α</span>
+         <span class="mi">r</span>
+         <span class="mi">i</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">⋅</span>
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(2)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="m6" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> is the spectrum of the state 
+  <div class="inline-formula">
+   <div id="m7" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> under the 
+  <span class="italic">r</span>-th measurement.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the case of the spin system to be discussed in the Supplementary Materials, a quite common example satisfying 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a> is the measurement in the Stern-Gerlach (SG) experiment (
+  <a rid="R33" ref-type="bibr" href="#R33">
+   <span class="italic">33</span>
+  </a>) of spin 
+  <div class="inline-formula">
+   <div id="m8" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> particles. If the particles are prepared in the pure state, then
+  <div class="disp-formula">
+   <div id="m9" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">z</span>
+       <span class="mo">+</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mo">↑</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">+</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">z</span>
+       <span class="mo">−</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mo">↓</span>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Then, providing enough particles to go through that apparatus, the final spectrum can be written as
+  <div class="disp-formula">
+   <div id="m10" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <span mathvariant="normal" class="mi">Φ</span>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">α</span>
+         <span class="mi">z</span>
+         <span class="mo">+</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">⋅</span>
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span class="mo">↑</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <span class="mo">↑</span>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">z</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+      <span class="mo">+</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">α</span>
+         <span class="mi">z</span>
+         <span class="mo">−</span>
+        </div>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">⋅</span>
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span class="mo">↓</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <span class="mo">↓</span>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">z</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, 
+  <span class="italic">z</span> represents the direction of the magnetic field in the SG apparatus, and 
+  <span class="italic">S</span>(∣ ↑ 〉〈 ↑ ∣, 
+  <span class="italic">z</span>, 
+  <span class="italic">x</span>) and 
+  <span class="italic">S</span>(∣ ↓ 〉〈 ↓ ∣, 
+  <span class="italic">z</span>, 
+  <span class="italic">x</span>) describe the distribution of particles detected at different locations, 
+  <span class="italic">x</span>, on the screen for particles at states ∣ ↑ 〉 and ∣ ↓ 〉, respectively.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If these particles are prepared as a mixed state whose density matrix is given by
+  <div id="E3" class="disp-formula">
+   <div id="m11" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">ρ</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mi">m</span>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(3)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="m12" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">=</span>
+        <span class="mn">1</span>
+       </div>
+       <span class="mi">m</span>
+      </div>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div>. The spectrum under the 
+  <span class="italic">r</span>-th measurement is given by
+  <div id="E4" class="disp-formula">
+   <div id="m13" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">S</span>
+      <span stretchy="false" class="mo">(</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">ρ</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span mathvariant="normal" class="mi">x</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mi">m</span>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mi">S</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">∣</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Φ</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mo">,</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">x</span>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(4)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the following section, we will assume that 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Eqs. 2</a> and 
+  <a ref-type="disp-formula" rid="E4" href="#E4">4</a> are always satisfied, and we will mainly focus on two-particle systems. Generally, if we use ∣Ψ〉 to represent a pure state of the two-particle system, then its density matrix can be written as
+  <div id="E5" class="disp-formula">
+   <div id="m14" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span mathvariant="normal" class="mi">ρ</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <div class="mrow">
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mi">m</span>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Ψ</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span stretchy="true" class="mo">〈</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Ψ</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">∣</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(5)</span>
+  </div>with
+  <div id="E6" class="disp-formula">
+   <div id="m15" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">Ψ</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <span class="mo">∑</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">j</span>
+          <span class="mn">1</span>
+         </div>
+         <span class="mo">,</span>
+         <div class="msub">
+          <span class="mi">j</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">c</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <div class="msub">
+       <span class="mi">k</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">,</span>
+      <div class="msub">
+       <span class="mi">k</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">,</span>
+      <div class="msub">
+       <span class="mi">j</span>
+       <span class="mn">1</span>
+      </div>
+      <span class="mo">,</span>
+      <div class="msub">
+       <span class="mi">j</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <div class="msub">
+        <span class="mi">k</span>
+        <span class="mn">1</span>
+       </div>
+       <div class="msub">
+        <span class="mi">j</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <div class="msub">
+        <span class="mi">k</span>
+        <span class="mn">2</span>
+       </div>
+       <div class="msub">
+        <span class="mi">j</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(6)</span>
+  </div>where 
+  <div class="inline-formula">
+   <div id="m16" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">=</span>
+        <span class="mn">1</span>
+       </div>
+       <span class="mi">m</span>
+      </div>
+      <span class="mo"> </span>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div> and ∑
+  <sub>
+   <span class="italic">j</span>
+   <sub>1</sub>, 
+   <span class="italic">j</span>
+   <sub>2</sub>
+  </sub>∣
+  <span class="italic">c
+   <sub>i</sub>
+  </span>(
+  <span class="italic">k</span>
+  <sub>1</sub>, 
+  <span class="italic">k</span>
+  <sub>2</sub>, 
+  <span class="italic">j</span>
+  <sub>1</sub>, 
+  <span class="italic">j</span>
+  <sub>2</sub>)∣
+  <span class="sup">2</span> = 1. Here, 
+  <div class="inline-formula">
+   <div id="m17" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <div class="msub">
+        <span class="mi">k</span>
+        <span class="mn">1</span>
+       </div>
+       <div class="msub">
+        <span class="mi">j</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> is the 
+  <span class="italic">j</span>
+  <sub>1</sub>-th eigenstate of a single particle under the 
+  <span class="italic">k</span>
+  <sub>1</sub>-th measurement, and ∣Ψ〉 is expanded in the basis set 
+  <div class="inline-formula">
+   <div id="m18" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">{</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <div class="msub">
+        <span class="mi">k</span>
+        <span class="mn">1</span>
+       </div>
+       <div class="msub">
+        <span class="mi">j</span>
+        <span class="mn">1</span>
+       </div>
+      </div>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <div class="msub">
+        <span class="mi">k</span>
+        <span class="mn">2</span>
+       </div>
+       <div class="msub">
+        <span class="mi">j</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span stretchy="false" class="mo">}</span>
+     </div>
+    </div>
+   </div>
+  </div>. In this section, for simplicity, we only consider the situation that a single particle has just two eigenstates 
+  <div class="inline-formula">
+   <div id="m19" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mo">+</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="m20" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">r</span>
+       <span class="mo">−</span>
+      </div>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div> under the 
+  <span class="italic">r</span>-th measurement. Positive partial transpose criterion (or the Peres-Horodecki criterion) (
+  <a rid="R34" ref-type="bibr" href="#R34">
+   <span class="italic">34</span>
+  </a>) offers us a method to measure entanglement in such a two-particle system: If the partial transpose of the density matrix ρ
+  <span class="italic">
+   <span class="sup">T
+    <sub>B</sub>
+   </span>
+  </span> has any non-negative eigenvalue, then ρ is entangled (
+  <a rid="R34" ref-type="bibr" href="#R34">
+   <span class="italic">34</span>
+  </a>, 
+  <a rid="R35" ref-type="bibr" href="#R35">
+   <span class="italic">35</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Now, we can rewrite 
+  <a ref-type="disp-formula" rid="E6" href="#E6">Eq. 6</a> as
+  <div id="E7" class="disp-formula">
+   <div id="m21" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mtable">
+       <div class="mtr">
+        <div columnalign="right" class="mtd">
+         <div class="mrow">
+          <span class="mo">∣</span>
+          <div class="msub">
+           <span mathvariant="normal" class="mi">Ψ</span>
+           <span class="mi">i</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo">=</span>
+         </div>
+        </div>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <div class="msub">
+           <span class="mi">c</span>
+           <span class="mi">i</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <span class="mo">+</span>
+          <span class="mo">+</span>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo">+</span>
+          <div class="msub">
+           <span class="mi">c</span>
+           <span class="mi">i</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <span class="mo">+</span>
+          <span class="mo">−</span>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">+</span>
+          <div class="msub">
+           <span class="mi">c</span>
+           <span class="mi">i</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <span class="mo">−</span>
+          <span class="mo">+</span>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo">+</span>
+          <div class="msub">
+           <span class="mi">c</span>
+           <span class="mi">i</span>
+          </div>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <span class="mo">−</span>
+          <span class="mo">−</span>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(7)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Suppose that these particles are divided into two channels, and the 
+  <span class="italic">r</span>-th and 
+  <span class="italic">t</span>-th measurements are carried on for channels I and II, respectively, one can obtain the spectrum based on 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a> as
+  <div id="E8" class="disp-formula">
+   <div id="m22" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mtable">
+       <div class="mtr">
+        <div columnalign="right" class="mtd">
+         <div class="mrow">
+          <span class="mi">S</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ρ</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mo">=</span>
+         </div>
+        </div>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <div displaystyle="true" class="mstyle">
+           <div class="munderover">
+            <span stretchy="true" class="mo">∑</span>
+            <div class="mrow">
+             <span class="mi">i</span>
+             <span class="mo">=</span>
+             <span class="mn">1</span>
+            </div>
+            <span class="mi">m</span>
+           </div>
+          </div>
+          <div class="msub">
+           <span class="mi">p</span>
+           <span class="mi">i</span>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="false" class="mo">∣</span>
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">i</span>
+            </div>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">r</span>
+            <span class="mo">,</span>
+            <span class="mi">t</span>
+            <span class="mo">,</span>
+            <span class="mo">+</span>
+            <span class="mo">+</span>
+            <span stretchy="false" class="mo">)</span>
+            <span stretchy="false" class="mo">∣</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">⋅</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">+</span>
+          <div displaystyle="true" class="mstyle">
+           <div class="munderover">
+            <span stretchy="true" class="mo">∑</span>
+            <div class="mrow">
+             <span class="mi">i</span>
+             <span class="mo">=</span>
+             <span class="mn">1</span>
+            </div>
+            <span class="mi">m</span>
+           </div>
+          </div>
+          <div class="msub">
+           <span class="mi">p</span>
+           <span class="mi">i</span>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="false" class="mo">∣</span>
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">i</span>
+            </div>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">r</span>
+            <span class="mo">,</span>
+            <span class="mi">t</span>
+            <span class="mo">,</span>
+            <span class="mo">+</span>
+            <span class="mo">−</span>
+            <span stretchy="false" class="mo">)</span>
+            <span stretchy="false" class="mo">∣</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">⋅</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">+</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">+</span>
+          <div displaystyle="true" class="mstyle">
+           <div class="munderover">
+            <span stretchy="true" class="mo">∑</span>
+            <div class="mrow">
+             <span class="mi">i</span>
+             <span class="mo">=</span>
+             <span class="mn">1</span>
+            </div>
+            <span class="mi">m</span>
+           </div>
+          </div>
+          <div class="msub">
+           <span class="mi">p</span>
+           <span class="mi">i</span>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="false" class="mo">∣</span>
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">i</span>
+            </div>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">r</span>
+            <span class="mo">,</span>
+            <span class="mi">t</span>
+            <span class="mo">,</span>
+            <span class="mo">−</span>
+            <span class="mo">+</span>
+            <span stretchy="false" class="mo">)</span>
+            <span stretchy="false" class="mo">∣</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">⋅</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">+</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">+</span>
+          <div displaystyle="true" class="mstyle">
+           <div class="munderover">
+            <span stretchy="true" class="mo">∑</span>
+            <div class="mrow">
+             <span class="mi">i</span>
+             <span class="mo">=</span>
+             <span class="mn">1</span>
+            </div>
+            <span class="mi">m</span>
+           </div>
+          </div>
+          <div class="msub">
+           <span class="mi">p</span>
+           <span class="mi">i</span>
+          </div>
+          <div class="msup">
+           <div class="mrow">
+            <span stretchy="false" class="mo">∣</span>
+            <div class="msub">
+             <span class="mi">c</span>
+             <span class="mi">i</span>
+            </div>
+            <span stretchy="false" class="mo">(</span>
+            <span class="mi">r</span>
+            <span class="mo">,</span>
+            <span class="mi">t</span>
+            <span class="mo">,</span>
+            <span class="mo">−</span>
+            <span class="mo">−</span>
+            <span stretchy="false" class="mo">)</span>
+            <span stretchy="false" class="mo">∣</span>
+           </div>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">⋅</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">r</span>
+           <span class="mo">−</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+          <span class="mi">S</span>
+          <span stretchy="true" class="mo">(</span>
+          <span class="mo">∣</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span stretchy="true" class="mo">〉</span>
+          <span stretchy="true" class="mo">〈</span>
+          <div class="msubsup">
+           <span mathvariant="normal" class="mi">ϕ</span>
+           <span class="mi">t</span>
+           <span class="mo">−</span>
+          </div>
+          <span class="mo">∣</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(8)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the standard Bell’s inequality, the experimentally measured correlation is defined as
+  <div id="E9" class="disp-formula">
+   <div id="m23" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">t</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">+</span>
+        <span class="mo">,</span>
+        <span class="mo">+</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">+</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">−</span>
+        <span class="mo">,</span>
+        <span class="mo">−</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">−</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">+</span>
+        <span class="mo">,</span>
+        <span class="mo">−</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">−</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">−</span>
+        <span class="mo">,</span>
+        <span class="mo">+</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">+</span>
+        <span class="mo">,</span>
+        <span class="mo">+</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">+</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">−</span>
+        <span class="mo">,</span>
+        <span class="mo">−</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">+</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">+</span>
+        <span class="mo">,</span>
+        <span class="mo">−</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">+</span>
+        <span class="mi">N</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">−</span>
+        <span class="mo">,</span>
+        <span class="mo">+</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(9)</span>
+  </div>where 
+  <span class="italic">N</span>( + , + ) represents number of measurements yielding “+” in both measurement 
+  <span class="italic">r</span> and measurement 
+  <span class="italic">t</span> of channels I and II.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">These measurement results are used to form the well-known Clauser-Horne-Shimony-Holt (CHSH) inequality (
+  <a rid="R36" ref-type="bibr" href="#R36">
+   <span class="italic">36</span>
+  </a>)
+  <div id="E10" class="disp-formula">
+   <div id="m24" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">t</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">+</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">r</span>
+      <span class="mo">,</span>
+      <span class="mi">s</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">+</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">q</span>
+      <span class="mo">,</span>
+      <span class="mi">s</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">−</span>
+      <span class="mi">E</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">q</span>
+      <span class="mo">,</span>
+      <span class="mi">t</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">∣</span>
+      <span class="mo">≤</span>
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(10)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For continuous measurement results, we construct an auxiliary function 
+  <span class="italic">V</span>(
+  <span class="italic">r</span>, 
+  <span class="italic">t</span>, 
+  <span class="italic">x</span>
+  <sub>1</sub>, 
+  <span class="italic">x</span>
+  <sub>2</sub>) to simplify calculating the correlation function 
+  <span class="italic">E</span>(
+  <span class="italic">r</span>, 
+  <span class="italic">t</span>). The functional form of the auxiliary function can be found in the Supplementary Materials. The generalized standard Bell’s inequality for continuous variables takes the following form
+  <div id="E11" class="disp-formula">
+   <div id="m25" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mtable">
+       <div class="mtr">
+        <div columnalign="right" class="mtd">
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span class="mo">=</span>
+         </div>
+        </div>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span stretchy="false" class="mo">∣</span>
+          <span class="mo">∫</span>
+          <span class="mi">S</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ρ</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mi">V</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">1</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">+</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">∫</span>
+          <span class="mi">S</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ρ</span>
+          <span class="mo">,</span>
+          <span class="mi">q</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mi">V</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">q</span>
+          <span class="mo">,</span>
+          <span class="mi">t</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">1</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">+</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">∫</span>
+          <span class="mi">S</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ρ</span>
+          <span class="mo">,</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">s</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mi">V</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">r</span>
+          <span class="mo">,</span>
+          <span class="mi">s</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">1</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">2</span>
+          </div>
+          <span class="mo">−</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="left" class="mtd">
+         <div class="mrow">
+          <span class="mo">∫</span>
+          <span class="mi">S</span>
+          <span stretchy="false" class="mo">(</span>
+          <span mathvariant="normal" class="mi">ρ</span>
+          <span class="mo">,</span>
+          <span class="mi">q</span>
+          <span class="mo">,</span>
+          <span class="mi">s</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <span class="mi">V</span>
+          <span stretchy="false" class="mo">(</span>
+          <span class="mi">q</span>
+          <span class="mo">,</span>
+          <span class="mi">s</span>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mo">,</span>
+          <div class="msub">
+           <span class="mi">x</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">1</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="italic" class="mi">dx</span>
+           <span class="mn">2</span>
+          </div>
+          <span stretchy="false" class="mo">∣</span>
+          <span class="mo">≤</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(11)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If this inequality (
+  <a ref-type="disp-formula" rid="E11" href="#E11">Eq. 11</a>) is violated, then the system is entangled.
+ </p>
+</sec>

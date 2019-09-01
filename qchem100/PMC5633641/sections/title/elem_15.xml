@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec15" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein support</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molden 2.0 has a series of facilities built-in to support working with proteins when docking ligands. These options are directed towards visualisation of proteins and protein–ligand complexes, determining alternate pocket conformations, the optimisation of protein structures or protein–ligand complexes, and towards the actual ligand docking process itself.</p>
+ <sec id="Sec16" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Protein editing via the z-matrix</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Z-matrix provides an alternative to specifying a geometry by Cartesian coordinates (see Fig. 
+   <a rid="Fig7" ref-type="fig" href="#Fig7">7</a>). In the Z-matrix approach, atom positions are defined with respect to previously defined atoms by means of internal coordinates such as bond distances, bond angles and dihedral angles. For small molecules a Z-matrix can often be constructed ‘by hand’, but for larger molecules this quickly becomes tedious and complex. The impractically large number of variables in a Z-matrix of a protein necessitates a dedicated Z-matrix view of only the most important internal variables, such as φ, ψ, ω, χ1. After interactive selection of an amino acid, the amino acid manipulation menu pops up. From this menu several manipulations can be performed, such as mutation to another amino acid, deletion or insertion of an amino acid, or changing the amino acid’s rotamer. These options are realised by Z-matrix manipulation.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig7" class="fig">
+    <span class="label">Fig. 7</span>
+    <div class="caption">
+     <p>The Z-matrix editor pop-up window. Each residue is represented by a column with a button labelled with its three letter amino acid code and entry fields for the φ, ψ, ω angles. Clicking the button brings up a pop up menu containing residue manipulating options</p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig7_HTML" id="d29e987" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec17" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Rotamers: editing/search rotamer space</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Amino acid side chains often have several possible conformations commonly known as rotamers. The local structure and a series of external factors (solvent related like pH or salt concentration, the presence of bound ligands or bound ions, the multimeric state of the protein, etc) will influence how often each rotamer is observed. Amino acids tend to prefer rotamers angle is near any of these three values, the rotamer is called gauche-, gauche+, or trans, respectively [
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>]. Depending on number of rotatable bonds in the amino acid side chain, residues can have from only one rotamer (Gly, Ala) up to 81 rotamers (Lys). In Molden, rotamers are available from either the Richardson [
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>] or the Dunbrack [
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>] rotamer library. Molden can scan a part of a protein’s rotamer space (up to a maximum of six residues at a time). This can be instrumental in finding the lowest energy rotamer combination, after a particular residue has been mutated/substituted. The initial scoring is done via the Dfire PMF score. The best ten rotamer combinations will be remembered. The rotamer combinations can be rescored with the AMBER force field. While performing a rotamer scan, Molden will try each conformation available in the rotamer library for the residues considered in the scan, and it will search for the best rotamer by determining DFIRE PMF [
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>] scores. Substituting a small residue by a bulky one, the surrounding residues are allowed to adopt their rotamer in order to make room for the bulky side chain. An example of the scanning of the rotamer space of a phenylalanine residue is shown in Fig. 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>a.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <div id="Fig8" class="fig">
+    <span class="label">Fig. 8</span>
+    <div class="caption">
+     <p>Protein visualisation options. 
+      <span class="bold">a</span> Three of the six rotamers of the residue phenylalanine, indicated by colours 
+      <span class="italic">blue, orange</span> and 
+      <span class="italic">green</span>. 
+      <span class="bold">b</span> PDB entry 1REI, (
+      <span class="italic">left</span>) residue Gln90 un-flipped and (
+      <span class="italic">right</span>) flipped. The un-flipped situation shows an energetically unfavourable close contact (in 
+      <span class="italic">white</span> numbers) between two hydrogens. 
+      <span class="bold">c</span> Display of electron density for PDB file 2ETE at contour level 2.0
+     </p>
+    </div>
+    <div xlink:href="10822_2017_42_Fig8_HTML" id="d29e1044" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec18" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optimisation of hydrogen positions</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">It is hard to experimentally determine the positions of hydrogens in protein structures. Consequently, hydrogen positions must be determined computationally. Optimisation of hydrogen positions includes optimisation of the hydroxyl orientation of threonine, serine, and tyrosine residues using the AMBER force field for scoring. The latter is also used for determining the necessity of histidine, glutamine, and asparagine flips, histidine protonation states and hydroxyl orientations of water in close contact with the protein. Figure 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>b shows the flipped and un-flipped state of glutamine 90 in the PDB entry 1REI [
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>].
+  </p>
+ </sec>
+ <sec id="Sec19" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Display of protein electron density maps</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">When reading a file from the PDB rather than a locally stored PDB file, the four-letter PDB identifier is stored by Molden. On clicking the “Elec. Dens. Map” button, this identifier is used to automatically retrieve the corresponding omap file from the electron density server at Uppsala University (
+   <span ext-link-type="uri" xlink:href="http://eds.bmc.uu.se/eds/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://eds.bmc.uu.se/eds/</span>) [
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>]. After the file is read, a window will pop up, in which the user can specify the electron density contour level. For the sake of clarity, the rendered electron density volume can be clipped in three directions. Figure 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>c displays, as an example, the electron density for the PDB file 2ETE [
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>].
+  </p>
+ </sec>
+ <sec id="Sec20" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ambfor and Ambmd: protein geometry optimisation and protein dynamics</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Ambfor was designed as an energy minimisation tool and Ambmd as a stand-alone Molecular Dynamics program. Both programs were developed to be run from within the Molden interface and their output can be visualised in real time in Molden. For small molecules the GAFF [
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] force field is used and for proteins the AMBER force field [
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>]. Both force fields can be used together so that proteins and their ligand(s) can be optimised simultaneously. A parallelised version for both programs was developed with the help of the Message Passing Interface (MPI) library [
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>]. Ambfor makes use of the limited memory BFGS method [
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>] for optimisation of proteins. For small molecule optimisation a Powell-Beale conjugate gradient method is employed [
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. Both Ambfor and Ambmd use a damped shifted force protocol [
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>] that greatly reduces the number of pairwise interactions that have to be calculated. The Berendsen thermostat [
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>] is used to keep MD simulations at a constant temperature by scaling the velocities of the particles. By default the ff99sb extension of AMBER version 99 [
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>] is used. All other commonly used MD facilities such as placing the molecule in a water box, boundary conditions, temperature and run time selection, etc., have been implemented too. Energy minimisations and molecular dynamics simulations require that all molecules are chemically correct, which often requires that all hydrogens, and sometimes also some protein side chain C-, O-, and N-atoms are added.
+  </p>
+ </sec>
+</sec>

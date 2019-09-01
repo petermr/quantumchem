@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Limiting Behaviors for the Transitivity Function at Low and High Temperature</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the AM formulation for 
+  <span class="italic">k</span>, Equation (12), when 
+  <span class="italic">d</span> or tan δ tends to zero, one gets the exponential Arrhenius behavior through the Euler limit as detailed in Aquilanti et al. (
+  <a rid="B6" ref-type="bibr" href="#B6">2018</a>). In this limit, to first order, the transitivity function deviate linearly from constancy (the Arrhenius behavior) as described by the AM formula. When β increases (low temperature): 
+  <div list-type="roman-lower" class="list">
+   <div class="list-item">
+    <p>in the 
+     <span class="italic">super</span>-Arrhenius cases, continuing the straight-line behavior one encounters the β axis and gets for γ a zero value for a maximum attainable value of β, denoted β
+     <span class="sup">†</span>. Here, one consequently gets a minimum value for the allowed temperature to be denoted 
+     <span class="italic">T</span>
+     <span class="sup">†</span>. However, in generic 
+     <span class="italic">super</span>-Arrhenius behavior, sometimes high-order terms in the transitivity function are to be introduced to describe a sequence of processes, yielding concavities in the transitivity plot and moving the minimum temperature 
+     <span class="italic">T</span>
+     <span class="sup">†</span> at lower values (
+     <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>);
+    </p>
+   </div>
+   <div class="list-item">
+    <p>in 
+     <span class="italic">sub</span>-Arrhenius cases, the linear growth of γ as β increases may be accelerated at low temperatures: actual experimental information (Limbach et al., 
+     <a rid="B61" ref-type="bibr" href="#B61">2006</a>; Tizniti et al., 
+     <a rid="B86" ref-type="bibr" href="#B86">2014</a>; Meng et al., 
+     <a rid="B65" ref-type="bibr" href="#B65">2015</a>) is confirmed by computations (Aquilanti et al., 
+     <a rid="B7" ref-type="bibr" href="#B7">2005</a>; De Fazio et al., 
+     <a rid="B31" ref-type="bibr" href="#B31">2006</a>; Cavalli et al., 
+     <a rid="B16" ref-type="bibr" href="#B16">2014</a>; De Fazio, 
+     <a rid="B30" ref-type="bibr" href="#B30">2014</a>; Coutinho et al., 
+     <a rid="B28" ref-type="bibr" href="#B28">2018b</a>) and is eventually governed by Wigner's limit (Wigner, 
+     <a rid="B97" ref-type="bibr" href="#B97">1948</a>): before the latter limit is accessed interference effects may superimpose to quantum tunneling effects, which can be studied through microcanonical exact computations (Aquilanti et al., 
+     <a rid="B7" ref-type="bibr" href="#B7">2005</a>; De Fazio et al., 
+     <a rid="B31" ref-type="bibr" href="#B31">2006</a>; Coutinho et al., 
+     <a rid="B28" ref-type="bibr" href="#B28">2018b</a>).
+    </p>
+   </div>
+  </div>
+ </p>
+ <div id="F2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>The transitivity plot is presented for venerable and recent phenomenological reaction rate constant model to account for 
+    <span class="italic">super</span>-Arrhenius behavior (Arrhenius, AM, and VFT) and 
+    <span class="italic">sub</span>-Arrhenius behavior (Arrhenius, AM, ASCC, and NTS). The comparison of the behavior of the transitivity between AM and VFT is exhibited assuming 
+    <div class="inline-formula">
+     <div id="M21" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ε</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">‡</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">ε</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">‡</span>
+       </div>
+      </div>
+     </div>
+    </div> in Equation (26).
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00380-g0002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We are now in the position to look at the 
+  <span class="italic">d</span>-parameter from alternative perspectives. For 
+  <span class="italic">super</span>-Arrhenius cases, the β endpoint, β
+  <span class="sup">†</span>, marks the final low-temperature range for the system to be “active”: energetically, the introduction of the corresponding energy ε
+  <span class="sup">†</span> = 
+  <span class="italic">RT</span>
+  <span class="sup">†</span>, permits the identification
+ </p>
+ <div id="E14" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(13)</span>
+  <div id="M22" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">d</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">†</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For 
+  <span class="italic">sub</span>-Arrhenius, the connection of 
+  <span class="italic">d</span> with features of the potential energy barrier permits to describe quantum tunneling in elementary chemical reactions (see e.g., Silva et al., 
+  <a rid="B79" ref-type="bibr" href="#B79">2013</a> and next section).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Additional insight to the AM formula in Equation (5) for 
+  <span class="italic">d</span> &lt; 0 is obtained when β tends to infinity yielding,
+ </p>
+ <div id="E15" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(14)</span>
+  <div id="M23" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">lim</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">β</span>
+         <span class="mo">→</span>
+         <span class="mi">∞</span>
+        </div>
+       </div>
+      </div>
+      <span class="mi">γ</span>
+      <span class="mo">(</span>
+      <span class="mi">β</span>
+      <span class="mo">)</span>
+      <span class="mo">=</span>
+      <span class="mo">-</span>
+      <span class="mi">d</span>
+      <span class="mtext"> </span>
+      <span class="mi">β</span>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Going back to the rate constant, integrating (14) from Equation (2), we obtain</p>
+ <div id="E16" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(15)</span>
+  <div id="M24" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">lim</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">β</span>
+         <span class="mo">→</span>
+         <span class="mi">∞</span>
+        </div>
+       </div>
+      </div>
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mtext"> </span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">formally appearing as the venerable Esson-Harcourt formula (Laidler, 
+  <a rid="B57" ref-type="bibr" href="#B57">1984</a>), and in consonance with the Wigner limit restricted to the case of thermoneutral reactions at ultra-low temperature (Takayanagi, 
+  <a rid="B83" ref-type="bibr" href="#B83">2004</a>). Nevertheless, for 
+  <span class="italic">d</span> &gt; 0 a minimum and constant reactivity is obtained for β
+  <span class="sup">†</span>,
+ </p>
+ <div id="E17" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(16)</span>
+  <div id="M25" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mtext"> </span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">β</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">†</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">†</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In Equation (16), when ε
+  <span class="sup">†</span> tends to infinity, 
+  <span class="italic">k</span>(β) = 
+  <span class="italic">A</span> respecting the Arrhenius limit (most other formulations do not).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">After the description of the 
+  <span class="italic">sub</span>- and 
+  <span class="italic">super</span>-Arrhenius cases in the limit 
+  <span class="italic">d</span> → 0 at large β, we turn now to consider the limiting behavior as β → 0, namely at high temperature. In most cases, the generic behavior is considered to be the tendency to the Arrhenius as a limit: situations may occur where this assumption has been relaxed [important examples are protein folding (Chan and Dill, 
+  <a rid="B17" ref-type="bibr" href="#B17">1998</a>; Wallace et al., 
+  <a rid="B94" ref-type="bibr" href="#B94">2002</a>) and reactions in sub- or super-critical solvent (Christensen and Sehested, 
+  <a rid="B18" ref-type="bibr" href="#B18">1983</a>; Lukac, 
+  <a rid="B62" ref-type="bibr" href="#B62">1989</a>; Marin et al., 
+  <a rid="B63" ref-type="bibr" href="#B63">2003</a>)]. We can take advantage of the following useful expansion (Abe and Okamoto, 
+  <a rid="B1" ref-type="bibr" href="#B1">2008</a>; Tsallis, 
+  <a rid="B90" ref-type="bibr" href="#B90">2009</a>):
+ </p>
+ <div id="E19" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(17)</span>
+  <div id="M27" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">β</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">-</span>
+          <span class="mi">d</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ε</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">‡</span>
+           </div>
+          </div>
+          <span class="mi">β</span>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">1</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">e</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">ε</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">‡</span>
+         </div>
+        </div>
+        <span class="mi">β</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <div mathsize="1.61em" class="mstyle">
+        <div class="mrow">
+         <span class="mo">[</span>
+        </div>
+       </div>
+       <span class="mn">1</span>
+       <span class="mo">-</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mi">d</span>
+       <div class="msup">
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">ε</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">‡</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">β</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">-</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">d</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">ε</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">‡</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">β</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">3</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mrow">
+       <span class="mtext">          </span>
+       <span class="mo">-</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">8</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <div class="mrow">
+          <span stretchy="false" class="mo">(</span>
+          <div class="mrow">
+           <span class="mn">2</span>
+           <span class="mi">d</span>
+           <span class="mo">-</span>
+           <span class="mn">1</span>
+          </div>
+          <span stretchy="false" class="mo">)</span>
+         </div>
+         <span class="mi">d</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">ε</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">‡</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">β</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">4</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">+</span>
+        <span mathvariant="-tex-caligraphic" class="mi">O</span>
+       </div>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">β</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">6</span>
+          </div>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+       <div mathsize="1.61em" class="mstyle">
+        <div class="mrow">
+         <span class="mo">]</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Therefore, Arrhenius behavior is recovered both as β and 
+  <span class="italic">d</span> tend to zero independently:
+ </p>
+ <div id="E20" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(18)</span>
+  <div id="M28" class="math">
+   <div class="munder">
+    <div class="mrow">
+     <span class="mi">lim</span>
+    </div>
+    <div class="mrow">
+     <div class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <span class="mi">d</span>
+         <span class="mo">→</span>
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <span class="mtext">const </span>
+         <span class="mi">β</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="mi">k</span>
+   <div class="mrow">
+    <span class="mo">(</span>
+    <div class="mrow">
+     <span class="mi">d</span>
+     <span class="mo">,</span>
+     <span class="mi">β</span>
+    </div>
+    <span class="mo">)</span>
+   </div>
+   <span class="mo">=</span>
+   <div class="munder">
+    <div class="mrow">
+     <span class="mi">lim</span>
+    </div>
+    <div class="mrow">
+     <div class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <span class="mi">β</span>
+         <span class="mo">→</span>
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <span class="mtext">const </span>
+         <span class="mi">d</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="mi">k</span>
+   <div class="mrow">
+    <span class="mo">(</span>
+    <div class="mrow">
+     <span class="mi">d</span>
+     <span class="mo">,</span>
+     <span class="mi">β</span>
+    </div>
+    <span class="mo">)</span>
+   </div>
+   <span class="mo">=</span>
+   <span class="mi">A</span>
+   <span class="mtext"> </span>
+   <div class="msup">
+    <span class="mi">e</span>
+    <div class="mrow">
+     <span class="mo">−</span>
+     <div class="msup">
+      <span class="mi">ε</span>
+      <span class="mo">‡</span>
+     </div>
+     <span class="mi">β</span>
+    </div>
+   </div>
+   <span class="mo">.</span>
+  </div>
+ </div>
+</sec>

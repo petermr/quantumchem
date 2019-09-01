@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix A: encoding vibrational Hamiltonians into qubits</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The molecular Hamiltonian in atomic units is
+  <div id="eqn22" class="disp-formula">
+   <span class="label">A1</span>
+   <div xlink:href="c9sc01313j-t23.jpg" id="ugt23" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">M</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>, 
+  <span class="bold">R</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>, and 
+  <span class="italic">Z</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub> are the mass, position, and charge of nuclei 
+  <span class="italic">I</span>, and 
+  <span class="bold">r</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> is the position of electron 
+  <span class="italic">i</span>. Given the location of the nucleus, the electronic Hamiltonian is
+  <div id="eqn23" class="disp-formula">
+   <span class="label">A2</span>
+   <div xlink:href="c9sc01313j-t24.jpg" id="ugt24" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and the total Hamiltonian is
+  <div id="eqn24" class="disp-formula">
+   <span class="label">A3</span>
+   <div xlink:href="c9sc01313j-t25.jpg" id="ugt25" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Under the Born–Oppenheimer approximation, we assume the electrons and nuclei are in a product state,
+  <div id="eqn25" class="disp-formula">
+   <span class="label">A4</span>|
+   <span class="italic">ψ</span>〉 = | = |
+   <span class="italic">ψ</span>〉
+   <sub>n</sub>|
+   <span class="italic">ψ</span>〉
+   <sub>e</sub>.
+  </div>To get the ground state of the Hamiltonian, one can thus separately minimise over |
+  <span class="italic">ψ</span>〉
+  <sub>
+   <span class="italic">n</span>
+  </sub> and |
+  <span class="italic">ψ</span>〉
+  <sub>e</sub>,
+  <div id="eqn26" class="disp-formula">
+   <span class="label">A5</span>
+   <div xlink:href="c9sc01313j-t26.jpg" id="ugt26" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>As only 
+  <span class="italic">H</span>
+  <sub>e</sub>(
+  <span class="bold">R</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>) depends on |
+  <span class="italic">ψ</span>〉
+  <sub>e</sub>, the minimisation over |
+  <span class="italic">ψ</span>〉
+  <sub>e</sub> is equivalent to finding the ground state of 
+  <span class="italic">H</span>
+  <sub>e</sub>(
+  <span class="bold">R</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>). Denote
+  <div id="eqn27" class="disp-formula">
+   <span class="label">A6</span>
+   <div xlink:href="c9sc01313j-t27.jpg" id="ugt27" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>then the ground state of 
+  <span class="italic">H</span>
+  <sub>mol</sub> can be found by solving the ground state of 
+  <span class="italic">H</span>
+  <sub>0</sub>,
+  <div id="eqn28" class="disp-formula">
+   <span class="label">A7</span>
+   <div xlink:href="c9sc01313j-t28.jpg" id="ugt28" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In general, considering a spectral decomposition of 
+  <span xlink:href="c9sc01313j-t29.jpg" id="ugt29" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> the molecular Hamiltonian is
+  <div id="eqn29" class="disp-formula">
+   <span class="label">A8</span>
+   <div xlink:href="c9sc01313j-t30.jpg" id="ugt30" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Here, |
+  <span class="italic">ψ</span>
+  <sub>
+   <span class="italic">s</span>
+  </sub>〉
+  <sub>e</sub> are eigenstates of the electronic Hamiltonian and
+  <div id="eqn30" class="disp-formula">
+   <span class="label">A9</span>
+   <div xlink:href="c9sc01313j-t31.jpg" id="ugt31" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and
+  <div id="eqn31" class="disp-formula">
+   <span class="label">A10</span>
+   <div xlink:href="c9sc01313j-t32.jpg" id="ugt32" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finding the spectra of 
+  <span class="italic">H</span>
+  <sub>e</sub>(
+  <span class="bold">R</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>) is called the electronic structure problem, which can be efficiently solved using a quantum computer.
+  <a rid="cit8" ref-type="bibr" href="#cit8">8</a> One approach is to consider a subspace that the ground state lies in and transform the Hamiltonian 
+  <span class="italic">H</span>
+  <sub>e</sub>(
+  <span class="bold">R</span>
+  <sub>
+   <span class="italic">I</span>
+  </sub>) into the second quantised formulation, with a basis determined by the subspace. As electrons are fermions, the obtained Hamiltonian is a fermionic Hamiltonian. By using the standard encoding methods, such as Jordan–Wigner and Bravyi–Kitaev,
+  <a rid="cit82" ref-type="bibr" href="#cit82">82</a> the fermionic Hamiltonian is converted into a qubit Hamiltonian, whose spectra can be efficiently computed.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Focusing on the ground state of the electronic structure Hamiltonian, we show how to redefine 
+  <span class="italic">H</span>
+  <sub>0</sub> in the mass-weighted basis and how to encode it with qubits. Denote 
+  <span xlink:href="c9sc01313j-t33.jpg" id="ugt33" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> then one can obtain the mass-weighted normal coordinates 
+  <span class="italic">q</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> by minimising the coupling between the rotational and vibrational degrees of freedom and diagonalising the Hessian matrix,
+  <div id="eqn32" class="disp-formula">
+   <span class="label">A11</span>
+   <div xlink:href="c9sc01313j-t34.jpg" id="ugt34" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>In the mass-weighted basis, the potential can be expanded 
+  <span class="italic">via</span> a Taylor series truncated at fourth order
+  <div id="eqn33" class="disp-formula">
+   <span class="label">A12</span>
+   <div xlink:href="c9sc01313j-t35.jpg" id="ugt35" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and the total Hamiltonian becomes
+  <div id="eqn34" class="disp-formula">
+   <span class="label">A13</span>
+   <div xlink:href="c9sc01313j-t36.jpg" id="ugt36" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If we consider the higher order terms as a perturbation, one can get the normal modes by solving the harmonic oscillator
+  <div id="eqn35" class="disp-formula">
+   <span class="label">A14</span>
+   <div xlink:href="c9sc01313j-t37.jpg" id="ugt37" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>We denote the eigenbasis for 
+  <span class="italic">ĥ
+   <sub>i</sub>
+  </span> as 
+  <span xlink:href="c9sc01313j-t56.jpg" id="ugt56" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>, then the nuclear wave function can be represented by
+  <div id="eqn36" class="disp-formula">
+   <span class="label">A15</span>
+   <div xlink:href="c9sc01313j-t38.jpg" id="ugt38" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>The Hamiltonian under the normal mode basis becomes,
+  <div id="eqn37" class="disp-formula">
+   <span class="label">A16</span>
+   <div xlink:href="c9sc01313j-t57.jpg" id="ugt57" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Suppose the basis 
+  <span xlink:href="c9sc01313j-t58.jpg" id="ugt58" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> is truncated to the lowest 
+  <span class="italic">d</span> energy levels, the space of 
+  <span class="italic">H</span>
+  <sub>
+   <span class="italic">s</span>
+   <span class="sup">1</span>
+   <span class="italic">s</span>
+   <span class="sup">2</span>…
+   <span class="italic">s</span>
+   <span class="sup">
+    <span class="italic">M</span>
+   </span>,
+   <span class="italic">t</span>
+   <span class="sup">1</span>
+   <span class="italic">t</span>
+   <span class="sup">2</span>…
+   <span class="italic">t</span>
+   <span class="sup">
+    <span class="italic">M</span>
+   </span>
+  </sub> is equivalent to the space of 
+  <span class="italic">M d</span>-level systems, or equivalently 
+  <span class="italic">M</span> log
+  <sub>2</sub> 
+  <span class="italic">d</span> qubits.
+ </p>
+</sec>

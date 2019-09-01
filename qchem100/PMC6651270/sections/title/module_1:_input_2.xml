@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 1: Input Manipulation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The first step takes care of the manipulation of the molecular objects that are studied in the QM calculations. In QMflows, molecules are by default defined with the 
+  <span class="italic">Molecule</span> class of the PLAMS library. An instance of a 
+  <span class="italic">Molecule</span> object holds atoms and coordinates and can optionally store bond information as well. It can be created from the 
+  <span class="italic">xyz</span>, 
+  <span class="italic">mol</span>, and 
+  <span class="italic">pdb</span> data formats and has methods for adding and deleting atoms and for identifying, adding, and deleting bonds. For more complex structure manipulations, a dedicated 
+  <span class="italic">Molkit</span> library is available, which builds on 3D chemical structure functionality offered by the RDKit package.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The second step is dedicated to the preparation of the input for the individual QM calculations. Here we build on the input model adopted by the PLAMS library, which avoids the use of “hard-coded” interfaces to the QM packages. PLAMS makes use of the fact that most QM packages adopt a hierarchical input structure, consisting of input sections, subsections, and key-value pairs. PLAMS enables the representation of such input as a nested Python dictionary, which can be automatically translated into a correct input file for a specific package. This strategy allows PLAMS users to access the complete set of features offered by a given QM package and not only a subset covered by a predefined wrapper or interface. This design also minimizes maintenance costs of the interfaces as the addition of new features in a package does not require an update of the interface.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">On top of the PLAMS interface, QMflows offers a set of 
+  <span class="italic">generic</span> key words and 
+  <span class="italic">templates</span> for easy access to functionalities that are provided by multiple QM packages. These 
+  <span class="italic">generic</span> key words make it possible to use the same input definitions for common features (e.g., basis set, DFT functional) when calling different QM codes and makes it easy to switch between two implementations of a particular method. The translation from generic to 
+  <span class="italic">specific</span> key word is stored as a dictionary that is easy to maintain and extend when the input of one or more of the packages changes. The translation from 
+  <span class="italic">generic</span> to 
+  <span class="italic">specific</span> key words is done automatically at run time, so for standard applications users can use identical run scripts for different quantum chemistry packages.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="italic">templates</span> consist of PLAMS settings for common computational chemistry tasks, such as structure optimization, transition state searches, and vibrational frequency calculations. These settings objects can be modified and merged by the user, who can also add 
+  <span class="italic">generic</span> and code-
+  <span class="italic">specific</span> additional input for a particular task.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An example of a 
+  <span class="italic">template</span> for a geometry optimization is provided below:
+  <div xlink:href="ci-2019-00384y_0007" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In 
+  <span class="italic">line 3</span> we define a molecule object by reading coordinates from an external 
+  <span class="italic">xyz</span> file. Then we use a generic template to define the settings for the type of calculation (a geometry optimization). Note that we do not yet define the QM package. The next line calls the ADF program with the settings and the molecule object as arguments. In this case, the 
+  <span class="italic">template</span> for an ADF geometry optimization makes use of a nonscalar calculation with a DZP basis set, a BLYP exchange-correlation functional, and a frozen core MEDIUM. The advantage of this approach is that, without rewriting any input, we may carry out the geometry optimization with another code, e.g. CP2k, by simply replacing the word 
+  <span class="italic">adf</span> in 
+  <span class="italic">line 5</span> with 
+  <span class="italic">cp2k</span>. In the latter case, the DZP is switched in a basis set of similar quality, a DZVP, and a GTH pseudpotential for the core electrons. All the 
+  <span class="italic">templates</span> set for a given task (scf, geometry optimization, etc.) have been wrapped for each QM code by applying similar, albeit not equal, input parameters. More details on these template input parameters are provided in the online documentation of QMflows.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Below, we also illustrate how a user may modify the basis set and the DFT exchange-correlation functional of the 
+  <span class="italic">template</span> using 
+  <span class="italic">generic</span> key words:
+  <div xlink:href="ci-2019-00384y_0008" id="gr7" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Before calling the 
+  <span class="italic">adf</span> function in 
+  <span class="italic">line 7</span>, in 
+  <span class="italic">lines 5 and 6</span>, the variables 
+  <span class="italic">basis</span> and 
+  <span class="italic">functional</span> of the default settings object are redefined by the user. These 
+  <span class="italic">generic</span> key words can be used with most QM codes and can be set to program-independent values. QMflows will translate these to the corresponding package-specific key words and values once the actual QM code to be used for the task is known. The current list of generic key words is presented in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>, and it will be expanded in the future for enhanced flexibility.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The definition of 
+  <span class="italic">templates</span> and 
+  <span class="italic">generic</span> key words that can be used by multiple packages does not prohibit the use of options that are only available in a specific QM code. In this case, the user can extend the default settings for a given calculation by adding 
+  <span class="italic">generic</span> key words (as demonstrated above) and/or also package-
+  <span class="italic">specific</span> key words in a dedicated subsection of the input settings indicated by the key word “specific” and the name of the package. This subsection should follow the input tree structure of the specific QM package. An example of this is illustrated in the code snippet below:
+  <div xlink:href="ci-2019-00384y_0009" id="gr8" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Until 
+  <span class="italic">line 6</span> the workflow resembles exactly the previous example. In 
+  <span class="italic">lines 7–9</span>, however, we assign three extra key words specific to the ADF code. The first calls the excitations module to perform a time-dependent DFT (TDDFT) calculation computing the lowest 10 roots; the second calls the ZORA module to include scalar relativistic effects; the third overwrites the default setting for the number of iterations employed in the SCF procedure. Only for these specific key words the user should look up the input tree structure and key word definition used by the specific QM package.
+ </p>
+</sec>

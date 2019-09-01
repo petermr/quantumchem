@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Model and phase space of prepared states</div>
+ <p id="Par9" xmlns="http://www.w3.org/1999/xhtml">Our experiment can be theoretically described by a model based on the input-output transformations for every component in the setup including transmission losses. In particular, we define 
+  <span class="italic">χ</span>
+  <sub>1</sub> as the total loss between JPA 1 (or JPA 2) and JPA 3, and 
+  <span class="italic">χ</span>
+  <sub>2</sub> as the total loss between JPA 1 (or JPA 2) and the directional coupler. This definition implies that all path losses between JPA 1 or JPA 2 and any component after the beam splitter are assumed to be equal (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>). Additionally, we assume imperfect JPAs adding a certain amount of noise with mean thermal photon numbers 
+  <span class="italic">n</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub> (
+  <span class="italic">i</span> ∈ {1, 2, f}) to the JPA input signal. Here, 
+  <span class="italic">n</span>
+  <sub>f</sub> is the noise photon number of JPA 3. The RSP protocol is expected to work optimally for 
+  <span class="italic">G</span>
+  <sub>f</sub> = 
+  <span class="italic">τ</span>/(1 − 
+  <span class="italic">τ</span>) and 
+  <span class="italic">γ</span>
+  <sub>f</sub> = 0°, where 
+  <span class="italic">τ</span> = 1 − 10
+  <span class="sup">
+   <span class="italic">β</span>/10
+  </span> is the transmissivity of the directional coupler. At this optimal point and under the condition 
+  <span class="italic">S</span>
+  <sub>TMS</sub> ≥ 3 dB, we obtain the squeezed variance of the remotely prepared state,
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sigma _{\mathrm{s}}^2 = \frac{1}{4}\left[ {2(1 + 2n)e^{ - 2r}(1 - \chi )\tau + 2(\chi + n_{\mathrm{f}})\tau } \right].$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">σ</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">s</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+     </div>
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mn">2</span>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">1</span>
+         <span class="mo">+</span>
+         <span class="mn">2</span>
+         <span class="mi">n</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+         <span class="mn">2</span>
+         <span class="mi">r</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mn">1</span>
+         <span class="mo">-</span>
+         <span class="mi">χ</span>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <span class="mi">τ</span>
+       <span class="mo">+</span>
+       <span class="mn">2</span>
+       <div class="mrow">
+        <span class="mo">(</span>
+        <div class="mrow">
+         <span class="mi">χ</span>
+         <span class="mo">+</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">n</span>
+          </div>
+          <div class="mrow">
+           <span mathvariant="normal" class="mi">f</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <span class="mi">τ</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_10727_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">In this simplified expression, we assume equal noise photon numbers 
+  <span class="italic">n</span>
+  <sub>1</sub> = 
+  <span class="italic">n</span>
+  <sub>2</sub> = 
+  <span class="italic">n</span> and squeezing factors 
+  <span class="italic">r</span>
+  <sub>1</sub> = 
+  <span class="italic">r</span>
+  <sub>2</sub> = 
+  <span class="italic">r</span> of JPA 1 and JPA 2 as well as equal losses 
+  <span class="italic">χ</span>
+  <sub>1</sub> = 
+  <span class="italic">χ</span>
+  <sub>2</sub> = 
+  <span class="italic">χ</span> (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>). Equation (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) indicates that the prepared squeezing level 
+  <span class="italic">S</span>
+  <sub>rp</sub> at the optimal point is at least 3 dB below the squeezing level of the used resource. In order to correctly model the experiment, we additionally include a finite crosstalk between JPA 3 and the JPAs creating the TMS states as well as asymmetric losses 
+  <span class="italic">χ</span>
+  <sub>1</sub> ≠ 
+  <span class="italic">χ</span>
+  <sub>2</sub> in our data analysis. Figure 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2f, g</a> depicts a joint fit to the corresponding data. We observe a very good coincidence between the experimental results and our model for the following parameters (Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>): JPA 1, 2 squeezing levels 
+  <span class="italic">S</span> = 10.1 dB, 
+  <span class="italic">n</span> = 0.04, as well as 
+  <span class="italic">χ</span>
+  <sub>1</sub> = 0.22 and 
+  <span class="italic">χ</span>
+  <sub>2</sub> = 0.21 corresponding to losses of 1.1 dB and 1.0 dB, respectively. All values nicely agree with those obtained from independent JPA characterization measurements and loss estimations.
+ </p>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">The quantum advantage of the RSP protocol consists in a smaller amount of classical information sent through the feedforward channel in order to prepare a desired state as compared to a purely classical protocol
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>,
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. In the current experiment, this becomes evident by considering that only the amplified quadrature of the feedforward signal will affect the signal at Bob’s side due to the low coupling 
+  <span class="italic">β</span> ≪ 0 dB of the displacer. Consequently, we only send two real numbers while we are able to prepare different undisplaced mixed squeezed states which are fully described by three real numbers (
+  <span class="italic">S</span>
+  <sub>rp</sub>, 
+  <span class="italic">A</span>
+  <sub>rp</sub>, 
+  <span class="italic">γ</span>
+  <sub>rp</sub>).
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">The manifold of undisplaced Gaussian states we can prepare is intuitively understood by plotting the results from Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2d, e</a> in the phase space of the prepared squeezing level and angle, as it is shown in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a> and Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a> for details). The purity 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\mu = 1/\left( {4\sqrt {{\mathrm{det}}\,\sigma } } \right)$$\end{document}</span>
+    <div id="M4" class="math">
+     <span class="mi">μ</span>
+     <span class="mo">=</span>
+     <span class="mn">1</span>
+     <span class="mo">∕</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mn">4</span>
+       <div class="msqrt">
+        <span mathvariant="normal" class="mi">det</span>
+        <span width="0.25em" class="mspace"/>
+        <span class="mi">σ</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <span class="italic">σ</span> is the covariance matrix of the remotely prepared state, incorporates the information about the antisqueezed quadrature and is a measure of how close the state is to a pure state. For application scenarios where pure states are desired, the performance of RSP can be best quantified by the purity. It vanishes for maximally mixed states and is unity for a pure state. We achieve the highest uncorrected purity 
+  <span class="italic">μ</span> = 0.54 ± 0.01 at the optimal point which is sufficient for many applications of squeezed states such as entanglement generation
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>, sideband cooling of optomechanical systems
+  <span class="sup">
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>
+  </span>, and quantum illumination
+  <span class="sup">
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>. Using appropriate modeling of our experiment, we are able to investigate the effect of imperfections in different parts of the protocol on the purity of the prepared state at the optimal point. If the resource TMS state is pure and distributed ideally to Alice and Bob, the model predicts an improved purity of 0.60 for otherwise unchanged parameters. Alternatively, ideal operations of Alice and Bob (noiseless JPA 3 combined with no losses on Alice’s and Bob’s sides) with a realistic entangled resource would yield a purity of 0.62. Overall, the observed purity is limited by the added noise of the JPAs and the losses in the setup. Upon reducing the JPA noise photon numbers by one order of magnitude as well as the total losses to 
+  <span class="italic">χ</span>
+  <sub>1</sub> = 
+  <span class="italic">χ</span>
+  <sub>2</sub> = 0.05 (0.2 dB), we expect an optimized purity 
+  <span class="italic">μ</span>
+  <sub>opt</sub> = 0.80 for the prepared state at the optimal point. The reduction of losses can be achieved by using a superconducting hybrid ring, optimized cable connectors, and improved circulators. In this context, one should remember that our protocol allows for the preparation of continuous-variable squeezed states with a degree of squeezing 
+  <span class="italic">S</span>
+  <sub>rp</sub> that is fundamentally related to the initial two-mode squeezing of the resource state. In the current implementation, even for a fixed resource TMS state, 
+  <span class="italic">S</span>
+  <sub>rp</sub> and 
+  <span class="italic">γ</span>
+  <sub>rp</sub> can be changed at the expense of a reduced purity 
+  <span class="italic">μ</span>. By adding a phase shifter
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> on her side, Alice could prepare squeezed states with arbitrary 
+  <span class="italic">γ</span>
+  <sub>rp</sub> while keeping 
+  <span class="italic">S</span>
+  <sub>rp</sub> and 
+  <span class="italic">μ</span> constant.
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Purity of remotely prepared states in phase space. The phase space of the prepared states is spanned by 
+     <span class="italic">S</span>
+     <sub>rp</sub> and 
+     <span class="italic">γ</span>
+     <sub>rp</sub>. The gray area marks squeezing below the vacuum limit. The color code indicates the purity 
+     <span class="italic">μ</span> of the remotely prepared states. The optimal point is marked by the white star. The inset shows the Wigner function 1/
+     <span class="italic">e</span> contours of the experimental state at the optimal point with 
+     <span class="italic">μ</span> = 0.54 and a pure squeezed state with the same squeezing level. The vacuum 1/
+     <span class="italic">e</span> contour is indicated in gray
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10727_Fig3_HTML" id="d29e1244" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

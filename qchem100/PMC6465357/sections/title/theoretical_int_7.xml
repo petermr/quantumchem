@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec7" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theoretical interpretation</div>
+ <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">The electronic structures of CdSe/CdS core/shell nanocrystals have been studied intensively. It is well established that the valence band maximum (VBM) state is strongly confined in the CdSe core as a result of the large valence band offset between CdS and CdSe
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>,
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>
+  </span>. However, their conduction band offset is small
+  <span class="sup">
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>
+  </span>, thus the conduction band minimum (CBM) confinement in the core/shell structure is much weaker
+  <span class="sup">
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>
+  </span>. Depending on the shape and size of the core and shell, the band alignment can be either type-I or quasi-type-II
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>,
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>,
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>
+  </span>. Theoretical studies also revealed that the Auger processes for positive and negative trions in CdSe/CdS QDs are asymmetric. From tight-binding calculations, Sargent and colleagues
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span> reported that in a CdSe/CdS QD with 4 nm core and 10 nm shell, Auger recombination can be six times faster for positive trions compared to negative ones. Using the k·p method, Efros et al. showed that increasing the CdS shell thickness can lead to a much stronger suppression on the Auger recombination for negative trion than for positive trion
+  <span class="sup">
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+  </span>. These calculations agree with some of our experimental results.
+ </p>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">In order to thoroughly understand the unexpected experimental phenomena descried above, time-dependent perturbation theory
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span> coupled with density functional theory with the charge patching method
+  <span class="sup">
+   <a ref-type="bibr" rid="CR57" href="#CR57">57</a>
+  </span> and the folded spectrum method
+  <span class="sup">
+   <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+  </span> is applied for theoretical study of the Auger recombination in CdSe/CdS core/shell QDs (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">9</a>). Near the band-edge of a CdSe/CdS core/shell QD, the density of hole energy levels is much higher than that of electron energy levels, which suggests more Auger recombination pathways for a positive trion hence more efficient Auger recombination for positive trion than the negative trion
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>,
+   <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+  </span>. However, the picture is incomplete without considering the coupling between initial and final states for each pathway, where geometry-dependent dielectric screening should play a critical role.
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">Using Slater determinants to describe the initial and final many-particle states in Auger recombination, we can evaluate their coupling strength based on Coulomb integrals in the form 
+  <div id="IEq24" class="inline-formula">
+   <div class="alternatives">
+    <span id="M47" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\boldsymbol{J}}(j,k,l,m) = {\int\!\!\!\int} {\left[ {\varphi _j^ \ast \left( {\mathbf{r}} \right)\varphi _k^ \ast \left( {{\mathbf{r}}\prime } \right)\varphi _l\left( {\mathbf{r}} \right)\varphi _m\left( {{\mathbf{r}}\prime } \right)e^2} \right]/\left[ {\epsilon \left( {{\mathbf{r}},{\mathbf{r}}\prime } \right)|{\mathbf{r}} - {\mathbf{r}}\prime |} \right]d{\mathbf{r}}d{\mathbf{r}}\prime }$$\end{document}</span>
+    <div id="M48" class="math">
+     <span mathvariant="bold-italic" class="mi">J</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">j</span>
+       <span class="mo">,</span>
+       <span class="mi">k</span>
+       <span class="mo">,</span>
+       <span class="mi">l</span>
+       <span class="mo">,</span>
+       <span class="mi">m</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <span class="mo">∫</span>
+     <span width="0.3em" class="mspace"/>
+     <span width="0.3em" class="mspace"/>
+     <span width="0.3em" class="mspace"/>
+     <span class="mo">∫</span>
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">φ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">j</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">*</span>
+        </div>
+       </div>
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">r</span>
+        </div>
+       </div>
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">φ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">*</span>
+        </div>
+       </div>
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">r</span>
+         <span class="mo">′</span>
+        </div>
+       </div>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">φ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">l</span>
+        </div>
+       </div>
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">r</span>
+        </div>
+       </div>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">φ</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">m</span>
+        </div>
+       </div>
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">r</span>
+         <span class="mo">′</span>
+        </div>
+       </div>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">∕</span>
+     <div close="]" open="[" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mi">ϵ</span>
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <span mathvariant="bold" class="mi">r</span>
+         <span class="mo">,</span>
+         <span mathvariant="bold" class="mi">r</span>
+         <span class="mo">′</span>
+        </div>
+       </div>
+       <span class="mo">∣</span>
+       <span mathvariant="bold" class="mi">r</span>
+       <span class="mo">-</span>
+       <span mathvariant="bold" class="mi">r</span>
+       <span class="mo">′</span>
+       <span class="mo">∣</span>
+      </div>
+     </div>
+     <span class="mi">d</span>
+     <span mathvariant="bold" class="mi">r</span>
+     <span class="mi">d</span>
+     <span mathvariant="bold" class="mi">r</span>
+     <span class="mo">′</span>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq24.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>,here 
+  <div id="IEq25" class="inline-formula">
+   <div class="alternatives">
+    <span id="M49" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left\{ \varphi \right\}$$\end{document}</span>
+    <div id="M50" class="math">
+     <div close="}" open="{" separators="" class="mfenced">
+      <div class="mrow">
+       <span class="mi">φ</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq25.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> are the wavefunctions of the relevant single-particle states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>
+  </span>. When the initial single-particle states are degenerate or nearly degenerate, a configuration-interaction (CI) expansion of the many-particle states is used to account for the coupling between the nearly degenerate Slater determinants
+  <span class="sup">
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span>. This is especially important for the positive trion due to the almost degenerate single-particle states.
+ </p>
+ <p id="Par28" xmlns="http://www.w3.org/1999/xhtml">The term 
+  <div id="IEq26" class="inline-formula">
+   <div class="alternatives">
+    <span id="M51" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\epsilon \left( {{\mathbf{r}},{\mathbf{r}} \prime } \right)$$\end{document}</span>
+    <div id="M52" class="math">
+     <span class="mi">ϵ</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <span mathvariant="bold" class="mi">r</span>
+       <span class="mo">,</span>
+       <span mathvariant="bold" class="mi">r</span>
+       <span class="mo">′</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq26.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> is dielectric function accounting for the screening effect. Larger 
+  <span class="bold">
+   <span class="italic">J</span>
+  </span> leads to higher Auger rate. Actually, the dielectric constant can change with the quantum dot size
+  <span class="sup">
+   <a ref-type="bibr" rid="CR60" href="#CR60">60</a>
+  </span>. Theoretically, one approach is to describe the reduction of the overall dielectric constant as a consequence of the increase band gap in the QD. For example, Efros et. al. investigated the intraband and interband Auger processes in CdSe/CdS core/shell QDs by introducing reduced dielectric screening as an input parameter in the calculation. The best agreement
+  <span class="sup">
+   <a ref-type="bibr" rid="CR61" href="#CR61">61</a>
+  </span> between theory and experiment was obtained with the effective dielectric constant being ~ 40% of the bulk semiconductor. Alternatively, the reduced overall dielectric constant can be described as a reduction of dielectric response for the locations near the inorganic–organic interface
+  <span class="sup">
+   <a ref-type="bibr" rid="CR62" href="#CR62">62</a>
+  </span>. Such microscropic picture of the dielectric response allows us to develop a location dependent dielectric function model, which is used in the current work.
+ </p>
+ <p id="Par29" xmlns="http://www.w3.org/1999/xhtml">For Auger recombination of a negative trion, the relevant Coulomb integral is 
+  <div id="IEq27" class="inline-formula">
+   <div class="alternatives">
+    <span id="M53" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\boldsymbol{J}}(e^1,e^2,e_n,h)$$\end{document}</span>
+    <div id="M54" class="math">
+     <span mathvariant="bold-italic" class="mi">J</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">e</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">n</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <span class="mi">h</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq27.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <span class="italic">e</span>
+  <span class="sup">1</span>, 
+  <span class="italic">e</span>
+  <span class="sup">2</span>, and 
+  <span class="italic">h</span> are the two CBM states and one VBM state involved in the trion, and 
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> is the final electron state in the higher conduction band. The corresponding Auger process is: 
+  <span class="italic">e</span>
+  <span class="sup">2</span> recombines with 
+  <span class="italic">h</span>, and 
+  <span class="italic">e</span>
+  <span class="sup">1</span> jumps into 
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub>. Similarly, the relevant Coulomb integral for Auger recombination of a positive trion is 
+  <div id="IEq28" class="inline-formula">
+   <div class="alternatives">
+    <span id="M55" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\boldsymbol{J}}(h^1,h^2,h_n,e)$$\end{document}</span>
+    <div id="M56" class="math">
+     <span mathvariant="bold-italic" class="mi">J</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">h</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">h</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">h</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">n</span>
+        </div>
+       </div>
+       <span class="mo">,</span>
+       <span class="mi">e</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq28.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, corresponding to 
+  <span class="italic">h</span>
+  <span class="sup">2</span> recombines with 
+  <span class="italic">e</span>, and 
+  <span class="italic">h</span>
+  <span class="sup">1</span> jumps to 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub>. Thus, the magnitude of either 
+  <span class="bold">
+   <span class="italic">J</span>
+  </span> strongly depends on the characters of CBM and VBM states involved in a specific Auger recombination. From this aspect, co-localization of all wavefunctions within the geometric boundary of a QD will lead to efficient Auger recombination for either positive or negative trion in comparison to the corresponding bulk crystal. The small geometric size of a QD would also enable significant penetration of electric-field lines of the carriers into the ligand/solvent environment, whose very-low dielectric constants would largely reduce the dielectric screening of those wavefunctions close to the interface and hence accelerate Auger recombination of the corresponding trion.
+ </p>
+ <p id="Par30" xmlns="http://www.w3.org/1999/xhtml">For three representative QDs, Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5a</a> illustrates characters of the relevant states involved in Auger recombination, namely, CBM, VBM, representative high-energy electron (
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub>), and high-energy hole (
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub>
+  <span class="italic">)</span> states. The valence band offset is much larger than the conduction band offset between CdSe and CdS and the electron is lighter than the hole
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span>, which implies that CBM wavefunction is much more delocalized than the corresponding VBM wavefunction in CdSe/CdS core/shell QDs. The high-energy 
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> and 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> states are delocalized over the whole QD.
+  <div id="Fig5" class="fig">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <p>Snapshot of the charge density and the theoretical calculation results. 
+     <span class="bold">a</span> The charge density of the conduction band minimum (CBM), valence band maximum (VBM), and averaged 
+     <span class="italic">e</span>
+     <sub>
+      <span class="italic">n</span>
+     </sub> and 
+     <span class="italic">h</span>
+     <sub>
+      <span class="italic">n</span>
+     </sub> states for CdSe
+     <sub>550</sub>/4CdS quantum dots (QDs), CdSe
+     <sub>550</sub>/8CdS QDs and CdSe
+     <sub>630</sub>/4CdS QDs. 
+     <span class="bold">b</span> The theoretical calculation results of the Auger recombination rates for negative and positive trions for CdSe/CdS core/shell QDs with the same core size but different shell thicknesses. 
+     <span class="bold">c</span> The theoretical calculation results for the Auger recombination rates for negative and positive trions for CdSe/CdS core/shell QDs with the same shell thickness but different core sizes
+    </p>
+   </div>
+   <div xlink:href="41467_2019_9737_Fig5_HTML" id="d29e2404" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par31" xmlns="http://www.w3.org/1999/xhtml">When the shell is thin, wavefunction of CBM extends into regions close to the inorganic–organic interface, where the dielectric screening is much weaker than the QD interior. This leads to larger Coulomb integral 
+  <span class="bold">
+   <span class="italic">J</span>
+  </span> for a negative trion, thus higher Auger rate. Given a fixed core size, increase of the CdS shell thickness pushes CBM wavefunction away from the interface (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5a</a>), implying increased dielectric screening for the negative trion. Simultaneously, CBM wavefunction is also more delocalized, which decreases the 
+  <span class="italic">e</span>
+  <span class="sup">1</span>/
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> overlap. Both factors would contribute decrease of the Coulomb integral 
+  <span class="bold">
+   <span class="italic">J</span>
+  </span> and result in a reduced Auger rate of the negative trion. However, increasing shell thickness has small effects on the 
+  <span class="italic">h</span>
+  <span class="sup">1</span>/
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> overlap and the dielectric screening, implying insensitive Auger rate of positive trion to varying the shell thickness. These combined effects on negative and positive trions would result in the Auger rate crossover observed in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3d–f</a>, which is captured by our computation using the model discussed above (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5b</a>).
+ </p>
+ <p id="Par32" xmlns="http://www.w3.org/1999/xhtml">When the core size of core/shell QDs increases with a fixed shell thickness, wavefunctions of both CBM and VBM are confined more in the core but become more delocalized within the core. These factors cause significant decrease of the 
+  <span class="italic">h</span>
+  <span class="sup">1</span>/
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> and 
+  <span class="italic">e</span>
+  <span class="sup">1</span>/
+  <span class="italic">e</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> overlap and enhanced dielectric screening for both CBM and VBM, which results in simultaneous decrease of Auger rates for both types of trions (Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3b, c</a>). Given the relatively small radius of wavefuntion of VBM than that of CBM (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5a</a>), the effects of the core size would have more impact on the positive trion than on the negative one. Again, our computation captures the trends (Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5c</a>).
+ </p>
+</sec>

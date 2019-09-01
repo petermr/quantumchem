@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec8" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Effects of solvation</div>
+ <p id="Par32" xmlns="http://www.w3.org/1999/xhtml">So far we explicitly considered pairs of anion and solvent molecules in vacuum. In this section, we examine the effect of solvation on the oxidation energetics and the electrostatic interaction between the electrolyte species. Our main finding is that solvation quantitatively changes the electrostatic dipole energy in the presence of solvent (denoted by 
+  <span class="italic">δ</span>
+  <sub>•</sub>) primarily due to the dielectric screening effect due to the solvent, and we explain the trends across several solvent-salt combinations again using a simple electrostatic model derived from the above understanding of the charge transfer complex. First we look at the dependence of the IP on the number of solvent molecules in the explicitly solvated scenario. We find that the average IP increases with the number of solvents (up to five solvent molecules, see Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>). This increasing trend is expected from classical electrostatic energy of a charge in a dielectric medium, and can be understood as a polarization effect of the additional solvents, i.e., that anion (negative species) IP increases and solvent (neutral species) IP decreases with the solvent dielectric constant. We note in passing that in order to obtain accurate IP values for explicitly solvated systems, a proper extrapolation to large system size is needed
+  <span class="sup">
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>, which requires expensive simulations that lie outside the scope of our investigation. It is also important to note that in all the explicitly solvated computations there is still only one species that is fully oxidized upon removal of charge (whether it is the anion or one of the solvents). We again emphasize that for this to happen it is critical to choose an exchange-correlation functional with minimal delocalization errors, such as M06-HF. Therefore, the smallest unit that is needed to study oxidation is the explicit anion-solvent pair, and addition of solvation effects the results only through polarization. To analyze the long-range effect of solvation and estimate 
+  <span class="italic">δ</span>
+  <sub>•</sub>, we build on the previous finding with explicit solvents that only one molecule is oxidized and assume that the electron removal is much faster than any other process, obtaining Supplementary Eq. (
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4)</a>. We employ the PCM implicit solvent model for all the 
+  <div id="IEq30" class="inline-formula">
+   <div class="alternatives">
+    <span id="M63" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M64" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq30.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> pairs (i.e., 
+  <div id="IEq31" class="inline-formula">
+   <div class="alternatives">
+    <span id="M65" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M66" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq31.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> solvated with DMSO, DME, PC, or ACN) to estimate 
+  <span class="italic">δ</span>
+  <sub>•</sub>. In order to compute the effect of PCM implicit solvation on the vertical IP, one must account only for the optical screening effect of solvation, which we do with the method provided in the Gaussian code
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>,
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>. We use the following static and high-frequency dielectric constants (
+  <span class="italic">ϵ</span>
+  <sub>0</sub>, 
+  <span class="italic">ϵ</span>
+  <sub>∞</sub>) of (46.8, 4.16) for DMSO, (4.24, 2.16) for DME, (65.5, 4.14) for PC, and (35.7, 4.0) for ACN
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>,
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>. We find that the solvent is still oxidized, like in vacuum, and the value of the difference 
+  <span class="italic">δ</span>
+  <sub>•</sub> between the IP of the solvent and that of the solvent-anion pair is indeed lower but still significant in the PCM-solvated calculations. The values of 
+  <span class="italic">δ</span>
+  <sub>•</sub> are reported in Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">7</a>. Thus we find that implicit solvation does not change the qualitative picture seen in the vacuum case. As discussed above, after the electron removal, it is very difficult to assess how the solvent reorganization and other subsequent reactions are affected by the nature of the oxidized state.
+ </p>
+</sec>

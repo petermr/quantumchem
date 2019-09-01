@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have implemented routines to generate peptide models, from either specific geometries or efficient conformational sampling through the BASILISK library. We have furthermore implemented necessary code to perform constrained geometry optimizations of the peptide models, remove steric clashes and prepare the structure for use in a quantum chemistry program. In addition, the file writers accommodate nearly 100 file formats, and are able to write input files for a number of chemistry programs through an interface to Open Babel.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="monospace">Peptide</span> class wraps functionality from Open Babel offered through its Python interface. The molecular structure is stored as an Open Babel 
+  <span class="monospace">openbabel.OBMol</span> object in the 
+  <span class="monospace">Peptide.molecule</span> class variable. This means that developers and users effectively have access to all the tools present in Open Babel to further manipulate the structure, or extend FragBuilder by wrapping and combining functionality from Open Babel.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">FragBuilder is open source and published under the BSD 2-Clause license. Note that the packaged BASILISK library is published under the GNU General Public License version 3. FragBuilder is freely available at 
+  <span xlink:href="https://github.com/jensengroup/fragbuilder/" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/jensengroup/fragbuilder/</span> where additional examples and full documentation can be found.
+ </p>
+</sec>

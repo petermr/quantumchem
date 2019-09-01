@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="jcc25364-tbl-0004" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 4</span>
+ <div class="caption">
+  <p>Capabilities of XC functionals for DFT calculations</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <col align="left" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <thead valign="bottom">
+   <tr style="border-bottom:solid 1px #000000">
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Type</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of HF exchange</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of MP2 correlation</th>
+   </tr>
+  </thead>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">LDA</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">SVWN</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">SPW92</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">GGA</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">BLYP</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">PBE</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">revPBE</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">Meta‐GGA</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">VS98</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M06‐L</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">Hybrid</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">B3LYP</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">20%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">BHHLYP</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">PBE0</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">25%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M05</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">28%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M05‐2X</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">56%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M06</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M06‐2X</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">54%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">M06‐HF</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">100%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">Double‐hybrid</td>
+    <td align="left" valign="top" rowspan="1" colspan="1">B2PLYP</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">53%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">B2GPPLYP</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">65%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">36%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐DH</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">12.5%</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1"/>
+    <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐2</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">79.3701%</td>
+    <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0018" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">SCF convergence</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">RAQET contains several convergence techniques for SCF calculations, which are summarized in Table 
+  <a rid="jcc25364-tbl-0007" ref-type="table" href="#jcc25364-tbl-0007">7</a>. All of these techniques are available for KRHF, KROHF, KUHF, and GHF using complex numbers as well as RHF, ROHF, and UHF using real numbers. Now, users can use all of the convergence techniques for all SCF calculations at the NR, SF, and SD levels. The keyword sDamp utilizes the static damping technique, which gives a mixture of the density matrices from previous and present iterations with a weighting factor. This technique gives stable results, though the rate of convergence is slow. The zero value of the weighting factor gives a result which corresponds to the fixed‐point algorithm, which in turn corresponds to the SCF calculation without any acceleration techniques. The keywords C1‐DIIS and C2‐DIIS are Pulay's techniques of direct inversion in the iterative subspace (DIIS),
+  <a rid="jcc25364-bib-0162" ref-type="ref" href="#jcc25364-bib-0162">162</a>, 
+  <a rid="jcc25364-bib-0163" ref-type="ref" href="#jcc25364-bib-0163">163</a> which are extrapolation schemes using a linear combination of the density or Fock matrices from previous SCF iterations. The extrapolation coefficients are optimized by minimizing the DIIS error vector. These techniques show rapid convergence when the initial guess is good. The keyword EDIIS uses an interpolation scheme based on the DIIS technique. The interpolation coefficients are optimized by minimizing the HF energy functional, which contains a linear combination of the density matrices.
+  <a rid="jcc25364-bib-0164" ref-type="ref" href="#jcc25364-bib-0164">164</a> This technique is effective when the initial guess is poor, although the convergence rate is slower close to the minimum than DIIS. A combination of C2‐DIIS and EDIIS (DIIS + EDIIS) 
+  <a rid="jcc25364-bib-0165" ref-type="ref" href="#jcc25364-bib-0165">165</a>, 
+  <a rid="jcc25364-bib-0166" ref-type="ref" href="#jcc25364-bib-0166">166</a>, 
+  <a rid="jcc25364-bib-0167" ref-type="ref" href="#jcc25364-bib-0167">167</a> is also available, and is the default option in RAQET. This technique has the advantages of both DIIS and EDIIS and provides rapid convergence even if the initial guess is poor. The keyword SOSCF uses second‐order SCF orbital optimization. This technique utilizes an exponential parameterization to obtain the orbital rotation angles, and requires the calculation of first and approximated second derivatives of the energy with respect to the orbital coordinates. This provides rapid convergence when the initial guess is good as well as DIIS.
+  <a rid="jcc25364-bib-0168" ref-type="ref" href="#jcc25364-bib-0168">168</a>, 
+  <a rid="jcc25364-bib-0169" ref-type="ref" href="#jcc25364-bib-0169">169</a> The keyword FON adopts the fractional occupation number based on the Fermi distribution function.
+  <a rid="jcc25364-bib-0170" ref-type="ref" href="#jcc25364-bib-0170">170</a> This technique can be useful for calculations involving degenerate systems such as metal clusters.
+ </p>
+ <div id="jcc25364-tbl-0007" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 7</span>
+  <div class="caption">
+   <p>Capabilities of SCF convergence techniques</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">sDamp</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Static damping technique for density matrix</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">C1‐DIIS</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from previous Fock matrix</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">C2‐DIIS</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from SCF condition</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">EDIIS</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Energy DIIS interpolation of Fock matrix</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">SOSCF</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Second‐order SCF orbital optimization</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">FON</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Use fractional occupation number based on the Fermi distribution function</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">EDIIS+DIIS</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Hybrid of EDIIS and C2‐DIIS (default)</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</sec>

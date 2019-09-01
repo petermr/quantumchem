@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2dot3-ijms-20-03227" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.3. Rate Constants</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the abstraction reactions by OH radical, rate constants calculations need to consider the formed Van der Waals complexes (RCs and PCs), and two-TS models are usually employed [
+  <a rid="B21-ijms-20-03227" ref-type="bibr" href="#B21-ijms-20-03227">21</a>,
+  <a rid="B22-ijms-20-03227" ref-type="bibr" href="#B22-ijms-20-03227">22</a>]. However, a series of previous studies indicated that this model only showed significant effect at low temperatures below 200 K [
+  <a rid="B21-ijms-20-03227" ref-type="bibr" href="#B21-ijms-20-03227">21</a>,
+  <a rid="B22-ijms-20-03227" ref-type="bibr" href="#B22-ijms-20-03227">22</a>,
+  <a rid="B23-ijms-20-03227" ref-type="bibr" href="#B23-ijms-20-03227">23</a>,
+  <a rid="B24-ijms-20-03227" ref-type="bibr" href="#B24-ijms-20-03227">24</a>,
+  <a rid="B25-ijms-20-03227" ref-type="bibr" href="#B25-ijms-20-03227">25</a>,
+  <a rid="B26-ijms-20-03227" ref-type="bibr" href="#B26-ijms-20-03227">26</a>]. For the interested combustion relevant temperature range of 500–2500 K, the rate-limiting step is the inner TSs. Furthermore, the formed RCs are unstable at high temperatures. Hence, the abstraction reactions by H and OH radicals are all computed by using canonical TST with 1-D hindered rotor approximations for the treatment of internal rotations. The Fourier-series are used for fitting the scanned results of international rotations. To obtain rate constants with minimal uncertainty, the corrected M08-HX barrier height are adopted.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The high-pressure limiting rate constants (
+  <span class="italic">k</span>
+  <sub>∞</sub>) of H-abstraction reaction of propyne by H and OH radicals in this work are compared with available literature data and shown in 
+  <a ref-type="fig" rid="ijms-20-03227-f006" href="#ijms-20-03227-f006">Figure 6</a> and 
+  <a ref-type="fig" rid="ijms-20-03227-f007" href="#ijms-20-03227-f007">Figure 7</a>, respectively. From 
+  <a ref-type="fig" rid="ijms-20-03227-f006" href="#ijms-20-03227-f006">Figure 6</a>, the rate constants obtained in this work are in good correlation with the results by Miller et al. [
+  <a rid="B11-ijms-20-03227" ref-type="bibr" href="#B11-ijms-20-03227">11</a>] at the QCISD(T)/inf//B3LYP/6-311++G(d,p) level of theory over the studied temperature ranges. The rate constants by Wang et al. [
+  <a rid="B20-ijms-20-03227" ref-type="bibr" href="#B20-ijms-20-03227">20</a>] tended to underestimate the rate constants at low temperature. The predicted results show good agreement with the rate constants derived from a heated single pulse-shock tube at temperatures of 874–1196 K by Rosado-Reyes et al. [
+  <a rid="B13-ijms-20-03227" ref-type="bibr" href="#B13-ijms-20-03227">13</a>]. For the H-abstraction reaction of propyne with OH, Hansen et al. [
+  <a rid="B14-ijms-20-03227" ref-type="bibr" href="#B14-ijms-20-03227">14</a>] esimated the rate constants for this reaction and used in kinetic modeling. The deviations of the rate constants between present results and Zador’s calculations [
+  <a rid="B15-ijms-20-03227" ref-type="bibr" href="#B15-ijms-20-03227">15</a>] are within a factor of 2 and decrease as temperature increasing. The H-abstraction reaction of propyne by OH radical is in fact important at temperatures over 1000 K and it can be seen that the three different sets of rate constants for this reaction at the interested temperature ranges are close to each other. Overall, the results computed at M08-HX level are in good agreement with literature data, but can significantly reduce the computational cost to obtain accurate reaction barriers compared with other expensive W1BD or CCSD(T) methods.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="fig" rid="ijms-20-03227-f008" href="#ijms-20-03227-f008">Figure 8</a> compares the rate constants as a function of temperature for the studied H-abstraction reactions by H radical. The TSs for H-abstraction reactions from eight reactants by H and/or OH radicals can be divided into three types: primary propargyl radical (propyne), secondary propargyl radicals (1-butyne, 1-pentyne, penta-1,4-diyne, 4-penten-1-yne and 3-phenyl-1-propyne) and tertiary propargyl radicals (isopentyne and but-3-yn-2-ylbenzene). As can be seen from the graph, the 
+  <span class="italic">k</span>
+  <sub>∞</sub> of the tertiary propargyl radicals are higher than those of the secondary propargyl radicals. For the five secondary propargyl radicals, in comparison with 1-butyne, the trend is 
+  <span class="italic">k</span>
+  <sub>∞</sub>(1-pentyne) &lt; 
+  <span class="italic">k</span>
+  <sub>∞</sub>(1-butyne) &lt; 
+  <span class="italic">k</span>
+  <sub>∞</sub>(3-phenyl-1-propyne) ≈ 
+  <span class="italic">k</span>
+  <sub>∞</sub>(penta-1,4-diyne) &lt; 
+  <span class="italic">k</span>
+  <sub>∞</sub>(4-penten-1-yne) which suggests the positive (+) or negative (-) influence of different groups on the reaction activity is: –C
+  <sub>2</sub>H
+  <sub>5</sub> (-) &lt; –CH
+  <sub>3</sub> (+) &lt; –C
+  <sub>6</sub>H
+  <sub>5</sub> ≈ –C
+  <sub>2</sub>H &lt; –C
+  <sub>2</sub>H
+  <sub>3</sub>. In addition, the –C
+  <sub>2</sub>H
+  <sub>3</sub> group tends to show stronger influence on the reaction activity especially at low temperature since the deviation between 
+  <span class="italic">k</span>
+  <sub>∞</sub>(penta-1,4-diyne) and 
+  <span class="italic">k</span>
+  <sub>∞</sub>(4-penten-1-yne) is larger than those between the other secondary propargyl radicals.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="italic">k</span>
+  <sub>∞</sub> of the primary propargyl radical (propyne) tends to show different trend with that of the secondary propargyl radicals which is slower at low temperatures, but overtaking the 
+  <span class="italic">k</span>
+  <sub>∞</sub> of secondary propargyl radicals at high temperatures. For the tertiary propargyl radicals, 
+  <span class="italic">k</span>
+  <sub>∞</sub>(isopentyne) is slower than that of but-3-yn-2-ylbenzene at temperatures lower than 1000 K which is consistent with the trend of the secondary propargyl radicals that phenyl group has stronger positive influence on the reaction reactivity. However, as the temperature increasing, 
+  <span class="italic">k</span>
+  <sub>∞</sub>(but-3-yn-2-ylbenzene) is overtaken by 
+  <span class="italic">k</span>
+  <sub>∞</sub>(isopentyne).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Unlike the H-abstraction reactions of the studied alkyne molecules by H radical, the rate constants by OH radical exhibit large differences. 
+  <a ref-type="fig" rid="ijms-20-03227-f009" href="#ijms-20-03227-f009">Figure 9</a> shows that the rate constant of a tertiary propargyl radical (isopentyne) is significantly larger than the others over the whole temperature range, while the 
+  <span class="italic">k</span>
+  <sub>∞</sub> of a secondary propargyl radical (3-phenyl-1-propyne) is the smallest. It can be clearly seen from this graph that the tertiary propargyl radicals (isopentyne and but-3-yn-2-ylbenzene) have higher 
+  <span class="italic">k</span>
+  <sub>∞</sub> than secondary propargyl radicals which is consistent with H-abstraction by H atom. The deviations between the primary and secondary propargyl C-H sites with alkyl groups (propyne, 1-butyne and 1-pentyne) are small which are within 3 times over the whole temperature range. For secondary propargyl radicals, (1) the 
+  <span class="italic">k</span>
+  <sub>∞</sub> of penta-1,4-diyne is similar to that of 1-butyne which may suggests the equivalent influence of methyl and acetylenic group on rate constant calculation for H-abstraction reactions of alkynes by OH radical; (2) the vinyl group in 4-penten-1-yne significantly increases the rate constants compared with 
+  <span class="italic">k</span>
+  <sub>∞</sub> of 1-butyne. (3) the phenyl group in 3-phenyl-1-propyne significantly decreases the rate constants compared with 
+  <span class="italic">k</span>
+  <sub>∞</sub> of 1-butyne. Hence, the methyl, vinyl and acetylenic groups in secondary propargyl radicals tends to increase the reactivity of H-abstraction reaction by OH radical compared with the primary propargyl radicals, the trend of influence for these three group are –C
+  <sub>2</sub>H ≈ –CH
+  <sub>3</sub> &lt; –C
+  <sub>2</sub>H
+  <sub>3</sub>. While phenyl group tend to decrease the reactivity of H-abstraction reaction by OH radical. To facilitate kinetic modeling studies, the computed rate constants are fitted into the modified Arrhenius format as shown in 
+  <a rid="ijms-20-03227-t004" ref-type="table" href="#ijms-20-03227-t004">Table 4</a>.
+ </p>
+</sec>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec10" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Validation of the CCSD/daDZ 
+  <span class="italic">α</span> Data
+ </div>
+ <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">Since 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> describes the response of a molecule to an applied electric field, an accurate and reliable treatment of this quantity is particularly sensitive to the description of the underlying electronic structure as well as the quality of the basis set. The highest level 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> values provided in this work were computed with LR-CCSD, a sophisticated wavefunction-based method that consistently yields highly accurate 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> values for equilibrium and non-equilibrium molecular geometries when used with sufficiently large (and sufficiently diffuse) basis sets
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+  </span>. To account for the basis set incompleteness error, which is almost always larger than the contributions from higher-order (
+  <span class="italic">e</span>.
+  <span class="italic">g</span>., beyond doubles) excitations in coupled-cluster theory
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>–
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, we employed the daDZ basis set. Although daDZ is a double-
+  <span class="italic">ζ</span> basis set containing a moderate number of polarization functions, the incorporation of two sets of augmented functions (
+  <span class="italic">i</span>.
+  <span class="italic">e</span>., double augmentation) significantly reduces the basis set incompleteness error in the prediction of 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span>. To validate the accuracy of our CCSD/daDZ calculations, we performed a series of calculations using the larger daTZ basis set
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>
+  </span>, which is arguably the largest Dunning-style basis that can be used to compute 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> for the molecules in the QM7b database without significant supercomputer resources. To proceed with this technical validation, we used the FPS algorithm
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>,
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+  </span> to choose the 100 most diverse molecules in the QM7b database (which we denote as the FPS-100 database). Due to the prohibitively large computational cost associated with LR-CCSD calculations with the daTZ basis set, we were only able to compute 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> for the 24 smallest molecules (by number of basis functions) in the FPS-100 database. A statistical error analysis of the 
+  <span class="italic">α</span>
+  <sub>iso</sub> and 
+  <span class="italic">α</span>
+  <sub>aniso</sub> values for these 24 molecules is provided in Table 
+  <a rid="Tab5" ref-type="table" href="#Tab5">5</a>, and a more extensive discussion regarding the basis set convergence of our CCSD/daDZ calculations can be found in the main text and Supplementary Information of Ref.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. From Table 
+  <a rid="Tab5" ref-type="table" href="#Tab5">5</a>, one can immediately see that the CCSD/daDZ 
+  <span class="italic">α</span>
+  <sub>iso</sub> values have similar MSE, MAE, and RMSE values of ≈0.20 Bohr
+  <span class="sup">3</span>, which corresponds to a MAPE of ≈0.4%. For 
+  <span class="italic">α</span>
+  <sub>aniso</sub>, a measure of the anisotropy in the 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> tensor, we report slightly larger errors corresponding to a MAPE of 
+  <div id="IEq31" class="inline-formula">
+   <div class="alternatives">
+    <span id="M65" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\lesssim 1{\rm{ \% }}$$\end{document}</span>
+    <div id="M66" class="math">
+     <span class="mo">≲</span>
+     <span class="mn">1</span>
+     <span mathvariant="normal" class="mi">%</span>
+    </div>
+    <span xlink:href="41597_2019_157_Article_IEq31.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>. When compared to the errors made by the hybrid DFT functionals employed in this work (with CCSD/daDZ as the reference), namely 2.5% (B3LYP/daDZ) and 1.3% (SCAN0/daDZ) for 
+  <span class="italic">α</span>
+  <sub>iso</sub> and 9.3% (B3LYP/daDZ) and 7.9% (SCAN0/daDZ) for 
+  <span class="italic">α</span>
+  <sub>aniso</sub>, we conclude that the basis set incompleteness errors in our reference 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> values are significantly smaller (see Table 
+  <a rid="Tab4" ref-type="table" href="#Tab4">4</a>). As such, the CCSD/daDZ 
+  <span class="bold">
+   <span class="italic">α</span>
+  </span> tensors presented in this work should be accurate and reliable enough for use in the development (and assessment) of next-generation force fields, density functionals, and quantum chemical methodologies, as well as machine-learning based approaches for predicting this fundamental response property.
+  <div id="Tab5" class="table-wrap">
+   <span class="label">Table 5</span>
+   <div class="caption">
+    <p>Statistical error analysis of the CCSD/daDZ isotropic (
+     <span class="italic">α</span>
+     <sub>iso</sub>) and anisotropic (
+     <span class="italic">α</span>
+     <sub>aniso</sub>) polarizabilities in the FPS-100 database (
+     <span class="italic">i</span>.
+     <span class="italic">e</span>., the first 100 molecules in the QM7b database chosen by the FPS algorithm) computed with respect to the CCSD/daTZ level.
+    </p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th>
+       <span class="italic">α</span>
+      </th>
+      <th>MSE (MSPE)</th>
+      <th>MAE (MAPE)</th>
+      <th>RMSE (RMSPE)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <span class="italic">α</span>
+       <sub>iso</sub>
+      </td>
+      <td>0.22 (0.42)</td>
+      <td>0.22 (0.43)</td>
+      <td>0.26 (0.50)</td>
+     </tr>
+     <tr>
+      <td>
+       <span class="italic">α</span>
+       <sub>aniso</sub>
+      </td>
+      <td>−0.25 (−0.79)</td>
+      <td>0.27 (0.87)</td>
+      <td>0.33 (1.15)</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <p>Due to the increased computational cost associated with computing 
+     <span class="bold">
+      <span class="italic">α</span>
+     </span> at the CCSD/daTZ level, a subset of the FPS-100 database (which includes the 24 molecules with the smallest number of basis functions) was considered during this analysis.
+    </p>
+   </div>
+  </div>
+ </p>
+</sec>

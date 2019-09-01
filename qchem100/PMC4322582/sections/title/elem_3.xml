@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Data Records</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molecular structures and properties are publicly available at Figshare (Data Citation 1) in a plain text XYZ-like format described below. Deposited files include the 133, 885 GDB-1 to GDB-9 molecules (
+  <span class="monospace">dsgdb9nsd.xyz.tar.bz2</span>), the 6,095 constitutional isomers of C
+  <sub>7</sub>H
+  <sub>10</sub>O
+  <sub>2</sub> (
+  <span class="monospace">dsC7O2H10nsd.xyz.tar.bz2</span>), the 100 validation molecules (see 
+  <a ref-type="table" rid="t1" href="#t1">Table 1</a>) enthalpies of atomization (
+  <span class="monospace">validation.txt</span>), and atomic reference data (
+  <span class="monospace">atomref.txt</span>).
+ </p>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">File format</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">For each molecule, atomic coordinates and calculated properties are stored in a file named 
+   <span class="monospace">dataset_index.xyz</span>. The XYZ format (originally developed for the XMol program by the Minnesota Supercomputer Center) is a widespread plain text format for encoding Cartesian coordinates of molecules, with no formal specification. It contains a header line specifying the number of atoms 
+   <span class="italic">n</span>
+   <sub>
+    <span class="italic">a</span>
+   </sub>, a comment line, and 
+   <span class="italic">n</span>
+   <sub>
+    <span class="italic">a</span>
+   </sub> lines containing element type and atomic coordinates, one atom per line. We have extended this format as indicated in 
+   <a ref-type="table" rid="t2" href="#t2">Table 2</a>. Now, the comment line is used to store all scalar properties, Mulliken charges are added as a fifth column. Harmonic vibrational frequencies, SMILES and InChI are appended as respective additional lines.
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Properties</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">All molecular geometries were relaxed, and properties calculated, at the DFT/B3LYP/6-31G(2df,p) level of theory. The list of properties of the 134k molecules is summarized in 
+   <a ref-type="table" rid="t3" href="#t3">Table 3</a>. For a subset of 6,095 isomers of C
+   <sub>7</sub>H
+   <sub>10</sub>O
+   <sub>2</sub>, energetics (properties 12–16) were additionally calculated at the G4MP2 level of theory. For a validation set of 100 randomly drawn molecules from the 133,885 GDB-9 set, enthalpies of atomization were calculated at the DFT/B3LYP/6-31G(2df,p), G4MP2, G4 and CBS-QB3 levels of theory.
+  </p>
+ </sec>
+</sec>

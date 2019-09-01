@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Test dataset 3</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The NWChem distribution (NWChem-6.0) contains a directory (
+  <span class="monospace">/QA/tests/</span>) with a large number (212) of varied quality assurance tests for the software. All except 18 of these have been converted satisfactorily. One problem encountered was that the parser had used a large number of regexes which, when concatenated, scaled exponentially, so that some of the conversions took over a minute. We are now re-writing the parser to use linear time methods. These files cover a wider range of chemistry than the Croft and Rzepa contributions, as many of them use plane-wave calculations on solid state problems.
+ </p>
+</sec>

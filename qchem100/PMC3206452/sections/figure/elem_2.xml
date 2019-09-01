@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 3</span>
+ <div class="caption">
+  <p>
+   <span class="bold">Chempound repository graphical interface</span>. Chempound accepts either converted compchem CML or logfiles (which are then parsed by the JUMBO converters into compchem CML). The entries are indexed on 4 main criteria: (I) environment (program, host, dates, 
+   <span class="italic">etc</span>.) (II) initialization (molecular structure, basis sets, methods, algorithms, parameters, 
+   <span class="italic">etc</span>.) (III) calculation (the progression of optimization) (IV) finalization (molecular structure, properties, times, 
+   <span class="italic">etc</span>.) (a) Each entry is displayed with a thumbnail and key metadata (b) Properties and parameters for each entry, all searchable through SPARQL endpoint.
+  </p>
+ </div>
+ <div xlink:href="1758-2946-3-38-3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

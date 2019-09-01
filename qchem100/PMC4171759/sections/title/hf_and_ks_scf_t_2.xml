@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">HF and KS SCF Theories</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In Dalton, SCF calculations may be performed using a variety of optimization techniques. Apart from the traditional iterative Roothaan–Hall diagonalization method with direct-inversion-in-the-iterative-subspace (DIIS) convergence acceleration, the SCF energy may be optimized using a robust second-order trust-region method.
+  <a rid="b1" ref-type="bibr" href="#b1">1</a> All calculations may be carried out in either serial or parallel manner. SCF calculations may also be carried out using the linear-scaling module discussed later.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">With Dalton, KS studies may be performed with a variety of KS exchange–correlation functionals, including local-density-approximation (LDA) functionals, generalized-gradient-approximation (GGA) functionals such as BLYP and PBE, global hybrid functionals such as B3LYP and PBE0, and range-separated hybrid functionals such as CAM-B3LYP and r-CAM-B3LYP. Additional functionals may be obtained by combining the included functionals for exchange and correlation in new ways. Double-hybrid functionals such as B2PLYP and MPW2PLYP, with a second-order perturbation contribution, are available. For the GGA and hybrid functionals, the exchange–correlation potentials may be asymptotically corrected to ensure a proper long-range behavior, important for the study of Rydberg states using response theory.
+  <a rid="b2" ref-type="bibr" href="#b2">2</a> Empirical DFT-D2 and DFT-D3 dispersion corrections may be applied. Dalton offers an implementation of spin-restricted and spin-unrestricted DFT for open-shell states.
+  <a rid="b3" ref-type="bibr" href="#b3">3</a>,
+  <a rid="b4" ref-type="bibr" href="#b4">4</a>
+ </p>
+</sec>

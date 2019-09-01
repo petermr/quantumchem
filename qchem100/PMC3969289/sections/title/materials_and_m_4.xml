@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" id="s0010" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Materials and methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">All geometries (γGlu47, dyads and triads with and without Ca
+  <span class="sup">2+</span>) were fully optimized 
+  <span class="italic">in vacuo</span> at the B3LYP/6-31G(d,p) level of theory 
+  <a rid="b0130 b0135" ref-type="bibr" href="#b0130 b0135">[26,27]</a> as implemented in the software package Gaussian 
+  <a rid="b0140" ref-type="bibr" href="#b0140">[28]</a>. The initial structures were derived from an equilibrated MD configuration of the Cx26 connexin hemichannel 
+  <a rid="b0060 b0145" ref-type="bibr" href="#b0060 b0145">[12,29]</a> and Glu residues were gamma carboxylated before geometry optimization; a Ca
+  <span class="sup">2+</span> was subsequently added and the structure re-optimized. Single point energies and binding energies were computed using a larger basis set, i.e. B3LYP/6-311++G(d,p). Binding energies Δ
+  <span class="italic">E</span> were computed by partitioning the molecular system into two suitable fragments (fragments are labeled as contiguous sequences of amino acids (AA) without hyphenation to distinguish them from dyads and triads and are not in bold); the sum of the energies of each fragment, calculated separately without relaxing their geometries, has been subtracted to the energy of the total system; according to this definition a negative Δ
+  <span class="italic">E</span> corresponds to a favorable binding. Basis set superposition error (BSSE) 
+  <a rid="b0150" ref-type="bibr" href="#b0150">[30]</a>, although negligible when neutral fragments are involved, was evaluated and taken into account in the results. The amino terminus of the isolated γGlu was saturated with an acetyl group replacing H, while the carboxylic group was saturated with a NHCH
+  <sub>3</sub> group replacing OH. In all other larger molecular systems, the amino and carboxyl termini were described simply as –NHCH
+  <sub>3</sub> and –COOCH
+  <sub>3</sub>, respectively, to reduce the computational effort. Unless otherwise stated, γGlu residues were always considered dianions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A two-layer QM/QM approach was set up for full geometry optimization of a larger AA cluster formed by 15 residues (γGlu42-Val43-Trp44-Gly45-Asp46-γGlu47-Gln48-Ala49-Phe51-Tyr65-Ser72-Arg75-Val182-Arg184-Lys188), using the ONIOM (Our own N-layered Integrated molecular Orbital + Molecular mechanics) scheme implemented in Gaussian 
+  <a rid="b0155" ref-type="bibr" href="#b0155">[31]</a>. The inner layer (or high layer) was accurately described using the density functional theory (DFT) method; B3LYP functional and 6-31G(d,p) basis set were employed. This layer includes part of the side chain of γGlu47 
+  <div class="inline-formula">
+   <div id="M1" altimg="si1.gif" overflow="scroll" class="math">
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="msub">
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <span class="mtext">COO</span>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mtext">CHCH</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+       <span class="mo">-</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> and part of the side chain of arginines 
+  <div class="inline-formula">
+   <div id="M2" altimg="si2.gif" overflow="scroll" class="math">
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="msub">
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mtext">NH</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mtext">C</span>
+     <span stretchy="false" class="mo">(</span>
+     <span class="mtext">NH</span>
+     <span stretchy="false" class="mo">)</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mtext">CH</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div>, and Ca
+  <span class="sup">2+</span> ion when present. The PM3 hamiltonian 
+  <a rid="b0160" ref-type="bibr" href="#b0160">[32]</a> was used for the outer layer (or low layer), which is formed by the residues located within 4 Å from γGlu47 of the inner layer (γGlu42-Val43-Trp44-Gly45-Asp46-Gln48-Ala49-Phe51-Tyr65-Ser72-Val182-Lys188). This computational approach has been satisfactorily used before by some of us for structural investigation of different protein systems 
+  <a rid="b0165 b0170" ref-type="bibr" href="#b0165 b0170">[33,34]</a>. Single point and binding energies were calculated also on the triads γGlu47-Arg75-Arg184 (with and without Ca
+  <span class="sup">2+</span>), extracted from ONIOM optimized structures at the B3LYP/6-311++G(d,p) level of theory.
+ </p>
+</sec>

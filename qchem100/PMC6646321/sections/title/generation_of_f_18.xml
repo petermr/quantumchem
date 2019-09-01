@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec18" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of Fig. 4</div>
+ <p id="Par33" xmlns="http://www.w3.org/1999/xhtml">This overview figure was created by reusing the code used for Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>, but applying it on the full line list. As this inevitably produces overlapping spectra, coloured lines (instead of coloured fills) were used to indicate the assigned lines. While the full spectral raw data was exposed to the Matplotlib library, some data points that did not contribute to significant changes in the shape of the curve were dropped. Therefore, zooming into the vector graphic will not always show the full details of the background noise. The total absence of background in some of the excitation scans allowed to still obtain clear peaks even when averaging at event rates of less than one event per laser pulse. Because of the normalisation of the plotted raw spectra, these features can be invisible, if there are strong lines in the same spectrum. An extreme example of this are the high rotational levels of the 
+  <div id="IEq136" class="inline-formula">
+   <div class="alternatives">
+    <span id="M271" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$G_{65}0_{\mathrm{u}}^ +$$\end{document}</span>
+    <div id="M272" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">G</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">65</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mn">0</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">u</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11156_Article_IEq136.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> state in the 
+  <span class="sup">65</span>Cu
+  <span class="sup">63</span>Cu isotopologue. There, the background is plotted as a completely flat line and the coloured peaks are just visible, because the amplitude was manually increased when composing the final depiction.
+ </p>
+</sec>

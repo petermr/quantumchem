@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2. Chemical Reactions From First Principles: A Summary of the Theoretical Methodology</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Within the quantum mechanical time independent framework for studies of reaction dynamics, we use the Born-Oppenheimer separation of electronic and nuclear motion and solve the Schrödinger equation for the motion of nuclei</p>
+ <div id="E1" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(1)</span>
+  <div id="M1" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ℏ</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+          <span class="mi">μ</span>
+         </div>
+        </div>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mo">∇</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <span class="mi">V</span>
+        <span class="mo">-</span>
+        <span class="mi">E</span>
+       </div>
+       <span class="mo">]</span>
+      </div>
+      <span class="mtext">Ψ</span>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">controlled by the ground electronically adiabatic potential energy surface 
+  <span class="italic">V</span>, with μ being the reduced mass of the system and ∇ denoting the Laplacian operator, applying a convergent close-coupling technique. To describe the concerted bond breaking and bond forming taking place in the hydrogen atom transfer reaction, we use hyper-spherical coordinates: the hyperradius, ρ, playing the role of a reaction coordinate being capable to describe democratically both the reactants and products channels, and five angular variables. Alternative parameterizations of the hyperangles have been proposed, see references (Pack and Parker, 
+  <a rid="B43" ref-type="bibr" href="#B43">1987</a>; Launay and Le Dourneuf, 
+  <a rid="B35" ref-type="bibr" href="#B35">1989</a>; Aquilanti et al., 
+  <a rid="B2" ref-type="bibr" href="#B2">2000</a>). The computer code (Skouteris et al., 
+  <a rid="B52" ref-type="bibr" href="#B52">2000</a>) used to carry out scattering calculations implements the formalism in Delves hyper-spherical coordinates.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The wave function Ψ is expressed in terms of eigenfunctions of the total angular momentum and internal states of the system. The integration over the angular variables leads to a multichannel scattering problem as a function of ρ</p>
+ <div id="E2" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(2)</span>
+  <div id="M2" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="mrow">
+       <span class="mo">[</span>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">d</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">d</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ρ</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <span class="mo">+</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">2</span>
+          <span class="mi">μ</span>
+         </div>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">ℏ</span>
+           </div>
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">E</span>
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">ϵ</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <span class="mo">]</span>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">F</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ρ</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">-</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">n</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">′</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">W</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">F</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ρ</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where ϵ
+  <sub>
+   <span class="italic">n</span>
+  </sub> are effective hyperspherical potentials potentials and 
+  <div class="inline-formula">
+   <div id="M3" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">W</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">n</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the coupling between them. The multichannel equations are then solved subject to scattering boundary conditions
+ </p>
+ <div id="E3" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(3)</span>
+  <div id="M4" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">F</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ρ</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span class="mtext"> as </span>
+      <span class="mi">ρ</span>
+      <span class="mo">→</span>
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div id="E5" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(4)</span>
+  <div id="M6" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">F</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ρ</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">~</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">i</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="true" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">δ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">′</span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <span class="mo">exp</span>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <span class="mo">-</span>
+          <span class="mi">i</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">k</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+          </div>
+          <span class="mi">ρ</span>
+         </div>
+         <span class="mo">]</span>
+        </div>
+        <span class="mo">-</span>
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">S</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">′</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">J</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span stretchy="false" class="mo">(</span>
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+        <span class="mo">exp</span>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <span class="mi">i</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">k</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">n</span>
+           </div>
+          </div>
+          <span class="mi">ρ</span>
+         </div>
+         <span class="mo">]</span>
+        </div>
+       </div>
+       <span stretchy="true" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mtext">                   as </span>
+      <span class="mi">ρ</span>
+      <span class="mo">→</span>
+      <span class="mi">∞</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">to yield the partial wave scattering matrix elements 
+  <div class="inline-formula">
+   <div id="M7" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">S</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">n</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">′</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <span class="mi">J</span>
+     </div>
+    </div>
+    <div class="mrow">
+     <span stretchy="false" class="mo">(</span>
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div>
+  </div> : these are the fundamental quantities for generating reactive transitions from an initial state 
+  <span class="italic">n</span> to a final state 
+  <span class="italic">n</span>′ as a function of total energy. For specific total energy, 
+  <span class="italic">E</span>, and total angular momentum quantum number, 
+  <span class="italic">J</span>, the computer code [Skouteris et al. (
+  <a rid="B52" ref-type="bibr" href="#B52">2000</a>)] provides the reactive scattering matrix. The square moduli of the S-matrix elements
+ </p>
+ <div id="E6" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(5)</span>
+  <div id="M8" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">P</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mo">∣</span>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">S</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mo">∣</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">are state-to-state reaction probabilities yielding the products in the roto-vibrational state 
+  <span class="italic">n</span>′ starting from the reactants in the roto-vibrational state 
+  <span class="italic">n</span>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum reactive scattering calculations serve to generate differential and integral cross sections as well as rate constants, the observable quantities in reaction dynamics and kinetics experiments. The comparison between experiments and theory supplies the most stringent test for the reliability of potential energy surfaces. Formulas used to calculate the cross sections and the rate constants shown in 
+  <a ref-type="fig" rid="F1" href="#F1">Figures 1</a>, 
+  <a ref-type="fig" rid="F2" href="#F2">2</a> are summarized in the following.
+ </p>
+ <div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>Energy dependence of the ics for the reactions of the F atom with H
+    <sub>2</sub>, panel 
+    <span class="bold">(A)</span>, and D
+    <sub>2</sub>, panel 
+    <span class="bold">(B)</span>, molecules in their ground roto-vibrational state. The solid black and red lines are the results using SW PES and PES-II, respectively. The dot-dashed lines show the fittings of numerically exact ics to the Wigner threshold law (Equation 8). A pattern of 
+    <span class="italic">J</span>-selected resonance peaks appears in the cold energy region. The value of the total angular momentum quantum number where the peaks show up in the reaction probabilities is indicated. Blue dots with error bars are the experimental values of reference (Che et al., 
+    <a rid="B19" ref-type="bibr" href="#B19">2007</a>).
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00328-g0001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Rate constants for the reaction of the F atom with H
+    <sub>2</sub> (green color) and D
+    <sub>2</sub> (blue color) molecules on the SW PES [panel 
+    <span class="bold">(A)</span>] and PES-II [panel 
+    <span class="bold">(B)</span>]. The solid lines show the numerically exact results obtained by rigorous quantum reactive scattering calculations (Equation 7). The dashed lines depict the Bell approximation (Equation 11). The dot-dashed lines show the Wigner limit (Equation 10).
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00328-g0002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The initial state-selected total integral cross section at given values of the relative translational energy of reactants, 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>, can be expressed as the sum of reaction probabilities
+ </p>
+ <div id="E7" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(6)</span>
+  <div id="M9" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">π</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">g</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+        </div>
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">n</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">′</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <div class="mrow">
+         <span class="mo">∑</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">J</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">J</span>
+        <span class="mo">+</span>
+        <span class="mn">1</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mi">P</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">n</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">′</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">J</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">over all the final states, 
+  <span class="italic">n</span>′, and the partial waves, 
+  <span class="italic">J</span>, accessible during the reaction, with 
+  <span class="italic">g</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> and 
+  <span class="italic">k</span>
+  <sub>
+   <span class="italic">n</span>
+  </sub> being the initial state degeneracy factor and wave vector, respectively. The dependence of the rate constant on temperature is calculated averaging σ
+  <sub>
+   <span class="italic">n</span>
+  </sub> over the Maxwell-Boltzmann distribution of the initial translational energy
+ </p>
+ <div id="E8" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(7)</span>
+  <div id="M10" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <div class="mrow">
+         <span stretchy="true" class="mo">(</span>
+         <div class="mrow">
+          <div class="mfrac">
+           <div class="mrow">
+            <span class="mn">2</span>
+           </div>
+           <div class="mrow">
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">k</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">B</span>
+             </div>
+            </div>
+            <span class="mi">T</span>
+           </div>
+          </div>
+         </div>
+         <span stretchy="true" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">3</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+       </div>
+       <div class="mrow">
+        <div class="msup">
+         <div class="mrow">
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">π</span>
+            <span class="mi">m</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mn">1</span>
+          <span class="mo">/</span>
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mo">∫</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">∞</span>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">σ</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+        <span class="mo">/</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">B</span>
+         </div>
+        </div>
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+      <span class="mtext"> d</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">E</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">k</span>
+  <sub>
+   <span class="italic">B</span>
+  </sub> is the Boltzmann constant and 
+  <span class="italic">m</span> is the reduced mass of the reactants. The thermal rate constant is the sum over all the initial states accessible at a given temperature 
+  <span class="italic">T</span> weighted for the relative population of the state 
+  <span class="italic">n</span>, where 
+  <span class="italic">n</span> ≡ (
+  <span class="italic">v, j</span>) stands for the vibrational and rotational quantum numbers 
+  <span class="italic">v, j</span> of the molecule.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum scattering calculations on SW PES and PES-II have been carried out using a parallelized variant of the computer code (Skouteris et al., 
+  <a rid="B52" ref-type="bibr" href="#B52">2000</a>) implementing the Enhanced Renormalized Numerov method (Colavecchia et al., 
+  <a rid="B22" ref-type="bibr" href="#B22">2003</a>) for the integration of the hyperradial multichannel equations in Equation (2) above, see references (De Fazio, 
+  <a rid="B24" ref-type="bibr" href="#B24">2014</a>; De Fazio et al., 
+  <a rid="B25" ref-type="bibr" href="#B25">2016</a>) for more details. These changes make the code more efficient, especially at very low collision energies. The input parameters used in the production run are given in 
+  <a ref-type="supplementary-material" rid="SM1" href="#SM1">Tables S1</a>, 
+  <a ref-type="supplementary-material" rid="SM1" href="#SM1">S2</a>. After extracting the scattering matrix we calculate the total integral cross sections from Equation (6) and then perform the thermal averaging in Equation (7) to obtain the rate coefficients. These latter have been divided by the electronic partition function of the fluorine atom to account for its open-shell structure. As far as the temperature dependence of the electronic partition function is concerned, it has been properly taken into account in rate constant calculations. However, in the range of temperature investigated, it is essentially negligible (&lt;0.001 %) and was not considered in the calculation of the tunneling correcting factor in Equation (12).
+ </p>
+</sec>

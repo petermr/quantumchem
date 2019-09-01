@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec1" sec-type="introduction" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="Par3" xmlns="http://www.w3.org/1999/xhtml">In recent years, the field of animal magnetonavigation has been the focus of lively interdisciplinary research involving zoologists, chemists and physicists. Despite this, a comprehensive picture of the complex phenomena driving the ability of birds and many other animals to exploit the Earth’s magnetic field for orientational and navigational purposes is yet to emerge. Two main hypotheses, one based on magnetite
+  <span class="sup">
+   <a ref-type="bibr" rid="CR1" href="#CR1">1</a>–
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span> and the other on photo-initiated quantum processes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>–
+   <a ref-type="bibr" rid="CR11" href="#CR11">11</a>
+  </span>, are presently the front runners in this debate.
+ </p>
+ <p id="Par4" xmlns="http://www.w3.org/1999/xhtml">Originally proposed by Schulten in 1978
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>
+  </span>, the avian quantum compass is based on the magnetic field-dependent quantum dynamics of short-lived radical pair intermediates, as governed by the so-called radical pair mechanism (RPM)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>,
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>
+  </span>. Schulten’s original proposal, first considered as exotic if not implausible by many, became of significant interest to the community only in the new millennium, following the discovery of cryptochrome, a blue-light photoreceptor protein
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>
+  </span>, speculated to be fit for purpose as a chemical compass system
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>.
+ </p>
+ <p id="Par5" xmlns="http://www.w3.org/1999/xhtml">A plethora of experimental and theoretical studies have now provided substantial support for the cryptochrome-based radical pair hypothesis
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>:
+  <div list-type="bullet" class="list">
+   <div class="list-item">
+    <p id="Par6">Cryptochromes are expressed when birds perform magnetic orientation
+     <span class="sup">
+      <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+      <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+     </span>
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par7">The birds’ ability to use the Earth’s magnetic field is dependent on the wavelength of ambient light
+     <span class="sup">
+      <a ref-type="bibr" rid="CR18" href="#CR18">18</a>–
+      <a ref-type="bibr" rid="CR22" href="#CR22">22</a>
+     </span>
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par8">Cryptochromes have been found in birds’ retinae and studies on migratory birds’ brains show that bilateral lesions of cluster N, a light-processing forebrain region, disables magnetic orientation in European robins
+     <span class="sup">
+      <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+      <a ref-type="bibr" rid="CR23" href="#CR23">23</a>,
+      <a ref-type="bibr" rid="CR24" href="#CR24">24</a>
+     </span>
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par9">Weak radiofrequency magnetic fields can disrupt avian magnetic orientation
+     <span class="sup">
+      <a ref-type="bibr" rid="CR25" href="#CR25">25</a>–
+      <a ref-type="bibr" rid="CR28" href="#CR28">28</a>
+     </span> in agreement with the predicted results of the diagnostic tool for the action of the radical pair mechanism
+     <span class="sup">
+      <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+     </span>
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par10">Radical pair intermediates were observed in a number of proteins from the cryptochrome–photolyase family using time-resolved electron paramagnetic resonance
+     <span class="sup">
+      <a ref-type="bibr" rid="CR29" href="#CR29">29</a>–
+      <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+     </span>
+    </p>
+   </div>
+   <div class="list-item">
+    <p id="Par11">A radical pair reaction in a model system has been shown to respond to magnetic fields as weak as that of the Earth
+     <span class="sup">
+      <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+     </span>
+    </p>
+   </div>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">In addition, a variety of theoretical studies have provided a solid framework for the physical origin of the mechanism
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>,
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>,
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>. Yet, a number of crucial pieces of the puzzle are missing in the cryptochrome story, the most pressing of which probably regards the identities of the magnetic signalling state and cascade in any cryptochrome magnetoreceptor
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span>. Similarly frustrating though, as concerning the very heart of the actual hypothesis, is the aforementioned absence of any proof of principle that the direction of a magnetic field can affect the yield and/or kinetics of a radical pair reaction in the so-called low-field regime in which the avian compass operates. As the RPM is the appropriate framework for the discussion of both high- and low-field regimes, it will be introduced below.
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">The suggestion that magnetic fields as weak as that of the Earth (30–65 μT) can affect certain chemical reactions, seems, at first sight, implausible, as the interaction of the Earth’s magnetic field with a single molecule and at physiological conditions is orders of magnitude smaller than its thermal energy, 
+  <span class="italic">k</span>
+  <sub>B</sub>
+  <span class="italic">T</span>. However, as we will see below, the reaction partners considered here are created in a highly polarised state far from thermal equilibrium, making such considerations irrelevant for the activationless processes to be described.
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">The RPM is concerned with the creation, field-sensitive evolution and reactions of a pair of radicals, created, most commonly, either by photoinduced homolytic bond cleavage or, as is the case for the system discussed below and in cryptochromes, by photo-induced electron transfer. Radical pair formation proceeds under conservation of total spin angular momentum so that a singlet (triplet) molecular precursor results in the formation of radicals with antiparallel (parallel) spins. The initially formed radical pair (for all further discussion from now on assumed a singlet) is created in a highly spin-polarised, non-eigenstate of the Hamiltonian and consequently begins to evolve coherently between singlet and triplet states, at a rate determined by the interactions between the electron spin and the magnetic nuclei within the radical pair (the hyperfine couplings). The application of an external magnetic field perturbs the efficiency of this singlet–triplet interconversion.</p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">If the fields applied are weaker than the radical pair’s hyperfine couplings (subsequently referred to as low or weak fields), symmetry breaking lifts the degeneracies among some of the zero field eigenstates and increases the number of pathways for singlet to triplet interconversion
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>, giving rise to the so-called low-field effect (LFE)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>,
+   <a ref-type="bibr" rid="CR37" href="#CR37">37</a>,
+   <a ref-type="bibr" rid="CR38" href="#CR38">38</a>
+  </span>.
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">Conversely, in fields exceeding the radical pair’s hyperfine couplings (subsequently referred to as high or strong fields), the singlet state becomes energetically isolated from two of the three triplet states (Zeeman effect), suppressing efficient singlet–triplet mixing.</p>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">Crucially, the effects of a magnetic field on the singlet–triplet mixing in both field regimes can only be observed under a number of strict conditions: (i) singlet and triplet radical pair states have different fates, either in terms of their recombination rates back to the ground state or their actual recombination products; note that only singlet radical pairs have the correct spin orientation to recombine to the ground state directly; (ii) relaxation (loss of spin coherence in particular) has to be slow on the timescale of both singlet–triplet mixing and radical recombination/reaction; (iii) radical recombination/reaction has to be slow on the timescale of the coherent spin evolution; (iv) the interaction between the radicals has to be weaker than their interaction with both the field and the magnetic nuclei.</p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">While the effects of strong magnetic fields have been investigated and understood in depth, we are only now making progress to obtain a more complete picture of the (typically much less pronounced) sensitivity to weak fields. Experimentally, only one study on a model system has succeeded in providing proof for an (isotropic) Earth strength effect, while an orientation dependence of the magnetic field effect (MFE) was only observed for fields &gt;3 mT
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span>. The orientation dependence in this high-field region is caused by anisotropic hyperfine couplings in the radical pair, the anisotropic dipolar coupling being negligible compared to hyperfine couplings or indeed their anisotropies (
+  <span class="italic">D</span> ≈ 0.06 mT for the centre-to-centre distance of 3.6 nm in this pair)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span>. Previously only founded in theoretical simulations, it is speculated that these anisotropic hyperfine couplings in a radical pair with restricted motion may result in an orientation-dependent magnetic field response even in extremely weak magnetic fields including that of the Earth
+  <span class="sup">
+   <a ref-type="bibr" rid="CR9" href="#CR9">9</a>
+  </span>.
+ </p>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">Using a custom-designed transient absorption (TA) spectrometer, we verify this hypothesis by testing if a quantum compass can function in fields as weak as that of the Earth. This is not only crucial regarding the discussion of the magnitude of any expected effects, but, importantly, the quantum dynamics in high- and low-field regimes are dominated by different processes
+  <span class="sup">
+   <a ref-type="bibr" rid="CR36" href="#CR36">36</a>
+  </span>. The previously demonstrated existence of a chemical compass response of certain radical pair-based reactions in high fields
+  <span class="sup">
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span> is therefore a necessary condition but by no means sufficient to explain the avian compass sense within the quantum system's low-field regime.
+ </p>
+</sec>

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="other2" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">SIMULATION RESULTS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To perform the simulations, we are going to assume that one can prepare the states from the two oriented molecular beams into the combinations ∣
+  <span class="italic">H</span>〉 ∣ 
+  <span class="italic">H</span>〉; ∣
+  <span class="italic">V</span>〉 ∣ 
+  <span class="italic">V</span>〉 and ∣ + 〉 ∣ + 〉, ∣ − 〉 ∣ − 〉 and, finally, the Werner state
+  <div id="E12" class="disp-formula">
+   <div id="m43" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">ρ</span>
+       <span class="mi">w</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mi">p</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mi">p</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo"> </span>
+      <span class="mo">∣</span>
+      <span mathvariant="italic" class="mi">HV</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">+</span>
+      <span class="mo">∣</span>
+      <span mathvariant="italic" class="mi">VH</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo"> </span>
+      <span stretchy="false" class="mo">)</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo"> </span>
+      <span stretchy="false" class="mo">〈</span>
+      <span mathvariant="italic" class="mi">HV</span>
+      <span class="mo">∣</span>
+      <span class="mo">+</span>
+      <span stretchy="false" class="mo">〈</span>
+      <span mathvariant="italic" class="mi">VH</span>
+      <span class="mo">∣</span>
+      <span class="mo"> </span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">+</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">1</span>
+        <span class="mo">−</span>
+        <span class="mi">p</span>
+       </div>
+       <span class="mn">4</span>
+      </div>
+      <span class="mi">I</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(12)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The free parameter 
+  <span class="italic">p</span> describes entanglement of the Werner state. 
+  <span class="italic">p</span> = 0 indicates separability, entanglement for 
+  <span class="italic">p</span> ≤ 1/3, and Bell states of maximum entanglement at 
+  <span class="italic">p</span> = 1 (
+  <a rid="R37" ref-type="bibr" href="#R37">
+   <span class="italic">37</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If enough HD molecule pairs are prepared as mentioned above, then the predicted spectra for different initial states are shown in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3</a>. The simulation is based on data of scattering experiment between HD and H
+  <sub>2</sub> clusters taken from (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>) (scattering spectrum; 
+  <a rid="F4" ref-type="fig" href="#F4">Fig. 4, A and B</a>).
+ </p>
+ <div id="F3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">Simulation results of the scattering experiments.</div>
+   <p>The figure shows histograms of the simulation count results (
+    <span class="italic">z</span> axis in the figure) as a function of different measures in channel I and channel II. Row 1: The spectrum for the separable state ∣
+    <span class="italic">HH</span>〉, both HD molecules are in the state ∣
+    <span class="italic">H</span>〉. Row 2: The spectrum for separable state ∣
+    <span class="italic">VV</span>〉. Row 3: The spectrum for the superposition state ∣ + + 〉, where 
+    <div class="inline-formula">
+     <div id="m44" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <span class="mo">+</span>
+        <span stretchy="true" class="mo">〉</span>
+        <span class="mo">=</span>
+        <div class="mfrac">
+         <span class="mn">1</span>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">∣</span>
+        <span class="mi">H</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span class="mo">+</span>
+        <span class="mo">∣</span>
+        <span class="mi">D</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>. Row 4: The spectrum for the superposition state ∣ − − 〉, where 
+    <div class="inline-formula">
+     <div id="m45" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <span class="mo">−</span>
+        <span stretchy="true" class="mo">〉</span>
+        <span class="mo">=</span>
+        <div class="mfrac">
+         <span class="mn">1</span>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">∣</span>
+        <span class="mi">H</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span class="mo">−</span>
+        <span class="mo">∣</span>
+        <span class="mi">D</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>. Rows 5, 6, and 7: The spectrum for the Werner state ρ
+    <span class="italic">
+     <sub>w</sub>
+    </span>(
+    <span class="italic">p</span>). When 
+    <span class="italic">p</span> = 1, the prepared pairs are at the Bell state 
+    <div class="inline-formula">
+     <div id="m46" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <span class="mn">1</span>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mo">∣</span>
+        <span mathvariant="italic" class="mi">HD</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span class="mo">+</span>
+        <span class="mo">∣</span>
+        <span mathvariant="italic" class="mi">DH</span>
+        <span stretchy="false" class="mo">〉</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>.
+   </p>
+  </div>
+  <div xlink:href="aax5283-F3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">Theory and simulation results for 
+    <span class="italic">E</span> of particle pairs at different Werner state ρ
+    <span class="italic">
+     <sub>w</sub>
+    </span>(
+    <span class="italic">p</span>).
+   </div>
+   <p>To calculate the integral, we divided scattering angles into 18 slots (10° per slot). We studied 1 × 10
+    <span class="sup">6</span> particles in simulation, and possibility to be scattered is set as 0.4.
+   </p>
+  </div>
+  <div xlink:href="aax5283-F4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We can calculate the density matrix ρ
+  <span class="italic">
+   <sub>w</sub>
+  </span> for different measurements. For example, if both particles in channels I and II are scattered, then the measurement in the bases ∣
+  <span class="italic">H</span>〉 and ∣
+  <span class="italic">V</span>〉 gives
+  <div id="E13" class="disp-formula">
+   <div id="m47" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">ρ</span>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="center" class="mtd">
+         <div class="mrow">
+          <span class="mo">∣</span>
+          <span mathvariant="italic" class="mi">HH</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span mathvariant="italic" class="mi">HV</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span mathvariant="italic" class="mi">VH</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span mathvariant="italic" class="mi">VV</span>
+          <span stretchy="true" class="mo">〉</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <div class="mtable">
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span mathvariant="italic" class="mi">HH</span>
+              <span class="mo"> </span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span mathvariant="italic" class="mi">HV</span>
+              <span class="mo"> </span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span mathvariant="italic" class="mi">VH</span>
+              <span class="mo"> </span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span mathvariant="italic" class="mi">VV</span>
+              <span class="mo"> </span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span stretchy="true" class="mo">(</span>
+          <div class="mtable">
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">−</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">+</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <span class="mi">p</span>
+               <span class="mn">2</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <span class="mi">p</span>
+               <span class="mn">2</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">+</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">−</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(13)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If we change the basis set, then the density matrix in the bases ∣ + 〉 and ∣ − 〉 gives
+  <div id="E14" class="disp-formula">
+   <div id="m48" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">ρ</span>
+       <span class="mi">w</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mtable">
+       <div class="mtr">
+        <div class="mtd"/>
+        <div columnalign="center" class="mtd">
+         <div class="mrow">
+          <span class="mo">∣</span>
+          <span class="mo">+</span>
+          <span class="mo">+</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span class="mo">+</span>
+          <span class="mo">−</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span class="mo">−</span>
+          <span class="mo">+</span>
+          <span stretchy="true" class="mo">〉</span>
+          <span class="mo"> </span>
+          <span class="mo">∣</span>
+          <span class="mo">−</span>
+          <span class="mo">−</span>
+          <span stretchy="true" class="mo">〉</span>
+         </div>
+        </div>
+       </div>
+       <div class="mtr">
+        <div class="mtd">
+         <div class="mrow">
+          <div class="mtable">
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span class="mo">+</span>
+              <span class="mo">+</span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span class="mo">+</span>
+              <span class="mo">−</span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span class="mo">−</span>
+              <span class="mo">+</span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">∣</span>
+              <span class="mo">−</span>
+              <span class="mo">−</span>
+              <span stretchy="true" class="mo">〉</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtd">
+         <div class="mrow">
+          <span stretchy="true" class="mo">(</span>
+          <div class="mtable">
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">+</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">−</span>
+              <div class="mfrac">
+               <span class="mi">p</span>
+               <span class="mn">2</span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">−</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">−</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+           </div>
+           <div class="mtr">
+            <div class="mtd">
+             <div class="mrow">
+              <span class="mo">−</span>
+              <div class="mfrac">
+               <span class="mi">p</span>
+               <span class="mn">2</span>
+              </div>
+             </div>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <span class="mn">0</span>
+            </div>
+            <div class="mtd">
+             <div class="mrow">
+              <div class="mfrac">
+               <div class="mrow">
+                <span class="mn">1</span>
+                <span class="mo">+</span>
+                <span class="mi">p</span>
+               </div>
+               <span class="mn">4</span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <span class="label">(14)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We could do the same expansion for different measurements. On the basis of 
+  <a ref-type="disp-formula" rid="E8" href="#E8">Eq. 8</a>, we can predict the results of different initial states, as shown in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3</a>. The first column represents the simulation results when molecules in both channels are scattered. The second column represents simulation results when HD that goes through channel I is scattered, but not for channel II. The third column represents simulation results when HD that goes through channel II is scattered, but not for channel I. The last column represents results when particles are not scattered.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The state ∣HH〉 can be easily classified as its special spectrum in the first column (Ch I, scattered; Ch II, scattered), and state ∣ + + 〉 shows significant difference with others in the second (Ch I, scattered; Ch II, not scattered) and third columns (Ch I, not scattered; Ch II, scattered). For the Werner state, they share the same spectrum in the second and third columns, yet their spectrum in the last column (Ch I, not scattered; Ch II, not scattered) offers us some features: Counts for 
+  <div class="inline-formula">
+   <div id="m49" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">S</span>
+       <span class="mo">+</span>
+       <span class="mn">1</span>
+      </div>
+      <div class="msubsup">
+       <span class="mi">S</span>
+       <span class="mo">+</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="m50" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">S</span>
+       <span class="mo">−</span>
+       <span class="mn">1</span>
+      </div>
+      <div class="msubsup">
+       <span class="mi">S</span>
+       <span class="mo">−</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> will decrease as 
+  <span class="italic">p</span> increases. Also, the difference in the first column, where there is a subpeak (around θ
+  <sub>1</sub> = 30, θ
+  <sub>2</sub> = 90), increases when 
+  <span class="italic">p</span> increases. On the basis of these features, it is possible to distinguish them from each other. However, if the initial state is a complex mixed state, then it is impossible for us to derive the initial state because there are infinite possible results of 
+  <div class="inline-formula">
+   <div id="m51" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">=</span>
+        <span class="mn">1</span>
+       </div>
+       <span class="mi">m</span>
+      </div>
+      <span class="mo"> </span>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">∣</span>
+        <div class="msub">
+         <span class="mi">c</span>
+         <span class="mi">i</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">r</span>
+        <span class="mo">,</span>
+        <span class="mi">t</span>
+        <span class="mo">,</span>
+        <span class="mo">±</span>
+        <span class="mo">±</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">∣</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> only with restriction 
+  <div class="inline-formula">
+   <div id="m52" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mo">=</span>
+        <span class="mn">1</span>
+       </div>
+       <span class="mi">m</span>
+      </div>
+      <span class="mo"> </span>
+      <div class="msub">
+       <span class="mi">p</span>
+       <span class="mi">i</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+   </div>
+  </div> and ∑
+  <sub>
+   <span class="italic">j</span>
+   <sub>1,2</sub> = ±
+  </sub>∣
+  <span class="italic">c
+   <sub>i</sub>
+  </span>(
+  <span class="italic">r</span>, 
+  <span class="italic">t</span>, 
+  <span class="italic">j</span>
+  <sub>1</sub>, 
+  <span class="italic">j</span>
+  <sub>2</sub>)∣
+  <span class="sup">2</span> = 1. However, with more information of 
+  <span class="italic">p
+   <sub>i</sub>
+  </span>, there is a chance to resolve the quantum state. For example, if we have already known that the pairs are at the Werner state, then we could obtain the quantum state, as shown in the simulation work.
+ </p>
+</sec>

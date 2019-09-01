@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6346626</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1021/acscentsci.8b00788</article-id>
+ <article-categories class="article-categories">
+  <div class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Quantum Chemistry on Quantum Computers: A Method for Preparation of Multiconfigurational Wave Functions on Quantum Computers without Performing Post-Hartree–Fock Calculations</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" corresp="yes" id="ath1" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sugisaki</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kenji</span>
+   </name>
+   <a rid="cor1" ref-type="other" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath2" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nakazawa</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Shigeaki</span>
+   </name>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath3" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Toyota</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kazuo</span>
+   </name>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath4" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sato</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kazunobu</span>
+   </name>
+   <a rid="cor2" ref-type="other" href="#cor2" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath5" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Shiomi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Daisuke</span>
+   </name>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath6" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Takui</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Takeji</span>
+   </name>
+   <a rid="cor3" ref-type="other" href="#cor3" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">†</a>
+   <a rid="aff2" ref-type="aff" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">‡</a>
+  </contrib>
+  <aff id="aff1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">†</span>Department of Chemistry and Molecular Materials Science, Graduate School of Science, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Osaka City University</span>, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+  </aff>
+  <aff id="aff2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">‡</span>Research Support Department/University Research Administrator Center, University Administration Division, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Osaka City University</span>, 3-3-138 Sugimoto, Sumiyoshi-ku, Osaka 558-8585, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Japan</span>
+  </aff>
+ </div>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">
+   <span class="label">*</span>E-mail: 
+   <span class="email">sugisaki@sci.osaka-cu.ac.jp</span>.
+  </div>
+  <div id="cor2" class="corresp">
+   <span class="label">*</span>E-mail: 
+   <span class="email">sato@sci.osaka-cu.ac.jp</span>.
+  </div>
+  <div id="cor3" class="corresp">
+   <span class="label">*</span>E-mail: 
+   <span class="email">takui@sci.osaka-cu.ac.jp</span>. Phone: 
+   <span class="phone">+81-6-6605-2605</span>.
+  </div>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">31</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">12</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+ </pub-date>
+ <pub-date pub-type="ppub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">23</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">01</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">5</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <span class="fpage" xmlns="http://www.w3.org/1999/xhtml">167</span>
+ <span class="lpage" xmlns="http://www.w3.org/1999/xhtml">175</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">29</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2018</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2018 American Chemical Society</span>
+  <span class="copyright-year">2018</span>
+  <span class="copyright-holder">American Chemical Society</span>
+  <div class="license">
+   <div class="license-p">This is an open access article published under an ACS AuthorChoice 
+    <span ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">License</span>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.
+   </div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p content-type="toc-graphic">
+   <div xlink:href="oc-2018-00788n_0006" id="ab-tgr1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p>The full configuration interaction (full-CI) method is capable of providing the numerically best wave functions and energies of atoms and molecules within basis sets being used, although it is intractable for classical computers. Quantum computers can perform full-CI calculations in polynomial time against the system size by adopting a quantum phase estimation algorithm (QPEA). In the QPEA, the preparation of initial guess wave functions having sufficiently large overlap with the exact wave function is recommended. The Hartree–Fock (HF) wave function is a good initial guess only for closed shell singlet molecules and high-spin molecules carrying no spin-β unpaired electrons, around their equilibrium geometry, and thus, the construction of multiconfigurational wave functions without performing post-HF calculations on classical computers is highly desired for applying the method to a wide variety of chemistries and physics. In this work, we propose a method to construct multiconfigurational initial guess wave functions suitable for QPEA-based full-CI calculations on quantum computers, by utilizing diradical characters computed from spin-projected UHF wave functions. The proposed approach drastically improves the wave function overlap, particularly in molecules with intermediate diradical characters.</p>
+ </div>
+ <div abstract-type="short" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>Diradical characters enable us to efficiently construct multiconfigurational wave functions suitable for the initial guess of full configuration interaction calculations on quantum computers.</p>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">document-id-old-9</span>
+   <span class="meta-value">oc8b00788</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">document-id-new-14</span>
+   <span class="meta-value">oc-2018-00788n</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">ccc-price</span>
+   <span class="meta-value"/>
+  </div>
+ </div>
+</article-meta>

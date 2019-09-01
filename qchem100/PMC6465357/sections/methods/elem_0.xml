@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec9" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="Sec10" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Sample preparations</div>
+  <p id="Par39" xmlns="http://www.w3.org/1999/xhtml">The zinc-blende CdSe/CdS core/shell QDs with different core sizes and shell thicknesses were prepared according to the method reported in our previous report
+   <span class="sup">
+    <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+   </span>. For conventional ensemble optical measurements, QD samples were diluted in toluene until the optical density was around 0.1 at the first-exciton absorption peak. QD micro-liquid films were fabricated by transferring a droplet of QD solution (~ 10 µL) to a clean cover slip and mounting another cover slip on the top. The thickness of QD liquid film between two cover slips was around 10 µm determined by imaging the uppermost and lowermost emitting QDs in the liquid film using a fluorescence microscope (see details below). For single-dot spectroscopy experiments, diluted QD solution in toluene with 2.5% PMMA by weight was spin-casted on a clean cover slip. All optical measurements were performed at room temperature.
+  </p>
+ </sec>
+ <sec id="Sec11" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optical measurements on QDs at ensemble level</div>
+  <p id="Par40" xmlns="http://www.w3.org/1999/xhtml">UV−Vis spectra were taken on an Agilent Technologies Cary 4000 UV−visible spectrophotometer. Steady-state and transient photoluminescence spectra were recorded on an Edinburgh Instruments FLS920 spectrometer. Transient photoluminescence spectra were measured via the time-correlated single-photon counting (TCSPC) method with a 405 nm picosecond laser diode with 2 MHz repetition rate. The photoluminescence lifetime 
+   <span class="italic">τ</span> was obtained by fitting the decay curves by a single-exponential decay function with an acceptable goodness-of-fit 
+   <div id="IEq29" class="inline-formula">
+    <div class="alternatives">
+     <span id="M57" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$(\chi _R^2)$$\end{document}</span>
+     <div id="M58" class="math">
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">χ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">R</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_9737_Article_IEq29.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>. The absolute photoluminescence QY was measured using an Ocean Optics FOIS-1 integrating sphere coupled with a QE pro spectrometer. The system was calibrated with a DH-3-cal standard light source.
+  </p>
+ </sec>
+ <sec id="Sec12" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optical measurements on QDs using fluorescence microscope</div>
+  <p id="Par41" xmlns="http://www.w3.org/1999/xhtml">Optical properties of QD micro-liquid films and single QDs were measured using an inverted epifluorescence microscope (Olympus IX 83) equipped with a 60 × oil immersion objective (N.A. = 1.49) and suitable spectral filters. In order to measure the steady-state photoluminescence spectra of single QDs, a 405 nm continuous wave laser (PicoQuant) was used as the excitation light source and a spectrometer with EMCCD (Andor Shamrock 303i) was used to record the spectra.</p>
+  <p id="Par42" xmlns="http://www.w3.org/1999/xhtml">The 405 nm laser was switched to a pulsed mode with 1 MHz repetition and ~ 50 ps pulse width for time-resolved photoluminescence spectra measurements. For measuring the biexciton emission lifetime, a 405 nm femtosecond pulsed laser (Light Conversion Pharos + Orpheus + LYRA) with 1 MHz was used instead.</p>
+  <p id="Par43" xmlns="http://www.w3.org/1999/xhtml">In order to measure the biexciton lifetime and QY of QD micro-liquid films, the emission signals were collected and recorded by a single-photon counting system (a Micro Photon Devices MPD-050-CTD-FC photon detectors with 50 ps resolution and PicoQunat Picoharp 300 TCSPC module) in a TCSPC mode. With different excitation power densities, a series of transient photoluminescence spectra were obtained and thus the biexciton lifetime and QY could be calculated.</p>
+  <p id="Par44" xmlns="http://www.w3.org/1999/xhtml">Photoluminescence intensity trajectories and transient photoluminescence spectra of single QD were measured simultaneously with the same single-photon counting system mentioned above in a time-tagged time-resolved (TTTR) mode. The integration time for each data point in the photoluminescence intensity trajectories was 30 ms. Second-order photon intensity correlation measurements were performed with the same system and module with a Hanbury-Brown and Twiss (HBT) intensity correlation set-up comprised of a 50/50 beam splitter and two single-photon detectors.</p>
+ </sec>
+ <sec id="Sec13" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Photochemical electron-doping of QDs</div>
+  <p id="Par45" xmlns="http://www.w3.org/1999/xhtml">Lithium triethylborohydride (Li(Et
+   <sub>3</sub>BH), 20 μL of 1 mol/L) in tetrahydrofuran (Sigma-Aldrich) was added to 1 mL of anhydrous toluene to form photochemical electron-doping solution. The solution of CdSe/CdS core/shell QDs (optical density of band-edge absorption peak &lt; 0.1) in anhydrous toluene and 10 μL of trioctylphosphine was loaded into an air-tight cuvette. Into the QD solution in the cuvette, the Li(Et
+   <sub>3</sub>BH) solution was added stepwise with 50−1000 equivalent of CdSe/CdS QDs. The resulting solutions were exposed to a 365 nm LED (∼ 6 mW) for photochemical electron-doping. After a few minutes of photo-radiation, the QD sample reached a steady-state, indicated by stable absorption and photoluminescence spectra.
+  </p>
+  <p id="Par46" xmlns="http://www.w3.org/1999/xhtml">All above operations were performed at room temperature and under N
+   <sub>2</sub> atmosphere in a glove box. By varying the amount of Li(Et
+   <sub>3</sub>BH) added, the portion of negatively charged QDs in a solution was controlled.
+  </p>
+ </sec>
+</sec>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec7" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <sec id="Sec8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">DFT and TDDFT calculations</div>
+  <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">The DFT and TDDFT calculations were carried out using the Perdew-Burke-Ernzerhof (PBE)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR56" href="#CR56">56</a>
+   </span> exchange-correlation functional in the adiabatic limit. The spectra were calculated using the 
+   <span class="italic">δ</span>-kick technique
+   <span class="sup">
+    <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+   </span> in the linear-response regime and employing the dipole approximation for light-matter interaction. The default projector augmented-wave
+   <span class="sup">
+    <a ref-type="bibr" rid="CR57" href="#CR57">57</a>
+   </span> data sets and double-
+   <span class="italic">ζ</span> polarized (dzp) basis sets provided in GPAW were used. The dzp basis set of Al includes diffuse 3p functions, which are important for describing plasmon resonances
+   <span class="sup">
+    <a ref-type="bibr" rid="CR58" href="#CR58">58</a>
+   </span>. To minimize spurious effects due to the basis-set superposition error, the so-called ghost-atom approach was used separately for each nanoparticle size to keep the total system basis set as intact as possible despite the changing number of surrounding molecules. In general, while the used basis sets might not be adequate for yielding numerical values at the complete-basis-set limit, they are expected to be sufficient for the purposes of the present work. A grid spacing parameter of 0.3 Å was chosen to represent densities and potentials, and the molecules/particles were surrounded by a vacuum region of at least 6 Å. The Hartree potential was evaluated on a larger grid with at least 120 Å vacuum around the system and a coarser grid spacing of 1.2 Å, and subsequently refined to the original grid. For the time propagation, we used a time step of Δ
+   <span class="italic">t</span> = 15 as and total propagation time of at least 
+   <span class="italic">T</span> = 30 fs. The spectra were broadened using Lorentzian spectral broadening with 
+   <span class="italic">η</span> = 0.1 eV corresponding to a full width at half-maximum of 0.2 eV. Codes for reproducing the calculations are available (see Code availability).
+  </p>
+ </sec>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Transition contribution map (TCM)</div>
+  <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">A TCM is used for visualizing the Kohn-Sham (KS) electron-hole transition contributions to photoabsorption. Briefly, the photoabsorption cross-section 
+   <span class="italic">S</span>(
+   <span class="italic">ω</span>) is expressed in the basis of occupied (
+   <span class="italic">i</span>) and unoccupied (
+   <span class="italic">a</span>) KS states as 
+   <div id="IEq9" class="inline-formula">
+    <div class="alternatives">
+     <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$S(\omega ) = \mathop {\sum}\nolimits_{ia} S_{ia}(\omega )$$\end{document}</span>
+     <div id="M20" class="math">
+      <span class="mi">S</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mo"> ∑</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">a</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">S</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">i</span>
+        <span class="mi">a</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <span class="mi">ω</span>
+       </div>
+       <span class="mo">)</span>
+      </div>
+     </div>
+     <span xlink:href="41467_2019_11315_Article_IEq9.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+   </span>. In TCM, the elements of the matrix 
+   <span class="italic">S</span>
+   <sub>
+    <span class="italic">ia</span>
+   </sub>(
+   <span class="italic">ω</span>) at a chosen resonance energy are plotted on a Gaussian-broadened two-dimensional plane spanned by the energy axes for occupied and unoccupied KS states. The color indicates the sign of the transition contribution: positive (red) or negative (blue), and the color intensity indicates the magnitude of the contribution. The maps are augmented with the corresponding densities of states, and a diagonal line is drawn to indicate the KS eigenvalue difference corresponding to 
+   <span class="italic">ω</span>. See ref. 
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+   </span> for a detailed description of TCM construction.
+  </p>
+ </sec>
+ <sec id="Sec10" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Software used</div>
+  <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">DFT calculations were carried out using the GPAW package
+   <span class="sup">
+    <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+    <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+   </span> with localized basis sets (LCAO mode)
+   <span class="sup">
+    <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+   </span>. TDDFT calculations were conducted using the LCAO-RT-TDDFT implementation in GPAW
+   <span class="sup">
+    <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+   </span> and analyzed using the TCM tools therein
+   <span class="sup">
+    <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+   </span>. The ASE library
+   <span class="sup">
+    <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+   </span> was used for constructing the atomic structures. The NumPy
+   <span class="sup">
+    <a ref-type="bibr" rid="CR60" href="#CR60">60</a>
+   </span> and Matplotlib
+   <span class="sup">
+    <a ref-type="bibr" rid="CR61" href="#CR61">61</a>
+   </span> Python packages, the VMD software
+   <span class="sup">
+    <a ref-type="bibr" rid="CR62" href="#CR62">62</a>,
+    <a ref-type="bibr" rid="CR63" href="#CR63">63</a>
+   </span>, and Inkscape were used for processing data and generating figures.
+  </p>
+ </sec>
+</sec>

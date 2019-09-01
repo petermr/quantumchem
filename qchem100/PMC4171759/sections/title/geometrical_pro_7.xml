@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Geometrical Properties</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molecular gradients (forces) and Hessians (force constants) may be calculated analytically at the HF, KS, and MCSCF
+  <a rid="b37" ref-type="bibr" href="#b37">37</a>,
+  <a rid="b38" ref-type="bibr" href="#b38">38</a> levels of theory, whereas analytical molecular gradients are available for the CCS, CC2, CCD, MP2, RPA, CCSD, and CCSD(T) models,
+  <a rid="b18" ref-type="bibr" href="#b18">18</a>,
+  <a rid="b39" ref-type="bibr" href="#b39">39</a> also in the frozen-core approximation. Numerical differentiation may be performed automatically for these quantities when an analytical implementation is not available.
+  <a rid="b40" ref-type="bibr" href="#b40">40</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dalton has an extensive functionality for exploring potential-energy surfaces by means of molecular gradients and Hessians. Minima can be determined using first-order (quasi-Newton) and second-order (Newton) methods.
+  <a rid="b41" ref-type="bibr" href="#b41">41</a> Dalton also has several first- and second-order methods for determining saddle points (transition states), including mode following
+  <a rid="b42" ref-type="bibr" href="#b42">42</a> and image minimization.
+  <a rid="b43" ref-type="bibr" href="#b43">43</a> Geometry optimizations may be performed for excited states
+  <a rid="b44" ref-type="bibr" href="#b44">44</a>,
+  <a rid="b45" ref-type="bibr" href="#b45">45</a> and core-ionized states.
+  <a rid="b46" ref-type="bibr" href="#b46">46</a> Potential-energy surfaces can be mapped by the calculation of intrinsic reaction coordinates. Born–Oppenheimer direct-dynamics studies can be performed by calculating classical molecular trajectories on the potential-energy surfaces, iteratively solving Newton's equation of motion for the atoms in the system, allowing dynamical studies of systems containing more than one hundred atoms.
+  <a rid="b47" ref-type="bibr" href="#b47">47</a>,
+  <a rid="b48" ref-type="bibr" href="#b48">48</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Dalton may be used to calculate molecular vibrational spectra. In addition to harmonic frequencies, infrared intensities are obtained in the double-harmonic approximation
+  <a rid="b49" ref-type="bibr" href="#b49">49</a> and Raman intensities at a chosen frequency in the Placzek approximation. Dalton has an automated procedure for calculating rovibrationally averaged molecular geometries
+  <a rid="b50" ref-type="bibr" href="#b50">50</a> and vibrational averages for molecular properties at the HF, KS, and MCSCF levels of theory.
+  <a rid="b40" ref-type="bibr" href="#b40">40</a>,
+  <a rid="b51" ref-type="bibr" href="#b51">51</a>
+ </p>
+</sec>

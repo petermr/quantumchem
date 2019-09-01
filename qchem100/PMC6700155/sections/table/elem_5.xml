@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Tab5" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 5</span>
+ <div class="caption">
+  <p>Statistical error analysis of the CCSD/daDZ isotropic (
+   <span class="italic">α</span>
+   <sub>iso</sub>) and anisotropic (
+   <span class="italic">α</span>
+   <sub>aniso</sub>) polarizabilities in the FPS-100 database (
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., the first 100 molecules in the QM7b database chosen by the FPS algorithm) computed with respect to the CCSD/daTZ level.
+  </p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th>
+     <span class="italic">α</span>
+    </th>
+    <th>MSE (MSPE)</th>
+    <th>MAE (MAPE)</th>
+    <th>RMSE (RMSPE)</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>
+     <span class="italic">α</span>
+     <sub>iso</sub>
+    </td>
+    <td>0.22 (0.42)</td>
+    <td>0.22 (0.43)</td>
+    <td>0.26 (0.50)</td>
+   </tr>
+   <tr>
+    <td>
+     <span class="italic">α</span>
+     <sub>aniso</sub>
+    </td>
+    <td>−0.25 (−0.79)</td>
+    <td>0.27 (0.87)</td>
+    <td>0.33 (1.15)</td>
+   </tr>
+  </tbody>
+ </table>
+ <div class="table-wrap-foot">
+  <p>Due to the increased computational cost associated with computing 
+   <span class="bold">
+    <span class="italic">α</span>
+   </span> at the CCSD/daTZ level, a subset of the FPS-100 database (which includes the 24 molecules with the smallest number of basis functions) was considered during this analysis.
+  </p>
+ </div>
+</div>

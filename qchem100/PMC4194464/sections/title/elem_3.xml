@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example Problem: Molecular Hydrogen</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We begin by factoring and rewriting the 
+  <span class="italic">k</span>-local molecular hydrogen Hamiltonian from Eq. 4 into a 4-local part and a 2-local part so that 
+  <div id="m79" class="inline-formula">
+   <span id="d33e1616" xlink:href="srep06603-m79.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> where, 
+  <div id="m26" class="disp-formula">
+   <span id="d33e1619" xlink:href="srep06603-m26.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="m27" class="disp-formula">
+   <span id="d33e1621" xlink:href="srep06603-m27.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to reduce 
+  <div id="m80" class="inline-formula">
+   <span id="d33e1625" xlink:href="srep06603-m80.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> to a 2-local 
+  <span class="italic">ZZ</span>/
+  <span class="italic">XX</span>/
+  <span class="italic">XZ</span>-Hamiltonian we further factor 
+  <span class="italic">H</span>
+  <sub>4L</sub> to remove 
+  <span class="italic">YY</span> terms, 
+  <div id="m28" class="disp-formula">
+   <span id="d33e1646" xlink:href="srep06603-m28.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Within each term, the operators all commute so that [
+  <span class="italic">A
+   <sub>i</sub>
+  </span>, 
+  <span class="italic">B
+   <sub>i</sub>
+  </span>] = [
+  <span class="italic">A
+   <sub>i</sub>
+  </span>, 
+  <span class="italic">C
+   <sub>i</sub>
+  </span>] = [
+  <span class="italic">B
+   <sub>i</sub>
+  </span>, 
+  <span class="italic">C
+   <sub>i</sub>
+  </span>] = 0. We emphasize that factoring terms into commuting operators is always possible and necessary in order for bit-flip gadgets to work correctly.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Each of the operators defined in Eq. 28 will have a corresponding ancilla qubit labelled to indicate the operator with which it is associated, e.g. the ancilla for operator 
+  <span class="italic">B</span>
+  <sub>2</sub> has label 
+  <span class="italic">b</span>
+  <sub>2</sub>. Our unperturbed Hamiltonian is a sum of fully connected ancilla systems in which each ancilla system corresponds to a term, 
+  <div id="m29" class="disp-formula">
+   <span id="d33e1692" xlink:href="srep06603-m29.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>The spectral gap and Hamiltonian have the subscript “1” to associate them with the first of two applications of perturbation theory. We perturb the ancilla system with the Hamiltonian, 
+  <div id="m30" class="disp-formula">
+   <span id="d33e1695" xlink:href="srep06603-m30.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <div id="m81" class="inline-formula">
+   <span id="d33e1699" xlink:href="srep06603-m81.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and Λ
+  <sub> 1</sub> is a 2-local compensation Hamiltonian acting on the logical qubits only. Later on, Λ
+  <sub> 1</sub> will be chosen to cancel extraneous terms from the perturbative expansion. The interaction terms involving 
+  <span class="italic">A</span>, 
+  <span class="italic">B</span>, and 
+  <span class="italic">C</span> will arise at third order (
+  <span class="italic">V</span>
+  <sub>−+</sub>
+  <span class="italic">V</span>
+  <sub>+</sub>
+  <span class="italic">V</span>
+  <sub>+−</sub>) from processes which involve a transition between the two degenerate ground states of the ancilla systems. This occurs at third order because to make the transition 
+  <div id="m82" class="inline-formula">
+   <span id="d33e1731" xlink:href="srep06603-m82.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, we must flip all three ancilla bits in each term by applying the operators 
+  <span class="italic">X
+   <sub>a</sub>
+  </span>, 
+  <span class="italic">X
+   <sub>b</sub>
+  </span>, and 
+  <span class="italic">X
+   <sub>c</sub>
+  </span>. Since these operators are coupled to 
+  <span class="italic">A</span>, 
+  <span class="italic">B</span>, and 
+  <span class="italic">C</span>, sequential action of bit flip operators yields our desired term. Because the operators commute, the order of the bit flipping does not matter. We now calculate the effective Hamiltonian using the perturbative expansion of the self-energy from Eq. 12.
+ </p>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Second Order</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The only processes which start in the ground state and return to the ground state at second order are those which flip a single bit and then flip the same bit back. Thus, effective interactions are created between each operator and itself, 
+   <div id="m31" class="disp-formula">
+    <span id="d33e1764" xlink:href="srep06603-m31.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>These processes are shown in 
+   <a ref-type="fig" rid="f5" href="#f5">Figure 5</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The second order effective Hamiltonian at large Δ
+   <sub>1</sub> is, 
+   <div id="m32" class="disp-formula">
+    <span id="d33e1775" xlink:href="srep06603-m32.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec disp-level="2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Third Order</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The target Hamiltonian terms appears at third order from processes that transition between degenerate ground states. However, there is also an additional, unwanted process which occurs at this order. This competing process involves one interaction with 
+   <span class="italic">H</span>
+   <sub>2L</sub> and Λ
+   <sub>1</sub> in the high-energy subspace, 
+   <div id="m33" class="disp-formula">
+    <span id="d33e1790" xlink:href="srep06603-m33.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>These processes are illustrated diagrammatically in 
+   <a ref-type="fig" rid="f6" href="#f6">Figure 6</a>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The process we want occurs with the ancilla transition 
+   <div id="m83" class="inline-formula">
+    <span id="d33e1798" xlink:href="srep06603-m83.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> which flips all three bits (for each term separately since they have different ancillae). There are 3! = 6 possible ways to flip the bits for each term, (these processes are illustrated in 
+   <a ref-type="fig" rid="f3" href="#f3">Figure 3</a>), 
+   <div id="m34" class="disp-formula">
+    <span id="d33e1804" xlink:href="srep06603-m34.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>Because 
+   <span class="italic">H</span>
+   <sub>2L</sub> has no Δ
+   <sub>1</sub> dependence and 
+   <span class="italic">µ</span>
+   <sub>1</sub> is order 
+   <div id="m84" class="inline-formula">
+    <span id="d33e1821" xlink:href="srep06603-m84.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, terms such as
+   <div id="m85" class="inline-formula">
+    <span id="d33e1824" xlink:href="srep06603-m85.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> will vanish in the limit of large Δ
+   <sub>1</sub>; therefore, the third order effective Hamiltonian is, 
+   <div id="m35" class="disp-formula">
+    <span id="d33e1830" xlink:href="srep06603-m35.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>with error 
+   <div id="m86" class="inline-formula">
+    <span id="d33e1834" xlink:href="srep06603-m86.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. We see that if 
+   <div id="m87" class="inline-formula">
+    <span id="d33e1837" xlink:href="srep06603-m87.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> then the unwanted contribution at third order will go to zero in the limit of large Δ
+   <sub>1</sub> and the second order term will cancel exactly with Λ
+   <sub>1</sub>. Thus, 
+   <div id="m36" class="disp-formula">
+    <span id="d33e1846" xlink:href="srep06603-m36.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div id="m37" class="disp-formula">
+    <span id="d33e1848" xlink:href="srep06603-m37.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>where “→” denotes an embedding. There are still 3-local terms remaining in 
+   <span class="italic">V</span>
+   <sub>1</sub>, 
+   <div id="m38" class="disp-formula">
+    <span id="d33e1857" xlink:href="srep06603-m38.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>With this notation we reorganize our Hamiltonian a final time, so that 
+   <div id="m88" class="inline-formula">
+    <span id="d33e1860" xlink:href="srep06603-m88.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>, 
+   <div id="m39" class="disp-formula">
+    <span id="d33e1863" xlink:href="srep06603-m39.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div id="m40" class="disp-formula">
+    <span id="d33e1865" xlink:href="srep06603-m40.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The third order gadget we need to reduce 
+   <span class="italic">H</span>
+   <sub>3L</sub> takes exactly the same form as before except with the term labels 1, 2, 3 exchanged for the term labels 4, 5, 6. The components of the final gadget are 
+   <div id="m41" class="disp-formula">
+    <span id="d33e1874" xlink:href="srep06603-m41.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>and 
+   <div id="m42" class="disp-formula">
+    <span id="d33e1877" xlink:href="srep06603-m42.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>where 
+   <div id="m89" class="inline-formula">
+    <span id="d33e1880" xlink:href="srep06603-m89.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> and 
+   <div id="m43" class="disp-formula">
+    <span id="d33e1883" xlink:href="srep06603-m43.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>This time the spectral gap and Hamiltonian have the subscript “2” to associate them with our second application of perturbation theory. We have thus shown the embedding 
+   <div id="m90" class="inline-formula">
+    <span id="d33e1887" xlink:href="srep06603-m90.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. We present an interaction graph for the embedded Hamiltonian in 
+   <a ref-type="fig" rid="f7" href="#f7">Figure 7</a>.
+  </p>
+ </sec>
+</sec>

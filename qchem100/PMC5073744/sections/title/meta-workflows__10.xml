@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Meta-workflows and their formal description</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Complex workflows, also called meta-workflows, may contain jobs and workflows. We call workflows included in meta-workflows embedded workflows. We consider atomic workflows as a sub-set of embedded workflows.
+  <div id="Equ7" class="disp-formula">
+   <span class="label">7</span>
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{M}{-}\text{WF}} = :\left\{ {{\text{J}}_{1} \ldots .{\text{J}}_{{{\text{m}} + {\text{n}}}} } \right\} = \left\{ {{\text{J}}_{{{\text{WF}}1}} \ldots {\text{J}}_{\text{WFm}} ,\;{\text{WF}}_{{{\text{EM}}1}} \ldots {\text{WF}}_{\text{EMn}} ,} \right\} $$\end{document}</span>
+    <div id="M14" display="block" class="math">
+     <div class="mrow">
+      <div class="mrow">
+       <span class="mtext">M</span>
+       <span class="mo">-</span>
+       <span class="mtext">WF</span>
+      </div>
+      <span class="mo">=</span>
+      <span class="mo">:</span>
+      <div close="}" open="{" separators="" class="mfenced">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mtext">J</span>
+         <span class="mn">1</span>
+        </div>
+        <span class="mo">…</span>
+        <span class="mo">.</span>
+        <div class="msub">
+         <span class="mtext">J</span>
+         <div class="mrow">
+          <span class="mtext">m</span>
+          <span class="mo">+</span>
+          <span class="mtext">n</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div close="}" open="{" separators="" class="mfenced">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mtext">J</span>
+         <div class="mrow">
+          <span class="mtext">WF</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">…</span>
+        <div class="msub">
+         <span class="mtext">J</span>
+         <span class="mtext">WFm</span>
+        </div>
+        <span class="mo">,</span>
+        <span width="0.277778em" class="mspace"/>
+        <div class="msub">
+         <span class="mtext">WF</span>
+         <div class="mrow">
+          <span class="mtext">EM</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">…</span>
+        <div class="msub">
+         <span class="mtext">WF</span>
+         <span class="mtext">EMn</span>
+        </div>
+        <span class="mo">,</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="13321_2016_169_Article_Equ7.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where J
+  <sub>WFm</sub>—workflow job m = 1,…, z, WF
+  <sub>EMn</sub>—embedded workflow n = 1, 
+  <span class="italic">…</span>, y, WF
+  <sub>AT</sub> ∈ WF
+  <sub>EM</sub>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To support workflow sharing we propose to incorporate atomic workflows as embedded workflows in meta-workflows to achieve more complex functionalities with less development efforts. In Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> the meta-workflow contains three jobs (N1, N2 and N3) and one embedded atomic workflow with node CN1 and CN2.
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Example for a meta-workflow</p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig1_HTML" id="MO9" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As part of our efforts in [
+  <a ref-type="bibr" rid="CR39" href="#CR39">39</a>], we identified different types of meta-workflows along with their formal definitions. These definitions are envisioned to make a significant contribution in supporting workflow developers to design new workflows by enabling them to comprehend the attributes and semantics of each type of meta-workflow. The different meta-workflow types are listed below with respective graphical representations from WS-PGRADE in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>a–d representing all workflow nodes as jobs that could be either workflow jobs or embedded workflows according to Eq. 
+  <a rid="Equ7" ref-type="" href="#Equ7">7</a>. Details of each of these can be found in [
+  <a ref-type="bibr" rid="CR39" href="#CR39">39</a>].
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>
+     <span class="bold">a</span> Single job meta-workflow; 
+     <span class="bold">b</span> linear multi-job meta-workflow; 
+     <span class="bold">c</span> Parallel multi-job meta-workflow; 
+     <span class="bold">d</span> parameter sweep meta-workflow
+    </p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig2_HTML" id="MO10" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div list-type="order" class="list">
+   <div class="list-item">
+    <p>
+     <span class="italic">Single job meta</span>-
+     <span class="italic">workflow (Fig.</span> 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+     <span class="italic">a):</span> This is a special type of meta-workflow with a single job workflow. The job representing this workflow can be a simple job or an embedded workflow.
+    </p>
+   </div>
+   <div class="list-item">
+    <p>
+     <span class="italic">Linear multi</span>-
+     <span class="italic">job meta</span>-
+     <span class="italic">workflow (Fig.</span> 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">
+      <span class="italic">2</span>
+     </a>
+     <span class="italic">b):</span> This is a pipeline of multiple jobs in the native workflow system where any (or even all) of these jobs can be non-native workflows. The execution of each job depends on the receipt of inputs from previous jobs.
+    </p>
+   </div>
+   <div class="list-item">
+    <p>
+     <span class="italic">Parallel multi</span>-
+     <span class="italic">job meta</span>-
+     <span class="italic">workflow (Fig.</span> 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+     <span class="italic">c):</span> This is a workflow in the native workflow system that includes parallel branches. One or more of these branches can include one or more non-native workflows.
+    </p>
+   </div>
+   <div class="list-item">
+    <p>
+     <span class="italic">Parameter sweep meta</span>-
+     <span class="italic">workflow (Fig.</span> 
+     <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>
+     <span class="italic">d):</span> The parameter sweep meta-workflow has a generator job which produces a number of inputs each to be consumed by a worker job. The collector job then aggregates the outputs of all the worker jobs and prepares the final output.
+    </p>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Considering that there could be multiple level of workflow embedding in meta-workflows we introduce 
+  <span class="italic">p</span> as the depth to describe it.
+  <div id="Equ8" class="disp-formula">
+   <span class="label">8</span>
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{M}}^{\text{p}}{-}{\text{WF}} = :\left\{ {{\text{J}}_{{{\text{WF}}1}} \ldots {\text{J}}_{\text{WFm}} ,\;{\text{WF}}_{{{\text{EM}}1}}^{{{\text{q}}1}} \ldots {\text{WF}}_{\text{EMn}}^{\text{qn}} ,} \right\} $$\end{document}</span>
+    <div id="M16" display="block" class="math">
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mtext">M</span>
+       </div>
+       <span class="mtext">p</span>
+      </div>
+      <span class="mo">-</span>
+      <span class="mtext">WF</span>
+      <span class="mo">=</span>
+      <span class="mo">:</span>
+      <div close="}" open="{" separators="" class="mfenced">
+       <div class="mrow">
+        <div class="msub">
+         <span class="mtext">J</span>
+         <div class="mrow">
+          <span class="mtext">WF</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">…</span>
+        <div class="msub">
+         <span class="mtext">J</span>
+         <span class="mtext">WFm</span>
+        </div>
+        <span class="mo">,</span>
+        <span width="0.277778em" class="mspace"/>
+        <div class="msubsup">
+         <span class="mtext">WF</span>
+         <div class="mrow">
+          <div class="mrow">
+           <span class="mtext">EM</span>
+           <span class="mn">1</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mtext">q</span>
+          <span class="mn">1</span>
+         </div>
+        </div>
+        <span class="mo">…</span>
+        <div class="msubsup">
+         <span class="mtext">WF</span>
+         <div class="mrow">
+          <span class="mtext">EMn</span>
+         </div>
+         <span class="mtext">qn</span>
+        </div>
+        <span class="mo">,</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="13321_2016_169_Article_Equ8.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where p—depth of the meta-workflow p = MAX{q
+  <sub>1</sub>,…, q
+  <sub>n</sub>}, q—depth of the embedded workflow q = 1, …, n
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> presents a meta-workflow of depth 2. It combines an atomic workflow Job(AWF1), a meta-workflow Job(MWF1) and an embedded workflow Job(EWF1).
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Meta-workflow of depth 2</p>
+   </div>
+   <div xlink:href="13321_2016_169_Fig3_HTML" id="MO12" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

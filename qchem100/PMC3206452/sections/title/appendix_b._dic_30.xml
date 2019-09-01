@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Appendix B. Dictionary for Computational chemistry</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The current dictionary for (code-independent) computational chemistry. A few entries are shown in full; most show the id's and the terms. The full dictionary is maintained within the current Bitbucket content.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- the dictionary element contains the namespaces, convention,</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      prefix and title required for the dictionary --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;dictionary</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema</span>" &lt;!-- CML --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:cmlx="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/schema/cmlx" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/schema/cmlx</span>" &lt;!-- CML extensions --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:h="
+  <span ext-link-type="uri" xlink:href="http://www.w3.org/1999/xhtml" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.w3.org/1999/xhtml</span>" &lt;!-- XHTML --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:conventions="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/convention/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/convention/</span>" &lt;!-- convention namespace --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:unitType="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/unit/unitType/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/unit/unitType/</span>" &lt;!-- CML unitType namespace --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:si="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/unit/si/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/unit/si/</span>" &lt;!-- SI units --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:nonSi="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/unit/nonSi/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/unit/nonSi/</span>" &lt;!-- other units --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   xmlns:dc="
+  <span ext-link-type="uri" xlink:href="http://purl.org/dc/elements/1.1/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://purl.org/dc/elements/1.1/</span>"&gt; &lt;!-- Dublin Core --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   namespace="http://www.xml-cml.org/dictionary/compchem
+  <span ext-link-type="uri" xlink:href="http:///" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http:///</span>" &lt;!-- namespace of the dictionary --&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   convention="conventions:dictionary" &lt;!-- convention for the dictionary --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   dictionaryPrefix="compchem" &lt;!-- default prefix for compchem --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   title="Computational chemistry concepts - CompChem concepts"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;h:p&gt;Top level dictionary for computational chemistry&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      Concepts in this dictionary are general throughout computational</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      chemistry and are used extensively in the</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:a href="
+  <span ext-link-type="uri" xlink:href="http://www.xml-cml.org/convention/compchem/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.xml-cml.org/convention/compchem/</span>"&gt;compchem convention&lt;/h:a&gt;
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      to describe the structure of</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      computational chemistry.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   
+  <span class="monospace">&lt;h:p&gt;NOTE: Many of the entries are still being developed. Some of</span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      the terms are taken from the annotations on the logfile, but some are guessed.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      The dictionary is intended for public comment</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      and development, not absolute approval. Units and unitTypes are often unknown or very difficult</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      and may take many discussions to agree. (Remember the crystallographers</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      did not build CIF in a day!)&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;dc:contributor&gt;Weerapong Phadungsukanan&lt;/dc:contributor&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;dc:contributor&gt;Peter Murray-Rust&lt;/dc:contributor&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;dc:contributor&gt;Joe Townsend&lt;/dc:contributor&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- all the current dictionary entries are listed, but most are</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      truncated in this display for brevity --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- document structure entries --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="jobList" term="job list" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A list of computational jobs&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         A quantum chemistry calculation is often comprised of a series</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         of subtasks,</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;h:i&gt;e.g.&lt;/h:i&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         coarse optimisation -&gt; fine optimisation -&gt; NMR Spectrum</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         Analysis; this is</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         because most quantum chemistry software packages are designed to be</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         modularised and only to perform a single task at a time. The</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         joblist concept</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         is introduced to capture these series of successive subtasks and links</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         the information from one subtask to the next subtask.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="job" term="job" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A job or computational task&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         The job concept represents a computational job performed by quantum</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         chemistry</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         software, e.g. geometry optimisation job, frequency analysis job. The job</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         concept is the smallest unit which can fully describe a general</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         picture of</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         computational modelling.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="initialization" term="initialization" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A initialisation module for a computational job&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         An initialisation module represents the concept of the model</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         parameters and</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         inputs for computational job.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="calculation" term="calculation" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A calculation module for a computational job&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         A calculation module represents the concept of the model calculation or</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         optimisation or iteration processes for computational job.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="finalization" term="finalization" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A finalization module for a computational job&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         A finalisation module represents the concept of the model results for</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         computational job.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="environment" term="environment" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Module holding concepts relating to environment that the job</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         used or required&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         The computing environment concept refers to a hardware platform,</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         software application,</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         the operating system and any hardware and software configurations used</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         in order to run</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         the job or computational task. The environment also includes the</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         metadata such as</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         machine id, username, starting and finishing date time, tools, compilers,</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         IP, etc.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         This information is not related to input and output of the model but is</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         supplementary to</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         the software application to run properly and may vary from machine to</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         machine.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         Therefore, the computing environment is OPTIONAL element in the CompChem</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         convention.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- entries describing data in the document --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;!-- general entries --&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="alphae" term="Number of alpha electrons" dataType="xsd:integer"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         units="si:none" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Number of alpha electrons&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;In closed shell calculations this equals the number of beta</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         electrons&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;5&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="gaussian.example"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;h:a href="gaussian/log/templates/l301..xml"&gt;Gaussian&lt;/h:a&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         5 alpha electrons</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="betae" term="Number of beta electrons" dataType="xsd:integer" ... &lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="alphaocc" term="Energy of orbitals occupied by alpha electrons" ... &lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="betaocc" term="Energy of orbitals occupied by beta electrons" ... &lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="alphavirt" term="Energy of virtual orbitals for alpha electrons" ... &lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="betavirt" term="Energy of virtual orbitals for beta electrons"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="basis" term="Basis set" dataType="xsd:string"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format="" units="si:none" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Basis set&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;6-31G(d)&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="gaussian.example"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;h:a href="gaussian/log/templates/l301..xml"&gt;Gaussian&lt;/h:a&gt;Standard basis: 6-31G(d)</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="basiscount" term="Number of basis set components...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="date" term="Date job was run" dataType="xsd:date"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         units="si:none" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Date job was run&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Probably the date-time when the program started executing</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         rather than when</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         it was submitted to the queue.&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;2006-11-20T00:00:00Z&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="degfreedom" term="Degrees of freedom" dataType="xsd:integer...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="diffuse" term="Diffuse orbitals" dataType="xsd:string" ...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="dipole.magnitude" term="Electric Dipole moment magnitude"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         dataType="xsd:double" cmlx:format="" unitType="unitType:electric_dipole_moment"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Electric Dipole moment magnitude&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;0.00&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="gaussian.example"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;h:a href="gaussian/log/templates/l601.multipole..xml"&gt;Gaussian&lt;/h:a&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         Dipole moment (field-independent basis, Debye): × = 0.0000</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         Y = 0.0000 Z = 0.0000 Tot = 0.0000</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="dipole.vector" term="Electric Dipole moment vector" ...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="dipolederiv" term="Derivatives of electric dipole"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         dataType="xsd:double" cmlx:format="cml:array"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Derivatives of electric dipole moment wrt coordinates&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A symmetric matrix (3*N * 3*N). May be represented as a lower</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         triangle with diagonal terms.&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;7.872E-4 0.0 0.0 0.0 7.871E-4 0.0 0.0 0.0 7.871E-4</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         0.0733391 0.0 0.0 0.0 0.0733391 0.0 0.0 0.0 -0.1472685</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.1227565 0.0 0.0693303 0.0 0.0733391 0.0 0.0693303 0.0</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         0.0488271 0.0243152 -0.0849119 -0.0346651 -0.0849119 -0.0737327</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.0600418 -0.0346651 -0.0600418 0.0488271 0.0243151 0.0849119</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.0346652 0.0849119 -0.0737326 0.0600418 -0.0346652 0.0600418</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         0.0488271&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="gaussian.example"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         &lt;h:a href="gaussian/log/templates/foo..xml"&gt;Gaussian&lt;/h:a&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="displacement" term="Atomic vibrational displacment...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="electronicstate" term="Electronic state" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="forceConstants" term="Cartesian Force constants"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         dataType="xsd:double" cmlx:format="cml:array"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Cartesian Force constants&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;A symmetric matrix (3*N * 3*N) often reported as a lower</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         triangle&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;0.55936081 0.0 0.55936081 0.0 0.0 0.55936081</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.0482856 0.0 -3.0E-8 0.04683066 0.0 -0.0482856 -5.0E-8 0.0</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         0.04683066 -3.0E-8 -5.0E-8 -0.32294941 3.0E-8 5.0E-8 0.34888521</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.29243119 -3.0E-8 0.08631853 0.00266595 0.0 -6.7139E-4</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         ...</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         -0.08220885 0.0803923&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="forces" term="Residual forces on atoms" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="frameworkgroup" term="Framework group" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="frequency" term="Vibrational frequencies" dataType="xsd:double"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format="cml:array"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Vibrational frequencies&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;1373.4987 1373.4987 1373.4987 1593.9619 1593.9619</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         3053.5976 3163.9228 3163.9228 3163.9228&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="hexadecapole" term="Hexadecapole electric moment...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="hfenergy" term="energy" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="hostname" term="Hostname" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="irintensity" term="Infrared intensities" dataType="xsd:double"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format="cml:array"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Predicted Infrared intensities&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;15.4253 15.4253 15.4253 0.0 0.0 0.0 26.421 26.421</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         26.421&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="irrep" term="Irreducible representations of vibrations"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         dataType="xsd:string" cmlx:format="cml:array" units="si:none"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Irreducible representations of vibrations&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;|T2|T2|T2|E|E|A1|T2|T2|T2|&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="jobdatetime.end" term="Date time for finish of job"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         dataType="xsd:date" units="si:none" unitType="unitType:none"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format=""&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Date time for finish of job&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;2006-11-20T14:40:23Z&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="jobname" term="job name" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="jobtime" term="elapsed time" dataType="xsd:date...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="keyword" term="keyword" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="polarizability" term="polarizability" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="method" term="method or functional" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="moi" term="moment of inertia" dataType="xsd:double"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format="cml:vector3"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;moment of inertia&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;11.47105 11.47105 11.47105&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="moi.eigenvectors" term="moment of inertia eigenvectors...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="molmass" term="molecular mass" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="nactiveatoms" term="number of active atoms" dataType="xsd:integer...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="natoms" term="number of atoms" dataType="xsd:integer...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="nucrepener" term="nuclear repulsion energy" dataType="xsd:double"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="octapole" term="octapole electric moment" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="pointgroup" term="pointgroup" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="press" term="pressure" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="program" term="program" dataType="xsd:string" units="si:none...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="program.date" term="date of program creation...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="quadrupole" term="quadrupole" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="redmass" term="reduced mass" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="rmsd" term="RMS deviation" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="rmsf" term="RMS force" dataType="xsd:double"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="rotconst" term="rotational constants" dataType="xsd:double"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="rottemp" term="rotational temperature" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="symmnumber" term="symmetry number" dataType="xsd:integer...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="temp" term="temperature" dataType="xsd:double"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="title" term="title" dataType="xsd:string" units="si:none...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="top" term="type of top" dataType="xsd:string" units="si:none...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="uniqatoms" term="number of unique atoms" dataType="xsd:integer...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="version" term="version of program" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="vibtemp" term="vibrational temperature" dataType="xsd:double...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="virtualorbs" term="virtual orbitals" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe" term="zero-point energy" dataType="xsd:double"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.correction" term="zero-point energy correction...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.sumelectthermal" term="Thermal correction to Energy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.sumelectthermalenthalpy" term="Thermal correction to Enthalpy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.sumelectthermal" term="Thermal correction to Gibbs Free Energy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.sumelectzpe" term="Sum of electronic and zero-point Energies...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.thermalcorrener" term="thermal correction energy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.thermalcorrenthalpy" term="thermal correction to enthalpy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="zpe.thermalcorrgfe" term="thermal correction gibbs free energy...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="formalCharge" term="Formal charge" dataType="xsd:integer"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="formula" term="formula" dataType="xsd:string...&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;entry id="multiplicity" term="Spin multiplicity" dataType="xsd:integer"</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">         cmlx:format="" units="si:none" unitType="unitType:none"&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p&gt;Spin multiplicity&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/definition&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">      &lt;h:p class="example"&gt;1&lt;/h:p&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">   &lt;/description&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/entry&gt;</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">&lt;/dictionary&gt;</p>
+</sec>

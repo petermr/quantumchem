@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">C–C Bond Cleavage in Ethane, Ethylene, And Acetylene</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Next, we adopted the present method to multiple bond cleavages in ethane (C
+  <sub>2</sub>H
+  <sub>6</sub>), ethylene (C
+  <sub>2</sub>H
+  <sub>4</sub>), and acetylene (C
+  <sub>2</sub>H
+  <sub>2</sub>) with different C···C distances. The full-CI calculations were performed using the STO-3G basis set. Note that we could not perform the full-CI/STO-3G calculations of ethane because of the limitation of our computational resources, and therefore, we excluded 1s orbital of carbon atoms from the CI expansion and adopted full-valence CAS-CI for ethane. The square overlap between the initial guess and reference wave functions is plotted in 
+  <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+   <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+  </a>, and the calculated diradical characters are summarized in 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S2</span> in the Supporting Information. Note that in acetylene the two π bonds are degenerate, and therefore 
+  <span class="italic">y</span>
+  <sub>0</sub> = 
+  <span class="italic">y</span>
+  <sub>1</sub>. In this case, an arbitrary mixing of LUNO and LUNO + 1 (and also HONO and HONO – 1) does not change their eigenvalues (occupation numbers). We discriminated the two π bonds by utilizing spatial symmetry in the generation of natural orbitals.
+ </p>
+ <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Square of overlap between the reference and initial guess wave functions in ethane, ethylene, and acetylene molecules.</p>
+  </div>
+  <div xlink:href="oc-2018-00788n_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The square overlap between the reference and RHF wave functions strongly depends on the bond order. This is because 
+  <span class="italic">O</span>(2
+  <span class="sup">
+   <span class="italic">k</span>
+  </span>) of Slater determinants are required to describe the multiradical configuration of 
+  <span class="italic">k</span>-ple bond dissociations. In acetylene, the square overlap is less than 0.1 at the dissociation limit. The square overlap between the reference wave function and one CSF is less dependent on the bond order, because CSF consists of 
+  <span class="italic">O</span>(2
+  <span class="sup">
+   <span class="italic">k</span>
+  </span>) of Slater determinants. However, the overlap between CSF and the reference wave function approaches zero around the equilibrium geometry. By contrast, the multiconfigurational wave function has larger overlap with reference compared with RHF and CSF, and the square overlap is always larger than 0.882. The numerical calculations of triple bond cleavage in acetylene illustrated that the proposed approach can generate good initial guess wave functions for the molecules containing as many as six unpaired electrons. It should be emphasized that the proposed approach does not need prior knowledge of electronic structures, and open shell characters are automatically determined from the occupation number of natural orbitals. This feature is very important when the number of diradical pairs that should be considered to obtain sufficiently large overlap with the full-CI root is unknown.
+ </p>
+</sec>

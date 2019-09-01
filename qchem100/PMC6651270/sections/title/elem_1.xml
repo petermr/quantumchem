@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">QMflows has four major modules, as schematically depicted in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a> and described in more detail below.
+ </p>
+ <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>Schematic representation of the QMflows architecture.</p>
+  </div>
+  <div xlink:href="ci-2019-00384y_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <sec id="sec2.1" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 1: Input Manipulation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The first step takes care of the manipulation of the molecular objects that are studied in the QM calculations. In QMflows, molecules are by default defined with the 
+   <span class="italic">Molecule</span> class of the PLAMS library. An instance of a 
+   <span class="italic">Molecule</span> object holds atoms and coordinates and can optionally store bond information as well. It can be created from the 
+   <span class="italic">xyz</span>, 
+   <span class="italic">mol</span>, and 
+   <span class="italic">pdb</span> data formats and has methods for adding and deleting atoms and for identifying, adding, and deleting bonds. For more complex structure manipulations, a dedicated 
+   <span class="italic">Molkit</span> library is available, which builds on 3D chemical structure functionality offered by the RDKit package.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The second step is dedicated to the preparation of the input for the individual QM calculations. Here we build on the input model adopted by the PLAMS library, which avoids the use of “hard-coded” interfaces to the QM packages. PLAMS makes use of the fact that most QM packages adopt a hierarchical input structure, consisting of input sections, subsections, and key-value pairs. PLAMS enables the representation of such input as a nested Python dictionary, which can be automatically translated into a correct input file for a specific package. This strategy allows PLAMS users to access the complete set of features offered by a given QM package and not only a subset covered by a predefined wrapper or interface. This design also minimizes maintenance costs of the interfaces as the addition of new features in a package does not require an update of the interface.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">On top of the PLAMS interface, QMflows offers a set of 
+   <span class="italic">generic</span> key words and 
+   <span class="italic">templates</span> for easy access to functionalities that are provided by multiple QM packages. These 
+   <span class="italic">generic</span> key words make it possible to use the same input definitions for common features (e.g., basis set, DFT functional) when calling different QM codes and makes it easy to switch between two implementations of a particular method. The translation from generic to 
+   <span class="italic">specific</span> key word is stored as a dictionary that is easy to maintain and extend when the input of one or more of the packages changes. The translation from 
+   <span class="italic">generic</span> to 
+   <span class="italic">specific</span> key words is done automatically at run time, so for standard applications users can use identical run scripts for different quantum chemistry packages.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The 
+   <span class="italic">templates</span> consist of PLAMS settings for common computational chemistry tasks, such as structure optimization, transition state searches, and vibrational frequency calculations. These settings objects can be modified and merged by the user, who can also add 
+   <span class="italic">generic</span> and code-
+   <span class="italic">specific</span> additional input for a particular task.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">An example of a 
+   <span class="italic">template</span> for a geometry optimization is provided below:
+   <div xlink:href="ci-2019-00384y_0007" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In 
+   <span class="italic">line 3</span> we define a molecule object by reading coordinates from an external 
+   <span class="italic">xyz</span> file. Then we use a generic template to define the settings for the type of calculation (a geometry optimization). Note that we do not yet define the QM package. The next line calls the ADF program with the settings and the molecule object as arguments. In this case, the 
+   <span class="italic">template</span> for an ADF geometry optimization makes use of a nonscalar calculation with a DZP basis set, a BLYP exchange-correlation functional, and a frozen core MEDIUM. The advantage of this approach is that, without rewriting any input, we may carry out the geometry optimization with another code, e.g. CP2k, by simply replacing the word 
+   <span class="italic">adf</span> in 
+   <span class="italic">line 5</span> with 
+   <span class="italic">cp2k</span>. In the latter case, the DZP is switched in a basis set of similar quality, a DZVP, and a GTH pseudpotential for the core electrons. All the 
+   <span class="italic">templates</span> set for a given task (scf, geometry optimization, etc.) have been wrapped for each QM code by applying similar, albeit not equal, input parameters. More details on these template input parameters are provided in the online documentation of QMflows.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Below, we also illustrate how a user may modify the basis set and the DFT exchange-correlation functional of the 
+   <span class="italic">template</span> using 
+   <span class="italic">generic</span> key words:
+   <div xlink:href="ci-2019-00384y_0008" id="gr7" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Before calling the 
+   <span class="italic">adf</span> function in 
+   <span class="italic">line 7</span>, in 
+   <span class="italic">lines 5 and 6</span>, the variables 
+   <span class="italic">basis</span> and 
+   <span class="italic">functional</span> of the default settings object are redefined by the user. These 
+   <span class="italic">generic</span> key words can be used with most QM codes and can be set to program-independent values. QMflows will translate these to the corresponding package-specific key words and values once the actual QM code to be used for the task is known. The current list of generic key words is presented in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span>, and it will be expanded in the future for enhanced flexibility.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The definition of 
+   <span class="italic">templates</span> and 
+   <span class="italic">generic</span> key words that can be used by multiple packages does not prohibit the use of options that are only available in a specific QM code. In this case, the user can extend the default settings for a given calculation by adding 
+   <span class="italic">generic</span> key words (as demonstrated above) and/or also package-
+   <span class="italic">specific</span> key words in a dedicated subsection of the input settings indicated by the key word “specific” and the name of the package. This subsection should follow the input tree structure of the specific QM package. An example of this is illustrated in the code snippet below:
+   <div xlink:href="ci-2019-00384y_0009" id="gr8" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Until 
+   <span class="italic">line 6</span> the workflow resembles exactly the previous example. In 
+   <span class="italic">lines 7–9</span>, however, we assign three extra key words specific to the ADF code. The first calls the excitations module to perform a time-dependent DFT (TDDFT) calculation computing the lowest 10 roots; the second calls the ZORA module to include scalar relativistic effects; the third overwrites the default setting for the number of iterations employed in the SCF procedure. Only for these specific key words the user should look up the input tree structure and key word definition used by the specific QM package.
+  </p>
+ </sec>
+ <sec id="sec2.2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 2: Workflow Execution and Communication between Jobs</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The task of the second module of the package is to efficiently execute the user-defined Python workflows. With the Noodles framework, dependencies between the tasks defined in the QMflows Python script are automatically detected. The idea behind this library is to postpone the execution of tasks to allow for dependency analysis. Rather than immediately executing the Python code found in a user script, Noodles will first construct a dependency graph in which tasks (for example the optimization of a molecular structure or a calculation of NMR shieldings for a given molecule) are represented by nodes connected via edges to represent the dependencies between these tasks (for example the NMR calculation needs the structure from the geometry optimization task). The tasks are always implemented as scheduled functions which return “promised objects” rather than results. The actual results of the workflow are obtained using an explicit run statement at the end of the workflow. This run statement triggers the evaluation of the dependencies and the generation and execution of the actual jobs. The advantage of this approach is that the user script looks almost like a normal Python script, while in the background Noodles takes care of those calls to QMflows tasks that do not depend on each other and are executed in parallel. This is highlighted in the following script where the call to Noodles is delayed until line 12.
+   <div xlink:href="ci-2019-00384y_0010" id="gr9" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">This makes it possible to optimally use the options available for parallel execution that compute servers may offer. For this purpose, Noodles comes with several back ends for different common architectures. For small workflows, the user can simply reserve a number of threads on his or her local computer, while larger workflows can be run via job schedulers on a compute cluster or supercomputer. This flexibility allows users to easily scale workflows from the testing phase to the production phase. A more detailed description of the Noodles library, which is used for non-QM workflows as well, is available online.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref15" href="#ref15">15</a>
+   </span>
+  </p>
+ </sec>
+ <sec id="sec2.3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 3: Job Recovery</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To enable extension of the set of molecules to be studied or the types of analysis to be carried out, QMflows is from the outset designed to allow for restarts. The workflow and dependencies are stored in a database that is updated with information on successfully completed calculations during the execution of the workflow. When the run command is invoked, noodles traverses the graph of job dependencies and checks against the database for a reference to the job results; if such reference does not exist, then the job is executed, and the resulting output metainformation is stored in the database.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">If the execution of the workflow is stopped by the user or fails for technical reasons, the generated database with metadata can be used to restart the workflows. Noodles will walk through the dependencies tree in the same way as when started from scratch but will query the database for already existing results and execute only the tasks that were not yet successfully completed. This makes the restart procedure very straightforward for the user who will need only to resubmit the original job scheduler script (Slurm or PBS) without modifications.</p>
+ </sec>
+ <sec id="sec2.4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Module 4: Output Postprocessing</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">When tasks involve different software packages and are run on different resources, data transfer between tasks involves data conversion as well as communication between the different computational resources. To allow for efficient and general data handling, QMflows distinguishes between primary data that results from the execution of a particular task, output data that is to be used in a next step as input, and metadata that describes the type of tasks that was executed. The latter is stored in a database that is also used to monitor the progress of the workflow execution. The primary data is kept in the native format of the quantum chemistry program that was used and at the location where this task was executed. The subset of output data that is needed as input for a next task is converted to the portable HDF5 format for ease of communication between resources. In case primary data of a particular step is not needed for analysis of the results, users may choose to have these data automatically deleted after the task is completed. Otherwise the data of all steps is stored in its original form at the local computing node to allow for a posteriori analysis.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the simple code snippets presented earlier, the results of the calculations were simply printed to screen using Python commands. In real applications, in which the amount of data produced is much larger, it is desirable to store data to a file and retrieve the subset of data of interest when needed. In QMflows, we have implemented parsers to retrieve the most essential information about a system from output or checkpoint file(s). This currently includes the coordinates of the optimized geometry, the total energy of the system, dipole moments, gradient, excitation energies, and Hessians matrices. For other data, the user can use the parsers offered by the QM code or write its own parser to retrieve the desired output data.</p>
+ </sec>
+</sec>

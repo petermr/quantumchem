@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Automatic Differentiation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The idea behind automatic differentiation is that every algorithm, independent of its complexity, consists of a series of simple arithmetic operations that have known analytical forms, such as sums, multiplications, sines, cosines, or exponents. The sequence of these elementary operations is represented by a computational graph; see for example 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>. In this form, it is possible to compute the gradients of the outputs of a function with respect to its inputs by applying the chain rule and evaluating the analytical derivatives of all of these elementary operations in a given order. This implies that AD libraries can differentiate the entire algorithm not only mathematical expressions, written in an explicit form, but also all the control functions such as recursions, loops, conditional statements, etc. Therefore, AD computes the exact derivatives of any code with machine precision.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>
+  </span> In practice, there are two main forms to compute derivatives using the chain rule with AD tools: forward and backward mode. We illustrate both modes in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>.
+ </p>
+ <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>The center depicts the computational graph of a simple function 
+    <span class="italic">F</span>(
+    <span class="italic">x</span>
+    <sub>1</sub>, 
+    <span class="italic">x</span>
+    <sub>2</sub>) and its elementary operations. On the left and right, we illustrate the differentiation steps of forward and backward mode, respectively. In forward mode, the evaluation of the function at a given set of parameter and the derivative with respect to 
+    <span class="italic">x</span>
+    <sub>1</sub> is evaluated by computing the intermediate variables ϕ
+    <sub>
+     <span class="italic">i</span>
+    </sub> and their derivatives following the order of the computational graph using the chain rule. The direction of the evaluation is indicated by the left arrow. In backward mode, the function is evaluated first at a given value, and later the adjoints of all the intermediate variables are computed by iterating backward through the computational graph, indicated by the right arrow. Notice, in this mode, the partial derivatives of the function with respect to the two independent variables are computed together, whereas in forward mode each partial derivative of the function has to be evaluated separately. In this example, to compute the entire gradient, the number of operations in backward mode is smaller than in forward mode.
+   </p>
+  </div>
+  <div xlink:href="oc-2017-00586m_0001" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Forward mode is conceptually the easiest way to compute gradients. Let us consider the function 
+  <div id="d30e370" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m001.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> defined by a sequence of 
+  <span class="italic">k</span> functions, 
+  <div id="d30e376" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m002.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> in the following way 
+  <span class="italic">y</span> = 
+  <span class="italic">F</span>(
+  <span class="italic">x</span>) = (
+  <span class="italic">f</span>
+  <sub>
+   <span class="italic">k</span>
+  </sub>°
+  <span class="italic">f</span>
+  <sub>
+   <span class="italic">k</span>–1
+  </sub>°...
+  <span class="italic">f</span>
+  <sub>1</sub>°
+  <span class="italic">f</span>
+  <sub>0</sub>)(
+  <span class="italic">x</span>). In forward mode, the partial derivative of a function with respect to a given parameter 
+  <span class="italic">x</span>
+  <sub>
+   <span class="italic">j</span>
+  </sub>, 
+  <div id="d30e422" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m003.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, is computed by evaluating simultaneously the intermediate variables ϕ
+  <sub>
+   <span class="italic">i</span>+1
+  </sub> = 
+  <span class="italic">f</span>
+  <sub>
+   <span class="italic">i</span>
+  </sub>(ϕ
+  <sub>
+   <span class="italic">i</span>
+  </sub>) and the derivatives 
+  <div id="d30e441" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m004.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, at a given 
+  <span class="italic">x</span> = 
+  <span class="italic">a</span>. Note that ϕ
+  <sub>0</sub> = 
+  <span class="italic">x</span> and 
+  <div id="d30e457" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m005.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Once we defined the values of the independent variables, the algorithm proceeds to calculate ϕ
+  <sub>1</sub> and ϕ̇
+  <sub>1</sub>, and will continue to compute the partial derivatives of the next elementary operations following the computational graph by sequentially applying the chain rule. For instance, the differentiation of a function 
+  <span class="italic">F</span> with a single dependent variable goes from right side to left side of the equation,
+  <div id="eq1" class="disp-formula">
+   <div xlink:href="oc-2017-00586m_m006" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">1</span>
+  </div>An example of forward differentiation of a more complex function with two variables is illustrated on the left side in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>. We display the steps to compute the partial derivatives of the intermediate variables with respect to a single parameter. Since the forward mode relies on the generation of the derivatives of the elementary operations with respect to each individual input parameter, it is particularly suited for functions with few independent variables.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The second form is backward mode, which relies on the computation of the “adjoints” 
+  <div id="d30e482" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m007.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> by computing the adjoints of the intermediate variables, 
+  <div id="d30e485" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m008.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. In contrast to forward mode, in backward mode the adjoints are computed following the opposite direction through the computational graph by iterating computing each adjoint of all the intermediate variables. The algorithm first evaluates the function 
+  <span class="italic">F</span>(
+  <span class="italic">x</span>) at a given set of parameters 
+  <span class="italic">x</span> = 
+  <span class="italic">a</span>, and later proceeds to calculate the adjoints of the last intermediate variable to the first one iterating backward through the computational graph. By definition, ϕ
+  <sub>
+   <span class="italic">k</span>
+  </sub> = 
+  <span class="italic">y</span>, therefore 
+  <div id="d30e508" class="inline-formula">
+   <span xlink:href="oc-2017-00586m_m009.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. If 
+  <span class="italic">F</span>(
+  <span class="italic">x</span>) only depends on a single parameter, this procedure is the equivalent of evaluating the chain rule from left to right,
+  <div id="eq2" class="disp-formula">
+   <div xlink:href="oc-2017-00586m_m010" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">2</span>
+  </div>The last step of backward mode, after calculating all the intermediate adjoints, results in the partial derivatives of the function with respect to all parameters. An example with a more complex composition of function with two variables is illustrated on the right side of 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>, where we get the entire gradient of 
+  <span class="italic">F</span>(
+  <span class="italic">x</span>
+  <sub>1</sub>, 
+  <span class="italic">x</span>
+  <sub>2</sub>) with a single backward propagation evaluation. Note that intermediate adjoints can be used at a later stage to obtain the partial derivatives with respect to both variables resulting in a reduction of operations compared to the forward differentiation. This characteristic generally makes the backward mode more efficient for a small number of dependent variables. For more details about the general differences over both modes and its implementation, the reader might refer to ref (
+  <a ref-type="bibr" rid="ref2" href="#ref2">2</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In practical applications, the choice of either differentiation mode depends on the specific form of the computational graph as well as on performance considerations taking into account the available computational resources. For example, backward mode requires either storing the complete sequence of operations of the algorithm to compute the function or recalculating the intermediate variables. On the other hand, this constraint might be compensated by the capability of the backward mode to efficiently evaluate derivatives of many parameters with fewer operations than the forward mode. In our particular case, this analysis is done by reviewing the relevant mathematical operations of a canonical HF algorithm for an efficient implementation of gradients with AD techniques.</p>
+</sec>

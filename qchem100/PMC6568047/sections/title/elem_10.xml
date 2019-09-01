@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">V.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Numerical simulations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this section, we demonstrate how the techniques described above can be used to calculate the vibrational energy levels of small molecules. We focus on the polyatomic molecules H
+  <sub>2</sub>O and SO
+  <sub>2</sub>, which both have three vibrational modes. The coefficients were computed at MP2/aug-cc-pVTZ level of theory using Gaussian09 software.
+  <a rid="cit83" ref-type="bibr" href="#cit83">83</a> in Appendix D. We consider the cases with two and four energy levels for each of the harmonic oscillator modes, yielding Hamiltonians acting on 6 and 12 qubits for the direct mapping, and 3 and 6 qubits for the compact mapping. We used the compact mapping in our numerical simulations, as it requires fewer qubits. There are 216 and 165 terms in the Hamiltonian for H
+  <sub>2</sub>O and SO
+  <sub>2</sub>, respectively.
+ </p>
+ <div id="tab1" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Coefficients of the potential energy surface of H
+    <sub>2</sub>O and SO
+    <sub>2</sub>. The coefficients are in atomic units, where the unit of length is 
+    <span class="italic">a</span>
+    <sub>0</sub> = 1 Bohr (0.529167 × 10
+    <span class="sup">–10</span> m), the unit of mass is the electron mass 
+    <span class="italic">m</span>
+    <sub>e</sub>, and the unit of energy is 1 Hartree (1 Hartree = 
+    <span class="italic">e</span>
+    <span class="sup">2</span>/4π
+    <span class="italic">ε</span>
+    <sub>0</sub>
+    <span class="italic">a</span>
+    <sub>0</sub> = 27.2113 eV)
+   </div>
+  </div>
+  <table frame="hsides" rules="groups">
+   <colgroup span="1">
+    <col span="1"/>
+    <col span="1"/>
+    <col span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+     </td>
+     <td rowspan="1" colspan="1">H
+      <sub>2</sub>O
+     </td>
+     <td rowspan="1" colspan="1">SO
+      <sub>2</sub>
+     </td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>1,1</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.275240 × 10
+      <span class="sup">–4</span>
+     </td>
+     <td rowspan="1" colspan="1">0.252559 × 10
+      <span class="sup">–5</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.151618 × 10
+      <span class="sup">–3</span>
+     </td>
+     <td rowspan="1" colspan="1">0.125410 × 10
+      <span class="sup">–4</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.161766 × 10
+      <span class="sup">–3</span>
+     </td>
+     <td rowspan="1" colspan="1">0.176908 × 10
+      <span class="sup">–4</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,1,1</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.121631 × 10
+      <span class="sup">–6</span>
+     </td>
+     <td rowspan="1" colspan="1">0.316 646 × 10
+      <span class="sup">–8</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,1,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.698476 × 10
+      <span class="sup">–6</span>
+     </td>
+     <td rowspan="1" colspan="1">0.575325 × 10
+      <span class="sup">–8</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.266427 × 10
+      <span class="sup">–6</span>
+     </td>
+     <td rowspan="1" colspan="1">0.197771 × 10
+      <span class="sup">–7</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.312538 × 10
+      <span class="sup">–5</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.668689 × 10
+      <span class="sup">–7</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.915428 × 10
+      <span class="sup">–6</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.370850 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.964649 × 10
+      <span class="sup">–5</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.284244 × 10
+      <span class="sup">–6</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,1,1,1</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.463748 × 10
+      <span class="sup">–9</span>
+     </td>
+     <td rowspan="1" colspan="1">0.330842 × 10
+      <span class="sup">–11</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,1,2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.449480 × 10
+      <span class="sup">–7</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.172869 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,2,2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.957558 × 10
+      <span class="sup">–8</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.215928 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,2,2,2</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.433267 × 10
+      <span class="sup">–7</span>
+     </td>
+     <td rowspan="1" colspan="1">0.225400 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,1,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">–0.555026 × 10
+      <span class="sup">–7</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.356155 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>1,2,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.563566 × 10
+      <span class="sup">–7</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.128135 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,2,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.269239 × 10
+      <span class="sup">–6</span>
+     </td>
+     <td rowspan="1" colspan="1">–0.220168 × 10
+      <span class="sup">–8</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">K</span>
+      <sub>3,3,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">0.462143 × 10
+      <span class="sup">–7</span>
+     </td>
+     <td rowspan="1" colspan="1">0.458046 × 10
+      <span class="sup">–9</span>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="1" colspan="1">
+      <span class="italic">k</span>
+      <sub>2,3,3,3</sub>
+     </td>
+     <td rowspan="1" colspan="1">0</td>
+     <td rowspan="1" colspan="1">–0.720760 × 10
+      <span class="sup">–11</span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We first calculate the energy levels under the harmonic approximation. We compare this to the energy levels obtained with a fourth order expansion of the potential. The results for H
+  <sub>2</sub>O are shown in 
+  <a ref-type="fig" rid="fig2" href="#fig2">Fig. 2</a>. We can see that although the ground state can be well approximated by the harmonic oscillators, the excited states deviate from the harmonic oscillators at higher energy levels. The results for SO
+  <sub>2</sub> can be found in the Appendix. These calculations highlight the importance of anharmonic terms in the potential for even small molecules.
+ </p>
+ <div id="fig2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 2</span>
+  <div class="caption">
+   <div class="title">Vibrational spectra of H
+    <sub>2</sub>O with two and four energy levels for each mode. The solid lines are the energy levels of the harmonic oscillator eigenstates and the dashed lines are the vibrational spectra of the Hamiltonian with a fourth order expansion of the potential.
+   </div>
+  </div>
+  <div xlink:href="c9sc01313j-f2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Next, we implemented the UVCC ansatz to obtain the vibrational energy levels of H
+  <sub>2</sub>O using the variational quantum eigensolver.
+  <a rid="cit42" ref-type="bibr" href="#cit42">42</a> For simplicity, we considered two energy levels for each mode. To implement the UVCC ansatz, we first calculate the imaginary part of 
+  <span class="italic">T[combining circumflex]</span> and encode it into a linear combination of local Pauli terms, 
+  <span class="italic">i.e.</span>,
+  <div id="eqn21" class="disp-formula">
+   <span class="label">21</span>
+   <div xlink:href="c9sc01313j-t21.jpg" id="ugt21" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Then, as for the UCC ansatz, we realise exp(
+  <span class="italic">T[combining circumflex]</span> – 
+  <span class="italic">T[combining circumflex]</span>
+  <span class="sup">†</span>) by a first order Trotterisation 
+  <span class="italic">via</span>
+  <span xlink:href="c9sc01313j-t22.jpg" id="ugt22" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> For example, the UVCC ansatz of H
+  <sub>2</sub>O with two energy levels can be prepared by the circuit in 
+  <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a>.
+ </p>
+ <div id="fig3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 3</span>
+  <div class="caption">
+   <div class="title">The UVCC ansatz of three modes each with two energy levels. There are nine gates with six parameters (joined gates share the same parameters). The single qubit gate on the 
+    <span class="italic">i</span>
+    <span class="sup">th</span> qubit is 
+    <span xlink:href="c9sc01313j-t54.jpg" id="ugt54" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/> and the two qubit gate on the 
+    <span class="italic">i</span>
+    <span class="sup">th</span> and 
+    <span class="italic">j</span>
+    <span class="sup">th</span> is 
+    <span xlink:href="c9sc01313j-t55.jpg" id="ugt55" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+  <div xlink:href="c9sc01313j-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using the UVCC ansatz, we can obtain the vibrational ground state with a variational procedure. As the ground state is close to the initial state |0Using the UVCC ansatz, we can obtain the vibrational ground state with a variational procedure. As the ground state is close to the initial state |0〉
+  <span class="sup">⊗3</span>, we start with parameters slightly perturbed from zero. We then use gradient descent to find the minimum energy of the system. The results are shown in 
+  <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>.
+ </p>
+ <div id="fig4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">Solving the vibrational ground state of H
+    <sub>2</sub>O with the UVCC ansatz. Here, we consider two energy levels for each mode.
+   </div>
+  </div>
+  <div xlink:href="c9sc01313j-f4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

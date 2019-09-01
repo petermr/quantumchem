@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">PES parameterization</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The representation of a quantum mechanical PES, 
+  <div class="inline-formula">
+   <div id="m1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mn">0</span>
+       <span class="mtext">QM</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>, depending on the set of nuclear coordinates, {
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}, by means of an FF, 
+  <span class="italic">E</span>
+  <span class="sup">FF</span>({
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}, {
+  <span class="italic">α
+   <sub>j</sub>
+  </span>}), requires three fundamental steps: (i) the definition of a feature vector to describe the system geometry, (ii) the definition of the relation between this vector and the energy of the system, and (iii) the determination of the unknown coefficients, {α
+  <span class="italic">
+   <sub>i</sub>
+  </span>}, that minimize the difference between 
+  <div class="inline-formula">
+   <div id="m2" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mn">0</span>
+       <span class="mtext">QM</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <span class="italic">E</span>
+  <span class="sup">FF</span>({
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}, {α
+  <span class="italic">
+   <sub>j</sub>
+  </span>}). Let us now describe how our method addresses these three requirements.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The chemical environment of a given atom contained within a radial cutoff can be conveniently described in terms of the bispectrum components 
+  <span class="italic">B
+   <sub>j</sub>
+  </span>({
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}) (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>). These functions are efficiently calculated from the sole atoms’ Cartesian coordinates. The values of the coefficients associated to each term of the 
+  <span class="italic">B
+   <sub>j</sub>
+  </span>({
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}) series comprise the feature vector. This represents the fingerprint of the 
+  <span class="italic">N</span>-body atomic environment, and thus, it overcomes the common assumption on the 2- or 3-body terms of the interaction. The number of functions in the series (
+  <span class="italic">N</span>
+  <sub>2
+   <span class="italic">J</span>
+  </sub>) can be tuned by increasing their maximum order, 2
+  <span class="italic">J</span>. Expanding the chemical environment over a growing number of bispectrum components improves the accuracy of the description in a variational fashion. This definition of the feature vector satisfies the fundamental symmetries of the system such as rotational and translational invariance and the swap invariance of chemically equivalent atoms.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The SNAPs used here use these functions as building blocks for the FF. The crucial assumption is that the total energy of a system containing 
+  <span class="italic">N</span>
+  <sub>atom</sub> atoms can be decomposed into the sum of atomic energies, 
+  <span class="italic">E
+   <sub>l</sub>
+  </span>({
+  <span class="italic">R
+   <sub>i</sub>
+  </span>}, {α
+  <span class="italic">
+   <sub>j</sub>
+  </span>}), which in turn can be written as a linear function of their bispectral components, namely
+  <div id="E1" class="disp-formula">
+   <div id="m3" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msup">
+       <span class="mi">E</span>
+       <span class="mtext">FF</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span class="mo">,</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">j</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <span class="mi">l</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">N</span>
+          <span class="mtext">atom</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msub">
+       <span class="mi">E</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span class="mo">,</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">j</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <span class="mi">l</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">N</span>
+          <span class="mtext">atom</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div displaystyle="true" class="mstyle">
+       <div class="munderover">
+        <span stretchy="true" class="mo">∑</span>
+        <span class="mi">j</span>
+        <div class="mrow">
+         <div class="msub">
+          <span class="mi">N</span>
+          <div class="mrow">
+           <span class="mn">2</span>
+           <span class="mi">J</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">j</span>
+       <span class="mi">l</span>
+      </div>
+      <div class="msubsup">
+       <span class="mi">B</span>
+       <span class="mi">j</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(1)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">There is no rigorous mathematical proof that the total energy can be written as a sum of atomic energies. However, this formulation provides a highly flexible way to represent the PES, whose accuracy can be validated with the accuracy of the predictions made. Similar to first-principles calculations, this class of FFs does not attempt to parameterize the chemical bond but rather to predict its existence as a consequence of the knowledge of the PES’s shape. As a consequence, a large degree of flexibility in the FF is required. This translates to a need to use a large number of degrees of freedom, that is, a large number of coefficients α
+  <span class="italic">
+   <sub>i</sub>
+  </span>. Crucially, since the energy is linearly dependent on the α
+  <span class="italic">
+   <sub>i</sub>
+  </span>s (see 
+  <a ref-type="disp-formula" rid="E1" href="#E1">Eq. 1</a>), their determination can proceed by simple least-square fit, at variance with conventional FFs, which do not depend linearly on the parameters.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Ridge regression, expressed by 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a>, is here used to solve the problem. The constant λ is the regularization parameter, and it has to be determined to minimize the error on the validation set while using the training set for the fitting. The introduction of a regularization term has the effect of selecting the smoothest solution among the many quasi-degenerate solutions of the simple linear least-square problem. This becomes crucial when the number of parameters to be determined is larger compared to the number of QM reference energy values.
+  <div id="E2" class="disp-formula">
+   <div id="m4" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="munder">
+       <span class="mtext">Min</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">{</span>
+        <div class="msub">
+         <span mathvariant="normal" class="mi">α</span>
+         <span class="mi">l</span>
+        </div>
+        <span stretchy="false" class="mo">}</span>
+       </div>
+      </div>
+      <span stretchy="true" class="mo">[</span>
+      <span class="mo">||</span>
+      <div class="msubsup">
+       <span class="mi">E</span>
+       <span class="mn">0</span>
+       <span class="mtext">QM</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">−</span>
+      <div class="msup">
+       <span class="mi">E</span>
+       <span class="mtext">FF</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span class="mo">,</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <div class="msup">
+       <span class="mo">||</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">+</span>
+      <span mathvariant="normal" class="mi">λ</span>
+      <span class="mo">||</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">α</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <div class="msup">
+       <span class="mo">||</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="true" class="mo">]</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(2)</span>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a ref-type="disp-formula" rid="E2" href="#E2">Equation 2</a> can be identically used to train the model against either conformations’ total energy or atomic forces. These reference quantities can be computed by means of any quantum mechanical method able to describe a smooth PES. The DFT functional or the post Hartree-Fock method used will be chosen according to the complexity of the problem at hand. Our fitting strategy then follows a relatively canonical four-step procedure: (i) the generation of the training, validation, and test sets by quantum mechanical methods (here DFT); (ii) the fitting of the FF by solving 
+  <a ref-type="disp-formula" rid="E2" href="#E2">Eq. 2</a> for energies and/or forces; (iii) the benchmarking of the FF on the test set, which comprises only configurations not contained in the training and validation sets (configurations that the FF has never seen before); and (iv) the enlargement of the number of configurations in the training set until the results on the test set are satisfactory.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In particular, this last step is fundamental as machine learning–based FFs are able to interpolate to a high degree of accuracy those areas of the phase space included in the training set, but they know little of chemical structures not included in the training set (
+  <a rid="R22" ref-type="bibr" href="#R22">
+   <span class="italic">22</span>
+  </a>). This means that a low error over the training and test sets does not ensure the FF to be of good quality. One must ensure that thermal fluctuations will not bring the system in region of the phase space totally unexplored by the training set. A very powerful method to enforce the self-consistency of the training set consists of using the FF obtained after the third step to generate a molecular dynamics trajectory. Then, one can extract a number of configurations that are classified distant enough from those included in the training set (
+  <a rid="R23" ref-type="bibr" href="#R23">
+   <span class="italic">23</span>
+  </a>, 
+  <a rid="R24" ref-type="bibr" href="#R24">
+   <span class="italic">24</span>
+  </a>) and reintroduce these in the training set itself. The newly enlarged training set is then used to construct a new FF (second step). The Gaussian metric of 
+  <a ref-type="disp-formula" rid="E3" href="#E3">Eq. 3</a> has been chosen to determine the distance between two local environments of an atom 
+  <span class="italic">l</span>
+  <div id="E3" class="disp-formula">
+   <div id="m5" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mi">d</span>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo">||</span>
+      <div class="msup">
+       <span class="mi">B</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">i</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">−</span>
+      <div class="msup">
+       <span class="mi">B</span>
+       <span class="mi">l</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span stretchy="false" class="mo">{</span>
+      <div class="msub">
+       <span class="mi">R</span>
+       <span class="mi">j</span>
+      </div>
+      <span stretchy="false" class="mo">}</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">||</span>
+      <span stretchy="false" class="mo">)</span>
+      <span class="mo">=</span>
+      <span class="mtext">exp</span>
+      <span stretchy="true" class="mo">(</span>
+      <span class="mo">−</span>
+      <div displaystyle="true" class="mstyle">
+       <div class="munder">
+        <span class="mo">∑</span>
+        <span class="mi">v</span>
+       </div>
+      </div>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <div class="msubsup">
+         <span class="mi">B</span>
+         <span class="mi">v</span>
+         <span class="mi">l</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span stretchy="false" class="mo">{</span>
+        <div class="msub">
+         <span class="mi">R</span>
+         <span class="mi">i</span>
+        </div>
+        <span stretchy="false" class="mo">}</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">−</span>
+        <div class="msubsup">
+         <span class="mi">B</span>
+         <span class="mi">v</span>
+         <span class="mi">l</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span stretchy="false" class="mo">{</span>
+        <div class="msub">
+         <span class="mi">R</span>
+         <span class="mi">j</span>
+        </div>
+        <span stretchy="false" class="mo">}</span>
+        <span stretchy="false" class="mo">)</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">/</span>
+      <span class="mn">2</span>
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">σ</span>
+       <span class="mi">l</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+   <span class="label">(3)</span>
+  </div>where σ
+  <span class="italic">
+   <sub>l</sub>
+  </span> is a hyperparameter that sets the procedure selectivity.
+ </p>
+</sec>

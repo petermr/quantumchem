@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="other2" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">EXPERIMENT DESIGN</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Recently, Zare and co-workers (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>) reported the rotationally inelastic collisions between HD and H
+  <sub>2</sub>, D
+  <sub>2</sub> molecules at very low temperature. In their scattering experiments, the ∣
+  <span class="italic">H</span>〉 (orientation of molecules is parallel to their propagating direction) and ∣
+  <span class="italic">V</span>〉 states (orientation of molecules is vertical to their propagating direction) lead to very different scattering results, which offers us here a possible setup to classify entanglement between molecules based on the scattering results. In this section, we will propose an experimental setting to classify entanglement with continuous measurement results.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the following simulations, we consider four measurements with respect to four different sets of eigenstate basis. The first one is the scattering measurements corresponding to eigenstates ∣
+  <span class="italic">H</span>〉 and ∣
+  <span class="italic">V</span>〉, which we note as measurement 
+  <span class="italic">Z</span>. The second one corresponds to the eigenstates 
+  <div class="inline-formula">
+   <div id="m26" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span class="mo">+</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span class="mi">H</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">+</span>
+      <span class="mo">∣</span>
+      <span class="mi">V</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="m27" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span class="mo">−</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mn">2</span>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span class="mi">H</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">−</span>
+      <span class="mo">∣</span>
+      <span class="mi">V</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>, which we note as measurement 
+  <span class="italic">X</span>. The other two measurements are taken with the 
+  <div class="inline-formula">
+   <div id="m28" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">+</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="m29" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">−</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> bases.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Measurement results in the 
+  <span class="italic">Z</span> basis could be taken from the experimental results of Zare and co-workers (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>), which are continuous as a function of the scattering angles. We assume that the measurements in the 
+  <span class="italic">X</span> basis and 
+  <div class="inline-formula">
+   <div id="m30" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">−</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> are projection measurements, so that their results Γ are discrete, which is very common in the experimental setup. To check the derived inequality (
+  <a ref-type="disp-formula" rid="E11" href="#E11">Eq. 11</a>), we assume that there is another scattering experiment for measurement 
+  <div class="inline-formula">
+   <div id="m31" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">+</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, whose results satisfy the Gaussian distribution. In 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1</a>, we show the ideal results (scattering angle θ) of measurement 
+  <span class="italic">Z</span> (upper part) and 
+  <div class="inline-formula">
+   <div id="m32" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">+</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> (lower part).
+ </p>
+ <div id="F1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 1</span>
+  <div class="caption">
+   <div class="title">Results of two different measurements.</div>
+   <p>Ideal results of measurement 
+    <span class="italic">Z</span> (top) and measurement 
+    <div class="inline-formula">
+     <div id="m33" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">Z</span>
+          <span class="mo">+</span>
+          <span class="mi">X</span>
+         </div>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> (bottom). The results of measurement 
+    <span class="italic">Z</span> (top) are calculated from (
+    <a rid="R30" ref-type="bibr" href="#R30">
+     <span class="italic">30</span>
+    </a>) (
+    <a rid="F4" ref-type="fig" href="#F4">Fig. 4, A and B</a>). The blue line 
+    <span class="italic">f
+     <sub>H</sub>
+    </span>(θ) represents the scattering angle distribution of particles at state ∣
+    <span class="italic">H</span>〉, and the red line 
+    <span class="italic">f
+     <sub>V</sub>
+    </span>(θ) represents the scattering angle distribution of particles at state ∣
+    <span class="italic">V</span>〉. For measurement 
+    <div class="inline-formula">
+     <div id="m34" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">Z</span>
+          <span class="mo">+</span>
+          <span class="mi">X</span>
+         </div>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>, its two eigenstates are 
+    <div class="inline-formula">
+     <div id="m35" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">Ψ</span>
+         <span class="mi">R</span>
+         <span class="mo">+</span>
+        </div>
+        <span stretchy="true" class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+    </div> and 
+    <div class="inline-formula">
+     <div id="m36" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">Ψ</span>
+         <span class="mi">R</span>
+         <span class="mo">−</span>
+        </div>
+        <span stretchy="true" class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+    </div>. We assume that the scattering angle distribution 
+    <span class="italic">f</span>
+    <sub>±</sub>(θ) of 
+    <div class="inline-formula">
+     <div id="m37" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">Ψ</span>
+         <span class="mi">R</span>
+         <span class="mo">+</span>
+        </div>
+        <span stretchy="true" class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+    </div> and 
+    <div class="inline-formula">
+     <div id="m38" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">∣</span>
+        <div class="msubsup">
+         <span mathvariant="normal" class="mi">Ψ</span>
+         <span class="mi">R</span>
+         <span class="mo">−</span>
+        </div>
+        <span stretchy="true" class="mo">〉</span>
+       </div>
+      </div>
+     </div>
+    </div> satisfy the Gaussian distribution. 
+    <span class="italic">f</span>
+    <sub>+</sub>(θ) ∝ exp [ − (θ − 30)
+    <span class="sup">2</span>/40
+    <span class="sup">2</span>] (blue line in the bottom figure); 
+    <span class="italic">f</span>
+    <sub>−</sub>(θ) ∝ exp [− (θ − 150)
+    <span class="sup">2</span>/40
+    <span class="sup">2</span>] (red line in the bottom figure).
+   </p>
+  </div>
+  <div xlink:href="aax5283-F1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For our simulations, we start by preparing the oriented HD molecules ∣
+  <span class="italic">v</span> = 1, 
+  <span class="italic">j</span> = 2, 
+  <span class="italic">m</span> = 0〉 in state ∣
+  <span class="italic">H</span>〉, whose orientation is parallel to its propagation direction (
+  <span class="italic">y</span> axis in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2A</a>), and state ∣
+  <span class="italic">V</span>〉, whose orientation is vertical (
+  <span class="italic">z</span> axis in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2A</a>). One molecule in group I and another in group II are combined together and then prepared at different states (Werner state, superposition state, or mixed state), as shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2B</a>. For each pair, HD molecules are divided for two channels. In channel I, they will scatter with H
+  <sub>2</sub> clusters. If HD collides with H
+  <sub>2</sub>, then the orange sensors will measure the scattering particles, and the scattering results will be performed by measurement 
+  <span class="italic">Z</span>. If the HD does not collide with 
+  <span class="italic">H</span>
+  <sub>2</sub> molecules, then the gray sensor will carry on an 
+  <span class="italic">X</span> measurement (
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2C</a>). In channel II, the scattering process will go through measurement 
+  <div class="inline-formula">
+   <div id="m39" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">+</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>, and HD that are not scattered are measured by 
+  <div class="inline-formula">
+   <div id="m40" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">Z</span>
+        <span class="mo">−</span>
+        <span class="mi">X</span>
+       </div>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>.
+ </p>
+ <div id="F2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 2</span>
+  <div class="caption">
+   <div class="title">Sketch of the experiment design.</div>
+   <p>(
+    <span class="bold">A</span>) HD molecules are prepared in the state ∣
+    <span class="italic">v</span> = 1, 
+    <span class="italic">j</span> = 2, 
+    <span class="italic">m</span> = 0〉 using Stark-induced adiabatic Raman passage (SARP) (
+    <a rid="R30" ref-type="bibr" href="#R30">
+     <span class="italic">30</span>
+    </a>). Then, we can divide them into two molecular beams (two groups). If we apply the Pumps and Stokes electric field along the 
+    <span class="italic">y</span> axis, then HD in group I is set at state ∣
+    <span class="italic">H</span>〉 (orientation of HD is along the 
+    <span class="italic">y</span> axis, parallel to the direction of its propagation). The molecule HD in group II is set at state ∣
+    <span class="italic">V</span>〉 (orientation of HD is along the 
+    <span class="italic">z</span> axis, norm to the direction of its propagation). One molecule from group I and another from group II are combined together, and then, HD pairs are prepared at different initial states (if we do nothing, then these pairs will stay on a mixed state ∣
+    <span class="italic">H</span>〉 ⊗ ∣ 
+    <span class="italic">V</span>〉). (
+    <span class="bold">B</span>) The specific prepared state will go through two channels, molecule in channel I will scatter with H
+    <sub>2</sub> clusters, where the bond axis of H
+    <sub>2</sub> is distributed isotropically. (
+    <span class="bold">C</span>) Sensors (orange) are used to detect scattered particles and count numbers for each angle (
+    <span class="italic">Z</span> measurement). Molecules that are not scattered will go to another sensor (gray), by which they will be measured on the eigenstates ∣ + 〉 and ∣ − 〉 (
+    <span class="italic">X</span> measurement). (
+    <span class="bold">D</span>) In channel II, we set another experiment, so that scattered prepared HD molecules with isotropically distributed H
+    <sub>2</sub> clusters are measured under 
+    <div class="inline-formula">
+     <div id="m41" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">Z</span>
+          <span class="mo">+</span>
+          <span class="mi">X</span>
+         </div>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>, while the others are measured under 
+    <div class="inline-formula">
+     <div id="m42" class="math">
+      <div class="mrow">
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">Z</span>
+          <span class="mo">−</span>
+          <span class="mi">X</span>
+         </div>
+         <div class="msqrt">
+          <span class="mn">2</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>.
+   </p>
+  </div>
+  <div xlink:href="aax5283-F2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

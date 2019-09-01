@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s2C" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Gaussian-basis calculations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The Gaussian-type-orbital-based HF calculations were performed with the 
+  <span class="sc">c</span>rystal program package.
+  <a rid="c63" ref-type="bibr" href="#c63">
+   <span class="sup">63</span>
+  </a> To this end, a 64-atom supercell, a 
+  <div class="inline-formula">
+   <div id="M9" class="math">
+    <span class="mn">3</span>
+    <span class="mo">×</span>
+    <span class="mn">3</span>
+    <span class="mo">×</span>
+    <span class="mn">1</span>
+   </div>
+  </div>
+  <span class="italic">k</span>-mesh, and tightened integral prescreening thresholds (TOLINTEG 8 8 8 25 100) were employed. A valence-triple-zeta (VTZ) basis set combining Ahlrichs’ functions for low angular momentum
+  <a rid="c64" ref-type="bibr" href="#c64">
+   <span class="sup">64,65</span>
+  </a> and Dunning’s cc-pVTZ basis set for high angular momentum orbitals was used for the H and O atoms. The Li atoms were described by an optimized basis set already available from previous calculations on the LiH crystal
+  <a rid="c22" ref-type="bibr" href="#c22">
+   <span class="sup">22</span>
+  </a> (basis set A). The local MP2 (LMP2) and the explicitly correlated local MP2 (LMP2-F12)
+  <a rid="c66" ref-type="bibr" href="#c66">
+   <span class="sup">66</span>
+  </a> calculations were performed with the 
+  <span class="sc">c</span>ryscor code. For these calculations, the VTZ basis set was augmented by additional diffuse orbitals using the dual basis set technique
+  <a rid="c67" ref-type="bibr" href="#c67">
+   <span class="sup">67</span>
+  </a> leading to AVTZ quality. For the O and H atoms, these were the 
+  <span class="italic">d</span> and 
+  <span class="italic">f</span> (
+  <span class="italic">p</span> and 
+  <span class="italic">d</span> for H) orbitals from the aug-cc-pVTZ basis set, and for Li, these were the 
+  <span class="italic">s</span>, 
+  <span class="italic">p</span>, 
+  <span class="italic">d</span>, and 
+  <span class="italic">f</span> orbitals of the basis set B of Ref. 
+  <a rid="c22" ref-type="bibr" href="#c22">22</a>. The effect of the augmented orbitals on the HF energy was estimated via the first order singles.
+  <a rid="c67" ref-type="bibr" href="#c67">
+   <span class="sup">67</span>
+  </a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The correlation energy was calculated in the direct space, considering H
+  <sub>2</sub>O–LiH inter-pairs with inter-orbital separation up to 15 Å. From 15 Å to infinity, the pair-wise R
+  <span class="sup">−6</span> extrapolation was employed.
+  <a rid="c17" ref-type="bibr" href="#c17">
+   <span class="sup">17</span>
+  </a> For the LiH intra-pairs, the (converged) value of 6 Å was used as the inter-orbital cutoff distance. In the evaluation of the local F12 correction (within the 3*A approximation
+  <a rid="c68" ref-type="bibr" href="#c68">
+   <span class="sup">68</span>
+  </a>), which is of much shorter range than LMP2 itself,
+  <a rid="c66" ref-type="bibr" href="#c66">
+   <span class="sup">66</span>
+  </a> the pair cutoff distances were reduced to 4 Å and 8 Å for the LiH intra-pairs and water–LiH inter-pairs, respectively.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The pair-specific truncated virtual spaces of each Wannier function (WF) pair in the projected atomic orbital (PAO)-based LMP2 is constructed as the union of the two related orbital domains. In our calculations, the latter comprised, for each LiH WF, the PAOs on the H atom and the five nearest neighbour Li atoms. The orbital domains of the WF located on water comprises all three water atoms. The same domains were also employed for the local resolution of identity (RI) domains
+  <a rid="c66" ref-type="bibr" href="#c66">
+   <span class="sup">66</span>
+  </a> in the LMP2-F12 calculations. For the density fitting of the electron repulsion integrals and the local RI approximation of the F12 method, the auxiliary basis sets of Weigend and co-workers
+  <a rid="c69" ref-type="bibr" href="#c69">
+   <span class="sup">69,70</span>
+  </a> were used, i.e., aug-cc-pVTZ-mp2fit and cc-pVTZ-jkfit, respectively.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the periodic LMP2 and LMP2-F12 calculations, the 1
+  <span class="italic">s</span>
+  <span class="sup">2</span> core states of O and Li were kept frozen. Nevertheless, the correlated core contribution of the 1
+  <span class="italic">s</span>
+  <span class="sup">2</span> states of the Li atoms was computed at the MP2 level with an aug-cc-pwCVTZ basis set on the H
+  <sub>2</sub>O + Li
+  <sub>25</sub>H
+  <sub>25</sub> cluster using the 
+  <span class="sc">molpro</span> program package.
+  <a rid="c71" ref-type="bibr" href="#c71">
+   <span class="sup">71</span>
+  </a> The core-correlation contribution to the interaction is relatively short-range making further expansion of the cluster not necessary. Moreover, coupled-cluster calculations on finite clusters were also performed using the 
+  <span class="sc">molpro</span> code.
+ </p>
+</sec>

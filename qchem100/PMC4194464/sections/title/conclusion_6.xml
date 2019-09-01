@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" sec-type="conclusions" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We have presented a fully general method for mapping any molecular electronic structure instance to a 2-local Hamiltonian containing only 
+  <span class="italic">ZZ</span>, 
+  <span class="italic">XX</span> and 
+  <span class="italic">XZ</span> terms. Our method is scalable in the sense that all experimental resources (qubits, control precision, graph degree) scale polynomially in the number of orbitals. We used perturbative gadgets which embed the entire target Hamiltonian (as opposed to just the ground state), thus guaranteeing that the eigenvalue gap is conserved under our reduction. Furthermore, we showed that bit-flip gadgets can be applied to remove experimentally challenging 
+  <span class="italic">YY</span> terms. The resulting Hamiltonian is suitable for implementation in superconducting systems, quantum dots and other systems of artificial spins with the correct engineered interactions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Further reduction of the types of interactions present is possible, to either 
+  <span class="italic">ZZ</span> and 
+  <span class="italic">XX</span> terms or 
+  <span class="italic">ZZ</span> and 
+  <span class="italic">XZ</span> terms, using the techniques of
+  <a ref-type="bibr" rid="b92" href="#b92">92</a>. This makes the required interactions for simulating electronic structure Hamiltonians equivalent to the requirements of universal adiabatic quantum computation
+  <a ref-type="bibr" rid="b92" href="#b92">92</a>. However, repeated reduction of the Hamiltonian results in more stringent precision requirements. The chosen target set of interactions strikes a balance between control precision and a reasonable set of distinct types of controllable interaction. The techniques developed here could also be applied to interacting fermion problems on the lattice. However, in that case it is possible to improve beyond the Bravyi-Kitaev mapping and exploit the locality of the interactions to directly obtain Hamiltonians whose locality is independent of the number of orbitals
+  <a ref-type="bibr" rid="b99" href="#b99">99</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We propose to read out energy eigenvalues using the tunneling spectroscopy of a probe qubit. This technique has already been demonstrated experimentally with rf SQUID flux qubits in
+  <a ref-type="bibr" rid="b32" href="#b32">32</a>. In this scheme, a probe qubit is coupled to a single qubit of the simulation. Tunneling transitions allow the probe qubit to flip when the energy bias of the probe is close to an eigenvalue of the original system. Hence detection of these transitions reveals the eigenspectrum of the original system. In this way, we would be able to directly measure the eigenspectra of the molecular systems embedded into the spin Hamiltonian using the techniques developed in the present paper. Alternatively, one could evaluate the energy by determining the expectation value of each term in the Hamiltonian via projective measurements.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">There has been rapid recent progress in new classical algorithms, such as DMRG (density matrix renormalization group) and related tensor network methods, and proving complexity and approximability results pertaining to minimal resource model Hamiltonians. By using and understanding the techniques we have introduced in this paper, problems in chemistry can be reduced to such models and these discoveries can be leveraged to make advances in electronic structure theory. However, we note that the spin Hamiltonians that result from the mapping developed here will be 
+  <span class="italic">non-stoquastic</span>, and classical simulation techniques will therefore suffer from the fermionic sign problem
+  <a ref-type="bibr" rid="b100" href="#b100">100</a>. This further motivates the construction of quantum hardware to address the electronic structure problem by quantum simulation of these spin Hamiltonians.
+ </p>
+</sec>

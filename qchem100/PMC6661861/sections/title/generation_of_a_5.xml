@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2.3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Generation of a Large Network of Non-Natural Redox Reactions Using a Novel Network Expansion Algorithm</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To demonstrate the high-throughput nature of our method, we implemented a redox reaction network expansion algorithm to generate what is, to our knowledge, the largest database of non-natural biochemical redox reactions (
+  <a rid="sec4" ref-type="other" href="#sec4">Methods</a>). The network expansion algorithm makes use of the RDKit cheminformatics software to iteratively apply simplified molecular-input line-entry system (SMILES)
+  <span class="sup">
+   <a ref-type="bibr" rid="ref35" href="#ref35">35</a>,
+   <a ref-type="bibr" rid="ref43" href="#ref43">43</a>
+  </span> reaction strings to natural metabolites in the KEGG database. We generate two types of redox reactions, implemented in both the reductive and oxidative directions. The first type is the reduction of carbonyls to alcohols (and the reverse oxidations); the second is the reduction of carbonyls to amines (and the reverse oxidations). Applying the cheminformatic transformation to metabolites in the KEGG database results in a first set of nearest-neighbor reduction or oxidation products. We then iteratively apply the reactions to the resulting set of products, until there are no more carbonyl functional groups to reduce (or alcohol or amine functional groups to oxidize).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although the KEGG database of natural metabolic compounds and reactions contains molecules with up to 135 carbon atoms (a peptidoglycan cell wall component is the molecule with the highest number of carbon atoms),
+  <span class="sup">
+   <a ref-type="bibr" rid="ref44" href="#ref44">44</a>
+  </span> we limit our network expansion algorithm to molecules with 21 carbon atoms or less. This threshold is imposed in consideration of the size of the compounds in the training set; if experimental data were available for larger compounds, this methodology could easily be adapted.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a> shows the number and type of reactions that make up the network. It consists of ∼75 000 compounds connected by ∼315 000 reactions (reductions and oxidations). Of these reactions, 83% convert carbonyls to alcohols (or alcohols to carbonyls), while 17% convert carbonyls to amines (or amines to carbonyls). The large majority of the reactions (more than 80%) are oxidations of alcohols to carbonyls. Thus, the alcohol functional group is significantly more ubiquitous in the set of natural metabolites than either carbonyls or amine functional groups. The large majority of the reactions in the network—97%—stem from the recursive 
+  <span class="italic">oxidations</span> of seed natural metabolites, while only ∼3% come from recursive reductions. This is consistent with the notion that carbonyl functional groups can cause damage to macromolecules
+  <span class="sup">
+   <a ref-type="bibr" rid="ref45" href="#ref45">45</a>,
+   <a ref-type="bibr" rid="ref46" href="#ref46">46</a>
+  </span> and are thus kept at check in the cell.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We analyzed the structure of the resulting network by looking at the distribution of compound sizes. 
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>A shows the number of compounds in the networks as a function of their number of carbon atoms. The distribution shows three peaks corresponding to molecules with 6
+  <span class="italic">n</span> carbon atoms (
+  <span class="italic">n</span> = 1, 2, 3). These peaks reflect a large number of products that result from combinatorially oxidizing all alcohol groups in mono-, di-, and trisaccharides (
+  <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+   <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+  </a>B).
+ </p>
+ <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <p>The network of redox reactions obtained from iterative reductions and oxidations of natural metabolites. (A) Carbon number distribution for the full set of ∼70 000 compounds in the network. The peaks at multiples of 6 carbon atoms reflect the combinatorial oxidation of mono-, di-, and trisaccharides and their multiple alcohol functional groups. (B) Schematic diagram of a natural trisaccharide being iteratively oxidized at all possible alcohol functional groups. Blue circles depict sites of initial alcohol-to-carbonyl oxidation, and green circles depict a second oxidation site.</p>
+  </div>
+  <div xlink:href="oc-2019-002977_0004" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

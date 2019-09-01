@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Unitary coupled-cluster (UCC) ansatz</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The unitary coupled-cluster (UCC) ansatz
+  <a ref-type="bibr" rid="b35" href="#b35">35</a> assumes electronic states |
+  <span class="italic">ψ</span>〉 have the following form, 
+  <div id="m23" class="inline-formula">
+   <span id="d32e771" xlink:href="srep03589-m23.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where |Φ〉 is a reference state, which can be, e.g., a Slater determinant constructed from Hartree-Fock molecular orbitals. The particle-hole excitation operator, or cluster operator 
+  <span class="italic">T</span>, creates a linear combination of excited Slater determinants from |Φ〉. Usually, 
+  <span class="italic">T</span> is divided into subgroups based on the particle-hole rank. More precisely, 
+  <span class="italic">T</span> = 
+  <span class="italic">T</span>
+  <sub>1</sub> + 
+  <span class="italic">T</span>
+  <sub>2</sub> + 
+  <span class="italic">T</span>
+  <sub>3</sub> + … + 
+  <span class="italic">T
+   <sub>N</sub>
+  </span> for an 
+  <span class="italic">N</span>-electron system, where 
+  <div id="m24" class="inline-formula">
+   <span id="d32e808" xlink:href="srep03589-m24.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="m25" class="inline-formula">
+   <span id="d32e811" xlink:href="srep03589-m25.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and so on.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here 
+  <div id="m26" class="inline-formula">
+   <span id="d32e816" xlink:href="srep03589-m26.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> creates an electron in the orbital 
+  <span class="italic">a</span>. The indices 
+  <span class="italic">a</span>, 
+  <span class="italic">b</span> label unoccupied orbitals in the reference state |Φ〉, and 
+  <span class="italic">i</span>, 
+  <span class="italic">j</span> label occupied orbitals. The energy obtained from UCC, namely 
+  <div id="m27" class="inline-formula">
+   <span id="d32e835" xlink:href="srep03589-m27.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> is a variational upper bound of the exact ground-state energy.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The key challenge for implementing UCC on a classical computer is that the computational resource grows exponentially. It is because, in principle, one has to expand the expression 
+  <div id="m28" class="inline-formula">
+   <span id="d32e840" xlink:href="srep03589-m28.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> into an infinity series, using the Baker-Campbell-Hausdorff expansion. Naturally, one has to rely on approximate methods
+  <a ref-type="bibr" rid="b35" href="#b35">35</a>
+  <a ref-type="bibr" rid="b46" href="#b46">46</a> to truncate the series and keep track of finite numbers of terms. Therefore, in order to make good approximations by perturbative methods, i.e., assuming 
+  <span class="italic">T</span> is small, one implicitly assumes that the reference state |Φ〉 is a good solution to the problem. However, in many cases, such an assumption is not valid and the use of approximate UCC breaks down. We explain below how implementing UCC on a trapped-ion quantum computer can overcome this problem.
+ </p>
+</sec>

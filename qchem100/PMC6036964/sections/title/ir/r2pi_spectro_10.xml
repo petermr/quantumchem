@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">IR/R2PI spectroscopy</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Additional insight can be gained by using the mass- and isomer-selective IR/R2PI technique. This method requires knowledge on electronic excitation energies of the PVE–MeOH complex. For this reason, one-color R2PI spectra were recorded in the range of 36100–37600 cm
+  <span class="sup">−1</span> (cf. Figure S1 in 
+  <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). While the R2PI spectrum of the PVE monomer shows well-resolved vibrational progressions (cf
+  <span class="italic">.</span> Figure S1a, 
+  <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), the spectrum of the solvent aggregate is broadened and affected by ionization-induced fragmentation of larger clusters (cf
+  <span class="italic">.</span> Figure S1b, 
+  <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>). This is also reflected in the recorded IR/R2PI spectra (cf
+  <span class="italic">.</span> Figure S2, 
+  <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), yielding solely the spectrum shown in 
+  <a ref-type="fig" rid="F4" href="#F4">Fig. 4</a> via the excitation energy of 36885 cm
+  <span class="sup">−1</span> containing an OH stretching vibration of a PVE–MeOH dimer.
+ </p>
+ <div id="F4" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 4</span>
+  <div class="caption">
+   <p>The IR/R2PI spectrum in the range of 3520–3750 cm
+    <span class="sup">−1</span> was obtained via the excitation energy of 36885 cm
+    <span class="sup">−1</span> using the carrier gas neon; the asterisk (*) indicates ionization-induced fragmentation from larger clusters (cf
+    <span class="italic">.</span> Figure S2 in 
+    <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>).
+   </p>
+  </div>
+  <div xlink:href="Beilstein_J_Org_Chem-14-1642-g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Comparing the calculated OH stretching frequencies for the different isomers obtained at the DFT-D3 and SCS-CC2 levels (cf
+  <span class="italic">.</span>
+  <a rid="T1" ref-type="table" href="#T1">Table 1</a>) to the experiment does not allow for a clear structural assignment: the DFT-D3 calculations show the best agreement for the OH–P structure (3619 cm
+  <span class="sup">−1</span>, scaling factor 0.9600). Regarding the relative electronic energies, the OH–O structure is somewhat favored, with OH–O’ coming as a close second. The latter frequencies are 3597 and 3600 cm
+  <span class="sup">−1</span>, respectively, at the same level of theory. On the other hand, the computed SCS-CC2 frequencies would provide a coincident assignment, as both O-docking isomers would have the closest fundamentals compared to the measured frequency (3619 and 3621 cm
+  <span class="sup">−1</span>). The assignment, however, would be tentative at best with this information alone. The OH–E isomers on the other hand can be excluded due to their lower OH stretching frequencies as well as the energetic disadvantage at the LCCSD(T0)-F12/CBS[T:Q] level (cf
+  <span class="italic">.</span>
+  <a rid="T1" ref-type="table" href="#T1">Table 1</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to elucidate this problem, the electronic excitation energies can serve as a further indication for the binding motif, as shown for DPE–alcohol clusters before [
+  <a rid="R20" ref-type="bibr" href="#R20">20</a>–
+  <a rid="R22" ref-type="bibr" href="#R22">22</a>]. Comparing the vertical excitation energies for the different isomers with the experimental excitation energy of 36885 cm
+  <span class="sup">–1</span> yields the best agreement for the OH–O or OH–O’ isomer, which also show a significantly blue-shifted S
+  <sub>1</sub>←S
+  <sub>0</sub> transition compared to the PVE monomer (adiabatic excitation energies of 38291 and 38164 cm
+  <span class="sup">−1</span>, respectively, compared to 38034 cm
+  <span class="sup">−1</span> for the PVE monomer, cf
+  <span class="italic">.</span> Table S2, 
+  <a ref-type="supplementary-material" rid="SD1" href="#SD1">Supporting Information File 1</a>), as observed experimentally. In contrast to that, a red-shifted S
+  <sub>1</sub>←S
+  <sub>0</sub> transition compared to PVE is predicted for the OH–P isomer (37907 cm
+  <span class="sup">−1</span>), which would coincide with the fragmentation-dominated region of the R2PI spectrum, where, however, only signatures of larger clusters could be identified. These considerations strengthen the arguments for the presence of an OH∙∙∙O structure laid before, on the basis of the computed coupled cluster energies and the SCS-CC2 fundamental stretch frequencies. Additional experimental insight will be gained from the UV/IR/UV spectrum of the S
+  <sub>1</sub> state as well as the microwave investigations in the following section.
+ </p>
+</sec>

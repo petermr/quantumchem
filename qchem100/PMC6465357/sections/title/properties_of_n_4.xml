@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Properties of negative trions</div>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">Photoluminescence blinking of single QD allows one to study its trion states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>,
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span>. Single CdSe/CdS core/shell QD in this work turns from non-blinking to blinking by increasing the excitation power
+  <span class="sup">
+   <a ref-type="bibr" rid="CR12" href="#CR12">12</a>,
+   <a ref-type="bibr" rid="CR14" href="#CR14">14</a>,
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>,
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span> (see Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1g</a> for example). As long as 
+  <span class="italic">&lt;N&gt;</span> is &lt;0.5 (the linear range of saturation curves in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1d</a>), the bright-state is equivalent to single-exciton emission and the photoluminescence QY remains near unity, and QY of the well-defined dim state in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1g</a> should thus be 29%, accounting for identical absorption cross sections of bright and dim state at the short excitation wavelength (see detail below). In previous reports, with the bright-state being assigned to the neutral-state emission of single CdSe/CdS core/shell QD, the most commonly observed dim state under mild excitation conditions is identified as a negative-trion emission state with different experimental methods
+  <span class="sup">
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>,
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>,
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>. This is further confirmed by photon statistics method (see detail discussion in Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">8</a>). While the photoluminescence decay dynamics of the bright-state in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1h</a> is identical as the single-exciton decay dynamics, the mono-exponential decay dynamics of the dim state is assigned to the negative-trion emission decay dynamics (see detail below). Combining the emission QY and mono-exponential decay lifetime of the negative trion, one can readily determine its radiative and Auger non-radiative recombination rates 
+  <div id="IEq11" class="inline-formula">
+   <div class="alternatives">
+    <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{rad}},X^ - }$$\end{document}</span>
+    <div id="M22" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">rad</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">X</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq11.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> and 
+  <div id="IEq12" class="inline-formula">
+   <div class="alternatives">
+    <span id="M23" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},X^ - }$$\end{document}</span>
+    <div id="M24" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">X</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq12.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a>).
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">To further verify the charge status and Auger recombination rate of the trion state, we apply photochemical doping in solution to directly prepare the negative trion state of colloidal QDs. It has been established that, upon photo-excitation of QDs, lithium triethylborohydride (LBH) in the solution can efficiently act as hole acceptor of QDs, which results in a negative trion in a QD
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>,
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span> (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a>). Without efficient electron acceptors in the solution, the negatively charged QDs should be sufficiently stable for spectroscopic identification. As shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>, by increasing the LBH concentration in the QD solution, the photoluminescence quantum yield of CdSe
+  <sub>590</sub>/8CdS QDs decreases. Simultaneously, the first-exciton absorption of the QDs is photo-chemically bleached without affecting their absorption at high energy (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a> and Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">9</a>). These results further confirms that there is an extra electron in the conduction band of CdSe/CdS core/shell QDs
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>
+  </span>.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Photochemical electron-doping of CdSe/CdS core/shell quantum dots (QDs). 
+     <span class="bold">a</span> Schematic illustration of photochemical electron-doping and re-oxidizing processes. 
+     <span class="bold">b–</span>
+     <span class="bold">d</span> Photoluminescence (PL) spectra, absorption spectra and PL decay curves of neutral (black) and negatively charged CdSe
+     <sub>590</sub>/8CdS core/shell QDs at various stages of photochemical doping (different shades of blue). 
+     <span class="bold">e</span> The extracted negative-trion decay dynamics at various stages of photochemical doping by subtraction of tail-normalized PL decay dynamics of neutral QDs from that of the negatively charged QDs. The black dashed lines are the mono-exponential fitting of the extracted decay dynamics
+    </p>
+   </div>
+   <div xlink:href="41467_2019_9737_Fig2_HTML" id="d29e1042" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Because of the mono-exponential decay dynamics of single-exciton emission of the CdSe/CdS core/shell QDs used here, the photoluminescence decay rate of the photo-chemically doped QDs—QDs in their negative trion state—can be readily separated from that of the undoped QDs (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2d, e</a>). Given the unity photoluminescence QY of the single-exciton emission, radiative and Auger recombination rates of the photo-chemically doped QDs at their trion state can be calculated from their photoluminescence QY and experimental decay rates (Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a>). Evidently, both radiative and Auger recombination rates determined by the photochemical doping approach are in good agreement with the rates determined by the single-dot spectroscopy for the CdSe/CdS core/shell QDs with various core size and/or shell thickness (Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1h</a>, Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>, and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a>), confirming the most prone to occur dim state observed by single-dot spectroscopy is a negative-trion emission state.
+  <div id="Tab1" class="table-wrap">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <p>Recombination rates of different channels for CdSe/CdS QDs determined by the photochemical doping method</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th>QD sample</th>
+      <th>
+       <span class="italic">k</span>
+       <sub>
+        <span class="italic">X</span>
+       </sub> (ns
+       <span class="sup">–1</span>)
+      </th>
+      <th>
+       <div id="IEq13" class="inline-formula">
+        <div class="alternatives">
+         <span id="M25" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{X^ - }$$\end{document}</span>
+         <div id="M26" class="math">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">k</span>
+           </div>
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">X</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">-</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span xlink:href="41467_2019_9737_Article_IEq13.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </div>
+       </div> (ns
+       <span class="sup">–1</span>)
+      </th>
+      <th>
+       <div id="IEq14" class="inline-formula">
+        <div class="alternatives">
+         <span id="M27" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}}\;X^ - }$$\end{document}</span>
+         <div id="M28" class="math">
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">k</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">Auger</span>
+            <span width="0.16em" class="mspace"/>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">X</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">-</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span xlink:href="41467_2019_9737_Article_IEq14.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </div>
+       </div> (ns
+       <span class="sup">–1</span>)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>CdSe
+       <sub>590</sub>/4CdS
+      </td>
+      <td>0.054</td>
+      <td>0.64</td>
+      <td>0.58</td>
+     </tr>
+     <tr>
+      <td>CdSe
+       <sub>590</sub>/6CdS
+      </td>
+      <td>0.048</td>
+      <td>0.48</td>
+      <td>0.42</td>
+     </tr>
+     <tr>
+      <td>CdSe
+       <sub>590</sub>/8CdS
+      </td>
+      <td>0.043</td>
+      <td>0.29</td>
+      <td>0.24</td>
+     </tr>
+     <tr>
+      <td>CdSe
+       <sub>630</sub>/6CdS
+      </td>
+      <td>0.045</td>
+      <td>0.30</td>
+      <td>0.24</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Importantly, photoluminescence, ultraviolet (UV)–visible (Vis) absorption, and transient photoluminescence spectral properties are reversible upon exposure of the doped QDs to oxygen (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">9</a>). This indicates that the spectral bleaching and appearance of the short-lifetime photoluminescence decay channel (Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>) are not due to surface degradation of the QDs caused by the chemical reduction. Recovery by exposure to oxygen—a common electron acceptor
+  <span class="sup">
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>
+  </span>—is also consistent with negatively charging nature of the doped QDs.
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">With the Auger recombination rates for both biexciton and negative trion, one could further obtain Auger non-radiative recombination rate of the corresponding positive trion (
+  <div id="IEq15" class="inline-formula">
+   <div class="alternatives">
+    <span id="M29" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},X^ + }$$\end{document}</span>
+    <div id="M30" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">X</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">+</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq15.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>) using the superposition principle (Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3a</a>, Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">10</a>, and Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">7</a>)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR5" href="#CR5">5</a>,
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>. For CdSe/CdS core/shell QDs, the superposition principle, namely 
+  <div id="IEq16" class="inline-formula">
+   <div class="alternatives">
+    <span id="M31" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},XX} = 2 \left( {k_{{\mathrm{Auger}},X^ + } + k_{{\mathrm{Auger}},X^ - }} \right)$$\end{document}</span>
+    <div id="M32" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">2</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">Auger</span>
+         <span class="mo">,</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">X</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">+</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">+</span>
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">Auger</span>
+         <span class="mo">,</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">X</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">-</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq16.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, has been repeatedly verified in both single-dot
+  <span class="sup">
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span> and ensemble
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span> experiments and widely applied in theoretical studies
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span> as well. For the current system, our measurements can directly determine the three rates (
+  <div id="IEq17" class="inline-formula">
+   <div class="alternatives">
+    <span id="M33" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_{{\mathrm{Auger}},XX},k_{{\mathrm{Auger}},X^ + },\;{\mathrm{and}}\;k_{{\mathrm{Auger}},X^ - }$$\end{document}</span>
+    <div id="M34" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <span class="mi">X</span>
+       <span class="mi">X</span>
+      </div>
+     </div>
+     <span class="mo">,</span>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">X</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">+</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+     <span width="0.16em" class="mspace"/>
+     <span mathvariant="normal" class="mi">and</span>
+     <span width="0.16em" class="mspace"/>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">k</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">Auger</span>
+       <span class="mo">,</span>
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">X</span>
+        </div>
+        <div class="mrow">
+         <span class="mo">-</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_9737_Article_IEq17.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>) (see below) for some samples, which also confirms the superposition principle (Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a>).
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>Core size and shell thickness dependence of Auger recombination rates. 
+     <span class="bold">a</span> Illustration of Auger recombination pathways for negative trion (X
+     <span class="sup">−</span>), positive trion (X
+     <span class="sup">+</span>), and biexciton (XX), and the relation among three rates. 
+     <span class="bold">b</span>, 
+     <span class="bold">c</span> Core size dependence of Auger recombination rates of X
+     <span class="sup">−</span> (red) and X
+     <span class="sup">+</span> (blue) for CdSe/CdS core/shell quantum dots (QDs) with four and eight monolayers of shells, respectively. 
+     <span class="bold">d</span>–
+     <span class="bold">f</span> Shell thickness dependence of Auger recombination rates of X
+     <span class="sup">−</span> (red) and X
+     <span class="sup">+</span> (blue) for CdSe/CdS core/shell QDs with the first-exciton absorption peak of core at 550, 590, and 630 nm, respectively. The data for CdSe/CdS core/shell QDs with the first-exciton absorption peak of core at 550 nm and 16 monolayers of shell in 
+     <span class="bold">d</span> (light blue and light red) is from ref. 
+     <span class="sup">
+      <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+     </span>. Error bars are defined as s.d.
+    </p>
+   </div>
+   <div xlink:href="41467_2019_9737_Fig3_HTML" id="d29e1453" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

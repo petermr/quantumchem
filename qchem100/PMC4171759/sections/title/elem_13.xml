@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">PROGRAM STRUCTURE</div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Program Modules</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton consists of several modules, developed more or less independently. The HERMIT module calculates not only the integrals needed for energies but also for a large number of molecular properties, including all one- and two-electron integrals of the Breit–Pauli Hamiltonian. The ERI module is a vectorized and distribution-oriented integral generator that is invoked in certain calculations—in particular, in integral-direct CC calculations.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The SIRIUS module contains the (MC)SCF energy optimization code, whereas the CC module performs CC optimizations and property calculations. The LUCITA module performs large-scale CI calculations for general CI expansions and serves the MCSCF module with parallel evaluation of configuration vectors and density matrices. The DFT module performs the numerical exchange–correlation integration and serves the SIRIUS module with the required KS matrix elements.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The ABACUS module evaluates second-order properties for the (MC)SCF models—in particular, second-order static molecular properties in which the basis set depends on the applied perturbation. The RESPONS module is a general-purpose code for evaluating response functions, up to cubic response for (MC)SCF wave functions, quadratic, and cubic response for KS theory, and linear response for the SOPPA model. Linear-scaling calculations are performed with the LSDALTON module.</p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Programming Details and Language</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Dalton program is written in FORTRAN 77, FORTRAN 90, and C, with machine dependencies isolated using C preprocessor directives. All floating-point computations are performed in 64-bit precision but the code takes advantage of 32-bit precision to reduce integer storage requirements in some sections.</p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The parallelization of the regular Dalton SCF modules for small molecules has been done exclusively using MPI and scales (for sufficiently large systems) with up to 90% efficiency on 1000 processors,
+   <a rid="b153" ref-type="bibr" href="#b153">153</a>,
+   <a rid="b154" ref-type="bibr" href="#b154">154</a> even demonstrating superlinear scaling.
+   <a rid="b155" ref-type="bibr" href="#b155">155</a> Also the CI routines have been parallelized using MPI.
+   <a rid="b15" ref-type="bibr" href="#b15">15</a> The Dalton SCF modules for large molecules have been parallelized in a hybrid MPI/OpenMP scheme.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hardware/Software Supported</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton runs on a variety of UNIX systems. The current release of the program has been tested on IBM-AIX, Linux, and OS X but is easily ported to other UNIX systems.</p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Program Distribution</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Dalton source code is distributed to users at no cost. Three types of licenses are available: personal, site, and benchmark. With all licenses, the copyright to the code remains with the authors and is not put in the public domain—in particular, the source and binary code may not be redistributed. Furthermore, no fee may be charged for the use of Dalton. For copies of Dalton distributed with a site license, users may not access the source and object files. Benchmark licenses differ from personal and site licenses in that access is given to Dalton only for a restricted period of time. One year after its release, more than 700 personal and 150 site licenses had been issued for Dalton 2011.</p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">User Support</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Dalton is distributed with limited user support. The code is installed using CMake with an automatic adaptation to supported platforms. Dalton is distributed with a cross-referenced manual and a test suite comprising more than 400 test jobs. Information about patches, releases, and other updates are provided on the Dalton forum (
+   <span ext-link-type="uri" xlink:href="http://daltonprogram.org/forum" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://daltonprogram.org/forum</span>), where users can also exchange experiences, view tutorials and seek help on installing and using the Dalton programs.
+  </p>
+ </sec>
+</sec>

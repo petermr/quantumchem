@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 2</span>
+ <div class="caption">
+  <p>Schematic diagram of GP regression with reaction fingerprints. A redox reaction of interest 
+   <span class="italic">x</span>* is represented using a reaction fingerprint, which captures the molecular structure of both substrate (oxidized) and product (reduced). This reaction fingerprint is compared against the set of all redox reactions in the experimental data set using the covariance function of the Gaussian process 
+   <span class="italic">k</span>(
+   <span class="italic">x</span>*, 
+   <span class="italic">x</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub>) (see the 
+   <a rid="sec4" ref-type="other" href="#sec4">Methods</a> section). The GP correction (
+   <span class="italic">E</span>′
+   <span class="sup">m</span>
+   <sub>GP</sub>) to the quantum chemical prediction (
+   <span class="italic">E</span>′
+   <span class="sup">m</span>
+   <sub>PM7</sub>) of the standard redox potential is then obtained from a similarity-based average of the correction terms for the experimental data set.
+  </p>
+ </div>
+ <div xlink:href="oc-2019-002977_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

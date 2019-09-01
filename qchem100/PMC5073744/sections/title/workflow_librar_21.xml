@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec17" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Workflow libraries in quantum chemistry simulations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the ER-flow project [
+  <a ref-type="bibr" rid="CR40" href="#CR40">40</a>] the Computational Chemistry community developed 26 atomic workflows and 12 meta-workflows, presented in Additional file 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6, to run optical and structural benchmarking, spectroscopic simulations and investigations on inorganic polymerization catalysts experiments. Considering these workflows we created the Quantum Chemistry workflow library with five sub-libraries (Table 
+  <a rid="Tab2" ref-type="table" href="#Tab2">2</a>).
+  <div id="Tab2" class="table-wrap">
+   <span class="label">Table 2</span>
+   <div class="caption">
+    <p>Structure of the quantum chemistry workflow library</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th align="left">Workflow library</th>
+      <th align="left">Sub-libraries</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left">DOMAIN—quantum chemistry</td>
+      <td align="left">SUB-DOMAIN
+       <sub>1</sub>—basic operations
+      </td>
+     </tr>
+     <tr>
+      <td align="left"/>
+      <td align="left">SUB-DOMAIN
+       <sub>2</sub>—spectroscopic analysis
+      </td>
+     </tr>
+     <tr>
+      <td align="left"/>
+      <td align="left">SUB-DOMAIN
+       <sub>3</sub>—optical benchmarking
+      </td>
+     </tr>
+     <tr>
+      <td align="left"/>
+      <td align="left">SUB-DOMAIN
+       <sub>4</sub>—structural benchmarking
+      </td>
+     </tr>
+     <tr>
+      <td align="left"/>
+      <td align="left">SUB-DOMAIN
+       <sub>5</sub>—inorganic polymerization catalysis
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Table 
+  <a rid="Tab3" ref-type="table" href="#Tab3">3</a> presents the basic operations sub-library. It contains the atomic workflows that implement basic Quantum Chemistry operations and can be used in scientific experiments of different sub-domains in QC. These atomic workflows are highlighted in bold in Additional file 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6. For example the 
+  <span class="italic">Opt WF</span> atomic workflows is incorporated in the 
+  <span class="italic">Spect_Analy M</span>-
+  <span class="italic">WF, Opt_Bench M</span>-
+  <span class="italic">WF, Freq_Opt M_WF</span> and 
+  <span class="italic">Equil_Calc M</span>-
+  <span class="italic">WF</span> meta-workflow, while the 
+  <span class="italic">Freq WF</span> atomic workflow in the 
+  <span class="italic">Spec_Analy</span>_ and 
+  <span class="italic">Freq_Opt M</span>-
+  <span class="italic">WF</span> meta-workflow.
+  <div id="Tab3" class="table-wrap">
+   <span class="label">Table 3</span>
+   <div class="caption">
+    <p>Atomic workflows of the basic operations sub-library</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th align="left">Atomic workflows</th>
+      <th align="left">Functionality</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left">Opt WF</td>
+      <td align="left">Geometry optimization</td>
+     </tr>
+     <tr>
+      <td align="left">Basic Opt WF</td>
+      <td align="left">Geometry optimization with small basis set</td>
+     </tr>
+     <tr>
+      <td align="left">Freq WF</td>
+      <td align="left">Frequency calculation</td>
+     </tr>
+     <tr>
+      <td align="left">TD WF</td>
+      <td align="left">Time-dependent DFT calculation</td>
+     </tr>
+     <tr>
+      <td align="left">Pop WF</td>
+      <td align="left">Population analysis</td>
+     </tr>
+     <tr>
+      <td align="left">Solv WF</td>
+      <td align="left">Optimization in solvent</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The other four sub-libraries contain atomic workflows that deliver operations specific to a particular Quantum Chemistry sub-domain, for example optical benchmarking, structural benchmarking, etc. These atomic workflows are listed in Additional file 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6.
+ </p>
+</sec>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="S0003" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Hybrid Quantum Chemical/Molecular Mechanical Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Hybrid QC/MM potentials were first described by Warshel and Levitt [
+  <a rid="CIT0063" ref-type="bibr" href="#CIT0063">63</a>] in a simulation of the lysozyme reaction. They were developed and continue to be extensively used to investigate the atomic and sub-atomic details of enzymatic reactions due to the high computational cost of QC methods, which are necessary for accurately modeling the electronic reorganization that occurs upon chemical bonds being broken and created, but with a goal of accurately treating the heterogeneous environment of the active site. The total potential energy in these simulations is the sum of three terms; one for the atoms in the QC region, one for those in the surrounding MM region and a term that describes the interactions between the two (see 
+  <a ref-type="fig" rid="F0001" href="#F0001">Figure 1</a>). The methods have been the subject of numerous excellent reviews [
+  <a rid="CIT0064" ref-type="bibr" href="#CIT0064">64</a>–
+  <a rid="CIT0067" ref-type="bibr" href="#CIT0067">67</a>]. Despite their more widespread use, numerous challenges remain, including finding an appropriate model chemistry that can accurately represent the large (by QC standards) enzyme “active site” and a definition of the reaction coordinate. Furthermore, if free energy profiles/surfaces obtained by umbrella-sampled molecular dynamics simulations along a reaction coordinate(s) are desired, then some compromises in the QC potential must be made. Usually this requires the employment of semi empirical molecular orbital (SMO) methods [
+  <a rid="CIT0068" ref-type="bibr" href="#CIT0068">68</a>] that are computationally efficient due to approximations of many two-electron integrals and the representation of valence electrons only. Other approximate methods based on Density Functional Theory (DFT) are also often employed [
+  <a rid="CIT0069" ref-type="bibr" href="#CIT0069">69</a>]. All of these methods can suffer from the lack of quantitative accuracy that may be needed in order to distinguish one mechanism from another [
+  <a rid="CIT0070" ref-type="bibr" href="#CIT0070">70</a>]. A well-established method for correcting the free energy profiles/surfaces derived from hybrid SMO/MM simulations that employs higher level QC results as a reference and spline functions that interpolate between the low and high level methods [
+  <a rid="CIT0071" ref-type="bibr" href="#CIT0071">71</a>, 
+  <a rid="CIT0072" ref-type="bibr" href="#CIT0072">72</a>] and which has been demonstrated to improve the free energy profiles/surfaces and result in calculated rate constants in good agreement with experiment.
+ </p>
+ <div id="F0001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>
+    <span class="bold">(left)</span> Depiction of the R-hydroxypropylthioethanesulfonate dehydrogenase (R-HPCDH) structure with those atoms most likely to undergo significant electronic reorganization or significantly contribute to this reorganization represented by a QM method (Ser142, Tyr155, Lys140, the R-HPC substrate and the nicotinamide moiety of nicotinamide adenine dinucleotide (NAD)) while the surroundings are represented by a MM force field. Solvent molecules not shown for clarity. 
+    <span class="bold">(right)</span> Chemical mechanism for the oxidation of R-HPC by R-HPCDH.
+   </p>
+  </div>
+  <div xlink:href="CSBJ-2-e201209018-g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Two of the major challenges in determining an enzymatic mechanism through QC/MM simulations, besides those already mentioned, is 1) representing the correct protonation states of active site residues in the Michaelis-Menten complex and 2) simulating low-barrier proton transfer reactions that may have a nuclear dynamical or tunneling component [
+  <a rid="CIT0073" ref-type="bibr" href="#CIT0073">73</a>] and that may occur either step-wise or concerted with nucleophilic attacks. To overcome this challenge, neutron diffraction experiments of protein crystals can aid in the assignment of protonation states and the dissection of enzyme mechanistic details surrounding the location of hydrogen atoms [
+  <a rid="CIT0074" ref-type="bibr" href="#CIT0074">74</a>]. Implicit solvent models such as MM-Poisson-Boltzmann, MM-Generalized Born [
+  <a rid="CIT0075" ref-type="bibr" href="#CIT0075">75</a>] as well as knowledge based potentials [
+  <a rid="CIT0076" ref-type="bibr" href="#CIT0076">76</a>] can be used for assigning protonation states. If the goal in enzyme engineering is to enhance the capabilities of natural enzymes, then dissecting the atomic details of enzymatic mechanisms will be critical to the effort.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For QC/MM simulations, our lab (TW) uses pDynamo [
+  <a rid="CIT0077" ref-type="bibr" href="#CIT0077">77</a>] (
+  <span ext-link-type="uri" xlink:href="http://www.pdynamo.org" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">www.pdynamo.org</span>). This program and its Fortran predecessor was developed by Martin J. Field (Institut de Biologie Structurale) and has been utilized by our group for over 10 years to study detailed enzyme reactions. The program can directly read molecular systems constructed within CHARMM [
+  <a rid="CIT0078" ref-type="bibr" href="#CIT0078">78</a>], AMBER [
+  <a rid="CIT0079" ref-type="bibr" href="#CIT0079">79</a>] and GROMACS [
+  <a rid="CIT0080" ref-type="bibr" href="#CIT0080">80</a>]. The program contains all of the standard and new semiempirical molecular orbital (SMO) methods. In addition, it contains an intuitive interface to the QC program ORCA [
+  <a rid="CIT0081" ref-type="bibr" href="#CIT0081">81</a>] enabling higher level QC methods to be utilized for high resolution refinement or corrections to surfaces calculated with less accurate methods. Nowadays, most modern QC and MM software packages contain the capabilities to perform QC/MM simulations in some form.
+ </p>
+</sec>

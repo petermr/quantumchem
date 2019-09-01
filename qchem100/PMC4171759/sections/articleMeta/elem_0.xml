@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">4171759</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1002/wcms.1172</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Software Focus</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">The Dalton quantum chemistry program system</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Aidas</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kestutis</span>
+   </name>
+   <a ref-type="aff" rid="au1" href="#au1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Angeli</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Celestino</span>
+   </name>
+   <a ref-type="aff" rid="au2" href="#au2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bak</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Keld L</span>
+   </name>
+   <a ref-type="aff" rid="au3" href="#au3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bakken</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Vebjørn</span>
+   </name>
+   <a ref-type="aff" rid="au4" href="#au4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Bast</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Radovan</span>
+   </name>
+   <a ref-type="aff" rid="au5" href="#au5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Boman</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Linus</span>
+   </name>
+   <a ref-type="aff" rid="au6" href="#au6" xmlns="http://www.w3.org/1999/xhtml">6</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Christiansen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ove</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Cimiraglia</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Renzo</span>
+   </name>
+   <a ref-type="aff" rid="au2" href="#au2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Coriani</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sonia</span>
+   </name>
+   <a ref-type="aff" rid="au8" href="#au8" xmlns="http://www.w3.org/1999/xhtml">8</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dahle</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Pål</span>
+   </name>
+   <a ref-type="aff" rid="au9" href="#au9" xmlns="http://www.w3.org/1999/xhtml">9</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dalskov</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Erik K</span>
+   </name>
+   <a ref-type="aff" rid="au10" href="#au10" xmlns="http://www.w3.org/1999/xhtml">10</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ekström</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ulf</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Enevoldsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Thomas</span>
+   </name>
+   <a ref-type="aff" rid="au12" href="#au12" xmlns="http://www.w3.org/1999/xhtml">12</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Eriksen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Janus J</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ettenhuber</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Patrick</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Fernández</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Berta</span>
+   </name>
+   <a ref-type="aff" rid="au13" href="#au13" xmlns="http://www.w3.org/1999/xhtml">13</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ferrighi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Lara</span>
+   </name>
+   <a ref-type="aff" rid="au14" href="#au14" xmlns="http://www.w3.org/1999/xhtml">14</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Fliegl</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Heike</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Frediani</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Luca</span>
+   </name>
+   <a ref-type="aff" rid="au14" href="#au14" xmlns="http://www.w3.org/1999/xhtml">14</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hald</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kasper</span>
+   </name>
+   <a ref-type="aff" rid="au15" href="#au15" xmlns="http://www.w3.org/1999/xhtml">15</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Halkier</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Asger</span>
+   </name>
+   <a ref-type="aff" rid="au16" href="#au16" xmlns="http://www.w3.org/1999/xhtml">16</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hättig</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Christof</span>
+   </name>
+   <a ref-type="aff" rid="au17" href="#au17" xmlns="http://www.w3.org/1999/xhtml">17</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Heiberg</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hanne</span>
+   </name>
+   <a ref-type="aff" rid="au18" href="#au18" xmlns="http://www.w3.org/1999/xhtml">18</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Helgaker</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Trygve</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+   <a ref-type="corresp" rid="cor1" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hennum</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alf Christian</span>
+   </name>
+   <a ref-type="aff" rid="au19" href="#au19" xmlns="http://www.w3.org/1999/xhtml">19</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hettema</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hinne</span>
+   </name>
+   <a ref-type="aff" rid="au20" href="#au20" xmlns="http://www.w3.org/1999/xhtml">20</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hjertenæs</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Eirik</span>
+   </name>
+   <a ref-type="aff" rid="au21" href="#au21" xmlns="http://www.w3.org/1999/xhtml">21</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Høst</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Stinne</span>
+   </name>
+   <a ref-type="aff" rid="au22" href="#au22" xmlns="http://www.w3.org/1999/xhtml">22</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Høyvik</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ida-Marie</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Iozzi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Maria Francesca</span>
+   </name>
+   <a ref-type="aff" rid="au23" href="#au23" xmlns="http://www.w3.org/1999/xhtml">23</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jansík</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Branislav</span>
+   </name>
+   <a ref-type="aff" rid="au24" href="#au24" xmlns="http://www.w3.org/1999/xhtml">24</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hans Jørgen Aa</span>
+   </name>
+   <a ref-type="aff" rid="au12" href="#au12" xmlns="http://www.w3.org/1999/xhtml">12</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jonsson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Dan</span>
+   </name>
+   <a ref-type="aff" rid="au25" href="#au25" xmlns="http://www.w3.org/1999/xhtml">25</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jørgensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Poul</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kauczor</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Joanna</span>
+   </name>
+   <a ref-type="aff" rid="au26" href="#au26" xmlns="http://www.w3.org/1999/xhtml">26</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kirpekar</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sheela</span>
+   </name>
+   <a ref-type="aff" rid="au27" href="#au27" xmlns="http://www.w3.org/1999/xhtml">27</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kjærgaard</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Thomas</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Klopper</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Wim</span>
+   </name>
+   <a ref-type="aff" rid="au28" href="#au28" xmlns="http://www.w3.org/1999/xhtml">28</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Knecht</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Stefan</span>
+   </name>
+   <a ref-type="aff" rid="au29" href="#au29" xmlns="http://www.w3.org/1999/xhtml">29</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kobayashi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Rika</span>
+   </name>
+   <a ref-type="aff" rid="au30" href="#au30" xmlns="http://www.w3.org/1999/xhtml">30</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Koch</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Henrik</span>
+   </name>
+   <a ref-type="aff" rid="au21" href="#au21" xmlns="http://www.w3.org/1999/xhtml">21</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kongsted</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Jacob</span>
+   </name>
+   <a ref-type="aff" rid="au12" href="#au12" xmlns="http://www.w3.org/1999/xhtml">12</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Krapp</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andreas</span>
+   </name>
+   <a ref-type="aff" rid="au31" href="#au31" xmlns="http://www.w3.org/1999/xhtml">31</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kristensen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kasper</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ligabue</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andrea</span>
+   </name>
+   <a ref-type="aff" rid="au32" href="#au32" xmlns="http://www.w3.org/1999/xhtml">32</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lutnæs</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ola B</span>
+   </name>
+   <a ref-type="aff" rid="au33" href="#au33" xmlns="http://www.w3.org/1999/xhtml">33</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Melo</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Juan I</span>
+   </name>
+   <a ref-type="aff" rid="au34" href="#au34" xmlns="http://www.w3.org/1999/xhtml">34</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Mikkelsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kurt V</span>
+   </name>
+   <a ref-type="aff" rid="au35" href="#au35" xmlns="http://www.w3.org/1999/xhtml">35</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Myhre</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Rolf H</span>
+   </name>
+   <a ref-type="aff" rid="au21" href="#au21" xmlns="http://www.w3.org/1999/xhtml">21</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Neiss</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Christian</span>
+   </name>
+   <a ref-type="aff" rid="au36" href="#au36" xmlns="http://www.w3.org/1999/xhtml">36</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nielsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Christian B</span>
+   </name>
+   <a ref-type="aff" rid="au37" href="#au37" xmlns="http://www.w3.org/1999/xhtml">37</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Norman</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Patrick</span>
+   </name>
+   <a ref-type="aff" rid="au38" href="#au38" xmlns="http://www.w3.org/1999/xhtml">38</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Olsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Jeppe</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Olsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Jógvan Magnus H</span>
+   </name>
+   <a ref-type="aff" rid="au12" href="#au12" xmlns="http://www.w3.org/1999/xhtml">12</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Osted</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Anders</span>
+   </name>
+   <a ref-type="aff" rid="au39" href="#au39" xmlns="http://www.w3.org/1999/xhtml">39</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Packer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Martin J</span>
+   </name>
+   <a ref-type="aff" rid="au12" href="#au12" xmlns="http://www.w3.org/1999/xhtml">12</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pawlowski</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Filip</span>
+   </name>
+   <a ref-type="aff" rid="au40" href="#au40" xmlns="http://www.w3.org/1999/xhtml">40</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pedersen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Thomas B</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Provasi</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Patricio F</span>
+   </name>
+   <a ref-type="aff" rid="au41" href="#au41" xmlns="http://www.w3.org/1999/xhtml">41</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Reine</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Simen</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rinkevicius</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Zilvinas</span>
+   </name>
+   <a ref-type="aff" rid="au42" href="#au42" xmlns="http://www.w3.org/1999/xhtml">42</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ruden</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Torgeir A</span>
+   </name>
+   <a ref-type="aff" rid="au43" href="#au43" xmlns="http://www.w3.org/1999/xhtml">43</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ruud</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kenneth</span>
+   </name>
+   <a ref-type="aff" rid="au14" href="#au14" xmlns="http://www.w3.org/1999/xhtml">14</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rybkin</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Vladimir V</span>
+   </name>
+   <a ref-type="aff" rid="au28" href="#au28" xmlns="http://www.w3.org/1999/xhtml">28</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sałek</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Pawel</span>
+   </name>
+   <a ref-type="aff" rid="au44" href="#au44" xmlns="http://www.w3.org/1999/xhtml">44</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Samson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Claire C M</span>
+   </name>
+   <a ref-type="aff" rid="au28" href="#au28" xmlns="http://www.w3.org/1999/xhtml">28</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">de Merás</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alfredo Sánchez</span>
+   </name>
+   <a ref-type="aff" rid="au45" href="#au45" xmlns="http://www.w3.org/1999/xhtml">45</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Saue</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Trond</span>
+   </name>
+   <a ref-type="aff" rid="au46" href="#au46" xmlns="http://www.w3.org/1999/xhtml">46</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sauer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Stephan P A</span>
+   </name>
+   <a ref-type="aff" rid="au35" href="#au35" xmlns="http://www.w3.org/1999/xhtml">35</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schimmelpfennig</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Bernd</span>
+   </name>
+   <a ref-type="aff" rid="au47" href="#au47" xmlns="http://www.w3.org/1999/xhtml">47</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sneskov</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kristian</span>
+   </name>
+   <a ref-type="aff" rid="au48" href="#au48" xmlns="http://www.w3.org/1999/xhtml">48</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Steindal</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Arnfinn H</span>
+   </name>
+   <a ref-type="aff" rid="au14" href="#au14" xmlns="http://www.w3.org/1999/xhtml">14</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sylvester-Hvid</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Kristian O</span>
+   </name>
+   <a ref-type="aff" rid="au49" href="#au49" xmlns="http://www.w3.org/1999/xhtml">49</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Taylor</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Peter R</span>
+   </name>
+   <a ref-type="aff" rid="au50" href="#au50" xmlns="http://www.w3.org/1999/xhtml">50</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Teale</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andrew M</span>
+   </name>
+   <a ref-type="aff" rid="au51" href="#au51" xmlns="http://www.w3.org/1999/xhtml">51</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tellgren</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Erik I</span>
+   </name>
+   <a ref-type="aff" rid="au11" href="#au11" xmlns="http://www.w3.org/1999/xhtml">11</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tew</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">David P</span>
+   </name>
+   <a ref-type="aff" rid="au52" href="#au52" xmlns="http://www.w3.org/1999/xhtml">52</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thorvaldsen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andreas J</span>
+   </name>
+   <a ref-type="aff" rid="au7" href="#au7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thøgersen</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Lea</span>
+   </name>
+   <a ref-type="aff" rid="au53" href="#au53" xmlns="http://www.w3.org/1999/xhtml">53</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Vahtras</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Olav</span>
+   </name>
+   <a ref-type="aff" rid="au5" href="#au5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Watson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Mark A</span>
+   </name>
+   <a ref-type="aff" rid="au54" href="#au54" xmlns="http://www.w3.org/1999/xhtml">54</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Wilson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">David J D</span>
+   </name>
+   <a ref-type="aff" rid="au55" href="#au55" xmlns="http://www.w3.org/1999/xhtml">55</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ziolkowski</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Marcin</span>
+   </name>
+   <a ref-type="aff" rid="au56" href="#au56" xmlns="http://www.w3.org/1999/xhtml">56</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ågren</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hans</span>
+   </name>
+   <a ref-type="aff" rid="au5" href="#au5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+  </contrib>
+  <aff id="au1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of General Physics and Spectroscopy, Faculty of Physics, Vilnius University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Vilnius, Lithuania</div>
+  </aff>
+  <aff id="au2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, University of Ferrara</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Ferrara, Italy</div>
+  </aff>
+  <aff id="au3" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Aarhus University School of Engineering</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Faculty of Mathematics and Natural Sciences, University of Oslo</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au5" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Theoretical Chemistry and Biology, School of Biotechnology, KTH Royal Institute of Technology</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Stockholm, Sweden</div>
+  </aff>
+  <aff id="au6" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">6</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">EMGS ASA</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Trondheim, Norway</div>
+  </aff>
+  <aff id="au7" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">7</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, Aarhus University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au8" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">8</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemical and Pharmaceutical Sciences, University of Trieste</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Trieste, Italy</div>
+  </aff>
+  <aff id="au9" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">9</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Norwegian Computing Center</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au10" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">10</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Systematic</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au11" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">11</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CTCC, Department of Chemistry, University of Oslo</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au12" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">12</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Physics, Chemistry and Pharmacy, University of Southern Denmark</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Odense, Denmark</div>
+  </aff>
+  <aff id="au13" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">13</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Physical Chemistry and Center for Research in Biological Chemistry and Molecular Materials (CIQUS), University of Santiago de Compostela</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Santiago de Compostela, Spain</div>
+  </aff>
+  <aff id="au14" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">14</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CTCC, Department of Chemistry, UiT The Arctic University of Norway, Tromsø</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Norway</div>
+  </aff>
+  <aff id="au15" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">15</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Danske Bank</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Horsens, Denmark</div>
+  </aff>
+  <aff id="au16" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">16</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CSC Scandihealth</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au17" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">17</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Theoretical Chemistry, Ruhr–University Bochum</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Bochum, Germany</div>
+  </aff>
+  <aff id="au18" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">18</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Norwegian Meteorological Institute</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au19" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">19</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Norwegian Defence Research Establishment</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Kjeller, Norway</div>
+  </aff>
+  <aff id="au20" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">20</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Philosophy, The University of Auckland</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Auckland, New Zealand</div>
+  </aff>
+  <aff id="au21" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">21</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, Norwegian University of Science and Technology</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Trondheim, Norway</div>
+  </aff>
+  <aff id="au22" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">22</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Geoscience, Aarhus University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au23" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">23</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">University Centre of Information Technology, University of Oslo</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au24" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">24</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">VSB – Technical University of Ostrava</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Ostrava, Czech Republic</div>
+  </aff>
+  <aff id="au25" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">25</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">High-Performance Computing Group, UiT The Arctic University of Norway, Tromsø</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Norway</div>
+  </aff>
+  <aff id="au26" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">26</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Physics, Chemistry and Biology, Linköping University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Linköping, Sweden</div>
+  </aff>
+  <aff id="au27" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">27</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">KVUC, Copenhagen</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Denmark</div>
+  </aff>
+  <aff id="au28" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">28</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Institute of Physical Chemistry, Karlsruhe Institute of Technology</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Karlsruhe, Germany</div>
+  </aff>
+  <aff id="au29" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">29</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Laboratory of Physical Chemistry, ETH Zürich</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Zürich, Switzerland</div>
+  </aff>
+  <aff id="au30" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">30</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Australian National University Supercomputer Facility</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Canberra, Australia</div>
+  </aff>
+  <aff id="au31" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">31</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Jotun A/S</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Sandefjord, Norway</div>
+  </aff>
+  <aff id="au32" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">32</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Computer Services: Networks and Systems, University of Modena and Reggio Emilia</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Modena, Italy</div>
+  </aff>
+  <aff id="au33" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">33</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Cisco Systems</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Lysaker, Norway</div>
+  </aff>
+  <aff id="au34" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">34</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Physics Department, FCEyN-UBA and IFIBA-CONICET, Universidad de Buenos Aires</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Buenos Aires, Argentina</div>
+  </aff>
+  <aff id="au35" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">35</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, University of Copenhagen, Copenhagen</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Denmark</div>
+  </aff>
+  <aff id="au36" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">36</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry and Pharmacy, Friedrich-Alexander University Erlangen–Nürnberg</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Erlangen, Germany</div>
+  </aff>
+  <aff id="au37" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">37</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Sun Chemical</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Køge, Denmark</div>
+  </aff>
+  <aff id="au38" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">38</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Physics, Chemistry and Biology, Linköping University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Linköping, Sweden</div>
+  </aff>
+  <aff id="au39" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">39</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Køge Gymnasium</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Køge, Denmark</div>
+  </aff>
+  <aff id="au40" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">40</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Institute of Physics, Kazimierz Wielki University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Bydgoszcz, Poland</div>
+  </aff>
+  <aff id="au41" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">41</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Physics, University of Northeastern and IMIT-CONICET</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Corrientes, Argentina</div>
+  </aff>
+  <aff id="au42" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">42</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Theoretical Chemistry and Biology, School of Biotechnology and Swedish e-Science Research Center (SeRC), KTH Royal Institute of Technology</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Stockholm, Sweden</div>
+  </aff>
+  <aff id="au43" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">43</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Kjeller Software Community</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Oslo, Norway</div>
+  </aff>
+  <aff id="au44" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">44</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">PSS9 Development</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Cracow, Poland</div>
+  </aff>
+  <aff id="au45" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">45</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Institute of Molecular Science, University of Valencia</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Valencia, Spain</div>
+  </aff>
+  <aff id="au46" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">46</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Paul Sabatier University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Toulouse, France</div>
+  </aff>
+  <aff id="au47" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">47</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Institute for Nuclear Waste Disposal, Karlsruhe Institute of Technology</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Karlsruhe, Germany</div>
+  </aff>
+  <aff id="au48" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">48</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Danske Bank</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au49" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">49</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Danish Technological Institute Nano- and Microtechnology Production</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Taastrup, Denmark</div>
+  </aff>
+  <aff id="au50" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">50</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">VLSCI and School of Chemistry, University of Melbourne</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Parkville, Australia</div>
+  </aff>
+  <aff id="au51" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">51</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">School of Chemistry, University of Nottingham</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Nottingham, UK</div>
+  </aff>
+  <aff id="au52" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">52</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">School of Chemistry, University of Bristol</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Bristol, UK</div>
+  </aff>
+  <aff id="au53" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">53</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CLC bio</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Aarhus, Denmark</div>
+  </aff>
+  <aff id="au54" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">54</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry, Princeton University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Princeton, New Jersey</div>
+  </aff>
+  <aff id="au55" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">55</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Department of Chemistry and La Trobe Institute for Molecular Sciences, La Trobe University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Melbourne, Australia</div>
+  </aff>
+  <aff id="au56" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">56</span>
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">CoE for Next Generation Computing, Clemson University</span>
+   <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Clemson, South Carolina</div>
+  </aff>
+ </div>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">*Correspondence to: 
+   <span class="email">trygve.helgaker@kjemi.uio.no</span>
+  </div>
+  <fn class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">The authors have declared no conflicts of interest in relation to this article.</p>
+  </fn>
+ </div>
+ <pub-date pub-type="ppub" class="pub-date">
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+ </pub-date>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">23</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">9</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2013</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">4</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">3</span>
+ <span class="fpage" xmlns="http://www.w3.org/1999/xhtml">269</span>
+ <span class="lpage" xmlns="http://www.w3.org/1999/xhtml">284</span>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© 2013 John Wiley &amp; Sons, Ltd.</span>
+  <span class="copyright-year">2013</span>
+  <div license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and no modifications or adaptations are made.</div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>Dalton is a powerful general-purpose program system for the study of molecular electronic structure at the Hartree–Fock, Kohn–Sham, multiconfigurational self-consistent-field, Møller–Plesset, configuration-interaction, and coupled-cluster levels of theory. Apart from the total energy, a wide variety of molecular properties may be calculated using these electronic-structure models. Molecular gradients and Hessians are available for geometry optimizations, molecular dynamics, and vibrational studies, whereas magnetic resonance and optical activity can be studied in a gauge-origin-invariant manner. Frequency-dependent molecular properties can be calculated using linear, quadratic, and cubic response theory. A large number of singlet and triplet perturbation operators are available for the study of one-, two-, and three-photon processes. Environmental effects may be included using various dielectric-medium and quantum-mechanics/molecular-mechanics models. Large molecules may be studied using linear-scaling and massively parallel algorithms. Dalton is distributed at no cost from 
+   <span ext-link-type="uri" xlink:href="http://www.daltonprogram.org" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.daltonprogram.org</span> for a number of UNIX platforms.
+  </p>
+ </div>
+</article-meta>

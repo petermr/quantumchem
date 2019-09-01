@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Atomic Hydrogen and Helium are the dominant chemical species of the early Universe (Galli and Palla, 
+  <a rid="B20" ref-type="bibr" href="#B20">2013</a>) and of the interstellar medium, and are easily ionized by cosmic rays. Therefore, these atoms and their ions are the astrochemical fundamental reactants (Lepp et al., 
+  <a rid="B29" ref-type="bibr" href="#B29">2002</a>), together with ubiquitous photons, giving first simple diatoms as H
+  <sub>2</sub>, 
+  <div class="inline-formula">
+   <div id="M2" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> (Stancil et al., 
+  <a rid="B45" ref-type="bibr" href="#B45">1993</a>), and HeH
+  <span class="sup">+</span> (Zygelman et al., 
+  <a rid="B51" ref-type="bibr" href="#B51">1998</a>) and then atom+diatom bimolecular collisions as He+
+  <div class="inline-formula">
+   <div id="M3" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> (De Fazio et al., 
+  <a rid="B15" ref-type="bibr" href="#B15">2012</a>), H+HeH
+  <span class="sup">+</span> (De Fazio, 
+  <a rid="B14" ref-type="bibr" href="#B14">2014</a>; Gamallo et al., 
+  <a rid="B22" ref-type="bibr" href="#B22">2015</a>), and He
+  <span class="sup">+</span>+H
+  <sub>2</sub>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">When all chemical species are in the ground electronic states, the He+
+  <div class="inline-formula">
+   <div id="M4" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> reaction is endothermic and rather slow, but the other two are exothermic by about ~0.7 and 6.2 eV, respectively, as many ion+neutral astrochemical reactions (Herbst and Klemperer, 
+  <a rid="B27" ref-type="bibr" href="#B27">1973</a>). H+HeH
+  <span class="sup">+</span> is barrierless and gives quickly the He+
+  <div class="inline-formula">
+   <div id="M5" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div> products, but the collision-induced dissociative charge transfer (DCT) He
+  <span class="sup">+</span>(
+  <span class="sup">2</span>
+  <span class="italic">S</span>)+H
+  <sub>2</sub>(
+  <span class="italic">X</span>
+  <span class="sup">1</span>Σ
+  <div class="inline-formula">
+   <div id="M6" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">g</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) → He(
+  <span class="sup">1</span>
+  <span class="italic">S</span>)+H(
+  <span class="sup">2</span>
+  <span class="italic">S</span>)+H
+  <span class="sup">+</span> is very slow at low collision energy 
+  <span class="italic">E</span>
+  <sub>coll</sub> and at room temperature, if H
+  <sub>2</sub> is in the ground vibro-rotational state. In fact, H+HeH
+  <span class="sup">+</span>↔He
+  <span class="sup">+</span>+H
+  <sub>2</sub> occurs on the ground potential energy surface (PES) 
+  <div class="inline-formula">
+   <div id="M7" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">X</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' of 
+  <div class="inline-formula">
+   <div id="M8" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">HeH</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, which is well-separated from the excited electronic species, but the low-
+  <span class="italic">E</span>
+  <sub>coll</sub> DCT involves the first two excited adiabatic electronic states Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and 
+  <div class="inline-formula">
+   <div id="M9" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' of 
+  <div class="inline-formula">
+   <div id="M10" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">HeH</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, which differ by a two-electron excitation and are coupled by a 
+  <span class="italic">C</span>
+  <sub>2
+   <span class="italic">v</span>
+  </sub> conical intersection (CI) (Preston et al., 
+  <a rid="B38" ref-type="bibr" href="#B38">1978</a>; McLaughlin and Thompson, 
+  <a rid="B32" ref-type="bibr" href="#B32">1979</a>). In the latter case the non-adiabatic coupling is weak and the lower, dissociative cone of the intersection seam gives rise to an adiabatic barrier with diabatic character, that is the DCT tends to follow the diabatic PESs without changing the electronic configuration. This strongly inhibits the reactivity that is associated with the tunneling through the barrier (Preston et al., 
+  <a rid="B38" ref-type="bibr" href="#B38">1978</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This is schematically shown in the correlation diagram of 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> for the Ã
+  <span class="sup">2</span>
+  <span class="italic">A</span>' and 
+  <div class="inline-formula">
+   <div id="M11" class="math">
+    <div accent="true" class="mover">
+     <div class="mrow">
+      <span class="mi">B</span>
+     </div>
+     <span class="mo">~</span>
+    </div>
+   </div>
+  </div>
+  <span class="sup">2</span>
+  <span class="italic">A</span>' adiabatic and (1)
+  <span class="sup">2</span>
+  <span class="italic">A</span>
+  <sub>1</sub> and (2)
+  <span class="sup">2</span>
+  <span class="italic">B</span>
+  <sub>2</sub> diabatic PESs 
+  <span class="italic">V</span> of 
+  <div class="inline-formula">
+   <div id="M12" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">HeH</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>, where all chemical species are in the ground electronic states, save 
+  <div class="inline-formula">
+   <div id="M13" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>(
+  <span class="italic">A</span>
+  <span class="sup">2</span>Σ
+  <div class="inline-formula">
+   <div id="M14" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">u</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) that is unbound, and the energy is referred to the reactant minimum. This diagram is obtained from the 
+  <span class="italic">ab initio</span> Multi-Reference Configuration-Interaction results of McLaughlin and Thompson (
+  <a rid="B32" ref-type="bibr" href="#B32">1979</a>), changing the label of the reactant diabatic state 
+  <span class="sup">2</span>
+  <span class="italic">A</span>
+  <sub>1</sub> from (5) to (1), and from the analytical fits of the associated diabatic PESs 
+  <span class="italic">V</span>
+  <sub>11</sub> and 
+  <span class="italic">V</span>
+  <sub>22</sub> by Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>). In the scheme of 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> we omit the ground adiabatic PES, well below the excited PESs and with too small non-adiabatic couplings. However, all three adiabatic PESs are strongly coupled by intense laser pulses (Szidarovszky and Yamanouchi, 
+  <a rid="B47" ref-type="bibr" href="#B47">2016</a>) when the ground PES becomes populated (Schauer et al., 
+  <a rid="B43" ref-type="bibr" href="#B43">1989</a>). A more complete description of the reaction dynamics in presence of electric and magnetic fields is out of the scope of the present article. Note in the figure the small ion-induced dipole minimum in the 
+  <span class="italic">C</span>
+  <sub>2v</sub> entrance channel at 
+  <span class="italic">R</span>(He-H
+  <sub>2</sub>) = 4.45 
+  <span class="italic">a</span>
+  <sub>0</sub>, 
+  <span class="italic">r</span>(H-H) = 1.42 
+  <span class="italic">a</span>
+  <sub>0</sub>, and 
+  <span class="italic">V</span> = −0.08 eV and the CI 
+  <span class="italic">C</span>
+  <sub>2
+   <span class="italic">v</span>
+  </sub> minimum at 
+  <span class="italic">R</span> = 4.89 
+  <span class="italic">a</span>
+  <sub>0</sub>, 
+  <span class="italic">r</span> = 2.18 
+  <span class="italic">a</span>
+  <sub>0</sub>, and 
+  <span class="italic">V</span> = 1.34 eV, owing to the intersection (Preston et al., 
+  <a rid="B38" ref-type="bibr" href="#B38">1978</a>) between the H
+  <sub>2</sub>(
+  <span class="italic">X</span>
+  <span class="sup">1</span>Σ
+  <div class="inline-formula">
+   <div id="M15" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">g</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) and 
+  <div class="inline-formula">
+   <div id="M16" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mtext">H</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>(
+  <span class="italic">A</span>
+  <span class="sup">2</span>Σ
+  <div class="inline-formula">
+   <div id="M17" class="math">
+    <div class="msubsup">
+     <div class="mrow"/>
+     <div class="mrow">
+      <span class="mi">u</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">+</span>
+     </div>
+    </div>
+   </div>
+  </div>) curves at 
+  <span class="italic">r</span> = 2.19 
+  <span class="italic">a</span>
+  <sub>0</sub> and 
+  <span class="italic">V</span> = 1.28 eV.
+ </p>
+ <div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>Dissociative charge transfer (DCT) and collision induced dissociation (CID) of He
+    <span class="sup">+</span>+H
+    <sub>2</sub>. Schematic correlation diagram in eV of the adiabatic Ã
+    <span class="sup">2</span>
+    <span class="italic">A</span>′ (red) and 
+    <div class="inline-formula">
+     <div id="M18" class="math">
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">B</span>
+       </div>
+       <span class="mo">~</span>
+      </div>
+     </div>
+    </div>
+    <span class="sup">2</span>
+    <span class="italic">A</span>′ (blue) and of the diabatic (1)
+    <span class="sup">2</span>
+    <span class="italic">A</span>
+    <sub>1</sub> and (2)
+    <span class="sup">2</span>
+    <span class="italic">B</span>
+    <sub>2</sub> PESs. All reactants and products are in the ground electronic state, save 
+    <div class="inline-formula">
+     <div id="M19" class="math">
+      <div class="msubsup">
+       <div class="mrow">
+        <span class="mtext">H</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">+</span>
+       </div>
+      </div>
+     </div>
+    </div>(
+    <span class="italic">A</span>
+    <span class="sup">2</span>Σ
+    <div class="inline-formula">
+     <div id="M20" class="math">
+      <div class="msubsup">
+       <div class="mrow"/>
+       <div class="mrow">
+        <span class="mi">u</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">+</span>
+       </div>
+      </div>
+     </div>
+    </div>, unbound).
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00249-g0001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Experimental studies on the He
+  <span class="sup">+</span>+H
+  <sub>2</sub> → He+H+H
+  <span class="sup">+</span> DCT dynamics date back to 1955 (Stedeford and Hasted, 
+  <a rid="B46" ref-type="bibr" href="#B46">1955</a>) and 1961 (Giese and Maier, 
+  <a rid="B23" ref-type="bibr" href="#B23">1961</a>), when the integral cross sections (ICSs) were measured at 
+  <span class="italic">E</span>
+  <sub>coll</sub> = 4 eV and found &lt;0.05 Å
+  <span class="sup">2</span>. ICSs as functions of 
+  <span class="italic">E</span>
+  <sub>coll</sub> were then measured in many works up to 1996 (Dhuicq et al., 
+  <a rid="B17" ref-type="bibr" href="#B17">1996</a>), finding values from 0.01 up to ~2 Å
+  <span class="sup">2</span>, for 
+  <span class="italic">E</span>
+  <sub>coll</sub> between 3 and 100 eV, by considering H
+  <sub>2</sub> in the ground vibro-rotational state and all ground and excited open states of H. Below 3 eV, the H product is in the ground 1
+  <span class="italic">s</span> state and the ICSs are so small and so difficult to measure that experimental values present large discrepancies (Reinig et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">1992</a>). However, the ICSs increase by one/two orders of magnitude if H
+  <sub>2</sub> is excited by one vibrational quantum (Preston et al., 
+  <a rid="B38" ref-type="bibr" href="#B38">1978</a>) or 
+  <span class="italic">E</span>
+  <sub>coll</sub> grows up to ~100 eV. Differential cross sections were also measured (Dhuicq et al., 
+  <a rid="B16" ref-type="bibr" href="#B16">1998</a>) at 
+  <span class="italic">E</span>
+  <sub>coll</sub> &gt; 9 eV, that is for the formation of the H
+  <span class="sup">*</span> excited product. Accordingly, small rate constants were observed (Johnsen et al., 
+  <a rid="B28" ref-type="bibr" href="#B28">1980</a>), with values of (1.5 ± 0.15) × 10
+  <span class="sup">−13</span> and (1.1 ± 0.1) × 10
+  <span class="sup">−13</span>cm
+  <span class="sup">3</span>s
+  <span class="sup">−1</span> at 78 and 330 K, respectively, that is nearly four order of magnitude lower than the Langevin (Gioumousis and Stevenson, 
+  <a rid="B24" ref-type="bibr" href="#B24">1958</a>) estimates for ion+neutral barrierless and exothermic reactions.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A few works have also theoretically investigated the dynamics of the DCT collision since 1994, when Aguillon (
+  <a rid="B6" ref-type="bibr" href="#B6">1994</a>) employed a semiclassical coupled wavepacket (WP) method and the analytical diabatic PESs of Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>) for computing ICSs for ground and excited vibrational states 
+  <span class="italic">v</span>
+  <sub>0</sub> of H
+  <sub>2</sub>, up to 
+  <span class="italic">v</span>
+  <sub>0</sub> = 4 and in the 
+  <span class="italic">E</span>
+  <sub>coll</sub> range from 2 to 10 eV. He found total-ICS values from ~0.001 Å
+  <span class="sup">2</span> (
+  <span class="italic">v</span>
+  <sub>0</sub> = 0, 
+  <span class="italic">E</span>
+  <sub>coll</sub> = 2 eV) to ~1 Å
+  <span class="sup">2</span> (
+  <span class="italic">v</span>
+  <sub>0</sub> = 3, 
+  <span class="italic">E</span>
+  <sub>coll</sub> = 10 eV), in agreement with the most recent measurements (Dhuicq et al., 
+  <a rid="B17" ref-type="bibr" href="#B17">1996</a>). In a subsequent work (Aguillon, 
+  <a rid="B7" ref-type="bibr" href="#B7">1998</a>), an improved version of this semiclassical method was used for obtaining new ICS values and differential cross sections. Approximated theoretical models were also employed (Dhuicq et al., 
+  <a rid="B17" ref-type="bibr" href="#B17">1996</a>) for explaining observed cross sections above 9 eV, when excited H
+  <span class="sup">*</span>(
+  <span class="italic">n</span> = 2) was produced. Finally, quantum infinite-order-sudden cross sections were calculated (Martínez et al., 
+  <a rid="B30" ref-type="bibr" href="#B30">2000</a>) for He
+  <span class="sup">+</span>+H
+  <sub>2</sub> → He+H
+  <span class="sup">*</span>(
+  <span class="italic">n</span> ≥ 2)+H
+  <span class="sup">+</span> at 
+  <span class="italic">E</span>
+  <sub>coll</sub> ≥ 10 eV, using the accurate diabatic representation of Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>) and six more approximated diabatic electronic states (Sidis, 
+  <a rid="B44" ref-type="bibr" href="#B44">1996</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As far as we know, no further studies of the title reaction have been published and its collision dynamics below ~2 eV is unknown. In particular, only semiclassical or approximated quantum theoretical studies were carried out, although both conical intersection and barrier tunneling are purely quantum effects. We thus here report a rigorous time-dependent quantum study of the DCT He
+  <span class="sup">+</span>+H
+  <sub>2</sub>(
+  <span class="italic">v</span>
+  <sub>0</sub> = 0,1) → He+H+H
+  <span class="sup">+</span> with all species in the ground electronic state, at thermal and hyperthermal collision energy up to 3 eV, using the diabatic PESs of Aguado et al. (
+  <a rid="B2" ref-type="bibr" href="#B2">1993</a>) and WP and flux formalisms. In section Theory and Calculations we present the theoretical method and its numerical details. Section Collision Results reports initial-state-resolved total reaction probabilities, ICSs, and thermal rate constants. Finally, we present our conclusions in section Conclusions.
+ </p>
+</sec>

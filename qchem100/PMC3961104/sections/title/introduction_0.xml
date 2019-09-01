@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Modeling of chemical properties of proteins is a challenging task in modern computational biochemistry, mainly due to the large number of atoms that need to be treated computationally, compared to the computational speed of modern computers. Although theoretical methods to treat large systems are being developed, it is computationally more feasible to investigate properties of small, representative, protein-like structures, such as peptides. For example, calculations on peptides have been used to parametrize protein-specific molecular mechanics force fields, and models for NMR properties of proteins such as chemical shifts and spin-spin coupling constants (
+  <a rid="ref-7" ref-type="bibr" href="#ref-7">Mackerell, 2004</a>; 
+  <a rid="ref-15" ref-type="bibr" href="#ref-15">Vila et al., 2009</a>; 
+  <a rid="ref-2" ref-type="bibr" href="#ref-2">Case, Scheurer &amp; Brüschweiler, 2000</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Recently, we have used the presented Python library to carry out calculations on peptides modeling the backbone of a protein in the parametrization of amide proton chemical shifts (
+  <a rid="ref-3" ref-type="bibr" href="#ref-3">Christensen et al., 2013</a>). Since this study, we have carried out more than 1.5 million quantum mechanical geometry optimization and NMR shielding calculations on peptides in order to extend our model of protein chemical shifts. Naturally, an efficient and stable method is needed in order to generate such a number of peptide models.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Two recent programs that can generate peptide structures are the Ribosome program (
+  <a rid="ref-12" ref-type="bibr" href="#ref-12">Srinivasan, 2013</a>) and the PeptideBuilder library (
+  <a rid="ref-14" ref-type="bibr" href="#ref-14">Tien et al., 2013</a>). The Ribosome program is written in FORTRAN and thus difficult to extend and therefore not ideal for use in an automated, scripting fashion. The PeptideBuilder library is written in Python and is therefore very attractive for this purpose. Our library which is presented here is very similar to PeptideBuilder, but offers a number of additional features which we found necessary for our purpose. Most importantly, our library includes methods for geometry optimization with a molecular mechanics force field, efficient conformational sampling from continuous probability distributions and lastly output to a variety of output formats or, optionally, directly as input file for a quantum chemistry program. Currently Gaussian 09 (
+  <a rid="ref-4" ref-type="bibr" href="#ref-4">Frisch et al., 2009</a>) is supported via specialized classes, and nearly 100 additional file formats are supported through the file writer.
+ </p>
+</sec>

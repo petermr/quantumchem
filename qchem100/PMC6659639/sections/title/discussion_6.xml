@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" sec-type="discussion" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Discussion</div>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">The coupling efficiencies estimated from classical electromagnetic and TDDFT calculations are consistent. The addition of molecules leads to a systematic red shift of the plasmon (Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>), which is largest for Al
+  <sub>201</sub> and scales approximately inversely with particle volume in agreement with earlier predictions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>
+  </span>. The red shift happens simultaneously with strong coupling and complicates the analysis. While the calculations yield a 
+  <div id="IEq7" class="inline-formula">
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sqrt N$$\end{document}</span>
+    <div id="M16" class="math">
+     <div class="msqrt">
+      <span class="mi">N</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq7.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> dependence of the coupling strength for the larger particles (Al
+  <sub>586</sub>, Al
+  <sub>1289</sub>), for the smallest particle (Al
+  <sub>201</sub>) the efficiency varies with the number of benzene molecules for 
+  <span class="italic">N</span> ≳ 3. In the Al
+  <sub>201</sub> case, the volume occupied by the molecules is non-negligible relative to the particle volume and every additional molecule changes the properties of the nanoscale cavity and subsequently modifies the coupling.
+ </p>
+ <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">From the perspective of classical electromagnetism, the molecules can be represented as a polarizable background with excitons modelled by Lorentzians
+  <span class="sup">
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span>. This background can be treated as part of the cavity and consequently modifies its local optical density of states (LDoS)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR49" href="#CR49">49</a>,
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>
+  </span>. This modification manifests itself as focusing of the electric field around the molecules, clearly visible for Al
+  <sub>201</sub> coupled with one benzene molecule (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4c, d</a>), in comparison to the resonance of Al
+  <sub>201</sub> alone (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a>). These LDoS modifications increase the mode volume, decreasing (or at least not enhancing) the coupling strength per molecule. Such changes of the cavity induced by adding molecules are not visible for larger particles, as for Al
+  <sub>586</sub> and Al
+  <sub>1289</sub> the coupling strengths follow the 
+  <div id="IEq8" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\sqrt N$$\end{document}</span>
+    <div id="M18" class="math">
+     <div class="msqrt">
+      <span class="mi">N</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11315_Article_IEq8.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> dependence.
+ </p>
+ <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">In conclusion, we demonstrated the suitability of first-principles TDDFT for studying strong coupling between plasmons and molecular excitons. This approach allows us to capture relevant interactions at the atomic level. This is important for studying coupling of molecules to picocavities slightly larger than the molecules themselves
+  <span class="sup">
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>,
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>
+  </span> as well as ultrastrong coupling that leads to modification of the molecular ground state
+  <span class="sup">
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>
+  </span>. Furthermore, we have shown the degree to which the simple cQED description holds for small systems. For small single-particle cavities, such as the Al
+  <sub>201</sub> particle considered here, the presence of molecules modifies the cavity and, consequently, its mode volume. The mode volume, in turn, affects the coupling strength, whose value does not increase as quickly as predicted by QED. This slower increase of 
+  <span class="italic">g</span> is noticeable for the Al
+  <sub>201</sub> particle, but for larger sizes (Al
+  <sub>586</sub>, Al
+  <sub>1289</sub>) deviations from Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) become negligible. Despite the deviations between a simple cQED formula and TDDFT calculations, the order of magnitude agreement between them is quite remarkable. In particular, it is rather surprising that such a simple formula at all holds at such small scales. Based on the obtained coupling strengths, calculated mode volumes and field enhancements, reaching single/few-molecule ultrastrong coupling for single-particle cavities may prove challenging.
+ </p>
+</sec>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Time-resolved luminescence measurements</div>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Time-resolved luminescence measurements were performed by using FluoroMax 4 (Horiba) in a time-correlated single-photon counting (TCSPC) mode. For excitation, a LED source (Horiba) with the excitation wavelength set to λ
+  <sub>ex</sub> = 371 nm and the repetition rate set to 1 MHz was used. The resulting luminescence signal was detected at an emission wavelength of λ
+  <sub>em</sub> = 655 nm. The luminescence decay curves were fitted multiexponentially with 
+  <span class="italic">α</span>
+  <sub>i</sub> being the amplitude of the 
+  <span class="italic">i</span>th component with the corresponding decay time 
+  <span class="italic">τ</span>
+  <sub>i</sub> (Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>)). Additionally, the intensity-weighted average decay time 
+  <span class="italic">τ</span>
+  <sub>av(int)</sub>, which is calculated according to Eq. (
+  <a rid="Equ2" ref-type="" href="#Equ2">2</a>), was used. The goodness of the fits was judged on the reduced 
+  <div id="IEq1" class="inline-formula">
+   <div class="alternatives">
+    <span id="M1" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\chi }_{R}^{2}$$\end{document}</span>
+    <div id="M2" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">χ</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">R</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41598_2019_46732_Article_IEq1.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>-values and randomly distributed residuals.
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M3" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}I(t) &amp; = &amp; \sum _{i=1}^{n}{\alpha }_{i}\,exp(-\frac{t}{{\tau }_{i}})+{I}_{{background}} &amp; \,{\rm{with}}\,{i}=1...3\end{array}$$\end{document}</span>
+    <div id="M4" display="block" class="math">
+     <div class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <span class="mi">I</span>
+         <span stretchy="false" class="mo">(</span>
+         <span class="mi">t</span>
+         <span stretchy="false" class="mo">)</span>
+        </div>
+       </div>
+       <div class="mtd">
+        <span class="mo">=</span>
+       </div>
+       <div class="mtd">
+        <div class="mrow">
+         <div class="munderover">
+          <span class="mo">∑</span>
+          <div class="mrow">
+           <span class="mi">i</span>
+           <span class="mo">=</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mi">n</span>
+         </div>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">α</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">i</span>
+          </div>
+         </div>
+         <span width=".25em" class="mspace"/>
+         <span class="mi">e</span>
+         <span class="mi">x</span>
+         <span class="mi">p</span>
+         <div class="mrow">
+          <span stretchy="true" class="mo">(</span>
+          <div class="mrow">
+           <span class="mo">−</span>
+           <div class="mfrac">
+            <span class="mi">t</span>
+            <div class="mrow">
+             <div class="msub">
+              <div class="mrow">
+               <span class="mi">τ</span>
+              </div>
+              <div class="mrow">
+               <span class="mi">i</span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span stretchy="true" class="mo">)</span>
+         </div>
+         <span class="mo">+</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">I</span>
+          </div>
+          <div class="mrow">
+           <span mathvariant="italic" class="mi">background</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mtd">
+        <div class="mrow">
+         <span width=".25em" class="mspace"/>
+         <span mathvariant="normal" class="mi">with</span>
+         <span width=".25em" class="mspace"/>
+         <span mathvariant="italic" class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+         <span class="mo">...</span>
+         <span class="mn">3</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41598_2019_46732_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+  <div id="Equ2" class="disp-formula">
+   <span class="label">2</span>
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{array}{cccc}{\tau }_{av(int)} &amp; = &amp; \sum _{i=1}^{n}{\alpha }_{i}{\tau }_{i}^{2}/\sum _{i=1}^{n}\,{\alpha }_{i}{\tau }_{i} &amp; {\rm{with}}\,i=1...3\end{array}$$\end{document}</span>
+    <div id="M6" display="block" class="math">
+     <div class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">a</span>
+           <span class="mi">v</span>
+           <span stretchy="false" class="mo">(</span>
+           <span class="mi">i</span>
+           <span class="mi">n</span>
+           <span class="mi">t</span>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mtd">
+        <span class="mo">=</span>
+       </div>
+       <div class="mtd">
+        <div class="mrow">
+         <div class="munderover">
+          <span class="mo">∑</span>
+          <div class="mrow">
+           <span class="mi">i</span>
+           <span class="mo">=</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mi">n</span>
+         </div>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">α</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">i</span>
+          </div>
+         </div>
+         <div class="msubsup">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">i</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <span class="mo">/</span>
+         <div class="munderover">
+          <span class="mo">∑</span>
+          <div class="mrow">
+           <span class="mi">i</span>
+           <span class="mo">=</span>
+           <span class="mn">1</span>
+          </div>
+          <span class="mi">n</span>
+         </div>
+         <span width=".25em" class="mspace"/>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">α</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">i</span>
+          </div>
+         </div>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">τ</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">i</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mtd">
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">with</span>
+         <span width=".25em" class="mspace"/>
+         <span class="mi">i</span>
+         <span class="mo">=</span>
+         <span class="mn">1</span>
+         <span class="mo">...</span>
+         <span class="mn">3</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41598_2019_46732_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+</sec>

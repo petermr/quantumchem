@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Workflow libraries and atomic workflows</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Scientific workflows represent valuable knowledge incorporating verified methods to perform specific experiments. Within this context, sharing workflows to establish and improve collaborations facilitates advancement of scientific knowledge. Workflow repositories and libraries have a profound role in achieving this objective by providing the enabling environment. To support workflow sharing we recommend creating a workflow library of atomic workflows for a specific research area, a domain, and it may have multiple sub-domains. Defining a workflow library follows a top-down approach, i.e. first the domain is identified, next, the sub-domains are defined and finally, the functionality of atomic workflows specified.
+  <div id="Equ5" class="disp-formula">
+   <span class="label">5</span>
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{SUB}}\_{\text{DOMAIN}}_{k} \in {\text{DOMAIN}} $$\end{document}</span>
+    <div id="M10" display="block" class="math">
+     <div class="mrow">
+      <span class="mtext">SUB</span>
+      <span class="mi">_</span>
+      <div class="msub">
+       <span class="mtext">DOMAIN</span>
+       <span class="mi">k</span>
+      </div>
+      <span class="mo">∈</span>
+      <span class="mtext">DOMAIN</span>
+     </div>
+    </div>
+    <div xlink:href="13321_2016_169_Article_Equ5.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where k = 1,…, w
+  <div id="Equ6" class="disp-formula">
+   <span class="label">6</span>
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}}_{{{\text{AT}}({\text{l}})}} \in {\text{SUB}}\_{\text{DOMAIN}}_{\text{k}} $$\end{document}</span>
+    <div id="M12" display="block" class="math">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mtext">WF</span>
+       <div class="mrow">
+        <span class="mtext">AT</span>
+        <span stretchy="false" class="mo">(</span>
+        <span class="mtext">l</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+      <span class="mo">∈</span>
+      <span class="mtext">SUB</span>
+      <span class="mi">_</span>
+      <div class="msub">
+       <span class="mtext">DOMAIN</span>
+       <span class="mtext">k</span>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="13321_2016_169_Article_Equ6.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where l = 1,…, y
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Being familiar with a particular research domain, researchers can identify the relevant sub-domains and define the functionality of workflow library of each sub-domain.</p>
+</sec>

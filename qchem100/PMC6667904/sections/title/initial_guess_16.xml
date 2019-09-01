@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0017" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Initial guess</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Users can choose five types of initial guesses for the SCF calculations. Table 
+  <a rid="jcc25364-tbl-0006" ref-type="table" href="#jcc25364-tbl-0006">6</a> summarizes the techniques implemented in RAQET. The keyword Hcore produces the MO coefficients and density matrix from the diagonalization of the one‐electron Hamiltonian matrix. This guess can represent the relativistic effects of the initial core orbitals at the SF and SD levels without any two‐electron interactions. The keyword Huckel, which is the default option in RAQET, provides the MO coefficients and density matrix from the extended Hückel calculation.
+  <a rid="jcc25364-bib-0160" ref-type="ref" href="#jcc25364-bib-0160">160</a> RAQET adopts the energy parameters reoptimized from the atomic calculations using the SF‐IODKH/NR Hamiltonian and minimal basis sets optimized by the DKH3 Hamiltonian
+  <a rid="jcc25364-bib-0161" ref-type="ref" href="#jcc25364-bib-0161">161</a> at the ROHF level. This gives a good initial description of the chemical bonds at the SF level. The keyword Atomic provides the density matrix constructed from atomic density matrices. This represents the relativistic effects for core orbitals together with intra‐atomic two‐electron interactions at the SF and SD levels. The keyword Small provides the MO coefficients by projecting those generated from a SCF calculation using smaller basis sets. This guess gives good initial core and valence orbitals for any system at the SF and SD levels. Finally, the keyword MORead uses the MO coefficients written in an input file.
+ </p>
+ <div id="jcc25364-tbl-0006" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Table 6</span>
+  <div class="caption">
+   <p>Capabilities of initial guess techniques</p>
+  </div>
+  <table frame="hsides" rules="groups">
+   <col align="left" span="1"/>
+   <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+   <thead valign="bottom">
+    <tr style="border-bottom:solid 1px #000000">
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+     <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+    </tr>
+   </thead>
+   <tbody valign="top">
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Hcore</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Use MO information obtained from diagonalization of one‐electron Hamiltonian matrix</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Huckel</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Use MO information obtained with extended Hückel method (default)</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Atomic</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Use the sum of atomic densities</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">Small</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Use MO information by projecting MO obtained from SCF calculations with smaller basis sets</td>
+    </tr>
+    <tr>
+     <td align="left" valign="top" rowspan="1" colspan="1">MORead</td>
+     <td align="left" valign="top" rowspan="1" colspan="1">Read MO information from input file</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</sec>

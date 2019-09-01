@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Tab5" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 5</span>
+ <div class="caption">
+  <p>Root mean square deviations between optimised coordinates and PDB coordinates for 26 protein-ligand complexes at two different gradient tolerances</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th align="left">PDB entry</th>
+    <th align="left">PDB ligand code</th>
+    <th align="left">RMSD Av. gradient &lt; 0.5 (kcal/mol)/Angstrom</th>
+    <th align="left">RMSD Av. gradient &lt; 0.1 (kcal/mol)/Angstrom</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td align="left">2CEJ</td>
+    <td align="left">1AH</td>
+    <td align="left">0.040</td>
+    <td align="left">0.155</td>
+   </tr>
+   <tr>
+    <td align="left">4HYF</td>
+    <td align="left">1AK</td>
+    <td align="left">0.061</td>
+    <td align="left">0.211</td>
+   </tr>
+   <tr>
+    <td align="left">4NAN</td>
+    <td align="left">2JM</td>
+    <td align="left">0.067</td>
+    <td align="left">0.648</td>
+   </tr>
+   <tr>
+    <td align="left">4ANP</td>
+    <td align="left">3QI</td>
+    <td align="left">0.028</td>
+    <td align="left">0.104</td>
+   </tr>
+   <tr>
+    <td align="left">4WLB</td>
+    <td align="left">3QQ</td>
+    <td align="left">0.021</td>
+    <td align="left">0.133</td>
+   </tr>
+   <tr>
+    <td align="left">3QTI</td>
+    <td align="left">3QT</td>
+    <td align="left">0.025</td>
+    <td align="left">0.051</td>
+   </tr>
+   <tr>
+    <td align="left">5CBJ</td>
+    <td align="left">4ZD</td>
+    <td align="left">0.031</td>
+    <td align="left">0.444</td>
+   </tr>
+   <tr>
+    <td align="left">5CCR</td>
+    <td align="left">4ZT</td>
+    <td align="left">0.058</td>
+    <td align="left">0.154</td>
+   </tr>
+   <tr>
+    <td align="left">5CC3</td>
+    <td align="left">4ZU</td>
+    <td align="left">0.043</td>
+    <td align="left">0.140</td>
+   </tr>
+   <tr>
+    <td align="left">5CCN</td>
+    <td align="left">4ZZ</td>
+    <td align="left">0.073</td>
+    <td align="left">0.163</td>
+   </tr>
+   <tr>
+    <td align="left">2VIN</td>
+    <td align="left">505</td>
+    <td align="left">0.020</td>
+    <td align="left">0.197</td>
+   </tr>
+   <tr>
+    <td align="left">5CEO</td>
+    <td align="left">50D</td>
+    <td align="left">0.038</td>
+    <td align="left">0.174</td>
+   </tr>
+   <tr>
+    <td align="left">4FTR</td>
+    <td align="left">5HK</td>
+    <td align="left">0.029</td>
+    <td align="left">0.223</td>
+   </tr>
+   <tr>
+    <td align="left">5JJS</td>
+    <td align="left">6L2</td>
+    <td align="left">0.043</td>
+    <td align="left">0.147</td>
+   </tr>
+   <tr>
+    <td align="left">5JN2</td>
+    <td align="left">6LO</td>
+    <td align="left">0.040</td>
+    <td align="left">0.393</td>
+   </tr>
+   <tr>
+    <td align="left">5JMS</td>
+    <td align="left">6LP</td>
+    <td align="left">0.040</td>
+    <td align="left">0.181</td>
+   </tr>
+   <tr>
+    <td align="left">3HMM</td>
+    <td align="left">855</td>
+    <td align="left">0.034</td>
+    <td align="left">0.102</td>
+   </tr>
+   <tr>
+    <td align="left">2R7L</td>
+    <td align="left">AMZ+ATP</td>
+    <td align="left">0.162</td>
+    <td align="left">0.953</td>
+   </tr>
+   <tr>
+    <td align="left">2UZN</td>
+    <td align="left">C96</td>
+    <td align="left">0.198</td>
+    <td align="left">0.386</td>
+   </tr>
+   <tr>
+    <td align="left">1IEL</td>
+    <td align="left">CAZ</td>
+    <td align="left">0.062</td>
+    <td align="left">0.308</td>
+   </tr>
+   <tr>
+    <td align="left">1PPP</td>
+    <td align="left">E6C</td>
+    <td align="left">0.418</td>
+    <td align="left">0.923</td>
+   </tr>
+   <tr>
+    <td align="left">1LEV</td>
+    <td align="left">F6P</td>
+    <td align="left">0.049</td>
+    <td align="left">0.440</td>
+   </tr>
+   <tr>
+    <td align="left">4DFR</td>
+    <td align="left">MTX</td>
+    <td align="left">3.493</td>
+    <td align="left">3.451</td>
+   </tr>
+   <tr>
+    <td align="left">1OWY</td>
+    <td align="left">PRY</td>
+    <td align="left">0.253</td>
+    <td align="left">0.503</td>
+   </tr>
+   <tr>
+    <td align="left">5CCL</td>
+    <td align="left">SAM</td>
+    <td align="left">0.040</td>
+    <td align="left">0.161</td>
+   </tr>
+   <tr>
+    <td align="left">3VHU</td>
+    <td align="left">SNL</td>
+    <td align="left">0.078</td>
+    <td align="left">0.160</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

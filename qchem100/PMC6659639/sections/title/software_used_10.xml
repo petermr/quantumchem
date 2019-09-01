@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec10" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Software used</div>
+ <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">DFT calculations were carried out using the GPAW package
+  <span class="sup">
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>,
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>
+  </span> with localized basis sets (LCAO mode)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. TDDFT calculations were conducted using the LCAO-RT-TDDFT implementation in GPAW
+  <span class="sup">
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span> and analyzed using the TCM tools therein
+  <span class="sup">
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>
+  </span>. The ASE library
+  <span class="sup">
+   <a ref-type="bibr" rid="CR59" href="#CR59">59</a>
+  </span> was used for constructing the atomic structures. The NumPy
+  <span class="sup">
+   <a ref-type="bibr" rid="CR60" href="#CR60">60</a>
+  </span> and Matplotlib
+  <span class="sup">
+   <a ref-type="bibr" rid="CR61" href="#CR61">61</a>
+  </span> Python packages, the VMD software
+  <span class="sup">
+   <a ref-type="bibr" rid="CR62" href="#CR62">62</a>,
+   <a ref-type="bibr" rid="CR63" href="#CR63">63</a>
+  </span>, and Inkscape were used for processing data and generating figures.
+ </p>
+</sec>

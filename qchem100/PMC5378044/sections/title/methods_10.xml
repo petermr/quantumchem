@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To implement the optimization with the UCC wavefunction ansatz on a trapped-ion quantum simulator, our proposal is to first employ classical algorithms to obtain approximate solutions
+  <a ref-type="bibr" rid="b35" href="#b35">35</a>
+  <a ref-type="bibr" rid="b46" href="#b46">46</a>. Then, we can further improve the quality of the solution by searching for the true minima with an ion trap. The idea is as follows: first we create a UCC ansatz by the Suzuki-Trotter method described in the previous section. Denote this choice of the cluster operator as 
+  <span class="italic">T</span>
+  <span class="sup">(0)</span>, and other choices as 
+  <span class="italic">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span> with 
+  <span class="italic">k</span> = 1, 2, 3, …. The corresponding energy 
+  <div id="m62" class="inline-formula">
+   <span id="d32e1472" xlink:href="srep03589-m62.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> of the initial state is obtained by a classical computer.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Next, we choose another set of cluster operator 
+  <span class="italic">T</span>
+  <span class="sup">(1)</span> which is a perturbation around 
+  <span class="italic">T</span>
+  <span class="sup">(0)</span>. Define the new probe state 
+  <div id="m63" class="inline-formula">
+   <span id="d32e1487" xlink:href="srep03589-m63.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Then, the expectation value of the energy 
+  <div id="m64" class="inline-formula">
+   <span id="d32e1490" xlink:href="srep03589-m64.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> can be obtained by measuring components of the second quantized Hamiltonian, 
+  <div id="m65" class="inline-formula">
+   <span id="d32e1494" xlink:href="srep03589-m65.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. Recall that the coefficients 
+  <div id="m66" class="inline-formula">
+   <span id="d32e1497" xlink:href="srep03589-m66.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> are all precomputed and known.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In order to obtain measurement results for the operators 
+  <div id="m67" class="inline-formula">
+   <span id="d32e1502" xlink:href="srep03589-m67.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, we will first convert the fermion operators into spin operators via Jordan-Wigner transformation; the same procedure is applied for creating the state |
+  <span class="italic">ϕ</span>
+  <sub>1</sub>〉. The quantum measurement for the resulting products of Pauli matrices can be achieved efficiently with trapped ions, using the method we described.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The following steps are determined through a classical optimization algorithm. There can be many choices for such an algorithm, for example gradient descent method, Nelder-Mead method, or quasi-Newton methods. For completeness, we summarize below the application of gradient descent method to our optimization problem.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">First we define the vector 
+  <div id="m68" class="inline-formula">
+   <span id="d32e1514" xlink:href="srep03589-m68.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> to contain all coefficients in the cluster operator 
+  <span class="italic">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span> at the 
+  <span class="italic">k</span>-th step. We can also write the expectation value 
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>) ≡ 〈
+  <span class="italic">ϕ
+   <sub>k</sub>
+  </span>| 
+  <span class="italic">H</span> |
+  <span class="italic">ϕ
+   <sub>k</sub>
+  </span>〉 for each step as a function of 
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>. The main idea of the gradient descent method is that 
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>) decreases fastest along the direction of the negative gradient of 
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>), −∇
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>). Therefore, the (
+  <span class="italic">k</span> + 1)-th step is determined by the following relation:
+  <div id="m6" class="disp-formula">
+   <span id="d32e1599" xlink:href="srep03589-m6.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">a
+   <sub>k</sub>
+  </span> is an adjustable parameter; it can be different for each step. To obtain values of the gradient ∇
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>), one may use the finite-difference method to approximate the gradient. However, numerical gradient techniques are often susceptible to numerical instability. Alternatively, we can invoke the Hellman-Feynman theorem and get, e.g., 
+  <div id="m69" class="inline-formula">
+   <span id="d32e1619" xlink:href="srep03589-m69.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, which can be obtained with a method similar to that for obtaining 
+  <span class="italic">E</span>(
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, as a valid assumption for general cases, we assume our parametrization of UCC gives a smooth function for 
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>). Thus, it follows that 
+  <div id="m70" class="inline-formula">
+   <span id="d32e1646" xlink:href="srep03589-m70.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, and eventually 
+  <span class="italic">E</span> (
+  <span class="bold">T</span>
+  <span class="sup">(
+   <span class="italic">k</span>)
+  </span>) converges to a minimum value for large 
+  <span class="italic">k</span>. Finally, we can also obtain the optimized UCC quantum state.
+ </p>
+</sec>

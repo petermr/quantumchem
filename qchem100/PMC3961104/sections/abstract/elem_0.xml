@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+ <p>We present a powerful Python library to quickly and efficiently generate realistic peptide model structures. The library makes it possible to quickly set up quantum mechanical calculations on model peptide structures. It is possible to manually specify a specific conformation of the peptide. Additionally the library also offers sampling of backbone conformations and side chain rotamer conformations from continuous distributions. The generated peptides can then be geometry optimized by the MMFF94 molecular mechanics force field via convenient functions inside the library. Finally, it is possible to output the resulting structures directly to files in a variety of useful formats, such as XYZ or PDB formats, or directly as input files for a quantum chemistry program. FragBuilder is freely available at 
+  <span xlink:href="https://github.com/jensengroup/fragbuilder/" class="uri" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/jensengroup/fragbuilder/</span> under the terms of the BSD open source license.
+ </p>
+</div>

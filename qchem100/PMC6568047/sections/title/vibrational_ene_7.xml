@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Vibrational energy levels</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">An important, but classically difficult problem, is to obtain accurate energy levels for the vibrational Hamiltonian. The spectrum of the vibrational Hamiltonian provides corrections to the electronic eigenstates used to predict reaction rates.
+  <a rid="cit22" ref-type="bibr" href="#cit22">22</a> Moreover, we will show how these energy levels can be used to calculate the absorption spectrum of molecules in Section IV.B. Of particular interest are the lowest lying energy levels at low temperature. Using a universal quantum computer, we can first prepare an initial state that has a large overlap with the ground state of the vibrational Hamiltonian. We can then use the phase estimation algorithm
+  <a rid="cit7" ref-type="bibr" href="#cit7">7</a>,
+  <a rid="cit51" ref-type="bibr" href="#cit51">51</a> to probabilistically obtain the ground state and ground state energy. A possible initial ground state is the lowest energy product state of the harmonic oscillator basis states, |
+  <span class="italic">ψ</span>
+  <sub>0</sub>〉 = ⊗ = ⊗
+  <sub>
+   <span class="italic">m</span>
+  </sub>|
+  <span class="italic">s</span>
+  <sub>
+   <span class="italic">m</span>
+  </sub>〉
+  <sub>
+   <span class="italic">m</span>
+  </sub>. However, we note that the overlap between this state and the true ground state may decrease exponentially with the size of the molecule. This so-called ‘orthogonality catastrophe’ has been discussed previously in the context of electronic structure calculations on a quantum computer.
+  <a rid="cit52" ref-type="bibr" href="#cit52">52</a>,
+  <a rid="cit53" ref-type="bibr" href="#cit53">53</a> As a result, for large systems it may be more efficient to use an initial state obtained from a classical vibrational self-consistent field (VSCF) calculation. VSCF is the vibrational analogue of the Hartree–Fock method in electronic structure theory. VSCF optimises the basis functions to minimise the energy of the Hamiltonian with a product state.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Another route to a state with a large overlap with the ground state, is to prepare the VSCF state, and then adiabatically evolve under a Hamiltonian that changes slowly from the VSCF Hamiltonian, to the full vibrational Hamiltonian 
+  <span class="italic">H</span>. This approach has received significant attention within quantum computing approaches to the electronic structure problem, since it was first proposed in the context of quantum computational chemistry in 
+  <a rid="cit8" ref-type="bibr" href="#cit8">ref. 8</a>. However, both adiabatic state preparation and phase estimation typically require long circuits, with a large number of gates. As a result, quantum error correction is required to suppress the effect of device imperfections. It is therefore helpful to introduce variational methods, which may make these calculations feasible for near-term, non-error corrected quantum computers. Variational methods replace the long gate sequences required by phase estimation with a polynomial number of shorter circuits.
+  <a rid="cit42" ref-type="bibr" href="#cit42">42</a>,
+  <a rid="cit54" ref-type="bibr" href="#cit54">54</a> This dramatically reduces the coherence time required. As a result, quantum error correction may not be required, if the error rate is sufficiently low, in the context of the number of gates required. The circuits used consist of a number of parametrised gates which seek to create an accurate approximation of the desired state. The parameters are updated using a classical feedback loop, in order to produce better approximations of the desired state. The circuit used is known as the ‘ansatz’ circuit.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Inspired by classical methods for the vibrational structure problem, we introduce the unitary vibrational coupled cluster (UVCC) ansatz. This is a unitary analogue of the VCC ansatz introduced in 
+  <a rid="cit12" ref-type="bibr" href="#cit12">ref. 12 and 46</a>. We note that a similar pairing exists for the electronic structure problem, where the unitary coupled cluster (UCC) ansatz
+  <a rid="cit55" ref-type="bibr" href="#cit55">55</a>,
+  <a rid="cit56" ref-type="bibr" href="#cit56">56</a> has been suggested as a quantum version of the classical coupled cluster method. The UVCC ansatz is given by
+  <div id="eqn11" class="disp-formula">
+   <span class="label">11</span>|
+   <span class="bold">Ψ</span>(
+   <span class="italic">θ⃑</span>))〉 = exp( = exp(
+   <span class="italic">T[combining circumflex]</span> – 
+   <span class="italic">T[combining circumflex]</span>
+   <span class="sup">†</span>)|
+   <span class="bold">Ψ</span>
+   <sub>0</sub>〉,,
+  </div>where the initial state |
+  <span class="bold">Ψ</span>
+  <sub>0</sub>〉 can be either the ground state | can be either the ground state |
+  <span class="italic">ψ</span>
+  <sub>0</sub>〉 of the harmonic oscillators or the VSCF state | of the harmonic oscillators or the VSCF state |
+  <span class="bold">Ψ</span>
+  <sub>VSCF</sub>〉, , 
+  <span class="italic">T[combining circumflex]</span> is the sum of molecular excitation operators truncated at a specified excitation rank, and 
+  <span class="italic">θ⃑</span> are the parameters defined below. Similar to the unitary coupled cluster ansatz in electronic structure problems, the single and double excitation operators are
+  <div id="eqn12" class="disp-formula">
+   <span class="label">12</span>
+   <span class="italic">T[combining circumflex]</span> = 
+   <span class="italic">T[combining circumflex]</span>
+   <sub>1</sub> + 
+   <span class="italic">T[combining circumflex]</span>
+   <sub>2</sub> +…,
+  </div>with
+  <div id="eqn13" class="disp-formula">
+   <span class="label">13</span>
+   <div xlink:href="c9sc01313j-t11.jpg" id="ugt11" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Here, we omit the subscript of modes for simplicity. 
+  <span class="italic">θ</span>
+  <sub>
+   <span class="italic">s</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">t</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>
+  </sub> and 
+  <span class="italic">θ</span>
+  <sub>
+   <span class="italic">s</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">t</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">p</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">q</span>
+   <sub>
+    <span class="italic">n</span>
+   </sub>
+  </sub> are real parameters, and 
+  <span class="italic">θ⃑</span> = {
+  <span class="italic">θ</span>
+  <sub>
+   <span class="italic">s</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">t</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>
+  </sub>,
+  <span class="italic">θ</span>
+  <sub>
+   <span class="italic">s</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">t</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">p</span>
+   <sub>
+    <span class="italic">m</span>
+   </sub>,
+   <span class="italic">q</span>
+   <sub>
+    <span class="italic">n</span>
+   </sub>
+  </sub>}. The 
+  <span class="italic">T[combining circumflex]</span> operators can be mapped to qubit operators 
+  <span class="italic">via</span> either the direct or compact mapping.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The UVCC ansatz seeks to create a good approximation to the true ground state by considering excitations above a reference state. We note that the classical VCC ansatz is not a unitary operator. Correspondingly, the method is not variational, meaning that energies are not bounded from below. Moreover, we expect that the UVCC ansatz will deal better with problems of strong static correlation than the VCC ansatz, as the former can easily be used with multi-reference states. This echoes the way in which the UCC ansatz can be used with multi-reference states,
+  <a rid="cit56" ref-type="bibr" href="#cit56">56</a> while it is typically more difficult when using the canonical CC method.
+  <a rid="cit1" ref-type="bibr" href="#cit1">1</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Once we have obtained the energy levels of the vibrational Hamiltonian using the methods discussed above, we can calculate the infrared and Raman frequencies, using the difference between the excited and ground-state energies.
+  <a rid="cit57" ref-type="bibr" href="#cit57">57</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is often also the case that one is interested in the properties of a system in thermal equilibrium, rather than a specific eigenstate. We can also use established quantum algorithms with the Hamiltonians described above to construct these thermal states. On error corrected quantum computers, we can use the heuristic algorithms presented in 
+  <a rid="cit58" ref-type="bibr" href="#cit58">ref. 58 and 59</a> to construct these thermal states. Alternatively, we can use near-term devices to implement hybrid algorithms for imaginary time evolution.
+  <a rid="cit60" ref-type="bibr" href="#cit60">60</a>–
+  <a rid="cit62" ref-type="bibr" href="#cit62">62</a>
+ </p>
+</sec>

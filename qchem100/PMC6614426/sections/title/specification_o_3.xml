@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Specification of the adopted notation</div>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">In order to define the approach, several definitions and notations need to be established. First, molecular orbital indices 
+  <span class="italic">i</span> and 
+  <span class="italic">j</span> denote occupied orbitals, 
+  <span class="italic">a</span> and 
+  <span class="italic">b</span> denote virtual orbitals, and 
+  <span class="italic">p</span>, 
+  <span class="italic">q</span>, 
+  <span class="italic">r</span>, and 
+  <span class="italic">s</span> denote arbitrary molecular orbitals. In coupled cluster theory, in particular CCSD, an expansion based on the HF state |
+  <span class="italic">ψ</span>
+  <span class="sup">HF</span>〉 is created by using an exponential ansatz involving single and double excitation operators:
+  <div id="Equ1" class="disp-formula">
+   <span class="label">1</span>
+   <div class="alternatives">
+    <span id="M9" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left\langle {\psi ^{{\mathrm{CCSD}}}} \right\rangle = e^{\hat T_1 + \hat T_2}\left| {\psi ^{{\mathrm{HF}}}} \right\rangle ,$$\end{document}</span>
+    <div id="M10" class="math">
+     <div close="⟩" open="⟨" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">CCSD</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">T</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">1</span>
+        </div>
+       </div>
+       <span class="mo">+</span>
+       <div class="msub">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">T</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">2</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">HF</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ1.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where the excitation operators are defined as:
+  <div id="Equ2" class="disp-formula">
+   <span class="label">2</span>
+   <div class="alternatives">
+    <span id="M11" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat T_1 = \mathop {\sum}\limits_{ia} {\hat t_i^a} = \mathop {\sum}\limits_{ia} {t_i^a} \hat a_a^\dagger \hat a_i$$\end{document}</span>
+    <div id="M12" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">T</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">1</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">t</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+  <div id="Equ3" class="disp-formula">
+   <span class="label">3</span>
+   <div class="alternatives">
+    <span id="M13" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat T_2 = \mathop {\sum}\limits_{i &lt; j,a,b} {\hat t_{ij}^{ab}} = \mathop {\sum}\limits_{i &lt; j,a &lt; b} {t_{ij}^{ab}} \hat a_a^\dagger \hat a_b^\dagger \hat a_i\hat a_j.$$\end{document}</span>
+    <div id="M14" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">T</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mo">&lt;</span>
+       <span class="mi">j</span>
+       <span class="mo">,</span>
+       <span class="mi">a</span>
+       <span class="mo">,</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∑</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mo">&lt;</span>
+       <span class="mi">j</span>
+       <span class="mo">,</span>
+       <span class="mi">a</span>
+       <span class="mo">&lt;</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">t</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">b</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">†</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+      </div>
+     </div>
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">â</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">j</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ3.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">For closed shell molecules near equilibrium, CCSD provides a robust ansatz for molecular simulations. Early efforts to combine size extensivity and variationality were pioneered by Bartlett, Kutzelnigg, and coworkers
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>–
+   <a ref-type="bibr" rid="CR25" href="#CR25">25</a>
+  </span>. In this context, a unitary variant of coupled cluster theory (UCCSD) was defined by replacing the excitation operators with an anti-Hermitian sum of excitation and de-excitation operators:
+  <div id="Equ4" class="disp-formula">
+   <span class="label">4</span>
+   <div class="alternatives">
+    <span id="M15" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat t_{ij}^{ab} \to \hat t_{ij}^{ab} - \hat t_{ab}^{ij} = \hat \tau _{ij}^{ab}.$$\end{document}</span>
+    <div id="M16" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <span class="mo">→</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">t</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ4.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Because UCCSD is based on a unitary operator, the adjoint is the inverse, and the expectation value of the UCCSD wavefunction can be expanded using the Baker–Campbell–Hausdorff (BCH) formula to obtain a normalized Hamiltonian expectation value (Rayleigh quotient) for variational optimization. Unfortunately, the BCH expansion does not truncate at finite order, making UCCSD computationally intractable on classical hardware. However, the unitary nature of UCCSD is actually a benefit for quantum algorithms as it corresponds to a coherent time evolution, and this was the original motivation for using UCCSD in VQE
+  <span class="sup">
+   <a ref-type="bibr" rid="CR10" href="#CR10">10</a>
+  </span>.
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">In addition to a unitary form, CCSD can also be generalized by including excitation operators which immediately annihilate the HF state. These would include excitations from occupied to occupied, virtual to virtual, etc. Generalized excitations or interactions of this form have been considered previously, and have been used in the context of VQE recently by Lee and coworkers
+  <span class="sup">
+   <a ref-type="bibr" rid="CR17" href="#CR17">17</a>
+  </span>. In this case the cluster operators are further generalized to remove the HF-based subspace restriction: 
+  <div id="IEq5" class="inline-formula">
+   <div class="alternatives">
+    <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\hat \tau _{ij}^{ab} \to \hat \tau _{pq}^{rs}$$\end{document}</span>
+    <div id="M18" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">i</span>
+       <span class="mi">j</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+       <span class="mi">b</span>
+      </div>
+     </div>
+     <span class="mo">→</span>
+     <div class="msubsup">
+      <div class="mrow">
+       <div accent="true" class="mover">
+        <div class="mrow">
+         <span class="mi">τ</span>
+        </div>
+        <span class="mo">^</span>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">p</span>
+       <span class="mi">q</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+       <span class="mi">s</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10988_Article_IEq5.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, where 
+  <span class="italic">p</span>, 
+  <span class="italic">q</span>, 
+  <span class="italic">r</span>, and 
+  <span class="italic">s</span> refer to any arbitrary orbital.
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Although UCCSD is perhaps a natural ansatz for VQE, it cannot be implemented directly as written or as explored previously in the quantum chemistry context. Because the gate model of quantum computation is realistically bound to using gates acting on only a few qubits at a time, the UCCSD operator must be broken up into a time-ordered sequence of few (one or two) particle operators. This is achieved by using a Trotter expansion of a matrix exponential
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>
+  </span>,
+  <div id="Equ5" class="disp-formula">
+   <span class="label">5</span>
+   <div class="alternatives">
+    <span id="M19" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$e^{A + B} = \mathop {{\lim }}\limits_{n \to \infty } \left( {e^{(A/n)}e^{(B/n)}} \right)^n.$$\end{document}</span>
+    <div id="M20" class="math">
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">A</span>
+       <span class="mo">+</span>
+       <span class="mi">B</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> lim</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+       <span class="mo">→</span>
+       <span class="mi">∞</span>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <div close=")" open="(" separators="" class="mfenced">
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">e</span>
+          </div>
+          <div class="mrow">
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <span class="mi">A</span>
+             <span class="mo">∕</span>
+             <span class="mi">n</span>
+            </div>
+            <span class="mo">)</span>
+           </div>
+          </div>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">e</span>
+          </div>
+          <div class="mrow">
+           <div class="mrow">
+            <span class="mo">(</span>
+            <div class="mrow">
+             <span class="mi">B</span>
+             <span class="mo">∕</span>
+             <span class="mi">n</span>
+            </div>
+            <span class="mo">)</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">n</span>
+      </div>
+     </div>
+     <span class="mo">.</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ5.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">Because the generalized single and double excitation operators do not commute, the use of a truncated Trotter expansion represents an approximation to the underlying UCCSD ansatz, and recent work has shown clearly that this does not strongly affect the results because the variational flexibility is sufficient to absorb this error
+  <span class="sup">
+   <a ref-type="bibr" rid="CR7" href="#CR7">7</a>
+  </span>, and that even a single Trotter number (
+  <span class="italic">n</span> = 1) is sufficient to reproduce the results of UCCSD. As a result, a unitary, generalized, Trotterized ansatz becomes:
+  <div id="Equ6" class="disp-formula">
+   <span class="label">6</span>
+   <div class="alternatives">
+    <span id="M21" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left| {\psi ^{{\mathrm{tUCC}}}} \right\rangle = \mathop {\prod}\limits_{s \in \{ pq\} } {e^{\hat t_s}} \mathop {\prod}\limits_{d \in \{ pqrs\} } {e^{\hat t_d}} \left| {\psi ^{{\mathrm{HF}}}} \right\rangle ,$$\end{document}</span>
+    <div id="M22" class="math">
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">tUCC</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∏</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">s</span>
+       <span class="mo">∈</span>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <div class="mrow">
+         <span class="mi">p</span>
+         <span class="mi">q</span>
+        </div>
+        <span class="mo">}</span>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">t</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">s</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="munder">
+      <div class="mrow">
+       <span class="mo"> ∏</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">d</span>
+       <span class="mo">∈</span>
+       <div class="mrow">
+        <span class="mo">{</span>
+        <div class="mrow">
+         <span class="mi">p</span>
+         <span class="mi">q</span>
+         <span class="mi">r</span>
+         <span class="mi">s</span>
+        </div>
+        <span class="mo">}</span>
+       </div>
+      </div>
+     </div>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">e</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <div accent="true" class="mover">
+          <div class="mrow">
+           <span class="mi">t</span>
+          </div>
+          <span class="mo">^</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">d</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div close="⟩" open="∣" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">ψ</span>
+        </div>
+        <div class="mrow">
+         <span mathvariant="normal" class="mi">HF</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_10988_Article_Equ6.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where notation is introduced such that the generalized singles index, 
+  <span class="italic">s</span>, runs over all unique pairs of 
+  <span class="italic">p</span>, 
+  <span class="italic">q</span> and the doubles index, 
+  <span class="italic">d</span>, over unique combinations of 
+  <span class="italic">p</span>, 
+  <span class="italic">q</span>, 
+  <span class="italic">r</span>, 
+  <span class="italic">s</span>.
+ </p>
+</sec>

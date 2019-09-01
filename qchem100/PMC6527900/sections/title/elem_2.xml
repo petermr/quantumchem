@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3. Results and Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The effects of quantum mechanical tunneling and resonances on reaction cross sections and rate constants of the title reactions are discussed in the following.</p>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.1. Reaction Cross Sections</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The total integral cross sections (ics) of the F + H
+   <sub>2</sub>(
+   <span class="italic">v</span> = 0;
+   <span class="italic">j</span> = 0) → HF + H and F + D
+   <sub>2</sub>(
+   <span class="italic">v</span> = 0;
+   <span class="italic">j</span> = 0) → DF + D chemical reactions have been calculated in a wide collision energy interval ranging from the ultra-cold region to above the reaction barrier (10
+   <span class="sup">−6</span>- 10
+   <span class="sup">2</span> meV), as shown in 
+   <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>. In each panel, the results obtained using SW PES and PES-II are compared. In the right panel we also report the experimental values of reference (Che et al., 
+   <a rid="B19" ref-type="bibr" href="#B19">2007</a>) with the relative error bars. The good agreement with PES-II results corroborates the reliability of this PES for describing the low collision energy dynamics of this system.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The ics have a very similar dependence on energy, with a minimum at about 4 meV and the appearance of narrow resonance patterns between 0.01 and 2 meV. However, the number of resonance peaks, their position and intensity vary markedly as the PES and the isotopic variant are changed. Broader resonance features also appear between 20 and 100 meV. Below 0.01 meV the ics increase smoothly with decreasing collision energy, quickly approaching the limiting behavior predicted by the Wigner's threshold law (Wigner, 
+   <a rid="B63" ref-type="bibr" href="#B63">1948</a>). The broader peaks appearing above 20 meV have been analyzed in detail in previous papers (Castillo et al., 
+   <a rid="B15" ref-type="bibr" href="#B15">1996</a>; Der Chao and Skodje, 
+   <a rid="B26" ref-type="bibr" href="#B26">2002</a>; Aquilanti et al., 
+   <a rid="B7" ref-type="bibr" href="#B7">2004</a>) which have provided a satisfactory description of the spectrum of metastable states of the F + H
+   <sub>2</sub> reaction. In particular, the oscillations observed have been interpreted as an interference effect between two of them: a resonance trapped in the transition state region and the other one supported by the van der Waals well of the exit channel (Cavalli and De Fazio, 
+   <a rid="B17" ref-type="bibr" href="#B17">2007</a>, 
+   <a rid="B18" ref-type="bibr" href="#B18">2011</a>; Sokolovski et al., 
+   <a rid="B55" ref-type="bibr" href="#B55">2007b</a>). A clear explanation of the oscillatory pattern in the integral cross section has also been given in terms of Regge oscillations (Sokolovski et al., 
+   <a rid="B54" ref-type="bibr" href="#B54">2007a</a>).
+  </p>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.1.1. The Cold Collision Regime</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">As far as the sharp resonance peaks in the cold energy regime are concerned, we have found that they are narrow isolated resonances affecting just a single partial wave. From the analysis of the reaction probabilities, we have been able to label each peak with the value of the total angular momentum quantum number, 
+    <span class="italic">J</span>, at which the resonance state appears. As shown in 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, in most cases the sequences of the 
+    <span class="italic">J</span> values labeling the resonances are not regular and many values are missing. This observation suggests that the observed patterns do not originate from the rotational levels of a single metastable state. To support this hypothesis, we have calculated the vibrational energies of the triatomic van der Waals complex in the entrance channel at selected 
+    <span class="italic">J</span> values, see 
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>. For the calculation of the roto-vibrational energies we have used an adiabatic model. In brief, we have extended the 
+    <span class="italic">J</span> = 0 quasi-bound state calculations of Takayanagi and Kurosaki (
+    <a rid="B59" ref-type="bibr" href="#B59">1998</a>) to larger values of 
+    <span class="italic">J</span>. The energies have been calculated by solving, at fixed 
+    <span class="italic">J</span>, a one-dimensional bound state problem in 
+    <span class="italic">R</span>, the intermolecular distance between the F atom and the H
+    <sub>2</sub>/D
+    <sub>2</sub> molecule. The matrix elements of the Hamiltonian have been evaluated numerically in a basis of asymptotic diatomic roto-vibrational functions. More details of the calculations done will be given elsewhere.
+   </p>
+   <div id="T1" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Table 1</span>
+    <div class="caption">
+     <p>Roto-vibrational states of the three-atomic complexes F···H
+      <sub>2</sub> and F···D
+      <sub>2</sub> supported by the entrance channel van der Waals well on SW PES and PES-II.
+     </p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th rowspan="1" colspan="1"/>
+       <th rowspan="1" colspan="1"/>
+       <th valign="top" align="center" style="border-bottom: thin solid #000000;" colspan="2" rowspan="1">SW PES</th>
+       <th valign="top" align="center" style="border-bottom: thin solid #000000;" colspan="2" rowspan="1">PES-II</th>
+      </tr>
+      <tr>
+       <th valign="top" align="left" rowspan="1" colspan="1">
+        <span class="bold">
+         <span class="italic">J</span>
+        </span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">
+         <span class="italic">v</span>
+        </span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">
+         <span class="italic">E</span>
+         <sub>
+          <span class="italic">t</span>
+         </sub>/
+         <span class="italic">eV</span>
+        </span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">
+         <div class="inline-formula">
+          <div id="M11" class="math">
+           <div class="msub">
+            <div class="mrow">
+             <span class="mi">E</span>
+            </div>
+            <div class="mrow">
+             <span class="mi">b</span>
+            </div>
+           </div>
+           <span class="mo">/</span>
+           <span class="mi">c</span>
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">m</span>
+            </div>
+            <div class="mrow">
+             <span class="mo">-</span>
+             <span class="mn">1</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">
+         <span class="italic">E</span>
+         <sub>
+          <span class="italic">t</span>
+         </sub>/
+         <span class="italic">eV</span>
+        </span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">
+         <div class="inline-formula">
+          <div id="M12" class="math">
+           <div class="msub">
+            <div class="mrow">
+             <span class="mi">E</span>
+            </div>
+            <div class="mrow">
+             <span class="mi">b</span>
+            </div>
+           </div>
+           <span class="mo">/</span>
+           <span class="mi">c</span>
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">m</span>
+            </div>
+            <div class="mrow">
+             <span class="mo">-</span>
+             <span class="mn">1</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </span>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td valign="top" align="left" colspan="6" rowspan="1">F···
+        <span class="italic">H</span>
+        <sub>2</sub>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2662</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−15.7</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2643</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−31.4</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2680</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−1.5</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2664</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−13.9</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2645</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−29.6</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2681</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−0.7</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2669</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−10.3</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2649</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−26.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2675</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−5.1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2656</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−20.9</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2664</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−14.2</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.2674</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−6.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" colspan="6" rowspan="1">F···
+        <span class="italic">D</span>
+        <sub>2</sub>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1861</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−32.5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1842</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−48.2</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1896</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−4.2</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1887</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−11.8</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1901</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−0.4</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1862</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−31.3</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1843</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−47.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1897</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−3.5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1888</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−11.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1901</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−0.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1865</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−29.0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1846</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−44.9</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1898</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−2.1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1889</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−9.6</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1870</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−25.5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1850</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−41.7</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1901</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−0.1</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1892</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−7.5</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1875</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−21.0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1855</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−37.5</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1896</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−4.7</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1882</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−15.5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1861</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−32.3</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1900</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−1.4</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">6</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1890</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−9.0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1869</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−26.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">7</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1899</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−1.7</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1878</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−19.0</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">8</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1888</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−11.1</td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">9</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+       <td rowspan="1" colspan="1"/>
+       <td rowspan="1" colspan="1"/>
+       <td valign="top" align="center" rowspan="1" colspan="1">0.1898</td>
+       <td valign="top" align="center" rowspan="1" colspan="1">−2.5</td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="table-wrap-foot">
+     <p>
+      <span class="italic">
+       <span class="italic">J</span> and 
+       <span class="italic">v</span> are the total angular momentum and vibrational quantum numbers, respectively. 
+       <span class="italic">E</span>
+       <sub>
+        <span class="italic">t</span>
+       </sub> and 
+       <span class="italic">E</span>
+       <sub>
+        <span class="italic">b</span>
+       </sub> denote the total and the bound state energies (the zero energy is located at the bottom of the reactant valley)
+      </span>.
+     </p>
+    </div>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">From the results of 
+    <a rid="T1" ref-type="table" href="#T1">Table 1</a>, we can see that the number of rotational levels for each vibrational state coincides, in all cases, with the lowest value of 
+    <span class="italic">J</span> in each rotational progression shown in 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>. The 
+    <span class="italic">J</span>- selected peaks appearing in the ics are therefore due to shape resonances trapped in the van der Waals well-located in the entrance channel of the reaction: increasing the centrifugal energy the (quasi-)bound vibrational states escape from the well affecting the reactivity of the two successive partial waves. Thus, the number of bound vibrational states of the van der Waals complex determines the number of 
+    <span class="italic">J</span> progressions observed in each panel of 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>. These conclusions also explain why the number of peaks is different for each isotopic variant studied as well as for the two PESs: the number of resonance states is greater the stronger the long-range forces and the lower the vibrational frequency of the triatomic complex. The deeper and wider van der Waals well of PES-II supports more states that of SW PES: for example in the H
+    <sub>2</sub> case two vibrational states are bound in PES-II and just one in SW PES. Moreover, the vibrational frequency decreases with the increase of the isotopic mass so that the number of bound states is larger for the F···D
+    <sub>2</sub> van der Waals complex: three vibrational states are bound in PES-II and two in SW PES. Finally we note that these resonance features were also found in reference (Lique et al., 
+    <a rid="B37" ref-type="bibr" href="#B37">2011</a>) but were erroneously attributed to Feshbach resonances in the exit van der Waals well.
+   </p>
+  </sec>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.1.2. The Ultra-Cold Limit</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">In the ultra-cold energy range (below 0.001 meV) only 
+    <span class="italic">J</span> = 0 contributes to the partial wave expansion in Equation (6), so that the dependence of ics on collision energy follows the limiting behavior well-described by the Wigner's threshold law (Wigner, 
+    <a rid="B63" ref-type="bibr" href="#B63">1948</a>):
+   </p>
+   <div id="E9" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">(8)</span>
+    <div id="M13" class="math">
+     <div columnalign="left" class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">σ</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">W</span>
+         </div>
+        </div>
+        <span class="mo">=</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mn">4</span>
+          <span class="mi">π</span>
+          <span class="mi">ℏ</span>
+          <span class="mi">β</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">where σ
+    <sub>
+     <span class="italic">W</span>
+    </sub> denotes the ics in the Wigner regime, β is the imaginary part of the scattering length [Balakrishnan et al. (
+    <a rid="B11" ref-type="bibr" href="#B11">1997</a>)] and 
+    <div class="inline-formula">
+     <div id="M14" class="math">
+      <span class="mi">k</span>
+      <span class="mo">=</span>
+      <div class="msqrt">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">m</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">/</span>
+      <span class="mi">ℏ</span>
+     </div>
+    </div> is the reactants' wave number. Fitting the ics shown in 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> to Equation (8) we have obtained the values of the imaginary scattering lengths, see 
+    <a rid="T2" ref-type="table" href="#T2">Table 2</a>. Comparing the β values reported in the table, we see that the dispersion forces and isotopic substitutions influence both the collision energy of the onset of the Wigner regime and the magnitude of β. Because of the stronger long-range interaction potential of PES-II with respect to that of SW PES, the Wigner regime manifests itself to lower collision energy (approximately at 10
+    <span class="sup">−4</span> meV for PES-II, as shown in 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). The larger barrier width of PES-II reduces significantly the β values. Also, we can note that lighter isotopic substitution yields larger β values. Again, for the H
+    <sub>2</sub> case the Wigner regime is encountered at higher energies although the effect is of minor entity than changing the entrance channel of the PES. However, the large differences found in the F + H
+    <sub>2</sub> case, where β changes by more than one order of magnitude, suggest that tunneling cannot be the only reason of this different behavior between the PESs.
+   </p>
+   <div id="T2" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Table 2</span>
+    <div class="caption">
+     <p>Values of the imaginary scattering length, β, in atomic units.</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th rowspan="1" colspan="1"/>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">SW PES</span>
+       </th>
+       <th valign="top" align="center" rowspan="1" colspan="1">
+        <span class="bold">PES-II</span>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">F + H
+        <sub>2</sub>
+       </td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1.201 × 10
+        <span class="sup">−1</span>
+       </td>
+       <td valign="top" align="center" rowspan="1" colspan="1">9.933 × 10
+        <span class="sup">−3</span>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" align="left" rowspan="1" colspan="1">F + D
+        <sub>2</sub>
+       </td>
+       <td valign="top" align="center" rowspan="1" colspan="1">1.644 × 10
+        <span class="sup">−3</span>
+       </td>
+       <td valign="top" align="center" rowspan="1" colspan="1">7.064 × 10
+        <span class="sup">−4</span>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <p xmlns="http://www.w3.org/1999/xhtml">In reference Bodo et al. (
+    <a rid="B14" ref-type="bibr" href="#B14">2004</a>), analyzing elastic and reactive 
+    <span class="italic">J</span>=0 reaction probabilities obtained with the SW PES, the authors were able to obtain the real and imaginary parts of the scattering length. The values obtained were 
+    <span class="italic">a</span> = (−2.0−6.3 × 10
+    <span class="sup">−2</span>
+    <span class="italic">i</span>)Å and 
+    <span class="italic">a</span> = (3.95−8.6 × 10
+    <span class="sup">−4</span>
+    <span class="italic">i</span>)Å for the FH
+    <sub>2</sub> and FD
+    <sub>2</sub> systems, respectively. Comparing with the values reported in 
+    <a rid="T2" ref-type="table" href="#T2">Table 2</a> we can see that the imaginary part of the scattering lengths is in perfect agreement with our results. The negative value obtained for the real part of the scattering length for H
+    <sub>2</sub> is attributed to the presence of a virtual state associated with the van der Waals well in the entrance channel and located around 0.3 meV below the reactive threshold. Fingerprints of this effect can also be noted in the left panel of 
+    <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, where the SW PES curve shows up a faster increase around to 0.01 meV before reaching the Wigner regime. Additional evidences will be given later. For the F+D
+    <sub>2</sub> reaction, the positive value of the real part of the scattering length suggests that the scattering may be influenced by a resonance state. However, no structure has been detected in the reactive observables.
+   </p>
+  </sec>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2. Reaction Rates at Low and Ultra-Low Temperatures</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In 
+   <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>, the rate constants for the production of HF and DF molecules in the temperature range between 0.5 mK and 50 K are shown on log-log plots. Panels (A) and (B) show the results of quantum scattering calculations using SW PES and PES-II, respectively. As we can see from the figure, the kinetics of the two reactions studied is markedly influenced by resonance and tunnel quantum effects. The strong 
+   <span class="italic">J</span>-selected resonance features appearing in the cold collision domain, see 
+   <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, survive to the Boltzmann averaging, see Equation (7) in section 2, giving a maximum at about 1 K. At lower temperature the rates decrease until they reach the Wigner regime at about 1 mK becoming independent of temperature. However, we can note that the SW PES curve in the left panel of 
+   <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> behaves differently from the other, showing a minimum around 0.1 K that is not present in the other curves. This is again a manifestation of the virtual state effect discussed in the previous section. As discussed in reference (Simbotin and Côté, 
+   <a rid="B49" ref-type="bibr" href="#B49">2015</a>), in the presence of a virtual or a resonance state near to the reactive threshold, in the so called Near Threshold Resonance (NTR) regime, the rate constant scales with temperature as 1/
+   <span class="italic">T</span> before reaching the Wigner limiting value. Depending on the proximity of the virtual/bound state to the channel threshold, the reaction rate may increase by orders of magnitude. In this case (see also Simbotin and Côté, 
+   <a rid="B49" ref-type="bibr" href="#B49">2015</a>) the virtual state is not so near, so that the 1/
+   <span class="italic">T</span> behavior is just barely apparent.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the plots of 
+   <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> we can clearly distinguish three different regions as the temperature increases. Up to 1 mK the only pathway for the reaction is the tunneling through the barrier eventually enhanced by the virtual state effect. In the region intermediate between 1 mk and 10 K, the reactivity is additionally affected by the shape resonances in the entrance channel. Above 10 K, the scattering resonances trapped in the transition state and in the exit channel as well as the thermal activation mechanism cause a further increase in the rate coefficients.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the so-called classical region, where the reactivity is dominated by the thermal activation pathway, the dependence of rate constants with temperature is described by the Arrhenius' law, predicting an exponential decrease of the reaction rate constants against reciprocal temperature</p>
+  <div id="E10" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(9)</span>
+   <div id="M15" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mi">k</span>
+       <span class="mo">=</span>
+       <span class="mi">A</span>
+       <span class="mo">exp</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <div class="mrow">
+         <span class="mo">-</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">E</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">a</span>
+          </div>
+         </div>
+         <span class="mo">/</span>
+         <span class="mi">R</span>
+         <span class="mi">T</span>
+        </div>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">where 
+   <span class="italic">E</span>
+   <sub>
+    <span class="italic">a</span>
+   </sub> denotes the activation energy and 
+   <span class="italic">A</span> is the pre-exponential factor. When the reaction also proceeds through the tunneling mechanism, the rate constants are larger than this law would predict and concave Arrhenius plots are observed. For chemical reactions where the exchange of the light hydrogen atom represents the rate determining step, the deviations can be pronounced: they depend on the tunnel effect. As the temperature tends toward zero (below 1 mK), according to the Wigner law (Wigner, 
+   <a rid="B63" ref-type="bibr" href="#B63">1948</a>), the rate constants
+  </p>
+  <div id="E11" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(10)</span>
+   <div id="M16" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">W</span>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mn">4</span>
+         <span class="mi">π</span>
+         <span class="mi">ℏ</span>
+         <span class="mi">β</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">m</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">become temperature independent. An extra factor of 1/2 must be inserted to account for the open-shell structure of the fluorine atom (Aquilanti et al., 
+   <a rid="B5" ref-type="bibr" href="#B5">2005b</a>). The temperature, 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub>, at which the low- and high-temperature limits in Equations (9, 10) cross is defined as the cross-over temperature (Hänggi et al., 
+   <a rid="B30" ref-type="bibr" href="#B30">1990</a>) delimiting the deep (
+   <span class="italic">T</span> &lt; 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub>) and moderate (
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> ≲ 
+   <span class="italic">T</span>≲ 2 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub>) tunneling regimes. According to Christov (
+   <a rid="B21" ref-type="bibr" href="#B21">1997</a>), at the temperature 
+   <span class="italic">T</span> = 2
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> the tunneling and over-barrier mechanisms play the same role. In 1935 Bell found a formula bridging the low- and high-temperature limits of the rate coefficient
+  </p>
+  <div id="E12" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(11)</span>
+   <div id="M17" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">Q</span>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <span class="mi">A</span>
+       <span class="mi">Q</span>
+       <span class="mo">exp</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <div class="mrow">
+         <span class="mo">-</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">V</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">*</span>
+          </div>
+         </div>
+         <span class="mo">/</span>
+         <span class="mi">R</span>
+         <span class="mi">T</span>
+        </div>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">where 
+   <span class="italic">V</span>
+   <span class="sup">*</span> is the reaction barrier height and
+  </p>
+  <div id="E13" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(12)</span>
+   <div id="M18" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mi">Q</span>
+       <span class="mo">=</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mi">T</span>
+         <span class="mo">-</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">T</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">c</span>
+          </div>
+         </div>
+         <span class="mo">exp</span>
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <div class="msup">
+            <div class="mrow">
+             <span class="mi">V</span>
+            </div>
+            <div class="mrow">
+             <span class="mo">*</span>
+            </div>
+           </div>
+           <div class="mrow">
+            <span stretchy="false" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">1</span>
+             <span class="mo">/</span>
+             <span class="mi">R</span>
+             <span class="mi">T</span>
+             <span class="mo">-</span>
+             <span class="mn">1</span>
+             <span class="mo">/</span>
+             <span class="mi">R</span>
+             <div class="msub">
+              <div class="mrow">
+               <span class="mi">T</span>
+              </div>
+              <div class="mrow">
+               <span class="mi">c</span>
+              </div>
+             </div>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">T</span>
+         <span class="mo">-</span>
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">T</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">c</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">is a tunneling correcting factor (Bell, 
+   <a rid="B12" ref-type="bibr" href="#B12">1980</a>). The above expression, written so to emphasize its dependence on the cross-over temperature, holds in the case of a truncated parabolic barrier, for more details see Cavalli et al. (
+   <a rid="B16" ref-type="bibr" href="#B16">2014</a>). Toward the absolute zero, Equation (11) leads correctly to a non-vanishing and temperature independent expression while at high temperature 
+   <div class="inline-formula">
+    <div id="M19" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span class="mi">E</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">a</span>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <div class="msup">
+      <div class="mrow">
+       <span class="mi">V</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">*</span>
+      </div>
+     </div>
+    </div>
+   </div> and the Arrhenius rate expression (9) is recovered. For the F+H
+   <sub>2</sub> reaction, the temperature dependence of the activation energy has been calculated using a phenomenological approach (Aquilanti et al., 
+   <a rid="B8" ref-type="bibr" href="#B8">2012</a>) in the range 10–350 K.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The quantitative enhancement that resonances have on the tunneling can be defined in terms of a coefficient</p>
+  <div id="E14" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(13)</span>
+   <div id="M20" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <span class="mi">γ</span>
+       <span class="mo">=</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mi">k</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">k</span>
+          </div>
+          <div class="mrow">
+           <span class="mi">Q</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">that we take to be the ratio of the numerically exact rate constant 
+   <span class="italic">k</span>, obtained from rigorous quantum scattering calculations, to the tunneling corrected rate constants 
+   <span class="italic">k</span>
+   <sub>
+    <span class="italic">Q</span>
+   </sub>, calculated from Equation (11) using the Arrhenius parameters 
+   <span class="italic">A</span> and 
+   <span class="italic">V</span>
+   <span class="sup">*</span> reported in Persky and Kornweitz (
+   <a rid="B44" ref-type="bibr" href="#B44">1997</a>). The values of 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> have been obtained by imposing the limit for T = 0 of Equation (11) equal to Equation (10), namely:
+  </p>
+  <div id="E15" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">(14)</span>
+   <div id="M21" class="math">
+    <div columnalign="left" class="mtable">
+     <div class="mtr">
+      <div class="mtd">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">T</span>
+        </div>
+        <div class="mrow">
+         <span class="mi">c</span>
+        </div>
+       </div>
+       <span class="mo">=</span>
+       <div class="mfrac">
+        <div class="mrow">
+         <span class="mo">-</span>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">V</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">*</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">R</span>
+         <span class="mo">ln</span>
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <div class="mrow">
+            <span stretchy="false" class="mo">(</span>
+            <div class="mrow">
+             <span class="mn">4</span>
+             <span class="mi">π</span>
+             <span class="mi">ℏ</span>
+             <span class="mi">β</span>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+           <span class="mo">/</span>
+           <div class="mrow">
+            <span stretchy="false" class="mo">(</span>
+            <div class="mrow">
+             <span class="mi">m</span>
+             <span class="mi">A</span>
+            </div>
+            <span stretchy="false" class="mo">)</span>
+           </div>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+       </div>
+       <span class="mo">.</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Using the values of the imaginary scattering length, β, reported in 
+   <a rid="T2" ref-type="table" href="#T2">Table 2</a>, we obtain 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> ≃ 74.4 K and 67.7 K for F + D
+   <sub>2</sub> SW PES and PES-II, respectively and 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> ≃ 72.9 K for F + H
+   <sub>2</sub> PES-II. Note that Equation (14) does not hold in presence of virtual state effects because the model used to obtain Equation (11) does not take it into account. For this reason we can not obtain 
+   <span class="italic">T</span>
+   <sub>
+    <span class="italic">c</span>
+   </sub> and γ in the F+H
+   <sub>2</sub> SW PES case. The temperature dependence of the γ coefficient is shown in 
+   <a ref-type="fig" rid="F3" href="#F3">Figure 3</a>. Note that γ is always lager than one, as it should be. The pronounced peak at very low temperatures is the overall contribution of the 
+   <span class="italic">J</span>-selected shape resonances, while the shallow maximum above 10 K is due to the presence of a transition state resonance (Cavalli and De Fazio, 
+   <a rid="B17" ref-type="bibr" href="#B17">2007</a>).
+  </p>
+  <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Plots of the γ coefficient as defined in Equation (13) for the F+H
+     <sub>2</sub> and F+D
+     <sub>2</sub> reactions, panels 
+     <span class="bold">(A,B)</span>, respectively, on the SW PES (black solid lines) and PES-II (red solid lines).
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00328-g0003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <sec class="sec">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2.1. Kinetic Isotope Effect</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The ratio between the rates of the lighter and the heavier isotopic combinations is a measure of the inter-molecular kinetic isotope effect (KIE) (Steckler et al., 
+    <a rid="B58" ref-type="bibr" href="#B58">1985</a>). The temperature dependence of KIE is shown in 
+    <a ref-type="fig" rid="F4" href="#F4">Figure 4</a>. The rate constant of the F + H
+    <sub>2</sub> reaction increases drastically as temperature decreases, so that in the ultra-cold regime the fluorine atom is about one hundred times more reactive with H
+    <sub>2</sub> than with D
+    <sub>2</sub> on SW PES. We note that this effect is about two orders of magnitude larger than the semi-classical limit (Bigeleisen, 
+    <a rid="B13" ref-type="bibr" href="#B13">1949</a>), which applies above room temperature, where the tunnel effect is negligible and the main source of KIE comes from the difference among the reactants' zero point energies, the so-called primary KIE. At low temperatures (until 1 K), the features are markedly influenced by the tunnel effect giving an exponential enhancement (Bell, 
+    <a rid="B12" ref-type="bibr" href="#B12">1980</a>) more evident in PES-II where the barrier is thicker. Below 1 K the KIE behavior in two PESs is very different: a typical sigmoid curve is observed on SW PES, while the resonance enhancement of the rates give rise to a maximum observed at about 1 K in the case of PES-II. This big difference is of course due to the presence of the virtual state effect that enhances selectively the F + H
+    <sub>2</sub> rate of the SW PES curve, hiding also the smaller resonance KIE effect. Below 1 mK the rates are temperature independent and therefore also is the KIE.
+   </p>
+   <div id="F4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="label">Figure 4</span>
+    <div class="caption">
+     <p>Temperature dependence of the inter-molecular kinetic isotope effect for the two potential energy surfaces investigated.</p>
+    </div>
+    <div xlink:href="fchem-07-00328-g0004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </sec>
+ </sec>
+</sec>

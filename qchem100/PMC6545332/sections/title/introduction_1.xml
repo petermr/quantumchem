@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="se0010" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p id="pr0010" xmlns="http://www.w3.org/1999/xhtml">Last few decades have witnessed unabated research on low-dimensional semiconductor systems (LDSS) e.g. quantum wells (QWLs), quantum wires (QWRs) and quantum dots (QDs). The impetus for the said research has both technological and academic origins. The technological origin being the widespread application of LDSS in the manufacture of microelectronic and optoelectronic devices having very high efficacy such as QD lasers, solar cells, single electron transistors and quantum computers. And, from an academic perspective, study of LDSS physics refreshes many important concepts of quantum mechanics. Studies of LDSS physics earn further delicacy with the introduction of impurity (dopant) which induces a noticeable interaction between the original LDSS confinement potential and the newly arrived impurity potential. As a result, various physical properties of LDSS (electronic, magnetic, optical etc.) are changed from that of an impurity-free condition. The changed values of these properties are quite encouraging from a technological viewpoint. Thus, we come across a plenty of relevant studies on LDSS physics with proper thrust on dopant contributions 
+  <a rid="br0010" ref-type="bibr" href="#br0010">[1]</a>, 
+  <a rid="br0020" ref-type="bibr" href="#br0020">[2]</a>, 
+  <a rid="br0030" ref-type="bibr" href="#br0030">[3]</a>, 
+  <a rid="br0040" ref-type="bibr" href="#br0040">[4]</a>, 
+  <a rid="br0050" ref-type="bibr" href="#br0050">[5]</a>, 
+  <a rid="br0060" ref-type="bibr" href="#br0060">[6]</a>, 
+  <a rid="br0070" ref-type="bibr" href="#br0070">[7]</a>, 
+  <a rid="br0080" ref-type="bibr" href="#br0080">[8]</a>, 
+  <a rid="br0090" ref-type="bibr" href="#br0090">[9]</a>, 
+  <a rid="br0100" ref-type="bibr" href="#br0100">[10]</a>, 
+  <a rid="br0110" ref-type="bibr" href="#br0110">[11]</a>, 
+  <a rid="br0120" ref-type="bibr" href="#br0120">[12]</a>, 
+  <a rid="br0130" ref-type="bibr" href="#br0130">[13]</a>, 
+  <a rid="br0140" ref-type="bibr" href="#br0140">[14]</a>, 
+  <a rid="br0150" ref-type="bibr" href="#br0150">[15]</a>, 
+  <a rid="br0160" ref-type="bibr" href="#br0160">[16]</a>, 
+  <a rid="br0170" ref-type="bibr" href="#br0170">[17]</a>, 
+  <a rid="br0180" ref-type="bibr" href="#br0180">[18]</a>, 
+  <a rid="br0190" ref-type="bibr" href="#br0190">[19]</a>, 
+  <a rid="br0200" ref-type="bibr" href="#br0200">[20]</a>, 
+  <a rid="br0210" ref-type="bibr" href="#br0210">[21]</a>, 
+  <a rid="br0220" ref-type="bibr" href="#br0220">[22]</a>, 
+  <a rid="br0230" ref-type="bibr" href="#br0230">[23]</a>, 
+  <a rid="br0240" ref-type="bibr" href="#br0240">[24]</a>, 
+  <a rid="br0250" ref-type="bibr" href="#br0250">[25]</a>, 
+  <a rid="br0260" ref-type="bibr" href="#br0260">[26]</a>, 
+  <a rid="br0270" ref-type="bibr" href="#br0270">[27]</a>, 
+  <a rid="br0280" ref-type="bibr" href="#br0280">[28]</a>, 
+  <a rid="br0290" ref-type="bibr" href="#br0290">[29]</a>, 
+  <a rid="br0300" ref-type="bibr" href="#br0300">[30]</a>, 
+  <a rid="br0310" ref-type="bibr" href="#br0310">[31]</a>, 
+  <a rid="br0320" ref-type="bibr" href="#br0320">[32]</a>, 
+  <a rid="br0330" ref-type="bibr" href="#br0330">[33]</a>, 
+  <a rid="br0340" ref-type="bibr" href="#br0340">[34]</a>, 
+  <a rid="br0350" ref-type="bibr" href="#br0350">[35]</a>, 
+  <a rid="br0360" ref-type="bibr" href="#br0360">[36]</a>, 
+  <a rid="br0370" ref-type="bibr" href="#br0370">[37]</a>.
+ </p>
+ <p id="pr0020" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">Kerr effect or Kerr nonlinearity</span> corresponds to the alteration in the refractive index (RI) of a substance in presence of an external electric field. It is linked with the real part (alternatively known as the refraction part) of third-order optical susceptibility [
+  <div class="inline-formula">
+   <div id="M1" altimg="si1.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>] and possesses anchoring role in nonlinear optics owing to its importance in optical communications, quantum optics and optical devices 
+  <a rid="br0380" ref-type="bibr" href="#br0380">[38]</a>, 
+  <a rid="br0390" ref-type="bibr" href="#br0390">[39]</a>, 
+  <a rid="br0400" ref-type="bibr" href="#br0400">[40]</a>. In addition to this, nonlinear Kerr materials are promising candidates to be used in designing optical quantum computer 
+  <a rid="br0400" ref-type="bibr" href="#br0400">[40]</a>, 
+  <a rid="br0410" ref-type="bibr" href="#br0410">[41]</a>. These applications require a large nonlinear Kerr effect 
+  <a rid="br0400" ref-type="bibr" href="#br0400">[40]</a> which can be achieved by exploiting the high nonlinearity of QD 
+  <a rid="br0420" ref-type="bibr" href="#br0420">[42]</a>. 
+  <span class="italic">DC-Kerr effect (DCKE)</span> (also known as 
+  <span class="italic">quadratic electro-optic effect; QEOE</span>) deems importance in view of realizing photoemission and detection applications of QDs 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>. Tuning and maximization of the magnitude and resonance wavelength of DCKE can be carried out by structural change of QD 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>. Amplified DCKE with depleted linear and nonlinear absorption are highly appreciated in varieties of quantum appliances as they make studies of nonlinear optics quite feasible at low light power 
+  <a rid="br0380" ref-type="bibr" href="#br0380">[38]</a>, 
+  <a rid="br0390" ref-type="bibr" href="#br0390">[39]</a>. 
+  <span class="italic">Electro-absorption coefficient (EAC)</span> or 
+  <span class="italic">electro-absorption frequency-dependent susceptibility</span> is another notable third-order nonlinear optical (NLO) quantity to explore the photoemission and detection experiments of QDs 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>. Above facts have inspired lots of relevant works that deal with DCKE 
+  <a rid="br0380" ref-type="bibr" href="#br0380">[38]</a>, 
+  <a rid="br0390" ref-type="bibr" href="#br0390">[39]</a>, 
+  <a rid="br0400" ref-type="bibr" href="#br0400">[40]</a>, 
+  <a rid="br0410" ref-type="bibr" href="#br0410">[41]</a>, 
+  <a rid="br0420" ref-type="bibr" href="#br0420">[42]</a>, 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>, 
+  <a rid="br0440" ref-type="bibr" href="#br0440">[44]</a>, 
+  <a rid="br0450" ref-type="bibr" href="#br0450">[45]</a>, 
+  <a rid="br0460" ref-type="bibr" href="#br0460">[46]</a>, 
+  <a rid="br0470" ref-type="bibr" href="#br0470">[47]</a>, 
+  <a rid="br0480" ref-type="bibr" href="#br0480">[48]</a>, 
+  <a rid="br0490" ref-type="bibr" href="#br0490">[49]</a>, 
+  <a rid="br0500" ref-type="bibr" href="#br0500">[50]</a>, 
+  <a rid="br0510" ref-type="bibr" href="#br0510">[51]</a> and EAC 
+  <a rid="br0430" ref-type="bibr" href="#br0430">[43]</a>, 
+  <a rid="br0440" ref-type="bibr" href="#br0440">[44]</a>, 
+  <a rid="br0450" ref-type="bibr" href="#br0450">[45]</a>, 
+  <a rid="br0460" ref-type="bibr" href="#br0460">[46]</a>, 
+  <a rid="br0480" ref-type="bibr" href="#br0480">[48]</a>, 
+  <a rid="br0490" ref-type="bibr" href="#br0490">[49]</a>, 
+  <a rid="br0500" ref-type="bibr" href="#br0500">[50]</a> in LDSS.
+ </p>
+ <p id="pr0030" xmlns="http://www.w3.org/1999/xhtml">In case of Kerr-type nonlinearities the RI and absorption coefficient (AC) are given by 
+  <div class="inline-formula">
+   <div id="M2" altimg="si2.svg" class="math">
+    <span class="mi">n</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span class="mi">I</span>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M3" altimg="si3.svg" class="math">
+    <span class="mi">α</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">+</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+    <span class="mi">I</span>
+   </div>
+  </div> where, 
+  <span class="italic">n</span>, 
+  <div class="inline-formula">
+   <div id="M4" altimg="si4.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M5" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <span class="italic">α</span>, 
+  <div class="inline-formula">
+   <div id="M6" altimg="si6.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M7" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <span class="italic">I</span> are total RI, linear RI, nonlinear RI, total AC, linear AC, nonlinear AC and intensity of electromagnetic wave, respectively. For systems where absorption is insignificant (
+  <div class="inline-formula">
+   <div id="M8" altimg="si8.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span class="mo">∼</span>
+    <span class="mn">0</span>
+   </div>
+  </div>), 
+  <div class="inline-formula">
+   <div id="M9" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M10" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> are found to be proportional to real and imaginary components of the complex quantity 
+  <div class="inline-formula">
+   <div id="M11" altimg="si1.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>, respectively. If the system is exposed to a single, monochromatic, linearly polarized field, the intensity of the field can be represented by 
+  <div class="inline-formula">
+   <div id="M12" altimg="si9.svg" class="math">
+    <span class="mi">I</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mn">2</span>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ϵ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+    <span class="mi">c</span>
+    <span stretchy="false" class="mo">|</span>
+    <span class="mi">F</span>
+    <div class="msup">
+     <div class="mrow">
+      <span stretchy="false" class="mo">|</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div>; where 
+  <span class="italic">c</span>, 
+  <div class="inline-formula">
+   <div id="M13" altimg="si10.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">ϵ</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>, and 
+  <div class="inline-formula">
+   <div id="M14" altimg="si11.svg" class="math">
+    <span stretchy="false" class="mo">|</span>
+    <span class="mi">F</span>
+    <span stretchy="false" class="mo">|</span>
+   </div>
+  </div> are the speed of light, electrical permittivity of free space (
+  <div class="inline-formula">
+   <div id="M15" altimg="si12.svg" class="math">
+    <span lspace="0em" rspace="0em" linebreak="badbreak" linebreakstyle="after" class="mo">=</span>
+    <span class="mn">8.85</span>
+    <span class="mo">×</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mn">10</span>
+     </div>
+     <div class="mrow">
+      <span linebreak="badbreak" linebreakstyle="after" class="mo">−</span>
+      <span class="mn">12</span>
+     </div>
+    </div>
+    <span width="0.25em" class="mspace"/>
+    <span class="mtext">F</span>
+    <span stretchy="false" class="mo">/</span>
+    <span class="mtext">m</span>
+   </div>
+  </div>) and amplitude of the electric field, respectively. A notable change takes place in absorbing medium where the real and imaginary parts of first and third-order susceptibilities interplay between them and accordingly modulate 
+  <div class="inline-formula">
+   <div id="M16" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M17" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div>. In consequence, the expressions of 
+  <div class="inline-formula">
+   <div id="M18" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M19" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> are markedly altered (from that of non-absorbing one) and the aforesaid proportionality gets completely lost. It, therefore, appears important to measure the deviation in the magnitudes of 
+  <div class="inline-formula">
+   <div id="M20" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M21" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> in absorbing medium with respect to the non-absorbing medium. Such study helps us estimate the necessary corrections/rectifications needed to the magnitudes of 
+  <div class="inline-formula">
+   <div id="M22" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M23" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> in absorbing medium and the corrections are linked with the ratios of linear AC and linear RI and that of imaginary and real parts of 
+  <div class="inline-formula">
+   <div id="M24" altimg="si1.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>. Quantitatively, it is done by computing the 
+  <span class="italic">correction factor (CF)</span> for 
+  <div class="inline-formula">
+   <div id="M25" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M26" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> related to Kerr nonlinearity following a journey from 
+  <span class="italic">non-absorbing</span> to 
+  <span class="italic">absorbing media</span>. Regulated doping of impurity to LDSS can tune the magnitudes of 
+  <div class="inline-formula">
+   <div id="M27" altimg="si4.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M28" altimg="si5.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">n</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M29" altimg="si6.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">0</span>
+     </div>
+    </div>
+   </div>
+  </div>, 
+  <div class="inline-formula">
+   <div id="M30" altimg="si7.svg" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">α</span>
+     </div>
+     <div class="mrow">
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div>
+  </div> and 
+  <div class="inline-formula">
+   <div id="M31" altimg="si1.svg" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">χ</span>
+     </div>
+     <div class="mrow">
+      <span stretchy="false" class="mo">(</span>
+      <span class="mn">3</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>, which, in turn, adjusts the two ratios as mentioned above. Such prudent manipulation of above quantities are conducive for generation of controlled nonlinear absorption effects and refractive nonlinearities 
+  <a rid="br0520" ref-type="bibr" href="#br0520">[52]</a>.
+ </p>
+ <p id="pr0040" xmlns="http://www.w3.org/1999/xhtml">Presence of 
+  <span class="italic">noise</span> influences the output of LDSS-based devices. Noise can enter the system through some external ‘modes’ or ‘pathways’. Two such pathways are usually called 
+  <span class="italic">additive</span> and 
+  <span class="italic">multiplicative</span> based on how system coordinates get coupled with noise. The physical properties of the system are modified as a result of ingression of noise and the extent of modification unveils conspicuous dependence on the particular mode. Therefore, it becomes obvious that the exploration of the noise effects on physical properties of LDSS is extremely important.
+ </p>
+ <p id="pr0050" xmlns="http://www.w3.org/1999/xhtml">In the current manuscript we inspect how the 
+  <span class="italic">interplay between noise and binding energy (BE)</span> modulates the 
+  <span class="italic">DCKE, EAC and CF</span> of 2-d 
+  <span class="italic">GaAs</span> QD. Monitoring BE of LDSS deems importance as any change in BE heavily affects the physical properties of LDSS and therefore the designing of useful optoelectronic devices. The 
+  <div class="inline-formula">
+   <div id="M32" altimg="si13.svg" class="math">
+    <span class="mi">x</span>
+    <span linebreak="goodbreak" linebreakstyle="after" class="mo">−</span>
+    <span class="mi">y</span>
+   </div>
+  </div> confinement is described by harmonic oscillator potential and the 
+  <span class="italic">z</span>-confinement is offered by a perpendicular magnetic field. In addition, an electric field of strength 
+  <span class="italic">F</span> is applied to the system in 
+  <span class="italic">x</span> and 
+  <span class="italic">y</span>-directions. The QD contains 
+  <span class="italic">Gaussian impurity</span> as dopant and at the same time is exposed to 
+  <span class="italic">Gaussian white noise</span> applied via 
+  <span class="italic">additive</span> and 
+  <span class="italic">multiplicative</span> pathways (modes). The inspection illuminates how the interplay between BE and noise governs the aforesaid quantities with sufficient emphasis on the role performed by the noise mode.
+ </p>
+</sec>

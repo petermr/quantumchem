@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum one-time pad</div>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Finally, we relate our experimental RSP scheme to the cryptographic protocol known as the one-time pad by extending the latter to the quantum regime
+  <span class="sup">
+   <a ref-type="bibr" rid="CR8" href="#CR8">8</a>,
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>. Here, Alice securely sends a quantum state 
+  <span class="italic">M</span> to Bob over an insecure channel. We identify the transmitted message 
+  <span class="italic">M</span> as the remotely prepared state on Bob’s side and the openly communicated cipher 
+  <span class="italic">C</span> as the feedforward signal (see Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>). The entangled TMS states provide the random key 
+  <span class="italic">K</span> in the form of quantum fluctuations to both parties. Note that 
+  <span class="italic">K</span> is essential for the one-time pad since it is used by Alice and Bob to encode and decode 
+  <span class="italic">M</span>. For secure communication, 
+  <span class="italic">K</span> needs to be a uniform random variable, such that an eavesdropper with knowledge about 
+  <span class="italic">C</span> does not gain any information about 
+  <span class="italic">M</span>
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. Formally, we can write
+  <div id="Equ2" class="disp-formula">
+   <span class="label">2</span>
+   <div class="alternatives">
+    <span id="M5" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H(M) - H(M|C) = 0{\kern 1pt} ,$$\end{document}</span>
+    <div id="M6" class="math">
+     <span class="mi">H</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">M</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">-</span>
+     <span class="mi">H</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">M</span>
+       <span class="mo">∣</span>
+       <span class="mi">C</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+     <span class="mo">=</span>
+     <span class="mn">0</span>
+     <span class="mo">,</span>
+    </div>
+    <div xlink:href="41467_2019_10727_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>) is the von Neumann entropy of the remotely prepared state and 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>|
+  <span class="italic">C</span>) = 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>, 
+  <span class="italic">C</span>) − 
+  <span class="italic">H</span>(
+  <span class="italic">C</span>) is the conditional entropy of 
+  <span class="italic">M</span> given the feedforward signal (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">6</a>). We experimentally investigate the quantum one-time pad by measuring the prepared states as a function of the JPA 3 parameters, while additionally detecting the signal 
+  <span class="italic">C</span>′ from the second directional coupler output. We compute 
+  <span class="italic">δ</span> = 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>) − 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>|
+  <span class="italic">C</span>′) to verify Eq. (
+  <a rid="Equ2" ref-type="" href="#Equ2">2</a>) under the reasonable approximation 
+  <span class="italic">C</span>′ ≈ 
+  <span class="italic">C</span> (due to 
+  <span class="italic">τ</span> ≃ 1) using state tomography. In Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a>, we observe a decrease in 
+  <span class="italic">δ</span> when moving towards the optimal point where the smallest value 
+  <span class="italic">δ</span> = 0.06 ± 0.04 is reached and the entropy of the prepared state is 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>) = 0.80 ± 0.02. The observation 
+  <div id="IEq2" class="inline-formula">
+   <div class="alternatives">
+    <span id="M7" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\delta \ll H(M)$$\end{document}</span>
+    <div id="M8" class="math">
+     <span class="mi">δ</span>
+     <span class="mo">≪</span>
+     <span class="mi">H</span>
+     <div class="mrow">
+      <span class="mo">(</span>
+      <div class="mrow">
+       <span class="mi">M</span>
+      </div>
+      <span class="mo">)</span>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_10727_Article_IEq2.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div> indicates that the remote preparation of a quantum state on Bob’s side is close to perfect security when approaching the optimal point. At the same time, there is a trade-off between the security and range of prepared states. As previously mentioned, a straightforward extension of the optimal working range of RSP can be realized by adding a phase shifter on Alice’s side. Then, all optimally prepared states would fulfill the security criterion 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>) = 
+  <span class="italic">H</span>(
+  <span class="italic">M</span>|
+  <span class="italic">C</span>) for arbitrary squeezing angles while the accessible squeezing level and purity stay unaffected. It is important to note that a potential eavesdropper cannot obtain any information about 
+  <span class="italic">M</span> by listening exclusively to the TMS resource state since the encoding of 
+  <span class="italic">M</span> happens later in the protocol. Furthermore, if the eavesdropper completely disentangles the TMS state by its actions, RSP yields no squeezing in the final state which could be exploited to detect the eavesdropper’s presence.
+  <div id="Fig4" class="fig">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <p>Quantum one-time pad. 
+     <span class="bold">a</span> Scheme for the interpretation of the RSP setup in terms of the one-time pad. 
+     <span class="bold">b</span> Entropy difference 
+     <span class="italic">δ</span> = 
+     <span class="italic">H</span>(
+     <span class="italic">M</span>) − 
+     <span class="italic">H</span>(
+     <span class="italic">M</span>|
+     <span class="italic">C</span>′) as a function of the feedforward gain 
+     <span class="italic">G</span>
+     <sub>f</sub> and angle 
+     <span class="italic">γ</span>
+     <sub>f</sub>. The optimal point is marked by the blue star. It is slightly shifted with respect to the previous measurements due to a modified cryogenic setup
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10727_Fig4_HTML" id="d29e1510" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

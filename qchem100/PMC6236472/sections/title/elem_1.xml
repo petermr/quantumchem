@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Theory</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The electronic Hamiltonian in the second quantized formalism is given by
+  <div id="eq1" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m001" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">1</span>
+  </div>where 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> and 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ihkl</span>
+  </sub> are Coulombic overlap and exchange integrals determined by the basis set chosen.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>,
+   <a ref-type="bibr" rid="ref28" href="#ref28">28</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although the number of 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ij</span>
+  </sub> and 
+  <span class="italic">h</span>
+  <sub>
+   <span class="italic">ijkl</span>
+  </sub> integrals scales quartically with respect to the number of basis orbitals, they are efficiently computable using conventional, classical computing methods. Additionally, despite this theoretical quartic scaling, the number of nonzero integrals is often substantially reduced through consideration of molecular symmetries.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>,
+   <a ref-type="bibr" rid="ref28" href="#ref28">28</a>
+  </span> Rather, the difficulty is due to the dimension of the Fock space on which this Hamiltonian acts, which scales exponentially with the number of basis orbitals considered. Restricting the problem to a subspace with a fixed number of electrons reduces this scaling to being factorial with respect to the number of electrons, but for practical problems this remains intractable. This difficulty typically prevents the use of full configuration interaction calculations for purposes other than benchmarking.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">On a quantum computer, this scaling difficulty is not present. The task proceeds in four stages, illustrated in 
+  <a rid="fig1" ref-type="fig" href="#fig1">Figure 
+   <a rid="fig1" ref-type="fig" href="#fig1">1</a>
+  </a>. First, a representation of the Hamiltonian and the molecular orbital spaces upon which it acts must be represented using states of and operations upon qubits. Following this, a Trotter–Suzuki approximation
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>−
+   <a ref-type="bibr" rid="ref23" href="#ref23">23</a>,
+   <a ref-type="bibr" rid="ref29" href="#ref29">29</a>
+  </span> is invoked in order to find a quantum circuit to simulate the evolution of the system under the molecular Hamiltonian. The use of this approximation results in an additional error in simulation. However, this error can be arbitrarily reduced through increasing the number of Trotter steps, resulting in only an extra multiplicative factor in the quantum computational expense. A full consideration of Trotterization error is included in 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>. Having developed such a circuit, a good approximation to the simulated ground state of the system is prepared, and the phase estimation algorithm is used to ascertain the ground state energy of the system.
+ </p>
+ <div id="fig1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>A comparison of classical and quantum algorithms for simulation of electronic structure. Left: classical. Right: quantum.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0002" id="gr1" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We initially concern ourselves with the first of these stages—the mapping technique chosen to transform electronic states and operators to states and operators of qubits. We discuss the difference in resource implications for two options for this: the canonical Jordan–Wigner transformation and the Bravyi–Kitaev transformation. In 
+  <a rid="sec5" ref-type="other" href="#sec5">section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a>, we address the implications of these mappings when performing a Trotter–Suzuki approximation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our task in establishing an appropriate mapping is to find qubit analogues of both the electronic states and the creation and annihilation operators in 
+  <a rid="eq1" ref-type="disp-formula" href="#eq1">eq 
+   <a rid="eq1" ref-type="disp-formula" href="#eq1">1</a>
+  </a>. Traditionally, the simplest encoding scheme to determine these is the 
+  <span class="italic">Jordan–Wigner transformation</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref4" href="#ref4">4</a>,
+   <a ref-type="bibr" rid="ref17" href="#ref17">17</a>
+  </span> Here, 
+  <span class="italic">n</span> qubits are used to store the occupation number of 
+  <span class="italic">n</span> electronic spin–orbitals, forming what is known as the occupation basis. If the 
+  <span class="italic">i</span>th molecular orbital is occupied, then the corresponding 
+  <span class="italic">i</span>th qubit is in the |1⟩ state, whereas if the molecular orbital is unoccupied, then the qubit is in the |0⟩ state. We then require a representation of the electronic creation and annihilation operators that act on the qubit space, which perform the following set of operations:
+  <div id="eq2" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m002" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">2</span>
+  </div>A naive assessment would suggest that the standard Pauli σ
+  <sub>
+   <span class="italic">i</span>
+  </sub>
+  <span arrange="stack" class="sup">+</span> and σ
+  <sub>
+   <span class="italic">i</span>
+  </sub>
+  <span arrange="stack" class="sup">–</span> operators would suffice for this purpose; however, these do not obey the required anticommutation relations:
+  <div id="eq3" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m003" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">3</span>
+  </div>
+  <div id="eq4" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m004" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">4</span>
+  </div>For these to hold, the parity of the occupation numbers of the orbitals with index less than 
+  <span class="italic">i</span> must be calculated, and a phase shift introduced when the parity is odd. This is accomplished by performing a sequence of Pauli 
+  <span class="italic">Z</span> operations on the preceding qubits, yielding the following:
+  <div id="eq5" class="disp-formula">
+   <div xlink:href="ct-2018-00450n_m005" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <span class="label">5</span>
+  </div>Note that this mapping requires 
+  <div id="d30e457" class="inline-formula">
+   <span xlink:href="ct-2018-00450n_m006.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> qubit operations to simulate one electronic operation.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An alternative scheme was envisaged by Bravyi and Kitaev, whereby parity information is stored in the qubit states (i.e., qubit 
+  <span class="italic">i</span> stores the sum (modulo 2) of the occupation of all electronic states with index less than or equal to 
+  <span class="italic">i</span>). This basis—the 
+  <span class="italic">parity basis</span>—avoids the additional cost of determining the parity, as this information can be queried with only a single qubit operation.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>,
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+  </span> However, this mapping has instead delocalized information regarding the occupation of each electronic orbital. Clearly, any electronic creation or annihilation operation on an orbital with index 
+  <span class="italic">i</span> requires the update of all qubits with index greater than or equal to 
+  <span class="italic">i</span>. Consequently, using this mapping the number of qubit operations required to simulate one electronic operation is also 
+  <div id="d30e483" class="inline-formula">
+   <span xlink:href="ct-2018-00450n_m007.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>.
+ </p>
+ <sec id="sec2.1" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.1</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Bravyi–Kitaev Mapping</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The Bravyi–Kitaev
+   <span class="sup">
+    <a ref-type="bibr" rid="ref18" href="#ref18">18</a>−
+    <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+   </span> mapping is an attempt to improve upon the linear scaling of the occupation and parity bases. In essence, it is a middle ground between these approaches. For a molecular orbital basis of size 
+   <span class="italic">N</span>, there are again 
+   <span class="italic">N</span> qubits used.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref30" href="#ref30">30</a>
+   </span> However, the information stored within each qubit now varies dependent on the index 
+   <span class="italic">i</span>. Note that we begin indexing at 
+   <span class="italic">i</span> = 0. Where 
+   <span class="italic">i</span> is even, qubit 
+   <span class="italic">i</span> stores the occupation number of orbital 
+   <span class="italic">i</span>, as in the Jordan–Wigner mapping. Where 
+   <span class="italic">i</span> is odd, the qubit stores the parity of a particular set of occupation numbers. When log
+   <sub>2</sub> (
+   <span class="italic">i</span>+1) is an integer, the qubit stores the parity of the occupation numbers of all orbitals with indices less than or equal to 
+   <span class="italic">i</span>. For other cases, the qubit stores the parity of the occupation numbers of orbitals in subdividing binary sets. This complex mapping is best understood through consideration of the matrix which transforms a vector of orbital occupations to qubit states. For example, in the eight orbital/qubit case, this is given by
+   <div id="eq6" class="disp-formula">
+    <div xlink:href="ct-2018-00450n_0001" id="GRAPHIC-d7e979-autogenerated" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">6</span>
+   </div>Here, each 
+   <span class="italic">o</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> value corresponds to the occupation number of the orbital with index 
+   <span class="italic">i</span>, and the 
+   <span class="italic">q</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> values correspond to the state of the qubit with index 
+   <span class="italic">i</span>. Where 
+   <span class="italic">q</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> is 0, qubit 
+   <span class="italic">i</span> is in the |0⟩ state and similarly where 
+   <span class="italic">q</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> is 1, qubit 
+   <span class="italic">i</span> is in the |1⟩ state. All sums are performed in modulo 2. The matrix on the left is thus the matrix which transforms orbital occupation numbers to qubit states.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Both occupation and parity information is now stored nonlocally. Inspection of 
+   <a rid="eq6" ref-type="disp-formula" href="#eq6">eq 
+    <a rid="eq6" ref-type="disp-formula" href="#eq6">6</a>
+   </a> shows that this information is stored in a number of qubits which grows logarithmically. Thus, any electronic creation or annihilation operation can be simulated in 
+   <div id="d30e586" class="inline-formula">
+    <span xlink:href="ct-2018-00450n_m008.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div> qubit operations. We omit a detailed proof of this here for reasons of brevity. Further details can be found in refs (
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>−
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Despite the superior asymptotic scaling of the Bravyi–Kitaev mapping, it is important to consider the increased overhead of its use. Initial implementations noted that the Bravyi–Kitaev mapping is more efficient than the Jordan–Wigner mapping in the simulation of molecular hydrogen in a minimal basis, the smallest possible nontrivial example.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+   </span> It was thus argued that the overhead was not a significant factor, and the superior scaling effectively dominated in all cases. However, further investigation on methane in a minimal basis revealed that this is not the case.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+   </span>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">One purpose of this paper is to find the point at which this asymptotically superior scaling dominates. Examination of the Bravyi–Kitaev creation and annihilation operators permits a rough estimate of this. Note that the qubit creation and annihilation operator equivalents using the Bravyi–Kitaev transformation are given by
+   <div id="eq7" class="disp-formula">
+    <div xlink:href="ct-2018-00450n_m009" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">7</span>
+   </div>
+   <div id="eq8" class="disp-formula">
+    <div xlink:href="ct-2018-00450n_m010" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">8</span>
+   </div>where 
+   <span class="italic">U</span>(
+   <span class="italic">i</span>) is the “update set” of qubit 
+   <span class="italic">i</span>, and 
+   <span class="italic">P</span>(
+   <span class="italic">i</span>) is the “parity set” of qubit 
+   <span class="italic">i</span>. For brevity we do not discuss these sets here; however, their size is of maximum order 
+   <div id="d30e632" class="inline-formula">
+    <span xlink:href="ct-2018-00450n_m011.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>. These expressions are valid only in the case of even 
+   <span class="italic">i</span>. However, this does not affect our rough estimate. Examining these equations, it is evident that at most 4log
+   <sub>2</sub>
+   <span class="italic">i</span> + 2 gates are required for the simulation of one Fermionic operation. This quantity is smaller than the simple 
+   <span class="italic">i</span> gates of the Jordan–Wigner mapping when 
+   <span class="italic">i</span> ≥ 19. Thus, noting that the Bravyi–Kitaev mapping is most efficient when 
+   <span class="italic">N</span> approaches a power of 2 (as it can take increased advantage of its binary tree structure), we conservatively estimate that this point should be at 
+   <span class="italic">N</span> ≈ 32. We thus would expect quantum computational cost to be reduced when using the Bravyi–Kitaev transformation for systems with more than 
+   <span class="italic">N</span> ≈ 32 spin–orbitals.
+  </p>
+ </sec>
+ <sec id="sec2.2" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.2</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Trotterization and Simulation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to perform the phase estimation algorithm to determine the molecular ground-state energy, a quantum circuit simulating the unitary evolution operator 
+   <span class="italic">Û</span> = exp(−
+   <span class="italic">itĤ</span>/ℏ) of the molecular Hamiltonian must be found. This is similarly required when utilizing a variational quantum eigensolver algorithm using a coupled-cluster ansatz.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref12" href="#ref12">12</a>−
+    <a ref-type="bibr" rid="ref14" href="#ref14">14</a>,
+    <a ref-type="bibr" rid="ref31" href="#ref31">31</a>
+   </span> The qubit form of the electronic Hamiltonian determined through the Bravyi–Kitaev or Jordan–Wigner transformation consists of a weighted sum of strings of Pauli operations. In order to exponentiate this, a Trotter–Suzuki approximation must be invoked.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref22" href="#ref22">22</a>
+   </span> The first-order Trotter–Suzuki expansion is
+   <div id="eq9" class="disp-formula">
+    <div xlink:href="ct-2018-00450n_m012" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <span class="label">9</span>
+   </div>where 
+   <span class="italic">H</span>
+   <sub>
+    <span class="italic">i</span>
+   </sub> are the Hamiltonian subterms (strings of Pauli operations, in our case), and 
+   <span class="italic">n</span> is the number of Trotter steps. The overall evolution time is now subdivided into 
+   <span class="italic">n</span> steps. Increasing the number of Trotter steps decreases the error invoked in this procedure. This yields the evolution operator expressed as a product of exponentiated strings of Pauli operations. Standard techniques can be used to transform these into quantum circuits, as shown in 
+   <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+    <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+   </a>. The gates within this circuit can be divided into two types: gates that rotate the state of a single qubit and typically more expensive two-qubit entangling gates. These can be implemented sequentially to form a quantum circuit which simulates the entire evolution operator.
+  </p>
+  <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Canonical circuit for the simulation of 
+     <div id="d30e711" class="inline-formula">
+      <span xlink:href="ct-2018-00450n_m014.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     </div>.
+    </p>
+   </div>
+   <div xlink:href="ct-2018-00450n_0003" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The use of a Trotter–Suzuki approximation results in the introduction of error.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref32" href="#ref32">32</a>−
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>
+   </span> This error can be reduced by increasing the number of Trotter steps considered. We consider the impact of this error in 
+   <a rid="sec5" ref-type="other" href="#sec5">section 
+    <a rid="sec5" ref-type="other" href="#sec5">5</a>
+   </a>.
+  </p>
+ </sec>
+</sec>

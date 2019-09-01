@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" id="sec002" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="sec003" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemical predictions of biochemical redox potentials</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To facilitate our analysis we divided redox reactions into several generalized oxidoreductase groups which together cover the vast majority of redox transformations within cellular metabolism (
+   <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1A</a>): (G1) reduction of an unmodified carboxylic acid (-COO) or an activated carboxylic acid–i.e., phosphoanhydride (-COOPO
+   <sub>3</sub>) or thioester (-COS-CoA)–to a carbonyl (-C = O); (G2) reduction of a carbonyl to a hydroxycarbon (-COH, i.e., alcohol); (G3) reduction of a carbonyl to an amine (-CNH
+   <sub>3</sub>); and (G4) reduction of a hydroxycarbon to a hydrocarbon (-C-C-), which usually occurs via an ethylene intermediate (-C = C-). We note that this categorization corresponds to the treatment of carbon oxidation levels in standard organic chemistry textbooks [
+   <a rid="pcbi.1006471.ref029" ref-type="bibr" href="#pcbi.1006471.ref029">29</a>].
+  </p>
+  <div id="pcbi.1006471.g001" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g001</span>
+   <span class="label">Fig 1</span>
+   <div class="caption">
+    <div class="title">Our study is based on predicting biochemical standard redox potentials using a calibrated quantum chemistry strategy.</div>
+    <p>(A) The four different redox reaction categories considered here are reduction of a carboxylic acid to a carbonyl—G1, reduction of a carbonyl to a hydroxycarbon—G2, or an amine—G3, and reduction of a hydroxycarbon to a hydrocarbon—G4. (B) For each redox reaction of interest, such as reduction of pyruvate to lactate, we select the most abundant protonation state at acidic pH (pH = 0) for quantum chemical simulation. (C) We estimate the chemical redox potential as the difference between Boltzmann-averaged electronic energies of geometric conformers of products and substrates. (D) In order to convert chemical redox potentials to biochemical potentials at pH = 7, we use cheminformatic pKa estimates and the Alberty-Legendre Transform (Supplementary Information). (E) Finally, we use a set of 105 experimental values obtained from the NIST Thermodynamics of Enzyme-Catalyzed Reactions database (TECRDB) [
+     <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>] and a set of Gibbs formation energies compiled by Robert Alberty [
+     <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] (Supplementary Information) to calibrate redox potentials using linear regression.
+    </p>
+   </div>
+   <div xlink:href="pcbi.1006471.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We developed a quantum chemistry method for predicting the standard transformed redox potential of biochemical redox reactions. We explored a range of different model chemistries, including combinations of DFT (density functional theory) functionals or wave-function electronic structure methods, basis sets, choice of implicit solvent, and choice of dispersion correction. We found that a DFT approach that uses the double-hybrid functional B2PLYP [
+   <a rid="pcbi.1006471.ref032" ref-type="bibr" href="#pcbi.1006471.ref032">32</a>,
+   <a rid="pcbi.1006471.ref033" ref-type="bibr" href="#pcbi.1006471.ref033">33</a>] gave the highest prediction accuracy (see 
+   <a ref-type="sec" rid="sec008" href="#sec008">Methods</a> for detailed model chemistry description; other model chemistries also gave high accuracy as discussed in the Supplementary Information and 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s005" href="#pcbi.1006471.s005">S1 Fig</a>). As each biochemical compound represents an ensemble of different chemical species–each at a different protonation state [
+   <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] –we applied the following pipeline to predict E’
+   <span class="sup">m</span> (
+   <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1</a>, see also 
+   <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>): (i) a quantum chemical simulation was used to obtain the electronic energies of the most abundant chemical species at pH 0; (ii) we then calculated the difference in electronic energies ΔE
+   <sub>Electronic</sub> between the product and substrate of a redox pair at pH 0, thus obtaining estimates of the standard redox potential, E
+   <span class="sup">o</span>; (iii) next, we employed empirical pKa estimates to calculate the energetics of the deprotonated chemical species and used the extended Debye-Huckel equation and the Alberty-Legendre transform [
+   <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] to convert E
+   <span class="sup">o</span> to the standard transformed redox potential E’
+   <span class="sup">m</span> at pH = 7 and ionic strength I = 0.25 M (as recommended [
+   <a rid="pcbi.1006471.ref034" ref-type="bibr" href="#pcbi.1006471.ref034">34</a>]), where reactant concentrations are standardized to 1 mM to better approximate the physiological concentrations of metabolites [
+   <a rid="pcbi.1006471.ref001" ref-type="bibr" href="#pcbi.1006471.ref001">1</a>,
+   <a rid="pcbi.1006471.ref035" ref-type="bibr" href="#pcbi.1006471.ref035">35</a>]. Finally, (iv) to correct for systematic errors, the predicted E’
+   <span class="sup">m</span> values, of each oxidoreductase group, were calibrated by linear regression (two-parameter calibration) against a set of 105 experimentally measured potentials obtained from the NIST Thermodynamics of Enzyme-Catalyzed Reactions database (TECRDB) [
+   <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>] and the Gibbs formation energy dataset of Robert Alberty [
+   <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] (Supplementary Information). We note that we observe empirically that the difference in electronic energies ΔE
+   <sub>Electronic</sub> is strongly correlated with the Gibbs reaction energy ΔG
+   <sub>r</sub> for these redox systems (
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s009" href="#pcbi.1006471.s009">S5 Fig</a>) and so we estimate redox potentials using the former in order to reduce computational cost (see SI for details). We also note that the two-parameter calibration is needed mainly since we ignore vibrational enthalpies and entropies of the compounds (Supplementary Information).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">As exemplified in 
+   <a ref-type="fig" rid="pcbi.1006471.g002" href="#pcbi.1006471.g002">Fig 2A and 2B</a> and 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s006" href="#pcbi.1006471.s006">S2 Fig</a>, the calibration by linear regression significantly improves the accuracy of our quantum chemistry predictions. As shown in 
+   <a rid="pcbi.1006471.t001" ref-type="table" href="#pcbi.1006471.t001">Table 1</a>, the predictions of quantum chemistry have a lower mean absolute error (MAE) than those of GCM for all reaction categories. (GCM has a higher Pearson correlation coefficient for category G1, but this is an artifact introduced by a single outlier value, 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s007" href="#pcbi.1006471.s007">S3 Fig</a>). The improved accuracy is especially noteworthy as our quantum chemical approach derives reduction potentials from first principles and requires only two calibration parameters per oxidoreductase group (α and β in 
+   <a ref-type="fig" rid="pcbi.1006471.g001" href="#pcbi.1006471.g001">Fig 1E</a>), as compared to GCM which uses 5–13 parameters while achieving lower prediction accuracy (
+   <a rid="pcbi.1006471.t001" ref-type="table" href="#pcbi.1006471.t001">Table 1</a>). Therefore, our quantum chemistry approach can be extended to predict reduction potentials for a wide domain of redox reactions since it does not depend as heavily on empirical measurements. While the quantum chemistry method is computationally more expensive than GCM–with a cost that scales with the number of electrons per molecule (Supplementary Information)–it can still predict the potentials for several hundreds of reactions when run on a typical high-performance computing cluster.
+  </p>
+  <div id="pcbi.1006471.g002" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g002</span>
+   <span class="label">Fig 2</span>
+   <div class="caption">
+    <div class="title">Quantum chemistry model predicts experimentally measured reduction potential with high accuracy.</div>
+    <p>Data shown corresponds to reactions where carbonyls are reduced to hydroxycarbons (group G2). (A) Quantum chemical predictions after calibration (linear regression with 2-parameters); 
+     <a ref-type="supplementary-material" rid="pcbi.1006471.s006" href="#pcbi.1006471.s006">S2 Fig</a> shows how the calibration improves accuracy. (B) Prediction using group contribution method as implemented in eQuilibrator [
+     <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+     <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>] (see 
+     <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>) (10 parameters for the G2 category) (C) Scatter plot of normalized prediction errors (z-scores) of G2 reactions for molecular fingerprints and quantum chemistry. The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde reductase (EC 1.1.1.61) reactions (red points) have potentially erroneous experimental values.
+    </p>
+   </div>
+   <div xlink:href="pcbi.1006471.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="pcbi.1006471.t001" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.t001</span>
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <div class="title">Prediction accuracy of the quantum chemistry and group contribution method modeling approaches.</div>
+   </div>
+   <div class="alternatives">
+    <div id="pcbi.1006471.t001g" xlink:href="pcbi.1006471.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <table frame="hsides" rules="groups">
+     <colgroup span="1">
+      <col align="left" valign="middle" span="1"/>
+      <col align="left" valign="middle" span="1"/>
+      <col align="left" valign="middle" span="1"/>
+      <col align="left" valign="middle" span="1"/>
+      <col align="left" valign="middle" span="1"/>
+     </colgroup>
+     <thead>
+      <tr>
+       <th align="left" rowspan="1" colspan="1">
+        <span class="break"/>
+       </th>
+       <th align="center" rowspan="1" colspan="1">G1 (n = 8)
+        <span class="break"/>Carboxylic Acid to Carbonyl
+       </th>
+       <th align="center" rowspan="1" colspan="1">G2 (n = 59)
+        <span class="break"/>Carbonyl to Hydroxycarbon
+       </th>
+       <th align="center" rowspan="1" colspan="1">G3 (n = 23)
+        <span class="break"/>Carbonyl to Amine
+       </th>
+       <th align="center" rowspan="1" colspan="1">G4 (n = 15)
+        <span class="break"/>Hydroxycarbon to Hydrocarbon
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="center" rowspan="1" colspan="1">
+        <span class="bold">Quantum Chemistry</span>
+       </td>
+       <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 45 mV
+        <span class="break"/>Pearson r = 0.43
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.19
+        <span class="break"/>No. params. = 2
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+        <span class="break"/>Pearson r = 0.59
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.35
+        <span class="break"/>No. params. = 2
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 17 mV
+        <span class="break"/>Pearson r = 0.70
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.49
+        <span class="break"/>No. params. = 2
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+        <span class="break"/>Pearson r = 0.45
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.21
+        <span class="break"/>No. params. = 2
+       </td>
+      </tr>
+      <tr>
+       <td align="center" rowspan="1" colspan="1">
+        <span class="bold">Group Contribution Method</span>
+       </td>
+       <td align="left" style="background-color:#FFFFFF" rowspan="1" colspan="1">MAE = 52 mV
+        <span class="break"/>Pearson r = 0.54
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.17
+        <span class="break"/>No. params. = 6
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 34 mV
+        <span class="break"/>Pearson r = 0.48
+        <span class="break"/>R
+        <span class="sup">2</span> = 0.21
+        <span class="break"/>No. params. = 13
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 31 mV
+        <span class="break"/>Pearson r = 0.22
+        <span class="break"/>R
+        <span class="sup">2</span> = -0.23
+        <span class="break"/>No. params. = 5
+       </td>
+       <td align="left" rowspan="1" colspan="1">MAE = 66 mV
+        <span class="break"/>Pearson r = 0.16
+        <span class="break"/>R
+        <span class="sup">2</span> = -3.39
+        <span class="break"/>No. params. = 6
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div class="table-wrap-foot">
+    <fn id="t001fn001" class="fn" xmlns="">
+     <p xmlns="http://www.w3.org/1999/xhtml">The number of available experimental values for each reaction category is indicated in parentheses. MAE = Mean Absolute Error; R
+      <span class="sup">2</span> = coefficient of determination. Note that for the G1 category, quantum chemistry has a lower MAE, but GCM has higher values of Pearson r. While the Pearson r can range from -1 to 1, R
+      <span class="sup">2</span> can take on any negative value. A prediction method with the same accuracy as the mean predictor (a constant model that always predicts the mean value of the experimental data) has a value of R
+      <span class="sup">2</span> = 0; negative values of R
+      <span class="sup">2</span> indicate prediction accuracies that are worse than the mean predictor. GCM estimates of standard redox potentials were obtained from the implementation by Noor et al. [
+      <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>,
+      <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>] used by eQuilibrator (see 
+      <a ref-type="sec" rid="sec008" href="#sec008">Methods</a>).
+     </p>
+    </fn>
+   </div>
+  </div>
+ </sec>
+ <sec id="sec004" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Systematic detection of potentially erroneous experimental values</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Inconsistencies between our predictions and experimental measurements can be used to identify potentially erroneous experimental values. However, as such discrepancies might stem from false predictions, we used an independent method to estimate redox potentials. We reasoned that consistent deviation from two very different prediction approaches should be regarded as indicative of potential experimental error. The second prediction approach we used is based on reaction fingerprints [
+   <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>], where the structure of the reactants involved is encoded as a binary vector (166 parameters without regularization, Supplementary Information). These binary vectors are then used as variables in a regularized regression to correlate structure against a physicochemical property of interest, such as redox potential [
+   <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>,
+   <a rid="pcbi.1006471.ref039" ref-type="bibr" href="#pcbi.1006471.ref039">39</a>]. This approach is similar to the group contribution method (GCM) in that it is based on a structural decomposition of compounds; however, unlike GCM, fingerprints encode a more detailed structural representation of the compounds.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To detect potentially erroneous experimental measurements, we focused on redox potentials of category G2 (carbonyl to hydroxycarbon reduction) as we have abundant experimental information for this oxidoreductase group (see 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s008" href="#pcbi.1006471.s008">S4 Fig</a> for results with the other categories). As shown in 
+   <a ref-type="fig" rid="pcbi.1006471.g002" href="#pcbi.1006471.g002">Fig 2C</a>, we normalized the prediction errors by computing their associated z-scores (indicating how many standard deviations a prediction error is from the mean error across all reactions). Two redox reactions stand out as having significantly different experimental and predicted values for both methods (Z&gt;2): indolepyruvate reduction to indolelactate (indolelactate dehydrogenase, EC 1.1.1.110) and succinate semialdehyde reduction to 4-hydroxybutanoate (succinate semialdehyde reductase, 1.1.1.61).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">We suggest an explanation for the observed deviation of the first reaction: in the experimental study, the K’
+   <sub>eq</sub> of indolelactate dehydrogenase was measured using absorbance at 340 nm as an indicator of the concentration of NADH [
+   <a rid="pcbi.1006471.ref040" ref-type="bibr" href="#pcbi.1006471.ref040">40</a>]. However, since indolic compounds also have strong absorption at 340 nm [
+   <a rid="pcbi.1006471.ref041" ref-type="bibr" href="#pcbi.1006471.ref041">41</a>], this method probably resulted in an overestimation of the concentration of NADH, and thus an underestimation of K’
+   <sub>eq</sub>. Indeed, the experimentally derived E’
+   <span class="sup">m</span> is considerably lower (-400 mV) than the predicted one (-190 mV, via quantum chemistry). With regards to the second reaction, succinate semialdehyde reductase, we note that re-measuring its redox potential is of considerable significance as it plays a central role both in carbon fixation–e.g., the 3-hydroxypropionate-4-hydroxybutyrate cycle and the dicarboxylate-4-hydroxybutyrate cycle [
+   <a rid="pcbi.1006471.ref011" ref-type="bibr" href="#pcbi.1006471.ref011">11</a>] –as well as in production of key commodities–e.g., biosynthesis of 1,4-butanediol [
+   <a rid="pcbi.1006471.ref042" ref-type="bibr" href="#pcbi.1006471.ref042">42</a>].
+  </p>
+ </sec>
+ <sec id="sec005" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Comprehensive prediction and analysis of reduction potentials</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We used the calibrated quantum chemistry model to predict redox potentials for a database of natural and non-natural redox reactions. We generated this dataset by identifying pairs of metabolites from KEGG [
+   <a rid="pcbi.1006471.ref007" ref-type="bibr" href="#pcbi.1006471.ref007">7</a>,
+   <a rid="pcbi.1006471.ref008" ref-type="bibr" href="#pcbi.1006471.ref008">8</a>] that fit the chemical transformations associated with each of the four different oxidoreductase groups (Methods). We considered only compounds with fewer than 7 carbon atoms, thus generating a dataset consisting of 652 reactions: 83 reductions of category G1; 205 reductions of category G2; 104 reductions of category G3; and 260 reductions of category G4 (Supplementary Dataset 1). Some of these redox pairs are known to participate in enzyme-catalyzed reactions while others are hypothetical transformations that could potentially be performed by engineered enzymes. We note that our approach to generate reactions is similar to that of the comprehensive Atlas of Biochemistry [
+   <a rid="pcbi.1006471.ref043" ref-type="bibr" href="#pcbi.1006471.ref043">43</a>], but we focus solely on the four redox transformations of interest.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3A</a> shows the distribution of all predicted redox potentials at pH = 7, I = 0.25 M and reactant concentrations of 1 mM, i.e., E’
+   <span class="sup">m</span> [
+   <a rid="pcbi.1006471.ref014" ref-type="bibr" href="#pcbi.1006471.ref014">14</a>,
+   <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>]. 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a> demonstrates that the value of E’
+   <span class="sup">m</span> is directly related to the oxidation state of the functional group being reduced. The general trend is that “the rich get richer” [
+   <a rid="pcbi.1006471.ref001" ref-type="bibr" href="#pcbi.1006471.ref001">1</a>,
+   <a rid="pcbi.1006471.ref044" ref-type="bibr" href="#pcbi.1006471.ref044">44</a>,
+   <a rid="pcbi.1006471.ref045" ref-type="bibr" href="#pcbi.1006471.ref045">45</a>]: more reduced functional groups have a greater tendency to accept electrons, i.e., have higher reduction potentials. Specifically, the reduction potential of hydroxycarbons (G4, &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; = −15 
+   <span class="italic">mV</span>) is higher than that of carbonyls (&lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; = −225 
+   <span class="italic">mV</span> for both G2 and G3) and the reduction potential of carbonyls is higher than that of un-activated carboxylic acids (G1, &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; = −550 
+   <span class="italic">mV</span>). Categories G2 and G3 (reduction of carbonyls to hydroxycarbons or amines, respectively) have very similar potentials because the oxidation state of the functional groups involved is identical (note that this holds for the physiological 
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span> but not for 
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">o</span>
+   </span> because reactions in the G3 category are balanced with an ammonia molecule as a substrate, thus introducing a factor of RTln(10
+   <span class="sup">−3</span>) when converting to the mM standard state). For category G1, activation of carboxylic acids significantly increases their reduction potential (orange line in 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>) as the energy released by the hydrolysis of the phosphoanhydride or thioester (~50kJ/mol) activates the reduction: 
+   <div id="pcbi.1006471.e001" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e001.jpg" id="pcbi.1006471.e001g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M1" class="math">
+      <span class="mi">Δ</span>
+      <span class="mi">E</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">50</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <span class="mi">F</span>
+       </div>
+      </div>
+      <span class="mo">≅</span>
+      <span class="mn">250</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mi">m</span>
+      <span class="mi">V</span>
+     </div>
+    </div>
+   </div> (n being the number of electrons, F the Faraday constant).
+  </p>
+  <div id="pcbi.1006471.g003" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g003</span>
+   <span class="label">Fig 3</span>
+   <div class="caption">
+    <div class="title">Distributions of predicted standard transformed redox potentials at pH = 7 and I = 0.25 for a dataset of 650 natural and non-natural reactions.</div>
+    <p>The average reduction potentials for each reaction category are (values rounded to nearest multiple of 5): un-activated carboxylic acid to carbonyl (G1: &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt; = −550 
+     <span class="italic">mV</span>), activated carboxylic acid to carbonyl (activated G1: &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt; = −300 
+     <span class="italic">mV</span>), carbonyl to hydroxycarbon (G2: &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt; = −225 
+     <span class="italic">mV</span>), carbonyl to amine (G3: &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt; = −225 
+     <span class="italic">mV</span>), and hydroxycarbon to hydrocarbon (G4: &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt; = −15 
+     <span class="italic">mV</span>) Both histograms and cumulative distributions (bold lines, right y-axis) are shown. The distributions for unactivated and activated carboxylic acid to carbonyl reductions (red and purple) are the same, but shifted by +250 mV. Dashed colored lines show the median redox potential for each reaction category. Grey shaded regions corresponds to the range of NAD(P) redox potential, while light grey wavy lines delimit the region of reversible oxidation/reduction by NAD(P)/NAD(P)H. Ranges of reduction potentials for different alternative cofactors are shown as grey rectangles underneath graph (
+     <a ref-type="supplementary-material" rid="pcbi.1006471.s001" href="#pcbi.1006471.s001">S1 Table</a>).
+    </p>
+   </div>
+   <div xlink:href="pcbi.1006471.g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The quantum chemical predictions further enable us to explore detailed structure-energy relationships within each of the general oxidoreductase groups. To exemplify this we focus on the G2 category, as shown in 
+   <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>. While we find no significant difference between the average E’
+   <span class="sup">m</span> of aldehydes and ketones, we can clearly see that the identity of functional groups adjacent to the carbonyl has a significant effect on E’
+   <span class="sup">m</span>, as expected. Alpha ketoacids and dicarbonyls have a significantly higher E’
+   <span class="sup">m</span> than alpha hydroxy-carbonyls (
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ 20 
+   <span class="italic">mV</span>,
+   <span class="italic">p</span> &lt; 0.005) and carbonyls adjacent to hydrocarbons (
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ 35 
+   <span class="italic">mV</span>,
+   <span class="italic">p</span> &lt; 0.0005). Carbonyls next to double bonds or aromatic rings have a significantly lower E’
+   <span class="sup">m</span> values than alpha hydroxy-carbonyls and carbonyls that are next to hydrocarbons (
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ −50 
+   <span class="italic">mV</span>, and 
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ −40 
+   <span class="italic">mV</span> respectively, 
+   <span class="italic">p</span> &lt; 0.0001). Lactones (cyclic esters), have redox potentials that are significantly lower than any other subgroup within the G2 category. As another validation of the predicted potentials, we found that the reduction potentials of open-chain sugars are significantly higher than those of closed-ring sugars that undergo ring opening upon reduction, where 
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ 60 
+   <span class="italic">mV</span> (
+   <span class="italic">p</span> &lt; 10
+   <span class="sup">−5</span>). This is consistent with the known thermodynamics of closed-ring sugar conformations, e.g., the K
+   <sub>eq</sub> of arabinose ring opening is ~350[
+   <a rid="pcbi.1006471.ref046" ref-type="bibr" href="#pcbi.1006471.ref046">46</a>], which translates to 
+   <div id="pcbi.1006471.e002" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e002.jpg" id="pcbi.1006471.e002g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M2" class="math">
+      <span class="mi">Δ</span>
+      <span class="mi">E</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+        <span class="mi">l</span>
+        <span class="mi">n</span>
+        <span class="mo">(</span>
+        <span class="mn">350</span>
+        <span class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <span class="mi">F</span>
+       </div>
+      </div>
+      <span class="mo">≅</span>
+      <span class="mn">75</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mi">m</span>
+      <span class="mi">V</span>
+     </div>
+    </div>
+   </div>, close to the observed average potential difference between the subgroups (R is the gas constant, and T the temperature).
+  </p>
+  <div id="pcbi.1006471.g004" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g004</span>
+   <span class="label">Fig 4</span>
+   <div class="caption">
+    <div class="title">Comparison between the redox potentials of sub-groups for reactions in the G2 category (carbonyl to hydroxycarbon reductions).</div>
+    <p>(A) Aldehydes vs. ketones (non-statistically significant 
+     <span class="italic">Δ</span> &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt;); (B) nearest-neighbor functional group (all subgroups have statistically significant 
+     <span class="italic">Δ</span> &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt;, p&lt;0.005, except hydroxyl/amine and hydrocarbon) (C) closed-ring sugar reduction to open-chain vs. open-chain sugar reduction to open-chain (statistically significant 
+     <span class="italic">Δ</span> &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt;, p&lt;10–5), (D) natural reactions appearing in KEGG vs. non-natural reactions (statistically significant 
+     <span class="italic">Δ</span> &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt;, p&lt;0.005) (E) natural reactions that only use NAD(P) as redox cofactor vs. those that use alternative cofactors (cytochromes, FAD, O
+     <sub>2</sub>, or quinones) (non-statistically significant 
+     <span class="italic">Δ</span> &lt;
+     <span class="italic">E</span>′
+     <span class="sup">
+      <span class="italic">m</span>
+     </span>&gt;, p = 0.03).
+    </p>
+   </div>
+   <div xlink:href="pcbi.1006471.g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="sec006" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">On the biochemical logic of the universal reliance on NAD(P)</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">While myriad natural electron carriers are known to support cellular redox reactions, NAD(P) has the prime role in almost all organisms, participating in most (&gt;50%) known redox reactions [
+   <a rid="pcbi.1006471.ref007" ref-type="bibr" href="#pcbi.1006471.ref007">7</a>,
+   <a rid="pcbi.1006471.ref008" ref-type="bibr" href="#pcbi.1006471.ref008">8</a>]. The standard redox potential of NAD(P) is ~ -330 mV (pH = 7, I = 0.25), but as [NADPH]/[NADP] can be higher than 50 and [NADH]/[NAD] can be lower than 1/500, the physiological range of the NAD(P) reduction potential is between -380 mV and -250 mV [
+   <a rid="pcbi.1006471.ref035" ref-type="bibr" href="#pcbi.1006471.ref035">35</a>,
+   <a rid="pcbi.1006471.ref047" ref-type="bibr" href="#pcbi.1006471.ref047">47</a>–
+   <a rid="pcbi.1006471.ref051" ref-type="bibr" href="#pcbi.1006471.ref051">51</a>]. Most cellular redox reactions are therefore constrained to a limited reduction potential range determined by the physicochemical properties and physiological concentrations of NAD(P). By examining the fundamental trends of redox potentials of the different oxidoreductase groups we will show that NAD(P) is well-matched to the redox transformations most commonly found in cellular metabolism.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a> demonstrates that the reduction potentials of activated acids (activated G1) and carbonyls (G2 and G3) are very similar, such that NAD(P) can support both the oxidation and reduction of nearly all redox couples in these classes. Although the distributions associated with these redox reactions are not entirely contained in the NAD(P) reduction potential range (marked in grey), the reduction potential of a redox pair can be altered by modulating the concentrations of the oxidized and reduced species. As the concentrations of metabolites usually lie between 1 μM and 10 mM [
+   <a rid="pcbi.1006471.ref001" ref-type="bibr" href="#pcbi.1006471.ref001">1</a>,
+   <a rid="pcbi.1006471.ref004" ref-type="bibr" href="#pcbi.1006471.ref004">4</a>,
+   <a rid="pcbi.1006471.ref035" ref-type="bibr" href="#pcbi.1006471.ref035">35</a>,
+   <a rid="pcbi.1006471.ref052" ref-type="bibr" href="#pcbi.1006471.ref052">52</a>], the reduction potential of a redox pair can be offset from its standard value by up to 
+   <div id="pcbi.1006471.e003" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e003.jpg" id="pcbi.1006471.e003g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M3" class="math">
+      <span class="mo">±</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+        <span class="mi">l</span>
+        <span class="mi">n</span>
+        <span class="mo">(</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mn">10</span>
+         </div>
+         <div class="mrow">
+          <span class="mn">4</span>
+         </div>
+        </div>
+        <span class="mo">)</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <span class="mi">F</span>
+       </div>
+      </div>
+      <span class="mo">≅</span>
+      <span class="mo">±</span>
+      <span class="mn">120</span>
+      <span width="0.25em" class="mspace"/>
+      <span class="mi">m</span>
+      <span class="mi">V</span>
+     </div>
+    </div>
+   </div> (assuming two electrons are transferred). Therefore, NAD(P) can support reversible redox reactions of compound pairs with E’
+   <span class="sup">m</span> as low as −380 − 120 = −500 
+   <span class="italic">mV</span> and as high as −250 + 120 = −130 
+   <span class="italic">mV</span> (indicated by the light grey regions in 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>), a range that encompasses almost all activated acids (activated G1) and carbonyls (G2 and G3 reactions). Outside this range, however, NAD(P)(H) can only be used in one direction of the redox transformation–either oxidation or reduction, but not both. 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a> shows that NAD(P)H can support irreversible reductions of hydroxycarbons to hydrocarbons and NAD(P) supports irreversible oxidation of carbonyls to carboxylic acids.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Next, we focus on a small set of redox reactions found in the extended central metabolic network that is shared by almost all organisms: (i) The TCA cycle, operating in the oxidative or reductive direction [
+   <a rid="pcbi.1006471.ref053" ref-type="bibr" href="#pcbi.1006471.ref053">53</a>], as a cycle or as a fork [
+   <a rid="pcbi.1006471.ref054" ref-type="bibr" href="#pcbi.1006471.ref054">54</a>], being complete or incomplete [
+   <a rid="pcbi.1006471.ref054" ref-type="bibr" href="#pcbi.1006471.ref054">54</a>], or with some local bypasses (e.g., [
+   <a rid="pcbi.1006471.ref055" ref-type="bibr" href="#pcbi.1006471.ref055">55</a>]); (ii) glycolysis and gluconeogenesis, whether via the EMP or ED pathway [
+   <a rid="pcbi.1006471.ref056" ref-type="bibr" href="#pcbi.1006471.ref056">56</a>], having fully, semi or non-phosphorylated intermediates [
+   <a rid="pcbi.1006471.ref057" ref-type="bibr" href="#pcbi.1006471.ref057">57</a>]; (iii) the pentose phosphate cycle, working in the oxidative, reductive or neutral direction; and (iv) biosynthesis of amino-acids, nucleobases and fatty acids. As schematically shown in 
+   <a ref-type="fig" rid="pcbi.1006471.g005" href="#pcbi.1006471.g005">Fig 5</a>, and listed in Supplementary Dataset S2, the ≈ 60 redox reactions that participate in the extended central metabolism almost exclusively belong to one of the following groups: (i) reduction of an activated carboxylic acid to a carbonyl or the reverse reaction oxidizing the carbonyl (9 reactions, G1); (ii) reduction of a carbonyl to a hydroxycarbon or its reverse oxidation (20 reactions, G2); (iii) reduction of a carbonyl to an amine or its reverse oxidation (18 reactions, G3); (iv) irreversible oxidation of carbonyls to un-activated carboxylic acids (5 reactions, G1 in the direction of oxidation); and (v) irreversible reduction of hydroxycarbon to hydrocarbons (4 reactions, G4). Only two central metabolic reactions (marked in magenta background in 
+   <a ref-type="fig" rid="pcbi.1006471.g005" href="#pcbi.1006471.g005">Fig 5</a>) oxidize hydrocarbons to hydroxycarbons (G4, in the direction of oxidation) and require a reduction potential higher than that of NAD(P): oxidation of succinate to fumarate and oxidation of dihydroorotate to orotate (While formally being oxidation of hydrocarbon to hydroxycarbon, the oxidations of prephenate to 4-hydroxyphenylpyruvate and of arogenate to tyrosine present a special case since they create a highly stable aromatic ring and hence have enough energy to donate their electrons directly to NAD(P)). Similarly, the extended central metabolic network does not demand the low reduction potential required for the reduction of un-activated carboxylic acids (G1).
+  </p>
+  <div id="pcbi.1006471.g005" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pcbi.1006471.g005</span>
+   <span class="label">Fig 5</span>
+   <div class="caption">
+    <div class="title">A schematic showing the location of different types of oxidoreductase reactions (oxidoreductase groups 1 to 4) within the extended central metabolic network.</div>
+    <p>We highlight reactions (purple) where a hydrocarbon is oxidized to a hydroxycarbon (G4 reactions, in the direction of oxidation) which generally cannot be sustained by NAD(P) as redox cofactor. See Supplementary Dataset 2 for full set of redox reactions in extended central metabolic network. G6P, Glucose-6-phosphate; F6P, Fructose-6-phosphate; DHAP, Dihydroxyacetone phosphate; GAP, Glyceraldehyde 3-phosphate; Gly1P; Glycerol 1-phosphate; 6PG, 6-Phosphogluconolactone; R5P, Ribulose 5-phosphate; E4P, Erythrose 4-phosphate; 3PG, 3-Phosphoglycerate; PEP, Phosphoenolpyruvate; PYR, Pyruvate; AcCoA, Acetyl coenzyme A; 2KG, 2-Ketoglutaric acid; OA, Oxaloacetate.</p>
+   </div>
+   <div xlink:href="pcbi.1006471.g005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The reduction potential range associated with NAD(P) therefore perfectly matches the vast majority of reversible redox reactions in extended central metabolism–i.e., reduction of activated carboxylic acids and reduction of carbonyls (orange, purple and blue distributions in 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>)–and can also support the common irreversible redox transformations of extended central metabolism–i.e., reduction of hydroxycarbons and oxidation of carbonyls to un-activated carboxylic acids (green and red distributions in 
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>). Cells typically rely on secondary redox carriers like quinones and ferredoxins (
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>, 
+   <a ref-type="supplementary-material" rid="pcbi.1006471.s001" href="#pcbi.1006471.s001">S1 Table</a>), to support less common reactions, i.e., oxidation of hydrocarbons and reduction of un-activated carboxylic acids.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Why is the reduction potential of NAD(P) lower than the E’
+   <span class="sup">m</span> of most carbonyls (
+   <a ref-type="fig" rid="pcbi.1006471.g003" href="#pcbi.1006471.g003">Fig 3</a>)? As biosynthesis of an NAD(P) derivative with higher reduction potential presents no major challenge [
+   <a rid="pcbi.1006471.ref058" ref-type="bibr" href="#pcbi.1006471.ref058">58</a>], why does this lower potential persist? We suggest that this redox offset plays an important role in reducing the concentrations of cellular carbonyls by making their reduction to hydroxycarbons favorable. It is well known that carbonyls are reactive towards macromolecules, as they spontaneously cross-link proteins, inactivate enzymes and mutagenize DNA [
+   <a rid="pcbi.1006471.ref059" ref-type="bibr" href="#pcbi.1006471.ref059">59</a>,
+   <a rid="pcbi.1006471.ref060" ref-type="bibr" href="#pcbi.1006471.ref060">60</a>]. As the reduction potential of NAD(P) is lower than most carbonyls, the redox reactions in category G2 (or G3) prefer the direction of reduction, thus ensuring that carbonyls are kept at lower concentrations than their corresponding hydroxycarbons (or amines). Assuming a value of 
+   <span class="italic">E</span>′ = −330 
+   <span class="italic">mV</span> for NAD(P) and taking the average E’
+   <span class="sup">m</span> of the G2 reactions (&lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ −225 
+   <span class="italic">mV</span>) results in an estimated equilibrium concentration ratio 
+   <div id="pcbi.1006471.e004" class="inline-formula">
+    <div class="alternatives">
+     <div xlink:href="pcbi.1006471.e004.jpg" id="pcbi.1006471.e004g" mimetype="image" position="anchor" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+     <div id="M4" class="math">
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">[</span>
+        <span class="mi">h</span>
+        <span class="mi">y</span>
+        <span class="mi">d</span>
+        <span class="mi">r</span>
+        <span class="mi">o</span>
+        <span class="mi">x</span>
+        <span class="mi">y</span>
+        <span class="mi">c</span>
+        <span class="mi">a</span>
+        <span class="mi">r</span>
+        <span class="mi">b</span>
+        <span class="mi">o</span>
+        <span class="mi">n</span>
+        <span class="mo">]</span>
+       </div>
+       <div class="mrow">
+        <span class="mo">[</span>
+        <span class="mi">c</span>
+        <span class="mi">a</span>
+        <span class="mi">r</span>
+        <span class="mi">b</span>
+        <span class="mi">o</span>
+        <span class="mi">n</span>
+        <span class="mi">y</span>
+        <span class="mi">l</span>
+        <span class="mo">]</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">e</span>
+      <span class="mi">x</span>
+      <span class="mi">p</span>
+      <span class="mo">(</span>
+      <span class="mo">−</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">(</span>
+        <span class="mi">E</span>
+        <span class="mi">’</span>
+        <span class="mo">[</span>
+        <span class="mi">N</span>
+        <span class="mi">A</span>
+        <span class="mi">D</span>
+        <span class="mo">(</span>
+        <span class="mi">P</span>
+        <span class="mo">)</span>
+        <span class="mo">]</span>
+        <span class="mo">−</span>
+        <span class="mo">&lt;</span>
+        <span class="mi">E</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">’</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">m</span>
+         </div>
+        </div>
+        <span class="mo">&gt;</span>
+        <span class="mo">)</span>
+        <span class="mi">n</span>
+        <span class="mi">F</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+       </div>
+      </div>
+      <span class="mo">)</span>
+      <span class="mo">≅</span>
+      <span class="mn">3500</span>
+     </div>
+    </div>
+   </div>, thus ensuring very low levels of the carbonyl species. While we do not have many measurements to confirm this prediction, we note one central example: in 
+   <span class="italic">E</span>. 
+   <span class="italic">coli</span>, the concentration of oxaloacetate is 1–4 μM [
+   <a rid="pcbi.1006471.ref061" ref-type="bibr" href="#pcbi.1006471.ref061">61</a>], while the concentration of its conjugated hydroxyacid, malate, is 2–3 mM [
+   <a rid="pcbi.1006471.ref052" ref-type="bibr" href="#pcbi.1006471.ref052">52</a>].
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">For ketoacids and open-ring sugars (which are especially reactive due to the free carbonyl) this effect is even more pronounced as both have especially high reduction potentials (
+   <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>). Indeed, the reduction potential of ketoacids is so high that the reverse, oxidative reaction is usually supported by electron donors with a higher potential than NAD(P), for example, quinones, flavins, and even O
+   <sub>2</sub> (e.g., lactate oxidase, glycolate oxidase). Interestingly, the reactions of category G2 that are supported by known enzymes in the KEGG database (75% of reactions in this category) have significantly lower E’
+   <span class="sup">m</span> than the remaining reactions, which are not known to be catalyzed by natural enzymes (
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ 20 
+   <span class="italic">mV</span>,
+   <span class="italic">p</span> &lt; 0.005). As such, we suggest that the G2 transformations that are known to be enzyme-catalyzed are mainly those that are amenable to redox coupling with NAD(P) (
+   <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4D</a>). Within the subset of G2 transformations found in KEGG, those that use redox cofactors other than NAD(P) (such as cytochromes, FAD, O
+   <sub>2</sub>, or quinones) have higher E’
+   <span class="sup">m</span> values (
+   <span class="italic">Δ</span> &lt;
+   <span class="italic">E</span>′
+   <span class="sup">
+    <span class="italic">m</span>
+   </span>&gt; ≅ 20 
+   <span class="italic">mV</span>, not significant 
+   <span class="italic">p</span> = 0.03) than those that use NAD(P) (
+   <a ref-type="fig" rid="pcbi.1006471.g004" href="#pcbi.1006471.g004">Fig 4</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Finally, we note that the reduction potential of NADP and activated carboxylic acids (activated G1) overlap almost completely, such that we would not expect NAD(P) to have a strong effect on the ratio between the concentrations of carbonyls and activated acids. This is to be expected as both carbonyls and activated carboxylic acids are reactive–e.g., acetylphosphate and glycerate bisphosphate acetylates proteins spontaneously [
+   <a rid="pcbi.1006471.ref062" ref-type="bibr" href="#pcbi.1006471.ref062">62</a>] and acyl-CoA’s S-acetylates cellular peptides non-enzymatically [
+   <a rid="pcbi.1006471.ref063" ref-type="bibr" href="#pcbi.1006471.ref063">63</a>]. As such, there is no sense in driving the accumulation of carbonyls at the expense of activated carboxylic acids or vice-versa–neither approach would ameliorate non-specific toxicity.
+  </p>
+ </sec>
+</sec>

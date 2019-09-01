@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction   </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Chemical bonding is a fundamental concept in materials science. The interaction between two atoms can be quantitatively described by several bond descriptors. Those of particular relevance, because of their direct physical meaning, simply or universally, are bond order BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>, which is the number of electron pairs shared between atoms 
+  <span class="italic">i</span> and 
+  <span class="italic">j</span> (Pauling, 1960
+  <a ref-type="bibr" rid="bb40" href="#bb40"> ▸</a>), and electron density (ED) at the bond critical point (ρ
+  <sub>c</sub>), which should be related to each other (Bader, 1994
+  <a ref-type="bibr" rid="bb3" href="#bb3"> ▸</a>). These descriptors are widely used to understand the crystal and electronic structure of materials (Koritsanszky &amp; Coppens, 2001
+  <a ref-type="bibr" rid="bb27" href="#bb27"> ▸</a>; Gatti, 2005
+  <a ref-type="bibr" rid="bb17" href="#bb17"> ▸</a>; Gatti &amp; Macchi, 2012
+  <a ref-type="bibr" rid="bb19" href="#bb19"> ▸</a>), and to predict their reactivity and stability (a classic example of the direct correlation between bond order and the average bond energy for the C—C, C—O and C—N pairs is presented in Fig. S1 in the 
+  <span ext-link-type="uri" xlink:href="#suppinfoanchor" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">supporting information</span>). For a given 
+  <span class="italic">ij</span> atom pair, these electron descriptors are closely related to the bond length, 
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>, but an exact formulation of this relationship is lacking and the proposed correlations essentially depend on the sampled distances and atomic pairs. For example, Bader 
+  <span class="italic">et al.</span> (1982
+  <a ref-type="bibr" rid="bb6" href="#bb6"> ▸</a>) suggested the linear ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub> (
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>) correlation, however, a variety of studies (see, for instance, Espinosa 
+  <span class="italic">et al.</span>, 2002
+  <a ref-type="bibr" rid="bb14" href="#bb14"> ▸</a>; Dominiak 
+  <span class="italic">et al.</span>, 2006
+  <a ref-type="bibr" rid="bb13" href="#bb13"> ▸</a>; Gibbs 
+  <span class="italic">et al.</span>, 2014
+  <a ref-type="bibr" rid="bb20" href="#bb20"> ▸</a>) showed the power or (single or double) exponential ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub> (
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>) distribution. The question about the BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>(
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>) relationship is even more complicated. The empirical Pauling approach (Pauling, 1960
+  <a ref-type="bibr" rid="bb40" href="#bb40"> ▸</a>; Brown, 2009
+  <a ref-type="bibr" rid="bb7" href="#bb7"> ▸</a>) to the determination of BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span> suggests the exponential fitting: 
+  <div id="fd1" class="disp-formula">
+   <div xlink:href="m-05-00542-efd1.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here 
+  <span class="italic">R</span>
+  <sub>0(
+   <span class="italic">ij</span>)
+  </sub> and 
+  <span class="italic">b
+   <sub>ij</sub>
+  </span> are the bond valence parameters, which are transferable for a given atom pair in different compounds. 
+  <span class="italic">R</span>
+  <sub>0(
+   <span class="italic">ij</span>)
+  </sub> describes the effective repulsion between 
+  <span class="italic">i</span> and 
+  <span class="italic">j</span> atoms, whereas 
+  <span class="italic">b
+   <sub>ij</sub>
+  </span> is often related to the softness of the bond (Chen &amp; Adams, 2017
+  <a ref-type="bibr" rid="bb9" href="#bb9"> ▸</a>). Equation (1)
+  <a href="#fd1">*</a> is widely accepted in crystal chemistry, where it is used to check the reliability of structure solutions, estimate cation oxidation states or possible lattice strains, analyze ionic motion or surface phenomena 
+  <span class="italic">etc.</span> (Shustorovich, 1990
+  <a ref-type="bibr" rid="bb45" href="#bb45"> ▸</a>; Brown, 2009
+  <a ref-type="bibr" rid="bb7" href="#bb7"> ▸</a>; Levi &amp; Aurbach, 2014
+  <a ref-type="bibr" rid="bb30" href="#bb30"> ▸</a>; Adams &amp; Rao, 2014
+  <a ref-type="bibr" rid="bb2" href="#bb2"> ▸</a>). Although there have been a number of attempts to theoretically justify equation (1)
+  <a href="#fd1">*</a>, and to calculate the 
+  <span class="italic">R</span>
+  <sub>0(
+   <span class="italic">ij</span>)
+  </sub> and 
+  <span class="italic">b
+   <sub>ij</sub>
+  </span> from quantum chemistry considerations (Mohri, 2003
+  <a ref-type="bibr" rid="bb38" href="#bb38"> ▸</a>, 2005
+  <a ref-type="bibr" rid="bb39" href="#bb39"> ▸</a>; Hardcastle &amp; Laffoon, 2012
+  <a ref-type="bibr" rid="bb22" href="#bb22"> ▸</a>; Adams, 2013
+  <a ref-type="bibr" rid="bb1" href="#bb1"> ▸</a>), this approach remains empirical and is regarded by a large part of the scientific community as old-fashioned and simplistic. Moreover, correlation (1) was claimed inapplicable to compounds with delocalized electrons, particularly for metal–metal bonds (Cotton 
+  <span class="italic">et al.</span>, 2005
+  <a ref-type="bibr" rid="bb10" href="#bb10"> ▸</a>; Brown, 2009
+  <a ref-type="bibr" rid="bb7" href="#bb7"> ▸</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The fitting of the 
+  <span class="italic">R</span>
+  <sub>0(
+   <span class="italic">ij</span>)
+  </sub> and 
+  <span class="italic">b
+   <sub>ij</sub>
+  </span> values is commonly performed to satisfy the rule of local electroneutrality, which states that the bond valence sum, BVS = ΣBO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>, around atom 
+  <span class="italic">i</span> should be equal to its valence, 
+  <span class="italic">V
+   <sub>i</sub>
+  </span>
+  <div id="fd2" class="disp-formula">
+   <div xlink:href="m-05-00542-efd2.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This means that the fitting of the bond valence parameters in crystal chemistry is based on the formal values of shared electrons. In contrast, various calculation methods based on quantum mechanical properties [Wiberg BO, Wiberg (1968
+  <a ref-type="bibr" rid="bb50" href="#bb50"> ▸</a>); Mayer BO, Mayer (1983
+  <a ref-type="bibr" rid="bb36" href="#bb36"> ▸</a>); natural BO, Glendening &amp; Weinhold (1998
+  <a ref-type="bibr" rid="bb21" href="#bb21"> ▸</a>); fuzzy BO, Mayer &amp; Salvador (2004
+  <a ref-type="bibr" rid="bb37" href="#bb37"> ▸</a>); delocalization index, Bader &amp; Stephens (1975
+  <a ref-type="bibr" rid="bb5" href="#bb5"> ▸</a>); Fradera 
+  <span class="italic">et al.</span> (1999
+  <a ref-type="bibr" rid="bb16" href="#bb16"> ▸</a>); Matito 
+  <span class="italic">et al.</span> (2005
+  <a ref-type="bibr" rid="bb35" href="#bb35"> ▸</a>) 
+  <span class="italic">etc</span>.] are related to the effective number of shared electron pairs, which might differ significantly from the formal values, especially in the case of metal–metal bonds (Roos 
+  <span class="italic">et al.</span>, 2007
+  <a ref-type="bibr" rid="bb44" href="#bb44"> ▸</a>). For example, the effective BO for the quadruple Re—Re bond (formal BO = 4) in K
+  <sub>2</sub>Re
+  <sub>2</sub>Cl
+  <sub>8</sub>·H
+  <sub>2</sub>O is equal to 3.2 v.u. (Ponec 
+  <span class="italic">et al.</span>, 2010
+  <a ref-type="bibr" rid="bb42" href="#bb42"> ▸</a>). In this case, equation (2)
+  <a href="#fd2">*</a> is irrelevant and only the data of quantum chemistry calculations should be used to establish the character of BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>–
+  <span class="italic">R
+   <sub>ij</sub>
+  </span> correlation (Levi &amp; Aurbach, 2011
+  <a ref-type="bibr" rid="bb29" href="#bb29"> ▸</a>; Levi 
+  <span class="italic">et al.</span>, 2013
+  <span class="italic">a</span>
+  <a ref-type="bibr" rid="bb31" href="#bb31"> ▸</a>,
+  <span class="italic">b</span>, 2014
+  <a ref-type="bibr" rid="bb33" href="#bb33"> ▸</a>; Singh 
+  <span class="italic">et al.</span>, 2016
+  <a ref-type="bibr" rid="bb46" href="#bb46"> ▸</a>). Unfortunately, the data obtained for the same compounds by different quantum chemistry methods give high BO dispersions and, in many cases, show the absence of a clear BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>–
+  <span class="italic">R
+   <sub>ij</sub>
+  </span> relationship. This is not surprising, since the BO values are known to be largely affected by the more or less accurate treatment of electron correlation and by the more or less exact form adopted for the pair density and/or the exchange-correlation density.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Despite the high dispersion, it is logical to suggest that analysis of an extensive set of quantum chemistry data will clarify the issue by showing the presence or absence of qualitatively acceptable correlations between the electron descriptors, ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub> and BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>, and the length of chemical bonds, 
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>. The result is of some interest for our understanding of the universal features of chemical bonding. Moreover, if such correlations exist, knowledge of their parameters will allow for a surprisingly simple calculation of two basic electron descriptors for any atomic arrangement. Thus, this paper analyzes the numerous quantum chemistry data available in the literature in order to verify not only the empirical validity of equation (1)
+  <a href="#fd1">*</a> for different types of chemical bonds, but also whether the ED at the bond critical points, ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub>, similarly decays with increasing bond length, 
+  <span class="italic">R
+   <sub>ij</sub>
+  </span>. By analogy with the Pauling equation, we will express this decay in the following form: 
+  <div id="fd3" class="disp-formula">
+   <div xlink:href="m-05-00542-efd3.jpg" mimetype="image" mime-subtype="gif" position="float" orientation="portrait" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <span class="italic">C
+   <sub>ij</sub>
+  </span> and 
+  <span class="italic">D
+   <sub>ij</sub>
+  </span> are constants for a given atom pair in different compounds.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our aim is also to empirically quantify the relationships between the two basic descriptors ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub> and BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>, which should be in some way related to each other. To date, different types of the BO
+  <span class="italic">
+   <sub>ij</sub>
+  </span>–ρ
+  <sub>c(
+   <span class="italic">ij</span>)
+  </sub> correlation have been proposed (Bader 
+  <span class="italic">et al.</span>, 1983
+  <a ref-type="bibr" rid="bb4" href="#bb4"> ▸</a>; Howard &amp; Lamarche, 2003
+  <a ref-type="bibr" rid="bb26" href="#bb26"> ▸</a>; Tsirelson 
+  <span class="italic">et al.</span>, 2007
+  <a ref-type="bibr" rid="bb49" href="#bb49"> ▸</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is worth emphasizing that in this study we are interested in the uniform character of chemical bonds evident from Pauling’s principles, while differences in the bond nature such as closed-shell or open-shell, weak or strong interactions, will be rather out of the scope of this paper. These differences can be described further and in more detail by additional ED topological parameters such as Laplacians of the ED and potential and kinetic energy densities at the bond critical point [see, for instance, Espinosa 
+  <span class="italic">et al.</span> (1998
+  <a ref-type="bibr" rid="bb51" href="#bb51"> ▸</a>, 2002
+  <a ref-type="bibr" rid="bb14" href="#bb14"> ▸</a>) and Mata 
+  <span class="italic">et al.</span> (2010
+  <a ref-type="bibr" rid="bb34" href="#bb34"> ▸</a>)].
+ </p>
+</sec>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0008" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Density Functional Theory</div>
+ <sec id="jcc25364-sec-0009" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Ground and excited state calculation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">DFT calculations, based on the SF and SD formulations for the ground state, are executable in RAQET. Table 
+   <a rid="jcc25364-tbl-0004" ref-type="table" href="#jcc25364-tbl-0004">4</a> summarizes the available exchange–correlation (XC) functionals. The Slater–Dirac exchange,
+   <a rid="jcc25364-bib-0116" ref-type="ref" href="#jcc25364-bib-0116">116</a>, 
+   <a rid="jcc25364-bib-0117" ref-type="ref" href="#jcc25364-bib-0117">117</a> Vosko–Wilk–Nusair (VWN) correlation,
+   <a rid="jcc25364-bib-0118" ref-type="ref" href="#jcc25364-bib-0118">118</a> and Perdew–Wang correlation
+   <a rid="jcc25364-bib-0119" ref-type="ref" href="#jcc25364-bib-0119">119</a> are implemented as a local density approximation (LDA) functional. As for the generalized gradient approximation (GGA), the Becke's exchange proposed in 1988 (Becke88),
+   <a rid="jcc25364-bib-0120" ref-type="ref" href="#jcc25364-bib-0120">120</a> Lee–Yang–Parr (LYP) correlation,
+   <a rid="jcc25364-bib-0121" ref-type="ref" href="#jcc25364-bib-0121">121</a> Perdew–Burke–Ernzerhof (PBE) exchange–correlation,
+   <a rid="jcc25364-bib-0122" ref-type="ref" href="#jcc25364-bib-0122">122</a> and revised PBE exchange
+   <a rid="jcc25364-bib-0123" ref-type="ref" href="#jcc25364-bib-0123">123</a> functionals have been implemented. The 1998 Van Voorhis–Scuseria meta‐GGA (VS98) 
+   <a rid="jcc25364-bib-0124" ref-type="ref" href="#jcc25364-bib-0124">124</a> and 2006 Minnesota local meta‐GGA (M06‐L) 
+   <a rid="jcc25364-bib-0125" ref-type="ref" href="#jcc25364-bib-0125">125</a> functional are also included. The hybrid functionals with various degrees of HF exchange,
+   <a rid="jcc25364-bib-0126" ref-type="ref" href="#jcc25364-bib-0126">126</a>, 
+   <a rid="jcc25364-bib-0127" ref-type="ref" href="#jcc25364-bib-0127">127</a>, 
+   <a rid="jcc25364-bib-0128" ref-type="ref" href="#jcc25364-bib-0128">128</a>, 
+   <a rid="jcc25364-bib-0129" ref-type="ref" href="#jcc25364-bib-0129">129</a>, 
+   <a rid="jcc25364-bib-0130" ref-type="ref" href="#jcc25364-bib-0130">130</a>, 
+   <a rid="jcc25364-bib-0131" ref-type="ref" href="#jcc25364-bib-0131">131</a>, 
+   <a rid="jcc25364-bib-0132" ref-type="ref" href="#jcc25364-bib-0132">132</a> as well as the double‐hybrid functionals combined with the HF exchange and the MP2 correlation,
+   <a rid="jcc25364-bib-0133" ref-type="ref" href="#jcc25364-bib-0133">133</a>, 
+   <a rid="jcc25364-bib-0134" ref-type="ref" href="#jcc25364-bib-0134">134</a>, 
+   <a rid="jcc25364-bib-0135" ref-type="ref" href="#jcc25364-bib-0135">135</a>, 
+   <a rid="jcc25364-bib-0136" ref-type="ref" href="#jcc25364-bib-0136">136</a> are available. Some of the functionals have been implemented on the basis of Fortran code repositories.
+   <a rid="jcc25364-bib-0137" ref-type="ref" href="#jcc25364-bib-0137">137</a>, 
+   <a rid="jcc25364-bib-0138" ref-type="ref" href="#jcc25364-bib-0138">138</a> The local response dispersion (LRD) method
+   <a rid="jcc25364-bib-0139" ref-type="ref" href="#jcc25364-bib-0139">139</a>, 
+   <a rid="jcc25364-bib-0140" ref-type="ref" href="#jcc25364-bib-0140">140</a>, 
+   <a rid="jcc25364-bib-0141" ref-type="ref" href="#jcc25364-bib-0141">141</a> is included as a dispersion correction method. For excited states, the time‐dependent DFT (TDDFT) is implemented at the SF level to evaluate excited state energies, electronic transition moments, and oscillator strengths. TDDFT calculations based on the SD formalism will be available after the report on the numerical accuracy for the case of the highly accurate 2c Hamiltonian.
+  </p>
+  <div id="jcc25364-tbl-0004" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 4</span>
+   <div class="caption">
+    <p>Capabilities of XC functionals for DFT calculations</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <col align="left" span="1"/>
+    <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+    <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+    <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+    <thead valign="bottom">
+     <tr style="border-bottom:solid 1px #000000">
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Type</th>
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of HF exchange</th>
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Ratio of MP2 correlation</th>
+     </tr>
+    </thead>
+    <tbody valign="top">
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">LDA</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">SVWN</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">SPW92</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">GGA</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">BLYP</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">PBE</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">revPBE</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Meta‐GGA</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">VS98</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M06‐L</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Hybrid</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">B3LYP</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">20%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">BHHLYP</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">PBE0</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">25%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M05</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">28%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M05‐2X</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">56%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M06</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M06‐2X</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">54%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">M06‐HF</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">100%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">0%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Double‐hybrid</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">B2PLYP</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">53%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">27%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">B2GPPLYP</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">65%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">36%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐DH</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">12.5%</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1"/>
+      <td align="left" valign="top" rowspan="1" colspan="1">PBE0‐2</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">79.3701%</td>
+      <td align="right" valign="top" rowspan="1" colspan="1">50%</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </sec>
+ <sec id="jcc25364-sec-0010" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Picture change in DFT</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Any calculation of the expectation values for molecular properties should consider the PC correction to reproduce the results of the 4c relativistic calculations. In DFT calculations with the 2c relativistic framework, we should consider the PC problem in the electron density 
+   <div id="nlm-math-54" class="math">
+    <span class="mo">ρ</span>
+   </div>,
+   <a rid="jcc25364-bib-0077" ref-type="ref" href="#jcc25364-bib-0077">77</a> which originates from the unitary transformation 
+   <div id="nlm-math-55" class="math">
+    <span mathvariant="bold" class="mi">U</span>
+   </div> of the 4c wavefunction from 
+   <div id="nlm-math-56" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <span class="mo">Ψ</span>
+      <span class="mn">4</span>
+     </div>
+    </div>
+   </div> to 
+   <div id="nlm-math-57" class="math">
+    <div class="mrow">
+     <div class="msub">
+      <span class="mo">Ψ</span>
+      <span class="mn">2</span>
+     </div>
+    </div>
+   </div> where
+   <div id="jcc25364-disp-0017" class="disp-formula">
+    <span class="label">(17)</span>
+    <div id="nlm-math-58" class="math">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mo">Ψ</span>
+       <span class="mn">4</span>
+      </div>
+      <span class="mo">=</span>
+      <span mathvariant="bold" class="mi">U</span>
+      <div class="mrow">
+       <span class="mo">(</span>
+       <div class="mrow">
+        <div class="mtable">
+         <div class="mtr">
+          <div class="mtd">
+           <div class="mrow">
+            <div class="msub">
+             <span class="mo">Ψ</span>
+             <span class="mn">2</span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mtr">
+          <div class="mtd">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span class="mo">)</span>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>The electron density 
+   <div id="nlm-math-59" class="math">
+    <div class="mrow">
+     <span class="mo">ρ</span>
+     <span stretchy="false" class="mo">(</span>
+     <span mathvariant="bold" class="mi">r</span>
+     <span stretchy="false" class="mo">)</span>
+    </div>
+   </div> at position 
+   <span class="bold">r</span> is defined for both the 4c and 2c formalisms by
+   <div id="jcc25364-disp-0018" class="disp-formula">
+    <span class="label">(18)</span>
+    <div id="nlm-math-60" class="math">
+     <div columnalign="left" class="mtable">
+      <div class="mtr">
+       <div class="mtd">
+        <span class="mo">ρ</span>
+        <span stretchy="false" class="mo">(</span>
+        <span mathvariant="bold" class="mi">r</span>
+        <span stretchy="false" class="mo">)</span>
+        <span class="mo">=</span>
+        <div class="mrow">
+         <span class="mo">〈</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">4</span>
+          </div>
+         </div>
+         <span class="mo">|</span>
+        </div>
+        <div displaystyle="true" class="mstyle">
+         <div class="munder">
+          <span class="mo">∑</span>
+          <span class="mi">i</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">δ</span>
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span mathvariant="bold" class="mi">r</span>
+            <span class="mo">−</span>
+            <div class="msub">
+             <span mathvariant="bold" class="mi">r</span>
+             <span class="mi">i</span>
+            </div>
+           </div>
+           <span class="mo">)</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="bold" class="mi">1</span>
+           <span class="mn">4</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">|</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">4</span>
+          </div>
+         </div>
+         <span class="mo">〉</span>
+        </div>
+       </div>
+      </div>
+      <div class="mtr">
+       <div class="mtd">
+        <span class="mo"> </span>
+        <span class="mo"> </span>
+        <span class="mo"> </span>
+        <span class="mo">≈</span>
+        <div class="mrow">
+         <span class="mo">〈</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <span class="mo">|</span>
+        </div>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <div displaystyle="true" class="mstyle">
+            <div class="munder">
+             <span class="mo">∑</span>
+             <span class="mi">i</span>
+            </div>
+            <div class="mrow">
+             <div class="msup">
+              <span mathvariant="bold" class="mi">U</span>
+              <span class="mo">†</span>
+             </div>
+             <span stretchy="false" class="mo">(</span>
+             <span class="mi">i</span>
+             <span stretchy="false" class="mo">)</span>
+             <span class="mo">δ</span>
+             <div class="mrow">
+              <span class="mo">(</span>
+              <div class="mrow">
+               <span mathvariant="bold" class="mi">r</span>
+               <span class="mo">−</span>
+               <div class="msub">
+                <span mathvariant="bold" class="mi">r</span>
+                <span class="mi">i</span>
+               </div>
+              </div>
+              <span class="mo">)</span>
+             </div>
+             <div class="msub">
+              <span mathvariant="bold" class="mi">1</span>
+              <span class="mn">4</span>
+             </div>
+             <span mathvariant="bold" class="mi">U</span>
+             <span stretchy="false" class="mo">(</span>
+             <span class="mi">i</span>
+             <span stretchy="false" class="mo">)</span>
+            </div>
+           </div>
+          </div>
+          <span class="mo">]</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">e</span>
+          <span class="mi">l</span>
+          <span class="mi">e</span>
+          <span class="mi">c</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">|</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <span class="mo">〉</span>
+        </div>
+       </div>
+      </div>
+      <div class="mtr">
+       <div class="mtd">
+        <span class="mo"> </span>
+        <span class="mo"> </span>
+        <span class="mo"> </span>
+        <span class="mo">≠</span>
+        <div class="mrow">
+         <span class="mo">〈</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <span class="mo">|</span>
+        </div>
+        <div displaystyle="true" class="mstyle">
+         <div class="munder">
+          <span class="mo">∑</span>
+          <span class="mi">i</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">δ</span>
+          <div class="mrow">
+           <span class="mo">(</span>
+           <div class="mrow">
+            <span mathvariant="bold" class="mi">r</span>
+            <span class="mo">−</span>
+            <div class="msub">
+             <span mathvariant="bold" class="mi">r</span>
+             <span class="mi">i</span>
+            </div>
+           </div>
+           <span class="mo">)</span>
+          </div>
+          <div class="msub">
+           <span mathvariant="bold" class="mi">1</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mo">|</span>
+         <div class="mrow">
+          <div class="msub">
+           <span class="mo">Ψ</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+         <span class="mo">〉</span>
+        </div>
+        <span class="mo">,</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>where 
+   <div id="nlm-math-61" class="math">
+    <span class="mo">δ</span>
+   </div> is the delta function, and 
+   <span class="bold">1</span>
+   <sub>n</sub> is the n × n identity matrix. The subscript elec denotes the electronic component of the unitary transformed delta function. This PC correction is now available for ground state DFT calculations. Furthermore, the LUT scheme will realize an efficient PC correction process for eq. (
+   <a rid="jcc25364-disp-0018" ref-type="disp-formula" href="#jcc25364-disp-0018">18</a>) following the confirmation of the locality of the PC correction in an earlier article.
+   <a rid="jcc25364-bib-0077" ref-type="ref" href="#jcc25364-bib-0077">77</a>
+  </p>
+ </sec>
+</sec>

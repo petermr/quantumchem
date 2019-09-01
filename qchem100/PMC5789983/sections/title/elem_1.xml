@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec2" sec-type="results" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">The programmed cell death protein 1 (PD-1) is an important regulator for the immune tolerance and T cell exhaustion, being recently emerged as a key target in the treatment of several types of cancer. It is expressed after the T cell activation and binds to the ligants PD-L1 and PD-L2, suppressing immune response against autoantigens and playing an important role in the maintenance of peripheral immune tolerance
+  <span class="sup">
+   <a ref-type="bibr" rid="CR13" href="#CR13">13</a>
+  </span>. However, the ligant PD-L1 is often overexpressed in different tumor including lymphoma, melanoma, non-small-cell lung cancer and other types, making the PD-1/PD-L1 signaling pathway crucial in dampening the immune surveillance of the tumor
+  <span class="sup">
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span>.
+ </p>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">In this context, the target of the PD-1/PD-L1 interaction with monoclonal antibodies has demonstrated to be an important strategy for the control and eradication of several types of cancers. The treatment with pembrolizumab was approved by US-FDA in 2014 for advanced melanoma, and recently it has also been approved to an increasing number of cancer types, such as Hodgkin lymphoma and non-small-cell lung cancer. It is believed that the weak frequency in humans and the induction of cell activation, characteristics of the members of IgG4 subclass, are some of the main basis for the success of this therapeutic compound
+  <span class="sup">
+   <a ref-type="bibr" rid="CR23" href="#CR23">23</a>
+  </span>. As we can see from Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2</a>, the pembrolizumab recognition surface on PD-1 is filled by intermolecular direct and water-mediated hydrogen bonds (HBs and wHBs, respectively), non-conventional hydrogen bonds (nHBs), salt bridges (SB) and hydrophobic contacts. Therefore, mapping the relevant interactions among the pembrolizumab/PD-1 surface complex is highly important to the rationale drug development of new compounds.
+  <div id="Fig2" class="fig">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Interaction patterns of pembrolizumab/PD-1 recognition surface involving the amino-acid residues and the water molecules. (
+     <span class="bold">a</span>) and (
+     <span class="bold">b</span>) heavy-chain (HC) residues; (
+     <span class="bold">c</span>) light-chain (LC) residues.
+    </p>
+   </div>
+   <div xlink:href="41598_2018_20325_Fig2_HTML" id="d29e402" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">In this work, we employed the MFCC/DFT scheme to assess the relative energetic contribution of the individual as well as pair-interaction contribution of each residue from the pembrolizumab/PD-1 complex. From now on we will describe all the steps in this recognition process.</p>
+ <sec id="Sec3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Pembrolizumab/PD-1 recognition surface</div>
+  <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">Through a structural analysis of the binding site, 408 pair of interactions were detected within a range of 8.0 Å. Figure 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> shows the sum of all interaction energies from each individual residue of the pembrolizumab drug (R 
+   <sub>
+    <span class="italic">i</span>
+   </sub>), taking into account a dielectric constant 
+   <span class="italic">ε</span> = 20 (
+   <span class="italic">ε</span>
+   <sub>20</sub>) and 40 (
+   <span class="italic">ε</span>
+   <sub>40</sub>) depicted in Fig. 
+   <a rid="Fig3" ref-type="fig" href="#Fig3">3a and b</a>, respectively. One can note that only two residues (one residue) in the pembrolizumab heavy-chain (HC) energy spectrum are (is) repelled in 
+   <span class="italic">ε</span> = 20 (
+   <span class="italic">ε</span> = 40), while four (three) residues are repelled in its light-chain (LC) one, namely: 
+   <span class="italic">Y</span>32
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 0.04 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −0.10 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">R</span>98
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 1.80 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: 0.85 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">G</span>33
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 0.008 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −0.04 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">Y</span>57
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 6.06 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: 6.17 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">G</span>61
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 0.01 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −0.002 kcal mol
+   <span class="sup">−1</span>) and 
+   <span class="italic">H</span>94
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 0.82 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: 0.64 kcal mol
+   <span class="sup">−1</span>). For instance, the energy value 0.04 kcal mol
+   <span class="sup">−1</span> calculated for 
+   <span class="italic">Y</span>32 (HC and LC designated residues, respectively) represents the sum of the binding energies of the four amino-acids that compose the receptor PD-1 and are within a radius distance of 8.0 Å from it, namely: 
+   <span class="italic">K</span>78, 
+   <span class="italic">P</span>89, 
+   <span class="italic">K</span>131 and 
+   <span class="italic">A</span>132. Thus, one can see that the repulsive energies are almost insignificant, excluding the residue 
+   <span class="italic">Y</span>57 that shows the highest one for both dielectric constant values 
+   <span class="italic">ε</span>
+   <sub>20</sub> and 
+   <span class="italic">ε</span>
+   <sub>40</sub>.
+   <div id="Fig3" class="fig">
+    <span class="label">Figure 3</span>
+    <div class="caption">
+     <p>Energy profile for each pembrolizumab amino-acid residues in recognition surface. (
+      <span class="bold">a</span>) This figure represents the sum of interaction energies of the pembrolizumab residues with each amino-acid from PD-1 within a radius of 8.0 Å, using the dielectric constant 
+      <span class="italic">ε</span>
+      <sub>20</sub>. (
+      <span class="bold">b</span>) The same for 
+      <span class="italic">ε</span>
+      <sub>40</sub>. Blue solid line represents the heavy-chain energy spectrum, while the green dashed line is used to depict the light-chain one.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig3_HTML" id="d29e642" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">All other residues shown attractive interactions (negative energies), with the most intense one being observed for the heavy-chain amino-acids 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −23.32 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −22.84 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −18.49 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −18.07 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −21.58 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −20.03 kcal mol
+   <span class="sup">−1</span>) and 
+   <span class="italic">F</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −13.91 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −13.62 kcal mol
+   <span class="sup">−1</span>), and light-chain residues 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −7.41 mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −7.16 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">E</span>59
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −11.69 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −9.69 kcal mol
+   <span class="sup">−1</span>) and 
+   <span class="italic">S</span>95
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −6.99 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −6.85 kcal mol
+   <span class="sup">−1</span>).
+  </p>
+ </sec>
+ <sec id="Sec4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Pembrolizumab heavy-chain/PD-1 receptor interaction energy</div>
+  <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Among the 408 residue-residue pairs analyzed here, 260 were pembrolizumab heavy-chain/PD-1 interactions. It is a reflection of the proximity between the HC/LC pembrolizumab with the receptor PD-1 represented in crystallographic structures, where pembrolizumab 
+   <sub>
+    <span class="italic">Fab</span>
+   </sub> heavy-chain fragment is closer to the PD-1 receptor than the light-chain one
+   <span class="sup">
+    <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>. Besides a higher number of pairs, the sum of the energetic interaction between the pembrolizumab heavy-chain and the PD-1 receptor amino-acids shows also the higher value, accounting for -142.50 kcal mol
+   <span class="sup">−1</span> (−138.33 kcal mol
+   <span class="sup">−1</span>) for the dielectric constant 
+   <span class="italic">ε</span>
+   <sub>20</sub> (
+   <span class="italic">ε</span>
+   <sub>40</sub>).
+  </p>
+  <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">Although 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub> has been shown to be the most energetic pembrolizumab amino-acid residue, it only interacts with 15 residues from the PD-1 receptor. Figure 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a> depicts the highest interaction energies calculated to 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub>/PD-1 residues. As one can see, the strongest energy of 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub> is mainly related to its binding with three residues: 
+   <span class="italic">K</span>78 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −12.42 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −11.99 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">Q</span>88 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −4.45 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −4.51 kcal mol
+   <span class="sup">−1</span>) and 
+   <span class="italic">P</span>89 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −3.17 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −3.15 kcal mol
+   <span class="sup">−1</span>). Meanwhile, 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub>, 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> and 
+   <span class="italic">Y</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> are involved with 23, 30 and 21 pairs, respectively. As shown in Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a>, 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub> has its most intense interaction with the residue 
+   <span class="italic">K</span>78 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −9.43 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −8.92 kcal mol
+   <span class="sup">−1</span>), being followed by the residue 
+   <span class="italic">T</span>76 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −4.82 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −4.71 kcal mol
+   <span class="sup">−1</span>). The residue 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> does not show a strong individual interaction with none of the PD-1 residues (Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4c</a>), its high binding energy being due to a number of minor energies contributions, including those from the residues 
+   <span class="italic">A</span>132 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −3.84 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −3.44 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">I</span>126 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −2.71 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −2.87 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">K</span>78 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −2.43 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −3.12 kcal mol
+   <span class="sup">−1</span>) and 
+   <span class="italic">N</span>66 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −2.53 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −2.17 kcal mol
+   <span class="sup">−1</span>). Similar to 
+   <span class="italic">R</span>102, 
+   <span class="italic">Y</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> binding energy is composed by the sum of a number of small interactions (Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4d</a>), with the strongest being associated with the residue 
+   <span class="italic">V</span>64 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −3.49 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −3.49 kcal mol
+   <span class="sup">−1</span>).
+   <div id="Fig4" class="fig">
+    <span class="label">Figure 4</span>
+    <div class="caption">
+     <p>Graphical panel presenting the most relevant interactions involving the pembrolizumab heavy-chain residues. (
+      <span class="bold">a</span>) 
+      <span class="italic">Y</span>33 and 
+      <span class="italic">Y</span>35; (
+      <span class="bold">b</span>) 
+      <span class="italic">R</span>99, 
+      <span class="italic">D</span>100 and 
+      <span class="italic">Y</span>101; (
+      <span class="bold">c</span>) 
+      <span class="italic">R</span>102 and (
+      <span class="bold">d</span>) 
+      <span class="italic">F</span>103, 
+      <span class="italic">M</span>105 and 
+      <span class="italic">D</span>108, respectively.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig4_HTML" id="d29e1180" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5a</a> displays how close the residues 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub>, 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub>, 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> and 
+   <span class="italic">Y</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> are to the PD-1 receptor. Analyzing it one can understand the reason why these amino-acids present some of the largest number of pair-interaction and binding energies. All of them are involved in a network of hydrogen bonds with the PD-1 residues from CC’FG 
+   <span class="italic">β</span>-strands and some of its loops, mainly those belonging to the C’D loop, which was described to intrude into the complementary determining region (CDR) of the pembrolizumab drug, a variable portion present in some igG molecules responsible for the recognition of specific antigens
+   <span class="sup">
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>. Figure 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5b</a> depicts some of these interactions, starting with the residue 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub>. Here one can see that it forms two direct hydrogen bonds with the residues 
+   <span class="italic">K</span>78 charged amine group and 
+   <span class="italic">Q</span>88 side-chain oxygen. Besides, the residue 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub> also makes a water-mediated hydrogen bond with the 
+   <span class="italic">K</span>78 carbonyl group of the main-chain, and is involved in non-polar contacts with 
+   <span class="italic">P</span>89. The two hydrogen bonds between the residues 
+   <span class="italic">Y</span>33
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">K</span>78 give the major contribution to their high energy.
+   <div id="Fig5" class="fig">
+    <span class="label">Figure 5</span>
+    <div class="caption">
+     <p>Intermolecular interactions of the most energetic pembrolizumab heavy-chain residues. (
+      <span class="bold">a</span>) Structural representation of the residues 
+      <span class="italic">Y</span>33
+      <sub>
+       <span class="italic">HC</span>
+      </sub>, 
+      <span class="italic">Y</span>101
+      <sub>
+       <span class="italic">HC</span>
+      </sub>, 
+      <span class="italic">R</span>102
+      <sub>
+       <span class="italic">HC</span>
+      </sub> and 
+      <span class="italic">F</span>103
+      <sub>
+       <span class="italic">HC</span>
+      </sub> within the PD-1 binding site. (
+      <span class="bold">b</span>)–(
+      <span class="bold">f</span>) Interaction of these amino-acids with the most relevant residues of the receptor PD-1, respectively. Dashed lines in light blue (purple) (marine) represent direct (water-mediated) (non-conventional) hydrogen bonds, and the green lines represent 
+      <span class="italic">σ</span>-
+      <span class="italic">π</span> interactions.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig5_HTML" id="d29e1317" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">The residues 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub>, 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> and 
+   <span class="italic">Y</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> interaction network is shown in Fig. 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5c–e</a>. Figure 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5c</a> depicts 3 directs, 2 water-mediated and 1 non-conventional hydrogen bonds. The strongest interaction of this residue is related to the pair 
+   <span class="italic">Y</span>101
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">K</span>78, where it creates a direct hydrogen bond with charged side-chain amine and a non-conventional hydrogen bond with amine of the main-chain. Three hydrogen bonds are formed with the residue 
+   <span class="italic">T</span>76, two with its oxygen atoms (carbonyl and hydroxyl) and a water-mediated with the hydroxyl group. It is also involved in one wHB with the residue Y68 side-chain hydroxyl and in some non-polar contacts with the residues 
+   <span class="italic">D</span>77 and 
+   <span class="italic">N</span>66. The residues 
+   <span class="italic">R</span>102
+   <sub>
+    <span class="italic">HC</span>
+   </sub> and 
+   <span class="italic">Y</span>103
+   <sub>
+    <span class="italic">HC</span>
+   </sub> are mainly involved in weak interactions. The latter form a 
+   <span class="italic">σ</span>-
+   <span class="italic">π</span> interaction with the residue 
+   <span class="italic">V</span>64, a non-conventional hydrogen bond with the residue 
+   <span class="italic">P</span>83 and some non-polar contacts with the residues 
+   <span class="italic">L</span>128 and 
+   <span class="italic">D</span>85, while the former makes hydrogen bonds with 
+   <span class="italic">A</span>132 oxygen atom and 
+   <span class="italic">N</span>66 side-chain nitrogen, besides non-conventional hydrogen bonds with the side-chain of the residues 
+   <span class="italic">I</span>126 and 
+   <span class="italic">K</span>78.
+  </p>
+  <p id="Par19" xmlns="http://www.w3.org/1999/xhtml">The MFCC scheme yields not only the individual pembrolizumab/PD-1 interactions but also important information from the pair-interactions that could be otherwise missing, namely: 
+   <span class="italic">R</span>99
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">D</span>85 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −9.75 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −7.43 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">Y</span>35
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">S</span>87 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −2.13 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −2.08 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">M</span>105
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">K</span>131 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −6.61 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −6.06 kcal mol
+   <span class="sup">−1</span>), and 
+   <span class="italic">D</span>108
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">K</span>131 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −6.56 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −4.82 kcal mol
+   <span class="sup">−1</span>).
+  </p>
+  <p id="Par20" xmlns="http://www.w3.org/1999/xhtml">The residues 
+   <span class="italic">M</span>105
+   <sub>
+    <span class="italic">HC</span>
+   </sub> and 
+   <span class="italic">D</span>108
+   <sub>
+    <span class="italic">HC</span>
+   </sub> make hydrogen bonds with the residue 
+   <span class="italic">K</span>131. The main-chain oxygen carbonyl of 
+   <span class="italic">M</span>105
+   <sub>
+    <span class="italic">HC</span>
+   </sub> makes a direct hydrogen bonds with the charged amine of this lysine residue, while the residue D108 is engaged in a water-mediated hydrogen bond with the same molecular group, yet presenting its negatively charged carboxyl group (
+   <span class="italic">D</span>108) in a closer distance to positively charged amine group (see Fig. 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5f</a>). The pair 
+   <span class="italic">Y</span>35
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">S</span>87 binding energy is governed by a hydrogen bond formed between the hydroxyl group of this tyrosine residue (
+   <span class="italic">Y</span>35
+   <sub>
+    <span class="italic">HC</span>
+   </sub>) and the main-chain carbonyl from 
+   <span class="italic">S</span>87. The pair 
+   <span class="italic">R</span>99
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">D</span>85 is described for some authors as the only salt bridge formed between the pembrolizumab drug and the PD-1 receptor
+   <span class="sup">
+    <a ref-type="bibr" rid="CR26" href="#CR26">26</a>,
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>.
+  </p>
+ </sec>
+ <sec id="Sec5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Pembrolizumab light-chain /PD-1 receptor interaction energy</div>
+  <p id="Par21" xmlns="http://www.w3.org/1999/xhtml">The pembrolizumab light-chain is a little more distant of the PD-1 receptor than the heavy-chain one, as it can be inferred from its contribution to the total binding energy (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −44.67 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −47.75 kcal mol
+   <span class="sup">−1</span>), as well as from the number of pairs formed with the receptor (148). This is consistent with previous crystallographic results
+   <span class="sup">
+    <a ref-type="bibr" rid="CR25" href="#CR25">25</a>,
+    <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+   </span>. According to Fig. 
+   <a rid="Fig6" ref-type="fig" href="#Fig6">6</a>, the most intense binding energies for the LC amino-acids is associated to the pair 
+   <span class="italic">E</span>59
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">K</span>131 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −11.90 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −9.70 kcal mol
+   <span class="sup">−1</span>), being followed by the pairs 
+   <span class="italic">S</span>95
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">S</span>87 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −6.00 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −5.83 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">Y</span>53
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">K</span>131 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −4.15 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −4.05 kcal mol
+   <span class="sup">−1</span>), 
+   <span class="italic">R</span>96
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">R</span>86 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −1.47 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −2.62 kcal mol
+   <span class="sup">−1</span>), and 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">E</span>84 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: −2.62 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: −2.48 kcal mol
+   <span class="sup">−1</span>).
+   <div id="Fig6" class="fig">
+    <span class="label">Figure 6</span>
+    <div class="caption">
+     <p>Graphical panel depicting the most relevant interactions involving the pembrolizumab light-chain residues 
+      <span class="italic">Y</span>34, 
+      <span class="italic">Y</span>36, 
+      <span class="italic">Y</span>53, 
+      <span class="italic">Y</span>57, 
+      <span class="italic">E</span>59, 
+      <span class="italic">E</span>95, 
+      <span class="italic">R</span>96 and 
+      <span class="italic">D</span>97.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig6_HTML" id="d29e1799" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par22" xmlns="http://www.w3.org/1999/xhtml">Figure 
+   <a rid="Fig7" ref-type="fig" href="#Fig7">7</a> depicts some interactions made by the pembrolizumab light-chain residues linked to the PD-1 receptor. As one can see, the residue 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub> is surrounded by some charged residues (
+   <span class="italic">E</span>84, 
+   <span class="italic">D</span>85 and 
+   <span class="italic">R</span>86) from the PD-1 receptor (Fig. 
+   <a rid="Fig7" ref-type="fig" href="#Fig7">7a</a>). However, it only makes a single direct hydrogen bond with the main-chain carbonyl of the residue 
+   <span class="italic">E</span>84, all the other interactions being non-conventional hydrogen bonds (
+   <span class="italic">P</span>83 and 
+   <span class="italic">R</span>86), and water-mediated hydrogen bonds. It would be inconsistent with the position occupied by this residue among the most energetic one of the pembrolizumab light-chain, if the number of pairs formed with 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub> (10) would not overcome it. The residue making the biggest number of pair-interaction is 
+   <span class="italic">Y</span>34
+   <sub>
+    <span class="italic">LC</span>
+   </sub>, namely 19. Notwithstanding, the residue 
+   <span class="italic">Y</span>34
+   <sub>
+    <span class="italic">LC</span>
+   </sub> shows a binding energy less than the 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub> one, due to an unfavorable interaction with the residue 
+   <span class="italic">F</span>63 (
+   <span class="italic">ε</span>
+   <sub>20</sub>: 5.27 kcal mol
+   <span class="sup">−1</span>; 
+   <span class="italic">ε</span>
+   <sub>40</sub>: 5.30 kcal mol
+   <span class="sup">−1</span>).
+   <div id="Fig7" class="fig">
+    <span class="label">Figure 7</span>
+    <div class="caption">
+     <p>Intermolecular interactions of the most energetic pembrolizumab light-chain residues. (
+      <span class="bold">a</span>) Interaction of the residue 
+      <span class="italic">Y</span>36 with the most relevant residues of the receptor PD-1. (
+      <span class="bold">b</span>) The same for the residues 
+      <span class="italic">E</span>59 and 
+      <span class="italic">S</span>95. Dashed lines in light blue (purple) (marine) represent direct (water-mediated) (non-conventional) hydrogen bonds.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig7_HTML" id="d29e1907" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p id="Par23" xmlns="http://www.w3.org/1999/xhtml">Although only five pair-interactions were calculated with the residue 
+   <span class="italic">S</span>95
+   <sub>
+    <span class="italic">LC</span>
+   </sub> within a radius of 8.0 Å, it shows one of the highest interaction energies of the drug’s light-chain. Similar to the residue 
+   <span class="italic">Y</span>36
+   <sub>
+    <span class="italic">LC</span>
+   </sub>, the majority of the surrounding residues make weak interactions, excluding 
+   <span class="italic">S</span>87 which forms a water-mediated hydrogen bond through the hydroxyl group from both side-chains (see Fig. 
+   <a rid="Fig7" ref-type="fig" href="#Fig7">7b</a>). It is also important to notice the attractive binding energy found to the 
+   <span class="italic">R</span>96
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">R</span>86 pair, even with the positively charged guanidine group from both amino-acids, assuming a conformation where they are very close. These two arginine residues are in a T-shaped stacking interaction, which favors an attractive bind
+   <span class="sup">
+    <a ref-type="bibr" rid="CR30" href="#CR30">30</a>
+   </span>. Finally, the 
+   <span class="italic">E</span>59
+   <sub>
+    <span class="italic">LC</span>
+   </sub>-
+   <span class="italic">K</span>131 pair forms the second salt bridge of the complex drug/receptor, depicting the highest individual interaction energy in the drug’s light-chain. This interaction is due to the negatively charged carboxyl group of the residue 
+   <span class="italic">E</span>59
+   <sub>
+    <span class="italic">LC</span>
+   </sub>, and the positively charged amine of the residue 
+   <span class="italic">K</span>131 side-chain. It gives us the idea of the dynamic process which govern the interaction between the pembrolizumab Fab fragment and the extracellular region of the PD-1 receptor, such as the formation of a new salt bridge between the residues 
+   <span class="italic">D</span>108
+   <sub>
+    <span class="italic">HC</span>
+   </sub>-
+   <span class="italic">K</span>131 whose opposite charges from the side-chain are very close (3.6 Å).
+  </p>
+  <p id="Par24" xmlns="http://www.w3.org/1999/xhtml">For completeness, we display in Fig. 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a> the electrostatic potential isosurface with projected electron densities for the pembrolizumab amino-acids bound to some of the most important residues at the binding pocket site.
+   <div id="Fig8" class="fig">
+    <span class="label">Figure 8</span>
+    <div class="caption">
+     <p>Electrostatic potential isosurfaces with the projected electron densities for some pembrolizumab residues interacting with the most attractive residues of the receptor PD-1.</p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig8_HTML" id="d29e1990" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Total binding energy</div>
+  <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">To evaluate the binding interaction energies through fragment-based quantum mechanics method, it is important to take into account every significant attractive and repulsive amino-acid residue which can influence this mechanism. Therefore, instead of taking an arbitrary region of the binding site, we performed a search for an optimal binding pocket radius (
+   <span class="italic">r</span>) in which a variation less than 10% of the sequential pocket radius could be observed after a radius increase. For this task, the binding pocket radius 
+   <span class="italic">r</span> is varied from 2.0 Å (−32.04 kcal mol
+   <span class="sup">−1</span> for 
+   <span class="italic">ε</span> = 20 and −27.29 kcal mol
+   <span class="sup">−1</span> for 
+   <span class="italic">ε</span> = 40) to 8.0 Å (−187.17 kcal mol
+   <span class="sup">−1</span> for 
+   <span class="italic">ε</span> = 20 and −186.08 kcal mol
+   <span class="sup">−1</span> for 
+   <span class="italic">ε</span> = 40) in order to determine the best value of 
+   <span class="italic">r</span>, found to be 6.0 Å corresponding to an energy of −179.94 (−179.60) kcal mol
+   <span class="sup">−1</span> for 
+   <span class="italic">ε</span> = 20 (40), from which the convergence was achieved (see Fig. 
+   <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>). This result is in agreement with previous works, stating that after 6.0-7.0 Å the molecular interactions are weak
+   <span class="sup">
+    <a ref-type="bibr" rid="CR31" href="#CR31">31</a>,
+    <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+   </span>.
+   <div id="Fig9" class="fig">
+    <span class="label">Figure 9</span>
+    <div class="caption">
+     <p>The total interaction energy as a function of the binding pocket radius 
+      <span class="italic">r</span> calculated using the GGA functional B97D. Pairs of amino-acids responsible for the regions of steepest negative and positive variation are highlighted.
+     </p>
+    </div>
+    <div xlink:href="41598_2018_20325_Fig9_HTML" id="d29e2058" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+</sec>

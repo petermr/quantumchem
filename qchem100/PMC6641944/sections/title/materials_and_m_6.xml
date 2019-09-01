@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">MATERIALS AND METHODS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A light pulse from a Ti:Sapphire laser at 775 nm [full width at half maximum (FWHM), 2 nm; repetition rate, 75 kHz] pumped collinear type-II phase-matched 8-mm-long SPDC waveguides written in a periodically poled potassium titanyl phosphate crystal sample. They generate two independent photon number–correlated states, the two-mode squeezed vacua 
+  <div class="inline-formula">
+   <div id="m38" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">∣</span>
+      <span mathvariant="normal" class="mi">Ψ</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="msubsup">
+       <span class="mo">∑</span>
+       <div class="mrow">
+        <span class="mi">n</span>
+        <span class="mo">=</span>
+        <span class="mn">0</span>
+       </div>
+       <span class="mo">∞</span>
+      </div>
+      <div class="msub">
+       <span mathvariant="normal" class="mi">λ</span>
+       <span class="mi">n</span>
+      </div>
+      <span class="mo">∣</span>
+      <span class="mi">n</span>
+      <span class="mo">,</span>
+      <span class="mi">n</span>
+      <span stretchy="true" class="mo">〉</span>
+     </div>
+    </div>
+   </div>
+  </div>, where 
+  <div class="inline-formula">
+   <div id="m39" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="normal" class="mi">λ</span>
+       <span class="mi">n</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <div class="msup">
+         <span class="mtext">tanh</span>
+         <span class="mi">n</span>
+        </div>
+        <span class="mi">g</span>
+       </div>
+       <div class="mrow">
+        <span class="mtext">cosh</span>
+        <span class="mi">g</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is a probability amplitude for creation of a pair of 
+  <span class="italic">n</span> photons and 
+  <span class="italic">g</span> is the parametric gain. The average photon number in the signal and idler mode equals 
+  <div class="inline-formula">
+   <div id="m40" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">〈</span>
+      <div accent="true" class="mover">
+       <span class="mi">n</span>
+       <span stretchy="true" class="mo">^</span>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <span class="mtext">sinh</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mi">g</span>
+     </div>
+    </div>
+   </div>
+  </div>. For small 
+  <span class="italic">g</span>, cosh 
+  <span class="italic">g</span> ≈ 1, and thus, 
+  <div class="inline-formula">
+   <div id="m41" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">λ</span>
+       <span class="mi">n</span>
+       <span class="mn">2</span>
+      </div>
+      <span class="mo">≈</span>
+      <div class="msup">
+       <span class="mtext">sinh</span>
+       <div class="mrow">
+        <span class="mn">2</span>
+        <span class="mi">n</span>
+       </div>
+      </div>
+      <span class="mi">g</span>
+      <span class="mo">=</span>
+      <div class="msup">
+       <div class="mrow">
+        <span stretchy="false" class="mo">〈</span>
+        <div accent="true" class="mover">
+         <span class="mi">n</span>
+         <span stretchy="true" class="mo">^</span>
+        </div>
+        <span stretchy="false" class="mo">〉</span>
+       </div>
+       <span class="mi">n</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. In the experiment, the average photon number was 
+  <div class="inline-formula">
+   <div id="m42" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="false" class="mo">〈</span>
+      <div accent="true" class="mover">
+       <span class="mi">n</span>
+       <span stretchy="true" class="mo">^</span>
+      </div>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">≈</span>
+      <span class="mn">0.2</span>
+     </div>
+    </div>
+   </div>
+  </div>. This value is sufficient to ensure the emission of multiphoton pairs but, at the same time, to diminish the interferometric visibility of two-photon events. In both output states, the signal and idler pulses were split with a PBS to four spatial modes 
+  <span class="italic">A</span> to 
+  <span class="italic">D</span>. Subsequently, they were filtered by bandpass filters with an FWHM of 3 nm angle-tuned to the central wavelength of their respective spectra to reduce the broadband background typically generated in dielectric nonlinear waveguides (
+  <a rid="R28" ref-type="bibr" href="#R28">
+   <span class="italic">28</span>
+  </a>). The pump beam was discarded with an edge filter. The modes 
+  <span class="italic">A</span> and 
+  <span class="italic">D</span> were used for heralding and conditional creation of Fock states in modes 
+  <span class="italic">B</span> and 
+  <span class="italic">C</span>, which interfered in a variable ratio polarization-maintaining (PM) fiber coupler. The coupling ratio can be set in the range of 0 to 100% with an error of ±1.5%. The heralding signal modes (H-pol.) were centered at 1554 nm, while the interfering idler modes (V-pol.) were at 1546 nm. We used TESs running at 70 mK, which allowed for photon number–resolved measurements in all modes (
+  <a rid="R29" ref-type="bibr" href="#R29">
+   <span class="italic">29</span>
+  </a>). Their voltage output was captured with an analog to digital converter (ADC) card.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Before demonstrating the HOM interference, we characterized the setup. A high–photon number resolution and single-mode input states are pivotal for this experiment. The resolution of TES detectors (the confidence that the detector gives a correct information about the number of photons) was previously confirmed to exceed 95% (
+  <a rid="R20" ref-type="bibr" href="#R20">
+   <span class="italic">20</span>
+  </a>). The depth of the HOM dip of 85.9 ± 0.3% for a two-photon interference indicated an effective Schmidt-mode number 
+  <span class="italic">K</span> = 1.16. For the measured 4-tuples of photon numbers, losses were computed by assuming perfect setup components, each followed by a BS with a reflection coefficient introducing the loss. We estimated that the total transmission in each mode to be approximately 50%. For the details, see the Supplementary Materials.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Measurements for individual settings of the splitting ratio were taken over approximately 400 s, giving 10
+  <span class="sup">9</span> data samples for each 
+  <span class="italic">r</span> ranging from 0 to 1 with a step of approximately 3%. Small error bars for low photon numbers and larger bars for the higher ones result from keeping the pump power fixed and near-single modeness of the interfering beams.
+ </p>
+</sec>

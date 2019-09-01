@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec7" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and discussion</div>
+ <sec id="Sec8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Creating meta-workflows using atomic workflows</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Two leading approaches for meta-workflow creation are the template-based approach to construct meta-workflows containing embedded workflows of the same workflow system and the black box based approach to develop meta-workflows incorporating embedded workflows of different workflow systems. Since we will use only WS-PGRADE workflows to outline how the Computational Chemistry community identifies and develops atomic workflows and constructs meta-workflows we will only describe the template based approach.</p>
+ </sec>
+ <sec id="Sec9" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Template based meta-workflow development</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The template-based approach is focused at enabling re-use of existing workflows as embedded atomic workflows whilst allowing some degree of freedom for their customization. This approach introduces the concept of a 
+   <span class="italic">template,</span> which describes the default configuration of an embedded workflow. This configuration includes a number of parameters such as the input and output, data required for processing and the executables consequently serving as a prototype for use of the workflow. The template also controls the customization allowed for a workflow being shared. For instance, a workflow developer may allow customization of the data type of the input but restrict the number of input ports allowed for the workflow. This approach, therefore, offers more flexibility to a workflow developer in creating atomic workflows for sharing across different scientific disciplines without making the process cumbersome for the end user. Figures 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">4</a> and 
+   <a rid="Fig5" ref-type="fig" href="#Fig5">5</a> presents a graphical representation of the template based approach for meta-workflow creation.
+   <div id="Fig4" class="fig">
+    <span class="label">Fig. 4</span>
+    <div class="caption">
+     <p>Template based approach for meta-workflow creation</p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig4_HTML" id="MO13" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+   <div id="Fig5" class="fig">
+    <span class="label">Fig. 5</span>
+    <div class="caption">
+     <p>Template based meta-workflow creation</p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig5_HTML" id="MO14" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to formally describe the template based approach, we use the basic definition of the workflow given in (Eq. 
+   <a rid="Equ1" ref-type="" href="#Equ1">1</a>). In the context of the template based approach, we define a 
+   <span class="italic">template</span> to encompass the configuration of a workflow as
+   <div id="Equ9" class="disp-formula">
+    <span class="label">9</span>
+    <div class="alternatives">
+     <span id="M17" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$ {\text{WF}}_{\text{temp}} = :\left\{ {{\text{in}}\_{\text{port}},{\text{ out}}\_{\text{port}},{\text{ target}}\_{\text{DCI}},{\text{ executable}}} \right\} $$\end{document}</span>
+     <div id="M18" display="block" class="math">
+      <div class="mrow">
+       <div class="msub">
+        <span class="mtext">WF</span>
+        <span class="mtext">temp</span>
+       </div>
+       <span class="mo">=</span>
+       <span class="mo">:</span>
+       <div close="}" open="{" separators="" class="mfenced">
+        <div class="mrow">
+         <span class="mtext">in</span>
+         <span class="mi">_</span>
+         <span class="mtext">port</span>
+         <span class="mo">,</span>
+         <div class="mrow">
+          <span width="0.333333em" class="mspace"/>
+          <span class="mtext">out</span>
+         </div>
+         <span class="mi">_</span>
+         <span class="mtext">port</span>
+         <span class="mo">,</span>
+         <div class="mrow">
+          <span width="0.333333em" class="mspace"/>
+          <span class="mtext">target</span>
+         </div>
+         <span class="mi">_</span>
+         <span class="mtext">DCI</span>
+         <span class="mo">,</span>
+         <div class="mrow">
+          <span width="0.333333em" class="mspace"/>
+          <span class="mtext">executable</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div xlink:href="13321_2016_169_Article_Equ9.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    </div>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Furthermore, as defined in Eq. 
+   <a rid="Equ7" ref-type="" href="#Equ7">7</a> a meta-workflow is composed of multiple embedded workflows and multiple jobs. Therefore,
+   <div list-type="bullet" class="list">
+    <div class="list-item">
+     <p>WF_EM—set of embedded workflows for a meta-workflow, and</p>
+    </div>
+    <div class="list-item">
+     <p>WF_ID—unique ID for the workflow</p>
+    </div>
+    <div class="list-item">
+     <p>F_ID—unique ID for the workflow</p>
+    </div>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The template-based approach has been implemented with the gUSE/WS-PGRADE science gateway technology as part of the ER-flow project [
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>]. In the current implementation, the first stage involves preparation of atomic workflows by the workflow developer. This includes defining the workflow graph, implementation of a concrete workflow with the defined workflow graph and building a template based on this implementation. This is followed by creation of an implementation for the concrete sub-workflow using the template. The creation of meta-workflow includes importing these sub-workflows shared via SHIWA Repository and configuring the required parameters such as the DCI where the workflow is intended to be processed, the executable and the data to be processed by the workflow.
+  </p>
+ </sec>
+ <sec id="Sec10" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry simulations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry (QC) simulations deal with the electronic structure of molecules. An important task in quantum chemistry is the evaluation of the accuracy in describing specific molecular structures. Hence, lots of efforts are made in bench-marking studies with variation of functional and basis set in combination with solvent models and empirical dispersion correction. The job definition is always quite similar representing an ideal basis for the use of workflows. In a rather simple workflow, a given geometry can be calculated with a set of functionals and basis sets. The key geometric parameters are parsed and collected in tables afterwards, enabling direct comparison of the accuracy of the used methods. Another use case would be the study of a complex potential hypersurface by varying one or several geometric parameters. Then, a set of similar jobs has to be submitted to DCIs with the same functional and basis set but varying coordinates. Both types of workflows are independent of the quantum chemical code. Further post-processing can cover the addition of a solvent model, calculation of charges and frequencies, formatting of checkpoint files and definition of new job files for subsequent time-dependent DFT calculations. Quantum Chemistry workflows were primarily implemented in MoSGrid for Gaussian [
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>] and NWChem [
+   <a ref-type="bibr" rid="CR42" href="#CR42">42</a>]. Both codes are used by novice and experienced users. Aiming at novice users, MoSGrid provides tutorials in the QC portlet on how to construct and submit a job and basic workflows are ready to use [
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>]. For experienced users, more complex workflows are available or can be assembled by themselves via the workflow portlet.
+  </p>
+ </sec>
+ <sec id="Sec11" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Atomic operations versus atomic workflows in computational chemistry</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Input is mostly the experimental structure obtained from single crystal X-ray diffraction analysis. The most fundamental step of every QC calculation is the geometry optimization where a converged wave function is calculated and the atomic positions are varied until all forces in the system come to a minimum. Afterwards, the frequency calculation checks whether a geometry represents a true minimum and delivers infrared frequencies of the compound. When dealing with systems containing metals, a very good accordance with the experimental structure is achieved when only 0.01 Å deviation in the chemical bond lengths is found. In many cases, the experimental optical properties of a given molecule must be compared to and explained by theoretical analysis. This is performed by time-dependent DFT calculations (TD-DFT) where the response of the wave function of the compound to an external periodic field (e.g. light) is simulated. More information about the electronic structure can be obtained by population analyses and charge calculations, e.g. by using natural bond orbitals (NBO) analysis [
+   <a ref-type="bibr" rid="CR43" href="#CR43">43</a>]. These types of analyses allow to dissect the electron distribution and assign it to atoms in order to obtain partial charges, charge-transfer energies, hybridisation of atoms etc.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Previously, in QC, the calculation in gas phase was standard but today, to obtain a realistic description, solvent models are commonly applied. In explicit models, the single solvent molecules are modelled which leads to enormous computational effort as the number of particles in the simulation system increases exponentially. In implicit models, the solvents are simplified by their radius and their dielectric constant describing the continuum around the molecule of interest. The different approaches represent the compromise between best accuracy (explicit models) and highest speed (implicit models). Hence, every solvent has a specific set of parameters. Special attention has to be paid to the solvent description when changing the QC code or even only the version of the used code, as the implementations of solvent models vary. At the next level, dispersive interactions between molecules and parts of molecules must be described correctly. Dispersive interactions (London forces) are rather weak but they can change the relative energies between conformers since attractive forces between unipolar parts of molecules can affect the position of substituents. The dispersion model after Grimme adds pairwise interaction energies (DFT-D) to model possible contacts [
+   <a ref-type="bibr" rid="CR44" href="#CR44">44</a>, 
+   <a ref-type="bibr" rid="CR45" href="#CR45">45</a>]. It is highly important to understand the influences of different solvent and dispersion models on the structures, frequencies and energies of transition metal complexes because an accurateness of &lt;0.1 kcal/mol is needed for a reasonable reaction mechanism prediction. Both enhancements can be added to all types of calculations described above.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Hence, candidates for atomic workflows are the following ones:
+   <div list-type="bullet" class="list">
+    <div class="list-item">
+     <p>geometry optimization</p>
+    </div>
+    <div class="list-item">
+     <p>frequency analysis</p>
+    </div>
+    <div class="list-item">
+     <p>time-dependent calculation</p>
+    </div>
+    <div class="list-item">
+     <p>population analysis</p>
+    </div>
+    <div class="list-item">
+     <p>charge calculation</p>
+    </div>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec12" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum chemistry workflows</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To evaluate how to use the atomic and meta-workflow concept in Quantum Chemistry, we identified several use cases. In this section, we present some of them in order to provide useful examples considering the current trends in Quantum Chemistry. Whenever similar job types of different molecules or different job types for the same molecule are to be submitted, a workflow can be an efficient and practical solution.</p>
+ </sec>
+ <sec id="Sec13" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Spectroscopic analysis</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In this context, a highly interesting use case is the so-called spectroscopic analysis (Fig. 
+   <a rid="Fig6" ref-type="fig" href="#Fig6">6</a>). After a first geometry optimization of the selected molecule several further simulations such as frequency analysis, time dependent calculation, population analysis and solvent analysis are performed using the optimized coordinates. These simulations can be further divided into smaller tasks, such as the input file generation by a so-called 
+   <span class="italic">job generator</span>, then the job submission to the DCI and the calculation by the QC code, which produces the corresponding output. Input and output files are graphically represented by rhombs whereas jobs are rounded boxes.
+   <div id="Fig6" class="fig">
+    <span class="label">Fig. 6</span>
+    <div class="caption">
+     <p>Spectroscopic analysis 
+      <span class="italic">Spec_Analy M</span>-
+      <span class="italic">WF</span> meta-workflow (
+      <span class="italic">top left</span> molecular structure, bottom from 
+      <span class="italic">left</span> to 
+      <span class="italic">right</span>: Raman spectrum, UV/Vis spectrum, lowest unoccupied orbital)
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig6_HTML" id="MO16" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To create a spectroscopic analysis meta-workflow (
+   <span class="italic">Spec_Analy M</span>-
+   <span class="italic">WF</span>) first, we defined the structure of the meta-workflow. Next, we identified the atomic workflows i.e. small operations or tasks that can be re-used in other meta-workflows. The first atomic workflow (
+   <span class="italic">Opt WF</span>) runs a simple geometry optimization. The subsequent atomic workflows have a similar structure but they provide different functionalities. They contain a converter script that extracts the output geometry from the optimization output and combines it with blank input files (i.e. just lacking input coordinates) with the corresponding keywords for frequency calculations (
+   <span class="italic">Freq WF</span>), time-dependent DFT calculations giving UV/Vis spectra (
+   <span class="italic">TD WF</span>), population analyses (
+   <span class="italic">Pop WF</span>) and subsequent calculations in solvents (
+   <span class="italic">Solv WF</span>). All these atomic workflows, shown in Fig. 
+   <a rid="Fig4" ref-type="fig" href="#Fig4">6</a> are highly valuable since they can be re-used in other QC meta-workflows.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">With regard to a real-life system as depicted in Fig. 
+   <a rid="Fig6" ref-type="fig" href="#Fig6">6</a>, the spectroscopic analysis has to tackle issues such as antiferromagnetic coupling between copper atoms, correct description of the coordination sphere and multiple conformations of the whole molecule. [
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>, 
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>] Methodologically, density functional theory is most appropriate here due to size of the system and investigated questions.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Hence, the spectroscopic analysis meta-workflow needs to be performed several times for an array of functionals and basis sets which have to be tested for the ultimate structural and optical description with respect to experimental data. Now, this meta-workflow can be combined into a spectroscopic benchmarking meta
+   <span class="sup">2</span>-workflow (
+   <span class="italic">Spec</span>-
+   <span class="italic">Bench M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span>). Figure 
+   <a rid="Fig7" ref-type="fig" href="#Fig7">7</a> shows four spectroscopic analysis meta-workflows which are combined after performing a basic optimization. This basic optimization atomic workflow (
+   <span class="italic">Basic Opt WF</span>) runs a pre-optimization step, which saves calculation time in all subsequent optimizations included in the spectroscopic workflows (Spec1 WF…Spec4WF). The 
+   <span class="italic">Basic Opt WF</span> can for example use a smaller basis set. Here, the 
+   <span class="italic">Opt WF</span> from Fig. 
+   <a rid="Fig6" ref-type="fig" href="#Fig6">6</a> can be re-used. The 
+   <span class="italic">Spec</span>-
+   <span class="italic">Bench M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span> saves a lot of time in this application.
+   <div id="Fig7" class="fig">
+    <span class="label">Fig. 7</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Spec_Bench M</span>
+      <span class="sup">
+       <span class="italic">2</span>
+      </span>-
+      <span class="italic">WF</span> spectroscopic benchmarking meta-workflow
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig7_HTML" id="MO17" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">After execution of the spectroscopic benchmarking meta-workflow, the user collects and analyses the data. These steps should still be performed manually since the outputs are rather diverse. But the largest benefit of using meta-workflows is that it decreases the overall workload of defining all input job files, extracting geometry data after the pre-optimization step and others, as a result it saves a lot of the researchers´ time.</p>
+ </sec>
+ <sec id="Sec14" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Optical benchmarking</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The TD-DFT calculations can be highly dependent on the selection of the functional. Hence, an optical benchmarking may be needed to investigate the influence of the functional on the prediction of the optical transitions. Charge-transfer transitions are very sensitive towards the choice of the functional [
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>–
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>] and the results can largely deviate from the experimental spectrum. Hence, for a new transition metal system, one always needs to perform a so-called optical benchmarking and find a suited functional to describe measured spectra correctly. After optimizing the structure, different functionals, such as GGAs, meta-GGAs, hybrid-GGAs can be used to evaluate the functional dependency of the optical transitions (Fig. 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>). In detail, this might be B3LYP, PW91, TPSSh, PBE, to name just a few.
+   <div id="Fig8" class="fig">
+    <span class="label">Fig. 8</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Opt_Bench M</span>-
+      <span class="italic">WF</span> optical benchmarking meta-workflow with five atomic workflows yielding theoretical UV/Vis spectra
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig8_HTML" id="MO18" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Each TD calculation can be implemented as a separate atomic workflow. See atomic workflows in Fig. 
+   <a rid="Fig8" ref-type="fig" href="#Fig8">8</a>: 
+   <span class="italic">TD</span>-
+   <span class="italic">B3LYP WF, TD</span>-
+   <span class="italic">PW91 WF, TD</span>-
+   <span class="italic">TPSSh</span>-
+   <span class="italic">WF, TD</span>-
+   <span class="italic">PBE WF</span>. They run different time-dependent DFTs (TD-DFT). Having these atomic workflows and the 
+   <span class="italic">Opt WF</span> we have created the 
+   <span class="italic">Opt</span>-
+   <span class="italic">Bench M</span>-
+   <span class="italic">WF</span> meta-workflow. The strength of this concept lies in the re-usability of the TD atomic workflows which have been tested successfully and collected in the MoSGrid Repository. Moreover, for every step, metadata is annotated and stored facilitating the organization of the computational chemists work. In principle, this optical benchmarking meta-workflow can be conceptualized in a broader way when more functionals are required to describe a complicated electronic behaviour [
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>–
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>].
+  </p>
+ </sec>
+ <sec id="Sec15" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Structural benchmarking</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Functionals also influence the structural details of molecules. Hence, a benchmarking for the structural influence (Fig. 
+   <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>) can include variation of the functional and of the basis set. To perform this benchmarking we can create a meta-workflow (
+   <span class="italic">Geo_Opt M</span>-
+   <span class="italic">WF</span>) with different types of optimization runs. The basis set is indicated by “2z” and “3z” which denotes the quality of the basis set. Larger basis sets give better agreement with experimental structural information but the calculation time can increase to such an extent that the calculation might no longer be feasible when dealing with molecules of more than 200 atoms. To run structural benchmarking a combination of a particular function and the quality of the basis set can be implemented as atomic workflows, for example: 
+   <span class="italic">B3LYP</span>-
+   <span class="italic">2 WF, B3LYP</span>-
+   <span class="italic">3 WF, TPSSh</span>-
+   <span class="italic">2 WF, TPSSh</span>-
+   <span class="italic">3 WF</span>, etc. (See in Fig. 
+   <a rid="Fig9" ref-type="fig" href="#Fig9">9</a>).
+   <div id="Fig9" class="fig">
+    <span class="label">Fig. 9</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Geo_Opt M</span>-
+      <span class="italic">WF</span> small structural benchmarking meta-workflow
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig9_HTML" id="MO19" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Further, this meta-workflow can easily be extended with post-optimization steps using dispersion correction or solvent models (Fig. 
+   <a rid="Fig10" ref-type="fig" href="#Fig10">10</a>) in a meta
+   <span class="sup">2</span>-workflow (
+   <span class="italic">Struc_Bench M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span>). These steps can be implemented by B3LYP and TPSSh atomic workflows that run the dispersion corrections and solvent models.
+   <div id="Fig10" class="fig">
+    <span class="label">Fig. 10</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Struc_Bench M</span>
+      <span class="sup">
+       <span class="italic">2</span>
+      </span>-
+      <span class="italic">WF</span> structural benchmarking meta
+      <span class="sup">2</span>-workflow using dispersion and solvent models
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig10_HTML" id="MO20" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Taking into account, that the chemist finally needs the frequencies of desired molecules, frequency and optimization tasks should be combined together with the options of dispersion and solvent models. Right in Fig. 
+   <a rid="Fig11" ref-type="fig" href="#Fig11">11</a> there is a three-layer meta-workflow (
+   <span class="italic">Freq_Disp_Opt M</span>- 
+   <span class="italic">WF</span>) that incorporates four atomic workflows. First, the geometry of the selected molecule is optimized by the 
+   <span class="italic">Opt WF</span> atomic workflow. Next, two atomic workflows are executed in parallel calculating the vibrational properties of the molecule by the 
+   <span class="italic">Freq WF</span> atomic workflow and the optimized molecule is re-optimized using dispersion by the 
+   <span class="italic">OptDisp WF</span> atomic workflow. Finally, the corresponding frequencies of the re-optimized molecule are calculated by the 
+   <span class="italic">FreqDisp WF</span> atomic workflow.
+   <div id="Fig11" class="fig">
+    <span class="label">Fig. 11</span>
+    <div class="caption">
+     <p>Left: 
+      <span class="italic">Struc_Opt M</span>
+      <span class="sup">
+       <span class="italic">2</span>
+      </span>-
+      <span class="italic">WF</span> meta
+      <span class="sup">2</span> -workflow for frequency optimization in dispersion and solvent, right: 
+      <span class="italic">Freq_Disp_Opt M</span>-
+      <span class="italic">WF</span> meta-workflow for frequency optimization in dispersion
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig11_HTML" id="MO21" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The 
+   <span class="italic">Freq_Disp_Opt M</span>- 
+   <span class="italic">WF</span> meta-workflow runs a simulation in gas phase. It can be combined with the 
+   <span class="italic">Freq_Solv Opt M</span>-
+   <span class="italic">WF</span> meta-workflow to run a simulation in a common solvent as polarizable continuum model into a meta
+   <span class="sup">2</span>-workflow. The 
+   <span class="italic">Struc_Opt M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span> meta workflow saves a lot of time of manual job definition and result analysis, easily up to a factor of 10 in terms of the researchers working time.
+  </p>
+ </sec>
+ <sec id="Sec16" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Inorganic polymerization catalysis</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Since QC is applied in all fields of chemistry, we searched for a use case from catalysis in order to demonstrate the wide applicability of the concept. In modern controlled polymerization techniques such as atom transfer radical polymerization (ATRP) [
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>], the control over redox properties is crucial for the polymerization control. In this use case, we are interested in the relative ratio of an equilibrium between different copper guanidine complexes which can interchange electrons and halide atoms. Hence, we have two slightly differing ligands, TMGqu and DMEGqu [
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>], which stabilise copper(I) and copper(II) complexes. As equilibrium with the equilibrium constant K
+   <sub>iso</sub>, we can write the atom transfer reaction as described in Fig. 
+   <a rid="Fig12" ref-type="fig" href="#Fig12">12</a>. We start with experimental structures of the four complexes. So, the whole equilibrium workflow is performed for each structure.
+   <div id="Fig12" class="fig">
+    <span class="label">Fig. 12</span>
+    <div class="caption">
+     <p>Equilibrium between copper(I) and (II) complexes with guanidine–quinoline ligands and the structures of these complexes</p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig12_HTML" id="MO22" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">To describe the equilibrium we developed the 
+   <span class="italic">Equil_Calc WF</span> meta-workflow with a three-layer structure as depicted in Fig. 
+   <a rid="Fig13" ref-type="fig" href="#Fig13">13</a>. There are three atomic workflows to run the QC code at the bottom layer (or first layer). The 
+   <span class="italic">Opt WF</span> atomic workflow processes the 
+   <span class="italic">input file</span> (of the experimental structure) produced by the 
+   <span class="italic">Job Creator</span> from the experimental structure and generates an optimization input file within this atomic workflow. The optimized structure is parsed by the job creator of the 
+   <span class="italic">Freq</span>-
+   <span class="italic">0</span> 
+   <span class="italic">K WF</span> and 
+   <span class="italic">Freq</span>-
+   <span class="italic">400</span> 
+   <span class="italic">K WF</span> atomic workflow to create two parallel frequency files (Fig. 
+   <a rid="Fig13" ref-type="fig" href="#Fig13">13</a>). Normally, the standard frequency calculations are performed at 0 K but in this equilibrium case, experimental conditions at 400 K shall be considered as well. These two atomic workflows run in parallel. This meta-workflow represents the second layer of the simulation.
+   <div id="Fig13" class="fig">
+    <span class="label">Fig. 13</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Equil_Calc M</span>-
+      <span class="italic">WF</span> meta-workflow with three atomic workflows
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig13_HTML" id="MO23" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">As this type of calculations has to be performed in different solvents (acetonitrile = MeCN and xylene) as well as with and without dispersion, the meta-workflow has to be performed four times in parallel inside the 
+   <span class="italic">Equil_Solv_M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span> meta workflow given in Fig. 
+   <a rid="Fig14" ref-type="fig" href="#Fig14">14</a>. This meta-workflow represents the third layer of the simulation incorporating the 
+   <span class="italic">Opt plus 2freq M</span>-
+   <span class="italic">WF</span> meta-workflows. The result of this meta-workflow is a table containing the energies, enthalpies and free energies parsed out of the result files of the eight frequency jobs, since every single meta-workflow produces two frequency output files. This table contains basically the results for one complex.
+   <div id="Fig14" class="fig">
+    <span class="label">Fig. 14</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Equil_Solv M</span>
+      <span class="sup">
+       <span class="italic">2</span>
+      </span>-
+      <span class="italic">WF</span> meta
+      <span class="sup">2</span>workflow
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig14_HTML" id="MO24" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">After completing the 
+   <span class="italic">Equil_Solv M</span>
+   <span class="sup">
+    <span class="italic">2</span>
+   </span>-
+   <span class="italic">WF</span> meta
+   <span class="sup">2</span>-workflow the user can summarize the resulting tables and calculate the relative energies yielding the desired K
+   <sub>iso</sub> value. This could be included into 
+   <span class="italic">the Equi_Energ M</span>
+   <span class="sup">
+    <span class="italic">3</span>
+   </span>-
+   <span class="italic">WF</span> meta-workflow at the fourth workflow layer (Fig. 
+   <a rid="Fig15" ref-type="fig" href="#Fig15">15</a>). In principle, one should also evaluate the functional influence because different density functionals treat electron correlation differently yielding different results here. This would even add a fifth layer.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the daily chemical computational work, we have found that every layer adds efficiency with a factor of around 2–3 as time-consuming job definition, structure extraction and data collection are considerably facilitated. This factor can be calculated by the following example: the manual definition of one job takes 3 min. So, the embedded workflow in Fig. 
+   <a rid="Fig13" ref-type="fig" href="#Fig13">13</a> would need 9 min and the meta-workflow in Fig. 
+   <a rid="Fig14" ref-type="fig" href="#Fig14">14</a> four times more, 36 min. The highest level WF would then add up to 144 min of job definition time in manual mode. The data extraction time can be assumed to the same amount; hence, we end up with approximately 280 min for one run of the jobs summarized in Fig. 
+   <a rid="Fig15" ref-type="fig" href="#Fig15">15</a>. In fact, the corresponding workflow needs to be defined and tested, but since the embedded workflows are very similar the meta-workflow system saves time, such that the whole workflow definition needs 3–4 h. But then, it can be performed several times and re-used in itself or by its building blocks. Thereby, we estimate the efficiency factor to 2–3.
+   <div id="Fig15" class="fig">
+    <span class="label">Fig. 15</span>
+    <div class="caption">
+     <p>
+      <span class="italic">Equil_Energ M</span>
+      <span class="sup">
+       <span class="italic">3</span>
+      </span>-
+      <span class="italic">WF</span> meta
+      <span class="sup">3</span>workflow defined for each complex and analysed into a single table
+     </p>
+    </div>
+    <div xlink:href="13321_2016_169_Fig15_HTML" id="MO25" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </p>
+ </sec>
+ <sec id="Sec17" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Workflow libraries in quantum chemistry simulations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In the ER-flow project [
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>] the Computational Chemistry community developed 26 atomic workflows and 12 meta-workflows, presented in Additional file 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6, to run optical and structural benchmarking, spectroscopic simulations and investigations on inorganic polymerization catalysts experiments. Considering these workflows we created the Quantum Chemistry workflow library with five sub-libraries (Table 
+   <a rid="Tab2" ref-type="table" href="#Tab2">2</a>).
+   <div id="Tab2" class="table-wrap">
+    <span class="label">Table 2</span>
+    <div class="caption">
+     <p>Structure of the quantum chemistry workflow library</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th align="left">Workflow library</th>
+       <th align="left">Sub-libraries</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left">DOMAIN—quantum chemistry</td>
+       <td align="left">SUB-DOMAIN
+        <sub>1</sub>—basic operations
+       </td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">SUB-DOMAIN
+        <sub>2</sub>—spectroscopic analysis
+       </td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">SUB-DOMAIN
+        <sub>3</sub>—optical benchmarking
+       </td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">SUB-DOMAIN
+        <sub>4</sub>—structural benchmarking
+       </td>
+      </tr>
+      <tr>
+       <td align="left"/>
+       <td align="left">SUB-DOMAIN
+        <sub>5</sub>—inorganic polymerization catalysis
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Table 
+   <a rid="Tab3" ref-type="table" href="#Tab3">3</a> presents the basic operations sub-library. It contains the atomic workflows that implement basic Quantum Chemistry operations and can be used in scientific experiments of different sub-domains in QC. These atomic workflows are highlighted in bold in Additional file 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6. For example the 
+   <span class="italic">Opt WF</span> atomic workflows is incorporated in the 
+   <span class="italic">Spect_Analy M</span>-
+   <span class="italic">WF, Opt_Bench M</span>-
+   <span class="italic">WF, Freq_Opt M_WF</span> and 
+   <span class="italic">Equil_Calc M</span>-
+   <span class="italic">WF</span> meta-workflow, while the 
+   <span class="italic">Freq WF</span> atomic workflow in the 
+   <span class="italic">Spec_Analy</span>_ and 
+   <span class="italic">Freq_Opt M</span>-
+   <span class="italic">WF</span> meta-workflow.
+   <div id="Tab3" class="table-wrap">
+    <span class="label">Table 3</span>
+    <div class="caption">
+     <p>Atomic workflows of the basic operations sub-library</p>
+    </div>
+    <table frame="hsides" rules="groups">
+     <thead>
+      <tr>
+       <th align="left">Atomic workflows</th>
+       <th align="left">Functionality</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left">Opt WF</td>
+       <td align="left">Geometry optimization</td>
+      </tr>
+      <tr>
+       <td align="left">Basic Opt WF</td>
+       <td align="left">Geometry optimization with small basis set</td>
+      </tr>
+      <tr>
+       <td align="left">Freq WF</td>
+       <td align="left">Frequency calculation</td>
+      </tr>
+      <tr>
+       <td align="left">TD WF</td>
+       <td align="left">Time-dependent DFT calculation</td>
+      </tr>
+      <tr>
+       <td align="left">Pop WF</td>
+       <td align="left">Population analysis</td>
+      </tr>
+      <tr>
+       <td align="left">Solv WF</td>
+       <td align="left">Optimization in solvent</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The other four sub-libraries contain atomic workflows that deliver operations specific to a particular Quantum Chemistry sub-domain, for example optical benchmarking, structural benchmarking, etc. These atomic workflows are listed in Additional file 
+   <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a>: Table S1–S6.
+  </p>
+ </sec>
+</sec>

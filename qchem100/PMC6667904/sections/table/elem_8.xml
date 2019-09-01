@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="jcc25364-tbl-0009" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Table 9</span>
+ <div class="caption">
+  <p>Wall time in minutes of MP2 calculations for systems containing heavy elements with and without the DC technique</p>
+ </div>
+ <table frame="hsides" rules="groups">
+  <col align="left" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+  <thead valign="bottom">
+   <tr>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">System</th>
+    <th colspan="2" align="left" valign="bottom" rowspan="1">Wall time [min]</th>
+   </tr>
+   <tr style="border-bottom:solid 1px #000000">
+    <th align="left" valign="bottom" rowspan="1" colspan="1"/>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">w/ DC</th>
+    <th align="left" valign="bottom" rowspan="1" colspan="1">w/o DC</th>
+   </tr>
+  </thead>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+     <sub>5</sub>
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">91.9</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">69.9</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+     <sub>10</sub>
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">217.8</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">558.9</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+     <sub>20</sub>
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">462.0</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">1743.9</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">(HAt)
+     <sub>30</sub>
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">675.5</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">Hg
+     <span class="sup">2+</span> with 100 H
+     <sub>2</sub>O
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">1520.3</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" rowspan="1" colspan="1">Bis‐(b‐carotene) Pt
+     <sub>10</sub>
+    </td>
+    <td align="right" valign="top" rowspan="1" colspan="1">1842.5</td>
+    <td align="center" valign="top" rowspan="1" colspan="1">–</td>
+   </tr>
+  </tbody>
+ </table>
+</div>

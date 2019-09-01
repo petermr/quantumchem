@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 3</span>
+ <div class="caption">
+  <p>Comparison of prediction accuracy for the group contribution method and quantum chemistry with GP regression. Scatter plots of experimental standard transformed redox potentials against predictions from several sources: (a) PM7, (b) linearly calibrated PM7, (c) group contribution method (GCM), and (d) GP-calibrated PM7. The experimental data consist of available standard transformed reduction potentials for carbonyl-to-alcohol and carbonyl-to-amine reductions. Data points in the scatter plot were obtained from a leave-one-out cross-validation (LOOCV) procedure, where the model is trained on all data points except the one point to be predicted. Note that we use the millimolar standard state, 
+   <span class="italic">E</span>′
+   <span class="sup">m</span>, where reactant concentrations are taken as 1 mM, since this is significantly closer to relevant physiological concentrations of metabolites in cells than 1 M. The legend in each plot contains summary statistics for the fit; MAE (mean absolute error) also has the associated standard deviation in parentheses.
+  </p>
+ </div>
+ <div xlink:href="oc-2019-002977_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

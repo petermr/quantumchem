@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2.3. Extension of the PES to Consider Flexible Monomers</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The parametrization of the empirical PES has been generalized by properly introducing the dependence of 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">vdW</span>
+  </sub> and 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elec</span>
+  </sub> (see Equation 1) on the molecular elongation. Specifically, the variation of the electric multipole affecting 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">elec</span>
+  </sub> has been obtained as indicated above, while the change of the molecular polarizability has been taken into account for the modulation of the 
+  <span class="italic">V</span>
+  <sub>
+   <span class="italic">vdW</span>
+  </sub> potential parameters.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the N
+  <sub>2</sub> monomer deformation, the empirical bond length dependence of the molecular polarizability α as reported in Appendix B of Cappelletti et al. (
+  <a rid="B20" ref-type="bibr" href="#B20">2008</a>) is used, while for the corresponding point charges distribution dependence the analytic formulas given in Appendix A of Lombardi et al. (
+  <a rid="B64" ref-type="bibr" href="#B64">2016b</a>) are employed.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the case of the CO monomer we used the empirical bond length dependence of the polarizablity α as reported in 
+  <a ref-type="app" rid="A1" href="#A1">Appendix A</a>, which is shown here in the lower panel of 
+  <a ref-type="fig" rid="F5" href="#F5">Figure 5</a> together with previous ab initio estimates. In addition, for the CO permanent dipole quadrupole dependence on the bond length, an appropriate representation can be obtained from the analysis of present ab initio results reported in the upper panels of 
+  <a ref-type="fig" rid="F5" href="#F5">Figure 5</a>. To this end, ab initio data were fitted using suitable analytic functions providing the radial dependence of point charges on the CO bond length 
+  <span class="italic">r</span>, as shown in detail in 
+  <a ref-type="app" rid="A1" href="#A1">Appendix A</a>.
+ </p>
+ <div id="F5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <p>CO electric dipole (μ) and quadrupole (
+    <span class="italic">Q</span>) moments as well as molecular polarizability (
+    <div class="inline-formula">
+     <div id="M10" class="math">
+      <div accent="true" class="mover">
+       <div class="mrow">
+        <span class="mi">α</span>
+       </div>
+       <span class="mo">¯</span>
+      </div>
+     </div>
+    </div>) plotted as a function of the interatomic distance 
+    <span class="italic">r</span>. Full squares refer to present ab initio values obtained as detailed in the text, while solid lines correspond to analytic fits (see text and 
+    <a ref-type="app" rid="A1" href="#A1">Appendix A</a>). Open circles in the lowest panel refer to previous ab initio estimations at the CCSD(T) level from Maroulis (
+    <a rid="B67" ref-type="bibr" href="#B67">1996</a>). The vertical line indicates the CO equilibrium distance.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00309-g0005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The effect of the stretching of a single monomer on the complex interaction predicted by the adopted potential formulation is illustrated in 
+  <a ref-type="fig" rid="F6" href="#F6">Figures 6</a>, 
+  <a ref-type="fig" rid="F7" href="#F7">7</a>. In all cases the plots of the CCSD(T) values, obtained for rigid and flexible molecules, are also reported for comparison: it can be appreciated that the elongation of one monomer provokes the same trends in both PESs for the stability of the considered interaction profiles, confirming therefore the reliability of the adopted empirical model.
+ </p>
+ <div id="F6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <p>Comparison of the interaction energies for selected dimer geometries of a pair of rigid monomers (black lines) and of a rigid N
+    <sub>2</sub> plus a stretched CO (the bond length has been elongated of 10% with respect to equilibrium) monomer (red dashed lines). Empirical PES results are plotted in the lower panel while those corresponding to the ab initio calculations are plotted in the upper panel.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00309-g0006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F7" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 7</span>
+  <div class="caption">
+   <p>Comparison of the interaction energies for selected dimer geometries of a pair of rigid monomers (black lines) and of a rigid CO plus a stretched N
+    <sub>2</sub> (the bond length has been elongated of 10% with respect to equilibrium) monomer (red dashed lines). Empirical PES results are plotted in the lower panel while those corresponding to the ab initio calculations are plotted in the upper panel.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00309-g0007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

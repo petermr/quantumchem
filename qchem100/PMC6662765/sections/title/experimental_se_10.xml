@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec10" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Experimental setup</div>
+ <p id="Par16" xmlns="http://www.w3.org/1999/xhtml">A cold molecular beam was formed by supersonic expansion of a mixture of OCS (500 ppm) in helium, maintained at a backing pressure of 90 bar from a pulsed Even-Lavie valve
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>
+  </span> operated at 250 Hz. After passing two skimmers, the collimated molecular beam entered the Stark deflector. The beam was dispersed according to quantum state by a strong inhomogeneous electric field
+  <span class="sup">
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span> with a nominal strength of ~200 kV/cm. Through a movable third skimmer, the molecular beam entered the spectrometer. Here, it was crossed at right angle by laser beams, where the height of the laser beams allowed to probe state-selected molecular ensembles, that is a practically pure rovibronic-ground-state sample of OCS
+  <span class="sup">
+   <a ref-type="bibr" rid="CR16" href="#CR16">16</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR40" href="#CR40">40</a>
+  </span>.
+ </p>
+ <p id="Par17" xmlns="http://www.w3.org/1999/xhtml">The laser setup consisted of a commercial Ti:Sapphire laser system (KM labs) delivering pulses with 30 mJ pulse energy, 35 fs (full width at half maximum (FWHM)) pulse duration, and a central wavelength of 800 nm at a 1 kHz repetition rate. One part (20 mJ) of the laser output was used to pump a high-energy tunable optical parametric amplifier (HE-TOPAS, Light Conversion) to generate pulses with a central wavelengths of 1.75 μm, a pulse duration of 60 fs, and a pulse energy of ~1.5 mJ. Totally, 900 μJ of the remaining 800 nm laser output was used for the laser-induced alignment, that is the generation of the investigated rotational wavepackets. This beam was split into two parts with a 4:1 energy ratio using a Mach–Zehnder interferometer. A motorised delay stage in one beam path allowed for controlling the delay between the two pulses. This delay was optimised experimentally and maximum alignment was observed for 
+  <span class="italic">τ</span>
+  <sub>exp</sub> = 38.1 ± 0.1 ps, in perfect agreement with the theoretically predicted 
+  <span class="italic">τ</span>
+  <sub>sim</sub> = 38.2 ps. The pulses were combined collinearly and passed through a 2 cm long SF
+  <sub>11</sub> optical glass to stretch them to 250 fs pulse duration (FWHM). Then the alignment pulses were collinearly overlapped with the 1.75 μm mid-infra-red pulses using a dichroic mirror. All pulses were focused into the VMI spectrometer using a 25 cm focal-distance calcium fluoride lens.
+ </p>
+ <p id="Par18" xmlns="http://www.w3.org/1999/xhtml">At the centre of the VMI the state-selected molecular beam and the laser beams crossed at right angle. Following strong-field multiple ionisation of the molecules, the generated charged fragments were projected by the VMI onto a combined multichannel-plate phosphor-screen detector and read out by a charge-coupled device camera. The angular resolution of the imaging system is 4°, limited by the 1 megapixel camera, see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">4</a>. 2D ion-momentum distributions of O
+  <span class="sup">+</span> fragments were recorded as a function of the delay between the 800 nm pulses and the ionising 1.75 μm pulses in order to characterise the angular distribution of the molecules through Coulomb-explosion imaging. The polarisation of the 800 nm alignment pulses was parallel to the detector screen whereas that of the 1.75 μm ionising laser was perpendicular in order to avoid geometric-alignment effects in the angular distributions. For this geometry, unfortunately, it was not possible to retrieve 3D distributions from an inverse Abel transform. Totally, 651 images were recorded in steps of 193.4 fs, covering the time interval from −0.7 ps up to 125 ps, which is more than one-and-a-half times the rotational period of OCS of 82.2 ps.
+ </p>
+</sec>

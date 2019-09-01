@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Automatic differentiation (AD) is a conceptually well-established tool to calculate numerical gradients up to machine precision,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref1" href="#ref1">1</a>,
+   <a ref-type="bibr" rid="ref2" href="#ref2">2</a>
+  </span> by iteratively applying the chain rule and successively walking through the computational graph of numerically implemented functions. Therefore, AD facilitates the computation of exact derivatives of coded algorithms with respect to all its variables without having to implement any other expression explicitly. AD circumvents challenges arising in traditional approaches. For example, the evaluation of analytical expressions tends to be inefficient, and numerical gradients can be unstable due to truncations or round-off errors. Enabled by a variety of libraries,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref3" href="#ref3">3</a>−
+   <a ref-type="bibr" rid="ref11" href="#ref11">11</a>
+  </span> AD has been successfully implemented to various applications.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref12" href="#ref12">12</a>−
+   <a ref-type="bibr" rid="ref14" href="#ref14">14</a>
+  </span> For example, AD has been used for quantum control in open-quantum systems to find an optimal time-dependent field to obtain a specific state.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref15" href="#ref15">15</a>,
+   <a ref-type="bibr" rid="ref16" href="#ref16">16</a>
+  </span> Furthermore, new libraries developed in the context of deep learning
+  <span class="sup">
+   <a ref-type="bibr" rid="ref9" href="#ref9">9</a>,
+   <a ref-type="bibr" rid="ref17" href="#ref17">17</a>−
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>
+  </span> make AD techniques even more accessible to a broader community. For instance, Leung et. al used a parallelized machine learning tool, TensorFlow, to obtain the optimal parameters to minimize several kinds of cost-functions to tune the evolution of quantum states.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this manuscript, we highlight the relevance of AD for quantum chemistry and demonstrate that AD provides a novel general path forward to reduce the human time spent on the implementation gradients for electronic structure methods. Gradients play a fundamental role in optimization procedures as well as for the computation of molecular response properties such as dipole moments polarizabilities, magnetizabilities, or force constants.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>
+  </span> Although analytical expressions are available for some derivatives in many cases,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref22" href="#ref22">22</a>−
+   <a ref-type="bibr" rid="ref25" href="#ref25">25</a>
+  </span> researchers typically spend a considerable amount of time finding suitable analytical forms when implementing new quantum chemistry methods.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref18" href="#ref18">18</a>
+  </span> Depending on the complexity of the electronic structure method, this can result in a significant time delay between the development of the method and the implementation of its gradients. The implementation of geometrical gradients for MC-SCF
+  <span class="sup">
+   <a ref-type="bibr" rid="ref21" href="#ref21">21</a>,
+   <a ref-type="bibr" rid="ref26" href="#ref26">26</a>
+  </span> has been published more than 10 years after the method itself.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref27" href="#ref27">27</a>
+  </span> Moreover, some analytical gradients can be too complicated to be handled manually. For example, the complex analytical derivatives of the FIC-CASPT2
+  <span class="sup">
+   <a ref-type="bibr" rid="ref28" href="#ref28">28</a>,
+   <a ref-type="bibr" rid="ref29" href="#ref29">29</a>
+  </span> method, published more than two decades ago, has been only recently accessible through advances in automatic code generation.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref30" href="#ref30">30</a>,
+   <a ref-type="bibr" rid="ref31" href="#ref31">31</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">AD techniques could play an important role in quantum chemistry by marginalizing the complexity of implementing gradients, as it allows computing the gradients without coding them explicitly. The advantages of AD techniques have been used before in electronic structure methods.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>−
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>
+  </span> In these previous works, the implementations were tailored to the differentiation of the specific application. These typically require considerable changes to existing code or the explicit implementation of some analytical gradients, Taylor coefficients, or adjoints. For instance, in the context of density functional theory, a combined approach using analytical expression together with AD has been successfully applied to compute higher order derivatives of the exchange-correlation term.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> Further, Sorella et al.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref36" href="#ref36">36</a>
+  </span> explicitly derived the appropriate sequence of computation of adjoints and their expressions for the kinetic and potential energy terms. Here, we apply AD in a broader context and demonstrate that AD tools are an efficient way to get arbitrary gradients for a complete quantum chemistry method with respect to any input parameter. To this end, we implement a fully autodifferentiable Hartree–Fock (HF) method which we distribute in our 
+  <span class="italic">DiffiQult</span> software package
+  <span class="sup">
+   <a ref-type="bibr" rid="ref37" href="#ref37">37</a>
+  </span> written in plain Python language. We have selected HF since it is not only used in many electronic correlation methods as an initial step but contains complex mathematical operations and functions, such as calculating derivatives of eigenvectors or special functions. The latter is also relevant for more sophisticated quantum chemistry methods
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> and impose nontrivial requirements for suitable AD libraries as they need to lay out the complete computational graph rather than calling black-box routines, for example, implemented in LAPACK.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+  </span> We illustrate the capabilities of 
+  <span class="italic">DiffiQult</span> within the framework of a fully variational HF method, where we use a gradient-based optimization of the SCF-energy to optimize the parameters of the basis set within the Floating Gaussian framework.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref40" href="#ref40">40</a>,
+   <a ref-type="bibr" rid="ref41" href="#ref41">41</a>
+  </span> Our implementation sets the basis for extending the 
+  <span class="italic">DiffiQult</span> software package to include post-HF methods such as FCI and MP2, and to leverage higher order derivatives to obtain anharmonic corrections for rotational–vibrational spectroscopy.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This paper is organized as follows: In 
+  <a rid="sec2" ref-type="other" href="#sec2">section 
+   <a rid="sec2" ref-type="other" href="#sec2">2</a>
+  </a>, we provide a small review of the algebra behind automatic differentiation. In the 
+  <a rid="sec3" ref-type="other" href="#sec3">section 
+   <a rid="sec3" ref-type="other" href="#sec3">3</a>
+  </a> we introduce the fully variational Hartree–Fock method. In 
+  <a rid="sec4" ref-type="other" href="#sec4">section 
+   <a rid="sec4" ref-type="other" href="#sec4">4</a>
+  </a>, we discuss in detail the key components of the canonical HF algorithm and explain how they were implemented in 
+  <span class="italic">DiffiQult</span> by considering an appropriate selection and usage of an AD library. In 
+  <a rid="sec5" ref-type="other" href="#sec5">Section 
+   <a rid="sec5" ref-type="other" href="#sec5">5</a>
+  </a> we demonstrate the capabilities of our algorithm by optimizing the one-electron basis functions of small molecules. Finally, in 
+  <a rid="sec6" ref-type="other" href="#sec6">section 
+   <a rid="sec6" ref-type="other" href="#sec6">6</a>
+  </a>, we conclude with an outlook of future directions of 
+  <span class="italic">DiffiQult</span>, and a perspective of the role of AD in simplifying and accelerating the implementation of gradients of new quantum chemistry methods.
+ </p>
+</sec>

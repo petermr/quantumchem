@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="opening-section" id="jcc25364-sec-0001" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Both a qualitative and quantitative understanding of any elements in the periodic table is one of the most significant problems in quantum chemistry (QC). The solution is essential to theoretically promote the element strategy in Japan, whose concept is the understanding and the effective use of the roles of the key elements that determine the properties and functions of intelligent materials. One possible solution is relativistic QC (RQC), which is the combination of special relativity and QC. The fundamental treatment of RQC is based on four‐component (4c) Dirac theory, which utilizes a one‐particle Dirac operator as the Hamiltonian for large‐ and small‐components of the Dirac spinor. For many‐electron systems nonrelativistic (NR) Coulomb interaction
+  <a rid="jcc25364-bib-0001" ref-type="ref" href="#jcc25364-bib-0001">1</a> and lower‐order quantum electrodynamics effects such as Breit
+  <a rid="jcc25364-bib-0002" ref-type="ref" href="#jcc25364-bib-0002">2</a>/Gaunt
+  <a rid="jcc25364-bib-0003" ref-type="ref" href="#jcc25364-bib-0003">3</a> interaction, have been considered. Several sophisticated program packages for 4c relativistic calculations, such as RELCI,
+  <a rid="jcc25364-bib-0004" ref-type="ref" href="#jcc25364-bib-0004">4</a> MCHF,
+  <a rid="jcc25364-bib-0005" ref-type="ref" href="#jcc25364-bib-0005">5</a> MCDFGME,
+  <a rid="jcc25364-bib-0006" ref-type="ref" href="#jcc25364-bib-0006">6</a> GRASP,
+  <a rid="jcc25364-bib-0007" ref-type="ref" href="#jcc25364-bib-0007">7</a>, 
+  <a rid="jcc25364-bib-0008" ref-type="ref" href="#jcc25364-bib-0008">8</a>, 
+  <a rid="jcc25364-bib-0009" ref-type="ref" href="#jcc25364-bib-0009">9</a> and CI‐MBPT
+  <a rid="jcc25364-bib-0010" ref-type="ref" href="#jcc25364-bib-0010">10</a> for atoms, MOLFDIR
+  <a rid="jcc25364-bib-0011" ref-type="ref" href="#jcc25364-bib-0011">11</a> BERTHA,
+  <a rid="jcc25364-bib-0012" ref-type="ref" href="#jcc25364-bib-0012">12</a>, 
+  <a rid="jcc25364-bib-0013" ref-type="ref" href="#jcc25364-bib-0013">13</a>, 
+  <a rid="jcc25364-bib-0014" ref-type="ref" href="#jcc25364-bib-0014">14</a> DIRAC,
+  <a rid="jcc25364-bib-0015" ref-type="ref" href="#jcc25364-bib-0015">15</a> ReSpect,
+  <a rid="jcc25364-bib-0016" ref-type="ref" href="#jcc25364-bib-0016">16</a> and BAGEL
+  <a rid="jcc25364-bib-0017" ref-type="ref" href="#jcc25364-bib-0017">17</a> for atoms and molecules, have accurately predicted electronic energies, molecular geometries, and electronic/magnetic properties. However, their application to realistic systems containing hundreds or more atoms with heavy elements is still difficult due to the high computational cost.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An alternative approach to the 4c relativistic theory is a two‐component (2c) relativistic one, which relies solely upon information related to the electronic state or a large‐component of the Dirac spinor. Several approximated 2c relativistic theories have been proposed such as the Pauli approximation,
+  <a rid="jcc25364-bib-0018" ref-type="ref" href="#jcc25364-bib-0018">18</a> Foldy–Wouthuysen (FW) transformation,
+  <a rid="jcc25364-bib-0019" ref-type="ref" href="#jcc25364-bib-0019">19</a> Douglas–Kroll–Hess (DKH) transformation,
+  <a rid="jcc25364-bib-0020" ref-type="ref" href="#jcc25364-bib-0020">20</a>, 
+  <a rid="jcc25364-bib-0021" ref-type="ref" href="#jcc25364-bib-0021">21</a>, 
+  <a rid="jcc25364-bib-0022" ref-type="ref" href="#jcc25364-bib-0022">22</a>, 
+  <a rid="jcc25364-bib-0023" ref-type="ref" href="#jcc25364-bib-0023">23</a>, 
+  <a rid="jcc25364-bib-0024" ref-type="ref" href="#jcc25364-bib-0024">24</a>, 
+  <a rid="jcc25364-bib-0025" ref-type="ref" href="#jcc25364-bib-0025">25</a>, 
+  <a rid="jcc25364-bib-0026" ref-type="ref" href="#jcc25364-bib-0026">26</a>, 
+  <a rid="jcc25364-bib-0027" ref-type="ref" href="#jcc25364-bib-0027">27</a> regular approximation (RA),
+  <a rid="jcc25364-bib-0028" ref-type="ref" href="#jcc25364-bib-0028">28</a>, 
+  <a rid="jcc25364-bib-0029" ref-type="ref" href="#jcc25364-bib-0029">29</a>, 
+  <a rid="jcc25364-bib-0030" ref-type="ref" href="#jcc25364-bib-0030">30</a>, 
+  <a rid="jcc25364-bib-0031" ref-type="ref" href="#jcc25364-bib-0031">31</a> and relativistic scheme by eliminating small components (RESC).
+  <a rid="jcc25364-bib-0032" ref-type="ref" href="#jcc25364-bib-0032">32</a> Furthermore, recent developments in the 2c treatment of one‐ and many‐electron molecular systems have provided a degree of accuracy comparable to the 4c treatment. These approaches are called Dirac‐exact 2c schemes, and include the normalized elimination of small components (NESC),
+  <a rid="jcc25364-bib-0033" ref-type="ref" href="#jcc25364-bib-0033">33</a>, 
+  <a rid="jcc25364-bib-0034" ref-type="ref" href="#jcc25364-bib-0034">34</a>, 
+  <a rid="jcc25364-bib-0035" ref-type="ref" href="#jcc25364-bib-0035">35</a> infinite‐order DKH (IODKH),
+  <a rid="jcc25364-bib-0036" ref-type="ref" href="#jcc25364-bib-0036">36</a>, 
+  <a rid="jcc25364-bib-0037" ref-type="ref" href="#jcc25364-bib-0037">37</a>, 
+  <a rid="jcc25364-bib-0038" ref-type="ref" href="#jcc25364-bib-0038">38</a>, 
+  <a rid="jcc25364-bib-0039" ref-type="ref" href="#jcc25364-bib-0039">39</a>, 
+  <a rid="jcc25364-bib-0040" ref-type="ref" href="#jcc25364-bib-0040">40</a> exact 2c (X2C),
+  <a rid="jcc25364-bib-0041" ref-type="ref" href="#jcc25364-bib-0041">41</a>, 
+  <a rid="jcc25364-bib-0042" ref-type="ref" href="#jcc25364-bib-0042">42</a>, 
+  <a rid="jcc25364-bib-0043" ref-type="ref" href="#jcc25364-bib-0043">43</a> and infinite‐order 2c (IOTC) 
+  <a rid="jcc25364-bib-0044" ref-type="ref" href="#jcc25364-bib-0044">44</a>, 
+  <a rid="jcc25364-bib-0045" ref-type="ref" href="#jcc25364-bib-0045">45</a> methods. The details and history of 2c relativistic methods are discussed in the review articles by Liu,
+  <a rid="jcc25364-bib-0046" ref-type="ref" href="#jcc25364-bib-0046">46</a> Saue,
+  <a rid="jcc25364-bib-0047" ref-type="ref" href="#jcc25364-bib-0047">47</a> and Peng and Reiher.
+  <a rid="jcc25364-bib-0048" ref-type="ref" href="#jcc25364-bib-0048">48</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Some one‐particle 2c relativistic Hamiltonians are now available in most QC program packages
+  <a rid="jcc25364-bib-0049" ref-type="ref" href="#jcc25364-bib-0049">49</a>, 
+  <a rid="jcc25364-bib-0050" ref-type="ref" href="#jcc25364-bib-0050">50</a>, 
+  <a rid="jcc25364-bib-0051" ref-type="ref" href="#jcc25364-bib-0051">51</a>, 
+  <a rid="jcc25364-bib-0052" ref-type="ref" href="#jcc25364-bib-0052">52</a>, 
+  <a rid="jcc25364-bib-0053" ref-type="ref" href="#jcc25364-bib-0053">53</a>, 
+  <a rid="jcc25364-bib-0054" ref-type="ref" href="#jcc25364-bib-0054">54</a>, 
+  <a rid="jcc25364-bib-0055" ref-type="ref" href="#jcc25364-bib-0055">55</a> in spin‐free (SF) formalisms. The SF effect is important for describing bond contractions/elongations resulting from the relativistic shrinking/expansion of atomic orbitals.
+  <a rid="jcc25364-bib-0056" ref-type="ref" href="#jcc25364-bib-0056">56</a> The reason for this easy implementation is that only the one‐electron NR integrals are replaced by 2c relativistic ones. However, a few QC program packages are able to treat spin‐dependent (SD) formalisms,
+  <a rid="jcc25364-bib-0015" ref-type="ref" href="#jcc25364-bib-0015">15</a>, 
+  <a rid="jcc25364-bib-0057" ref-type="ref" href="#jcc25364-bib-0057">57</a>, 
+  <a rid="jcc25364-bib-0058" ref-type="ref" href="#jcc25364-bib-0058">58</a>, 
+  <a rid="jcc25364-bib-0059" ref-type="ref" href="#jcc25364-bib-0059">59</a> which include spin‐orbit interactions. For example, the open‐source NWCHEM package contains the X2C implementation with the SF and SD formalisms.
+  <a rid="jcc25364-bib-0060" ref-type="ref" href="#jcc25364-bib-0060">60</a>, 
+  <a rid="jcc25364-bib-0061" ref-type="ref" href="#jcc25364-bib-0061">61</a> The SD formalism is important for the accurate description of molecular geometries
+  <a rid="jcc25364-bib-0062" ref-type="ref" href="#jcc25364-bib-0062">62</a> and properties such as excitation energies,
+  <a rid="jcc25364-bib-0063" ref-type="ref" href="#jcc25364-bib-0063">63</a> spectroscopic constants,
+  <a rid="jcc25364-bib-0064" ref-type="ref" href="#jcc25364-bib-0064">64</a> and magnetic shielding constants
+  <a rid="jcc25364-bib-0065" ref-type="ref" href="#jcc25364-bib-0065">65</a> in heavy‐element systems. The extension to include the SD formalism requires a considerable change of the NR program. For example, many variables such as orbital coefficients, one‐ and two‐electron integrals for the SD operators, and Fock matrices should be treated as complex numbers.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For the practical calculation of molecules containing heavy elements in the 2c relativistic framework, with accuracy close to the 4c relativistic one, further requirements must be satisfied in terms of accuracy and efficiency. For example, to maintain accuracy, the Hartree–Fock (HF) and electron correlation theories should be reformulated to describe the two‐electron SD interaction.
+  <a rid="jcc25364-bib-0042" ref-type="ref" href="#jcc25364-bib-0042">42</a>, 
+  <a rid="jcc25364-bib-0043" ref-type="ref" href="#jcc25364-bib-0043">43</a>, 
+  <a rid="jcc25364-bib-0045" ref-type="ref" href="#jcc25364-bib-0045">45</a>, 
+  <a rid="jcc25364-bib-0066" ref-type="ref" href="#jcc25364-bib-0066">66</a>, 
+  <a rid="jcc25364-bib-0067" ref-type="ref" href="#jcc25364-bib-0067">67</a>, 
+  <a rid="jcc25364-bib-0068" ref-type="ref" href="#jcc25364-bib-0068">68</a> In addition, the 2c transformation changes the picture of molecular properties and interactions, which is termed the picture change (PC) effect.
+  <a rid="jcc25364-bib-0069" ref-type="ref" href="#jcc25364-bib-0069">69</a>, 
+  <a rid="jcc25364-bib-0070" ref-type="ref" href="#jcc25364-bib-0070">70</a>, 
+  <a rid="jcc25364-bib-0071" ref-type="ref" href="#jcc25364-bib-0071">71</a>, 
+  <a rid="jcc25364-bib-0072" ref-type="ref" href="#jcc25364-bib-0072">72</a>, 
+  <a rid="jcc25364-bib-0073" ref-type="ref" href="#jcc25364-bib-0073">73</a>, 
+  <a rid="jcc25364-bib-0074" ref-type="ref" href="#jcc25364-bib-0074">74</a>, 
+  <a rid="jcc25364-bib-0075" ref-type="ref" href="#jcc25364-bib-0075">75</a>, 
+  <a rid="jcc25364-bib-0076" ref-type="ref" href="#jcc25364-bib-0076">76</a> This effect also contributes to density functional theory (DFT) calculations through the PC of electron density.
+  <a rid="jcc25364-bib-0031" ref-type="ref" href="#jcc25364-bib-0031">31</a>, 
+  <a rid="jcc25364-bib-0077" ref-type="ref" href="#jcc25364-bib-0077">77</a> The 2c transformation should be quicker
+  <a rid="jcc25364-bib-0078" ref-type="ref" href="#jcc25364-bib-0078">78</a>, 
+  <a rid="jcc25364-bib-0079" ref-type="ref" href="#jcc25364-bib-0079">79</a>, 
+  <a rid="jcc25364-bib-0080" ref-type="ref" href="#jcc25364-bib-0080">80</a>, 
+  <a rid="jcc25364-bib-0081" ref-type="ref" href="#jcc25364-bib-0081">81</a> and therefore more efficient. The basic theory and algorithms should be reconstructed for calculations involving molecules which contain heavy elements
+  <a rid="jcc25364-bib-0082" ref-type="ref" href="#jcc25364-bib-0082">82</a>, 
+  <a rid="jcc25364-bib-0083" ref-type="ref" href="#jcc25364-bib-0083">83</a>, 
+  <a rid="jcc25364-bib-0084" ref-type="ref" href="#jcc25364-bib-0084">84</a> and for SD calculations.
+  <a rid="jcc25364-bib-0085" ref-type="ref" href="#jcc25364-bib-0085">85</a>, 
+  <a rid="jcc25364-bib-0086" ref-type="ref" href="#jcc25364-bib-0086">86</a>, 
+  <a rid="jcc25364-bib-0087" ref-type="ref" href="#jcc25364-bib-0087">87</a>, 
+  <a rid="jcc25364-bib-0088" ref-type="ref" href="#jcc25364-bib-0088">88</a> Furthermore, large‐scale molecular theories with overall linear‐scaling techniques are required for calculations relating to large molecules.
+  <a rid="jcc25364-bib-0089" ref-type="ref" href="#jcc25364-bib-0089">89</a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This article introduces a new 2c RQC program package, the Relativistic And Quantum Electronic Theory (RAQET), which satisfies the above requirements for accurate and practical relativistic calculations. This article is organized as follows: we begin with a brief overview of RAQET as well as an explanation of the general theory in the following section. Subsequent sections discuss the capabilities of the Hamiltonian, wavefunction theory (WFT), DFT, and integral evaluations together with a brief explanation of the theories. Basic run types and useful options are given then the following section provides the graphical user interface (GUI) for user‐friendly calculations. Finally, we discuss the performance such as the parallel capability for large systems before making some concluding remarks</p>
+</sec>

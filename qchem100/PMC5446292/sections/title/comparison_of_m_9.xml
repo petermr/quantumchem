@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3C" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">C.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Comparison of methods</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now summarize the converged adsorption energies and compare them to a small set of widely used density-functionals. All reported results employ a 2-layer LiH substrate as in Fig. 
+  <a ref-type="fig" rid="f1" href="#f1">1</a>. We believe that the mutually agreeing DMC and 
+  <span class="italic">δ</span>CCSD(T) results can be considered as the most reliable benchmark for the present system, yielding adsorption energies between 250 
+  <div class="inline-formula">
+   <div id="M35" class="math">
+    <span class="mo">(</span>
+    <span class="mo">±</span>
+    <span class="mn">7</span>
+    <span class="mo">)</span>
+   </div>
+  </div> meV and 256 meV. For comparison, the adsorption energy of each method is depicted in Fig. 
+  <a ref-type="fig" rid="f4" href="#f4">4</a>. A sizeable variation in the adsorption energies is evident between different van der Waals functionals (PBE-TS,
+  <a rid="c49" ref-type="bibr" href="#c49">
+   <span class="sup">49</span>
+  </a> optB86b-vdW,
+  <a rid="c53" ref-type="bibr" href="#c53">
+   <span class="sup">53</span>
+  </a> PBE-D3,
+  <a rid="c48" ref-type="bibr" href="#c48">
+   <span class="sup">48</span>
+  </a> HSE06-D3,
+  <a rid="c85" ref-type="bibr" href="#c85">
+   <span class="sup">85</span>
+  </a> RPBE-vdW-DF
+  <a rid="c50" ref-type="bibr" href="#c50">
+   <span class="sup">50</span>
+  </a>), as well as PBE. The PBE functional underestimates the adsorption energy by roughly 45 meV, in a large part due to its lack of dispersive interactions. Grimme’s D3 correction
+  <a rid="c48" ref-type="bibr" href="#c48">
+   <span class="sup">48</span>
+  </a> accounts for such interactions, albeit overestimating the adsorption energy for the current system, predicting a PBE-D3 adsorption energy of 350 meV, consistent with similar findings for water adsorption on ionic surfaces.
+  <a rid="c86" ref-type="bibr" href="#c86">
+   <span class="sup">86</span>
+  </a> We note that this overestimation is less pronounced when the HSE06
+  <a rid="c87" ref-type="bibr" href="#c87">
+   <span class="sup">87,88</span>
+  </a> hybrid functional is used in conjunction with D3, yielding a value of 306 meV. This can partly be attributed to the fact that the HSE06 functional underestimates the adsorption energy compared to PBE by as much as 85 meV. The optB86b-vdW
+  <a rid="c53" ref-type="bibr" href="#c53">
+   <span class="sup">53</span>
+  </a> results also overbind the water molecule by roughly 45 meV, while the RPBE-vdW-DF
+  <a rid="c50" ref-type="bibr" href="#c50">
+   <span class="sup">50</span>
+  </a> adsorption energy exhibits a similar underbinding as for the case of PBE. The best van der Waals functional estimate is provided by the Tkatchenko and Scheffler functional (PBE-TS) with iterative Hirshfeld partitioning.
+  <a rid="c89" ref-type="bibr" href="#c89">
+   <span class="sup">89,90</span>
+  </a> The latter yields an adsorption energy of 268 meV in good agreement with 
+  <span class="italic">δ</span>CCSD(T) results. These results illustrate the difficulties in van der Waals functionals. The PBE functional is known to provide non-electrostatic binding between closed shell systems. This attraction is rather an artifact than a real dispersive interaction. At the same time, this artificial attraction provides a quantitatively reasonable effective substitute for dispersion. However, if the physically correct dispersion is added on top, it becomes difficult to avoid double counting, leading to a deterioration of the quantitative accuracy.
+ </p>
+ <div fig-type="figure" id="f4" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIG. 4.</span>
+  <div class="caption">
+   <p>Converged adsorption energies of a water molecule on the LiH surface at different levels of theory. PBE and several van der Waals functionals shown on the left. Wave function based methods ranging from MP2 to 
+    <span class="italic">δ</span>CCSD(T) and DMC shown on the right.
+   </p>
+  </div>
+  <div xlink:href="JCPSA6-000146-204108_1-g004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a ref-type="fig" rid="f4" href="#f4">4</a> also shows the various wave function estimates of the adsorption energy. Canonical MP2 theory underestimates the adsorption energy by 17 meV compared to DMC, while LMP2-F12 provides a slightly better estimate, partly due to the explicit correlation, leading to an improved convergence with respect to the basis set size. The LMP2-F12 adsorption energy is 238 meV, only 11 meV below the DMC result. CCSD constitutes no improvement over MP2 theory for the present case, yielding a binding energy of 229 meV only. The DCSD approximation,
+  <a rid="c59" ref-type="bibr" href="#c59">
+   <span class="sup">59</span>
+  </a> consistent with findings in molecular systems,
+  <a rid="c59" ref-type="bibr" href="#c59">
+   <span class="sup">59–61</span>
+  </a> considerably improves the description of water adsorption on LiH, predicting an adsorption energy of 243 meV, which is within the stochastic error of DMC but still underbinding compared to the triples corrected 
+  <span class="italic">δ</span>CCSD(T) results. In summary, we find excellent agreement between high-level quantum chemistry and QMC techniques as well as between different methods to compute MP2 adsorption energies. Furthermore the correlated wave function based methods yield estimates for the binding energy that lie in a relatively narrow energy window ranging from 229 meV to 256 meV.
+ </p>
+</sec>

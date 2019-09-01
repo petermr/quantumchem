@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0007" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Core potential method</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">RAQET contains three core potential methods based on the valence‐only Huzinaga–Cantu equation:
+  <a rid="jcc25364-bib-0109" ref-type="ref" href="#jcc25364-bib-0109">109</a> the model core potential (MCP),
+  <a rid="jcc25364-bib-0110" ref-type="ref" href="#jcc25364-bib-0110">110</a>, 
+  <a rid="jcc25364-bib-0111" ref-type="ref" href="#jcc25364-bib-0111">111</a>
+  <span class="italic">ab initio</span> model potential (AIMP),
+  <a rid="jcc25364-bib-0112" ref-type="ref" href="#jcc25364-bib-0112">112</a>, 
+  <a rid="jcc25364-bib-0113" ref-type="ref" href="#jcc25364-bib-0113">113</a> and frozen core potential (FCP) methods.
+  <a rid="jcc25364-bib-0114" ref-type="ref" href="#jcc25364-bib-0114">114</a>, 
+  <a rid="jcc25364-bib-0115" ref-type="ref" href="#jcc25364-bib-0115">115</a> These schemes reduce the number of electrons treated explicitly by replacing the core electrons with the potential. Thus, an efficient HF calculation is realized. These core potential methods are implemented in the SF formulations at the HF level of the theory. MCP and AIMP include the model potentials for the core region, whose parameters were determined as to reproduce reference relativistic calculations such as the one‐electron third‐order DKH Hamiltonian with the two‐electron NR Coulomb interactions. However, in FCP, the core potentials have been constructed from the frozen atomic core orbitals instead of atomic model potentials. Any 2c relativistic Hamiltonians, including (LUT‐)IODKH/NR and (LUT‐)IODKH/(LUT‐)IODKH, are seamlessly combined with FCP. In addition, if required, the core electrons can be self‐consistently relaxed using frozen molecular valence potentials following the valence SCF calculation.
+  <a rid="jcc25364-bib-0115" ref-type="ref" href="#jcc25364-bib-0115">115</a> This relaxation is essential to evaluate the molecular properties related to core orbitals such as core level shifts.
+ </p>
+</sec>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We recently reported the synthesis and characterization of the triads 
+  <span class="bold">TAA-ph
+   <sub>1</sub>-Ir-ph
+   <sub>1</sub>-AQ
+  </span> and 
+  <span class="bold">TAA-ph
+   <sub>2</sub>-Ir-ph
+   <sub>2</sub>-AQ
+  </span> focusing exclusively on the influence of driving forces on the distance dependences of thermal charge recombination rates. Our present study substantially extends the earlier investigation of the triads and contains the following new photophysical experiments and insights: (i) excitation wavelength dependent quantum yields for charge separation were measured and insight into the importance of intraligand charge-transfer excitations was obtained; (ii) two-pulse experiments were performed to determine the quantum yield for light-induced charge recombination, to explore whether the distance dependence of that poorly understood side reaction obeys conventional electron transfer theory. The extent of quantitative information gained from these studies is unmatched by earlier investigations of molecular donor–acceptor compounds, and our two-color two-pulse (pump–pump–probe) experiments might inspire new types of photophysical studies.
+ </p>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.1</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">CSS formation and energetic considerations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Photoexcitation of our Ir-based sensitizer into its metal-to-ligand charge transfer (MLCT) absorption band between 390 and 450 nm produces, after intersystem crossing, its triplet state.
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a> However, comparison of the UV-Vis spectrum of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>, green trace) with 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>, violet trace) and 
+   <span class="bold">Ir-Ref</span> (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>, red trace; see ESI page S8
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a> for molecular structure) shows an unexpectedly high extinction coefficient in the blue for the shorter triad. That observation suggests that this triad exhibits not only an MLCT transition in this spectral range, but there is also an intraligand charge transfer (CT). We postulated earlier that this intraligand CT occurs between the TAA donor and the bipyridine ligand of the photosensitizer and that the increase of the distance between those two moieties in the 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> triad decreases the contribution of the intraligand CT significantly,
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a> which is now further substantiated by DFT-calculations (see ESI, page S6
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). The population of additional CT transitions is obviously not limited to our system, as the comparison of the UV-Vis absorption spectra within other series of triads suggests, where exclusively the molecules with the shortest distance show additional shoulders in the UV-Vis absorption spectra.
+   <a rid="cit11" ref-type="bibr" href="#cit11">11</a>,
+   <a rid="cit45" ref-type="bibr" href="#cit45">45</a> The same effect can also be observed in dyads with a short TAA-bipyridine distance,
+   <a rid="cit46" ref-type="bibr" href="#cit46">46</a> while AQ-bipyridine dyads show no differences in the absorption behavior, even with short intramolecular distances.
+   <a rid="cit47" ref-type="bibr" href="#cit47">47</a>
+  </p>
+  <div id="fig1" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <div class="title">(a) UV-Vis absorption spectra of 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> (green), 
+     <span class="bold">TAA-ph
+      <sub>2</sub>-Ir-ph
+      <sub>2</sub>-AQ
+     </span> (violet), 
+     <span class="bold">Ir-Ref</span> (red, see Fig. S3
+     <a ref-type="fn" rid="fn1" href="#fn1">†</a> for molecular structure) and the bipyridine-containing free ligand of the longer triad (black) in CH
+     <sub>3</sub>CN at 293 K. The highlighted region indicates the wavelength range used for photoexcitation. (b) Cyclic voltammogram for 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> in dry and deoxygenated CH
+     <sub>3</sub>CN. TBAPF
+     <sub>6</sub> (0.1 M) was used as an electrolyte and a scan rate of 0.1 V s
+     <span class="sup">–1</span> was applied. (c) Averaged energy of relevant excited states and relevant intermediates for 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> and 
+     <span class="bold">TAA-ph
+      <sub>2</sub>-Ir-ph
+      <sub>2</sub>-AQ
+     </span> in CH
+     <sub>3</sub>CN. Energies were estimated using the redox potentials from Table S1 and eqn (S1).
+     <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+     <span class="italic">E</span>
+     <sub>00</sub> for the Ir sensitizer is 2.61 eV (
+     <a rid="cit16" ref-type="bibr" href="#cit16">ref. 16</a>) whereas 
+     <span class="italic">E</span>
+     <sub>00</sub> for AQ˙
+     <span class="sup">–</span> was estimated from its long wavelength absorption band.
+     <a rid="cit49" ref-type="bibr" href="#cit49">49</a> (d) Transient UV-Vis absorption spectrum of 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> in deoxygenated CH
+     <sub>3</sub>CN at 293 K. A 20 μM solution was excited at 440 nm with laser pulses of 
+     <span class="italic">ca</span>. 10 ns duration; detection occurred by integration over a period of 200 ns immediately afterwards.
+    </div>
+   </div>
+   <div xlink:href="c9sc01381d-f1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The amount of stored energy in the CSS (
+   <span class="italic">E</span>
+   <sub>CSS</sub>) is equivalent to the driving force (–Δ
+   <span class="italic">G</span>0CR) of the thermal charge recombination process of the photoexcited triads under study. The driving force can be derived from the redox potentials of AQ˙
+   <span class="sup">–</span> and TAA˙
+   <span class="sup">+</span> in the respective triad (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1b</a> and ESI, page S5
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>), which results in a –Δ
+   <span class="italic">G</span>0CR value of 1.99 eV for the shorter 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> triad and 1.96 eV for 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span>, 
+   <span class="italic">i</span>.
+   <span class="italic">e</span>., both triads can store 
+   <span class="italic">ca</span>. 2.0 eV in their CSSs (in CH
+   <sub>3</sub>CN). The maximal excitation wavelength for detectable CSS formation in the 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> triad is 450 nm, whereas the CSS of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> can be generated with wavelengths up to 
+   <span class="italic">ca</span>. 470 nm due to the higher extinction coefficients resulting from the superposition of Ir-based MLCT and intraligand CT transitions (see 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a> and Section 2.3 for details). Excitation with longer wavelengths is preferred to maximize energy efficiencies (
+   <span class="italic">η</span>), which we define as the ratios of 
+   <span class="italic">E</span>
+   <sub>CSS</sub> and the photon energies at the maximum excitation wavelength usable for CSS formation under our conditions. With the photon energies at the above-mentioned limiting wavelengths, energy efficiencies of 71% (longer triad) and 75% (shorter triad) thus result. These values are close to the upper limit of already reported high-energy CSSs where a visible photon was absorbed to form the respective CSS.
+   <a rid="cit4" ref-type="bibr" href="#cit4">4</a>,
+   <a rid="cit5" ref-type="bibr" href="#cit5">5</a>,
+   <a rid="cit11" ref-type="bibr" href="#cit11">11</a>,
+   <a rid="cit48" ref-type="bibr" href="#cit48">48</a> The energy efficiencies for the triads under study also compare very favorably with a reported two-photon process, which stores the same amount of energy as our triads.
+   <a rid="cit28" ref-type="bibr" href="#cit28">28</a> Based on the redox potentials from the cyclic voltammograms of the triads (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1b</a> and ESI, page S5
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>), an energy level scheme for excited states and relevant intermediates of the triads 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> and 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> was calculated (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1c</a>). The shown energies are averaged over both triads. Excitation of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> (
+   <span class="italic">λ</span>
+   <sub>1</sub> = 470 nm) mainly results in an intraligand CT from the TAA unit to the bipyridine ligand of the Ir sensitizer since there is a significant oscillator strength for this excitation (see ESI, page S6
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Electron transfer from the reduced bipyridine to the AQ unit finally gives the long-lived CSS. By contrast, the absorption of a higher energy photon (
+   <span class="italic">λ</span>
+   <sub>1</sub> = 450 nm) by 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> mainly excites an MLCT transition. The final CSS can then be generated by (i) reductive quenching of the excited Ir chromophore by the TAA moiety, followed by an electron transfer from the reduced Ir photosensitizer to the AQ unit, or (ii) oxidative quenching of the excited Ir sensitizer by the AQ unit, followed by an electron transfer from the TAA moiety to the Ir
+   <span class="sup">IV</span> species. The formed final CSS in both triads can then undergo thermal charge recombination into the ground state. In addition, the final CSS can also be selectively photoexcited by absorption of a second visible photon (
+   <span class="italic">λ</span>
+   <sub>2</sub> = 532 nm) inducing rapid reverse electron transfer as discussed in Section 2.4.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The formation of the final CSS was detected immediately after photoexcitation by transient absorption spectroscopy (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1d</a> and S5 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). The transient absorption spectrum of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> (
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1d</a>) clearly shows the spectroscopic signatures of the anticipated CSS. The one-electron oxidized TAA unit exhibits bands at 370 and 720 nm whereas the AQ˙
+   <span class="sup">–</span> species is characterized by bands at 370 and 570 nm.
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a> For 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span>, the same spectroscopic signatures can be observed though the TAA˙
+   <span class="sup">+</span> signal shifts from 720 to 
+   <span class="italic">ca</span>. 700 nm (see ESI, Fig. S5
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>).
+  </p>
+ </sec>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.2</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Lifetimes of charge-separated states</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In a recent study we compared the distance dependence of charge recombination rates in 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> and 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> to two other series of triads with Ru-based sensitizers.
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a> For 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> and 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> we found that CSS lifetimes decrease with increasing donor–acceptor distance, and this somewhat counter-intuitive behavior is readily understood on the basis of Marcus theory as discussed earlier.
+   <a rid="cit11" ref-type="bibr" href="#cit11">11</a>,
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a>,
+   <a rid="cit45" ref-type="bibr" href="#cit45">45</a>,
+   <a rid="cit50" ref-type="bibr" href="#cit50">50</a>–
+   <a rid="cit52" ref-type="bibr" href="#cit52">52</a> In the present study, lower excitation densities were used (see also ESI page S3
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>) and lifetimes of the CSSs (
+   <span class="italic">τ</span>
+   <sub>CSS</sub>) of 
+   <span class="italic">ca</span>. 1.2 μs for 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> and 
+   <span class="italic">ca</span>. 85 ns for 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> were determined in dry and deoxygenated CH
+   <sub>3</sub>CN at 293 K. The instantaneous CSS formation within the duration of the exciting laser pulse (
+   <span class="italic">ca</span>. 10 ns), which is further confirmed by kinetic emission measurements (see ESI page S8
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>), and thermal charge recombination in both triads are illustrated by 
+   <a ref-type="fig" rid="fig2" href="#fig2">Fig. 2</a>.
+  </p>
+  <div id="fig2" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <div class="title">Formation and decay of the transient absorption signals for 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> (green) and 
+     <span class="bold">TAA-ph
+      <sub>2</sub>-Ir-ph
+      <sub>2</sub>-AQ
+     </span> (violet) in dry and deoxygenated CH
+     <sub>3</sub>CN at 293 K monitoring the TAA˙
+     <span class="sup">+</span> band at 720 nm (green) and 700 nm (violet). Excitation of both triads occurred at 433 nm with laser pulses of 
+     <span class="italic">ca</span>. 10 ns duration.
+    </div>
+   </div>
+   <div xlink:href="c9sc01381d-f2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Consideration of the relationship between a high driving force, 
+   <span class="italic">i.e</span>., a high 
+   <span class="italic">E</span>
+   <sub>CSS</sub>, and a long donor–acceptor distance has an important impact on the future design of CSS precursors for artificial photosynthesis and charge accumulation. The capability of high energy storage is desirable, but too long donor–acceptor distances in such systems can counteract a long lifetime of the CSS (see 
+   <a ref-type="fig" rid="fig2" href="#fig2">Fig. 2</a>),
+   <a rid="cit11" ref-type="bibr" href="#cit11">11</a>,
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a>,
+   <a rid="cit45" ref-type="bibr" href="#cit45">45</a>,
+   <a rid="cit52" ref-type="bibr" href="#cit52">52</a> which is required to exploit the stored energy for subsequent (photo)reactions,
+   <a rid="cit4" ref-type="bibr" href="#cit4">4</a>,
+   <a rid="cit53" ref-type="bibr" href="#cit53">53</a> and are therefore counterproductive for the application in solar energy storage and conversion.
+  </p>
+ </sec>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.3</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Quantum yields and excitation wavelength dependences of CSS formation</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In sophisticated molecular systems designed for multiphoton-driven charge accumulation, the quantum yield for formation of the primary CSS should ideally be close to unity. In this section, we will comprehensibly describe an experimental technique suitable for CSS quantum yield determinations using molecular triads as model compounds to study that process in isolation, and we will provide strategies to understand unexpected results. Our methodology is based on relative actinometry
+   <a rid="cit54" ref-type="bibr" href="#cit54">54</a> combined with laser flash photolysis (LFP). In principle the actinometry-LFP combo is a rather old approach,
+   <a rid="cit55" ref-type="bibr" href="#cit55">55</a>–
+   <a rid="cit57" ref-type="bibr" href="#cit57">57</a> but many 21st century photochemists do not seem to be familiar with that powerful tool, perhaps due to the lack of tutorial reviews as recently published for other photochemical techniques.
+   <a rid="cit58" ref-type="bibr" href="#cit58">58</a>,
+   <a rid="cit59" ref-type="bibr" href="#cit59">59</a>
+   <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a> enlarges on our quantum yield determination methodology. As reference system suitable for laser flash photolysis actinometry,
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a>–
+   <a rid="cit64" ref-type="bibr" href="#cit64">64</a> we selected tris(2,2′-bipyridine)ruthenium(
+   <span class="sc">ii</span>) [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> in water (the favorable properties of that system are summarized on page S3 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). First, solutions of [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> and the respective Ir-containing triad were prepared with concentrations ensuring identical absorption values at the desired excitation wavelength. An example for 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> prior to exciting with 410 nm laser pulses is shown in 
+   <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3a</a>. Second, employing the very same excitation conditions for the reference system and the triad under study, transient absorption traces at 455 nm (maximum of the [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> ground state bleach)
+   <a rid="cit63" ref-type="bibr" href="#cit63">63</a> and the CSS absorption maximum (
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span>, 720 nm; 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span>, 700 nm) were recorded (
+   <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3b</a>).
+  </p>
+  <div id="fig3" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <div class="title">Raw data used for the quantum yield determination of CSS formation for 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> upon 410 nm laser excitation with 8 mJ laser pulses of about 10 ns duration. (a) UV-Vis absorption spectra of 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> (green, in CH
+     <sub>3</sub>CN) and [Ru(bpy)
+     <sub>3</sub>]
+     <span class="sup">2+</span> (orange, in water), which was used as reference compound for relative actinometry. (b) Transient absorption traces upon 410 nm excitation of the deoxygenated solutions shown in (a). CSS formation was monitored at 720 nm (green), [Ru(bpy)
+     <sub>3</sub>]
+     <span class="sup">2+</span> ground state bleach at 455 nm (orange). For further explanation, see the main text and Section 1.3 of the ESI.
+     <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+    </div>
+   </div>
+   <div xlink:href="c9sc01381d-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Third and finally, the transient absorption traces so obtained were converted into relative intermediate concentrations using the well-established (difference) molar absorption coefficients for the [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> ground state bleach (together with the quantum yield for the [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> excitation producing its triplet state, which is unity
+   <a rid="cit65" ref-type="bibr" href="#cit65">65</a>) and the estimated extinction coefficients at the maximum of the respective CSS (see Section 1.3 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a> for details). Surprisingly, the CSS quantum yields for the two triads differ by almost a factor of 3 under very similar conditions (
+   <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>). Control experiments with 410 nm excitation at significantly reduced laser intensity (to about 50%) gave essentially the same quantum yields for both triads compared to the results at higher intensities (8 mJ, see 
+   <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a>). We regard these observations as clear evidence for the absence of biphotonic side reactions, such as a two-photon ionization
+   <a rid="cit66" ref-type="bibr" href="#cit66">66</a> or light-induced charge recombination (compare, Section 2.4), and saturation effects.
+   <a rid="cit67" ref-type="bibr" href="#cit67">67</a> Moreover, all quantum yield determinations presented in this work were carried out with solutions having absorptions below 0.105 at the excitation wavelengths to avoid filter effects.
+   <a rid="cit68" ref-type="bibr" href="#cit68">68</a> A simplified procedure frequently used to estimate quantum yields is the analysis of the quenching efficiency of the photosensitizer as CSS precursor employing kinetic measurements.
+   <a rid="cit4" ref-type="bibr" href="#cit4">4</a>,
+   <a rid="cit46" ref-type="bibr" href="#cit46">46</a> This easy-to-obtain quantity, which does not take chemically unproductive deactivation pathways into account, would predict quantitative CSS formation for both 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> and 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> (see Section 4.1 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Therefore, our results highlight the importance of direct quantum yield determinations with relative actinometry.
+  </p>
+  <div id="fig4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 4</span>
+   <div class="caption">
+    <div class="title">CSS formation quantum yields of 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> (a) and 
+     <span class="bold">TAA-ph
+      <sub>2</sub>-Ir-ph
+      <sub>2</sub>-AQ
+     </span> (b) upon 410 nm laser excitation (8 mJ pulse energy). The CSS concentrations after the laser pulses were calculated relative to the amounts of absorbed photons as measured by means of relative actinometry with additional experiments on [Ru(bpy)
+     <sub>3</sub>]
+     <span class="sup">2+</span> (orange reference traces) under identical excitation conditions. Further details are given in the main text and Section 1.3 of the ESI.
+     <a ref-type="fn" rid="fn1" href="#fn1">†</a>
+    </div>
+   </div>
+   <div xlink:href="c9sc01381d-f4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The widel y differing quantum yields obtained upon 410 nm excitation (28.6 
+   <span class="italic">vs.</span> 79.4%, 
+   <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>) prompted us to explore the influence of the excitation wavelength on CSS formation. Prior to carrying out additional kinetic measurements as in 
+   <a ref-type="fig" rid="fig4" href="#fig4">Fig. 4</a>, we recorded transient absorption spectra using at least four different laser wavelengths for exciting our triads. Our experiments demonstrate that the spectral shapes and relative absorption signal intensities do not depend on the excitation wavelength (see Fig. S5 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Hence, in line with Kasha's rule,
+   <a rid="cit69" ref-type="bibr" href="#cit69">69</a>,
+   <a rid="cit70" ref-type="bibr" href="#cit70">70</a> the respective CSS is the only intermediate observable on a nanosecond timescale. Furthermore, more than 500 laser flashes on the very same solution do neither change the CSS absorption spectra nor their intensities, indicating that no photochemical side reactions are taking place. All quantum yield determinations at the excitation wavelengths covering the experimentally accessible range (see Section 2.1) were carried out with the same methodology as at 410 nm (
+   <a ref-type="fig" rid="fig3" href="#fig3">Fig. 3</a> and 
+   <a ref-type="fig" rid="fig4" href="#fig4">4</a>). To compensate small laser intensity fluctuations and obtain a suitable signal-to-noise ratio, at least 20 kinetic traces were averaged for every quantum yield measurement summarized in 
+   <a rid="tab1" ref-type="table" href="#tab1">Table 1</a>. The results presented in that table reveal a quasi-wavelength independence for the CSS formation quantum yield of 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> with a mean value as high as 82%, whereas for 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span>, the CSS formation efficiencies differ by a factor of 5 over the explored excitation wavelength range, decreasing in a systematic manner at longer wavelengths.
+  </p>
+  <div id="tab1" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 1</span>
+   <div class="caption">
+    <div class="title">Wavelength-dependent quantum yields of CSS formation
+     <a ref-type="fn" rid="tab1fna" href="#tab1fna">
+      <span class="sup">
+       <span class="italic">a</span>
+      </span>
+     </a>
+    </div>
+   </div>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col span="1"/>
+     <col span="1"/>
+     <col span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td rowspan="2" colspan="1">Excitation wavelength/nm</td>
+      <td colspan="2" rowspan="1">CSS formation quantum yield
+       <a ref-type="table-fn" rid="tab1fnb" href="#tab1fnb">
+        <span class="sup">
+         <span class="italic">b</span>
+        </span>
+       </a>/%
+       <span class="hr"/>
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">
+       <span class="bold">TAA-ph
+        <sub>1</sub>-Ir-ph
+        <sub>1</sub>-AQ
+       </span>
+      </td>
+      <td rowspan="1" colspan="1">
+       <span class="bold">TAA-ph
+        <sub>2</sub>-Ir-ph
+        <sub>2</sub>-AQ
+       </span>
+      </td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="1" colspan="1">410</td>
+      <td rowspan="1" colspan="1">28.6</td>
+      <td rowspan="1" colspan="1">79.4</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">425</td>
+      <td rowspan="1" colspan="1">24.4</td>
+      <td rowspan="1" colspan="1">76.6</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">433</td>
+      <td rowspan="1" colspan="1">18.9</td>
+      <td rowspan="1" colspan="1">87.4</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">440</td>
+      <td rowspan="1" colspan="1">16.1</td>
+      <td rowspan="1" colspan="1">85.4</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">450</td>
+      <td rowspan="1" colspan="1">14.4</td>
+      <td rowspan="1" colspan="1">82.0</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">460</td>
+      <td rowspan="1" colspan="1">12.8</td>
+      <td rowspan="1" colspan="1">—
+       <a ref-type="table-fn" rid="tab1fnc" href="#tab1fnc">
+        <span class="sup">
+         <span class="italic">c</span>
+        </span>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1">470</td>
+      <td rowspan="1" colspan="1">6.0</td>
+      <td rowspan="1" colspan="1">—
+       <a ref-type="table-fn" rid="tab1fnc" href="#tab1fnc">
+        <span class="sup">
+         <span class="italic">c</span>
+        </span>
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="table-wrap-foot">
+    <fn id="tab1fna" class="fn" xmlns="">
+     <p xmlns="http://www.w3.org/1999/xhtml">
+      <span class="sup">
+       <span class="italic">a</span>
+      </span>Measured in deoxygenated CH
+      <sub>3</sub>CN at 293 K. The maximum relative error is expected to be less than 10%.
+     </p>
+    </fn>
+    <fn id="tab1fnb" class="fn" xmlns="">
+     <p xmlns="http://www.w3.org/1999/xhtml">
+      <span class="sup">
+       <span class="italic">b</span>
+      </span>Details concerning the experimental methodology are given in the main text and in Section 1.2 of the ESI.
+     </p>
+    </fn>
+    <fn id="tab1fnc" class="fn" xmlns="">
+     <p xmlns="http://www.w3.org/1999/xhtml">
+      <span class="sup">
+       <span class="italic">c</span>
+      </span>Cannot be determined owing to negligible absorption of the triad at the excitation wavelength.
+     </p>
+    </fn>
+   </div>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">A plausible explanation for the markedly different behavior of the quantum yields in 
+   <a rid="tab1" ref-type="table" href="#tab1">Table 1</a> is provided by different main pathways of CSS formation in the two triads. As discussed in Section 2.1, photoexcitation of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> mainly occurs into an intraligand CT transition, whereas in the case of 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span>, excitation into MLCT bands of the photosensitizer dominates when violet or blue photons are employed. Starting from these charge-transfer states, which are formed in their singlet states due to spin conservation,
+   <a rid="cit71" ref-type="bibr" href="#cit71">71</a> subsequent intersystem crossing (ISC) to the triplet manifold can occur. Ir-based excited 
+   <span class="sup">1</span>MLCT states usually undergo very fast (&lt;1 ps) and quantitative ISC,
+   <a rid="cit72" ref-type="bibr" href="#cit72">72</a>,
+   <a rid="cit73" ref-type="bibr" href="#cit73">73</a> but intraligand CT states or CT states in purely organic systems are known for their ultrafast and unproductive (singlet) recombination in polar solvents (the recombination of 
+   <span class="sup">1</span>TAA˙
+   <span class="sup">+</span>-bpy˙
+   <span class="sup">–</span>/Ir
+   <span class="sup">III</span>-AQ in this case; see 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1c</a> for details).
+   <a rid="cit74" ref-type="bibr" href="#cit74">74</a>–
+   <a rid="cit76" ref-type="bibr" href="#cit76">76</a> As a direct consequence, the quantum yields for the production of long-lived (triplet) CSSs 
+   <span class="italic">via</span>
+   <span class="sup">3</span>MLCT states can approach values close to unity, while in the intermediate intraligand singlet CT states, ultrafast recombination competes with ISC and productive charge separation. In line with that reasoning, the CSS quantum yields of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> increase with decreasing excitation wavelengths, 
+   <span class="italic">i.e.</span>, when the admixture of direct MLCT excitation increases relative to intraligand CT excitation (see UV-Vis spectra in 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>).
+  </p>
+ </sec>
+ <sec class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2.4</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Light-induced charge recombination</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">With the ultimate aim of achieving photoinduced charge accumulation in molecular systems without sacrificial additives, many sophisticated compounds have been prepared, but in the last decade only a handful of investigations succeeded in overcoming the associated difficulties.
+   <a rid="cit31" ref-type="bibr" href="#cit31">31</a>,
+   <a rid="cit77" ref-type="bibr" href="#cit77">77</a>–
+   <a rid="cit80" ref-type="bibr" href="#cit80">80</a> Starting from the first CSS, a key problem is the light-induced charge recombination upon excitation of intermediate electrons/holes with a second photon (see 
+   <a ref-type="fig" rid="sch1" href="#sch1">Scheme 1b</a>), which is competitive with the desired accumulation of redox equivalents.
+   <a rid="cit29" ref-type="bibr" href="#cit29">29</a>,
+   <a rid="cit30" ref-type="bibr" href="#cit30">30</a> Given that CSSs typically exhibit intense absorptions over a broad wavelength range, selective photosensitizer excitation is even more difficult under conditions of solar (broadband) irradiation than it is under well-defined lab (monochromatic) conditions. However, this is currently a heavily underexplored area given its importance for accumulative multi-electron transfer.
+   <a rid="cit29" ref-type="bibr" href="#cit29">29</a>,
+   <a rid="cit33" ref-type="bibr" href="#cit33">33</a>,
+   <a rid="cit35" ref-type="bibr" href="#cit35">35</a>,
+   <a rid="cit78" ref-type="bibr" href="#cit78">78</a>,
+   <a rid="cit81" ref-type="bibr" href="#cit81">81</a> The molecular triads investigated in this study do not permit charge accumulation, but they are well-suited for studying light-induced charge recombination processes and for quantum yield determinations of this undesired side reaction, which lay the grounds for structural optimizations to avoid that detrimental process.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Two-pulse two-color laser flash photolysis is the ideal experimental technique to investigate consecutive photoreactions, both for purely intramolecular reactions
+   <a rid="cit34" ref-type="bibr" href="#cit34">34</a>,
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a>,
+   <a rid="cit82" ref-type="bibr" href="#cit82">82</a>–
+   <a rid="cit84" ref-type="bibr" href="#cit84">84</a> and reaction sequences with intervening bimolecular processes.
+   <a rid="cit81" ref-type="bibr" href="#cit81">81</a>,
+   <a rid="cit85" ref-type="bibr" href="#cit85">85</a>–
+   <a rid="cit87" ref-type="bibr" href="#cit87">87</a> This holds also true for the mechanism shown in 
+   <a ref-type="fig" rid="sch1" href="#sch1">Scheme 1b</a>: the first (violet or blue) pulse serves to produce the desired CSS, and the ensuing second (green) pulse
+   <a rid="cit88" ref-type="bibr" href="#cit88">88</a> investigates the fate of this intermediate upon absorption of another photon. In line with the absorption spectra displayed in 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1a</a>, the latter pulse (532 nm) alone has no effect on the ground states of the triads, which was verified by control experiments. Hence, that pulse selectively excites the CSSs in our systems with AQ˙
+   <span class="sup">–</span> being the main absorbing species at 532 nm (see 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1d</a> and page S4 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). The two-pulse experiments on 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> are summarized in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5</a>. Initial experiments with an interpulse delay of 240 ns (the pulse sequence is shown at the top of 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5b</a>) and monitoring at the maximum of the CSS, 720 nm, revealed a green-light induced CSS bleach of about 24%, as is evidenced in the main plot of 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5a</a>. The rather long interpulse delay allows sensitive monitoring of the CSS absorption spectrum between the two pulses (200 ns integration time, green spectrum in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5b</a>), and its comparison with the spectrum observed after the green pulse (gray spectrum in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5b</a>). Comparing the spectra presented in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5b</a>, we found that all (positive) absorption peaks in the gray spectrum are less intense by about 39%, and even the ground state bleach at 320 nm recovers accordingly; in other words, the normalized spectra are completely identical (normalization not shown). A correction of the ∼39% signal decrease observed in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5b</a> for the thermal CSS recombination, which also takes place during spectral detection, gave essentially the same result for the light-induced recombination (23%) as extracted from kinetic traces (24%, see above). Moreover, the kinetics of thermal charge recombination are unaffected by the second pulse (Fig. S6 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Hence, all these two-pulse experiments on 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> unambiguously establish that charge recombination is the only green-light-induced process observable on the nanosecond timescale.
+  </p>
+  <div id="fig5" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Fig. 5</span>
+   <div class="caption">
+    <div class="title">Observing and quantifying the light-induced charge recombination in 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> (20 μM in deoxygenated CH
+     <sub>3</sub>CN) using two-pulse experiments with the general pulse sequence displayed at the top of panel (b). (a) Main plot: kinetic traces for the CSS of the triad at 720 nm with the second laser pulse blocked (green) or unblocked (gray). Inset: relative CSS bleaching at different intensities of the second laser (gray), together with the intensity dependence of the green-light induced [Ru(bpy)
+     <sub>3</sub>]
+     <span class="sup">2+</span> bleach (orange) used as reference for the charge recombination quantum yield (
+     <span class="italic">φ</span>
+     <sub>2</sub>) determination. The fit parameters 
+     <span class="italic">a</span> for the saturation curves (1 – exp[–
+     <span class="italic">I</span>
+     <sub>532</sub>/
+     <span class="italic">a</span>]) are 150 mJ (orange) and 463 mJ (gray). (b) Main plot: transient absorption spectrum of 
+     <span class="bold">TAA-ph
+      <sub>1</sub>-Ir-ph
+      <sub>1</sub>-AQ
+     </span> before (green) and after (gray) the second laser pulse in a representative two-pulse experiment. The inset shows a kinetic transient absorption measurement under identical conditions (the detection windows used for recording the transient absorption spectra of the main plot have been highlighted). For details, see text.
+    </div>
+   </div>
+   <div xlink:href="c9sc01381d-f5" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Given the sensitive and isolated detection of light-induced charge recombination, its quantum yield determination became a realistic target. Starting from the experimental conditions presented in 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5a</a>, we analyzed the CSS bleach at six different intensities of the second laser while keeping all other parameters unchanged. The intensity dependent relative recombination yields were extracted by independent fitting of pre- and post-pulse signals and extrapolation to the time of the second laser pulse, 
+   <span class="italic">i.e.</span>, 
+   <span class="italic">t</span> = 240 ns (inset of 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5a</a>, gray data points). For a reliable quantum yield determination, we applied the same method as in a recent investigation on a second-pulse induced photoreaction.
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a> Briefly, we again employed [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span> in water as reference system (compare, Section 2.3) and quantified the relative green-light induced ground state bleach upon excitation with laser pulses spanning a similar intensity range (inset of 
+   <a ref-type="fig" rid="fig5" href="#fig5">Fig. 5a</a>, orange data points). To minimize experimental uncertainties associated with single-point actinometry,
+   <a rid="cit61" ref-type="bibr" href="#cit61">61</a> we fitted both intensity dependencies with a saturation function that is valid for monophotonic photoreactions.
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a>,
+   <a rid="cit89" ref-type="bibr" href="#cit89">89</a> By analyzing the fit parameters with the extinction coefficients (at 532 nm) of the respective absorbing species (CSS of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span>, 15 500 M
+   <span class="sup">–1</span> cm
+   <span class="sup">–1</span>, see page S4 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a> for details; [Ru(bpy)
+   <sub>3</sub>]
+   <span class="sup">2+</span>, 720 M
+   <span class="sup">–1</span> cm
+   <span class="sup">–1</span>),
+   <a rid="cit62" ref-type="bibr" href="#cit62">62</a> a quantum yield for the light-induced charge recombination (
+   <span class="italic">φ</span>
+   <sub>2</sub>) of 1.5% was finally obtained.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Similar two-pulse experiments were carried out with 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> (Section 4.2 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Owing to the shorter CSS lifetime of that triad (Section 2.2), single-wavelength transient absorption kinetic traces are much more sensitive than spectral measurements with (short) detection time windows. However, during kinetic traces recorded at both the AQ˙
+   <span class="sup">–</span> and the TAA˙
+   <span class="sup">+</span> absorption maximum with a 45 ns interpulse delay, we did not observe any noticeable second-pulse induced absorption change, although at 532 nm the CSS of 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> absorbs slightly more strongly than that of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> (see ESI page S4
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>). Taking into account the reduced detection sensitivity for these measurements on the short-lived CSS in this triad, we estimate an upper limit of 0.2% for the green-light induced charge recombination of this compound.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">Given that the green pulse is mainly absorbed by the anthraquinone radical anion part of the CSS (page S4 of the ESI
+   <a ref-type="fn" rid="fn1" href="#fn1">†</a>), we assume that the following mechanism explains the widely differing quantum yields for light-induced charge recombination in our triads (1.5 
+   <span class="italic">vs.</span> 0.2%). Excitation of AQ˙
+   <span class="sup">–</span> at 532 nm (2.33 eV) produces – after ultrafast internal conversion – the lowest excited doublet state *AQ˙
+   <span class="sup">–</span>, whose energy lies ∼1.15 eV above the electronic ground state of AQ˙
+   <span class="sup">–</span> (estimated from its long wavelength absorption band).
+   <a rid="cit49" ref-type="bibr" href="#cit49">49</a> Isolated *AQ˙
+   <span class="sup">–</span> is known to rapidly deactivate back to AQ˙
+   <span class="sup">–</span>: averaging over the available literature values gave a lifetime as short as ∼40 ps,
+   <a rid="cit49" ref-type="bibr" href="#cit49">49</a>,
+   <a rid="cit90" ref-type="bibr" href="#cit90">90</a>,
+   <a rid="cit91" ref-type="bibr" href="#cit91">91</a> and we expect a similar natural lifetime of *AQ˙
+   <span class="sup">–</span> in our triads. Based on structural and energetic considerations, we regard the electron transfer to the bipyridine (bpy) moiety as the most-likely reaction pathway competing with photophysical deactivation. Once the bipyridine radical anion is formed, recombination with the adjacent TAA˙
+   <span class="sup">+</span> could account for the observed ground-state regeneration through light-induced charge recombination (see also 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1c</a>).
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">With a driving force of about 0.85 eV for the reaction between *AQ˙
+   <span class="sup">–</span> and bpy (see energies of the pertinent states in 
+   <a ref-type="fig" rid="fig1" href="#fig1">Fig. 1c</a>), a conventional distance dependence of the electron transfer rates is expected, 
+   <span class="italic">i.e.</span>, a rate constant decrease with increasing distances.
+   <a rid="cit9" ref-type="bibr" href="#cit9">9</a>,
+   <a rid="cit92" ref-type="bibr" href="#cit92">92</a>,
+   <a rid="cit93" ref-type="bibr" href="#cit93">93</a> With the above-mentioned quantum yields of light-induced charge recombination and a rate of ∼1/40 ps for photophysical deactivation, reasonable rate constants for the intermolecular electron transfer between *AQ˙
+   <span class="sup">–</span> and bpy on the order of 4 × 10
+   <span class="sup">8</span> s
+   <span class="sup">–1</span> (
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span>) and &lt;5 × 10
+   <span class="sup">7</span> s
+   <span class="sup">–1</span> (
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span>) can be estimated, if we simply assume that this intramolecular reaction is rate-limiting. The reasoning of the preceding paragraph could thus explain that green-light-induced charge recombination of 
+   <span class="bold">TAA-ph
+    <sub>1</sub>-Ir-ph
+    <sub>1</sub>-AQ
+   </span> is more efficient than that of 
+   <span class="bold">TAA-ph
+    <sub>2</sub>-Ir-ph
+    <sub>2</sub>-AQ
+   </span> by about one order of magnitude. Moreover, it is worth emphasizing that a quantum yield of 1.5% for an undesired pathway starting from a CSS is not negligible, since it could clearly outperform the quantum yield of desired charge accumulation (
+   <span class="italic">e.g.</span>, 0.5% in 
+   <a rid="cit77" ref-type="bibr" href="#cit77">ref. 77</a>). Although our triads are well-suited test systems to understand (biphotonic) light-induced recombination processes, we consider the probability of a (second) photon absorption by the CSSs of our triads with (sub)microsecond lifetimes as very unlikely under sunlight conditions. This is borne out by previous publications on intensity-dependent photoreactions with intermediates possessing nanosecond
+   <a rid="cit94" ref-type="bibr" href="#cit94">94</a> to microsecond
+   <a rid="cit60" ref-type="bibr" href="#cit60">60</a> lifetimes, whose efficient biphotonic ionization was only feasible with pulsed lasers or collimated laser diodes providing light power densities &gt;1 kW cm
+   <span class="sup">–2</span>.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">The experiments of this section illustrate the wealth of information that is accessible by quantitative two-pulse experiments on molecular triads, and that electron transfer rate distance dependencies could also help understand light-induced recombination processes.</p>
+ </sec>
+</sec>

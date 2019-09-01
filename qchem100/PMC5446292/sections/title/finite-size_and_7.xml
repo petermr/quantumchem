@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3A" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Finite-size and basis set convergence</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The finite-size and the basis set convergence studies summarized in this section employ a 2-layer LiH substrate as shown in Fig. 
+  <a ref-type="fig" rid="f1" href="#f1">1</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We first discuss the convergence of the DFT-PBE and HF adsorption energies with respect to the system size. DFT-PBE and HF results using different implementations are summarized in Table 
+  <a ref-type="table" rid="t2" href="#t2">II</a>. The converged results are in excellent agreement using plane-waves and Gaussian basis sets, with 
+  <span class="sc">vasp</span> and 
+  <span class="sc">crystal</span>, respectively. DFT-PBE results are converged already with a 32-atom LiH surface slab due to the inability of DFT-PBE to describe long-range dispersive interactions. HF results also exhibit a very fast rate of convergence albeit underestimating the adsorption energy compared to DFT-PBE significantly due to the neglect of any electronic correlation effects.
+ </p>
+ <div id="t2" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE II.</span>
+  <div class="caption">
+   <p>DFT-PBE and HF adsorption energies for water on 2-layer LiH substrates with different number of atoms in the supercell and different 
+    <span class="italic">k</span>-meshes. The reference 2-layer geometry with 64-atoms is shown in Fig. 
+    <a ref-type="fig" rid="f1" href="#f1">1</a>. The DFT-PBE and HF calculations have been performed with 
+    <span class="sc">vasp</span> and employ a 500 eV kinetic energy cutoff. The HF 
+    <span class="sc">crystal</span> calculations with an AVTZ-quality basis set and a 
+    <div class="inline-formula">
+     <div id="M16" class="math">
+      <span class="mn">3</span>
+      <span class="mo">×</span>
+      <span class="mn">3</span>
+      <span class="mo">×</span>
+      <span class="mn">1</span>
+     </div>
+    </div>
+    <span class="italic">k</span>-mesh yield a value of 14 meV.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="4" rowspan="1">
+      <span class="italic">E</span>
+      <sub>ads</sub> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">
+      <span class="italic">k</span>-mesh
+     </th>
+     <th align="center" colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">PBE</th>
+     <th align="center" colspan="1" rowspan="1">HF</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">(Γ-point)</td>
+     <td colspan="1" rowspan="1">32</td>
+     <td colspan="1" rowspan="1">219</td>
+     <td colspan="1" rowspan="1">10</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">(Γ-point)</td>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">215</td>
+     <td colspan="1" rowspan="1">14</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">(Γ-point)</td>
+     <td colspan="1" rowspan="1">128</td>
+     <td colspan="1" rowspan="1">215</td>
+     <td colspan="1" rowspan="1">15</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">(
+      <div class="inline-formula">
+       <div id="M17" class="math">
+        <span class="mn">3</span>
+        <span class="mo">×</span>
+        <span class="mn">3</span>
+        <span class="mo">×</span>
+        <span class="mn">1</span>
+       </div>
+      </div>)
+     </td>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">214</td>
+     <td colspan="1" rowspan="1">15</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We now turn to the discussion of the adsorption energies using different implementations of MP2 theory. LMP2-F12 is expected to provide results very close to the basis set limit and, with the settings given in Sec. 
+  <a ref-type="sec" rid="s2C" href="#s2C">II C</a>, also very close to the thermodynamic limit. It yields an adsorption energy of 238 meV. The latter value consists of 14 meV of HF, 189 of the frozen-core periodic LMP2/AVTZ, 18 meV of the F12 correction, and 17 meV of the core contribution. Using the basis set correction from the LMP2-pF12 approach, which is an approximation to LMP2-F12,
+  <a rid="c79" ref-type="bibr" href="#c79">
+   <span class="sup">79</span>
+  </a> leads to a similar value of 235 meV.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Canonical MP2 energies need to be converged with respect to both the basis set size and to the LiH surface size. Table 
+  <a ref-type="table" rid="t3" href="#t3">III</a> summarizes canonical MP2 adsorption energies obtained for varying basis set and supercell sizes. AV(D,T)Z and AV(T,Q–
+  <span class="italic">g</span>)Z extrapolated adsorption energies agree to within 2–6 meV for all studied system sizes. We note that the AV(T,Q–
+  <span class="italic">g</span>)Z extrapolation is somewhat less reliable due to the absence of 
+  <span class="italic">g</span> angular momentum functions in the AVQZ values. We find that the MP2 adsorption energies converge as 1/
+  <span class="italic">N</span>
+  <span class="sup">2</span>, where 
+  <span class="italic">N</span> denotes the number of atoms in the LiH substrate. This behaviour is expected from the long-range decay of pairwise van der Waals contributions in two-dimensional systems. The convergence of the finite-size effects for the various basis set extrapolated MP2 results can be seen in Fig. 
+  <a ref-type="fig" rid="f2" href="#f2">2</a>. Using the 1/
+  <span class="italic">N</span>
+  <span class="sup">2</span> behaviour, we can extrapolate the MP2 adsorption energies to the thermodynamic limit 
+  <div class="inline-formula">
+   <div id="M18" class="math">
+    <span class="mo">(</span>
+    <span class="mi">N</span>
+    <span class="mo">→</span>
+    <span class="mi">∞</span>
+    <span class="mo">)</span>
+   </div>
+  </div>, yielding 231 meV and 233 meV for AV(D,T)Z and AV(T,Q–
+  <span class="italic">g</span>)Z, respectively. The 5 − 7 meV difference between the canonical MP2 and LMP2-F12 is likely due to the remaining basis set incompleteness in the correlation energy of the former method. Notwithstanding, the agreement of the two different schemes, which have very little in common, is impressive. The F12-based explicit correlation techniques combined with local approximation schemes accelerate the convergence of the MP2 correlation energy. Its close agreement with the periodic canonical results suggests that PGTOs provide an adequate virtual basis set for correlated calculations in plane-waves.
+ </p>
+ <div id="t3" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE III.</span>
+  <div class="caption">
+   <p>Canonical MP2 adsorption energies for water on 2-layer LiH substrates with different number of atoms in the computational supercell. The calculations were performed with 
+    <span class="sc">vasp</span> and employ PGTOs for the virtual orbitals alongside the Γ-point approximation. The thermodynamic limit is obtained from a 1/
+    <span class="italic">N</span>
+    <span class="sup">2</span> extrapolation (
+    <span class="italic">N</span> denotes the number of atoms in the LiH substrate). The LMP2-F12 and LMP2-pF12 adsorption energies are 238 and 235 meV, respectively.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="6" rowspan="1">
+      <div class="inline-formula">
+       <div id="M19" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span class="mtext">ads</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span class="mtext">MP</span>
+           <span class="mn">2</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">AVDZ</th>
+     <th align="center" colspan="1" rowspan="1">AVTZ</th>
+     <th align="center" colspan="1" rowspan="1">AVQZ–
+      <span class="italic">g</span>
+     </th>
+     <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+     <th align="center" colspan="1" rowspan="1">AV(T,Q–
+      <span class="italic">g</span>)Z
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">32</td>
+     <td colspan="1" rowspan="1">162</td>
+     <td colspan="1" rowspan="1">193</td>
+     <td colspan="1" rowspan="1">198</td>
+     <td colspan="1" rowspan="1">207</td>
+     <td colspan="1" rowspan="1">201</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">181</td>
+     <td colspan="1" rowspan="1">211</td>
+     <td colspan="1" rowspan="1">218</td>
+     <td colspan="1" rowspan="1">224</td>
+     <td colspan="1" rowspan="1">222</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">72</td>
+     <td colspan="1" rowspan="1">185</td>
+     <td colspan="1" rowspan="1">213</td>
+     <td colspan="1" rowspan="1">220</td>
+     <td colspan="1" rowspan="1">226</td>
+     <td colspan="1" rowspan="1">224</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">128</td>
+     <td colspan="1" rowspan="1">188</td>
+     <td colspan="1" rowspan="1">218</td>
+     <td colspan="1" rowspan="1">228</td>
+     <td colspan="1" rowspan="1">231</td>
+     <td colspan="1" rowspan="1">235</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M20" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1">189</td>
+     <td colspan="1" rowspan="1">219</td>
+     <td colspan="1" rowspan="1">227</td>
+     <td colspan="1" rowspan="1">231</td>
+     <td colspan="1" rowspan="1">233</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div fig-type="figure" id="f2" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIG. 2.</span>
+  <div class="caption">
+   <p>Dependence of the adsorption energy 
+    <span class="italic">E</span>
+    <sub>ads</sub> of H
+    <sub>2</sub>O on LiH on the number of atoms of the substrate at different levels of theory and basis set extrapolations. The fitted lines correspond to 1/
+    <span class="italic">N</span>
+    <span class="sup">2</span> for the MP2 energies and 1/
+    <span class="italic">N</span>
+    <span class="sup">5/4</span> for the DMC energies. MP2 results employ AV(D,T)Z and AV(T,Q)Z basis set extrapolations.
+    <a rid="c80" ref-type="bibr" href="#c80">
+     <span class="sup">80</span>
+    </a> The LMP2-F12 result corresponds to the thermodynamic limit. On the 
+    <span class="italic">x</span>-axis, N
+    <sub>atoms</sub> is indicated instead of 1/N
+    <sub>atoms</sub>.
+   </p>
+  </div>
+  <div xlink:href="JCPSA6-000146-204108_1-g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">DMC adsorption energies
+  <a rid="c47" ref-type="bibr" href="#c47">
+   <span class="sup">47</span>
+  </a> against the number of atoms in the simulation supercell are provided in Table 
+  <a ref-type="table" rid="t4" href="#t4">IV</a>. The DMC adsorption energy converges more slowly with respect to the supercell size than the MP2 energy as shown in Fig. 
+  <a ref-type="fig" rid="f2" href="#f2">2</a>, due to the long ranged nature of the real-space exchange-correlation hole and reduced screening in lower dimensional materials. Drummond 
+  <span class="italic">et al.</span> proposed a 1/
+  <span class="italic">N</span>
+  <span class="sup">5/4</span> extrapolation for the two-dimensional systems.
+  <a rid="c78" ref-type="bibr" href="#c78">
+   <span class="sup">78</span>
+  </a> Despite its statistical uncertainty, the thermodynamic limit of the DMC adsorption energy suggests that the MP2 error for this system is small but not negligible and thus a higher-order quantum chemical treatment is desirable.
+ </p>
+ <div id="t4" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE IV.</span>
+  <div class="caption">
+   <p>DMC adsorption energies for water on 2-layer LiH substrates with different number of atoms in the computational supercell.
+    <a rid="c47" ref-type="bibr" href="#c47">
+     <span class="sup">47</span>
+    </a> The thermodynamic limit is obtained from a 1/
+    <span class="italic">N</span>
+    <span class="sup">5/4</span> extrapolation.
+    <a rid="c78" ref-type="bibr" href="#c78">
+     <span class="sup">78</span>
+    </a>
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="2" rowspan="1">
+      <div class="inline-formula">
+       <div id="M21" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">ads</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">DMC</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">CBS</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">36</td>
+     <td colspan="1" rowspan="1">167 (5)</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">209 (5)</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">100</td>
+     <td colspan="1" rowspan="1">224 (8)</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">144</td>
+     <td colspan="1" rowspan="1">239 (9)</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M22" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1">250 (7)</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Periodic coupled-cluster calculations were performed with PGTOs for the virtual orbitals. However, these Gaussian-type functions were placed only on the top-most layer of the LiH surface to reduce the computational cost. Additionally, only supercells with 32 and 64 atoms were used to model the LiH slab. AVDZ and AVTZ Gaussian basis sets were used for the construction of the PGTOs, and all results are extrapolated with respect to the basis set and the number of atoms in the supercell. MP2 results utilizing Gaussian orbitals for the full LiH surface and a finite-size extrapolation using four points verify that correlation effects are captured adequately via only top-most layer virtual states and a finite-size extrapolation using two points. The error of this simplification is about 1 meV in the MP2 energy. Consequently, it is reasonable to assume that coupled-cluster results obtained using the same simplification provide a similarly converged estimate. MP2 and coupled-cluster results are summarized in Table 
+  <a ref-type="table" rid="t5" href="#t5">V</a> and Fig. 
+  <a ref-type="fig" rid="f3" href="#f3">3</a>. The CCSD adsorption energies are close to those of MP2, differing only by 1 meV. However, the extrapolated DCSD results deviate quite significantly from the CCSD and MP2 results, yielding an adsorption energy of 243 meV in better agreement with the DMC values.
+ </p>
+ <div id="t5" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">TABLE V.</span>
+  <div class="caption">
+   <p>MP2 and coupled-cluster adsorption energies using LiH substrates with different number of atoms in the supercell. PGTOs were used for the virtual orbitals in the top-most layer of the LiH surface. The thermodynamic limit is obtained via a 1/
+    <span class="italic">N</span>
+    <span class="sup">2</span> extrapolation.
+   </p>
+  </div>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="4" rowspan="1">
+      <div class="inline-formula">
+       <div id="M23" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">ads</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">MP2</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">AVDZ</th>
+     <th align="center" colspan="1" rowspan="1">AVTZ</th>
+     <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">32</td>
+     <td colspan="1" rowspan="1">157</td>
+     <td colspan="1" rowspan="1">192</td>
+     <td colspan="1" rowspan="1">207</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">173</td>
+     <td colspan="1" rowspan="1">209</td>
+     <td colspan="1" rowspan="1">224</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M24" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1">180</td>
+     <td colspan="1" rowspan="1">216</td>
+     <td colspan="1" rowspan="1">230</td>
+    </tr>
+   </tbody>
+  </table>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="4" rowspan="1">
+      <div class="inline-formula">
+       <div id="M25" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">ads</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">CCSD</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">AVDZ</th>
+     <th align="center" colspan="1" rowspan="1">AVTZ</th>
+     <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">32</td>
+     <td colspan="1" rowspan="1">152</td>
+     <td colspan="1" rowspan="1">195</td>
+     <td colspan="1" rowspan="1">212</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">172</td>
+     <td colspan="1" rowspan="1">209</td>
+     <td colspan="1" rowspan="1">225</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M26" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1">180</td>
+     <td colspan="1" rowspan="1">215</td>
+     <td colspan="1" rowspan="1">229</td>
+    </tr>
+   </tbody>
+  </table>
+  <table frame="hsides" rules="groups" border="1">
+   <colgroup span="1">
+    <col align="left" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+    <col align="center" span="1"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th align="center" colspan="4" rowspan="1">
+      <div class="inline-formula">
+       <div id="M27" class="math">
+        <div class="msubsup">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">ads</span>
+          </div>
+         </div>
+         <div class="mrow">
+          <div class="mstyle">
+           <span mathvariant="normal" class="mtext">DCSD</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> (meV)
+     </th>
+    </tr>
+    <tr>
+     <th colspan="1" rowspan="1">Atoms</th>
+     <th align="center" colspan="1" rowspan="1">AVDZ</th>
+     <th align="center" colspan="1" rowspan="1">AVTZ</th>
+     <th align="center" colspan="1" rowspan="1">AV(D,T)Z</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">32</td>
+     <td colspan="1" rowspan="1">162</td>
+     <td colspan="1" rowspan="1">206</td>
+     <td colspan="1" rowspan="1">225</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">64</td>
+     <td colspan="1" rowspan="1">183</td>
+     <td colspan="1" rowspan="1">222</td>
+     <td colspan="1" rowspan="1">238</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">
+      <div class="inline-formula">
+       <div id="M28" class="math">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </td>
+     <td colspan="1" rowspan="1">192</td>
+     <td colspan="1" rowspan="1">229</td>
+     <td colspan="1" rowspan="1">243</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div fig-type="figure" id="f3" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIG. 3.</span>
+  <div class="caption">
+   <p>Adsorption energy 
+    <span class="italic">E</span>
+    <sub>ads</sub> of H
+    <sub>2</sub>O on LiH for different supercell sizes and levels of theory. Coupled-cluster and MP2 calculations were done using PGTOs only on the top-most layer of the LiH substrate. The fitted lines correspond to 1/
+    <span class="italic">N</span>
+    <span class="sup">2</span> for the coupled-cluster and MP2 energies and 1/
+    <span class="italic">N</span>
+    <span class="sup">5/4</span> for the DMC energies. The coupled-cluster and MP2 results employ AV(D,T)Z basis set extrapolation.
+    <a rid="c80" ref-type="bibr" href="#c80">
+     <span class="sup">80</span>
+    </a> On the 
+    <span class="italic">x</span>-axis, N
+    <sub>atoms</sub> is indicated instead of 1/N
+    <sub>atoms</sub>.
+   </p>
+  </div>
+  <div xlink:href="JCPSA6-000146-204108_1-g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Finally, a 
+  <span class="italic">δ</span>CCSD(T) correction scheme was applied to both the canonical and the local MP2 results. In the former case, the correction 
+  <span class="italic">δ</span>CCSD(T) was defined as
+  <div id="d4" class="disp-formula">
+   <div id="M29" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">δ</span>
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">CCSD(T)</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+(LiH)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">MP2</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">+</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+Li</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">CCSD(T)</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">−</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+Li</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">8</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">MP2</span>
+      </div>
+     </div>
+    </div>
+    <span class="mtext"> </span>
+    <span class="mo">,</span>
+   </div>
+   <span class="label">(4)</span>
+  </div>where canonical CCSD(T) and MP2 calculations were performed using an H
+  <sub>2</sub>O + Li
+  <sub>8</sub>H
+  <sub>8</sub> 2-layer supercell (with an identical orientation of the water molecule as for the larger supercells) and an AVDZ basis set in a plane-wave representation. 
+  <div class="inline-formula">
+   <div id="M30" class="math">
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+(LiH)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">MP2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> is the thermodynamic limit of the MP2 adsorption energy using the AVD(T,Q–
+  <span class="italic">g</span>)Z basis set extrapolation. This yields an adsorption energy of 254 meV.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="italic">δ</span>CCSD(T) corrections to the LMP2-F12 results were computed using finite clusters. In this case, the canonical MP2 and CCSD(T) adsorption energy calculations were done on an H
+  <sub>2</sub>O + Li
+  <sub>9</sub>H
+  <sub>9</sub> 2-layer finite cluster using the AV(D,T)Z basis sets. The water molecule geometry was taken from the periodic supercells. The correction 
+  <span class="italic">δ</span>CCSD(T) for the periodic system was defined as
+  <div id="d5" class="disp-formula">
+   <div id="M31" class="math">
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">δ</span>
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">CCSD(T)</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+(LiH)</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">∞</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">LMP2-F12</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">+</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+Li</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">9</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">9</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">CCSD(T)</span>
+      </div>
+     </div>
+    </div>
+    <span class="mo">−</span>
+    <div class="msubsup">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">O+Li</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">9</span>
+       </div>
+      </div>
+      <div class="msub">
+       <div class="mrow">
+        <div class="mstyle">
+         <span mathvariant="normal" class="mtext">H</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mn">9</span>
+       </div>
+      </div>
+     </div>
+     <div class="mrow">
+      <div class="mstyle">
+       <span mathvariant="normal" class="mtext">MP2</span>
+      </div>
+     </div>
+    </div>
+    <span class="mtext"> </span>
+    <span class="mo">,</span>
+   </div>
+   <span class="label">(5)</span>
+  </div>yielding an adsorption energy of 256 meV. Incidentally we note that one cannot construct a periodic Li
+  <sub>9</sub>H
+  <sub>9</sub> supercell and therefore a Li
+  <sub>8</sub>H
+  <sub>8</sub> slab was used for the plane-wave based 
+  <span class="italic">δ</span>CCSD(T). Furthermore, the finite-size error of the correction was estimated as the difference between local LCCSD(T0)—LCCD[S]-R
+  <span class="sup">−6</span> calculations
+  <a rid="c81" ref-type="bibr" href="#c81">
+   <span class="sup">81–83</span>
+  </a> on H
+  <sub>2</sub>O + Li
+  <sub>9</sub>H
+  <sub>9</sub> and H
+  <sub>2</sub>O + Li
+  <sub>25</sub>H
+  <sub>25</sub> clusters. This difference turned out to be of the order of 0.3 meV. However, we note that a 
+  <span class="italic">δ</span>CCSD correction, defined in an analogous way as 
+  <span class="italic">δ</span>CCSD(T), provides an adsorption energy of 219 meV, which deviates somewhat from the periodic CCSD result. In contrast, a periodic 
+  <span class="italic">δ</span>CCSD correction, defined in an analogous way as 
+  <span class="italic">δ</span>CCSD(T), yields an adsorption energy of 227 meV, very close to the canonical CCSD result. Thus the finite-cluster 
+  <span class="italic">δ</span> approach might still contain a certain error.
+ </p>
+</sec>

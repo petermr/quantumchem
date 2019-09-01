@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="intro" id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To understand and control the physical chemistry of materials in an ample variety of environments that may be encountered in basic and applied scientific research, information on the kinetics of the involved elementary processes and their role in global mechanisms is needed: of particular interest are the rates, and often in a wide range of conditions—specifically of temperature. Theoretical and computational studies are of increasing utility, especially in the cases where experimental results are difficult to obtain, or the measurements are difficult to interpret. Examples span all of chemistry: from the long list that is continuously updated, we refer here to some selected cases from: combustion chemistry (Atkinson, 
+  <a rid="B11" ref-type="bibr" href="#B11">1986</a>); condensed-phase (Limbach et al., 
+  <a rid="B61" ref-type="bibr" href="#B61">2006</a>), atmospheric and astrochemical reactions (Smith, 
+  <a rid="B81" ref-type="bibr" href="#B81">2008</a>; Sims, 
+  <a rid="B80" ref-type="bibr" href="#B80">2013</a>); processes involved in preservation and aging of food and drugs (Darrington and Jiao, 
+  <a rid="B29" ref-type="bibr" href="#B29">2004</a>; Peleg et al., 
+  <a rid="B69" ref-type="bibr" href="#B69">2012</a>) as well as in basic geochemical (e.g., Giordano and Russell, 
+  <a rid="B39" ref-type="bibr" href="#B39">2018</a>) and biochemical environments (e.g., Klinman and Kohen, 
+  <a rid="B50" ref-type="bibr" href="#B50">2013</a>; Warshel and Bora, 
+  <a rid="B96" ref-type="bibr" href="#B96">2016</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A variety of techniques has been applied with remarkable success in several scenarios to investigate the mechanisms to both calculate and interpret the kinetics of reactive processes at a microscopic level (Sikorski et al., 
+  <a rid="B78" ref-type="bibr" href="#B78">2004</a>; Pu et al., 
+  <a rid="B72" ref-type="bibr" href="#B72">2006</a>; Wang et al., 
+  <a rid="B95" ref-type="bibr" href="#B95">2012</a>; Hassanali et al., 
+  <a rid="B42" ref-type="bibr" href="#B42">2014</a>; Coutinho et al., 
+  <a rid="B26" ref-type="bibr" href="#B26">2015a</a>; Santin et al., 
+  <a rid="B76" ref-type="bibr" href="#B76">2016</a>; Roy et al., 
+  <a rid="B74" ref-type="bibr" href="#B74">2017</a>). From the early Arrhenius (
+  <a rid="B10" ref-type="bibr" href="#B10">1889</a>) and Eyring (
+  <a rid="B35" ref-type="bibr" href="#B35">1935</a>) formulations, demands emerge for interpretative theoretical tools to study the kinetics of chemical reactions and to phenomenological account of reaction rate data as generated from exact quantum benchmarks or from approximate semi-classical and classical trajectory approaches.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The seminal phenomenological description of the reaction rate constants, date of birth of theoretical chemical kinetics as a science, can be traced back to 1889 with the empirical formulation of the Arrhenius formula (Arrhenius, 
+  <a rid="B10" ref-type="bibr" href="#B10">1889</a>; Laidler, 
+  <a rid="B56" ref-type="bibr" href="#B56">1987</a>).
+ </p>
+ <div id="E1" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(1)</span>
+  <div id="M1" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">e</span>
+       </div>
+       <div class="mrow">
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mo">-</span>
+          <div class="msub">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span class="mi">a</span>
+           </div>
+          </div>
+         </div>
+         <div class="mrow">
+          <span class="mi">R</span>
+          <span class="mi">T</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <span class="mo">,</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">R</span> is the gas constant and 
+  <span class="italic">T</span> is the absolute temperature. The pre-factor 
+  <span class="italic">A</span> (often found to be temperature independent) has sometimes been given the meaning and the name of a “frequency factor.” The quantity 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">a</span>
+  </sub> is termed the “energy of activation” of the reaction; according to the Arrhenius interpretation, it represents the energy that the molecule in the initial state of the process must acquire before it can take part in the reaction, whether it be a physical or a chemical process. In the Arrhenius plane prompted by Equation (1) the logarithm of a reaction rate constant, ln 
+  <span class="italic">k</span>(
+  <span class="italic">T</span>) is plotted against reciprocal temperature, 
+  <div class="inline-formula">
+   <div id="M2" class="math">
+    <div class="mfrac">
+     <div class="mrow">
+      <span class="mn">1</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">T</span>
+     </div>
+    </div>
+   </div>
+  </div>: for systems that obey the Arrhenius law, Equation (1), a linear behavior is observed.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Formulations from first principles of theoretical reaction rates only became realistic after the advent of quantum and statistical mechanics. The Eyring formulation (~1935) proposes a consistent and predictive theory for the kinetic reaction rate constant: the celebrated Transition-State Theory (TST) (Eyring, 
+  <a rid="B35" ref-type="bibr" href="#B35">1935</a>; Glasstone et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">1941</a>) provided the basis for the understanding of many phenomena and triggered most of the subsequent proposals for the understanding of physicochemical rate processes. However, as traditionally implemented, TST is unable to cope with systems with strong deviation from Arrhenius behavior (Masgrau et al., 
+  <a rid="B64" ref-type="bibr" href="#B64">2003</a>). The chemical reactions for which quantum tunneling effects play an important role are those where Arrhenius plots show a concave curvature (Limbach et al., 
+  <a rid="B61" ref-type="bibr" href="#B61">2006</a>; Silva et al., 
+  <a rid="B79" ref-type="bibr" href="#B79">2013</a>; Sanches-Neto et al., 
+  <a rid="B75" ref-type="bibr" href="#B75">2017</a>): this is the most important case of 
+  <span class="italic">sub</span>-Arrhenius kinetics for elementary reactions, but in complex processes it may show up, e.g., when concurrent reactions contribute to the mechanism (Hulett, 
+  <a rid="B44" ref-type="bibr" href="#B44">1964</a>; Perlmutter-Hayman, 
+  <a rid="B70" ref-type="bibr" href="#B70">1976</a>; Vyazovkin, 
+  <a rid="B93" ref-type="bibr" href="#B93">2016</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Eyring himself amplified the scope of his TST beyond elementary reactions proposing a formulation for including the description of viscosity and diffusion of fluids in physicochemical rate processes (Glasstone et al., 
+  <a rid="B40" ref-type="bibr" href="#B40">1941</a>). However, an ample set of old and more recent data in wide ranges of temperature has been showing again and again a strong convex curvature in Arrhenius plot for both viscosity and diffusion in fluids (Angell, 
+  <a rid="B2" ref-type="bibr" href="#B2">1995</a>; Coutinho et al., 
+  <a rid="B27" ref-type="bibr" href="#B27">2015b</a>; Giordano and Russell, 
+  <a rid="B39" ref-type="bibr" href="#B39">2018</a>). There are examples of 
+  <span class="italic">super</span>-Arrhenius kinetics, rare for elementary processes (Truhlar and Kohen, 
+  <a rid="B88" ref-type="bibr" href="#B88">2001</a>), but that in complex processes are common, in particular when consecutive reactions contribute to the mechanism (Hulett, 
+  <a rid="B44" ref-type="bibr" href="#B44">1964</a>; Perlmutter-Hayman, 
+  <a rid="B70" ref-type="bibr" href="#B70">1976</a>; Vyazovkin, 
+  <a rid="B93" ref-type="bibr" href="#B93">2016</a>): these are characteristic cases of 
+  <span class="italic">super</span>-Arrhenius kinetics for which the traditional Eyring's transition-state formulation fails. However, the TST connection between the potential energy surface profile with the phenomenological apparent activation energy through Tolman Theorem (Tolman, 
+  <a rid="B87" ref-type="bibr" href="#B87">1920</a>), serves as a guide toward an interpretation of deviation from Arrhenius behavior.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In previous work (Aquilanti et al., 
+  <a rid="B8" ref-type="bibr" href="#B8">2017b</a>, 
+  <a rid="B6" ref-type="bibr" href="#B6">2018</a>) evidence emerged for introducing the phenomenological 
+  <span class="italic">Transitivity function</span> γ(
+  <span class="italic">T</span>) which regulates transit in physicochemical transformations and can be put into a relationship with traditional and recent reaction rate constant formulas available in the literature. With respect to other popular phenomenological approaches, ours arguably offers flexibility for the description of the experimental data over a wide range of temperature alternative to other formulas, that were applied to various sets of problems, ranging from particle diffusion and viscosity in supercooled liquids and glasses (Angell, 
+  <a rid="B4" ref-type="bibr" href="#B4">2002</a>; Stillinger and Debenedetti, 
+  <a rid="B82" ref-type="bibr" href="#B82">2013</a>) to food and drug preservation and aging processes (Peleg et al., 
+  <a rid="B69" ref-type="bibr" href="#B69">2012</a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The still popular Kooij formula (Kooij, 
+  <a rid="B52" ref-type="bibr" href="#B52">1893</a>) involving an arbitrary 
+  <span class="italic">T</span>
+  <span class="sup">
+   <span class="italic">n</span>
+  </span> parameter multiplying the pre-factor 
+  <span class="italic">A</span> has no justification and is often unable to reproduce observations. Kooij formulation has to be discouraged and is physically unrealistic. It should be abandoned because: (i) at high temperature, the Arrhenius Activation energy is not recovered; (ii) at intermediate temperatures, the non-Arrhenius description is illusory valid only in extremely narrow ranges and is mathematically arbitrary; (iii) at low and ultra-low temperatures, there is consensus that non-Arrhenius behavior is pronounced, and the Kooij formula tends to Arrhenius law in clear disagreement with transitivity concept. Also, the Arrhenius-Break Temperature (ABT) formulation (Kumamoto et al., 
+  <a rid="B55" ref-type="bibr" href="#B55">1971</a>; Kubo, 
+  <a rid="B54" ref-type="bibr" href="#B54">1985</a>) is often one commonly used: it involves two additional parameters beyond Arrhenius and may turn out misleading from an interpretative viewpoint—when possible, it should be avoided in compacting data for modeling.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The suitability of the transitivity function is being checked against a variety of phenomenological examples with respect to its power to account for deviation from Arrhenius behavior. Here, we will show details on the treatment for amplifying the insight in various directions (section Transitivity Defined). In the subsequent section, specifically regarding the 
+  <span class="italic">super</span>-Arrhenius case, we establish the connections with the Vogel-Fulcher-Tammann treatments (VFT) (see Vogel, 
+  <a rid="B92" ref-type="bibr" href="#B92">1921</a>; Fulcher, 
+  <a rid="B38" ref-type="bibr" href="#B38">1925</a>; Tammann and Hesse, 
+  <a rid="B85" ref-type="bibr" href="#B85">1926</a>) via the transitivity function. We also generalize the 
+  <span class="italic">sub</span>-Arrhenius case discussing in a uniform way the trend toward Wigner' limit (Wigner, 
+  <a rid="B97" ref-type="bibr" href="#B97">1948</a>), yielding Nakamura-Takayanagi-Sato (NTS) formula (Nakamura et al., 
+  <a rid="B67" ref-type="bibr" href="#B67">1989</a>) and Aquilanti-Sanches-Coutinho-Carvalho (ASCC) (Coutinho et al., 
+  <a rid="B28" ref-type="bibr" href="#B28">2018b</a>) at low temperature. In section Transition-State Theory Extended to Moderate Tunneling (
+  <span class="italic">d</span>-TST), the 
+  <span class="italic">sub</span>-Arrhenius case appropriate for extending the Transition-State Theory of Eyring (the 
+  <span class="italic">d</span>-TST formalism) is accounted for, as introduced and applied recently (Claudino et al., 
+  <a rid="B20" ref-type="bibr" href="#B20">2016</a>; Carvalho-Silva et al., 
+  <a rid="B15" ref-type="bibr" href="#B15">2017</a>; Sanches-Neto et al., 
+  <a rid="B75" ref-type="bibr" href="#B75">2017</a>). A special attention will be devoted in section Viscosity and Diffusion From the Transitivity Function to a derivation of the temperature dependence of viscosity of fluids from the transitivity function γ according for the 
+  <span class="italic">super</span>-Arrhenius behavior and establishing the connection with the diffusion coefficient through the Stokes-Einstein equation. The final section is devoted to additional and concluding remarks.
+ </p>
+</sec>

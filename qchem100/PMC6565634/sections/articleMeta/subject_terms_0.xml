@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6565634</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">10727</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1038/s41467-019-10727-7</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Article</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Secure quantum remote state preparation of squeezed microwave states</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pogorzalek</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">stefan.pogorzalek@wmi.badw.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Fedorov</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K. G.</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">kirill.fedorov@wmi.badw.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-3262-2045</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Xu</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-0896-9452</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Parra-Rodriguez</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <a ref-type="aff" rid="Aff3" href="#Aff3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Sanz</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <a ref-type="aff" rid="Aff3" href="#Aff3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Fischer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">M.</span>
+   </name>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+   <a ref-type="aff" rid="Aff4" href="#Aff4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Xie</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+   <a ref-type="aff" rid="Aff4" href="#Aff4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-1151-4512</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Inomata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">K.</span>
+   </name>
+   <a ref-type="aff" rid="Aff5" href="#Aff5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+   <a ref-type="aff" rid="Aff6" href="#Aff6" xmlns="http://www.w3.org/1999/xhtml">6</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0003-0424-630X</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Nakamura</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Y.</span>
+   </name>
+   <a ref-type="aff" rid="Aff5" href="#Aff5" xmlns="http://www.w3.org/1999/xhtml">5</a>
+   <a ref-type="aff" rid="Aff7" href="#Aff7" xmlns="http://www.w3.org/1999/xhtml">7</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <span contrib-id-type="orcid" class="contrib-id" xmlns="http://www.w3.org/1999/xhtml">http://orcid.org/0000-0002-8602-1181</span>
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Solano</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">E.</span>
+   </name>
+   <a ref-type="aff" rid="Aff3" href="#Aff3" xmlns="http://www.w3.org/1999/xhtml">3</a>
+   <a ref-type="aff" rid="Aff8" href="#Aff8" xmlns="http://www.w3.org/1999/xhtml">8</a>
+   <a ref-type="aff" rid="Aff9" href="#Aff9" xmlns="http://www.w3.org/1999/xhtml">9</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Marx</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">A.</span>
+   </name>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Deppe</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">F.</span>
+   </name>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+   <a ref-type="aff" rid="Aff4" href="#Aff4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gross</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">R.</span>
+   </name>
+   <div class="address" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="email">rudolf.gross@wmi.badw.de</span>
+   </div>
+   <a ref-type="aff" rid="Aff1" href="#Aff1" xmlns="http://www.w3.org/1999/xhtml">1</a>
+   <a ref-type="aff" rid="Aff2" href="#Aff2" xmlns="http://www.w3.org/1999/xhtml">2</a>
+   <a ref-type="aff" rid="Aff4" href="#Aff4" xmlns="http://www.w3.org/1999/xhtml">4</a>
+  </contrib>
+  <aff id="Aff1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000 0001 0940 3517</span>
+    <span institution-id-type="GRID" class="institution-id">grid.423977.c</span>
+    <span class="institution">Walther-Meißner-Institut, Bayerische Akademie der Wissenschaften, </span>
+   </div>85748 Garching, Germany 
+  </aff>
+  <aff id="Aff2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000000123222966</span>
+    <span institution-id-type="GRID" class="institution-id">grid.6936.a</span>
+    <span class="institution">Physik-Department, </span>
+    <span class="institution">Technische Universität München, </span>
+   </div>85748 Garching, Germany 
+  </aff>
+  <aff id="Aff3" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000000121671098</span>
+    <span institution-id-type="GRID" class="institution-id">grid.11480.3c</span>
+    <span class="institution">Department of Physical Chemistry, </span>
+    <span class="institution">University of the Basque Country UPV/EHU, </span>
+   </div>Apartado 644, E-48080 Bilbao, Spain 
+  </aff>
+  <aff id="Aff4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>Munich Center for Quantum Science and Technology (MCQST), Schellingstr. 4, 80799 Munich, Germany 
+  </aff>
+  <aff id="Aff5" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="GRID" class="institution-id">grid.474689.0</span>
+    <span class="institution">RIKEN Center for Emergent Matter Science (CEMS), </span>
+   </div>Wako, Saitama 351-0198 Japan 
+  </aff>
+  <aff id="Aff6" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">6</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000 0001 2230 7538</span>
+    <span institution-id-type="GRID" class="institution-id">grid.208504.b</span>
+    <span class="institution">National Institute of Advanced Industrial Science and Technology, </span>
+   </div>1-1-1 Umezono, Tsukuba, Ibaraki 305-8563 Japan 
+  </aff>
+  <aff id="Aff7" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">7</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000 0001 2151 536X</span>
+    <span institution-id-type="GRID" class="institution-id">grid.26999.3d</span>
+    <span class="institution">Research Center for Advanced Science and Technology (RCAST), </span>
+    <span class="institution">The University of Tokyo, </span>
+   </div>Meguro-ku, Tokyo 153-8904 Japan 
+  </aff>
+  <aff id="Aff8" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">8</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000 0004 0467 2314</span>
+    <span institution-id-type="GRID" class="institution-id">grid.424810.b</span>
+    <span class="institution">IKERBASQUE, Basque Foundation for Science, </span>
+   </div>Maria Diaz de Haro 3, 48013 Bilbao, Spain 
+  </aff>
+  <aff id="Aff9" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">9</span>
+   <div class="institution-wrap" xmlns="http://www.w3.org/1999/xhtml">
+    <span institution-id-type="ISNI" class="institution-id">0000 0001 2323 5732</span>
+    <span institution-id-type="GRID" class="institution-id">grid.39436.3b</span>
+    <span class="institution">Department of Physics, </span>
+    <span class="institution">Shanghai University, </span>
+   </div>200444 Shanghai, China 
+  </aff>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">13</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">6</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <pub-date pub-type="pmc-release" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">13</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">6</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">10</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">2604</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">4</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">28</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© The Author(s) 2019</span>
+  <div license-type="OpenAccess" class="license">
+   <div class="license-p">
+    <span class="bold">Open Access</span> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit 
+    <span ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://creativecommons.org/licenses/by/4.0/</span>.
+   </div>
+  </div>
+ </div>
+ <div id="Abs1" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p id="Par1">Quantum communication protocols based on nonclassical correlations can be more efficient than known classical methods and offer intrinsic security over direct state transfer. In particular, remote state preparation aims at the creation of a desired and known quantum state at a remote location using classical communication and quantum entanglement. We present an experimental realization of deterministic continuous-variable remote state preparation in the microwave regime over a distance of 35 cm. By employing propagating two-mode squeezed microwave states and feedforward, we achieve the remote preparation of squeezed states with up to 1.6 dB of squeezing below the vacuum level. Finally, security of remote state preparation is investigated by using the concept of the one-time pad and measuring the von Neumann entropies. We find nearly identical values for the entropy of the remotely prepared state and the respective conditional entropy given the classically communicated information and, thus, demonstrate close-to-perfect security.</p>
+ </div>
+ <div id="Abs2" abstract-type="web-summary" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p id="Par2">Continuous-variable remote state preparation in the microwave domain would allow to leverage the superconducting technology for quantum networks applications. Here, the authors show how to deterministically prepare squeezed Gaussian states across 35 cm using previously shared entanglement.</p>
+ </div>
+ <div kwd-group-type="npg-subject" class="kwd-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="title">Subject terms</div>
+  <span class="kwd">Superconducting devices</span>
+  <span class="kwd">Quantum physics</span>
+  <span class="kwd">Quantum information</span>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="award-group">
+   <span class="funding-source">
+    <div class="institution-wrap">
+     <span institution-id-type="FundRef" class="institution-id">https://doi.org/10.13039/501100001659</span>
+     <span class="institution">Deutsche Forschungsgemeinschaft (German Research Foundation)</span>
+    </div>
+   </span>
+   <span class="award-id">EXC-2111-390814868</span>
+   <span class="award-id">FE 1564/1-1</span>
+   <div class="principal-award-recipient">
+    <name class="name" xmlns="">
+     <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Pogorzalek</span>
+     <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">S.</span>
+    </name>
+   </div>
+  </div>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="award-group">
+   <span class="funding-source">
+    <span class="institution">Elite Network of Bavaria through the program ExQM EU Flagship project QMiCS</span>
+   </span>
+  </div>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">issue-copyright-statement</span>
+   <span class="meta-value">© The Author(s) 2019</span>
+  </div>
+ </div>
+</article-meta>

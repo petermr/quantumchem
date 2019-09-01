@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Predicting biochemical redox potentials of carbonyl to hydroxycarbon reactions (category G2) with different approaches.</div>
+ <p>(A-C) Calibrating quantum chemical estimates through linear regression (2-parameters per reaction category) significantly improves prediction accuracy. Quantum chemical predictions were performed using the double-hybrid DFT functional B2PLYP, the DefBas-2 Orca basis set, COSMO implicit solvent, and D3 dispersion correction (
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s012" href="#pcbi.1006471.s012">S1 Text</a>). Points in red correspond to reactions which consistently appear as outliers across modeling approaches: the indolepyruvate reduction to indolelactate and succinate semialdehyde reduction to 4-hydroxybutanoate (D-E) Prediction accuracy of group contribution method (10 parameters for the G2 category) and molecular fingerprints (166 parameters calibrated with regularized Lasso regression). (F) Scatter plot of normalized prediction errors (z-scores) of G2 reactions for molecular fingerprints and quantum chemistry. The indolelactate dehydrogenase (EC 1.1.1.110) and the succinate semialdehyde reductase (EC 1.1.1.61) reactions have potentially erroneous experimental values.
+ </p>
+ <p>(TIF)</p>
+</div>

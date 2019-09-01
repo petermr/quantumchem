@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Our study is based on predicting biochemical standard redox potentials using a calibrated quantum chemistry strategy.</div>
+ <p>(A) The four different redox reaction categories considered here are reduction of a carboxylic acid to a carbonyl—G1, reduction of a carbonyl to a hydroxycarbon—G2, or an amine—G3, and reduction of a hydroxycarbon to a hydrocarbon—G4. (B) For each redox reaction of interest, such as reduction of pyruvate to lactate, we select the most abundant protonation state at acidic pH (pH = 0) for quantum chemical simulation. (C) We estimate the chemical redox potential as the difference between Boltzmann-averaged electronic energies of geometric conformers of products and substrates. (D) In order to convert chemical redox potentials to biochemical potentials at pH = 7, we use cheminformatic pKa estimates and the Alberty-Legendre Transform (Supplementary Information). (E) Finally, we use a set of 105 experimental values obtained from the NIST Thermodynamics of Enzyme-Catalyzed Reactions database (TECRDB) [
+  <a rid="pcbi.1006471.ref030" ref-type="bibr" href="#pcbi.1006471.ref030">30</a>] and a set of Gibbs formation energies compiled by Robert Alberty [
+  <a rid="pcbi.1006471.ref031" ref-type="bibr" href="#pcbi.1006471.ref031">31</a>] (Supplementary Information) to calibrate redox potentials using linear regression.
+ </p>
+</div>

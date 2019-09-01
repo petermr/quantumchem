@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The environmental impact of metals depends on their concentration and more importantly their speciation. A broad variety of methods can be applied to determine speciation, 
+  <span class="italic">e.g.</span> separation by ion exchange,
+  <span class="sup">
+   <a rid="cit1" ref-type="bibr" href="#cit1">1</a>
+  </span> solvent extraction methods,
+  <span class="sup">
+   <a rid="cit2" ref-type="bibr" href="#cit2">2</a>,
+   <a rid="cit3" ref-type="bibr" href="#cit3">3</a>
+  </span> as well as diffusive gradients in thin films.
+  <span class="sup">
+   <a rid="cit4" ref-type="bibr" href="#cit4">4</a>
+  </span> Enthalpic data (Δ
+  <sub>r</sub>
+  <span class="italic">S</span>, Δ
+  <sub>r</sub>
+  <span class="italic">H</span> and Δ
+  <sub>r</sub>
+  <span class="italic">C</span>
+  <sub>p</sub>) is often derived from either potentiometric
+  <span class="sup">
+   <a rid="cit5" ref-type="bibr" href="#cit5">5</a>
+  </span> or calorimetric
+  <span class="sup">
+   <a rid="cit6" ref-type="bibr" href="#cit6">6</a>
+  </span> titrations. However, it is far from trivial to derive a unique set of chemical species with correct stoichiometries and structure from such experiments. Most often a couple of sensible species sets are tested against the experimental results. Then the model yielding the smallest overall deviation between fitted and real values (
+  <span class="italic">χ</span>
+  <span class="sup">2</span> minimization) is considered to be the best. In contrast, techniques such as ESI-TOF provide direct stoichiometric information but no thermodynamic data.
+  <span class="sup">
+   <a rid="cit7" ref-type="bibr" href="#cit7">7</a>,
+   <a rid="cit8" ref-type="bibr" href="#cit8">8</a>
+  </span> Whereas both thermodynamic and structural parameters can be obtained from luminescence spectroscopy, a correlation of spectral shape and structure is usually not possible. Increased computational power makes quantum chemical calculations a helpful complementary method. Spectral features thus obtained can be correlated to structural information. This work intends to exploit current capabilities of state-of-the-art combinations of spectroscopy, quantum chemistry, and data processing.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Uranyl(
+  <span class="sc">vi</span>) hydrolysis is selected as an ideal system for a proof of concept. It is the elementary uranium aqueous ligand system and constitutes the basis for all more complex natural systems. The formation of oligomeric complexes makes uranyl(
+  <span class="sc">vi</span>) hydrolysis one of the most diverse systems in aqueous heavy metal chemistry. Although uranyl(
+  <span class="sc">vi</span>) speciation has been studied for decades a clear determination and complete understanding is still missing. The current general conception is represented by the updated thermochemical database (TDB) of the Nuclear Energy Agency (NEA).
+  <span class="sup">
+   <a rid="cit9" ref-type="bibr" href="#cit9">9</a>
+  </span> Recent studies prove there are still some open questions especially about polynuclear species.
+  <span class="sup">
+   <a rid="cit6" ref-type="bibr" href="#cit6">6</a>,
+   <a rid="cit10" ref-type="bibr" href="#cit10">10</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The major part of thermodynamic uranyl(
+  <span class="sc">vi</span>) data is based on potentiometric or calorimetric titrations.
+  <span class="sup">
+   <a rid="cit11" ref-type="bibr" href="#cit11">11</a>–
+   <a rid="cit13" ref-type="bibr" href="#cit13">13</a>
+  </span> For the acidic as well as for the alkaline pH range complementary spectroscopic methods like IR,
+  <span class="sup">
+   <a rid="cit14" ref-type="bibr" href="#cit14">14</a>
+  </span> EXAFS,
+  <span class="sup">
+   <a rid="cit15" ref-type="bibr" href="#cit15">15</a>,
+   <a rid="cit16" ref-type="bibr" href="#cit16">16</a>
+  </span> Raman
+  <span class="sup">
+   <a rid="cit17" ref-type="bibr" href="#cit17">17</a>
+  </span> and NMR
+  <span class="sup">
+   <a rid="cit18" ref-type="bibr" href="#cit18">18</a>
+  </span> are applicable. For all of them relatively high concentrations up to several millimolar are required. This limits the use of these methods because of low uranyl(
+  <span class="sc">vi</span>) solubility in the circumneutral pH range. Luminescence spectroscopic methods with their high sensitivity offer a solution for this problem. The detection limit depends on the experimental setup and quantum yield of the complexes and can reach the nanomolar level. Since luminescence spectra lack direct structural information their assignment to complexes is mainly based on comparison with a thermodynamic database.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Discrimination of several components in a single fluorescence signal is a challenging problem. In previous works, time as an additional dimension was used for uranyl(
+  <span class="sc">vi</span>) spectra deconvolution.
+  <span class="sup">
+   <a rid="cit19" ref-type="bibr" href="#cit19">19</a>–
+   <a rid="cit22" ref-type="bibr" href="#cit22">22</a>
+  </span> But due to the lack of unique analysis methods and different experimental setups results of deconvolution are often not consistent. Site selective excitation is another method to discriminate between luminescence spectra of individual species. It was successfully applied to Cm(
+  <span class="sc">iii</span>) and Eu(
+  <span class="sc">iii</span>) cryo spectroscopy.
+  <span class="sup">
+   <a rid="cit23" ref-type="bibr" href="#cit23">23</a>,
+   <a rid="cit24" ref-type="bibr" href="#cit24">24</a>
+  </span> However, inhomogeneous broadening leads to a smearing of excitation spectra at room temperature and interpretation becomes difficult.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this study an advanced combination of luminescence spectroscopic and theoretical methods is proposed and evaluated to get new insights into uranyl(
+  <span class="sc">vi</span>) hydrolysis. Time-resolved laser-induced fluorescence spectroscopy (TRLFS) and continuous wave (CW) spectroscopic data are recorded for a wide pH range. Parallel factor analysis (PARAFAC),
+  <span class="sup">
+   <a rid="cit25" ref-type="bibr" href="#cit25">25</a>,
+   <a rid="cit26" ref-type="bibr" href="#cit26">26</a>
+  </span> a generalization of two-dimensional principal component analysis (PCA) to higher orders, was used to extract detailed and consistent speciation information from spectroscopic data. Electronic absorption spectra were calculated using time-dependent density functional theory (TD-DFT). Comparison of theory and experiment provided spectra-to-complex correlation and also identification of the excitation origin in the UV region.
+ </p>
+</sec>

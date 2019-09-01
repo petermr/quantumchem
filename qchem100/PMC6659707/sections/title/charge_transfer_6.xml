@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec6" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Charge transfer stability model</div>
+ <p id="Par26" xmlns="http://www.w3.org/1999/xhtml">To understand the full chemistry dependence of electrolyte stability in terms of the solvent-anion charge transfer complex formation, we derive a simple stability model, similar to the one used in the field of charge transfer in molecular crystals
+  <span class="sup">
+   <a ref-type="bibr" rid="CR41" href="#CR41">41</a>
+  </span>. For a pair of molecules of anion 
+  <span class="italic">A</span>
+  <span class="sup">−</span> and solvent S, we can express the energy of the oxidized pair as:
+  <div id="Equ2" class="disp-formula">
+   <span class="label">2</span>
+   <div class="alternatives">
+    <span id="M41" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$E\left( {[AS]^0} \right) = \min \left\{ {\begin{array}{*{20}{l}} {E\left( {A^0S^0} \right)} \hfill \\ {E\left( {A^ - S^ + } \right)} \hfill \end{array}} \right.$$\end{document}</span>
+    <div id="M42" class="math">
+     <span class="mi">E</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <div class="mrow">
+          <span class="mo">[</span>
+          <div class="mrow">
+           <span class="mi">A</span>
+           <span class="mi">S</span>
+          </div>
+          <span class="mo">]</span>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mo"> min</span>
+     <div close="" open="{" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span class="mi">E</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">A</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+            </div>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">S</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span class="mi">E</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">A</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">-</span>
+             </div>
+            </div>
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">S</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">+</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_11317_Article_Equ2.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>Therefore, there is a trade-off between oxidizing the anion which is weaker or oxidizing the solvent and creating a dipole which lowers the electrostatic energy. This formula accounts for the trend presented in the previous section: when the anion is significantly weaker, the first expression is the minimum, i.e., the electrostatic gain is not sufficient for the solvent be oxidized. In cases where the anion IP is not significantly lower than the solvent IP, it will be more energetically favorable to form an electrostatic dipole by oxidizing the solvent. The threshold between the two cases is determined by the electrostatic energy 
+  <span class="italic">δ</span> of the dipole formed by oxidizing the solvent, as well as the individual IPs.
+ </p>
+ <p id="Par27" xmlns="http://www.w3.org/1999/xhtml">By considering the total energy of the system as a sum of the short-range quantum contribution (ionization) and a long-range electrostatic contribution (dipole energy), it is possible to derive from Eq. (
+  <a rid="Equ2" ref-type="" href="#Equ2">2</a>) an expression for the pair IP. Denoting the classical electrostatic energy 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">X</span>) for the molecular system 
+  <span class="italic">X</span> considered in isolation, and 
+  <span class="italic">E</span>
+  <span class="sup">bind</span>(
+  <span class="italic">XY</span>) = 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">XY</span>) − 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">X</span>) − 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">Y</span>), we have:
+  <div id="Equ3" class="disp-formula">
+   <span class="label">3</span>
+   <div class="alternatives">
+    <span id="M43" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{IP}}_{{\mathrm{model}}}\left( {[A^ - S^0]} \right) = \min \left\{ {\begin{array}{*{20}{l}} {{\mathrm{IP}}\left( {A^ - } \right) + E^{{\mathrm{bind}}}\left( {[A^0S^0]} \right) - E^{{\mathrm{bind}}}\left( {[A^ - S^0]} \right)} \hfill \\ {{\mathrm{IP}}\left( {S^0} \right) + E^{{\mathrm{bind}}}\left( {[A^ - S^ + ]} \right) - E^{{\mathrm{bind}}}\left( {[A^ - S^0]} \right)} \hfill \end{array}} \right.$$\end{document}</span>
+    <div id="M44" class="math">
+     <div class="msub">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">IP</span>
+      </div>
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">model</span>
+      </div>
+     </div>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">[</span>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">A</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">-</span>
+          </div>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">S</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">]</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mo"> min</span>
+     <div close="" open="{" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mtable">
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span mathvariant="normal" class="mi">IP</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">A</span>
+             </div>
+             <div class="mrow">
+              <span class="mo">-</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">bind</span>
+           </div>
+          </div>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">[</span>
+             <div class="mrow">
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">A</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+              </div>
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">S</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+              </div>
+             </div>
+             <span class="mo">]</span>
+            </div>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">bind</span>
+           </div>
+          </div>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">[</span>
+             <div class="mrow">
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">A</span>
+               </div>
+               <div class="mrow">
+                <span class="mo">-</span>
+               </div>
+              </div>
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">S</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+              </div>
+             </div>
+             <span class="mo">]</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mtr">
+         <div columnalign="left" class="mtd">
+          <span mathvariant="normal" class="mi">IP</span>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="msup">
+             <div class="mrow">
+              <span class="mi">S</span>
+             </div>
+             <div class="mrow">
+              <span class="mn">0</span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <span class="mo">+</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">bind</span>
+           </div>
+          </div>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">[</span>
+             <div class="mrow">
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">A</span>
+               </div>
+               <div class="mrow">
+                <span class="mo">-</span>
+               </div>
+              </div>
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">S</span>
+               </div>
+               <div class="mrow">
+                <span class="mo">+</span>
+               </div>
+              </div>
+             </div>
+             <span class="mo">]</span>
+            </div>
+           </div>
+          </div>
+          <span class="mo">-</span>
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">E</span>
+           </div>
+           <div class="mrow">
+            <span mathvariant="normal" class="mi">bind</span>
+           </div>
+          </div>
+          <div close=")" open="(" separators="" class="mfenced">
+           <div class="mrow">
+            <div class="mrow">
+             <span class="mo">[</span>
+             <div class="mrow">
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">A</span>
+               </div>
+               <div class="mrow">
+                <span class="mo">-</span>
+               </div>
+              </div>
+              <div class="msup">
+               <div class="mrow">
+                <span class="mi">S</span>
+               </div>
+               <div class="mrow">
+                <span class="mn">0</span>
+               </div>
+              </div>
+             </div>
+             <span class="mo">]</span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_11317_Article_Equ3.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>
+ </p>
+ <p id="Par28" xmlns="http://www.w3.org/1999/xhtml">The only approximation used to derive this expression is that the quantum (non-electrostatic) contribution to the total energy of a solvent-anion pair is short-ranged and is close to the sum of each component’s quantum energy contribution. At the same time, the long-range electrostatic energy can be treated classically in each case. This allows decoupling the electrostatic and the ionization contributions (see 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">Supplementary Information</a> for the detailed derivation). The IP as computed using Eq. (
+  <a rid="Equ3" ref-type="" href="#Equ3">3</a>) is called IP
+  <sub>model</sub> in the rest of this work. From this formula, we can identify the empirical value of 
+  <span class="italic">δ</span> from IP
+  <sub>fit</sub> in Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>) as the electrostatic dipole energy (
+  <span class="italic">E</span>
+  <sub>e</sub>([
+  <span class="italic">A</span>
+  <span class="sup">−</span>
+  <span class="italic">S</span>
+  <span class="sup">+</span>]) − 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">A</span>
+  <span class="sup">−</span>) − 
+  <span class="italic">E</span>
+  <sub>e</sub>(
+  <span class="italic">S</span>
+  <span class="sup">+</span>)). The fact that this value seems constant across the different chemistries is due to the fact that the electrostatic energy depends on the anion-solvent distance and their unit charges, and for all the systems reported here this distance is roughly the same considering averages across different configurations.
+ </p>
+ <p id="Par29" xmlns="http://www.w3.org/1999/xhtml">In order to examine the accuracy of this model, we use the same geometries for the isolated anion and solvent to compute their vertical IP (without changing the geometry). The electrostatic energies are computed for the isolated anion and solvent, for the initial and oxidized cases, as well as for the pair combinations, and from that we obtain the electrostatic contributions appearing in Eq. (
+  <a rid="Equ3" ref-type="" href="#Equ3">3</a>). Electrostatic energies are defined and computed as the sum of the core–core interactions, the core–electron interactions, and the Hartree energy for the classical electron–electron interaction (all of which are extracted from the DFT computations for the isolated species as well as pairs). We see good agreement between IP
+  <sub>ΔSCF</sub> and IP
+  <sub>model</sub> across most configurations. Thus, the description of the charge transfer effect using decoupling of the quantum and electrostatic energies of the isolated molecules and pairs seems to hold up across multiple chemistries and configurations. The most significant deviation of the model from the ΔSCF result occurs for configurations involving PC and strong anions, (
+  <div id="IEq20" class="inline-formula">
+   <div class="alternatives">
+    <span id="M45" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{BF}}_4^ -$$\end{document}</span>
+    <div id="M46" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">BF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">4</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq20.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, PC) and (
+  <div id="IEq21" class="inline-formula">
+   <div class="alternatives">
+    <span id="M47" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathrm{PF}}_6^ -$$\end{document}</span>
+    <div id="M48" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span mathvariant="normal" class="mi">PF</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">6</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">-</span>
+      </div>
+     </div>
+    </div>
+    <span xlink:href="41467_2019_11317_Article_IEq21.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>, PC). The only approximation in the model is the absence of coupling in quantum energy between the anion and solvent, therefore, these deviations are possibly due to anion-solvent coupling, given that these anions are compact and may approach the solvent closely enough. We note, however, that analysis of charge densities confirms that only one molecule is oxidized in all cases, meaning that charge transfer is complete. Table 
+  <a rid="Tab2" ref-type="table" href="#Tab2">2</a> summarizes the main findings of this work, showing the average IP
+  <sub>ΔSCF</sub>, the average IP
+  <sub>model</sub> as predicted from the simple charge transfer model (Eq. (
+  <a rid="Equ3" ref-type="" href="#Equ3">3</a>)), IP
+  <sub>fit</sub> (Eq. (
+  <a rid="Equ1" ref-type="" href="#Equ1">1</a>)), as well as the species that is oxidized. We see that these last two models predict quite well the full first-principles IP
+  <sub>ΔSCF</sub> of the anion-solvent pairs. This provides clear evidence that the anion-solvent weakening effect observed in our ΔSCF calculations originates from charge transfer and electrostatic coupling between the two species. We can also explain why the spread of the IP distribution is smaller for chemistries where the anion is oxidized than for chemistries where the solvent is oxidized. Indeed because the dipole interaction energy 
+  <span class="italic">δ</span> depends on the relative distance and orientation of the solvent around the anion, this energy - and therefore the IP of the pair - varies more between different configurations. Thus for two different chemistries where the average IP of the pair is roughly the same, the onset of the electrolyte degradation may happen at lower voltages if the solvent is the oxidized species, due to a wider spread of the IP values.
+  <div id="Tab2" class="table-wrap">
+   <span class="label">Table 2</span>
+   <div class="caption">
+    <p>Ionization potentials for 16 anion-solvent pairs computed with different approaches</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <tbody>
+     <tr>
+      <td colspan="2">
+       <span xlink:href="41467_2019_11317_Figb_HTML.gif" id="d29e1743" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </p>
+ <p id="Par30" xmlns="http://www.w3.org/1999/xhtml">Finally, we further demonstrate the validity of the charge transfer model for these systems by studying a case where all oxidations lead to dipole formation, and show that in such cases, the IP increases with distance until the dipole energy is too low to energetically favor oxidation of the solvent. At this point the anion is oxidized and the charge transfer effect disappears. Increasing the distance past this point does not change the total IP (which is expected since neither the initial nor the final state involves intermolecular electrostatic interaction to first order, unlike the dipole case). This is reported in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The leftmost point in the plot (shortest distance) corresponds to the configuration as taken from the MD snapshot, without increasing the intermolecular distance. Note the two regions, one where it is energetically favorable to oxidize the solvent (left part) and the right part where it is more favorable to oxidize the anion. The increase in IP in the left part fits the following formula:
+  <div id="Equ4" class="disp-formula">
+   <span class="label">4</span>
+   <div class="alternatives">
+    <span id="M49" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$IP\left( {[A^ - S^0]} \right) = IP\left( {S^0} \right) - \delta \approx IP\left( {S^0} \right) - \frac{\alpha }{r}$$\end{document}</span>
+    <div id="M50" class="math">
+     <span class="mi">I</span>
+     <span class="mi">P</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="mrow">
+        <span class="mo">[</span>
+        <div class="mrow">
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">A</span>
+          </div>
+          <div class="mrow">
+           <span class="mo">-</span>
+          </div>
+         </div>
+         <div class="msup">
+          <div class="mrow">
+           <span class="mi">S</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+        <span class="mo">]</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">=</span>
+     <span class="mi">I</span>
+     <span class="mi">P</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">S</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <span class="mi">δ</span>
+     <span class="mo">≈</span>
+     <span class="mi">I</span>
+     <span class="mi">P</span>
+     <div close=")" open="(" separators="" class="mfenced">
+      <div class="mrow">
+       <div class="msup">
+        <div class="mrow">
+         <span class="mi">S</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <span class="mo">-</span>
+     <div class="mfrac">
+      <div class="mrow">
+       <span class="mi">α</span>
+      </div>
+      <div class="mrow">
+       <span class="mi">r</span>
+      </div>
+     </div>
+    </div>
+    <div xlink:href="41467_2019_11317_Article_Equ4.gif" position="anchor" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   </div>
+  </div>where the second term represents the dipole energy of point charges. The coefficient 
+  <span class="italic">α</span> is found to be 15 eV Å, which is close to 14.4 eV Å, corresponding to the case of two point unit charges in vacuum. The distance 
+  <span class="italic">r</span> considered here is taken to be the distance between the nitrogen atom of the TFSI
+  <span class="sup">−</span> anion and the sulfur atom of the DMSO solvent. We verify that the IP in the right part of the plot is constant with respect to distance. Thus even a simple point charge electrostatic model accurately captures the charge transfer transition and can therefore be used to estimate the contribution of intermolecular electrostatics to the balance between anion or solvent oxidation. We also note that the overall IP is a non-decreasing function of the separation distance, which suggests that larger molecular species may be more favorable for stability, keeping IP values constant. This consideration points to the possibility of optimizing the electrolyte’s stability not only by varying the IP of the anion and the solvent but also by tuning the anion’s first solvation shell radius.
+  <div id="Fig3" class="fig">
+   <span class="label">Fig. 3</span>
+   <div class="caption">
+    <p>IP
+     <sub>ΔSCF</sub> for a (TFSI
+     <span class="sup">−</span>, DMSO) configuration, with respect to the increasing distance (leftmost point in the plot is the initial configuration). The red marks correspond to situations where the solvent is oxidized, the blue marks to situations where the anion is oxidized. The distance plotted here is the distance between the nitrogen atom of the TFSI
+     <span class="sup">−</span> anion and the sulfur atom of the DMSO solvent. The IP for the right part of the plot (where the anion is oxidized) is constant with distance. As shown by the solid red line, the dependence of the left part of the plot is accurately captured by a fit with the formula 
+     <div id="IEq24" class="inline-formula">
+      <div class="alternatives">
+       <span id="M51" class="tex-math">\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$IP = {\mathrm{constant}} - \frac{\alpha }{r}$$\end{document}</span>
+       <div id="M52" class="math">
+        <span class="mi">I</span>
+        <span class="mi">P</span>
+        <span class="mo">=</span>
+        <span mathvariant="normal" class="mi">constant</span>
+        <span class="mo">-</span>
+        <div class="mfrac">
+         <div class="mrow">
+          <span class="mi">α</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">r</span>
+         </div>
+        </div>
+       </div>
+       <span xlink:href="41467_2019_11317_Article_IEq24.gif" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </div>
+     </div>
+    </p>
+   </div>
+   <div xlink:href="41467_2019_11317_Fig3_HTML" id="d29e1881" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

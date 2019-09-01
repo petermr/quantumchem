@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results and Discussion</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">To exemplify the performance of the proposed approach, we carried out quantum chemical calculations of small molecules on classical computers and to evaluate the overlap between the full-CI or CAS-CI wave function of the ground state and the multiconfigurational wave function constructed by utilizing diradical characters. The calculations were carried out using the GAMESS-US program package.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref70" href="#ref70">70</a>
+  </span>
+ </p>
+ <sec id="sec3.1" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.1</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Potential Energy Curve of a H
+   <sub>2</sub> Molecule
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">First, we focused on the simplest system; potential energy curve of a H
+   <sub>2</sub> molecule. The overlaps between the full-CI/cc-pVDZ wave function and RHF wave function, a wave function consisting of one CSF, and the two-configurational wave function prepared using diradical characters calculated from the UHF wave function were computed by changing the H···H distance from 0.74 (equilibrium geometry) to 3.0 Å. The results are summarized in 
+   <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+    <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+   </a>. As expected, the RHF wave function has large overlap with the full-CI root around the equilibrium geometry, but the overlap decreases with increasing H···H distance. CSF has an opposite trend: Large overlap is obtained for the long H···H distance, but overlap becomes small as it approaches the equilibrium geometry. By contrast, the two-configurational wave function gives sufficiently large overlap with the full-CI wave function at any H···H distances. Note that BS-UHF converges to RHF root for the atom–atom distance 1.2 Å and shorter. The calculated diradical character 
+   <span class="italic">y</span>
+   <sub>0</sub> is plotted as an inset of 
+   <a rid="fig2" ref-type="fig" href="#fig2">Figure 
+    <a rid="fig2" ref-type="fig" href="#fig2">2</a>
+   </a>. When SCF converged to unrestricted root, a nonzero 
+   <span class="italic">y</span>
+   <sub>0</sub> value is obtained, and the 
+   <span class="italic">y</span>
+   <sub>0</sub> value increases as the H···H distance becomes longer, and approaches to unity for the bond dissociation limit. We also checked overlaps of the two-configurational wave functions prepared using diradical characters obtained from the DFT framework with different HF exchange contributions using BLYP, B3LYP, BHandHLYP, and LC-BLYP functionals
+   <span class="sup">
+    <a ref-type="bibr" rid="ref71" href="#ref71">71</a>−
+    <a ref-type="bibr" rid="ref73" href="#ref73">73</a>
+   </span> (see 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span> in the Supporting Information). The pure exchange–correlation functional (BLYP) tends to converge the spin-restricted root for the longer H···H distance, and the inclusion of HF exchange stabilizes the broken-symmetry state. The overlaps between the full-CI and two-configurational wave functions are similar among BS-UHF and DFT-based calculations. In the following calculations, we utilized diradical characters calculated from the BS-UHF wave functions.
+  </p>
+  <div id="fig2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <p>Square of overlap between the full-CI/cc-pVDZ wave function of the ground state and initial guess wave functions in H
+     <sub>2</sub>. Inset: diradical character 
+     <span class="italic">y</span>
+     <sub>0</sub> obtained from the PUHF calculations.
+    </p>
+   </div>
+   <div xlink:href="oc-2018-00788n_0002" id="gr2" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="sec3.2" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.2</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">C–C Bond Cleavage in Ethane, Ethylene, And Acetylene</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Next, we adopted the present method to multiple bond cleavages in ethane (C
+   <sub>2</sub>H
+   <sub>6</sub>), ethylene (C
+   <sub>2</sub>H
+   <sub>4</sub>), and acetylene (C
+   <sub>2</sub>H
+   <sub>2</sub>) with different C···C distances. The full-CI calculations were performed using the STO-3G basis set. Note that we could not perform the full-CI/STO-3G calculations of ethane because of the limitation of our computational resources, and therefore, we excluded 1s orbital of carbon atoms from the CI expansion and adopted full-valence CAS-CI for ethane. The square overlap between the initial guess and reference wave functions is plotted in 
+   <a rid="fig3" ref-type="fig" href="#fig3">Figure 
+    <a rid="fig3" ref-type="fig" href="#fig3">3</a>
+   </a>, and the calculated diradical characters are summarized in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S2</span> in the Supporting Information. Note that in acetylene the two π bonds are degenerate, and therefore 
+   <span class="italic">y</span>
+   <sub>0</sub> = 
+   <span class="italic">y</span>
+   <sub>1</sub>. In this case, an arbitrary mixing of LUNO and LUNO + 1 (and also HONO and HONO – 1) does not change their eigenvalues (occupation numbers). We discriminated the two π bonds by utilizing spatial symmetry in the generation of natural orbitals.
+  </p>
+  <div id="fig3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Square of overlap between the reference and initial guess wave functions in ethane, ethylene, and acetylene molecules.</p>
+   </div>
+   <div xlink:href="oc-2018-00788n_0003" id="gr3" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The square overlap between the reference and RHF wave functions strongly depends on the bond order. This is because 
+   <span class="italic">O</span>(2
+   <span class="sup">
+    <span class="italic">k</span>
+   </span>) of Slater determinants are required to describe the multiradical configuration of 
+   <span class="italic">k</span>-ple bond dissociations. In acetylene, the square overlap is less than 0.1 at the dissociation limit. The square overlap between the reference wave function and one CSF is less dependent on the bond order, because CSF consists of 
+   <span class="italic">O</span>(2
+   <span class="sup">
+    <span class="italic">k</span>
+   </span>) of Slater determinants. However, the overlap between CSF and the reference wave function approaches zero around the equilibrium geometry. By contrast, the multiconfigurational wave function has larger overlap with reference compared with RHF and CSF, and the square overlap is always larger than 0.882. The numerical calculations of triple bond cleavage in acetylene illustrated that the proposed approach can generate good initial guess wave functions for the molecules containing as many as six unpaired electrons. It should be emphasized that the proposed approach does not need prior knowledge of electronic structures, and open shell characters are automatically determined from the occupation number of natural orbitals. This feature is very important when the number of diradical pairs that should be considered to obtain sufficiently large overlap with the full-CI root is unknown.
+  </p>
+ </sec>
+ <sec id="sec3.3" class="sec">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3.3</span>
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Singlet Ground State of Phenylene-1,4-dinitrene</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Usefulness of multiconfigurational wave functions is not limited on intermediate bond regions of potential energy surfaces. Here, we focus on the electronic ground state of phenylene-1,4-dinitrene as an important chemical entity. Phenylene-1,4-dinitrene is a heteroatomic analog of non-Kekulé molecules, and it has two major resonance structures: quinonoidal diradical and phenyl dinitrene as illustrated in 
+   <a rid="sch1" ref-type="scheme" href="#sch1">Scheme 
+    <a rid="sch1" ref-type="scheme" href="#sch1">1</a>
+   </a>. The electronic ground state of phenylene-1,4-dinitrene is a spin-singlet diradical, in which two unpaired electrons occupy in-plane 2p orbitals of nitrogen atoms.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref74" href="#ref74">74</a>−
+    <a ref-type="bibr" rid="ref78" href="#ref78">78</a>
+   </span> However, because of the existence of the dinitrene resonance structure, the π system is expected to have non-negligible diradical characters.
+  </p>
+  <div id="sch1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Scheme 1</span>
+   <div class="caption">
+    <div class="title">Two Major Resonance Structures of Phenylene-1,4-dinitrene</div>
+   </div>
+   <div xlink:href="oc-2018-00788n_0005" id="gr4" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Natural orbitals and the corresponding occupation numbers calculated from BS-UHF/cc-pVDZ level at the UB3LYP/6-31G* optimized geometry are given in 
+   <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+    <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+   </a>. The BS-UHF calculation revealed that the in-plane 2p orbitals of the nitrogen atoms (HONO and LUNO) are in almost pure diradical states with 
+   <span class="italic">y</span>
+   <sub>0</sub> = 0.9892. The HONO – 1 and LUNO + 1 pair has an intermediate diradical character with 
+   <span class="italic">y</span>
+   <sub>1</sub> = 0.1584. The other valence π orbitals also have small diradical characters (
+   <span class="italic">y</span>
+   <sub>2</sub> = 0.0109, 
+   <span class="italic">y</span>
+   <sub>3</sub> = 0.0071, and 
+   <span class="italic">y</span>
+   <sub>4</sub> = 0.0009). Note that 
+   <span class="italic">y</span>
+   <sub>5</sub> is less than 0.0001, and therefore diradical characters of valence σ/σ* bonded orbitals are negligibly small.
+  </p>
+  <div id="fig4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>BS-UHF/cc-pVDZ natural orbitals and the occupation numbers of phenylene-1,4-dinitrene.</p>
+   </div>
+   <div xlink:href="oc-2018-00788n_0004" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Needless to say, the full-CI calculation of phenylene-1,4-dinitrene is impossible, and hence, we used the CAS-CI(10e,10o)/cc-pVDZ wave function as a reference. As illustrated in 
+   <a rid="fig4" ref-type="fig" href="#fig4">Figure 
+    <a rid="fig4" ref-type="fig" href="#fig4">4</a>
+   </a>, 10 natural orbitals illustrated in are used as active orbitals. The number of Slater determinants of 
+   <span class="italic">S
+    <sub>
+     <span class="italic">z</span>
+    </sub>
+   </span> = 0 within the active space is 63 504, and the number of spin-singlet CSFs is 19 404. Upon consideration of five diradical characters (
+   <span class="italic">y</span>
+   <sub>0</sub>–
+   <span class="italic">y</span>
+   <sub>4</sub>) the approximated wave function consisting of 264 determinants can be constructed. However, the contributions from octaradical and decaradical configurations are less than 1%, and therefore, we omitted these configurations and generated the wave function containing 72 important Slater determinants. The square overlap between the multiconfigurational wave function and CAS-CI wave function is calculated to be 0.9286, and we conclude that multiconfigurational wave functions can be safely used as initial guess wave functions for QPEA. Dependence of the square overlap against the number of diradical characters used for the multiconfigurational wave function preparation is summarized in 
+   <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acscentsci.8b00788/suppl_file/oc8b00788_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Table S1</span> in the Supporting Information. If the RHF configuration is used as the initial guess wave function, the square overlap with the CAS-CI wave function is calculated to be 0.3894. The square overlap increases to be 0.8754 if one diradical character 
+   <span class="italic">y</span>
+   <sub>0</sub> is used, and the inclusion of higher-radical characters systematically improves the overlap. Note that spin projection is important if more than one diradical character is used for the wave function preparation. The enhancement of the overlap by using higher-diradical characters such as 
+   <span class="italic">y</span>
+   <sub>3</sub> and 
+   <span class="italic">y</span>
+   <sub>4</sub> is not significant, and therefore, they can be neglected in the case when a sufficient number of qubit resources are not available.
+  </p>
+ </sec>
+</sec>

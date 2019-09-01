@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec011" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Predicting redox potentials with molecular fingerprints and group contribution method</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">We used the RDKit software tool (
+  <span ext-link-type="uri" xlink:href="http://www.rdkit.org/" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">http://www.rdkit.org</span>), to obtain binary molecular fingerprints of each compound of interest. Because of the relatively small size of our training sets and in order to minimize overfitting, we used MACCS Key 166 fingerprints instead of other popular Morgan circular fingerprints [
+  <a rid="pcbi.1006471.ref092" ref-type="bibr" href="#pcbi.1006471.ref092">92</a>]. We concatenated each redox half-reaction substrate/product fingerprint pair into a single reaction fingerprint [
+  <a rid="pcbi.1006471.ref038" ref-type="bibr" href="#pcbi.1006471.ref038">38</a>] and used these as input training data for regularized linear regression. We then performed an independent regularized regression for each of the four different redox reaction categories.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To obtain group contribution estimates of redox potentials, we use the group matrix and the group energies of Noor 
+  <span class="italic">et al</span>. [
+  <a rid="pcbi.1006471.ref036" ref-type="bibr" href="#pcbi.1006471.ref036">36</a>] used in eQuilibrator [
+  <a rid="pcbi.1006471.ref037" ref-type="bibr" href="#pcbi.1006471.ref037">37</a>], an online thermodynamics calculator. We note that eQuilibrator uses the component contribution method (CCM) which combines group contribution energies with experimental reaction or formation Gibbs energies (“reactant contributions”) whenever these are available. That is, for reactions with available experimental data, eQuilibrator will return the experimental energies. Thus, for fair comparison against quantum chemistry we used the GCM code underneath eQuilibrator to obtain the group contribution estimates for all reactions in our test set. Just like the quantum chemical predictions, the GCM estimates were standardized to the E
+  <span class="sup">'m</span>(pH = 7, I = 0.25) state.
+ </p>
+</sec>

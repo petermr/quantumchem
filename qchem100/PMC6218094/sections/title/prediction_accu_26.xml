@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="caption" xmlns="http://www.w3.org/1999/xhtml">
+ <div class="title">Prediction accuracy of the quantum chemistry, molecular fingerprints, and group contribution method modeling approaches.</div>
+ <p>The number of available experimental values for each reaction category is indicated in parentheses. MAE = Mean Absolute Error; R
+  <span class="sup">2</span> = coefficient of determination. The quantum model chemistry uses the double hybrid functional B2PLYP with the DefBas-5 default Orca basis set (see 
+  <a ref-type="supplementary-material" rid="pcbi.1006471.s003" href="#pcbi.1006471.s003">S3 Table</a> for detailed basis set description), the COSMO implicit solvent, and the D3 dispersion correction. While the Pearson r can range from -1 to 1, R
+  <span class="sup">2</span> can take on any negative value. A prediction method with the same accuracy as the mean predictor (a constant model that always predicts the mean value of the experimental data) has a value of R
+  <span class="sup">2</span> = 0; negative values of R
+  <span class="sup">2</span> indicate prediction accuracies that are worse than the mean predictor.
+ </p>
+ <p>(DOCX)</p>
+</div>

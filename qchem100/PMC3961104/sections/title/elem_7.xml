@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Setting dihedral angles</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The 
+  <span class="monospace">Peptide</span> class allows for dihedral angles to be manually specified through setter and getter type functions that set or read backbone and side chain torsion angles. Examples of torsion angles that can be set in FragBuilder are shown in 
+  <a ref-type="fig" rid="fig-2" href="#fig-2">Fig. 2</a>.
+ </p>
+ <div id="fig-2" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.7717/peerj.277/fig-2</span>
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <div class="title">Torsion angles that can be treated by FragBuilder.</div>
+   <p>Examples of dihedral angles that can be set via FragBuilder. In (A) the backbone 
+    <span class="italic">ω</span>, 
+    <span class="italic">ϕ</span> and 
+    <span class="italic">ψ</span> torsion angles are shown for the 
+    <span class="italic">i</span>’th alanine residue of a peptide strand. In (B), the 
+    <span class="italic">χ</span>
+    <sub>1</sub> torsion angle is shown for a valine side chain.
+   </p>
+  </div>
+  <div xlink:href="peerj-02-277-g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For example, making a glycine–leucine–glycine peptide and setting the backbone angles to 
+  <span class="italic">ϕ</span> = −60.0° and 
+  <span class="italic">ψ</span> = −30.0°, and side chain angles to 
+  <span class="italic">χ</span>
+  <sub>1</sub> = 180° and 
+  <span class="italic">χ</span>
+  <sub>2</sub> = 60° of the leucine (residue 2) can be done through the following code:
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">pep = Peptide("GLG") pep.set_bb_angles(2, [-60.0, -30.0]) pep.set_chi_angles(2, [180.0, 60.0])</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">This way it is possible to precisely specify dihedral angles manually. This code can be used, for instance, to set up a scan of torsion angles or making peptides with geometries extracted from experimental structures. An example of a scan is shown in 
+  <a ref-type="fig" rid="fig-3" href="#fig-3">Fig. 3</a>. This scan was created in the following manner:
+ </p>
+ <span class="preformat" xmlns="http://www.w3.org/1999/xhtml">pep = Peptide("GLG") for i in range(10): pep.set_bb_angles(2, [-120.0, 100.0+20.0*i]) pep.write_xyz("pep_%i.xyz" % (i))</span>
+ <p xmlns="http://www.w3.org/1999/xhtml">The method 
+  <span class="monospace">Peptide.write_xyz()</span> writes the structure to a file in XYZ format and is described later in this section.
+ </p>
+ <div id="fig-3" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.7717/peerj.277/fig-3</span>
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <div class="title">Example of four different conformers of a glycine–alanine–glycine tri-peptide.</div>
+   <p>Generated from a scan over the 
+    <span class="italic">ψ</span> backbone torsion angle of the alanine residue.
+   </p>
+  </div>
+  <div xlink:href="peerj-02-277-g003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

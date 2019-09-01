@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="jcc25364-sec-0015" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Useful Options</div>
+ <sec id="jcc25364-sec-0016" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Basis sets</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">RAQET has a basis set database for the easy preparation of input files. This contains various basis sets optimized for both NR and 2c relativistic calculations. For example, the NR basis sets contain STO‐types such as STO‐3G and STO‐6G, Pople‐types such as 6‐31G and 6‐311G(d), Dunning‐types such as cc‐pVDZ and aug‐cc‐pVTZ, and Sapporo‐types such as Sapporo‐DZP and Sapporo‐TZP+d. The relativistic basis sets contain cc‐pVDZ‐DK, Sapporo‐DKH3‐DZP, SARC‐DKH, DKH3‐Gen‐TK/NOSec‐V‐TZP, and ANO‐RCC. Furthermore, users can manually add new basis sets to the database. The details of the available basis sets are summarized in the 
+   <a rid="jcc25364-supitem-0001" ref-type="supplementary-material" href="#jcc25364-supitem-0001">Supporting Information</a>.
+  </p>
+ </sec>
+ <sec id="jcc25364-sec-0017" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Initial guess</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Users can choose five types of initial guesses for the SCF calculations. Table 
+   <a rid="jcc25364-tbl-0006" ref-type="table" href="#jcc25364-tbl-0006">6</a> summarizes the techniques implemented in RAQET. The keyword Hcore produces the MO coefficients and density matrix from the diagonalization of the one‐electron Hamiltonian matrix. This guess can represent the relativistic effects of the initial core orbitals at the SF and SD levels without any two‐electron interactions. The keyword Huckel, which is the default option in RAQET, provides the MO coefficients and density matrix from the extended Hückel calculation.
+   <a rid="jcc25364-bib-0160" ref-type="ref" href="#jcc25364-bib-0160">160</a> RAQET adopts the energy parameters reoptimized from the atomic calculations using the SF‐IODKH/NR Hamiltonian and minimal basis sets optimized by the DKH3 Hamiltonian
+   <a rid="jcc25364-bib-0161" ref-type="ref" href="#jcc25364-bib-0161">161</a> at the ROHF level. This gives a good initial description of the chemical bonds at the SF level. The keyword Atomic provides the density matrix constructed from atomic density matrices. This represents the relativistic effects for core orbitals together with intra‐atomic two‐electron interactions at the SF and SD levels. The keyword Small provides the MO coefficients by projecting those generated from a SCF calculation using smaller basis sets. This guess gives good initial core and valence orbitals for any system at the SF and SD levels. Finally, the keyword MORead uses the MO coefficients written in an input file.
+  </p>
+  <div id="jcc25364-tbl-0006" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 6</span>
+   <div class="caption">
+    <p>Capabilities of initial guess techniques</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <col align="left" span="1"/>
+    <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+    <thead valign="bottom">
+     <tr style="border-bottom:solid 1px #000000">
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+     </tr>
+    </thead>
+    <tbody valign="top">
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Hcore</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Use MO information obtained from diagonalization of one‐electron Hamiltonian matrix</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Huckel</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Use MO information obtained with extended Hückel method (default)</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Atomic</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Use the sum of atomic densities</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">Small</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Use MO information by projecting MO obtained from SCF calculations with smaller basis sets</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">MORead</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Read MO information from input file</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </sec>
+ <sec id="jcc25364-sec-0018" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">SCF convergence</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">RAQET contains several convergence techniques for SCF calculations, which are summarized in Table 
+   <a rid="jcc25364-tbl-0007" ref-type="table" href="#jcc25364-tbl-0007">7</a>. All of these techniques are available for KRHF, KROHF, KUHF, and GHF using complex numbers as well as RHF, ROHF, and UHF using real numbers. Now, users can use all of the convergence techniques for all SCF calculations at the NR, SF, and SD levels. The keyword sDamp utilizes the static damping technique, which gives a mixture of the density matrices from previous and present iterations with a weighting factor. This technique gives stable results, though the rate of convergence is slow. The zero value of the weighting factor gives a result which corresponds to the fixed‐point algorithm, which in turn corresponds to the SCF calculation without any acceleration techniques. The keywords C1‐DIIS and C2‐DIIS are Pulay's techniques of direct inversion in the iterative subspace (DIIS),
+   <a rid="jcc25364-bib-0162" ref-type="ref" href="#jcc25364-bib-0162">162</a>, 
+   <a rid="jcc25364-bib-0163" ref-type="ref" href="#jcc25364-bib-0163">163</a> which are extrapolation schemes using a linear combination of the density or Fock matrices from previous SCF iterations. The extrapolation coefficients are optimized by minimizing the DIIS error vector. These techniques show rapid convergence when the initial guess is good. The keyword EDIIS uses an interpolation scheme based on the DIIS technique. The interpolation coefficients are optimized by minimizing the HF energy functional, which contains a linear combination of the density matrices.
+   <a rid="jcc25364-bib-0164" ref-type="ref" href="#jcc25364-bib-0164">164</a> This technique is effective when the initial guess is poor, although the convergence rate is slower close to the minimum than DIIS. A combination of C2‐DIIS and EDIIS (DIIS + EDIIS) 
+   <a rid="jcc25364-bib-0165" ref-type="ref" href="#jcc25364-bib-0165">165</a>, 
+   <a rid="jcc25364-bib-0166" ref-type="ref" href="#jcc25364-bib-0166">166</a>, 
+   <a rid="jcc25364-bib-0167" ref-type="ref" href="#jcc25364-bib-0167">167</a> is also available, and is the default option in RAQET. This technique has the advantages of both DIIS and EDIIS and provides rapid convergence even if the initial guess is poor. The keyword SOSCF uses second‐order SCF orbital optimization. This technique utilizes an exponential parameterization to obtain the orbital rotation angles, and requires the calculation of first and approximated second derivatives of the energy with respect to the orbital coordinates. This provides rapid convergence when the initial guess is good as well as DIIS.
+   <a rid="jcc25364-bib-0168" ref-type="ref" href="#jcc25364-bib-0168">168</a>, 
+   <a rid="jcc25364-bib-0169" ref-type="ref" href="#jcc25364-bib-0169">169</a> The keyword FON adopts the fractional occupation number based on the Fermi distribution function.
+   <a rid="jcc25364-bib-0170" ref-type="ref" href="#jcc25364-bib-0170">170</a> This technique can be useful for calculations involving degenerate systems such as metal clusters.
+  </p>
+  <div id="jcc25364-tbl-0007" xml:lang="en" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 7</span>
+   <div class="caption">
+    <p>Capabilities of SCF convergence techniques</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <col align="left" span="1"/>
+    <col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/>
+    <thead valign="bottom">
+     <tr style="border-bottom:solid 1px #000000">
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Keyword</th>
+      <th align="left" valign="bottom" rowspan="1" colspan="1">Note</th>
+     </tr>
+    </thead>
+    <tbody valign="top">
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">sDamp</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Static damping technique for density matrix</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">C1‐DIIS</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from previous Fock matrix</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">C2‐DIIS</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">DIIS extrapolation of Fock matrix using error vector from SCF condition</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">EDIIS</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Energy DIIS interpolation of Fock matrix</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">SOSCF</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Second‐order SCF orbital optimization</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">FON</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Use fractional occupation number based on the Fermi distribution function</td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" rowspan="1" colspan="1">EDIIS+DIIS</td>
+      <td align="left" valign="top" rowspan="1" colspan="1">Hybrid of EDIIS and C2‐DIIS (default)</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </sec>
+</sec>

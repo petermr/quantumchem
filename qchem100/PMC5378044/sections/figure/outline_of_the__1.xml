@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="f2" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+ <span class="label">Figure 2</span>
+ <div class="caption">
+  <div class="title">Outline of the quantum-assisted optimization method.</div>
+  <p>(a) The key steps for quantum assisted optimization, which starts from classical solutions. For each new set of parameters 
+   <span class="italic">λ</span>'s, determined by a classical optimization algorithm, the expectation value 〈
+   <span class="italic">H</span>〉 is calculated. The potential energy surface is then obtained by quantum phase estimation. (b) Quantum measurements are performed for the individual terms in 
+   <span class="italic">H</span>, and the sum is obtained classically. (c) The same procedure is applied for each nuclear configuration 
+   <span class="bold">R</span> to probe the energy surface.
+  </p>
+ </div>
+ <div xlink:href="srep03589-f2" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</div>

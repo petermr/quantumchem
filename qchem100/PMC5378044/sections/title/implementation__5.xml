@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Implementation of UCC and simulation of time evolution with trapped-ions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our protocol for implementing the UCC ansatz requires the simulation of the small-time 
+  <span class="italic">t/n</span> evolution of non-local product of Pauli matrices of the form: 
+  <div id="m34" class="inline-formula">
+   <span id="d32e1015" xlink:href="srep03589-m34.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, where 
+  <div id="m35" class="inline-formula">
+   <span id="d32e1018" xlink:href="srep03589-m35.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for 
+  <span class="italic">i</span>, 
+  <span class="italic">j</span>, 
+  <span class="italic">k</span> ∈ {
+  <span class="italic">x</span>, 
+  <span class="italic">y</span>, 
+  <span class="italic">z</span>}. Note that for any 
+  <span class="italic">N</span>-spin interaction, the 
+  <div id="m36" class="inline-formula">
+   <span id="d32e1043" xlink:href="srep03589-m36.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> terms are equivalent to 
+  <div id="m37" class="inline-formula">
+   <span id="d32e1047" xlink:href="srep03589-m37.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> through local spin rotations, which are simple to implement on trapped ions. Such a non-local operator can be implemented using the multi-particle Mølmer-Sørensen gate
+  <a ref-type="bibr" rid="b23" href="#b23">23</a>
+  <a ref-type="bibr" rid="b39" href="#b39">39</a>: 
+  <span class="italic">U</span>
+  <sub>MS</sub>(
+  <span class="italic">θ</span>, 
+  <span class="italic">φ</span>) ≡ exp [−
+  <span class="italic">iθ</span>(cos 
+  <span class="italic">φS
+   <sub>x</sub>
+  </span> + sin 
+  <span class="italic">φS
+   <sub>y</sub>
+  </span>)
+  <span class="sup">2</span>/4], where 
+  <div id="m38" class="inline-formula">
+   <span id="d32e1080" xlink:href="srep03589-m38.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> is a collective spin operator. Explicitly,
+  <div id="m3" class="disp-formula">
+   <span id="d32e1083" xlink:href="srep03589-m3.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Here 
+  <span class="italic">R
+   <sub>N</sub>
+  </span>(
+  <span class="italic">ϕ</span>) is defined as follows: for any 
+  <div id="m39" class="inline-formula">
+   <span id="d32e1095" xlink:href="srep03589-m39.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="m40" class="inline-formula">
+   <span id="d32e1098" xlink:href="srep03589-m40.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for 
+  <span class="italic">N</span> = 4
+  <span class="italic">m</span> ± 1, and (ii) 
+  <div id="m41" class="inline-formula">
+   <span id="d32e1108" xlink:href="srep03589-m41.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for 
+  <span class="italic">N</span> = 4
+  <span class="italic">m</span>, and (iii) 
+  <div id="m42" class="inline-formula">
+   <span id="d32e1117" xlink:href="srep03589-m42.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> for 
+  <span class="italic">N</span> = 4
+  <span class="italic">m</span> − 2.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is remarkable that the standard quantum-circuit treatment (e.g. see Ref.
+  <a ref-type="bibr" rid="b47" href="#b47">47</a>) for implementing each 
+  <div id="m43" class="inline-formula">
+   <span id="d32e1130" xlink:href="srep03589-m43.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> involves as many as 2
+  <span class="italic">N</span> two-qubit gates for simulating 
+  <span class="italic">N</span> fermionic modes; in our protocol one needs only two Mølmer-Sørensen gates, which are straightforwardly implementable with current trapped-ion technology. Furthermore, the local rotation 
+  <span class="italic">R
+   <sub>N</sub>
+  </span>(
+  <span class="italic">ϕ</span>) can also include motional degrees of freedom of the ions for simulating arbitrary fermionic Hamiltonians coupled linearly to bosonic operators 
+  <span class="italic">a
+   <sub>k</sub>
+  </span> and 
+  <div id="m44" class="inline-formula">
+   <span id="d32e1153" xlink:href="srep03589-m44.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>.
+ </p>
+</sec>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2-nanomaterials-09-00872" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">2. Transmission Electron Microscopy (TEM)</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">There are different imaging methods that can be used in a transmission electron microscope and yield different information. The most popular ones are 
+  <div list-type="simple" class="list">
+   <div class="list-item">
+    <span class="label">(a)</span>
+    <p>bright-field (BF) TEM with a small objective aperture,</p>
+   </div>
+   <div class="list-item">
+    <span class="label">(b)</span>
+    <p>dark-field TEM with a small objective aperture,</p>
+   </div>
+   <div class="list-item">
+    <span class="label">(c)</span>
+    <p>high-resolution TEM (HREM) with a larger objective aperture,</p>
+   </div>
+   <div class="list-item">
+    <span class="label">(d)</span>
+    <p>annular dark-field scanning TEM (ADF-STEM) without any objective aperture but with a larger convergence angle of a small probe that is raster scanned over the specimen. The intensity is here registered not with a two-dimensional image detector but a ring-shaped sensitive charge integration device that produces a map of the intensity at every point. This technique necessities a scan unit but has been widely applied in the last decade because many other signals (bright-field signal, electron energy loss, characteristic X-rays produced, light emitted) can be read out simultaneously.</p>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Electron holography, based on either the use of an electron biprism, related in-line interference methods or diffractive imaging, i.e., the reconstruction of images from sets of diffraction patterns, is extremely demanding in terms of stability of both instrument and laboratory infrastructure and is not covered here as it is deemed too specialised.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Methods (a) and (b) are mainly determined by a superposition of diffraction contrast (providing information on grain orientation) and mass-thickness contrast (providing information on scattering power that can be used to distinguish two materials if their thicknesses are similar). Methods (c) and (d) can produce lattice images with crystallographic information. Method (d) is often called ‘Z-contrast’ [
+  <a rid="B2-nanomaterials-09-00872" ref-type="bibr" href="#B2-nanomaterials-09-00872">2</a>] when the collection angle is several times larger than the beam convergence angle (high-angle ADF-STEM) as then the angular dependence of the signal approaches that of Rutherford scattering of individual atoms, summed incoherently over all atoms within the same atomic column along the beam direction [
+  <a rid="B3-nanomaterials-09-00872" ref-type="bibr" href="#B3-nanomaterials-09-00872">3</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">If the specimen is of constant thickness and only two elements can interdiffuse, i.e., in binary systems such as SiGe, or in a quasi-binary systems such as ternary InGaAs or AlGaN (where one sub-lattice is fixed), then changes of the scattering intensity can be directly interpreted in terms of chemistry. For quaternary systems, where several atomic species can interdiffuse, e.g., Al
+  <sub>x</sub>Ga
+  <sub>y</sub>In
+  <sub>1-x-y</sub>As, Ga
+  <sub>x</sub>In
+  <sub>1-x-</sub>As
+  <sub>y</sub>Sb
+  <sub>1-y</sub>, direct spectroscopic studies are generally needed unless atomic sub-lattices can be imaged independently [
+  <a rid="B4-nanomaterials-09-00872" ref-type="bibr" href="#B4-nanomaterials-09-00872">4</a>]. The same applies to co-segregation of several chemical elements, such as of Tb and O in Tb-doped AlN [
+  <a rid="B5-nanomaterials-09-00872" ref-type="bibr" href="#B5-nanomaterials-09-00872">5</a>].
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For uncapped quantum dots and free standing quantum nanowires whose projected thickness along the electron beam direction changes strongly with lateral position (as opposed to structures like QWs that are embedded in a matrix), this implies that image intensities depend strongly on both chemistry and local thickness so images are generally more difficult to interpret than maps from spectroscopic data.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The most common spectroscopic methods used in (S)TEM comprise 
+  <div list-type="simple" class="list">
+   <div class="list-item">
+    <span class="label">(e)</span>
+    <p>energy-dispersive X-ray spectroscopy (EDXS) and related X-ray mapping,</p>
+   </div>
+   <div class="list-item">
+    <span class="label">(f)</span>
+    <p>electron energy-loss spectroscopy (EELS) of ionisation core losses and their mapping in energy-filtered TEM (EFTEM),</p>
+   </div>
+   <div class="list-item">
+    <span class="label">(g)</span>
+    <p>plasmon spectroscopy and mapping thereof.</p>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Low-energy spectroscopy of intra- and interband transitions is in principle now possible by monochromated (S)TEM but the demands on spectrometer stability and alignment are extreme for low bandgap semiconductors so monochromatic studies have not really been able so far to study individual lattice defects or interfaces in semiconductors [
+  <a rid="B6-nanomaterials-09-00872" ref-type="bibr" href="#B6-nanomaterials-09-00872">6</a>,
+  <a rid="B7-nanomaterials-09-00872" ref-type="bibr" href="#B7-nanomaterials-09-00872">7</a>]. Effects from Cerenkov radiation [
+  <a rid="B8-nanomaterials-09-00872" ref-type="bibr" href="#B8-nanomaterials-09-00872">8</a>] due to large refractive indices and the extended tails of the zero loss peak [
+  <a rid="B9-nanomaterials-09-00872" ref-type="bibr" href="#B9-nanomaterials-09-00872">9</a>] make a reliable interpretation of bandgaps generally very difficult.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The (S)TEM data shown in the following sections were recorded with different instruments:
+  <div list-type="bullet" class="list">
+   <div class="list-item">
+    <p>Figures 2 and 9 in a JEOL Z3100 R005 cold field emission gun (cFEG)-STEM operated at 300 kV (beam convergence: 28 mrad; ADF inner collection angle: 62 mrad), equipped with a JED 2300 Si:Li X-ray detector with ultrathin polymer window (X-ray collection solid angle: 0.17srad);</p>
+   </div>
+   <div class="list-item">
+    <p>Figure 3 in a JEOL 2010F FEG-TEM operated at 197 kV and equipped with a Gatan Imaging Filter 2000 (beam convergence: 5 mrad; EFTEM collection angle: 37 mrad);</p>
+   </div>
+   <div class="list-item">
+    <p>Figure 5 in a JEOL 4000EX operated at 400 kV (beam convergence: ~1 mrad; BF collection angle: ~3 mrad);</p>
+   </div>
+   <div class="list-item">
+    <p>Figure 7 in a VG HB 501 cFEG-STEM at 100 kV (beam convergence: 7.6 mrad; high angle ADF inner collection angle: ~200 mrad).</p>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">All convergence and collection angles given above are semi-angles measured with respect to the optic axis. In ADF, the inner collection angle chosen is always a trade-off between signal intensity (higher at smaller angles) and ease of contrast interpretation (Z-contrast dominates at very high angles [
+  <a rid="B10-nanomaterials-09-00872" ref-type="bibr" href="#B10-nanomaterials-09-00872">10</a>], strain from microstructural defects at intermediate angles [
+  <a rid="B11-nanomaterials-09-00872" ref-type="bibr" href="#B11-nanomaterials-09-00872">11</a>] and diffraction contrast as well as surface strains from static atomic displacements at somewhat lower angles [
+  <a rid="B12-nanomaterials-09-00872" ref-type="bibr" href="#B12-nanomaterials-09-00872">12</a>]). The precise angles chosen in experiments depend on the camera lengths available on the corresponding instruments that can yield a reasonable signal-to-noise ratio. This is a key problem if the electron beam intensity is significantly reduced by narrow monochromator slits [
+  <a rid="B6-nanomaterials-09-00872" ref-type="bibr" href="#B6-nanomaterials-09-00872">6</a>,
+  <a rid="B7-nanomaterials-09-00872" ref-type="bibr" href="#B7-nanomaterials-09-00872">7</a>].
+ </p>
+</sec>

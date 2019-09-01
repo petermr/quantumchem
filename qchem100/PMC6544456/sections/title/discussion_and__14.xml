@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="discussion|conclusions" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DISCUSSION AND CONCLUSIONS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The search for a universal FF capable of describing any chemical system within the same formalism has been a long-standing open problem in chemistry, physics, biology, and materials science. The advent of machine learning methods raises the expectation that such an achievement is possible when a simple and chemically sound form of FF is replaced with a complex and flexible one. The gain in accuracy achieved by this complex formalism, however, comes at the price of requiring a large number of first-principles reference points to train the model. These are often more than 10
+  <span class="sup">4</span> even for one- or two-element materials (
+  <a rid="R6" ref-type="bibr" href="#R6">
+   <span class="italic">6</span>
+  </a>, 
+  <a rid="R13" ref-type="bibr" href="#R13">
+   <span class="italic">13</span>
+  </a>, 
+  <a rid="R35" ref-type="bibr" href="#R35">
+   <span class="italic">35</span>
+  </a>, 
+  <a rid="R36" ref-type="bibr" href="#R36">
+   <span class="italic">36</span>
+  </a>), posing severe limitations to the widespread use of machine learning FFs to systems containing several chemical species.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this arena, SNAP has shown a very fast convergence with respect to the size of the training set even for complex systems containing several chemical species and multiple-minima PESs. The accuracy obtained with SNAP is always comparable with that of more demanding models such as neural networks or kernel regression (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>, 
+  <a rid="R12" ref-type="bibr" href="#R12">
+   <span class="italic">12</span>
+  </a>). Moreover, we here showed that a protocol almost free of human intervention, based on a random sampling of configurations near the ground state followed by a selective molecular dynamics refinement, is able to deliver an FF robust enough to withstand molecular dynamics runs. This is an essential property that must be ensured if any real application of the model is intended.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Given the great capabilities of SNAP, further development of this potential should be pursued. In this study, we derived molecule-dedicated potentials without seeking for the exportability or the universality of the SNAP parameters. A thorough study of SNAP’s capabilities in describing different chemical environments with the same set of parameters and bond breaking represents the natural extension of this work. The current definition of SNAP only includes local interactions. This has been proved to be ideal to represent covalent bonds, but it needs to be merged to the description of long-range electrostatic and dispersion interactions to describe condensed-phase materials. The task can be achieved through several strategies. A possibility is to combine SNAP with point charges and Lennard-Jones parameters, as it is commonly done for organic compounds (
+  <a rid="R34" ref-type="bibr" href="#R34">
+   <span class="italic">34</span>
+  </a>). A more refined strategy would involve the use of SNAP to predict local charges, dipoles, and dispersion coefficients and use them to compute long-range interactions on the fly (
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>). Our test, predicting the local spin density for Fe
+  <span class="sup">2+</span>(porphyrin), suggests that this is possible.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In conclusion, we have demonstrated that machine learning potentials, under the SNAP framework, make it possible to describe covalent bonds and their reactivity, as occurring in both organic molecules and coordination compounds, under a unified picture and with an accuracy comparable to first-principles calculations. To the best of our knowledge, this is the first time that the universality of an FF has been demonstrated upon this variety of molecular geometries, including subtle features such as Jahn-Teller distortions and many-body effects. In particular, while the application of neural networks to a general class of organic compounds has been recently demonstrated (
+  <a rid="R12" ref-type="bibr" href="#R12">
+   <span class="italic">12</span>
+  </a>, 
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>), the possibility to accurately describe coordination compounds has been proved here for the first time. The training of the model is particularly simple and automatized and only requires a limited number of quantum chemistry calculations. These properties, together with the fact that SNAP potentials are already implemented in high-performance simulation packages (
+  <a rid="R37" ref-type="bibr" href="#R37">
+   <span class="italic">37</span>
+  </a>), make this approach extremely appealing for a fast development of unified classes of FFs for both biological and materials sciences.
+ </p>
+</sec>

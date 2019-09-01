@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="S0002" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Molecular Phylogenetics</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Molecular phylogenetics is now ubiquitous in most branches of biology [
+  <a rid="CIT0036" ref-type="bibr" href="#CIT0036">36</a>] but can also be leveraged to make decisions on the type and locations of specific residues (those that are highly conserved or conserved only within an orthologous group) that would yield the most insight into structure-function relationships as well as aid in the design of species-specific inhibitors. This section describes the individual steps in carrying out a phylogenetic analysis and analyses based on a multiple sequence alignment (MSA). The initial step in a molecular phylogenetic analysis of an enzyme family is to gather enough protein sequences of sufficient variety in order to generate robust hypotheses from the subsequent analyses. For example, if a researcher would like to determine what residues are critical for specificity, then the data set must obviously contain several known paralagous members or sub-groups. Often, a BLAST [
+  <a rid="CIT0037" ref-type="bibr" href="#CIT0037">37</a>] or PSI-BLAST [
+  <a rid="CIT0038" ref-type="bibr" href="#CIT0038">38</a>] search is performed on the non-redundant protein database from NCBI using an appropriate query sequence to find orthologous and paralogous sequences. Alternatively, one could start from the iProClass database [
+  <a rid="CIT0039" ref-type="bibr" href="#CIT0039">39</a>] that contains collections of sequences grouped according to protein function. Almost without exception, a researcher will then have to prune this dataset manually (to remove identical or nearly identical sequences and fragments) or with the aid of programs like CD-HIT [
+  <a rid="CIT0040" ref-type="bibr" href="#CIT0040">40</a>]. This latter program is an excellent tool for clustering sequences and the subsequent selection of cluster representatives, often resulting in a diverse and more manageable set of protein sequences. The next step is to develop an accurate MSA for which several programs and online accessible interfaces are available. The most popular programs are T-Coffee [
+  <a rid="CIT0041" ref-type="bibr" href="#CIT0041">41</a>], MUSCLE [
+  <a rid="CIT0042" ref-type="bibr" href="#CIT0042">42</a>], ProbCons [
+  <a rid="CIT0043" ref-type="bibr" href="#CIT0043">43</a>], and Clustal [
+  <a rid="CIT0044" ref-type="bibr" href="#CIT0044">44</a>] and have been the subject of multiple reviews [
+  <a rid="CIT0045" ref-type="bibr" href="#CIT0045">45</a>]. Yet, only in the relatively simple cases, do MSA programs get the entire alignment “correct” (as judged by comparison to a 3D structural alignment). Careful inspection and adjustment of the MSA should then be performed in some editor, like Genedoc [
+  <a rid="CIT0046" ref-type="bibr" href="#CIT0046">46</a>] or Jalview [
+  <a rid="CIT0047" ref-type="bibr" href="#CIT0047">47</a>] since even a highly conserved residue can be misaligned depending upon the degree of conservation in adjacent residues. Still, editing a large MSA can be a daunting task even with the help of an editor. Therefore, our group uses the Meme program [
+  <a rid="CIT0048" ref-type="bibr" href="#CIT0048">48</a>] with the zoops model (zero or one motif per sequences) to search for the most conserved patterns or motifs ranging in length between six and 50 residues over the entire list of sequences. We have found that these parameters to MEME generally return motifs that are immensely useful for efficiently refining MSAs with the Genedoc editor (patterns/motifs are assigned a color which is highlighted over the MSA wherever the motif occurs, sb.nrbsc.org) as well as assisting in assigning sequences to groups (described in more detail below). The information content of a motif is determined by the conservation of residues along the motif, the length of the motif and the distribution of the motif residues in the submitted dataset [
+  <a rid="CIT0048" ref-type="bibr" href="#CIT0048">48</a>]. In addition, a structural alignment of several 3-dimensional structures from the enzyme family can be performed with programs like STAMP within the MultiSeq module [
+  <a rid="CIT0049" ref-type="bibr" href="#CIT0049">49</a>] contained within the VMD program [
+  <a rid="CIT0050" ref-type="bibr" href="#CIT0050">50</a>] and used to assist in the MSA refinement. There are several very good multiple structure alignment programs [
+  <a rid="CIT0051" ref-type="bibr" href="#CIT0051">51</a>] that all have similar performance when trying to align two proteins of similar length that share the same fold. The final MSA can then be designated “high-resolution” to distinguish it from the raw MSA program output.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quality of a phylogenetic tree is highly dependent on the quality of the MSA and the regions included for tree construction [
+  <a rid="CIT0052" ref-type="bibr" href="#CIT0052">52</a>, 
+  <a rid="CIT0053" ref-type="bibr" href="#CIT0053">53</a>]. Therefore, the final MSA must be trimmed by deleting sections where the alignment is equivocal; primarily this trimming occurs at the N- and C-termini. Several automated programs, such as trimAl [
+  <a rid="CIT0054" ref-type="bibr" href="#CIT0054">54</a>] and GBlocks [
+  <a rid="CIT0055" ref-type="bibr" href="#CIT0055">55</a>], can be used to perform alignment trimming, though our manual trimming exercises have always resulted in trees with higher bootstrap values. The trimmed MSA file can then be used to create a distance-based phylogenetic tree or one based on maximum parsimony, Bayesian or maximum likelihood methods [
+  <a rid="CIT0036" ref-type="bibr" href="#CIT0036">36</a>]. Once complete, several viewers are available for phylogenetic tree visualization [
+  <a rid="CIT0046" ref-type="bibr" href="#CIT0046">46</a>]. Finally, organizing all of this sequence information and communicating the results to colleagues can still be problematic and tedious. Therefore, our group has developed a suite of utilities called HarvestSeq (sb.nrbsc.org) that will retrieve the functional characteristics for all sequences, order the MSA file based on the phylogenetic tree and perform other information gathering tasks and analyses.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The resulting phylogenetic tree can be used as a guide along with the gathered metadata on the sequences to partition the sequences into separate groups, typically those that cluster together with high bootstrap support. When the set of sequences is of a protein superfamily, the sequences cluster according to shared biochemical function. Sequences that have been incorrectly annotated are readily identified and with maximum likelihood or Bayesian methods, ancestral sequences can be inferred [
+  <a rid="CIT0056" ref-type="bibr" href="#CIT0056">56</a>]. The construction of ancestral sequences has provided a wealth of information on how enzymes evolve new functions [
+  <a rid="CIT0056" ref-type="bibr" href="#CIT0056">56</a>]. Other programs based on principle component analysis [
+  <a rid="CIT0057" ref-type="bibr" href="#CIT0057">57</a>] and n-gram analysis [
+  <a rid="CIT0058" ref-type="bibr" href="#CIT0058">58</a>] offer different but complimentary ways of grouping sequences. The MSA and a partitioning of sequences into defined groups can then serve as input to the GEnt program [
+  <a rid="CIT0003" ref-type="bibr" href="#CIT0003">3</a>] that identifies amino acid residues characteristic of sub-groups within a set of orthologous proteins or characteristic of individual protein families within a collection of paralogous proteins. These characteristic residues are identified as having 1) low overall family relative entropy defined as:
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Σp
+  <sub>i</sub> log
+  <sub>2</sub>(p
+  <sub>i</sub>/q
+  <sub>i</sub>)
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">where for each of the 20 amino acids p
+  <sub>i</sub> is the fraction of residue type i at that alignment position, and q
+  <sub>i</sub> is the fraction of residue type i expected in a random sequence. q
+  <sub>i</sub> is usually taken from an appropriate non-redundant database and 2) high group cross-entropy computed as:
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Σ(p
+  <sub>i</sub> - q
+  <sub>i</sub>) log
+  <sub>2</sub>(p
+  <sub>i</sub>/q
+  <sub>i</sub>)
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">where p
+  <sub>i</sub> is the fraction of residue type i at a particular position in the alignment for sequences in the predefined group while q
+  <sub>i</sub> is the fraction of residue type i at that position for sequences not in the predefined group. Often these group-specific residues are most responsible for changes in biochemical properties like substrate selectivity. We have observed in several analyses of protein families that group-specific residues often cluster around highly conserved active site residues, but that some can be quite distant which strongly suggests some stability-function tradeoff relationship. By probing the order that these residues may have appeared in their respective lineage yields insights into the how enzymes may evolve novel functions. Other programs that identify specificity determining positions though the algorithmic details are different include SDPFox [
+  <a rid="CIT0059" ref-type="bibr" href="#CIT0059">59</a>], SPEER [
+  <a rid="CIT0060" ref-type="bibr" href="#CIT0060">60</a>], and multi-Harmony [
+  <a rid="CIT0061" ref-type="bibr" href="#CIT0061">61</a>]. The programs also differ in the way they treat columns in the MSA that contain gaps. Another program often highlighted in these discussions is Evolutionary Trace [
+  <a rid="CIT0062" ref-type="bibr" href="#CIT0062">62</a>] though this program does not appear to distinguish between identifying strictly conserved and specificity-determining residues. It should be emphasized that these programs should be viewed as hypothesis generation devices since what properties constitute a group can change depending on the question you ask (see section on Sesquiterpene Synthases).
+ </p>
+</sec>

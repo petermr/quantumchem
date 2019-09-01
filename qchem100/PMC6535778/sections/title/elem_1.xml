@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Experimental Details</div>
+ <sec id="sec2.1" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Single Crystal Growth</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">To obtain single crystals of EuSn
+   <sub>2</sub>P
+   <sub>2</sub>, Eu chunks, red phosphorus, and Sn granules were placed in an alumina crucible with the molar ratio of 1.1:2:20. The crucible was sealed into an evacuated quartz tube which was then heated to 600 °C and held for 24 h followed by a 2 day heat treatment at 1050 °C. After that, the tube was cooled to 600 °C at a rate of 3 °C/h. Excess Sn was centrifuged out after reaching 600 °C, and shiny hexagonal single crystals (∼1 × 1 × 0.1 mm
+   <span class="sup">3</span>) were obtained.
+  </p>
+ </sec>
+ <sec id="sec2.2" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Structure Determination</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Multiple EuSn
+   <sub>2</sub>P
+   <sub>2</sub> crystals (∼60 × 60 × 5 μm
+   <span class="sup">3</span>) were tested by single crystal X-ray diffraction to determine the crystal structure of the new material. The structure, consistent among all crystals, was determined using a Bruker Apex II diffractometer equipped with Mo radiation (λ
+   <sub>Kα</sub> = 0.710 73 Å) at room temperature. Glycerol was used to protect the samples, which were mounted on a Kapton loop. The scan width was set to 0.5° with an exposure time of 10 s. Four different positions of the goniometer and detector were selected. Data acquisition was made via Bruker SMART software with the corrections for Lorentz and polarization effects included.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref29" href="#ref29">29</a>
+   </span> The direct method and full-matrix least-squares on F
+   <span class="sup">2</span> procedure within the SHELXTL package were employed to solve the crystal structure.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref30" href="#ref30">30</a>
+   </span>
+  </p>
+ </sec>
+ <sec id="sec2.3" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Physical Property Measurement</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">DC magnetization data were measured from 2 to 300 K using a Quantum Design Dynacool Physical Property Measurement System (PPMS), equipped with a vibrating sample magnetometer (VSM) option. The magnetic susceptibility was defined as M/H, where the applied field was 500 Oe. Field-dependent magnetization data were collected at 2 K with magnetic field up to μ
+   <sub>0</sub>
+   <span class="italic">H</span> = 9 T. The electronic transport measurements were carried out in a PPMS-9 cryostat using the four-terminal method between 1.8 and 300 K under magnetic fields up to μ
+   <sub>0</sub>
+   <span class="italic">H</span> = 9 T. Platinum wires were attached to the samples by silver epoxy to ensure ohmic contact. The normal resistivity, ρ
+   <sub>
+    <span class="italic">xx</span>
+   </sub>, was measured in the basal plane of a single crystal, simply determined by dividing the observed voltage difference by the applied current, suitably normalized by the sample dimensions. The Hall resistance, ρ
+   <sub>
+    <span class="italic">yx</span>
+   </sub>, was similarly determined by applying the magnetic field perpendicular to a single crystal basal plane and measuring the voltage within the plane perpendicular to the direction of the applied current (again suitably normalized by the sample size).
+  </p>
+ </sec>
+ <sec id="sec2.4" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electron Paramagnetic Resonance (EPR)</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">A single crystal of EuSn
+   <sub>2</sub>P
+   <sub>2</sub> was stored in the glovebox before EPR measurements, and then placed in a closed sample tube. The sample tube was put into the EPR cavity. The experiment was carried out on a Bruker ER 300D spectrometer interfaced to a Bruker 1600 computer for data storage and manipulations. The spectrum was collected by sweeping the magnetic field from 0 to 5000 G.
+  </p>
+ </sec>
+ <sec id="sec2.5" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Single Crystal Neutron Diffraction</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Single crystal neutron diffraction was performed on the Four-Circle Diffractometer (HB-3A) at the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory (ORNL). Due to the large neutron absorption coefficient of Eu, a relatively small single crystal (∼0.8 × 0.4 × 0.02 mm
+   <span class="sup">3</span>) was selected and mounted on an aluminum pin. The measurement was carried out between 4 and 50 K with an incident neutron wavelength of 1.550 Å from a bent perfect Si-220 monochromator. Absorption corrections were applied using the PLATON software.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref31" href="#ref31">31</a>,
+    <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+   </span> The nuclear and magnetic structure refinements were carried out using the FULLPROF refinement suite.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+   </span>
+  </p>
+ </sec>
+ <sec id="sec2.6" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Electronic Structure Calculations</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The bulk electronic structure calculations for EuSn
+   <sub>2</sub>P
+   <sub>2</sub> were performed by using the projector augmented wave method as implemented in the VASP package within the generalized gradient approximation (GGA) scheme.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref34" href="#ref34">34</a>,
+    <a ref-type="bibr" rid="ref35" href="#ref35">35</a>
+   </span> The experimental structural parameters were employed. Spin–orbit coupling was included self-consistently in some of the calculations for comparison to the expected electronic structure with SOC absent. Spin polarization using GGA+
+   <span class="italic">U</span> (
+   <span class="italic">U</span> = 4 eV) was employed for the magnetic models investigated.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref36" href="#ref36">36</a>
+   </span> How f electron states are treated in DFT calculations is of interest because when considered as valence electrons then they are always found at the Fermi energy for partly filled f orbitals, which, except in very rare cases such as for heavy fermion materials,
+   <span class="sup">
+    <a ref-type="bibr" rid="ref37" href="#ref37">37</a>,
+    <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+   </span> is not a realistic picture for their relative position in energy—in our calculations, the energies of the calculated Eu f electron states are tested to match with the experimental ARPES measurements. A Monkhorst–Pack 11 × 11 × 7 
+   <span class="italic">k</span>-point mesh was used for the 
+   <span class="italic">k</span>-space integrations.
+   <span class="sup">
+    <a ref-type="bibr" rid="ref39" href="#ref39">39</a>
+   </span> With these settings, the calculated total energy converged to less than 0.1 meV per atom. For the surface spectral weight calculations, a semi-infinite Green’s function method, terminated by (001) surfaces, was employed. Calculations were made for Sn-, P-, and Eu-terminated (001) surfaces. The median line of the Sn bilayer is selected as the Sn-terminated surface.
+  </p>
+ </sec>
+ <sec id="sec2.7" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Experimental Band Structure Characterization</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Angle-resolved photoelectron spectroscopy (ARPES) measurements were carried out at a temperature of 10 K on the (001) surfaces of EuSn
+   <sub>2</sub>P
+   <sub>2</sub> crystals cleaved in a 10
+   <span class="sup">–9</span> Pa vacuum. Linearly (s and p) polarized light with photon energies in the range 50–120 eV was used. Experiments were performed at the Electron Spectro-Microscopy (ESM) beamline of the National Synchrotron Light Source (NSLS-II). The photoemitted electrons were collected from a ±15° cone by a Scienta DA30 instrument and analyzed with angular and energy resolutions of &lt;0.2° and 15 meV, respectively. Core level spectra using 300 eV photons showed presence of no elements other than Sn, Eu, and P in the material. Potassium adsorption, commonly used to fill a material’s bands with additional electrons to increase the Fermi Level at the surface of a sample, resulted in surface deterioration in the case of EuSn
+   <sub>2</sub>P
+   <sub>2</sub> and no noticeable Fermi level shift.
+  </p>
+ </sec>
+ <sec id="sec2.8" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Safety Statement</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">No unexpected or unusually high safety hazards were encountered.</p>
+ </sec>
+</sec>

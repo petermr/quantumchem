@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec008" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Amino acid salt bridge interactions</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">An aa salt bridge interaction is the interaction between the base of an alkaline amino acid and the root of an acidic amino acid [
+  <a rid="pone.0137113.ref057" ref-type="bibr" href="#pone.0137113.ref057">57</a>–
+  <a rid="pone.0137113.ref059" ref-type="bibr" href="#pone.0137113.ref059">59</a>]. In the 20 natural amino acids there are three alkaline amino acids (Arg, Lys and His) and two acidic amino acids (Glu and Asp). The acidic dissociation constants of the above 5 amino acids [
+  <a rid="pone.0137113.ref058" ref-type="bibr" href="#pone.0137113.ref058">58</a>] are listed in 
+  <span class="bold">
+   <a rid="pone.0137113.t001" ref-type="table" href="#pone.0137113.t001">Table 1</a>
+  </span>.
+ </p>
+ <div id="pone.0137113.t001" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0137113.t001</span>
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">The pK
+    <sub>a</sub> of the three alkaline amino acids (Arg, Lys and His) and the two acidic amino acids (Glu and Asp) [
+    <a rid="pone.0137113.ref060" ref-type="bibr" href="#pone.0137113.ref060">60</a>].
+   </div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0137113.t001g" xlink:href="pone.0137113.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="left" rowspan="1" colspan="1">Amino acid</th>
+      <th align="center" rowspan="1" colspan="1">Code</th>
+      <th align="center" rowspan="1" colspan="1">pK
+       <sub>a</sub>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Arginine</td>
+      <td align="center" rowspan="1" colspan="1">Arg (R)</td>
+      <td align="center" rowspan="1" colspan="1">12.48</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Lysine</td>
+      <td align="center" rowspan="1" colspan="1">Lys (K)</td>
+      <td align="center" rowspan="1" colspan="1">10.53</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Histidine</td>
+      <td align="center" rowspan="1" colspan="1">His (H)</td>
+      <td align="center" rowspan="1" colspan="1">6.00</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Glutamic acid</td>
+      <td align="center" rowspan="1" colspan="1">Glu (E)</td>
+      <td align="center" rowspan="1" colspan="1">4.25</td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Aspartic acid</td>
+      <td align="center" rowspan="1" colspan="1">Asp (D)</td>
+      <td align="center" rowspan="1" colspan="1">3.65</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the aa salt-bridge interaction calculations the two alkaline amino acids (Arg and Lys) are in the protonated form (cations Arg
+  <span class="sup">+</span> and Lys
+  <span class="sup">+</span>). The two acidic amino acids (Asp and Glu) are deprotonated (anions Glu
+  <span class="sup">-</span> and Asp
+  <span class="sup">-</span>). Histidine (His) is a very weak alkaline amino acid having a pK
+  <sub>a</sub> of 6.08, which means that in proteins, histidine could appear in both the neutral form (His) and in the protonated form (His
+  <span class="sup">+</span>). In this study salt bridge interaction energies are calculated using the MP2/6–311+G(d,p) method followed by the CCSD(T)/6–311+G(d,p) method. The interaction distances are fully optimized using MP2 calculations, and these optimized geometries are used in the subsequent CCSD(T) calculations. The interaction structures of the six aa salt-bridge pairs are shown in 
+  <span class="bold">
+   <a rid="pone.0137113.g002" ref-type="fig" href="#pone.0137113.g002">Fig 2</a>
+  </span>, and the interaction energies and bond lengths are listed in 
+  <span class="bold">
+   <a rid="pone.0137113.t002" ref-type="table" href="#pone.0137113.t002">Table 2</a>
+  </span>.
+ </p>
+ <div id="pone.0137113.g002" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0137113.g002</span>
+  <span class="label">Fig 2</span>
+  <div class="caption">
+   <div class="title">The salt-bridge interaction structures between three amino acid cations (Arg
+    <span class="sup">+</span> Lys
+    <span class="sup">+</span>, and His
+    <span class="sup">+</span>) and three acidic amino acids (Asp
+    <span class="sup">-</span>, Glu
+    <span class="sup">-</span>, and His).
+   </div>
+   <p>
+    <span class="bold">A)</span> The salt-bridge structure of Lys
+    <span class="sup">+</span>–Asp
+    <span class="sup">-</span>. 
+    <span class="bold">B)</span> The salt-bridge structure of Lys
+    <span class="sup">+</span>–Glu
+    <span class="sup">-</span>. 
+    <span class="bold">C)</span> The salt-bridge structure of Lys
+    <span class="sup">+</span>–His. 
+    <span class="bold">D)</span> The salt-bridge structure of Arg
+    <span class="sup">+</span>–Asp
+    <span class="sup">-</span>. 
+    <span class="bold">E)</span> The salt-bridge structure of Arg
+    <span class="sup">+</span>–Glu
+    <span class="sup">-</span>. 
+    <span class="bold">F)</span> The salt-bridge structure of Arg
+    <span class="sup">+</span>–His. 
+    <span class="bold">G)</span> The salt-bridge structure of His
+    <span class="sup">+</span>–Asp
+    <span class="sup">-</span>. 
+    <span class="bold">H)</span> The salt-bridge structure of His
+    <span class="sup">+</span>–Gln
+    <span class="sup">-</span>. 
+    <span class="bold">I)</span> The salt-bridge structure of His
+    <span class="sup">+</span>–His. The energies of aa salt bridge interactions are in the range -90 to -520 kJ/mol.
+   </p>
+  </div>
+  <div xlink:href="pone.0137113.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="pone.0137113.t002" orientation="portrait" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0137113.t002</span>
+  <span class="label">Table 2</span>
+  <div class="caption">
+   <div class="title">Salt-bridge interaction energies between the two alkaline amino acids (Arg and Lys) and the three acidic amino acids (Glu, Asp and His).</div>
+  </div>
+  <div class="alternatives">
+   <div id="pone.0137113.t002g" xlink:href="pone.0137113.t002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+     <col align="left" valign="middle" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <th align="center" rowspan="1" colspan="1"/>
+      <th align="center" rowspan="1" colspan="1">MP2</th>
+      <th align="center" rowspan="1" colspan="1">/6–311+</th>
+      <th align="center" rowspan="1" colspan="1">G(d,p)</th>
+      <th align="center" rowspan="1" colspan="1"/>
+      <th align="center" rowspan="1" colspan="1">CCSD(T)</th>
+      <th align="center" rowspan="1" colspan="1">/6–311+</th>
+      <th align="center" rowspan="1" colspan="1">G(d,p)</th>
+      <th align="center" rowspan="1" colspan="1"/>
+     </tr>
+     <tr>
+      <th align="center" rowspan="1" colspan="1">Interaction</th>
+      <th align="center" rowspan="1" colspan="1">Gaseous</th>
+      <th align="center" rowspan="1" colspan="1">phase</th>
+      <th align="center" rowspan="1" colspan="1">Aqueous</th>
+      <th align="center" rowspan="1" colspan="1">phase</th>
+      <th align="center" rowspan="1" colspan="1">Gaseous</th>
+      <th align="center" rowspan="1" colspan="1">phase</th>
+      <th align="center" rowspan="1" colspan="1">Aqueous</th>
+      <th align="center" rowspan="1" colspan="1">phase</th>
+     </tr>
+     <tr>
+      <th align="center" rowspan="1" colspan="1">pairs</th>
+      <th align="center" rowspan="1" colspan="1">Δ
+       <span class="italic">E</span>
+       <sub>s-b</sub>
+      </th>
+      <th align="center" rowspan="1" colspan="1">Bond</th>
+      <th align="center" rowspan="1" colspan="1">Δ
+       <span class="italic">E</span>
+       <sub>s-b</sub>
+      </th>
+      <th align="center" rowspan="1" colspan="1">Bond</th>
+      <th align="center" rowspan="1" colspan="1">Δ
+       <span class="italic">E</span>
+       <sub>s-b</sub>
+      </th>
+      <th align="center" rowspan="1" colspan="1">Bond</th>
+      <th align="center" rowspan="1" colspan="1">Δ
+       <span class="italic">E</span>
+       <sub>s-b</sub>
+      </th>
+      <th align="center" rowspan="1" colspan="1">Bond</th>
+     </tr>
+     <tr>
+      <th align="center" rowspan="1" colspan="1"/>
+      <th align="center" rowspan="1" colspan="1">kJ/mol</th>
+      <th align="center" rowspan="1" colspan="1">Å</th>
+      <th align="center" rowspan="1" colspan="1">kJ/mol</th>
+      <th align="center" rowspan="1" colspan="1">Å</th>
+      <th align="center" rowspan="1" colspan="1">kJ/mol</th>
+      <th align="center" rowspan="1" colspan="1">Å</th>
+      <th align="center" rowspan="1" colspan="1">kJ/mol</th>
+      <th align="center" rowspan="1" colspan="1">Å</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">Asp
+       <span class="sup">-</span>–Lys
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-494.3</td>
+      <td align="center" rowspan="1" colspan="1">2.884</td>
+      <td align="center" rowspan="1" colspan="1">-33.17</td>
+      <td align="center" rowspan="1" colspan="1">2.999</td>
+      <td align="center" rowspan="1" colspan="1">-497.7</td>
+      <td align="center" rowspan="1" colspan="1">2.873</td>
+      <td align="center" rowspan="1" colspan="1">-37.64</td>
+      <td align="center" rowspan="1" colspan="1">2.992</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">Asp
+       <span class="sup">-</span>–Arg
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-526.6</td>
+      <td align="center" rowspan="1" colspan="1">3.778</td>
+      <td align="center" rowspan="1" colspan="1">-70.58</td>
+      <td align="center" rowspan="1" colspan="1">3.921</td>
+      <td align="center" rowspan="1" colspan="1">-528.1</td>
+      <td align="center" rowspan="1" colspan="1">3.770</td>
+      <td align="center" rowspan="1" colspan="1">-72.68</td>
+      <td align="center" rowspan="1" colspan="1">2.922</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">Glu
+       <span class="sup">-</span>–Lys
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-496.3</td>
+      <td align="center" rowspan="1" colspan="1">2.887</td>
+      <td align="center" rowspan="1" colspan="1">-38.37</td>
+      <td align="center" rowspan="1" colspan="1">2.997</td>
+      <td align="center" rowspan="1" colspan="1">-498.5</td>
+      <td align="center" rowspan="1" colspan="1">2.879</td>
+      <td align="center" rowspan="1" colspan="1">-40.35</td>
+      <td align="center" rowspan="1" colspan="1">2.950</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">Glu
+       <span class="sup">-</span>–Arg
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-523.2</td>
+      <td align="center" rowspan="1" colspan="1">3.780</td>
+      <td align="center" rowspan="1" colspan="1">-71.45</td>
+      <td align="center" rowspan="1" colspan="1">3.919</td>
+      <td align="center" rowspan="1" colspan="1">-525.34</td>
+      <td align="center" rowspan="1" colspan="1">3.751</td>
+      <td align="center" rowspan="1" colspan="1">-73.25</td>
+      <td align="center" rowspan="1" colspan="1">3.902</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">His–Lys
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-89.10</td>
+      <td align="center" rowspan="1" colspan="1">2.793</td>
+      <td align="center" rowspan="1" colspan="1">-11.50</td>
+      <td align="center" rowspan="1" colspan="1">2.901</td>
+      <td align="center" rowspan="1" colspan="1">-93.13</td>
+      <td align="center" rowspan="1" colspan="1">2.787</td>
+      <td align="center" rowspan="1" colspan="1">-15.93</td>
+      <td align="center" rowspan="1" colspan="1">2.893</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">His–Arg
+       <span class="sup">+</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-106.7</td>
+      <td align="center" rowspan="1" colspan="1">3.770</td>
+      <td align="center" rowspan="1" colspan="1">-28.38</td>
+      <td align="center" rowspan="1" colspan="1">3.827</td>
+      <td align="center" rowspan="1" colspan="1">-111.9</td>
+      <td align="center" rowspan="1" colspan="1">3.751</td>
+      <td align="center" rowspan="1" colspan="1">-37.07</td>
+      <td align="center" rowspan="1" colspan="1">3.845</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">His
+       <span class="sup">+</span>–Asp
+       <span class="sup">-</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-474.0</td>
+      <td align="center" rowspan="1" colspan="1">2.124</td>
+      <td align="center" rowspan="1" colspan="1">-59.25</td>
+      <td align="center" rowspan="1" colspan="1">3.564</td>
+      <td align="center" rowspan="1" colspan="1">-476.2</td>
+      <td align="center" rowspan="1" colspan="1">2.102</td>
+      <td align="center" rowspan="1" colspan="1">-62.52</td>
+      <td align="center" rowspan="1" colspan="1">3.586</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">His
+       <span class="sup">+</span>–Glu
+       <span class="sup">-</span>
+      </td>
+      <td align="center" rowspan="1" colspan="1">-473.1</td>
+      <td align="center" rowspan="1" colspan="1">2.124</td>
+      <td align="center" rowspan="1" colspan="1">-59.13</td>
+      <td align="center" rowspan="1" colspan="1">3.562</td>
+      <td align="center" rowspan="1" colspan="1">-475.9</td>
+      <td align="center" rowspan="1" colspan="1">2.104</td>
+      <td align="center" rowspan="1" colspan="1">-62.15</td>
+      <td align="center" rowspan="1" colspan="1">3.581</td>
+     </tr>
+     <tr>
+      <td align="center" rowspan="1" colspan="1">His
+       <span class="sup">+</span>–His
+      </td>
+      <td align="center" rowspan="1" colspan="1">-149.2</td>
+      <td align="center" rowspan="1" colspan="1">1.584</td>
+      <td align="center" rowspan="1" colspan="1">-24.87</td>
+      <td align="center" rowspan="1" colspan="1">2.563</td>
+      <td align="center" rowspan="1" colspan="1">-153.2</td>
+      <td align="center" rowspan="1" colspan="1">1.552</td>
+      <td align="center" rowspan="1" colspan="1">-26.92</td>
+      <td align="center" rowspan="1" colspan="1">2.667</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the gaseous phase the salt-bridge interaction energies (-400 ∼ -500 kJ/mol) of Asp
+  <span class="sup">-</span> and Glu
+  <span class="sup">-</span> are in the range of chemical bonds. These energies are far beyond molecular interaction energies, which usually are less than 100 kJ/mol. However, the salt-bridge energies (-90 -110 kJ/mol) of His are smaller than those of the Asp
+  <span class="sup">-</span> and Glu
+  <span class="sup">-</span>, because the histidine is in neutral form (His), not in anionic form. In aqueous solutions, the aa salt-bridge energies (-20 -70 kJ/mol) decrease almost 80%, however still stronger than other molecular interaction types (e.g., van der Waals interactions, electrostatic interactions, and hydrogen bonds).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The salt-bridge energies of Arg
+  <span class="sup">+</span> are larger than that of Lys
+  <span class="sup">+</span> because Arg
+  <span class="sup">+</span> has a higher pK
+  <sub>a</sub> value than Lys
+  <span class="sup">+</span> (12.00 and 10.50, respectively). On the other hand, Arg
+  <span class="sup">+</span> has two equivalent NH
+  <sub>2</sub> groups that may interact with the two oxygen atoms in the carboxyl groups (COO
+  <span class="sup">-</span>) of Asp
+  <span class="sup">-</span> and Glu
+  <span class="sup">-</span>, forming very strong salt-bridge bonds, as shown in 
+  <span class="bold">
+   <a rid="pone.0137113.g002" ref-type="fig" href="#pone.0137113.g002">Fig 2D</a>
+  </span> and 
+  <span class="bold">
+   <a rid="pone.0137113.g002" ref-type="fig" href="#pone.0137113.g002">Fig 2E</a>
+  </span>. In the Arg
+  <span class="sup">+</span>–His salt-bridge structure (
+  <span class="bold">
+   <a rid="pone.0137113.g002" ref-type="fig" href="#pone.0137113.g002">Fig 2F</a>
+  </span>), the π-plane of imidazole and the π-plane of NH
+  <sub>2</sub>CHNH
+  <sub>2</sub>
+  <span class="sup">+</span> are oriented perpendicularly.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The salt-bridge energies of Asp
+  <span class="sup">-</span> are slightly larger than that of Glu
+  <span class="sup">-</span> because the pK
+  <sub>a</sub> value of Asp
+  <span class="sup">-</span> is lower than that of Glu
+  <span class="sup">-</span> (3.90 and 4.30, respectively). In acidic solutions the aa salt-bridge may be broken, because Asp and Glu are weak acids and may be protonated at lower pH (pH&lt;4.0). Histidine (His) is a unique amino acid that has a pK
+  <sub>a</sub> of 6.08 [
+  <a rid="pone.0137113.ref060" ref-type="bibr" href="#pone.0137113.ref060">60</a>] and can play the role of either proton donor or acceptor. Therefore, the salt-bridge interactions of histidine are easily affected by many factors. Please refer to reference [
+  <a rid="pone.0137113.ref004" ref-type="bibr" href="#pone.0137113.ref004">4</a>] for details.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The aa salt-bridge energies calculated using CCSD(T) are very similar to those calculated using MP2. In general, the salt-bridge energies provided by CCSD(T) are 2 kJ/mol stronger than those obtained with the MP2 method.</p>
+</sec>

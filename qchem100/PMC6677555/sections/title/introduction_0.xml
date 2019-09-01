@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="introduction" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">INTRODUCTION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Entanglement, which is a quantum mechanical property that describes a correlation between quantum mechanical systems that has no classical analog, was introduced by Shrödinger in 1935 (
+  <a rid="R1" ref-type="bibr" href="#R1">
+   <span class="italic">1</span>
+  </a>). This phenomenon was the subject of the famous paper by Einstein, Podolsky, and Rosen, known as the EPR paradox (
+  <a rid="R2" ref-type="bibr" href="#R2">
+   <span class="italic">2</span>
+  </a>), where they considered such behavior to be impossible and argued that the accepted formulation of quantum mechanics must therefore be incomplete. The debate lasted for nearly 30 years until the proposal of Bell’s inequality, which is violated by entanglement (
+  <a rid="R3" ref-type="bibr" href="#R3">
+   <span class="italic">3</span>
+  </a>). Entanglement effect was verified experimentally (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>) in tests where the polarization of photons and spins of entangled particles were measured to be statistically violating Bell’s inequality. Nowadays entanglement has become an extremely important physical resource for many applications in quantum communication (
+  <a rid="R5" ref-type="bibr" href="#R5">
+   <span class="italic">5</span>
+  </a>–
+  <a rid="R8" ref-type="bibr" href="#R8">
+   <span class="italic">8</span>
+  </a>) and quantum computation (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>–
+  <a rid="R15" ref-type="bibr" href="#R15">
+   <span class="italic">15</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Two-particle entanglement has long been demonstrated experimentally, and recently, there are notable achievements to generate entanglement between three and more spatially separated particle systems. For instance, a 10-photon entanglement system was successfully generated experimentally in 2016 (
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>, 
+  <a rid="R17" ref-type="bibr" href="#R17">
+   <span class="italic">17</span>
+  </a>). There are also observations of entanglement in quantum dots (
+  <a rid="R18" ref-type="bibr" href="#R18">
+   <span class="italic">18</span>
+  </a>), nitrogen-vacancy center (NV) in diamond (
+  <a rid="R19" ref-type="bibr" href="#R19">
+   <span class="italic">19</span>
+  </a>), trapped ions (
+  <a rid="R20" ref-type="bibr" href="#R20">
+   <span class="italic">20</span>
+  </a>), and even entanglement between photon and quantum dots (
+  <a rid="R21" ref-type="bibr" href="#R21">
+   <span class="italic">21</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">It is very important in all of these experiments to be able to quantify or measure the entanglement. Several methods have been proposed to address this question such as entanglement witnesses (
+  <a rid="R22" ref-type="bibr" href="#R22">
+   <span class="italic">22</span>
+  </a>), entropic inequalities (
+  <a rid="R23" ref-type="bibr" href="#R23">
+   <span class="italic">23</span>
+  </a>), and quantum state classifier based on machine learning (
+  <a rid="R24" ref-type="bibr" href="#R24">
+   <span class="italic">24</span>
+  </a>). However, most of these methods are designed for discrete measurement results. Although there are a few successful theoretical analyses for continuous measurement results, they have focused mainly on photonic systems (
+  <a rid="R25" ref-type="bibr" href="#R25">
+   <span class="italic">25</span>
+  </a>–
+  <a rid="R27" ref-type="bibr" href="#R27">
+   <span class="italic">27</span>
+  </a>). The most widely used method to classify entanglement is quantum tomography, by which one could obtain the density matrix of the system (
+  <a rid="R28" ref-type="bibr" href="#R28">
+   <span class="italic">28</span>
+  </a>) from experimental measurements. However, quantum tomography is more time- and resource-consuming as it scales exponentially with the system size (
+  <a rid="R29" ref-type="bibr" href="#R29">
+   <span class="italic">29</span>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we propose a general practical method to classify entanglement for continuous measurement results. We introduce auxiliary functions to simplify the complicated measurement results and develop a generalized Bell-type inequality for continuous measurements. We also propose an experimental design to test the method in scattering of chemical reactions. Here, we designed a practicable experiment based on the recent scattering experiments of the oriented hydrogen deuteride (HD) and H
+  <sub>2</sub> molecules (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>). On the basis of the recent experimental data of Zare and co-workers (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>), we simulate the possible measurement results and demonstrate how to distinguish entangled states from unentangled ones. Moreover, our work also provides the possibility to classify entanglement in other chemical reactions as suggested by Brumer and co-workers for entanglement-assisted coherent control in chemical reactions (
+  <a rid="R31" ref-type="bibr" href="#R31">
+   <span class="italic">31</span>
+  </a>, 
+  <a rid="R32" ref-type="bibr" href="#R32">
+   <span class="italic">32</span>
+  </a>).
+ </p>
+</sec>

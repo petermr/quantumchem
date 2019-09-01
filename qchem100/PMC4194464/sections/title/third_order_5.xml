@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Third Order</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The target Hamiltonian terms appears at third order from processes that transition between degenerate ground states. However, there is also an additional, unwanted process which occurs at this order. This competing process involves one interaction with 
+  <span class="italic">H</span>
+  <sub>2L</sub> and Λ
+  <sub>1</sub> in the high-energy subspace, 
+  <div id="m33" class="disp-formula">
+   <span id="d33e1790" xlink:href="srep06603-m33.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>These processes are illustrated diagrammatically in 
+  <a ref-type="fig" rid="f6" href="#f6">Figure 6</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The process we want occurs with the ancilla transition 
+  <div id="m83" class="inline-formula">
+   <span id="d33e1798" xlink:href="srep06603-m83.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> which flips all three bits (for each term separately since they have different ancillae). There are 3! = 6 possible ways to flip the bits for each term, (these processes are illustrated in 
+  <a ref-type="fig" rid="f3" href="#f3">Figure 3</a>), 
+  <div id="m34" class="disp-formula">
+   <span id="d33e1804" xlink:href="srep06603-m34.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>Because 
+  <span class="italic">H</span>
+  <sub>2L</sub> has no Δ
+  <sub>1</sub> dependence and 
+  <span class="italic">µ</span>
+  <sub>1</sub> is order 
+  <div id="m84" class="inline-formula">
+   <span id="d33e1821" xlink:href="srep06603-m84.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, terms such as
+  <div id="m85" class="inline-formula">
+   <span id="d33e1824" xlink:href="srep06603-m85.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> will vanish in the limit of large Δ
+  <sub>1</sub>; therefore, the third order effective Hamiltonian is, 
+  <div id="m35" class="disp-formula">
+   <span id="d33e1830" xlink:href="srep06603-m35.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>with error 
+  <div id="m86" class="inline-formula">
+   <span id="d33e1834" xlink:href="srep06603-m86.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We see that if 
+  <div id="m87" class="inline-formula">
+   <span id="d33e1837" xlink:href="srep06603-m87.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> then the unwanted contribution at third order will go to zero in the limit of large Δ
+  <sub>1</sub> and the second order term will cancel exactly with Λ
+  <sub>1</sub>. Thus, 
+  <div id="m36" class="disp-formula">
+   <span id="d33e1846" xlink:href="srep06603-m36.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="m37" class="disp-formula">
+   <span id="d33e1848" xlink:href="srep06603-m37.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where “→” denotes an embedding. There are still 3-local terms remaining in 
+  <span class="italic">V</span>
+  <sub>1</sub>, 
+  <div id="m38" class="disp-formula">
+   <span id="d33e1857" xlink:href="srep06603-m38.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>With this notation we reorganize our Hamiltonian a final time, so that 
+  <div id="m88" class="inline-formula">
+   <span id="d33e1860" xlink:href="srep06603-m88.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>, 
+  <div id="m39" class="disp-formula">
+   <span id="d33e1863" xlink:href="srep06603-m39.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="m40" class="disp-formula">
+   <span id="d33e1865" xlink:href="srep06603-m40.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The third order gadget we need to reduce 
+  <span class="italic">H</span>
+  <sub>3L</sub> takes exactly the same form as before except with the term labels 1, 2, 3 exchanged for the term labels 4, 5, 6. The components of the final gadget are 
+  <div id="m41" class="disp-formula">
+   <span id="d33e1874" xlink:href="srep06603-m41.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>and 
+  <div id="m42" class="disp-formula">
+   <span id="d33e1877" xlink:href="srep06603-m42.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>where 
+  <div id="m89" class="inline-formula">
+   <span id="d33e1880" xlink:href="srep06603-m89.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div> and 
+  <div id="m43" class="disp-formula">
+   <span id="d33e1883" xlink:href="srep06603-m43.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>This time the spectral gap and Hamiltonian have the subscript “2” to associate them with our second application of perturbation theory. We have thus shown the embedding 
+  <div id="m90" class="inline-formula">
+   <span id="d33e1887" xlink:href="srep06603-m90.jpg" class="inline-graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>. We present an interaction graph for the embedded Hamiltonian in 
+  <a ref-type="fig" rid="f7" href="#f7">Figure 7</a>.
+ </p>
+</sec>

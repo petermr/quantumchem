@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec5" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">5</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Trotter Error Considerations</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As discussed above, the use of Trotter–Suzuki approximations cause error which decreases with the number of Trotter steps performed. Bounds on and estimates of this error have been established;
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> however, it has been shown
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> that these estimates often overestimate the actual error incurred by many orders of magnitude. Exact determination of the Trotter error is exponentially hard, as the exact ground state energy must be determined in advance to serve as a reference.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Having generated Jordan–Wigner and Bravyi–Kitaev Hamiltonians as symbolic lists of Pauli strings, our code can proceed in several ways. For smaller systems, a sparse matrix representation of these Hamiltonians can be generated using SciPy’s
+  <span class="sup">
+   <a ref-type="bibr" rid="ref45" href="#ref45">45</a>
+  </span> sparse matrix methods. This can be diagonalized to find an exact ground-state eigenvalue (to compare against the estimate provided by further code) and a ground-state eigenvector. These can be compared against traditional full configuration interaction calculations obtained through direct diagonalization of the Hamiltonian for verification purposes.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our code can also generate Trotterized Jordan–Wigner and Bravyi–Kitaev Hamiltonians while maintaining the symbolic representation. The action of these Hamiltonians on a given state can be simulated. Performing this on the generated ground state eigenvectors allows for the determination of Trotter error without the storage difficulty of repeatedly generating the Trotterized evolution operator in matrix form. Nonetheless, the initial determination of ground state eigenvectors remains exponentially difficult, requiring on the order of hundreds of gigabytes of RAM for examples with more than 20 spin–orbitals. Consequently, we restricted our error analysis to these smaller systems, as indicated by 
+  <a rid="tbl1" ref-type="other" href="#tbl1">Table 
+   <a rid="tbl1" ref-type="other" href="#tbl1">1</a>
+  </a> and the 
+  <a rid="app1" ref-type="other" href="#app1">Appendices</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We conducted this analysis for 34 of our previously discussed systems. The calculations were performed for a variety of choices of Trotter order and step number. Nonetheless, it is remarkable that limiting our discussion to trials of one Trotter step of first order suffices to yield chemical accuracy (i.e., to within 1 kcal/mol of the FCI energy) for a single application of the evolution operator. For simulation of the full-phase estimation procedure, determination of the error incurred in the application of higher powers of this operator would be necessary. However, this does not qualitatively effect our ordering comparison.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="fig7" ref-type="fig" href="#fig7">Figure 
+   <a rid="fig7" ref-type="fig" href="#fig7">7</a>
+  </a> demonstrates the results of these simulations. Encouragingly, in the overwhelming majority of systems considered, the Trotter error is extremely small even with only one Trotter step: it is often less than 0.001 hartree. It is possible that this is an artifact of the small number of spin orbitals in the systems considered in our error analysis. It is also worth noting that these errors will be compounded when considering higher bits of precision in a full phase estimation procedure. Nonetheless, it does suggest that the number of Trotter steps required for chemically accurate simulation of larger systems will be relatively modest, potentially less than 10 Trotter steps for the first bit of precision.
+ </p>
+ <div id="fig7" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 7</span>
+  <div class="caption">
+   <p>Trotter error using the Bravyi–Kitaev mapping as a function of Jordan–Wigner circuit length, for different ordering schemes. Upper: Absolute Trotter error. Middle: Trotter error relative to error of lexicographic ordering. Note this excludes two instances where the relative Trotter error was &gt;20. The red line indicates a relative performance of 1 (i.e., below the line, the ordering results in a lower Trotter error than a lexicographic ordering). Note that the magnitude ordering usually results in a substantially lower error; however, in most of these cases, the Trotter error was already around 10
+    <span class="sup">–4</span>.
+   </p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0008" id="gr7" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="fig7" ref-type="fig" href="#fig7">Figure 
+   <a rid="fig7" ref-type="fig" href="#fig7">7</a>
+  </a> additionally demonstrates the ordering dependence of the Trotter error. We consider the Trotter error of each systematic (i.e., nonrandom) ordering normalized by the Trotter error of the lexicographic ordering for each system.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In most cases, the magnitude ordering appears to achieve a lower Trotter error than the lexicographic ordering. In some cases, this difference exceeds an order of magnitude. However, it is important to note that this represents a large variance on an exceptionally small error. Noting that one Trotter step was sufficient for chemical accuracy in most of the systems studied here, we do not argue that this indicates that a magnitude ordering achieves a useful reduction in error compared to a lexicographic ordering. Future work is required to investigate how significant this distinction is when propagated through the entire phase estimation procedure, as in these circumstances this effect could become sufficiently significant to determine ordering choice.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An examination of the relative performance of the Bravyi–Kitaev mapping and the Jordan–Wigner mapping in the context of ordering strategies is included as 
+  <a rid="fig8" ref-type="fig" href="#fig8">Figure 
+   <a rid="fig8" ref-type="fig" href="#fig8">8</a>
+  </a>. Again, the distinction between the two mappings is in most cases not as substantial as the differences observed for single Trotter step circuit length. In the majority of systems, the normalized difference between the two errors is between 1 and −1–that is, the error associated with one mapping is very rarely more than double that of the other. Several systems display substantially increased error associated with the Bravyi–Kitaev mapping (including two not shown on 
+  <a rid="fig8" ref-type="fig" href="#fig8">Figure 
+   <a rid="fig8" ref-type="fig" href="#fig8">8</a>
+  </a> for scale clarity); however, in the general case no such pattern emerges. Using a lexicographic ordering, a preference for the Bravyi–Kitaev mapping is observable in most systems. In some cases, the error is almost halved by the use of the Bravyi–Kitaev mapping. At larger system sizes this could become a more substantial effect; however, we do not contend that our data provides concrete evidence as to whether this is true. For a magnitude ordering the Jordan–Wigner and Bravyi–Kitaev mappings yield nearly identical Trotter error in almost all cases. In a sense, this could be attributed to the more directly physical nature of the magnitude ordering. Important terms will intrinsically be simulated earlier in sequence using both mappings. As such, the error of both is likely to be similar in this case. As to be expected, the “lexoMag” ordering performs roughly as a combination of the magnitude and lexicographic orderings.
+ </p>
+ <div id="fig8" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 8</span>
+  <div class="caption">
+   <p>Relative Trotter error of Jordan–Wigner and Bravyi–Kitaev mappings as a function of gate count. The difference in error is normalized by the Jordan–Wigner error, such that a value of 0 indicates equivalent performance, with negative values implying high Bravyi–Kitaev error. Both schemes display remarkably similar errors for the magnitude ordering, likely due to the high degree of “physicality” of the ordering. For a lexicographic ordering, the Bravyi–Kitaev mapping shows lower error in most of the systems studied.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0009" id="gr8" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As above, the impact of this variation in error could prove substantial when propagated through the entire phase estimation algorithm. Using a lexicographic ordering—optimal for gate cancellation—the Bravyi–Kitaev mapping outperforms the Jordan–Wigner mapping in most cases. If this superior error performance scales to above 30 qubit systems, this could result in a reduction of the necessary Trotter steps for simulation. The consequent reduction in circuit length could counterbalance the marginally increased individual Trotter step cost of using the Bravyi–Kitaev mapping in a lexicographic ordering. Further work examining the entire procedure should assess this. Nonetheless, it should not be forgotten that an exact determination of the Trotterization error is equivalent to the solution of the exponentially hard eigenvalue problem itself. Consequentially, this approach may prove to be intractable. Qualitatively, an examination of the norm of the Trotter error operator may prove to be instructive.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span>
+ </p>
+</sec>

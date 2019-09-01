@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3dot2dot1-molecules-24-01402" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2.1. IR spectrum Calculation in 3D Periodic Approximation</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The simulation of IR spectra of crystalline melamine was based on harmonic analysis that was executed in three-dimensional periodic representation of crystal structure in Crystal 09 software (Aethia Srl, Italy) [
+  <a rid="B59-molecules-24-01402" ref-type="bibr" href="#B59-molecules-24-01402">59</a>]. An infinite 3D model of crystal lattice of melamine was constructed by defining the primitive cell, in accordance with the experimental structural data obtained from the Cambridge Structural Database (CSD) [
+  <a rid="B60-molecules-24-01402" ref-type="bibr" href="#B60-molecules-24-01402">60</a>,
+  <a rid="B61-molecules-24-01402" ref-type="bibr" href="#B61-molecules-24-01402">61</a>]. An unconstrained and full geometry optimization was performed, in which both the atomic centers and cell parameters underwent the treatment prior to all subsequent calculations. The following procedural parameters were set throughout the geometry and vibrational computing steps. The Monkhorst–Pack reciprocal space was sampled over a shrinking factor that was equal to eight. The self-consistent field (SCF) direct procedure was iteratively converged with a tolerance of 10
+  <span class="sup">−13</span> atomic units per unit cell; the truncation of Coulomb and exchange sums in direct space was controlled by setting the Gaussian overlap tolerance criteria to 10
+  <span class="sup">−8</span>, 10
+  <span class="sup">−8</span>, 10
+  <span class="sup">−8</span>, 10
+  <span class="sup">−8</span>, and 10
+  <span class="sup">−16</span>. With the objective of accelerating the convergence of the SCF procedure, a linear mixing of Fock matrices by 25% between adjacent steps and an energy shifting of 0.8 hartree for the first SCF cycle were employed. The electron integrals were numerically calculated over a dense (XL) integration grid. The periodic Density Functional Theory (DFT) computations were performed with the use of B3LYP (Becke, three-parameter, Lee-Yang-Parr) [
+  <a rid="B62-molecules-24-01402" ref-type="bibr" href="#B62-molecules-24-01402">62</a>] single-hybrid density functional, as implemented in Crystal 09 software.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Two separate calculations each using different basis sets were carried out. In the first one, we applied the following basis sets for the respective atomic centers: 3-1p1G for hydrogen, and 6-31d1G for carbon and nitrogen. Since Gatti et al. have jointly proposed these basis sets [
+  <a rid="B63-molecules-24-01402" ref-type="bibr" href="#B63-molecules-24-01402">63</a>], for sake of clarity in the present work we will refer to them as “Gatti” basis sets. For the second calculation, we used triple-ζ valence basis set with polarization (TZVP), applied uniformly for all atomic centers (C, N, H). The employment of the TZVP basis set substantially increased the computational expense. 
+  <a ref-type="sec" rid="sec2dot1-molecules-24-01402" href="#sec2dot1-molecules-24-01402">Section 2.1</a> discusses the quality of IR simulation obtained at B3LYP/TZVP and B3LYP/Gatti levels.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Harmonic vibrational frequencies and intensities were obtained at the Gamma point in each case. The frequencies are numerically obtained in Crystal 09; to ensure the high stability of this procedure, numerical derivation (in the calculation of the second derivatives of the potential energy) was based on two-point finite difference scheme. The convergence criterion for the vibrational analysis was successfully achieved, as the sonic modes of the crystal lattice approached near zero values (not exceeding −0.5 cm
+  <span class="sup">−1</span>). The calculated band positions were overestimated; the overestimation was decreasing towards lower wavenumbers. Few factors contribute to this; the key ones are likely overestimation of bond strengths, imperfect molecular structure, and neglecting of anharmonicity. To account for this fact, the calculated wavenumbers were scaled while using linear scaling (Equation (1)). 
+  <div id="FD1-molecules-24-01402" class="disp-formula">
+   <span class="label">(1)</span>
+   <div id="mm1" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span class="mi">ν</span>
+       <div class="mrow">
+        <span class="mi">s</span>
+        <span class="mi">c</span>
+        <span class="mi">a</span>
+        <span class="mi">l</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="msub">
+       <span class="mi">ν</span>
+       <div class="mrow">
+        <span class="mi">c</span>
+        <span class="mi">a</span>
+        <span class="mi">l</span>
+        <span class="mi">c</span>
+       </div>
+      </div>
+      <span class="mo">−</span>
+      <span class="mi">s</span>
+      <div class="msubsup">
+       <span class="mi">ν</span>
+       <div class="mrow">
+        <span class="mi">c</span>
+        <span class="mi">a</span>
+        <span class="mi">l</span>
+        <span class="mi">c</span>
+       </div>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The best fit was achieved with the scaling parameter 
+  <span class="italic">s</span> equal to 2.7 × 10
+  <span class="sup">−5</span> (in the 4000–2500 cm
+  <span class="sup">−1</span> region) and 1.6 × 10
+  <span class="sup">−5</span> (in the 2500–650 cm
+  <span class="sup">−1</span> region). This scheme resembles the Wavenumber Linear Scaling (WLS), as developed by Yoshida et al. [
+  <a rid="B64-molecules-24-01402" ref-type="bibr" href="#B64-molecules-24-01402">64</a>] Adjustments were necessary to fit the need of the study in a crystalline state. The calculated NIR spectra were scaled accordingly, while using scale factor 
+  <span class="italic">s</span> equal to 5.1 × 10
+  <span class="sup">−6</span> (Equation (1)). NIR scaling was significantly lesser; this is reasonable as the anharmonicity of the corresponding vibrations was already accounted for in the calculations. This is further explained in detail elsewhere (refer to Results and Discussion Section).
+ </p>
+</sec>

@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Collision Results</div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Reaction Probabilities</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We plot in 
+   <a ref-type="fig" rid="F4" href="#F4">Figure 4</a> the opacities functions (2
+   <span class="italic">J</span>+1)
+   <div class="inline-formula">
+    <div id="M57" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mi">P</span>
+      </div>
+      <div class="mrow">
+       <div class="msub">
+        <div class="mrow">
+         <span class="mi">v</span>
+        </div>
+        <div class="mrow">
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+      <div class="mrow">
+       <span class="mi">J</span>
+      </div>
+     </div>
+    </div>
+   </div>(
+   <span class="italic">E</span>
+   <sub>coll</sub>) at 
+   <span class="italic">J</span> = 20 and 40, 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1, 
+   <span class="italic">E</span>
+   <sub>coll</sub> ≤ 3 eV, and 
+   <span class="italic">K</span>
+   <sub>max</sub> = 0, 1, and 2, with 
+   <span class="italic">kstep</span> = 5, which converges the probabilities within 0.1% above ~0.5 eV. The curves at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1 present a similar behavior, namely narrow resonance features at 
+   <span class="italic">J</span> = 20 and 
+   <span class="italic">E</span>
+   <sub>coll</sub> ≤ 0.5 eV and a smooth, fast increase above. From the comparison among lower and upper panels we see that 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1 is more reactive than 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 by ~one order of magnitude. Of course, this finding reflects the 
+   <div class="inline-formula">
+    <div id="M58" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mtext">HeH</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+   </div>(Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>′) early potential barrier of 1.34 eV and the 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1 density maximum at 1.73 
+   <span class="italic">a</span>
+   <sub>0</sub> (
+   <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>), close to the NACME maximum. Comparing the curves inside each panel, we observe a very fast convergence in 
+   <span class="italic">K</span>
+   <sub>max</sub>, so that the Coupled-State approximation (McGuire and Kouri, 
+   <a rid="B31" ref-type="bibr" href="#B31">1974</a>; Pack, 
+   <a rid="B36" ref-type="bibr" href="#B36">1974</a>) at 
+   <span class="italic">K</span>
+   <sub>max</sub> = 0 gives already reasonable results. Just two 
+   <span class="italic">K</span>s converge the plots within the graphical accuracy, implying that the Coriolis couplings between 
+   <span class="italic">K</span> and 
+   <span class="italic">K</span> ± 1 vanish quickly when the initial 
+   <span class="italic">K</span>
+   <sub>0</sub> is equal to zero. To reach the high accuracy claimed above at all the partial waves required to give convergent ICSs in all the collision energy range considered, we employ 
+   <span class="italic">K</span>
+   <sub>max</sub> = 2 and 3 for 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1, respectively. In the 
+   <span class="italic">J</span> = 20 left panels, the dashed lines show the convergent results below 0.5 eV and the weight of the resonances with respect to the background. The resonance features are probably due to rotational metastable states of the 
+   <span class="italic">C</span>
+   <sub>2v</sub> ion-induced dipole minimum in the entrance channel. These states, embedded in the collisional continuum, are particular Feshbach resonances induced by the CI (Cederbaum and Friedman, 
+   <a rid="B11" ref-type="bibr" href="#B11">2003</a>), with lifetimes of the order of the nano-second. The 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 opacities then increase in a monotonic way above 0.6 eV up to a maximum value of ~0.06 at 3 eV, that is one-two orders of magnitude larger than the strongest resonance. The 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1 opacities show the same behavior, but the value at 3 eV is just two times larger than the resonance maximum. However, to converge the resonance energy pattern very different values of the convergent parameters 
+   <span class="italic">K</span>
+   <sub>max</sub> and 
+   <span class="italic">kstep</span> are required.
+  </p>
+  <div id="F4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>
+     <span class="italic">v</span>
+     <sub>0</sub> = 0, 1; 
+     <span class="italic">J</span> = 20, 40; 
+     <span class="italic">kstep</span> = 5. Convergence of the opacities (2
+     <span class="italic">J</span>+1)
+     <div class="inline-formula">
+      <div id="M59" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">P</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">v</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">J</span>
+        </div>
+       </div>
+      </div>
+     </div> with respect to 
+     <span class="italic">K</span>
+     <sub>max</sub>.
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We show in 
+   <a ref-type="fig" rid="F5" href="#F5">Figure 5</a> the opacities at 
+   <span class="italic">J</span> = 10 and 20, for 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0, 
+   <span class="italic">E</span>
+   <sub>coll</sub> ≤ 0.3 V, 
+   <span class="italic">K</span>
+   <sub>max</sub> = 0, 3, and 4, and 
+   <span class="italic">kstep</span> = 120. In the upper panels a blow up of 0.05 eV also shows the details of the resonance features. From this figure we can observe that the convergence in 
+   <span class="italic">K</span>
+   <sub>max</sub> is slower than for high energies. The curves at 
+   <span class="italic">K</span>
+   <sub>max</sub> = 0 exhibit less peaks and the resonances shift in energy by increasing this parameter. Three main groups of resonances could be identified, decreasing and then disappearing at high 
+   <span class="italic">E</span>
+   <sub>coll</sub>. This result suggests that the different peaks inside each group correspond to different bending energies of the collision complex (Aquilanti et al., 
+   <a rid="B8" ref-type="bibr" href="#B8">2005</a>) while different groups correspond to different energies of the symmetric stretching motion. The 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1 curves have a similar behavior, with the 
+   <span class="italic">K</span>
+   <sub>max</sub> convergence slightly faster and the resonances at lower energies.
+  </p>
+  <div id="F5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 5</span>
+   <div class="caption">
+    <p>
+     <span class="italic">v</span>
+     <sub>0</sub> = 0; 
+     <span class="italic">J</span> = 10, 20; 
+     <span class="italic">kstep</span> = 120. Convergence of the opacities (2
+     <span class="italic">J</span>+1)
+     <div class="inline-formula">
+      <div id="M60" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">P</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">v</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">J</span>
+        </div>
+       </div>
+      </div>
+     </div> with respect to 
+     <span class="italic">K</span>
+     <sub>max</sub>.
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0005" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In 
+   <a ref-type="fig" rid="F6" href="#F6">Figure 6</a> the resonance energy patterns at 
+   <span class="italic">J</span> = 5, 10, 15, and 20, 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1, and 
+   <span class="italic">K</span>
+   <sub>max</sub> = 3 are plotted for 
+   <span class="italic">E</span>
+   <sub>coll</sub> ≤ 0.11 eV at different 
+   <span class="italic">kstep</span> values. The 
+   <span class="italic">K</span>
+   <sub>max</sub> value gives a graphical convergence to the curves and the logarithmic scale of the energy points out the resonance details. Here 
+   <span class="italic">kstep</span> is much greater than for the background and changes markedly with 
+   <span class="italic">J</span> and 
+   <span class="italic">E</span>
+   <sub>coll</sub>. In fact, 
+   <span class="italic">kstep</span> = 350 is still not enough to converge all the 
+   <span class="italic">J</span> = 5 and 10 features, especially below 0.01 eV, but 
+   <span class="italic">kstep</span> = 160 perfectly converges the resonances at 
+   <span class="italic">J</span> = 15 and 20. As expected, the slowest convergent resonances are the narrowest ones, with largest lifetimes (Aquilanti et al., 
+   <a rid="B9" ref-type="bibr" href="#B9">2004</a>). Moreover, the lifetimes of the collision complexes decrease at high 
+   <span class="italic">J</span> and 
+   <span class="italic">E</span>
+   <sub>coll</sub>, because the centrifugal barrier increases and the resonances are less trapped inside the shallower well. Above 
+   <span class="italic">J</span> = 25 the well is so shallow that it does not support any resonance and the features disappear. Of course, increasing 
+   <span class="italic">kstep</span> means increase the collision time that must be of the same order of magnitude of the lifetime of the resonance intermediate to give convergent results.
+  </p>
+  <div id="F6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 6</span>
+   <div class="caption">
+    <p>
+     <span class="italic">v</span>
+     <sub>0</sub> = 1; 
+     <span class="italic">J</span> = 5, 10, 15, 20; 
+     <span class="italic">K</span>
+     <sub>max</sub> = 3. Convergence of the opacities (2
+     <span class="italic">J</span>+1)
+     <div class="inline-formula">
+      <div id="M61" class="math">
+       <div class="msubsup">
+        <div class="mrow">
+         <span class="mi">P</span>
+        </div>
+        <div class="mrow">
+         <div class="msub">
+          <div class="mrow">
+           <span class="mi">v</span>
+          </div>
+          <div class="mrow">
+           <span class="mn">0</span>
+          </div>
+         </div>
+        </div>
+        <div class="mrow">
+         <span class="mi">J</span>
+        </div>
+       </div>
+      </div>
+     </div> with respect to 
+     <span class="italic">kstep</span>.
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0006" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Integral Cross Sections and Rate Constants</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">We plot in 
+   <a ref-type="fig" rid="F7" href="#F7">Figure 7</a> the total ICS at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1, with 
+   <span class="italic">J</span> ≤ 150 to obtain convergent results up to 3 eV, noting that the convergent requirements change markedly with 
+   <span class="italic">E</span>
+   <sub>coll</sub> and 
+   <span class="italic">J</span>. To minimize the computational effort, the total number of partial waves was therefore shared in different groups, and different values of 
+   <span class="italic">K</span>
+   <sub>max</sub> and 
+   <span class="italic">kstep</span> were employed in each group, as shown in 
+   <a rid="T2" ref-type="table" href="#T2">Table 2</a>.
+  </p>
+  <div id="F7" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 7</span>
+   <div class="caption">
+    <p>Initial-state-resolved ICSs at 
+     <span class="italic">v</span>
+     <sub>0</sub> = 0 (red) and 1 (blue).
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0007" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <div id="T2" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 2</span>
+   <div class="caption">
+    <p>Parameters of ICS calculations.</p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th valign="top" align="left" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">v</span>
+        <sub>
+         <span class="bold">0</span>
+        </sub>
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">J</span>
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">kstep</span>
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">K</span>
+        <sub>
+         <span class="bold">max</span>
+        </sub>
+       </span>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">0–24</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">160</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">25–52</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">40</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">53–82</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">20</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">83–150</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">0–14</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">350</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">15–25</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">160</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">26–38</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">110</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">39–102</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">20</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">103–150</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Notwithstanding the large 
+   <span class="italic">kstep</span> used for the lowest partial waves, test calculations show that some narrow ICS peak slightly increases with more steps. With these input data, a convergence within 0.1% is reached only by the resonance peaks above 0.05 eV. The results in 
+   <a ref-type="fig" rid="F7" href="#F7">Figure 7</a> confirm the general scenario of the opacities: sharp resonances below 0.3 eV and a monotonic increase at larger 
+   <span class="italic">E</span>
+   <sub>coll</sub>. The 
+   <span class="italic">J</span> sum now merges the resonances in two main groups, the first and stronger below 0.1 eV, and the latter and weaker from 0.1 to 0.3 eV. At 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0, the strongest resonance is equal to 0.003 Å
+   <span class="sup">2</span> at 0.0116 eV and the maximum at 3 eV has nearly the same value. At 
+   <span class="italic">v</span>
+   <sub>0</sub> = 1, the strongest resonance is larger than the value at 3 eV by ~one order of magnitude, and is equal to 0.455 Å
+   <span class="sup">2</span> at 0.0096 eV. In conclusion, the one-quantum vibrational excitation of H
+   <sub>2</sub>(X
+   <span class="sup">1</span>Σ
+   <div class="inline-formula">
+    <div id="M62" class="math">
+     <div class="msubsup">
+      <div class="mrow"/>
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+   </div>) increases the cross section by more than two orders of magnitude at ~0.01–0.02 eV and by ~20 times at 3 eV.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">As said in the Introduction, only the semiclassical theoretical works by Aguillon (
+   <a rid="B6" ref-type="bibr" href="#B6">1994</a>, 
+   <a rid="B7" ref-type="bibr" href="#B7">1998</a>) have obtained ICSs at or below 3 eV. We present in 
+   <a rid="T3" ref-type="table" href="#T3">Table 3</a> a comparison between our quantum ICSs and those estimated from 
+   <a ref-type="fig" rid="F4" href="#F4">Figure 4</a> of Aguillon (
+   <a rid="B7" ref-type="bibr" href="#B7">1998</a>), showing the good agreement between the results that differ at the most by ~24% at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 
+   <span class="italic">E</span>
+   <sub>coll</sub> = 2 eV. Taking into account the different theoretical treatment and the small reactivity at these conditions, this implies that the Aguillon semiclassical treatment of the DCT reaction works remarkably well at this collision energies, where the ICSs do not present any quantum resonance.
+  </p>
+  <div id="T3" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 3</span>
+   <div class="caption">
+    <p>Present quantum ICSs/Å
+     <span class="sup">2</span> vs. those semiclassical (Aguillon, 
+     <a rid="B7" ref-type="bibr" href="#B7">1998</a>).
+    </p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th valign="top" align="left" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">v</span>
+        <sub>
+         <span class="bold">0</span>
+        </sub>
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">E</span>
+        <sub>
+         <span class="bold">coll</span>
+        </sub>/eV
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">present work</span>
+      </th>
+      <th valign="top" align="left" rowspan="1" colspan="1">
+       <span class="bold">(Aguillon, 
+        <a rid="B7" ref-type="bibr" href="#B7">1998</a>)
+       </span>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">8.7 × 10
+       <span class="sup">−4</span>
+      </td>
+      <td valign="top" align="left" rowspan="1" colspan="1">(~7 × 10
+       <span class="sup">−4</span>)
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3.3 × 10
+       <span class="sup">−3</span>
+      </td>
+      <td valign="top" align="left" rowspan="1" colspan="1">(~3 × 10
+       <span class="sup">−3</span>)
+      </td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">3.5 × 10
+       <span class="sup">−2</span>
+      </td>
+      <td valign="top" align="left" rowspan="1" colspan="1">(~3.5 × 10
+       <span class="sup">−2</span>)
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1" colspan="1"/>
+      <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">6.5 × 10
+       <span class="sup">−2</span>
+      </td>
+      <td valign="top" align="left" rowspan="1" colspan="1">(~6 × 10
+       <span class="sup">−2</span>)
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Finally, we report in 
+   <a rid="T4" ref-type="table" href="#T4">Table 4</a> and 
+   <a ref-type="fig" rid="F8" href="#F8">Figure 8</a> the initial-state-resolved rate constants 
+   <span class="italic">k</span>
+   <sub>
+    <span class="italic">v</span>
+    <sub>0</sub>
+   </sub>(
+   <span class="italic">T</span>), at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1, as functions of the temperature 
+   <span class="italic">T</span> up to 2,000 K. Their accuracy is ~2%, considering the slow convergence of the resonances, and the rates are stable with respect to changes of the parameters in 
+   <a rid="T1" ref-type="table" href="#T1">Tables 1</a>, 
+   <a rid="T2" ref-type="table" href="#T2">2</a>. Both rates increase quickly by a factor of ~30 from 20 to 200 K, with a maximum at ~250 K equal to 1.75 10
+   <span class="sup">−14</span> and 1.97 10
+   <span class="sup">−12</span> cm
+   <span class="sup">3</span> sec
+   <span class="sup">−1</span> for 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 1, respectively. This behavior is associated with the sharp ICS resonances above ~0.006 eV and is similar to that of H+HeH
+   <span class="sup">+</span> (De Fazio, 
+   <a rid="B14" ref-type="bibr" href="#B14">2014</a>). Note that a rate-constant maximum was also found in the adiabatic ground PES dynamics of H+HeH
+   <span class="sup">+</span> (Esposito et al., 
+   <a rid="B19" ref-type="bibr" href="#B19">2015</a>) using the PES of Ramachandran et al. (
+   <a rid="B39" ref-type="bibr" href="#B39">2009</a>), but it was at ~10,000 K and due to a complete different mechanism. Then the rates slowly decrease with 
+   <span class="italic">T</span> and become nearly constant above 1,500 K, where they differ by two orders of magnitude. On the overall, this behavior is due to the ICS resonances shown in 
+   <a ref-type="fig" rid="F7" href="#F7">Figure 7</a> overlapped to a nearly Langevin decrease of the associated cross sections up to ~0.5 eV.
+  </p>
+  <div id="T4" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Table 4</span>
+   <div class="caption">
+    <p>Rate constants 
+     <span class="italic">k</span>
+     <sub>0</sub> and 
+     <span class="italic">k</span>
+     <sub>1</sub>/cm
+     <span class="sup">3</span> s
+     <span class="sup">−1</span>.
+    </p>
+   </div>
+   <table frame="hsides" rules="groups">
+    <thead>
+     <tr>
+      <th valign="top" align="left" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">T</span>/K
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">k</span>
+        <sub>
+         <span class="bold">0</span>
+        </sub>/10
+        <span class="sup">
+         <span class="bold">−14</span>
+        </span>
+       </span>
+      </th>
+      <th valign="top" align="center" rowspan="1" colspan="1">
+       <span class="bold">
+        <span class="italic">k</span>
+        <sub>
+         <span class="bold">1</span>
+        </sub>/10
+        <span class="sup">
+         <span class="bold">−12</span>
+        </span>
+       </span>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">50</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">0.73</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.12</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">100</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.36</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.71</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">200</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.72</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.99</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">300</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.74</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.98</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">500</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.61</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.81</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">1,000</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.37</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.53</td>
+     </tr>
+     <tr>
+      <td valign="top" align="left" rowspan="1" colspan="1">2,000</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.30</td>
+      <td valign="top" align="center" rowspan="1" colspan="1">1.39</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div id="F8" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 8</span>
+   <div class="caption">
+    <p>Initial-state-resolved rate constants at 
+     <span class="italic">v</span>
+     <sub>0</sub> = 0 (red) and 1 (blue).
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0008" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Because we have considered just the ground rotational state of H
+   <sub>2</sub>(
+   <span class="italic">X</span>
+   <span class="sup">1</span>Σ
+   <div class="inline-formula">
+    <div id="M63" class="math">
+     <div class="msubsup">
+      <div class="mrow"/>
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+   </div>), 
+   <span class="italic">j</span>
+   <sub>0</sub> = 0, the present rate constant at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0 and 300 K underestimates by a factor of ~6 the thermal experimental 
+   <span class="italic">k</span>(330) = (1.1 ± 0.1) × 10
+   <span class="sup">−13</span>cm
+   <span class="sup">3</span>s
+   <span class="sup">−1</span> (Johnsen et al., 
+   <a rid="B28" ref-type="bibr" href="#B28">1980</a>), which is however 39 years old. The agreement increases if we consider H
+   <sub>2</sub> in the excited rotational states that are open at 300 K, because test calculations suggest that the reactivity can be enhanced by ~33% when 
+   <span class="italic">j</span>
+   <sub>0</sub> = 1. Taking into account the H
+   <sub>2</sub>(
+   <span class="italic">X</span>
+   <span class="sup">1</span>Σ
+   <div class="inline-formula">
+    <div id="M64" class="math">
+     <div class="msubsup">
+      <div class="mrow"/>
+      <div class="mrow">
+       <span class="mi">g</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+   </div>) Fermi-Dirac nuclear spin statistics, the room-temperature populations of 
+   <span class="italic">j</span>
+   <sub>0</sub> = 0 and 1 are ~0.13 and 0.66, respectively, and this implies a rotational enhancement of the rate constant by a factor of ~7. Owing to the room-temperature branching ratio of 
+   <span class="italic">para</span>- and 
+   <span class="italic">ortho</span>-H
+   <sub>2</sub> and the rotational effects on the reactivity, we can roughly estimate than 
+   <span class="italic">ortho</span>-H
+   <sub>2</sub> is ~4 times more reactive than the 
+   <span class="italic">para</span> species.
+  </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">In closing this section, we have also done some test calculations of the reaction probabilities in the adiabatic approximation, on the Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>' PES of 
+   <div class="inline-formula">
+    <div id="M65" class="math">
+     <div class="msubsup">
+      <div class="mrow">
+       <span class="mtext">HeH</span>
+      </div>
+      <div class="mrow">
+       <span class="mn">2</span>
+      </div>
+      <div class="mrow">
+       <span class="mo">+</span>
+      </div>
+     </div>
+    </div>
+   </div> (see 
+   <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>). Without reaching the accuracy and the stability of the results in section Reaction Probabilities, we present an example at 
+   <span class="italic">v</span>
+   <sub>0</sub> = 0, 
+   <span class="italic">J</span> = 0, and 
+   <span class="italic">kstep</span> = 120, contrasting in 
+   <a ref-type="fig" rid="F9" href="#F9">Figure 9</a> adiabatic Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>' and non-adiabatic CI (1)
+   <span class="sup">2</span>
+   <span class="italic">A</span>
+   <sub>1</sub>/(2)
+   <span class="sup">2</span>
+   <span class="italic">B</span>
+   <sub>2</sub> results. Although both probabilities present a resonance structure at low 
+   <span class="italic">E</span>
+   <sub>coll</sub> and increase above ~1 eV, the reactivity is dramatically different, with the Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>′ probability hugely larger than the CI one, from 6 orders of magnitude at 0.001 eV to 2 orders at 3 eV. This finding shows that the Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>′ adiabatic PES drives the WP into the exothermic product channel, following a 
+   <span class="italic">C</span>
+   <sub>
+    <span class="italic">s</span>
+   </sub> pathway that avoids the 
+   <span class="italic">C</span>
+   <sub>2v</sub> barrier of the CI. On the contrary, the non-adiabatic CI WP remains essentially on the initial and repulsive (1)
+   <span class="sup">2</span>
+   <span class="italic">A</span>
+   <sub>1</sub> diabatic PES 
+   <span class="italic">V</span>
+   <sub>11</sub>, owing to the weak non-adiabatic interaction. As expected, only at energies larger than 3 eV the two probabilities seem to merge and the adiabatic approximation is probably less worse. We roughly estimate that the adiabatic Ã
+   <span class="sup">2</span>
+   <span class="italic">A</span>′ rate constants at 330 K is ~1,000 times larger than the experimental value (Johnsen et al., 
+   <a rid="B28" ref-type="bibr" href="#B28">1980</a>).
+  </p>
+  <div id="F9" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 9</span>
+   <div class="caption">
+    <p>
+     <span class="italic">v</span>
+     <sub>0</sub> = 0, 
+     <span class="italic">J</span> = 0, 
+     <span class="italic">kstep</span> = 120. Adiabatic Ã
+     <span class="sup">2</span>
+     <span class="italic">A</span>' (black) and non-adiabatic (1)
+     <span class="italic">A</span>
+     <sub>1</sub>/(2)
+     <span class="italic">B</span>
+     <sub>2</sub> (red) probabilities.
+    </p>
+   </div>
+   <div xlink:href="fchem-07-00249-g0009" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="discussion" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DISCUSSION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Realization of the fractional QKT with qudit systems opens a previously unidentified prospect for transformation of large data sequences in 
+  <span class="italic">O</span>(1) time. This is not possible with the implementations based on waveguides. Both cases are examples of a nonuniversal quantum computer optimized for one task, which is the basis for a variety of important applications (
+  <a rid="R15" ref-type="bibr" href="#R15">
+   <span class="italic">15</span>
+  </a>). The photonic proof of concept is currently limited by the range of input states that can be prepared. However, deterministic creation of an arbitrary superposition of Fock states has been demonstrated for trapped ions and superconducting resonators (
+  <a rid="R21" ref-type="bibr" href="#R21">
+   <span class="italic">21</span>
+  </a>). Since a BS sees orthogonal spectral or polarization modes independently, one can extend the transform to higher dimensions (
+  <a rid="R22" ref-type="bibr" href="#R22">
+   <span class="italic">22</span>
+  </a>, 
+  <a rid="R23" ref-type="bibr" href="#R23">
+   <span class="italic">23</span>
+  </a>). We note that the QKT could also be implemented on existing quantum annealing processors (
+  <a rid="R24" ref-type="bibr" href="#R24">
+   <span class="italic">24</span>
+  </a>), which operate on a chain of interacting spin-
+  <div class="inline-formula">
+   <div id="m36" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> systems (Supplementary Materials), and using HOM interference of fermions with a symmetric wave function of the interfering degrees of freedom.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Large-scale realizations of the QKT may use an increasing number of measurements as an error minimization strategy (Supplementary Materials). This is akin to the common approach in classical data processing where the accuracy can be improved by an enhanced precision of numeric data types and number of iterations, without altering the proper algorithm. Errors resulting from losses in the system, e.g., at the BS, are easily corrected by applying a post-selection scheme and filtering out the cases when the total number of photons behind the BS is lower than in the input state.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <span class="italic">O</span>(1) computation of the fractional FT for continuous variable systems can be implemented with a shallow system, realizing a phase shift operation (
+  <a rid="R25" ref-type="bibr" href="#R25">
+   <span class="italic">25</span>
+  </a>). This is a quantum counterpart of the operation of a single focusing lens in classical optics, which produces the fractional FT of the image placed at its focal length (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>). The QKT operates on discrete variables, but when the sampling rate and the sequence length of input data increase, the α-fractional QKT tends to the α-fractional FT (
+  <a rid="R4" ref-type="bibr" href="#R4">
+   <span class="italic">4</span>
+  </a>). This relation is also reflected by the fact that symmetric Kravchuk functions 
+  <div class="inline-formula">
+   <div id="m37" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msubsup">
+       <span mathvariant="normal" class="mi">ϕ</span>
+       <span class="mi">k</span>
+       <div class="mrow">
+        <span stretchy="false" class="mo">(</span>
+        <span class="mi">p</span>
+        <span class="mo">=</span>
+        <span class="mn">1</span>
+        <span class="mo">/</span>
+        <span class="mn">2</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> (eigenfunctions of QKT) tend to Hermite-Gauss polynomials (eigenfunctions of the FT) in this limit.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Our result, along with the fact that qudit-based algorithms exhibit much lower number of operations than qubit-based ones (
+  <a rid="R26" ref-type="bibr" href="#R26">
+   <span class="italic">26</span>
+  </a>), motivates the further development of highly controllable quantum harmonic oscillator platforms with implications for quantum signal processing in a whole range of applications. Provided efficient input state preparation and detection of larger Fock states, the 
+  <span class="italic">O</span>(1) QKT demonstrated here, in principle, may find practical applications in imaging of unprecedented quality, fostering early diagnostics and advances in neuroscience (
+  <a rid="R27" ref-type="bibr" href="#R27">
+   <span class="italic">27</span>
+  </a>).
+ </p>
+</sec>

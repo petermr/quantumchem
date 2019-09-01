@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec004" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Case Study</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The new RM1 model was applied to predict the structure of tetramer of praseodymium, [Pr4Cl10(OH)2(thiazole)8(H2O)2][
+  <a rid="pone.0124372.ref020" ref-type="bibr" href="#pone.0124372.ref020">20</a>]. The RM1 structure was calculated using MOPAC 2009 software and keywords used were the following: RM1 (the Hamiltonian used), PRECISE, GNORM = 0.25, SCFCRT = 1.D-10 (in order to increase the SCF convergence criterion) and XYZ (the geometry optimizations were performed in cartesian coordinates).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+  <a rid="pone.0124372.g011" ref-type="fig" href="#pone.0124372.g011">Fig 11</a> shows the overlapping of the RM1 and crystallographic structures. The good match observed visually can be confirmed by the low value obtained for the root mean square deviation (RMSD) of 0.034Å, obtained via a RMSD fit and alignment.
+ </p>
+ <div id="pone.0124372.g011" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pone.0124372.g011</span>
+  <span class="label">Fig 11</span>
+  <div class="caption">
+   <div class="title">Root mean square deviation fit and alignment of crystallographic and RM1 fully optimized structures of the tetramer of praseodymium, [Pr
+    <sub>4</sub>Cl
+    <sub>10</sub>(OH)
+    <sub>2</sub>(thiazole)
+    <sub>8</sub>(H
+    <sub>2</sub>O)
+    <sub>2</sub>][
+    <a rid="pone.0124372.ref020" ref-type="bibr" href="#pone.0124372.ref020">20</a>].
+   </div>
+  </div>
+  <div xlink:href="pone.0124372.g011" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A detailed analysis reveals that for the RM1 structure, the average bond length between the Pr3+ ions is 4.54Å whereas the average obtained from crystallographic structure is 4.58Å. The UME considering all Pr3+—L distances (where L = Pr3+, O, N and Cl) is 0.12Å. It is important to highlight that the CPU time for the full geometry optimization using the RM1 model was very fast, less than 3 minutes using a laptop core i7 with 8GB of RAM memory.</p>
+</sec>

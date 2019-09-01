@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">6651270</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1021/acs.jcim.9b00384</article-id>
+ <article-categories class="article-categories">
+  <div class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Article</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">QMflows: A Tool Kit for Interoperable Parallel Workflows in Quantum Chemistry</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" id="ath1" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Zapata</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Felipe</span>
+   </name>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">#</a>
+   <a rid="aff2" ref-type="aff" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath2" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ridder</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Lars</span>
+   </name>
+   <a rid="aff2" ref-type="aff" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath3" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Hidding</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Johan</span>
+   </name>
+   <a rid="aff2" ref-type="aff" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">†</a>
+  </contrib>
+  <contrib contrib-type="author" id="ath4" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jacob</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Christoph R.</span>
+   </name>
+   <a rid="aff3" ref-type="aff" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">‡</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath5" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Infante</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ivan</span>
+   </name>
+   <a rid="cor1" ref-type="other" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">#</a>
+   <a rid="aff4" ref-type="aff" href="#aff4" xmlns="http://www.w3.org/1999/xhtml">§</a>
+  </contrib>
+  <contrib contrib-type="author" corresp="yes" id="ath6" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Visscher</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Lucas</span>
+   </name>
+   <a rid="cor2" ref-type="other" href="#cor2" xmlns="http://www.w3.org/1999/xhtml">*</a>
+   <a rid="aff1" ref-type="aff" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">#</a>
+  </contrib>
+  <aff id="aff1" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">#</span>Division of Theoretical Chemistry, Faculty of Science, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Vrije Universiteit Amsterdam</span>, de Boelelaan 1083, 1081 HV Amsterdam, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">The Netherlands</span>
+  </aff>
+  <aff id="aff2" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">†</span>Netherlands eScience Center, Science Park 140 (Matrix I), 1098 XG Amsterdam, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">The Netherlands</span>
+  </aff>
+  <aff id="aff3" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">‡</span>Institute of Physical and Theoretical Chemistry, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">TU Braunschweig</span>, Gaußstraße 17, 38106 Braunschweig, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Germany</span>
+  </aff>
+  <aff id="aff4" class="aff" xmlns="">
+   <span class="label" xmlns="http://www.w3.org/1999/xhtml">§</span>Department of Nanochemistry, 
+   <span class="institution" xmlns="http://www.w3.org/1999/xhtml">Istituto Italiano di Tecnologia</span>, Via Morego 30, 16163 Genova, 
+   <span class="country" xmlns="http://www.w3.org/1999/xhtml">Italy</span>
+  </aff>
+ </div>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">
+   <span class="label">*</span>E-mail: 
+   <span class="email">i.a.c.infante@vu.nl</span>.
+  </div>
+  <div id="cor2" class="corresp">
+   <span class="label">*</span>E-mail: 
+   <span class="email">l.visscher@vu.nl</span>.
+  </div>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">19</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">06</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <pub-date pub-type="ppub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">22</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">07</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">59</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">7</span>
+ <span class="fpage" xmlns="http://www.w3.org/1999/xhtml">3191</span>
+ <span class="lpage" xmlns="http://www.w3.org/1999/xhtml">3197</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">08</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">05</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2019</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Copyright © 2019 American Chemical Society</span>
+  <span class="copyright-year">2019</span>
+  <span class="copyright-holder">American Chemical Society</span>
+  <div class="license">
+   <div class="license-p">This is an open access article published under a Creative Commons Non-Commercial No Derivative Works (CC-BY-NC-ND) Attribution 
+    <span ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_ccbyncnd_termsofuse.html" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">License</span>, which permits copying and redistribution of the article, and creation of adaptations, all for non-commercial purposes.
+   </div>
+  </div>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p content-type="toc-graphic">
+   <div xlink:href="ci-2019-00384y_0006" id="ab-tgr1" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </p>
+  <p>We present the QMflows Python package for quantum chemistry workflow automatization. QMflows allows users to write complex workflows in terms of simple Python scripts. It supports the development of interoperable workflows involving multiple quantum chemistry codes and executes them efficiently on large scale parallel computers. This open source library provides standardized interfaces to a number of quantum chemistry packages and can be easily extended to accommodate additional codes. QMflows features are described and illustrated with a number of representative applications.</p>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="custom-meta">
+   <span class="meta-name">document-id-old-9</span>
+   <span class="meta-value">ci9b00384</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">document-id-new-14</span>
+   <span class="meta-value">ci-2019-00384y</span>
+  </div>
+  <div class="custom-meta">
+   <span class="meta-name">ccc-price</span>
+   <span class="meta-value"/>
+  </div>
+ </div>
+</article-meta>

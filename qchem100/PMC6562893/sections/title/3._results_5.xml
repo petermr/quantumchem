@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="results" id="s3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3. Results</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The first example is the one-nucleus density of the water molecule. 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a> shows its familiar vibrations as arrows indicating the motion of classical nuclei. There are three vibrational normal mode coordinates which are labeled according to the usual spectroscopic notation (Shimanouchi, 
+  <a rid="B40" ref-type="bibr" href="#B40">1972</a>): the symmetric stretch ν
+  <sub>1</sub>, the bending mode (scissoring) ν
+  <sub>2</sub>, and the antisymmetric stretch ν
+  <sub>3</sub>. The one-nucleus densities of the water molecule for some excitations of these modes are shown in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> as contour plots in the molecular plane, labeled as (
+  <span class="italic">n</span>
+  <sub>ν
+   <sub>1</sub>
+  </sub>, 
+  <span class="italic">n</span>
+  <sub>ν
+   <sub>2</sub>
+  </sub>, 
+  <span class="italic">n</span>
+  <sub>ν
+   <sub>3</sub>
+  </sub>), where 
+  <span class="italic">n</span>
+  <sub>ν
+   <sub>
+    <span class="italic">j</span>
+   </sub>
+  </sub> is the quantum number of mode ν
+  <sub>
+   <span class="italic">j</span>
+  </sub>. Insets magnify the details of the nuclear density around the oxygen nucleus, as the density there is much more localized compared to the hydrogen nuclei due to the mass difference.
+ </p>
+ <div id="F1" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 1</span>
+  <div class="caption">
+   <p>Normal modes of a water molecule in the molecular plane (arrows show the extent and directionality (color) of the nuclear displacement along the mode): Symmetric stretch ν
+    <sub>1</sub>, bending mode ν
+    <sub>2</sub>, and antisymmetric stretch ν
+    <sub>3</sub>. The top-row shows sketches of the harmonic oscillator densities along the modes for the first excitation of the bending mode (010), the bottom row for the first excitation of the antisymmetric stretch (001). A light filling of these densities indicates that locally other modes point in the same direction, while a dark filling means that this is not the case.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00424-g0001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <div id="F2" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 2</span>
+  <div class="caption">
+   <p>Contour plots of the one-nucleus density of a localized and oriented water molecule in the molecular plane for different vibrationally excited states. State labels (
+    <span class="italic">n</span>
+    <sub>ν
+     <sub>1</sub>
+    </sub>, 
+    <span class="italic">n</span>
+    <sub>ν
+     <sub>2</sub>
+    </sub>, 
+    <span class="italic">n</span>
+    <sub>ν
+     <sub>3</sub>
+    </sub>) indicate the number of quanta in normal modes ν
+    <sub>1</sub>, ν
+    <sub>2</sub>, ν
+    <sub>3</sub>, respectively.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00424-g0002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The one-nucleus density of the vibrational ground state (000) shown in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> looks for each nucleus like a product of Gaussian functions oriented along the directions of the normal modes. The one-nucleus densities of the first excitation in each mode, (100), (010), and (001), show how a node in the first excited state of the HO along the corresponding normal modes translates to the one-nucleus density. From the pictures, it seems that the node in the wavefunction of one of these modes leads to a depletion of the one-nucleus density along this normal mode coordinate, but not to exact nodes or nodal planes in the one-nucleus density. There are two reasons for the absence of exact nodes: First, a Gaussian distribution for the translational and rotational modes is assumed. Depending on the width of the these distributions, the resulting one-nucleus densities become broader and loose their structure. A very narrow Gaussian distribution is chosen, hence this reason is of minor importance. The main reasons for the absence of exact nodes in the one-nucleus density is that those nodes only exists in configuration space, while the reduction of the 
+  <span class="italic">N</span>-nucleus density to the one-nucleus density as given in (5) in general does not yield zero anywhere in space.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To understand the one-nucleus density in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>, the analytic form of the 
+  <span class="italic">N</span>-nucleus density needs to be investigated. It is a product of HO densities in all normal modes, because the wavefunction (7) is a product of HO wavefunctions. These 1d-HO densities can be visualized by functions centered at the equilibrium position of the three nuclei, with extent and direction as given by the arrows. In 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, the idea is illustrated for the first excited state of the bending mode, (010), and of the antisymmetric stretch, (001).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Some predictions can be made about the qualitative features of the one-nucleus densities at the nuclei by means of a set of simple rules. These rules are called the LOcal COmparison (LOCO) rules, because they are based on a comparison of the normal mode coordinates at the location of each nucleus separately. The LOCO rules are as follows: For a nucleus, the magnitudes and directions of the displacements along the normal modes are compared. (a) If only one normal mode displaces the nucleus in a certain direction or if there is one normal mode that displaces the nucleus in a certain direction much stronger than the other normal modes, the nodes of the wavefunction due to an excitation of this normal mode are clearly visible as depletions in the one-nucleus density. (b) If several normal modes displace the nucleus in the same direction by similar magnitude, an excitation of one of these modes is not necessarily visible in the one-nucleus density. In general, the more such modes exist, the less likely it is that an excitation in one of these can be recognized in the one-nucleus density. It follows that typically, only the normal modes that displace a nucleus the most in a given direction can have a strong influence on the qualitative shape of the one-nucleus density. (c) If there are two (or more) modes that displace the nucleus in the same direction, simultaneous excitation of these modes may show combination features, as exemplified below.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">For example, the one-nucleus density of states (100), (010), and (001) can be understood from the LOCO rules (a) and (b) as follows: In 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, sketches of the harmonic oscillator wavefunctions in the modes are shown. At the hydrogen nuclei, ν
+  <sub>1</sub> and ν
+  <sub>3</sub> point in a similar direction, while ν
+  <sub>2</sub> is perpendicular. Thus, the excitation of ν
+  <sub>2</sub> state (010) leads almost to a nodal plane in the one-nucleus density at the hydrogen nuclei, cf. 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>. In contrast, excitation of ν
+  <sub>1</sub> state (100) or ν
+  <sub>3</sub> state (001) lead to a significantly less pronounced depletion of the one-nucleus density at the equilibrium position of hydrogen. For the oxygen nucleus, the situation is reversed, as ν
+  <sub>1</sub> and ν
+  <sub>2</sub> point in the same direction and ν
+  <sub>3</sub> is perpendicular. Consequently, the one-nucleus density of state (001) shows a depletion at the oxygen equilibrium position, while no depletion is seen in state (100). As ν
+  <sub>2</sub> displaces the oxygen nucleus stronger than ν
+  <sub>1</sub> (which is, however, hardly visible on the scale of 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>), a depletion due to the node in ν
+  <sub>2</sub> is visible in state (010).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A situation similar to that of state (001) is found for states (002) and (003), i.e., when the HO function of ν
+  <sub>3</sub> is in its second or third excited state. For (002), there is the expected triple-maximum structure at the oxygen nucleus (with a lower central maximum), while the central maximum at the hydrogen nuclei is not visible. For state (003) four maxima are found in the one-nucleus density at the oxygen nucleus (although the two central ones are too weak to be clearly seen in 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>), while at the hydrogen nuclei still only two maxima can be found.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">An example for LOCO rule (c) is found if two normal modes are excited that locally have similar magnitude and direction. For state (101) three maxima appear at the hydrogen nuclei, similar to a second excited state of the HO, but the central maximum is strongest while the outer maxima are weaker. At the oxygen nucleus only two maxima that point along the direction of normal ν
+  <sub>3</sub> are found, i.e., a combination of the features of the one-nucleus densities for states (100) (only one maximum in the direction of ν
+  <sub>1</sub>) and (001) (two maxima in the direction of ν
+  <sub>3</sub>). For states (102) and (201) the qualitative features of the one-nucleus densities can be explained analogously and in accord with the LOCO rules, especially the four maxima at the hydrogen nuclei and a triple maximum at the oxygen nucleus for state (102), but only a double maximum at the state (201).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Last, for state (111) the resulting one-nucleus density is a simple combination of features of states (010) and (101), because ν
+  <sub>2</sub> is locally perpendicular to the other two vibrational modes at the hydrogen nuclei. At the oxygen nucleus, the effect of exciting two modes with similar direction and magnitude, LOCO rule (c), is that three maxima are found along coordinate 
+  <span class="italic">R</span>
+  <sub>3</sub> (as defined in the figure) upon closer inspection, although the central one is hardly visible.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The normal modes of the water molecule have a symmetry with respect to the hydrogen nuclei. If the symmetry of the nuclear structure is broken by replacing one hydrogen nucleus with a deuterium nucleus, a very different picture for the one-nucleus densities is obtained. The normal mode coordinates for a mono-deuterated water molecule are given in 
+  <a ref-type="fig" rid="F3" href="#F3">Figure 3</a>. The bending mode ν
+  <sub>2</sub> is similar to the bending mode of water, but ν
+  <sub>1</sub> is the O-D stretch mode that only displaces the deuterium nucleus strongly, while ν
+  <sub>3</sub> is the O-H stretch mode that almost exclusively displaces the hydrogen nucleus. Thus, according to the LOCO rules it is expected that any excitation of ν
+  <sub>2</sub> is clearly visible in the one-nucleus density at the hydrogen and deuterium nucleus, that an excitation of ν
+  <sub>1</sub> is visible at the deuterium nucleus but not at the hydrogen nucleus, and that an excitation of ν
+  <sub>3</sub> is visible at the hydrogen nucleus but not at the deuterium nucleus. The prediction of the LOCO rules is accurate, as the one-nucleus densities of the first excited states of each of these modes shown in 
+  <a ref-type="fig" rid="F3" href="#F3">Figure 3</a> illustrate.
+ </p>
+ <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>(Top) Normal mode coordinates of the mono-deuterated water molecule in the molecular plane: O-D stretch ν
+    <sub>1</sub>, bending mode ν
+    <sub>2</sub>, O-H stretch ν
+    <sub>3</sub>. (Bottom) Contour plots of the one-nucleus density of a localized and oriented mono-deuterated water molecule in the molecular plane for vibrational states corresponding to the first excitations of the normal modes shown above.
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00424-g0003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">A consequence of the LOCO rules is that for molecules with many nuclei, only certain (of the lowest) excited states are qualitative visible in the one-nucleus density, i.e., those that are the ones displacing a nucleus the most in a certain direction of space. This is indeed the case. For example, for the benzene molecule the one-nucleus density of none of the first excited states of any normal mode in the molecular plane is qualitatively different from the vibrational ground state. The situation changes if one hydrogen nucleus is exchanged by a deuterium nucleus. In the 
+  <a ref-type="supplementary-material" rid="SM1" href="#SM1">Supporting Information</a>, the one-nucleus densities for the only two normal mode coordinates that strongly displace the deuterium nucleus are shown. Further examples given in the 
+  <a ref-type="supplementary-material" rid="SM1" href="#SM1">Supporting Information</a> are an analysis of ethene and mono-deuterated ethene as molecules that contain less nuclei than benzene but where similar effects are found, and methane as an example of a non-planar molecule.
+ </p>
+</sec>

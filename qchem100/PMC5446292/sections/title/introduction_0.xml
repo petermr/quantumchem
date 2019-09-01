@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s1" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">I.</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">INTRODUCTION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Kohn–Sham density-functional theory (DFT) is the standard approach for the first-principles description of electronic properties in computational material science and surface chemistry. However, it is becoming clear that the limitations of the employed exchange-correlation (XC) functionals to balance off the numerous competing physical effects give rise to deficiencies in the predictive ability of the approach, generally without any systematic manner to improve upon it. One class of widely studied problems where this is particularly true is the case of molecular adsorption on periodic surfaces. Competing physical effects as well as poorly treated long-range dispersion contributions result in predicted adsorption energies and sites varying strongly with the employed XC functional (see, e.g., Refs. 
+  <a rid="c1" ref-type="bibr" href="#c1">1–5</a>). This indicates fundamental shortcomings in many semi-local functionals that are difficult to remedy. Long-range dispersive interactions can be accounted for by the addition of pairwise interatomic 
+  <span class="italic">C</span>
+  <sub>6</sub>
+  <span class="italic">R</span>
+  <span class="sup">−6</span> terms to the DFT energy or by non-local functionals.
+  <a rid="c6" ref-type="bibr" href="#c6">
+   <span class="sup">6–8</span>
+  </a> In this work, we will refer to both the van der Waals corrected and van der Waals inclusive DFT methods as van der Waals density-functionals. Theoretically these corrections can be well justified and derived using quantum Drude oscillators that serve as a qualitatively correct model for electrical response properties between molecules and insulating solids. However, most van der Waals corrections also require the introduction of some adjustable parameters such as the cutoff function and cutoff radius at short distances 
+  <span class="italic">R</span> in order to remove the attractive singularity from the 
+  <span class="italic">C</span>
+  <sub>6</sub>
+  <span class="italic">R</span>
+  <span class="sup">−6</span> terms. These parameters can be obtained by optimizing the accuracy of the dispersion corrected functionals for the description of molecular interaction energies in a given test set.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we consider an 
+  <span class="italic">ab initio</span> description of the true many-body wave function for a molecular adsorption problem. Two contrasting yet complementary approaches which we consider here are those from the field of quantum chemical Fock-space expansions of the wave function
+  <a rid="c9" ref-type="bibr" href="#c9">
+   <span class="sup">9</span>
+  </a> and a stochastic representation from the Diffusion Monte Carlo (DMC) technique.
+  <a rid="c10" ref-type="bibr" href="#c10">
+   <span class="sup">10</span>
+  </a> These wave function based approaches offer a thorough description of quantum many-body effects through a direct treatment of electronic correlation. Such approaches can supplement density-functional-based methods with accurate results.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">DMC is a real-space quantum Monte Carlo (QMC) method, where the real-space configurations of all 
+  <span class="italic">N</span>-electrons are sampled stochastically. This stochastic distribution of electrons is evolved toward a sampling of the ground-state distribution of electrons via an imaginary-time propagator, which exponentially filters out the higher-lying eigenfunctions of the Hamiltonian from the distribution. This sampling would be exact if it were not for the “Fermion sign problem,” where the sampling collapses to the lower-energy symmetric distribution of an 
+  <span class="italic">N</span>-particle Bosonic distribution. To avoid this, constraints are imposed whereby the correct antisymmetry is maintained by imposing a hard nodal surface for the sampling which enforces the sign of the sampled configurations. While this alleviates the Fermion sign problem, it introduces a systematic and variational error due to this nodal surface, which in practical applications is generally taken to be the nodal surface of a single Slater determinant. This represents the leading error of a DMC calculation, but it benefits from a number of appealing properties which contrast with the quantum chemical methods, such as a very minor dependence on the basis set, as well as a low-scaling with respect to the system size. DMC techniques are increasingly used to understand molecular adsorption at periodic surfaces.
+  <a rid="c4" ref-type="bibr" href="#c4">
+   <span class="sup">4,5,11,12</span>
+  </a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Quantum chemical methods constitute a hierarchy which starting from the one-particle Hartree–Fock (HF) approximation, allows for a systematic treatment of the quantum many-body effects. The simplest form of such correlated methods is the second-order Møller–Plesset (MP2) perturbation theory. Although MP2 theory provides a fair compromise between efficiency and accuracy, certain effects are not captured accurately enough or at all (e.g. three-body dispersion interactions). For systems where such effects are essential, the accuracy of the MP2 treatment is rather modest. For instance, MP2 is known to notoriously overestimate dispersion driven interactions in strongly polarizable systems.
+  <a rid="c13" ref-type="bibr" href="#c13">
+   <span class="sup">13–15</span>
+  </a> While many-body perturbation theory offers a finite-order approximation to the electronic correlation, coupled-cluster theory provides a compelling framework of infinite-order approximations in the form of an exponential of cluster operators. The coupled-cluster singles and doubles (CCSD) method where the triples are treated in a perturbative way, termed as CCSD(T), achieves chemical accuracy in the description of many molecular properties and is often referred to as the gold standard method.
+  <a rid="c9" ref-type="bibr" href="#c9">
+   <span class="sup">9</span>
+  </a> In recent years, quantum chemical wave function based methods have been increasingly applied to periodic systems with the aim of transferring their proven chemical accuracy in molecular systems to the solid state.
+  <a rid="c16" ref-type="bibr" href="#c16">
+   <span class="sup">16–26</span>
+  </a> However, the computational cost of quantum chemical wave function based methods is a major obstacle for their application to extended systems. The canonical formulation of MP2 theory scales as 
+  <div class="inline-formula">
+   <div id="M1" class="math">
+    <span mathvariant="script" class="mi">O</span>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">N</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">5</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">)</span>
+    </div>
+   </div>
+  </div>, where 
+  <span class="italic">N</span> is a measure of the system size, whereas CCSD theory scales as 
+  <div class="inline-formula">
+   <div id="M2" class="math">
+    <span mathvariant="script" class="mi">O</span>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">N</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">6</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">)</span>
+    </div>
+   </div>
+  </div> and CCSD(T) as 
+  <div class="inline-formula">
+   <div id="M3" class="math">
+    <span mathvariant="script" class="mi">O</span>
+    <div class="mrow">
+     <span class="mo">(</span>
+     <div class="mrow">
+      <div class="msup">
+       <div class="mrow">
+        <span class="mi">N</span>
+       </div>
+       <div class="mrow">
+        <span class="mn">7</span>
+       </div>
+      </div>
+     </div>
+     <span class="mo">)</span>
+    </div>
+   </div>
+  </div>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">This adverse scaling can in part be attributed to the use of canonical one-electron Bloch orbitals. While canonical orbitals form a convenient basis for correlated calculations since the Fock matrix is then diagonal, they are intrinsically delocalized, rendering it difficult to build in the local character of electronic correlation. In contrast, local correlation schemes
+  <a rid="c27" ref-type="bibr" href="#c27">
+   <span class="sup">27,28</span>
+  </a> exploit the fact that two-point correlations rapidly decay with distance in insulating systems, by restricting excitations to spatially confined regions within localized orbitals. It is possible to therefore reduce the scaling of the canonical quantum chemical methods, in some cases to an asymptotic linear scaling.
+  <a rid="c29" ref-type="bibr" href="#c29">
+   <span class="sup">29,30</span>
+  </a> Several different local approximations exist and represent a highly active field of research. The method of increments relies on a similar local decomposition of the energy contribution and has been applied successfully to covalent large band-gap semiconductors, van der Waals bonded rare-gas or molecular crystals, and molecular adsorption on surfaces.
+  <a rid="c25" ref-type="bibr" href="#c25">
+   <span class="sup">25,31–39</span>
+  </a>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In this work, we will consider both local and canonical MP2 approaches in similar basis sets, as well as comparing to both higher-level canonical coupled-cluster and the contrasting DMC technique for the challenging problem of molecular adsorption on a periodic surface. Canonical CCSD theory will be explored within the projector-augmented-wave (PAW) framework, using a plane-wave basis. CCSD(T) theory will be applied in the form of corrections to MP2 with small supercells and basis sets or using finite-clusters. We assess the accuracy of these quantum chemical schemes against the DMC results for water adsorption on the prototypical ionic surface of lithium hydride (LiH). LiH has served as an important benchmark system for several quantum-chemical methods
+  <a rid="c18" ref-type="bibr" href="#c18">
+   <span class="sup">18,22,23,40–43</span>
+  </a> and water adsorption on the (001) LiH surface can, in turn, be a benchmark system for the interaction of molecules with surfaces. The relatively small number of electrons involved allows for an in-depth comparison of different post-mean-field methods.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Details about the structure of the system under consideration are given in Sec. 
+  <a ref-type="sec" rid="s2A" href="#s2A">II A</a>. Computational details are presented in Secs. 
+  <a ref-type="sec" rid="s2B s2C s2D" href="#s2B s2C s2D">II B–II D</a> for plane-wave, Gaussian basis, and DMC calculations, respectively. Section 
+  <a ref-type="sec" rid="s3" href="#s3">III</a> summarizes all the results obtained from different methods. Finally, we conclude the paper in Sec. 
+  <a ref-type="sec" rid="s4" href="#s4">IV</a>.
+ </p>
+</sec>

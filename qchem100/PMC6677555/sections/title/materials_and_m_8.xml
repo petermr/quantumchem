@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="materials|methods" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">MATERIALS AND METHODS</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Here, we show how to obtain the simulation results. As an example, we will take the first row in 
+  <a rid="F3" ref-type="fig" href="#F3">Fig. 3</a> (state ∣HH〉: channel I, scattered; channel II, scattered). Consider the HD molecule that goes through channel I. If the molecule HD scatted with a probability 
+  <span class="italic">P</span>
+  <sub>scatter</sub>, then the random number generator (RNG), where we assume that the RNG produces random numbers with uniform distribution, produces a number 
+  <span class="italic">a</span>
+  <sub>1</sub>, 0 ≤ 
+  <span class="italic">a</span>
+  <sub>1</sub> ≤ 1. If 
+  <span class="italic">a</span>
+  <sub>1</sub> ≤ 
+  <span class="italic">P</span>
+  <sub>scatter</sub>, then this HD molecule with a specific state will collide with H
+  <sub>2</sub> clusters; otherwise, it will be measured by the gray sensor as shown in 
+  <a rid="F2" ref-type="fig" href="#F2">Fig. 2</a>. For the scattered HD molecules, the scattering spectrum (measurement distribution) is 
+  <span class="italic">f
+   <sub>H</sub>
+  </span>(θ), as shown in 
+  <a rid="F1" ref-type="fig" href="#F1">Fig. 1</a>, where θ represents scattering angles, and we can get 
+  <span class="italic">f
+   <sub>H</sub>
+  </span>(θ) by fitting the results in the experimental measurements of Zare and co-workers (
+  <a rid="R30" ref-type="bibr" href="#R30">
+   <span class="italic">30</span>
+  </a>). If the HD molecule at state ∣
+  <span class="italic">H</span>〉 is scattered, then the following process is used to generate its scattering angle: A random angle 0 ≤ θ ≤ 180 and a random number 
+  <span class="italic">a</span>
+  <sub>2</sub>, 0 ≤ 
+  <span class="italic">a</span>
+  <sub>2</sub> ≤ 1 are produced by RNG. If 
+  <span class="italic">a</span>
+  <sub>2</sub> ≤ 
+  <span class="italic">f
+   <sub>H</sub>
+  </span>(θ), then we accept θ as the scattering angle; otherwise, this process is repeated. For the molecules that are not scattered, as 
+  <div class="inline-formula">
+   <div id="m53" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span class="mo">∣</span>
+      <span class="mi">H</span>
+      <span stretchy="true" class="mo">〉</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <span class="mn">1</span>
+       <div class="msqrt">
+        <span class="mn">2</span>
+       </div>
+      </div>
+      <span stretchy="false" class="mo">(</span>
+      <span class="mo">∣</span>
+      <span class="mo">+</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span class="mo">+</span>
+      <span class="mo">∣</span>
+      <span class="mo">−</span>
+      <span stretchy="false" class="mo">〉</span>
+      <span stretchy="false" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div>, the measurement result has half possibility to be 
+  <span class="italic">S</span>
+  <sub>+</sub> and another half to be 
+  <span class="italic">S</span>
+  <sub>−</sub>. We can use one random number to simulate the measurement results of these unscattered molecules.
+ </p>
+</sec>

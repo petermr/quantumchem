@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec13" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Deep learning</div>
+ <p id="Par24" xmlns="http://www.w3.org/1999/xhtml">All the deep learning networks employed in our paper are based on the TensorFlow backend. The code used are run in software Pycharm 2017.3. To generate a large enough training set from theoretical image(s) for Alexnet model, a data augmentation procedure to the original synthetic image(s) is applied. For a typical process, one lower-left dot representing a security label is captured as an image. Such a clear image was rotated by a step of 0.72° for 360° using an algorithm, producing a set of 500 training images. The input images were resized to 512 × 384 using pixel area relation for training. Plots of accuracy on the training and validation data sets over training epochs (from http://host:6006) can be found in the Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">19</a>. The training images do not need to be stored and are not stored in this case; The storage requirement is mainly determined by the neural network itself, about 200 M Bytes here. For the AI technology we used, the learning process takes 2 h. The computer used for deep CPU is equipped with the CPU (Intel(R) Core(TM) i7–6700 CPU @3040 GHz), the GPU (NVIDIA GTX 1080), the RAM (32.0 GB), and HDD Capability (1 TB). The computer rated power is 350 W/h.
+ </p>
+</sec>

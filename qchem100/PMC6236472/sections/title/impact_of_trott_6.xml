@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec4" class="sec">
+ <span class="label" xmlns="http://www.w3.org/1999/xhtml">4</span>
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Impact of Trotter Ordering</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">As discussed above, the overall goal is to find a minimal length circuit that can implement the unitary evolution operator of the quantum Hamiltonian. As no standard circuit for the simulation of the exponentiated total Hamiltonian exists, a Trotter–Suzuki approximation must be invoked (
+  <a rid="eq9" ref-type="disp-formula" href="#eq9">eq 
+   <a rid="eq9" ref-type="disp-formula" href="#eq9">9</a>
+  </a>).
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The ordering of terms in this approximation is important. It has been demonstrated
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> that the error due to the utilization of Trotter–Suzuki formulas strongly depends on the term ordering chosen. Additionally, the number of duplicate gates depends strongly on the ordering chosen. Both of these factors influence the length of the overall quantum circuit. The previous sections utilized a magnitude ordering of Trotter terms. This ordering is significantly physically meaningful, as terms with higher magnitude are likely to correspond to stronger physical interactions. However, it is also known to be suboptimal in terms of gate cancellation procedures.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As the number of potential orderings grows factorially, the problem of finding an optimal ordering scheme is a difficult one. However, ordering schemes that are superior for the process of gate cancellation can be found, as the similarity of sequential Pauli strings—and thus the savings from cancellation—can be determined when specifying the Hamiltonian. Our analysis compares the impact of the use of the Bravyi–Kitaev mapping with a varying choice of ordering.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">A lexicographic ordering is expected to maximize the gate savings obtained through cancellation, as the similarity of adjacent terms is maximized.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref38" href="#ref38">38</a>
+  </span> As our code optimizes on the level of Pauli strings rather than Fermionic operators, we order on this level also, with no ordering performed on the Fermionic level. Our code stores Pauli strings as lists of base 4 integers. A lexicographic ordering in this scheme is then essentially a bitwise numerical ordering.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">We present results based on this ordering explicitly in 
+  <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+   <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+  </a>. Note first the dramatic gate savings associated with using this optimization and ordering scheme. Whereas using a magnitude ordering, the Bravyi–Kitaev mapping provided the bulk of the gate savings once gate cancellation had been performed, now the impact of the Bravyi–Kitaev mapping is relatively minor. The savings associated with the use of a lexicographic ordering far outweigh the savings associated with the of the Bravyi–Kitaev mapping with a magnitude ordering: in the longer circuits included in our analysis, the former are approximately thrice that of the latter. In these circumstances, the Jordan–Wigner and Bravyi–Kitaev mappings appear roughly equivalent for the smaller circuits. The Jordan–Wigner mapping outperforms the Bravyi–Kitaev mapping in some of the longer circuits, considering both total and entangling gate counts. In the longest circuits considered (propanol), the use of the Jordan–Wigner mapping resulted in circuits that were approximately 25% shorter. This is attributed to the relative complexity of the Bravyi–Kitaev mapping resulting in a reduction of linearity in the CNOT chains, which hampers gate cancellation.
+ </p>
+ <div id="fig5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <p>Number of gates in Bravyi–Kitaev and Jordan–Wigner circuits, before and after gate cancellation, versus the number of gates in Jordan–Wigner circuit before optimization, using a lexicographic ordering. Upper: Total gate count. Lower: Entangling gate count only.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0006" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The error implications of Trotter ordering schemes are difficult to predict. Bounds exist on the error yielded from Trotterization,
+  <span class="sup">
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> although these are often loose.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> A qualitative estimate can be obtained through determination of the norm of the Trotter error operator; however, the quantitative behavior of this still often overestimates the error in real chemical examples.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref33" href="#ref33">33</a>
+  </span> It is useful to compare the implications of the Bravyi–Kitaev mapping when using several ordering schemes. To this end, we repeated our calculations using four ordering schemes. In addition to a single randomized ordering, a lexicographic ordering and an ordering of terms by magnitude, we include an ordering generated by regularly interspersing terms from the lexicographic and magnitude orderings. Note that this ordering is relatively arbitrary and is intended for comparison purposes. An exhaustive search of the ordering space is clearly intractable for nontrivial systems, owing to the factorial growth of the number of possible orderings.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Nonetheless, our findings are remarkably consistent, with the Bravyi–Kitaev mapping outperforming the Jordan–Wigner mapping in all cases apart from the lexicographic ordering. This advantage increases with the number of spin–orbitals used. Beyond 
+  <span class="italic">N</span> = 10 in all nonlexicographic cases, the advantage associated with the Bravyi–Kitaev mapping exceeds that of just using gate cancellation. This advantage is increased when considering CNOT count and can be dramatic–when using a magnitude ordering, the savings associated with the Bravyi–Kitaev mapping are approximately an order of magnitude greater than those obtained by using gate cancellation alone (
+  <a rid="fig6" ref-type="fig" href="#fig6">Figure 
+   <a rid="fig6" ref-type="fig" href="#fig6">6</a>
+  </a>)
+ </p>
+ <div id="fig6" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 6</span>
+  <div class="caption">
+   <p>Gate savings associated with the Bravyi–Kitaev mapping normalized by the gate savings acquired using the same optimization with the Jordan–Wigner mapping versus the number of spin–orbitals simulated, for various ordering schemes. A value of 0 indicates that the optimized Bravyi–Kitaev and optimized Jordan–Wigner circuits have equal number of gates. A value of 1 indicates that the optimized Bravyi–Kitaev mapping outperforms the optimized Jordan–Wigner mapping by a number of gates equal to that saved by performing optimization on the raw Jordan–Wigner circuit. Upper: total gates. Lower: entangling gates.</p>
+  </div>
+  <div xlink:href="ct-2018-00450n_0007" id="gr6" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">For large systems, searching even a statistically significant subset of the space of possible orderings is clearly intractable, owing to the factorial growth of the number of possibilities. For each system, our random ordering is only one of these myriad choices. Consequentially, it does not represent a statistically meaningful representation of the bulk of the possible orderings. Nonetheless, it is interesting that this random choice qualitatively manifests the same trend as our other ordering schemes to a very large extent. Quantitatively, the advantage associated with the Bravyi–Kitaev mapping when using these random orderings is dramatic; for our largest example, the reduction in CNOT count using the Bravyi–Kitaev mapping was 40 times the reduction using gate cancellation alone. In our results, the use of a tailored ordering scheme (whether it be ordering lexicographically, by magnitude or otherwise) results in a reduction of advantage for the Bravyi–Kitaev mapping.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although these figures suggest that the use of the Bravyi–Kitaev mapping results in shorter circuits when using most possible orderings, it should be emphasized that the lexicographic ordering dramatically decreases gate count through cancellation irrespective of mapping strategy. We restate that using this strategy, 
+  <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+   <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+  </a> shows that employing the Jordan–Wigner mapping results in marginally shorter circuits than the Bravyi–Kitaev mapping.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The choice of Trotter ordering may be dictated by other factors - for instance, architecture constraints. In these circumstances, calculations will be dramatically shortened by the use of the Bravyi–Kitaev mapping, as this mapping results in reduced circuit length for all of the nonlexicographic orderings considered.</p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The choice of ordering has previously been shown to hold significant impact on the Trotter error.
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref32" href="#ref32">32</a>
+  </span> Potentially, minimization of Trotter error may therefore require an ordering being chosen which is suboptimal in terms of single Trotter step gate count, where the Bravyi–Kitaev holds a significant advantage.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">As such, consideration of the Bravyi–Kitaev mapping within the context of different ordering schemes requires an estimation of the associated Trotter error. Previous work
+  <span class="sup">
+   <a ref-type="bibr" rid="ref19" href="#ref19">19</a>,
+   <a ref-type="bibr" rid="ref20" href="#ref20">20</a>
+  </span> indicates that for the hydrogen and methane molecules, the use of the Bravyi–Kitaev mapping can result in a reduced Trotter error—although, in the latter case, insufficiently to decrease the number of Trotter steps required for accurate simulation. We consider these points in the general case in the following section.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In general, we conclude here that the use of the Bravyi–Kitaev mapping does not result in a predictable improvement in gate count when using an ordering optimized for gate cancellation, ignoring Trotter error implications. This is in contrast with the substantial and predictable improvement observed with other orderings, particularly when a random ordering is used.</p>
+</sec>

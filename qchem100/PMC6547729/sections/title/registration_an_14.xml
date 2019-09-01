@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec14" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Registration and validation methodology</div>
+ <p id="Par25" xmlns="http://www.w3.org/1999/xhtml">We created a file named as gn (
+  <span class="italic">n</span> = 1, 2, 3, …) per security label to store the corresponding 500 training images prior to the training process. The training images stored in the file gn are named as gn_000, gn_001, …, gn_500. Many files from these security labels composed a database. After the 500 training images of a security label were learnt by AI, their structural information was remembered and linked to the file name gn (e.g., g1). Then the training images will be deleted. When consumers randomly take a picture of a real security label and sent it to the AI, the AI can automatically recall the accurately corresponding relationship and output the indexing name with a detailed match score. According our results, if the captured image from the end-user is clear enough, the match score of the image of true security label is more than 99% (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4t</a>). On the other hand, if the image (from a fake label) has never been learned, the engine will give a lower match score (Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4u</a>). The authentication process takes about 2 s. Deep learning, as a black box that nobody actually knows how it works in details up to now, is an advantage for unclonable anti-counterfeiting technique because it is a tamper proof.
+ </p>
+</sec>

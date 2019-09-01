@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Environmental Effects</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In Dalton, environmental effects may be included in quantum-chemical calculations either by treating the environment as a homogeneous dielectric continuum or by describing it at the level of polarizable molecular mechanics. In the simplest continuum approach, the self-consistent-reaction-field (SCRF) approach,
+  <a rid="b106" ref-type="bibr" href="#b106">106</a>–
+  <a rid="b108" ref-type="bibr" href="#b108">108</a> the solute is placed in a spherical cavity in the dielectric medium. The SCRF method has been implemented for the HF, KS, CC2, CCSD, MCSCF, and SOPPA models and may be applied to linear, quadratic, and cubic response functions (up to quadratic response functions for the CC models) as well as for geometrical properties (molecular gradients and Hessians) and spin-resonance properties.
+  <a rid="b109" ref-type="bibr" href="#b109">109</a>–
+  <a rid="b114" ref-type="bibr" href="#b114">114</a> In the more elaborate polarized-dielectric-continuum model (PCM),
+  <a rid="b115" ref-type="bibr" href="#b115">115</a> the solute is placed in a molecule-shaped cavity, thereby improving the solute–solvent description. Solvent effects at the level of PCM may be evaluated using the HF, KS, or MCSCF models and are available for properties up to the level of cubic response theory
+  <a rid="b116" ref-type="bibr" href="#b116">116</a>–
+  <a rid="b118" ref-type="bibr" href="#b118">118</a> and for molecular gradients. The SCRF and PCM solvation models have both been implemented in a general nonequilibrium formalism.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using the polarizable-embedding (PE) sch-eme,
+  <a rid="b119" ref-type="bibr" href="#b119">119</a>–
+  <a rid="b125" ref-type="bibr" href="#b125">125</a> the environment may be treated as a structured and polarizable medium—that is, the discrete nature of the environment is retained and is described by distributed multipoles and anisotropic dipole–dipole polarizabilities. The PE method may be applied at the HF, KS, MP2, SOPPA, CCSD, or CC2 levels of theory and properties up to linear response may be evaluated. In addition, quadratic-response properties are available at the HF and KS levels.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a ref-type="fig" rid="fig03" href="#fig03">3</a> illustrates the calculation of biophotonics properties with Dalton. The left insert shows an X-ray structure of channelrhodopsin, highlighting the chromophore embedded in the binding pocket of the protein. Using the PE method, the effect of the protein on the chromophore is described by representing the protein by distributed multipoles and (anisotropic) polarizabilities, retaining a quantum-mechanical description of the chromophore itself. The calculated embedding potential is highly anisotropic, significantly affecting the optical properties of the chromophore as illustrated by the one- and two-photon absorption spectra calculated at different levels of theory: by neglecting the protein environment entirely (‘vacuum’), by adjusting the chromophore geometry to that inside the protein (‘geometry’), by including the electrostatics but neglecting protein relaxation (‘electrostatics’), and by including both electrostatics and protein relaxation (‘polarization’).
+ </p>
+ <div id="fig03" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">FIGURE 3</span>
+  <div class="caption">
+   <p>One- and two-photon absorption spectra for channelrhodopsin calculated using the polarizable embedding method implemented in Dalton. The insert on the top of the right hand side shows the protein embedding potential projected onto the molecular surface.</p>
+  </div>
+  <div xlink:href="wcms0004-0269-f3" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

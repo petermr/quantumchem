@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Additional and Final Remarks</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">This paper applies thoroughly the transitivity concept to a set of topics, completing the presentation of the theory outlined in Aquilanti et al. (
+  <a rid="B8" ref-type="bibr" href="#B8">2017b</a>). A separated paper (Machado et al., submitted) presents the code developed for the implementation to a set of cases of interest in physicochemical kinetics where the need for deviation from Arrhenius behavior is demanded: applications of our formulation can be accessed in the homepage of our computational code—Transitivity (
+  <span ext-link-type="uri" xlink:href="http://www.vhcsgroup.com/transitivity" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">www.vhcsgroup.com/transitivity</span>), where manual, installation video, and specific examples are provided. Further remarks follow:
+ </p>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="italic">Ab initio</span> “Exact” Quantum Dynamics
+  </div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In principle, this is the most valuable source of kinetics data but still limited to simple benchmark cases. For full formulations of the reaction kinetics, following the microcanonical path along a quantum chemically or empirically generated potential energy surface, high-level computational effort is demanded. It typically proceeds according to these steps: a) calculation of the intermolecular interactions involved in a reactive process with a high-level of accuracy, b) dynamical evolution in phase-space configurations from the solution of quantum equations of motion, c) identification of reactive trajectories, with consequent calculation of the quantum scattering matrix, cumulative reaction probability and cross sections. Finally, the Boltzmann weight averaging over a large span of kinetics energies yields the canonical expressions of kinetic variables as a function of temperature. These severe prescriptions have been able to provide the exact calculation over a given potential energy surface for reaction rate constants of only a limited number of reactive systems: in fact, the complexity of the programming and the computationally demanding requirements and computational demand strongly limit the study of reactive processes involving only a few atoms. Additional reactions involving isotopic exchange among three hydrogen atoms, exemplary benchmarks to be cited are the three-body reactions: F + H
+   <sub>2</sub> (Aquilanti et al., 
+   <a rid="B7" ref-type="bibr" href="#B7">2005</a>), F + HD (De Fazio et al., 
+   <a rid="B31" ref-type="bibr" href="#B31">2006</a>; Cavalli et al., 
+   <a rid="B16" ref-type="bibr" href="#B16">2014</a>), H + HeH
+   <span class="sup">+</span> (De Fazio, 
+   <a rid="B30" ref-type="bibr" href="#B30">2014</a>) see also and references therein.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">First-Principles Molecular Dynamics</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Another viable path is becoming possible thanks to improvements in computational facilities, in order to access at kinetic information through first-principles molecular dynamics simulations. However, computationally severe storing and time constraints permitting to obtain myriads of “on-the-fly trajectories” require a great effort toward the aim of generating realistic reactive kinetic data: this in spite of the fact that a wide research activity has been pursued, aiming at developing techniques capable of accurately predicting kinetic reaction rate constants from molecular dynamics simulations. Among examples that have been tackled in recent years, we cite (Pomerantz et al., 
+   <a rid="B71" ref-type="bibr" href="#B71">2005</a>; Coutinho et al., 
+   <a rid="B26" ref-type="bibr" href="#B26">2015a</a>; Döntgen et al., 
+   <a rid="B32" ref-type="bibr" href="#B32">2015</a>; Fleming et al., 
+   <a rid="B37" ref-type="bibr" href="#B37">2016</a>; Wu et al., 
+   <a rid="B99" ref-type="bibr" href="#B99">2019</a>) and references therein. However, calculation of reaction rate constants has been limited by the arduous procedures both to accurately characterize reactive activated complexes of many body systems and to overcome the inherent difficulties of producing a number of trajectories with statistical consistency and reasonable completeness in the filling of the dynamically relevant parts of the phase-space. Recently, several works have been yielding values with reliable accuracy: overestimates due to limited sampling of phase-space, when experimental values are available for comparison, may exploit empirical calibration (Coutinho et al., 
+   <a rid="B23" ref-type="bibr" href="#B23">2016</a>, 
+   <a rid="B24" ref-type="bibr" href="#B24">2017</a>, 
+   <a rid="B25" ref-type="bibr" href="#B25">2018a</a>).
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Phenomenological Considerations and the Role of the Transitivity Concept</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Experimentally and computationally generated kinetic data for polyatomic molecules provide reaction rate constants with the implicit fingerprint of the microscopical variables at work in the reactive process (Angell, 
+   <a rid="B2" ref-type="bibr" href="#B2">1995</a>; Kohen et al., 
+   <a rid="B51" ref-type="bibr" href="#B51">1999</a>; Limbach et al., 
+   <a rid="B61" ref-type="bibr" href="#B61">2006</a>; Giordano and Russell, 
+   <a rid="B39" ref-type="bibr" href="#B39">2018</a>; Capitelli and Pietanza, 
+   <a rid="B14" ref-type="bibr" href="#B14">2019</a>, and references therein). Application of the techniques discussed in previous remarks is tremendously laborious for many-body systems: when the Arrhenius law is not obeyed at low temperature transitivity function guides us to an as a fruitful and consistent approach. As discussed in this article the approach turns out to be a powerful tool, capable of establishing a connection between canonical data and microcanonical information, permitting comparisons among apparently uncorrelated formulations: it also allows interpretation of empirical parameters, for example for the AM, ASCC, VFT and NTS formulas considered in this paper. Previous (Tsallis and Bukman, 
+   <a rid="B91" ref-type="bibr" href="#B91">1996</a>; Lenzi et al., 
+   <a rid="B60" ref-type="bibr" href="#B60">2001</a>; JiangLin et al., 
+   <a rid="B46" ref-type="bibr" href="#B46">2006</a>; Zhou and Du, 
+   <a rid="B100" ref-type="bibr" href="#B100">2013</a>) and concomitant (Zhou and Du, 
+   <a rid="B101" ref-type="bibr" href="#B101">2014</a>; Guo and Du, 
+   <a rid="B41" ref-type="bibr" href="#B41">2015</a>; Rosa et al., 
+   <a rid="B73" ref-type="bibr" href="#B73">2016</a>; Junior et al., 
+   <a rid="B47" ref-type="bibr" href="#B47">2019</a>) efforts have been dedicated to provide also a connection of anomalous kinetic diffusion effects while surmounting a potential barrier 
+   <span class="italic">via</span> variants of Fokker-Planck equation, tackling a class of phenomenologically physicochemical diffusion process.
+  </p>
+ </sec>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusion and Perspectives</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">In order to extend the validity of the Arrhenius rate law, the introduction of the deformation parameter 
+   <span class="italic">d</span> not only phenomenologically mimics the low temperature dependence of rate constants, but its relevance in producing physical insight is now amply demonstrated. The statistical mechanics aspects are now firmly established (Aquilanti et al., 
+   <a rid="B8" ref-type="bibr" href="#B8">2017b</a>, 
+   <a rid="B6" ref-type="bibr" href="#B6">2018</a>) capitalizing on various investigations inspired openly or implicitly on a Maxwellian approach: several examples in the literature have been inspiring the transfer from thermodynamics to the field of kinetics assuming procedures for taking the “thermodynamic limit.” Venerable papers are (Jeans, 
+   <a rid="B45" ref-type="bibr" href="#B45">1913</a>; Condon, 
+   <a rid="B22" ref-type="bibr" href="#B22">1938</a>; Kennard, 
+   <a rid="B49" ref-type="bibr" href="#B49">1938</a>; Landau and Lifshitz, 
+   <a rid="B59" ref-type="bibr" href="#B59">1958</a>), and recent ones (Tsallis, 
+   <a rid="B89" ref-type="bibr" href="#B89">1999</a>; Biró et al., 
+   <a rid="B13" ref-type="bibr" href="#B13">2014</a>; Aquilanti et al., 
+   <a rid="B8" ref-type="bibr" href="#B8">2017b</a>).
+  </p>
+ </sec>
+</sec>

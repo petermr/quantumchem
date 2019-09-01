@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec11" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Study of charge delocalization and self-interaction correction</div>
+ <p id="Par34" xmlns="http://www.w3.org/1999/xhtml">Throughout this work, the vertical IP is computed using the ΔSCF formalism
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>,
+   <a ref-type="bibr" rid="CR18" href="#CR18">18</a>,
+   <a ref-type="bibr" rid="CR26" href="#CR26">26</a>
+  </span>, denoted with IP
+  <sub>ΔSCF</sub>. For each selected geometry two SCF computations are performed, one for the closed shell reduced state and one for the spin-unrestricted open shell oxidized state. IP
+  <sub>ΔSCF</sub> equals the difference between the energies obtained for the two states. The vibrational contribution to the energy is neglected, as it is commonly found to account for a small correction to the IP
+  <span class="sup">
+   <a ref-type="bibr" rid="CR19" href="#CR19">19</a>,
+   <a ref-type="bibr" rid="CR20" href="#CR20">20</a>,
+   <a ref-type="bibr" rid="CR22" href="#CR22">22</a>,
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span>. All the reported partial charges are estimated using the Mulliken charge scheme
+  <span class="sup">
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>
+  </span>, and summed over every molecule. The study of the effect of delocalization errors in different DFT functionals for systems of multiple TFSI
+  <span class="sup">−</span> anions and/or DME solvents is performed using the Gaussian09 software
+  <span class="sup">
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>
+  </span>, with the 6-311++G**
+  <span class="sup">
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>,
+   <a ref-type="bibr" rid="CR55" href="#CR55">55</a>
+  </span> basis set on all atoms. For each computational method considered, we computed vertical IPs at the optimized geometry for the reduced state.
+ </p>
+</sec>

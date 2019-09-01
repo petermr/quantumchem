@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="sec3.4" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Example 4: Multilevel Transition State Search with Conditional Workflows</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">The flowchart in 
+  <a rid="fig5" ref-type="fig" href="#fig5">Figure 
+   <a rid="fig5" ref-type="fig" href="#fig5">5</a>
+  </a> illustrates another possibility for conditional workflows. In this case we check whether the preoptimization was successful and skip this step in case it was not. This is helpful when looping in over a wide class of molecules for which it is difficult to predict whether a certain preoptimizer will provide a converged result. After the preoptimizing step with DFTB, the molecules are further optimized with DFT (Orca) with a final step of TD-DFT calculation including solvent effects with the ADF program. 
+  <span ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.jcim.9b00384/suppl_file/ci9b00384_si_001.pdf" class="ext-link" xmlns:xlink="http://www.w3.org/1999/xlink">Figure S1</span> shows the output of the script, indicating that the preoptimizations for molecules containing a boron atom failed (because this atom is not contained in the default parameter set). QMflows allows users to decide whether an error should be propagated to the rest of the dependencies (as a Python 
+  <span class="italic">None</span> value), or the user can provide an alternative function to execute in case of failure, for example an alternative calculation or a default value.
+ </p>
+ <div id="fig5" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 5</span>
+  <div class="caption">
+   <p>QMflows workflow for a multilevel transition state search using a conditional function. The QMflows actions are highlighted in red, while the results of the action are highlighted in green.</p>
+  </div>
+  <div xlink:href="ci-2019-00384y_0005" id="gr5" position="float" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

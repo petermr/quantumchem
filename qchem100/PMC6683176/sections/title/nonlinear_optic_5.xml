@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec5" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Nonlinear optical properties</div>
+ <p id="Par10" xmlns="http://www.w3.org/1999/xhtml">Since the absorption spectra in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a> and the theoretical calculations in Table 
+  <a rid="Tab1" ref-type="table" href="#Tab1">1</a> show that the first excited electronic state for both SEVO and ISO is below 200 nm, neither compound was expected to have a two-photon interaction with 800 nm photons through nonlinear optical processes. The classical two-photon interaction properties of pure SEVO and pure ISO were tested by measuring the two-photon excited fluorescence (TPEF) using 800 nm incident light. The results are shown in the inset of Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>, using Coumarin 153 as a standard. The entangled two-photon interaction properties of pure SEVO and pure ISO were studied next, also using 800 nm incident light. The results are shown in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>, using ZnTPP as a standard. In our entangled two-photon experiments, the transmission of the entangled photons through a blank (solvent) is compared with the transmission through the sample (SEVO and ISO). Any difference between the transmission intensities is due to an interaction between the sample and entangled photons.
+  <div id="Fig3" class="fig">
+   <span class="label">Figure 3</span>
+   <div class="caption">
+    <p>Entangled photon interaction rate per molecule vs input photon rate for sevoflurane and isoflurane, with ZnTPP used as a standard. Classical two-photon results for sevoflurane and Coumarin 153 as a standard are shown in the inset. Error bars were calculated first for the sample and solvent transmission scans separately using the percent standard deviation of 50 single photon count measurements for toluene (a non-interacting solvent) at 4 different incident laser powers. This error was then propagated to calculate the interaction signal error bars.</p>
+   </div>
+   <div xlink:href="41598_2019_47651_Fig3_HTML" id="d29e673" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par11" xmlns="http://www.w3.org/1999/xhtml">As expected for the classical two-photon experiment, seen in the inset of Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>, neither SEVO nor ISO interacted with the 800 nm light. Coumarin 153, used as a standard, showed the expected quadratic dependence of TPEF on the input photon flux, validating our experimental method. Surprisingly, the entangled two-photon experiment did show interaction with the 800 nm entangled photons for the SEVO and ISO solutions, seen in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a>. The log scale of the y-axis in Fig. 
+  <a rid="Fig3" ref-type="fig" href="#Fig3">3</a> (entangled photon interaction rate per molecule) shows that SEVO and ISO yielded entangled two-photon interaction signals that are 5 and 6 orders of magnitude smaller than that of the standard, ZnTPP, respectively. The difference in signal intensity between the anesthetics and ZnTPP is expected since the molecules undergo different interaction mechanisms, shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4</a>.
+  <div id="Fig4" class="fig">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>Comparison of interaction mechanisms using entangled photons: (
+     <span class="bold">a</span>) absorption transitions resonant with excited electronic states, seen in ZnTPP; (
+     <span class="bold">b</span>) far-off-resonant interactions yielding no electronic excitation, seen in SEVO and ISO.
+    </p>
+   </div>
+   <div xlink:href="41598_2019_47651_Fig4_HTML" id="d29e702" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par12" xmlns="http://www.w3.org/1999/xhtml">For chromophores that can absorb light at 400 nm, like ZnTPP, the two 800 nm photons are resonant with a real, excited electronic state in the molecule, seen in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4a</a>. When the incoming entangled photons are resonant with a real eigenstate, the molecule can interact with the photons through two pathways (as explained in previous work
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>,
+   <a ref-type="bibr" rid="CR47" href="#CR47">47</a>
+  </span>): (1) the virtual state pathway, where the light can create a coupling with an intermediate virtual state, and the molecule will absorb the two photons in a two-step transition through that virtual state; (2) the permanent dipole pathway, where the light can create a coupling between the permanent dipoles of the ground and excited electronic state, and the molecule will absorb the two photons simultaneously. The probability of the virtual state pathway is inversely proportional to the detuning energy of the virtual state, i.e., the difference in energy between the virtual state and the real eigenstates in the molecule. Since this detuning energy is usually quite large (~12,500 cm
+  <span class="sup">−1</span>), the virtual state pathway has a low probability; but the higher probability of the permanent dipole pathway leads to a large optical signal, as seen in many chromophores studied previously
+  <span class="sup">
+   <a ref-type="bibr" rid="CR39" href="#CR39">39</a>,
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>,
+   <a ref-type="bibr" rid="CR48" href="#CR48">48</a>–
+   <a ref-type="bibr" rid="CR50" href="#CR50">50</a>
+  </span>, including ZnTPP.
+ </p>
+ <p id="Par13" xmlns="http://www.w3.org/1999/xhtml">For SEVO and ISO, the 800 nm entangled photons are far-off-resonance with the first excited electronic state, shown in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a>. Because the energy difference between the photons’ combined energy and the first electronic excited state is ~25,000 cm
+  <span class="sup">−1</span>, a two-photon absorption mechanism, like that seen in ZnTPP, is impossible. Figure 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a> shows two other possible ways that SEVO and ISO may interact with the entangled photons. The first photon must create a coupling with a virtual state. The second photon can then induce a stimulated one-photon scattering back to the ground state, or it can create a coupling with a second virtual state and induce a two-photon scattering. As explained above, these virtual state couplings are very weak because the detuning energy with real eigenstates is very small, particularly in SEVO and ISO which will have detuning energies twice as large as that for ZnTPP. These large detuning energies make either of the mechanisms in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a> have a very low probability, so any optical signal seen through these mechanisms will be extremely small. As expected, the entangled two-photon interaction signal for SEVO and ISO are 5 and 6 orders of magnitude smaller than the signal from ZnTPP, respectively. In order for SEVO and ISO to have a nonlinear interaction with the entangled photons as described in Fig. 
+  <a rid="Fig4" ref-type="fig" href="#Fig4">4b</a>, the ethers must have vibrational modes that are active to these nonlinear interactions. To confirm this, we analyzed the neat liquids with Raman spectroscopy, particularly in the low frequency shift “fingerprint” region, with spectra shown in Fig. 
+  <a rid="Fig5" ref-type="fig" href="#Fig5">5</a>. Both SEVO and ISO have many Raman-active modes in the low frequency shift region, unlike diethyl ether shown for comparison. Another experimental study
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span> has previously shown SEVO and ISO to have active modes in coherent anti-Stokes Raman scattering (CARS), another nonlinear interaction mechanism. While our Raman study and the CARS study
+  <span class="sup">
+   <a ref-type="bibr" rid="CR15" href="#CR15">15</a>
+  </span> used classical photons, it has already been shown theoretically that entangled photons can be used to induce Raman and other nonlinear interactions
+  <span class="sup">
+   <a ref-type="bibr" rid="CR51" href="#CR51">51</a>,
+   <a ref-type="bibr" rid="CR52" href="#CR52">52</a>
+  </span>. Additionally, it has already been shown experimentally by Upton 
+  <span class="italic">et al</span>.
+  <span class="sup">
+   <a ref-type="bibr" rid="CR46" href="#CR46">46</a>
+  </span> that the use of entangled photons for nonlinear interactions can offer an enhancement in the signal compared to using classical photons. Our experimental results show a similar result: since the entangled photon experiment shows an interaction signal while the classical photon experiment does not show a signal, SEVO and ISO gain an enhancement in their interaction with the use of entangled photons, suggesting that the two anesthetics have a preference for interacting with the quantum system of photons as opposed to the classical system of photons.
+  <div id="Fig5" class="fig">
+   <span class="label">Figure 5</span>
+   <div class="caption">
+    <p>Raman spectra of SEVO, ISO, and diethyl ether with excitation of 785 nm.</p>
+   </div>
+   <div xlink:href="41598_2019_47651_Fig5_HTML" id="d29e783" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par14" xmlns="http://www.w3.org/1999/xhtml">Because the experiment is extremely sensitive and can measure very small signals, it is important to ensure that the signal we measure is from SEVO and ISO, not any impurity that may be in the sample. Both neat SEVO and neat ISO were analyzed using mass spectrometry. The mass spectra, shown in Supplementary Figs 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">S6</a>–
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">S7</a>, were compared with literature spectra
+  <span class="sup">
+   <a ref-type="bibr" rid="CR53" href="#CR53">53</a>,
+   <a ref-type="bibr" rid="CR54" href="#CR54">54</a>
+  </span> and show no signs of impurities. (Note, an additional peak at 39.9 m/z in Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">S6</a> for ISO is attributed to Ar gas leaking into the instrument during analysis.) We can rule out any possibility of an impurity interacting with the entangled photons.
+ </p>
+ <p id="Par15" xmlns="http://www.w3.org/1999/xhtml">Given how sensitive the entangled two-photon experiment is to the small signals from SEVO and ISO, it must also be emphasized that this interaction signal seen in SEVO and ISO is not common and cannot be found in just any organic compound. Other organic solvents, such as methanol and toluene, show no signal in this experimental set-up. We also compared the halogenated ethers with another ether that is nonhalogenated, diethyl ether, which showed no signal. The ability to interact with entangled photons through a far-off-resonance transition is a property that is unique to SEVO and ISO and not found in any other organic compounds studied to date.</p>
+</sec>

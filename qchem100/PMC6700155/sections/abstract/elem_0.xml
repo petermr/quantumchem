@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="Abs1" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+ <p id="Par1">While density functional theory (DFT) is often an accurate and efficient methodology for evaluating molecular properties such as energies and multipole moments, this approach often yields larger errors for response properties such as the dipole polarizability (
+  <span class="italic">α</span>), which describes the tendency of a molecule to form an induced dipole moment in the presence of an electric field. In this work, we provide static 
+  <span class="italic">α</span> tensors (and other molecular properties such as total energy components, dipole and quadrupole moments, etc.) computed using quantum chemical (QC) and DFT methodologies for all 7,211 molecules in the QM7b database. We also provide the same quantities for the 52 molecules in the AlphaML showcase database, which includes the DNA/RNA nucleobases, uncharged amino acids, several open-chain and cyclic carbohydrates, five popular pharmaceutical molecules, and 23 isomers of C
+  <sub>8</sub>H
+  <sub>n</sub>. All QC calculations were performed using linear-response coupled-cluster theory including single and double excitations (LR-CCSD), a sophisticated approach for electron correlation, and the d-aug-cc-pVDZ basis set to mitigate basis set incompleteness error. DFT calculations employed the B3LYP and SCAN0 hybrid functionals, in conjunction with d-aug-cc-pVDZ (B3LYP and SCAN0) and d-aug-cc-pVTZ (B3LYP).
+ </p>
+</div>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="Sec3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">RSP with squeezed microwaves</div>
+ <p id="Par6" xmlns="http://www.w3.org/1999/xhtml">The general idea behind the RSP protocol and our experimental implementation using continuous-variable microwave states are described in Fig. 
+  <a rid="Fig1" ref-type="fig" href="#Fig1">1</a>. We use flux-driven Josephson parametric amplifiers (JPAs) as the key elements for the generation and manipulation of squeezed microwave states
+  <span class="sup">
+   <a ref-type="bibr" rid="CR27" href="#CR27">27</a>–
+   <a ref-type="bibr" rid="CR29" href="#CR29">29</a>
+  </span> (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> and Supplementary Table 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> for details). We operate all JPAs in the degenerate regime at the frequency 
+  <span class="italic">f</span>
+  <sub>0</sub> = 5.435 GHz with a pump frequency 
+  <span class="italic">f</span>
+  <sub>p</sub> = 2
+  <span class="italic">f</span>
+  <sub>0</sub>. The task of JPA 1 and JPA 2 is to generate propagating squeezed states which are incident to an entangling beam splitter. The resulting symmetric two-mode squeezed (TMS)
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>,
+   <a ref-type="bibr" rid="CR31" href="#CR31">31</a>
+  </span> states have a two-mode squeezing level
+  <span class="sup">
+   <a ref-type="bibr" rid="CR32" href="#CR32">32</a>
+  </span> of 
+  <span class="italic">S</span>
+  <sub>TMS</sub> = 7.1 dB and an entanglement strength characterized by the negativity criterion
+  <span class="sup">
+   <a ref-type="bibr" rid="CR30" href="#CR30">30</a>,
+   <a ref-type="bibr" rid="CR33" href="#CR33">33</a>
+  </span> of 
+  <span class="italic">N</span> = 2.2. This number quantifies the strength of nonlocal correlations present between field quadratures of signals propagating along different beam splitter output paths. Additionally, the symmetric TMS states have negligible local squeezing within each path. In other words, the microwave signals propagating on the two paths locally look like thermal states with, nevertheless, strong entanglement between them (see Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">2</a> and Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">1</a> for details).
+  <div id="Fig1" class="fig">
+   <span class="label">Fig. 1</span>
+   <div class="caption">
+    <p>Principle of remote state preparation. 
+     <span class="bold">a</span> General RSP scheme: Alice remotely prepares a desired state at Bob’s side using a quantum resource and classical communication (feedforward). 
+     <span class="bold">b</span> Experimentally implemented RSP scheme: a two-mode squeezed state (left) serves as quantum resource and the feedforward to Bob (right) is implemented using JPA 3 and a directional coupler
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10727_Fig1_HTML" id="d29e595" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+ <p id="Par7" xmlns="http://www.w3.org/1999/xhtml">In the next step, we employ the symmetric propagating TMS states as a resource for remotely preparing the target squeezed microwave states. For this purpose, the TMS states are continuously distributed between two parties, Alice and Bob, who are separated by 35 of superconducting cable. Alice generates a feedforward signal carrying the classical information about her choice on what quantum state is to be remotely prepared at Bob’s side. Finally, Bob displaces his part of the resource state proportionally to the communicated signal by using a directional coupler with a fixed coupling of 
+  <span class="italic">β</span> ≃ −15 dB
+  <span class="sup">
+   <a ref-type="bibr" rid="CR34" href="#CR34">34</a>,
+   <a ref-type="bibr" rid="CR35" href="#CR35">35</a>
+  </span>. We experimentally implement the feedforward by operating JPA 3 as a phase-sensitive amplifier. Alice uses it to choose and strongly amplify a certain quadrature of the incoming TMS states. Note that, in contrast to the other JPAs, it does not matter whether the outgoing feedforward signal from JPA 3 is squeezed or not (Supplementary Note 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a> and Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">5</a>). The essential classical information, as required for a successful RSP, is encoded in the large instantaneous amplitude of the phase-sensitively amplified field quadrature. For ideal RSP, the coupling 
+  <span class="italic">β</span> should be vanishingly small. However, since 
+  <span class="italic">β</span> needs to be approximately compensated by the degenerate gain of JPA 3, we are limited to a certain range of 
+  <span class="italic">β</span> values due to the noise and gain performance of JPA 3.
+ </p>
+ <p id="Par8" xmlns="http://www.w3.org/1999/xhtml">Figure 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2a</a> shows the experimental performance of the RSP scheme as a function of the JPA 3 degenerate gain 
+  <span class="italic">G</span>
+  <sub>f</sub> for a fixed JPA 3 amplification angle 
+  <span class="italic">γ</span>
+  <sub>f</sub> = 0°. The latter is defined as the deviation from the angle of the optimal working point at which we achieve the highest purity in the remotely prepared states. We fully characterize these states in terms of their squeezing level 
+  <span class="italic">S</span>
+  <sub>rp</sub>, antisqueezing level 
+  <span class="italic">A</span>
+  <sub>rp</sub>, and squeezing angle 
+  <span class="italic">γ</span>
+  <sub>rp</sub> (see “Methods”). We clearly observe squeezing up to 
+  <span class="italic">S</span>
+  <sub>rp</sub> = 1.6 ± 0.1 dB in the final states at the output of the displacer near the optimal JPA 3 gain 
+  <span class="italic">G</span>
+  <sub>f</sub> ≃ 13 dB (see Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2b</a>). 
+  <span class="italic">S</span>
+  <sub>rp</sub> decreases and the states even become non-squeezed upon deviation from the optimal JPA 3 gain as shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2c</a>. The remotely prepared states can be encoded not only by varying 
+  <span class="italic">G</span>
+  <sub>f</sub> but also by changing 
+  <span class="italic">γ</span>
+  <sub>f</sub>. The latter leads to a different quadrature in the resource TMS states being projected, and accordingly, to a different state being remotely prepared. The squeezing level and squeezing angle of the remotely prepared states obtained by sweeping both 
+  <span class="italic">G</span>
+  <sub>f</sub> and 
+  <span class="italic">γ</span>
+  <sub>f</sub> are shown in Fig. 
+  <a rid="Fig2" ref-type="fig" href="#Fig2">2d, e</a>. The results for the antisqueezing level 
+  <span class="italic">A</span>
+  <sub>rp</sub> can be found in Supplementary Fig. 
+  <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a>.
+  <div id="Fig2" class="fig">
+   <span class="label">Fig. 2</span>
+   <div class="caption">
+    <p>Tomography of remotely prepared states. 
+     <span class="bold">a</span> Squeezing level 
+     <span class="italic">S</span>
+     <sub>rp</sub> (circles), antisqueezing level 
+     <span class="italic">A</span>
+     <sub>rp</sub> (diamonds), and squeezing angle 
+     <span class="italic">γ</span>
+     <sub>rp</sub> (triangles) of remotely prepared states as a function of the JPA 3 degenerate gain 
+     <span class="italic">G</span>
+     <sub>f</sub> at fixed angle 
+     <span class="italic">γ</span>
+     <sub>f</sub> = 0°. The lines show a fit to the data. The error bars denote the standard error of the mean calculated from multiple repetitions of the protocol. If not shown, the error bars are smaller than the symbol size. 
+     <span class="bold">b</span>, 
+     <span class="bold">c</span> Reconstructed Wigner functions of the remotely prepared states for the optimal and one of the non-optimal JPA 3 gains as marked by the dashed lines in panel (
+     <span class="bold">a</span>). 
+     <span class="bold">d</span>, 
+     <span class="bold">e</span>
+     <span class="italic">S</span>
+     <sub>rp</sub> and 
+     <span class="italic">γ</span>
+     <sub>rp</sub> of the remotely prepared states as a function of the feedforward parameters. Panels (
+     <span class="bold">f</span>), (
+     <span class="bold">g</span>) show a joint fit of the three quantities (
+     <span class="italic">S</span>
+     <sub>rp</sub>, 
+     <span class="italic">A</span>
+     <sub>rp</sub>, 
+     <span class="italic">γ</span>
+     <sub>rp</sub>) to the corresponding data in panels (
+     <span class="bold">d</span>), (
+     <span class="bold">e</span>), respectively (see Supplementary Fig. 
+     <a rid="MOESM1" ref-type="media" href="#MOESM1">3</a> for the results for 
+     <span class="italic">A</span>
+     <sub>rp</sub>). The green lines mark the threshold 
+     <span class="italic">S</span>
+     <sub>rp</sub> ≥ 0 dB for squeezing below the vacuum limit. The optimal point is marked by the blue star. The data and fit in panel (
+     <span class="bold">a</span>) are marked by dotted lines in panels (
+     <span class="bold">d</span>–
+     <span class="bold">g</span>)
+    </p>
+   </div>
+   <div xlink:href="41467_2019_10727_Fig2_HTML" id="d29e825" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </p>
+</sec>

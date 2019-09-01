@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2. Reaction Rates at Low and Ultra-Low Temperatures</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">In 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a>, the rate constants for the production of HF and DF molecules in the temperature range between 0.5 mK and 50 K are shown on log-log plots. Panels (A) and (B) show the results of quantum scattering calculations using SW PES and PES-II, respectively. As we can see from the figure, the kinetics of the two reactions studied is markedly influenced by resonance and tunnel quantum effects. The strong 
+  <span class="italic">J</span>-selected resonance features appearing in the cold collision domain, see 
+  <a ref-type="fig" rid="F1" href="#F1">Figure 1</a>, survive to the Boltzmann averaging, see Equation (7) in section 2, giving a maximum at about 1 K. At lower temperature the rates decrease until they reach the Wigner regime at about 1 mK becoming independent of temperature. However, we can note that the SW PES curve in the left panel of 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> behaves differently from the other, showing a minimum around 0.1 K that is not present in the other curves. This is again a manifestation of the virtual state effect discussed in the previous section. As discussed in reference (Simbotin and Côté, 
+  <a rid="B49" ref-type="bibr" href="#B49">2015</a>), in the presence of a virtual or a resonance state near to the reactive threshold, in the so called Near Threshold Resonance (NTR) regime, the rate constant scales with temperature as 1/
+  <span class="italic">T</span> before reaching the Wigner limiting value. Depending on the proximity of the virtual/bound state to the channel threshold, the reaction rate may increase by orders of magnitude. In this case (see also Simbotin and Côté, 
+  <a rid="B49" ref-type="bibr" href="#B49">2015</a>) the virtual state is not so near, so that the 1/
+  <span class="italic">T</span> behavior is just barely apparent.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the plots of 
+  <a ref-type="fig" rid="F2" href="#F2">Figure 2</a> we can clearly distinguish three different regions as the temperature increases. Up to 1 mK the only pathway for the reaction is the tunneling through the barrier eventually enhanced by the virtual state effect. In the region intermediate between 1 mk and 10 K, the reactivity is additionally affected by the shape resonances in the entrance channel. Above 10 K, the scattering resonances trapped in the transition state and in the exit channel as well as the thermal activation mechanism cause a further increase in the rate coefficients.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">In the so-called classical region, where the reactivity is dominated by the thermal activation pathway, the dependence of rate constants with temperature is described by the Arrhenius' law, predicting an exponential decrease of the reaction rate constants against reciprocal temperature</p>
+ <div id="E10" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(9)</span>
+  <div id="M15" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">k</span>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">E</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">a</span>
+         </div>
+        </div>
+        <span class="mo">/</span>
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">E</span>
+  <sub>
+   <span class="italic">a</span>
+  </sub> denotes the activation energy and 
+  <span class="italic">A</span> is the pre-exponential factor. When the reaction also proceeds through the tunneling mechanism, the rate constants are larger than this law would predict and concave Arrhenius plots are observed. For chemical reactions where the exchange of the light hydrogen atom represents the rate determining step, the deviations can be pronounced: they depend on the tunnel effect. As the temperature tends toward zero (below 1 mK), according to the Wigner law (Wigner, 
+  <a rid="B63" ref-type="bibr" href="#B63">1948</a>), the rate constants
+ </p>
+ <div id="E11" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(10)</span>
+  <div id="M16" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">W</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mn">4</span>
+        <span class="mi">π</span>
+        <span class="mi">ℏ</span>
+        <span class="mi">β</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">m</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">become temperature independent. An extra factor of 1/2 must be inserted to account for the open-shell structure of the fluorine atom (Aquilanti et al., 
+  <a rid="B5" ref-type="bibr" href="#B5">2005b</a>). The temperature, 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>, at which the low- and high-temperature limits in Equations (9, 10) cross is defined as the cross-over temperature (Hänggi et al., 
+  <a rid="B30" ref-type="bibr" href="#B30">1990</a>) delimiting the deep (
+  <span class="italic">T</span> &lt; 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>) and moderate (
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> ≲ 
+  <span class="italic">T</span>≲ 2 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub>) tunneling regimes. According to Christov (
+  <a rid="B21" ref-type="bibr" href="#B21">1997</a>), at the temperature 
+  <span class="italic">T</span> = 2
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> the tunneling and over-barrier mechanisms play the same role. In 1935 Bell found a formula bridging the low- and high-temperature limits of the rate coefficient
+ </p>
+ <div id="E12" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(11)</span>
+  <div id="M17" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">Q</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mi">A</span>
+      <span class="mi">Q</span>
+      <span class="mo">exp</span>
+      <div class="mrow">
+       <span stretchy="false" class="mo">(</span>
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">V</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">*</span>
+         </div>
+        </div>
+        <span class="mo">/</span>
+        <span class="mi">R</span>
+        <span class="mi">T</span>
+       </div>
+       <span stretchy="false" class="mo">)</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">where 
+  <span class="italic">V</span>
+  <span class="sup">*</span> is the reaction barrier height and
+ </p>
+ <div id="E13" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(12)</span>
+  <div id="M18" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">Q</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">T</span>
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+        <span class="mo">exp</span>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <div class="msup">
+           <div class="mrow">
+            <span class="mi">V</span>
+           </div>
+           <div class="mrow">
+            <span class="mo">*</span>
+           </div>
+          </div>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <span class="mn">1</span>
+            <span class="mo">/</span>
+            <span class="mi">R</span>
+            <span class="mi">T</span>
+            <span class="mo">-</span>
+            <span class="mn">1</span>
+            <span class="mo">/</span>
+            <span class="mi">R</span>
+            <div class="msub">
+             <div class="mrow">
+              <span class="mi">T</span>
+             </div>
+             <div class="mrow">
+              <span class="mi">c</span>
+             </div>
+            </div>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <span class="mo">]</span>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">T</span>
+        <span class="mo">-</span>
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">T</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">c</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">is a tunneling correcting factor (Bell, 
+  <a rid="B12" ref-type="bibr" href="#B12">1980</a>). The above expression, written so to emphasize its dependence on the cross-over temperature, holds in the case of a truncated parabolic barrier, for more details see Cavalli et al. (
+  <a rid="B16" ref-type="bibr" href="#B16">2014</a>). Toward the absolute zero, Equation (11) leads correctly to a non-vanishing and temperature independent expression while at high temperature 
+  <div class="inline-formula">
+   <div id="M19" class="math">
+    <div class="msub">
+     <div class="mrow">
+      <span class="mi">E</span>
+     </div>
+     <div class="mrow">
+      <span class="mi">a</span>
+     </div>
+    </div>
+    <span class="mo">=</span>
+    <div class="msup">
+     <div class="mrow">
+      <span class="mi">V</span>
+     </div>
+     <div class="mrow">
+      <span class="mo">*</span>
+     </div>
+    </div>
+   </div>
+  </div> and the Arrhenius rate expression (9) is recovered. For the F+H
+  <sub>2</sub> reaction, the temperature dependence of the activation energy has been calculated using a phenomenological approach (Aquilanti et al., 
+  <a rid="B8" ref-type="bibr" href="#B8">2012</a>) in the range 10–350 K.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The quantitative enhancement that resonances have on the tunneling can be defined in terms of a coefficient</p>
+ <div id="E14" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(13)</span>
+  <div id="M20" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <span class="mi">γ</span>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mi">k</span>
+       </div>
+       <div class="mrow">
+        <div class="msub">
+         <div class="mrow">
+          <span class="mi">k</span>
+         </div>
+         <div class="mrow">
+          <span class="mi">Q</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">that we take to be the ratio of the numerically exact rate constant 
+  <span class="italic">k</span>, obtained from rigorous quantum scattering calculations, to the tunneling corrected rate constants 
+  <span class="italic">k</span>
+  <sub>
+   <span class="italic">Q</span>
+  </sub>, calculated from Equation (11) using the Arrhenius parameters 
+  <span class="italic">A</span> and 
+  <span class="italic">V</span>
+  <span class="sup">*</span> reported in Persky and Kornweitz (
+  <a rid="B44" ref-type="bibr" href="#B44">1997</a>). The values of 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> have been obtained by imposing the limit for T = 0 of Equation (11) equal to Equation (10), namely:
+ </p>
+ <div id="E15" class="disp-formula" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">(14)</span>
+  <div id="M21" class="math">
+   <div columnalign="left" class="mtable">
+    <div class="mtr">
+     <div class="mtd">
+      <div class="msub">
+       <div class="mrow">
+        <span class="mi">T</span>
+       </div>
+       <div class="mrow">
+        <span class="mi">c</span>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">-</span>
+        <div class="msup">
+         <div class="mrow">
+          <span class="mi">V</span>
+         </div>
+         <div class="mrow">
+          <span class="mo">*</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mi">R</span>
+        <span class="mo">ln</span>
+        <div class="mrow">
+         <span class="mo">[</span>
+         <div class="mrow">
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <span class="mn">4</span>
+            <span class="mi">π</span>
+            <span class="mi">ℏ</span>
+            <span class="mi">β</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+          <span class="mo">/</span>
+          <div class="mrow">
+           <span stretchy="false" class="mo">(</span>
+           <div class="mrow">
+            <span class="mi">m</span>
+            <span class="mi">A</span>
+           </div>
+           <span stretchy="false" class="mo">)</span>
+          </div>
+         </div>
+         <span class="mo">]</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">.</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Using the values of the imaginary scattering length, β, reported in 
+  <a rid="T2" ref-type="table" href="#T2">Table 2</a>, we obtain 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> ≃ 74.4 K and 67.7 K for F + D
+  <sub>2</sub> SW PES and PES-II, respectively and 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> ≃ 72.9 K for F + H
+  <sub>2</sub> PES-II. Note that Equation (14) does not hold in presence of virtual state effects because the model used to obtain Equation (11) does not take it into account. For this reason we can not obtain 
+  <span class="italic">T</span>
+  <sub>
+   <span class="italic">c</span>
+  </sub> and γ in the F+H
+  <sub>2</sub> SW PES case. The temperature dependence of the γ coefficient is shown in 
+  <a ref-type="fig" rid="F3" href="#F3">Figure 3</a>. Note that γ is always lager than one, as it should be. The pronounced peak at very low temperatures is the overall contribution of the 
+  <span class="italic">J</span>-selected shape resonances, while the shallow maximum above 10 K is due to the presence of a transition state resonance (Cavalli and De Fazio, 
+  <a rid="B17" ref-type="bibr" href="#B17">2007</a>).
+ </p>
+ <div id="F3" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Figure 3</span>
+  <div class="caption">
+   <p>Plots of the γ coefficient as defined in Equation (13) for the F+H
+    <sub>2</sub> and F+D
+    <sub>2</sub> reactions, panels 
+    <span class="bold">(A,B)</span>, respectively, on the SW PES (black solid lines) and PES-II (red solid lines).
+   </p>
+  </div>
+  <div xlink:href="fchem-07-00328-g0003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <sec class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">3.2.1. Kinetic Isotope Effect</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The ratio between the rates of the lighter and the heavier isotopic combinations is a measure of the inter-molecular kinetic isotope effect (KIE) (Steckler et al., 
+   <a rid="B58" ref-type="bibr" href="#B58">1985</a>). The temperature dependence of KIE is shown in 
+   <a ref-type="fig" rid="F4" href="#F4">Figure 4</a>. The rate constant of the F + H
+   <sub>2</sub> reaction increases drastically as temperature decreases, so that in the ultra-cold regime the fluorine atom is about one hundred times more reactive with H
+   <sub>2</sub> than with D
+   <sub>2</sub> on SW PES. We note that this effect is about two orders of magnitude larger than the semi-classical limit (Bigeleisen, 
+   <a rid="B13" ref-type="bibr" href="#B13">1949</a>), which applies above room temperature, where the tunnel effect is negligible and the main source of KIE comes from the difference among the reactants' zero point energies, the so-called primary KIE. At low temperatures (until 1 K), the features are markedly influenced by the tunnel effect giving an exponential enhancement (Bell, 
+   <a rid="B12" ref-type="bibr" href="#B12">1980</a>) more evident in PES-II where the barrier is thicker. Below 1 K the KIE behavior in two PESs is very different: a typical sigmoid curve is observed on SW PES, while the resonance enhancement of the rates give rise to a maximum observed at about 1 K in the case of PES-II. This big difference is of course due to the presence of the virtual state effect that enhances selectively the F + H
+   <sub>2</sub> rate of the SW PES curve, hiding also the smaller resonance KIE effect. Below 1 mK the rates are temperature independent and therefore also is the KIE.
+  </p>
+  <div id="F4" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="label">Figure 4</span>
+   <div class="caption">
+    <p>Temperature dependence of the inter-molecular kinetic isotope effect for the two potential energy surfaces investigated.</p>
+   </div>
+   <div xlink:href="fchem-07-00328-g0004" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

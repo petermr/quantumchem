@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec disp-level="2" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Comparison with deep learning potentials</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Last, we want to present a comparison between the model discussed here and the state-of-the-art machine learning potentials. In recent years, several variants of neural networks and kernel regression methods have been developed and tested on organic molecular compounds (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>, 
+  <a rid="R12" ref-type="bibr" href="#R12">
+   <span class="italic">12</span>
+  </a>, 
+  <a rid="R13" ref-type="bibr" href="#R13">
+   <span class="italic">13</span>
+  </a>, 
+  <a rid="R16" ref-type="bibr" href="#R16">
+   <span class="italic">16</span>
+  </a>). Along with these studies, benchmark sets have been developed to assess the accuracy of the machine learning potentials. The MD-17 benchmark set contains 0.1 to 1 M conformations for eight small organic molecules, as obtained from ab initio molecular dynamics at 500 K (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>). 
+  <a rid="F6" ref-type="fig" href="#F6">Figure 6</a> shows the accuracy of the SNAP and the SchNet potentials in predicting the conformational energies of the MD-17 benchmark set. The SchNet potential represents the state-of-the-art deep learning models (
+  <a rid="R13" ref-type="bibr" href="#R13">
+   <span class="italic">13</span>
+  </a>). Training SNAP is rather fast, and the model reaches its optimal accuracy of 1 kcal/mol or below using only 1000 or less energy values for the training. Using training sets of such a small size, SNAP outperforms the SchNet potential. However, the latter, being more complex, is able to reach higher accuracies when trained over many more conformations or when atomic forces are used besides energies (
+  <a rid="R13" ref-type="bibr" href="#R13">
+   <span class="italic">13</span>
+  </a>). The same consideration applies to the energy-conserving gradient-domain potentials (
+  <a rid="R9" ref-type="bibr" href="#R9">
+   <span class="italic">9</span>
+  </a>). The possibility to reach the threshold accuracy (1 kcal/mol) using just conformational energies is an important aspect. It enables the possibility to parameterize the PESs by means of quantum chemistry methods for whom the calculation of analytical forces is not available. This is the common case of high-accuracy post Hartree-Fock methods.
+ </p>
+ <div id="F6" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 6</span>
+  <div class="caption">
+   <div class="title">SNAP and SchNet potentials’ performances for the MD-17 benchmark set.</div>
+   <p>The MD-17 set contains the molecules benzene (1), toluene (2), malonaldehyde (3), salicylic acid (4), aspirin (5), ethanol (6), uracil (7), and naphthalene (8). The mean absolute error (MAE) is reported for three different scenarios: the training of SNAP and that of SchNet on small-size training sets (
+    <a rid="R13" ref-type="bibr" href="#R13">
+     <span class="italic">13</span>
+    </a>) and the training of SchNet on large training sets (
+    <a rid="R13" ref-type="bibr" href="#R13">
+     <span class="italic">13</span>
+    </a>).
+   </p>
+  </div>
+  <div xlink:href="aaw2210-F6" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+</sec>

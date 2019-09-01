@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec sec-type="discussion" disp-level="1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">DISCUSSION</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Let us now focus on the oscillations of the CO rotational state distributions. To gain insight into the dynamics and possible interference effects, we analyze trajectories on the ground-state PES originating from linearity where the RT coupling takes place. For this purpose, the (0,12
+  <span class="sup">1</span>,0) state is chosen. In 
+  <a ref-type="fig" rid="F4" href="#F4">Fig. 4</a> (top panel), a few two-dimensional representative trajectories are shown on the 
+  <div class="inline-formula">
+   <div id="m11" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div accent="true" class="mover">
+       <span mathvariant="italic" class="mi">X</span>
+       <span stretchy="true" class="mo">~</span>
+      </div>
+      <div class="mmultiscripts">
+       <div class="mrow">
+        <span mathvariant="italic" class="mi">A</span>
+        <span class="mo">′</span>
+       </div>
+       <span class="mprescripts"/>
+       <span class="none"/>
+       <span class="mn">2</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> state PES, in which the C-O distance is fixed at its equilibrium geometry (
+  <span class="italic">r</span>
+  <sub>CO</sub> = 
+  <span class="italic">r</span>
+  <sub>0</sub> = 1.18 Å). This is a reasonable approximation as CO vibration is nearly a spectator in the dissociation. To mimic the RT dissociation process, all trajectories were started at linearity with different 
+  <span class="italic">R</span>
+  <sub>0</sub> values and zero momentum in the 
+  <span class="italic">R</span> direction. The available kinetic energy is exclusively placed in the angular coordinate: 
+  <div class="inline-formula">
+   <div id="m12" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div class="msub">
+       <span mathvariant="italic" class="mi">j</span>
+       <span class="mn">0</span>
+      </div>
+      <span class="mo">=</span>
+      <div class="msqrt">
+       <div class="mrow">
+        <span class="mn">2</span>
+        <div class="msub">
+         <span mathvariant="italic" class="mi">m</span>
+         <span mathvariant="italic" class="mi">r</span>
+        </div>
+        <div class="msubsup">
+         <span mathvariant="italic" class="mi">r</span>
+         <span class="mn">0</span>
+         <span class="mn">2</span>
+        </div>
+        <span stretchy="false" class="mo">(</span>
+        <span mathvariant="italic" class="mi">E</span>
+        <span class="mo">−</span>
+        <span mathvariant="italic" class="mi">V</span>
+        <span stretchy="false" class="mo">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>. It is clear from the figure that typical trajectories are first attracted to the HCO well but are subsequently deflected by the isomerization barrier between HCO and HOC and then eventually dissociate. Other details of the trajectory calculations can be found in the Supplementary Materials.
+ </p>
+ <div id="F4" fig-type="figure" orientation="portrait" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="label">Fig. 4</span>
+  <div class="caption">
+   <div class="title">Insight into the origin of quantum interference in the reaction product distribution is obtained by a comparison of rigorous quantum scattering calculations with quasi-classical trajectories (for details of the calculations, see the main text and the Supplementary Materials).</div>
+   <p>
+    <span class="bold">Bottom:</span> Interference fringes are seen in the quantum wave function as it leaves the molecular region, moving toward the asymptotic product channels. 
+    <span class="bold">Top and middle:</span> Illustration of how a rotational rainbow effect is predicted as classical trajectories with different phases contribute to the same CO product states labeled by 
+    <span class="italic">j</span>’s. Energies in the top panel are relative to the minimum on the ground electronic state. The square of the upper-state wave function provides the weight of the coordinate 
+    <span class="italic">R</span> (initially at 
+    <span class="italic">R</span>
+    <sub>0</sub>). The Jacobi coordinates are used in which 
+    <span class="italic">r</span> and 
+    <span class="italic">R</span> denote the C-O distance and distance between H and the CO center of mass, while γ is the enclosing angle.
+   </p>
+  </div>
+  <div xlink:href="aau0582-F4" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although such an oversimplified classical model is not expected to generate quantitative results, the trajectories are useful nonetheless to shed light on the dissociation dynamics, particularly the interference effect, as explained below. It is interesting to note that various trajectories arrive at the same final rotational angular momentum, despite the fact that they sampled different parts of the PES and hence arrive out of phase. To better illustrate this effect, the excitation function, namely, the dependence of the final CO rotational quantum number on the initial 
+  <span class="italic">R</span>
+  <sub>0</sub> position, is plotted in 
+  <a ref-type="fig" rid="F4" href="#F4">Fig. 4</a> (middle panel). It is clear from the figure that the excitation function has a turning point near 
+  <span class="italic">R</span>
+  <sub>0</sub> ~ 3.6 atomic units, which is well within the range of the (0,12
+  <span class="sup">1</span>,0) wave function (as also shown in the same figure). The presence of this turning point 
+  <div class="inline-formula">
+   <div id="m13" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <span stretchy="true" class="mo">(</span>
+      <div class="mfrac">
+       <div class="mrow">
+        <span class="mo">∂</span>
+        <div class="msub">
+         <span mathvariant="italic" class="mi">j</span>
+         <div class="mrow">
+          <span mathvariant="italic" class="mi">C</span>
+          <span mathvariant="italic" class="mi">O</span>
+         </div>
+        </div>
+       </div>
+       <div class="mrow">
+        <span class="mo">∂</span>
+        <div class="msub">
+         <span mathvariant="italic" class="mi">R</span>
+         <span class="mn">0</span>
+        </div>
+       </div>
+      </div>
+      <span class="mo">=</span>
+      <span class="mn">0</span>
+      <span stretchy="true" class="mo">)</span>
+     </div>
+    </div>
+   </div>
+  </div> suggests a singularity in the classical rotational excitation function. In this so-called rotational rainbow effect, trajectories with different initial positions lead to the same final rotational state (
+  <a rid="R22" ref-type="bibr" href="#R22">
+   <span class="italic">22</span>
+  </a>). The quantum mechanical equivalent of the classical rainbow effect manifests in oscillations in the CO rotational state distribution, resulting from the constructive and destructive interference among the corresponding “quantum trajectories” because of the different dynamical phases associated with them (
+  <a rid="R6" ref-type="bibr" href="#R6">
+   <span class="italic">6</span>
+  </a>). Although absent in the classical product rotational state distribution, the interference effect can be seen in the corresponding wave function in 
+  <a ref-type="fig" rid="F4" href="#F4">Fig. 4</a> (bottom panel), where waves emanating from different sources interfere as manifested by nodes. The interferences eventually lead to the oscillatory CO rotational state distribution in 
+  <a ref-type="fig" rid="F3" href="#F3">Fig. 3</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">The interference effect reported here differs from that observed in the photodissociation of H
+  <sub>2</sub>O(
+  <div class="inline-formula">
+   <div id="m14" class="math">
+    <div class="mrow">
+     <div class="mrow">
+      <div accent="true" class="mover">
+       <span mathvariant="italic" class="mi">B</span>
+       <span stretchy="true" class="mo">~</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>) (
+  <a rid="R8" ref-type="bibr" href="#R8">
+   <span class="italic">8</span>
+  </a>) because there, the interference is between trajectories emanating from the HOH and HHO conical intersections. In the present case, on the other hand, the interference effect stems from the same source (RT coupling at linearity). Similar to the recently discussed scenario found in the H + D
+  <sub>2</sub> reactive scattering (
+  <a rid="R6" ref-type="bibr" href="#R6">
+   <span class="italic">6</span>
+  </a>), these interference effects can all be traced back to the features on an adiabatic PES, which dictate the nuclear dynamics.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">To summarize, we report quantum state-to-state dynamics in a prototypical system in which observed oscillations in the product-state distribution are attributed to an interference effect stemming from unique features on the ground-state PES of the system. As a result, these interference effects are exquisitely sensitive to the PES and thus can be used to probe dynamically important regions of the reactive PES.</p>
+</sec>

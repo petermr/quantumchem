@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">4489505</article-id>
+ <article-id pub-id-type="pmid" class="article-id">26132289</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1371/journal.pone.0124372</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">PONE-D-14-46156</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">RM1 Semiempirical Quantum Chemistry: Parameters for Trivalent Lanthanum, Cerium and Praseodymium</div>
+  <div alt-title-type="running-head" class="alt-title" xmlns="http://www.w3.org/1999/xhtml">RM1 Semiempirical Parameters for La(III), Ce(III) and Pr(III)</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Dutra</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">José Diogo L.</span>
+   </name>
+   <a ref-type="aff" rid="aff001" href="#aff001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="aff" rid="aff003" href="#aff003" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Filho</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Manoel A. M.</span>
+   </name>
+   <a ref-type="aff" rid="aff001" href="#aff001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rocha</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Gerd B.</span>
+   </name>
+   <a ref-type="aff" rid="aff002" href="#aff002" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Simas</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alfredo M.</span>
+   </name>
+   <a ref-type="aff" rid="aff003" href="#aff003" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Freire</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ricardo O.</span>
+   </name>
+   <a ref-type="aff" rid="aff001" href="#aff001" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a rid="cor001" ref-type="corresp" href="#cor001" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+ </div>
+ <aff id="aff001" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Pople Computational Chemistry Laboratory, Departamento de Química, Universidade Federal de Sergipe, 49.100–000, São Cristóvão, SE, Brazil</div>
+ </aff>
+ <aff id="aff002" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Departamento de Química, CCEN, Universidade Federal da Paraíba, 58.059–970, João Pessoa, PB, Brazil</div>
+ </aff>
+ <aff id="aff003" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Departamento de Química Fundamental, Universidade Federal de Pernambuco, 50740–540, Recife, PE, Brazil</div>
+ </aff>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="editor" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Salahub</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Dennis</span>
+   </name>
+   <span class="role" xmlns="http://www.w3.org/1999/xhtml">Editor</span>
+   <a href="#edit1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+ </div>
+ <aff id="edit1" class="aff">
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">University of Calgary, CANADA</div>
+ </aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <fn fn-type="COI-statement" id="coi001" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <span class="bold">Competing Interests: </span>The authors have declared that no competing interests exist.
+   </p>
+  </fn>
+  <fn fn-type="con" id="contrib001" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Conceived and designed the experiments: ROF GBR AMS. Performed the experiments: JDLD MAMF ROF. Analyzed the data: AMS ROF. Wrote the paper: AMS ROF. Coded the model into MOPAC: GBR. Conceived the parameterization techniques: ROF GBR AMS.</p>
+  </fn>
+  <div id="cor001" class="corresp">* E-mail: 
+   <span class="email">rfreire@ufs.br</span>
+  </div>
+ </div>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">7</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2015</span>
+ </pub-date>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2015</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">10</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">7</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">e0124372</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">14</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">10</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2014</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">27</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2015</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">© 2015 Dutra et al</span>
+  <span class="copyright-year">2015</span>
+  <span class="copyright-holder">Dutra et al</span>
+  <div xlink:href="http://creativecommons.org/licenses/by/4.0/" class="license" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <div class="license-p">This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</div>
+  </div>
+ </div>
+ <span content-type="pdf" xlink:type="simple" xlink:href="pone.0124372.pdf" class="self-uri" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>The RM1 model for the lanthanides is parameterized for complexes of the trications of lanthanum, cerium, and praseodymium. The semiempirical quantum chemical model core stands for the [Xe]4f
+   <span class="sup">n</span> electronic configuration, with n =0,1,2 for La(III), Ce(III), and Pr(III), respectively. In addition, the valence shell is described by three electrons in a set of 5d, 6s, and 6p orbitals. Results indicate that the present model is more accurate than the previous sparkle models, although these are still very good methods provided the ligands only possess oxygen or nitrogen atoms directly coordinated to the lanthanide ion. For all other different types of coordination, the present RM1 model for the lanthanides is much superior and must definitely be used. Overall, the accuracy of the model is of the order of 0.07Å for La(III) and Pr(III), and 0.08Å for Ce(III) for lanthanide-ligand atom distances which lie mostly around the 2.3Å to 2.6Å interval, implying an error around 3% only.
+  </p>
+ </div>
+ <div class="funding-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="funding-statement">This study was supported by FAPITEC/SE, FACEPE(PRONEX), CNPq, CAPES and INCT-INAMI. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</div>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="11" class="fig-count"/>
+  <span count="9" class="table-count"/>
+  <span count="17" class="page-count"/>
+ </div>
+ <div class="custom-meta-group" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="data-availability" class="custom-meta">
+   <span class="meta-name">Data Availability</span>
+   <span class="meta-value">All relevant data are within the paper and its Supporting Information files.</span>
+  </div>
+ </div>
+</article-meta>
