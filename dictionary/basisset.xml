@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary title="basisset">
+	<desc>Scraped from Wikipedia page on basis sets</desc>
+ <entry term="3-21++g" name="3-21++g"     id="CM.basisset.0"/>
+ <entry term="3-21+g" name="3-21+g"     id="CM.basisset.1"/>
+ <entry term="3-21+g*" name="3-21+g*"     id="CM.basisset.2"/>
+ <entry term="3-21+g**" name="3-21+g**"   id="CM.basisset.3"/>
+ <entry term="3-21g" name="3-21g"     id="CM.basisset.4"/>
+ <entry term="3-21g*" name="3-21g*"     id="CM.basisset.5"/>
+ <entry term="3-21g**" name="3-21g**"     id="CM.basisset.6"/>
+ <entry term="4-21g" name="4-21g"     id="CM.basisset.7"/>
+ <entry term="4-31g" name="4-31g"     id="CM.basisset.8"/>
+ <entry term="6-21g" name="6-21g"     id="CM.basisset.9"/>
+ <entry term="6-31+g*" name="6-31+g*"     id="CM.basisset.10"/>
+ <entry term="6-311+g*" name="6-311+g*"     id="CM.basisset.11"/>
+ <entry term="6-311g" name="6-311g"     id="CM.basisset.12"/>
+ <entry term="6-311g*" name="6-311g*"     id="CM.basisset.13"/>
+ <entry term="6-31g" name="6-31g"     id="CM.basisset.14"/>
+ <entry term="6-31g*" name="6-31g*"     id="CM.basisset.15"/>
+ <entry term="aug-cc-pvdz" name="aug-cc-pvdz"     id="CM.basisset.16"/>
+ <entry term="cc-pcvdz" name="cc-pcvdz"   id="CM.basisset.17"/>
+ <entry term="cc-pv5z" name="cc-pv5z"     id="CM.basisset.18"/>
+ <entry term="cc-pvdz" name="cc-pvdz"     id="CM.basisset.19"/>
+ <entry term="cc-pvqz" name="cc-pvqz"   id="CM.basisset.20"/>
+ <entry term="cc-pvtz" name="cc-pvtz"     id="CM.basisset.21"/>
+ <entry term="def2-qzvp" name="def2-qzvp"   id="CM.basisset.22"/>
+ <entry term="def2-qzvpd" name="def2-qzvpd"   id="CM.basisset.23"/>
+ <entry term="def2-qzvpp" name="def2-qzvpp"   id="CM.basisset.24"/>
+ <entry term="def2-qzvppd" name="def2-qzvppd"   id="CM.basisset.25"/>
+ <entry term="def2-sv(p)" name="def2-sv(p)"     id="CM.basisset.26"/>
+ <entry term="def2-svp" name="def2-svp"   id="CM.basisset.27"/>
+ <entry term="def2-svpd" name="def2-svpd"     id="CM.basisset.28"/>
+ <entry term="def2-tzvp" name="def2-tzvp"   id="CM.basisset.29"/>
+ <entry term="def2-tzvpd" name="def2-tzvpd"   id="CM.basisset.30"/>
+ <entry term="def2-tzvpp" name="def2-tzvpp"   id="CM.basisset.31"/>
+ <entry term="def2-tzvppd" name="def2-tzvppd"   id="CM.basisset.32"/>
+ <entry term="sto-3g" name="sto-3g"     id="CM.basisset.33"/>
+ <entry term="sto-3g*" name="sto-3g*"     id="CM.basisset.34"/>
+ <entry term="sto-4g" name="sto-4g"     id="CM.basisset.35"/>
+ <entry term="sto-6g" name="sto-6g"     id="CM.basisset.36"/>
+ <query>('3-21++g') OR ('3-21+g') OR ('3-21+g*') OR ('3-21+g**') OR ('3-21g') OR ('3-21g*') OR ('3-21g**') OR ('4-21g') OR ('4-31g') OR ('6-21g')</query>
+ <query>('6-31+g*') OR ('6-311+g*') OR ('6-311g') OR ('6-311g*') OR ('6-31g') OR ('6-31g*') OR ('aug-cc-pvdz') OR ('cc-pcvdz') OR ('cc-pv5z') OR ('cc-pvdz')</query>
+ <query>('cc-pvqz') OR ('cc-pvtz') OR ('def2-qzvp') OR ('def2-qzvpd') OR ('def2-qzvpp') OR ('def2-qzvppd') OR ('def2-sv(p)') OR ('def2-svp') OR ('def2-svpd') OR ('def2-tzvp')('def2-tzvpd') OR ('def2-tzvpp') OR ('def2-tzvppd') OR ('sto-3g') OR ('sto-3g*') OR ('sto-4g') OR ('sto-6g')</query>
+</dictionary>
