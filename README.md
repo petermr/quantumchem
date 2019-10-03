@@ -1,33 +1,33 @@
-# quantumchem
-searching Open Access literature for quantum chemistry (inspiration Leonie Mueck)
+# Quantumchem
+Searching Open Access literature for quantum chemistry (inspiration Leonie Mueck)
 
-## miniproject at eLife Sprint Cambridge 2019
-petermr is offering miniproject/s in searching the Open Access Literature on any subjects in EuropePMC or possibly beyond.
+## Miniproject at eLife Sprint Cambridge 2019
+Petermr is offering miniproject/s in searching the Open Access Literature on any subjects in EuropePMC or possibly beyond.
 
 Leonie Mueck suggested "quantum chemistry", this is a prototype.
 
-## communal resources for OpenNotebook
+## Communal resources for OpenNotebook
 Much of the code and processes are shared between the OpenNotebook projects, see:
 [OpenNotebook](https://github.com/petermr/openNotebook/blob/master/README.md)
 
 
-## issues
+## Issues
 Github issues used to manage the project.
-### dictionaries
+### Dictionaries
 
-## dictionaries
+## Dictionaries
 We need dictionaries for key concepts/ terms. Suggest:
-### basis-sets
-### functionals
-### software
+### Basis-sets
+### Functionals
+### Software
 
-## corpora
+## Corpora
 Initial corpus of 100 EPMC papers:
 ```
 getpapers -x -o qchem -q "quantum chemistry" -k 100
 ```
 
-## initial dataTable scoping
+## Initial dataTable scoping
 ```
  ami-search -p qchem/ --dictionary country funders
 ```
