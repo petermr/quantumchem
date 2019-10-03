@@ -1,8 +1,8 @@
 # Quantumchem
-searching Open Access literature for quantum chemistry (inspiration Leonie Mueck)
+Searching Open Access literature for quantum chemistry (inspiration Leonie Mueck)
 
 ## Miniproject at eLife Sprint Cambridge 2019
-petermr is offering miniproject/s in searching the Open Access Literature on any subjects in EuropePMC or possibly beyond.
+Petermr is offering miniproject/s in searching the Open Access Literature on any subjects in EuropePMC or possibly beyond.
 
 Leonie Mueck suggested "quantum chemistry", this is a prototype.
 
